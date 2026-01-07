@@ -366,14 +366,9 @@
       return (p.postcode || '').trim();
     }
 
-    function getTenureChips(p){
-      const chips = [];
-      if (p.to_let) chips.push('To Let');
-      if (p.for_sale) chips.push('For Sale');
-      if (!p.to_let && !p.for_sale) chips.push('—');
-      return chips;
-    }
-
+function getTenureChips(){
+  return [];
+}
     function parseUpdated(p){
       // "2025-12-15 16:06:35"
       const s = p.last_updated || p.updated_at || p.created_at || '';
