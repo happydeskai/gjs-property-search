@@ -465,80 +465,51 @@
 
     // ---------- Filtering + Sorting ----------
     function applyFilters(){
-      const q = (document.getElementById('q').value || '').trim().toLowerCase();
-      const tenure = document.getElementById('tenure').value;
-      const type = document.getElementById('type').value;
-      const minSize = Number(document.getElementById('minSize').value || '');
-      const maxSize = Number(document.getElementById('maxSize').value || '');
-      const sort = document.getElementById('sort').value;
+  const q = (document.getElementById('q').value || '').trim().toLowerCase();
+  const minSize = Number(document.getElementById('minSize').value || '');
+  const maxSize = Number(document.getElementById('maxSize').value || '');
+  const sort = document.getElementById('sort').value;
 
-      let filtered = allProperties.slice();
+  let filtered = allProperties.slice();
 
-      // tenure filter
-      if (tenure === 'to_let') filtered = filtered.filter(p => !!p.to_let);
-      if (tenure === 'for_sale') filtered = filtered.filter(p => !!p.for_sale);
+  // text search only (safe)
+  if (q){
+    filtered = filtered.filter(p => {
+      const hay = [
+        p.address, p.address1, p.town, p.county, p.postcode
+      ].filter(Boolean).join(' ').toLowerCase();
+      return hay.includes(q);
+    });
+  }
 
-      // type filter
-      if (type !== 'any'){
-        filtered = filtered.filter(p => Array.isArray(p.types) && p.types.includes(type));
-      }
+  // size filter (safe)
+  const hasMin = Number.isFinite(minSize);
+  const hasMax = Number.isFinite(maxSize);
 
-      // query filter (location/postcode/town/address)
-      if (q){
-        filtered = filtered.filter(p => {
-          const hay = [
-            p.address, p.address1, p.town, p.county, p.postcode
-          ].filter(Boolean).join(' ').toLowerCase();
-          return hay.includes(q);
-        });
-      }
+  if (hasMin || hasMax){
+    filtered = filtered.filter(p => {
+      const from = Number(p.size_from_sqft ?? p.size_from ?? NaN);
+      const to = Number(p.size_to_sqft ?? p.size_to ?? NaN);
 
-      // size filter (use from/to sqft)
-      const hasMin = Number.isFinite(minSize);
-      const hasMax = Number.isFinite(maxSize);
+      if (!Number.isFinite(from) && !Number.isFinite(to)) return false;
 
-      if (hasMin || hasMax){
-        filtered = filtered.filter(p => {
-          const from = Number(p.size_from_sqft ?? p.size_from ?? NaN);
-          const to = Number(p.size_to_sqft ?? p.size_to ?? NaN);
+      const low = Number.isFinite(from) ? from : to;
+      const high = Number.isFinite(to) ? to : from;
 
-          // if no size at all, exclude when size filtering is active
-          if (!Number.isFinite(from) && !Number.isFinite(to)) return false;
+      if (hasMin && high < minSize) return false;
+      if (hasMax && low > maxSize) return false;
+      return true;
+    });
+  }
 
-          const low = Number.isFinite(from) ? from : to;
-          const high = Number.isFinite(to) ? to : from;
+  // sort
+  if (sort === 'updated_desc'){
+    filtered.sort((a,b)=>parseUpdated(b)-parseUpdated(a));
+  }
 
-          if (hasMin && Number.isFinite(low) && high < minSize) return false;
-          if (hasMax && Number.isFinite(high) && low > maxSize) return false;
-
-          return true;
-        });
-      }
-
-      // sort
-      if (sort === 'updated_desc'){
-        filtered.sort((a,b)=>parseUpdated(b)-parseUpdated(a));
-      } else if (sort === 'size_desc'){
-        filtered.sort((a,b)=>{
-          const as = Number(a.size_to_sqft ?? a.size_from_sqft ?? 0);
-          const bs = Number(b.size_to_sqft ?? b.size_from_sqft ?? 0);
-          return bs - as;
-        });
-      } else if (sort === 'size_asc'){
-        filtered.sort((a,b)=>{
-          const as = Number(a.size_from_sqft ?? a.size_to_sqft ?? 0);
-          const bs = Number(b.size_from_sqft ?? b.size_to_sqft ?? 0);
-          return as - bs;
-        });
-      }
-
-      renderResults(filtered);
-
-      // STATIC MAP FIRST:
-      // show pins for ALL properties (unchanged) so map is stable like your reference
-      // If you'd rather pins follow filters later, we can swap to: setMapMarkers(filtered);
-      setMapMarkers(allProperties);
-    }
+  renderResults(filtered);
+  setMapMarkers(filtered);
+}
 
     // ---------- Rendering ----------
     function renderResults(properties){
