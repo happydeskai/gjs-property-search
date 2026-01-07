@@ -9,7 +9,7 @@
     "types": [
       "Industrial/Logistics"
     ],
-    "to_let": false,
+    "to_let": true,
     "for_sale": false,
     "size_from_sqft": 80236,
     "size_to_sqft": 80236,
