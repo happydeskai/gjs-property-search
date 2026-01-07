@@ -277,20 +277,43 @@ function render(list){
 
 function updateMap(list){
   markers.clearLayers();
+
+  if (!list.length) return;
+
   const points = [];
 
   list.forEach(p => {
     const lat = Number(p.lat);
     const lon = Number(p.lon);
     if (!lat || !lon) return;
+
+    const marker = L.circleMarker([lat, lon], {
+      radius: 7,
+      weight: 2,
+      color: '#111',
+      fillColor: '#111',
+      fillOpacity: 0.85
+    });
+
+    marker.bindPopup(`
+      <strong>${p.address || 'Property'}</strong><br/>
+      ${p.town || ''} ${p.postcode || ''}<br/>
+      ${p.size_from_sqft ? `${p.size_from_sqft}–${p.size_to_sqft} sq ft<br/>` : ''}
+      ${p.brochure || p.brochure_url ? `<a href="${p.brochure || p.brochure_url}" target="_blank">View brochure</a>` : ''}
+    `);
+
+    marker.addTo(markers);
     points.push([lat, lon]);
-    L.circleMarker([lat, lon], { radius: 6 }).addTo(markers);
   });
 
-  if (points.length) {
-    map.fitBounds(points, { padding: [40, 40] });
+  // ✅ BETTER ZOOM LOGIC
+  if (points.length === 1) {
+    map.setView(points[0], 14); // ← zoomed OUT a bit (street / area level)
+  } else {
+    map.fitBounds(points, { padding: [60, 60] });
   }
 }
+
 
 // ---------- LOAD ----------
 async function loadProperties(){
