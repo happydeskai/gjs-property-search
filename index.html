@@ -1,225 +1,203 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Property Search</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
 
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      color: #111;
-      background: #fff;
-    }
+  .container {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 40px;
+  }
 
+  .filters {
+    border-right: 1px solid #eee;
+    padding-right: 24px;
+  }
+
+  .filters h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .filter-group {
+    margin-bottom: 18px;
+  }
+
+  .filter-group label {
+    display: block;
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 6px;
+  }
+
+  .filter-group input,
+  .filter-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+  }
+
+  .results h1 {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .property {
+    display: flex;
+    gap: 16px;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .property img {
+    width: 160px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .property h3 {
+    margin: 0 0 6px 0;
+    font-size: 18px;
+  }
+
+  .property p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+  }
+
+  .property a {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 900px) {
     .container {
-      display: grid;
-      grid-template-columns: 320px 1fr;
-      min-height: 100vh;
+      grid-template-columns: 1fr;
     }
-
     .filters {
-      padding: 32px;
-      border-right: 1px solid #eee;
-    }
-
-    .filters h2 {
-      margin-top: 0;
-      font-size: 20px;
-    }
-
-    .filter-group {
-      margin-bottom: 24px;
-    }
-
-    .filter-group label {
-      display: block;
-      font-size: 13px;
-      color: #555;
-      margin-bottom: 6px;
-    }
-
-    .filter-group select,
-    .filter-group input {
-      width: 100%;
-      padding: 10px;
-      font-size: 14px;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-    }
-
-    .results {
-      padding: 40px;
-    }
-
-    .results h1 {
-      margin-top: 0;
-      font-size: 28px;
-      font-weight: 600;
-    }
-
-    .property {
-      display: flex;
-      gap: 16px;
-      padding: 24px 0;
+      border-right: none;
+      padding-right: 0;
       border-bottom: 1px solid #eee;
+      padding-bottom: 24px;
+    }
+  }
+</style>
+
+<div class="container">
+  <!-- FILTERS -->
+  <aside class="filters">
+    <h2>Filter properties</h2>
+
+    <div class="filter-group">
+      <label>Location / Postcode</label>
+      <input id="locationFilter" placeholder="e.g. Evesham or WR11" />
+    </div>
+
+    <div class="filter-group">
+      <label>Property type</label>
+      <select id="typeFilter">
+        <option value="">Any</option>
+        <option value="Office">Office</option>
+        <option value="Industrial/Logistics">Industrial / Logistics</option>
+        <option value="Retail">Retail</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label>Tenure</label>
+      <select id="tenureFilter">
+        <option value="">Any</option>
+        <option value="to_let">To Let</option>
+        <option value="for_sale">For Sale</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label>Min size (sq ft)</label>
+      <input id="minSize" type="number" placeholder="e.g. 1000" />
+    </div>
+
+    <div class="filter-group">
+      <label>Max size (sq ft)</label>
+      <input id="maxSize" type="number" placeholder="e.g. 50000" />
+    </div>
+  </aside>
+
+  <!-- RESULTS -->
+  <main class="results">
+    <h1>Available properties</h1>
+    <div id="results"></div>
+  </main>
+</div>
+
+<script>
+  let properties = [];
+
+  fetch("https://happydeskai.github.io/gjs-property-search/properties.json")
+    .then(res => res.json())
+    .then(data => {
+      properties = data;
+      renderResults();
+    });
+
+  document.querySelectorAll(
+    "#locationFilter, #typeFilter, #tenureFilter, #minSize, #maxSize"
+  ).forEach(el => el.addEventListener("input", renderResults));
+
+  function renderResults() {
+    const container = document.getElementById("results");
+    container.innerHTML = "";
+
+    const location = document.getElementById("locationFilter").value.toLowerCase();
+    const type = document.getElementById("typeFilter").value;
+    const tenure = document.getElementById("tenureFilter").value;
+    const minSize = Number(document.getElementById("minSize").value || 0);
+    const maxSize = Number(document.getElementById("maxSize").value || Infinity);
+
+    const filtered = properties.filter(p => {
+      const matchesLocation =
+        !location ||
+        p.town?.toLowerCase().includes(location) ||
+        p.postcode?.toLowerCase().includes(location);
+
+      const matchesType =
+        !type || p.types?.includes(type);
+
+      const matchesTenure =
+        !tenure || p[tenure] === true;
+
+      const matchesSize =
+        p.size_from_sqft >= minSize &&
+        p.size_to_sqft <= maxSize;
+
+      return matchesLocation && matchesType && matchesTenure && matchesSize;
+    });
+
+    if (!filtered.length) {
+      container.innerHTML = "<p>No properties found.</p>";
+      return;
     }
 
-    .property img {
-      width: 160px;
-      height: 110px;
-      object-fit: cover;
-      border-radius: 6px;
-      background: #f3f3f3;
-    }
+    filtered.forEach(p => {
+      const img = p.images?.[0]?._ || "";
+      const div = document.createElement("div");
+      div.className = "property";
 
-    .property h3 {
-      margin: 0 0 6px 0;
-      font-size: 18px;
-    }
+      div.innerHTML = `
+        <img src="${img}" />
+        <div>
+          <h3>${p.address}, ${p.town}</h3>
+          <p>${p.types?.[0]} · ${p.size_from_sqft.toLocaleString()} sq ft · ${p.postcode}</p>
+          ${p.brochure_url ? `<a href="${p.brochure_url}" target="_blank">View brochure</a>` : ""}
+        </div>
+      `;
 
-    .property p {
-      margin: 0;
-      color: #666;
-      font-size: 14px;
-    }
-
-    .property a {
-      display: inline-block;
-      margin-top: 6px;
-      font-size: 14px;
-      color: #000;
-      text-decoration: underline;
-    }
-
-    .empty {
-      color: #666;
-      font-size: 15px;
-      margin-top: 40px;
-    }
-
-    @media (max-width: 900px) {
-      .container {
-        grid-template-columns: 1fr;
-      }
-
-      .filters {
-        border-right: none;
-        border-bottom: 1px solid #eee;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container">
-    <!-- Filters -->
-    <aside class="filters">
-      <h2>Filter properties</h2>
-
-      <div class="filter-group">
-        <label>Location</label>
-        <select id="locationFilter">
-          <option value="">Any</option>
-        </select>
-      </div>
-
-      <div class="filter-group">
-        <label>Property type</label>
-        <select id="typeFilter">
-          <option value="">Any</option>
-        </select>
-      </div>
-
-      <div class="filter-group">
-        <label>Minimum size (sq ft)</label>
-        <input id="sizeFilter" type="number" placeholder="e.g. 1000" />
-      </div>
-    </aside>
-
-    <!-- Results -->
-    <main class="results">
-      <h1>Available properties</h1>
-      <div id="results"></div>
-    </main>
-  </div>
-
-  <script>
-    let properties = [];
-
-    const resultsEl = document.getElementById("results");
-    const locationFilter = document.getElementById("locationFilter");
-    const typeFilter = document.getElementById("typeFilter");
-    const sizeFilter = document.getElementById("sizeFilter");
-
-    fetch("./public/properties.json")
-      .then(res => res.json())
-      .then(data => {
-        properties = data;
-        populateFilters();
-        render();
-      });
-
-    function populateFilters() {
-      const locations = [...new Set(properties.map(p => p.town).filter(Boolean))];
-      const types = [...new Set(properties.flatMap(p => p.types || []))];
-
-      locations.sort().forEach(loc => {
-        const opt = document.createElement("option");
-        opt.value = loc;
-        opt.textContent = loc;
-        locationFilter.appendChild(opt);
-      });
-
-      types.sort().forEach(type => {
-        const opt = document.createElement("option");
-        opt.value = type;
-        opt.textContent = type;
-        typeFilter.appendChild(opt);
-      });
-    }
-
-    function render() {
-      const minSize = Number(sizeFilter.value || 0);
-      const location = locationFilter.value;
-      const type = typeFilter.value;
-
-      const filtered = properties.filter(p => {
-        if (location && p.town !== location) return false;
-        if (type && !(p.types || []).includes(type)) return false;
-        if (minSize && p.size_from_sqft < minSize) return false;
-        return true;
-      });
-
-      resultsEl.innerHTML = "";
-
-      if (!filtered.length) {
-        resultsEl.innerHTML = `<div class="empty">No properties match your filters.</div>`;
-        return;
-      }
-
-      filtered.forEach(p => {
-        const img = p.images?.[0]?._ || "";
-        const div = document.createElement("div");
-        div.className = "property";
-
-        div.innerHTML = `
-          <img src="${img}" alt="">
-          <div>
-            <h3>${p.address}, ${p.town}</h3>
-            <p>${p.types?.join(", ")} · ${p.size_from_sqft.toLocaleString()} sq ft · ${p.postcode}</p>
-            <a href="${p.brochure_url}" target="_blank">View brochure</a>
-          </div>
-        `;
-
-        resultsEl.appendChild(div);
-      });
-    }
-
-    locationFilter.addEventListener("change", render);
-    typeFilter.addEventListener("change", render);
-    sizeFilter.addEventListener("input", render);
-  </script>
-</body>
-</html>
+      container.appendChild(div);
+    });
+  }
+</script>
