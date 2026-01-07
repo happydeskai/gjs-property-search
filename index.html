@@ -9,8 +9,8 @@
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      color: #111;
       background: #fff;
+      color: #111;
     }
 
     .container {
@@ -27,7 +27,7 @@
 
     .filters h2 {
       margin-top: 0;
-      font-size: 20px;
+      font-size: 18px;
     }
 
     .filter-group {
@@ -57,19 +57,20 @@
 
     .results h1 {
       margin-top: 0;
-      font-size: 28px;
+      font-size: 26px;
       font-weight: 600;
     }
 
     .property-card {
-      display: flex;
+      display: grid;
+      grid-template-columns: 160px 1fr;
       gap: 20px;
       padding: 24px 0;
       border-bottom: 1px solid #eee;
     }
 
     .property-card img {
-      width: 160px;
+      width: 100%;
       height: 110px;
       object-fit: cover;
       border-radius: 6px;
@@ -77,14 +78,23 @@
     }
 
     .property-card h3 {
-      margin: 0 0 6px 0;
+      margin: 0 0 6px;
       font-size: 18px;
     }
 
     .property-card p {
       margin: 0;
-      color: #666;
       font-size: 14px;
+      color: #555;
+    }
+
+    .property-card a {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 14px;
+      text-decoration: none;
+      color: #000;
+      border-bottom: 1px solid #000;
     }
 
     @media (max-width: 900px) {
@@ -96,13 +106,19 @@
         border-right: none;
         border-bottom: 1px solid #eee;
       }
+
+      .property-card {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 
 <body>
+
   <div class="container">
-    <!-- Filters -->
+
+    <!-- Filters (UI only for now) -->
     <aside class="filters">
       <h2>Filter properties</h2>
 
@@ -131,6 +147,7 @@
       <h1>Available properties</h1>
       <div id="results"></div>
     </main>
+
   </div>
 
   <script>
@@ -144,23 +161,42 @@
           const card = document.createElement('div');
           card.className = 'property-card';
 
-          const imageUrl = p.images?.[0]?._ || '';
+          const image =
+            p.images && p.images.length
+              ? p.images[0]._
+              : '';
+
+          const size =
+            p.size_from_sqft === p.size_to_sqft
+              ? `${p.size_from_sqft.toLocaleString()} sq ft`
+              : `${p.size_from_sqft.toLocaleString()} – ${p.size_to_sqft.toLocaleString()} sq ft`;
 
           card.innerHTML = `
-            <img src="${imageUrl}" alt="" />
+            <img src="${image}" alt="">
             <div>
-              <h3>${p.address}, ${p.town}</h3>
+              <h3>${p.address}</h3>
               <p>
-                ${p.types?.[0] || ''} · 
-                ${p.size_from_sqft.toLocaleString()} sq ft · 
-                ${p.postcode}
+                ${p.town} ${p.postcode} ·
+                ${p.types?.[0] ?? ''} ·
+                ${size}
               </p>
+              ${
+                p.brochure_url
+                  ? `<a href="${p.brochure_url}" target="_blank">View brochure</a>`
+                  : ''
+              }
             </div>
           `;
 
           container.appendChild(card);
         });
+      })
+      .catch(err => {
+        document.getElementById('results').innerHTML =
+          '<p>Unable to load properties.</p>';
+        console.error(err);
       });
   </script>
+
 </body>
 </html>
