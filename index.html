@@ -38,27 +38,21 @@
       overflow: hidden;
     }
 
-    .searchBar {
-      display: grid;
-      grid-template-columns:
-        minmax(220px, 1.5fr)
-        minmax(140px, 1fr)
-        minmax(140px, 1fr)
-        minmax(120px, 1fr)
-        minmax(120px, 1fr)
-        140px;
-      gap: 12px;
-      padding: 14px;
-      border: 1px solid #eaeaea;
-      border-radius: 12px;
-      background: #fff;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-      align-items: end;
-    }
+.searchBar {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(140px, 1fr));
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
 
-    .searchBar .btn {
-      width: 140px;
-    }
+.searchBar .btn {
+  grid-column: 1 / -1;
+  width: 100%;
+}
 
     /* Tablet */
     @media (max-width: 1000px) {
