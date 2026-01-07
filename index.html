@@ -40,24 +40,42 @@
 
 .searchBar{
   display:grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns:
+    minmax(180px, 1.5fr)
+    minmax(140px, 1fr)
+    minmax(120px, 1fr)
+    minmax(120px, 1fr)
+    minmax(120px, 1fr)
+    auto;
   gap:12px;
   padding:14px;
   border:1px solid var(--border);
   border-radius:12px;
   background:#fff;
   box-shadow:var(--shadow);
+  align-items:end;
 }
 
-@media (max-width: 1100px){
+/* Tablet */
+@media (max-width: 1000px){
   .searchBar{
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .searchBar .btn{
+    grid-column: span 3;
+    width:100%;
+  }
 }
 
-@media (max-width: 700px){
+/* Mobile */
+@media (max-width: 600px){
   .searchBar{
     grid-template-columns: 1fr;
+  }
+
+  .searchBar .btn{
+    grid-column: auto;
   }
 }
 
