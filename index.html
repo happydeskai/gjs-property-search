@@ -38,17 +38,17 @@
       overflow: hidden;
     }
 
-    .searchBar {
-      display: grid;
-      grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr auto;
-      gap: 12px;
-      padding: 14px;
-      border: 1px solid #eaeaea;
-      border-radius: 12px;
-      background: #fff;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-      margin-bottom: 16px;
-    }
+.searchBar{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap:12px;
+  padding:14px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:#fff;
+  box-shadow:var(--shadow);
+  align-items:end;
+}
 
     .field label {
       font-size: 12px;
