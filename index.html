@@ -13,6 +13,12 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
@@ -32,66 +38,38 @@
     }
 
     #map {
-      height: 360px;
+      height: clamp(260px, 42vw, 360px);
       border-radius: 14px;
       margin-bottom: 18px;
       overflow: hidden;
+      position: relative;
+      z-index: 0;
     }
 
-.searchBar {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(140px, 1fr)) auto;
-  gap: 10px;
-  padding: 10px 12px;
-  border: 1px solid #ededed;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  align-items: end;
-}
-
-
-.searchBar .btn {
-  height: 40px;
-  padding: 0 18px;
-  border-radius: 8px;
-  font-weight: 500;
-}
-
-.field input,
-.field select {
-  height: 40px;
-  padding: 10px 12px;
-  border-radius: 8px;
-  border: 1px solid #dcdcdc;
-  font-size: 14px;
-}
-
-    /* Tablet */
-    @media (max-width: 1000px) {
-      .searchBar {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .searchBar .btn {
-        grid-column: 1 / -1;
-        width: 100%;
-      }
+    #searchForm {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "location"
+        "tenure"
+        "type"
+        "min"
+        "max"
+        "submit";
+      gap: 12px;
+      padding: 16px;
+      border: 1px solid #ededed;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      align-items: end;
+      position: relative;
+      z-index: 1;
     }
 
-    /* Mobile */
-    @media (max-width: 600px) {
-      .searchBar {
-        grid-template-columns: 1fr;
-      }
-
-      .searchBar .btn {
-        grid-column: 1 / -1;
-        width: 100%;
-      }
+    .field {
+      min-width: 0;
     }
-
-
 
     .field label {
       font-size: 12px;
@@ -100,21 +78,91 @@
       margin-bottom: 6px;
     }
 
+    .field-hint {
+      font-size: 11px;
+      color: #8a8a8a;
+      margin-top: 6px;
+    }
+
     .field input,
     .field select {
       width: 100%;
-      padding: 12px;
+      height: 44px;
+      padding: 10px 12px;
       border-radius: 10px;
       border: 1px solid #dcdcdc;
+      font-size: 14px;
+      background: #fff;
+    }
+
+    .field input:focus-visible,
+    .field select:focus-visible,
+    .btn:focus-visible {
+      outline: 2px solid #111;
+      outline-offset: 2px;
     }
 
     .btn {
+      width: 100%;
+      height: 44px;
       padding: 12px 16px;
       background: #111;
       color: #fff;
       border-radius: 10px;
       cursor: pointer;
       border: none;
+      font-weight: 600;
+    }
+
+    .field--location {
+      grid-area: location;
+    }
+
+    .field--tenure {
+      grid-area: tenure;
+    }
+
+    .field--type {
+      grid-area: type;
+    }
+
+    .field--min {
+      grid-area: min;
+    }
+
+    .field--max {
+      grid-area: max;
+    }
+
+    .searchBar__submit {
+      grid-area: submit;
+      align-self: end;
+    }
+
+    @media (min-width: 641px) {
+      #searchForm {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas:
+          "location tenure"
+          "type min"
+          "max submit";
+      }
+    }
+
+    @media (min-width: 900px) {
+      #searchForm {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-areas:
+          "location tenure type"
+          "min max submit";
+      }
+    }
+
+    @media (min-width: 1024px) {
+      #searchForm {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-areas: "location tenure type min max submit";
+      }
     }
 
     .meta {
@@ -173,47 +221,52 @@
   </style>
 </head>
 
-<body>
+<body data-build="search-form-grid-2024-10-07">
 <div class="wrap">
   <h1>Property Search</h1>
 
   <!-- MAP ABOVE SEARCH -->
   <div id="map"></div>
 
-  <div class="searchBar">
-    <div class="field">
-      <label>Location</label>
-      <input id="q" placeholder="Town, postcode" />
+  <form class="searchBar" id="searchForm">
+    <div class="field field--location">
+      <label for="q">Location</label>
+      <input id="q" placeholder="Town, postcode" aria-describedby="q-hint" />
+      <div class="field-hint" id="q-hint">Search by town, postcode, or address.</div>
     </div>
 
-    <div class="field">
-      <label>Tenure</label>
-      <select id="tenure">
+    <div class="field field--tenure">
+      <label for="tenure">Tenure</label>
+      <select id="tenure" aria-describedby="tenure-hint">
         <option value="any">Any</option>
         <option value="to let">To Let</option>
         <option value="for sale">For Sale</option>
       </select>
+      <div class="field-hint" id="tenure-hint">Filter by transaction type.</div>
     </div>
 
-    <div class="field">
-      <label>Type</label>
-      <select id="type">
+    <div class="field field--type">
+      <label for="type">Type</label>
+      <select id="type" aria-describedby="type-hint">
         <option value="any">Any</option>
       </select>
+      <div class="field-hint" id="type-hint">Choose a property type if needed.</div>
     </div>
 
-    <div class="field">
-      <label>Min size</label>
-      <input id="minSize" type="number" />
+    <div class="field field--min">
+      <label for="minSize">Min size</label>
+      <input id="minSize" type="number" inputmode="numeric" aria-describedby="minSize-hint" />
+      <div class="field-hint" id="minSize-hint">Minimum size in square feet.</div>
     </div>
 
-    <div class="field">
-      <label>Max size</label>
-      <input id="maxSize" type="number" />
+    <div class="field field--max">
+      <label for="maxSize">Max size</label>
+      <input id="maxSize" type="number" inputmode="numeric" aria-describedby="maxSize-hint" />
+      <div class="field-hint" id="maxSize-hint">Maximum size in square feet.</div>
     </div>
 
-    <button class="btn" id="searchBtn">Search</button>
-  </div>
+    <button class="btn searchBar__submit" id="searchBtn" type="submit">Search</button>
+  </form>
 
   <div class="meta" id="statusText">Loading properties…</div>
   <div class="meta" id="resultsCount"></div>
@@ -361,7 +414,10 @@ async function loadProperties(){
 
 document.addEventListener('DOMContentLoaded', () => {
   initMap();
-  document.getElementById('searchBtn').onclick = applyFilters;
+  document.getElementById('searchForm').addEventListener('submit', (event) => {
+    event.preventDefault();
+    applyFilters();
+  });
   loadProperties();
 });
 </script>
