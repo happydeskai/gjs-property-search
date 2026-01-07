@@ -62,7 +62,7 @@
     }
 
     .property-card {
-      padding: 24px;
+      padding: 24px 0;
       border-bottom: 1px solid #eee;
     }
 
@@ -120,16 +120,34 @@
     <main class="results">
       <h1>Available properties</h1>
 
-      <div class="property-card">
-        <h3>Example Property</h3>
-        <p>Worcestershire · Industrial · 4,500 sq ft</p>
-      </div>
-
-      <div class="property-card">
-        <h3>Another Example</h3>
-        <p>Midlands · Office · 2,100 sq ft</p>
-      </div>
+      <!-- JS will render cards here -->
+      <div id="results"></div>
     </main>
   </div>
+
+  <!-- Data + rendering -->
+  <script>
+    fetch('./public/properties.json')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('results');
+        container.innerHTML = '';
+
+        data.forEach(p => {
+          const card = document.createElement('div');
+          card.className = 'property-card';
+
+          card.innerHTML = `
+            <h3>${p.title}</h3>
+            <p>${p.location} · ${p.type} · ${p.size_sqft} sq ft</p>
+          `;
+
+          container.appendChild(card);
+        });
+      })
+      .catch(err => {
+        console.error('Failed to load properties:', err);
+      });
+  </script>
 </body>
 </html>
