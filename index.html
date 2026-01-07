@@ -6,23 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Leaflet -->
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <style>
-    /* ✅ Make widths include padding + border so inputs fit their grid cells */
+    /* --- fixes so inputs fit their cells and align perfectly --- */
     *, *::before, *::after { box-sizing: border-box; }
-
-    /* (Optional) tidy number inputs across browsers */
     input[type="number"] { -moz-appearance: textfield; }
     input[type="number"]::-webkit-outer-spin-button,
-    input[type="number"]::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
+    input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 
     body {
       margin: 0;
@@ -37,13 +29,10 @@
       padding: 28px 18px 60px;
     }
 
-    h1 {
-      margin: 0 0 16px;
-      font-size: 34px;
-    }
+    h1 { margin: 0 0 16px; font-size: 34px; }
 
     #map {
-      height: clamp(260px, 42vw, 360px);
+      height: 360px;
       border-radius: 14px;
       margin-bottom: 18px;
       overflow: hidden;
@@ -51,46 +40,46 @@
       z-index: 0;
     }
 
+    /* --- search bar layout --- */
     .searchBar {
       display: grid;
-      grid-template-columns: 1fr;
-      grid-template-areas:
-        "location"
-        "tenure"
-        "type"
-        "min"
-        "max"
-        "submit";
+      grid-template-columns:
+        minmax(220px, 1.5fr)
+        minmax(140px, 1fr)
+        minmax(140px, 1fr)
+        minmax(120px, 1fr)
+        minmax(120px, 1fr)
+        140px;
       gap: 12px;
-      padding: 16px;
-      border: 1px solid #ededed;
+      padding: 14px;
+      border: 1px solid #eaeaea;
       border-radius: 12px;
       background: #fff;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-      align-items: end;
-      position: relative;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      align-items: end; /* baseline align across the grid */
       z-index: 1;
+      position: relative;
     }
 
-    .field { min-width: 0; }
+    /* each field becomes a tiny grid: label | input | (optional hint) */
+    .field{
+      min-width: 0;
+      display: grid;
+      grid-template-rows: auto 44px auto;
+      align-content: start;
+    }
 
-    .field label {
+    .field label{
       font-size: 12px;
       color: #666;
-      display: block;
       margin-bottom: 6px;
     }
 
-    .field-hint {
-      font-size: 11px;
-      color: #8a8a8a;
-      margin-top: 6px;
-    }
-
     .field input,
-    .field select {
+    .field select{
       width: 100%;
-      height: 44px;
+      height: 44px;          /* lock the control height */
+      align-self: end;        /* sit on the bottom of its row */
       padding: 10px 12px;
       border-radius: 10px;
       border: 1px solid #dcdcdc;
@@ -98,16 +87,8 @@
       background: #fff;
     }
 
-    .field input:focus-visible,
-    .field select:focus-visible,
-    .btn:focus-visible {
-      outline: 2px solid #111;
-      outline-offset: 2px;
-    }
-
-    .btn {
-      width: 100%;
-      height: 44px;
+    .btn{
+      height: 44px;           /* same as inputs */
       padding: 12px 16px;
       background: #111;
       color: #fff;
@@ -115,53 +96,43 @@
       cursor: pointer;
       border: none;
       font-weight: 600;
-    }
-
-    .field--location { grid-area: location; }
-    .field--tenure   { grid-area: tenure; }
-    .field--type     { grid-area: type; }
-    .field--min      { grid-area: min; }
-    .field--max      { grid-area: max; }
-
-    .searchBar__submit {
-      grid-area: submit;
+      width: 140px;
       align-self: end;
     }
 
-    @media (min-width: 641px) {
-      .searchBar {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        grid-template-areas:
-          "location tenure"
-          "type min"
-          "max submit";
+    .field input:focus-visible,
+    .field select:focus-visible,
+    .btn:focus-visible{
+      outline: 2px solid #111;
+      outline-offset: 2px;
+    }
+
+    /* Tablet */
+    @media (max-width: 1000px){
+      .searchBar{
+        grid-template-columns: repeat(2, minmax(0,1fr));
+      }
+      .btn{
+        grid-column: 1 / -1;
+        width: 100%;
       }
     }
 
-    @media (min-width: 900px) {
-      .searchBar {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        grid-template-areas:
-          "location tenure type"
-          "min max submit";
+    /* Mobile */
+    @media (max-width: 600px){
+      .searchBar{
+        grid-template-columns: 1fr;
+      }
+      .btn{
+        grid-column: 1 / -1;
+        width: 100%;
       }
     }
 
-    @media (min-width: 1024px) {
-      .searchBar {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
-        grid-template-areas: "location tenure type min max submit";
-      }
-    }
-
-    .meta {
-      color: #666;
-      margin-bottom: 12px;
-    }
-
+    .meta { color: #666; margin-bottom: 12px; }
     .cards { border-top: 1px solid #eaeaea; }
 
-    .card {
+    .card{
       display: grid;
       grid-template-columns: 180px 1fr;
       gap: 16px;
@@ -169,21 +140,16 @@
       border-bottom: 1px solid #eaeaea;
     }
 
-    .thumb {
+    .thumb{
       width: 180px;
       height: 120px;
       border-radius: 12px;
       overflow: hidden;
       background: #eee;
     }
+    .thumb img{ width: 100%; height: 100%; object-fit: cover; }
 
-    .thumb img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .chip {
+    .chip{
       display: inline-block;
       background: #f6f6f6;
       padding: 6px 10px;
@@ -193,17 +159,14 @@
       margin-top: 6px;
     }
 
-    .links a {
+    .links a{
       margin-right: 12px;
       color: #111;
       text-decoration: underline;
       font-size: 14px;
     }
 
-    .empty {
-      padding: 24px;
-      color: #666;
-    }
+    .empty{ padding: 24px; color: #666; }
   </style>
 </head>
 
@@ -214,45 +177,40 @@
   <!-- MAP ABOVE SEARCH -->
   <div id="map"></div>
 
-  <form class="searchBar" id="searchForm">
-    <div class="field field--location">
+  <div class="searchBar" id="searchForm">
+    <div class="field">
       <label for="q">Location</label>
-      <input id="q" placeholder="Town, postcode" aria-describedby="q-hint" />
-      <div class="field-hint" id="q-hint">Search by town, postcode, or address.</div>
+      <input id="q" placeholder="Town, postcode" />
     </div>
 
-    <div class="field field--tenure">
+    <div class="field">
       <label for="tenure">Tenure</label>
-      <select id="tenure" aria-describedby="tenure-hint">
+      <select id="tenure">
         <option value="any">Any</option>
         <option value="to let">To Let</option>
         <option value="for sale">For Sale</option>
       </select>
-      <div class="field-hint" id="tenure-hint">Filter by transaction type.</div>
     </div>
 
-    <div class="field field--type">
+    <div class="field">
       <label for="type">Type</label>
-      <select id="type" aria-describedby="type-hint">
+      <select id="type">
         <option value="any">Any</option>
       </select>
-      <div class="field-hint" id="type-hint">Choose a property type if needed.</div>
     </div>
 
-    <div class="field field--min">
+    <div class="field">
       <label for="minSize">Min size</label>
-      <input id="minSize" type="number" inputmode="numeric" aria-describedby="minSize-hint" />
-      <div class="field-hint" id="minSize-hint">Minimum size in square feet.</div>
+      <input id="minSize" type="number" inputmode="numeric" />
     </div>
 
-    <div class="field field--max">
+    <div class="field">
       <label for="maxSize">Max size</label>
-      <input id="maxSize" type="number" inputmode="numeric" aria-describedby="maxSize-hint" />
-      <div class="field-hint" id="maxSize-hint">Maximum size in square feet.</div>
+      <input id="maxSize" type="number" inputmode="numeric" />
     </div>
 
-    <button class="btn searchBar__submit" id="searchBtn" type="submit">Search</button>
-  </form>
+    <button class="btn" id="searchBtn" type="button">Search</button>
+  </div>
 
   <div class="meta" id="statusText">Loading properties…</div>
   <div class="meta" id="resultsCount"></div>
@@ -376,14 +334,12 @@ function updateMap(list){
     points.push([lat, lon]);
   });
 
-  // Better zoom logic
   if (points.length === 1) {
     map.setView(points[0], 14);
   } else {
     map.fitBounds(points, { padding: [60, 60] });
   }
 }
-
 
 // ---------- LOAD ----------
 async function loadProperties(){
@@ -400,10 +356,7 @@ async function loadProperties(){
 
 document.addEventListener('DOMContentLoaded', () => {
   initMap();
-  document.getElementById('searchForm').addEventListener('submit', (event) => {
-    event.preventDefault();
-    applyFilters();
-  });
+  document.getElementById('searchBtn').onclick = applyFilters;
   loadProperties();
 });
 </script>
