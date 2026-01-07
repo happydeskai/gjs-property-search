@@ -594,7 +594,7 @@
       try{
         // IMPORTANT: this path matches what you had working.
         // If your repo is /public/properties.json, this will load correctly.
-        const url = new URL('properties.json', window.location.href).toString();
+        const url = './properties.json';
         const res = await fetch(url, { cache: 'no-store' });
         if (!res.ok) throw new Error(`Fetch failed: ${res.status}`);
         const data = await res.json();
