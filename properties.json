@@ -1,0 +1,52 @@
+[
+  {
+    "id": 276465,
+    "address": "Unit 200",
+    "town": "Evesham",
+    "postcode": "WR11 1JH",
+    "lat": 52.074182,
+    "lon": -1.938506,
+    "types": [
+      "Industrial/Logistics"
+    ],
+    "to_let": false,
+    "for_sale": false,
+    "size_from_sqft": 80236,
+    "size_to_sqft": 80236,
+    "summary": "",
+    "images": [
+      {
+        "_": "https://as-images.imgix.net/887a3b7fd7835455e9dfcb7805283f1a-street-view-disposal-276465.jpg",
+        "$": {
+          "name": "Street View"
+        }
+      },
+      {
+        "_": "https://as-images.imgix.net/8b027679aaba4d46f04058a94e354e10-dji-0016.JPG",
+        "$": {
+          "name": "DJI_0016.JPG"
+        }
+      },
+      {
+        "_": "https://as-images.imgix.net/482233d490b5870408b31ec96cba3576-dji-0020.JPG",
+        "$": {
+          "name": "DJI_0020.JPG"
+        }
+      },
+      {
+        "_": "https://as-images.imgix.net/129dbe5c912cb923d311fce3759b591d-dji-0027.JPG",
+        "$": {
+          "name": "DJI_0027.JPG"
+        }
+      },
+      {
+        "_": "https://as-images.imgix.net/f88d47ab52a995c10526cefe4d9fe782-dji-0034.JPG",
+        "$": {
+          "name": "DJI_0034.JPG"
+        }
+      }
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/0a1655a2453e465110d3067adf175060-b200-vale-park-evesham-brochure-v4.pdf",
+    "last_updated": "2025-12-15 16:06:35"
+  }
+]
