@@ -20,6 +20,11 @@ const getSearchForm = (dom) => {
   return { document, form, searchBarStyle };
 };
 
+const getStyleText = (dom) =>
+  Array.from(dom.window.document.querySelectorAll("style"))
+    .map((style) => style.textContent || "")
+    .join("\n");
+
 describe("Property search form layout", () => {
   it("renders labeled controls in order with grid layout on mobile", () => {
     const dom = createDom(480);
