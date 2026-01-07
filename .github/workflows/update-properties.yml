@@ -1,0 +1,33 @@
+name: Update Property Feed
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # every hour
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build properties.json from XML feed
+        run: node scripts/build-properties-json.js
+
+      - name: Commit updated properties.json
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add public/properties.json
+          git commit -m "Update properties feed" || echo "No changes to commit"
+          git push
