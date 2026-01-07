@@ -2,22 +2,134 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>GJS Dillon Property Search</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Property Search</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <style>
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
-      height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #111;
+      background: #fff;
     }
-    iframe {
+
+    .container {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      min-height: 100vh;
+    }
+
+    /* Filters */
+    .filters {
+      padding: 32px;
+      border-right: 1px solid #eee;
+    }
+
+    .filters h2 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    .filter-group {
+      margin-bottom: 24px;
+    }
+
+    .filter-group label {
+      display: block;
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 6px;
+    }
+
+    .filter-group select,
+    .filter-group input {
       width: 100%;
-      height: 100vh;
-      border: 0;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+
+    /* Results */
+    .results {
+      padding: 40px;
+    }
+
+    .results h1 {
+      margin-top: 0;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .property-card {
+      padding: 24px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .property-card h3 {
+      margin: 0 0 6px 0;
+      font-size: 18px;
+    }
+
+    .property-card p {
+      margin: 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .filters {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+      }
     }
   </style>
 </head>
+
 <body>
-  <iframe src="./public/index.html"></iframe>
+  <div class="container">
+    <!-- Filters -->
+    <aside class="filters">
+      <h2>Filter properties</h2>
+
+      <div class="filter-group">
+        <label>Location</label>
+        <select>
+          <option>Any</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Property type</label>
+        <select>
+          <option>Any</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Minimum size (sq ft)</label>
+        <input type="number" placeholder="e.g. 1000" />
+      </div>
+    </aside>
+
+    <!-- Results -->
+    <main class="results">
+      <h1>Available properties</h1>
+
+      <div class="property-card">
+        <h3>Example Property</h3>
+        <p>Worcestershire · Industrial · 4,500 sq ft</p>
+      </div>
+
+      <div class="property-card">
+        <h3>Another Example</h3>
+        <p>Midlands · Office · 2,100 sq ft</p>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
