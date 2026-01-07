@@ -4,7 +4,7 @@ const fs = require("fs");
 const https = require("https");
 const { parseStringPromise } = require("xml2js");
 
-const FEED_URL = "PASTE_FEED_URL_HERE";
+const FEED_URL = "https://s3-eu-west-1.amazonaws.com/feeds.agents-society.com/393-ai-feed-869909566.xml";
 
 function fetchXML(url) {
   return new Promise((resolve, reject) => {
