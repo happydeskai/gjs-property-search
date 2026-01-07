@@ -25,7 +25,11 @@ async function run() {
   console.log("Parsing XML...");
   const parsed = await parseStringPromise(xml, { explicitArray: false });
 
-  const properties = parsed.properties.property;
+const rawProperties = parsed?.properties?.property || [];
+
+const properties = Array.isArray(rawProperties)
+  ? rawProperties
+  : [rawProperties];
 
   console.log(`Found ${properties.length} properties`);
 
