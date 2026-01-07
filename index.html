@@ -9,8 +9,8 @@
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #fff;
       color: #111;
+      background: #fff;
     }
 
     .container {
@@ -27,11 +27,11 @@
 
     .filters h2 {
       margin-top: 0;
-      font-size: 18px;
+      font-size: 20px;
     }
 
     .filter-group {
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
 
     .filter-group label {
@@ -57,14 +57,12 @@
 
     .results h1 {
       margin-top: 0;
-      font-size: 26px;
+      font-size: 28px;
       font-weight: 600;
-      margin-bottom: 24px;
     }
 
     .property-card {
-      display: grid;
-      grid-template-columns: 160px 1fr;
+      display: flex;
       gap: 20px;
       padding: 24px 0;
       border-bottom: 1px solid #eee;
@@ -75,7 +73,7 @@
       height: 110px;
       object-fit: cover;
       border-radius: 6px;
-      background: #f3f3f3;
+      background: #f2f2f2;
     }
 
     .property-card h3 {
@@ -85,8 +83,8 @@
 
     .property-card p {
       margin: 0;
-      font-size: 14px;
       color: #666;
+      font-size: 14px;
     }
 
     @media (max-width: 900px) {
@@ -97,15 +95,6 @@
       .filters {
         border-right: none;
         border-bottom: 1px solid #eee;
-      }
-
-      .property-card {
-        grid-template-columns: 1fr;
-      }
-
-      .property-card img {
-        width: 100%;
-        height: 180px;
       }
     }
   </style>
@@ -118,15 +107,22 @@
       <h2>Filter properties</h2>
 
       <div class="filter-group">
-        <label>Town</label>
-        <select id="townFilter">
-          <option value="">Any</option>
+        <label>Location</label>
+        <select>
+          <option>Any</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Property type</label>
+        <select>
+          <option>Any</option>
         </select>
       </div>
 
       <div class="filter-group">
         <label>Minimum size (sq ft)</label>
-        <input type="number" id="minSize" placeholder="e.g. 10000" />
+        <input type="number" placeholder="e.g. 1000" />
       </div>
     </aside>
 
@@ -138,69 +134,33 @@
   </div>
 
   <script>
-    let properties = [];
-
     fetch('./public/properties.json')
       .then(res => res.json())
       .then(data => {
-        properties = data;
-        populateTownFilter(data);
-        renderResults(data);
+        const container = document.getElementById('results');
+        container.innerHTML = '';
+
+        data.forEach(p => {
+          const card = document.createElement('div');
+          card.className = 'property-card';
+
+          const imageUrl = p.images?.[0]?._ || '';
+
+          card.innerHTML = `
+            <img src="${imageUrl}" alt="" />
+            <div>
+              <h3>${p.address}, ${p.town}</h3>
+              <p>
+                ${p.types?.[0] || ''} · 
+                ${p.size_from_sqft.toLocaleString()} sq ft · 
+                ${p.postcode}
+              </p>
+            </div>
+          `;
+
+          container.appendChild(card);
+        });
       });
-
-    function populateTownFilter(data) {
-      const towns = [...new Set(data.map(p => p.town).filter(Boolean))];
-      const select = document.getElementById('townFilter');
-
-      towns.forEach(town => {
-        const option = document.createElement('option');
-        option.value = town;
-        option.textContent = town;
-        select.appendChild(option);
-      });
-    }
-
-    function renderResults(data) {
-      const container = document.getElementById('results');
-      container.innerHTML = '';
-
-      data.forEach(p => {
-        const card = document.createElement('div');
-        card.className = 'property-card';
-
-        const imageUrl = p.images?.[0]?._ || '';
-
-        card.innerHTML = `
-          <img src="${imageUrl}" alt="" />
-          <div>
-            <h3>${p.address}, ${p.town}</h3>
-            <p>
-              ${p.types?.join(', ') || ''} ·
-              ${p.size_from_sqft.toLocaleString()} sq ft
-            </p>
-          </div>
-        `;
-
-        container.appendChild(card);
-      });
-    }
-
-    document.getElementById('townFilter').addEventListener('change', applyFilters);
-    document.getElementById('minSize').addEventListener('input', applyFilters);
-
-    function applyFilters() {
-      const town = document.getElementById('townFilter').value;
-      const minSize = parseInt(document.getElementById('minSize').value || 0);
-
-      const filtered = properties.filter(p => {
-        return (
-          (!town || p.town === town) &&
-          (!minSize || p.size_from_sqft >= minSize)
-        );
-      });
-
-      renderResults(filtered);
-    }
   </script>
 </body>
 </html>
