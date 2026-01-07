@@ -344,6 +344,7 @@
           if (first.url) return first.url;
           if (first._) return first._;
         }
+        if (typeof first === 'string') return first;
       }
       return '';
     }
