@@ -5,43 +5,58 @@
   <title>Property</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <style>
+    /* ----- base ----- */
     *,*::before,*::after{box-sizing:border-box}
     :root{
-      --radius:12px;--gap:18px;--border:1px solid #e6e6e6;
-      --text:#111;--muted:#666;--bg:#fff;--shadow:0 8px 24px rgba(0,0,0,.06);
-      --label:#f6f6f6
+      --radius:12px; --gap:18px;
+      --border:1px solid #e8e8e8;
+      --text:#111; --muted:#666; --bg:#fff;
+      --shadow:0 10px 25px rgba(0,0,0,.08);
+      --chip:#f6f6f6;
     }
-    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:#fff}
-    .wrap{max-width:1200px;margin:0 auto;padding:28px 18px 60px}
+    html,body{margin:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:#fff}
     a{color:inherit}
-    .topbar{margin-bottom:12px}
+    .wrap{max-width:1200px;margin:0 auto;padding:28px 18px 72px}
+    .topbar{margin-bottom:14px}
     .back{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#111}
-    h1{margin:10px 0 6px;font-size:28px}
+    h1{margin:6px 0 6px;font-size:28px;line-height:1.2}
     .muted{color:var(--muted);font-size:14px}
 
-    .layout{display:grid;grid-template-columns:1.66fr .9fr;gap:28px}
+    /* ----- layout ----- */
+    .layout{display:grid;grid-template-columns:1.6fr .9fr;gap:24px}
     @media (max-width:980px){.layout{grid-template-columns:1fr}}
 
-    /* gallery */
-    .media{border-radius:14px;overflow:hidden;background:#eee;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-    .hero{position:relative;aspect-ratio:16/9;background:#eee}
+    /* ----- media / gallery ----- */
+    .media{background:#eee;border-radius:12px;overflow:hidden}
+    .hero{position:relative;aspect-ratio:16/9}
     .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-    .thumbs{display:flex;gap:10px;padding:12px;overflow:auto;background:#f9f9f9}
-    .thumb{flex:0 0 120px;aspect-ratio:4/3;border-radius:10px;overflow:hidden;border:1px solid #e9e9e9;cursor:pointer}
+    .thumbs{display:flex;gap:10px;padding:10px 2px 2px;overflow:auto}
+    .thumb{flex:0 0 140px;aspect-ratio:16/10;border-radius:10px;overflow:hidden;border:1px solid #eee;cursor:pointer;opacity:.9;transition:opacity .15s}
+    .thumb:hover{opacity:1}
     .thumb img{width:100%;height:100%;object-fit:cover;display:block}
 
-    /* spec table like Kato */
-    .spec{border:var(--border);border-radius:12px;overflow:hidden;background:#fff;margin-top:14px}
-    .row{display:grid;grid-template-columns:220px 1fr}
-    .cell{padding:14px 16px;border-top:var(--border)}
-    .row:first-child .cell{border-top:none}
-    .cell.label{background:var(--label);font-size:12px;color:#555;letter-spacing:.02em;text-transform:uppercase}
-    .cell.value{background:#fff}
+    /* ----- cards/boxes ----- */
+    .box{border:var(--border);border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+    .box.pad{padding:14px}
+    .box h3{margin:0 0 10px;font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.02em}
+
+    /* enquire panel + map */
+    .actions{display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+    .btn{height:44px;padding:0 16px;border-radius:10px;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600;text-decoration:none}
+    .btn-primary{background:#111;color:#fff}
+    .btn-ghost{background:#fff;border:1px solid #ddd}
+    #map{height:280px;border-radius:12px;overflow:hidden}
+
+    /* spec table */
+    .spec{margin-top:var(--gap)}
+    .row{display:grid;grid-template-columns:200px 1fr;gap:10px;padding:14px 16px;border-top:var(--border)}
+    .row:first-child{border-top:none}
+    .label{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.02em}
 
     /* sections */
     .section{margin-top:22px}
@@ -49,66 +64,69 @@
     .features{margin:0;padding-left:18px}
     .features li{margin:6px 0}
 
-    /* right column */
-    .box{border:var(--border);border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.04);padding:14px}
-    .box h3{margin:0 0 10px;font-size:14px;color:#555;text-transform:uppercase;letter-spacing:.02em}
-    .actions{display:flex;gap:10px;margin-bottom:12px}
-    .btn{height:44px;padding:0 16px;border-radius:10px;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600;text-decoration:none}
-    .btn-primary{background:#111;color:#fff}
-    .btn-ghost{background:#fff;border:1px solid #ddd}
-    #map{height:268px;border-radius:12px;overflow:hidden;margin-top:12px}
-
     /* contacts */
-    .agents{margin-top:14px}
-    .agent{display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:center;padding:12px 0;border-top:var(--border)}
-    .agent:first-of-type{border-top:none}
-    .agent img{width:64px;height:64px;object-fit:cover;border-radius:8px;background:#eee}
+    .agentlist{display:grid;gap:12px}
+    .agent{display:grid;grid-template-columns:56px 1fr;gap:12px;align-items:center;padding:10px 0;border-top:var(--border)}
+    .agent:first-child{border-top:none}
+    .avatar{width:56px;height:56px;border-radius:50%;overflow:hidden;background:#eee;display:grid;place-items:center;font-weight:700;color:#333}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
     .agent .name{font-weight:600}
-    .agent .meta{font-size:13px;color:#666}
+    .agent .meta{font-size:13px;color:var(--muted)}
     .agent .cta{margin-top:6px;display:flex;gap:10px;flex-wrap:wrap}
     .agent .cta a{font-size:13px;text-decoration:underline}
+    .chip{display:inline-block;background:var(--chip);padding:4px 8px;border-radius:999px;font-size:12px}
+    .inline-links a{color:#111;text-decoration:underline}
+
+    /* small helpers */
+    .hide{display:none}
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="topbar">
-      <a class="back" href="index.html" onclick="if(history.length>1){event.preventDefault();history.back();}">← Back to results</a>
+      <a class="back" href="index.html">← Back to results</a>
     </div>
 
     <div id="loading" class="muted">Loading…</div>
-
-    <div id="content" style="display:none">
+    <div id="content" class="hide">
       <div class="layout">
         <!-- LEFT -->
         <div>
-          <!-- heading -->
           <div id="heading"></div>
 
-          <!-- gallery -->
-          <div class="media">
+          <div class="media box">
             <div class="hero" id="hero"></div>
             <div class="thumbs" id="thumbs"></div>
           </div>
 
-          <!-- spec table -->
-          <div class="spec" id="spec"></div>
+          <div class="box spec" id="spec"></div>
 
-          <!-- description -->
-          <div class="section" id="descBlock" style="display:none">
+          <div class="section" id="overviewBlock" class="hide">
             <h2>Overview</h2>
-            <div id="desc" class="muted"></div>
+            <div id="overview" class="muted"></div>
           </div>
 
-          <!-- features -->
-          <div class="section" id="featBlock" style="display:none">
+          <div class="section" id="featuresBlock" class="hide">
             <h2>Key features</h2>
             <ul class="features" id="features"></ul>
           </div>
+
+          <div class="section" id="descBlock" class="hide">
+            <h2>Description</h2>
+            <div id="desc" class="muted"></div>
+          </div>
+
+          <div class="section" id="locBlock" class="hide">
+            <h2>Location</h2>
+            <div id="loc" class="muted"></div>
+          </div>
+
+          <div class="section inline-links" id="linksBlock" class="hide"></div>
         </div>
 
         <!-- RIGHT -->
         <div>
-          <div class="box">
+          <div class="box pad">
             <h3>Enquire about this property</h3>
             <div class="actions">
               <a class="btn btn-primary" id="enquireBtn" target="_blank" rel="noopener">Enquire now</a>
@@ -117,9 +135,9 @@
             <div id="map"></div>
           </div>
 
-          <div class="box" id="teamBox" style="display:none">
+          <div class="box pad section" id="teamBox" class="hide">
             <h3>Viewings & further information</h3>
-            <div class="agents" id="agents"></div>
+            <div class="agentlist" id="agents"></div>
           </div>
         </div>
       </div>
@@ -127,78 +145,78 @@
   </div>
 
 <script>
-/* ---------- helpers ---------- */
+/* ---------- utils ---------- */
 const $ = (s, el=document) => el.querySelector(s);
-function getParam(name){ return new URLSearchParams(location.search).get(name); }
-function pick(...vals){ return vals.find(v => v !== undefined && v !== null && v !== ''); }
+const on = (el, evt, fn) => el.addEventListener(evt, fn);
+const getParam = (k) => new URLSearchParams(location.search).get(k);
+const pick = (...a) => a.find(v => v !== undefined && v !== null && v !== '');
+const toParagraphs = (txt) =>
+  String(txt).split(/\n{2,}|\r\r/).map(s=>s.trim()).filter(Boolean).map(s=>`<p>${s}</p>`).join("");
 
-function fmtMoney(v){
-  if (v == null || v === '') return '';
-  const n = Number(String(v).replace(/[^\d.]/g,'')); if (!isFinite(n)) return String(v);
-  return '£' + n.toLocaleString('en-GB', { maximumFractionDigits: 2 });
+/* make inline SVG initials avatar so we don’t depend on 3rd parties */
+function makeInitialsAvatar(name = "Agent"){
+  const [a="",b=""] = name.trim().split(/\s+/);
+  const inits = (a[0]||"A") + (b[0]||"");
+  const svg = encodeURIComponent(
+`<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'>
+  <rect width='100%' height='100%' fill='#e9ecef'/>
+  <text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle'
+    font-family='system-ui, -apple-system, Segoe UI, Roboto, Arial' font-size='44' fill='#343a40' font-weight='700'>${inits}</text>
+</svg>`);
+  return `data:image/svg+xml;charset=utf-8,${svg}`;
 }
 
-/* images can be array of strings or objects { url | _ } */
+/* images can be array of strings or {url|_} */
 function getImages(p){
-  const arr = [];
+  const list = [];
   if (Array.isArray(p.images)) {
     for (const it of p.images) {
-      if (typeof it === 'string') arr.push(it);
-      else if (it?.url) arr.push(it.url);
-      else if (it?._) arr.push(it._);
+      if (typeof it === 'string') list.push(it);
+      else if (it?.url) list.push(it.url);
+      else if (it?._) list.push(it._);
     }
   }
-  if (!arr.length && Array.isArray(p.photos)) {
-    for (const ph of p.photos){ if (ph?.url) arr.push(ph.url); }
+  if (!list.length && Array.isArray(p.photos)) {
+    for (const ph of p.photos){ if (ph?.url) list.push(ph.url); }
   }
   const fallback = pick(p.image, p.image_url);
-  if (fallback) arr.unshift(fallback);
-  return [...new Set(arr)].filter(Boolean);
+  if (fallback) list.unshift(fallback);
+  return [...new Set(list)].filter(Boolean);
 }
+
+function fmtMoney(n){ const x=Number(n); return Number.isFinite(x)?`£${x.toFixed(2)}`:''; }
+function fmtRV(n){ const x=Number(n); return Number.isFinite(x)?`£${x.toLocaleString()}`:''; }
 
 function row(label, value){
   if (!value) return '';
-  return `<div class="row">
-            <div class="cell label">${label}</div>
-            <div class="cell value">${value}</div>
-          </div>`;
+  return `<div class="row"><div class="label">${label}</div><div>${value}</div></div>`;
 }
 
 function niceSize(p){
-  const a = p.size_from_sqft, b = p.size_to_sqft;
+  const a=p.size_from_sqft, b=p.size_to_sqft;
   if (a && b) return `${a}–${b} sq ft`;
   if (a) return `${a} sq ft`;
   if (b) return `${b} sq ft`;
   return '';
 }
 
-function toListItems(maybeList){
-  if (!maybeList) return [];
-  if (Array.isArray(maybeList)) return maybeList.map(String).filter(Boolean);
-  return String(maybeList).split(/\r?\n|•/g).map(s => s.trim()).filter(Boolean);
-}
-
-/* Kato email parser */
 function buildEnquiryUrl(p){
   const to = "gjs-dillon-limited-393@parse.agents-society.com";
   const subject = `Enquiry: ${p.address || 'Property'} (${p.id ?? ''})`;
-  const bodyLines = [
+  const lines = [
     "Hi,",
     "",
     "I'd like more information about:",
     `${p.address || 'Property'}`,
     `${[p.town, p.postcode].filter(Boolean).join(' ')}`,
     `Ref: ${p.id ?? ''}`,
-    "",
-    "Please reply to me via email/phone.",
     ""
   ];
-  const body = encodeURIComponent(bodyLines.join("\n"));
-  return `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${body}`;
+  return `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join("\n"))}`;
 }
 
 /* ---------- main ---------- */
-let map;
+let map, marker;
 
 async function main(){
   const id = getParam('id');
@@ -206,14 +224,13 @@ async function main(){
   const list = await res.json();
   const withIds = list.map((p,i)=>({ id: p.id ?? p.slug ?? p.uid ?? i, ...p }));
   const p = withIds.find(x => String(x.id) === String(id)) || withIds[0];
-
   if (!p){ $('#loading').textContent = 'Property not found.'; return; }
 
   document.title = p.address ? `${p.address} — Property` : 'Property';
-  $('#loading').style.display = 'none';
-  $('#content').style.display = '';
+  $('#loading').classList.add('hide');
+  $('#content').classList.remove('hide');
 
-  /* heading */
+  // heading
   $('#heading').innerHTML = `
     <h1>${p.address || 'Property'}</h1>
     <div class="muted">${[p.town, p.postcode].filter(Boolean).join(' ')}</div>
@@ -221,97 +238,104 @@ async function main(){
 
   /* gallery */
   const imgs = getImages(p);
-  const hero = $('#hero');
-  const thumbs = $('#thumbs');
+  const hero = $('#hero'), thumbs = $('#thumbs');
   const setHero = (src) => { hero.innerHTML = src ? `<img src="${src}" alt="${p.address||'Property'}">` : ''; };
   setHero(imgs[0] || '');
-  thumbs.innerHTML = imgs.slice(0,16).map(u => `
+  thumbs.innerHTML = imgs.slice(0,12).map(u => `
     <button class="thumb" type="button" data-src="${u}" aria-label="View photo">
       <img src="${u}" alt="">
     </button>`).join('');
-  thumbs.addEventListener('click', (e)=>{
-    const t = e.target.closest('.thumb'); if (!t) return;
-    setHero(t.dataset.src);
+  on(thumbs,'click',e=>{
+    const t=e.target.closest('.thumb'); if(!t) return; setHero(t.dataset.src);
   });
 
-  /* spec – align with Kato layout */
+  /* spec */
   const type = pick(p.type, p.property_type, Array.isArray(p.types)&&p.types[0]);
   const tenure = pick(p.tenure, p.transaction_type, p.to_let ? 'To Let' : (p.for_sale ? 'For Sale' : ''));
   const size = niceSize(p);
-
-  // financials (these may or may not exist in your feed)
-  const rentPsf = p.rent_psf ? `${fmtMoney(p.rent_psf)} per sq ft` : '';
-  const rent = p.rent ? String(p.rent) : '';
-  const rentDisplay = rentPsf || rent;
-
-  const ratesPsf = p.business_rates_psf ? `${fmtMoney(p.business_rates_psf)} per sq ft` : '';
-  const rates = p.business_rates ? String(p.business_rates) : '';
-  const ratesDisplay = ratesPsf || rates;
-
-  const rv = p.rateable_value ? fmtMoney(p.rateable_value) : '';
-  const sc = p.service_charge ? String(p.service_charge) : '';
-  const ec = p.estate_charge ? String(p.estate_charge) : '';
+  const rent = pick(p.rent, p.rent_psf && `${fmtMoney(p.rent_psf)} per sq ft`);
+  const rates = p.business_rates_psf && `${fmtMoney(p.business_rates_psf)} per sq ft`;
+  const rv = p.rateable_value && fmtRV(p.rateable_value);
+  const sc = p.service_charge;
+  const ec = p.estate_charge;
   const epc = pick(p.epc_rating, p.epc);
+  const updated = p.last_updated;
 
   $('#spec').innerHTML = [
     row('Property type', type),
     row('Tenure', tenure),
     row('Size', size),
-    row('Rent', rentDisplay),
-    row('Business rates', ratesDisplay),
+    row('Rent', rent),
+    row('Business rates', rates),
     row('Rateable value', rv),
     row('Service charge', sc),
     row('Estate charge', ec),
     row('Energy performance rating', epc),
-    row('Last updated', p.last_updated)
-  ].join('') || row('Details','—');
+    row('Last updated', updated),
+  ].join('');
 
-  /* description */
-  const desc = pick(p.summary, p.description);
-  if (desc){ $('#desc').innerHTML = desc; $('#descBlock').style.display = ''; }
+  /* sections */
+  const overview = pick(p.specification_summary, p.summary);
+  if (overview){ $('#overview').innerHTML = toParagraphs(overview); $('#overviewBlock').classList.remove('hide'); }
 
-  /* features */
-  const feats = toListItems(p.features || p.key_features);
+  const feats = Array.isArray(p.features) ? p.features : [];
   if (feats.length){
-    $('#features').innerHTML = feats.map(f => `<li>${f}</li>`).join('');
-    $('#featBlock').style.display = '';
+    $('#features').innerHTML = feats.map(f=>`<li>${f}</li>`).join('');
+    $('#featuresBlock').classList.remove('hide');
   }
+
+  const desc = pick(p.specification_description, p.description);
+  if (desc){ $('#desc').innerHTML = toParagraphs(desc); $('#descBlock').classList.remove('hide'); }
+
+  const locText = pick(p.location);
+  if (locText){ $('#loc').innerHTML = toParagraphs(locText); $('#locBlock').classList.remove('hide'); }
 
   /* actions */
   const brochure = pick(p.brochure, p.brochure_url);
-  $('#enquireBtn').href = buildEnquiryUrl(p);
-  if (brochure){ $('#brochureBtn').href = brochure; $('#brochureBtn').style.display = 'inline-flex'; }
-  else { $('#brochureBtn').style.display = 'none'; }
+  const enquireUrl = buildEnquiryUrl(p);
+  $('#enquireBtn').href = enquireUrl;
+  if (brochure){ $('#brochureBtn').href = brochure; $('#brochureBtn').style.display='inline-flex'; }
+  else { $('#brochureBtn').style.display='none'; }
 
   /* map */
   map = L.map('map', { zoomControl:true }).setView([52.5,-1.8], 6);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
   const lat = Number(p.lat), lon = Number(p.lon);
   if (isFinite(lat) && isFinite(lon)){
-    L.circleMarker([lat, lon], { radius:7, weight:2, color:'#111', fillColor:'#111', fillOpacity:.85 }).addTo(map);
+    marker = L.circleMarker([lat, lon], { radius:7, weight:2, color:'#111', fillColor:'#111', fillOpacity:.85 }).addTo(map);
     map.setView([lat, lon], 14);
   }
 
-  /* contacts/team (optional; only shows if provided) */
-  const team = Array.isArray(p.contacts) ? p.contacts : [];
-  if (team.length){
+  /* contacts */
+  const contacts = Array.isArray(p.contacts) ? p.contacts : [];
+  if (contacts.length){
     const agents = $('#agents');
-    agents.innerHTML = team.map(a => `
-      <div class="agent">
-        <img src="${a.photo || ''}" alt="${a.name || 'Agent'}" onerror="this.style.display='none'">
-        <div>
-          <div class="name">${a.name || ''}</div>
-          <div class="meta">${[a.title, a.company].filter(Boolean).join(' • ')}</div>
-          <div class="meta">${[a.phone, a.mobile].filter(Boolean).join(' • ')}</div>
-          <div class="cta">
-            ${a.email ? `<a href="mailto:${a.email}">Email</a>` : ''}
-            ${a.phone ? `<a href="tel:${a.phone}">Call</a>` : ''}
-            ${a.enquire_url ? `<a href="${a.enquire_url}" target="_blank" rel="noopener">Enquire now</a>` : ''}
+    agents.innerHTML = contacts.map(a=>{
+      const nm = a.name || '';
+      const avatar = a.photo || makeInitialsAvatar(nm);
+      const lines = [
+        [a.company, a.title].filter(Boolean).join(' • '),
+        [a.phone, a.mobile].filter(Boolean).join(' • ')
+      ].filter(Boolean).map(s=>`<div class="meta">${s}</div>`).join('');
+      const mail = a.email ? `<a href="mailto:${a.email}">Email</a>` : '';
+      const tel = a.phone ? `<a href="tel:${a.phone.replace(/\s+/g,'')}">Call</a>` : '';
+      return `
+        <div class="agent">
+          <span class="avatar">${avatar.startsWith('http') ? `<img src="${avatar}" alt="${nm}">` : `<img src="${avatar}" alt="${nm}">`}</span>
+          <div>
+            <div class="name">${nm}</div>
+            ${lines}
+            <div class="cta">${mail}${mail&&tel?' · ':''}${tel}</div>
           </div>
-        </div>
-      </div>
-    `).join('');
-    $('#teamBox').style.display = '';
+        </div>`;
+    }).join('');
+    $('#teamBox').classList.remove('hide');
+  }
+
+  /* related link (source URL) */
+  if (p.url){
+    $('#linksBlock').innerHTML = `<a href="${p.url}" target="_blank" rel="noopener">View on agency site</a>`;
+    $('#linksBlock').classList.remove('hide');
   }
 }
 
