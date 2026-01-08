@@ -141,31 +141,44 @@
     .features{ margin:10px 0 2px; padding-left:20px }
     .features li{ margin:6px 0 }
 
-/* ---------- agents ---------- */
-.agent{
-  display:grid;
-  grid-template-columns: 48px 1fr;
-  gap:12px;
-  align-items:center;
-  padding:12px 16px;
-  border-top:1px solid #f0f2f5;
-}
-.agent:first-of-type{ border-top:none }
+/* agents */
+const contacts = Array.isArray(p.contacts?.contact) ? p.contacts.contact
+                 : Array.isArray(p.contacts) ? p.contacts
+                 : p.contacts ? [p.contacts] : [];
 
-.avatar{
-  width:48px;height:48px;
-  border-radius:50%;
-  overflow:hidden;
-  display:grid; place-items:center;
-  background:#f1f3f6; color:#222; font-weight:700;
-  border:1px solid #e9edf2;
+if (contacts.length){
+  const box = $('#teamBox'); const list = $('#agents');
+  list.innerHTML = contacts.map(c => {
+    const photo = c.photo || c.image || '';
+    const init  = initials(c.name || '');
+    const tel   = c.tel || c.phone || '';
+    const mob   = c.mobile ? String(c.mobile) : '';
+    return `
+      <div class="agent">
+        <div class="avatar">
+          ${photo
+            ? `<img src="${photo}" alt="${c.name||'Agent'}" onerror="this.closest('.avatar').textContent='${init}'">`
+            : `${init}`
+          }
+        </div>
+        <div>
+          <div class="name">${c.name || ''}</div>
+          <div class="meta">${[c.office, c.branch].filter(Boolean).join(' • ')}</div>
+          <div class="meta">
+            ${tel ? `${tel}` : ''}${tel && mob ? ' • ' : ''}${mob ? `${mob}` : ''}
+          </div>
+          <div class="cta">
+            ${c.email ? `<a href="mailto:${c.email}">Email</a>` : ''}
+            ${tel ? `<a href="tel:${tel}">Call</a>` : ''}
+            ${mob ? `<a href="tel:${mob}">Mobile</a>` : ''}
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+  box.style.display = '';
 }
-.avatar img{ width:100%; height:100%; object-fit:cover; display:block }
 
-.agent .name{ font-weight:600 }
-.agent .meta{ font-size:13px; color: var(--muted) }
-.agent .cta{ margin-top:6px; display:flex; gap:10px; flex-wrap:wrap }
-.agent .cta a{ font-size:13px; text-decoration:underline }
 
     /* ---------- small helpers ---------- */
     .chips{ display:flex; gap:8px; flex-wrap:wrap; margin:6px 0 14px }
