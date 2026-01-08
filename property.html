@@ -19,24 +19,45 @@
     h1{margin:10px 0 8px;font-size:28px}
     .muted{color:var(--muted);font-size:14px}
 
-    .layout{display:grid;grid-template-columns:1.6fr .9fr;gap:24px}
+    .layout{display:grid;grid-template-columns:1.6fr .95fr;gap:24px}
     @media (max-width:900px){.layout{grid-template-columns:1fr}}
 
-    .media{background:#eee;border-radius:12px;overflow:hidden;position:relative;aspect-ratio:16/9}
-    .media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+    /* media / gallery */
+    .media{background:#eee;border-radius:12px;overflow:hidden;position:relative}
+    .hero{position:relative;aspect-ratio:16/9}
+    .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+    .thumbs{display:flex;gap:10px;padding:10px 4px;overflow:auto}
+    .thumb{flex:0 0 110px;aspect-ratio:4/3;border-radius:10px;overflow:hidden;border:1px solid #eee;cursor:pointer}
+    .thumb img{width:100%;height:100%;object-fit:cover;display:block}
 
-    .panel{border:var(--border);border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-    .panel__body{padding:16px}
-    .panel__row{display:grid;grid-template-columns:180px 1fr;gap:8px;padding:12px 16px;border-top:var(--border)}
-    .panel__row:first-of-type{border-top:none}
+    /* spec table */
+    .panel{border:var(--border);border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.04);overflow:hidden}
+    .spec-row{display:grid;grid-template-columns:180px 1fr;gap:8px;padding:14px 16px;border-top:var(--border)}
+    .spec-row:first-child{border-top:none}
     .label{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.02em}
 
-    .actions{display:flex;gap:10px;margin-top:12px}
-    .btn{height:44px;padding:0 16px;border-radius:10px;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600}
+    .section{margin-top:18px}
+    .section h2{font-size:18px;margin:0 0 8px}
+    .features{margin:0;padding-left:18px}
+    .features li{margin:6px 0}
+
+    /* right column */
+    .box{border:var(--border);border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.04);padding:14px}
+    .box h3{margin:0 0 10px;font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.02em}
+    .actions{display:flex;gap:10px;margin-bottom:12px}
+    .btn{height:44px;padding:0 16px;border-radius:10px;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600;text-decoration:none}
     .btn-primary{background:#111;color:#fff}
     .btn-ghost{background:#fff;border:1px solid #ddd}
+    #map{height:260px;border-radius:12px;overflow:hidden;margin-top:12px}
 
-    #map{height:260px;border-radius:12px;overflow:hidden;margin-top:16px}
+    /* contacts */
+    .agent{display:grid;grid-template-columns:60px 1fr;gap:12px;align-items:center;padding:10px 0;border-top:var(--border)}
+    .agent:first-of-type{border-top:none}
+    .agent img{width:60px;height:60px;object-fit:cover;border-radius:8px;background:#eee}
+    .agent .name{font-weight:600}
+    .agent .meta{font-size:13px;color:var(--muted)}
+    .agent .cta{margin-top:6px;display:flex;gap:8px;flex-wrap:wrap}
+    .agent .cta a{font-size:13px;text-decoration:underline}
   </style>
 </head>
 <body>
@@ -50,106 +71,209 @@
       <div class="layout">
         <!-- left -->
         <div>
-          <div class="media" id="hero"></div>
-          <div class="panel" id="details">
-            <div class="panel__row"><div class="label">Property type</div><div id="p-type"></div></div>
-            <div class="panel__row"><div class="label">Tenure</div><div id="p-tenure"></div></div>
-            <div class="panel__row"><div class="label">Size</div><div id="p-size"></div></div>
-            <div class="panel__row"><div class="label">Rent</div><div id="p-rent"></div></div>
-            <div class="panel__row"><div class="label">Business rates</div><div id="p-rates"></div></div>
-            <div class="panel__row"><div class="label">Rateable value</div><div id="p-rv"></div></div>
+          <div class="media">
+            <div class="hero" id="hero"></div>
+            <div class="thumbs" id="thumbs"></div>
+          </div>
+
+          <div class="panel section" id="spec">
+            <!-- rows injected -->
+          </div>
+
+          <div class="section" id="descBlock" style="display:none">
+            <h2>Overview</h2>
+            <div id="desc" class="muted"></div>
+          </div>
+
+          <div class="section" id="featBlock" style="display:none">
+            <h2>Key features</h2>
+            <ul class="features" id="features"></ul>
           </div>
         </div>
 
         <!-- right -->
         <div>
-          <div class="panel">
-            <div class="panel__body">
-              <div class="label" style="margin-bottom:8px">Enquire about this property</div>
-              <div class="actions">
-                <a class="btn btn-primary" id="enquireBtn" target="_blank" rel="noopener">Enquire now</a>
-                <a class="btn btn-ghost" id="brochureBtn" target="_blank" rel="noopener">Download brochure</a>
-              </div>
+          <div class="box">
+            <h3>Enquire about this property</h3>
+            <div class="actions">
+              <a class="btn btn-primary" id="enquireBtn" target="_blank" rel="noopener">Enquire now</a>
+              <a class="btn btn-ghost" id="brochureBtn" target="_blank" rel="noopener">Download brochure</a>
             </div>
+            <div id="map"></div>
           </div>
-          <div id="map"></div>
+
+          <div class="box section" id="teamBox" style="display:none">
+            <h3>Viewings & further information</h3>
+            <div id="agents"></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
 <script>
-/* -------- utils -------- */
-const qsel = (s, el=document) => el.querySelector(s);
+/* ---------- utils ---------- */
+const $ = (s, el=document) => el.querySelector(s);
 function getParam(name){ return new URLSearchParams(location.search).get(name); }
-function getPrimaryImage(p){
-  if (!p) return '';
-  if (Array.isArray(p.images) && p.images[0]) {
-    const img = p.images[0]; if (typeof img==='string') return img; if (img.url) return img.url; if (img._) return img._;
-  }
-  if (Array.isArray(p.photos) && p.photos[0]?.url) return p.photos[0].url;
-  return p.image || p.image_url || '';
-}
+function pick(...vals){ return vals.find(v => v !== undefined && v !== null && v !== ''); }
 
-/* -------- Kato enquiry link builder (replace with real format when you have it) -------- */
-function buildKatoEnquiryUrl(p){
-  // Example placeholder: use Kato’s real URL pattern when available.
-  // return `https://kato.example/enquire?ref=${encodeURIComponent(p.id)}&address=${encodeURIComponent(p.address||'')}`;
+/* images can be array of strings or {url|_} */
+function getImages(p){
+  const arr = [];
+  if (Array.isArray(p.images)) {
+    for (const it of p.images) {
+      if (typeof it === 'string') arr.push(it);
+      else if (it?.url) arr.push(it.url);
+      else if (it?._) arr.push(it._);
+    }
+  }
+  if (!arr.length && Array.isArray(p.photos)) {
+    for (const ph of p.photos){ if (ph?.url) arr.push(ph.url); }
+  }
+  const fallback = pick(p.image, p.image_url);
+  if (fallback) arr.unshift(fallback);
+  // dedupe
+  return [...new Set(arr)].filter(Boolean);
+}
+function buildEnquiryUrl(p){
+  // Replace with Kato's real endpoint when you have it
   const subject = `Enquiry: ${p.address||'Property'}`;
   const body = `Hi,%0D%0A%0D%0AI'd like more info about:%0D%0A${p.address||''}%0D%0A${p.town||''} ${p.postcode||''}%0D%0ARef: ${p.id ?? ''}`;
   return `mailto:enquiries@example.com?subject=${subject}&body=${body}`;
 }
 
-/* -------- load & render -------- */
+function row(label, value){
+  if (!value) return '';
+  return `<div class="spec-row"><div class="label">${label}</div><div>${value}</div></div>`;
+}
+function niceSize(p){
+  const a = p.size_from_sqft, b = p.size_to_sqft;
+  if (a && b) return `${a}–${b} sq ft`;
+  if (a) return `${a} sq ft`;
+  if (b) return `${b} sq ft`;
+  return '';
+}
+function toListItems(maybeList){
+  if (!maybeList) return [];
+  if (Array.isArray(maybeList)) return maybeList.map(String).filter(Boolean);
+  // string: split by line breaks or bullets
+  return String(maybeList)
+    .split(/\r?\n|•/g)
+    .map(s => s.trim()).filter(Boolean);
+}
+
+/* ---------- main ---------- */
 let map, marker;
 
 async function main(){
   const id = getParam('id');
   const res = await fetch('./properties.json', { cache:'no-store' });
   const list = await res.json();
-
   const withIds = list.map((p,i)=>({ id: p.id ?? p.slug ?? p.uid ?? i, ...p }));
-  const prop = withIds.find(p => String(p.id) === String(id)) || withIds[0];
+  const p = withIds.find(x => String(x.id) === String(id)) || withIds[0];
 
-  if (!prop){ qsel('#loading').textContent = 'Property not found.'; return; }
+  if (!p){ $('#loading').textContent = 'Property not found.'; return; }
 
-  document.title = prop.address ? `${prop.address} — Property` : 'Property';
-  qsel('#loading').style.display = 'none';
-  qsel('#content').style.display = '';
+  document.title = p.address ? `${p.address} — Property` : 'Property';
+  $('#loading').style.display = 'none';
+  $('#content').style.display = '';
 
-  const hero = qsel('#hero');
-  const img = getPrimaryImage(prop);
-  hero.innerHTML = img ? `<img src="${img}" alt="${prop.address||'Property'}">` : '';
-
+  // heading
   const heading = document.createElement('div');
-  heading.innerHTML = `<h1>${prop.address || 'Property'}</h1>
-                       <div class="muted">${[prop.town, prop.postcode].filter(Boolean).join(' ')}</div>`;
-  hero.parentNode.insertBefore(heading, hero);
+  heading.innerHTML = `<h1>${p.address || 'Property'}</h1>
+                       <div class="muted">${[p.town, p.postcode].filter(Boolean).join(' ')}</div>`;
+  $('.layout > div').prepend(heading);
 
-  const size = prop.size_from_sqft && prop.size_to_sqft
-    ? `${prop.size_from_sqft}–${prop.size_to_sqft} sq ft`
-    : (prop.size_from_sqft ? `${prop.size_from_sqft} sq ft` : '');
-  qsel('#p-type').textContent   = prop.type || prop.property_type || (prop.types && prop.types[0]) || '';
-  qsel('#p-tenure').textContent = prop.tenure || prop.transaction_type || (prop.to_let ? 'To Let' : prop.for_sale ? 'For Sale' : '');
-  qsel('#p-size').textContent   = size || '';
-  qsel('#p-rent').textContent   = prop.rent_psf || prop.rent || '';
-  qsel('#p-rates').textContent  = prop.business_rates_psf || '';
-  qsel('#p-rv').textContent     = prop.rateable_value || '';
+  /* ----- gallery ----- */
+  const imgs = getImages(p);
+  const hero = $('#hero');
+  const thumbs = $('#thumbs');
+  const setHero = (src) => { hero.innerHTML = src ? `<img src="${src}" alt="${p.address||'Property'}">` : ''; };
+  setHero(imgs[0] || '');
+  thumbs.innerHTML = imgs.slice(0,12).map(u => `
+    <button class="thumb" type="button" data-src="${u}" aria-label="View photo">
+      <img src="${u}" alt="">
+    </button>`).join('');
+  thumbs.addEventListener('click', (e)=>{
+    const t = e.target.closest('.thumb'); if (!t) return;
+    setHero(t.dataset.src);
+  });
 
-  const brochure = prop.brochure || prop.brochure_url || '';
-  const enquireUrl = buildKatoEnquiryUrl(prop);
-  const elEnq = qsel('#enquireBtn'), elBro = qsel('#brochureBtn');
+  /* ----- spec table ----- */
+  const type = pick(p.type, p.property_type, Array.isArray(p.types)&&p.types[0]);
+  const tenure = pick(p.tenure, p.transaction_type, p.to_let ? 'To Let' : (p.for_sale ? 'For Sale' : ''));
+  const size = niceSize(p);
+  const rent = pick(p.rent_psf, p.rent);
+  const rates = p.business_rates_psf;
+  const rv = p.rateable_value;
+  const epc = pick(p.epc_rating, p.epc);
+  const sc = p.service_charge;
+  const ec = p.estate_charge;
+
+  const specHTML = [
+    row('Property type', type),
+    row('Tenure', tenure),
+    row('Size', size),
+    row('Rent', rent),
+    row('Business rates', rates),
+    row('Rateable value', rv),
+    row('Service charge', sc),
+    row('Estate charge', ec),
+    row('EPC', epc),
+  ].join('');
+  $('#spec').innerHTML = specHTML || row('Details', '—');
+
+  /* ----- description ----- */
+  const desc = pick(p.summary, p.description);
+  if (desc){
+    $('#desc').innerHTML = desc;
+    $('#descBlock').style.display = '';
+  }
+
+  /* ----- features ----- */
+  const feats = toListItems(p.features || p.key_features);
+  if (feats.length){
+    $('#features').innerHTML = feats.map(f => `<li>${f}</li>`).join('');
+    $('#featBlock').style.display = '';
+  }
+
+  /* ----- actions ----- */
+  const brochure = pick(p.brochure, p.brochure_url);
+  const enquireUrl = buildEnquiryUrl(p);
+  const elEnq = $('#enquireBtn'), elBro = $('#brochureBtn');
   elEnq.href = enquireUrl;
   if (brochure){ elBro.href = brochure; elBro.style.display = 'inline-flex'; }
   else { elBro.style.display = 'none'; }
 
+  /* ----- map ----- */
   map = L.map('map', { zoomControl:true }).setView([52.5,-1.8], 6);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-
-  const lat = Number(prop.lat), lon = Number(prop.lon);
+  const lat = Number(p.lat), lon = Number(p.lon);
   if (isFinite(lat) && isFinite(lon)){
     marker = L.circleMarker([lat, lon], { radius:7, weight:2, color:'#111', fillColor:'#111', fillOpacity:.85 }).addTo(map);
     map.setView([lat, lon], 14);
+  }
+
+  /* ----- contacts/team (optional) ----- */
+  const team = Array.isArray(p.contacts) ? p.contacts : [];
+  if (team.length){
+    const agents = $('#agents');
+    agents.innerHTML = team.map(a => `
+      <div class="agent">
+        <img src="${a.photo || ''}" alt="${a.name || 'Agent'}" onerror="this.style.display='none'">
+        <div>
+          <div class="name">${a.name || ''}</div>
+          <div class="meta">${[a.title, a.company].filter(Boolean).join(' • ')}</div>
+          <div class="meta">${[a.phone, a.mobile].filter(Boolean).join(' • ')}</div>
+          <div class="cta">
+            ${a.email ? `<a href="mailto:${a.email}">Email</a>` : ''}
+            ${a.phone ? `<a href="tel:${a.phone}">Call</a>` : ''}
+            ${a.enquire_url ? `<a href="${a.enquire_url}" target="_blank" rel="noopener">Enquire now</a>` : ''}
+          </div>
+        </div>
+      </div>
+    `).join('');
+    $('#teamBox').style.display = '';
   }
 }
 
