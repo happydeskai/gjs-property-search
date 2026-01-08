@@ -48,13 +48,13 @@
       margin-bottom: 18px;
     }
     #map{
-      height: 560px;               /* bigger map */
+      height: 480px;               /* slightly shorter */
       outline: 1px solid #e8e8e8;  /* subtle frame */
       position: relative;
       z-index: 0;
     }
-    @media (max-width: 1100px){ #map{ height: 480px; } }
-    @media (max-width: 700px){  #map{ height: 380px; } }
+    @media (max-width: 1100px){ #map{ height: 420px; } }
+    @media (max-width: 700px){  #map{ height: 360px; } }
 
     /* ---- search bar ---- */
     .searchBar{
@@ -194,15 +194,15 @@
     .prop-popup .leaflet-popup-content-wrapper { padding: 0; border-radius: 12px; overflow: hidden; }
     .prop-popup .leaflet-popup-tip { display: none; }
 
-    .pop-card { width: 380px; background: #fff; } /* wider */
-    .pop-img { width: 100%; height: 180px; background-size: cover; background-position: center; background-color: #eee; }
-    .pop-body { padding: 12px 14px; }
-    .pop-title { font-weight: 700; margin: 0 0 4px; }
-    .pop-sub { color: #6b7280; font-size: 13px; margin-bottom: 4px; }
-    .pop-size { font-size: 13px; margin-bottom: 10px; }
+    .pop-card { width: 300px; background: #fff; }  /* smaller */
+    .pop-img { width: 100%; height: 160px; background-size: cover; background-position: center; background-color: #eee; }
+    .pop-body { padding: 10px 12px; }
+    .pop-title { font-weight: 700; margin: 0 0 2px; font-size: 15px; }
+    .pop-sub { color: #6b7280; font-size: 12px; margin-bottom: 4px; }
+    .pop-size { font-size: 12px; margin-bottom: 8px; }
     .pop-btn {
-      display: inline-block; padding: 8px 12px; border-radius: 8px;
-      background:#111; color:#fff; text-decoration:none; font-weight:600;
+      display: inline-block; padding: 7px 10px; border-radius: 8px;
+      background:#111; color:#fff; text-decoration:none; font-weight:600; font-size: 12.5px;
     }
   </style>
 </head>
@@ -263,8 +263,7 @@
 let allProperties = [];
 let map, markers, searchMarker;
 
-/* ---------- OPTIONAL: Mapbox token for geocoding ----------
-   Leave empty to use OpenStreetMap Nominatim. */
+/* ---------- OPTIONAL: Mapbox token for geocoding ---------- */
 const MAPBOX_TOKEN = ""; // e.g. "pk.XXXX" (optional)
 
 /* ---------- IMAGE HANDLER ---------- */
@@ -368,7 +367,15 @@ function updateMap(list, focusPoint){
       </div>
     `;
 
-    marker.bindPopup(popupHtml, { className: 'prop-popup', maxWidth: 400 });
+    marker.bindPopup(popupHtml, {
+      className: 'prop-popup',
+      maxWidth: 340,
+      keepInView: true,              // keep popup on-screen
+      autoPan: true,
+      autoPanPaddingTopLeft: [20, 20],
+      autoPanPaddingBottomRight: [20, 20]
+    });
+
     marker.addTo(markers);
     points.push([lat, lon]);
   });
