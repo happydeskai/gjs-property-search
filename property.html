@@ -136,10 +136,21 @@ function getImages(p){
   return [...new Set(arr)].filter(Boolean);
 }
 function buildEnquiryUrl(p){
-  // Replace with Kato's real endpoint when you have it
-  const subject = `Enquiry: ${p.address||'Property'}`;
-  const body = `Hi,%0D%0A%0D%0AI'd like more info about:%0D%0A${p.address||''}%0D%0A${p.town||''} ${p.postcode||''}%0D%0ARef: ${p.id ?? ''}`;
-  return `mailto:enquiries@example.com?subject=${subject}&body=${body}`;
+  const to = "gjs-dillon-limited-393@parse.agents-society.com";
+  const subject = `Enquiry: ${p.address || 'Property'} (${p.id ?? ''})`;
+  const bodyLines = [
+    "Hi,",
+    "",
+    "I'd like more information about:",
+    `${p.address || 'Property'}`,
+    `${[p.town, p.postcode].filter(Boolean).join(' ')}`,
+    `Ref: ${p.id ?? ''}`,
+    "",
+    "Please reply to me via email/phone.",
+    ""
+  ];
+  const body = encodeURIComponent(bodyLines.join("\n"));
+  return `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${body}`;
 }
 
 function row(label, value){
