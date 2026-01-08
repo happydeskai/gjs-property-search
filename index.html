@@ -381,12 +381,17 @@ function render(list, context = {}){
           ${p.tenure ? `<span class="chip">${p.tenure}</span>` : ''}
         </div>
         <div class="card__footer">
-          <button class="btn-ghost" type="button" aria-label="Shortlist ${address}">Shortlist</button>
-          ${brochure
-            ? `<a class="btn-link" href="${brochure}" target="_blank" rel="noopener" aria-label="View brochure for ${address}">View brochure</a>`
-            : `<a class="btn-link" aria-disabled="true">No brochure</a>`
-          }
-        </div>
+  <a class="btn-ghost"
+     href="property.html?id=${encodeURIComponent(p.id ?? p.slug ?? p.uid ?? String(address))}"
+     aria-label="View details for ${address}">
+    View property
+  </a>
+  ${brochure
+    ? `<a class="btn-link" href="${brochure}" target="_blank" rel="noopener"
+         aria-label="View brochure for ${address}">View brochure</a>`
+    : `<a class="btn-link" aria-disabled="true">No brochure</a>`
+  }
+</div>
       </article>
     `;
   }).join('');
