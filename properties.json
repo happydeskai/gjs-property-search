@@ -15,6 +15,7 @@
     "size_to_sqft": 80236,
     "summary": "To Let - Industrial / Distribution Premises, Fully Fitted & Ready for Occupation",
     "description": "The property is of modern two bay steel portal frame construction incorporating integral two storey offices with canteen and locker room facilities.",
+    "location": "Evesham is located at the junction of the A44 and A46 trunk roads, approximately 17 miles to the south-east of Worcester, approximately 16 miles to the south of Redditch and 16 miles to the north of Cheltenham. Access is available to the M5 at Junction 6 (Worcester), Junction 9 (Tewkesbury) and to the M42 motorway at Junction 3 and the M40 motorway at Junction 15. \n\nThe property is situated on the well-established Vale Business Park situated approximately 2 miles south of Evesham town centre.",
     "features": [
       "76 car parking spaces (inc. 4 EV points)",
       "12 metre working height",
@@ -43,14 +44,16 @@
         "email": "andrewlewis@gjsdillon.co.uk",
         "phone": "01905 676 169",
         "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited"
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
       },
       {
         "name": "Jorge Bray",
         "email": "jorgebray@gjsdillon.co.uk",
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited"
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
       }
     ],
     "last_updated": "2025-12-15 16:06:35"
