@@ -10,11 +10,10 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <style>
-    /* ---------- tokens ---------- */
     :root{
       --card:#fff; --ink:#111; --muted:#6b7280;
-      --brand:#101112;               /* primary/dark */
-      --accent:#f4c20d;              /* GJS yellow hint */
+      --brand:#101112;
+      --accent:#f4c20d;
       --radius:14px; --gap:18px;
       --ring:32,33,36;
       --shadow-sm:0 1px 2px rgba(var(--ring), .08);
@@ -22,7 +21,6 @@
       --shadow-lg:0 30px 60px rgba(var(--ring), .14), 0 8px 20px rgba(var(--ring), .10);
     }
 
-    /* ---------- base ---------- */
     *,*::before,*::after{box-sizing:border-box}
     html,body{height:100%}
     body{
@@ -46,11 +44,9 @@
     .chip{background:#f6f6f6;border:1px solid #ececec;padding:6px 10px;border-radius:999px;font-size:12px}
     .chip--accent{background:#fff7cf;border-color:#ffe899}
 
-    /* ---------- layout ---------- */
     .layout{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:26px}
     @media (max-width:980px){.layout{grid-template-columns:1fr}}
 
-    /* ---------- hero / gallery ---------- */
     .hero-card{background:var(--card);border-radius:calc(var(--radius) + 4px);overflow:hidden;box-shadow:var(--shadow-lg)}
     .hero{position:relative;aspect-ratio:16/9;background:#eee;overflow:hidden}
     .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -60,7 +56,6 @@
     .thumb:hover{transform:translateY(-2px)}
     .thumb img{width:100%;height:100%;object-fit:cover;display:block}
 
-    /* ---------- sticky aside ---------- */
     .sticky{position:sticky;top:18px;align-self:start;display:flex;flex-direction:column;gap:18px}
     .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-md);border:1px solid #edf0f3;overflow:hidden}
     .card__body{padding:16px}
@@ -72,21 +67,18 @@
     .btn-ghost{background:#fff;border:1px solid #e6e6e6}
     #map{height:260px;border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm)}
 
-    /* ---------- facts ---------- */
     .facts{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
     @media (max-width:700px){.facts{grid-template-columns:1fr}}
     .fact{background:#fff;border:1px solid #eef0f3;border-radius:12px;padding:14px;box-shadow:var(--shadow-sm)}
     .fact .label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
     .fact .value{font-weight:600}
 
-    /* ---------- sections ---------- */
     .section{margin-top:22px}
     .section .card__title{display:flex;align-items:center;gap:8px}
     .section h2{font-size:18px;margin:0;letter-spacing:-.01em}
     .features{margin:10px 0 2px;padding-left:20px}
     .features li{margin:6px 0}
 
-    /* ---------- agents ---------- */
     .agent{display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:center;padding:12px 16px;border-top:1px solid #f0f2f5}
     .agent:first-of-type{border-top:none}
     .avatar{width:48px;height:48px;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:#f1f3f6;color:#222;font-weight:700;border:1px solid #e9edf2}
@@ -96,22 +88,17 @@
     .agent .cta{margin-top:6px;display:flex;gap:10px;flex-wrap:wrap}
     .agent .cta a{font-size:13px;text-decoration:underline}
 
-    /* ---------- modal (compact) ---------- */
     .modal{position:fixed;inset:0;display:none}
     .modal.open{display:block}
     .modal__backdrop{position:absolute;inset:0;background:rgba(16,17,18,.46);backdrop-filter:blur(2px)}
-    .modal__panel{
-      position:relative;max-width:760px;margin:6vh auto;background:#fff;border-radius:16px;box-shadow:var(--shadow-lg);overflow:hidden;border:1px solid #eef1f4
-    }
+    .modal__panel{position:relative;max-width:760px;margin:6vh auto;background:#fff;border-radius:16px;box-shadow:var(--shadow-lg);overflow:hidden;border:1px solid #eef1f4}
     @media (max-width:820px){ .modal__panel{ margin:2vh 14px } }
     .modal__head{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid #eef1f4}
     .modal__title{font-weight:700;letter-spacing:-.01em;font-size:16px}
     .modal__close{border:none;background:#fff;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;cursor:pointer;border:1px solid #eceff3}
     .modal__body{padding:14px}
     .pillbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:6px}
-    .contact-pill{
-      display:grid;grid-template-columns:34px 1fr;gap:8px;align-items:center;border:1px solid #eceff3;background:#fff;border-radius:12px;padding:8px 10px;
-    }
+    .contact-pill{display:grid;grid-template-columns:34px 1fr;gap:8px;align-items:center;border:1px solid #eceff3;background:#fff;border-radius:12px;padding:8px 10px;}
     .pill-avatar{width:34px;height:34px;border-radius:50%;overflow:hidden;background:#f2f4f7;display:grid;place-items:center;font-weight:700;border:1px solid #e8edf2}
     .pill-avatar img{width:100%;height:100%;object-fit:cover}
     .pill-name{font-weight:600;font-size:14px}
@@ -120,9 +107,7 @@
     @media (max-width:740px){ .grid2{grid-template-columns:1fr} }
     .f{display:flex;flex-direction:column;gap:4px}
     .f label{font-size:12px;color:var(--muted)}
-    .f input,.f select,.f textarea{
-      height:42px;padding:9px 11px;border-radius:10px;border:1px solid #dfe3e9;font-size:14px;background:#fff
-    }
+    .f input,.f select,.f textarea{height:42px;padding:9px 11px;border-radius:10px;border:1px solid #dfe3e9;font-size:14px;background:#fff}
     .f textarea{height:110px;resize:vertical}
     .hint{font-size:12px;color:var(--muted);margin-top:6px}
     .modal__foot{display:flex;justify-content:flex-end;gap:10px;padding:12px 14px;border-top:1px solid #eef1f4;background:linear-gradient(#fff,#fff)}
@@ -146,14 +131,12 @@
       <div class="chips" id="prop-chips"></div>
 
       <div class="layout">
-        <!-- LEFT -->
         <div>
           <div class="hero-card">
             <div class="hero" id="hero"></div>
             <div class="gallery" id="thumbs"></div>
           </div>
 
-          <!-- Facts -->
           <div class="section">
             <div class="card">
               <div class="card__title">Key details</div>
@@ -161,7 +144,6 @@
             </div>
           </div>
 
-          <!-- Overview -->
           <div class="section" id="overviewCard" style="display:none">
             <div class="card">
               <div class="card__title"><h2>Overview</h2></div>
@@ -169,7 +151,6 @@
             </div>
           </div>
 
-          <!-- Features -->
           <div class="section" id="featuresCard" style="display:none">
             <div class="card">
               <div class="card__title"><h2>Key features</h2></div>
@@ -177,7 +158,6 @@
             </div>
           </div>
 
-          <!-- Description -->
           <div class="section" id="descCard" style="display:none">
             <div class="card">
               <div class="card__title"><h2>Description</h2></div>
@@ -185,7 +165,6 @@
             </div>
           </div>
 
-          <!-- Location -->
           <div class="section" id="locCard" style="display:none">
             <div class="card">
               <div class="card__title"><h2>Location</h2></div>
@@ -193,7 +172,6 @@
             </div>
           </div>
 
-          <!-- Transport (optional) -->
           <div class="section" id="transportCard" style="display:none">
             <div class="card">
               <div class="card__title"><h2>Transport</h2></div>
@@ -202,7 +180,6 @@
           </div>
         </div>
 
-        <!-- RIGHT (sticky) -->
         <aside class="sticky">
           <div class="card">
             <div class="card__title">Enquire about this property</div>
@@ -234,10 +211,8 @@
       </div>
 
       <div class="modal__body">
-        <!-- agent pills -->
         <div class="pillbar" id="enqPills"></div>
 
-        <!-- form -->
         <form id="enqForm" novalidate>
           <div class="grid2">
             <div class="f">
@@ -306,6 +281,18 @@
   </div>
 
 <script>
+/* ===== height pinger for Squarespace iframe ===== */
+function pingHeight(delay=0){
+  try{
+    const send = () => {
+      const h = document.documentElement.scrollHeight;
+      const id = new URLSearchParams(location.search).get('frameId') || 'prop';
+      window.parent?.postMessage({ type:'gjs-prop-height', id, height:h }, '*');
+    };
+    delay ? setTimeout(send, delay) : send();
+  }catch(e){}
+}
+
 /* ---------- helpers ---------- */
 const $  = (s, el=document) => el.querySelector(s);
 const $$ = (s, el=document) => [...el.querySelectorAll(s)];
@@ -374,13 +361,12 @@ async function main(){
   const p = items.find(x => String(x.id) === String(id)) || items[0];
   currentProperty = p;
 
-  if (!p){ $('#loading').textContent = 'Property not found.'; return; }
+  if (!p){ $('#loading').textContent = 'Property not found.'; pingHeight(); return; }
 
   document.title = p.address ? `${p.address} — Property` : 'Property';
   $('#loading').style.display = 'none';
   $('#content').style.display = '';
 
-  /* header */
   $('#prop-title').textContent = p.address || 'Property';
   $('#prop-sub').textContent = [p.town, p.postcode].filter(Boolean).join(' ');
   const chips = $('#prop-chips');
@@ -395,7 +381,7 @@ async function main(){
   /* gallery */
   const imgs = getImages(p);
   const hero = $('#hero'); const thumbs = $('#thumbs');
-  const setHero = (src) => { hero.innerHTML = src ? `<img src="${src}" alt="${p.address||'Property'}">` : ''; };
+  const setHero = (src) => { hero.innerHTML = src ? `<img src="${src}" alt="${p.address||'Property'}">` : ''; pingHeight(50); };
   setHero(imgs[0] || '');
   thumbs.innerHTML = imgs.slice(0,15).map(u => `<button class="thumb" type="button" data-src="${u}" aria-label="View photo"><img src="${u}" alt=""></button>`).join('');
   thumbs.addEventListener('click', e => {
@@ -419,24 +405,25 @@ async function main(){
     fact('EPC', epc),
     fact('Last updated', p.last_updated || '')
   ].join('');
+  pingHeight();
 
   /* text blocks */
   const overview = pick(p.specification_summary?._, p.summary);
-  if (overview){ $('#overview').innerHTML = overview; $('#overviewCard').style.display=''; }
+  if (overview){ $('#overview').innerHTML = overview; $('#overviewCard').style.display=''; attachImgLoads($('#overviewCard')); pingHeight(50); }
 
   const feats = toListItems(p.key_selling_points?.key_selling_point || p.features || p.key_features);
-  if (feats.length){ $('#features').innerHTML = feats.map(f=>`<li>${f}</li>`).join(''); $('#featuresCard').style.display=''; }
+  if (feats.length){ $('#features').innerHTML = feats.map(f=>`<li>${f}</li>`).join(''); $('#featuresCard').style.display=''; pingHeight(50); }
 
   const desc = pick(p.specification_description?._, p.description);
-  if (desc){ $('#desc').innerHTML = desc; $('#descCard').style.display=''; }
+  if (desc){ $('#desc').innerHTML = desc; $('#descCard').style.display=''; attachImgLoads($('#descCard')); pingHeight(50); }
 
   const loc = pick(p.location?._, p.location);
-  if (loc){ $('#loc').innerHTML = loc; $('#locCard').style.display=''; }
+  if (loc){ $('#loc').innerHTML = loc; $('#locCard').style.display=''; attachImgLoads($('#locCard')); pingHeight(50); }
 
   const transport = pick(p.marketing_text_transport?._, p.marketing_text_transport);
-  if (transport){ $('#transport').innerHTML = transport; $('#transportCard').style.display=''; }
+  if (transport){ $('#transport').innerHTML = transport; $('#transportCard').style.display=''; attachImgLoads($('#transportCard')); pingHeight(50); }
 
-  /* actions (brochure) */
+  /* brochure */
   const brochure = pick(p.brochure, p.brochure_url, p.files?.file?.url);
   if (brochure){ $('#brochureBtn').href = brochure; $('#brochureBtn').style.display='inline-flex'; }
   else { $('#brochureBtn').style.display='none'; }
@@ -449,8 +436,9 @@ async function main(){
     marker = L.circleMarker([lat, lon], { radius:7, weight:2, color:'#111', fillColor:'#111', fillOpacity:.85 }).addTo(map);
     map.setView([lat, lon], 14);
   }
+  setTimeout(pingHeight, 120); // map tiles settling
 
-  /* agents (aside) */
+  /* agents */
   const contacts = Array.isArray(p.contacts?.contact) ? p.contacts.contact
                  : Array.isArray(p.contacts) ? p.contacts
                  : p.contacts ? [p.contacts] : [];
@@ -480,13 +468,20 @@ async function main(){
       `;
     }).join('');
     $('#teamBox').style.display = '';
+    pingHeight();
   }
 
-  /* modal setup */
   setupEnquiry(p);
+  pingHeight(150);
 }
 
-/* ---------- enquiry modal logic ---------- */
+function attachImgLoads(scope){
+  $$('img', scope).forEach(img=>{
+    if (!img.complete) img.addEventListener('load', ()=>pingHeight(10), { once:true });
+  });
+}
+
+/* ---------- enquiry modal ---------- */
 function setupEnquiry(p){
   const modal = $('#enquiryModal');
   const pills = $('#enqPills');
@@ -517,15 +512,15 @@ function setupEnquiry(p){
     `;
   }).join('') || `<div class="pill-meta">No named agents available.</div>`;
 
-  const open = ()=>{ modal.classList.add('open'); modal.setAttribute('aria-hidden','false'); };
-  const close = ()=>{ modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); };
+  const open = ()=>{ modal.classList.add('open'); modal.setAttribute('aria-hidden','false'); pingHeight(20); };
+  const close = ()=>{ modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); pingHeight(20); };
   $('#enquireBtn').onclick = open;
   modal.addEventListener('click', e => { if (e.target.dataset.close !== undefined) close(); });
   $$('.modal__close', modal).forEach(b=>b.onclick=close);
   document.addEventListener('keydown', e=>{ if(e.key==='Escape') close(); });
+  pingHeight(10);
 
   $('#sendEnquiryBtn').onclick = () => {
-    // simple validation
     const first = $('#firstName').value.trim();
     const last  = $('#lastName').value.trim();
     const email = $('#email').value.trim();
@@ -542,7 +537,6 @@ function setupEnquiry(p){
       message: $('#message').value.trim()
     };
 
-    // send via mailto to first available agent, else default AS parse inbox
     const toList = (Array.isArray(p.contacts) ? p.contacts : (p.contacts?.contact ? [p.contacts.contact] : []))
       .flat().map(c=>c?.email).filter(Boolean);
     const to = toList[0] || "gjs-dillon-limited-393@parse.agents-society.com";
@@ -558,33 +552,31 @@ function setupEnquiry(p){
 main();
 </script>
 
-<!-- ======= Auto-resize to fit Squarespace iframe (same protocol as index.html) ======= -->
+<!-- ======= EMBED AUTO-RESIZE (still included) ======= -->
 <script>
 (function () {
-  function send() {
-    var h = Math.max(
-      document.documentElement.scrollHeight,
-      document.body.scrollHeight
-    );
-    window.parent.postMessage({ type: "gjs:resize", height: h }, "*");
+  const MSG_TYPE = 'gjs-prop-height';
+  function sendHeight() {
+    const h = document.documentElement.scrollHeight;
+    const id = new URLSearchParams(location.search).get('frameId') || 'prop';
+    window.parent?.postMessage({ type: MSG_TYPE, id, height: h }, '*');
   }
-  send();
-  var ro = new ResizeObserver(send);
+  const ro = new ResizeObserver(sendHeight);
   ro.observe(document.documentElement);
-
-  // images & modal state changes can alter height
-  window.addEventListener("load", send);
-  window.addEventListener("resize", send);
-  document.querySelectorAll("img").forEach(function(img){
-    if (!img.complete) img.addEventListener("load", send, { once:true });
+  window.addEventListener('load', sendHeight);
+  window.addEventListener('resize', sendHeight);
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('img').forEach(img => {
+      if (!img.complete) img.addEventListener('load', sendHeight, { once: true });
+    });
   });
-  var modal = document.getElementById("enquiryModal");
+  const modal = document.getElementById('enquiryModal');
   if (modal) {
-    var mo = new MutationObserver(send);
-    mo.observe(modal, { attributes:true, attributeFilter:["class","style"] });
+    const mo = new MutationObserver(sendHeight);
+    mo.observe(modal, { attributes: true, attributeFilter: ['class', 'style'] });
   }
-  // safety net
-  setInterval(send, 800);
+  document.documentElement.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden';
 })();
 </script>
 </body>
