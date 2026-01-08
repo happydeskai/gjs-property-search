@@ -5,12 +5,16 @@
   <title>Property</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <style>
     *,*::before,*::after{box-sizing:border-box}
-    :root{--radius:12px;--gap:16px;--border:1px solid #e7e7e7;--text:#111;--muted:#666;--bg:#fff;--shadow:0 10px 25px rgba(0,0,0,.08)}
+    :root{
+      --radius:12px;--gap:16px;--border:1px solid #e7e7e7;
+      --text:#111;--muted:#666;--bg:#fff;--shadow:0 10px 25px rgba(0,0,0,.08)
+    }
     body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:#fff}
     .wrap{max-width:1200px;margin:0 auto;padding:28px 18px 60px}
     a{color:inherit}
@@ -63,7 +67,7 @@
 <body>
   <div class="wrap">
     <div class="topbar">
-      <a class="back" href="index.html">← Back to results</a>
+      <a class="back" href="index.html" onclick="if(history.length>1){event.preventDefault();history.back();}">← Back to results</a>
     </div>
 
     <div id="loading" class="muted">Loading…</div>
@@ -76,9 +80,7 @@
             <div class="thumbs" id="thumbs"></div>
           </div>
 
-          <div class="panel section" id="spec">
-            <!-- rows injected -->
-          </div>
+          <div class="panel section" id="spec"><!-- rows injected --></div>
 
           <div class="section" id="descBlock" style="display:none">
             <h2>Overview</h2>
@@ -117,7 +119,7 @@ const $ = (s, el=document) => el.querySelector(s);
 function getParam(name){ return new URLSearchParams(location.search).get(name); }
 function pick(...vals){ return vals.find(v => v !== undefined && v !== null && v !== ''); }
 
-/* images can be array of strings or {url|_} */
+/* images can be array of strings or objects { url | _ } */
 function getImages(p){
   const arr = [];
   if (Array.isArray(p.images)) {
@@ -132,9 +134,10 @@ function getImages(p){
   }
   const fallback = pick(p.image, p.image_url);
   if (fallback) arr.unshift(fallback);
-  // dedupe
   return [...new Set(arr)].filter(Boolean);
 }
+
+/* build enquiry to Kato email parser */
 function buildEnquiryUrl(p){
   const to = "gjs-dillon-limited-393@parse.agents-society.com";
   const subject = `Enquiry: ${p.address || 'Property'} (${p.id ?? ''})`;
@@ -167,7 +170,6 @@ function niceSize(p){
 function toListItems(maybeList){
   if (!maybeList) return [];
   if (Array.isArray(maybeList)) return maybeList.map(String).filter(Boolean);
-  // string: split by line breaks or bullets
   return String(maybeList)
     .split(/\r?\n|•/g)
     .map(s => s.trim()).filter(Boolean);
@@ -180,6 +182,8 @@ async function main(){
   const id = getParam('id');
   const res = await fetch('./properties.json', { cache:'no-store' });
   const list = await res.json();
+
+  // normalise ids
   const withIds = list.map((p,i)=>({ id: p.id ?? p.slug ?? p.uid ?? i, ...p }));
   const p = withIds.find(x => String(x.id) === String(id)) || withIds[0];
 
@@ -189,7 +193,7 @@ async function main(){
   $('#loading').style.display = 'none';
   $('#content').style.display = '';
 
-  // heading
+  // heading (insert above gallery)
   const heading = document.createElement('div');
   heading.innerHTML = `<h1>${p.address || 'Property'}</h1>
                        <div class="muted">${[p.town, p.postcode].filter(Boolean).join(' ')}</div>`;
@@ -231,6 +235,7 @@ async function main(){
     row('Service charge', sc),
     row('Estate charge', ec),
     row('EPC', epc),
+    row('Last updated', p.last_updated)
   ].join('');
   $('#spec').innerHTML = specHTML || row('Details', '—');
 
@@ -251,10 +256,9 @@ async function main(){
   /* ----- actions ----- */
   const brochure = pick(p.brochure, p.brochure_url);
   const enquireUrl = buildEnquiryUrl(p);
-  const elEnq = $('#enquireBtn'), elBro = $('#brochureBtn');
-  elEnq.href = enquireUrl;
-  if (brochure){ elBro.href = brochure; elBro.style.display = 'inline-flex'; }
-  else { elBro.style.display = 'none'; }
+  $('#enquireBtn').href = enquireUrl;
+  if (brochure){ $('#brochureBtn').href = brochure; $('#brochureBtn').style.display = 'inline-flex'; }
+  else { $('#brochureBtn').style.display = 'none'; }
 
   /* ----- map ----- */
   map = L.map('map', { zoomControl:true }).setView([52.5,-1.8], 6);
