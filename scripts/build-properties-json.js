@@ -99,6 +99,7 @@ async function run() {
           phone: txt(c?.tel),
           mobile: txt(c?.mobile),
           company: txt(c?.office),
+          branch: txt(c?.branch),
         }))
         .filter((c) => Object.values(c).some(Boolean));
 
@@ -111,8 +112,10 @@ async function run() {
       );
 
       // rent & rates
-      const rent_psf = num(p.rent_components?.from ?? p.rent_components?.from_sqft);
-      const rent = txt(p.rent); // keep formatted string e.g. "£7.50 per sq ft"
+      const rent_psf = num(
+        p.rent_components?.from ?? p.rent_components?.from_sqft
+      );
+      const rent = txt(p.rent); // formatted e.g. "£7.50 per sq ft"
       const business_rates_psf = num(p.business_rates?.rates_payable);
       const rateable_value = num(p.business_rates?.rateable_value);
 
@@ -133,6 +136,10 @@ async function run() {
 
         summary: txt(p.specification_summary) || undefined,
         description: txt(p.specification_description) || undefined,
+        // NEW: rich location/transport fields
+        location: txt(p.location) || undefined,
+        marketing_text_transport: txt(p.marketing_text_transport) || undefined,
+
         features,
 
         rent_psf: Number.isFinite(rent_psf) ? rent_psf : undefined,
