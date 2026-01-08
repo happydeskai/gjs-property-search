@@ -444,13 +444,19 @@ async function applyFilters(){
 async function loadProperties(){
   try {
     const res = await fetch('./properties.json', { cache: 'no-store' });
-    allProperties = await res.json();
+    const raw = await res.json();
+    // ensure an id exists (feed id/slug/uid first, else fallback to index)
+    allProperties = raw.map((p, i) => ({
+      id: p.id ?? p.slug ?? p.uid ?? i,
+      ...p
+    }));
     applyFilters();
   } catch (e) {
     document.getElementById('statusText').textContent = 'Failed to load properties.json';
     console.error(e);
   }
 }
+
 
 document.addEventListener('DOMContentLoaded', () => {
   initMap();
