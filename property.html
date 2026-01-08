@@ -558,39 +558,33 @@ function setupEnquiry(p){
 main();
 </script>
 
-<!-- ======= EMBED AUTO-RESIZE: keep iframe height correct on Squarespace ======= -->
+<!-- ======= Auto-resize to fit Squarespace iframe (same protocol as index.html) ======= -->
 <script>
 (function () {
-  const MSG_TYPE = 'gjs-prop-height';
-
-  function sendHeight() {
-    const h = document.documentElement.scrollHeight;
-    const id = new URLSearchParams(location.search).get('frameId') || 'prop';
-    window.parent?.postMessage({ type: MSG_TYPE, id, height: h }, '*');
+  function send() {
+    var h = Math.max(
+      document.documentElement.scrollHeight,
+      document.body.scrollHeight
+    );
+    window.parent.postMessage({ type: "gjs:resize", height: h }, "*");
   }
-
-  // observe page + modal changes
-  const ro = new ResizeObserver(sendHeight);
+  send();
+  var ro = new ResizeObserver(send);
   ro.observe(document.documentElement);
 
-  window.addEventListener('load', sendHeight);
-  window.addEventListener('resize', sendHeight);
-
-  document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('img').forEach(img => {
-      if (!img.complete) img.addEventListener('load', sendHeight, { once: true });
-    });
+  // images & modal state changes can alter height
+  window.addEventListener("load", send);
+  window.addEventListener("resize", send);
+  document.querySelectorAll("img").forEach(function(img){
+    if (!img.complete) img.addEventListener("load", send, { once:true });
   });
-
-  const modal = document.getElementById('enquiryModal');
+  var modal = document.getElementById("enquiryModal");
   if (modal) {
-    const mo = new MutationObserver(sendHeight);
-    mo.observe(modal, { attributes: true, attributeFilter: ['class', 'style'] });
+    var mo = new MutationObserver(send);
+    mo.observe(modal, { attributes:true, attributeFilter:["class","style"] });
   }
-
-  /* avoid a second scrollbar inside the iframe */
-  document.documentElement.style.overflow = 'hidden';
-  document.body.style.overflow = 'hidden';
+  // safety net
+  setInterval(send, 800);
 })();
 </script>
 </body>
