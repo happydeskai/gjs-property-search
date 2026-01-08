@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Property</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box}
+    :root{--radius:12px;--gap:16px;--border:1px solid #e7e7e7;--text:#111;--muted:#666;--bg:#fff;--shadow:0 10px 25px rgba(0,0,0,.08)}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:#fff}
+    .wrap{max-width:1200px;margin:0 auto;padding:28px 18px 60px}
+    a{color:inherit}
+    .topbar{margin-bottom:16px}
+    .back{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#111}
+    h1{margin:10px 0 8px;font-size:28px}
+    .muted{color:var(--muted);font-size:14px}
+
+    .layout{display:grid;grid-template-columns:1.6fr .9fr;gap:24px}
+    @media (max-width:900px){.layout{grid-template-columns:1fr}}
+
+    .media{background:#eee;border-radius:12px;overflow:hidden;position:relative;aspect-ratio:16/9}
+    .media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+    .panel{border:var(--border);border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+    .panel__body{padding:16px}
+    .panel__row{display:grid;grid-template-columns:180px 1fr;gap:8px;padding:12px 16px;border-top:var(--border)}
+    .panel__row:first-of-type{border-top:none}
+    .label{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.02em}
+
+    .actions{display:flex;gap:10px;margin-top:12px}
+    .btn{height:44px;padding:0 16px;border-radius:10px;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600}
+    .btn-primary{background:#111;color:#fff}
+    .btn-ghost{background:#fff;border:1px solid #ddd}
+
+    #map{height:260px;border-radius:12px;overflow:hidden;margin-top:16px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <a class="back" href="index.html">← Back to results</a>
+    </div>
+
+    <div id="loading" class="muted">Loading…</div>
+    <div id="content" style="display:none">
+      <div class="layout">
+        <!-- left -->
+        <div>
+          <div class="media" id="hero"></div>
+          <div class="panel" id="details">
+            <div class="panel__row"><div class="label">Property type</div><div id="p-type"></div></div>
+            <div class="panel__row"><div class="label">Tenure</div><div id="p-tenure"></div></div>
+            <div class="panel__row"><div class="label">Size</div><div id="p-size"></div></div>
+            <div class="panel__row"><div class="label">Rent</div><div id="p-rent"></div></div>
+            <div class="panel__row"><div class="label">Business rates</div><div id="p-rates"></div></div>
+            <div class="panel__row"><div class="label">Rateable value</div><div id="p-rv"></div></div>
+          </div>
+        </div>
+
+        <!-- right -->
+        <div>
+          <div class="panel">
+            <div class="panel__body">
+              <div class="label" style="margin-bottom:8px">Enquire about this property</div>
+              <div class="actions">
+                <a class="btn btn-primary" id="enquireBtn" target="_blank" rel="noopener">Enquire now</a>
+                <a class="btn btn-ghost" id="brochureBtn" target="_blank" rel="noopener">Download brochure</a>
+              </div>
+            </div>
+          </div>
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+/* -------- utils -------- */
+const qsel = (s, el=document) => el.querySelector(s);
+function getParam(name){ return new URLSearchParams(location.search).get(name); }
+function getPrimaryImage(p){
+  if (!p) return '';
+  if (Array.isArray(p.images) && p.images[0]) {
+    const img = p.images[0]; if (typeof img==='string') return img; if (img.url) return img.url; if (img._) return img._;
+  }
+  if (Array.isArray(p.photos) && p.photos[0]?.url) return p.photos[0].url;
+  return p.image || p.image_url || '';
+}
+
+/* -------- Kato enquiry link builder (replace with real format when you have it) -------- */
+function buildKatoEnquiryUrl(p){
+  // Example placeholder: use Kato’s real URL pattern when available.
+  // return `https://kato.example/enquire?ref=${encodeURIComponent(p.id)}&address=${encodeURIComponent(p.address||'')}`;
+  const subject = `Enquiry: ${p.address||'Property'}`;
+  const body = `Hi,%0D%0A%0D%0AI'd like more info about:%0D%0A${p.address||''}%0D%0A${p.town||''} ${p.postcode||''}%0D%0ARef: ${p.id ?? ''}`;
+  return `mailto:enquiries@example.com?subject=${subject}&body=${body}`;
+}
+
+/* -------- load & render -------- */
+let map, marker;
+
+async function main(){
+  const id = getParam('id');
+  const res = await fetch('./properties.json', { cache:'no-store' });
+  const list = await res.json();
+
+  const withIds = list.map((p,i)=>({ id: p.id ?? p.slug ?? p.uid ?? i, ...p }));
+  const prop = withIds.find(p => String(p.id) === String(id)) || withIds[0];
+
+  if (!prop){ qsel('#loading').textContent = 'Property not found.'; return; }
+
+  document.title = prop.address ? `${prop.address} — Property` : 'Property';
+  qsel('#loading').style.display = 'none';
+  qsel('#content').style.display = '';
+
+  const hero = qsel('#hero');
+  const img = getPrimaryImage(prop);
+  hero.innerHTML = img ? `<img src="${img}" alt="${prop.address||'Property'}">` : '';
+
+  const heading = document.createElement('div');
+  heading.innerHTML = `<h1>${prop.address || 'Property'}</h1>
+                       <div class="muted">${[prop.town, prop.postcode].filter(Boolean).join(' ')}</div>`;
+  hero.parentNode.insertBefore(heading, hero);
+
+  const size = prop.size_from_sqft && prop.size_to_sqft
+    ? `${prop.size_from_sqft}–${prop.size_to_sqft} sq ft`
+    : (prop.size_from_sqft ? `${prop.size_from_sqft} sq ft` : '');
+  qsel('#p-type').textContent   = prop.type || prop.property_type || (prop.types && prop.types[0]) || '';
+  qsel('#p-tenure').textContent = prop.tenure || prop.transaction_type || (prop.to_let ? 'To Let' : prop.for_sale ? 'For Sale' : '');
+  qsel('#p-size').textContent   = size || '';
+  qsel('#p-rent').textContent   = prop.rent_psf || prop.rent || '';
+  qsel('#p-rates').textContent  = prop.business_rates_psf || '';
+  qsel('#p-rv').textContent     = prop.rateable_value || '';
+
+  const brochure = prop.brochure || prop.brochure_url || '';
+  const enquireUrl = buildKatoEnquiryUrl(prop);
+  const elEnq = qsel('#enquireBtn'), elBro = qsel('#brochureBtn');
+  elEnq.href = enquireUrl;
+  if (brochure){ elBro.href = brochure; elBro.style.display = 'inline-flex'; }
+  else { elBro.style.display = 'none'; }
+
+  map = L.map('map', { zoomControl:true }).setView([52.5,-1.8], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+  const lat = Number(prop.lat), lon = Number(prop.lon);
+  if (isFinite(lat) && isFinite(lon)){
+    marker = L.circleMarker([lat, lon], { radius:7, weight:2, color:'#111', fillColor:'#111', fillOpacity:.85 }).addTo(map);
+    map.setView([lat, lon], 14);
+  }
+}
+
+main();
+</script>
+</body>
+</html>
