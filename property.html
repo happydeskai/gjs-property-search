@@ -12,7 +12,9 @@
   <style>
     /* ---------- tokens ---------- */
     :root{
-      --card:#fff; --ink:#111; --muted:#6b7280; --brand:#111;
+      --card:#fff; --ink:#111; --muted:#6b7280;
+      --brand:#101112;               /* primary/dark */
+      --accent:#f4c20d;              /* GJS yellow hint */
       --radius:14px; --gap:18px;
       --ring:32,33,36;
       --shadow-sm:0 1px 2px rgba(var(--ring), .08);
@@ -40,9 +42,9 @@
     .back::before{content:"←";opacity:.8}
     h1{margin:8px 0 6px;font-size:32px;letter-spacing:-.02em}
     .muted{color:var(--muted)}
-
     .chips{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 14px}
     .chip{background:#f6f6f6;border:1px solid #ececec;padding:6px 10px;border-radius:999px;font-size:12px}
+    .chip--accent{background:#fff7cf;border-color:#ffe899}
 
     /* ---------- layout ---------- */
     .layout{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:26px}
@@ -58,7 +60,7 @@
     .thumb:hover{transform:translateY(-2px)}
     .thumb img{width:100%;height:100%;object-fit:cover;display:block}
 
-    /* ---------- sticky right column ---------- */
+    /* ---------- sticky aside ---------- */
     .sticky{position:sticky;top:18px;align-self:start;display:flex;flex-direction:column;gap:18px}
     .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-md);border:1px solid #edf0f3;overflow:hidden}
     .card__body{padding:16px}
@@ -66,10 +68,11 @@
     .actions{display:flex;gap:10px;margin-bottom:12px}
     .btn{height:44px;padding:0 16px;border-radius:10px;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600;text-decoration:none;box-shadow:var(--shadow-sm)}
     .btn-primary{background:var(--brand);color:#fff}
+    .btn-primary::after{content:"";width:6px;height:6px;border-radius:999px;background:var(--accent);margin-left:8px}
     .btn-ghost{background:#fff;border:1px solid #e6e6e6}
     #map{height:260px;border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm)}
 
-    /* ---------- facts grid ---------- */
+    /* ---------- facts ---------- */
     .facts{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
     @media (max-width:700px){.facts{grid-template-columns:1fr}}
     .fact{background:#fff;border:1px solid #eef0f3;border-radius:12px;padding:14px;box-shadow:var(--shadow-sm)}
@@ -93,34 +96,41 @@
     .agent .cta{margin-top:6px;display:flex;gap:10px;flex-wrap:wrap}
     .agent .cta a{font-size:13px;text-decoration:underline}
 
-    /* ---------- enquiry modal ---------- */
-    .modal{position:fixed;inset:0;display:grid;place-items:center;background:rgba(0,0,0,.35);z-index:9999;padding:20px}
-    .modal[hidden]{display:none}
-    .modal__card{
-      width:min(860px, 100%);
-      background:#fff;border-radius:14px;box-shadow:0 30px 60px rgba(0,0,0,.18);
-      overflow:hidden; animation:pop .12s ease;
+    /* ---------- modal ---------- */
+    .modal{position:fixed;inset:0;display:none}
+    .modal.open{display:block}
+    .modal__backdrop{position:absolute;inset:0;background:rgba(16,17,18,.46);backdrop-filter:blur(2px)}
+    .modal__panel{
+      position:relative;max-width:980px;margin:6vh auto;background:#fff;border-radius:16px;box-shadow:var(--shadow-lg);overflow:hidden;border:1px solid #eef1f4
     }
-    @keyframes pop{from{transform:scale(.98);opacity:.7}to{transform:scale(1);opacity:1}}
-    .modal__head{padding:16px 18px;border-bottom:1px solid #eef0f3;display:flex;align-items:center;justify-content:space-between}
-    .modal__title{margin:0;font-size:18px;letter-spacing:-.01em}
-    .modal__close{border:none;background:transparent;font-size:22px;line-height:1;cursor:pointer}
-    .modal__body{padding:16px 18px}
-    .contactRow{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:12px}
-    .agentBadge{display:grid;grid-template-columns:48px 1fr;gap:10px;align-items:center;padding:10px 12px;border:1px solid #edf0f3;border-radius:12px}
-    .agentBadge .avatar{width:48px;height:48px;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:#f1f3f6;font-weight:700}
-    .agentBadge .avatar img{width:100%;height:100%;object-fit:cover;display:block}
-    .formGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    @media (max-width:680px){.formGrid{grid-template-columns:1fr}}
-    .input, .textarea, .select{width:100%;height:44px;padding:10px 12px;border-radius:10px;border:1px solid #dcdcdc;font-size:14px;background:#fff}
-    .textarea{height:auto;min-height:90px;resize:vertical}
-    .formRow{margin:10px 0}
-    .actionsRow{display:flex;gap:10px;justify-content:flex-end;border-top:1px solid #eef0f3;padding:12px 0 0;margin-top:14px}
-    .btn-solid{height:44px;padding:0 16px;border-radius:10px;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600;background:#111;color:#fff}
-    .btn-ghost2{height:44px;padding:0 16px;border-radius:10px;border:1px solid #e6e6e6;background:#fff;cursor:pointer}
-    .note{color:#6b7280;font-size:12px}
-    .successBox{background:#f3faf4;border:1px solid #d6f0da;padding:12px;border-radius:10px;margin-top:10px}
-    .errorBox{background:#fff5f5;border:1px solid #ffd7d7;padding:12px;border-radius:10px;margin-top:10px}
+    @media (max-width:1020px){ .modal__panel{ margin:2vh 14px } }
+    .modal__head{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid #eef1f4}
+    .modal__title{font-weight:700;letter-spacing:-.01em}
+    .modal__close{border:none;background:#fff;width:36px;height:36px;border-radius:10px;display:grid;place-items:center;cursor:pointer;border:1px solid #eceff3}
+    .modal__body{padding:18px}
+    .pillbar{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:8px}
+    .contact-pill{
+      display:grid;grid-template-columns:36px 1fr;gap:10px;align-items:center;border:1px solid #eceff3;background:#fff;border-radius:12px;padding:10px 12px;
+    }
+    .contact-pill .dot{width:8px;height:8px;border-radius:999px;background:var(--accent);box-shadow:0 0 0 2px #fff;border:1px solid #ffe194;position:absolute;transform:translate(-2px,-2px)}
+    .pill-avatar{width:36px;height:36px;border-radius:50%;overflow:hidden;background:#f2f4f7;display:grid;place-items:center;font-weight:700;border:1px solid #e8edf2}
+    .pill-avatar img{width:100%;height:100%;object-fit:cover}
+    .pill-name{font-weight:600}
+    .pill-meta{font-size:12px;color:var(--muted)}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media (max-width:740px){ .grid2{grid-template-columns:1fr} }
+    .f{display:flex;flex-direction:column;gap:6px}
+    .f label{font-size:12px;color:var(--muted)}
+    .f input,.f select,.f textarea{
+      height:44px;padding:10px 12px;border-radius:10px;border:1px solid #dfe3e9;font-size:14px;background:#fff
+    }
+    .f textarea{height:120px;resize:vertical}
+    .hint{font-size:12px;color:var(--muted);margin-top:8px}
+    .modal__foot{display:flex;justify-content:flex-end;gap:10px;padding:14px 18px;border-top:1px solid #eef1f4;background:linear-gradient(#fff,#fff)}
+    .btn-secondary{background:#fff;border:1px solid #e6e6e6;color:#333}
+    .btn-accent{background:var(--brand);color:#fff;position:relative}
+    .btn-accent::before{content:"";position:absolute;inset:auto auto 8px 12px;width:8px;height:8px;border-radius:999px;background:var(--accent)}
+    .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
   </style>
 </head>
 <body>
@@ -184,7 +194,7 @@
             </div>
           </div>
 
-          <!-- Optional: Transport -->
+          <!-- Transport (optional) -->
           <div class="section" id="transportCard" style="display:none">
             <div class="card">
               <div class="card__title"><h2>Transport</h2></div>
@@ -199,7 +209,7 @@
             <div class="card__title">Enquire about this property</div>
             <div class="card__body">
               <div class="actions">
-                <a class="btn btn-primary" id="enquireBtn">Enquire now</a>
+                <button class="btn btn-primary" id="enquireBtn" type="button">Enquire now</button>
                 <a class="btn btn-ghost" id="brochureBtn" target="_blank" rel="noopener">Download brochure</a>
               </div>
               <div id="map"></div>
@@ -215,89 +225,85 @@
     </div>
   </div>
 
-  <!-- Enquiry Modal -->
-  <div id="enquireModal" class="modal" hidden>
-    <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="enqTitle">
+  <!-- Enquiry modal -->
+  <div class="modal" id="enquiryModal" aria-hidden="true" role="dialog" aria-labelledby="enqTitle">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="document">
       <div class="modal__head">
-        <h3 id="enqTitle" class="modal__title">Enquire now</h3>
-        <button class="modal__close" type="button" aria-label="Close" id="enqClose">×</button>
+        <div class="modal__title" id="enqTitle">Enquire now</div>
+        <button class="modal__close" type="button" title="Close" data-close aria-label="Close">
+          ✕
+        </button>
       </div>
+
       <div class="modal__body">
-        <div class="contactRow" id="enqAgents"></div>
+        <!-- agent pills -->
+        <div class="pillbar" id="enqPills"></div>
 
-        <form id="enquiryForm">
-          <!-- Hidden property context -->
-          <input type="hidden" name="property_id" id="enqPropId">
-          <input type="hidden" name="property_address" id="enqPropAddr">
-          <input type="hidden" name="property_url" id="enqPropUrl">
-          <input type="hidden" name="brochure_url" id="enqBrochureUrl">
+        <!-- form -->
+        <form id="enqForm" novalidate>
+          <div class="grid2">
+            <div class="f">
+              <label for="titleSel">Title</label>
+              <select id="titleSel" name="title">
+                <option value="">—</option>
+                <option>Mr</option><option>Mrs</option><option>Ms</option>
+                <option>Miss</option><option>Dr</option>
+              </select>
+            </div>
+            <span class="sr-only"></span>
+          </div>
 
-          <div class="formGrid">
-            <div class="formRow">
-              <label>Title
-                <select class="select" name="title">
-                  <option value="">—</option><option>Mr</option><option>Mrs</option><option>Ms</option><option>Dr</option>
-                </select>
-              </label>
+          <div class="grid2" style="margin-top:8px">
+            <div class="f">
+              <label for="firstName">First name*</label>
+              <input id="firstName" name="firstName" required />
             </div>
-            <div class="formRow"></div>
-
-            <div class="formRow">
-              <label>First name*
-                <input class="input" name="first_name" required>
-              </label>
-            </div>
-            <div class="formRow">
-              <label>Last name*
-                <input class="input" name="last_name" required>
-              </label>
-            </div>
-
-            <div class="formRow">
-              <label>Email*
-                <input class="input" type="email" name="email" required>
-              </label>
-            </div>
-            <div class="formRow">
-              <label>Phone
-                <input class="input" name="phone">
-              </label>
-            </div>
-
-            <div class="formRow">
-              <label>Company
-                <input class="input" name="company">
-              </label>
-            </div>
-            <div class="formRow">
-              <label>Job title
-                <input class="input" name="job_title">
-              </label>
-            </div>
-
-            <div class="formRow" style="grid-column:1/-1">
-              <label>Message
-                <textarea class="textarea" name="message" placeholder="Tell us a bit about your requirement"></textarea>
-              </label>
-            </div>
-
-            <div class="formRow" style="grid-column:1/-1">
-              <label style="display:flex;gap:8px;align-items:center">
-                <input type="checkbox" name="optin"> <span class="note">Add me to your mailing list</span>
-              </label>
+            <div class="f">
+              <label for="lastName">Last name*</label>
+              <input id="lastName" name="lastName" required />
             </div>
           </div>
 
-          <div id="enqNotice" class="note" style="margin-top:6px"></div>
-          <div id="enqSuccess" class="successBox" hidden>Thanks — your enquiry has been sent.</div>
-          <div id="enqError" class="errorBox" hidden>Sorry, something went wrong. You can still email us directly using the button below.</div>
-
-          <div class="actionsRow">
-            <button type="button" class="btn-ghost2" id="enqCancel">Cancel</button>
-            <a id="enqFallback" class="btn-ghost2" href="#">Email instead</a>
-            <button type="submit" class="btn-solid" id="enqSubmit">Send enquiry</button>
+          <div class="grid2" style="margin-top:8px">
+            <div class="f">
+              <label for="email">Email*</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="f">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" />
+            </div>
           </div>
+
+          <div class="grid2" style="margin-top:8px">
+            <div class="f">
+              <label for="company">Company</label>
+              <input id="company" name="company" />
+            </div>
+            <div class="f">
+              <label for="jobTitle">Job title</label>
+              <input id="jobTitle" name="jobTitle" />
+            </div>
+          </div>
+
+          <div class="f" style="margin-top:8px">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us a bit about your requirement"></textarea>
+          </div>
+
+          <label style="display:flex;align-items:center;gap:10px;margin-top:10px;font-size:14px">
+            <input type="checkbox" id="optIn" /> Add me to your mailing list
+          </label>
+
+          <div class="hint" id="propRefHint"></div>
+          <div class="hint">Prefer email? Use the agent links above — they open your mail app.</div>
         </form>
+      </div>
+
+      <div class="modal__foot">
+        <button class="btn btn-secondary" type="button" data-close>Cancel</button>
+        <button class="btn btn-accent" type="button" id="sendEnquiryBtn">Send enquiry</button>
       </div>
     </div>
   </div>
@@ -305,6 +311,7 @@
 <script>
 /* ---------- helpers ---------- */
 const $  = (s, el=document) => el.querySelector(s);
+const $$ = (s, el=document) => [...el.querySelectorAll(s)];
 function getParam(name){ return new URLSearchParams(location.search).get(name); }
 function pick(...vals){ return vals.find(v => v !== undefined && v !== null && v !== ''); }
 function initials(name){ if(!name) return ""; return String(name).trim().split(/\s+/).slice(0,2).map(w=>w[0]?.toUpperCase()||"").join(""); }
@@ -330,15 +337,16 @@ function toListItems(val){
 }
 function formatSize(p){
   const a=p.size_from_sqft, b=p.size_to_sqft;
-  if (a && b) return `${a}–${b} sq ft`;
-  if (a) return `${a} sq ft`;
-  if (b) return `${b} sq ft`;
+  if (a && b) return `${Number(a).toLocaleString()}–${Number(b).toLocaleString()} sq ft`;
+  if (a) return `${Number(a).toLocaleString()} sq ft`;
+  if (b) return `${Number(b).toLocaleString()} sq ft`;
   return '';
 }
-function buildEnquiryUrl(p){
-  const to = "gjs-dillon-limited-393@parse.agents-society.com";
-  const subject = `Enquiry: ${p.address || 'Property'} (${p.id ?? ''})`;
-  const body = [
+function buildSubject(p){
+  return `Enquiry: ${p.address || 'Property'} (${p.id ?? ''})`;
+}
+function buildBody(p, form){
+  const lines = [
     "Hi,",
     "",
     "I'd like more information about:",
@@ -346,36 +354,20 @@ function buildEnquiryUrl(p){
     `${[p.town, p.postcode].filter(Boolean).join(' ')}`,
     `Ref: ${p.id ?? ''}`,
     "",
-    "Please reply to me via email/phone."
-  ].join("\n");
-  return `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-}
-
-/* ---------- enquiry (modal) config ---------- */
-const ENQUIRY_ENDPOINT = "https://formspree.io/f/your_form_id"; // <-- REPLACE with your Formspree endpoint
-let CURRENT_PROPERTY = null;
-
-function showModal(){ $('#enquireModal').hidden = false; document.body.style.overflow='hidden'; }
-function hideModal(){ $('#enquireModal').hidden = true; document.body.style.overflow=''; }
-function agentBadge(c){
-  const photo = c.photo || c.image || "";
-  const init  = initials(c.name || "");
-  const tel   = c.tel || c.phone || "";
-  const mob   = c.mobile ? String(c.mobile) : "";
-  return `
-    <div class="agentBadge">
-      <div class="avatar">
-        ${photo ? `<img src="${photo}" alt="">` : `${init}`}
-      </div>
-      <div>
-        <div style="font-weight:600">${c.name || ''}</div>
-        <div class="note">${[tel, mob].filter(Boolean).join(' • ')}</div>
-      </div>
-    </div>`;
+    `Name: ${[form.firstName, form.lastName].filter(Boolean).join(' ')}`,
+    `Company: ${form.company || ''}`,
+    `Job title: ${form.jobTitle || ''}`,
+    `Email: ${form.email || ''}`,
+    `Phone: ${form.phone || ''}`,
+    "",
+    (form.message || "Please reply to me via email/phone.")
+  ];
+  if ($('#optIn').checked) lines.push("", "✓ Please add me to your mailing list");
+  return lines.join("\\n");
 }
 
 /* ---------- page ---------- */
-let map, marker;
+let map, marker, currentProperty=null;
 
 async function main(){
   const id = getParam('id');
@@ -383,7 +375,7 @@ async function main(){
   const list = await res.json();
   const items = list.map((p,i)=>({ id: p.id ?? p.slug ?? p.uid ?? i, ...p }));
   const p = items.find(x => String(x.id) === String(id)) || items[0];
-  CURRENT_PROPERTY = p;
+  currentProperty = p;
 
   if (!p){ $('#loading').textContent = 'Property not found.'; return; }
 
@@ -399,7 +391,7 @@ async function main(){
   const tenure = pick(p.tenure, p.transaction_type, p.to_let ? 'To Let' : (p.for_sale ? 'For Sale' : ''));
   const epcObj = p.current_energy_ratings?.rating;
   const epc    = pick(p.epc_rating, p.epc, epcObj ? `${epcObj._ || epcObj} (${epcObj?.$?.value || ""})` : "");
-  if (tenure) chips.innerHTML += `<span class="chip">${tenure}</span>`;
+  if (tenure) chips.innerHTML += `<span class="chip chip--accent">${tenure}</span>`;
   if (tType)  chips.innerHTML += `<span class="chip">${tType}</span>`;
   if (epc)    chips.innerHTML += `<span class="chip">EPC ${epc}</span>`;
 
@@ -444,43 +436,11 @@ async function main(){
   const loc = pick(p.location?._, p.location);
   if (loc){ $('#loc').innerHTML = loc; $('#locCard').style.display=''; }
 
-  // Optional Transport block if feed provides marketing_text_transport
   const transport = pick(p.marketing_text_transport?._, p.marketing_text_transport);
   if (transport){ $('#transport').innerHTML = transport; $('#transportCard').style.display=''; }
 
-  /* actions (modal-enabled) */
+  /* actions (brochure) */
   const brochure = pick(p.brochure, p.brochure_url, p.files?.file?.url);
-  const enquireBtn = $('#enquireBtn');
-  enquireBtn.href = '#';
-  enquireBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    // agents at top of modal
-    const contacts = Array.isArray(p.contacts?.contact) ? p.contacts.contact
-                   : Array.isArray(p.contacts) ? p.contacts
-                   : p.contacts ? [p.contacts] : [];
-    $('#enqAgents').innerHTML = contacts.slice(0,2).map(agentBadge).join('');
-
-    // Prefill hidden fields
-    $('#enqPropId').value   = p.id ?? '';
-    $('#enqPropAddr').value = p.address || '';
-    $('#enqPropUrl').value  = location.href;
-    $('#enqBrochureUrl').value = brochure || '';
-
-    // Fallback mailto
-    $('#enqFallback').href = buildEnquiryUrl(p);
-
-    // Notice text
-    $('#enqNotice').textContent = `Enquiry about “${p.address || 'Property'}” ${[p.town, p.postcode].filter(Boolean).join(' ')}`;
-
-    // Reset state
-    $('#enqSuccess').hidden = true;
-    $('#enqError').hidden = true;
-    $('#enqSubmit').disabled = false;
-
-    showModal();
-  });
-
   if (brochure){ $('#brochureBtn').href = brochure; $('#brochureBtn').style.display='inline-flex'; }
   else { $('#brochureBtn').style.display='none'; }
 
@@ -493,7 +453,7 @@ async function main(){
     map.setView([lat, lon], 14);
   }
 
-  /* agents list on page */
+  /* agents (aside) */
   const contacts = Array.isArray(p.contacts?.contact) ? p.contacts.contact
                  : Array.isArray(p.contacts) ? p.contacts
                  : p.contacts ? [p.contacts] : [];
@@ -524,47 +484,81 @@ async function main(){
     }).join('');
     $('#teamBox').style.display = '';
   }
+
+  /* modal setup */
+  setupEnquiry(p);
+}
+
+/* ---------- enquiry modal logic ---------- */
+function setupEnquiry(p){
+  const modal = $('#enquiryModal');
+  const pills = $('#enqPills');
+  const propRef = `Enquiry about “${p.address || 'Property'}” ${[p.town,p.postcode].filter(Boolean).join(' ')}`;
+  $('#propRefHint').textContent = propRef;
+
+  const contacts = Array.isArray(p.contacts?.contact) ? p.contacts.contact
+                 : Array.isArray(p.contacts) ? p.contacts
+                 : p.contacts ? [p.contacts] : [];
+
+  pills.innerHTML = contacts.slice(0,3).map(c=>{
+    const init = initials(c.name||'');
+    const photo = c.photo || c.image || '';
+    const tel   = c.tel || c.phone || '';
+    const mob   = c.mobile ? String(c.mobile) : '';
+    const phones = [tel,mob].filter(Boolean).join(' · ');
+    return `
+      <div class="contact-pill">
+        <div class="pill-avatar">
+          ${photo ? `<img src="${photo}" alt="${c.name||'Agent'}" onerror="this.closest('.pill-avatar').textContent='${init}'">` : `${init}`}
+        </div>
+        <div>
+          <div class="pill-name">${c.name||'Agent'}</div>
+          <div class="pill-meta">${phones}</div>
+          ${c.email ? `<div class="pill-meta"><a href="mailto:${c.email}">Email ${c.name?.split(' ')[0]||'agent'}</a></div>` : ``}
+        </div>
+      </div>
+    `;
+  }).join('') || `<div class="pill-meta">No named agents available.</div>`;
+
+  const open = ()=>{ modal.classList.add('open'); modal.setAttribute('aria-hidden','false'); };
+  const close = ()=>{ modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); };
+  $('#enquireBtn').onclick = open;
+  modal.addEventListener('click', e => { if (e.target.dataset.close !== undefined) close(); });
+  $$('.modal__close', modal).forEach(b=>b.onclick=close);
+  document.addEventListener('keydown', e=>{ if(e.key==='Escape') close(); });
+
+  $('#sendEnquiryBtn').onclick = () => {
+    // simple validation
+    const first = $('#firstName').value.trim();
+    const last  = $('#lastName').value.trim();
+    const email = $('#email').value.trim();
+    if (!first || !last || !email) { alert('Please fill in first name, last name and email.'); return; }
+
+    const formData = {
+      title: $('#titleSel').value,
+      firstName: first,
+      lastName: last,
+      email,
+      phone: $('#phone').value.trim(),
+      company: $('#company').value.trim(),
+      jobTitle: $('#jobTitle').value.trim(),
+      message: $('#message').value.trim()
+    };
+
+    // send via mailto to first available agent, else default AS parse inbox
+    const toList = (Array.isArray(p.contacts) ? p.contacts : (p.contacts?.contact ? [p.contacts.contact] : []))
+      .flat().map(c=>c?.email).filter(Boolean);
+    const to = toList[0] || "gjs-dillon-limited-393@parse.agents-society.com";
+
+    const subject = buildSubject(p);
+    const body = buildBody(p, formData);
+    const href = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = href;
+    close();
+  };
 }
 
 main();
-
-/* ---------- modal controls & submit ---------- */
-$('#enqClose').addEventListener('click', hideModal);
-$('#enqCancel').addEventListener('click', hideModal);
-document.addEventListener('keydown', (e)=>{ if(e.key==='Escape' && !$('#enquireModal').hidden) hideModal(); });
-
-$('#enquiryForm').addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const btn = $('#enqSubmit');
-  btn.disabled = true;
-  $('#enqSuccess').hidden = true;
-  $('#enqError').hidden = true;
-
-  try{
-    const fd = new FormData(e.target);
-    const subject = `Enquiry: ${(CURRENT_PROPERTY?.address || 'Property')} (${CURRENT_PROPERTY?.id ?? ''})`;
-    fd.append('_subject', subject);
-
-    const res = await fetch(ENQUIRY_ENDPOINT, {
-      method: 'POST',
-      body: fd,
-      headers: { 'Accept': 'application/json' }
-    });
-
-    if(res.ok){
-      $('#enqSuccess').hidden = false;
-      e.target.querySelectorAll('input:not([type="hidden"]):not([type="checkbox"]), textarea')
-              .forEach(el => el.value = '');
-    }else{
-      $('#enqError').hidden = false;
-      btn.disabled = false;
-    }
-  }catch(err){
-    console.error(err);
-    $('#enqError').hidden = false;
-    btn.disabled = false;
-  }
-});
 </script>
 </body>
 </html>
