@@ -10,7 +10,7 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <style>
-    /* ---------- design tokens ---------- */
+    /* ---------- tokens ---------- */
     :root{
       --card:#fff; --ink:#111; --muted:#6b7280; --brand:#111;
       --radius:14px; --gap:18px;
@@ -92,6 +92,35 @@
     .agent .meta{font-size:13px;color:var(--muted)}
     .agent .cta{margin-top:6px;display:flex;gap:10px;flex-wrap:wrap}
     .agent .cta a{font-size:13px;text-decoration:underline}
+
+    /* ---------- enquiry modal ---------- */
+    .modal{position:fixed;inset:0;display:grid;place-items:center;background:rgba(0,0,0,.35);z-index:9999;padding:20px}
+    .modal[hidden]{display:none}
+    .modal__card{
+      width:min(860px, 100%);
+      background:#fff;border-radius:14px;box-shadow:0 30px 60px rgba(0,0,0,.18);
+      overflow:hidden; animation:pop .12s ease;
+    }
+    @keyframes pop{from{transform:scale(.98);opacity:.7}to{transform:scale(1);opacity:1}}
+    .modal__head{padding:16px 18px;border-bottom:1px solid #eef0f3;display:flex;align-items:center;justify-content:space-between}
+    .modal__title{margin:0;font-size:18px;letter-spacing:-.01em}
+    .modal__close{border:none;background:transparent;font-size:22px;line-height:1;cursor:pointer}
+    .modal__body{padding:16px 18px}
+    .contactRow{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:12px}
+    .agentBadge{display:grid;grid-template-columns:48px 1fr;gap:10px;align-items:center;padding:10px 12px;border:1px solid #edf0f3;border-radius:12px}
+    .agentBadge .avatar{width:48px;height:48px;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:#f1f3f6;font-weight:700}
+    .agentBadge .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    .formGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    @media (max-width:680px){.formGrid{grid-template-columns:1fr}}
+    .input, .textarea, .select{width:100%;height:44px;padding:10px 12px;border-radius:10px;border:1px solid #dcdcdc;font-size:14px;background:#fff}
+    .textarea{height:auto;min-height:90px;resize:vertical}
+    .formRow{margin:10px 0}
+    .actionsRow{display:flex;gap:10px;justify-content:flex-end;border-top:1px solid #eef0f3;padding:12px 0 0;margin-top:14px}
+    .btn-solid{height:44px;padding:0 16px;border-radius:10px;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600;background:#111;color:#fff}
+    .btn-ghost2{height:44px;padding:0 16px;border-radius:10px;border:1px solid #e6e6e6;background:#fff;cursor:pointer}
+    .note{color:#6b7280;font-size:12px}
+    .successBox{background:#f3faf4;border:1px solid #d6f0da;padding:12px;border-radius:10px;margin-top:10px}
+    .errorBox{background:#fff5f5;border:1px solid #ffd7d7;padding:12px;border-radius:10px;margin-top:10px}
   </style>
 </head>
 <body>
@@ -170,7 +199,7 @@
             <div class="card__title">Enquire about this property</div>
             <div class="card__body">
               <div class="actions">
-                <a class="btn btn-primary" id="enquireBtn" target="_blank" rel="noopener">Enquire now</a>
+                <a class="btn btn-primary" id="enquireBtn">Enquire now</a>
                 <a class="btn btn-ghost" id="brochureBtn" target="_blank" rel="noopener">Download brochure</a>
               </div>
               <div id="map"></div>
@@ -182,6 +211,93 @@
             <div id="agents"></div>
           </div>
         </aside>
+      </div>
+    </div>
+  </div>
+
+  <!-- Enquiry Modal -->
+  <div id="enquireModal" class="modal" hidden>
+    <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="enqTitle">
+      <div class="modal__head">
+        <h3 id="enqTitle" class="modal__title">Enquire now</h3>
+        <button class="modal__close" type="button" aria-label="Close" id="enqClose">×</button>
+      </div>
+      <div class="modal__body">
+        <div class="contactRow" id="enqAgents"></div>
+
+        <form id="enquiryForm">
+          <!-- Hidden property context -->
+          <input type="hidden" name="property_id" id="enqPropId">
+          <input type="hidden" name="property_address" id="enqPropAddr">
+          <input type="hidden" name="property_url" id="enqPropUrl">
+          <input type="hidden" name="brochure_url" id="enqBrochureUrl">
+
+          <div class="formGrid">
+            <div class="formRow">
+              <label>Title
+                <select class="select" name="title">
+                  <option value="">—</option><option>Mr</option><option>Mrs</option><option>Ms</option><option>Dr</option>
+                </select>
+              </label>
+            </div>
+            <div class="formRow"></div>
+
+            <div class="formRow">
+              <label>First name*
+                <input class="input" name="first_name" required>
+              </label>
+            </div>
+            <div class="formRow">
+              <label>Last name*
+                <input class="input" name="last_name" required>
+              </label>
+            </div>
+
+            <div class="formRow">
+              <label>Email*
+                <input class="input" type="email" name="email" required>
+              </label>
+            </div>
+            <div class="formRow">
+              <label>Phone
+                <input class="input" name="phone">
+              </label>
+            </div>
+
+            <div class="formRow">
+              <label>Company
+                <input class="input" name="company">
+              </label>
+            </div>
+            <div class="formRow">
+              <label>Job title
+                <input class="input" name="job_title">
+              </label>
+            </div>
+
+            <div class="formRow" style="grid-column:1/-1">
+              <label>Message
+                <textarea class="textarea" name="message" placeholder="Tell us a bit about your requirement"></textarea>
+              </label>
+            </div>
+
+            <div class="formRow" style="grid-column:1/-1">
+              <label style="display:flex;gap:8px;align-items:center">
+                <input type="checkbox" name="optin"> <span class="note">Add me to your mailing list</span>
+              </label>
+            </div>
+          </div>
+
+          <div id="enqNotice" class="note" style="margin-top:6px"></div>
+          <div id="enqSuccess" class="successBox" hidden>Thanks — your enquiry has been sent.</div>
+          <div id="enqError" class="errorBox" hidden>Sorry, something went wrong. You can still email us directly using the button below.</div>
+
+          <div class="actionsRow">
+            <button type="button" class="btn-ghost2" id="enqCancel">Cancel</button>
+            <a id="enqFallback" class="btn-ghost2" href="#">Email instead</a>
+            <button type="submit" class="btn-solid" id="enqSubmit">Send enquiry</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -235,6 +351,29 @@ function buildEnquiryUrl(p){
   return `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
 
+/* ---------- enquiry (modal) config ---------- */
+const ENQUIRY_ENDPOINT = "https://formspree.io/f/your_form_id"; // <-- REPLACE with your Formspree endpoint
+let CURRENT_PROPERTY = null;
+
+function showModal(){ $('#enquireModal').hidden = false; document.body.style.overflow='hidden'; }
+function hideModal(){ $('#enquireModal').hidden = true; document.body.style.overflow=''; }
+function agentBadge(c){
+  const photo = c.photo || c.image || "";
+  const init  = initials(c.name || "");
+  const tel   = c.tel || c.phone || "";
+  const mob   = c.mobile ? String(c.mobile) : "";
+  return `
+    <div class="agentBadge">
+      <div class="avatar">
+        ${photo ? `<img src="${photo}" alt="">` : `${init}`}
+      </div>
+      <div>
+        <div style="font-weight:600">${c.name || ''}</div>
+        <div class="note">${[tel, mob].filter(Boolean).join(' • ')}</div>
+      </div>
+    </div>`;
+}
+
 /* ---------- page ---------- */
 let map, marker;
 
@@ -244,6 +383,7 @@ async function main(){
   const list = await res.json();
   const items = list.map((p,i)=>({ id: p.id ?? p.slug ?? p.uid ?? i, ...p }));
   const p = items.find(x => String(x.id) === String(id)) || items[0];
+  CURRENT_PROPERTY = p;
 
   if (!p){ $('#loading').textContent = 'Property not found.'; return; }
 
@@ -308,9 +448,39 @@ async function main(){
   const transport = pick(p.marketing_text_transport?._, p.marketing_text_transport);
   if (transport){ $('#transport').innerHTML = transport; $('#transportCard').style.display=''; }
 
-  /* actions */
+  /* actions (modal-enabled) */
   const brochure = pick(p.brochure, p.brochure_url, p.files?.file?.url);
-  $('#enquireBtn').href = buildEnquiryUrl(p);
+  const enquireBtn = $('#enquireBtn');
+  enquireBtn.href = '#';
+  enquireBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    // agents at top of modal
+    const contacts = Array.isArray(p.contacts?.contact) ? p.contacts.contact
+                   : Array.isArray(p.contacts) ? p.contacts
+                   : p.contacts ? [p.contacts] : [];
+    $('#enqAgents').innerHTML = contacts.slice(0,2).map(agentBadge).join('');
+
+    // Prefill hidden fields
+    $('#enqPropId').value   = p.id ?? '';
+    $('#enqPropAddr').value = p.address || '';
+    $('#enqPropUrl').value  = location.href;
+    $('#enqBrochureUrl').value = brochure || '';
+
+    // Fallback mailto
+    $('#enqFallback').href = buildEnquiryUrl(p);
+
+    // Notice text
+    $('#enqNotice').textContent = `Enquiry about “${p.address || 'Property'}” ${[p.town, p.postcode].filter(Boolean).join(' ')}`;
+
+    // Reset state
+    $('#enqSuccess').hidden = true;
+    $('#enqError').hidden = true;
+    $('#enqSubmit').disabled = false;
+
+    showModal();
+  });
+
   if (brochure){ $('#brochureBtn').href = brochure; $('#brochureBtn').style.display='inline-flex'; }
   else { $('#brochureBtn').style.display='none'; }
 
@@ -323,7 +493,7 @@ async function main(){
     map.setView([lat, lon], 14);
   }
 
-  /* agents */
+  /* agents list on page */
   const contacts = Array.isArray(p.contacts?.contact) ? p.contacts.contact
                  : Array.isArray(p.contacts) ? p.contacts
                  : p.contacts ? [p.contacts] : [];
@@ -357,6 +527,44 @@ async function main(){
 }
 
 main();
+
+/* ---------- modal controls & submit ---------- */
+$('#enqClose').addEventListener('click', hideModal);
+$('#enqCancel').addEventListener('click', hideModal);
+document.addEventListener('keydown', (e)=>{ if(e.key==='Escape' && !$('#enquireModal').hidden) hideModal(); });
+
+$('#enquiryForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const btn = $('#enqSubmit');
+  btn.disabled = true;
+  $('#enqSuccess').hidden = true;
+  $('#enqError').hidden = true;
+
+  try{
+    const fd = new FormData(e.target);
+    const subject = `Enquiry: ${(CURRENT_PROPERTY?.address || 'Property')} (${CURRENT_PROPERTY?.id ?? ''})`;
+    fd.append('_subject', subject);
+
+    const res = await fetch(ENQUIRY_ENDPOINT, {
+      method: 'POST',
+      body: fd,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if(res.ok){
+      $('#enqSuccess').hidden = false;
+      e.target.querySelectorAll('input:not([type="hidden"]):not([type="checkbox"]), textarea')
+              .forEach(el => el.value = '');
+    }else{
+      $('#enqError').hidden = false;
+      btn.disabled = false;
+    }
+  }catch(err){
+    console.error(err);
+    $('#enqError').hidden = false;
+    btn.disabled = false;
+  }
+});
 </script>
 </body>
 </html>
