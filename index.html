@@ -176,6 +176,22 @@
     .btn-link[aria-disabled="true"]{ opacity:.5; pointer-events:none; }
 
     .empty{ padding: 24px; color: var(--muted); }
+
+    /* ---- Map popup card (image + CTA) ---- */
+    .prop-popup .leaflet-popup-content { margin: 0 !important; }
+    .prop-popup .leaflet-popup-content-wrapper { padding: 0; border-radius: 12px; overflow: hidden; }
+    .prop-popup .leaflet-popup-tip { display: none; }
+
+    .pop-card { width: 320px; background: #fff; }
+    .pop-img { width: 100%; aspect-ratio: 16/9; background-size: cover; background-position: center; background-color: #eee; }
+    .pop-body { padding: 12px 14px; }
+    .pop-title { font-weight: 700; margin: 0 0 4px; }
+    .pop-sub { color: #6b7280; font-size: 13px; margin-bottom: 4px; }
+    .pop-size { font-size: 13px; margin-bottom: 10px; }
+    .pop-btn {
+      display: inline-block; padding: 8px 12px; border-radius: 8px;
+      background:#111; color:#fff; text-decoration:none; font-weight:600;
+    }
   </style>
 </head>
 
@@ -291,6 +307,16 @@ function sortByDistance(list, point){
   }).sort((a,b) => a.d - b.d).map(({p,d}) => ({ ...p, __distance: d }));
 }
 
+/* ---------- formatting helpers ---------- */
+function sizeText(p) {
+  const a = Number(p.size_from_sqft || 0);
+  const b = Number(p.size_to_sqft || 0);
+  if (a && b) return `${a.toLocaleString()}–${b.toLocaleString()} sq ft`;
+  if (a) return `${a.toLocaleString()} sq ft`;
+  if (b) return `${b.toLocaleString()} sq ft`;
+  return '';
+}
+
 /* ---------- MAP ---------- */
 function initMap(){
   map = L.map('map').setView([52.5, -1.8], 6);
@@ -314,13 +340,21 @@ function updateMap(list, focusPoint){
       radius: 7, weight: 2, color: '#111', fillColor: '#111', fillOpacity: 0.85
     });
 
-    marker.bindPopup(`
-      <strong>${p.address || 'Property'}</strong><br/>
-      ${p.town || ''} ${p.postcode || ''}<br/>
-      ${p.size_from_sqft ? `${p.size_from_sqft}–${p.size_to_sqft} sq ft<br/>` : ''}
-      ${p.brochure || p.brochure_url ? `<a href="${p.brochure || p.brochure_url}" target="_blank">View brochure</a>` : ''}
-    `);
+    const img = getPrimaryImage(p);
+    const where = [p.town, p.postcode].filter(Boolean).join(' ');
+    const popupHtml = `
+      <div class="pop-card">
+        <div class="pop-img" style="background-image:url('${(img || '').replace(/'/g, "%27")}')"></div>
+        <div class="pop-body">
+          <div class="pop-title">${p.address || 'Property'}</div>
+          <div class="pop-sub">${where}</div>
+          <div class="pop-size">${sizeText(p)}</div>
+          <a class="pop-btn" href="property.html?id=${encodeURIComponent(p.id ?? '')}">View property</a>
+        </div>
+      </div>
+    `;
 
+    marker.bindPopup(popupHtml, { className: 'prop-popup', maxWidth: 360 });
     marker.addTo(markers);
     points.push([lat, lon]);
   });
@@ -358,16 +392,14 @@ function render(list, context = {}){
     const postcode = p.postcode || '';
     const size =
       p.size_from_sqft && p.size_to_sqft
-        ? `${p.size_from_sqft}–${p.size_to_sqft} sq ft`
-        : p.size_from_sqft ? `${p.size_from_sqft} sq ft` : '';
+        ? `${Number(p.size_from_sqft).toLocaleString()}–${Number(p.size_to_sqft).toLocaleString()} sq ft`
+        : p.size_from_sqft ? `${Number(p.size_from_sqft).toLocaleString()} sq ft` : '';
 
     const distStr = (typeof p.__distance === 'number' && isFinite(p.__distance))
       ? ` • ${(p.__distance/1000).toFixed(p.__distance >= 995 ? 0 : 1)} km`
       : '';
 
-    const titleHtml = brochure
-      ? `<a class="card__title" href="${brochure}" target="_blank" rel="noopener" aria-label="View brochure for ${address}">${address}</a>`
-      : `<div class="card__title" role="heading" aria-level="3">${address}</div>`;
+    const titleHtml = `<a class="card__title" href="property.html?id=${encodeURIComponent(p.id ?? p.slug ?? p.uid ?? String(address))}" aria-label="View details for ${address}">${address}</a>`;
 
     return `
       <article class="card" tabindex="0">
@@ -381,27 +413,23 @@ function render(list, context = {}){
           ${p.tenure ? `<span class="chip">${p.tenure}</span>` : ''}
         </div>
         <div class="card__footer">
-  <a class="btn-ghost"
-     href="property.html?id=${encodeURIComponent(p.id ?? p.slug ?? p.uid ?? String(address))}"
-     aria-label="View details for ${address}">
-    View property
-  </a>
-  ${brochure
-    ? `<a class="btn-link" href="${brochure}" target="_blank" rel="noopener"
-         aria-label="View brochure for ${address}">View brochure</a>`
-    : `<a class="btn-link" aria-disabled="true">No brochure</a>`
-  }
-</div>
+          <a class="btn-ghost"
+             href="property.html?id=${encodeURIComponent(p.id ?? p.slug ?? p.uid ?? String(address))}"
+             aria-label="View details for ${address}">
+            View property
+          </a>
+          ${brochure
+            ? `<a class="btn-link" href="${brochure}" target="_blank" rel="noopener"
+                 aria-label="View brochure for ${address}">View brochure</a>`
+            : `<a class="btn-link" aria-disabled="true">No brochure</a>`
+          }
+        </div>
       </article>
     `;
   }).join('');
 }
 
-/* ---------- FILTER FLOW ----------
-   - Apply tenure/type filters.
-   - If a query is entered, geocode it, pan the map, and sort by distance.
-   - If there are no text matches, still show nearest properties (never empty).
-*/
+/* ---------- FILTER FLOW ---------- */
 async function applyFilters(){
   const q = document.getElementById('q').value.trim();
   const tenure = document.getElementById('tenure').value;
@@ -450,13 +478,22 @@ async function loadProperties(){
       id: p.id ?? p.slug ?? p.uid ?? i,
       ...p
     }));
+
+    // populate Type dropdown with distinct types from feed (if present)
+    const types = new Set();
+    allProperties.forEach(p => {
+      const t = (p.type || p.property_type || (Array.isArray(p.types) ? p.types[0] : '') || '').toString().trim();
+      if (t) types.add(t);
+    });
+    const typeSel = document.getElementById('type');
+    typeSel.innerHTML = `<option value="any">Any</option>` + [...types].sort().map(t=>`<option>${t}</option>`).join('');
+
     applyFilters();
   } catch (e) {
     document.getElementById('statusText').textContent = 'Failed to load properties.json';
     console.error(e);
   }
 }
-
 
 document.addEventListener('DOMContentLoaded', () => {
   initMap();
