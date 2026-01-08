@@ -5,293 +5,371 @@
   <title>Property</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <style>
-    /* ----- base ----- */
-    *,*::before,*::after{box-sizing:border-box}
+    /* ---------- tokens ---------- */
     :root{
-      --radius:12px; --gap:18px;
-      --border:1px solid #e8e8e8;
-      --text:#111; --muted:#666; --bg:#fff;
-      --shadow:0 10px 25px rgba(0,0,0,.08);
-      --chip:#f6f6f6;
+      --bg: #0b0c10;               /* page backdrop (very dark) */
+      --card: #fff;                 /* card surface */
+      --ink: #111;                  /* primary text */
+      --muted: #6b7280;            /* secondary text */
+      --ring: 32, 33, 36;          /* shadow hue */
+      --brand: #111;               /* buttons + accents */
+      --radius: 14px;
+      --gap: 18px;
+      --shadow-sm: 0 1px 2px rgba(var(--ring), .08);
+      --shadow-md: 0 10px 25px rgba(var(--ring), .08), 0 2px 8px rgba(var(--ring), .06);
+      --shadow-lg: 0 30px 60px rgba(var(--ring), .14), 0 8px 20px rgba(var(--ring), .10);
+      --glass: rgba(255,255,255,.7);
+      --glass-border: rgba(255,255,255,.45);
     }
-    html,body{margin:0}
-    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:#fff}
+
+    /* ---------- reset / base ---------- */
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 20% -10%, #e9eefc 0%, transparent 60%),
+        radial-gradient(1200px 600px at 100% 0%, #eaf7ff 0%, transparent 55%),
+        #f6f7fb;
+    }
+
     a{color:inherit}
+
     .wrap{max-width:1200px;margin:0 auto;padding:28px 18px 72px}
-    .topbar{margin-bottom:14px}
-    .back{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#111}
-    h1{margin:6px 0 6px;font-size:28px;line-height:1.2}
-    .muted{color:var(--muted);font-size:14px}
+    .topbar{margin-bottom:12px}
+    .back{display:inline-flex;gap:10px;align-items:center;text-decoration:none;color:#111}
+    .back::before{content:"←";opacity:.8}
+    h1{margin:8px 0 6px;font-size:32px;letter-spacing:-.02em}
+    .muted{color:var(--muted)}
+    .pill{display:inline-flex;align-items:center;height:28px;padding:0 10px;border-radius:999px;background:#f5f5f5;font-size:12px;border:1px solid #ececec;margin-right:8px}
 
-    /* ----- layout ----- */
-    .layout{display:grid;grid-template-columns:1.6fr .9fr;gap:24px}
-    @media (max-width:980px){.layout{grid-template-columns:1fr}}
+    /* ---------- layout ---------- */
+    .layout{
+      display:grid;
+      grid-template-columns: minmax(0, 1fr) 360px;
+      gap: 26px;
+    }
+    @media (max-width: 980px){ .layout{ grid-template-columns: 1fr; } }
 
-    /* ----- media / gallery ----- */
-    .media{background:#eee;border-radius:12px;overflow:hidden}
-    .hero{position:relative;aspect-ratio:16/9}
+    /* ---------- hero ---------- */
+    .hero-card{
+      background: var(--card);
+      border-radius: calc(var(--radius) + 4px);
+      overflow:hidden;
+      box-shadow: var(--shadow-lg);
+    }
+    .hero{
+      position:relative;
+      aspect-ratio: 16/9;
+      background:#eee;
+      overflow:hidden;
+    }
     .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-    .thumbs{display:flex;gap:10px;padding:10px 2px 2px;overflow:auto}
-    .thumb{flex:0 0 140px;aspect-ratio:16/10;border-radius:10px;overflow:hidden;border:1px solid #eee;cursor:pointer;opacity:.9;transition:opacity .15s}
-    .thumb:hover{opacity:1}
+    .hero::after{
+      content:"";
+      position:absolute;inset:0;
+      background: linear-gradient(to top, rgba(0,0,0,.18), transparent 40%);
+      pointer-events:none;
+    }
+    .gallery{
+      display:flex;gap:10px;
+      padding:12px 12px 16px;
+      overflow:auto;
+      background: linear-gradient(#fff, #fff);
+    }
+    .thumb{
+      flex:0 0 120px; aspect-ratio: 4/3; border-radius:12px; overflow:hidden;
+      border:1px solid #eee; box-shadow: var(--shadow-sm);
+      background:#f3f3f3; cursor:pointer; transition: transform .12s ease;
+    }
+    .thumb:hover{ transform: translateY(-2px) }
     .thumb img{width:100%;height:100%;object-fit:cover;display:block}
 
-    /* ----- cards/boxes ----- */
-    .box{border:var(--border);border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-    .box.pad{padding:14px}
-    .box h3{margin:0 0 10px;font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.02em}
+    /* ---------- sticky right column ---------- */
+    .sticky{
+      position:sticky; top:18px; align-self:start; display:flex; flex-direction:column; gap:18px;
+    }
+    .card{
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-md);
+      border: 1px solid #edf0f3;
+      overflow:hidden;
+    }
+    .card__body{ padding:16px }
+    .card__title{
+      font-size:12px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted);
+      padding:12px 16px 8px; border-bottom:1px solid #f0f2f5; background:linear-gradient(#fff,#fff)
+    }
 
-    /* enquire panel + map */
-    .actions{display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap}
-    .btn{height:44px;padding:0 16px;border-radius:10px;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600;text-decoration:none}
-    .btn-primary{background:#111;color:#fff}
-    .btn-ghost{background:#fff;border:1px solid #ddd}
-    #map{height:280px;border-radius:12px;overflow:hidden}
+    .actions{display:flex;gap:10px;margin-bottom:12px}
+    .btn{
+      height:44px; padding:0 16px; border-radius:10px; border:none; cursor:pointer;
+      display:inline-flex; align-items:center; justify-content:center; font-weight:600; text-decoration:none;
+      box-shadow: var(--shadow-sm);
+    }
+    .btn-primary{ background: var(--brand); color:#fff }
+    .btn-ghost{ background:#fff; border:1px solid #e6e6e6 }
 
-    /* spec table */
-    .spec{margin-top:var(--gap)}
-    .row{display:grid;grid-template-columns:200px 1fr;gap:10px;padding:14px 16px;border-top:var(--border)}
-    .row:first-child{border-top:none}
-    .label{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.02em}
+    #map{ height:260px; border-radius:12px; overflow:hidden; box-shadow: var(--shadow-sm); }
 
-    /* sections */
-    .section{margin-top:22px}
-    .section h2{font-size:18px;margin:0 0 8px}
-    .features{margin:0;padding-left:18px}
-    .features li{margin:6px 0}
+    /* ---------- spec facts ---------- */
+    .facts{
+      display:grid; gap:14px;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+    @media (max-width:700px){ .facts{ grid-template-columns: 1fr; } }
+    .fact{
+      background: #fff; border:1px solid #eef0f3; border-radius:12px;
+      padding:14px; box-shadow: var(--shadow-sm);
+    }
+    .fact .label{ font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px }
+    .fact .value{ font-weight:600 }
 
-    /* contacts */
-    .agentlist{display:grid;gap:12px}
-    .agent{display:grid;grid-template-columns:56px 1fr;gap:12px;align-items:center;padding:10px 0;border-top:var(--border)}
-    .agent:first-child{border-top:none}
-    .avatar{width:56px;height:56px;border-radius:50%;overflow:hidden;background:#eee;display:grid;place-items:center;font-weight:700;color:#333}
-    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
-    .agent .name{font-weight:600}
-    .agent .meta{font-size:13px;color:var(--muted)}
-    .agent .cta{margin-top:6px;display:flex;gap:10px;flex-wrap:wrap}
-    .agent .cta a{font-size:13px;text-decoration:underline}
-    .chip{display:inline-block;background:var(--chip);padding:4px 8px;border-radius:999px;font-size:12px}
-    .inline-links a{color:#111;text-decoration:underline}
+    /* ---------- section cards ---------- */
+    .section{ margin-top:22px }
+    .section .card__title{ display:flex; align-items:center; gap:8px }
+    .section h2{ font-size:18px; margin:0; letter-spacing:-.01em }
 
-    /* small helpers */
-    .hide{display:none}
+    .features{ margin:10px 0 2px; padding-left:20px }
+    .features li{ margin:6px 0 }
+
+    /* ---------- agents ---------- */
+    .agent{ display:grid; grid-template-columns: 48px 1fr; gap:12px; align-items:center; padding:12px 16px; border-top:1px solid #f0f2f5 }
+    .agent:first-of-type{ border-top:none }
+    .avatar{
+      width:48px;height:48px;border-radius:50%;overflow:hidden;display:grid;place-items:center;
+      background:#f1f3f6; font-weight:700; color:#222; border:1px solid #e9edf2;
+    }
+    .avatar img{ width:100%; height:100%; object-fit:cover; display:block }
+    .agent .name{ font-weight:600 }
+    .agent .meta{ font-size:13px; color: var(--muted) }
+    .agent .cta{ margin-top:6px; display:flex; gap:10px; flex-wrap:wrap }
+    .agent .cta a{ font-size:13px; text-decoration:underline }
+
+    /* ---------- small helpers ---------- */
+    .chips{ display:flex; gap:8px; flex-wrap:wrap; margin:6px 0 14px }
+    .chip{ background:#f6f6f6; border:1px solid #ececec; padding:6px 10px; border-radius:999px; font-size:12px }
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="topbar">
-      <a class="back" href="index.html">← Back to results</a>
+      <a class="back" href="index.html">Back to results</a>
     </div>
 
     <div id="loading" class="muted">Loading…</div>
-    <div id="content" class="hide">
+
+    <div id="content" style="display:none">
+      <h1 id="prop-title">Property</h1>
+      <div class="muted" id="prop-sub"></div>
+      <div class="chips" id="prop-chips"></div>
+
       <div class="layout">
         <!-- LEFT -->
         <div>
-          <div id="heading"></div>
-
-          <div class="media box">
+          <div class="hero-card">
             <div class="hero" id="hero"></div>
-            <div class="thumbs" id="thumbs"></div>
+            <div class="gallery" id="thumbs"></div>
           </div>
 
-          <div class="box spec" id="spec"></div>
-
-          <div class="section" id="overviewBlock" class="hide">
-            <h2>Overview</h2>
-            <div id="overview" class="muted"></div>
-          </div>
-
-          <div class="section" id="featuresBlock" class="hide">
-            <h2>Key features</h2>
-            <ul class="features" id="features"></ul>
-          </div>
-
-          <div class="section" id="descBlock" class="hide">
-            <h2>Description</h2>
-            <div id="desc" class="muted"></div>
-          </div>
-
-          <div class="section" id="locBlock" class="hide">
-            <h2>Location</h2>
-            <div id="loc" class="muted"></div>
-          </div>
-
-          <div class="section inline-links" id="linksBlock" class="hide"></div>
-        </div>
-
-        <!-- RIGHT -->
-        <div>
-          <div class="box pad">
-            <h3>Enquire about this property</h3>
-            <div class="actions">
-              <a class="btn btn-primary" id="enquireBtn" target="_blank" rel="noopener">Enquire now</a>
-              <a class="btn btn-ghost" id="brochureBtn" target="_blank" rel="noopener">Download brochure</a>
+          <!-- Facts / spec -->
+          <div class="section">
+            <div class="card">
+              <div class="card__title">Key details</div>
+              <div class="card__body">
+                <div class="facts" id="facts"></div>
+              </div>
             </div>
-            <div id="map"></div>
           </div>
 
-          <div class="box pad section" id="teamBox" class="hide">
-            <h3>Viewings & further information</h3>
-            <div class="agentlist" id="agents"></div>
+          <!-- Overview -->
+          <div class="section" id="overviewCard" style="display:none">
+            <div class="card">
+              <div class="card__title"><h2>Overview</h2></div>
+              <div class="card__body" id="overview"></div>
+            </div>
+          </div>
+
+          <!-- Features -->
+          <div class="section" id="featuresCard" style="display:none">
+            <div class="card">
+              <div class="card__title"><h2>Key features</h2></div>
+              <div class="card__body"><ul class="features" id="features"></ul></div>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="section" id="descCard" style="display:none">
+            <div class="card">
+              <div class="card__title"><h2>Description</h2></div>
+              <div class="card__body" id="desc"></div>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="section" id="locCard" style="display:none">
+            <div class="card">
+              <div class="card__title"><h2>Location</h2></div>
+              <div class="card__body" id="loc"></div>
+            </div>
           </div>
         </div>
+
+        <!-- RIGHT (sticky) -->
+        <aside class="sticky">
+          <div class="card">
+            <div class="card__title">Enquire about this property</div>
+            <div class="card__body">
+              <div class="actions">
+                <a class="btn btn-primary" id="enquireBtn" target="_blank" rel="noopener">Enquire now</a>
+                <a class="btn btn-ghost" id="brochureBtn" target="_blank" rel="noopener">Download brochure</a>
+              </div>
+              <div id="map"></div>
+            </div>
+          </div>
+
+          <div class="card" id="teamBox" style="display:none">
+            <div class="card__title">Viewings & further information</div>
+            <div id="agents"></div>
+          </div>
+        </aside>
       </div>
     </div>
   </div>
 
 <script>
-/* ---------- utils ---------- */
-const $ = (s, el=document) => el.querySelector(s);
-const on = (el, evt, fn) => el.addEventListener(evt, fn);
-const getParam = (k) => new URLSearchParams(location.search).get(k);
-const pick = (...a) => a.find(v => v !== undefined && v !== null && v !== '');
-const toParagraphs = (txt) =>
-  String(txt).split(/\n{2,}|\r\r/).map(s=>s.trim()).filter(Boolean).map(s=>`<p>${s}</p>`).join("");
+/* ---------- helpers ---------- */
+const $  = (s, el=document) => el.querySelector(s);
+const $$ = (s, el=document) => [...el.querySelectorAll(s)];
+function getParam(name){ return new URLSearchParams(location.search).get(name); }
+function pick(...vals){ return vals.find(v => v !== undefined && v !== null && v !== ''); }
 
-/* make inline SVG initials avatar so we don’t depend on 3rd parties */
-function makeInitialsAvatar(name = "Agent"){
-  const [a="",b=""] = name.trim().split(/\s+/);
-  const inits = (a[0]||"A") + (b[0]||"");
-  const svg = encodeURIComponent(
-`<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'>
-  <rect width='100%' height='100%' fill='#e9ecef'/>
-  <text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle'
-    font-family='system-ui, -apple-system, Segoe UI, Roboto, Arial' font-size='44' fill='#343a40' font-weight='700'>${inits}</text>
-</svg>`);
-  return `data:image/svg+xml;charset=utf-8,${svg}`;
-}
-
-/* images can be array of strings or {url|_} */
 function getImages(p){
-  const list = [];
+  const arr=[];
   if (Array.isArray(p.images)) {
     for (const it of p.images) {
-      if (typeof it === 'string') list.push(it);
-      else if (it?.url) list.push(it.url);
-      else if (it?._) list.push(it._);
+      if (typeof it === 'string') arr.push(it);
+      else if (it?.url) arr.push(it.url);
+      else if (it?._) arr.push(it._);
     }
   }
-  if (!list.length && Array.isArray(p.photos)) {
-    for (const ph of p.photos){ if (ph?.url) list.push(ph.url); }
-  }
+  if (!arr.length && Array.isArray(p.photos)) for (const ph of p.photos) if (ph?.url) arr.push(ph.url);
   const fallback = pick(p.image, p.image_url);
-  if (fallback) list.unshift(fallback);
-  return [...new Set(list)].filter(Boolean);
+  if (fallback) arr.unshift(fallback);
+  return [...new Set(arr)].filter(Boolean);
 }
-
-function fmtMoney(n){ const x=Number(n); return Number.isFinite(x)?`£${x.toFixed(2)}`:''; }
-function fmtRV(n){ const x=Number(n); return Number.isFinite(x)?`£${x.toLocaleString()}`:''; }
-
-function row(label, value){
-  if (!value) return '';
-  return `<div class="row"><div class="label">${label}</div><div>${value}</div></div>`;
+function toListItems(val){
+  if (!val) return [];
+  if (Array.isArray(val)) return val.map(String).filter(Boolean);
+  return String(val).split(/\r?\n|•/g).map(s => s.trim()).filter(Boolean);
 }
-
-function niceSize(p){
+function initials(name){
+  if (!name) return "";
+  const parts = String(name).trim().split(/\s+/).slice(0,2);
+  return parts.map(w => w[0]?.toUpperCase() || '').join('');
+}
+function formatSize(p){
   const a=p.size_from_sqft, b=p.size_to_sqft;
   if (a && b) return `${a}–${b} sq ft`;
   if (a) return `${a} sq ft`;
   if (b) return `${b} sq ft`;
   return '';
 }
-
 function buildEnquiryUrl(p){
   const to = "gjs-dillon-limited-393@parse.agents-society.com";
   const subject = `Enquiry: ${p.address || 'Property'} (${p.id ?? ''})`;
-  const lines = [
+  const body = [
     "Hi,",
     "",
     "I'd like more information about:",
     `${p.address || 'Property'}`,
     `${[p.town, p.postcode].filter(Boolean).join(' ')}`,
     `Ref: ${p.id ?? ''}`,
-    ""
-  ];
-  return `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join("\n"))}`;
+    "",
+    "Please reply to me via email/phone."
+  ].join("\n");
+  return `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
 
-/* ---------- main ---------- */
+/* ---------- page ---------- */
 let map, marker;
 
 async function main(){
   const id = getParam('id');
   const res = await fetch('./properties.json', { cache:'no-store' });
   const list = await res.json();
-  const withIds = list.map((p,i)=>({ id: p.id ?? p.slug ?? p.uid ?? i, ...p }));
-  const p = withIds.find(x => String(x.id) === String(id)) || withIds[0];
+  const items = list.map((p,i)=>({ id: p.id ?? p.slug ?? p.uid ?? i, ...p }));
+  const p = items.find(x => String(x.id) === String(id)) || items[0];
+
   if (!p){ $('#loading').textContent = 'Property not found.'; return; }
 
   document.title = p.address ? `${p.address} — Property` : 'Property';
-  $('#loading').classList.add('hide');
-  $('#content').classList.remove('hide');
+  $('#loading').style.display = 'none';
+  $('#content').style.display = '';
 
-  // heading
-  $('#heading').innerHTML = `
-    <h1>${p.address || 'Property'}</h1>
-    <div class="muted">${[p.town, p.postcode].filter(Boolean).join(' ')}</div>
-  `;
+  /* header */
+  $('#prop-title').textContent = p.address || 'Property';
+  $('#prop-sub').textContent = [p.town, p.postcode].filter(Boolean).join(' ');
+  const chipWrap = $('#prop-chips');
+  const tType  = pick(p.type, p.property_type, Array.isArray(p.types)&&p.types[0]);
+  const tenure = pick(p.tenure, p.transaction_type, p.to_let ? 'To Let' : (p.for_sale ? 'For Sale' : ''));
+  const epc    = pick(p.epc_rating, p.epc, (p.current_energy_ratings && p.current_energy_ratings.rating) ? `${p.current_energy_ratings.rating._ || p.current_energy_ratings.rating} (${p.current_energy_ratings.rating.$?.value || ""})` : '');
+  if (tenure) chipWrap.innerHTML += `<span class="chip">${tenure}</span>`;
+  if (tType)  chipWrap.innerHTML += `<span class="chip">${tType}</span>`;
+  if (epc)    chipWrap.innerHTML += `<span class="chip">EPC ${epc}</span>`;
 
   /* gallery */
   const imgs = getImages(p);
-  const hero = $('#hero'), thumbs = $('#thumbs');
+  const hero = $('#hero');
+  const thumbs = $('#thumbs');
   const setHero = (src) => { hero.innerHTML = src ? `<img src="${src}" alt="${p.address||'Property'}">` : ''; };
   setHero(imgs[0] || '');
-  thumbs.innerHTML = imgs.slice(0,12).map(u => `
-    <button class="thumb" type="button" data-src="${u}" aria-label="View photo">
-      <img src="${u}" alt="">
-    </button>`).join('');
-  on(thumbs,'click',e=>{
-    const t=e.target.closest('.thumb'); if(!t) return; setHero(t.dataset.src);
+  thumbs.innerHTML = imgs.slice(0,15).map(u => `
+    <button class="thumb" type="button" data-src="${u}" aria-label="View photo"><img src="${u}" alt=""></button>
+  `).join('');
+  thumbs.addEventListener('click', e => {
+    const t = e.target.closest('.thumb'); if (!t) return;
+    setHero(t.dataset.src);
+    thumbs.scrollTo({ left: t.offsetLeft - 12, behavior:'smooth' });
   });
 
-  /* spec */
-  const type = pick(p.type, p.property_type, Array.isArray(p.types)&&p.types[0]);
-  const tenure = pick(p.tenure, p.transaction_type, p.to_let ? 'To Let' : (p.for_sale ? 'For Sale' : ''));
-  const size = niceSize(p);
-  const rent = pick(p.rent, p.rent_psf && `${fmtMoney(p.rent_psf)} per sq ft`);
-  const rates = p.business_rates_psf && `${fmtMoney(p.business_rates_psf)} per sq ft`;
-  const rv = p.rateable_value && fmtRV(p.rateable_value);
-  const sc = p.service_charge;
-  const ec = p.estate_charge;
-  const epc = pick(p.epc_rating, p.epc);
-  const updated = p.last_updated;
-
-  $('#spec').innerHTML = [
-    row('Property type', type),
-    row('Tenure', tenure),
-    row('Size', size),
-    row('Rent', rent),
-    row('Business rates', rates),
-    row('Rateable value', rv),
-    row('Service charge', sc),
-    row('Estate charge', ec),
-    row('Energy performance rating', epc),
-    row('Last updated', updated),
+  /* facts */
+  const facts = $('#facts');
+  const fact = (label, value) => value ? `<div class="fact"><div class="label">${label}</div><div class="value">${value}</div></div>` : '';
+  facts.innerHTML = [
+    fact('Property type', tType),
+    fact('Tenure', tenure),
+    fact('Size', formatSize(p)),
+    fact('Rent', pick(p.rent, p.rent_psf)),
+    fact('Business rates', p.business_rates?.rates_payable ? `${p.business_rates.rates_payable} per sq ft` : p.business_rates_psf || ''),
+    fact('Rateable value', p.business_rates?.rateable_value ? `£${Number(p.business_rates.rateable_value).toLocaleString()}` : p.rateable_value || ''),
+    fact('EPC', epc),
+    fact('Last updated', p.last_updated || '')
   ].join('');
 
-  /* sections */
-  const overview = pick(p.specification_summary, p.summary);
-  if (overview){ $('#overview').innerHTML = toParagraphs(overview); $('#overviewBlock').classList.remove('hide'); }
+  /* text blocks */
+  const overview = pick(p.specification_summary?._, p.summary);
+  if (overview){ $('#overview').innerHTML = overview; $('#overviewCard').style.display=''; }
 
-  const feats = Array.isArray(p.features) ? p.features : [];
-  if (feats.length){
-    $('#features').innerHTML = feats.map(f=>`<li>${f}</li>`).join('');
-    $('#featuresBlock').classList.remove('hide');
-  }
+  const feats = toListItems(p.key_selling_points?.key_selling_point || p.features || p.key_features);
+  if (feats.length){ $('#features').innerHTML = feats.map(f=>`<li>${f}</li>`).join(''); $('#featuresCard').style.display=''; }
 
-  const desc = pick(p.specification_description, p.description);
-  if (desc){ $('#desc').innerHTML = toParagraphs(desc); $('#descBlock').classList.remove('hide'); }
+  const desc = pick(p.specification_description?._, p.description);
+  if (desc){ $('#desc').innerHTML = desc; $('#descCard').style.display=''; }
 
-  const locText = pick(p.location);
-  if (locText){ $('#loc').innerHTML = toParagraphs(locText); $('#locBlock').classList.remove('hide'); }
+  const loc = pick(p.location?._, p.location);
+  if (loc){ $('#loc').innerHTML = loc; $('#locCard').style.display=''; }
 
   /* actions */
-  const brochure = pick(p.brochure, p.brochure_url);
+  const brochure = pick(p.brochure, p.brochure_url, p.files?.file?.url);
   const enquireUrl = buildEnquiryUrl(p);
   $('#enquireBtn').href = enquireUrl;
   if (brochure){ $('#brochureBtn').href = brochure; $('#brochureBtn').style.display='inline-flex'; }
@@ -306,36 +384,39 @@ async function main(){
     map.setView([lat, lon], 14);
   }
 
-  /* contacts */
-  const contacts = Array.isArray(p.contacts) ? p.contacts : [];
+  /* agents */
+  const contacts = Array.isArray(p.contacts?.contact) ? p.contacts.contact
+                   : Array.isArray(p.contacts) ? p.contacts
+                   : p.contacts ? [p.contacts] : [];
   if (contacts.length){
-    const agents = $('#agents');
-    agents.innerHTML = contacts.map(a=>{
-      const nm = a.name || '';
-      const avatar = a.photo || makeInitialsAvatar(nm);
-      const lines = [
-        [a.company, a.title].filter(Boolean).join(' • '),
-        [a.phone, a.mobile].filter(Boolean).join(' • ')
-      ].filter(Boolean).map(s=>`<div class="meta">${s}</div>`).join('');
-      const mail = a.email ? `<a href="mailto:${a.email}">Email</a>` : '';
-      const tel = a.phone ? `<a href="tel:${a.phone.replace(/\s+/g,'')}">Call</a>` : '';
+    const box = $('#teamBox'); const list = $('#agents');
+    list.innerHTML = contacts.map(c => {
+      const photo = c.photo || c.image || '';
+      const init  = initials(c.name || '');
+      const tel   = c.tel || c.phone;
+      const mob   = c.mobile || c.m: // ignore if missing
+        (c.mobile === 0 ? '' : c.mobile);
       return `
         <div class="agent">
-          <span class="avatar">${avatar.startsWith('http') ? `<img src="${avatar}" alt="${nm}">` : `<img src="${avatar}" alt="${nm}">`}</span>
-          <div>
-            <div class="name">${nm}</div>
-            ${lines}
-            <div class="cta">${mail}${mail&&tel?' · ':''}${tel}</div>
+          <div class="avatar">
+            ${photo ? `<img src="${photo}" alt="${c.name||'Agent'}" onerror="this.closest('.avatar').textContent='${init}'">` : `${init}`}
           </div>
-        </div>`;
+          <div>
+            <div class="name">${c.name || ''}</div>
+            <div class="meta">${[c.office, c.branch].filter(Boolean).join(' • ')}</div>
+            <div class="meta">
+              ${tel ? `${tel}` : ''}${tel && mob ? ' • ' : ''}${mob ? `${mob}` : ''}
+            </div>
+            <div class="cta">
+              ${c.email ? `<a href="mailto:${c.email}">Email</a>` : ''}
+              ${tel ? `<a href="tel:${tel}">Call</a>` : ''}
+              ${mob ? `<a href="tel:${mob}">Mobile</a>` : ''}
+            </div>
+          </div>
+        </div>
+      `;
     }).join('');
-    $('#teamBox').classList.remove('hide');
-  }
-
-  /* related link (source URL) */
-  if (p.url){
-    $('#linksBlock').innerHTML = `<a href="${p.url}" target="_blank" rel="noopener">View on agency site</a>`;
-    $('#linksBlock').classList.remove('hide');
+    box.style.display = '';
   }
 }
 
