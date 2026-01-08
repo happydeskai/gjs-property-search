@@ -31,7 +31,6 @@
       color: var(--text);
       background: #fff;
     }
-    /* Slightly tighter top padding now that the H1 is gone */
     .wrap{ max-width: 1200px; margin: 0 auto; padding: 12px 18px 60px; }
 
     /* ---- full-bleed map ---- */
@@ -48,8 +47,8 @@
       margin-bottom: 18px;
     }
     #map{
-      height: 420px;               /* slimmer map */
-      outline: 1px solid #e8e8e8;  /* subtle frame */
+      height: 420px;
+      outline: 1px solid #e8e8e8;
       position: relative;
       z-index: 0;
     }
@@ -60,12 +59,13 @@
     .searchBar{
       display: grid;
       grid-template-columns:
-        minmax(220px, 1.5fr)
-        minmax(140px, 1fr)
-        minmax(140px, 1fr)
-        minmax(120px, 1fr)
-        minmax(120px, 1fr)
-        140px;
+        minmax(220px, 1.6fr)   /* location */
+        minmax(120px, 1fr)     /* tenure   */
+        minmax(120px, 1fr)     /* type     */
+        minmax(120px, 1fr)     /* radius   */
+        minmax(120px, 1fr)     /* min size */
+        minmax(120px, 1fr)     /* max size */
+        140px;                 /* button   */
       gap: 12px;
       padding: 14px;
       border: var(--border);
@@ -154,36 +154,24 @@
     .card:focus-within{ outline: 2px solid #111; outline-offset: 2px; }
     .card:hover{ transform: translateY(-2px); box-shadow: var(--shadow); }
 
-    .card__media{
-      position: relative;
-      aspect-ratio: 4 / 3;
-      background: #eee;
-    }
+    .card__media{ position: relative; aspect-ratio: 4 / 3; background: #eee; }
     .card__media::before{ content:""; display:block; padding-top:75%; }
     .card__media img{
-      position: absolute; inset: 0;
-      width: 100%; height: 100%;
-      object-fit: cover;
+      position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
     }
 
     .card__body{ padding: 14px; }
     .card__loc{ color: var(--muted); font-size: 14px; margin-bottom: 6px; }
-    .card__title{
-      font-size: 18px; font-weight: 600; margin: 0 0 6px;
-      color: var(--text); text-decoration: none;
-    }
+    .card__title{ font-size: 18px; font-weight: 600; margin: 0 0 6px; color: var(--text); text-decoration: none; }
     .card__meta{ color: var(--muted); font-size: 14px; margin-top: 6px; }
     .chip{ display:inline-block; background:#f6f6f6; padding:6px 10px; border-radius:999px; font-size:12px; margin-top:8px; }
 
-    .card__footer{
-      display: flex; align-items: center; justify-content: space-between;
-      gap: 10px; padding: 12px 14px; border-top: var(--border);
-    }
+    .card__footer{ display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px; border-top: var(--border); }
     .btn-link, .btn-ghost{
-      height: 36px; padding: 0 12px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center;
-      font-size: 14px; text-decoration: none;
+      height:36px; padding:0 12px; border-radius:8px; display:inline-flex; align-items:center; justify-content:center;
+      font-size:14px; text-decoration:none;
     }
-    .btn-ghost{ border: 1px solid #ddd; color:#333; background:#fff; }
+    .btn-ghost{ border:1px solid #ddd; color:#333; background:#fff; }
     .btn-link{ background:#111; color:#fff; border:none; }
     .btn-link[aria-disabled="true"]{ opacity:.5; pointer-events:none; }
 
@@ -194,23 +182,18 @@
     .prop-popup .leaflet-popup-content-wrapper { padding: 0; border-radius: 12px; overflow: hidden; }
     .prop-popup .leaflet-popup-tip { display: none; }
 
-    .pop-card { width: 320px; background: #fff; }   /* smaller */
+    .pop-card { width: 320px; background: #fff; }
     .pop-img  { width: 100%; height: 160px; background-size: cover; background-position: center; background-color: #eee; }
     .pop-body { padding: 12px 14px; }
     .pop-title{ font-weight: 700; margin: 0 0 4px; }
     .pop-sub  { color: #6b7280; font-size: 13px; margin-bottom: 4px; }
     .pop-size { font-size: 13px; margin-bottom: 10px; }
-    .pop-btn  {
-      display: inline-block; padding: 8px 12px; border-radius: 8px;
-      background:#111; color:#fff; text-decoration:none; font-weight:600;
-    }
+    .pop-btn  { display: inline-block; padding: 8px 12px; border-radius: 8px; background:#111; color:#fff; text-decoration:none; font-weight:600; }
   </style>
 </head>
 
 <body>
 <div class="wrap">
-  <!-- H1 removed -->
-
   <!-- MAP (full-bleed) -->
   <div class="bleed">
     <div id="map"></div>
@@ -236,6 +219,19 @@
       <label for="type">Type</label>
       <select id="type">
         <option value="any">Any</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="radius">Radius</label>
+      <select id="radius" title="Search radius from location">
+        <option value="any">Any</option>
+        <option value="1">1 mile</option>
+        <option value="3">3 miles</option>
+        <option value="5">5 miles</option>
+        <option value="10">10 miles</option>
+        <option value="25">25 miles</option>
+        <option value="50">50 miles</option>
       </select>
     </div>
 
@@ -312,6 +308,7 @@ function haversine(lat1, lon1, lat2, lon2){
   return 2*R*Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
 }
 
+/* distance sort + adorn with distance */
 function sortByDistance(list, point){
   return list.map(p => {
     const lat = Number(p.lat), lon = Number(p.lon);
@@ -320,7 +317,8 @@ function sortByDistance(list, point){
   }).sort((a,b) => a.d - b.d).map(({p,d}) => ({ ...p, __distance: d }));
 }
 
-/* ---------- formatting helpers ---------- */
+/* ---------- helpers ---------- */
+function milesToMeters(mi){ return mi * 1609.344; }
 function sizeText(p) {
   const a = Number(p.size_from_sqft || 0);
   const b = Number(p.size_to_sqft || 0);
@@ -341,12 +339,10 @@ function initMap(){
 function updateMap(list, focusPoint){
   markers.clearLayers();
   searchMarker.clearLayers();
-
   const points = [];
 
   list.forEach(p => {
-    const lat = Number(p.lat);
-    const lon = Number(p.lon);
+    const lat = Number(p.lat), lon = Number(p.lon);
     if (!isFinite(lat) || !isFinite(lon)) return;
 
     const marker = L.circleMarker([lat, lon], {
@@ -389,7 +385,10 @@ function render(list, context = {}){
   document.getElementById('resultsCount').textContent = `${list.length} Properties Found`;
 
   const parts = [`Showing ${list.length} of ${allProperties.length}`];
-  if (context.nearLabel) parts.push(`near "${context.nearLabel}"`);
+  if (context.nearLabel) {
+    if (context.radiusMiles) parts.push(`within ${context.radiusMiles} mile${context.radiusMiles==1?'':'s'}`);
+    parts.push(`of "${context.nearLabel}"`);
+  }
   document.getElementById('statusText').textContent = parts.join(' ');
 
   if (!list.length){
@@ -447,6 +446,7 @@ async function applyFilters(){
   const q = document.getElementById('q').value.trim();
   const tenure = document.getElementById('tenure').value;
   const type = document.getElementById('type')?.value || 'any';
+  const radiusVal = document.getElementById('radius').value;
 
   let base = allProperties.filter(p => {
     if (tenure !== 'any') {
@@ -460,24 +460,50 @@ async function applyFilters(){
     return true;
   });
 
-  if (!q) { render(base); updateMap(base); return; }
+  // Apply simple text match first (helps when the location is an address)
+  let textMatch = q
+    ? base.filter(p => {
+        const text = `${p.address||''} ${p.town||''} ${p.postcode||''}`.toLowerCase();
+        return text.includes(q.toLowerCase());
+      })
+    : base;
 
-  const textMatch = base.filter(p => {
-    const text = `${p.address||''} ${p.town||''} ${p.postcode||''}`.toLowerCase();
-    return text.includes(q.toLowerCase());
-  });
+  // If no query, no geocode => no radius filtering
+  if (!q) {
+    render(textMatch);
+    updateMap(textMatch);
+    return;
+  }
 
-  if (textMatch.length) { render(textMatch); updateMap(textMatch); }
-  else { render(base); updateMap(base); }
-
+  // Geocode the query
   const point = await geocodePlace(q);
-  if (!point) return;
+  if (!point) {
+    // fallback: no geocode result, show text matches or base
+    render(textMatch);
+    updateMap(textMatch);
+    return;
+  }
 
-  let finalList = textMatch.length ? textMatch : base;
-  finalList = sortByDistance(finalList, point);
+  // Sort by distance
+  let finalList = sortByDistance(textMatch, point);
+
+  // Apply radius if chosen
+  let radiusMiles = null;
+  if (radiusVal !== 'any') {
+    radiusMiles = Number(radiusVal);
+    const meterLimit = milesToMeters(radiusMiles);
+    finalList = finalList.filter(p => isFinite(p.__distance) && p.__distance <= meterLimit);
+  }
+
+  // If radius made it empty, fall back to nearest (non-empty) set within base list
+  if (!finalList.length) {
+    finalList = sortByDistance(base, point);
+  }
+
+  // limit large result sets for performance
   if (finalList.length > 60) finalList = finalList.slice(0, 60);
 
-  render(finalList, { nearLabel: point.label || q });
+  render(finalList, { nearLabel: point.label || q, radiusMiles });
   updateMap(finalList, point);
 }
 
