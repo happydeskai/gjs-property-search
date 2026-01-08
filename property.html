@@ -12,55 +12,60 @@
   <style>
     *,*::before,*::after{box-sizing:border-box}
     :root{
-      --radius:12px;--gap:16px;--border:1px solid #e7e7e7;
-      --text:#111;--muted:#666;--bg:#fff;--shadow:0 10px 25px rgba(0,0,0,.08)
+      --radius:12px;--gap:18px;--border:1px solid #e6e6e6;
+      --text:#111;--muted:#666;--bg:#fff;--shadow:0 8px 24px rgba(0,0,0,.06);
+      --label:#f6f6f6
     }
     body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:#fff}
     .wrap{max-width:1200px;margin:0 auto;padding:28px 18px 60px}
     a{color:inherit}
-    .topbar{margin-bottom:16px}
+    .topbar{margin-bottom:12px}
     .back{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#111}
-    h1{margin:10px 0 8px;font-size:28px}
+    h1{margin:10px 0 6px;font-size:28px}
     .muted{color:var(--muted);font-size:14px}
 
-    .layout{display:grid;grid-template-columns:1.6fr .95fr;gap:24px}
-    @media (max-width:900px){.layout{grid-template-columns:1fr}}
+    .layout{display:grid;grid-template-columns:1.66fr .9fr;gap:28px}
+    @media (max-width:980px){.layout{grid-template-columns:1fr}}
 
-    /* media / gallery */
-    .media{background:#eee;border-radius:12px;overflow:hidden;position:relative}
-    .hero{position:relative;aspect-ratio:16/9}
+    /* gallery */
+    .media{border-radius:14px;overflow:hidden;background:#eee;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+    .hero{position:relative;aspect-ratio:16/9;background:#eee}
     .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-    .thumbs{display:flex;gap:10px;padding:10px 4px;overflow:auto}
-    .thumb{flex:0 0 110px;aspect-ratio:4/3;border-radius:10px;overflow:hidden;border:1px solid #eee;cursor:pointer}
+    .thumbs{display:flex;gap:10px;padding:12px;overflow:auto;background:#f9f9f9}
+    .thumb{flex:0 0 120px;aspect-ratio:4/3;border-radius:10px;overflow:hidden;border:1px solid #e9e9e9;cursor:pointer}
     .thumb img{width:100%;height:100%;object-fit:cover;display:block}
 
-    /* spec table */
-    .panel{border:var(--border);border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.04);overflow:hidden}
-    .spec-row{display:grid;grid-template-columns:180px 1fr;gap:8px;padding:14px 16px;border-top:var(--border)}
-    .spec-row:first-child{border-top:none}
-    .label{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.02em}
+    /* spec table like Kato */
+    .spec{border:var(--border);border-radius:12px;overflow:hidden;background:#fff;margin-top:14px}
+    .row{display:grid;grid-template-columns:220px 1fr}
+    .cell{padding:14px 16px;border-top:var(--border)}
+    .row:first-child .cell{border-top:none}
+    .cell.label{background:var(--label);font-size:12px;color:#555;letter-spacing:.02em;text-transform:uppercase}
+    .cell.value{background:#fff}
 
-    .section{margin-top:18px}
+    /* sections */
+    .section{margin-top:22px}
     .section h2{font-size:18px;margin:0 0 8px}
     .features{margin:0;padding-left:18px}
     .features li{margin:6px 0}
 
     /* right column */
     .box{border:var(--border);border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.04);padding:14px}
-    .box h3{margin:0 0 10px;font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.02em}
+    .box h3{margin:0 0 10px;font-size:14px;color:#555;text-transform:uppercase;letter-spacing:.02em}
     .actions{display:flex;gap:10px;margin-bottom:12px}
     .btn{height:44px;padding:0 16px;border-radius:10px;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600;text-decoration:none}
     .btn-primary{background:#111;color:#fff}
     .btn-ghost{background:#fff;border:1px solid #ddd}
-    #map{height:260px;border-radius:12px;overflow:hidden;margin-top:12px}
+    #map{height:268px;border-radius:12px;overflow:hidden;margin-top:12px}
 
     /* contacts */
-    .agent{display:grid;grid-template-columns:60px 1fr;gap:12px;align-items:center;padding:10px 0;border-top:var(--border)}
+    .agents{margin-top:14px}
+    .agent{display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:center;padding:12px 0;border-top:var(--border)}
     .agent:first-of-type{border-top:none}
-    .agent img{width:60px;height:60px;object-fit:cover;border-radius:8px;background:#eee}
+    .agent img{width:64px;height:64px;object-fit:cover;border-radius:8px;background:#eee}
     .agent .name{font-weight:600}
-    .agent .meta{font-size:13px;color:var(--muted)}
-    .agent .cta{margin-top:6px;display:flex;gap:8px;flex-wrap:wrap}
+    .agent .meta{font-size:13px;color:#666}
+    .agent .cta{margin-top:6px;display:flex;gap:10px;flex-wrap:wrap}
     .agent .cta a{font-size:13px;text-decoration:underline}
   </style>
 </head>
@@ -71,29 +76,37 @@
     </div>
 
     <div id="loading" class="muted">Loading…</div>
+
     <div id="content" style="display:none">
       <div class="layout">
-        <!-- left -->
+        <!-- LEFT -->
         <div>
+          <!-- heading -->
+          <div id="heading"></div>
+
+          <!-- gallery -->
           <div class="media">
             <div class="hero" id="hero"></div>
             <div class="thumbs" id="thumbs"></div>
           </div>
 
-          <div class="panel section" id="spec"><!-- rows injected --></div>
+          <!-- spec table -->
+          <div class="spec" id="spec"></div>
 
+          <!-- description -->
           <div class="section" id="descBlock" style="display:none">
             <h2>Overview</h2>
             <div id="desc" class="muted"></div>
           </div>
 
+          <!-- features -->
           <div class="section" id="featBlock" style="display:none">
             <h2>Key features</h2>
             <ul class="features" id="features"></ul>
           </div>
         </div>
 
-        <!-- right -->
+        <!-- RIGHT -->
         <div>
           <div class="box">
             <h3>Enquire about this property</h3>
@@ -104,9 +117,9 @@
             <div id="map"></div>
           </div>
 
-          <div class="box section" id="teamBox" style="display:none">
+          <div class="box" id="teamBox" style="display:none">
             <h3>Viewings & further information</h3>
-            <div id="agents"></div>
+            <div class="agents" id="agents"></div>
           </div>
         </div>
       </div>
@@ -114,10 +127,16 @@
   </div>
 
 <script>
-/* ---------- utils ---------- */
+/* ---------- helpers ---------- */
 const $ = (s, el=document) => el.querySelector(s);
 function getParam(name){ return new URLSearchParams(location.search).get(name); }
 function pick(...vals){ return vals.find(v => v !== undefined && v !== null && v !== ''); }
+
+function fmtMoney(v){
+  if (v == null || v === '') return '';
+  const n = Number(String(v).replace(/[^\d.]/g,'')); if (!isFinite(n)) return String(v);
+  return '£' + n.toLocaleString('en-GB', { maximumFractionDigits: 2 });
+}
 
 /* images can be array of strings or objects { url | _ } */
 function getImages(p){
@@ -137,7 +156,29 @@ function getImages(p){
   return [...new Set(arr)].filter(Boolean);
 }
 
-/* build enquiry to Kato email parser */
+function row(label, value){
+  if (!value) return '';
+  return `<div class="row">
+            <div class="cell label">${label}</div>
+            <div class="cell value">${value}</div>
+          </div>`;
+}
+
+function niceSize(p){
+  const a = p.size_from_sqft, b = p.size_to_sqft;
+  if (a && b) return `${a}–${b} sq ft`;
+  if (a) return `${a} sq ft`;
+  if (b) return `${b} sq ft`;
+  return '';
+}
+
+function toListItems(maybeList){
+  if (!maybeList) return [];
+  if (Array.isArray(maybeList)) return maybeList.map(String).filter(Boolean);
+  return String(maybeList).split(/\r?\n|•/g).map(s => s.trim()).filter(Boolean);
+}
+
+/* Kato email parser */
 function buildEnquiryUrl(p){
   const to = "gjs-dillon-limited-393@parse.agents-society.com";
   const subject = `Enquiry: ${p.address || 'Property'} (${p.id ?? ''})`;
@@ -156,34 +197,13 @@ function buildEnquiryUrl(p){
   return `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${body}`;
 }
 
-function row(label, value){
-  if (!value) return '';
-  return `<div class="spec-row"><div class="label">${label}</div><div>${value}</div></div>`;
-}
-function niceSize(p){
-  const a = p.size_from_sqft, b = p.size_to_sqft;
-  if (a && b) return `${a}–${b} sq ft`;
-  if (a) return `${a} sq ft`;
-  if (b) return `${b} sq ft`;
-  return '';
-}
-function toListItems(maybeList){
-  if (!maybeList) return [];
-  if (Array.isArray(maybeList)) return maybeList.map(String).filter(Boolean);
-  return String(maybeList)
-    .split(/\r?\n|•/g)
-    .map(s => s.trim()).filter(Boolean);
-}
-
 /* ---------- main ---------- */
-let map, marker;
+let map;
 
 async function main(){
   const id = getParam('id');
   const res = await fetch('./properties.json', { cache:'no-store' });
   const list = await res.json();
-
-  // normalise ids
   const withIds = list.map((p,i)=>({ id: p.id ?? p.slug ?? p.uid ?? i, ...p }));
   const p = withIds.find(x => String(x.id) === String(id)) || withIds[0];
 
@@ -193,19 +213,19 @@ async function main(){
   $('#loading').style.display = 'none';
   $('#content').style.display = '';
 
-  // heading (insert above gallery)
-  const heading = document.createElement('div');
-  heading.innerHTML = `<h1>${p.address || 'Property'}</h1>
-                       <div class="muted">${[p.town, p.postcode].filter(Boolean).join(' ')}</div>`;
-  $('.layout > div').prepend(heading);
+  /* heading */
+  $('#heading').innerHTML = `
+    <h1>${p.address || 'Property'}</h1>
+    <div class="muted">${[p.town, p.postcode].filter(Boolean).join(' ')}</div>
+  `;
 
-  /* ----- gallery ----- */
+  /* gallery */
   const imgs = getImages(p);
   const hero = $('#hero');
   const thumbs = $('#thumbs');
   const setHero = (src) => { hero.innerHTML = src ? `<img src="${src}" alt="${p.address||'Property'}">` : ''; };
   setHero(imgs[0] || '');
-  thumbs.innerHTML = imgs.slice(0,12).map(u => `
+  thumbs.innerHTML = imgs.slice(0,16).map(u => `
     <button class="thumb" type="button" data-src="${u}" aria-label="View photo">
       <img src="${u}" alt="">
     </button>`).join('');
@@ -214,62 +234,65 @@ async function main(){
     setHero(t.dataset.src);
   });
 
-  /* ----- spec table ----- */
+  /* spec – align with Kato layout */
   const type = pick(p.type, p.property_type, Array.isArray(p.types)&&p.types[0]);
   const tenure = pick(p.tenure, p.transaction_type, p.to_let ? 'To Let' : (p.for_sale ? 'For Sale' : ''));
   const size = niceSize(p);
-  const rent = pick(p.rent_psf, p.rent);
-  const rates = p.business_rates_psf;
-  const rv = p.rateable_value;
-  const epc = pick(p.epc_rating, p.epc);
-  const sc = p.service_charge;
-  const ec = p.estate_charge;
 
-  const specHTML = [
+  // financials (these may or may not exist in your feed)
+  const rentPsf = p.rent_psf ? `${fmtMoney(p.rent_psf)} per sq ft` : '';
+  const rent = p.rent ? String(p.rent) : '';
+  const rentDisplay = rentPsf || rent;
+
+  const ratesPsf = p.business_rates_psf ? `${fmtMoney(p.business_rates_psf)} per sq ft` : '';
+  const rates = p.business_rates ? String(p.business_rates) : '';
+  const ratesDisplay = ratesPsf || rates;
+
+  const rv = p.rateable_value ? fmtMoney(p.rateable_value) : '';
+  const sc = p.service_charge ? String(p.service_charge) : '';
+  const ec = p.estate_charge ? String(p.estate_charge) : '';
+  const epc = pick(p.epc_rating, p.epc);
+
+  $('#spec').innerHTML = [
     row('Property type', type),
     row('Tenure', tenure),
     row('Size', size),
-    row('Rent', rent),
-    row('Business rates', rates),
+    row('Rent', rentDisplay),
+    row('Business rates', ratesDisplay),
     row('Rateable value', rv),
     row('Service charge', sc),
     row('Estate charge', ec),
-    row('EPC', epc),
+    row('Energy performance rating', epc),
     row('Last updated', p.last_updated)
-  ].join('');
-  $('#spec').innerHTML = specHTML || row('Details', '—');
+  ].join('') || row('Details','—');
 
-  /* ----- description ----- */
+  /* description */
   const desc = pick(p.summary, p.description);
-  if (desc){
-    $('#desc').innerHTML = desc;
-    $('#descBlock').style.display = '';
-  }
+  if (desc){ $('#desc').innerHTML = desc; $('#descBlock').style.display = ''; }
 
-  /* ----- features ----- */
+  /* features */
   const feats = toListItems(p.features || p.key_features);
   if (feats.length){
     $('#features').innerHTML = feats.map(f => `<li>${f}</li>`).join('');
     $('#featBlock').style.display = '';
   }
 
-  /* ----- actions ----- */
+  /* actions */
   const brochure = pick(p.brochure, p.brochure_url);
-  const enquireUrl = buildEnquiryUrl(p);
-  $('#enquireBtn').href = enquireUrl;
+  $('#enquireBtn').href = buildEnquiryUrl(p);
   if (brochure){ $('#brochureBtn').href = brochure; $('#brochureBtn').style.display = 'inline-flex'; }
   else { $('#brochureBtn').style.display = 'none'; }
 
-  /* ----- map ----- */
+  /* map */
   map = L.map('map', { zoomControl:true }).setView([52.5,-1.8], 6);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
   const lat = Number(p.lat), lon = Number(p.lon);
   if (isFinite(lat) && isFinite(lon)){
-    marker = L.circleMarker([lat, lon], { radius:7, weight:2, color:'#111', fillColor:'#111', fillOpacity:.85 }).addTo(map);
+    L.circleMarker([lat, lon], { radius:7, weight:2, color:'#111', fillColor:'#111', fillOpacity:.85 }).addTo(map);
     map.setView([lat, lon], 14);
   }
 
-  /* ----- contacts/team (optional) ----- */
+  /* contacts/team (optional; only shows if provided) */
   const team = Array.isArray(p.contacts) ? p.contacts : [];
   if (team.length){
     const agents = $('#agents');
