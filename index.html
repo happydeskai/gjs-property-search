@@ -10,28 +10,32 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <style>
-    /* --- fixes so inputs fit their cells and align perfectly --- */
+    /* ---- base & reset ---- */
     *, *::before, *::after { box-sizing: border-box; }
-    input[type="number"] { -moz-appearance: textfield; }
+    :root{
+      --radius: 12px;
+      --gap: 16px;
+      --shadow: 0 10px 25px rgba(0,0,0,.08);
+      --border: 1px solid #e7e7e7;
+      --text: #111;
+      --muted: #666;
+      --bg: #fff;
+    }
+    input[type="number"]{ -moz-appearance: textfield; }
     input[type="number"]::-webkit-outer-spin-button,
-    input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+    input[type="number"]::-webkit-inner-spin-button{ -webkit-appearance: none; margin: 0; }
 
-    body {
+    body{
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
       background: #fff;
-      color: #111;
     }
+    .wrap{ max-width: 1200px; margin: 0 auto; padding: 28px 18px 60px; }
+    h1{ margin: 0 0 16px; font-size: 34px; }
 
-    .wrap {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 28px 18px 60px;
-    }
-
-    h1 { margin: 0 0 16px; font-size: 34px; }
-
-    #map {
+    /* ---- map ---- */
+    #map{
       height: 360px;
       border-radius: 14px;
       margin-bottom: 18px;
@@ -40,8 +44,8 @@
       z-index: 0;
     }
 
-    /* --- search bar layout --- */
-    .searchBar {
+    /* ---- search bar (kept from working version) ---- */
+    .searchBar{
       display: grid;
       grid-template-columns:
         minmax(220px, 1.5fr)
@@ -52,43 +56,38 @@
         140px;
       gap: 12px;
       padding: 14px;
-      border: 1px solid #eaeaea;
-      border-radius: 12px;
-      background: #fff;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-      align-items: end; /* baseline align across the grid */
-      z-index: 1;
+      border: var(--border);
+      border-radius: var(--radius);
+      background: var(--bg);
+      box-shadow: 0 8px 24px rgba(0,0,0,.06);
+      align-items: end;
       position: relative;
+      z-index: 1;
+      margin-bottom: 14px;
     }
-
-    /* each field becomes a tiny grid: label | input | (optional hint) */
     .field{
       min-width: 0;
       display: grid;
-      grid-template-rows: auto 44px auto;
+      grid-template-rows: auto 44px auto; /* label | input | (hint) */
       align-content: start;
     }
-
     .field label{
       font-size: 12px;
-      color: #666;
+      color: var(--muted);
       margin-bottom: 6px;
     }
-
-    .field input,
-    .field select{
+    .field input, .field select{
       width: 100%;
-      height: 44px;          /* lock the control height */
-      align-self: end;        /* sit on the bottom of its row */
+      height: 44px;
       padding: 10px 12px;
       border-radius: 10px;
       border: 1px solid #dcdcdc;
       font-size: 14px;
       background: #fff;
+      align-self: end;
     }
-
     .btn{
-      height: 44px;           /* same as inputs */
+      height: 44px;
       padding: 12px 16px;
       background: #111;
       color: #fff;
@@ -99,74 +98,87 @@
       width: 140px;
       align-self: end;
     }
-
-    .field input:focus-visible,
-    .field select:focus-visible,
-    .btn:focus-visible{
-      outline: 2px solid #111;
-      outline-offset: 2px;
+    .field input:focus-visible, .field select:focus-visible, .btn:focus-visible{
+      outline: 2px solid #111; outline-offset: 2px;
     }
-
-    /* Tablet */
     @media (max-width: 1000px){
-      .searchBar{
-        grid-template-columns: repeat(2, minmax(0,1fr));
-      }
-      .btn{
-        grid-column: 1 / -1;
-        width: 100%;
-      }
+      .searchBar{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .btn{ grid-column: 1 / -1; width: 100%; }
     }
-
-    /* Mobile */
     @media (max-width: 600px){
-      .searchBar{
-        grid-template-columns: 1fr;
-      }
-      .btn{
-        grid-column: 1 / -1;
-        width: 100%;
-      }
+      .searchBar{ grid-template-columns: 1fr; }
+      .btn{ grid-column: 1 / -1; width: 100%; }
     }
 
-    .meta { color: #666; margin-bottom: 12px; }
-    .cards { border-top: 1px solid #eaeaea; }
+    .meta{ color: var(--muted); margin: 8px 0 12px; }
 
+    /* ---- results grid ---- */
+    .cards{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--gap);
+      margin-top: 10px;
+      border-top: var(--border);
+      padding-top: 16px;
+    }
+    @media (min-width: 640px){
+      .cards{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+    }
+    @media (min-width: 1024px){
+      .cards{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+    }
+
+    /* ---- card ---- */
     .card{
       display: grid;
-      grid-template-columns: 180px 1fr;
-      gap: 16px;
-      padding: 18px 6px;
-      border-bottom: 1px solid #eaeaea;
-    }
-
-    .thumb{
-      width: 180px;
-      height: 120px;
-      border-radius: 12px;
+      grid-template-rows: auto 1fr auto;
+      background: var(--bg);
+      border: var(--border);
+      border-radius: var(--radius);
       overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,.04);
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .card:focus-within{ outline: 2px solid #111; outline-offset: 2px; }
+    .card:hover{ transform: translateY(-2px); box-shadow: var(--shadow); }
+
+    .card__media{
+      position: relative;
+      aspect-ratio: 4 / 3; /* reserves height, prevents layout shift */
       background: #eee;
     }
-    .thumb img{ width: 100%; height: 100%; object-fit: cover; }
-
-    .chip{
-      display: inline-block;
-      background: #f6f6f6;
-      padding: 6px 10px;
-      border-radius: 999px;
-      font-size: 12px;
-      margin-right: 6px;
-      margin-top: 6px;
+    /* fallback if aspect-ratio unsupported – harmless elsewhere */
+    .card__media::before{
+      content:""; display:block; padding-top:75%;
+    }
+    .card__media img{
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
     }
 
-    .links a{
-      margin-right: 12px;
-      color: #111;
-      text-decoration: underline;
-      font-size: 14px;
+    .card__body{ padding: 14px; }
+    .card__loc{ color: var(--muted); font-size: 14px; margin-bottom: 6px; }
+    .card__title{
+      font-size: 18px; font-weight: 600; margin: 0 0 6px;
+      color: var(--text); text-decoration: none;
     }
+    .card__meta{ color: var(--muted); font-size: 14px; margin-top: 6px; }
+    .chip{ display:inline-block; background:#f6f6f6; padding:6px 10px; border-radius:999px; font-size:12px; margin-top:8px; }
 
-    .empty{ padding: 24px; color: #666; }
+    .card__footer{
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 10px; padding: 12px 14px; border-top: var(--border);
+    }
+    .btn-link, .btn-ghost{
+      height: 36px; padding: 0 12px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center;
+      font-size: 14px; text-decoration: none;
+    }
+    .btn-ghost{ border: 1px solid #ddd; color:#333; background:#fff; }
+    .btn-link{ background:#111; color:#fff; border:none; }
+    .btn-link[aria-disabled="true"]{ opacity:.5; pointer-events:none; }
+
+    .empty{ padding: 24px; color: var(--muted); }
   </style>
 </head>
 
@@ -174,9 +186,10 @@
 <div class="wrap">
   <h1>Property Search</h1>
 
-  <!-- MAP ABOVE SEARCH -->
+  <!-- MAP -->
   <div id="map"></div>
 
+  <!-- SEARCH -->
   <div class="searchBar" id="searchForm">
     <div class="field">
       <label for="q">Location</label>
@@ -214,6 +227,8 @@
 
   <div class="meta" id="statusText">Loading properties…</div>
   <div class="meta" id="resultsCount"></div>
+
+  <!-- RESULTS -->
   <div class="cards" id="results"></div>
 </div>
 
@@ -221,7 +236,7 @@
 let allProperties = [];
 let map, markers;
 
-// ---------- IMAGE HANDLER ----------
+/* ---------- IMAGE HANDLER ---------- */
 function getPrimaryImage(p){
   if (!p) return '';
   if (Array.isArray(p.images) && p.images[0]) {
@@ -234,14 +249,14 @@ function getPrimaryImage(p){
   return p.image || p.image_url || '';
 }
 
-// ---------- MAP ----------
+/* ---------- MAP ---------- */
 function initMap(){
   map = L.map('map').setView([52.5, -1.8], 6);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
   markers = L.layerGroup().addTo(map);
 }
 
-// ---------- FILTER + RENDER ----------
+/* ---------- FILTER + RENDER ---------- */
 function applyFilters(){
   const q = document.getElementById('q').value.toLowerCase();
   const tenure = document.getElementById('tenure').value;
@@ -277,6 +292,9 @@ function render(list){
   el.innerHTML = list.map(p => {
     const img = getPrimaryImage(p);
     const brochure = p.brochure || p.brochure_url || '';
+    const address = p.address || 'Property';
+    const town = p.town || '';
+    const postcode = p.postcode || '';
     const size =
       p.size_from_sqft && p.size_to_sqft
         ? `${p.size_from_sqft}–${p.size_to_sqft} sq ft`
@@ -284,43 +302,45 @@ function render(list){
         ? `${p.size_from_sqft} sq ft`
         : '';
 
+    const titleHtml = brochure
+      ? `<a class="card__title" href="${brochure}" target="_blank" rel="noopener" aria-label="View brochure for ${address}">${address}</a>`
+      : `<div class="card__title" role="heading" aria-level="3">${address}</div>`;
+
     return `
-      <div class="card">
-        <div class="thumb">
-          ${img ? `<img src="${img}" />` : ``}
+      <article class="card" tabindex="0">
+        <div class="card__media">
+          ${img ? `<img src="${img}" alt="${address}" loading="lazy">` : ``}
         </div>
-        <div>
-          <strong>${p.address || 'Property'}</strong><br/>
-          ${p.town || ''} ${p.postcode || ''}<br/>
-          ${size ? `<small>${size}</small><br/>` : ''}
+        <div class="card__body">
+          <div class="card__loc">${[town, postcode].filter(Boolean).join(' ')}</div>
+          ${titleHtml}
+          ${size ? `<div class="card__meta">${size}</div>` : ''}
           ${p.tenure ? `<span class="chip">${p.tenure}</span>` : ''}
-          <div class="links">
-            ${brochure ? `<a href="${brochure}" target="_blank">View brochure</a>` : ''}
-          </div>
         </div>
-      </div>
+        <div class="card__footer">
+          <button class="btn-ghost" type="button" aria-label="Shortlist ${address}">Shortlist</button>
+          ${brochure
+            ? `<a class="btn-link" href="${brochure}" target="_blank" rel="noopener" aria-label="View brochure for ${address}">View brochure</a>`
+            : `<a class="btn-link" aria-disabled="true">No brochure</a>`
+          }
+        </div>
+      </article>
     `;
   }).join('');
 }
 
 function updateMap(list){
   markers.clearLayers();
-
   if (!list.length) return;
 
   const points = [];
-
   list.forEach(p => {
     const lat = Number(p.lat);
     const lon = Number(p.lon);
     if (!lat || !lon) return;
 
     const marker = L.circleMarker([lat, lon], {
-      radius: 7,
-      weight: 2,
-      color: '#111',
-      fillColor: '#111',
-      fillOpacity: 0.85
+      radius: 7, weight: 2, color: '#111', fillColor: '#111', fillOpacity: 0.85
     });
 
     marker.bindPopup(`
@@ -341,15 +361,14 @@ function updateMap(list){
   }
 }
 
-// ---------- LOAD ----------
+/* ---------- LOAD ---------- */
 async function loadProperties(){
   try {
     const res = await fetch('./properties.json', { cache: 'no-store' });
     allProperties = await res.json();
     applyFilters();
   } catch (e) {
-    document.getElementById('statusText').textContent =
-      'Failed to load properties.json';
+    document.getElementById('statusText').textContent = 'Failed to load properties.json';
     console.error(e);
   }
 }
