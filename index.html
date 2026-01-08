@@ -542,5 +542,24 @@ document.addEventListener('DOMContentLoaded', () => {
   loadProperties();
 });
 </script>
+
+<!-- ✨ Auto-resize: lets Squarespace adjust the iframe height to this page's full height -->
+<script>
+  (function () {
+    function send() {
+      var h = Math.max(
+        document.documentElement.scrollHeight,
+        document.body.scrollHeight
+      );
+      window.parent.postMessage({ type: "gjs:resize", height: h }, "*");
+    }
+    send();
+    var ro = new ResizeObserver(function(){ send(); });
+    ro.observe(document.documentElement);
+    window.addEventListener("load", send);
+    window.addEventListener("resize", send);
+    setInterval(send, 800);
+  })();
+</script>
 </body>
 </html>
