@@ -31,7 +31,7 @@
       color: var(--text);
       background: #fff;
     }
-    .wrap{ max-width: 1200px; margin: 0 auto; padding: 12px 18px 60px; }
+    .wrap{ max-width: 1200px; margin: 0 auto; padding: 12px 18px 48px; }
 
     /* ---- full-bleed map ---- */
     .bleed{
@@ -155,7 +155,6 @@
     .card:hover{ transform: translateY(-2px); box-shadow: var(--shadow); }
 
     .card__media{ position: relative; aspect-ratio: 4 / 3; background: #eee; }
-    .card__media::before{ content:""; display:block; padding-top:75%; }
     .card__media img{
       position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
     }
@@ -176,19 +175,6 @@
     .btn-link[aria-disabled="true"]{ opacity:.5; pointer-events:none; }
 
     .empty{ padding: 24px; color: var(--muted); }
-
-    /* ---- Map popup card (image + CTA) ---- */
-    .prop-popup .leaflet-popup-content { margin: 0 !important; }
-    .prop-popup .leaflet-popup-content-wrapper { padding: 0; border-radius: 12px; overflow: hidden; }
-    .prop-popup .leaflet-popup-tip { display: none; }
-
-    .pop-card { width: 320px; background: #fff; }
-    .pop-img  { width: 100%; height: 160px; background-size: cover; background-position: center; background-color: #eee; }
-    .pop-body { padding: 12px 14px; }
-    .pop-title{ font-weight: 700; margin: 0 0 4px; }
-    .pop-sub  { color: #6b7280; font-size: 13px; margin-bottom: 4px; }
-    .pop-size { font-size: 13px; margin-bottom: 10px; }
-    .pop-btn  { display: inline-block; padding: 8px 12px; border-radius: 8px; background:#111; color:#fff; text-decoration:none; font-weight:600; }
   </style>
 </head>
 
@@ -259,7 +245,7 @@
 let allProperties = [];
 let map, markers, searchMarker;
 
-// expose sendHeight for resize script below
+/* expose resize fn so we can call it after renders */
 let _sendHeight = () => {};
 
 /* ---------- OPTIONAL: Mapbox token for geocoding ---------- */
@@ -337,6 +323,7 @@ function initMap(){
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
   markers = L.layerGroup().addTo(map);
   searchMarker = L.layerGroup().addTo(map);
+  setTimeout(_sendHeight, 50);
 }
 
 function updateMap(list, focusPoint){
@@ -355,17 +342,17 @@ function updateMap(list, focusPoint){
     const img = getPrimaryImage(p);
     const where = [p.town, p.postcode].filter(Boolean).join(' ');
     const popupHtml = `
-      <div class="pop-card">
-        <div class="pop-img" style="background-image:url('${(img || '').replace(/'/g, "%27")}')"></div>
-        <div class="pop-body">
-          <div class="pop-title">${p.address || 'Property'}</div>
-          <div class="pop-sub">${where}</div>
-          <div class="pop-size">${sizeText(p)}</div>
-          <a class="pop-btn" href="property.html?id=${encodeURIComponent(p.id ?? '')}">View property</a>
+      <div style="width:320px;background:#fff">
+        <div style="width:100%;height:160px;background:${img?'url('+img.replace(/'/g,'%27')+') center/cover':'#eee'}"></div>
+        <div style="padding:12px 14px">
+          <div style="font-weight:700;margin:0 0 4px">${p.address || 'Property'}</div>
+          <div style="color:#6b7280;font-size:13px;margin-bottom:4px">${where}</div>
+          <div style="font-size:13px;margin-bottom:10px">${sizeText(p)}</div>
+          <a style="display:inline-block;padding:8px 12px;border-radius:8px;background:#111;color:#fff;text-decoration:none;font-weight:600"
+             href="property.html?id=${encodeURIComponent(p.id ?? '')}">View property</a>
         </div>
       </div>
     `;
-
     marker.bindPopup(popupHtml, { className: 'prop-popup', maxWidth: 340 });
     marker.addTo(markers);
     points.push([lat, lon]);
@@ -381,7 +368,7 @@ function updateMap(list, focusPoint){
   if (points.length === 1) map.setView(points[0], 14);
   else map.fitBounds(points, { padding: [60, 60] });
 
-  _sendHeight();
+  setTimeout(_sendHeight, 80);
 }
 
 /* ---------- RENDER ---------- */
@@ -446,15 +433,12 @@ function render(list, context = {}){
     `;
   }).join('');
 
-  // make sure parent gets the correct height after DOM mutation and any lazy images
-  _sendHeight();
-  setTimeout(_sendHeight, 150);
-  setTimeout(_sendHeight, 600);
-
-  // also react to image loads
-  document.querySelectorAll('#results img').forEach(img=>{
-    if (!img.complete) img.addEventListener('load', _sendHeight, { once:true });
+  // When images finish lazy-loading, bump the height once
+  document.querySelectorAll('img[loading="lazy"]').forEach(img=>{
+    if (!img.complete) img.addEventListener('load', ()=>_sendHeight(), { once:true });
   });
+
+  _sendHeight();
 }
 
 /* ---------- FILTER FLOW ---------- */
@@ -506,10 +490,7 @@ async function applyFilters(){
     finalList = finalList.filter(p => isFinite(p.__distance) && p.__distance <= meterLimit);
   }
 
-  if (!finalList.length) {
-    finalList = sortByDistance(base, point);
-  }
-
+  if (!finalList.length) finalList = sortByDistance(base, point);
   if (finalList.length > 60) finalList = finalList.slice(0, 60);
 
   render(finalList, { nearLabel: point.label || q, radiusMiles });
@@ -536,9 +517,11 @@ async function loadProperties(){
     typeSel.innerHTML = `<option value="any">Any</option>` + [...types].sort().map(t=>`<option>${t}</option>`).join('');
 
     applyFilters();
+    setTimeout(_sendHeight, 100);
   } catch (e) {
     document.getElementById('statusText').textContent = 'Failed to load properties.json';
     console.error(e);
+    _sendHeight();
   }
 }
 
@@ -552,42 +535,45 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-<!-- Robust auto-resize so Squarespace wraps exactly the content height (no huge gap) -->
+<!-- ======= EMBED AUTO-RESIZE: keep iframe height correct on Squarespace ======= -->
 <script>
 (function () {
   const MSG_TYPE = 'gjs-prop-height';
-  function sendHeight(){
+  const frameId = new URLSearchParams(location.search).get('frameId') || 'search';
+
+  function sendHeight() {
+    // small padding so box-shadows don't clip
     const h = Math.ceil(document.documentElement.scrollHeight + 2);
-    window.parent?.postMessage({ type: MSG_TYPE, id: 'prop', height: h }, '*');
+    window.parent?.postMessage({ type: MSG_TYPE, id: frameId, height: h }, '*');
   }
-  // expose to page JS
+  // expose to page code above
   window._gjsSendHeight = sendHeight;
   _sendHeight = sendHeight;
 
-  // Observe size + DOM changes
-  const ro = new ResizeObserver(sendHeight);
+  // Observe size & mutations
+  const ro = new ResizeObserver(()=>sendHeight());
   ro.observe(document.documentElement);
   ro.observe(document.body);
 
-  const mo = new MutationObserver(sendHeight);
+  const mo = new MutationObserver(()=>sendHeight());
   mo.observe(document.body, { childList:true, subtree:true, attributes:true, characterData:true });
 
-  // Image loads and lifecycle
+  // Image loads
   window.addEventListener('load', sendHeight);
-  document.addEventListener('DOMContentLoaded', ()=>{
-    document.querySelectorAll('img').forEach(img=>{
-      if (!img.complete) img.addEventListener('load', sendHeight, { once:true });
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('img').forEach(img => {
+      if (!img.complete) img.addEventListener('load', sendHeight, { once: true });
     });
   });
 
-  // Short gentle polling for late layout (map tiles/fonts)
+  // gentle polling for late layout (maps/fonts/etc.) – stops after ~8s
   let ticks = 0;
-  const poll = setInterval(()=>{
+  const poll = setInterval(() => {
     sendHeight();
     if (++ticks >= 8) clearInterval(poll);
   }, 1000);
 
-  // Prevent inner scrollbar; parent page scrolls
+  // prevent inner scrollbars; let parent page scroll
   document.documentElement.style.overflow = 'hidden';
   document.body.style.overflow = 'hidden';
 })();
