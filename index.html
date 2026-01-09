@@ -177,10 +177,11 @@
 
     .empty{ padding: 24px; color: var(--muted); }
 
-    /* ---- Map popup card ---- */
+    /* ---- Map popup card (image + CTA) ---- */
     .prop-popup .leaflet-popup-content { margin: 0 !important; }
     .prop-popup .leaflet-popup-content-wrapper { padding: 0; border-radius: 12px; overflow: hidden; }
     .prop-popup .leaflet-popup-tip { display: none; }
+
     .pop-card { width: 320px; background: #fff; }
     .pop-img  { width: 100%; height: 160px; background-size: cover; background-position: center; background-color: #eee; }
     .pop-body { padding: 12px 14px; }
@@ -192,7 +193,7 @@
 </head>
 
 <body>
-<div class="wrap">
+<div class="wrap" id="pageRoot">
   <!-- MAP (full-bleed) -->
   <div class="bleed">
     <div id="map"></div>
@@ -376,6 +377,9 @@ function updateMap(list, focusPoint){
   if (!points.length) return;
   if (points.length === 1) map.setView(points[0], 14);
   else map.fitBounds(points, { padding: [60, 60] });
+
+  // nudge parent height after map moves/popups
+  requestAnimationFrame(()=>window._gjsSendHeight && window._gjsSendHeight());
 }
 
 /* ---------- RENDER ---------- */
@@ -392,6 +396,7 @@ function render(list, context = {}){
 
   if (!list.length){
     el.innerHTML = `<div class="empty">No properties match your filters.</div>`;
+    requestAnimationFrame(()=>window._gjsSendHeight && window._gjsSendHeight());
     return;
   }
 
@@ -438,6 +443,9 @@ function render(list, context = {}){
       </article>
     `;
   }).join('');
+
+  // nudge parent height after results render
+  requestAnimationFrame(()=>window._gjsSendHeight && window._gjsSendHeight());
 }
 
 /* ---------- FILTER FLOW ---------- */
@@ -459,7 +467,7 @@ async function applyFilters(){
     return true;
   });
 
-  // quick text match (helps when query is an address)
+  // Apply simple text match first (helps when the location is an address)
   let textMatch = q
     ? base.filter(p => {
         const text = `${p.address||''} ${p.town||''} ${p.postcode||''}`.toLowerCase();
@@ -467,13 +475,25 @@ async function applyFilters(){
       })
     : base;
 
-  if (!q) { render(textMatch); updateMap(textMatch); return; }
+  // If no query, no geocode => no radius filtering
+  if (!q) {
+    render(textMatch);
+    updateMap(textMatch);
+    return;
+  }
 
+  // Geocode the query
   const point = await geocodePlace(q);
-  if (!point) { render(textMatch); updateMap(textMatch); return; }
+  if (!point) {
+    render(textMatch);
+    updateMap(textMatch);
+    return;
+  }
 
+  // Sort by distance
   let finalList = sortByDistance(textMatch, point);
 
+  // Apply radius if chosen
   let radiusMiles = null;
   if (radiusVal !== 'any') {
     radiusMiles = Number(radiusVal);
@@ -481,7 +501,10 @@ async function applyFilters(){
     finalList = finalList.filter(p => isFinite(p.__distance) && p.__distance <= meterLimit);
   }
 
-  if (!finalList.length) finalList = sortByDistance(base, point);
+  if (!finalList.length) {
+    finalList = sortByDistance(base, point);
+  }
+
   if (finalList.length > 60) finalList = finalList.slice(0, 60);
 
   render(finalList, { nearLabel: point.label || q, radiusMiles });
@@ -524,45 +547,49 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-<!-- ======= EMBED AUTO-RESIZE (stable; measures only .wrap like property.html) ======= -->
+<!-- ✨ Auto-resize: report exact height of .wrap to Squarespace (no bottom gap) -->
 <script>
 (function () {
   const MSG_TYPE = 'gjs-prop-height';
-  const frameId = new URLSearchParams(location.search).get('frameId') || 'index';
-  const root = document.querySelector('.wrap') || document.body;
+  const frameId  = new URLSearchParams(location.search).get('frameId') || 'list';
 
-  function getContentHeight() {
-    return Math.ceil((root?.offsetHeight || document.body.offsetHeight) + 24);
+  function measure() {
+    // Measure the main content wrapper (avoids over-counting from full-bleed elements)
+    const root = document.getElementById('pageRoot') || document.querySelector('.wrap') || document.body;
+    const rect = root.getBoundingClientRect();
+    // rect.bottom is relative to viewport; add scrollY in case the iframe is scrolled (usually 0)
+    return Math.ceil(rect.bottom + window.scrollY + 2);
   }
 
-  let last = 0;
-  function send() {
-    const h = getContentHeight();
-    if (h !== last) {
-      last = h;
-      window.parent?.postMessage({ type: MSG_TYPE, id: frameId, height: h }, '*');
-    }
+  function sendHeight() {
+    const h = measure();
+    window.parent?.postMessage({ type: MSG_TYPE, id: frameId, height: h }, '*');
   }
 
-  // expose (optional)
-  window._gjsSendHeight = send;
+  // expose so our app code can nudge height after renders
+  window._gjsSendHeight = sendHeight;
 
-  // Observe only the wrapper to avoid loops
-  const ro = new ResizeObserver(send);
-  ro.observe(root);
+  // Observe layout & DOM
+  const ro = new ResizeObserver(sendHeight);
+  ro.observe(document.documentElement);
+  ro.observe(document.body);
+  const mo = new MutationObserver(sendHeight);
+  mo.observe(document.body, { childList: true, subtree: true, attributes: true });
 
-  const mo = new MutationObserver(send);
-  mo.observe(root, { childList: true, subtree: true, attributes: true });
+  // Image/map/font late loads
+  window.addEventListener('load', sendHeight);
+  requestAnimationFrame(sendHeight);
 
-  window.addEventListener('load', send);
-  setTimeout(send, 300);
-  setTimeout(send, 1000);
+  // Gentle polling for a few seconds to catch map fitBounds/popups
+  let ticks = 0;
+  const poll = setInterval(() => {
+    sendHeight();
+    if (++ticks >= 8) clearInterval(poll);
+  }, 1000);
 
-  // prevent inner scrolling from fighting parent
+  // Prevent inner scrolling; let Squarespace page scroll
   document.documentElement.style.overflow = 'hidden';
   document.body.style.overflow = 'hidden';
-  document.documentElement.style.height = 'auto';
-  document.body.style.height = 'auto';
 })();
 </script>
 </body>
