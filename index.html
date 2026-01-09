@@ -336,6 +336,7 @@ function initMap(){
   searchMarker = L.layerGroup().addTo(map);
 }
 
+/* ⬇️ zoom logic updated: cap zoom so we always see context */
 function updateMap(list, focusPoint){
   markers.clearLayers();
   searchMarker.clearLayers();
@@ -375,8 +376,15 @@ function updateMap(list, focusPoint){
   }
 
   if (!points.length) return;
-  if (points.length === 1) map.setView(points[0], 14);
-  else map.fitBounds(points, { padding: [60, 60] });
+
+  const MAX_SEARCH_ZOOM = 11;     // ← cap zoom so we don't go street-level
+  const PADDING = [60, 60];
+
+  if (points.length === 1) {
+    map.setView(points[0], MAX_SEARCH_ZOOM);
+  } else {
+    map.fitBounds(points, { padding: PADDING, maxZoom: MAX_SEARCH_ZOOM });
+  }
 }
 
 /* ---------- RENDER ---------- */
@@ -527,6 +535,9 @@ async function loadProperties(){
     const typeSel = document.getElementById('type');
     typeSel.innerHTML = `<option value="any">Any</option>` + [...types].sort().map(t=>`<option>${t}</option>`).join('');
 
+    // re-apply any prefilled 'type' after options added
+    if (typeSel.dataset.prefill) typeSel.value = typeSel.dataset.prefill;
+
     applyFilters();
   } catch (e) {
     document.getElementById('statusText').textContent = 'Failed to load properties.json';
@@ -534,12 +545,34 @@ async function loadProperties(){
   }
 }
 
+/* ---------- PREFILL FROM URL (from home search box) ---------- */
+function prefillFromURL() {
+  const p = new URLSearchParams(location.search);
+  const setVal = (id, v) => { if (v != null && v !== '') { const el = document.getElementById(id); if (el) el.value = v; } };
+
+  setVal('q',       p.get('q'));
+  setVal('tenure',  (p.get('tenure')  || 'any').toLowerCase());
+  setVal('radius',   p.get('radius')  || 'any');
+  setVal('minSize',  p.get('minSize'));
+  setVal('maxSize',  p.get('maxSize'));
+
+  // store intended type to apply after options are populated
+  const typePref = p.get('type') || 'any';
+  const typeEl = document.getElementById('type');
+  if (typeEl) typeEl.dataset.prefill = typePref;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initMap();
+
   document.getElementById('searchBtn').onclick = applyFilters;
   document.getElementById('q').addEventListener('keydown', (e) => {
     if (e.key === 'Enter') { e.preventDefault(); applyFilters(); }
   });
+
+  // pull values from the home search URL (?q=WR5+3WP etc.)
+  prefillFromURL();
+
   loadProperties();
 });
 </script>
