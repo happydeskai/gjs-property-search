@@ -475,8 +475,21 @@ function render(list, context = {}){
 }
 
 /* ---------- FILTER FLOW ---------- */
+let _didURLHydrateFallback = false;
+
 async function applyFilters(){
-  const q = document.getElementById('q').value.trim();
+  let q = document.getElementById('q').value.trim();
+
+  // 🔁 Fallback: if q is empty but URL has ?q=, hydrate once and rerun
+  if (!q && !_didURLHydrateFallback) {
+    const qp = new URLSearchParams(location.search).get('q');
+    if (qp) {
+      document.getElementById('q').value = qp;
+      _didURLHydrateFallback = true;
+      return applyFilters(); // re-enter with hydrated q
+    }
+  }
+
   const tenure = document.getElementById('tenure').value;
   const type = document.getElementById('type')?.value || 'any';
   const radiusVal = document.getElementById('radius').value;
