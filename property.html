@@ -485,6 +485,9 @@ async function main(){
     $('#teamBox').style.display = '';
   }
 
+    // ✅ bind the enquiry modal handlers
+  setupEnquiry(p);
+
   /* ensure parent gets final height after all renderings */
   requestAnimationFrame(()=>{ _sendHeight(); });
   setTimeout(()=>{ _sendHeight(); }, 300);
