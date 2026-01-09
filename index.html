@@ -59,13 +59,13 @@
     .searchBar{
       display: grid;
       grid-template-columns:
-        minmax(220px, 1.6fr)   /* location */
-        minmax(120px, 1fr)     /* tenure   */
-        minmax(120px, 1fr)     /* type     */
-        minmax(120px, 1fr)     /* radius   */
-        minmax(120px, 1fr)     /* min size */
-        minmax(120px, 1fr)     /* max size */
-        140px;                 /* button   */
+        minmax(220px, 1.6fr)
+        minmax(120px, 1fr)
+        minmax(120px, 1fr)
+        minmax(120px, 1fr)
+        minmax(120px, 1fr)
+        minmax(120px, 1fr)
+        140px;
       gap: 12px;
       padding: 14px;
       border: var(--border);
@@ -80,7 +80,7 @@
     .field{
       min-width: 0;
       display: grid;
-      grid-template-rows: auto 44px auto; /* label | input | (hint) */
+      grid-template-rows: auto 44px auto;
       align-content: start;
     }
     .field label{
@@ -193,7 +193,7 @@
 </head>
 
 <body>
-<div class="wrap" id="pageRoot">
+<div class="wrap">
   <!-- MAP (full-bleed) -->
   <div class="bleed">
     <div id="map"></div>
@@ -258,6 +258,9 @@
 <script>
 let allProperties = [];
 let map, markers, searchMarker;
+
+// expose sendHeight for resize script below
+let _sendHeight = () => {};
 
 /* ---------- OPTIONAL: Mapbox token for geocoding ---------- */
 const MAPBOX_TOKEN = ""; // e.g. "pk.XXXX" (optional)
@@ -378,8 +381,7 @@ function updateMap(list, focusPoint){
   if (points.length === 1) map.setView(points[0], 14);
   else map.fitBounds(points, { padding: [60, 60] });
 
-  // nudge parent height after map moves/popups
-  requestAnimationFrame(()=>window._gjsSendHeight && window._gjsSendHeight());
+  _sendHeight();
 }
 
 /* ---------- RENDER ---------- */
@@ -396,7 +398,7 @@ function render(list, context = {}){
 
   if (!list.length){
     el.innerHTML = `<div class="empty">No properties match your filters.</div>`;
-    requestAnimationFrame(()=>window._gjsSendHeight && window._gjsSendHeight());
+    _sendHeight();
     return;
   }
 
@@ -444,8 +446,15 @@ function render(list, context = {}){
     `;
   }).join('');
 
-  // nudge parent height after results render
-  requestAnimationFrame(()=>window._gjsSendHeight && window._gjsSendHeight());
+  // make sure parent gets the correct height after DOM mutation and any lazy images
+  _sendHeight();
+  setTimeout(_sendHeight, 150);
+  setTimeout(_sendHeight, 600);
+
+  // also react to image loads
+  document.querySelectorAll('#results img').forEach(img=>{
+    if (!img.complete) img.addEventListener('load', _sendHeight, { once:true });
+  });
 }
 
 /* ---------- FILTER FLOW ---------- */
@@ -467,7 +476,7 @@ async function applyFilters(){
     return true;
   });
 
-  // Apply simple text match first (helps when the location is an address)
+  // Apply simple text match first
   let textMatch = q
     ? base.filter(p => {
         const text = `${p.address||''} ${p.town||''} ${p.postcode||''}`.toLowerCase();
@@ -475,14 +484,12 @@ async function applyFilters(){
       })
     : base;
 
-  // If no query, no geocode => no radius filtering
   if (!q) {
     render(textMatch);
     updateMap(textMatch);
     return;
   }
 
-  // Geocode the query
   const point = await geocodePlace(q);
   if (!point) {
     render(textMatch);
@@ -490,10 +497,8 @@ async function applyFilters(){
     return;
   }
 
-  // Sort by distance
   let finalList = sortByDistance(textMatch, point);
 
-  // Apply radius if chosen
   let radiusMiles = null;
   if (radiusVal !== 'any') {
     radiusMiles = Number(radiusVal);
@@ -521,7 +526,7 @@ async function loadProperties(){
       ...p
     }));
 
-    // populate Type dropdown with distinct types
+    // populate Type dropdown
     const types = new Set();
     allProperties.forEach(p => {
       const t = (p.type || p.property_type || (Array.isArray(p.types) ? p.types[0] : '') || '').toString().trim();
@@ -547,47 +552,42 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-<!-- ✨ Auto-resize: report exact height of .wrap to Squarespace (no bottom gap) -->
+<!-- Robust auto-resize so Squarespace wraps exactly the content height (no huge gap) -->
 <script>
 (function () {
   const MSG_TYPE = 'gjs-prop-height';
-  const frameId  = new URLSearchParams(location.search).get('frameId') || 'list';
-
-  function measure() {
-    // Measure the main content wrapper (avoids over-counting from full-bleed elements)
-    const root = document.getElementById('pageRoot') || document.querySelector('.wrap') || document.body;
-    const rect = root.getBoundingClientRect();
-    // rect.bottom is relative to viewport; add scrollY in case the iframe is scrolled (usually 0)
-    return Math.ceil(rect.bottom + window.scrollY + 2);
+  function sendHeight(){
+    const h = Math.ceil(document.documentElement.scrollHeight + 2);
+    window.parent?.postMessage({ type: MSG_TYPE, id: 'prop', height: h }, '*');
   }
-
-  function sendHeight() {
-    const h = measure();
-    window.parent?.postMessage({ type: MSG_TYPE, id: frameId, height: h }, '*');
-  }
-
-  // expose so our app code can nudge height after renders
+  // expose to page JS
   window._gjsSendHeight = sendHeight;
+  _sendHeight = sendHeight;
 
-  // Observe layout & DOM
+  // Observe size + DOM changes
   const ro = new ResizeObserver(sendHeight);
   ro.observe(document.documentElement);
   ro.observe(document.body);
+
   const mo = new MutationObserver(sendHeight);
-  mo.observe(document.body, { childList: true, subtree: true, attributes: true });
+  mo.observe(document.body, { childList:true, subtree:true, attributes:true, characterData:true });
 
-  // Image/map/font late loads
+  // Image loads and lifecycle
   window.addEventListener('load', sendHeight);
-  requestAnimationFrame(sendHeight);
+  document.addEventListener('DOMContentLoaded', ()=>{
+    document.querySelectorAll('img').forEach(img=>{
+      if (!img.complete) img.addEventListener('load', sendHeight, { once:true });
+    });
+  });
 
-  // Gentle polling for a few seconds to catch map fitBounds/popups
+  // Short gentle polling for late layout (map tiles/fonts)
   let ticks = 0;
-  const poll = setInterval(() => {
+  const poll = setInterval(()=>{
     sendHeight();
     if (++ticks >= 8) clearInterval(poll);
   }, 1000);
 
-  // Prevent inner scrolling; let Squarespace page scroll
+  // Prevent inner scrollbar; parent page scrolls
   document.documentElement.style.overflow = 'hidden';
   document.body.style.overflow = 'hidden';
 })();
