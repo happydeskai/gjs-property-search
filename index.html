@@ -336,18 +336,24 @@ function initMap(){
   searchMarker = L.layerGroup().addTo(map);
 }
 
-/* ⬇️ zoom logic updated: cap zoom so we always see context */
+/* --- SHOW RESULTS + SEARCH POINT; keep zoom wide enough for context --- */
 function updateMap(list, focusPoint){
   markers.clearLayers();
   searchMarker.clearLayers();
+
   const points = [];
 
+  // property markers
   list.forEach(p => {
     const lat = Number(p.lat), lon = Number(p.lon);
     if (!isFinite(lat) || !isFinite(lon)) return;
 
     const marker = L.circleMarker([lat, lon], {
-      radius: 7, weight: 2, color: '#111', fillColor: '#111', fillOpacity: 0.85
+      radius: 7,
+      weight: 2,
+      color: '#111',
+      fillColor: '#111',
+      fillOpacity: 0.85
     });
 
     const img = getPrimaryImage(p);
@@ -369,15 +375,31 @@ function updateMap(list, focusPoint){
     points.push([lat, lon]);
   });
 
-  if (focusPoint){
-    L.marker([focusPoint.lat, focusPoint.lon], { title: focusPoint.label || 'Search location' })
-      .addTo(searchMarker);
+  // search point (bold blue circle + faint ring + tooltip)
+  if (focusPoint && isFinite(focusPoint.lat) && isFinite(focusPoint.lon)) {
+    const sp = L.circleMarker([focusPoint.lat, focusPoint.lon], {
+      radius: 10,
+      weight: 3,
+      color: '#2563eb',
+      fillColor: '#2563eb',
+      fillOpacity: 0.75
+    }).addTo(searchMarker);
+
+    L.circleMarker([focusPoint.lat, focusPoint.lon], {
+      radius: 16,
+      weight: 2,
+      color: '#2563eb',
+      opacity: 0.25,
+      fill: false
+    }).addTo(searchMarker);
+
+    sp.bindTooltip(focusPoint.label || 'Search location', { direction: 'top', offset: [0, -12] });
     points.push([focusPoint.lat, focusPoint.lon]);
   }
 
   if (!points.length) return;
 
-  const MAX_SEARCH_ZOOM = 11;     // ← cap zoom so we don't go street-level
+  const MAX_SEARCH_ZOOM = 11;
   const PADDING = [60, 60];
 
   if (points.length === 1) {
@@ -449,7 +471,6 @@ function render(list, context = {}){
     `;
   }).join('');
 
-  // after rendering cards, notify parent
   window._gjsSendHeight?.();
 }
 
@@ -472,7 +493,7 @@ async function applyFilters(){
     return true;
   });
 
-  // Apply simple text match first
+  // text match first
   let textMatch = q
     ? base.filter(p => {
         const text = `${p.address||''} ${p.town||''} ${p.postcode||''}`.toLowerCase();
@@ -480,14 +501,14 @@ async function applyFilters(){
       })
     : base;
 
-  // If no query, no geocode => no radius filtering
+  // no query -> no geocode/radius
   if (!q) {
     render(textMatch);
     updateMap(textMatch);
     return;
   }
 
-  // Geocode the query
+  // geocode
   const point = await geocodePlace(q);
   if (!point) {
     render(textMatch);
@@ -495,10 +516,10 @@ async function applyFilters(){
     return;
   }
 
-  // Sort by distance
+  // distance sort
   let finalList = sortByDistance(textMatch, point);
 
-  // Apply radius if chosen
+  // radius filter (optional)
   let radiusMiles = null;
   if (radiusVal !== 'any') {
     radiusMiles = Number(radiusVal);
@@ -583,13 +604,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const MSG_TYPE = 'gjs-prop-height';
   const frameId  = new URLSearchParams(location.search).get('frameId') || 'search';
 
-  // compute height from the bottom of the main content wrapper
   function calcHeight() {
     const wrap = document.querySelector('.wrap');
     if (!wrap) return document.documentElement.scrollHeight;
     const rect = wrap.getBoundingClientRect();
     const top  = rect.top + window.scrollY;
-    const h    = Math.ceil(top + rect.height + 4);  // small breathing room
+    const h    = Math.ceil(top + rect.height + 4);
     return Math.max(h, 300);
   }
 
@@ -598,17 +618,14 @@ document.addEventListener('DOMContentLoaded', () => {
     window.parent?.postMessage({ type: MSG_TYPE, id: frameId, height: h }, '*');
   }
 
-  // export for page code
   window._gjsSendHeight = sendHeight;
 
-  // observe layout & mutations
   const ro = new ResizeObserver(() => sendHeight());
   ro.observe(document.documentElement);
   ro.observe(document.body);
   const mo = new MutationObserver(() => sendHeight());
   mo.observe(document.body, { childList: true, subtree: true, attributes: true, characterData: true });
 
-  // image loads shift height
   window.addEventListener('load', sendHeight);
   document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('img').forEach(img => {
@@ -616,12 +633,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // try to hook Leaflet events to re-send height on map changes
   function hookLeaflet() {
     if (!window.L || !document.getElementById('map')) return;
     try {
-      const mapEl = document.getElementById('map');
-      // fallback: attach to window if we can't get map instance
       const target = window;
       ['moveend','zoomend','resize','tileload','popupopen','popupclose'].forEach(ev =>
         target.addEventListener(ev, sendHeight)
@@ -631,18 +645,15 @@ document.addEventListener('DOMContentLoaded', () => {
   hookLeaflet();
   setTimeout(hookLeaflet, 600);
 
-  // gentle polling for late layout changes
   let ticks = 0;
   const poll = setInterval(() => {
     sendHeight();
     if (++ticks >= 10) clearInterval(poll);
   }, 1000);
 
-  // keep iframe itself non-scrollable
   document.documentElement.style.overflow = 'hidden';
   document.body.style.overflow = 'hidden';
 
-  // initial post
   sendHeight();
 })();
 </script>
