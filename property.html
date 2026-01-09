@@ -104,21 +104,15 @@
     }
     @media (max-width:820px){ .modal__panel{ margin:2vh 14px } }
 
-    /* === GJS header branding (force with !important in case of host styles) === */
+    /* GJS: header black, title + X yellow */
     .modal__head{
       display:flex;align-items:center;justify-content:space-between;
-      padding:14px 16px;border-bottom:1px solid #eef1f4;
-      background:var(--brand) !important;   /* black header */
+      padding:14px 16px;border-bottom:1px solid #eef1f4;background:var(--brand);
     }
-    .modal__title{
-      font-weight:700;letter-spacing:-.01em;font-size:16px;
-      color:var(--accent) !important;       /* title in yellow */
-    }
+    .modal__title{font-weight:700;letter-spacing:-.01em;font-size:16px;color:var(--accent)}
     .modal__close{
-      border:none;background:transparent !important;width:34px;height:34px;border-radius:10px;
-      display:grid;place-items:center;cursor:pointer;
-      color:var(--accent) !important;       /* yellow X */
-      border-color:transparent !important;
+      border:none;background:transparent;width:34px;height:34px;border-radius:10px;
+      display:grid;place-items:center;cursor:pointer;color:var(--accent)
     }
     .modal__close:hover,.modal__close:focus{outline:2px solid var(--accent);outline-offset:2px}
 
@@ -143,8 +137,7 @@
     .modal__foot{display:flex;justify-content:flex-end;gap:10px;padding:12px 14px;border-top:1px solid #eef1f4;background:linear-gradient(#fff,#fff)}
     .btn-secondary{background:#fff;border:1px solid #e6e6e6;color:#333;height:40px;padding:0 14px;border-radius:10px}
     .btn-accent{background:var(--brand);color:#fff;position:relative;height:40px;padding:0 16px;border-radius:10px;border:none;cursor:pointer}
-    /* Remove yellow dot in Send enquiry (force override) */
-    .btn-accent::before{content:none !important;display:none !important}
+    .btn-accent::before{content:none;display:none} /* remove yellow dot */
     .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
   </style>
 </head>
@@ -242,6 +235,7 @@
 
   <!-- Enquiry modal -->
   <div class="modal" id="enquiryModal" aria-hidden="true" role="dialog" aria-labelledby="enqTitle">
+    <div class="modal" id="enquiryModal" aria-hidden="true" role="dialog" aria-labelledby="enqTitle"></div>
     <div class="modal__backdrop" data-close></div>
     <div class="modal__panel" role="document">
       <div class="modal__head">
@@ -250,10 +244,8 @@
       </div>
 
       <div class="modal__body">
-        <!-- agent pills -->
         <div class="pillbar" id="enqPills"></div>
 
-        <!-- form -->
         <form id="enqForm" novalidate>
           <div class="grid2">
             <div class="f">
@@ -385,130 +377,142 @@ let map, marker, currentProperty=null;
 // expose sendHeight early so we can call it after rendering
 let _sendHeight = () => {};
 
+/* ---------- robust main() with error handling ---------- */
 async function main(){
-  const id = getParam('id');
-  const res = await fetch('./properties.json', { cache:'no-store' });
-  const list = await res.json();
-  const items = list.map((p,i)=>({ id: p.id ?? p.slug ?? p.uid ?? i, ...p }));
-  const p = items.find(x => String(x.id) === String(id)) || items[0];
-  currentProperty = p;
+  try {
+    const id = getParam('id');
 
-  if (!p){ $('#loading').textContent = 'Property not found.'; return; }
+    const res = await fetch('./properties.json', { cache:'no-store' });
+    if (!res.ok) throw new Error(`properties.json HTTP ${res.status}`);
+    let list;
+    try { list = await res.json(); }
+    catch { throw new Error('Invalid JSON in properties.json'); }
 
-  document.title = p.address ? `${p.address} — Property` : 'Property';
-  $('#loading').style.display = 'none';
-  $('#content').style.display = '';
+    const items = list.map((p,i)=>({ id: p.id ?? p.slug ?? p.uid ?? i, ...p }));
+    const p = items.find(x => String(x.id) === String(id)) || items[0];
+    currentProperty = p;
 
-  /* header */
-  $('#prop-title').textContent = p.address || 'Property';
-  $('#prop-sub').textContent = [p.town, p.postcode].filter(Boolean).join(' ');
-  const chips = $('#prop-chips');
-  const tType  = pick(p.type, p.property_type, Array.isArray(p.types)&&p.types[0]);
-  const tenure = pick(p.tenure, p.transaction_type, p.to_let ? 'To Let' : (p.for_sale ? 'For Sale' : ''));
-  const epcObj = p.current_energy_ratings?.rating;
-  const epc    = pick(p.epc_rating, p.epc, epcObj ? `${epcObj._ || epcObj} (${epcObj?.$?.value || ""})` : "");
-  if (tenure) chips.innerHTML += `<span class="chip chip--accent">${tenure}</span>`;
-  if (tType)  chips.innerHTML += `<span class="chip">${tType}</span>`;
-  if (epc)    chips.innerHTML += `<span class="chip">EPC ${epc}</span>`;
+    if (!p){ $('#loading').textContent = 'Property not found.'; return; }
 
-  /* gallery */
-  const imgs = getImages(p);
-  const hero = $('#hero'); const thumbs = $('#thumbs'];
-  const setHero = (src) => { hero.innerHTML = src ? `<img src="${src}" alt="${p.address||'Property'}">` : ''; };
-  setHero(imgs[0] || '');
-  thumbs.innerHTML = imgs.slice(0,15).map(u => `<button class="thumb" type="button" data-src="${u}" aria-label="View photo"><img src="${u}" alt=""></button>`).join('');
-  thumbs.addEventListener('click', e => {
-    const t = e.target.closest('.thumb'); if (!t) return;
-    setHero(t.dataset.src);
-    thumbs.scrollTo({ left: t.offsetLeft - 12, behavior:'smooth' });
-    _sendHeight();
-  });
+    document.title = p.address ? `${p.address} — Property` : 'Property';
+    $('#loading').style.display = 'none';
+    $('#content').style.display = '';
 
-  /* facts */
-  const facts = $('#facts');
-  const fact = (label, value) => value ? `<div class="fact"><div class="label">${label}</div><div class="value">${value}</div></div>` : '';
-  const ratesPay = p.business_rates?.rates_payable ? `${p.business_rates.rates_payable} per sq ft` : p.business_rates_psf || '';
-  const rv = p.business_rates?.rateable_value ? `£${Number(p.business_rates.rateable_value).toLocaleString()}` : p.rateable_value || '';
-  facts.innerHTML = [
-    fact('Property type', tType),
-    fact('Tenure', tenure),
-    fact('Size', formatSize(p)),
-    fact('Rent', pick(p.rent, p.rent_psf)),
-    fact('Business rates', ratesPay),
-    fact('Rateable value', rv),
-    fact('EPC', epc),
-    fact('Last updated', p.last_updated || '')
-  ].join('');
+    /* header */
+    $('#prop-title').textContent = p.address || 'Property';
+    $('#prop-sub').textContent = [p.town, p.postcode].filter(Boolean).join(' ');
+    const chips = $('#prop-chips');
+    const tType  = pick(p.type, p.property_type, Array.isArray(p.types)&&p.types[0]);
+    const tenure = pick(p.tenure, p.transaction_type, p.to_let ? 'To Let' : (p.for_sale ? 'For Sale' : ''));
+    const epcObj = p.current_energy_ratings?.rating;
+    const epc    = pick(p.epc_rating, p.epc, epcObj ? `${epcObj._ || epcObj} (${epcObj?.$?.value || ""})` : "");
+    if (tenure) chips.innerHTML += `<span class="chip chip--accent">${tenure}</span>`;
+    if (tType)  chips.innerHTML += `<span class="chip">${tType}</span>`;
+    if (epc)    chips.innerHTML += `<span class="chip">EPC ${epc}</span>`;
 
-  /* text blocks */
-  const overview = pick(p.specification_summary?._, p.summary);
-  if (overview){ $('#overview').innerHTML = overview; $('#overviewCard').style.display=''; }
+    /* gallery */
+    const imgs = getImages(p);
+    const hero = $('#hero'); const thumbs = $('#thumbs');
+    const setHero = (src) => { hero.innerHTML = src ? `<img src="${src}" alt="${p.address||'Property'}">` : ''; };
+    setHero(imgs[0] || '');
+    thumbs.innerHTML = imgs.slice(0,15).map(u => `<button class="thumb" type="button" data-src="${u}" aria-label="View photo"><img src="${u}" alt=""></button>`).join('');
+    thumbs.addEventListener('click', e => {
+      const t = e.target.closest('.thumb'); if (!t) return;
+      setHero(t.dataset.src);
+      thumbs.scrollTo({ left: t.offsetLeft - 12, behavior:'smooth' });
+      _sendHeight();
+    });
 
-  const feats = toListItems(p.key_selling_points?.key_selling_point || p.features || p.key_features);
-  if (feats.length){ $('#features').innerHTML = feats.map(f=>`<li>${f}</li>`).join(''); $('#featuresCard').style.display=''; }
+    /* facts */
+    const facts = $('#facts');
+    const fact = (label, value) => value ? `<div class="fact"><div class="label">${label}</div><div class="value">${value}</div></div>` : '';
+    const ratesPay = p.business_rates?.rates_payable ? `${p.business_rates.rates_payable} per sq ft` : p.business_rates_psf || '';
+    const rv = p.business_rates?.rateable_value ? `£${Number(p.business_rates.rateable_value).toLocaleString()}` : p.rateable_value || '';
+    facts.innerHTML = [
+      fact('Property type', tType),
+      fact('Tenure', tenure),
+      fact('Size', formatSize(p)),
+      fact('Rent', pick(p.rent, p.rent_psf)),
+      fact('Business rates', ratesPay),
+      fact('Rateable value', rv),
+      fact('EPC', epc),
+      fact('Last updated', p.last_updated || '')
+    ].join('');
 
-  const desc = pick(p.specification_description?._, p.description);
-  if (desc){ $('#desc').innerHTML = desc; $('#descCard').style.display=''; }
+    /* text blocks */
+    const overview = pick(p.specification_summary?._, p.summary);
+    if (overview){ $('#overview').innerHTML = overview; $('#overviewCard').style.display=''; }
 
-  const loc = pick(p.location?._, p.location);
-  if (loc){ $('#loc').innerHTML = loc; $('#locCard').style.display=''; }
+    const feats = toListItems(p.key_selling_points?.key_selling_point || p.features || p.key_features);
+    if (feats.length){ $('#features').innerHTML = feats.map(f=>`<li>${f}</li>`).join(''); $('#featuresCard').style.display=''; }
 
-  const transport = pick(p.marketing_text_transport?._, p.marketing_text_transport);
-  if (transport){ $('#transport').innerHTML = transport; $('#transportCard').style.display=''; }
+    const desc = pick(p.specification_description?._, p.description);
+    if (desc){ $('#desc').innerHTML = desc; $('#descCard').style.display=''; }
 
-  /* actions (brochure) */
-  const brochure = pick(p.brochure, p.brochure_url, p.files?.file?.url);
-  if (brochure){ $('#brochureBtn').href = brochure; $('#brochureBtn').style.display='inline-flex'; }
-  else { $('#brochureBtn').style.display='none'; }
+    const loc = pick(p.location?._, p.location);
+    if (loc){ $('#loc').innerHTML = loc; $('#locCard').style.display=''; }
 
-  /* map */
-  map = L.map('map', { zoomControl:true }).setView([52.5,-1.8], 6);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-  const lat = Number(p.lat), lon = Number(p.lon);
-  if (isFinite(lat) && isFinite(lon)){
-    marker = L.circleMarker([lat, lon], { radius:7, weight:2, color:'#111', fillColor:'#111', fillOpacity:.85 }).addTo(map);
-    map.setView([lat, lon], 14);
-  }
+    const transport = pick(p.marketing_text_transport?._, p.marketing_text_transport);
+    if (transport){ $('#transport').innerHTML = transport; $('#transportCard').style.display=''; }
 
-  /* agents (aside) */
-  const contacts = Array.isArray(p.contacts?.contact) ? p.contacts.contact
+    /* actions (brochure) */
+    const brochure = pick(p.brochure, p.brochure_url, p.files?.file?.url);
+    if (brochure){ $('#brochureBtn').href = brochure; $('#brochureBtn').style.display='inline-flex'; }
+    else { $('#brochureBtn').style.display='none'; }
+
+    /* map */
+    map = L.map('map', { zoomControl:true }).setView([52.5,-1.8], 6);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    const lat = Number(p.lat), lon = Number(p.lon);
+    if (isFinite(lat) && isFinite(lon)){
+      marker = L.circleMarker([lat, lon], { radius:7, weight:2, color:'#111', fillColor:'#111', fillOpacity:.85 }).addTo(map);
+      map.setView([lat, lon], 14);
+    }
+
+    /* agents (aside) */
+    const contacts = Array.isArray(p.contacts?.contact) ? p.contacts.contact
                  : Array.isArray(p.contacts) ? p.contacts
                  : p.contacts ? [p.contacts] : [];
-  if (contacts.length){
-    const list = $('#agents');
-    list.innerHTML = contacts.map(c => {
-      const photo = c.photo || c.image || '';
-      const init  = initials(c.name || '');
-      const tel   = c.tel || c.phone || '';
-      const mob   = c.mobile ? String(c.mobile) : '';
-      return `
-        <div class="agent">
-          <div class="avatar">
-            ${photo ? `<img src="${photo}" alt="${c.name||'Agent'}" onerror="this.closest('.avatar').textContent='${init}'">` : `${init}`}
-          </div>
-          <div>
-            <div class="name">${c.name || ''}</div>
-            <div class="meta">${[c.office, c.branch].filter(Boolean).join(' • ')}</div>
-            <div class="meta">${[tel, mob].filter(Boolean).join(' • ')}</div>
-            <div class="cta">
-              ${c.email ? `<a href="mailto:${c.email}">Email</a>` : ''}
-              ${tel ? `<a href="tel:${tel}">Call</a>` : ''}
-              ${mob ? `<a href="tel:${mob}">Mobile</a>` : ''}
+    if (contacts.length){
+      const list = $('#agents');
+      list.innerHTML = contacts.map(c => {
+        const photo = c.photo || c.image || '';
+        const init  = initials(c.name || '');
+        const tel   = c.tel || c.phone || '';
+        const mob   = c.mobile ? String(c.mobile) : '';
+        return `
+          <div class="agent">
+            <div class="avatar">
+              ${photo ? `<img src="${photo}" alt="${c.name||'Agent'}" onerror="this.closest('.avatar').textContent='${init}'">` : `${init}`}
+            </div>
+            <div>
+              <div class="name">${c.name || ''}</div>
+              <div class="meta">${[c.office, c.branch].filter(Boolean).join(' • ')}</div>
+              <div class="meta">${[tel, mob].filter(Boolean).join(' • ')}</div>
+              <div class="cta">
+                ${c.email ? `<a href="mailto:${c.email}">Email</a>` : ''}
+                ${tel ? `<a href="tel:${tel}">Call</a>` : ''}
+                ${mob ? `<a href="tel:${mob}">Mobile</a>` : ''}
+              </div>
             </div>
           </div>
-        </div>
-      `;
-    }).join('');
-    $('#teamBox').style.display = '';
+        `;
+      }).join('');
+      $('#teamBox').style.display = '';
+    }
+
+    // bind the enquiry modal handlers
+    setupEnquiry(p);
+
+    requestAnimationFrame(()=>{ _sendHeight(); });
+    setTimeout(()=>{ _sendHeight(); }, 300);
+    setTimeout(()=>{ _sendHeight(); }, 900);
+
+  } catch (err) {
+    console.error(err);
+    const msg = (err && err.message) ? err.message : String(err);
+    $('#loading').textContent = `Sorry — failed to load property data (${msg}).`;
   }
-
-    // ✅ bind the enquiry modal handlers
-  setupEnquiry(p);
-
-  /* ensure parent gets final height after all renderings */
-  requestAnimationFrame(()=>{ _sendHeight(); });
-  setTimeout(()=>{ _sendHeight(); }, 300);
-  setTimeout(()=>{ _sendHeight(); }, 900);
 }
 
 /* ---------- enquiry modal logic ---------- */
@@ -550,7 +554,6 @@ function setupEnquiry(p){
   document.addEventListener('keydown', e=>{ if(e.key==='Escape') close(); });
 
   $('#sendEnquiryBtn').onclick = () => {
-    // simple validation
     const first = $('#firstName').value.trim();
     const last  = $('#lastName').value.trim();
     const email = $('#email').value.trim();
@@ -567,7 +570,6 @@ function setupEnquiry(p){
       message: $('#message').value.trim()
     };
 
-    // send via mailto to first available agent, else default AS parse inbox
     const toList = (Array.isArray(p.contacts) ? p.contacts : (p.contacts?.contact ? [p.contacts.contact] : []))
       .flat().map(c=>c?.email).filter(Boolean);
     const to = toList[0] || "gjs-dillon-limited-393@parse.agents-society.com";
@@ -603,11 +605,9 @@ main();
     }
   }
 
-  // Expose to the page code above
   window._gjsSendHeight = send;
   _sendHeight = send;
 
-  // Observe only the content wrapper to avoid feedback loops
   const ro = new ResizeObserver(send);
   ro.observe(root);
 
@@ -618,7 +618,6 @@ main();
   setTimeout(send, 300);
   setTimeout(send, 1000);
 
-  // Keep inner doc from scrolling / forcing viewport height
   document.documentElement.style.overflow = 'hidden';
   document.body.style.overflow = 'hidden';
   document.documentElement.style.height = 'auto';
