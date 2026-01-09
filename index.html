@@ -177,11 +177,10 @@
 
     .empty{ padding: 24px; color: var(--muted); }
 
-    /* ---- Map popup card (image + CTA) ---- */
+    /* ---- Map popup card ---- */
     .prop-popup .leaflet-popup-content { margin: 0 !important; }
     .prop-popup .leaflet-popup-content-wrapper { padding: 0; border-radius: 12px; overflow: hidden; }
     .prop-popup .leaflet-popup-tip { display: none; }
-
     .pop-card { width: 320px; background: #fff; }
     .pop-img  { width: 100%; height: 160px; background-size: cover; background-position: center; background-color: #eee; }
     .pop-body { padding: 12px 14px; }
@@ -460,7 +459,7 @@ async function applyFilters(){
     return true;
   });
 
-  // Apply simple text match first (helps when the location is an address)
+  // quick text match (helps when query is an address)
   let textMatch = q
     ? base.filter(p => {
         const text = `${p.address||''} ${p.town||''} ${p.postcode||''}`.toLowerCase();
@@ -468,26 +467,13 @@ async function applyFilters(){
       })
     : base;
 
-  // If no query, no geocode => no radius filtering
-  if (!q) {
-    render(textMatch);
-    updateMap(textMatch);
-    return;
-  }
+  if (!q) { render(textMatch); updateMap(textMatch); return; }
 
-  // Geocode the query
   const point = await geocodePlace(q);
-  if (!point) {
-    // fallback: no geocode result, show text matches or base
-    render(textMatch);
-    updateMap(textMatch);
-    return;
-  }
+  if (!point) { render(textMatch); updateMap(textMatch); return; }
 
-  // Sort by distance
   let finalList = sortByDistance(textMatch, point);
 
-  // Apply radius if chosen
   let radiusMiles = null;
   if (radiusVal !== 'any') {
     radiusMiles = Number(radiusVal);
@@ -495,12 +481,7 @@ async function applyFilters(){
     finalList = finalList.filter(p => isFinite(p.__distance) && p.__distance <= meterLimit);
   }
 
-  // If radius made it empty, fall back to nearest (non-empty) set within base list
-  if (!finalList.length) {
-    finalList = sortByDistance(base, point);
-  }
-
-  // limit large result sets for performance
+  if (!finalList.length) finalList = sortByDistance(base, point);
   if (finalList.length > 60) finalList = finalList.slice(0, 60);
 
   render(finalList, { nearLabel: point.label || q, radiusMiles });
@@ -543,23 +524,46 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-<!-- ✨ Auto-resize: lets Squarespace adjust the iframe height to this page's full height -->
+<!-- ======= EMBED AUTO-RESIZE (stable; measures only .wrap like property.html) ======= -->
 <script>
-  (function () {
-    function send() {
-      var h = Math.max(
-        document.documentElement.scrollHeight,
-        document.body.scrollHeight
-      );
-      window.parent.postMessage({ type: "gjs:resize", height: h }, "*");
+(function () {
+  const MSG_TYPE = 'gjs-prop-height';
+  const frameId = new URLSearchParams(location.search).get('frameId') || 'index';
+  const root = document.querySelector('.wrap') || document.body;
+
+  function getContentHeight() {
+    return Math.ceil((root?.offsetHeight || document.body.offsetHeight) + 24);
+  }
+
+  let last = 0;
+  function send() {
+    const h = getContentHeight();
+    if (h !== last) {
+      last = h;
+      window.parent?.postMessage({ type: MSG_TYPE, id: frameId, height: h }, '*');
     }
-    send();
-    var ro = new ResizeObserver(function(){ send(); });
-    ro.observe(document.documentElement);
-    window.addEventListener("load", send);
-    window.addEventListener("resize", send);
-    setInterval(send, 800);
-  })();
+  }
+
+  // expose (optional)
+  window._gjsSendHeight = send;
+
+  // Observe only the wrapper to avoid loops
+  const ro = new ResizeObserver(send);
+  ro.observe(root);
+
+  const mo = new MutationObserver(send);
+  mo.observe(root, { childList: true, subtree: true, attributes: true });
+
+  window.addEventListener('load', send);
+  setTimeout(send, 300);
+  setTimeout(send, 1000);
+
+  // prevent inner scrolling from fighting parent
+  document.documentElement.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden';
+  document.documentElement.style.height = 'auto';
+  document.body.style.height = 'auto';
+})();
 </script>
 </body>
 </html>
