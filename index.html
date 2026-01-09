@@ -557,7 +557,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const rect = wrap.getBoundingClientRect();
     const top  = rect.top + window.scrollY;
     const h    = Math.ceil(top + rect.height + 8);  // small breathing room
-    return Math.max(h, 500);
+    return Math.max(h, 300);
   }
 
   function sendHeight() {
