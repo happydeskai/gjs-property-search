@@ -563,49 +563,46 @@ function setupEnquiry(p){
 main();
 </script>
 
-<!-- ======= EMBED AUTO-RESIZE: robust, keeps iframe height in sync on Squarespace ======= -->
+<!-- ======= EMBED AUTO-RESIZE (stable; measures only .wrap) ======= -->
 <script>
 (function () {
   const MSG_TYPE = 'gjs-prop-height';
   const frameId = new URLSearchParams(location.search).get('frameId') || 'prop';
+  const root = document.querySelector('.wrap') || document.body;
 
-  function sendHeight() {
-    // add small padding so parent doesn't clip box shadows
-    const h = Math.ceil(document.documentElement.scrollHeight + 2);
-    window.parent?.postMessage({ type: MSG_TYPE, id: frameId, height: h }, '*');
+  function getContentHeight() {
+    return Math.ceil((root?.offsetHeight || document.body.offsetHeight) + 24);
   }
-  // expose to page code above
-  window._gjsSendHeight = sendHeight;
-  // allow calls from main()
-  _sendHeight = sendHeight;
 
-  // Observe overall size
-  const ro = new ResizeObserver(()=>sendHeight());
-  ro.observe(document.documentElement);
-  ro.observe(document.body);
+  let last = 0;
+  function send() {
+    const h = getContentHeight();
+    if (h !== last) {
+      last = h;
+      window.parent?.postMessage({ type: MSG_TYPE, id: frameId, height: h }, '*');
+    }
+  }
 
-  // Mutation observer (content changes)
-  const mo = new MutationObserver(()=>sendHeight());
-  mo.observe(document.body, { childList: true, subtree: true, attributes: true, characterData: true });
+  // Expose to the page code above
+  window._gjsSendHeight = send;
+  _sendHeight = send;
 
-  // Image loads
-  window.addEventListener('load', sendHeight);
-  document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('img').forEach(img => {
-      if (!img.complete) img.addEventListener('load', sendHeight, { once: true });
-    });
-  });
+  // Observe only the content wrapper to avoid feedback loops
+  const ro = new ResizeObserver(send);
+  ro.observe(root);
 
-  // Gentle polling for late layout (maps/fonts/etc.)
-  let ticks = 0;
-  const poll = setInterval(() => {
-    sendHeight();
-    if (++ticks >= 8) clearInterval(poll);  // ~8 seconds total
-  }, 1000);
+  const mo = new MutationObserver(send);
+  mo.observe(root, { childList: true, subtree: true, attributes: true });
 
-  // Keep iframe itself not scrollable; parent scrolls
+  window.addEventListener('load', send);
+  setTimeout(send, 300);
+  setTimeout(send, 1000);
+
+  // Keep inner doc from scrolling / forcing viewport height
   document.documentElement.style.overflow = 'hidden';
   document.body.style.overflow = 'hidden';
+  document.documentElement.style.height = 'auto';
+  document.body.style.height = 'auto';
 })();
 </script>
 </body>
