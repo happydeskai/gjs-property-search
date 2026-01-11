@@ -74,12 +74,6 @@
       z-index: 1;
       margin-bottom: 14px;
     }
-    .field{
-      min-width: 0;
-      display: grid;
-      grid-template-rows: auto 44px auto;
-      align-content: start;
-    }
     .field label{
       font-size: 12px;
       color: var(--muted);
@@ -93,7 +87,6 @@
       border: 1px solid #dcdcdc;
       font-size: 14px;
       background: #fff;
-      align-self: end;
     }
     .btn{
       height: 44px;
@@ -105,7 +98,6 @@
       border: none;
       font-weight: 600;
       width: 140px;
-      align-self: end;
     }
     .meta{ color: var(--muted); margin: 8px 0 12px; }
     .cards{
@@ -130,16 +122,12 @@
       transition: transform .15s ease, box-shadow .15s ease;
     }
     .card:hover{ transform: translateY(-2px); box-shadow: var(--shadow); }
-
-    .card__media{ position: relative; aspect-ratio: 4 / 3; background: #eee; }
+    .card__media{ position: relative; aspect-ratio: 4/3; background: #eee; }
     .card__media img{ position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-
     .card__body{ padding: 14px; }
     .card__loc{ color: var(--muted); font-size: 14px; margin-bottom: 6px; }
     .card__title{ font-size: 18px; font-weight: 600; margin: 0 0 6px; color: var(--text); text-decoration: none; }
-    .card__meta{ color: var(--muted); font-size: 14px; margin-top: 6px; }
     .chip{ display:inline-block; background:#f6f6f6; padding:6px 10px; border-radius:999px; font-size:12px; margin-top:8px; }
-
     .card__footer{ display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px; border-top: var(--border); }
     .btn-link, .btn-ghost{ height:36px; padding:0 12px; border-radius:8px; display:inline-flex; align-items:center; justify-content:center; font-size:14px; text-decoration:none; }
     .btn-ghost{ border:1px solid #ddd; color:#333; background:#fff; }
@@ -183,7 +171,7 @@
 
 <script>
 let allProperties = [];
-let map, markers, searchMarker;
+let map, markers;
 
 function getPrimaryImage(p){
   if (!p) return '';
@@ -221,13 +209,20 @@ function initMap(){
   map=L.map('map').setView([52.5,-1.8],6);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
   markers=L.layerGroup().addTo(map);
-  searchMarker=L.layerGroup().addTo(map);
 }
 
 function render(list){
   const el=document.getElementById('results');
   document.getElementById('resultsCount').textContent=`${list.length} Properties Found`;
-  if(!list.length){el.innerHTML='<div class="empty">No properties match your filters.</div>';return;}
+  const status=document.getElementById('statusText');
+  status.textContent=list.length?'':'No properties match your filters.';
+
+  if(!list.length){
+    el.innerHTML='<div class="empty">No properties match your filters.</div>';
+    window._gjsSendHeight?.();
+    return;
+  }
+
   el.innerHTML=list.map(p=>{
     const img=getPrimaryImage(p);
     const brochure=p.brochure||p.brochure_url||'';
@@ -244,49 +239,70 @@ function render(list){
         ${brochure?`<a class="btn-link" href="${brochure}" target="_blank" rel="noopener">View brochure</a>`:`<a class="btn-link" aria-disabled="true">No brochure</a>`}
       </div></article>`;
   }).join('');
+
+  window._gjsSendHeight?.();
 }
 
 async function applyFilters(){
+  const status=document.getElementById('statusText');
+  status.textContent='Loading properties…';
+
   const q=document.getElementById('q').value.trim();
   const tenure=document.getElementById('tenure').value;
   const type=document.getElementById('type').value;
   const radiusVal=document.getElementById('radius').value;
 
-  let base=allProperties.filter(p=>{
-    if(tenure!=='any'){
-      if(tenure.toLowerCase()==='to let'&&!p.to_let)return false;
-      if(tenure.toLowerCase()==='for sale'&&!p.for_sale)return false;
-    }
-    if(type!=='any'){
-      const ty=(p.type||p.property_type||(Array.isArray(p.types)?p.types.join(' '):'')).toLowerCase();
-      if(!ty.includes(type.toLowerCase()))return false;
-    }
-    return true;
-  });
+  try{
+    let base=allProperties.filter(p=>{
+      if(tenure!=='any'){
+        if(tenure.toLowerCase()==='to let'&&!p.to_let)return false;
+        if(tenure.toLowerCase()==='for sale'&&!p.for_sale)return false;
+      }
+      if(type!=='any'){
+        const ty=(p.type||p.property_type||(Array.isArray(p.types)?p.types.join(' '):'')).toLowerCase();
+        if(!ty.includes(type.toLowerCase()))return false;
+      }
+      return true;
+    });
 
-  if(!q){render(base);return;}
-  const point=await geocodePlace(q);
-  if(!point){render(base);return;}
-  let finalList=sortByDistance(base,point);
-  if(radiusVal!=='any'){
-    const meterLimit=milesToMeters(Number(radiusVal));
-    finalList=finalList.filter(p=>p.__distance<=meterLimit);
+    if(!q){ render(base); status.textContent=''; return; }
+
+    const point=await geocodePlace(q);
+    if(!point){ render(base); status.textContent=''; return; }
+
+    let finalList=sortByDistance(base,point);
+    if(radiusVal!=='any'){
+      const meterLimit=milesToMeters(Number(radiusVal));
+      finalList=finalList.filter(p=>p.__distance<=meterLimit);
+    }
+
+    render(finalList);
+    status.textContent='';
+  }catch(e){
+    console.error(e);
+    status.textContent='Error applying filters.';
   }
-  render(finalList);
 }
 
 async function loadProperties(){
-  const res=await fetch('./properties.json',{cache:'no-store'});
-  const raw=await res.json();
-  allProperties=raw;
-  const types=new Set();
-  allProperties.forEach(p=>{
-    const t=(p.type||p.property_type||(Array.isArray(p.types)?p.types[0]:'')||'').trim();
-    if(t)types.add(t);
-  });
-  const typeSel=document.getElementById('type');
-  typeSel.innerHTML='<option value="any">Any</option>'+[...types].sort().map(t=>`<option>${t}</option>`).join('');
-  applyFilters();
+  try{
+    document.getElementById('statusText').textContent='Loading properties…';
+    const res=await fetch('./properties.json',{cache:'no-store'});
+    const raw=await res.json();
+    allProperties=raw;
+    const types=new Set();
+    allProperties.forEach(p=>{
+      const t=(p.type||p.property_type||(Array.isArray(p.types)?p.types[0]:'')||'').trim();
+      if(t)types.add(t);
+    });
+    const typeSel=document.getElementById('type');
+    typeSel.innerHTML='<option value="any">Any</option>'+[...types].sort().map(t=>`<option>${t}</option>`).join('');
+    document.getElementById('statusText').textContent='';
+    applyFilters();
+  }catch(e){
+    document.getElementById('statusText').textContent='Failed to load properties.json';
+    console.error(e);
+  }
 }
 
 document.addEventListener('DOMContentLoaded',()=>{
