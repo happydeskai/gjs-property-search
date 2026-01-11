@@ -1,1 +1,236 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8" /> <title>Property Search</title> <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Leaflet --> <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" /> <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> <style> /* ---- base & reset ---- */ *, *::before, *::after { box-sizing: border-box; } :root{ --radius: 12px; --gap: 16px; --shadow: 0 10px 25px rgba(0,0,0,.08); --border: 1px solid #e7e7e7; --text: #111; --muted: #666; --bg: #fff; } input[type="number"]{ -moz-appearance: textfield; } input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button{ -webkit-appearance: none; margin: 0; } body{ margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; color: var(--text); background: #fff; } .wrap{ max-width: 1200px; margin: 0 auto; padding: 12px 18px 60px; } /* ---- full-bleed map ---- */ .bleed{ width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,.06); margin-bottom: 18px; } #map{ height: 420px; outline: 1px solid #e8e8e8; position: relative; z-index: 0; } @media (max-width: 1100px){ #map{ height: 360px; } } @media (max-width: 700px){ #map{ height: 300px; } } /* ---- search bar ---- */ .searchBar{ display: grid; grid-template-columns: minmax(220px, 1.6fr) /* location */ minmax(120px, 1fr) /* tenure */ minmax(120px, 1fr) /* type */ minmax(120px, 1fr) /* radius */ minmax(120px, 1fr) /* min size */ minmax(120px, 1fr) /* max size */ 140px; /* button */ gap: 12px; padding: 14px; border: var(--border); border-radius: var(--radius); background: var(--bg); box-shadow: 0 8px 24px rgba(0,0,0,.06); align-items: end; position: relative; z-index: 1; margin-bottom: 14px; } .field{ min-width: 0; display: grid; grid-template-rows: auto 44px auto; align-content: start; } .field label{ font-size: 12px; color: var(--muted); margin-bottom: 6px; } .field input, .field select{ width: 100%; height: 44px; padding: 10px 12px; border-radius: 10px; border: 1px solid #dcdcdc; font-size: 14px; background: #fff; align-self: end; } .btn{ height: 44px; padding: 12px 16px; background: #111; color: #fff; border-radius: 10px; cursor: pointer; border: none; font-weight: 600; width: 140px; align-self: end; } .field input:focus-visible, .field select:focus-visible, .btn:focus-visible{ outline: 2px solid #111; outline-offset: 2px; } @media (max-width: 1000px){ .searchBar{ grid-template-columns: repeat(2, minmax(0,1fr)); } .btn{ grid-column: 1 / -1; width: 100%; } } @media (max-width: 600px){ .searchBar{ grid-template-columns: 1fr; } .btn{ grid-column: 1 / -1; width: 100%; } } .meta{ color: var(--muted); margin: 8px 0 12px; } /* ---- results grid ---- */ .cards{ display: grid; grid-template-columns: 1fr; gap: var(--gap); margin-top: 10px; border-top: var(--border); padding-top: 16px; } @media (min-width: 640px){ .cards{ grid-template-columns: repeat(2, minmax(0,1fr)); } } @media (min-width: 1024px){ .cards{ grid-template-columns: repeat(3, minmax(0,1fr)); } } /* ---- card ---- */ .card{ display: grid; grid-template-rows: auto 1fr auto; background: var(--bg); border: var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,.04); transition: transform .15s ease, box-shadow .15s ease; } .card:focus-within{ outline: 2px solid #111; outline-offset: 2px; } .card:hover{ transform: translateY(-2px); box-shadow: var(--shadow); } .card__media{ position: relative; aspect-ratio: 4 / 3; background: #eee; } .card__media::before{ content:""; display:block; padding-top:75%; } .card__media img{ position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; } .card__body{ padding: 14px; } .card__loc{ color: var(--muted); font-size: 14px; margin-bottom: 6px; } .card__title{ font-size: 18px; font-weight: 600; margin: 0 0 6px; color: var(--text); text-decoration: none; } .card__meta{ color: var(--muted); font-size: 14px; margin-top: 6px; } .chip{ display:inline-block; background:#f6f6f6; padding:6px 10px; border-radius:999px; font-size:12px; margin-top:8px; } .card__footer{ display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px; border-top: var(--border); } .btn-link, .btn-ghost{ height:36px; padding:0 12px; border-radius:8px; display:inline-flex; align-items:center; justify-content:center; font-size:14px; text-decoration:none; } .btn-ghost{ border:1px solid #ddd; color:#333; background:#fff; } .btn-link{ background:#111; color:#fff; border:none; } .btn-link[aria-disabled="true"]{ opacity:.5; pointer-events:none; } .empty{ padding: 24px; color: var(--muted); } /* ---- Map popup card (image + CTA) ---- */ .prop-popup .leaflet-popup-content { margin: 0 !important; } .prop-popup .leaflet-popup-content-wrapper { padding: 0; border-radius: 12px; overflow: hidden; } .prop-popup .leaflet-popup-tip { display: none; } .pop-card { width: 320px; background: #fff; } .pop-img { width: 100%; height: 160px; background-size: cover; background-position: center; background-color: #eee; } .pop-body { padding: 12px 14px; } .pop-title{ font-weight: 700; margin: 0 0 4px; } .pop-sub { color: #6b7280; font-size: 13px; margin-bottom: 4px; } .pop-size { font-size: 13px; margin-bottom: 10px; } .pop-btn { display: inline-block; padding: 8px 12px; border-radius: 8px; background:#111; color:#fff; text-decoration:none; font-weight:600; } </style> </head> <body> <div class="wrap"> <!-- MAP (full-bleed) --> <div class="bleed"> <div id="map"></div> </div> <!-- SEARCH --> <div class="searchBar" id="searchForm"> <div class="field"> <label for="q">Location</label> <input id="q" placeholder="Town, postcode" /> </div> <div class="field"> <label for="tenure">Tenure</label> <select id="tenure"> <option value="any">Any</option> <option value="to let">To Let</option> <option value="for sale">For Sale</option> </select> </div> <div class="field"> <label for="type">Type</label> <select id="type"> <option value="any">Any</option> </select> </div> <div class="field"> <label for="radius">Radius</label> <select id="radius" title="Search radius from location"> <option value="any">Any</option> <option value="1">1 mile</option> <option value="3">3 miles</option> <option value="5">5 miles</option> <option value="10">10 miles</option> <option value="25">25 miles</option> <option value="50">50 miles</option> </select> </div> <div class="field"> <label for="minSize">Min size</label> <input id="minSize" type="number" inputmode="numeric" /> </div> <div class="field"> <label for="maxSize">Max size</label> <input id="maxSize" type="number" inputmode="numeric" /> </div> <button class="btn" id="searchBtn" type="button">Search</button> </div> <div class="meta" id="statusText">Loading properties…</div> <div class="meta" id="resultsCount"></div> <!-- RESULTS --> <div class="cards" id="results"></div> </div> <script> let allProperties = []; let map, markers, searchMarker; /* ---------- OPTIONAL: Mapbox token for geocoding ---------- */ const MAPBOX_TOKEN = ""; // e.g. "pk.XXXX" (optional) /* ---------- IMAGE HANDLER ---------- */ function getPrimaryImage(p){ if (!p) return ''; if (Array.isArray(p.images) && p.images[0]) { const img = p.images[0]; if (typeof img === 'string') return img; if (img._) return img._; if (img.url) return img.url; } if (Array.isArray(p.photos) && p.photos[0]?.url) return p.photos[0].url; return p.image || p.image_url || ''; } /* ---------- GEO ---------- */ async function geocodePlace(q){ const query = q.trim(); if (!query) return null; try { if (MAPBOX_TOKEN) { const url = https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(query)}.json?limit=1&country=gb&access_token=${MAPBOX_TOKEN}; const r = await fetch(url); const j = await r.json(); const f = j.features && j.features[0]; if (!f) return null; return { lat: f.center[1], lon: f.center[0], label: f.place_name }; } else { const url = https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=gb&q=${encodeURIComponent(query)}; const r = await fetch(url, { headers: { 'Accept-Language': 'en' }}); const j = await r.json(); if (!Array.isArray(j) || !j[0]) return null; return { lat: Number(j[0].lat), lon: Number(j[0].lon), label: j[0].display_name }; } } catch (e) { console.warn('Geocode failed:', e); return null; } } function haversine(lat1, lon1, lat2, lon2){ const R = 6371e3; const toRad = d => d * Math.PI/180; const φ1 = toRad(lat1), φ2 = toRad(lat2); const Δφ = toRad(lat2-lat1); const Δλ = toRad(lon2-lon1); const a = Math.sin(Δφ/2)**2 + Math.cos(φ1)*Math.cos(φ2)*Math.sin(Δλ/2)**2; return 2*R*Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); } /* distance sort + adorn with distance */ function sortByDistance(list, point){ return list.map(p => { const lat = Number(p.lat), lon = Number(p.lon); const d = (isFinite(lat) && isFinite(lon)) ? haversine(point.lat, point.lon, lat, lon) : Number.POSITIVE_INFINITY; return { p, d }; }).sort((a,b) => a.d - b.d).map(({p,d}) => ({ ...p, __distance: d })); } /* ---------- helpers ---------- */ function milesToMeters(mi){ return mi * 1609.344; } function sizeText(p) { const a = Number(p.size_from_sqft || 0); const b = Number(p.size_to_sqft || 0); if (a && b) return ${a.toLocaleString()}–${b.toLocaleString()} sq ft; if (a) return ${a.toLocaleString()} sq ft; if (b) return ${b.toLocaleString()} sq ft; return ''; } /* ---------- MAP ---------- */ function initMap(){ map = L.map('map').setView([52.5, -1.8], 6); L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map); markers = L.layerGroup().addTo(map); searchMarker = L.layerGroup().addTo(map); } /* --- SHOW RESULTS + SEARCH POINT; keep zoom wide enough for context --- */ function updateMap(list, focusPoint){ markers.clearLayers(); searchMarker.clearLayers(); const points = []; // property markers list.forEach(p => { const lat = Number(p.lat), lon = Number(p.lon); if (!isFinite(lat) || !isFinite(lon)) return; const marker = L.circleMarker([lat, lon], { radius: 7, weight: 2, color: '#111', fillColor: '#111', fillOpacity: 0.85 }); const img = getPrimaryImage(p); const where = [p.town, p.postcode].filter(Boolean).join(' '); const popupHtml = <div class="pop-card"> <div class="pop-img" style="background-image:url('${(img || '').replace(/'/g, "%27")}')"></div> <div class="pop-body"> <div class="pop-title">${p.address || 'Property'}</div> <div class="pop-sub">${where}</div> <div class="pop-size">${sizeText(p)}</div> <a class="pop-btn" href="property.html?id=${encodeURIComponent(p.id ?? '')}">View property</a> </div> </div> ; marker.bindPopup(popupHtml, { className: 'prop-popup', maxWidth: 340 }); marker.addTo(markers); points.push([lat, lon]); }); // search point (bold blue circle + faint ring + tooltip) if (focusPoint && isFinite(focusPoint.lat) && isFinite(focusPoint.lon)) { const sp = L.circleMarker([focusPoint.lat, focusPoint.lon], { radius: 10, weight: 3, color: '#2563eb', fillColor: '#2563eb', fillOpacity: 0.75 }).addTo(searchMarker); L.circleMarker([focusPoint.lat, focusPoint.lon], { radius: 16, weight: 2, color: '#2563eb', opacity: 0.25, fill: false }).addTo(searchMarker); sp.bindTooltip(focusPoint.label || 'Search location', { direction: 'top', offset: [0, -12] }); points.push([focusPoint.lat, focusPoint.lon]); } if (!points.length) return; const MAX_SEARCH_ZOOM = 11; const PADDING = [60, 60]; if (points.length === 1) { map.setView(points[0], MAX_SEARCH_ZOOM); } else { map.fitBounds(points, { padding: PADDING, maxZoom: MAX_SEARCH_ZOOM }); } } /* ---------- RENDER ---------- */ function render(list, context = {}){ const el = document.getElementById('results'); document.getElementById('resultsCount').textContent = ${list.length} Properties Found; const parts = [Showing ${list.length} of ${allProperties.length}]; if (context.nearLabel) { if (context.radiusMiles) parts.push(within ${context.radiusMiles} mile${context.radiusMiles==1?'':'s'}); parts.push(of "${context.nearLabel}"); } document.getElementById('statusText').textContent = parts.join(' '); if (!list.length){ el.innerHTML = <div class="empty">No properties match your filters.</div>; window._gjsSendHeight?.(); return; } el.innerHTML = list.map(p => { const img = getPrimaryImage(p); const brochure = p.brochure || p.brochure_url || ''; const address = p.address || 'Property'; const town = p.town || ''; const postcode = p.postcode || ''; const size = p.size_from_sqft && p.size_to_sqft ? ${Number(p.size_from_sqft).toLocaleString()}–${Number(p.size_to_sqft).toLocaleString()} sq ft : p.size_from_sqft ? ${Number(p.size_from_sqft).toLocaleString()} sq ft : ''; const distStr = (typeof p.__distance === 'number' && isFinite(p.__distance)) ? • ${(p.__distance/1000).toFixed(p.__distance >= 995 ? 0 : 1)} km : ''; const titleHtml = <a class="card__title" href="property.html?id=${encodeURIComponent(p.id ?? p.slug ?? p.uid ?? String(address))}" aria-label="View details for ${address}">${address}</a>; return <article class="card" tabindex="0"> <div class="card__media"> ${img ? <img src="${img}" alt="${address}" loading="lazy"> : `} </div> <div class="card__body"> <div class="card__loc">${[town, postcode].filter(Boolean).join(' ')}${distStr}</div> ${titleHtml} ${size ? <div class="card__meta">${size}</div> : ''} ${p.tenure ? <span class="chip">${p.tenure}</span> : ''} </div> <div class="card__footer"> <a class="btn-ghost" href="property.html?id=${encodeURIComponent(p.id ?? p.slug ?? p.uid ?? String(address))}" aria-label="View details for ${address}"> View property </a> ${brochure ? <a class="btn-link" href="${brochure}" target="_blank" rel="noopener" aria-label="View brochure for ${address}">View brochure</a> : <a class="btn-link" aria-disabled="true">No brochure</a> } </div> </article> ; }).join(''); window._gjsSendHeight?.(); } /* ---------- NEW: read params from here, referrer, or sessionStorage ---------- */ function parseQS(str){ const sp=new URLSearchParams(str.startsWith('?')?str.slice(1):str); const o={}; for(const [k,v] of sp.entries()) o[k]=v; return o; } function getIncomingParams(){ // 1) from this iframe/page const here = parseQS(window.location.search || ""); if (Object.keys(here).length) return here; // 2) from Squarespace parent (referrer) try { if (document.referrer) { const ref = new URL(document.referrer); const got = parseQS(ref.search || ""); if (Object.keys(got).length) return got; } } catch {} // 3) from sessionStorage (set by home page) try { const saved = sessionStorage.getItem('gjs:lastSearch'); if (saved) return parseQS(saved); } catch {} return {}; } /* ---------- FILTER FLOW ---------- */ let _didURLHydrateFallback = false; async function applyFilters(){ // take q from field; if empty, fallback to URL->referrer->session let q = document.getElementById('q').value.trim(); if (!q) { const incoming = getIncomingParams(); if (incoming.q) q = incoming.q.trim(); } // hydrate once if URL had ?q= but field was empty if (!q && !_didURLHydrateFallback) { const qp = new URLSearchParams(location.search).get('q'); if (qp) { document.getElementById('q').value = qp; _didURLHydrateFallback = true; return applyFilters(); } } const tenure = document.getElementById('tenure').value; const type = document.getElementById('type')?.value || 'any'; const radiusVal = document.getElementById('radius').value; let base = allProperties.filter(p => { if (tenure !== 'any') { const t = (p.tenure || p.transaction_type || '').toLowerCase(); if (!t.includes(tenure.toLowerCase())) return false; } if (type !== 'any') { const ty = (p.type || p.property_type || '').toLowerCase(); if (!ty.includes(type.toLowerCase())) return false; } return true; }); // text match first let textMatch = q ? base.filter(p => { const text = ${p.address||''} ${p.town||''} ${p.postcode||''}.toLowerCase(); return text.includes(q.toLowerCase()); }) : base; // no query -> no geocode/radius if (!q) { render(textMatch); updateMap(textMatch); return; } // geocode const point = await geocodePlace(q); if (!point) { render(textMatch); updateMap(textMatch); return; } // distance sort let finalList = sortByDistance(textMatch, point); // radius filter (optional) let radiusMiles = null; if (radiusVal !== 'any') { radiusMiles = Number(radiusVal); const meterLimit = milesToMeters(radiusMiles); finalList = finalList.filter(p => isFinite(p.__distance) && p.__distance <= meterLimit); } if (!finalList.length) { finalList = sortByDistance(base, point); } if (finalList.length > 60) finalList = finalList.slice(0, 60); render(finalList, { nearLabel: point.label || q, radiusMiles }); updateMap(finalList, point); } /* ---------- LOAD ---------- */ async function loadProperties(){ try { const res = await fetch('./properties.json', { cache: 'no-store' }); const raw = await res.json(); allProperties = raw.map((p, i) => ({ id: p.id ?? p.slug ?? p.uid ?? i, ...p })); // populate Type dropdown with distinct types const types = new Set(); allProperties.forEach(p => { const t = (p.type || p.property_type || (Array.isArray(p.types) ? p.types[0] : '') || '').toString().trim(); if (t) types.add(t); }); const typeSel = document.getElementById('type'); typeSel.innerHTML = <option value="any">Any</option> + [...types].sort().map(t=><option>${t}</option>).join(''); // re-apply any prefilled 'type' after options added if (typeSel.dataset.prefill) typeSel.value = typeSel.dataset.prefill; applyFilters(); } catch (e) { document.getElementById('statusText').textContent = 'Failed to load properties.json'; console.error(e); } } /* ---------- PREFILL FROM URL (from home search box) ---------- */ function prefillFromURL() { const incoming = getIncomingParams(); // <-- now reads from here/referrer/session const p = new URLSearchParams(location.search); const setVal = (id, v) => { if (v != null && v !== '') { const el = document.getElementById(id); if (el) el.value = v; } }; setVal('q', incoming.q || p.get('q')); setVal('tenure', (incoming.tenure || p.get('tenure') || 'any').toLowerCase()); setVal('radius', incoming.radius || p.get('radius') || 'any'); setVal('minSize', incoming.minSize || p.get('minSize')); setVal('maxSize', incoming.maxSize || p.get('maxSize')); // store intended type to apply after options are populated const typePref = incoming.type || p.get('type') || 'any'; const typeEl = document.getElementById('type'); if (typeEl) typeEl.dataset.prefill = typePref; } document.addEventListener('DOMContentLoaded', () => { initMap(); document.getElementById('searchBtn').onclick = applyFilters; document.getElementById('q').addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); applyFilters(); } }); // pull values from the home search (now resilient to stripped query strings) prefillFromURL(); loadProperties(); }); </script> <!-- Robust auto-resize for the SEARCH page --> <script> (function () { const MSG_TYPE = 'gjs-prop-height'; const frameId = new URLSearchParams(location.search).get('frameId') || 'search'; function calcHeight() { const wrap = document.querySelector('.wrap'); if (!wrap) return document.documentElement.scrollHeight; const rect = wrap.getBoundingClientRect(); const top = rect.top + window.scrollY; const h = Math.ceil(top + rect.height + 4); return Math.max(h, 300); } function sendHeight() { const h = calcHeight(); window.parent?.postMessage({ type: MSG_TYPE, id: frameId, height: h }, '*'); } window._gjsSendHeight = sendHeight; const ro = new ResizeObserver(() => sendHeight()); ro.observe(document.documentElement); ro.observe(document.body); const mo = new MutationObserver(() => sendHeight()); mo.observe(document.body, { childList: true, subtree: true, attributes: true, characterData: true }); window.addEventListener('load', sendHeight); document.addEventListener('DOMContentLoaded', () => { document.querySelectorAll('img').forEach(img => { if (!img.complete) img.addEventListener('load', sendHeight, { once: true }); }); }); function hookLeaflet() { if (!window.L || !document.getElementById('map')) return; try { const target = window; ['moveend','zoomend','resize','tileload','popupopen','popupclose'].forEach(ev => target.addEventListener(ev, sendHeight) ); } catch(e){} } hookLeaflet(); setTimeout(hookLeaflet, 600); let ticks = 0; const poll = setInterval(() => { sendHeight(); if (++ticks >= 10) clearInterval(poll); }, 1000); document.documentElement.style.overflow = 'hidden'; document.body.style.overflow = 'hidden'; sendHeight(); })(); </script> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Property Search</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <style>
+    /* (your CSS remains unchanged, trimmed here for brevity) */
+  </style>
+</head>
+
+<body>
+<div class="wrap">
+  <div class="bleed">
+    <div id="map"></div>
+  </div>
+
+  <div class="searchBar" id="searchForm">
+    <div class="field">
+      <label for="q">Location</label>
+      <input id="q" placeholder="Town, postcode" />
+    </div>
+
+    <div class="field">
+      <label for="tenure">Tenure</label>
+      <select id="tenure">
+        <option value="any">Any</option>
+        <option value="to let">To Let</option>
+        <option value="for sale">For Sale</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="type">Type</label>
+      <select id="type"><option value="any">Any</option></select>
+    </div>
+
+    <div class="field">
+      <label for="radius">Radius</label>
+      <select id="radius" title="Search radius from location">
+        <option value="any">Any</option>
+        <option value="1">1 mile</option>
+        <option value="3">3 miles</option>
+        <option value="5">5 miles</option>
+        <option value="10">10 miles</option>
+        <option value="25">25 miles</option>
+        <option value="50">50 miles</option>
+      </select>
+    </div>
+
+    <div class="field"><label for="minSize">Min size</label><input id="minSize" type="number" inputmode="numeric" /></div>
+    <div class="field"><label for="maxSize">Max size</label><input id="maxSize" type="number" inputmode="numeric" /></div>
+
+    <button class="btn" id="searchBtn" type="button">Search</button>
+  </div>
+
+  <div class="meta" id="statusText">Loading properties…</div>
+  <div class="meta" id="resultsCount"></div>
+  <div class="cards" id="results"></div>
+</div>
+
+<script>
+let allProperties = [];
+let map, markers, searchMarker;
+
+const MAPBOX_TOKEN = "";
+
+function getPrimaryImage(p){
+  if (!p) return '';
+  if (Array.isArray(p.images) && p.images[0]) {
+    const img = p.images[0];
+    if (typeof img === 'string') return img;
+    if (img._) return img._;
+    if (img.url) return img.url;
+  }
+  if (Array.isArray(p.photos) && p.photos[0]?.url) return p.photos[0].url;
+  return p.image || p.image_url || '';
+}
+
+async function geocodePlace(q){
+  const query = q.trim();
+  if (!query) return null;
+  try {
+    const url = `https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=gb&q=${encodeURIComponent(query)}`;
+    const r = await fetch(url, { headers: { 'Accept-Language': 'en' }});
+    const j = await r.json();
+    if (!Array.isArray(j) || !j[0]) return null;
+    return { lat: Number(j[0].lat), lon: Number(j[0].lon), label: j[0].display_name };
+  } catch (e) {
+    console.warn('Geocode failed:', e);
+    return null;
+  }
+}
+
+function haversine(lat1, lon1, lat2, lon2){
+  const R = 6371e3; const toRad = d => d * Math.PI/180;
+  const φ1 = toRad(lat1), φ2 = toRad(lat2);
+  const Δφ = toRad(lat2-lat1); const Δλ = toRad(lon2-lon1);
+  const a = Math.sin(Δφ/2)**2 + Math.cos(φ1)*Math.cos(φ2)*Math.sin(Δλ/2)**2;
+  return 2*R*Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+}
+
+function sortByDistance(list, point){
+  return list.map(p => {
+    const lat = Number(p.lat), lon = Number(p.lon);
+    const d = (isFinite(lat) && isFinite(lon)) ? haversine(point.lat, point.lon, lat, lon) : Number.POSITIVE_INFINITY;
+    return { ...p, __distance: d };
+  }).sort((a,b) => a.__distance - b.__distance);
+}
+
+function milesToMeters(mi){ return mi * 1609.344; }
+
+function initMap(){
+  map = L.map('map').setView([52.5, -1.8], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+  markers = L.layerGroup().addTo(map);
+  searchMarker = L.layerGroup().addTo(map);
+}
+
+function updateMap(list, focusPoint){
+  markers.clearLayers();
+  searchMarker.clearLayers();
+  const points = [];
+  list.forEach(p => {
+    const lat = Number(p.lat), lon = Number(p.lon);
+    if (!isFinite(lat) || !isFinite(lon)) return;
+    const marker = L.circleMarker([lat, lon], { radius:7, weight:2, color:'#111', fillColor:'#111', fillOpacity:0.85 }).addTo(markers);
+    points.push([lat, lon]);
+  });
+  if (focusPoint && isFinite(focusPoint.lat) && isFinite(focusPoint.lon)) {
+    const sp = L.circleMarker([focusPoint.lat, focusPoint.lon], { radius:10, weight:3, color:'#2563eb', fillColor:'#2563eb', fillOpacity:0.75 }).addTo(searchMarker);
+    sp.bindTooltip(focusPoint.label || 'Search location', { direction:'top', offset:[0,-12] });
+    points.push([focusPoint.lat, focusPoint.lon]);
+  }
+  if (!points.length) return;
+  const MAX_SEARCH_ZOOM = 11, PADDING = [60,60];
+  if (points.length === 1) map.setView(points[0], MAX_SEARCH_ZOOM);
+  else map.fitBounds(points, { padding:PADDING, maxZoom:MAX_SEARCH_ZOOM });
+}
+
+function render(list, context = {}){
+  const el = document.getElementById('results');
+  document.getElementById('resultsCount').textContent = `${list.length} Properties Found`;
+  document.getElementById('statusText').textContent = '';
+  if (!list.length){ el.innerHTML = `<div class="empty">No properties match your filters.</div>`; return; }
+  el.innerHTML = list.map(p => {
+    const img = getPrimaryImage(p);
+    const brochure = p.brochure || p.brochure_url || '';
+    const chip = p.to_let ? `<span class="chip">To Let</span>` : p.for_sale ? `<span class="chip">For Sale</span>` : '';
+    return `<article class="card">
+      <div class="card__media">${img ? `<img src="${img}" alt="${p.address||'Property'}" loading="lazy">` : ''}</div>
+      <div class="card__body">
+        <div class="card__loc">${[p.town,p.postcode].filter(Boolean).join(' ')}</div>
+        <a class="card__title" href="property.html?id=${encodeURIComponent(p.id??'')}">${p.address||'Property'}</a>
+        ${chip}
+      </div>
+      <div class="card__footer">
+        <a class="btn-ghost" href="property.html?id=${encodeURIComponent(p.id??'')}">View property</a>
+        ${brochure ? `<a class="btn-link" href="${brochure}" target="_blank" rel="noopener">View brochure</a>` : `<a class="btn-link" aria-disabled="true">No brochure</a>`}
+      </div></article>`;
+  }).join('');
+}
+
+async function applyFilters(){
+  const status=document.getElementById('statusText');
+  status.textContent='Loading properties…';
+  const q=document.getElementById('q').value.trim();
+  const tenure=document.getElementById('tenure').value;
+  const type=document.getElementById('type').value;
+  const radiusVal=document.getElementById('radius').value;
+
+  try {
+    let base=allProperties.filter(p=>{
+      if(tenure!=='any'){
+        if(tenure.toLowerCase()==='to let'&&!p.to_let)return false;
+        if(tenure.toLowerCase()==='for sale'&&!p.for_sale)return false;
+      }
+      if(type!=='any'){
+        const ty=(p.type||p.property_type||'').toLowerCase();
+        if(!ty.includes(type.toLowerCase()))return false;
+      }
+      return true;
+    });
+
+    if(!q){ render(base); updateMap(base); status.textContent=''; return; }
+
+    const point=await geocodePlace(q);
+    if(!point){ render(base); updateMap(base); status.textContent=''; return; }
+
+    let finalList=sortByDistance(base,point);
+    if(radiusVal!=='any'){
+      const meterLimit=milesToMeters(Number(radiusVal));
+      finalList=finalList.filter(p=>p.__distance<=meterLimit);
+    }
+
+    render(finalList);
+    updateMap(finalList, point);  // ✅ ensures map zooms to search
+    status.textContent='';
+  } catch(e){
+    console.error(e);
+    status.textContent='Error applying filters.';
+  }
+}
+
+async function loadProperties(){
+  try {
+    document.getElementById('statusText').textContent='Loading properties…';
+    const res=await fetch('./properties.json',{cache:'no-store'});
+    const raw=await res.json();
+    allProperties=raw.map((p,i)=>({id:p.id??i,...p}));
+    const types=new Set();
+    allProperties.forEach(p=>{const t=(p.type||p.property_type||(Array.isArray(p.types)?p.types[0]:'')||'').trim();if(t)types.add(t);});
+    const typeSel=document.getElementById('type');
+    typeSel.innerHTML='<option value="any">Any</option>'+[...types].sort().map(t=>`<option>${t}</option>`).join('');
+    document.getElementById('statusText').textContent='';
+    applyFilters();
+  } catch(e){
+    document.getElementById('statusText').textContent='Failed to load properties.json';
+    console.error(e);
+  }
+}
+
+document.addEventListener('DOMContentLoaded',()=>{
+  initMap();
+  document.getElementById('searchBtn').onclick=applyFilters;
+  document.getElementById('q').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();applyFilters();}});
+  loadProperties();
+});
+</script>
+</body>
+</html>
