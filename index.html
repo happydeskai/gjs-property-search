@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -329,6 +328,26 @@ function sizeText(p) {
   return '';
 }
 
+/* ---------- DATA NORMALISERS (NEW) ---------- */
+function getTypesArray(p){
+  const out = [];
+  if (Array.isArray(p.types)) out.push(...p.types.filter(Boolean));
+  if (typeof p.type === 'string') out.push(p.type);
+  if (typeof p.property_type === 'string') out.push(p.property_type);
+  const uniq = [...new Set(out.map(s => String(s).trim()).filter(Boolean))];
+  return { raw: uniq, lc: uniq.map(s => s.toLowerCase()) };
+}
+
+function getTenureLabel(p){
+  const legacy = String(p.tenure || p.transaction_type || '').toLowerCase();
+  const isLet  = (p.to_let === true)  || /to\s*let|letting|lease/.test(legacy);
+  const isSale = (p.for_sale === true) || /for\s*sale|sale|freehold/.test(legacy);
+  if (isLet && isSale) return 'To Let / For Sale';
+  if (isLet)  return 'To Let';
+  if (isSale) return 'For Sale';
+  return '';
+}
+
 /* ---------- MAP ---------- */
 function initMap(){
   map = L.map('map').setView([52.5, -1.8], 6);
@@ -439,6 +458,8 @@ function render(list, context = {}){
         ? `${Number(p.size_from_sqft).toLocaleString()}–${Number(p.size_to_sqft).toLocaleString()} sq ft`
         : p.size_from_sqft ? `${Number(p.size_from_sqft).toLocaleString()} sq ft` : '';
 
+    const tenureLabel = getTenureLabel(p);
+
     const distStr = (typeof p.__distance === 'number' && isFinite(p.__distance))
       ? ` • ${(p.__distance/1000).toFixed(p.__distance >= 995 ? 0 : 1)} km`
       : '';
@@ -454,7 +475,7 @@ function render(list, context = {}){
           <div class="card__loc">${[town, postcode].filter(Boolean).join(' ')}${distStr}</div>
           ${titleHtml}
           ${size ? `<div class="card__meta">${size}</div>` : ''}
-          ${p.tenure ? `<span class="chip">${p.tenure}</span>` : ''}
+          ${tenureLabel ? `<span class="chip">${tenureLabel}</span>` : ''}
         </div>
         <div class="card__footer">
           <a class="btn-ghost"
@@ -525,14 +546,25 @@ async function applyFilters(){
   const type = document.getElementById('type')?.value || 'any';
   const radiusVal = document.getElementById('radius').value;
 
+  // --- normalised filters (use boolean to_let/for_sale and array types) ---
+  const tenureLC = String(tenure).toLowerCase();
+  const typeLC   = String(type).toLowerCase();
+
   let base = allProperties.filter(p => {
-    if (tenure !== 'any') {
-      const t = (p.tenure || p.transaction_type || '').toLowerCase();
-      if (!t.includes(tenure.toLowerCase())) return false;
+    // Tenure filter
+    if (tenureLC !== 'any') {
+      const legacy = String(p.tenure || p.transaction_type || '').toLowerCase();
+      const isLet  = (p.to_let === true)  || /to\s*let|letting|lease/.test(legacy);
+      const isSale = (p.for_sale === true) || /for\s*sale|sale|freehold/.test(legacy);
+      if (tenureLC === 'to let'  && !isLet)  return false;
+      if (tenureLC === 'for sale' && !isSale) return false;
     }
-    if (type !== 'any') {
-      const ty = (p.type || p.property_type || '').toLowerCase();
-      if (!ty.includes(type.toLowerCase())) return false;
+
+    // Type filter
+    if (typeLC !== 'any') {
+      const types = getTypesArray(p);
+      const ok = types.lc.some(t => t.includes(typeLC));
+      if (!ok) return false;
     }
     return true;
   });
@@ -591,14 +623,23 @@ async function loadProperties(){
       ...p
     }));
 
-    // populate Type dropdown with distinct types
-    const types = new Set();
+    // populate Type dropdown with distinct types (consider full array + legacy fields)
+    const typeSet = new Set();
     allProperties.forEach(p => {
-      const t = (p.type || p.property_type || (Array.isArray(p.types) ? p.types[0] : '') || '').toString().trim();
-      if (t) types.add(t);
+      if (Array.isArray(p.types)) {
+        p.types.forEach(t => { if (t) typeSet.add(String(t).trim()); });
+      }
+      if (p.type) typeSet.add(String(p.type).trim());
+      if (p.property_type) typeSet.add(String(p.property_type).trim());
     });
     const typeSel = document.getElementById('type');
-    typeSel.innerHTML = `<option value="any">Any</option>` + [...types].sort().map(t=>`<option>${t}</option>`).join('');
+    typeSel.innerHTML =
+      `<option value="any">Any</option>` +
+      [...typeSet]
+        .filter(Boolean)
+        .sort((a,b)=>a.localeCompare(b))
+        .map(t=>`<option>${t}</option>`)
+        .join('');
 
     // re-apply any prefilled 'type' after options added
     if (typeSel.dataset.prefill) typeSel.value = typeSel.dataset.prefill;
