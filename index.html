@@ -230,6 +230,7 @@
         <option value="3">3 miles</option>
         <option value="5">5 miles</option>
         <option value="10">10 miles</option>
+        <option value="15">15 miles</option>
         <option value="25">25 miles</option>
         <option value="50">50 miles</option>
       </select>
@@ -543,15 +544,16 @@ async function applyFilters(){
   }
 
   const tenure = document.getElementById('tenure').value;
-  const type = document.getElementById('type')?.value || 'any';
+  const typeEl = document.getElementById('type');
+  let type = (typeEl?.value || 'any');
+  if (type === 'any' && typeEl?.dataset?.prefill) type = typeEl.dataset.prefill;
   const radiusVal = document.getElementById('radius').value;
 
-  // --- normalised filters (use boolean to_let/for_sale and array types) ---
+  // --- normalised base filter for tenure + type (no geo yet) ---
   const tenureLC = String(tenure).toLowerCase();
   const typeLC   = String(type).toLowerCase();
 
-  let base = allProperties.filter(p => {
-    // Tenure filter
+  const base = allProperties.filter(p => {
     if (tenureLC !== 'any') {
       const legacy = String(p.tenure || p.transaction_type || '').toLowerCase();
       const isLet  = (p.to_let === true)  || /to\s*let|letting|lease/.test(legacy);
@@ -559,25 +561,22 @@ async function applyFilters(){
       if (tenureLC === 'to let'  && !isLet)  return false;
       if (tenureLC === 'for sale' && !isSale) return false;
     }
-
-    // Type filter
     if (typeLC !== 'any') {
       const types = getTypesArray(p);
-      const ok = types.lc.some(t => t.includes(typeLC));
-      if (!ok) return false;
+      if (!types.lc.some(t => t.includes(typeLC))) return false;
     }
     return true;
   });
 
-  // text match first
-  let textMatch = q
+  // text match first (optional)
+  const textMatch = q
     ? base.filter(p => {
         const text = `${p.address||''} ${p.town||''} ${p.postcode||''}`.toLowerCase();
         return text.includes(q.toLowerCase());
       })
     : base;
 
-  // no query -> no geocode/radius
+  // if no query, no geocode/radius: just render filtered list
   if (!q) {
     render(textMatch);
     updateMap(textMatch);
@@ -592,19 +591,22 @@ async function applyFilters(){
     return;
   }
 
-  // distance sort
-  let finalList = sortByDistance(textMatch, point);
+  // distance sort: prefer text matches; if none, fall back to base
+  const seedList = (textMatch.length ? textMatch : base);
+  let finalList = sortByDistance(seedList, point);
 
-  // radius filter (optional)
+  // radius filter (ALWAYS applied to whatever list we're using)
   let radiusMiles = null;
   if (radiusVal !== 'any') {
     radiusMiles = Number(radiusVal);
     const meterLimit = milesToMeters(radiusMiles);
     finalList = finalList.filter(p => isFinite(p.__distance) && p.__distance <= meterLimit);
-  }
 
-  if (!finalList.length) {
-    finalList = sortByDistance(base, point);
+    // If textMatch was used and radius removed everything, fall back to base BUT STILL respect radius
+    if (!finalList.length && textMatch.length) {
+      const baseSorted = sortByDistance(base, point);
+      finalList = baseSorted.filter(p => isFinite(p.__distance) && p.__distance <= meterLimit);
+    }
   }
 
   if (finalList.length > 60) finalList = finalList.slice(0, 60);
