@@ -543,9 +543,9 @@ async function applyFilters(){
     }
   }
 
-  const tenure = document.getElementById('tenure').value;
-  const typeEl = document.getElementById('type');
-  let type = (typeEl?.value || 'any');
+  const tenure   = document.getElementById('tenure').value;
+  const typeEl   = document.getElementById('type');
+  let   type     = (typeEl?.value || 'any');
   if (type === 'any' && typeEl?.dataset?.prefill) type = typeEl.dataset.prefill;
   const radiusVal = document.getElementById('radius').value;
 
