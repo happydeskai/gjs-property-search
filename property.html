@@ -108,7 +108,6 @@
               <div class="card__body" id="overview"></div>
             </div>
           </div>
-
           <div class="section" id="featuresCard" style="display:none">
             <div class="card">
               <div class="card__title"><h2>Key features</h2></div>
@@ -157,6 +156,7 @@
       </div>
     </div>
   </div>
+
 <script>
 /* Prevent browser scroll restoration */
 if ('scrollRestoration' in history) {
@@ -257,13 +257,13 @@ function setupEnquiry(p){
     if (!first || !last || !email) { alert('Please fill in first name, last name and email.'); return; }
 
     const formData = {
-      title: $('#titleSel').value,
+      title: $('#titleSel') ? $('#titleSel').value : '',
       firstName: first,
       lastName: last,
       email,
       phone: $('#phone').value.trim(),
-      company: $('#company').value.trim(),
-      jobTitle: $('#jobTitle').value.trim(),
+      company: $('#company') ? $('#company').value.trim() : '',
+      jobTitle: $('#jobTitle') ? $('#jobTitle').value.trim() : '',
       message: $('#message').value.trim()
     };
 
@@ -290,7 +290,7 @@ function setupEnquiry(p){
       "",
       (formData.message || "Please reply to me via email/phone.")
     ];
-    if ($('#optIn').checked) lines.push("", "✓ Please add me to your mailing list");
+    if ($('#optIn') && $('#optIn').checked) lines.push("", "✓ Please add me to your mailing list");
     const href = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join("\n"))}`;
     window.location.href = href;
     close();
@@ -313,10 +313,7 @@ async function main(){
     $('#loading').style.display='none'; 
     $('#content').style.display='';
 
-    /* Ensure page loads from top */
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    window.scrollTo(0,0);
 
     $('#prop-title').textContent = p.address || 'Property';
     $('#prop-sub').textContent = [p.town, p.postcode].filter(Boolean).join(' ');
@@ -415,26 +412,12 @@ async function main(){
       $('#teamBox').style.display='';
     }
 
-    /* FIXED: call setupEnquiry directly (no event listener) */
     setupEnquiry(p);
-    try {
-  window.scrollTo(0, 0);
-  document.documentElement.scrollTop = 0;
-  document.body.scrollTop = 0;
-  window.parent?.postMessage({ type: 'scroll-top' }, '*');
-} catch (e) {
-  console.warn('Scroll to top failed:', e);
-}
-
-    requestAnimationFrame(()=>_sendHeight());
-    setTimeout(()=>_sendHeight(),300);
-    setTimeout(()=>_sendHeight(),900);
   } catch(err){
     console.error(err);
     $('#loading').textContent=`Sorry — failed to load property data (${err.message||err}).`;
   }
 }
-
 main();
 </script>
 
@@ -475,7 +458,6 @@ main();
     </div>
   </div>
 </div>
-
 
 <!-- ---------- Auto-resize ---------- -->
 <script>
