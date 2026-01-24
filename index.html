@@ -246,8 +246,23 @@ function updateMap(list,focusPoint){
     points.push([lat,lon]);
   });
   if(focusPoint&&isFinite(focusPoint.lat)&&isFinite(focusPoint.lon)){
-    const sp=L.circleMarker([focusPoint.lat,focusPoint.lon],{radius:10,weight:3,color:'#2563eb',fillColor:'#2563eb',fillOpacity:.75}).addTo(searchMarker);
-    L.circleMarker([focusPoint.lat,focusPoint.lon],{radius:16,weight:2,color:'#2563eb',opacity:.25,fill:false}).addTo(searchMarker);
+    const GJS_GOLD = '#D6B25E'; // your brand gold hex
+const sp = L.circleMarker([focusPoint.lat, focusPoint.lon], {
+  radius: 10,
+  weight: 3,
+  color: GJS_GOLD,
+  fillColor: GJS_GOLD,
+  fillOpacity: 0.9
+}).addTo(searchMarker);
+
+L.circleMarker([focusPoint.lat, focusPoint.lon], {
+  radius: 16,
+  weight: 2,
+  color: GJS_GOLD,
+  opacity: 0.3,
+  fill: false
+}).addTo(searchMarker);
+
     sp.bindTooltip(focusPoint.label||'Search location',{direction:'top',offset:[0,-12]});
     points.push([focusPoint.lat,focusPoint.lon]);
   }
