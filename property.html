@@ -263,7 +263,10 @@ async function main(){
     }
 
     setupEnquiry(p);
-
+// ✅ Ensure Squarespace scrolls to top even if iframe loads too early
+setTimeout(() => {
+  try { window.parent?.postMessage({ type: 'scroll-top' }, '*'); } catch(e){}
+}, 1200);
   } catch(err){
     console.error(err);
     $('#loading').textContent=`Failed to load property (${err.message||err})`;
