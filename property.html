@@ -72,171 +72,6 @@
     .agent:first-of-type{border-top:none}
     .avatar{width:48px;height:48px;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:#f1f3f6;color:#222;font-weight:700;border:1px solid #e9edf2}
     .avatar img{width:100%;height:100%;object-fit:cover}
-
-    .modal{position:fixed;inset:0;display:none}
-    .modal.open{display:block}
-    .modal__backdrop{position:absolute;inset:0;background:rgba(16,17,18,.46);backdrop-filter:blur(2px)}
-    .modal__panel{position:relative;max-width:760px;margin:6vh auto;background:#fff;border-radius:16px;box-shadow:var(--shadow-lg);overflow:hidden;border:1px solid #eef1f4}
- /* ---------- enquiry modal styling ---------- */
-.modal__panel {
-  background: var(--card);
-  border-radius: 18px;
-  box-shadow: var(--shadow-lg);
-  overflow: hidden;
-  max-width: 720px;
-  margin: 8vh auto;
-  display: flex;
-  flex-direction: column;
-  font-size: 15px;
-}
-
-.modal__head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 22px;
-  border-bottom: 1px solid #eee;
-  background: #fff;
-}
-
-.modal__title {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.modal__close {
-  border: none;
-  background: none;
-  font-size: 22px;
-  cursor: pointer;
-  line-height: 1;
-  opacity: 0.6;
-  transition: opacity 0.2s ease;
-}
-.modal__close:hover {
-  opacity: 1;
-}
-
-.modal__body {
-  padding: 24px;
-  overflow-y: auto;
-  max-height: 70vh;
-}
-
-.modal__foot {
-  border-top: 1px solid #eee;
-  background: #fafafa;
-  padding: 16px 22px;
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-}
-
-.pillbar {
-  margin-bottom: 20px;
-}
-
-.contact-pill {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 0;
-  border-bottom: 1px solid #f2f2f2;
-}
-.contact-pill:last-child {
-  border-bottom: none;
-}
-
-.pill-avatar {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  overflow: hidden;
-  background: #f2f3f6;
-  display: grid;
-  place-items: center;
-  font-weight: 700;
-  color: #333;
-}
-.pill-avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.pill-name {
-  font-weight: 600;
-}
-.pill-meta {
-  font-size: 13px;
-  color: var(--muted);
-}
-
-#enqForm {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 14px 20px;
-}
-
-#enqForm .f {
-  display: flex;
-  flex-direction: column;
-}
-
-#enqForm label {
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--muted);
-  margin-bottom: 4px;
-}
-
-#enqForm input,
-#enqForm select,
-#enqForm textarea {
-  border: 1px solid #dfe2e6;
-  border-radius: 8px;
-  padding: 8px 10px;
-  font-size: 14px;
-  font-family: inherit;
-  resize: vertical;
-}
-
-#enqForm input:focus,
-#enqForm select:focus,
-#enqForm textarea:focus {
-  outline: none;
-  border-color: var(--accent);
-  box-shadow: 0 0 0 2px rgba(244, 194, 13, 0.25);
-}
-
-#message {
-  min-height: 80px;
-}
-
-#propRefHint {
-  margin-top: 10px;
-  font-size: 13px;
-  color: var(--muted);
-}
-
-.btn-primary {
-  background: var(--brand);
-  color: #fff;
-  border: none;
-}
-.btn-primary::after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 999px;
-  background: var(--accent);
-  margin-left: 8px;
-}
-
-.btn-ghost {
-  background: #fff;
-  border: 1px solid #ddd;
-}
   </style>
 </head>
 <body>
@@ -258,7 +93,6 @@
           <div class="section">
             <div class="card"><div class="card__title">Key details</div><div class="card__body"><div class="facts" id="facts"></div></div></div>
           </div>
-
           <div class="section" id="overviewCard" style="display:none">
             <div class="card"><div class="card__title"><h2>Overview</h2></div><div class="card__body" id="overview"></div></div>
           </div>
@@ -365,7 +199,6 @@ async function main(){
       fact('Last updated',p.last_updated||'')
     ].join('');
 
-    /* ---------- FIXED text blocks ---------- */
     const overview = pick(p.specification_summary?._, p.summary);
     if (overview){ $('#overview').innerHTML = overview; $('#overviewCard').style.display=''; }
 
@@ -377,7 +210,6 @@ async function main(){
     let descText = rawDesc;
     let locText = rawLoc;
 
-    // ✅ Smart split: if no location field but description contains "Location"
     if (!rawLoc && /Location\s/i.test(rawDesc)) {
       const parts = rawDesc.split(/Location\s/i);
       descText = parts[0].trim();
@@ -434,58 +266,19 @@ async function main(){
   }
 }
 
-/* ---------- enquiry modal ---------- */
-function setupEnquiry(p){
-  const modal=$('#enquiryModal');
-  const pills=$('#enqPills');
-  const propRef=`Enquiry about “${p.address||'Property'}” ${[p.town,p.postcode].filter(Boolean).join(' ')}`;
-  $('#propRefHint').textContent=propRef;
-
-  const contacts=Array.isArray(p.contacts?.contact)?p.contacts.contact:Array.isArray(p.contacts)?p.contacts:(p.contacts?[p.contacts]:[]);
-  pills.innerHTML=contacts.slice(0,3).map(c=>{
-    const init=initials(c.name||'');const photo=c.photo||c.image||'';const tel=c.tel||c.phone||'';const mob=c.mobile?String(c.mobile):'';const phones=[tel,mob].filter(Boolean).join(' · ');
-    return `<div class="contact-pill"><div class="pill-avatar">${photo?`<img src="${photo}" alt="${c.name||'Agent'}" onerror="this.closest('.pill-avatar').textContent='${init}'">`:`${init}`}</div>
-      <div><div class="pill-name">${c.name||'Agent'}</div><div class="pill-meta">${phones}</div>${c.email?`<div class="pill-meta"><a href="mailto:${c.email}">Email ${c.name?.split(' ')[0]||'agent'}</a></div>`:''}</div></div>`;
-  }).join('')||`<div class="pill-meta">No named agents available.</div>`;
-
-  const open=()=>{modal.classList.add('open');modal.setAttribute('aria-hidden','false');_sendHeight();};
-  const close=()=>{modal.classList.remove('open');modal.setAttribute('aria-hidden','true');_sendHeight();};
-  $('#enquireBtn').onclick=open;
-  modal.addEventListener('click',e=>{if(e.target.dataset.close!==undefined)close();});
-  $$('.modal__close',modal).forEach(b=>b.onclick=close);
-  document.addEventListener('keydown',e=>{if(e.key==='Escape')close();});
-
-  $('#sendEnquiryBtn').onclick=()=>{
-    const first=$('#firstName').value.trim(),last=$('#lastName').value.trim(),email=$('#email').value.trim();
-    if(!first||!last||!email){alert('Please fill in first name, last name and email.');return;}
-    const formData={title:$('#titleSel').value,firstName:first,lastName:last,email,phone:$('#phone').value.trim(),company:$('#company').value.trim(),jobTitle:$('#jobTitle').value.trim(),message:$('#message').value.trim()};
-    const toList=(Array.isArray(p.contacts)?p.contacts:(p.contacts?.contact?[p.contacts.contact]:[])).flat().map(c=>c?.email).filter(Boolean);
-    const to=toList[0]||"gjs-dillon-limited-393@parse.agents-society.com";
-    const subject=`Enquiry: ${p.address||'Property'} (${p.id??''})`;
-    const lines=["Hi,","","I'd like more information about:",`${p.address||'Property'}`,`${[p.town,p.postcode].filter(Boolean).join(' ')}`,`Ref: ${p.id??''}`,"",`Name: ${[formData.firstName,formData.lastName].filter(Boolean).join(' ')}`,`Company: ${formData.company||''}`,`Job title: ${formData.jobTitle||''}`,`Email: ${formData.email||''}`,`Phone: ${formData.phone||''}`,"",(formData.message||"Please reply to me via email/phone.")];
-    if($('#optIn').checked)lines.push("","✓ Please add me to your mailing list");
-    const href=`mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join("\n"))}`;
-    window.location.href=href;close();
-  };
-}
-  
 main().then(() => {
-  // wait for Squarespace to finish resizing
   setTimeout(() => {
     try {
-      // reset any iframe-internal scroll
       window.scrollTo(0, 0);
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
 
-      // scroll the Squarespace parent page to top of this embed
       if (window.frameElement) {
         const rect = window.frameElement.getBoundingClientRect();
-        const offset = window.parent.scrollY + rect.top - 40; // small top offset for spacing
+        const offset = window.parent.scrollY + rect.top - 40;
         window.parent.scrollTo({ top: offset, behavior: 'instant' });
       }
 
-      // trigger a final resize message to Squarespace
       if (window.parent) {
         window.parent.postMessage({ type: 'gjs-prop-height', id: 'prop', height: document.body.scrollHeight }, '*');
       }
@@ -494,86 +287,86 @@ main().then(() => {
     }
   }, 800);
 });
+</script> <!-- ✅ FIXED: properly closes script tag -->
+<!-- Enquiry modal -->
+<div class="modal" id="enquiryModal" aria-hidden="true" role="dialog" aria-labelledby="enqTitle">
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__panel" role="document">
+    <div class="modal__head" style="display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid #eee">
+      <div class="modal__title" id="enqTitle" style="font-size:18px;font-weight:600;">Enquire now</div>
+      <button class="modal__close" type="button" title="Close" data-close aria-label="Close" style="background:none;border:none;font-size:22px;cursor:pointer;">×</button>
+    </div>
 
-  <!-- Enquiry modal -->
-  <div class="modal" id="enquiryModal" aria-hidden="true" role="dialog" aria-labelledby="enqTitle">
-    <div class="modal__backdrop" data-close></div>
-    <div class="modal__panel" role="document">
-      <div class="modal__head" style="display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid #eee">
-        <div class="modal__title" id="enqTitle" style="font-size:18px;font-weight:600;">Enquire now</div>
-        <button class="modal__close" type="button" title="Close" data-close aria-label="Close" style="background:none;border:none;font-size:22px;cursor:pointer;">×</button>
-      </div>
+    <div class="modal__body" style="padding:20px;max-height:70vh;overflow:auto;">
+      <div class="pillbar" id="enqPills" style="margin-bottom:18px;"></div>
 
-      <div class="modal__body" style="padding:20px;max-height:70vh;overflow:auto;">
-        <div class="pillbar" id="enqPills" style="margin-bottom:18px;"></div>
-
-        <form id="enqForm" novalidate>
-          <div class="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-            <div class="f">
-              <label for="titleSel">Title</label>
-              <select id="titleSel" name="title">
-                <option value="">—</option>
-                <option>Mr</option>
-                <option>Mrs</option>
-                <option>Ms</option>
-                <option>Miss</option>
-                <option>Dr</option>
-              </select>
-            </div>
-            <div class="f">
-              <label for="firstName">First name*</label>
-              <input id="firstName" name="firstName" required />
-            </div>
+      <form id="enqForm" novalidate>
+        <div class="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+          <div class="f">
+            <label for="titleSel">Title</label>
+            <select id="titleSel" name="title">
+              <option value="">—</option>
+              <option>Mr</option>
+              <option>Mrs</option>
+              <option>Ms</option>
+              <option>Miss</option>
+              <option>Dr</option>
+            </select>
           </div>
-
-          <div class="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;">
-            <div class="f">
-              <label for="lastName">Last name*</label>
-              <input id="lastName" name="lastName" required />
-            </div>
-            <div class="f">
-              <label for="email">Email*</label>
-              <input id="email" name="email" type="email" required />
-            </div>
+          <div class="f">
+            <label for="firstName">First name*</label>
+            <input id="firstName" name="firstName" required />
           </div>
+        </div>
 
-          <div class="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;">
-            <div class="f">
-              <label for="phone">Phone</label>
-              <input id="phone" name="phone" />
-            </div>
-            <div class="f">
-              <label for="company">Company</label>
-              <input id="company" name="company" />
-            </div>
+        <div class="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;">
+          <div class="f">
+            <label for="lastName">Last name*</label>
+            <input id="lastName" name="lastName" required />
           </div>
-
-          <div class="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;">
-            <div class="f">
-              <label for="jobTitle">Job title</label>
-              <input id="jobTitle" name="jobTitle" />
-            </div>
+          <div class="f">
+            <label for="email">Email*</label>
+            <input id="email" name="email" type="email" required />
           </div>
+        </div>
 
-          <div class="f" style="margin-top:10px;">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="3" placeholder="Tell us a bit about your requirement"></textarea>
+        <div class="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;">
+          <div class="f">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" />
           </div>
+          <div class="f">
+            <label for="company">Company</label>
+            <input id="company" name="company" />
+          </div>
+        </div>
 
-          <label style="display:flex;align-items:center;gap:8px;margin-top:12px;font-size:14px">
-            <input type="checkbox" id="optIn" /> Add me to your mailing list
-          </label>
+        <div class="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;">
+          <div class="f">
+            <label for="jobTitle">Job title</label>
+            <input id="jobTitle" name="jobTitle" />
+          </div>
+        </div>
 
-          <p class="hint" id="propRefHint" style="margin-top:12px;color:#6b7280;font-size:13px;"></p>
-        </form>
-      </div>
+        <div class="f" style="margin-top:10px;">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="3" placeholder="Tell us a bit about your requirement"></textarea>
+        </div>
 
-      <div class="modal__foot" style="padding:14px 20px;border-top:1px solid #eee;display:flex;justify-content:flex-end;gap:10px;">
-        <button class="btn btn-ghost" type="button" data-close>Cancel</button>
-        <button class="btn btn-primary" type="button" id="sendEnquiryBtn">Send enquiry</button>
-      </div>
+        <label style="display:flex;align-items:center;gap:8px;margin-top:12px;font-size:14px">
+          <input type="checkbox" id="optIn" /> Add me to your mailing list
+        </label>
+
+        <p class="hint" id="propRefHint" style="margin-top:12px;color:#6b7280;font-size:13px;"></p>
+      </form>
+    </div>
+
+    <div class="modal__foot" style="padding:14px 20px;border-top:1px solid #eee;display:flex;justify-content:flex-end;gap:10px;">
+      <button class="btn btn-ghost" type="button" data-close>Cancel</button>
+      <button class="btn btn-primary" type="button" id="sendEnquiryBtn">Send enquiry</button>
     </div>
   </div>
+</div>
 
 <!-- embed auto-resize -->
 <script>
@@ -595,5 +388,6 @@ main().then(() => {
   document.body.style.height='auto';
 })();
 </script>
+
 </body>
 </html>
