@@ -112,8 +112,13 @@
 ---------------------------------------------- */
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
-  setTimeout(() => window.scrollTo(0, 0), 0);
 }
+
+// force-scroll to top on page load AND after content shows
+window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+window.addEventListener('load', () => {
+  setTimeout(() => window.scrollTo({ top: 0, left: 0, behavior: 'instant' }), 50);
+});
 
 /* Helpers */
 const $ = (s, el=document) => el.querySelector(s);
