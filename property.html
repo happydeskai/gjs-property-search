@@ -417,7 +417,14 @@ async function main(){
 
     /* FIXED: call setupEnquiry directly (no event listener) */
     setupEnquiry(p);
-    window.parent?.scrollTo(0, 0);
+    try {
+  window.scrollTo(0, 0);
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  window.parent?.postMessage({ type: 'scroll-top' }, '*');
+} catch (e) {
+  console.warn('Scroll to top failed:', e);
+}
 
     requestAnimationFrame(()=>_sendHeight());
     setTimeout(()=>_sendHeight(),300);
