@@ -426,11 +426,43 @@ main();
 </script>
 
 <!-- ---------- Enquiry Modal ---------- -->
- <div class="modal" id="enquiryModal" aria-hidden="true" role="dialog" aria-labelledby="enqTitle">
-  <div id="propRefHint" style="display:none"></div>
-  <div id="enqPills" style="display:none"></div>
-  <button id="sendEnquiryBtn" style="display:none"></button>
+<div class="modal" id="enquiryModal" aria-hidden="true" role="dialog" aria-labelledby="enqTitle"
+  style="position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.4);z-index:9999;">
+  <div class="modal__panel" role="document"
+    style="background:#fff;border-radius:12px;max-width:520px;width:90%;max-height:80vh;overflow:auto;box-shadow:0 10px 30px rgba(0,0,0,.2);">
+    <div style="padding:16px 20px;border-bottom:1px solid #eee;display:flex;justify-content:space-between;align-items:center;">
+      <h2 id="enqTitle" style="margin:0;font-size:18px;font-weight:600;">Enquire Now</h2>
+      <button class="modal__close" data-close type="button"
+        style="border:none;background:none;font-size:22px;cursor:pointer;">×</button>
+    </div>
+
+    <div style="padding:20px;">
+      <div id="enqPills" style="margin-bottom:10px;"></div>
+      <p id="propRefHint" style="font-size:13px;color:#666;margin-bottom:12px;"></p>
+
+      <form id="enqForm">
+        <label>First name*</label>
+        <input id="firstName" style="width:100%;margin-bottom:8px;">
+
+        <label>Last name*</label>
+        <input id="lastName" style="width:100%;margin-bottom:8px;">
+
+        <label>Email*</label>
+        <input id="email" type="email" style="width:100%;margin-bottom:8px;">
+
+        <label>Phone</label>
+        <input id="phone" style="width:100%;margin-bottom:8px;">
+
+        <label>Message</label>
+        <textarea id="message" rows="3" style="width:100%;margin-bottom:8px;"></textarea>
+
+        <button id="sendEnquiryBtn" type="button"
+          style="background:#101112;color:#fff;border:none;padding:10px 16px;border-radius:8px;cursor:pointer;">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
 </div>
+
 
 <!-- ---------- Auto-resize ---------- -->
 <script>
