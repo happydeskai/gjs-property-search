@@ -224,7 +224,7 @@ function setupEnquiry(p){
 async function main(){
   try{
     const id=getParam('id');
-    const res=await fetch('properties.json',{cache:'no-store'});
+    const res = await fetch('https://happydeskai.github.io/gjs-property-search/properties.json', { cache:'no-store' });
     if(!res.ok)throw new Error(`properties.json HTTP ${res.status}`);
     const list=await res.json();
     const items=list.map((p,i)=>({id:p.id??p.slug??p.uid??i,...p}));
