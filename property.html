@@ -160,14 +160,21 @@
   </div>
 
 <script>
-/* ---------------- Scroll-to-Top Fix ---------------- */
+/* ---------------- Squarespace-safe Scroll-to-Top Fix ---------------- */
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
-window.addEventListener("load", () => {
-  window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+
+window.addEventListener("load", function() {
+  try {
+    window.scrollTo(0, 0);             // scroll this frame to top
+    window.parent?.scrollTo(0, 0);     // also tell Squarespace frame to scroll up
+  } catch (e) {
+    console.warn("Scroll fix skipped:", e);
+  }
 });
-/* --------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
 
 /* ---------- helpers ---------- */
 const $=(s,el=document)=>el.querySelector(s);
