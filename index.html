@@ -353,9 +353,9 @@ function render(list, context = {}) {
         </div>
         <div class="card__footer">
           <a class="btn-ghost" href="property.html?id=${encodeURIComponent(p.id ?? '')}">View property</a>
-          ${p.brochure
-            ? `<a class="btn-link" href="${p.brochure}" target="_blank" rel="noopener">View brochure</a>`
-            : `<a class="btn-link" aria-disabled="true">No brochure</a>`}
+          ${(p.brochure || p.brochure_url)
+  ? `<a class="btn-link" href="${p.brochure || p.brochure_url}" target="_blank" rel="noopener">View brochure</a>`
+  : `<a class="btn-link" aria-disabled="true">No brochure</a>`}
         </div>
       </article>`;
   }).join('');
