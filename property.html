@@ -20,11 +20,12 @@
 
     *,*::before,*::after{box-sizing:border-box}
     body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#f6f7fb}
-    a{color:inherit}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;height:auto;display:block}
 
     .wrap{max-width:1200px;margin:0 auto;padding:28px 18px 72px}
     .topbar{margin-bottom:12px}
-    .back{display:inline-flex;gap:10px;align-items:center;text-decoration:none;color:#111}
+    .back{display:inline-flex;gap:10px;align-items:center;color:#111;font-weight:500}
     .back::before{content:"←";opacity:.8}
     h1{margin:8px 0 6px;font-size:32px;letter-spacing:-.02em}
     .muted{color:var(--muted)}
@@ -86,6 +87,7 @@
       <h1 id="prop-title">Property</h1>
       <div class="muted" id="prop-sub"></div>
       <div class="chips" id="prop-chips"></div>
+
       <div class="layout">
         <div>
           <div class="hero-card">
@@ -137,7 +139,6 @@
             </div>
           </div>
         </div>
-
         <aside class="sticky">
           <div class="card">
             <div class="card__title">Enquire about this property</div>
@@ -160,69 +161,60 @@
   </div>
 
 <script>
-/* ---------------- Squarespace-safe Scroll-to-Top Fix ---------------- */
+/* ----------------------------------------------
+   Scroll-to-top fix 
+---------------------------------------------- */
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
-
-window.addEventListener("load", function() {
-  try {
-    window.scrollTo(0, 0);             // scroll this frame to top
-    window.parent?.scrollTo(0, 0);     // also tell Squarespace frame to scroll up
-  } catch (e) {
-    console.warn("Scroll fix skipped:", e);
-  }
+window.addEventListener('load', () => {
+  window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
 });
-/* -------------------------------------------------------------------- */
 
-
-/* ---------- helpers ---------- */
-const $=(s,el=document)=>el.querySelector(s);
-const $$=(s,el=document)=>[...el.querySelectorAll(s)];
-function getParam(name){return new URLSearchParams(location.search).get(name);}
-function pick(...vals){return vals.find(v=>v!==undefined&&v!==null&&v!=='');}
-function initials(name){if(!name)return"";return String(name).trim().split(/\s+/).slice(0,2).map(w=>w[0]?.toUpperCase()||"").join("");}
+/* ----------------------------------------------
+   Helper functions 
+---------------------------------------------- */
+const $ = (s, el=document) => el.querySelector(s);
+const $$ = (s, el=document) => [...el.querySelectorAll(s)];
+function getParam(name){ return new URLSearchParams(location.search).get(name); }
+function pick(...vals){ return vals.find(v => v !== undefined && v !== null && v !== ''); }
+function initials(name){ if(!name) return ""; return String(name).trim().split(/\s+/).slice(0,2).map(w => w[0]?.toUpperCase() || "").join(""); }
 
 function getImages(p){
   const arr=[];
-  if(Array.isArray(p.images)){
-    for(const it of p.images){
-      if(typeof it==='string')arr.push(it);
-      else if(it?.url)arr.push(it.url);
-      else if(it?._)arr.push(it._);
-    }
-  }
-  if(!arr.length&&Array.isArray(p.photos))
-    for(const ph of p.photos)if(ph?.url)arr.push(ph.url);
+  if(Array.isArray(p.images)) for(const it of p.images){ if(typeof it==='string') arr.push(it); else if(it?.url) arr.push(it.url); }
+  if(!arr.length && Array.isArray(p.photos)) for(const ph of p.photos) if(ph?.url) arr.push(ph.url);
   const fallback=pick(p.image,p.image_url);
-  if(fallback)arr.unshift(fallback);
-  return[...new Set(arr)].filter(Boolean);
+  if(fallback) arr.unshift(fallback);
+  return [...new Set(arr)].filter(Boolean);
 }
 
 function toListItems(val){
-  if(!val)return[];
-  if(Array.isArray(val))return val.map(String).filter(Boolean);
+  if(!val) return [];
+  if(Array.isArray(val)) return val.map(String).filter(Boolean);
   return String(val).split(/\r?\n|•/g).map(s=>s.trim()).filter(Boolean);
 }
 
 function formatSize(p){
   const a=p.size_from_sqft,b=p.size_to_sqft;
-  if(a&&b)return`${Number(a).toLocaleString()}–${Number(b).toLocaleString()} sq ft`;
-  if(a)return`${Number(a).toLocaleString()} sq ft`;
-  if(b)return`${Number(b).toLocaleString()} sq ft`;
-  return'';
+  if(a&&b) return `${Number(a).toLocaleString()}–${Number(b).toLocaleString()} sq ft`;
+  if(a) return `${Number(a).toLocaleString()} sq ft`;
+  if(b) return `${Number(b).toLocaleString()} sq ft`;
+  return '';
 }
 
 let map, marker, currentProperty=null;
-let _sendHeight = () => {};
 
-/* ---------- main ---------- */
+/* ----------------------------------------------
+   Main Property Load Function 
+---------------------------------------------- */
 async function main(){
   try {
     const id = getParam('id');
-    const res = await fetch('https://happydeskai.github.io/gjs-property-search/properties.json', { cache: 'no-store' });
+    const res = await fetch('https://happydeskai.github.io/gjs-property-search/properties.json', { cache:'no-store' });
     if (!res.ok) throw new Error(`properties.json HTTP ${res.status}`);
     const list = await res.json();
+
     const items = list.map((p,i)=>({ id: p.id ?? p.slug ?? p.uid ?? i, ...p }));
     const p = items.find(x => String(x.id) === String(id)) || items[0];
     currentProperty = p;
@@ -232,65 +224,182 @@ async function main(){
     $('#loading').style.display='none'; 
     $('#content').style.display='';
 
-    /* Ensure top of page once content visible */
-    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    $('#prop-title').textContent = p.address || 'Property';
+    $('#prop-sub').textContent = [p.town, p.postcode].filter(Boolean).join(' ');
 
-    /* ... (rest of your main() function unchanged) ... */
+    const chips = $('#prop-chips');
+    const tType  = pick(p.type, p.property_type, Array.isArray(p.types)&&p.types[0]);
+    const tenure = pick(p.tenure, p.transaction_type, p.to_let ? 'To Let' : (p.for_sale ? 'For Sale' : ''));
+    const epc    = pick(p.epc_rating, p.epc);
+    if (tenure) chips.innerHTML += `<span class="chip chip--accent">${tenure}</span>`;
+    if (tType)  chips.innerHTML += `<span class="chip">${tType}</span>`;
+    if (epc)    chips.innerHTML += `<span class="chip">EPC ${epc}</span>`;
+
+    /* Hero and thumbnails */
+    const imgs = getImages(p);
+    const hero = $('#hero'); 
+    const thumbs = $('#thumbs');
+    const setHero = src => hero.innerHTML = src ? `<img src="${src}" alt="${p.address||'Property'}">` : '';
+    setHero(imgs[0] || '');
+    thumbs.innerHTML = imgs.slice(0,15)
+      .map(u => `<button class="thumb" type="button" data-src="${u}" aria-label="View photo"><img src="${u}" alt=""></button>`)
+      .join('');
+    thumbs.addEventListener('click', e => {
+      const t = e.target.closest('.thumb'); if (!t) return;
+      setHero(t.dataset.src);
+    });
+
+    /* Key Facts */
+    const facts = $('#facts');
+    const fact = (label,value)=>value?`<div class="fact"><div class="label">${label}</div><div class="value">${value}</div></div>`:'';
+    facts.innerHTML=[
+      fact('Property type',tType),
+      fact('Tenure',tenure),
+      fact('Size',formatSize(p)),
+      fact('Rent',pick(p.rent,p.rent_psf)),
+      fact('Rateable value',p.rateable_value ? `£${p.rateable_value.toLocaleString()}` : ''),
+      fact('EPC',epc),
+      fact('Last updated',p.last_updated||'')
+    ].join('');
+
+    /* Overview, Description, Features */
+    if (p.summary){ $('#overview').innerHTML = p.summary; $('#overviewCard').style.display=''; }
+    if (p.description){ $('#desc').innerHTML = p.description; $('#descCard').style.display=''; }
+    if (Array.isArray(p.features) && p.features.length){
+      $('#features').innerHTML = p.features.map(f=>`<li>${f}</li>`).join('');
+      $('#featuresCard').style.display='';
+    }
+
+    /* Brochure */
+    const brochure = pick(p.brochure_url, p.brochure, p.files?.file?.url);
+    if (brochure){ $('#brochureBtn').href = brochure; $('#brochureBtn').style.display='inline-flex'; }
+    else $('#brochureBtn').style.display='none';
+
+    /* Map */
+    map = L.map('map', { zoomControl:true }).setView([52.5,-1.8], 6);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    const lat=Number(p.lat), lon=Number(p.lon);
+    if (isFinite(lat)&&isFinite(lon)){
+      marker=L.circleMarker([lat,lon],{radius:7,weight:2,color:'#111',fillColor:'#111',fillOpacity:.85}).addTo(map);
+      map.setView([lat,lon],14);
+    }
+
+    /* Contacts */
+    const contacts = Array.isArray(p.contacts)?p.contacts:(p.contacts?[p.contacts]:[]);
+    if (contacts.length){
+      const list=$('#agents');
+      list.innerHTML=contacts.map(c=>{
+        const photo=c.photo||c.image||'';
+        const init=initials(c.name||'');
+        const tel=c.phone||'';
+        return `<div class="agent">
+          <div class="avatar">${photo?`<img src="${photo}" alt="${c.name||'Agent'}" onerror="this.closest('.avatar').textContent='${init}'">`:`${init}`}</div>
+          <div>
+            <div class="name">${c.name||''}</div>
+            <div class="meta">${[c.company,c.branch].filter(Boolean).join(' • ')}</div>
+            <div class="meta">${tel}</div>
+            <div class="cta">
+              ${c.email?`<a href="mailto:${c.email}">Email</a>`:''}
+              ${tel?`<a href="tel:${tel}">Call</a>`:''}
+            </div>
+          </div>
+        </div>`;
+      }).join('');
+      $('#teamBox').style.display='';
+    }
+
+    setupEnquiry(p);
+
   } catch(err){
     console.error(err);
-    $('#loading').textContent=`Sorry — failed to load property data (${err.message||err}).`;
+    $('#loading').textContent=`Failed to load property (${err.message||err})`;
   }
 }
 document.addEventListener('DOMContentLoaded', main);
 </script>
-
-<!-- ---------- Enquiry Modal ---------- (unchanged) -->
-<div class="modal" id="enquiryModal" aria-hidden="true" role="dialog" aria-labelledby="enqTitle"
-  style="position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.4);z-index:9999;">
-  <div class="modal__panel" role="document"
-    style="background:#fff;border-radius:12px;max-width:520px;width:90%;max-height:80vh;overflow:auto;box-shadow:0 10px 30px rgba(0,0,0,.2);">
-    <div style="padding:16px 20px;border-bottom:1px solid #eee;display:flex;justify-content:space-between;align-items:center;">
-      <h2 id="enqTitle" style="margin:0;font-size:18px;font-weight:600;">Enquire Now</h2>
-      <button class="modal__close" data-close type="button"
-        style="border:none;background:none;font-size:22px;cursor:pointer;">×</button>
+<!-- ======================= ENQUIRY MODAL ======================= -->
+<div id="enquiryModal" class="modal" style="
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.6);
+  z-index:1000;
+  backdrop-filter:blur(4px);
+  align-items:center;
+  justify-content:center;
+  padding:20px;">
+  <div style="background:#fff;border-radius:16px;max-width:520px;width:100%;box-shadow:0 10px 30px rgba(0,0,0,.15);overflow:hidden;position:relative;">
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;border-bottom:1px solid #eee;">
+      <h2 style="margin:0;font-size:20px;">Enquire Now</h2>
+      <button id="closeModal" style="border:none;background:none;font-size:22px;cursor:pointer;line-height:1;">×</button>
     </div>
-
-    <div style="padding:20px;">
-      <div id="enqPills" style="margin-bottom:10px;"></div>
-      <p id="propRefHint" style="font-size:13px;color:#666;margin-bottom:12px;"></p>
+    <div style="padding:22px;">
+      <p id="propRefHint" style="font-size:13px;color:#555;margin-top:0;margin-bottom:14px;"></p>
       <form id="enqForm">
-        <label>First name*</label>
-        <input id="firstName" style="width:100%;margin-bottom:8px;">
-        <label>Last name*</label>
-        <input id="lastName" style="width:100%;margin-bottom:8px;">
-        <label>Email*</label>
-        <input id="email" type="email" style="width:100%;margin-bottom:8px;">
+        <label>First Name</label>
+        <input id="firstName" type="text" style="width:100%;margin-bottom:10px;padding:8px;border:1px solid #ccc;border-radius:6px;">
+        <label>Last Name</label>
+        <input id="lastName" type="text" style="width:100%;margin-bottom:10px;padding:8px;border:1px solid #ccc;border-radius:6px;">
+        <label>Email</label>
+        <input id="email" type="email" style="width:100%;margin-bottom:10px;padding:8px;border:1px solid #ccc;border-radius:6px;">
         <label>Phone</label>
-        <input id="phone" style="width:100%;margin-bottom:8px;">
+        <input id="phone" type="tel" style="width:100%;margin-bottom:10px;padding:8px;border:1px solid #ccc;border-radius:6px;">
         <label>Message</label>
-        <textarea id="message" rows="3" style="width:100%;margin-bottom:8px;"></textarea>
-        <button id="sendEnquiryBtn" type="button"
-          style="background:#101112;color:#fff;border:none;padding:10px 16px;border-radius:8px;cursor:pointer;">Send Enquiry</button>
+        <textarea id="message" rows="3" style="width:100%;margin-bottom:16px;padding:8px;border:1px solid #ccc;border-radius:6px;"></textarea>
+        <button id="sendEnquiryBtn" type="submit" style="background:#101112;color:#fff;border:none;padding:10px 16px;border-radius:8px;cursor:pointer;">
+          Send Enquiry
+        </button>
       </form>
     </div>
   </div>
 </div>
 
-<!-- ---------- Auto-resize (unchanged) ---------- -->
 <script>
-(function(){
-  const MSG_TYPE='gjs-prop-height';
-  const frameId=new URLSearchParams(location.search).get('frameId')||'prop';
-  const root=document.querySelector('.wrap')||document.body;
-  function getContentHeight(){return Math.ceil((root?.offsetHeight||document.body.offsetHeight)+24);}
-  let last=0;
-  function send(){const h=getContentHeight();if(h!==last){last=h;window.parent?.postMessage({type:MSG_TYPE,id:frameId,height:h},'*');}}
-  window._gjsSendHeight=send;_sendHeight=send;
-  const ro=new ResizeObserver(send);ro.observe(root);
-  const mo=new MutationObserver(send);mo.observe(root,{childList:true,subtree:true,attributes:true});
-  window.addEventListener('load',()=>{send();window.parent?.postMessage({type:'scroll-top'},'*');});
-  setTimeout(send,300);setTimeout(send,1000);
-})();
+/* ----------------------------------------------
+   Enquiry Modal Logic
+---------------------------------------------- */
+function setupEnquiry(p){
+  const modal = $('#enquiryModal');
+  const openBtn = $('#enquireBtn');
+  const closeBtn = $('#closeModal');
+  const form = $('#enqForm');
+  const hint = $('#propRefHint');
+
+  openBtn.addEventListener('click',()=>{
+    modal.style.display='flex';
+    hint.textContent = p.address ? `Enquiry about: ${p.address}, ${p.town || ''}` : '';
+    document.body.style.overflow='hidden';
+  });
+
+  closeBtn.addEventListener('click',()=>{
+    modal.style.display='none';
+    document.body.style.overflow='';
+  });
+
+  modal.addEventListener('click',e=>{
+    if(e.target===modal){
+      modal.style.display='none';
+      document.body.style.overflow='';
+    }
+  });
+
+  form.addEventListener('submit',e=>{
+    e.preventDefault();
+    alert('Thank you for your enquiry. A member of the team will be in touch shortly.');
+    modal.style.display='none';
+    document.body.style.overflow='';
+    form.reset();
+  });
+}
+
+/* ----------------------------------------------
+   Resize helper for iframes (Squarespace)
+---------------------------------------------- */
+window.addEventListener('message',e=>{
+  if(e.data?.type==='resize-iframe' && e.data?.height){
+    document.body.style.height = e.data.height + 'px';
+  }
+});
 </script>
 
 </body>
