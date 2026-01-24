@@ -190,7 +190,9 @@ async function main(){
 
     const facts = $('#facts');
     const fact = (label,value)=>value?`<div class="fact"><div class="label">${label}</div><div class="value">${value}</div></div>`:'';
-    const ratesPay=p.business_rates?.rates_payable?`${p.business_rates.rates_payable} per sq ft`:p.business_rates_psf||'';
+    const ratesPay = (p.business_rates && p.business_rates.rates_payable)
+  ? `${p.business_rates.rates_payable} per sq ft`
+  : (p.business_rates_psf || '');
     const rv=p.business_rates?.rateable_value?`£${Number(p.business_rates.rateable_value).toLocaleString()}`:p.rateable_value||'';
     facts.innerHTML=[
       fact('Property type',tType),
