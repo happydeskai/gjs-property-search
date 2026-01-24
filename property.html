@@ -8,7 +8,6 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <style>
-    /* ---------- tokens ---------- */
     :root{
       --card:#fff; --ink:#111; --muted:#6b7280;
       --brand:#101112; --accent:#f4c20d;
@@ -83,7 +82,6 @@
       <h1 id="prop-title">Property</h1>
       <div class="muted" id="prop-sub"></div>
       <div class="chips" id="prop-chips"></div>
-
       <div class="layout">
         <div>
           <div class="hero-card">
@@ -91,31 +89,53 @@
             <div class="gallery" id="thumbs"></div>
           </div>
           <div class="section">
-            <div class="card"><div class="card__title">Key details</div><div class="card__body"><div class="facts" id="facts"></div></div></div>
+            <div class="card">
+              <div class="card__title">Key details</div>
+              <div class="card__body">
+                <div class="facts" id="facts"></div>
+              </div>
+            </div>
           </div>
+
           <div class="section" id="overviewCard" style="display:none">
-            <div class="card"><div class="card__title"><h2>Overview</h2></div><div class="card__body" id="overview"></div></div>
+            <div class="card">
+              <div class="card__title"><h2>Overview</h2></div>
+              <div class="card__body" id="overview"></div>
+            </div>
           </div>
 
           <div class="section" id="featuresCard" style="display:none">
-            <div class="card"><div class="card__title"><h2>Key features</h2></div><div class="card__body"><ul class="features" id="features"></ul></div></div>
+            <div class="card">
+              <div class="card__title"><h2>Key features</h2></div>
+              <div class="card__body"><ul class="features" id="features"></ul></div>
+            </div>
           </div>
 
           <div class="section" id="descCard" style="display:none">
-            <div class="card"><div class="card__title"><h2>Description</h2></div><div class="card__body" id="desc"></div></div>
+            <div class="card">
+              <div class="card__title"><h2>Description</h2></div>
+              <div class="card__body" id="desc"></div>
+            </div>
           </div>
 
           <div class="section" id="locCard" style="display:none">
-            <div class="card"><div class="card__title"><h2>Location</h2></div><div class="card__body" id="loc"></div></div>
+            <div class="card">
+              <div class="card__title"><h2>Location</h2></div>
+              <div class="card__body" id="loc"></div>
+            </div>
           </div>
 
           <div class="section" id="transportCard" style="display:none">
-            <div class="card"><div class="card__title"><h2>Transport</h2></div><div class="card__body" id="transport"></div></div>
+            <div class="card">
+              <div class="card__title"><h2>Transport</h2></div>
+              <div class="card__body" id="transport"></div>
+            </div>
           </div>
         </div>
 
         <aside class="sticky">
-          <div class="card"><div class="card__title">Enquire about this property</div>
+          <div class="card">
+            <div class="card__title">Enquire about this property</div>
             <div class="card__body">
               <div class="actions">
                 <button class="btn btn-primary" id="enquireBtn" type="button">Enquire now</button>
@@ -124,7 +144,10 @@
               <div id="map"></div>
             </div>
           </div>
-          <div class="card" id="teamBox" style="display:none"><div class="card__title">Viewings & further information</div><div id="agents"></div></div>
+          <div class="card" id="teamBox" style="display:none">
+            <div class="card__title">Viewings & further information</div>
+            <div id="agents"></div>
+          </div>
         </aside>
       </div>
     </div>
@@ -138,13 +161,132 @@ function getParam(name){return new URLSearchParams(location.search).get(name);}
 function pick(...vals){return vals.find(v=>v!==undefined&&v!==null&&v!=='');}
 function initials(name){if(!name)return"";return String(name).trim().split(/\s+/).slice(0,2).map(w=>w[0]?.toUpperCase()||"").join("");}
 
-function getImages(p){const arr=[];if(Array.isArray(p.images)){for(const it of p.images){if(typeof it==='string')arr.push(it);else if(it?.url)arr.push(it.url);else if(it?._)arr.push(it._);}}if(!arr.length&&Array.isArray(p.photos))for(const ph of p.photos)if(ph?.url)arr.push(ph.url);const fallback=pick(p.image,p.image_url);if(fallback)arr.unshift(fallback);return[...new Set(arr)].filter(Boolean);}
-function toListItems(val){if(!val)return[];if(Array.isArray(val))return val.map(String).filter(Boolean);return String(val).split(/\r?\n|•/g).map(s=>s.trim()).filter(Boolean);}
-function formatSize(p){const a=p.size_from_sqft,b=p.size_to_sqft;if(a&&b)return`${Number(a).toLocaleString()}–${Number(b).toLocaleString()} sq ft`;if(a)return`${Number(a).toLocaleString()} sq ft`;if(b)return`${Number(b).toLocaleString()} sq ft`;return'';}
-/* ---------- page ---------- */
+function getImages(p){
+  const arr=[];
+  if(Array.isArray(p.images)){
+    for(const it of p.images){
+      if(typeof it==='string')arr.push(it);
+      else if(it?.url)arr.push(it.url);
+      else if(it?._)arr.push(it._);
+    }
+  }
+  if(!arr.length&&Array.isArray(p.photos))
+    for(const ph of p.photos)if(ph?.url)arr.push(ph.url);
+  const fallback=pick(p.image,p.image_url);
+  if(fallback)arr.unshift(fallback);
+  return[...new Set(arr)].filter(Boolean);
+}
+
+function toListItems(val){
+  if(!val)return[];
+  if(Array.isArray(val))return val.map(String).filter(Boolean);
+  return String(val).split(/\r?\n|•/g).map(s=>s.trim()).filter(Boolean);
+}
+
+function formatSize(p){
+  const a=p.size_from_sqft,b=p.size_to_sqft;
+  if(a&&b)return`${Number(a).toLocaleString()}–${Number(b).toLocaleString()} sq ft`;
+  if(a)return`${Number(a).toLocaleString()} sq ft`;
+  if(b)return`${Number(b).toLocaleString()} sq ft`;
+  return'';
+}
+
 let map, marker, currentProperty=null;
 let _sendHeight = () => {};
 
+/* ---------- enquiry modal ---------- */
+function setupEnquiry(p){
+  const modal = $('#enquiryModal');
+  const pills = $('#enqPills');
+  const propRef = `Enquiry about “${p.address || 'Property'}” ${[p.town, p.postcode].filter(Boolean).join(' ')}`;
+  $('#propRefHint').textContent = propRef;
+
+  const contacts = Array.isArray(p.contacts?.contact)
+    ? p.contacts.contact
+    : Array.isArray(p.contacts)
+    ? p.contacts
+    : (p.contacts ? [p.contacts] : []);
+
+  pills.innerHTML = contacts.slice(0,3).map(c=>{
+    const init = initials(c.name||'');
+    const photo = c.photo || c.image || '';
+    const tel = c.tel || c.phone || '';
+    const mob = c.mobile ? String(c.mobile) : '';
+    const phones = [tel, mob].filter(Boolean).join(' · ');
+    return `<div class="contact-pill">
+      <div class="pill-avatar">${photo
+        ? `<img src="${photo}" alt="${c.name||'Agent'}" onerror="this.closest('.pill-avatar').textContent='${init}'">`
+        : `${init}`}</div>
+      <div>
+        <div class="pill-name">${c.name||'Agent'}</div>
+        <div class="pill-meta">${phones}</div>
+        ${c.email ? `<div class="pill-meta"><a href="mailto:${c.email}">Email ${c.name?.split(' ')[0]||'agent'}</a></div>` : ''}
+      </div>
+    </div>`;
+  }).join('') || `<div class="pill-meta">No named agents available.</div>`;
+
+  const open = () => {
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden','false');
+    _sendHeight();
+  };
+  const close = () => {
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden','true');
+    _sendHeight();
+  };
+
+  $('#enquireBtn').onclick = open;
+  modal.addEventListener('click', e => { if (e.target.dataset.close !== undefined) close(); });
+  $$('.modal__close', modal).forEach(b => b.onclick = close);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+
+  $('#sendEnquiryBtn').onclick = () => {
+    const first = $('#firstName').value.trim();
+    const last = $('#lastName').value.trim();
+    const email = $('#email').value.trim();
+    if (!first || !last || !email) { alert('Please fill in first name, last name and email.'); return; }
+
+    const formData = {
+      title: $('#titleSel').value,
+      firstName: first,
+      lastName: last,
+      email,
+      phone: $('#phone').value.trim(),
+      company: $('#company').value.trim(),
+      jobTitle: $('#jobTitle').value.trim(),
+      message: $('#message').value.trim()
+    };
+
+    const toList = (Array.isArray(p.contacts)
+      ? p.contacts
+      : (p.contacts?.contact ? [p.contacts.contact] : [])
+    ).flat().map(c => c?.email).filter(Boolean);
+
+    const to = toList[0] || "gjs-dillon-limited-393@parse.agents-society.com";
+    const subject = `Enquiry: ${p.address || 'Property'} (${p.id ?? ''})`;
+    const lines = [
+      "Hi,",
+      "",
+      "I'd like more information about:",
+      `${p.address || 'Property'}`,
+      `${[p.town, p.postcode].filter(Boolean).join(' ')}`,
+      `Ref: ${p.id ?? ''}`,
+      "",
+      `Name: ${[formData.firstName, formData.lastName].filter(Boolean).join(' ')}`,
+      `Company: ${formData.company || ''}`,
+      `Job title: ${formData.jobTitle || ''}`,
+      `Email: ${formData.email || ''}`,
+      `Phone: ${formData.phone || ''}`,
+      "",
+      (formData.message || "Please reply to me via email/phone.")
+    ];
+    if ($('#optIn').checked) lines.push("", "✓ Please add me to your mailing list");
+    const href = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join("\n"))}`;
+    window.location.href = href;
+    close();
+  };
+}
 async function main(){
   try {
     const id = getParam('id');
@@ -185,8 +327,8 @@ async function main(){
     const facts = $('#facts');
     const fact = (label,value)=>value?`<div class="fact"><div class="label">${label}</div><div class="value">${value}</div></div>`:'';
     const ratesPay = (p.business_rates && p.business_rates.rates_payable)
-  ? `${p.business_rates.rates_payable} per sq ft`
-  : (p.business_rates_psf || '');
+      ? `${p.business_rates.rates_payable} per sq ft`
+      : (p.business_rates_psf || '');
     const rv=p.business_rates?.rateable_value?`£${Number(p.business_rates.rateable_value).toLocaleString()}`:p.rateable_value||'';
     facts.innerHTML=[
       fact('Property type',tType),
@@ -267,20 +409,27 @@ async function main(){
 }
 
 main().then(() => {
-  // Wait a short moment for Squarespace to resize the iframe
   setTimeout(() => {
-    // Scroll inside iframe
-    window.scrollTo(0, 0);
-
-    // Tell parent (Squarespace) to scroll to top of the embed
-    if (window.parent) {
-      window.parent.postMessage({ type: 'scrollTop', id: 'prop' }, '*');
+    try {
+      window.scrollTo(0, 0);
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      if (window.frameElement) {
+        const rect = window.frameElement.getBoundingClientRect();
+        const offset = window.parent.scrollY + rect.top - 40;
+        window.parent.scrollTo({ top: offset, behavior: 'instant' });
+      }
+      if (window.parent) {
+        window.parent.postMessage({ type: 'gjs-prop-height', id: 'prop', height: document.body.scrollHeight }, '*');
+      }
+    } catch (err) {
+      console.warn('Scroll-to-top failed:', err);
     }
-  }, 500);
+  }, 800);
 });
-  
-</script> <!-- ✅ FIXED: properly closes script tag -->
-<!-- Enquiry modal -->
+</script>
+
+<!-- ---------- Enquiry Modal ---------- -->
 <div class="modal" id="enquiryModal" aria-hidden="true" role="dialog" aria-labelledby="enqTitle">
   <div class="modal__backdrop" data-close></div>
   <div class="modal__panel" role="document">
@@ -291,18 +440,13 @@ main().then(() => {
 
     <div class="modal__body" style="padding:20px;max-height:70vh;overflow:auto;">
       <div class="pillbar" id="enqPills" style="margin-bottom:18px;"></div>
-
       <form id="enqForm" novalidate>
         <div class="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
           <div class="f">
             <label for="titleSel">Title</label>
             <select id="titleSel" name="title">
-              <option value="">—</option>
-              <option>Mr</option>
-              <option>Mrs</option>
-              <option>Ms</option>
-              <option>Miss</option>
-              <option>Dr</option>
+              <option value="">—</option><option>Mr</option><option>Mrs</option>
+              <option>Ms</option><option>Miss</option><option>Dr</option>
             </select>
           </div>
           <div class="f">
@@ -312,44 +456,23 @@ main().then(() => {
         </div>
 
         <div class="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;">
-          <div class="f">
-            <label for="lastName">Last name*</label>
-            <input id="lastName" name="lastName" required />
-          </div>
-          <div class="f">
-            <label for="email">Email*</label>
-            <input id="email" name="email" type="email" required />
-          </div>
+          <div class="f"><label for="lastName">Last name*</label><input id="lastName" required /></div>
+          <div class="f"><label for="email">Email*</label><input id="email" type="email" required /></div>
         </div>
 
         <div class="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;">
-          <div class="f">
-            <label for="phone">Phone</label>
-            <input id="phone" name="phone" />
-          </div>
-          <div class="f">
-            <label for="company">Company</label>
-            <input id="company" name="company" />
-          </div>
+          <div class="f"><label for="phone">Phone</label><input id="phone" /></div>
+          <div class="f"><label for="company">Company</label><input id="company" /></div>
         </div>
 
-        <div class="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;">
-          <div class="f">
-            <label for="jobTitle">Job title</label>
-            <input id="jobTitle" name="jobTitle" />
-          </div>
-        </div>
-
-        <div class="f" style="margin-top:10px;">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="3" placeholder="Tell us a bit about your requirement"></textarea>
-        </div>
+        <div class="f" style="margin-top:10px;"><label for="jobTitle">Job title</label><input id="jobTitle" /></div>
+        <div class="f" style="margin-top:10px;"><label for="message">Message</label><textarea id="message" rows="3"></textarea></div>
 
         <label style="display:flex;align-items:center;gap:8px;margin-top:12px;font-size:14px">
           <input type="checkbox" id="optIn" /> Add me to your mailing list
         </label>
 
-        <p class="hint" id="propRefHint" style="margin-top:12px;color:#6b7280;font-size:13px;"></p>
+        <p id="propRefHint" style="margin-top:12px;color:#6b7280;font-size:13px;"></p>
       </form>
     </div>
 
@@ -360,7 +483,7 @@ main().then(() => {
   </div>
 </div>
 
-<!-- embed auto-resize -->
+<!-- ---------- Auto-resize ---------- -->
 <script>
 (function(){
   const MSG_TYPE='gjs-prop-height';
