@@ -141,88 +141,95 @@
   <div class="meta" id="resultsCount"></div>
   <div class="cards" id="results"></div>
 </div>
-
 <script>
 let allProperties = [];
 let map, markers, searchMarker;
 
 /* ---------- GEO + MAP + HELPERS ---------- */
 const MAPBOX_TOKEN = "";
-function haversine(lat1, lon1, lat2, lon2){
-  const R = 6371e3; const toRad = d => d * Math.PI/180;
+
+function haversine(lat1, lon1, lat2, lon2) {
+  const R = 6371e3; const toRad = d => d * Math.PI / 180;
   const φ1 = toRad(lat1), φ2 = toRad(lat2);
-  const Δφ = toRad(lat2-lat1); const Δλ = toRad(lon2-lon1);
-  const a = Math.sin(Δφ/2)**2 + Math.cos(φ1)*Math.cos(φ2)*Math.sin(Δλ/2)**2;
-  return 2*R*Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  const Δφ = toRad(lat2 - lat1); const Δλ = toRad(lon2 - lon1);
+  const a = Math.sin(Δφ / 2) ** 2 + Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) ** 2;
+  return 2 * R * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 }
-function sortByDistance(list, point){
+
+function sortByDistance(list, point) {
   return list.map(p => {
     const lat = Number(p.lat), lon = Number(p.lon);
     const d = (isFinite(lat) && isFinite(lon)) ? haversine(point.lat, point.lon, lat, lon) : Number.POSITIVE_INFINITY;
     return { p, d };
-  }).sort((a,b)=>a.d-b.d).map(({p,d}) => ({...p,__distance:d}));
+  }).sort((a, b) => a.d - b.d).map(({ p, d }) => ({ ...p, __distance: d }));
 }
-async function geocodePlace(q){
-  const query=q.trim(); if(!query)return null;
-  try{
-    if(MAPBOX_TOKEN){
-      const url=`https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(query)}.json?limit=1&country=gb&access_token=${MAPBOX_TOKEN}`;
-      const r=await fetch(url); const j=await r.json(); const f=j.features&&j.features[0]; if(!f)return null;
-      return{lat:f.center[1],lon:f.center[0],label:f.place_name};
-    }else{
-      const url=`https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=gb&q=${encodeURIComponent(query)}`;
-      const r=await fetch(url,{headers:{'Accept-Language':'en'}}); const j=await r.json();
-      if(!Array.isArray(j)||!j[0])return null;
-      return{lat:Number(j[0].lat),lon:Number(j[0].lon),label:j[0].display_name};
-    }
-  }catch(e){console.warn('Geocode failed:',e);return null;}
-}
-function milesToMeters(mi){return mi*1609.344;}
 
-function getPrimaryImage(p){
-  if(!p)return'';
-  if(Array.isArray(p.images)&&p.images[0]){
-    const img=p.images[0];
-    if(typeof img==='string')return img;
-    if(img._)return img._;
-    if(img.url)return img.url;
+async function geocodePlace(q) {
+  const query = q.trim(); if (!query) return null;
+  try {
+    if (MAPBOX_TOKEN) {
+      const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(query)}.json?limit=1&country=gb&access_token=${MAPBOX_TOKEN}`;
+      const r = await fetch(url); const j = await r.json(); const f = j.features && j.features[0]; if (!f) return null;
+      return { lat: f.center[1], lon: f.center[0], label: f.place_name };
+    } else {
+      const url = `https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=gb&q=${encodeURIComponent(query)}`;
+      const r = await fetch(url, { headers: { 'Accept-Language': 'en' } }); const j = await r.json();
+      if (!Array.isArray(j) || !j[0]) return null;
+      return { lat: Number(j[0].lat), lon: Number(j[0].lon), label: j[0].display_name };
+    }
+  } catch (e) { console.warn('Geocode failed:', e); return null; }
+}
+
+function milesToMeters(mi) { return mi * 1609.344; }
+
+function getPrimaryImage(p) {
+  if (!p) return '';
+  if (Array.isArray(p.images) && p.images[0]) {
+    const img = p.images[0];
+    if (typeof img === 'string') return img;
+    if (img._) return img._;
+    if (img.url) return img.url;
   }
-  if(Array.isArray(p.photos)&&p.photos[0]?.url)return p.photos[0].url;
-  return p.image||p.image_url||'';
+  if (Array.isArray(p.photos) && p.photos[0]?.url) return p.photos[0].url;
+  return p.image || p.image_url || '';
 }
-function getTypesArray(p){
-  const out=[];
-  if(Array.isArray(p.types))out.push(...p.types.filter(Boolean));
-  if(typeof p.type==='string')out.push(p.type);
-  if(typeof p.property_type==='string')out.push(p.property_type);
-  const uniq=[...new Set(out.map(s=>String(s).trim()).filter(Boolean))];
-  return{raw:uniq,lc:uniq.map(s=>s.toLowerCase())};
+
+function getTypesArray(p) {
+  const out = [];
+  if (Array.isArray(p.types)) out.push(...p.types.filter(Boolean));
+  if (typeof p.type === 'string') out.push(p.type);
+  if (typeof p.property_type === 'string') out.push(p.property_type);
+  const uniq = [...new Set(out.map(s => String(s).trim()).filter(Boolean))];
+  return { raw: uniq, lc: uniq.map(s => s.toLowerCase()) };
 }
-function getTenureLabel(p){
-  const legacy=String(p.tenure||p.transaction_type||'').toLowerCase();
-  const isLet=(p.to_let===true)||/to\s*let|letting|lease/.test(legacy);
-  const isSale=(p.for_sale===true)||/for\s*sale|sale|freehold/.test(legacy);
-  if(isLet&&isSale)return'To Let / For Sale';
-  if(isLet)return'To Let';
-  if(isSale)return'For Sale';
-  return'';
+
+function getTenureLabel(p) {
+  const legacy = String(p.tenure || p.transaction_type || '').toLowerCase();
+  const isLet = (p.to_let === true) || /to\s*let|letting|lease/.test(legacy);
+  const isSale = (p.for_sale === true) || /for\s*sale|sale|freehold/.test(legacy);
+  if (isLet && isSale) return 'To Let / For Sale';
+  if (isLet) return 'To Let';
+  if (isSale) return 'For Sale';
+  return '';
 }
-function sizeText(p){
-  const a=Number(p.size_from_sqft||0);
-  const b=Number(p.size_to_sqft||0);
-  if(a&&b)return`${a.toLocaleString()}–${b.toLocaleString()} sq ft`;
-  if(a)return`${a.toLocaleString()} sq ft`;
-  if(b)return`${b.toLocaleString()} sq ft`;
-  return'';
+
+function sizeText(p) {
+  const a = Number(p.size_from_sqft || 0);
+  const b = Number(p.size_to_sqft || 0);
+  if (a && b) return `${a.toLocaleString()}–${b.toLocaleString()} sq ft`;
+  if (a) return `${a.toLocaleString()} sq ft`;
+  if (b) return `${b.toLocaleString()} sq ft`;
+  return '';
 }
 
 /* ---------- MAP ---------- */
-function initMap(){
-  map=L.map('map').setView([52.5,-1.8],6);
+function initMap() {
+  map = L.map('map').setView([52.5, -1.8], 6);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-  markers=L.layerGroup().addTo(map);
-  searchMarker=L.layerGroup().addTo(map);
+  markers = L.layerGroup().addTo(map);
+  searchMarker = L.layerGroup().addTo(map);
 }
+
 function updateMap(list, focusPoint) {
   markers.clearLayers();
   searchMarker.clearLayers();
@@ -258,12 +265,10 @@ function updateMap(list, focusPoint) {
     points.push([lat, lon]);
   });
 
-  // Add the glowing gold location marker
   if (focusPoint && isFinite(focusPoint.lat) && isFinite(focusPoint.lon)) {
-    const GJS_GOLD = '#FFCC33'; // bright golden tone
-    const GLOW_COLOR = 'rgba(255, 204, 51, 0.75)'; // stronger glow
+    const GJS_GOLD = '#FFCC33';
+    const GLOW_COLOR = 'rgba(255, 204, 51, 0.75)';
 
-    // Main gold marker
     const sp = L.circleMarker([focusPoint.lat, focusPoint.lon], {
       radius: 10,
       weight: 3,
@@ -272,7 +277,6 @@ function updateMap(list, focusPoint) {
       fillOpacity: 1.0
     }).addTo(searchMarker);
 
-    // Halo effect
     L.circleMarker([focusPoint.lat, focusPoint.lon], {
       radius: 20,
       weight: 8,
@@ -281,14 +285,12 @@ function updateMap(list, focusPoint) {
       fill: false
     }).addTo(searchMarker);
 
-    // Pulse animation
     let pulseUp = true;
     setInterval(() => {
       sp.setRadius(pulseUp ? 13 : 10);
       pulseUp = !pulseUp;
     }, 1200);
 
-    // Tooltip
     sp.bindTooltip(focusPoint.label || 'Search location', {
       direction: 'top',
       offset: [0, -12]
@@ -297,128 +299,160 @@ function updateMap(list, focusPoint) {
     points.push([focusPoint.lat, focusPoint.lon]);
   }
 
-  // Adjust map bounds
   if (!points.length) return;
   const MAX_SEARCH_ZOOM = 11;
   if (points.length === 1) map.setView(points[0], MAX_SEARCH_ZOOM);
   else map.fitBounds(points, { padding: [60, 60], maxZoom: MAX_SEARCH_ZOOM });
 }
-
 /* ---------- RENDER ---------- */
-function render(list,context={}){
-  const el=document.getElementById('results');
-  document.getElementById('resultsCount').textContent=`${list.length} Properties Found`;
-  const parts=[`Showing ${list.length} of ${allProperties.length}`];
-  if(context.nearLabel){
-    if(context.radiusMiles)parts.push(`within ${context.radiusMiles} mile${context.radiusMiles==1?'':'s'}`);
+function render(list, context = {}) {
+  const el = document.getElementById('results');
+  document.getElementById('resultsCount').textContent = `${list.length} Properties Found`;
+
+  const parts = [`Showing ${list.length} of ${allProperties.length}`];
+  if (context.nearLabel) {
+    if (context.radiusMiles) parts.push(`within ${context.radiusMiles} mile${context.radiusMiles == 1 ? '' : 's'}`);
     parts.push(`of "${context.nearLabel}"`);
   }
-  document.getElementById('statusText').textContent=parts.join(' ');
-  if(!list.length){el.innerHTML=`<div class="empty">No properties match your filters.</div>`;return;}
-  el.innerHTML=list.map(p=>{
-    const img=getPrimaryImage(p);
-    const address=p.address||'Property';
-    const town=p.town||'';
-    const postcode=p.postcode||'';
-    const size=p.size_from_sqft&&p.size_to_sqft?`${Number(p.size_from_sqft).toLocaleString()}–${Number(p.size_to_sqft).toLocaleString()} sq ft`:p.size_from_sqft?`${Number(p.size_from_sqft).toLocaleString()} sq ft`:'';
-    const tenureLabel=getTenureLabel(p);
-    const distStr=(typeof p.__distance==='number'&&isFinite(p.__distance))?` • ${(p.__distance/1000).toFixed(p.__distance>=995?0:1)} km`:'';
-    return `<article class="card"><div class="card__media">${img?`<img src="${img}" alt="${address}" loading="lazy">`:''}</div>
-      <div class="card__body"><div class="card__loc">${[town,postcode].filter(Boolean).join(' ')}${distStr}</div>
-      <a class="card__title" href="property.html?id=${encodeURIComponent(p.id??'')}" aria-label="View ${address}">${address}</a>
-      ${size?`<div class="card__meta">${size}</div>`:''}${tenureLabel?`<span class="chip">${tenureLabel}</span>`:''}</div>
-      <div class="card__footer"><a class="btn-ghost" href="property.html?id=${encodeURIComponent(p.id??'')}">View property</a>
-      ${p.brochure?`<a class="btn-link" href="${p.brochure}" target="_blank" rel="noopener">View brochure</a>`:`<a class="btn-link" aria-disabled="true">No brochure</a>`}</div></article>`;
+  document.getElementById('statusText').textContent = parts.join(' ');
+
+  if (!list.length) {
+    el.innerHTML = `<div class="empty">No properties match your filters.</div>`;
+    return;
+  }
+
+  el.innerHTML = list.map(p => {
+    const img = getPrimaryImage(p);
+    const address = p.address || 'Property';
+    const town = p.town || '';
+    const postcode = p.postcode || '';
+    const size = p.size_from_sqft && p.size_to_sqft
+      ? `${Number(p.size_from_sqft).toLocaleString()}–${Number(p.size_to_sqft).toLocaleString()} sq ft`
+      : p.size_from_sqft
+      ? `${Number(p.size_from_sqft).toLocaleString()} sq ft`
+      : '';
+    const tenureLabel = getTenureLabel(p);
+    const distStr = (typeof p.__distance === 'number' && isFinite(p.__distance))
+      ? ` • ${(p.__distance / 1000).toFixed(p.__distance >= 995 ? 0 : 1)} km`
+      : '';
+
+    return `
+      <article class="card">
+        <div class="card__media">${img ? `<img src="${img}" alt="${address}" loading="lazy">` : ''}</div>
+        <div class="card__body">
+          <div class="card__loc">${[town, postcode].filter(Boolean).join(' ')}${distStr}</div>
+          <a class="card__title" href="property.html?id=${encodeURIComponent(p.id ?? '')}" aria-label="View ${address}">${address}</a>
+          ${size ? `<div class="card__meta">${size}</div>` : ''}
+          ${tenureLabel ? `<span class="chip">${tenureLabel}</span>` : ''}
+        </div>
+        <div class="card__footer">
+          <a class="btn-ghost" href="property.html?id=${encodeURIComponent(p.id ?? '')}">View property</a>
+          ${p.brochure
+            ? `<a class="btn-link" href="${p.brochure}" target="_blank" rel="noopener">View brochure</a>`
+            : `<a class="btn-link" aria-disabled="true">No brochure</a>`}
+        </div>
+      </article>`;
   }).join('');
 }
 
-/* ---------- FILTER FLOW (FIXED VERSION) ---------- */
-async function applyFilters(){
-  let q=document.getElementById('q').value.trim();
-  const tenure=document.getElementById('tenure').value;
-  const typeEl=document.getElementById('type');
-  let type=(typeEl?.value||'any');
-  if(type==='any'&&typeEl?.dataset?.prefill)type=typeEl.dataset.prefill;
-  const radiusVal=document.getElementById('radius').value;
+/* ---------- FILTER FLOW ---------- */
+async function applyFilters() {
+  let q = document.getElementById('q').value.trim();
+  const tenure = document.getElementById('tenure').value;
+  const typeEl = document.getElementById('type');
+  let type = (typeEl?.value || 'any');
+  if (type === 'any' && typeEl?.dataset?.prefill) type = typeEl.dataset.prefill;
+  const radiusVal = document.getElementById('radius').value;
 
-  const tenureLC=tenure.toLowerCase();
-  const typeLC=type.toLowerCase();
-  const base=allProperties.filter(p=>{
-    if(tenureLC!=='any'){
-      const legacy=String(p.tenure||p.transaction_type||'').toLowerCase();
-      const isLet=(p.to_let===true)||/to\s*let|letting|lease/.test(legacy);
-      const isSale=(p.for_sale===true)||/for\s*sale|sale|freehold/.test(legacy);
-      if(tenureLC==='to let'&&!isLet)return false;
-      if(tenureLC==='for sale'&&!isSale)return false;
+  const tenureLC = tenure.toLowerCase();
+  const typeLC = type.toLowerCase();
+
+  const base = allProperties.filter(p => {
+    if (tenureLC !== 'any') {
+      const legacy = String(p.tenure || p.transaction_type || '').toLowerCase();
+      const isLet = (p.to_let === true) || /to\s*let|letting|lease/.test(legacy);
+      const isSale = (p.for_sale === true) || /for\s*sale|sale|freehold/.test(legacy);
+      if (tenureLC === 'to let' && !isLet) return false;
+      if (tenureLC === 'for sale' && !isSale) return false;
     }
-    if(typeLC!=='any'){
-      const types=getTypesArray(p);
-      if(!types.lc.some(t=>t.includes(typeLC)))return false;
+    if (typeLC !== 'any') {
+      const types = getTypesArray(p);
+      if (!types.lc.some(t => t.includes(typeLC))) return false;
     }
     return true;
   });
 
-  // ✅ FIX: Always use all base results, not textMatch
-  if(!q){ render(base); updateMap(base); return; }
+  if (!q) { render(base); updateMap(base); return; }
 
-  const point=await geocodePlace(q);
-  if(!point){ render(base); updateMap(base); return; }
+  const point = await geocodePlace(q);
+  if (!point) { render(base); updateMap(base); return; }
 
-  // ✅ FIX: Sort all properties by distance, no pre-filtering
-  let finalList=sortByDistance(base,point);
+  let finalList = sortByDistance(base, point);
 
-  let radiusMiles=null;
-  if(radiusVal!=='any'){
-    radiusMiles=Number(radiusVal);
-    const meterLimit=milesToMeters(radiusMiles);
-    finalList=finalList.filter(p=>isFinite(p.__distance)&&p.__distance<=meterLimit);
+  let radiusMiles = null;
+  if (radiusVal !== 'any') {
+    radiusMiles = Number(radiusVal);
+    const meterLimit = milesToMeters(radiusMiles);
+    finalList = finalList.filter(p => isFinite(p.__distance) && p.__distance <= meterLimit);
   }
-  if(finalList.length>60)finalList=finalList.slice(0,60);
+  if (finalList.length > 60) finalList = finalList.slice(0, 60);
 
-  render(finalList,{nearLabel:point.label||q,radiusMiles});
-  updateMap(finalList,point);
+  render(finalList, { nearLabel: point.label || q, radiusMiles });
+  updateMap(finalList, point);
 }
 
 /* ---------- LOAD ---------- */
-async function loadProperties(){
-  try{
-    const res=await fetch('./properties.json',{cache:'no-store'});
-    const raw=await res.json();
-    allProperties=raw.map((p,i)=>({id:p.id??p.slug??p.uid??i,...p}));
-    const typeSet=new Set();
-    allProperties.forEach(p=>{
-      if(Array.isArray(p.types))p.types.forEach(t=>{if(t)typeSet.add(String(t).trim());});
-      if(p.type)typeSet.add(String(p.type).trim());
-      if(p.property_type)typeSet.add(String(p.property_type).trim());
+async function loadProperties() {
+  try {
+    const res = await fetch('./properties.json', { cache: 'no-store' });
+    const raw = await res.json();
+    allProperties = raw.map((p, i) => ({ id: p.id ?? p.slug ?? p.uid ?? i, ...p }));
+
+    const typeSet = new Set();
+    allProperties.forEach(p => {
+      if (Array.isArray(p.types)) p.types.forEach(t => { if (t) typeSet.add(String(t).trim()); });
+      if (p.type) typeSet.add(String(p.type).trim());
+      if (p.property_type) typeSet.add(String(p.property_type).trim());
     });
-    const typeSel=document.getElementById('type');
-    typeSel.innerHTML=`<option value="any">Any</option>`+[...typeSet].filter(Boolean).sort((a,b)=>a.localeCompare(b)).map(t=>`<option>${t}</option>`).join('');
-    if(typeSel.dataset.prefill)typeSel.value=typeSel.dataset.prefill;
+
+    const typeSel = document.getElementById('type');
+    typeSel.innerHTML = `<option value="any">Any</option>` +
+      [...typeSet].filter(Boolean).sort((a, b) => a.localeCompare(b))
+      .map(t => `<option>${t}</option>`).join('');
+
+    if (typeSel.dataset.prefill) typeSel.value = typeSel.dataset.prefill;
     applyFilters();
-  }catch(e){document.getElementById('statusText').textContent='Failed to load properties.json';console.error(e);}
+  } catch (e) {
+    document.getElementById('statusText').textContent = 'Failed to load properties.json';
+    console.error(e);
+  }
 }
 
-function getIncomingParams(){
-  const sp=new URLSearchParams(location.search);
-  const o={};for(const[k,v]of sp.entries())o[k]=v;return o;
-}
-function prefillFromURL(){
-  const incoming=getIncomingParams();
-  const setVal=(id,v)=>{if(v!=null&&v!==''){const el=document.getElementById(id);if(el)el.value=v;}};
-  setVal('q',incoming.q);
-  setVal('tenure',(incoming.tenure||'any').toLowerCase());
-  setVal('radius',incoming.radius||'any');
-  setVal('minSize',incoming.minSize);
-  setVal('maxSize',incoming.maxSize);
-  const typePref=incoming.type||'any';
-  const typeEl=document.getElementById('type');
-  if(typeEl)typeEl.dataset.prefill=typePref;
+function getIncomingParams() {
+  const sp = new URLSearchParams(location.search);
+  const o = {}; for (const [k, v] of sp.entries()) o[k] = v; return o;
 }
 
-document.addEventListener('DOMContentLoaded',()=>{
+function prefillFromURL() {
+  const incoming = getIncomingParams();
+  const setVal = (id, v) => { if (v != null && v !== '') { const el = document.getElementById(id); if (el) el.value = v; } };
+  setVal('q', incoming.q);
+  setVal('tenure', (incoming.tenure || 'any').toLowerCase());
+  setVal('radius', incoming.radius || 'any');
+  setVal('minSize', incoming.minSize);
+  setVal('maxSize', incoming.maxSize);
+  const typePref = incoming.type || 'any';
+  const typeEl = document.getElementById('type');
+  if (typeEl) typeEl.dataset.prefill = typePref;
+}
+
+/* ---------- INIT ---------- */
+document.addEventListener('DOMContentLoaded', () => {
   initMap();
-  document.getElementById('searchBtn').onclick=applyFilters;
-  document.getElementById('q').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();applyFilters();}});
+  document.getElementById('searchBtn').onclick = applyFilters;
+  document.getElementById('q').addEventListener('keydown', e => {
+    if (e.key === 'Enter') { e.preventDefault(); applyFilters(); }
+  });
   prefillFromURL();
   loadProperties();
 });
@@ -426,25 +460,31 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 <!-- ---------- Auto-resize for Squarespace embed ---------- -->
 <script>
-(function(){
-  const MSG_TYPE='gjs-prop-height';
-  const frameId=new URLSearchParams(location.search).get('frameId')||'search';
-  function calcHeight(){
-    const wrap=document.querySelector('.wrap');
-    if(!wrap)return document.documentElement.scrollHeight;
-    const rect=wrap.getBoundingClientRect();
-    return Math.max(Math.ceil(rect.top+window.scrollY+rect.height+4),300);
+(function() {
+  const MSG_TYPE = 'gjs-prop-height';
+  const frameId = new URLSearchParams(location.search).get('frameId') || 'search';
+  function calcHeight() {
+    const wrap = document.querySelector('.wrap');
+    if (!wrap) return document.documentElement.scrollHeight;
+    const rect = wrap.getBoundingClientRect();
+    return Math.max(Math.ceil(rect.top + window.scrollY + rect.height + 4), 300);
   }
-  function sendHeight(){
-    const h=calcHeight();
-    window.parent?.postMessage({type:MSG_TYPE,id:frameId,height:h},'*');
+  function sendHeight() {
+    const h = calcHeight();
+    window.parent?.postMessage({ type: MSG_TYPE, id: frameId, height: h }, '*');
   }
-  const ro=new ResizeObserver(sendHeight);ro.observe(document.documentElement);ro.observe(document.body);
-  const mo=new MutationObserver(sendHeight);mo.observe(document.body,{childList:true,subtree:true,attributes:true,characterData:true});
-  window.addEventListener('load',sendHeight);
-  document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('img').forEach(i=>{if(!i.complete)i.addEventListener('load',sendHeight,{once:true});});});
-  let ticks=0;const poll=setInterval(()=>{sendHeight();if(++ticks>=10)clearInterval(poll);},1000);
+  const ro = new ResizeObserver(sendHeight); ro.observe(document.documentElement); ro.observe(document.body);
+  const mo = new MutationObserver(sendHeight); mo.observe(document.body, { childList: true, subtree: true, attributes: true, characterData: true });
+  window.addEventListener('load', sendHeight);
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('img').forEach(i => {
+      if (!i.complete) i.addEventListener('load', sendHeight, { once: true });
+    });
+  });
+  let ticks = 0;
+  const poll = setInterval(() => { sendHeight(); if (++ticks >= 10) clearInterval(poll); }, 1000);
 })();
 </script>
+
 </body>
 </html>
