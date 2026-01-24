@@ -153,6 +153,11 @@
     </div>
   </div>
 <script>
+/* Prevent browser scroll restoration */
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
 /* ---------- helpers ---------- */
 const $=(s,el=document)=>el.querySelector(s);
 const $$=(s,el=document)=>[...el.querySelectorAll(s)];
@@ -302,8 +307,8 @@ async function main(){
     document.title = p.address ? `${p.address} — Property` : 'Property';
     $('#loading').style.display='none'; 
     $('#content').style.display='';
-    
-    /* FIX #2 — force scroll to top immediately */
+
+    /* Ensure page loads from top */
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
@@ -405,8 +410,8 @@ async function main(){
       $('#teamBox').style.display='';
     }
 
-    /* FIX #1 — defer setupEnquiry until DOM and modal are ready */
-    document.addEventListener("DOMContentLoaded", () => setupEnquiry(p));
+    /* FIXED: call setupEnquiry directly (no event listener) */
+    setupEnquiry(p);
 
     requestAnimationFrame(()=>_sendHeight());
     setTimeout(()=>_sendHeight(),300);
@@ -422,7 +427,7 @@ main();
 
 <!-- ---------- Enquiry Modal ---------- -->
 <div class="modal" id="enquiryModal" aria-hidden="true" role="dialog" aria-labelledby="enqTitle">
-  <!-- ... modal content unchanged ... -->
+  <!-- Your full existing modal markup goes here (unchanged) -->
 </div>
 
 <!-- ---------- Auto-resize ---------- -->
@@ -439,7 +444,6 @@ main();
   const mo=new MutationObserver(send);mo.observe(root,{childList:true,subtree:true,attributes:true});
   window.addEventListener('load',send);
   setTimeout(send,300);setTimeout(send,1000);
-  /* FIX — remove scroll lock */
 })();
 </script>
 
