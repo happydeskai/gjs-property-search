@@ -415,6 +415,7 @@ async function main(){
 
     /* FIXED: call setupEnquiry directly (no event listener) */
     setupEnquiry(p);
+    window.parent?.scrollTo(0, 0);
 
     requestAnimationFrame(()=>_sendHeight());
     setTimeout(()=>_sendHeight(),300);
