@@ -141,6 +141,7 @@
   <div class="meta" id="resultsCount"></div>
   <div class="cards" id="results"></div>
 </div>
+
 <script>
 let allProperties = [];
 let map, markers, searchMarker;
@@ -230,29 +231,64 @@ function initMap() {
   searchMarker = L.layerGroup().addTo(map);
 }
 
-  // Add a solid gold focus marker with black shadow
-  if (focusPoint && isFinite(focusPoint.lat) && isFinite(focusPoint.lon)) {
-    const GJS_GOLD = '#FFCC33'; // bright golden tone
+function updateMap(list, focusPoint) {
+  markers.clearLayers();
+  searchMarker.clearLayers();
+  const points = [];
 
-    // Solid gold marker with black outline for contrast
+  list.forEach(p => {
+    const lat = Number(p.lat), lon = Number(p.lon);
+    if (!isFinite(lat) || !isFinite(lon)) return;
+
+    const m = L.circleMarker([lat, lon], {
+      radius: 7,
+      weight: 2,
+      color: '#111',
+      fillColor: '#111',
+      fillOpacity: 0.85
+    });
+
+    const img = getPrimaryImage(p);
+    const where = [p.town, p.postcode].filter(Boolean).join(' ');
+    const html = `
+      <div class="pop-card">
+        <div class="pop-img" style="background-image:url('${(img || '').replace(/'/g, "%27")}')"></div>
+        <div class="pop-body">
+          <div class="pop-title">${p.address || 'Property'}</div>
+          <div class="pop-sub">${where}</div>
+          <div class="pop-size">${sizeText(p)}</div>
+          <a class="pop-btn" href="property.html?id=${encodeURIComponent(p.id ?? '')}">View property</a>
+        </div>
+      </div>
+    `;
+    m.bindPopup(html, { className: 'prop-popup', maxWidth: 340 });
+    m.addTo(markers);
+    points.push([lat, lon]);
+  });
+
+  // Add gold focus marker with subtle black shadow ring
+  if (focusPoint && isFinite(focusPoint.lat) && isFinite(focusPoint.lon)) {
+    const GJS_GOLD = '#FFCC33'; // Bright golden tone
+
+    // Solid gold circle with black outline
     const sp = L.circleMarker([focusPoint.lat, focusPoint.lon], {
-      radius: 10,
-      weight: 4,
+      radius: 12,
+      weight: 3,
       color: '#000',        // black border
       fillColor: GJS_GOLD,  // gold center
       fillOpacity: 1.0
     }).addTo(searchMarker);
 
-    // Subtle shadow simulation using a semi-transparent black ring
+    // Soft black ring behind to help it stand out
     L.circleMarker([focusPoint.lat, focusPoint.lon], {
-      radius: 13,
-      weight: 6,
-      color: 'rgba(0,0,0,0.3)',
-      opacity: 0.3,
+      radius: 18,
+      weight: 10,
+      color: 'rgba(0,0,0,0.25)',
+      opacity: 0.25,
       fill: false
     }).addTo(searchMarker);
 
-    // Tooltip for clarity
+    // Tooltip label
     sp.bindTooltip(focusPoint.label || 'Search location', {
       direction: 'top',
       offset: [0, -12]
@@ -261,11 +297,13 @@ function initMap() {
     points.push([focusPoint.lat, focusPoint.lon]);
   }
 
+  // Fit map view
   if (!points.length) return;
   const MAX_SEARCH_ZOOM = 11;
   if (points.length === 1) map.setView(points[0], MAX_SEARCH_ZOOM);
   else map.fitBounds(points, { padding: [60, 60], maxZoom: MAX_SEARCH_ZOOM });
 }
+
 /* ---------- RENDER ---------- */
 function render(list, context = {}) {
   const el = document.getElementById('results');
@@ -316,7 +354,6 @@ function render(list, context = {}) {
       </article>`;
   }).join('');
 }
-
 /* ---------- FILTER FLOW ---------- */
 async function applyFilters() {
   let q = document.getElementById('q').value.trim();
@@ -390,6 +427,7 @@ async function loadProperties() {
   }
 }
 
+/* ---------- PREFILL ---------- */
 function getIncomingParams() {
   const sp = new URLSearchParams(location.search);
   const o = {}; for (const [k, v] of sp.entries()) o[k] = v; return o;
