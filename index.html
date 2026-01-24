@@ -223,65 +223,85 @@ function initMap(){
   markers=L.layerGroup().addTo(map);
   searchMarker=L.layerGroup().addTo(map);
 }
-function updateMap(list,focusPoint){
-  markers.clearLayers(); searchMarker.clearLayers();
-  const points=[];
-  list.forEach(p=>{
-    const lat=Number(p.lat),lon=Number(p.lon);
-    if(!isFinite(lat)||!isFinite(lon))return;
-    const m=L.circleMarker([lat,lon],{radius:7,weight:2,color:'#111',fillColor:'#111',fillOpacity:.85});
-    const img=getPrimaryImage(p);
-    const where=[p.town,p.postcode].filter(Boolean).join(' ');
-    const html=`<div class="pop-card">
-      <div class="pop-img" style="background-image:url('${(img||'').replace(/'/g,"%27")}')"></div>
-      <div class="pop-body">
-        <div class="pop-title">${p.address||'Property'}</div>
-        <div class="pop-sub">${where}</div>
-        <div class="pop-size">${sizeText(p)}</div>
-        <a class="pop-btn" href="property.html?id=${encodeURIComponent(p.id??'')}">View property</a>
+function updateMap(list, focusPoint) {
+  markers.clearLayers();
+  searchMarker.clearLayers();
+  const points = [];
+
+  list.forEach(p => {
+    const lat = Number(p.lat), lon = Number(p.lon);
+    if (!isFinite(lat) || !isFinite(lon)) return;
+
+    const m = L.circleMarker([lat, lon], {
+      radius: 7,
+      weight: 2,
+      color: '#111',
+      fillColor: '#111',
+      fillOpacity: 0.85
+    });
+
+    const img = getPrimaryImage(p);
+    const where = [p.town, p.postcode].filter(Boolean).join(' ');
+    const html = `
+      <div class="pop-card">
+        <div class="pop-img" style="background-image:url('${(img || '').replace(/'/g, "%27")}')"></div>
+        <div class="pop-body">
+          <div class="pop-title">${p.address || 'Property'}</div>
+          <div class="pop-sub">${where}</div>
+          <div class="pop-size">${sizeText(p)}</div>
+          <a class="pop-btn" href="property.html?id=${encodeURIComponent(p.id ?? '')}">View property</a>
+        </div>
       </div>
-    </div>`;
-    m.bindPopup(html,{className:'prop-popup',maxWidth:340});
+    `;
+    m.bindPopup(html, { className: 'prop-popup', maxWidth: 340 });
     m.addTo(markers);
-    points.push([lat,lon]);
+    points.push([lat, lon]);
   });
- if (focusPoint && isFinite(focusPoint.lat) && isFinite(focusPoint.lon)) {
-  // ⚡ Brighter, glowing GJS gold marker with stronger halo + slower pulse
-  const GJS_GOLD = '#FFCC33'; // brighter golden tone
-  const GLOW_COLOR = 'rgba(255, 204, 51, 0.75)'; // stronger glow
 
-  // Main bright gold marker
-  const sp = L.circleMarker([focusPoint.lat, focusPoint.lon], {
-    radius: 10,
-    weight: 3,
-    color: GJS_GOLD,
-    fillColor: GJS_GOLD,
-    fillOpacity: 1.0
-  }).addTo(searchMarker);
+  // Add the glowing gold location marker
+  if (focusPoint && isFinite(focusPoint.lat) && isFinite(focusPoint.lon)) {
+    const GJS_GOLD = '#FFCC33'; // bright golden tone
+    const GLOW_COLOR = 'rgba(255, 204, 51, 0.75)'; // stronger glow
 
-  // Outer glow halo (more visible)
-  L.circleMarker([focusPoint.lat, focusPoint.lon], {
-    radius: 20,
-    weight: 8,
-    color: GLOW_COLOR,
-    opacity: 0.6,
-    fill: false
-  }).addTo(searchMarker);
+    // Main gold marker
+    const sp = L.circleMarker([focusPoint.lat, focusPoint.lon], {
+      radius: 10,
+      weight: 3,
+      color: GJS_GOLD,
+      fillColor: GJS_GOLD,
+      fillOpacity: 1.0
+    }).addTo(searchMarker);
 
-  // Slower, smoother pulse (every 1.2 seconds)
-  let pulseUp = true;
-  setInterval(() => {
-    sp.setRadius(pulseUp ? 13 : 10);
-    pulseUp = !pulseUp;
-  }, 1200);
+    // Halo effect
+    L.circleMarker([focusPoint.lat, focusPoint.lon], {
+      radius: 20,
+      weight: 8,
+      color: GLOW_COLOR,
+      opacity: 0.6,
+      fill: false
+    }).addTo(searchMarker);
 
-    sp.bindTooltip(focusPoint.label||'Search location',{direction:'top',offset:[0,-12]});
-    points.push([focusPoint.lat,focusPoint.lon]);
+    // Pulse animation
+    let pulseUp = true;
+    setInterval(() => {
+      sp.setRadius(pulseUp ? 13 : 10);
+      pulseUp = !pulseUp;
+    }, 1200);
+
+    // Tooltip
+    sp.bindTooltip(focusPoint.label || 'Search location', {
+      direction: 'top',
+      offset: [0, -12]
+    });
+
+    points.push([focusPoint.lat, focusPoint.lon]);
   }
-  if(!points.length)return;
-  const MAX_SEARCH_ZOOM=11;
-  if(points.length===1)map.setView(points[0],MAX_SEARCH_ZOOM);
-  else map.fitBounds(points,{padding:[60,60],maxZoom:MAX_SEARCH_ZOOM});
+
+  // Adjust map bounds
+  if (!points.length) return;
+  const MAX_SEARCH_ZOOM = 11;
+  if (points.length === 1) map.setView(points[0], MAX_SEARCH_ZOOM);
+  else map.fitBounds(points, { padding: [60, 60], maxZoom: MAX_SEARCH_ZOOM });
 }
 
 /* ---------- RENDER ---------- */
