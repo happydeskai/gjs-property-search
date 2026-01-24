@@ -267,26 +267,18 @@ async function main(){
 }
 
 main().then(() => {
+  // Wait a short moment for Squarespace to resize the iframe
   setTimeout(() => {
-    try {
-      window.scrollTo(0, 0);
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
+    // Scroll inside iframe
+    window.scrollTo(0, 0);
 
-      if (window.frameElement) {
-        const rect = window.frameElement.getBoundingClientRect();
-        const offset = window.parent.scrollY + rect.top - 40;
-        window.parent.scrollTo({ top: offset, behavior: 'instant' });
-      }
-
-      if (window.parent) {
-        window.parent.postMessage({ type: 'gjs-prop-height', id: 'prop', height: document.body.scrollHeight }, '*');
-      }
-    } catch (err) {
-      console.warn('Scroll-to-top failed:', err);
+    // Tell parent (Squarespace) to scroll to top of the embed
+    if (window.parent) {
+      window.parent.postMessage({ type: 'scrollTop', id: 'prop' }, '*');
     }
-  }, 800);
+  }, 500);
 });
+  
 </script> <!-- ✅ FIXED: properly closes script tag -->
 <!-- Enquiry modal -->
 <div class="modal" id="enquiryModal" aria-hidden="true" role="dialog" aria-labelledby="enqTitle">
