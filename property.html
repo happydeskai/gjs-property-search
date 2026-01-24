@@ -54,20 +54,24 @@
     .btn-primary::after{content:"";width:6px;height:6px;border-radius:999px;background:var(--accent);margin-left:8px}
     .btn-ghost{background:#fff;border:1px solid #e6e6e6}
     #map{height:260px;border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm)}
+
     .facts{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
     @media (max-width:700px){.facts{grid-template-columns:1fr}}
     .fact{background:#fff;border:1px solid #eef0f3;border-radius:12px;padding:14px;box-shadow:var(--shadow-sm)}
     .fact .label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
     .fact .value{font-weight:600}
+
     .section{margin-top:22px}
     .section .card__title{display:flex;align-items:center;gap:8px}
     .section h2{font-size:18px;margin:0;letter-spacing:-.01em}
     .features{margin:10px 0 2px;padding-left:20px}
     .features li{margin:6px 0}
+
     .agent{display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:center;padding:12px 16px;border-top:1px solid #f0f2f5}
     .agent:first-of-type{border-top:none}
     .avatar{width:48px;height:48px;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:#f1f3f6;color:#222;font-weight:700;border:1px solid #e9edf2}
     .avatar img{width:100%;height:100%;object-fit:cover}
+
     .modal.open {
       display: flex !important;
       align-items: center !important;
@@ -75,6 +79,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="wrap">
     <div class="topbar"><a class="back" href="index.html">Back to results</a></div>
@@ -90,82 +95,21 @@
             <div class="hero" id="hero"></div>
             <div class="gallery" id="thumbs"></div>
           </div>
-          <div class="section">
-            <div class="card">
-              <div class="card__title">Key details</div>
-              <div class="card__body">
-                <div class="facts" id="facts"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="section" id="overviewCard" style="display:none">
-            <div class="card">
-              <div class="card__title"><h2>Overview</h2></div>
-              <div class="card__body" id="overview"></div>
-            </div>
-          </div>
-          <div class="section" id="featuresCard" style="display:none">
-            <div class="card">
-              <div class="card__title"><h2>Key features</h2></div>
-              <div class="card__body"><ul class="features" id="features"></ul></div>
-            </div>
-          </div>
-
-          <div class="section" id="descCard" style="display:none">
-            <div class="card">
-              <div class="card__title"><h2>Description</h2></div>
-              <div class="card__body" id="desc"></div>
-            </div>
-          </div>
-
-          <div class="section" id="locCard" style="display:none">
-            <div class="card">
-              <div class="card__title"><h2>Location</h2></div>
-              <div class="card__body" id="loc"></div>
-            </div>
-          </div>
-
-          <div class="section" id="transportCard" style="display:none">
-            <div class="card">
-              <div class="card__title"><h2>Transport</h2></div>
-              <div class="card__body" id="transport"></div>
-            </div>
-          </div>
-        </div>
-
-        <aside class="sticky">
-          <div class="card">
-            <div class="card__title">Enquire about this property</div>
-            <div class="card__body">
-              <div class="actions">
-                <button class="btn btn-primary" id="enquireBtn" type="button">Enquire now</button>
-                <a class="btn btn-ghost" id="brochureBtn" target="_blank" rel="noopener">Download brochure</a>
-              </div>
-              <div id="map"></div>
-            </div>
-          </div>
-          <div class="card" id="teamBox" style="display:none">
-            <div class="card__title">Viewings & further information</div>
-            <div id="agents"></div>
-          </div>
-        </aside>
-      </div>
-    </div>
-  </div>
-
 <script>
-/* Prevent browser scroll restoration */
+/* ---------- Prevent browser scroll restoration ---------- */
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
 
-/* ---------- helpers ---------- */
-const $=(s,el=document)=>el.querySelector(s);
-const $$=(s,el=document)=>[...el.querySelectorAll(s)];
+/* ---------- Helper functions ---------- */
+const $ = (s, el=document) => el.querySelector(s);
+const $$ = (s, el=document) => [...el.querySelectorAll(s)];
 function getParam(name){return new URLSearchParams(location.search).get(name);}
 function pick(...vals){return vals.find(v=>v!==undefined&&v!==null&&v!=='');}
-function initials(name){if(!name)return"";return String(name).trim().split(/\s+/).slice(0,2).map(w=>w[0]?.toUpperCase()||"").join("");}
+function initials(name){
+  if(!name)return"";
+  return String(name).trim().split(/\s+/).slice(0,2).map(w=>w[0]?.toUpperCase()||"").join("");
+}
 
 function getImages(p){
   const arr=[];
@@ -176,11 +120,11 @@ function getImages(p){
       else if(it?._)arr.push(it._);
     }
   }
-  if(!arr.length&&Array.isArray(p.photos))
+  if(!arr.length && Array.isArray(p.photos))
     for(const ph of p.photos)if(ph?.url)arr.push(ph.url);
   const fallback=pick(p.image,p.image_url);
   if(fallback)arr.unshift(fallback);
-  return[...new Set(arr)].filter(Boolean);
+  return [...new Set(arr)].filter(Boolean);
 }
 
 function toListItems(val){
@@ -200,7 +144,7 @@ function formatSize(p){
 let map, marker, currentProperty=null;
 let _sendHeight = () => {};
 
-/* ---------- enquiry modal ---------- */
+/* ---------- Enquiry Modal Setup ---------- */
 function setupEnquiry(p){
   const modal = $('#enquiryModal');
   const pills = $('#enqPills');
@@ -293,7 +237,8 @@ function setupEnquiry(p){
     close();
   };
 }
-/* ---------- main ---------- */
+
+/* ---------- Main Function ---------- */
 async function main(){
   try {
     const id = getParam('id');
@@ -306,10 +251,10 @@ async function main(){
     if (!p){ $('#loading').textContent = 'Property not found.'; return; }
 
     document.title = p.address ? `${p.address} — Property` : 'Property';
-    $('#loading').style.display='none'; 
+    $('#loading').style.display='none';
     $('#content').style.display='';
 
-    /* 👇 FIXED SCROLL ISSUE — ensure page always opens at the top */
+    /* Always start page at the top */
     window.scrollTo({ top: 0, behavior: 'instant' });
 
     $('#prop-title').textContent = p.address || 'Property';
@@ -416,8 +361,22 @@ async function main(){
   }
 }
 main();
-</script>
 
+/* ---------- Auto-resize ---------- */
+(function(){
+  const MSG_TYPE='gjs-prop-height';
+  const frameId=new URLSearchParams(location.search).get('frameId')||'prop';
+  const root=document.querySelector('.wrap')||document.body;
+  function getContentHeight(){return Math.ceil((root?.offsetHeight||document.body.offsetHeight)+24);}
+  let last=0;
+  function send(){const h=getContentHeight();if(h!==last){last=h;window.parent?.postMessage({type:MSG_TYPE,id:frameId,height:h},'*');}}
+  window._gjsSendHeight=send;_sendHeight=send;
+  const ro=new ResizeObserver(send);ro.observe(root);
+  const mo=new MutationObserver(send);mo.observe(root,{childList:true,subtree:true,attributes:true});
+  window.addEventListener('load',send);
+  setTimeout(send,300);setTimeout(send,1000);
+})();
+</script>
 <!-- ---------- Enquiry Modal ---------- -->
 <div class="modal" id="enquiryModal" aria-hidden="true" role="dialog" aria-labelledby="enqTitle"
   style="position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.4);z-index:9999;">
@@ -450,28 +409,13 @@ main();
         <textarea id="message" rows="3" style="width:100%;margin-bottom:8px;"></textarea>
 
         <button id="sendEnquiryBtn" type="button"
-          style="background:#101112;color:#fff;border:none;padding:10px 16px;border-radius:8px;cursor:pointer;">Send Enquiry</button>
+          style="background:#101112;color:#fff;border:none;padding:10px 16px;border-radius:8px;cursor:pointer;">
+          Send Enquiry
+        </button>
       </form>
     </div>
   </div>
 </div>
-
-<!-- ---------- Auto-resize ---------- -->
-<script>
-(function(){
-  const MSG_TYPE='gjs-prop-height';
-  const frameId=new URLSearchParams(location.search).get('frameId')||'prop';
-  const root=document.querySelector('.wrap')||document.body;
-  function getContentHeight(){return Math.ceil((root?.offsetHeight||document.body.offsetHeight)+24);}
-  let last=0;
-  function send(){const h=getContentHeight();if(h!==last){last=h;window.parent?.postMessage({type:MSG_TYPE,id:frameId,height:h},'*');}}
-  window._gjsSendHeight=send;_sendHeight=send;
-  const ro=new ResizeObserver(send);ro.observe(root);
-  const mo=new MutationObserver(send);mo.observe(root,{childList:true,subtree:true,attributes:true});
-  window.addEventListener('load',send);
-  setTimeout(send,300);setTimeout(send,1000);
-})();
-</script>
 
 </body>
 </html>
