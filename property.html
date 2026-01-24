@@ -73,9 +73,9 @@
     .avatar img{width:100%;height:100%;object-fit:cover}
 
     .modal.open {
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
+      display:flex !important;
+      align-items:center !important;
+      justify-content:center !important;
     }
   </style>
 </head>
@@ -95,168 +95,144 @@
             <div class="hero" id="hero"></div>
             <div class="gallery" id="thumbs"></div>
           </div>
-<script>
-/* ---------- Prevent browser scroll restoration ---------- */
-if ('scrollRestoration' in history) {
-  history.scrollRestoration = 'manual';
-}
 
-/* ---------- Helper functions ---------- */
+          <div class="section">
+            <div class="card">
+              <div class="card__title">Key details</div>
+              <div class="card__body"><div class="facts" id="facts"></div></div>
+            </div>
+          </div>
+
+          <div class="section" id="overviewCard" style="display:none">
+            <div class="card">
+              <div class="card__title"><h2>Overview</h2></div>
+              <div class="card__body" id="overview"></div>
+            </div>
+          </div>
+
+          <div class="section" id="featuresCard" style="display:none">
+            <div class="card">
+              <div class="card__title"><h2>Key features</h2></div>
+              <div class="card__body"><ul class="features" id="features"></ul></div>
+            </div>
+          </div>
+
+          <div class="section" id="descCard" style="display:none">
+            <div class="card">
+              <div class="card__title"><h2>Description</h2></div>
+              <div class="card__body" id="desc"></div>
+            </div>
+          </div>
+
+          <div class="section" id="locCard" style="display:none">
+            <div class="card">
+              <div class="card__title"><h2>Location</h2></div>
+              <div class="card__body" id="loc"></div>
+            </div>
+          </div>
+
+          <div class="section" id="transportCard" style="display:none">
+            <div class="card">
+              <div class="card__title"><h2>Transport</h2></div>
+              <div class="card__body" id="transport"></div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="sticky">
+          <div class="card">
+            <div class="card__title">Enquire about this property</div>
+            <div class="card__body">
+              <div class="actions">
+                <button class="btn btn-primary" id="enquireBtn" type="button">Enquire now</button>
+                <a class="btn btn-ghost" id="brochureBtn" target="_blank" rel="noopener">Download brochure</a>
+              </div>
+              <div id="map"></div>
+            </div>
+          </div>
+          <div class="card" id="teamBox" style="display:none">
+            <div class="card__title">Viewings & further information</div>
+            <div id="agents"></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+<script>
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
 const $ = (s, el=document) => el.querySelector(s);
 const $$ = (s, el=document) => [...el.querySelectorAll(s)];
 function getParam(name){return new URLSearchParams(location.search).get(name);}
-function pick(...vals){return vals.find(v=>v!==undefined&&v!==null&&v!=='');}
-function initials(name){
-  if(!name)return"";
-  return String(name).trim().split(/\s+/).slice(0,2).map(w=>w[0]?.toUpperCase()||"").join("");
-}
+function pick(...v){return v.find(x=>x!==undefined&&x!==null&&x!=='');}
+function initials(n){return n?String(n).trim().split(/\s+/).slice(0,2).map(w=>w[0]?.toUpperCase()||"").join(""):"";}
 
 function getImages(p){
   const arr=[];
-  if(Array.isArray(p.images)){
-    for(const it of p.images){
-      if(typeof it==='string')arr.push(it);
-      else if(it?.url)arr.push(it.url);
-      else if(it?._)arr.push(it._);
-    }
-  }
-  if(!arr.length && Array.isArray(p.photos))
-    for(const ph of p.photos)if(ph?.url)arr.push(ph.url);
-  const fallback=pick(p.image,p.image_url);
-  if(fallback)arr.unshift(fallback);
+  if(Array.isArray(p.images)){for(const it of p.images){if(typeof it==='string')arr.push(it);else if(it?.url)arr.push(it.url);else if(it?._)arr.push(it._);}}
+  if(!arr.length&&Array.isArray(p.photos))for(const ph of p.photos)if(ph?.url)arr.push(ph.url);
+  const fb=pick(p.image,p.image_url);if(fb)arr.unshift(fb);
   return [...new Set(arr)].filter(Boolean);
 }
 
-function toListItems(val){
-  if(!val)return[];
-  if(Array.isArray(val))return val.map(String).filter(Boolean);
-  return String(val).split(/\r?\n|•/g).map(s=>s.trim()).filter(Boolean);
-}
+function toListItems(val){if(!val)return[];if(Array.isArray(val))return val.map(String).filter(Boolean);return String(val).split(/\r?\n|•/g).map(s=>s.trim()).filter(Boolean);}
+function formatSize(p){const a=p.size_from_sqft,b=p.size_to_sqft;if(a&&b)return`${Number(a).toLocaleString()}–${Number(b).toLocaleString()} sq ft`;if(a)return`${Number(a).toLocaleString()} sq ft`;if(b)return`${Number(b).toLocaleString()} sq ft`;return'';}
 
-function formatSize(p){
-  const a=p.size_from_sqft,b=p.size_to_sqft;
-  if(a&&b)return`${Number(a).toLocaleString()}–${Number(b).toLocaleString()} sq ft`;
-  if(a)return`${Number(a).toLocaleString()} sq ft`;
-  if(b)return`${Number(b).toLocaleString()} sq ft`;
-  return'';
-}
+let map, marker, currentProperty=null; let _sendHeight=()=>{};
 
-let map, marker, currentProperty=null;
-let _sendHeight = () => {};
-
-/* ---------- Enquiry Modal Setup ---------- */
 function setupEnquiry(p){
-  const modal = $('#enquiryModal');
-  const pills = $('#enqPills');
-  const propRef = `Enquiry about “${p.address || 'Property'}” ${[p.town, p.postcode].filter(Boolean).join(' ')}`;
-  $('#propRefHint').textContent = propRef;
-
-  const contacts = Array.isArray(p.contacts?.contact)
-    ? p.contacts.contact
-    : Array.isArray(p.contacts)
-    ? p.contacts
-    : (p.contacts ? [p.contacts] : []);
-
-  pills.innerHTML = contacts.slice(0,3).map(c=>{
-    const init = initials(c.name||'');
-    const photo = c.photo || c.image || '';
-    const tel = c.tel || c.phone || '';
-    const mob = c.mobile ? String(c.mobile) : '';
-    const phones = [tel, mob].filter(Boolean).join(' · ');
+  const modal=$('#enquiryModal'), pills=$('#enqPills');
+  const propRef=`Enquiry about “${p.address||'Property'}” ${[p.town,p.postcode].filter(Boolean).join(' ')}`;
+  $('#propRefHint').textContent=propRef;
+  const contacts=Array.isArray(p.contacts?.contact)?p.contacts.contact:Array.isArray(p.contacts)?p.contacts:(p.contacts?[p.contacts]:[]);
+  pills.innerHTML=contacts.slice(0,3).map(c=>{
+    const init=initials(c.name||''),photo=c.photo||c.image||'',tel=c.tel||c.phone||'',mob=c.mobile?String(c.mobile):'',phones=[tel,mob].filter(Boolean).join(' · ');
     return `<div class="contact-pill">
-      <div class="pill-avatar">${photo
-        ? `<img src="${photo}" alt="${c.name||'Agent'}" onerror="this.closest('.pill-avatar').textContent='${init}'">`
-        : `${init}`}</div>
-      <div>
-        <div class="pill-name">${c.name||'Agent'}</div>
-        <div class="pill-meta">${phones}</div>
-        ${c.email ? `<div class="pill-meta"><a href="mailto:${c.email}">Email ${c.name?.split(' ')[0]||'agent'}</a></div>` : ''}
-      </div>
+      <div class="pill-avatar">${photo?`<img src="${photo}" alt="${c.name||'Agent'}" onerror="this.closest('.pill-avatar').textContent='${init}'">`:`${init}`}</div>
+      <div><div class="pill-name">${c.name||'Agent'}</div><div class="pill-meta">${phones}</div>${c.email?`<div class="pill-meta"><a href="mailto:${c.email}">Email ${c.name?.split(' ')[0]||'agent'}</a></div>`:''}</div>
     </div>`;
-  }).join('') || `<div class="pill-meta">No named agents available.</div>`;
+  }).join('')||`<div class="pill-meta">No named agents available.</div>`;
 
-  const open = () => {
-    modal.classList.add('open');
-    modal.setAttribute('aria-hidden','false');
-    _sendHeight();
-  };
-  const close = () => {
-    modal.classList.remove('open');
-    modal.setAttribute('aria-hidden','true');
-    _sendHeight();
-  };
-
-  $('#enquireBtn').onclick = open;
-  modal.addEventListener('click', e => { if (e.target.dataset.close !== undefined) close(); });
-  $$('.modal__close', modal).forEach(b => b.onclick = close);
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
-
-  $('#sendEnquiryBtn').onclick = () => {
-    const first = $('#firstName').value.trim();
-    const last = $('#lastName').value.trim();
-    const email = $('#email').value.trim();
-    if (!first || !last || !email) { alert('Please fill in first name, last name and email.'); return; }
-
-    const formData = {
-      title: $('#titleSel') ? $('#titleSel').value : '',
-      firstName: first,
-      lastName: last,
-      email,
-      phone: $('#phone').value.trim(),
-      company: $('#company') ? $('#company').value.trim() : '',
-      jobTitle: $('#jobTitle') ? $('#jobTitle').value.trim() : '',
-      message: $('#message').value.trim()
-    };
-
-    const toList = (Array.isArray(p.contacts)
-      ? p.contacts
-      : (p.contacts?.contact ? [p.contacts.contact] : [])
-    ).flat().map(c => c?.email).filter(Boolean);
-
-    const to = toList[0] || "gjs-dillon-limited-393@parse.agents-society.com";
-    const subject = `Enquiry: ${p.address || 'Property'} (${p.id ?? ''})`;
-    const lines = [
-      "Hi,",
-      "",
+  const open=()=>{modal.classList.add('open');modal.setAttribute('aria-hidden','false');_sendHeight();};
+  const close=()=>{modal.classList.remove('open');modal.setAttribute('aria-hidden','true');_sendHeight();};
+  $('#enquireBtn').onclick=open;
+  modal.addEventListener('click',e=>{if(e.target.dataset.close!==undefined)close();});
+  $$('.modal__close',modal).forEach(b=>b.onclick=close);
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')close();});
+  $('#sendEnquiryBtn').onclick=()=>{
+    const f=$('#firstName').value.trim(),l=$('#lastName').value.trim(),em=$('#email').value.trim();
+    if(!f||!l||!em){alert('Please fill in first name, last name and email.');return;}
+    const data={firstName:f,lastName:l,email:em,phone:$('#phone').value.trim(),message:$('#message').value.trim()};
+    const toList=(Array.isArray(p.contacts)?p.contacts:(p.contacts?.contact?[p.contacts.contact]:[])).flat().map(c=>c?.email).filter(Boolean);
+    const to=toList[0]||"gjs-dillon-limited-393@parse.agents-society.com";
+    const subj=`Enquiry: ${p.address||'Property'} (${p.id??''})`;
+    const lines=[
+      "Hi,","",
       "I'd like more information about:",
-      `${p.address || 'Property'}`,
-      `${[p.town, p.postcode].filter(Boolean).join(' ')}`,
-      `Ref: ${p.id ?? ''}`,
-      "",
-      `Name: ${[formData.firstName, formData.lastName].filter(Boolean).join(' ')}`,
-      `Company: ${formData.company || ''}`,
-      `Job title: ${formData.jobTitle || ''}`,
-      `Email: ${formData.email || ''}`,
-      `Phone: ${formData.phone || ''}`,
-      "",
-      (formData.message || "Please reply to me via email/phone.")
+      `${p.address||'Property'}`,
+      `${[p.town,p.postcode].filter(Boolean).join(' ')}`,
+      `Ref: ${p.id??''}`,"",
+      `Name: ${[data.firstName,data.lastName].join(' ')}`,
+      `Email: ${data.email}`,"Phone: "+(data.phone||''),"",data.message||"Please reply to me via email/phone."
     ];
-    if ($('#optIn') && $('#optIn').checked) lines.push("", "✓ Please add me to your mailing list");
-    const href = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join("\n"))}`;
-    window.location.href = href;
+    window.location.href=`mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(lines.join("\n"))}`;
     close();
   };
 }
 
-/* ---------- Main Function ---------- */
 async function main(){
-  try {
-    const id = getParam('id');
-    const res = await fetch('./properties.json', { cache:'no-store' });
-    if (!res.ok) throw new Error(`properties.json HTTP ${res.status}`);
-    const list = await res.json();
-    const items = list.map((p,i)=>({ id: p.id ?? p.slug ?? p.uid ?? i, ...p }));
-    const p = items.find(x => String(x.id) === String(id)) || items[0];
-    currentProperty = p;
-    if (!p){ $('#loading').textContent = 'Property not found.'; return; }
-
-    document.title = p.address ? `${p.address} — Property` : 'Property';
-    $('#loading').style.display='none';
-    $('#content').style.display='';
-
-    /* Always start page at the top */
-    window.scrollTo({ top: 0, behavior: 'instant' });
-
+  try{
+    const id=getParam('id');
+    const res=await fetch('properties.json',{cache:'no-store'});
+    if(!res.ok)throw new Error(`properties.json HTTP ${res.status}`);
+    const list=await res.json();
+    const items=list.map((p,i)=>({id:p.id??p.slug??p.uid??i,...p}));
+    const p=items.find(x=>String(x.id)===String(id))||items[0];
+    currentProperty=p;if(!p){$('#loading').textContent='Property not found.';return;}
+    document.title=p.address?`${p.address} — Property`:'Property';
+    $('#loading').style.display='none';$('#content').style.display='';
+    window.scrollTo({top:0,behavior:'instant'});
     $('#prop-title').textContent = p.address || 'Property';
     $('#prop-sub').textContent = [p.town, p.postcode].filter(Boolean).join(' ');
     const chips = $('#prop-chips');
@@ -269,7 +245,8 @@ async function main(){
     if (epc)    chips.innerHTML += `<span class="chip">EPC ${epc}</span>`;
 
     const imgs = getImages(p);
-    const hero = $('#hero'); const thumbs = $('#thumbs');
+    const hero = $('#hero');
+    const thumbs = $('#thumbs');
     const setHero = src => hero.innerHTML = src ? `<img src="${src}" alt="${p.address||'Property'}">` : '';
     setHero(imgs[0] || '');
     thumbs.innerHTML = imgs.slice(0,15).map(u => `<button class="thumb" type="button" data-src="${u}" aria-label="View photo"><img src="${u}" alt=""></button>`).join('');
@@ -361,22 +338,8 @@ async function main(){
   }
 }
 main();
-
-/* ---------- Auto-resize ---------- */
-(function(){
-  const MSG_TYPE='gjs-prop-height';
-  const frameId=new URLSearchParams(location.search).get('frameId')||'prop';
-  const root=document.querySelector('.wrap')||document.body;
-  function getContentHeight(){return Math.ceil((root?.offsetHeight||document.body.offsetHeight)+24);}
-  let last=0;
-  function send(){const h=getContentHeight();if(h!==last){last=h;window.parent?.postMessage({type:MSG_TYPE,id:frameId,height:h},'*');}}
-  window._gjsSendHeight=send;_sendHeight=send;
-  const ro=new ResizeObserver(send);ro.observe(root);
-  const mo=new MutationObserver(send);mo.observe(root,{childList:true,subtree:true,attributes:true});
-  window.addEventListener('load',send);
-  setTimeout(send,300);setTimeout(send,1000);
-})();
 </script>
+
 <!-- ---------- Enquiry Modal ---------- -->
 <div class="modal" id="enquiryModal" aria-hidden="true" role="dialog" aria-labelledby="enqTitle"
   style="position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.4);z-index:9999;">
@@ -416,6 +379,23 @@ main();
     </div>
   </div>
 </div>
+
+<!-- ---------- Auto-resize ---------- -->
+<script>
+(function(){
+  const MSG_TYPE='gjs-prop-height';
+  const frameId=new URLSearchParams(location.search).get('frameId')||'prop';
+  const root=document.querySelector('.wrap')||document.body;
+  function getContentHeight(){return Math.ceil((root?.offsetHeight||document.body.offsetHeight)+24);}
+  let last=0;
+  function send(){const h=getContentHeight();if(h!==last){last=h;window.parent?.postMessage({type:MSG_TYPE,id:frameId,height:h},'*');}}
+  window._gjsSendHeight=send;_sendHeight=send;
+  const ro=new ResizeObserver(send);ro.observe(root);
+  const mo=new MutationObserver(send);mo.observe(root,{childList:true,subtree:true,attributes:true});
+  window.addEventListener('load',send);
+  setTimeout(send,300);setTimeout(send,1000);
+})();
+</script>
 
 </body>
 </html>
