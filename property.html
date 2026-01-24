@@ -71,24 +71,22 @@
     .agent:first-of-type{border-top:none}
     .avatar{width:48px;height:48px;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:#f1f3f6;color:#222;font-weight:700;border:1px solid #e9edf2}
     .avatar img{width:100%;height:100%;object-fit:cover}
-
     .modal.open {
-      display:flex !important;
-      align-items:center !important;
-      justify-content:center !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
     }
   </style>
 </head>
-
 <body>
   <div class="wrap">
     <div class="topbar"><a class="back" href="index.html">Back to results</a></div>
     <div id="loading" class="muted">Loading…</div>
-
     <div id="content" style="display:none">
       <h1 id="prop-title">Property</h1>
       <div class="muted" id="prop-sub"></div>
       <div class="chips" id="prop-chips"></div>
+
       <div class="layout">
         <div>
           <div class="hero-card">
@@ -99,7 +97,9 @@
           <div class="section">
             <div class="card">
               <div class="card__title">Key details</div>
-              <div class="card__body"><div class="facts" id="facts"></div></div>
+              <div class="card__body">
+                <div class="facts" id="facts"></div>
+              </div>
             </div>
           </div>
 
@@ -150,6 +150,7 @@
               <div id="map"></div>
             </div>
           </div>
+
           <div class="card" id="teamBox" style="display:none">
             <div class="card__title">Viewings & further information</div>
             <div id="agents"></div>
@@ -158,83 +159,167 @@
       </div>
     </div>
   </div>
-
 <script>
-if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+/* Prevent browser scroll restoration */
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
 
-const $ = (s, el=document) => el.querySelector(s);
-const $$ = (s, el=document) => [...el.querySelectorAll(s)];
+/* ---------- helpers ---------- */
+const $=(s,el=document)=>el.querySelector(s);
+const $$=(s,el=document)=>[...el.querySelectorAll(s)];
 function getParam(name){return new URLSearchParams(location.search).get(name);}
-function pick(...v){return v.find(x=>x!==undefined&&x!==null&&x!=='');}
-function initials(n){return n?String(n).trim().split(/\s+/).slice(0,2).map(w=>w[0]?.toUpperCase()||"").join(""):"";}
+function pick(...vals){return vals.find(v=>v!==undefined&&v!==null&&v!=='');}
+function initials(name){if(!name)return"";return String(name).trim().split(/\s+/).slice(0,2).map(w=>w[0]?.toUpperCase()||"").join("");}
 
 function getImages(p){
   const arr=[];
-  if(Array.isArray(p.images)){for(const it of p.images){if(typeof it==='string')arr.push(it);else if(it?.url)arr.push(it.url);else if(it?._)arr.push(it._);}}
-  if(!arr.length&&Array.isArray(p.photos))for(const ph of p.photos)if(ph?.url)arr.push(ph.url);
-  const fb=pick(p.image,p.image_url);if(fb)arr.unshift(fb);
-  return [...new Set(arr)].filter(Boolean);
+  if(Array.isArray(p.images)){
+    for(const it of p.images){
+      if(typeof it==='string')arr.push(it);
+      else if(it?.url)arr.push(it.url);
+      else if(it?._)arr.push(it._);
+    }
+  }
+  if(!arr.length&&Array.isArray(p.photos))
+    for(const ph of p.photos)if(ph?.url)arr.push(ph.url);
+  const fallback=pick(p.image,p.image_url);
+  if(fallback)arr.unshift(fallback);
+  return[...new Set(arr)].filter(Boolean);
 }
 
-function toListItems(val){if(!val)return[];if(Array.isArray(val))return val.map(String).filter(Boolean);return String(val).split(/\r?\n|•/g).map(s=>s.trim()).filter(Boolean);}
-function formatSize(p){const a=p.size_from_sqft,b=p.size_to_sqft;if(a&&b)return`${Number(a).toLocaleString()}–${Number(b).toLocaleString()} sq ft`;if(a)return`${Number(a).toLocaleString()} sq ft`;if(b)return`${Number(b).toLocaleString()} sq ft`;return'';}
+function toListItems(val){
+  if(!val)return[];
+  if(Array.isArray(val))return val.map(String).filter(Boolean);
+  return String(val).split(/\r?\n|•/g).map(s=>s.trim()).filter(Boolean);
+}
 
-let map, marker, currentProperty=null; let _sendHeight=()=>{};
+function formatSize(p){
+  const a=p.size_from_sqft,b=p.size_to_sqft;
+  if(a&&b)return`${Number(a).toLocaleString()}–${Number(b).toLocaleString()} sq ft`;
+  if(a)return`${Number(a).toLocaleString()} sq ft`;
+  if(b)return`${Number(b).toLocaleString()} sq ft`;
+  return'';
+}
 
+let map, marker, currentProperty=null;
+let _sendHeight = () => {};
+
+/* ---------- enquiry modal ---------- */
 function setupEnquiry(p){
-  const modal=$('#enquiryModal'), pills=$('#enqPills');
-  const propRef=`Enquiry about “${p.address||'Property'}” ${[p.town,p.postcode].filter(Boolean).join(' ')}`;
-  $('#propRefHint').textContent=propRef;
-  const contacts=Array.isArray(p.contacts?.contact)?p.contacts.contact:Array.isArray(p.contacts)?p.contacts:(p.contacts?[p.contacts]:[]);
-  pills.innerHTML=contacts.slice(0,3).map(c=>{
-    const init=initials(c.name||''),photo=c.photo||c.image||'',tel=c.tel||c.phone||'',mob=c.mobile?String(c.mobile):'',phones=[tel,mob].filter(Boolean).join(' · ');
-    return `<div class="contact-pill">
-      <div class="pill-avatar">${photo?`<img src="${photo}" alt="${c.name||'Agent'}" onerror="this.closest('.pill-avatar').textContent='${init}'">`:`${init}`}</div>
-      <div><div class="pill-name">${c.name||'Agent'}</div><div class="pill-meta">${phones}</div>${c.email?`<div class="pill-meta"><a href="mailto:${c.email}">Email ${c.name?.split(' ')[0]||'agent'}</a></div>`:''}</div>
-    </div>`;
-  }).join('')||`<div class="pill-meta">No named agents available.</div>`;
+  const modal = $('#enquiryModal');
+  const pills = $('#enqPills');
+  const propRef = `Enquiry about “${p.address || 'Property'}” ${[p.town, p.postcode].filter(Boolean).join(' ')}`;
+  $('#propRefHint').textContent = propRef;
 
-  const open=()=>{modal.classList.add('open');modal.setAttribute('aria-hidden','false');_sendHeight();};
-  const close=()=>{modal.classList.remove('open');modal.setAttribute('aria-hidden','true');_sendHeight();};
-  $('#enquireBtn').onclick=open;
-  modal.addEventListener('click',e=>{if(e.target.dataset.close!==undefined)close();});
-  $$('.modal__close',modal).forEach(b=>b.onclick=close);
-  document.addEventListener('keydown',e=>{if(e.key==='Escape')close();});
-  $('#sendEnquiryBtn').onclick=()=>{
-    const f=$('#firstName').value.trim(),l=$('#lastName').value.trim(),em=$('#email').value.trim();
-    if(!f||!l||!em){alert('Please fill in first name, last name and email.');return;}
-    const data={firstName:f,lastName:l,email:em,phone:$('#phone').value.trim(),message:$('#message').value.trim()};
-    const toList=(Array.isArray(p.contacts)?p.contacts:(p.contacts?.contact?[p.contacts.contact]:[])).flat().map(c=>c?.email).filter(Boolean);
-    const to=toList[0]||"gjs-dillon-limited-393@parse.agents-society.com";
-    const subj=`Enquiry: ${p.address||'Property'} (${p.id??''})`;
-    const lines=[
-      "Hi,","",
+  const contacts = Array.isArray(p.contacts?.contact)
+    ? p.contacts.contact
+    : Array.isArray(p.contacts)
+    ? p.contacts
+    : (p.contacts ? [p.contacts] : []);
+
+  pills.innerHTML = contacts.slice(0,3).map(c=>{
+    const init = initials(c.name||'');
+    const photo = c.photo || c.image || '';
+    const tel = c.tel || c.phone || '';
+    const mob = c.mobile ? String(c.mobile) : '';
+    const phones = [tel, mob].filter(Boolean).join(' · ');
+    return `<div class="contact-pill">
+      <div class="pill-avatar">${photo
+        ? `<img src="${photo}" alt="${c.name||'Agent'}" onerror="this.closest('.pill-avatar').textContent='${init}'">`
+        : `${init}`}</div>
+      <div>
+        <div class="pill-name">${c.name||'Agent'}</div>
+        <div class="pill-meta">${phones}</div>
+        ${c.email ? `<div class="pill-meta"><a href="mailto:${c.email}">Email ${c.name?.split(' ')[0]||'agent'}</a></div>` : ''}
+      </div>
+    </div>`;
+  }).join('') || `<div class="pill-meta">No named agents available.</div>`;
+
+  const open = () => {
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden','false');
+    _sendHeight();
+  };
+  const close = () => {
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden','true');
+    _sendHeight();
+  };
+
+  $('#enquireBtn').onclick = open;
+  modal.addEventListener('click', e => { if (e.target.dataset.close !== undefined) close(); });
+  $$('.modal__close', modal).forEach(b => b.onclick = close);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+
+  $('#sendEnquiryBtn').onclick = () => {
+    const first = $('#firstName').value.trim();
+    const last = $('#lastName').value.trim();
+    const email = $('#email').value.trim();
+    if (!first || !last || !email) { alert('Please fill in first name, last name and email.'); return; }
+
+    const formData = {
+      title: $('#titleSel') ? $('#titleSel').value : '',
+      firstName: first,
+      lastName: last,
+      email,
+      phone: $('#phone').value.trim(),
+      company: $('#company') ? $('#company').value.trim() : '',
+      jobTitle: $('#jobTitle') ? $('#jobTitle').value.trim() : '',
+      message: $('#message').value.trim()
+    };
+
+    const toList = (Array.isArray(p.contacts)
+      ? p.contacts
+      : (p.contacts?.contact ? [p.contacts.contact] : [])
+    ).flat().map(c => c?.email).filter(Boolean);
+
+    const to = toList[0] || "gjs-dillon-limited-393@parse.agents-society.com";
+    const subject = `Enquiry: ${p.address || 'Property'} (${p.id ?? ''})`;
+    const lines = [
+      "Hi,",
+      "",
       "I'd like more information about:",
-      `${p.address||'Property'}`,
-      `${[p.town,p.postcode].filter(Boolean).join(' ')}`,
-      `Ref: ${p.id??''}`,"",
-      `Name: ${[data.firstName,data.lastName].join(' ')}`,
-      `Email: ${data.email}`,"Phone: "+(data.phone||''),"",data.message||"Please reply to me via email/phone."
+      `${p.address || 'Property'}`,
+      `${[p.town, p.postcode].filter(Boolean).join(' ')}`,
+      `Ref: ${p.id ?? ''}`,
+      "",
+      `Name: ${[formData.firstName, formData.lastName].filter(Boolean).join(' ')}`,
+      `Company: ${formData.company || ''}`,
+      `Job title: ${formData.jobTitle || ''}`,
+      `Email: ${formData.email || ''}`,
+      `Phone: ${formData.phone || ''}`,
+      "",
+      (formData.message || "Please reply to me via email/phone.")
     ];
-    window.location.href=`mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(lines.join("\n"))}`;
+    if ($('#optIn') && $('#optIn').checked) lines.push("", "✓ Please add me to your mailing list");
+    const href = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join("\n"))}`;
+    window.location.href = href;
     close();
   };
 }
 
+/* ---------- main ---------- */
 async function main(){
-  try{
-    const id=getParam('id');
+  try {
+    const id = getParam('id');
     const res = await fetch('https://happydeskai.github.io/gjs-property-search/properties.json', { cache:'no-store' });
-    if(!res.ok)throw new Error(`properties.json HTTP ${res.status}`);
-    const list=await res.json();
-    const items=list.map((p,i)=>({id:p.id??p.slug??p.uid??i,...p}));
-    const p=items.find(x=>String(x.id)===String(id))||items[0];
-    currentProperty=p;if(!p){$('#loading').textContent='Property not found.';return;}
-    document.title=p.address?`${p.address} — Property`:'Property';
-    $('#loading').style.display='none';$('#content').style.display='';
-    window.scrollTo({top:0,behavior:'instant'});
+    if (!res.ok) throw new Error(`properties.json HTTP ${res.status}`);
+    const list = await res.json();
+    const items = list.map((p,i)=>({ id: p.id ?? p.slug ?? p.uid ?? i, ...p }));
+    const p = items.find(x => String(x.id) === String(id)) || items[0];
+    currentProperty = p;
+    if (!p){ $('#loading').textContent = 'Property not found.'; return; }
+
+    document.title = p.address ? `${p.address} — Property` : 'Property';
+    $('#loading').style.display='none'; 
+    $('#content').style.display='';
+
+    /* Scroll to top fix */
+    window.scrollTo({ top: 0, behavior: 'instant' });
     $('#prop-title').textContent = p.address || 'Property';
     $('#prop-sub').textContent = [p.town, p.postcode].filter(Boolean).join(' ');
+
     const chips = $('#prop-chips');
     const tType  = pick(p.type, p.property_type, Array.isArray(p.types)&&p.types[0]);
     const tenure = pick(p.tenure, p.transaction_type, p.to_let ? 'To Let' : (p.for_sale ? 'For Sale' : ''));
@@ -245,11 +330,13 @@ async function main(){
     if (epc)    chips.innerHTML += `<span class="chip">EPC ${epc}</span>`;
 
     const imgs = getImages(p);
-    const hero = $('#hero');
+    const hero = $('#hero'); 
     const thumbs = $('#thumbs');
     const setHero = src => hero.innerHTML = src ? `<img src="${src}" alt="${p.address||'Property'}">` : '';
     setHero(imgs[0] || '');
-    thumbs.innerHTML = imgs.slice(0,15).map(u => `<button class="thumb" type="button" data-src="${u}" aria-label="View photo"><img src="${u}" alt=""></button>`).join('');
+    thumbs.innerHTML = imgs.slice(0,15)
+      .map(u => `<button class="thumb" type="button" data-src="${u}" aria-label="View photo"><img src="${u}" alt=""></button>`)
+      .join('');
     thumbs.addEventListener('click', e => {
       const t = e.target.closest('.thumb'); if (!t) return;
       setHero(t.dataset.src);
@@ -337,7 +424,7 @@ async function main(){
     $('#loading').textContent=`Sorry — failed to load property data (${err.message||err}).`;
   }
 }
-main();
+document.addEventListener('DOMContentLoaded', main);
 </script>
 
 <!-- ---------- Enquiry Modal ---------- -->
@@ -372,9 +459,7 @@ main();
         <textarea id="message" rows="3" style="width:100%;margin-bottom:8px;"></textarea>
 
         <button id="sendEnquiryBtn" type="button"
-          style="background:#101112;color:#fff;border:none;padding:10px 16px;border-radius:8px;cursor:pointer;">
-          Send Enquiry
-        </button>
+          style="background:#101112;color:#fff;border:none;padding:10px 16px;border-radius:8px;cursor:pointer;">Send Enquiry</button>
       </form>
     </div>
   </div>
@@ -392,7 +477,7 @@ main();
   window._gjsSendHeight=send;_sendHeight=send;
   const ro=new ResizeObserver(send);ro.observe(root);
   const mo=new MutationObserver(send);mo.observe(root,{childList:true,subtree:true,attributes:true});
-  window.addEventListener('load',send);
+  window.addEventListener('load',()=>{send();window.parent?.postMessage({type:'scroll-top'},'*');});
   setTimeout(send,300);setTimeout(send,1000);
 })();
 </script>
