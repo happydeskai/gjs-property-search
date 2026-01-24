@@ -245,23 +245,39 @@ function updateMap(list,focusPoint){
     m.addTo(markers);
     points.push([lat,lon]);
   });
-  if(focusPoint&&isFinite(focusPoint.lat)&&isFinite(focusPoint.lon)){
-    const GJS_GOLD = '#D6B25E'; // your brand gold hex
-const sp = L.circleMarker([focusPoint.lat, focusPoint.lon], {
-  radius: 10,
-  weight: 3,
-  color: GJS_GOLD,
-  fillColor: GJS_GOLD,
-  fillOpacity: 0.9
-}).addTo(searchMarker);
+  if (focusPoint && isFinite(focusPoint.lat) && isFinite(focusPoint.lon)) {
+  // Bright GJS gold with glow and gentle pulse
+  const GJS_GOLD = '#FFD84D'; // brighter gold
+  const GLOW_COLOR = 'rgba(255, 216, 77, 0.45)'; // soft halo
 
-L.circleMarker([focusPoint.lat, focusPoint.lon], {
-  radius: 16,
-  weight: 2,
-  color: GJS_GOLD,
-  opacity: 0.3,
-  fill: false
-}).addTo(searchMarker);
+  // Main bright gold marker
+  const sp = L.circleMarker([focusPoint.lat, focusPoint.lon], {
+    radius: 10,
+    weight: 3,
+    color: GJS_GOLD,
+    fillColor: GJS_GOLD,
+    fillOpacity: 1.0
+  }).addTo(searchMarker);
+
+  // Outer glow ring
+  L.circleMarker([focusPoint.lat, focusPoint.lon], {
+    radius: 18,
+    weight: 6,
+    color: GLOW_COLOR,
+    opacity: 0.6,
+    fill: false
+  }).addTo(searchMarker);
+
+  // Optional: subtle pulse animation
+  let pulseUp = true;
+  setInterval(() => {
+    sp.setRadius(pulseUp ? 12 : 10);
+    pulseUp = !pulseUp;
+  }, 700);
+
+  sp.bindTooltip(focusPoint.label || 'Search location', { direction: 'top', offset: [0, -12] });
+  points.push([focusPoint.lat, focusPoint.lon]);
+}
 
     sp.bindTooltip(focusPoint.label||'Search location',{direction:'top',offset:[0,-12]});
     points.push([focusPoint.lat,focusPoint.lon]);
