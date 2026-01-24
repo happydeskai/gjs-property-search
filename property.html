@@ -470,7 +470,16 @@ function setupEnquiry(p){
 }
   
   main().then(() => {
-  window.scrollTo({ top: 0, behavior: 'instant' });
+  // Wait a short moment for Squarespace to resize the iframe
+  setTimeout(() => {
+    // Scroll inside iframe
+    window.scrollTo(0, 0);
+
+    // Tell parent (Squarespace) to scroll to top of the embed
+    if (window.parent) {
+      window.parent.postMessage({ type: 'scrollTop', id: 'prop' }, '*');
+    }
+  }, 500);
 });
 </script>
 
