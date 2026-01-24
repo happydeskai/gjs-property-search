@@ -108,24 +108,33 @@
   </div>
 <script>
 /* ----------------------------------------------
-   Scroll-to-top fix (Squarespace-safe)
+   Scroll-to-top fix (Squarespace iframe-safe)
 ---------------------------------------------- */
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
 
-// try multiple times to fight Squarespace’s scroll memory
+// brute-force scroll reset
 function forceTop() {
-  window.scrollTo(0, 0);
-  document.documentElement.scrollTop = 0;
-  document.body.scrollTop = 0;
+  try {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    // tell Squarespace parent iframe to scroll to top as well
+    window.parent?.postMessage({ type: 'forceScrollTop' }, '*');
+  } catch(e) {
+    console.warn('Scroll reset failed:', e);
+  }
 }
 
-// run immediately, on load, and after content renders
-forceTop();
-window.addEventListener('load', () => setTimeout(forceTop, 150));
-document.addEventListener('DOMContentLoaded', () => setTimeout(forceTop, 300));
-setTimeout(forceTop, 1000);
+// fire multiple times to override Squarespace’s delayed load
+setTimeout(forceTop, 0);
+setTimeout(forceTop, 300);
+setTimeout(forceTop, 800);
+setTimeout(forceTop, 1500);
+window.addEventListener('load', () => setTimeout(forceTop, 400));
+document.addEventListener('DOMContentLoaded', () => setTimeout(forceTop, 100));
+
 
 /* Helpers */
 const $ = (s, el=document) => el.querySelector(s);
