@@ -17,12 +17,10 @@
       --shadow-md:0 10px 25px rgba(var(--ring), .08), 0 2px 8px rgba(var(--ring), .06);
       --shadow-lg:0 30px 60px rgba(var(--ring), .14), 0 8px 20px rgba(var(--ring), .10);
     }
-
     *,*::before,*::after{box-sizing:border-box}
     body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#f6f7fb}
     a{color:inherit;text-decoration:none}
     img{max-width:100%;height:auto;display:block}
-
     .wrap{max-width:1200px;margin:0 auto;padding:28px 18px 72px}
     .topbar{margin-bottom:12px}
     .back{display:inline-flex;gap:10px;align-items:center;color:#111;font-weight:500}
@@ -32,51 +30,34 @@
     .chips{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 14px}
     .chip{background:#f6f6f6;border:1px solid #ececec;padding:6px 10px;border-radius:999px;font-size:12px}
     .chip--accent{background:#fff7cf;border-color:#ffe899}
-
     .layout{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:26px}
     @media (max-width:980px){.layout{grid-template-columns:1fr}}
-
     .hero-card{background:var(--card);border-radius:calc(var(--radius) + 4px);overflow:hidden;box-shadow:var(--shadow-lg)}
     .hero{position:relative;aspect-ratio:16/9;background:#eee;overflow:hidden}
     .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-    .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top, rgba(0,0,0,.18), transparent 40%)}
     .gallery{display:flex;gap:10px;padding:12px;overflow:auto;background:#fff}
-    .thumb{flex:0 0 120px;aspect-ratio:4/3;border-radius:12px;overflow:hidden;border:1px solid #eee;box-shadow:var(--shadow-sm);background:#f3f3f3;cursor:pointer;transition:transform .12s ease}
+    .thumb{flex:0 0 120px;aspect-ratio:4/3;border-radius:12px;overflow:hidden;border:1px solid #eee;cursor:pointer;transition:transform .12s ease}
     .thumb:hover{transform:translateY(-2px)}
-    .thumb img{width:100%;height:100%;object-fit:cover}
-
     .sticky{position:sticky;top:18px;align-self:start;display:flex;flex-direction:column;gap:18px}
     .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-md);border:1px solid #edf0f3;overflow:hidden}
     .card__body{padding:16px}
     .card__title{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:12px 16px 8px;border-bottom:1px solid #f0f2f5;background:#fff}
     .actions{display:flex;gap:10px;margin-bottom:12px}
-    .btn{height:44px;padding:0 16px;border-radius:10px;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600;text-decoration:none;box-shadow:var(--shadow-sm)}
+    .btn{height:44px;padding:0 16px;border-radius:10px;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600;text-decoration:none}
     .btn-primary{background:var(--brand);color:#fff}
     .btn-primary::after{content:"";width:6px;height:6px;border-radius:999px;background:var(--accent);margin-left:8px}
     .btn-ghost{background:#fff;border:1px solid #e6e6e6}
     #map{height:260px;border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm)}
-
     .facts{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
     @media (max-width:700px){.facts{grid-template-columns:1fr}}
     .fact{background:#fff;border:1px solid #eef0f3;border-radius:12px;padding:14px;box-shadow:var(--shadow-sm)}
     .fact .label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
     .fact .value{font-weight:600}
-
     .section{margin-top:22px}
-    .section .card__title{display:flex;align-items:center;gap:8px}
-    .section h2{font-size:18px;margin:0;letter-spacing:-.01em}
     .features{margin:10px 0 2px;padding-left:20px}
     .features li{margin:6px 0}
-
     .agent{display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:center;padding:12px 16px;border-top:1px solid #f0f2f5}
-    .agent:first-of-type{border-top:none}
-    .avatar{width:48px;height:48px;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:#f1f3f6;color:#222;font-weight:700;border:1px solid #e9edf2}
-    .avatar img{width:100%;height:100%;object-fit:cover}
-    .modal.open {
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-    }
+    .avatar{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#f1f3f6;color:#222;font-weight:700;border:1px solid #e9edf2}
   </style>
 </head>
 <body>
@@ -87,56 +68,23 @@
       <h1 id="prop-title">Property</h1>
       <div class="muted" id="prop-sub"></div>
       <div class="chips" id="prop-chips"></div>
-
       <div class="layout">
         <div>
           <div class="hero-card">
             <div class="hero" id="hero"></div>
             <div class="gallery" id="thumbs"></div>
           </div>
-
           <div class="section">
-            <div class="card">
-              <div class="card__title">Key details</div>
-              <div class="card__body">
-                <div class="facts" id="facts"></div>
-              </div>
-            </div>
+            <div class="card"><div class="card__title">Key details</div><div class="card__body"><div class="facts" id="facts"></div></div></div>
           </div>
-
           <div class="section" id="overviewCard" style="display:none">
-            <div class="card">
-              <div class="card__title"><h2>Overview</h2></div>
-              <div class="card__body" id="overview"></div>
-            </div>
+            <div class="card"><div class="card__title"><h2>Overview</h2></div><div class="card__body" id="overview"></div></div>
           </div>
-
           <div class="section" id="featuresCard" style="display:none">
-            <div class="card">
-              <div class="card__title"><h2>Key features</h2></div>
-              <div class="card__body"><ul class="features" id="features"></ul></div>
-            </div>
+            <div class="card"><div class="card__title"><h2>Key features</h2></div><div class="card__body"><ul class="features" id="features"></ul></div></div>
           </div>
-
           <div class="section" id="descCard" style="display:none">
-            <div class="card">
-              <div class="card__title"><h2>Description</h2></div>
-              <div class="card__body" id="desc"></div>
-            </div>
-          </div>
-
-          <div class="section" id="locCard" style="display:none">
-            <div class="card">
-              <div class="card__title"><h2>Location</h2></div>
-              <div class="card__body" id="loc"></div>
-            </div>
-          </div>
-
-          <div class="section" id="transportCard" style="display:none">
-            <div class="card">
-              <div class="card__title"><h2>Transport</h2></div>
-              <div class="card__body" id="transport"></div>
-            </div>
+            <div class="card"><div class="card__title"><h2>Description</h2></div><div class="card__body" id="desc"></div></div>
           </div>
         </div>
         <aside class="sticky">
@@ -150,7 +98,6 @@
               <div id="map"></div>
             </div>
           </div>
-
           <div class="card" id="teamBox" style="display:none">
             <div class="card__title">Viewings & further information</div>
             <div id="agents"></div>
@@ -159,138 +106,123 @@
       </div>
     </div>
   </div>
-
 <script>
 /* ----------------------------------------------
-   Scroll-to-top fix (moved early)
+   Scroll-to-top fix
 ---------------------------------------------- */
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
-  window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  setTimeout(() => window.scrollTo(0, 0), 0);
 }
 
-/* ----------------------------------------------
-   Helper functions 
----------------------------------------------- */
+/* Helpers */
 const $ = (s, el=document) => el.querySelector(s);
 const $$ = (s, el=document) => [...el.querySelectorAll(s)];
-function getParam(name){ return new URLSearchParams(location.search).get(name); }
-function pick(...vals){ return vals.find(v => v !== undefined && v !== null && v !== ''); }
-function initials(name){ if(!name) return ""; return String(name).trim().split(/\s+/).slice(0,2).map(w => w[0]?.toUpperCase() || "").join(""); }
+const getParam = n => new URLSearchParams(location.search).get(n);
+const pick = (...vals) => vals.find(v => v !== undefined && v !== null && v !== '');
+const initials = n => n ? n.trim().split(/\s+/).slice(0,2).map(w=>w[0]?.toUpperCase()||'').join('') : '';
 
 function getImages(p){
   const arr=[];
-  if(Array.isArray(p.images)) for(const it of p.images){
-    if(typeof it==='string') arr.push(it);
-    else if(it?.url) arr.push(it.url);
+  if(Array.isArray(p?.images)){
+    for(const it of p.images){
+      if(typeof it==='string') arr.push(it);
+      else if(it?.url) arr.push(it.url);
+    }
   }
-  const fallback=pick(p.image,p.image_url);
+  const fallback = pick(p.image,p.image_url);
   if(fallback) arr.unshift(fallback);
   return [...new Set(arr)].filter(Boolean);
 }
 
 function formatSize(p){
   const a=p.size_from_sqft,b=p.size_to_sqft;
-  if(a&&b) return `${Number(a).toLocaleString()}–${Number(b).toLocaleString()} sq ft`;
-  if(a) return `${Number(a).toLocaleString()} sq ft`;
-  if(b) return `${Number(b).toLocaleString()} sq ft`;
+  if(a&&b) return `${a.toLocaleString()}–${b.toLocaleString()} sq ft`;
+  if(a) return `${a.toLocaleString()} sq ft`;
+  if(b) return `${b.toLocaleString()} sq ft`;
   return '';
 }
 
-/* ----------------------------------------------
-   Main Property Loader 
----------------------------------------------- */
+/* Main */
 async function main(){
   try {
     const id = getParam('id');
     const res = await fetch('https://happydeskai.github.io/gjs-property-search/properties.json', { cache:'no-store' });
-    if (!res.ok) throw new Error(`properties.json HTTP ${res.status}`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const list = await res.json();
 
     const p = list.find(x => String(x.id) === String(id)) || list[0];
-    if (!p){ $('#loading').textContent = 'Property not found.'; return; }
+    if (!p) { $('#loading').textContent='Property not found'; return; }
 
-    document.title = p.address ? `${p.address} — Property` : 'Property';
-    $('#loading').style.display='none'; 
+    $('#loading').style.display='none';
     $('#content').style.display='';
 
     $('#prop-title').textContent = p.address || 'Property';
     $('#prop-sub').textContent = [p.town, p.postcode].filter(Boolean).join(' ');
 
     const chips = $('#prop-chips');
-    const tType  = pick(p.type, p.property_type, Array.isArray(p.types)&&p.types[0]);
-    const tenure = p.to_let ? 'To Let' : (p.for_sale ? 'For Sale' : pick(p.tenure, p.transaction_type));
-    const epc    = pick(p.epc_rating, p.epc);
-    if (tenure) chips.innerHTML += `<span class="chip chip--accent">${tenure}</span>`;
-    if (tType)  chips.innerHTML += `<span class="chip">${tType}</span>`;
-    if (epc)    chips.innerHTML += `<span class="chip">EPC ${epc}</span>`;
+    const type = pick(p.type, p.property_type, Array.isArray(p.types)&&p.types[0]);
+    const tenure = p.to_let ? 'To Let' : (p.for_sale ? 'For Sale' : pick(p.tenure,p.transaction_type));
+    const epc = pick(p.epc_rating,p.epc);
+    if(tenure) chips.innerHTML += `<span class="chip chip--accent">${tenure}</span>`;
+    if(type) chips.innerHTML += `<span class="chip">${type}</span>`;
+    if(epc) chips.innerHTML += `<span class="chip">EPC ${epc}</span>`;
 
-    /* Hero + thumbnails */
-    const imgs = getImages(p);
-    const hero = $('#hero'); 
-    const thumbs = $('#thumbs');
-    const setHero = src => hero.innerHTML = src ? `<img src="${src}" alt="${p.address||'Property'}">` : '';
-    setHero(imgs[0] || '');
-    thumbs.innerHTML = imgs.length ? imgs.slice(0,15)
-      .map(u => `<button class="thumb" type="button" data-src="${u}"><img src="${u}" alt=""></button>`)
-      .join('') : '';
-    thumbs.addEventListener('click', e => {
-      const t = e.target.closest('.thumb'); if (t) setHero(t.dataset.src);
+    const imgs=getImages(p);
+    const hero=$('#hero');
+    const thumbs=$('#thumbs');
+    const setHero=src=>hero.innerHTML=src?`<img src="${src}" alt="${p.address||'Property'}">`:'';
+    setHero(imgs[0]);
+    thumbs.innerHTML = imgs.map(u=>`<button class="thumb" data-src="${u}"><img src="${u}"></button>`).join('');
+    thumbs.addEventListener('click',e=>{
+      const t=e.target.closest('.thumb');
+      if(t) setHero(t.dataset.src);
     });
 
-    /* Key Facts */
-    const facts = $('#facts');
-    const fact = (label,value)=>value?`<div class="fact"><div class="label">${label}</div><div class="value">${value}</div></div>`:'';
+    const facts=$('#facts');
+    const f=(l,v)=>v?`<div class="fact"><div class="label">${l}</div><div class="value">${v}</div></div>`:'';
     facts.innerHTML=[
-      fact('Property type',tType),
-      fact('Tenure',tenure),
-      fact('Size',formatSize(p)),
-      fact('Rent',pick(p.rent,p.rent_psf)),
-      fact('Rateable value',p.rateable_value ? `£${p.rateable_value.toLocaleString()}` : ''),
-      fact('EPC',epc),
-      fact('Last updated',p.last_updated||'')
+      f('Property type',type),
+      f('Tenure',tenure),
+      f('Size',formatSize(p)),
+      f('Rent',pick(p.rent,p.rent_psf)),
+      f('Rateable value',p.rateable_value?`£${p.rateable_value.toLocaleString()}`:''),
+      f('EPC',epc),
+      f('Last updated',p.last_updated||'')
     ].join('');
 
-    /* Overview, Description, Features */
-    if (p.summary){ $('#overview').innerHTML = p.summary; $('#overviewCard').style.display=''; }
-    if (p.description){ $('#desc').innerHTML = p.description; $('#descCard').style.display=''; }
-    if (Array.isArray(p.features) && p.features.length){
-      $('#features').innerHTML = p.features.map(f=>`<li>${f}</li>`).join('');
+    if(p.summary){ $('#overview').innerHTML=p.summary; $('#overviewCard').style.display=''; }
+    if(p.description){ $('#desc').innerHTML=p.description; $('#descCard').style.display=''; }
+    if(Array.isArray(p.features)&&p.features.length){
+      $('#features').innerHTML=p.features.map(x=>`<li>${x}</li>`).join('');
       $('#featuresCard').style.display='';
     }
 
-    /* Brochure */
-    const brochure = pick(p.brochure_url, p.brochure, p.files?.file?.url);
-    if (brochure){ $('#brochureBtn').href = brochure; $('#brochureBtn').style.display='inline-flex'; }
-    else $('#brochureBtn').style.display='none';
+    const brochure=pick(p.brochure_url,p.brochure,p.files?.file?.url);
+    const btn=$('#brochureBtn');
+    if(brochure){ btn.href=brochure; btn.style.display='inline-flex'; } else btn.style.display='none';
 
-    /* Map */
-    if (typeof L !== 'undefined' && p.lat && p.lon){
-      const map = L.map('map').setView([p.lat, p.lon], 14);
+    if(typeof L!=='undefined' && p.lat && p.lon){
+      const map=L.map('map').setView([p.lat,p.lon],14);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-      L.circleMarker([p.lat, p.lon], {radius:7,weight:2,color:'#111',fillColor:'#111',fillOpacity:.85}).addTo(map);
+      L.circleMarker([p.lat,p.lon],{radius:7,weight:2,color:'#111',fillColor:'#111',fillOpacity:.85}).addTo(map);
     }
 
-    /* Contacts */
-    const contacts = Array.isArray(p.contacts) ? p.contacts : (p.contacts ? [p.contacts] : []);
-    if (contacts.length){
-      const list=$('#agents');
-      list.innerHTML=contacts.map(c=>{
-        const init=initials(c.name||'');
-        const tel=c.phone||'';
-        return `<div class="agent">
-          <div class="avatar">${init}</div>
+    const contacts=Array.isArray(p.contacts)?p.contacts:(p.contacts?[p.contacts]:[]);
+    if(contacts.length){
+      $('#agents').innerHTML=contacts.map(c=>`
+        <div class="agent">
+          <div class="avatar">${initials(c.name||'')}</div>
           <div>
             <div class="name">${c.name||''}</div>
             <div class="meta">${[c.company,c.branch].filter(Boolean).join(' • ')}</div>
-            ${tel?`<div class="meta">${tel}</div>`:''}
+            ${c.phone?`<div class="meta">${c.phone}</div>`:''}
             <div class="cta">
               ${c.email?`<a href="mailto:${c.email}">Email</a>`:''}
-              ${tel?`<a href="tel:${tel}">Call</a>`:''}
+              ${c.phone?`<a href="tel:${c.phone}">Call</a>`:''}
             </div>
           </div>
-        </div>`;
-      }).join('');
+        </div>`).join('');
       $('#teamBox').style.display='';
     }
 
@@ -302,23 +234,19 @@ async function main(){
   }
 }
 
-/* ----------------------------------------------
-   Enquiry Modal Logic 
----------------------------------------------- */
+/* Enquiry modal logic */
 function setupEnquiry(p){
-  const modal = $('#enquiryModal');
-  const openBtn = $('#enquireBtn');
-  const closeBtn = $('#closeModal');
-  const form = $('#enqForm');
-  const hint = $('#propRefHint');
-  if (!modal || !openBtn || !form) return;
-
-  openBtn.addEventListener('click',()=>{
+  const modal=$('#enquiryModal');
+  const open=$('#enquireBtn');
+  const close=$('#closeModal');
+  const form=$('#enqForm');
+  const hint=$('#propRefHint');
+  open.addEventListener('click',()=>{
     modal.style.display='flex';
-    hint.textContent = p.address ? `Enquiry about: ${p.address}, ${p.town || ''}` : '';
+    hint.textContent=`Enquiry about: ${p.address||'Property'}`;
     document.body.style.overflow='hidden';
   });
-  closeBtn?.addEventListener('click',()=>{
+  close.addEventListener('click',()=>{
     modal.style.display='none';
     document.body.style.overflow='';
   });
@@ -337,96 +265,31 @@ function setupEnquiry(p){
   });
 }
 
-/* ----------------------------------------------
-   Initialize on load
----------------------------------------------- */
+/* Initialize */
 document.addEventListener('DOMContentLoaded', main);
 </script>
-
-<!-- ======================= ENQUIRY MODAL ======================= -->
+<!-- Enquiry Modal -->
 <div id="enquiryModal" class="modal" style="
-  display:none;
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.6);
-  z-index:1000;
-  backdrop-filter:blur(4px);
-  align-items:center;
-  justify-content:center;
-  padding:20px;">
-  <div style="background:#fff;border-radius:16px;max-width:520px;width:100%;box-shadow:0 10px 30px rgba(0,0,0,.15);overflow:hidden;position:relative;">
-    <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;border-bottom:1px solid #eee;">
+  display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);
+  z-index:1000;backdrop-filter:blur(4px);align-items:center;
+  justify-content:center;padding:20px;">
+  <div style="background:#fff;border-radius:16px;max-width:520px;width:100%;
+              box-shadow:0 10px 30px rgba(0,0,0,.15);overflow:hidden;">
+    <div style="display:flex;align-items:center;justify-content:space-between;
+                padding:18px 22px;border-bottom:1px solid #eee;">
       <h2 style="margin:0;font-size:20px;">Enquire Now</h2>
-      <button id="closeModal" style="border:none;background:none;font-size:22px;cursor:pointer;line-height:1;">×</button>
+      <button id="closeModal" style="border:none;background:none;font-size:22px;cursor:pointer;">×</button>
     </div>
     <div style="padding:22px;">
-      <p id="propRefHint" style="font-size:13px;color:#555;margin-top:0;margin-bottom:14px;"></p>
+      <p id="propRefHint" style="font-size:13px;color:#555;margin:0 0 14px;"></p>
       <form id="enqForm">
         <label>First Name</label>
-        <input id="firstName" type="text" style="width:100%;margin-bottom:10px;padding:8px;border:1px solid #ccc;border-radius:6px;">
+        <input type="text" id="firstName" style="width:100%;margin-bottom:8px;">
         <label>Last Name</label>
-        <input id="lastName" type="text" style="width:100%;margin-bottom:10px;padding:8px;border:1px solid #ccc;border-radius:6px;">
+        <input type="text" id="lastName" style="width:100%;margin-bottom:8px;">
         <label>Email</label>
-        <input id="email" type="email" style="width:100%;margin-bottom:10px;padding:8px;border:1px solid #ccc;border-radius:6px;">
+        <input type="email" id="email" style="width:100%;margin-bottom:8px;">
         <label>Phone</label>
-        <input id="phone" type="tel" style="width:100%;margin-bottom:10px;padding:8px;border:1px solid #ccc;border-radius:6px;">
+        <input type="tel" id="phone" style="width:100%;margin-bottom:8px;">
         <label>Message</label>
-        <textarea id="message" rows="3" style="width:100%;margin-bottom:16px;padding:8px;border:1px solid #ccc;border-radius:6px;"></textarea>
-        <button id="sendEnquiryBtn" type="submit" style="background:#101112;color:#fff;border:none;padding:10px 16px;border-radius:8px;cursor:pointer;">
-          Send Enquiry
-        </button>
-      </form>
-    </div>
-  </div>
-</div>
-
-<script>
-/* ----------------------------------------------
-   Enquiry Modal Logic
----------------------------------------------- */
-function setupEnquiry(p){
-  const modal = $('#enquiryModal');
-  const openBtn = $('#enquireBtn');
-  const closeBtn = $('#closeModal');
-  const form = $('#enqForm');
-  const hint = $('#propRefHint');
-
-  openBtn.addEventListener('click',()=>{
-    modal.style.display='flex';
-    hint.textContent = p.address ? `Enquiry about: ${p.address}, ${p.town || ''}` : '';
-    document.body.style.overflow='hidden';
-  });
-
-  closeBtn.addEventListener('click',()=>{
-    modal.style.display='none';
-    document.body.style.overflow='';
-  });
-
-  modal.addEventListener('click',e=>{
-    if(e.target===modal){
-      modal.style.display='none';
-      document.body.style.overflow='';
-    }
-  });
-
-  form.addEventListener('submit',e=>{
-    e.preventDefault();
-    alert('Thank you for your enquiry. A member of the team will be in touch shortly.');
-    modal.style.display='none';
-    document.body.style.overflow='';
-    form.reset();
-  });
-}
-
-/* ----------------------------------------------
-   Resize helper for iframes (Squarespace)
----------------------------------------------- */
-window.addEventListener('message',e=>{
-  if(e.data?.type==='resize-iframe' && e.data?.height){
-    document.body.style.height = e.data.height + 'px';
-  }
-});
-</script>
-
-</body>
-</html>
+        <textarea id="message" rows="
