@@ -568,20 +568,37 @@ async function applyFilters(){
     return true;
   });
 
-  // text match first (optional)
-  const textMatch = q
-    ? base.filter(p => {
-        const text = `${p.address||''} ${p.town||''} ${p.postcode||''}`.toLowerCase();
-        return text.includes(q.toLowerCase());
-      })
-    : base;
+// if no query, no geocode/radius: just render filtered list
+if (!q) {
+  render(base);
+  updateMap(base);
+  return;
+}
 
-  // if no query, no geocode/radius: just render filtered list
-  if (!q) {
-    render(textMatch);
-    updateMap(textMatch);
-    return;
-  }
+// geocode regardless of whether it's a postcode or town
+const point = await geocodePlace(q);
+if (!point) {
+  render(base);
+  updateMap(base);
+  return;
+}
+
+// sort everything by distance from geocoded point
+let finalList = sortByDistance(base, point);
+
+// if radius is selected, filter by it
+let radiusMiles = null;
+if (radiusVal !== 'any') {
+  radiusMiles = Number(radiusVal);
+  const meterLimit = milesToMeters(radiusMiles);
+  finalList = finalList.filter(p => isFinite(p.__distance) && p.__distance <= meterLimit);
+}
+
+if (finalList.length > 60) finalList = finalList.slice(0, 60);
+
+render(finalList, { nearLabel: point.label || q, radiusMiles });
+updateMap(finalList, point);
+
 
   // geocode
   const point = await geocodePlace(q);
