@@ -468,9 +468,12 @@ function setupEnquiry(p){
     window.location.href=href;close();
   };
 }
-
-main();
+  
+  main().then(() => {
+  window.scrollTo({ top: 0, behavior: 'instant' });
+});
 </script>
+
   <!-- Enquiry modal -->
   <div class="modal" id="enquiryModal" aria-hidden="true" role="dialog" aria-labelledby="enqTitle">
     <div class="modal__backdrop" data-close></div>
