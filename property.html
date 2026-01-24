@@ -470,23 +470,30 @@ function setupEnquiry(p){
 }
   
 main().then(() => {
+  // wait for Squarespace to finish resizing
   setTimeout(() => {
-    // Force iframe scroll to top
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    try {
+      // reset any iframe-internal scroll
+      window.scrollTo(0, 0);
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
 
-    // Force parent Squarespace page to realign iframe
-    if (window.parent) {
-      const iframe = window.frameElement;
-      if (iframe && iframe.scrollIntoView) {
-        iframe.scrollIntoView({ behavior: 'instant', block: 'start' });
+      // scroll the Squarespace parent page to top of this embed
+      if (window.frameElement) {
+        const rect = window.frameElement.getBoundingClientRect();
+        const offset = window.parent.scrollY + rect.top - 40; // small top offset for spacing
+        window.parent.scrollTo({ top: offset, behavior: 'instant' });
       }
-      window.parent.postMessage({ type: 'resize', id: 'prop' }, '*');
+
+      // trigger a final resize message to Squarespace
+      if (window.parent) {
+        window.parent.postMessage({ type: 'gjs-prop-height', id: 'prop', height: document.body.scrollHeight }, '*');
+      }
+    } catch (err) {
+      console.warn('Scroll-to-top failed:', err);
     }
-  }, 500);
+  }, 800);
 });
-</script>
 
   <!-- Enquiry modal -->
   <div class="modal" id="enquiryModal" aria-hidden="true" role="dialog" aria-labelledby="enqTitle">
