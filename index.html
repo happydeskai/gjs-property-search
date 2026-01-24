@@ -275,10 +275,6 @@ function updateMap(list,focusPoint){
     pulseUp = !pulseUp;
   }, 1200);
 
-  sp.bindTooltip(focusPoint.label || 'Search location', { direction: 'top', offset: [0, -12] });
-  points.push([focusPoint.lat, focusPoint.lon]);
-}
-
     sp.bindTooltip(focusPoint.label||'Search location',{direction:'top',offset:[0,-12]});
     points.push([focusPoint.lat,focusPoint.lon]);
   }
