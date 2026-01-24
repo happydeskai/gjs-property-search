@@ -135,6 +135,21 @@ setTimeout(forceTop, 1500);
 window.addEventListener('load', () => setTimeout(forceTop, 400));
 document.addEventListener('DOMContentLoaded', () => setTimeout(forceTop, 100));
 
+/* ----------------------------------------------
+   Notify Squarespace parent to scroll top
+---------------------------------------------- */
+function notifyParentScrollTop() {
+  try {
+    window.parent?.postMessage({ type: 'scroll-top' }, '*');
+  } catch (e) {
+    console.warn('Scroll-top message failed', e);
+  }
+}
+
+// Call it right away and after property loads
+notifyParentScrollTop();
+window.addEventListener('load', () => setTimeout(notifyParentScrollTop, 200));
+document.addEventListener('DOMContentLoaded', () => setTimeout(notifyParentScrollTop, 500));
 
 /* Helpers */
 const $ = (s, el=document) => el.querySelector(s);
