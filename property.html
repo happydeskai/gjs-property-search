@@ -469,15 +469,20 @@ function setupEnquiry(p){
   };
 }
   
-  main().then(() => {
-  // Wait a short moment for Squarespace to resize the iframe
+main().then(() => {
   setTimeout(() => {
-    // Scroll inside iframe
+    // Force iframe scroll to top
     window.scrollTo(0, 0);
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 
-    // Tell parent (Squarespace) to scroll to top of the embed
+    // Force parent Squarespace page to realign iframe
     if (window.parent) {
-      window.parent.postMessage({ type: 'scrollTop', id: 'prop' }, '*');
+      const iframe = window.frameElement;
+      if (iframe && iframe.scrollIntoView) {
+        iframe.scrollIntoView({ behavior: 'instant', block: 'start' });
+      }
+      window.parent.postMessage({ type: 'resize', id: 'prop' }, '*');
     }
   }, 500);
 });
