@@ -183,13 +183,36 @@ function notifyParentHeight() {
   }
 }
 
-notifyParentHeight();
-window.addEventListener('load', () => setTimeout(notifyParentHeight, 200));
-window.addEventListener('resize', () => setTimeout(notifyParentHeight, 100));
+let lastHeight = 0;
+let heightTimer = null;
 
+function notifyParentHeightStable() {
+  const h = getPageHeight();
+
+  // Only notify if height meaningfully changed
+  if (Math.abs(h - lastHeight) > 8) {
+    lastHeight = h;
+    try {
+      window.parent?.postMessage(
+        { type: 'gjs-prop-height', height: h },
+        '*'
+      );
+    } catch (e) {}
+  }
+}
+
+// Run once after full render
+window.addEventListener('load', () => {
+  setTimeout(notifyParentHeightStable, 300);
+});
+
+// Observe layout changes (debounced)
 if ('ResizeObserver' in window) {
-  const ro = new ResizeObserver(() => notifyParentHeight());
-  ro.observe(document.body);
+  const ro = new ResizeObserver(() => {
+    clearTimeout(heightTimer);
+    heightTimer = setTimeout(notifyParentHeightStable, 120);
+  });
+  ro.observe(document.getElementById('content'));
 }
 
 /* ----------------------------------------------
