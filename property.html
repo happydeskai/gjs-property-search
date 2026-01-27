@@ -133,6 +133,13 @@
     </div>
   </div>
 <script>
+// 🔥 Reset iframe height early so parent can shrink
+try {
+  window.parent?.postMessage(
+    { type: 'gjs-prop-height', height: 0 },
+    '*'
+  );
+} catch (e) {}
 /* ----------------------------------------------
    Scroll-to-top fix (Squarespace iframe-safe)
 ---------------------------------------------- */
