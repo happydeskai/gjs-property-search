@@ -30,13 +30,27 @@
     .chips{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 14px}
     .chip{background:#f6f6f6;border:1px solid #ececec;padding:6px 10px;border-radius:999px;font-size:12px}
     .chip--accent{background:#fff7cf;border-color:#ffe899}
-    .layout{position:relative;gap:26px}
-    .main-col{margin-right:386px}
-    .sticky{float:right;width:360px;position:sticky;top:18px;align-self:start;display:flex;flex-direction:column;gap:18px}
-    @media (max-width:980px){
-      .main-col{margin-right:0}
-      .sticky{float:none;width:auto;position:static}
+
+    /* --- Modern Grid Layout --- */
+    .layout{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) 360px;
+      gap:26px;
+      align-items:flex-start;
     }
+    @media(max-width:980px){.layout{grid-template-columns:1fr}}
+    .sticky{
+      position:sticky;
+      top:18px;
+      align-self:start;
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      height:fit-content;
+      max-height:calc(100vh - 40px);
+      overflow-y:auto;
+    }
+
     .hero-card{background:var(--card);border-radius:calc(var(--radius) + 4px);overflow:hidden;box-shadow:var(--shadow-lg)}
     .hero{position:relative;aspect-ratio:16/9;background:#eee;overflow:hidden}
     .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -53,7 +67,7 @@
     .btn-ghost{background:#fff;border:1px solid #e6e6e6}
     #map{height:260px;border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm)}
     .facts{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
-    @media (max-width:700px){.facts{grid-template-columns:1fr}}
+    @media(max-width:700px){.facts{grid-template-columns:1fr}}
     .fact{background:#fff;border:1px solid #eef0f3;border-radius:12px;padding:14px;box-shadow:var(--shadow-sm)}
     .fact .label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
     .fact .value{font-weight:600}
@@ -64,6 +78,7 @@
     .avatar{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#f1f3f6;color:#222;font-weight:700;border:1px solid #e9edf2}
   </style>
 </head>
+
 <body>
   <div class="wrap">
     <div class="topbar"><a class="back" href="index.html">Back to results</a></div>
@@ -72,25 +87,31 @@
       <h1 id="prop-title">Property</h1>
       <div class="muted" id="prop-sub"></div>
       <div class="chips" id="prop-chips"></div>
+
       <div class="layout">
-        <div class="main-col">
+        <div>
           <div class="hero-card">
             <div class="hero" id="hero"></div>
             <div class="gallery" id="thumbs"></div>
           </div>
+
           <div class="section">
             <div class="card"><div class="card__title">Key details</div><div class="card__body"><div class="facts" id="facts"></div></div></div>
           </div>
+
           <div class="section" id="overviewCard" style="display:none">
             <div class="card"><div class="card__title"><h2>Overview</h2></div><div class="card__body" id="overview"></div></div>
           </div>
+
           <div class="section" id="featuresCard" style="display:none">
             <div class="card"><div class="card__title"><h2>Key features</h2></div><div class="card__body"><ul class="features" id="features"></ul></div></div>
           </div>
+
           <div class="section" id="descCard" style="display:none">
             <div class="card"><div class="card__title"><h2>Description</h2></div><div class="card__body" id="desc"></div></div>
           </div>
         </div>
+
         <aside class="sticky">
           <div class="card">
             <div class="card__title">Enquire about this property</div>
@@ -102,6 +123,7 @@
               <div id="map"></div>
             </div>
           </div>
+
           <div class="card" id="teamBox" style="display:none">
             <div class="card__title">Viewings & further information</div>
             <div id="agents"></div>
@@ -114,24 +136,18 @@
 /* ----------------------------------------------
    Scroll-to-top fix (Squarespace iframe-safe)
 ---------------------------------------------- */
-if ('scrollRestoration' in history) {
-  history.scrollRestoration = 'manual';
-}
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 
-// brute-force scroll reset
 function forceTop() {
   try {
     window.scrollTo(0, 0);
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
-    // tell Squarespace parent iframe to scroll to top as well
     window.parent?.postMessage({ type: 'forceScrollTop' }, '*');
   } catch(e) {
     console.warn('Scroll reset failed:', e);
   }
 }
-
-// fire multiple times to override Squarespace’s delayed load
 setTimeout(forceTop, 0);
 setTimeout(forceTop, 300);
 setTimeout(forceTop, 800);
@@ -140,7 +156,7 @@ window.addEventListener('load', () => setTimeout(forceTop, 400));
 document.addEventListener('DOMContentLoaded', () => setTimeout(forceTop, 100));
 
 /* ----------------------------------------------
-   Notify Squarespace parent to scroll top
+   Notify Squarespace parent + Resize iframe
 ---------------------------------------------- */
 function notifyParentScrollTop() {
   try {
@@ -149,24 +165,14 @@ function notifyParentScrollTop() {
     console.warn('Scroll-top message failed', e);
   }
 }
-
-// Call it right away and after property loads
 notifyParentScrollTop();
 window.addEventListener('load', () => setTimeout(notifyParentScrollTop, 200));
 document.addEventListener('DOMContentLoaded', () => setTimeout(notifyParentScrollTop, 500));
 
-/* ----------------------------------------------
-   Resize iframe to content height
----------------------------------------------- */
 function getPageHeight() {
   const doc = document.documentElement;
   const body = document.body;
-  return Math.max(
-    doc.scrollHeight,
-    doc.offsetHeight,
-    body.scrollHeight,
-    body.offsetHeight
-  );
+  return Math.max(doc.scrollHeight, doc.offsetHeight, body.scrollHeight, body.offsetHeight);
 }
 
 function notifyParentHeight() {
@@ -177,7 +183,6 @@ function notifyParentHeight() {
   }
 }
 
-// call now and after layout-affecting events
 notifyParentHeight();
 window.addEventListener('load', () => setTimeout(notifyParentHeight, 200));
 window.addEventListener('resize', () => setTimeout(notifyParentHeight, 100));
@@ -187,7 +192,9 @@ if ('ResizeObserver' in window) {
   ro.observe(document.body);
 }
 
-/* Helpers */
+/* ----------------------------------------------
+   Helpers
+---------------------------------------------- */
 const $ = (s, el=document) => el.querySelector(s);
 const $$ = (s, el=document) => [...el.querySelectorAll(s)];
 const getParam = n => new URLSearchParams(location.search).get(n);
@@ -215,7 +222,9 @@ function formatSize(p){
   return '';
 }
 
-/* Main */
+/* ----------------------------------------------
+   Main Property Render
+---------------------------------------------- */
 async function main(){
   try {
     const id = getParam('id');
@@ -298,22 +307,26 @@ async function main(){
       $('#teamBox').style.display='';
     }
 
-    // ensure iframe height updates after dynamic content renders
+    // Update iframe height after dynamic content renders
     requestAnimationFrame(() => notifyParentHeight());
-    setTimeout(() => notifyParentHeight(), 300);
+    setTimeout(() => notifyParentHeight(), 400);
 
     setupEnquiry(p);
-// ✅ Ensure Squarespace scrolls to top even if iframe loads too early
-setTimeout(() => {
-  try { window.parent?.postMessage({ type: 'scroll-top' }, '*'); } catch(e){}
-}, 1200);
+
+    // Safety scroll sync
+    setTimeout(() => {
+      try { window.parent?.postMessage({ type: 'scroll-top' }, '*'); } catch(e){}
+    }, 1200);
+
   } catch(err){
     console.error(err);
     $('#loading').textContent=`Failed to load property (${err.message||err})`;
   }
 }
 
-/* Enquiry modal logic */
+/* ----------------------------------------------
+   Enquiry Modal Logic
+---------------------------------------------- */
 function setupEnquiry(p){
   const modal=$('#enquiryModal');
   const open=$('#enquireBtn');
@@ -344,9 +357,9 @@ function setupEnquiry(p){
   });
 }
 
-/* Initialize */
 document.addEventListener('DOMContentLoaded', main);
 </script>
+
 <!-- Enquiry Modal -->
 <div id="enquiryModal" class="modal" style="
   display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);
@@ -372,8 +385,7 @@ document.addEventListener('DOMContentLoaded', main);
         <label>Phone</label>
         <input type="tel" id="phone" style="width:100%;margin-bottom:8px;">
         <label>Message</label>
-        <textarea id="message" rows="
-                 <textarea id="message" rows="3"
+        <textarea id="message" rows="3"
           style="width:100%;margin-bottom:14px;padding:8px;
                  border:1px solid #ccc;border-radius:6px;"></textarea>
         <button id="sendEnquiryBtn" type="submit"
@@ -385,6 +397,5 @@ document.addEventListener('DOMContentLoaded', main);
     </div>
   </div>
 </div>
-
 </body>
 </html>
