@@ -76,6 +76,9 @@
     .features li{margin:6px 0}
     .agent{display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:center;padding:12px 16px;border-top:1px solid #f0f2f5}
     .avatar{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#f1f3f6;color:#222;font-weight:700;border:1px solid #e9edf2}
+
+    /* Small sidebar agent card tweaks */
+    #teamBox .agent { padding:12px; border-top:none; }
   </style>
 </head>
 
@@ -107,6 +110,14 @@
             <div class="card"><div class="card__title"><h2>Key features</h2></div><div class="card__body"><ul class="features" id="features"></ul></div></div>
           </div>
 
+          <!-- Location card (shown only if JSON contains `location`) -->
+          <div class="section" id="locationCard" style="display:none">
+            <div class="card">
+              <div class="card__title"><h2>Location</h2></div>
+              <div class="card__body" id="location"></div>
+            </div>
+          </div>
+
           <div class="section" id="descCard" style="display:none">
             <div class="card"><div class="card__title"><h2>Description</h2></div><div class="card__body" id="desc"></div></div>
           </div>
@@ -124,6 +135,7 @@
             </div>
           </div>
 
+          <!-- Sidebar agents box (will be populated from `contacts` or `agents`) -->
           <div class="card" id="teamBox" style="display:none">
             <div class="card__title">Viewings & further information</div>
             <div id="agents"></div>
@@ -227,6 +239,15 @@ async function main() {
     const p = list.find(x => String(x.id) === String(id)) || list[0];
     if (!p) throw new Error('Property not found');
 
+    // --- Normalise common/legacy field names so the rest of the template can use stable keys
+    p.agents = p.agents || p.contacts || [];
+    p.brochure = p.brochure || p.brochure_url || p.brochureUrl || '';
+    p.epc = p.epc || p.epc_rating || p.epcRating || '';
+    p.rent_text = p.rent || (p.rent_psf ? (typeof p.rent_psf === 'number' ? `£${p.rent_psf.toLocaleString()} per sq ft` : String(p.rent_psf)) : '') || '';
+    p.rateable_value = p.rateable_value || p.rateableValue || p.rateable || '';
+    p.last_updated = p.last_updated || p.updated_at || p.lastUpdated || '';
+    p.types = p.types || p.type || [];
+
     $('#loading').style.display = 'none';
     $('#content').style.display = '';
 
@@ -265,13 +286,17 @@ async function main() {
       }
     });
 
-    /* facts (build DOM to avoid innerHTML injection) */
+    /* facts (build a richer facts array) */
     const facts = [];
     if (p.size_from_sqft) {
       const size = Number(p.size_from_sqft);
       facts.push(['Size', Number.isFinite(size) ? `${size.toLocaleString()} sq ft` : String(p.size_from_sqft)]);
     }
     if (p.epc) facts.push(['EPC', String(p.epc)]);
+    if (p.rent_text) facts.push(['Rent', String(p.rent_text)]);
+    if (p.rateable_value) facts.push(['Rateable value', String(p.rateable_value)]);
+    if (p.last_updated) facts.push(['Updated', String(p.last_updated)]);
+    if (p.types && p.types.length) facts.push(['Type', p.types.join(', ')]);
 
     const factsEl = $('#facts');
     factsEl.innerHTML = '';
@@ -289,12 +314,16 @@ async function main() {
       // If you want to allow rich HTML, sanitize with a library (e.g. DOMPurify) before assigning to innerHTML.
       $('#desc').textContent = p.description;
       $('#descCard').style.display = '';
+    } else {
+      $('#descCard').style.display = 'none';
     }
 
     /* overview */
     if (p.overview) {
       $('#overview').textContent = p.overview;
       $('#overviewCard').style.display = '';
+    } else {
+      $('#overviewCard').style.display = 'none';
     }
 
     /* features */
@@ -305,6 +334,16 @@ async function main() {
         const li = document.createElement('li'); li.textContent = fv; featuresEl.appendChild(li);
       });
       $('#featuresCard').style.display = '';
+    } else {
+      $('#featuresCard').style.display = 'none';
+    }
+
+    /* location (optional human readable location text in JSON) */
+    if (p.location) {
+      $('#location').textContent = p.location;
+      $('#locationCard').style.display = '';
+    } else {
+      $('#locationCard') && ($('#locationCard').style.display = 'none');
     }
 
     /* brochure */
@@ -316,7 +355,7 @@ async function main() {
       brochureBtn.style.display = 'none';
     }
 
-    /* agents */
+    /* agents (normalised from contacts) */
     if (p.agents && p.agents.length) {
       const agentsBox = document.getElementById('teamBox');
       const agentsEl = document.getElementById('agents');
@@ -332,6 +371,8 @@ async function main() {
         agentsEl.appendChild(div);
       });
       agentsBox.style.display = '';
+    } else {
+      document.getElementById('teamBox').style.display = 'none';
     }
 
     /* map */
