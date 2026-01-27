@@ -145,27 +145,52 @@ const getParam = n => new URLSearchParams(location.search).get(n);
 const pick = (...vals) => vals.find(v => v !== undefined && v !== null && v !== '');
 const initials = n => n ? n.trim().split(/\s+/).slice(0,2).map(w=>w[0]?.toUpperCase()||'').join('') : '';
 
-/* ---------- iframe height ---------- */
+/* ---------- Robust iframe height reporting ---------- */
 let lastHeight = 0;
 let heightTimer = null;
 
 function getPageHeight() {
+  const body = document.body;
+  const doc = document.documentElement;
   return Math.max(
-    document.body.scrollHeight,
-    document.documentElement.scrollHeight
+    body.scrollHeight, doc.scrollHeight,
+    body.offsetHeight, doc.offsetHeight,
+    doc.clientHeight
   );
 }
 
-function notifyParentHeight() {
-  const h = getPageHeight();
-  if (Math.abs(h - lastHeight) < 8) return;
-  lastHeight = h;
+function notifyParentHeightImmediate() {
   try {
+    const h = getPageHeight();
+    if (Math.abs(h - lastHeight) < 6) return;
+    lastHeight = h;
     window.parent?.postMessage({ type: 'gjs-prop-height', height: h }, '*');
-  } catch(e){}
+  } catch (e){}
 }
 
-/* ---------- scroll to top ONCE ---------- */
+function notifyParentHeight() {
+  clearTimeout(heightTimer);
+  heightTimer = setTimeout(() => notifyParentHeightImmediate(), 40);
+}
+
+function scheduleHeightPings() {
+  notifyParentHeight();
+  setTimeout(notifyParentHeight, 120);
+  setTimeout(notifyParentHeight, 350);
+  setTimeout(notifyParentHeight, 900);
+  setTimeout(notifyParentHeight, 2000);
+}
+
+function watchImages() {
+  const imgs = Array.from(document.images || []);
+  imgs.forEach(img => {
+    if (img.complete) return;
+    img.addEventListener('load', scheduleHeightPings, { once: true });
+    img.addEventListener('error', scheduleHeightPings, { once: true });
+  });
+}
+
+/* ---------- iframe scroll-to-top ---------- */
 let didScrollTop = false;
 function scrollTopOnce() {
   if (didScrollTop) return;
@@ -176,14 +201,25 @@ function scrollTopOnce() {
   } catch(e){}
 }
 
+/* ---------- Safe DOM helpers ---------- */
+function safeText(el, txt) { el.textContent = txt ?? ''; }
+function createImg(src, alt) {
+  const img = document.createElement('img');
+  img.src = src;
+  img.alt = alt || '';
+  return img;
+}
+
 /* ---------- main render ---------- */
 async function main() {
   try {
     const id = getParam('id');
+    console.log('property main running, id=', id);
     const res = await fetch(
       'https://happydeskai.github.io/gjs-property-search/properties.json',
       { cache: 'no-store' }
     );
+    if (!res.ok) throw new Error('Failed to fetch properties.json: ' + res.status);
     const list = await res.json();
     const p = list.find(x => String(x.id) === String(id)) || list[0];
     if (!p) throw new Error('Property not found');
@@ -194,48 +230,137 @@ async function main() {
     $('#prop-title').textContent = p.address || 'Property';
     $('#prop-sub').textContent = [p.town, p.postcode].filter(Boolean).join(' ');
 
-    /* images */
-    const imgs = (p.images || []).map(i => i.url || i).filter(Boolean);
-    if (imgs[0]) $('#hero').innerHTML = `<img src="${imgs[0]}">`;
-    $('#thumbs').innerHTML = imgs.map(u =>
-      `<button class="thumb" data-src="${u}"><img src="${u}"></button>`
-    ).join('');
-    $('#thumbs').onclick = e => {
+    /* images (use DOM methods to avoid accidental injection) */
+    const imgs = (p.images || []).map(i => (typeof i === 'string' ? i : i.url)).filter(Boolean);
+    const hero = $('#hero');
+    hero.innerHTML = '';
+    if (imgs[0] && /^https?:\/\/i.test(imgs[0])) {
+      hero.appendChild(createImg(imgs[0], p.address || 'Property image'));
+    }
+
+    const thumbsEl = $('#thumbs');
+    thumbsEl.innerHTML = '';
+    imgs.forEach(u => {
+      if (!/^https?:\/\/i.test(u)) return;
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'thumb';
+      btn.dataset.src = u;
+      btn.appendChild(createImg(u, p.address ? `Thumbnail for ${p.address}` : 'Thumbnail'));
+      thumbsEl.appendChild(btn);
+    });
+
+    thumbsEl.addEventListener('click', (e) => {
       const t = e.target.closest('.thumb');
-      if (t) $('#hero').innerHTML = `<img src="${t.dataset.src}">`;
-    };
+      if (t) {
+        const src = t.dataset.src;
+        if (/^https?:\/\/i.test(src)) {
+          hero.innerHTML = '';
+          hero.appendChild(createImg(src, p.address || 'Property image'));
+          scheduleHeightPings();
+        }
+      }
+    });
 
-    /* facts */
+    /* facts (build DOM to avoid innerHTML injection) */
     const facts = [];
-    if (p.size_from_sqft) facts.push(['Size', `${p.size_from_sqft.toLocaleString()} sq ft`]);
-    if (p.epc) facts.push(['EPC', p.epc]);
-    $('#facts').innerHTML = facts.map(f =>
-      `<div class="fact"><div class="label">${f[0]}</div><div class="value">${f[1]}</div></div>`
-    ).join('');
+    if (p.size_from_sqft) {
+      const size = Number(p.size_from_sqft);
+      facts.push(['Size', Number.isFinite(size) ? `${size.toLocaleString()} sq ft` : String(p.size_from_sqft)]);
+    }
+    if (p.epc) facts.push(['EPC', String(p.epc)]);
 
+    const factsEl = $('#facts');
+    factsEl.innerHTML = '';
+    facts.forEach(([label, value]) => {
+      const f = document.createElement('div');
+      f.className = 'fact';
+      const lab = document.createElement('div'); lab.className = 'label'; lab.textContent = label;
+      const val = document.createElement('div'); val.className = 'value'; val.textContent = value;
+      f.appendChild(lab); f.appendChild(val); factsEl.appendChild(f);
+    });
+
+    /* description */
     if (p.description) {
-      $('#desc').innerHTML = p.description;
+      // For safety we insert as textContent to avoid rendering untrusted HTML.
+      // If you want to allow rich HTML, sanitize with a library (e.g. DOMPurify) before assigning to innerHTML.
+      $('#desc').textContent = p.description;
       $('#descCard').style.display = '';
     }
 
-    /* map */
-    if (window.L && p.lat && p.lon) {
-      const map = L.map('map').setView([p.lat, p.lon], 14);
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-      L.marker([p.lat, p.lon]).addTo(map);
+    /* overview */
+    if (p.overview) {
+      $('#overview').textContent = p.overview;
+      $('#overviewCard').style.display = '';
     }
 
-    scrollTopOnce();
-    notifyParentHeight();
-    setTimeout(notifyParentHeight, 300);
-
-    if ('ResizeObserver' in window) {
-      const ro = new ResizeObserver(() => {
-        clearTimeout(heightTimer);
-        heightTimer = setTimeout(notifyParentHeight, 120);
+    /* features */
+    if (p.features && Array.isArray(p.features) && p.features.length) {
+      const featuresEl = $('#features');
+      featuresEl.innerHTML = '';
+      p.features.forEach(fv => {
+        const li = document.createElement('li'); li.textContent = fv; featuresEl.appendChild(li);
       });
+      $('#featuresCard').style.display = '';
+    }
+
+    /* brochure */
+    const brochureBtn = $('#brochureBtn');
+    if (p.brochure) {
+      brochureBtn.href = p.brochure;
+      brochureBtn.style.display = '';
+    } else {
+      brochureBtn.style.display = 'none';
+    }
+
+    /* agents */
+    if (p.agents && p.agents.length) {
+      const agentsBox = document.getElementById('teamBox');
+      const agentsEl = document.getElementById('agents');
+      agentsEl.innerHTML = '';
+      p.agents.forEach(a => {
+        const div = document.createElement('div'); div.className = 'agent';
+        const av = document.createElement('div'); av.className = 'avatar'; av.textContent = initials(a.name || '');
+        const info = document.createElement('div');
+        const name = document.createElement('div'); name.style.fontWeight = '600'; name.textContent = a.name || '';
+        const contact = document.createElement('div'); contact.className = 'muted'; contact.textContent = a.phone || a.email || '';
+        info.appendChild(name); info.appendChild(contact);
+        div.appendChild(av); div.appendChild(info);
+        agentsEl.appendChild(div);
+      });
+      agentsBox.style.display = '';
+    }
+
+    /* map */
+    let map = null;
+    if (window.L && p.lat !== undefined && p.lon !== undefined && p.lat !== null && p.lon !== null) {
+      try {
+        map = L.map('map').setView([p.lat, p.lon], 14);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        L.marker([p.lat, p.lon]).addTo(map);
+
+        // Listen for tile load events to adjust height after map finishes rendering
+        map.on && map.on('tileload', scheduleHeightPings);
+        map.on && map.on('load', scheduleHeightPings);
+      } catch (e) {
+        console.warn('Leaflet map failed to initialize', e);
+      }
+    }
+
+    // done rendering — ensure parent gets accurate height
+    scrollTopOnce();
+    scheduleHeightPings();
+
+    // observe content for changes
+    if ('ResizeObserver' in window) {
+      const ro = new ResizeObserver(() => scheduleHeightPings());
       ro.observe(document.getElementById('content'));
     }
+
+    // watch for images and other late layout shifts
+    watchImages();
 
   } catch (err) {
     console.error(err);
@@ -259,19 +384,19 @@ document.addEventListener('DOMContentLoaded', main);
       <h2 style="margin:0;font-size:20px;">Enquire Now</h2>
       <button id="closeModal" style="border:none;background:none;font-size:22px;cursor:pointer;">×</button>
     </div>
-    <div style="padding:22px;">
+    <div style="padding:22px;'>
       <p id="propRefHint" style="font-size:13px;color:#555;margin:0 0 14px;"></p>
       <form id="enqForm">
-        <label>First Name</label>
-        <input type="text" id="firstName" style="width:100%;margin-bottom:8px;">
-        <label>Last Name</label>
-        <input type="text" id="lastName" style="width:100%;margin-bottom:8px;">
-        <label>Email</label>
-        <input type="email" id="email" style="width:100%;margin-bottom:8px;">
-        <label>Phone</label>
-        <input type="tel" id="phone" style="width:100%;margin-bottom:8px;">
-        <label>Message</label>
-        <textarea id="message" rows="3"
+        <label for="firstNameInput">First Name</label>
+        <input type="text" id="firstNameInput" style="width:100%;margin-bottom:8px;">
+        <label for="lastNameInput">Last Name</label>
+        <input type="text" id="lastNameInput" style="width:100%;margin-bottom:8px;">
+        <label for="emailInput">Email</label>
+        <input type="email" id="emailInput" style="width:100%;margin-bottom:8px;">
+        <label for="phoneInput">Phone</label>
+        <input type="tel" id="phoneInput" style="width:100%;margin-bottom:8px;">
+        <label for="messageInput">Message</label>
+        <textarea id="messageInput" rows="3"
           style="width:100%;margin-bottom:14px;padding:8px;
                  border:1px solid #ccc;border-radius:6px;"></textarea>
         <button id="sendEnquiryBtn" type="submit"
@@ -283,5 +408,40 @@ document.addEventListener('DOMContentLoaded', main);
     </div>
   </div>
 </div>
+
+<script>
+/* Modal wiring */
+(function(){
+  const modal = document.getElementById('enquiryModal');
+  const openBtn = document.getElementById('enquireBtn');
+  const closeBtn = document.getElementById('closeModal');
+  const form = document.getElementById('enqForm');
+
+  function openModal() {
+    if (!modal) return;
+    modal.style.display = 'flex';
+    const first = document.getElementById('firstNameInput');
+    first && first.focus();
+    scheduleHeightPings();
+  }
+  function closeModal() {
+    if (!modal) return;
+    modal.style.display = 'none';
+    scheduleHeightPings();
+  }
+
+  openBtn && openBtn.addEventListener('click', openModal);
+  closeBtn && closeBtn.addEventListener('click', closeModal);
+  modal && modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+  form && form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    // basic UX: close modal and show thank you (implement real send where needed)
+    closeModal();
+    alert('Thanks — enquiry sent (stub).');
+  });
+})();
+</script>
 </body>
 </html>
