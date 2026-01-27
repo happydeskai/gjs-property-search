@@ -133,258 +133,114 @@
     </div>
   </div>
 <script>
-// 🔥 Reset iframe height early so parent can shrink
-try {
-  window.parent?.postMessage(
-    { type: 'gjs-prop-height', height: 0 },
-    '*'
-  );
-} catch (e) {}
-/* ----------------------------------------------
-   Scroll-to-top fix (Squarespace iframe-safe)
----------------------------------------------- */
+/* ==============================================
+   Squarespace iframe-safe helpers (CLEAN)
+============================================== */
+
 if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 
-function forceTop() {
-  try {
-    window.scrollTo(0, 0);
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
-    window.parent?.postMessage({ type: 'forceScrollTop' }, '*');
-  } catch(e) {
-    console.warn('Scroll reset failed:', e);
-  }
-}
-setTimeout(forceTop, 0);
-setTimeout(forceTop, 300);
-setTimeout(forceTop, 800);
-setTimeout(forceTop, 1500);
-window.addEventListener('load', () => setTimeout(forceTop, 400));
-document.addEventListener('DOMContentLoaded', () => setTimeout(forceTop, 100));
-
-/* ----------------------------------------------
-   Notify Squarespace parent + Resize iframe
----------------------------------------------- */
-function notifyParentScrollTop() {
-  try {
-    window.parent?.postMessage({ type: 'scroll-top' }, '*');
-  } catch (e) {
-    console.warn('Scroll-top message failed', e);
-  }
-}
-notifyParentScrollTop();
-window.addEventListener('load', () => setTimeout(notifyParentScrollTop, 200));
-document.addEventListener('DOMContentLoaded', () => setTimeout(notifyParentScrollTop, 500));
-
-function getPageHeight() {
-  const doc = document.documentElement;
-  const body = document.body;
-  return Math.max(doc.scrollHeight, doc.offsetHeight, body.scrollHeight, body.offsetHeight);
-}
-
-function notifyParentHeight() {
-  try {
-    window.parent?.postMessage({ type: 'gjs-prop-height', height: getPageHeight() }, '*');
-  } catch (e) {
-    console.warn('Height message failed', e);
-  }
-}
-
-let lastHeight = 0;
-let heightTimer = null;
-
-function notifyParentHeightStable() {
-  const h = getPageHeight();
-
-  // Only notify if height meaningfully changed
-  if (Math.abs(h - lastHeight) > 8) {
-    lastHeight = h;
-    try {
-      window.parent?.postMessage(
-        { type: 'gjs-prop-height', height: h },
-        '*'
-      );
-    } catch (e) {}
-  }
-}
-
-// Run once after full render
-window.addEventListener('load', () => {
-  setTimeout(notifyParentHeightStable, 300);
-});
-
-// Observe layout changes (debounced)
-if ('ResizeObserver' in window) {
-  const ro = new ResizeObserver(() => {
-    clearTimeout(heightTimer);
-    heightTimer = setTimeout(notifyParentHeightStable, 120);
-  });
-  ro.observe(document.getElementById('content'));
-}
-
-/* ----------------------------------------------
-   Helpers
----------------------------------------------- */
+/* ---------- helpers ---------- */
 const $ = (s, el=document) => el.querySelector(s);
-const $$ = (s, el=document) => [...el.querySelectorAll(s)];
 const getParam = n => new URLSearchParams(location.search).get(n);
 const pick = (...vals) => vals.find(v => v !== undefined && v !== null && v !== '');
 const initials = n => n ? n.trim().split(/\s+/).slice(0,2).map(w=>w[0]?.toUpperCase()||'').join('') : '';
 
-function getImages(p){
-  const arr=[];
-  if(Array.isArray(p?.images)){
-    for(const it of p.images){
-      if(typeof it==='string') arr.push(it);
-      else if(it?.url) arr.push(it.url);
-    }
-  }
-  const fallback = pick(p.image,p.image_url);
-  if(fallback) arr.unshift(fallback);
-  return [...new Set(arr)].filter(Boolean);
+/* ---------- iframe height ---------- */
+let lastHeight = 0;
+let heightTimer = null;
+
+function getPageHeight() {
+  return Math.max(
+    document.body.scrollHeight,
+    document.documentElement.scrollHeight
+  );
 }
 
-function formatSize(p){
-  const a=p.size_from_sqft,b=p.size_to_sqft;
-  if(a&&b) return `${a.toLocaleString()}–${b.toLocaleString()} sq ft`;
-  if(a) return `${a.toLocaleString()} sq ft`;
-  if(b) return `${b.toLocaleString()} sq ft`;
-  return '';
+function notifyParentHeight() {
+  const h = getPageHeight();
+  if (Math.abs(h - lastHeight) < 8) return;
+  lastHeight = h;
+  try {
+    window.parent?.postMessage({ type: 'gjs-prop-height', height: h }, '*');
+  } catch(e){}
 }
 
-/* ----------------------------------------------
-   Main Property Render
----------------------------------------------- */
-async function main(){
+/* ---------- scroll to top ONCE ---------- */
+let didScrollTop = false;
+function scrollTopOnce() {
+  if (didScrollTop) return;
+  didScrollTop = true;
+  window.scrollTo(0, 0);
+  try {
+    window.parent?.postMessage({ type: 'scroll-top' }, '*');
+  } catch(e){}
+}
+
+/* ---------- main render ---------- */
+async function main() {
   try {
     const id = getParam('id');
-    const res = await fetch('https://happydeskai.github.io/gjs-property-search/properties.json', { cache:'no-store' });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const res = await fetch(
+      'https://happydeskai.github.io/gjs-property-search/properties.json',
+      { cache: 'no-store' }
+    );
     const list = await res.json();
-
     const p = list.find(x => String(x.id) === String(id)) || list[0];
-    if (!p) { $('#loading').textContent='Property not found'; return; }
+    if (!p) throw new Error('Property not found');
 
-    $('#loading').style.display='none';
-    $('#content').style.display='';
+    $('#loading').style.display = 'none';
+    $('#content').style.display = '';
 
     $('#prop-title').textContent = p.address || 'Property';
     $('#prop-sub').textContent = [p.town, p.postcode].filter(Boolean).join(' ');
 
-    const chips = $('#prop-chips');
-    const type = pick(p.type, p.property_type, Array.isArray(p.types)&&p.types[0]);
-    const tenure = p.to_let ? 'To Let' : (p.for_sale ? 'For Sale' : pick(p.tenure,p.transaction_type));
-    const epc = pick(p.epc_rating,p.epc);
-    if(tenure) chips.innerHTML += `<span class="chip chip--accent">${tenure}</span>`;
-    if(type) chips.innerHTML += `<span class="chip">${type}</span>`;
-    if(epc) chips.innerHTML += `<span class="chip">EPC ${epc}</span>`;
+    /* images */
+    const imgs = (p.images || []).map(i => i.url || i).filter(Boolean);
+    if (imgs[0]) $('#hero').innerHTML = `<img src="${imgs[0]}">`;
+    $('#thumbs').innerHTML = imgs.map(u =>
+      `<button class="thumb" data-src="${u}"><img src="${u}"></button>`
+    ).join('');
+    $('#thumbs').onclick = e => {
+      const t = e.target.closest('.thumb');
+      if (t) $('#hero').innerHTML = `<img src="${t.dataset.src}">`;
+    };
 
-    const imgs=getImages(p);
-    const hero=$('#hero');
-    const thumbs=$('#thumbs');
-    const setHero=src=>hero.innerHTML=src?`<img src="${src}" alt="${p.address||'Property'}">`:'';
-    setHero(imgs[0]);
-    thumbs.innerHTML = imgs.map(u=>`<button class="thumb" data-src="${u}"><img src="${u}"></button>`).join('');
-    thumbs.addEventListener('click',e=>{
-      const t=e.target.closest('.thumb');
-      if(t) setHero(t.dataset.src);
-    });
+    /* facts */
+    const facts = [];
+    if (p.size_from_sqft) facts.push(['Size', `${p.size_from_sqft.toLocaleString()} sq ft`]);
+    if (p.epc) facts.push(['EPC', p.epc]);
+    $('#facts').innerHTML = facts.map(f =>
+      `<div class="fact"><div class="label">${f[0]}</div><div class="value">${f[1]}</div></div>`
+    ).join('');
 
-    const facts=$('#facts');
-    const f=(l,v)=>v?`<div class="fact"><div class="label">${l}</div><div class="value">${v}</div></div>`:'';
-    facts.innerHTML=[
-      f('Property type',type),
-      f('Tenure',tenure),
-      f('Size',formatSize(p)),
-      f('Rent',pick(p.rent,p.rent_psf)),
-      f('Rateable value',p.rateable_value?`£${p.rateable_value.toLocaleString()}`:''),
-      f('EPC',epc),
-      f('Last updated',p.last_updated||'')
-    ].join('');
-
-    if(p.summary){ $('#overview').innerHTML=p.summary; $('#overviewCard').style.display=''; }
-    if(p.description){ $('#desc').innerHTML=p.description; $('#descCard').style.display=''; }
-    if(Array.isArray(p.features)&&p.features.length){
-      $('#features').innerHTML=p.features.map(x=>`<li>${x}</li>`).join('');
-      $('#featuresCard').style.display='';
+    if (p.description) {
+      $('#desc').innerHTML = p.description;
+      $('#descCard').style.display = '';
     }
 
-    const brochure=pick(p.brochure_url,p.brochure,p.files?.file?.url);
-    const btn=$('#brochureBtn');
-    if(brochure){ btn.href=brochure; btn.style.display='inline-flex'; } else btn.style.display='none';
-
-    if(typeof L!=='undefined' && p.lat && p.lon){
-      const map=L.map('map').setView([p.lat,p.lon],14);
+    /* map */
+    if (window.L && p.lat && p.lon) {
+      const map = L.map('map').setView([p.lat, p.lon], 14);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-      L.circleMarker([p.lat,p.lon],{radius:7,weight:2,color:'#111',fillColor:'#111',fillOpacity:.85}).addTo(map);
+      L.marker([p.lat, p.lon]).addTo(map);
     }
 
-    const contacts=Array.isArray(p.contacts)?p.contacts:(p.contacts?[p.contacts]:[]);
-    if(contacts.length){
-      $('#agents').innerHTML=contacts.map(c=>`
-        <div class="agent">
-          <div class="avatar">${initials(c.name||'')}</div>
-          <div>
-            <div class="name">${c.name||''}</div>
-            <div class="meta">${[c.company,c.branch].filter(Boolean).join(' • ')}</div>
-            ${c.phone?`<div class="meta">${c.phone}</div>`:''}
-            <div class="cta">
-              ${c.email?`<a href="mailto:${c.email}">Email</a>`:''}
-              ${c.phone?`<a href="tel:${c.phone}">Call</a>`:''}
-            </div>
-          </div>
-        </div>`).join('');
-      $('#teamBox').style.display='';
+    scrollTopOnce();
+    notifyParentHeight();
+    setTimeout(notifyParentHeight, 300);
+
+    if ('ResizeObserver' in window) {
+      const ro = new ResizeObserver(() => {
+        clearTimeout(heightTimer);
+        heightTimer = setTimeout(notifyParentHeight, 120);
+      });
+      ro.observe(document.getElementById('content'));
     }
 
-    // Update iframe height after dynamic content renders
-    requestAnimationFrame(() => notifyParentHeight());
-    setTimeout(() => notifyParentHeight(), 400);
-
-    setupEnquiry(p);
-
-    // Safety scroll sync
-    setTimeout(() => {
-      try { window.parent?.postMessage({ type: 'scroll-top' }, '*'); } catch(e){}
-    }, 1200);
-
-  } catch(err){
+  } catch (err) {
     console.error(err);
-    $('#loading').textContent=`Failed to load property (${err.message||err})`;
+    $('#loading').textContent = 'Failed to load property';
   }
-}
-
-/* ----------------------------------------------
-   Enquiry Modal Logic
----------------------------------------------- */
-function setupEnquiry(p){
-  const modal=$('#enquiryModal');
-  const open=$('#enquireBtn');
-  const close=$('#closeModal');
-  const form=$('#enqForm');
-  const hint=$('#propRefHint');
-  open.addEventListener('click',()=>{
-    modal.style.display='flex';
-    hint.textContent=`Enquiry about: ${p.address||'Property'}`;
-    document.body.style.overflow='hidden';
-  });
-  close.addEventListener('click',()=>{
-    modal.style.display='none';
-    document.body.style.overflow='';
-  });
-  modal.addEventListener('click',e=>{
-    if(e.target===modal){
-      modal.style.display='none';
-      document.body.style.overflow='';
-    }
-  });
-  form.addEventListener('submit',e=>{
-    e.preventDefault();
-    alert('Thank you for your enquiry. We’ll be in touch soon.');
-    modal.style.display='none';
-    document.body.style.overflow='';
-    form.reset();
-  });
 }
 
 document.addEventListener('DOMContentLoaded', main);
