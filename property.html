@@ -151,6 +151,38 @@ notifyParentScrollTop();
 window.addEventListener('load', () => setTimeout(notifyParentScrollTop, 200));
 document.addEventListener('DOMContentLoaded', () => setTimeout(notifyParentScrollTop, 500));
 
+/* ----------------------------------------------
+   Resize iframe to content height
+---------------------------------------------- */
+function getPageHeight() {
+  const doc = document.documentElement;
+  const body = document.body;
+  return Math.max(
+    doc.scrollHeight,
+    doc.offsetHeight,
+    body.scrollHeight,
+    body.offsetHeight
+  );
+}
+
+function notifyParentHeight() {
+  try {
+    window.parent?.postMessage({ type: 'gjs-prop-height', height: getPageHeight() }, '*');
+  } catch (e) {
+    console.warn('Height message failed', e);
+  }
+}
+
+// call now and after layout-affecting events
+notifyParentHeight();
+window.addEventListener('load', () => setTimeout(notifyParentHeight, 200));
+window.addEventListener('resize', () => setTimeout(notifyParentHeight, 100));
+
+if ('ResizeObserver' in window) {
+  const ro = new ResizeObserver(() => notifyParentHeight());
+  ro.observe(document.body);
+}
+
 /* Helpers */
 const $ = (s, el=document) => el.querySelector(s);
 const $$ = (s, el=document) => [...el.querySelectorAll(s)];
@@ -261,6 +293,10 @@ async function main(){
         </div>`).join('');
       $('#teamBox').style.display='';
     }
+
+    // ensure iframe height updates after dynamic content renders
+    requestAnimationFrame(() => notifyParentHeight());
+    setTimeout(() => notifyParentHeight(), 300);
 
     setupEnquiry(p);
 // ✅ Ensure Squarespace scrolls to top even if iframe loads too early
