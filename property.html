@@ -415,8 +415,20 @@ async function main() {
 document.addEventListener('DOMContentLoaded', main);
 </script>
 
-<!-- Modern Enquiry Modal (replaced old modal and wiring here) -->
+<!-- Modal CSS / Markup -->
 <style>
+  /* Ensure overlay is hidden by default and only visible when aria-hidden="false" */
+  #enquiryModal[aria-hidden="true"]{
+    display: none !important;
+    pointer-events: none;
+    opacity: 0;
+  }
+  #enquiryModal[aria-hidden="false"]{
+    display: flex !important;
+    pointer-events: auto;
+    opacity: 1;
+  }
+
   /* Modal backdrop & layout */
   #enquiryModal {
     display: none;
@@ -649,8 +661,8 @@ document.addEventListener('DOMContentLoaded', main);
     lastFocusedEl = document.activeElement;
     // lock background scroll so modal is centered in viewport
     try { document.documentElement.style.overflow = 'hidden'; document.body.style.overflow = 'hidden'; } catch(e){}
-    modal.style.display = 'flex';
     modal.setAttribute('aria-hidden', 'false');
+    // rely on aria-hidden CSS to show the overlay; ensure the dialog is visible
     scheduleHeightPings();
     // set hint (if property title available)
     const title = document.getElementById('prop-title')?.textContent?.trim();
@@ -665,7 +677,6 @@ document.addEventListener('DOMContentLoaded', main);
   function closeModal() {
     try { document.documentElement.style.overflow = ''; document.body.style.overflow = ''; } catch(e){}
     modal.setAttribute('aria-hidden', 'true');
-    modal.style.display = 'none';
     scheduleHeightPings();
     if (lastFocusedEl) lastFocusedEl.focus();
   }
