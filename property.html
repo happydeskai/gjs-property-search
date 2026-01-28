@@ -54,7 +54,7 @@
     .hero-card{background:var(--card);border-radius:calc(var(--radius) + 4px);overflow:hidden;box-shadow:var(--shadow-lg)}
     .hero{position:relative;aspect-ratio:16/9;background:#eee;overflow:hidden}
     .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-    .gallery{display:flex;gap:10px;padding:12px;Overflow:auto;background:#fff}
+    .gallery{display:flex;gap:10px;padding:12px;overflow:auto;background:#fff}
     .thumb{flex:0 0 120px;aspect-ratio:4/3;border-radius:12px;overflow:hidden;border:1px solid #eee;cursor:pointer;transition:transform .12s ease}
     .thumb:hover{transform:translateY(-2px)}
     .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-md);border:1px solid #edf0f3;overflow:hidden}
@@ -425,24 +425,36 @@ document.addEventListener('DOMContentLoaded', main);
     z-index: 1000;
     background: rgba(16,17,18,0.55);
     backdrop-filter: blur(4px);
+    /* keep the flex fallback */
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
+    height: 100vh;
   }
+
+  /* Make the dialog fixed & perfectly centered in the viewport */
   .modal__dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.995);
     width: 100%;
     max-width: 640px;
     background: #ffffff;
     border-radius: 14px;
     box-shadow: 0 20px 50px rgba(16,17,18,0.35);
     overflow: hidden;
-    transform-origin: center;
-    /* subtle entrance transform */
-    transform: translateY(-6px) scale(.995);
     transition: transform .18s ease, opacity .18s ease;
   }
+
   #enquiryModal[aria-hidden="false"] .modal__dialog {
-    transform: translateY(0) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  #enquiryModal[aria-hidden="true"] .modal__dialog {
+    transform: translate(-50%, -46%) scale(.995);
+    opacity: 0;
   }
 
   .modal__header {
@@ -635,6 +647,8 @@ document.addEventListener('DOMContentLoaded', main);
 
   function showModal() {
     lastFocusedEl = document.activeElement;
+    // lock background scroll so modal is centered in viewport
+    try { document.documentElement.style.overflow = 'hidden'; document.body.style.overflow = 'hidden'; } catch(e){}
     modal.style.display = 'flex';
     modal.setAttribute('aria-hidden', 'false');
     scheduleHeightPings();
@@ -648,8 +662,8 @@ document.addEventListener('DOMContentLoaded', main);
     successBox.style.display = 'none';
     setTimeout(() => fields.firstName.focus(), 50);
   }
-
   function closeModal() {
+    try { document.documentElement.style.overflow = ''; document.body.style.overflow = ''; } catch(e){}
     modal.setAttribute('aria-hidden', 'true');
     modal.style.display = 'none';
     scheduleHeightPings();
