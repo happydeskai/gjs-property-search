@@ -53,62 +53,6 @@
     "last_updated": "2026-01-29 10:57:21"
   },
   {
-    "id": 346677,
-    "address": "Hanbury Street",
-    "town": "Droitwich",
-    "postcode": "WR9 8PL",
-    "lat": 52.269203186,
-    "lon": -2.143748998,
-    "types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 113,
-    "size_to_sqft": 1723,
-    "summary": "Office To Let, Droitwich",
-    "description": "The Row is a meticulously designed roadside development featuring a premium selection of top specification boutique office suites, tailored for the very best independent operators. Set in the vibrant heart of Droitwich, this landmark destination serves as a unique parade for retail, leisure and business, attracting residents from across Worcestershire. Space available from 113 to 1,723 sq ft. The Row introduces a distinctive high-end offering to the area bringing a unique, place-making experience that sets a new benchmark for Droitwich. Curated by Asper Property Group, The Row offers a turn-key opportunity in a prime location and allocated parking. The Row is a collection of tastefully restored commercial suites designed to inspire. Each suite has been thoughtfully refurbished with carefully chosen materials and subtle industrial accents. From warm, neutral retail suites to welcoming communal spaces and distinctive shop fronts, every detail offers a workplace with a genuine sense of place. Droitwich offers a compelling location for business, combining strategic connectivity with a rich heritage and supportive local infrastructure. Situated in the heart of Worcestershire with excellent transport links to Birmingham, Worcester and the wider West Midlands, Droitwich Spa provides easy access to major markets while maintaining the charm and style of a historic spa town. Droitwich benefits from picturesque surroundings, a strong community spirit and a wealth of modern amenities which attracts a skilled local workforce and proactive business community.",
-    "features": [
-      "Units available from ¬£300 per calendar month",
-      "Gated secure parking",
-      "EV charging points",
-      "Air conditioning and heating",
-      "24/7 building access",
-      "CCTV and intercom",
-      "LED lighting throughout"
-    ],
-    "rent_psf": 3000,
-    "rent": "£3,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/12de2117b408f9aa17dcf5bb16f78112-letting346677.jpeg",
-      "https://as-images.imgix.net/e00e464567222fe8b077d564d1c33647-letting346677.jpeg",
-      "https://as-images.imgix.net/97435a829d82a95629e5a7d2c6b729e2-letting346677.jpeg",
-      "https://as-images.imgix.net/c12dc74cd4ad3bd3eb8278e360412534-letting346677.jpeg",
-      "https://as-images.imgix.net/5c56500fbed45c457cf1c31808c7e70a-letting346677.jpeg",
-      "https://as-images.imgix.net/b392b4916b11fd84ceb99a0ecba082e2-letting346677.jpeg",
-      "https://as-images.imgix.net/f3329452c15d53edbb295f52a5373d89-letting346677.jpeg",
-      "https://as-images.imgix.net/3fde9f14af3f34b41c02121212381d60-letting346677.jpeg",
-      "https://as-images.imgix.net/0e66f586f5e4b8003e6295da1eafff63-letting346677.jpeg",
-      "https://as-images.imgix.net/2b6a11cf86d59c06674425c6d6a4b5f2-letting346677.jpeg",
-      "https://as-images.imgix.net/b9e6122bca01d449c9674b6e6b3afb80-letting346677.jpeg",
-      "https://as-images.imgix.net/1dbb824e89180b63cfc414225b162c90-letting346677.jpeg"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-01-29 10:57:10"
-  },
-  {
     "id": 346648,
     "address": "New Road",
     "town": "Pershore",
@@ -204,58 +148,6 @@
     "last_updated": "2026-01-29 10:56:46"
   },
   {
-    "id": 346654,
-    "address": "Bartleet Road",
-    "town": "Redditch",
-    "postcode": "B98 0DQ",
-    "lat": 52.28975296,
-    "lon": -1.895722985,
-    "types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1988,
-    "size_to_sqft": 1988,
-    "summary": "Industrial To Let, Redditch",
-    "description": "Bartleet Road is situated within the Washford area of Redditch, adjacent to Washford Industrial Estate and close to Park Farm Industrial Estate. Halfords head office is situated at the southern end of the road with the subject unit to its northern end. The subject unit form part of an estate of similar properties. Unit 6 Bartleet Road comprises an end-terrace unit accessed via a pedestrian door to both the front and back elevations, along with an electric roller door to the yard area. The unit has a secure yard, providing car parking and loading / unloading facilities. The unit has been finished to a good specification, being redecorated and having LED lighting throughout. There is a three-phase electric supply. The minimum eaves height is 4.3m with the maximum eaves height being 4.9m. There is further car parking in the estate car park, with each unit benefiting from a designated allocation of three parking spaces each. Unit 6 Ground Floor 1,988 sq ft 184.68 sq m Total 1,988 sq ft 184.68 sq m Location Redditch is located in north Worcestershire, approximately 14 miles south of Birmingham, 12 miles south west of Solihull and eight miles east of Bromsgrove. The town benefits from strong road communications with Junctions 2 and 3 of the M42 motorway lying approximately five miles to the north.",
-    "features": [
-      "1,988 sq ft (184.68 sq m)",
-      "Maximum eaves height of 4.9m",
-      "Roller shutter door to front of unit"
-    ],
-    "rent_psf": 22200,
-    "rent": "£22,200 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/6b9c9d43dd6db22f415857897bded4e4-letting346654.jpeg",
-      "https://as-images.imgix.net/90055d6e5bd5a228920215153b2e49f9-letting346654.jpeg",
-      "https://as-images.imgix.net/c865bb8649a5a61c61539c02e148bd7a-letting346654.jpeg",
-      "https://as-images.imgix.net/fbb94ed93271f55846c92a09b1aa7805-letting346654.jpeg",
-      "https://as-images.imgix.net/bcf939ab91fbf740eacabf9c259d4830-letting346654.jpeg",
-      "https://as-images.imgix.net/8a5e151c6ae2850a8ad9af938a0b30d0-letting346654.jpeg",
-      "https://as-images.imgix.net/fbf0ec3f91bdd99125fa91a66184fff1-letting346654.jpeg",
-      "https://as-images.imgix.net/49bea033ae7aeab5afbc11b415bea5be-letting346654.jpeg",
-      "https://as-images.imgix.net/c3e59fcfcea42af41ba20efbf685ec45-letting346654.jpeg",
-      "https://as-images.imgix.net/99529a9c24979316fd6bd0f44efa5934-letting346654.jpeg",
-      "https://as-images.imgix.net/49d60383afa7abfca9adace2b8d47119-letting346654.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/af8a32e071045a8c735ade9265ec992f-letting346654.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-01-29 10:56:30"
-  },
-  {
     "id": 346855,
     "address": "George Road",
     "town": "Bromsgrove",
@@ -300,58 +192,6 @@
       }
     ],
     "last_updated": "2026-01-29 10:56:18"
-  },
-  {
-    "id": 346719,
-    "address": "15 Victoria Square",
-    "town": "Droitwich",
-    "postcode": "WR9 8DE",
-    "lat": 52.267349243,
-    "lon": -2.150681972,
-    "types": [
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": true,
-    "size_from_sqft": 1374,
-    "size_to_sqft": 1374,
-    "summary": "Retail To Let or For Sale, Droitwich",
-    "description": "The property is within easy walking distance of St Andrew's Square shopping centre and the popular Waitrose supermarket, together with local leisure facilities including Droitwich Spa Lido. 15 Victoria Square offers an end of mid terrace mixed use property. The ground floor offers access off Victoria Square into a good-sized office / retail area. The first floor offers a kitchen and WC facilities. The property benefits from air conditioning. There is also a rear yard area. The property is being sold with vacant posession. Ground Floor800 ft274.35 m2 First Floor573 ft253.29 m2 Total1,374 ft2127.64 m2 Location The property is situated in a prominent position fronting Victoria Square, close to its junction with the Ombersley Street East and Hertiage Way, on the southern edge of Droitwich Town Centre. Droitwich is a well known Worcestershire spa town with good communication links to neighbouring towns and cities, with Bromsgrove town centre being seven miles to the north east, Worcester city centre being eight miles to the south west and Birmingham city centre being twenty two miles to the north. The nearest motorway access is approximately two miles to the north east of the town centre at Junction 5 of the M5 motorway.",
-    "features": [
-      "1,374 sq ft (127.64 sq m) NIA",
-      "Ground and first floor town centre building",
-      "Prominent position fronting Victoria Square",
-      "Rear yard area"
-    ],
-    "rent_psf": 18500,
-    "rent": "£18,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/22f2510c6e28dbef90b8bfd54ed81ac1-letting346719.jpeg",
-      "https://as-images.imgix.net/24379ca643607f0592d4758b542cd5db-letting346719.jpeg",
-      "https://as-images.imgix.net/ecd298dd2d2ecee1fb6ea0ca10aa9d06-letting346719.jpeg",
-      "https://as-images.imgix.net/96d8de39a44902de5f1a449043cd49b1-letting346719.jpeg",
-      "https://as-images.imgix.net/f63015bc9aa3b68f46fdaf163105d206-letting346719.jpeg",
-      "https://as-images.imgix.net/b087861d1f254476b0500bbbd8084e50-letting346719.jpeg",
-      "https://as-images.imgix.net/d150831f491bb9524bbe9b682d6b39af-letting346719.jpeg",
-      "https://as-images.imgix.net/b9ed2a0b83a2115a7ad4aac8deec1583-letting346719.jpeg",
-      "https://as-images.imgix.net/8c6e6631f5b28a4bed2b83c1402fdc22-letting346719.jpeg",
-      "https://as-images.imgix.net/454ffe366e937ae71b401b79d0d92f41-letting346719.jpeg",
-      "https://as-images.imgix.net/9d4ec787df72eb22fe48e4fe33e94afa-letting346719.jpeg"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-01-29 10:56:03"
   },
   {
     "id": 346674,
