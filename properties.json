@@ -29,7 +29,7 @@
     "rent": "On Application",
     "business_rates_psf": 0,
     "rateable_value": 0,
-    "epc_rating": "",
+    "epc_rating": "E (119)",
     "images": [
       "https://as-images.imgix.net/b258fb726e20203f5d7035b56ac76cba-20250930-094330.jpg",
       "https://as-images.imgix.net/41b8dd67ed564fc7cb50c029f2f1bde7-20250930-092331.jpg",
@@ -60,7 +60,59 @@
         "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-01-29 17:09:43"
+    "last_updated": "2026-01-29 17:30:02"
+  },
+  {
+    "id": 346657,
+    "address": "29 Foregate Street",
+    "town": "Worcester",
+    "postcode": "WR1 1DS",
+    "lat": 52.197032928,
+    "lon": -2.22280097,
+    "types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 652,
+    "size_to_sqft": 2093,
+    "summary": "Office To Let, Worcester",
+    "description": "29 Foregate Street is a characterful, multi-let office building in the heart of Worcester, ideally located next to the Crown Court and a short walk from Worcester Foregate Street station and the city's main High Street. The property offers immediate access to professional services, retail, and popular eateries, making it an ideal city centre base for a variety of business occupiers. The ground floor suite, accessed via the communal reception, comprises two offices, a kitchen and store, with communal WCs on each floor. The first floor provides bright, flexible accommodation, including a versatile office or staff breakout area with a fitted kitchen, a smaller inter-connected office, a larger open-plan space and a manager's office at the rear. The offices can be combined or adapted to suit occupier requirements, with allocated car parking and cellar storage available at additional cost. 29 Foregate Street offers a rare opportunity to occupy well-configured, city-centre office space with excellent natural light and flexible layouts. The building offers CCTV at both the front and rear of the building, as well as all internal communal areas. Building access to both the front and rear of the property is via a Paxton Door entry system. There is a zoned alarm system. Broadband access available, Ground Floor Office652 sq ft 60.57 sq m First Floor Office1,441 sq ft 133.87 sq m Location Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London. Worcester has excellent access to the M5 motorway, which lies adjacent to the subject property with Junction 7 being approximately one and a half miles drive south. The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network. Worcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
+    "features": [
+      "Ground floor office 652 sq ft (60.57 sq m)",
+      "First floor office 1,441 sq ft (133.87 sq m)",
+      "Secure car park",
+      "Excellent public transport links"
+    ],
+    "rent_psf": 9300,
+    "rent": "£9,300 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/71850d033b9824c6816a674af24f9023-letting346657.jpeg",
+      "https://as-images.imgix.net/43fcde6a945b858ae69b3438f86839b2-letting346657.jpeg",
+      "https://as-images.imgix.net/30e01fc919fe6b6df6c24d4bfec2f985-letting346657.jpeg",
+      "https://as-images.imgix.net/a429748fc4ca26b4c49ee49cfe6bf215-letting346657.jpeg",
+      "https://as-images.imgix.net/ad037ce695e0bfe48659bebc50ac973f-letting346657.jpeg",
+      "https://as-images.imgix.net/573d8871901d3df5aa84985f779e7741-letting346657.jpeg",
+      "https://as-images.imgix.net/e97d291158c001b2dc6042edf02d6ff2-letting346657.jpeg",
+      "https://as-images.imgix.net/7bc3cb481e647156841259298ddd1449-letting346657.jpeg",
+      "https://as-images.imgix.net/7c19f4271ec87314cf6ef2856196573b-letting346657.jpeg",
+      "https://as-images.imgix.net/2cbdacad83ec0e565585114219cc6081-letting346657.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/da98a3d98bb9bc4d10bb99009c6e187f-letting346657.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-01-29 17:26:15"
   },
   {
     "id": 346716,
@@ -1371,58 +1423,6 @@
       }
     ],
     "last_updated": "2026-01-29 10:50:27"
-  },
-  {
-    "id": 346657,
-    "address": "29 Foregate Street",
-    "town": "Worcester",
-    "postcode": "WR1 1DS",
-    "lat": 52.197032928,
-    "lon": -2.22280097,
-    "types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 652,
-    "size_to_sqft": 2093,
-    "summary": "Office To Let, Worcester",
-    "description": "29 Foregate Street is a characterful, multi-let office building in the heart of Worcester, ideally located next to the Crown Court and a short walk from Worcester Foregate Street station and the city's main High Street. The property offers immediate access to professional services, retail, and popular eateries, making it an ideal city centre base for a variety of business occupiers. The ground floor suite, accessed via the communal reception, comprises two offices, a kitchen and store, with communal WCs on each floor. The first floor provides bright, flexible accommodation, including a versatile office or staff breakout area with a fitted kitchen, a smaller inter-connected office, a larger open-plan space and a manager's office at the rear. The offices can be combined or adapted to suit occupier requirements, with allocated car parking and cellar storage available at additional cost. 29 Foregate Street offers a rare opportunity to occupy well-configured, city-centre office space with excellent natural light and flexible layouts. The building offers CCTV at both the front and rear of the building, as well as all internal communal areas. Building access to both the front and rear of the property is via a Paxton Door entry system. There is a zoned alarm system. Broadband access available, Ground Floor Office652 sq ft 60.57 sq m First Floor Office1,441 sq ft 133.87 sq m Location Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London. Worcester has excellent access to the M5 motorway, which lies adjacent to the subject property with Junction 7 being approximately one and a half miles drive south. The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network. Worcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
-    "features": [
-      "Ground floor office 652 sq ft (60.57 sq m)",
-      "First floor office 1,441 sq ft (133.87 sq m)",
-      "Secure car park",
-      "Excellent public transport links"
-    ],
-    "rent_psf": 9300,
-    "rent": "£9,300 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/71850d033b9824c6816a674af24f9023-letting346657.jpeg",
-      "https://as-images.imgix.net/43fcde6a945b858ae69b3438f86839b2-letting346657.jpeg",
-      "https://as-images.imgix.net/30e01fc919fe6b6df6c24d4bfec2f985-letting346657.jpeg",
-      "https://as-images.imgix.net/a429748fc4ca26b4c49ee49cfe6bf215-letting346657.jpeg",
-      "https://as-images.imgix.net/ad037ce695e0bfe48659bebc50ac973f-letting346657.jpeg",
-      "https://as-images.imgix.net/573d8871901d3df5aa84985f779e7741-letting346657.jpeg",
-      "https://as-images.imgix.net/e97d291158c001b2dc6042edf02d6ff2-letting346657.jpeg",
-      "https://as-images.imgix.net/7bc3cb481e647156841259298ddd1449-letting346657.jpeg",
-      "https://as-images.imgix.net/7c19f4271ec87314cf6ef2856196573b-letting346657.jpeg",
-      "https://as-images.imgix.net/2cbdacad83ec0e565585114219cc6081-letting346657.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/da98a3d98bb9bc4d10bb99009c6e187f-letting346657.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-01-29 10:50:14"
   },
   {
     "id": 346669,
