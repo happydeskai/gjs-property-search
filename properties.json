@@ -1,5 +1,61 @@
 [
   {
+    "id": 350693,
+    "address": "Willow End Park",
+    "town": "Malvern",
+    "postcode": "WR13 6NN",
+    "lat": 52.07531,
+    "lon": -2.298809,
+    "types": [
+      "Business Park",
+      "Office"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 4265,
+    "size_to_sqft": 4265,
+    "summary": "A modern, detached, purpose-built two storey office building.",
+    "description": "The property comprises a modern, detached, purpose-built two storey office building of brick and block cavity construction beneath a pitched tiled roof. The accommodation provides high quality offices across both floors, featuring suspended ceilings, inset lighting, air conditioning, and perimeter trunking throughout. \n\nThe first-floor tenant is currently holding over, providing an opportunity to capture a lease renewal. The ground floor is currently vacant and can be occupied as a whole or split into two  self-contained suites, offering flexibility for an owner-occupier or investor seeking to add value through letting. Each floor benefits from its own kitchen and male and female WCs, with services separately metered and independent boilers serving each part.\n\nAlternative Use Potential With minor alterations, the building is also suitable, in part, for Use Class B8 (Storage and Distribution). It would particularly suit the distribution of small, high-value goods via courier services, catering to growing demand for flexible, high-quality last-mile distribution space.",
+    "location": "Willow End is located to the south of Great Malvern and east of Malvern Wells, in a rural location near the Three Counties Show Ground. Willow End is home to multiple office and warehouse buildings, including a recently built office/research facility. The business park is situated two and a half miles south of Great Malvern and eight and a half miles south west of Worcester. \n\nThe area benefits from good transport communications with both Junction 1 of the M50 and Junction 7 of the M5 being accessible from the property. Great Malvern also benefits from a mainline railway station which provides direct access to Worcester, Hereford and London Paddington.",
+    "features": [
+      "Opportunity to capture lease renewal.",
+      "Vacant ground floor.",
+      "Located in a popular business park.",
+      "Freehold"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "C (57)",
+    "images": [
+      "https://as-images.imgix.net/43c0fc0fa75e1343e08e2a4bf48f2bb6-dji-0869.JPG",
+      "https://as-images.imgix.net/49abdaf47064567e9cb733b3ac3ccc5f-dji-0867.JPG",
+      "https://as-images.imgix.net/ca26d58c32c1bb9e6a95a36911fb3024-20250529-093314264-ios.jpg",
+      "https://as-images.imgix.net/3532362163d6bce4361890f2c13d3b43-20250529-093153234-ios.jpg",
+      "https://as-images.imgix.net/b311dd274da22620a7b4310a018b8524-20250529-093607049-ios.jpg",
+      "https://as-images.imgix.net/032bafc5a3813d0eb22b7aede77fa6fc-20250529-093345734-ios.jpg",
+      "https://as-images.imgix.net/0bfac624e3a167267bcdf7efe7e6b0d1-20251023-095746400-ios.jpg",
+      "https://as-images.imgix.net/c43f68b4faae0553de91c547a8480406-20251023-102006346-ios.jpg",
+      "https://as-images.imgix.net/40070fb5ea7eff13c103a1d6862127e3-20251023-103407268-ios.jpg",
+      "https://as-images.imgix.net/037a517f945833e626fa85898ea2b227-dji-0876.JPG",
+      "https://as-images.imgix.net/391b0df2b4188bef932a7967de37bbae-dji-0875.JPG",
+      "https://as-images.imgix.net/5a50da7f22208504773ab4041005ae7e-dji-0873.JPG",
+      "https://as-images.imgix.net/1bedc0b97b9e5af7c270b2c573b60581-dji-0877.JPG",
+      "https://as-images.imgix.net/70da0baaf8d40b90b5704a2cb8359b25-street-view-disposal-350693.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/67baba3231f1119b6bbf6e4e3650a1dc-draft-b7-willow-end-park-malvern-investment-brochure1.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-01-30 13:01:48"
+  },
+  {
     "id": 346716,
     "address": "56 Friar Street",
     "town": "Droitwich",
