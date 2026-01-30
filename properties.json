@@ -1,5 +1,65 @@
 [
   {
+    "id": 346716,
+    "address": "56 Friar Street",
+    "town": "Droitwich",
+    "postcode": "WR9 8EF",
+    "lat": 52.268634796,
+    "lon": -2.149205923,
+    "types": [
+      "Office",
+      "Development"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 1580,
+    "size_to_sqft": 1580,
+    "summary": "Office / Development For Sale, Droitwich",
+    "description": "56 Friar Street is a Grade II listed end terrace building arranged over the ground, first and second floors. The property also benefits from a good-sized basement, which is useable and dry. The building is of brick construction surmounted by a pitched tiled roof. The property was previous used as a beauty salon, however, would be suitable for other commercial uses (offices, retail, healthcare etc.) or for conversion back to a residential premises. Ground Floor 585 sq ft 54.32 sq m First Floor 479 sq ft 44.49 sq m Second Floor 517 sq ft 47.99 sq m Total1,580 sq ft 146.80 sq m Location Droitwich is a well-known Worcestershire spa town being popular with local and national companies (due to its obvious communication links) as well as having a strong business community and good facilities. Birmingham city centre is situated approximately 22 miles to the north east, Bromsgrove is situated approximately seven miles to the north east, Worcester city centre is situated approximately eight miles to the south west, Kidderminster is situated approximately nine miles to the north and Redditch is situated approximately 17 miles to the north east. The M5 motorway is in close proximity to property with Junction 5 being approximately three miles by road to the north. From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales. Droitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester.",
+    "features": [
+      "Three storey end of terrace building",
+      "Located in central Droitwich",
+      "Suitable for conversion to residential (subject to planning)"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/8ebbaf895518599f1c6b30b8daa00e14-letting346716.jpeg",
+      "https://as-images.imgix.net/dbf9c87124c2e60e7726fa602a68c8d2-letting346716.jpeg",
+      "https://as-images.imgix.net/b7a7c036a13697e2faba6b2ea479af6a-letting346716.jpeg",
+      "https://as-images.imgix.net/2c0cd664e78c45a5ff761f32a2bdb80b-letting346716.jpeg",
+      "https://as-images.imgix.net/58efa4637c5b424503272ea491e7b6d7-letting346716.jpeg",
+      "https://as-images.imgix.net/c278cedc5a32a1fa980999ec0e2fefba-letting346716.jpeg",
+      "https://as-images.imgix.net/d31113edb670bdc428b3f239b6ee775f-letting346716.jpeg",
+      "https://as-images.imgix.net/934a681254a82e7dd53a8241ee89ef14-letting346716.jpeg",
+      "https://as-images.imgix.net/e5631597caff9bd4fb85700f6bda5008-letting346716.jpeg",
+      "https://as-images.imgix.net/fcb2e9442c3306f30a80b6106177d71f-letting346716.jpeg",
+      "https://as-images.imgix.net/5af03e8bd9894da5fea7dc9efccc0e74-letting346716.jpeg",
+      "https://as-images.imgix.net/3e4cddba36d54f5a1dd57650865560b1-letting346716.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/cda20d7331d632253d0c54bf0f1fce0b-letting346716.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-01-30 10:21:05"
+  },
+  {
     "id": 350576,
     "address": "26 The Butts",
     "town": "Worcester",
@@ -113,58 +173,6 @@
       }
     ],
     "last_updated": "2026-01-29 17:26:15"
-  },
-  {
-    "id": 346716,
-    "address": "56 Friar Street",
-    "town": "Droitwich",
-    "postcode": "WR9 8EF",
-    "lat": 52.268634796,
-    "lon": -2.149205923,
-    "types": [
-      "Office",
-      "Development"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 1580,
-    "size_to_sqft": 1580,
-    "summary": "Office / Development For Sale, Droitwich",
-    "description": "56 Friar Street is a Grade II listed end terrace building arranged over the ground, first and second floors. The property also benefits from a good-sized basement, which is useable and dry. The building is of brick construction surmounted by a pitched tiled roof. The property was previous used as a beauty salon, however, would be suitable for other commercial uses (offices, retail, healthcare etc.) or for conversion back to a residential premises. Ground Floor 585 sq ft 54.32 sq m First Floor 479 sq ft 44.49 sq m Second Floor 517 sq ft 47.99 sq m Total1,580 sq ft 146.80 sq m Location Droitwich is a well-known Worcestershire spa town being popular with local and national companies (due to its obvious communication links) as well as having a strong business community and good facilities. Birmingham city centre is situated approximately 22 miles to the north east, Bromsgrove is situated approximately seven miles to the north east, Worcester city centre is situated approximately eight miles to the south west, Kidderminster is situated approximately nine miles to the north and Redditch is situated approximately 17 miles to the north east. The M5 motorway is in close proximity to property with Junction 5 being approximately three miles by road to the north. From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales. Droitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester.",
-    "features": [
-      "Three storey end of terrace building",
-      "Located in central Droitwich",
-      "Suitable for conversion to residential (subject to planning)"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/8ebbaf895518599f1c6b30b8daa00e14-letting346716.jpeg",
-      "https://as-images.imgix.net/dbf9c87124c2e60e7726fa602a68c8d2-letting346716.jpeg",
-      "https://as-images.imgix.net/b7a7c036a13697e2faba6b2ea479af6a-letting346716.jpeg",
-      "https://as-images.imgix.net/2c0cd664e78c45a5ff761f32a2bdb80b-letting346716.jpeg",
-      "https://as-images.imgix.net/58efa4637c5b424503272ea491e7b6d7-letting346716.jpeg",
-      "https://as-images.imgix.net/c278cedc5a32a1fa980999ec0e2fefba-letting346716.jpeg",
-      "https://as-images.imgix.net/d31113edb670bdc428b3f239b6ee775f-letting346716.jpeg",
-      "https://as-images.imgix.net/934a681254a82e7dd53a8241ee89ef14-letting346716.jpeg",
-      "https://as-images.imgix.net/e5631597caff9bd4fb85700f6bda5008-letting346716.jpeg",
-      "https://as-images.imgix.net/fcb2e9442c3306f30a80b6106177d71f-letting346716.jpeg",
-      "https://as-images.imgix.net/5af03e8bd9894da5fea7dc9efccc0e74-letting346716.jpeg",
-      "https://as-images.imgix.net/3e4cddba36d54f5a1dd57650865560b1-letting346716.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/cda20d7331d632253d0c54bf0f1fce0b-letting346716.pdf",
-    "contacts": [
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-01-29 16:24:15"
   },
   {
     "id": 346824,
