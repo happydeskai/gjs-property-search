@@ -1,5 +1,68 @@
 [
   {
+    "id": 350576,
+    "address": "26 The Butts",
+    "town": "Worcester",
+    "postcode": "WR1 3PA",
+    "lat": 52.1937382,
+    "lon": -2.2253299,
+    "types": [
+      "Office",
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 911,
+    "size_to_sqft": 911,
+    "summary": "City Centre Commercial Building, Suitable for a Variety of Uses",
+    "description": "The Old Joseph Wood Building has a direct frontage to The Butts, a one way road connecting the main ring road that circles Worcester city centre.  Worcester Foregate Street Station is circa 320m east of the property.  The building is arranged over the ground and first floors and is of traditional brick construction.\n\nThe ground floor is currently arranged as an open plan office, with the first floor comprising a large open plan room which doubles up as a kitchen, break out area and meeting space. There is also a WC at first floor level.\n\nGround Floor\t493 sq ft \t45.80 sq m \nFirst Floor\t418 sq ft \t38.80 sq m \nTotal\t911 sq ft \t84.60 sq m",
+    "location": "The Old Joseph Wood Building is situated within Worcester, \nin the West Midlands.  Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London.  Worcester has excellent access to the M5 motorway, which lies adjacent to the subject property with Junction 7 being approximately one and a half miles drive south.  The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network.\n\nWorcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
+    "features": [
+      "911 sq ft (84.6 sq m)",
+      "Ground and first floor building",
+      "Within walking distance of Worcester City Centre",
+      "Excellent links to public transport",
+      "Public car parks close by",
+      "Flexible lease terms avaiable"
+    ],
+    "rent_psf": 12000,
+    "rent": "£12,000 per annum Per annum exclusive",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "E (119)",
+    "images": [
+      "https://as-images.imgix.net/b258fb726e20203f5d7035b56ac76cba-20250930-094330.jpg",
+      "https://as-images.imgix.net/41b8dd67ed564fc7cb50c029f2f1bde7-20250930-092331.jpg",
+      "https://as-images.imgix.net/e96de198b03e345dae0d2f6f570f4133-20250930-091604.jpg",
+      "https://as-images.imgix.net/816f861aaa1aa85a1c218b73d3dfdeb7-20250930-091532.jpg",
+      "https://as-images.imgix.net/0e642a1266326f120025485824b643db-20250930-091423.jpg",
+      "https://as-images.imgix.net/20c2aa6de6b1b23928106b905cdef094-20250930-091650.jpg",
+      "https://as-images.imgix.net/afc456a14c7170c4f3a0f41d1360539a-20250930-091411.jpg",
+      "https://as-images.imgix.net/cc06cba4c67c19ba8872259866c55ff4-20250930-091513.jpg",
+      "https://as-images.imgix.net/fba7a823a01a3784fceb977e6c602b82-20250930-091358.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/7015bdde0f6b4ca3fc42173454657fc1-gjs-dillon-particulars-the-old-joseph-wood-building-26-the-butts-wocester-wr1-3pa-3.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-02 17:22:49"
+  },
+  {
     "id": 350918,
     "address": "Unit 13A",
     "town": "Evesham",
@@ -9,15 +72,30 @@
     "types": [],
     "to_let": true,
     "for_sale": false,
-    "size_from_sqft": 0,
-    "size_to_sqft": 0,
+    "size_from_sqft": 10915,
+    "size_to_sqft": 10915,
+    "summary": "Warehouse / industrial unit with offices",
     "features": [],
-    "rent_psf": 0,
-    "rent": "On Application",
+    "rent_psf": 75000,
+    "rent": "£75,000 per annum",
     "business_rates_psf": 0,
     "rateable_value": 0,
     "epc_rating": "",
-    "images": [],
+    "images": [
+      "https://as-images.imgix.net/651f99fb20a9c50625e8c72eb69ca2a6-20250110-112721.jpg",
+      "https://as-images.imgix.net/f5e96c25b5568fbf6cc3dbfd1d9c586f-20250110-112658.jpg",
+      "https://as-images.imgix.net/c868fd4436d00757c8fd802d5a7e4445-20250110-100648.jpg",
+      "https://as-images.imgix.net/992dfd5951d90ac6acc94184d2512a89-cam04581g0-pr0017-still004.jpg",
+      "https://as-images.imgix.net/d427769e14b3fba6626c41b3eb61cede-cam04581g0-pr0017-still003-1.jpg",
+      "https://as-images.imgix.net/e3549552789a4cb93163b91c1683c20b-cam04581g0-pr0017-still001-1.jpg",
+      "https://as-images.imgix.net/c881be2aadb25ee2ab6e87b7d467ed5c-cam04581g0-pr0017-still002.jpg",
+      "https://as-images.imgix.net/ab9072edf4a682209d5fbccad6b747e4-20250110-111848.jpg",
+      "https://as-images.imgix.net/e56ba103ae52be35219f235cba1cb429-20250110-112029.jpg",
+      "https://as-images.imgix.net/b654121edce18a110401f42305e1c9b6-20250110-112419.jpg",
+      "https://as-images.imgix.net/b54a0dc61220366570e2a147f56af7b8-20250110-112246.jpg",
+      "https://as-images.imgix.net/50a34bf4f59c9c37c5c2bcb1f0fa6a31-20250110-105232.jpg",
+      "https://as-images.imgix.net/5ec5e815e0535326a76a26620c821fc5-20250110-112419.jpg"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -36,7 +114,7 @@
         "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-02-02 17:10:39"
+    "last_updated": "2026-02-02 17:19:22"
   },
   {
     "id": 346850,
@@ -196,69 +274,6 @@
       }
     ],
     "last_updated": "2026-01-30 10:21:05"
-  },
-  {
-    "id": 350576,
-    "address": "26 The Butts",
-    "town": "Worcester",
-    "postcode": "WR1 3PA",
-    "lat": 52.1937382,
-    "lon": -2.2253299,
-    "types": [
-      "Office",
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 911,
-    "size_to_sqft": 911,
-    "summary": "City Centre Commercial Building, Suitable for a Variety of Uses",
-    "description": "The Old Joseph Wood Building has a direct frontage to The Butts, a one way road connecting the main ring road that circles Worcester city centre.  Worcester Foregate Street Station is circa 320m east of the property.  The building is arranged over the ground and first floors and is of traditional brick construction.\n\nThe ground floor is currently arranged as an open plan office, with the first floor comprising a large open plan room which doubles up as a kitchen, break out area and meeting space. There is also a WC at first floor level.\n\nGround Floor\t493 sq ft \t45.80 sq m \nFirst Floor\t418 sq ft \t38.80 sq m \nTotal\t911 sq ft \t84.60 sq m",
-    "location": "The Old Joseph Wood Building is situated within Worcester, \nin the West Midlands.  Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London.  Worcester has excellent access to the M5 motorway, which lies adjacent to the subject property with Junction 7 being approximately one and a half miles drive south.  The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network.\n\nWorcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
-    "features": [
-      "911 sq ft (84.6 sq m)",
-      "Ground and first floor building",
-      "Within walking distance of Worcester City Centre",
-      "Excellent links to public transport",
-      "Public car parks close by",
-      "Flexible lease terms avaiable"
-    ],
-    "rent_psf": 0,
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "E (119)",
-    "images": [
-      "https://as-images.imgix.net/b258fb726e20203f5d7035b56ac76cba-20250930-094330.jpg",
-      "https://as-images.imgix.net/41b8dd67ed564fc7cb50c029f2f1bde7-20250930-092331.jpg",
-      "https://as-images.imgix.net/e96de198b03e345dae0d2f6f570f4133-20250930-091604.jpg",
-      "https://as-images.imgix.net/816f861aaa1aa85a1c218b73d3dfdeb7-20250930-091532.jpg",
-      "https://as-images.imgix.net/0e642a1266326f120025485824b643db-20250930-091423.jpg",
-      "https://as-images.imgix.net/20c2aa6de6b1b23928106b905cdef094-20250930-091650.jpg",
-      "https://as-images.imgix.net/afc456a14c7170c4f3a0f41d1360539a-20250930-091411.jpg",
-      "https://as-images.imgix.net/cc06cba4c67c19ba8872259866c55ff4-20250930-091513.jpg",
-      "https://as-images.imgix.net/fba7a823a01a3784fceb977e6c602b82-20250930-091358.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/7015bdde0f6b4ca3fc42173454657fc1-gjs-dillon-particulars-the-old-joseph-wood-building-26-the-butts-wocester-wr1-3pa-3.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-01-29 17:30:02"
   },
   {
     "id": 346657,
