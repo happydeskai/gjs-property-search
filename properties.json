@@ -1,5 +1,48 @@
 [
   {
+    "id": 346850,
+    "address": "Stourport Road",
+    "town": "Kidderminster",
+    "postcode": "DY11 7QH",
+    "lat": 52.360488891,
+    "lon": -2.266505956,
+    "types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3212,
+    "size_to_sqft": 3212,
+    "summary": "Office To Let, Kidderminster",
+    "description": "Digital House is self-contained office premises, which is securely fenced and gated with generous parking. Both the ground floor right and first floor suites have been let. The remaining Ground Floor, Left Suite is finished to an immaculate standard with a dedicated entrance and reception, a mixture of open plan and private offices together with kitchen and WC facilities. High specification fixtures include suspended ceilings, perimeter trunking, air conditioning and LED lighting with sensors. Ground Floor, Left Suite298.41 sq m3,212 sq ft Location The property is located off the A451 Stourport Road, approximately two miles south of Kidderminster town centre and one and half miles north of Stourport-On-Severn. The property has easy access to the main A442 Worcester Road, which combined with the A451 are the two main arterial roads leading into Kidderminster Town Centre. In recent years, this part of Kidderminster has been totally transformed, attracting a number of high-profile occupiers along the Stourport Road and Silverwoods Way.",
+    "features": [
+      "High specification finished to immaculate standard",
+      "Open plan offices with kitchen and WC"
+    ],
+    "rent_psf": 12.5,
+    "rent": "£12.50 per sq ft",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/eba74543a93b9b9daf8ae6d0077cf699-letting346850.jpeg",
+      "https://as-images.imgix.net/7a6339922b88a2ed9b8a9b7e7f9a35af-letting346850.jpeg",
+      "https://as-images.imgix.net/fcbc8e5ec160105436b8e02b927d4104-letting346850.jpeg",
+      "https://as-images.imgix.net/f42a173a503f2a249693c30fa30c76ae-letting346850.jpeg"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-02 12:42:28"
+  },
+  {
     "id": 350693,
     "address": "Willow End Park",
     "town": "Malvern",
@@ -738,50 +781,6 @@
       }
     ],
     "last_updated": "2026-01-29 15:57:25"
-  },
-  {
-    "id": 346850,
-    "address": "Stourport Road",
-    "town": "Kidderminster",
-    "postcode": "DY11 7QH",
-    "lat": 52.360488891,
-    "lon": -2.266505956,
-    "types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3212,
-    "size_to_sqft": 3212,
-    "summary": "Office To Let, Kidderminster",
-    "description": "Digital House is self-contained office premises, which is securely fenced and gated with generous parking. Both the ground floor right and first floor suites have been let. The remaining Ground Floor, Left Suite is finished to an immaculate standard with a dedicated entrance and reception, a mixture of open plan and private offices together with kitchen and WC facilities. High specification fixtures include suspended ceilings, perimeter trunking, air conditioning and LED lighting with sensors. Ground Floor, Left Suite298.41 sq m3,212 sq ft Location The property is located off the A451 Stourport Road, approximately two miles south of Kidderminster town centre and one and half miles north of Stourport-On-Severn. The property has easy access to the main A442 Worcester Road, which combined with the A451 are the two main arterial roads leading into Kidderminster Town Centre. In recent years, this part of Kidderminster has been totally transformed, attracting a number of high-profile occupiers along the Stourport Road and Silverwoods Way.",
-    "features": [
-      "High specification finished to immaculate standard",
-      "Open plan offices with kitchen and WC"
-    ],
-    "rent_psf": 12.5,
-    "rent": "£12.50 per sq ft",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/eba74543a93b9b9daf8ae6d0077cf699-letting346850.jpeg",
-      "https://as-images.imgix.net/7a6339922b88a2ed9b8a9b7e7f9a35af-letting346850.jpeg",
-      "https://as-images.imgix.net/fcbc8e5ec160105436b8e02b927d4104-letting346850.jpeg",
-      "https://as-images.imgix.net/f42a173a503f2a249693c30fa30c76ae-letting346850.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f50d2df372d4c0e1b54c53d80529478d-letting346850.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-01-29 15:57:03"
   },
   {
     "id": 350410,
