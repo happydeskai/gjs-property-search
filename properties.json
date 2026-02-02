@@ -1,5 +1,44 @@
 [
   {
+    "id": 350918,
+    "address": "Unit 13A",
+    "town": "Evesham",
+    "postcode": "WR11 1XJ",
+    "lat": 52.080721,
+    "lon": -1.944174,
+    "types": [],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 0,
+    "size_to_sqft": 0,
+    "features": [],
+    "rent_psf": 0,
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-02 17:10:39"
+  },
+  {
     "id": 346850,
     "address": "Stourport Road",
     "town": "Kidderminster",
