@@ -230,10 +230,8 @@ async function main() {
   try {
     const id = getParam('id');
     console.log('property main running, id=', id);
-    const res = await fetch(
-      'https://happydeskai.github.io/gjs-property-search/properties.json',
-      { cache: 'no-store' }
-    );
+    // Load properties.json from the same host so this works on Vercel and GitHub Pages
+    const res = await fetch('/properties.json', { cache: 'no-store' });
     if (!res.ok) throw new Error('Failed to fetch properties.json: ' + res.status);
     const list = await res.json();
     const p = list.find(x => String(x.id) === String(id)) || list[0];
