@@ -607,6 +607,12 @@ document.addEventListener('DOMContentLoaded', main);
           <div class="error" id="err-message" aria-live="polite" style="display:none"></div>
         </div>
 
+        <!-- Mailing list tick box (requested) -->
+        <div class="form-row" style="margin-top:6px; display:flex; align-items:center; gap:10px;">
+          <input id="mailingListInput" type="checkbox" name="mailingList" />
+          <label for="mailingListInput" style="margin:0; font-size:13px; color:#333;">Add me to your mailing list</label>
+        </div>
+
         <div class="modal__actions">
           <button id="sendEnquiryBtn" class="btn btn-primary" type="submit">
             Send enquiry
@@ -652,8 +658,15 @@ document.addEventListener('DOMContentLoaded', main);
     lastName: document.getElementById('lastNameInput'),
     email: document.getElementById('emailInput'),
     phone: document.getElementById('phoneInput'),
-    message: document.getElementById('messageInput')
+    message: document.getElementById('messageInput'),
+    mailingList: document.getElementById('mailingListInput')
   };
+
+  // serverless endpoint to receive enquiries and send email to Kato
+  // Update this if you deploy the function to a different path / host.
+  // If your frontend remains on another host (e.g. GitHub Pages) set this to the full function URL:
+  // const SEND_ENDPOINT = 'https://your-project.vercel.app/api/send-enquiry';
+  const SEND_ENDPOINT = '/api/send-enquiry';
 
   let lastFocusedEl = null;
 
@@ -714,21 +727,53 @@ document.addEventListener('DOMContentLoaded', main);
     return ok;
   }
 
-  form.addEventListener('submit', (e) => {
+  // escape helper (server also escapes – this helps a little for logs/requests)
+  function escapeForJson(s){ return String(s === undefined || s === null ? '' : s); }
+
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     if (!validate()) return;
-    // simulate send: show spinner, disable button
+
+    // gather data
+    const payload = {
+      firstName: escapeForJson(fields.firstName.value.trim()),
+      lastName:  escapeForJson(fields.lastName.value.trim()),
+      email:     escapeForJson(fields.email.value.trim()),
+      phone:     escapeForJson(fields.phone.value.trim()),
+      message:   escapeForJson(fields.message.value.trim()),
+      mailingList: !!fields.mailingList.checked,
+      propertyId: getParam('id') || '',
+      propertyTitle: (document.getElementById('prop-title')?.textContent || '')
+    };
+
+    // UI: spinner + disable button
     document.getElementById('sendEnquiryBtn').disabled = true;
     spinner.style.display = '';
-    // TODO: replace with real fetch to your API
-    setTimeout(() => {
+
+    try {
+      const res = await fetch(SEND_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      if (!res.ok) {
+        const text = await res.text().catch(()=>res.statusText);
+        throw new Error(`Send failed: ${res.status} ${text}`);
+      }
+
+      // success UI (existing)
       spinner.style.display = 'none';
       document.getElementById('sendEnquiryBtn').disabled = false;
-      // show success UI
       bodyBox.style.display = 'none';
       successBox.style.display = '';
       scheduleHeightPings();
-    }, 900);
+    } catch (err) {
+      console.error('Enquiry send failed', err);
+      spinner.style.display = 'none';
+      document.getElementById('sendEnquiryBtn').disabled = false;
+      setError('message', 'Failed to send enquiry — please try again later.');
+    }
   });
 
   // Open/close wiring
