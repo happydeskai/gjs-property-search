@@ -1,5 +1,67 @@
 [
   {
+    "id": 346850,
+    "address": "Stourport Road",
+    "town": "Kidderminster",
+    "postcode": "DY11 7QH",
+    "lat": 52.360488891,
+    "lon": -2.266505956,
+    "types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3212,
+    "size_to_sqft": 3212,
+    "summary": "Office To Let, Kidderminster",
+    "description": "Digital House is self-contained office premises, which is securely fenced and gated with generous parking. Both the ground floor right and first floor suites have been let. The remaining Ground Floor, Left Suite is finished to an immaculate standard with a dedicated entrance and reception, a mixture of open plan and private offices together with kitchen and WC facilities. High specification fixtures include suspended ceilings, perimeter trunking, air conditioning and LED lighting with sensors. Ground Floor, Left Suite298.41 sq m3,212 sq ft Location The property is located off the A451 Stourport Road, approximately two miles south of Kidderminster town centre and one and half miles north of Stourport-On-Severn. The property has easy access to the main A442 Worcester Road, which combined with the A451 are the two main arterial roads leading into Kidderminster Town Centre. In recent years, this part of Kidderminster has been totally transformed, attracting a number of high-profile occupiers along the Stourport Road and Silverwoods Way.",
+    "features": [
+      "High specification finished to immaculate standard",
+      "Open plan offices with kitchen and WC"
+    ],
+    "rent_psf": 12.5,
+    "rent": "£12.50 per sq ft",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/97e35fefce848e5234dc16c6567c2d7c-20260122-121456-1-1-1.jpg",
+      "https://as-images.imgix.net/0d5a23cc2cab4c30ea7c43a17d6687b9-20260122-121441.jpg",
+      "https://as-images.imgix.net/be6e613d9b4109a430e3f295586237bf-20260122-121310.jpg",
+      "https://as-images.imgix.net/9c85b03a54eeffcb244e67477c9fa994-20260122-121248.jpg",
+      "https://as-images.imgix.net/25a8eee432f79c500b3cf58732e9af76-20260122-120957.jpg",
+      "https://as-images.imgix.net/6e06fe320e659032200e718bf24273af-20260122-120946.jpg",
+      "https://as-images.imgix.net/837f1b31e4cb4c84ef7e24943da5d4f6-20260122-115328.jpg",
+      "https://as-images.imgix.net/5078e857570bc31f663a7feda0b3cfb7-20260122-115719.jpg",
+      "https://as-images.imgix.net/a161658386ac9d155bc6fc1eecaa0e34-20260122-114954.jpg",
+      "https://as-images.imgix.net/5c79c81ef1b6277f325395a8ff3b8386-20260122-114933.jpg",
+      "https://as-images.imgix.net/7f5385400c49b2efcd2699a53aa65469-20260122-114916.jpg",
+      "https://as-images.imgix.net/1ce24dbde565ac6f5feacb9fedbf1a3e-20260122-115426.jpg",
+      "https://as-images.imgix.net/0f44612b1b878fb84d4776220ccc0b17-20260122-115003.jpg",
+      "https://as-images.imgix.net/0b6fb4d8fd4efbab9b45e8011e9062bd-20260122-114902.jpg",
+      "https://as-images.imgix.net/9ffffa986dc35e41cf306337962b2b6b-20260122-115012.jpg",
+      "https://as-images.imgix.net/1d75e83bb9628416a8731d8bb7861269-20260122-114843.jpg",
+      "https://as-images.imgix.net/b66c7a50e38c28fb01ccae9e80f171a0-20260122-115438.jpg",
+      "https://as-images.imgix.net/89c358d912775787336bfb7bb194ed2d-20260122-115448.jpg",
+      "https://as-images.imgix.net/01774fdf62d0d26bdca84e8e1b7c34a0-20260122-115503.jpg",
+      "https://as-images.imgix.net/9634501a93248473c66dc1d5ea0973f3-20260122-120204.jpg",
+      "https://as-images.imgix.net/5ba4e937fb433870b1bbdc011544aaf0-20260122-120251.jpg",
+      "https://as-images.imgix.net/e54bc86d38d6ada8734ed98d1fe3369c-20260122-120408.jpg",
+      "https://as-images.imgix.net/af0e1b3cbc597de29d76c7607ef8778f-20260122-120213.jpg"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-03 12:51:07"
+  },
+  {
     "id": 346649,
     "address": "Fringe Meadow Road",
     "town": "Redditch",
@@ -268,49 +330,6 @@
       }
     ],
     "last_updated": "2026-02-02 17:19:22"
-  },
-  {
-    "id": 346850,
-    "address": "Stourport Road",
-    "town": "Kidderminster",
-    "postcode": "DY11 7QH",
-    "lat": 52.360488891,
-    "lon": -2.266505956,
-    "types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3212,
-    "size_to_sqft": 3212,
-    "summary": "Office To Let, Kidderminster",
-    "description": "Digital House is self-contained office premises, which is securely fenced and gated with generous parking. Both the ground floor right and first floor suites have been let. The remaining Ground Floor, Left Suite is finished to an immaculate standard with a dedicated entrance and reception, a mixture of open plan and private offices together with kitchen and WC facilities. High specification fixtures include suspended ceilings, perimeter trunking, air conditioning and LED lighting with sensors. Ground Floor, Left Suite298.41 sq m3,212 sq ft Location The property is located off the A451 Stourport Road, approximately two miles south of Kidderminster town centre and one and half miles north of Stourport-On-Severn. The property has easy access to the main A442 Worcester Road, which combined with the A451 are the two main arterial roads leading into Kidderminster Town Centre. In recent years, this part of Kidderminster has been totally transformed, attracting a number of high-profile occupiers along the Stourport Road and Silverwoods Way.",
-    "features": [
-      "High specification finished to immaculate standard",
-      "Open plan offices with kitchen and WC"
-    ],
-    "rent_psf": 12.5,
-    "rent": "£12.50 per sq ft",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/eba74543a93b9b9daf8ae6d0077cf699-letting346850.jpeg",
-      "https://as-images.imgix.net/7a6339922b88a2ed9b8a9b7e7f9a35af-letting346850.jpeg",
-      "https://as-images.imgix.net/fcbc8e5ec160105436b8e02b927d4104-letting346850.jpeg",
-      "https://as-images.imgix.net/f42a173a503f2a249693c30fa30c76ae-letting346850.jpeg"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-02 12:42:28"
   },
   {
     "id": 350693,
