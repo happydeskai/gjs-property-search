@@ -1,5 +1,60 @@
 [
   {
+    "id": 346673,
+    "address": "1 Fish Street",
+    "town": "Worcester",
+    "postcode": "WR1 2HN",
+    "lat": 52.190158843,
+    "lon": -2.220968008,
+    "types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1078,
+    "size_to_sqft": 1078,
+    "summary": "Office To Let, Worcester",
+    "description": "Traditional brick construction, prominently positioned on Fish Street. The ground floor accommodates retail units, while the first and second floors provide self-contained office suites with dedicated access from Fish Street. The first floor offers three well-proportioned office rooms and a WC, providing practical and functional space suitable for a variety of uses. The second floor consists of four additional office rooms, a WC and a kitchenette, offering flexibility for tenants requiring breakout or meeting areas alongside their workspace. With its central location and versatile layout, the property is well-suited for small to medium-sized businesses seeking cost-effective office space in Worcester city centre. First Floor 590 sq ft (54.81 sq m) Second Floor488 sq ft (45.33 sq m) Whole Unit 1,078 sq ft (100.15 sq m).",
+    "features": [
+      "Total area over two floors 1,078 sq ft (100.15)",
+      "Prominent city centre location",
+      "Walking distance to Worcester Railway stations",
+      "Close to central Worcester car parks"
+    ],
+    "rent_psf": 8500,
+    "rent": "£8,500 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/1c733a200a0ec9b0f561a73d3d1ac8d8-letting346673.jpeg",
+      "https://as-images.imgix.net/fdc9fd007eefd45a6ba585fc1b94f78c-letting346673.jpeg",
+      "https://as-images.imgix.net/93feb66390b635d85007b63cd9e29005-letting346673.jpeg",
+      "https://as-images.imgix.net/5b16f6bc22ab3e976b7d2e897c0fca7e-letting346673.jpeg",
+      "https://as-images.imgix.net/3808b5da4d3ec61de59cdc34b27c8f28-letting346673.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/d755916df6bbfdc6521c188586763a3e-letting346673.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-04 12:45:00"
+  },
+  {
     "id": 346649,
     "address": "Fringe Meadow Road",
     "town": "Redditch",
@@ -1858,53 +1913,6 @@
       }
     ],
     "last_updated": "2026-01-29 10:48:59"
-  },
-  {
-    "id": 346673,
-    "address": "1 Fish Street",
-    "town": "Worcester",
-    "postcode": "WR1 2HN",
-    "lat": 52.190158843,
-    "lon": -2.220968008,
-    "types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1078,
-    "size_to_sqft": 1078,
-    "summary": "Office To Let, Worcester",
-    "description": "Traditional brick construction, prominently positioned on Fish Street. The ground floor accommodates retail units, while the first and second floors provide self-contained office suites with dedicated access from Fish Street. The first floor offers three well-proportioned office rooms and a WC, providing practical and functional space suitable for a variety of uses. The second floor consists of four additional office rooms, a WC and a kitchenette, offering flexibility for tenants requiring breakout or meeting areas alongside their workspace. With its central location and versatile layout, the property is well-suited for small to medium-sized businesses seeking cost-effective office space in Worcester city centre. First Floor 590 sq ft (54.81 sq m) Second Floor488 sq ft (45.33 sq m) Whole Unit 1,078 sq ft (100.15 sq m) Location Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London. Worcester has excellent access to the M5 motorway, which lies adjacent to the subject property with Junction 7 being approximately one and a half miles drive south. The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network. Worcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
-    "features": [
-      "Total area over two floors 1,078 sq ft (100.15)",
-      "Prominent city centre location",
-      "Walking distance to Worcester Railway stations",
-      "Close to central Worcester car parks"
-    ],
-    "rent_psf": 13000,
-    "rent": "£13,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/1c733a200a0ec9b0f561a73d3d1ac8d8-letting346673.jpeg",
-      "https://as-images.imgix.net/fdc9fd007eefd45a6ba585fc1b94f78c-letting346673.jpeg",
-      "https://as-images.imgix.net/93feb66390b635d85007b63cd9e29005-letting346673.jpeg",
-      "https://as-images.imgix.net/5b16f6bc22ab3e976b7d2e897c0fca7e-letting346673.jpeg",
-      "https://as-images.imgix.net/3808b5da4d3ec61de59cdc34b27c8f28-letting346673.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/d755916df6bbfdc6521c188586763a3e-letting346673.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-01-29 10:48:40"
   },
   {
     "id": 346689,
