@@ -1,5 +1,228 @@
 [
   {
+    "id": 346706,
+    "address": "St. Richards Road",
+    "town": "Evesham",
+    "postcode": "WR11 1XG",
+    "lat": 52.080982208,
+    "lon": -1.947353959,
+    "types": [
+      "Industrial",
+      "Trade Counter"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2888,
+    "size_to_sqft": 2888,
+    "summary": "Industrial / Trade Counter To Let, Evesham",
+    "description": "Unit 9 is a well-presented industrial/trade counter unit of steel portal frame construction, featuring an insulated profile steel roof and a combination of block and insulated steel profile elevations. The unit benefits from a glazed pedestrian entrance, an electrically operated roller shutter door and a dedicated yard/loading area with ample car parking. Situated within a well-established trade counter estate, the location has attracted a strong mix of national and regional occupiers, including Screwfix, Buildbase, Tile Giant, Topps Tiles, Tool Station and Easy Bathrooms. Total Area2,888 sq ft 268.3 sq m Location The property is situated within Evesham, to the south east of Worcestershire. Evesham is a market town within Wychavon which benefits from a population of approximately 25,000, according to the 2011 census. It is located approximately 14 miles south east of Worcester, 14 miles north east of Cheltenham, 27 miles south of Birmingham and 90 miles north west of London. Evesham benefits from good road communications being on the A44; which provides access to Worcester, Oxford and Junction 6 of the M5 motorway (in approximately 25 minutes) and on the A46; which provides access to Redditch, Tewkesbury and Junction 9 of the M5 motorway (in approximately 20 minutes). Evesham also has a mainline station which provides a direct access to the Worcester stations, Oxford and London Paddington.",
+    "features": [
+      "Warehouse access via 1 roller shutter door",
+      "Recently refurbished",
+      "Dedicated yard area"
+    ],
+    "rent_psf": 36100,
+    "rent": "£36,100 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/e964e4b14ea0b382c5e859e23f5744a2-letting346706.jpeg",
+      "https://as-images.imgix.net/23dd1cf57ec0e79ccc201943bb107b1e-letting346706.jpeg",
+      "https://as-images.imgix.net/51e1ff60e4dd3b70f5f573d43574db90-letting346706.jpeg",
+      "https://as-images.imgix.net/bdb3b04c7c998894c59aac457a3878b2-letting346706.jpeg",
+      "https://as-images.imgix.net/9076ba0914117231c69cb23856c264aa-letting346706.jpeg",
+      "https://as-images.imgix.net/422c606f10a8c007e4ac8e2df0dcb168-letting346706.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/39eab111acbd5b86bf5fc3b9683e430f-17173-hi-aurora-evesham-davies-road-tp-brochure-v6.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-05 17:21:52"
+  },
+  {
+    "id": 346716,
+    "address": "56 Friar Street",
+    "town": "Droitwich",
+    "postcode": "WR9 8EF",
+    "lat": 52.268634796,
+    "lon": -2.149205923,
+    "types": [
+      "Office",
+      "Development"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 1580,
+    "size_to_sqft": 1580,
+    "summary": "Office / Development For Sale, Droitwich",
+    "description": "56 Friar Street is a Grade II listed end terrace building arranged over the ground, first and second floors. The property also benefits from a good-sized basement, which is useable and dry. The building is of brick construction surmounted by a pitched tiled roof. The property was previous used as a beauty salon, however, would be suitable for other commercial uses (offices, retail, healthcare etc.) or for conversion back to a residential premises. Ground Floor 585 sq ft 54.32 sq m First Floor 479 sq ft 44.49 sq m Second Floor 517 sq ft 47.99 sq m Total1,580 sq ft 146.80 sq m",
+    "features": [
+      "Three storey end of terrace building",
+      "Located in central Droitwich",
+      "Suitable for conversion to residential (subject to planning)"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/8ebbaf895518599f1c6b30b8daa00e14-letting346716.jpeg",
+      "https://as-images.imgix.net/dbf9c87124c2e60e7726fa602a68c8d2-letting346716.jpeg",
+      "https://as-images.imgix.net/b7a7c036a13697e2faba6b2ea479af6a-letting346716.jpeg",
+      "https://as-images.imgix.net/2c0cd664e78c45a5ff761f32a2bdb80b-letting346716.jpeg",
+      "https://as-images.imgix.net/58efa4637c5b424503272ea491e7b6d7-letting346716.jpeg",
+      "https://as-images.imgix.net/c278cedc5a32a1fa980999ec0e2fefba-letting346716.jpeg",
+      "https://as-images.imgix.net/d31113edb670bdc428b3f239b6ee775f-letting346716.jpeg",
+      "https://as-images.imgix.net/934a681254a82e7dd53a8241ee89ef14-letting346716.jpeg",
+      "https://as-images.imgix.net/e5631597caff9bd4fb85700f6bda5008-letting346716.jpeg",
+      "https://as-images.imgix.net/fcb2e9442c3306f30a80b6106177d71f-letting346716.jpeg",
+      "https://as-images.imgix.net/5af03e8bd9894da5fea7dc9efccc0e74-letting346716.jpeg",
+      "https://as-images.imgix.net/3e4cddba36d54f5a1dd57650865560b1-letting346716.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/cda20d7331d632253d0c54bf0f1fce0b-letting346716.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-05 17:20:54"
+  },
+  {
+    "id": 346850,
+    "address": "Stourport Road",
+    "town": "Kidderminster",
+    "postcode": "DY11 7QH",
+    "lat": 52.360488891,
+    "lon": -2.266505956,
+    "types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3212,
+    "size_to_sqft": 3212,
+    "summary": "Office To Let, Kidderminster",
+    "description": "Digital House is self-contained office premises, which is securely fenced and gated with generous parking. Both the ground floor right and first floor suites have been let. The remaining Ground Floor, Left Suite is finished to an immaculate standard with a dedicated entrance and reception, a mixture of open plan and private offices together with kitchen and WC facilities. High specification fixtures include suspended ceilings, perimeter trunking, air conditioning and LED lighting with sensors. Ground Floor, Left Suite298.41 sq m3,212 sq ft",
+    "features": [
+      "High specification finished to immaculate standard",
+      "Open plan offices with kitchen and WC"
+    ],
+    "rent_psf": 12.5,
+    "rent": "£12.50 per sq ft",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/97e35fefce848e5234dc16c6567c2d7c-20260122-121456-1-1-1.jpg",
+      "https://as-images.imgix.net/0d5a23cc2cab4c30ea7c43a17d6687b9-20260122-121441.jpg",
+      "https://as-images.imgix.net/be6e613d9b4109a430e3f295586237bf-20260122-121310.jpg",
+      "https://as-images.imgix.net/9c85b03a54eeffcb244e67477c9fa994-20260122-121248.jpg",
+      "https://as-images.imgix.net/25a8eee432f79c500b3cf58732e9af76-20260122-120957.jpg",
+      "https://as-images.imgix.net/6e06fe320e659032200e718bf24273af-20260122-120946.jpg",
+      "https://as-images.imgix.net/837f1b31e4cb4c84ef7e24943da5d4f6-20260122-115328.jpg",
+      "https://as-images.imgix.net/5078e857570bc31f663a7feda0b3cfb7-20260122-115719.jpg",
+      "https://as-images.imgix.net/a161658386ac9d155bc6fc1eecaa0e34-20260122-114954.jpg",
+      "https://as-images.imgix.net/5c79c81ef1b6277f325395a8ff3b8386-20260122-114933.jpg",
+      "https://as-images.imgix.net/7f5385400c49b2efcd2699a53aa65469-20260122-114916.jpg",
+      "https://as-images.imgix.net/1ce24dbde565ac6f5feacb9fedbf1a3e-20260122-115426.jpg",
+      "https://as-images.imgix.net/0f44612b1b878fb84d4776220ccc0b17-20260122-115003.jpg",
+      "https://as-images.imgix.net/0b6fb4d8fd4efbab9b45e8011e9062bd-20260122-114902.jpg",
+      "https://as-images.imgix.net/9ffffa986dc35e41cf306337962b2b6b-20260122-115012.jpg",
+      "https://as-images.imgix.net/1d75e83bb9628416a8731d8bb7861269-20260122-114843.jpg",
+      "https://as-images.imgix.net/b66c7a50e38c28fb01ccae9e80f171a0-20260122-115438.jpg",
+      "https://as-images.imgix.net/89c358d912775787336bfb7bb194ed2d-20260122-115448.jpg",
+      "https://as-images.imgix.net/01774fdf62d0d26bdca84e8e1b7c34a0-20260122-115503.jpg",
+      "https://as-images.imgix.net/9634501a93248473c66dc1d5ea0973f3-20260122-120204.jpg",
+      "https://as-images.imgix.net/5ba4e937fb433870b1bbdc011544aaf0-20260122-120251.jpg",
+      "https://as-images.imgix.net/e54bc86d38d6ada8734ed98d1fe3369c-20260122-120408.jpg",
+      "https://as-images.imgix.net/af0e1b3cbc597de29d76c7607ef8778f-20260122-120213.jpg"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-05 17:18:50"
+  },
+  {
+    "id": 346649,
+    "address": "Fringe Meadow Road",
+    "town": "Redditch",
+    "postcode": "B98 9NR",
+    "lat": 52.315120697,
+    "lon": -1.888914942,
+    "types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 694,
+    "size_to_sqft": 1669,
+    "summary": "Office To Let, Redditch",
+    "description": "Unit 9 comprises a modern, self-contained single-storey office building arranged to provide two suites available to let with shared communal facilities. Both suites are finished to a good standard and benefit from LED lighting, electric heating and cooling, suspended ceilings and an intruder alarm system. Each suite offers predominantly open-plan accommodation with the flexibility to incorporate private offices if required. There is also a separate partitioned meeting room, which could be made available for shared use on a booking or separate licence basis. Communal areas include a welcoming reception/entrance hall, male and female WCs and a shared kitchen, which offers basic facilities. Externally, the property benefits from on-site parking, with an allocation of approximately five spaces per suite.",
+    "features": [
+      "Suite 1 - 975 sq ft (90.61 sq m)",
+      "Suite 2 - 694 sq ft (64.52 sq m)",
+      "Can be let as a whole"
+    ],
+    "rent_psf": 6650,
+    "rent": "£6,650 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/319f9680b62ff21abacdd57d284d787c-letting346649.jpeg",
+      "https://as-images.imgix.net/14b27874281c0e1f5e06aec4f1a70683-letting346649.jpeg",
+      "https://as-images.imgix.net/4fe7ade9866207f4a49900bfa8112fce-letting346649.jpeg",
+      "https://as-images.imgix.net/74a5182e7788980df742e2dbdf24306c-letting346649.jpeg",
+      "https://as-images.imgix.net/0b8e1d41a2b0d80ec70ee8ce1ffb7463-letting346649.jpeg",
+      "https://as-images.imgix.net/6183e14ac0968b64d2e7d13102f361a8-letting346649.jpeg",
+      "https://as-images.imgix.net/39f1a81f95668222e6d6b4293443535f-letting346649.jpeg",
+      "https://as-images.imgix.net/ba79f71c0e15c75bf5d06962bb05e0d0-letting346649.jpeg",
+      "https://as-images.imgix.net/42e2f9de810ffdc53c3e4a8755f94b20-letting346649.jpeg",
+      "https://as-images.imgix.net/b1660a12804ced569565b281c8d20ba8-letting346649.jpeg",
+      "https://as-images.imgix.net/8551d265630d06b2ce5e0a255f9936c2-letting346649.jpeg",
+      "https://as-images.imgix.net/a41aa27d9a57fb81c1b9c690626f7c8d-letting346649.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c82a239b18d65ac230ecb26ccc577a97-letting346649.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-05 17:17:50"
+  },
+  {
     "id": 346673,
     "address": "1 Fish Street",
     "town": "Worcester",
@@ -53,169 +276,6 @@
       }
     ],
     "last_updated": "2026-02-04 12:45:00"
-  },
-  {
-    "id": 346649,
-    "address": "Fringe Meadow Road",
-    "town": "Redditch",
-    "postcode": "B98 9NR",
-    "lat": 52.315120697,
-    "lon": -1.888914942,
-    "types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 694,
-    "size_to_sqft": 1669,
-    "summary": "Office To Let, Redditch",
-    "description": "Unit 9 comprises a modern, self-contained single-storey office building arranged to provide two suites available to let with shared communal facilities. Both suites are finished to a good standard and benefit from LED lighting, electric heating and cooling, suspended ceilings and an intruder alarm system. Each suite offers predominantly open-plan accommodation with the flexibility to incorporate private offices if required. There is also a separate partitioned meeting room, which could be made available for shared use on a booking or separate licence basis. Communal areas include a welcoming reception/entrance hall, male and female WCs and a shared kitchen, which offers basic facilities. Externally, the property benefits from on-site parking, with an allocation of approximately five spaces per suite. Location Centech Park occupies a prominent position on Fringe Meadow Road within the well-established Moons Moat North Industrial Estate - Redditch's premier business location. The park forms part of a thriving commercial hub that attracts a strong mix of regional and national occupiers. The estate benefits from outstanding transport connectivity, situated just off the A4023, which links directly to Junction 2 of the M42 within minutes. This provides easy access to the wider Midlands motorway network, including the M5, M6 and M40, ensuring efficient distribution routes across the UK. Redditch town centre lies approximately 3 miles to the west, offering a range of retail and amenity facilities, with Redditch Train Station providing direct services to Birmingham New Street in under 40 minutes. The City of Birmingham is located approximately 15 miles north, making Centech Park ideally positioned for businesses seeking excellent regional access while benefiting from a strong local labour pool and established commercial environment.",
-    "features": [
-      "Suite 1 - 975 sq ft (90.61 sq m)",
-      "Suite 2 - 694 sq ft (64.52 sq m)",
-      "Can be let as a whole"
-    ],
-    "rent_psf": 6650,
-    "rent": "£6,650 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/319f9680b62ff21abacdd57d284d787c-letting346649.jpeg",
-      "https://as-images.imgix.net/14b27874281c0e1f5e06aec4f1a70683-letting346649.jpeg",
-      "https://as-images.imgix.net/4fe7ade9866207f4a49900bfa8112fce-letting346649.jpeg",
-      "https://as-images.imgix.net/74a5182e7788980df742e2dbdf24306c-letting346649.jpeg",
-      "https://as-images.imgix.net/0b8e1d41a2b0d80ec70ee8ce1ffb7463-letting346649.jpeg",
-      "https://as-images.imgix.net/6183e14ac0968b64d2e7d13102f361a8-letting346649.jpeg",
-      "https://as-images.imgix.net/39f1a81f95668222e6d6b4293443535f-letting346649.jpeg",
-      "https://as-images.imgix.net/ba79f71c0e15c75bf5d06962bb05e0d0-letting346649.jpeg",
-      "https://as-images.imgix.net/42e2f9de810ffdc53c3e4a8755f94b20-letting346649.jpeg",
-      "https://as-images.imgix.net/b1660a12804ced569565b281c8d20ba8-letting346649.jpeg",
-      "https://as-images.imgix.net/8551d265630d06b2ce5e0a255f9936c2-letting346649.jpeg",
-      "https://as-images.imgix.net/a41aa27d9a57fb81c1b9c690626f7c8d-letting346649.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c82a239b18d65ac230ecb26ccc577a97-letting346649.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-04 10:38:06"
-  },
-  {
-    "id": 346850,
-    "address": "Stourport Road",
-    "town": "Kidderminster",
-    "postcode": "DY11 7QH",
-    "lat": 52.360488891,
-    "lon": -2.266505956,
-    "types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3212,
-    "size_to_sqft": 3212,
-    "summary": "Office To Let, Kidderminster",
-    "description": "Digital House is self-contained office premises, which is securely fenced and gated with generous parking. Both the ground floor right and first floor suites have been let. The remaining Ground Floor, Left Suite is finished to an immaculate standard with a dedicated entrance and reception, a mixture of open plan and private offices together with kitchen and WC facilities. High specification fixtures include suspended ceilings, perimeter trunking, air conditioning and LED lighting with sensors. Ground Floor, Left Suite298.41 sq m3,212 sq ft Location The property is located off the A451 Stourport Road, approximately two miles south of Kidderminster town centre and one and half miles north of Stourport-On-Severn. The property has easy access to the main A442 Worcester Road, which combined with the A451 are the two main arterial roads leading into Kidderminster Town Centre. In recent years, this part of Kidderminster has been totally transformed, attracting a number of high-profile occupiers along the Stourport Road and Silverwoods Way.",
-    "features": [
-      "High specification finished to immaculate standard",
-      "Open plan offices with kitchen and WC"
-    ],
-    "rent_psf": 12.5,
-    "rent": "£12.50 per sq ft",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/97e35fefce848e5234dc16c6567c2d7c-20260122-121456-1-1-1.jpg",
-      "https://as-images.imgix.net/0d5a23cc2cab4c30ea7c43a17d6687b9-20260122-121441.jpg",
-      "https://as-images.imgix.net/be6e613d9b4109a430e3f295586237bf-20260122-121310.jpg",
-      "https://as-images.imgix.net/9c85b03a54eeffcb244e67477c9fa994-20260122-121248.jpg",
-      "https://as-images.imgix.net/25a8eee432f79c500b3cf58732e9af76-20260122-120957.jpg",
-      "https://as-images.imgix.net/6e06fe320e659032200e718bf24273af-20260122-120946.jpg",
-      "https://as-images.imgix.net/837f1b31e4cb4c84ef7e24943da5d4f6-20260122-115328.jpg",
-      "https://as-images.imgix.net/5078e857570bc31f663a7feda0b3cfb7-20260122-115719.jpg",
-      "https://as-images.imgix.net/a161658386ac9d155bc6fc1eecaa0e34-20260122-114954.jpg",
-      "https://as-images.imgix.net/5c79c81ef1b6277f325395a8ff3b8386-20260122-114933.jpg",
-      "https://as-images.imgix.net/7f5385400c49b2efcd2699a53aa65469-20260122-114916.jpg",
-      "https://as-images.imgix.net/1ce24dbde565ac6f5feacb9fedbf1a3e-20260122-115426.jpg",
-      "https://as-images.imgix.net/0f44612b1b878fb84d4776220ccc0b17-20260122-115003.jpg",
-      "https://as-images.imgix.net/0b6fb4d8fd4efbab9b45e8011e9062bd-20260122-114902.jpg",
-      "https://as-images.imgix.net/9ffffa986dc35e41cf306337962b2b6b-20260122-115012.jpg",
-      "https://as-images.imgix.net/1d75e83bb9628416a8731d8bb7861269-20260122-114843.jpg",
-      "https://as-images.imgix.net/b66c7a50e38c28fb01ccae9e80f171a0-20260122-115438.jpg",
-      "https://as-images.imgix.net/89c358d912775787336bfb7bb194ed2d-20260122-115448.jpg",
-      "https://as-images.imgix.net/01774fdf62d0d26bdca84e8e1b7c34a0-20260122-115503.jpg",
-      "https://as-images.imgix.net/9634501a93248473c66dc1d5ea0973f3-20260122-120204.jpg",
-      "https://as-images.imgix.net/5ba4e937fb433870b1bbdc011544aaf0-20260122-120251.jpg",
-      "https://as-images.imgix.net/e54bc86d38d6ada8734ed98d1fe3369c-20260122-120408.jpg",
-      "https://as-images.imgix.net/af0e1b3cbc597de29d76c7607ef8778f-20260122-120213.jpg"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-03 12:51:07"
-  },
-  {
-    "id": 346706,
-    "address": "St. Richards Road",
-    "town": "Evesham",
-    "postcode": "WR11 1XG",
-    "lat": 52.080982208,
-    "lon": -1.947353959,
-    "types": [
-      "Industrial",
-      "Trade Counter"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2888,
-    "size_to_sqft": 2888,
-    "summary": "Industrial / Trade Counter To Let, Evesham",
-    "description": "Unit 9 is a well-presented industrial/trade counter unit of steel portal frame construction, featuring an insulated profile steel roof and a combination of block and insulated steel profile elevations. The unit benefits from a glazed pedestrian entrance, an electrically operated roller shutter door and a dedicated yard/loading area with ample car parking. Situated within a well-established trade counter estate, the location has attracted a strong mix of national and regional occupiers, including Screwfix, Buildbase, Tile Giant, Topps Tiles, Tool Station and Easy Bathrooms. Total Area2,888 sq ft 268.3 sq m Location The property is situated within Evesham, to the south east of Worcestershire. Evesham is a market town within Wychavon which benefits from a population of approximately 25,000, according to the 2011 census. It is located approximately 14 miles south east of Worcester, 14 miles north east of Cheltenham, 27 miles south of Birmingham and 90 miles north west of London. Evesham benefits from good road communications being on the A44; which provides access to Worcester, Oxford and Junction 6 of the M5 motorway (in approximately 25 minutes) and on the A46; which provides access to Redditch, Tewkesbury and Junction 9 of the M5 motorway (in approximately 20 minutes). Evesham also has a mainline station which provides a direct access to the Worcester stations, Oxford and London Paddington.",
-    "features": [
-      "Warehouse access via 1 roller shutter door",
-      "Recently refurbished",
-      "Dedicated yard area"
-    ],
-    "rent_psf": 36100,
-    "rent": "£36,100 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/e964e4b14ea0b382c5e859e23f5744a2-letting346706.jpeg",
-      "https://as-images.imgix.net/23dd1cf57ec0e79ccc201943bb107b1e-letting346706.jpeg",
-      "https://as-images.imgix.net/51e1ff60e4dd3b70f5f573d43574db90-letting346706.jpeg",
-      "https://as-images.imgix.net/bdb3b04c7c998894c59aac457a3878b2-letting346706.jpeg",
-      "https://as-images.imgix.net/9076ba0914117231c69cb23856c264aa-letting346706.jpeg",
-      "https://as-images.imgix.net/422c606f10a8c007e4ac8e2df0dcb168-letting346706.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/39eab111acbd5b86bf5fc3b9683e430f-17173-hi-aurora-evesham-davies-road-tp-brochure-v6.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-03 10:16:54"
   },
   {
     "id": 346708,
@@ -441,66 +501,6 @@
       }
     ],
     "last_updated": "2026-01-30 13:01:48"
-  },
-  {
-    "id": 346716,
-    "address": "56 Friar Street",
-    "town": "Droitwich",
-    "postcode": "WR9 8EF",
-    "lat": 52.268634796,
-    "lon": -2.149205923,
-    "types": [
-      "Office",
-      "Development"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 1580,
-    "size_to_sqft": 1580,
-    "summary": "Office / Development For Sale, Droitwich",
-    "description": "56 Friar Street is a Grade II listed end terrace building arranged over the ground, first and second floors. The property also benefits from a good-sized basement, which is useable and dry. The building is of brick construction surmounted by a pitched tiled roof. The property was previous used as a beauty salon, however, would be suitable for other commercial uses (offices, retail, healthcare etc.) or for conversion back to a residential premises. Ground Floor 585 sq ft 54.32 sq m First Floor 479 sq ft 44.49 sq m Second Floor 517 sq ft 47.99 sq m Total1,580 sq ft 146.80 sq m Location Droitwich is a well-known Worcestershire spa town being popular with local and national companies (due to its obvious communication links) as well as having a strong business community and good facilities. Birmingham city centre is situated approximately 22 miles to the north east, Bromsgrove is situated approximately seven miles to the north east, Worcester city centre is situated approximately eight miles to the south west, Kidderminster is situated approximately nine miles to the north and Redditch is situated approximately 17 miles to the north east. The M5 motorway is in close proximity to property with Junction 5 being approximately three miles by road to the north. From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales. Droitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester.",
-    "features": [
-      "Three storey end of terrace building",
-      "Located in central Droitwich",
-      "Suitable for conversion to residential (subject to planning)"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/8ebbaf895518599f1c6b30b8daa00e14-letting346716.jpeg",
-      "https://as-images.imgix.net/dbf9c87124c2e60e7726fa602a68c8d2-letting346716.jpeg",
-      "https://as-images.imgix.net/b7a7c036a13697e2faba6b2ea479af6a-letting346716.jpeg",
-      "https://as-images.imgix.net/2c0cd664e78c45a5ff761f32a2bdb80b-letting346716.jpeg",
-      "https://as-images.imgix.net/58efa4637c5b424503272ea491e7b6d7-letting346716.jpeg",
-      "https://as-images.imgix.net/c278cedc5a32a1fa980999ec0e2fefba-letting346716.jpeg",
-      "https://as-images.imgix.net/d31113edb670bdc428b3f239b6ee775f-letting346716.jpeg",
-      "https://as-images.imgix.net/934a681254a82e7dd53a8241ee89ef14-letting346716.jpeg",
-      "https://as-images.imgix.net/e5631597caff9bd4fb85700f6bda5008-letting346716.jpeg",
-      "https://as-images.imgix.net/fcb2e9442c3306f30a80b6106177d71f-letting346716.jpeg",
-      "https://as-images.imgix.net/5af03e8bd9894da5fea7dc9efccc0e74-letting346716.jpeg",
-      "https://as-images.imgix.net/3e4cddba36d54f5a1dd57650865560b1-letting346716.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/cda20d7331d632253d0c54bf0f1fce0b-letting346716.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-01-30 10:21:05"
   },
   {
     "id": 346657,
@@ -800,59 +800,6 @@
       }
     ],
     "last_updated": "2026-01-29 16:15:48"
-  },
-  {
-    "id": 346891,
-    "address": "Radford Road",
-    "town": "Alvechurch",
-    "postcode": "B48 7LA",
-    "lat": 52.351924896,
-    "lon": -1.959059953,
-    "types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2031,
-    "size_to_sqft": 3071,
-    "summary": "Office To Let, Alvechurch",
-    "description": "The Archway at Crown House is a beautifully refurbished Listed building, offering prestigious self-contained office accommodation that combines historic character with contemporary design. The property provides a versatile mix of private offices, open-plan workspaces and meeting areas, with modern facilities including 3 out of 5 recently replaced air conditioning units, kitchenettes and convenient restroom amenities. The upper floors offer flexible layouts, allowing spaces to be easily adapted or subdivided to suit a variety of business needs. With its combination of heritage charm, abundant natural light, and high-quality finishes, The Archway presents a rare opportunity to occupy a distinguished and highly adaptable office environment within the Crown House development. Ground Floor1,040 sq ft96.58 sq m First Floor1,653 sq ft153.58 sq m Second Floor378 sq ft35.10 sq m Total3,071 sq ft285.26 sq m Location Alvechurch is a picturesque village set within the Bromsgrove district of Worcestershire, combining countryside tranquility with urban connectivity - just minutes from the M42, M5, M40 and Alvechurch station, with its direct links to Birmingham New Street and Redditch stations. Peaceful surroundings, with local shops, cafes, pubs and green spaces for lunch breaks and team outings. Alvechurch offers a unique opportunity to base your business in a thriving village community while staying closely connected to Birmingham's commercial hub. Whether you are a growing SME or an established firm looking to relocate, this location supports productivity, wellbeing, brand image and long-term growth.",
-    "features": [
-      "2,031 sq ft to 3,071 sq ft (189 - 285 sq m)",
-      "Refurbished offices",
-      "Alvechurch village location"
-    ],
-    "rent_psf": 23200,
-    "rent": "£23,200 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/f0369c5898ff1226e181b55e0c710bcf-letting346891.jpeg",
-      "https://as-images.imgix.net/900fbee8a7bbf01ed1fb0d3f85350eaa-letting346891.jpeg",
-      "https://as-images.imgix.net/97c2ba28a86ca3c6f9ec38330d22602c-letting346891.jpeg",
-      "https://as-images.imgix.net/7efd1c084e16d1b962a3a7916a7f0ce4-letting346891.jpeg",
-      "https://as-images.imgix.net/a4154897f5a02f4b22783139d61c6076-letting346891.jpeg",
-      "https://as-images.imgix.net/f11796785cff8219a3e0d91396b0b4ca-letting346891.jpeg",
-      "https://as-images.imgix.net/0583f7f6f88f068a0de139e91a0d527b-letting346891.jpeg",
-      "https://as-images.imgix.net/352aba9b129156c42415764b97f99c1c-letting346891.jpeg",
-      "https://as-images.imgix.net/094a05d7b046d4b4ef6e9e3657265d1f-letting346891.jpeg",
-      "https://as-images.imgix.net/8b9760ccfc006ffb9762fe19995e04ad-letting346891.jpeg",
-      "https://as-images.imgix.net/29de76ae4a3fb35fa35492894f6366ae-letting346891.jpeg",
-      "https://as-images.imgix.net/bc05ed7a04a17787fcb8fea9554e1093-letting346891.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/534b7beb865b124e5952d0e557708318-letting346891.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-01-29 16:01:49"
   },
   {
     "id": 346655,
