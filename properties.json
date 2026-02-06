@@ -2276,59 +2276,6 @@
     "last_updated": "2026-01-29 10:47:04"
   },
   {
-    "id": 346893,
-    "address": "Stoke Prior",
-    "town": "Bromsgrove",
-    "postcode": "B60 4AD",
-    "lat": 52.2981096375,
-    "lon": -2.0747777912,
-    "types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1987,
-    "size_to_sqft": 1987,
-    "summary": "Industrial To Let, Bromsgrove",
-    "description": "Unit 3 comprises a modern mid-terrace steel portal frame industrial/warehouse building of part brick and block/part steel profile panel cladding with a pitched steel, profile panel roof. This unit is arranged over the ground floor only and offers office space to the front, along with kitchen and WC facilities. Alongside the roller shutter door there is pedestrian access to the front and a fire escape to the rear. The property is located on Saxon Business Park, Hanbury Road, Stoke Prior and is approximately two miles south of Bromsgrove town centre. Saxon Business Park has a range of small, medium and large, local and national, office and industrial occupiers, all of whom benefit from being on an established business park location with easily accessible estate roads and on site car parking. Junction 4 of the M5 motorway and Junction 1 of the M42 motorway lie approximately three mile distant providing access to the M5 and M42 motorway as well as the national motorway network. Birmingham City Centre is situated approximately 15 miles to the north and Worcester City Centre is situated approximately 10 miles to the south. Within Saxon Business Park, the property is situated to the front of the estate. The unit is surrounded by similar commercial occupiers with a mixture of small to medium warehouse accommodation and office buildings. We would note that in the immediate vicinity there are no vacant units. This location is extremely popular with local, regional and national businesses.",
-    "features": [
-      "Roller shutter door",
-      "Parking to the front of the property",
-      "Popular business park location",
-      "Excellent motorway links to M5 and M42 motorways"
-    ],
-    "rent_psf": 18000,
-    "rent": "£18,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/2ac51a6d60c6331a15da07d1f1b477be-letting346893.jpeg",
-      "https://as-images.imgix.net/1c6bf2609ee0dcaed25aba5dbc92145b-letting346893.jpeg",
-      "https://as-images.imgix.net/fc60aa03f58cc5d94049586a47aae125-letting346893.jpeg",
-      "https://as-images.imgix.net/3591947e77a17ff62ae37970a990a1d5-letting346893.jpeg",
-      "https://as-images.imgix.net/1a210b9a890faecee9ffd4a5fd2ac41d-letting346893.jpeg",
-      "https://as-images.imgix.net/0d2709580fbe0fa6a0b2e5ecd5e60de3-letting346893.jpeg",
-      "https://as-images.imgix.net/d365d6f34860767d87a4824cf9612f92-letting346893.jpeg",
-      "https://as-images.imgix.net/156bc5f8e6725a9c231c08394376dcaa-letting346893.jpeg",
-      "https://as-images.imgix.net/0e2aa5de73b3f152935c2a42076acc6c-letting346893.jpeg",
-      "https://as-images.imgix.net/91f9825166d0ca45dc2e53618ea4d4c3-letting346893.jpeg",
-      "https://as-images.imgix.net/c0d43b072c86fbaf1578c3c2f7cf84c2-letting346893.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/031642310361759acd0646f0509db7fa-letting346893.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-01-29 10:46:09"
-  },
-  {
     "id": 346680,
     "address": "High Street",
     "town": "Bromsgrove",
