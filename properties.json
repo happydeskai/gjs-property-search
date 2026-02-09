@@ -2283,59 +2283,6 @@
     "last_updated": "2026-01-29 10:47:15"
   },
   {
-    "id": 346684,
-    "address": "Offerton Lane",
-    "town": "Worcester",
-    "postcode": "WR3 8SX",
-    "lat": 52.221355438,
-    "lon": -2.152115106,
-    "types": [
-      "Industrial",
-      "Industrial / Storage"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3116,
-    "size_to_sqft": 6333,
-    "summary": "Industrial / Industrial / Storage To Let, Worcester",
-    "description": "The subject industrial / warehouse unit offers a newly built property that has been completed to a high standard. The building comprises a steel portal frame with part concrete block and part clad elevations, all situated under a pitched roof with roof lighting throughout. Access to the unit is via two electric roller shutter doors (4m w x 5.1m h) and two pedestrian doors, both leading out to a loading / unloading bay. Further external space comprises a dedicated car parking area, which is currently being resurfaced. Further specification points include a sealed concrete floor, LED lighting and brand new WC & kitchenette facilities, which are currently being installed. The preference is to let the unit to one occupier, however it can be split into two, with facilities given to each. Single Unit 6,333 sq ft 588.35 sq m Smaller Unit 3,166 sq ft 294.13 sq m",
-    "location": "Offerton Barns Business Centre is situated on the immediate outskirts of Worcester, less than one miles from Junction 6 of the M5 motorway - which equates to a journey time of less than three minutes. Being so close to this junction offers unparalleled access to Worcestershire and the national motorway network. Also located around this motorway junction is Shire Business Park, Worcester Six Business Park and Blackpole Trading Estates; positioning the unit on the fridges of Worcester's commercial centre, whilst also affording accessibility to the wider area.",
-    "features": [
-      "Brand new industrial / warehouse units that are available to rent immediately as whole or part",
-      "Sizes available from 3,166 sq ft (294.13 sq m) to 6,333 sq ft (588.35 sq m) GIA",
-      "Fully insulated warehouse with the provision of WCs and further facilities upon request",
-      "Situated adjacent to Junction 6 of the M5 motorway (journey time of less than three minutes)",
-      "LED Lighting through with two electric roller shutter doors - offering a high specification"
-    ],
-    "rent_psf": 33000,
-    "rent": "£33,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/ac63693cf900faf4f05ec60305f1502f-letting346684.jpeg",
-      "https://as-images.imgix.net/bbae235adedbb48b7c9649d18f8c5eeb-letting346684.jpeg",
-      "https://as-images.imgix.net/3f6ba3e7719bc4477d1ca392c3dfd726-letting346684.jpeg",
-      "https://as-images.imgix.net/c752caf8840c0056316717c15af65031-letting346684.jpeg",
-      "https://as-images.imgix.net/793c90d371934b35de8eb1f032110630-letting346684.jpeg",
-      "https://as-images.imgix.net/ad29059d6809b49b190ac658cbda7136-letting346684.jpeg",
-      "https://as-images.imgix.net/a3a691074530447d0809cbace3b26da5-letting346684.jpeg",
-      "https://as-images.imgix.net/7c1b66923ee86f822011ab2f2185bff2-letting346684.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/087785b2df173512d6283df8ffa7a25b-letting346684.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-01-29 10:47:04"
-  },
-  {
     "id": 346680,
     "address": "High Street",
     "town": "Bromsgrove",
