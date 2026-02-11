@@ -230,7 +230,8 @@ async function main() {
   try {
     const id = getParam('id');
     console.log('property main running, id=', id);
-    // Load properties.json from the same host so this works on Vercel and GitHub Pages
+
+    // Load properties.json from the same host (works on Vercel or GitHub Pages)
     const res = await fetch('/properties.json', { cache: 'no-store' });
     if (!res.ok) throw new Error('Failed to fetch properties.json: ' + res.status);
     const list = await res.json();
@@ -435,7 +436,6 @@ document.addEventListener('DOMContentLoaded', main);
     z-index: 1000;
     background: rgba(16,17,18,0.55);
     backdrop-filter: blur(4px);
-    /* keep the flex fallback */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -443,10 +443,9 @@ document.addEventListener('DOMContentLoaded', main);
     height: 100vh;
   }
 
-  /* Make the dialog fixed & slightly higher than true center */
   .modal__dialog {
     position: fixed;
-    top: 45%;           /* moved up from 50% to sit slightly higher in viewport */
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%) scale(.995);
     width: 100%;
@@ -458,106 +457,43 @@ document.addEventListener('DOMContentLoaded', main);
     transition: transform .18s ease, opacity .18s ease;
   }
 
-  #enquiryModal[aria-hidden="false"] .modal__dialog {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-  }
-  #enquiryModal[aria-hidden="true"] .modal__dialog {
-    transform: translate(-50%, -46%) scale(.995);
-    opacity: 0;
-  }
+  #enquiryModal[aria-hidden="false"] .modal__dialog { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  #enquiryModal[aria-hidden="true"] .modal__dialog { transform: translate(-50%, -46%) scale(.995); opacity: 0; }
 
-  .modal__header {
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:18px 20px;
-    border-bottom:1px solid #f0f1f3;
-  }
-  .modal__title {
-    margin:0;
-    font-size:18px;
-    font-weight:700;
-    color: #111;
-  }
-  .modal__close {
-    background:transparent;border:none;font-size:20px;cursor:pointer;color:#555;
-    padding:6px;border-radius:6px;
-  }
+  .modal__header { display:flex; align-items:center; justify-content:space-between; padding:18px 20px; border-bottom:1px solid #f0f1f3; }
+  .modal__title { margin:0; font-size:18px; font-weight:700; color:#111; }
+  .modal__close { background:transparent;border:none;font-size:20px;cursor:pointer;color:#555; padding:6px;border-radius:6px; }
   .modal__close:focus { outline:2px solid rgba(16,17,18,.12); }
 
   .modal__body { padding:18px 20px 22px; }
-
   .modal__hint { color:#666;font-size:13px;margin-bottom:12px; }
 
-  /* Form styles */
   .modern-form { display:block; gap:12px; }
-  .form-grid {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap:12px;
-  }
+  .form-grid { display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
   @media(max-width:560px){ .form-grid {grid-template-columns:1fr} }
 
   label { display:block; font-size:13px; color:#333; margin-bottom:6px; }
   .input, textarea {
-    width:100%;
-    padding:10px 12px;
-    border-radius:10px;
-    border:1px solid #e6e8eb;
-    background:#fff;
-    font-size:15px;
-    color:#111;
-    box-shadow: inset 0 1px 2px rgba(16,17,18,0.03);
-    transition:box-shadow .12s ease, border-color .12s ease, transform .08s ease;
+    width:100%; padding:10px 12px; border-radius:10px; border:1px solid #e6e8eb; background:#fff;
+    font-size:15px; color:#111; box-shadow: inset 0 1px 2px rgba(16,17,18,0.03); transition:box-shadow .12s ease, border-color .12s ease, transform .08s ease;
   }
-  .input:focus, textarea:focus {
-    border-color: #101112;
-    box-shadow: 0 4px 18px rgba(16,17,18,0.06);
-    outline: none;
-  }
+  .input:focus, textarea:focus { border-color: #101112; box-shadow: 0 4px 18px rgba(16,17,18,0.06); outline: none; }
   textarea { min-height:110px; resize:vertical; }
 
   .form-row { margin-bottom:8px; }
+  .error { color: #b91c1c; font-size:13px; margin-top:6px; }
 
-  .error {
-    color: #b91c1c; font-size:13px; margin-top:6px;
-  }
+  .modal__actions { display:flex; gap:10px; margin-top:12px; align-items:center; }
 
-  .modal__actions {
-    display:flex; gap:10px; margin-top:12px; align-items:center;
-  }
-
-  .btn {
-    display:inline-flex; align-items:center; justify-content:center;
-    border: none; cursor:pointer; padding:10px 14px; border-radius:10px;
-    font-weight:700; font-size:14px;
-  }
-  .btn-primary {
-    background: linear-gradient(180deg,#101112,#0b0b0b);
-    color: #fff;
-    box-shadow: 0 6px 18px rgba(16,17,18,0.12);
-  }
-  .btn-ghost {
-    background:transparent;border:1px solid #e6e8eb;color:#222;padding:8px 12px;border-radius:10px;
-  }
+  .btn { display:inline-flex; align-items:center; justify-content:center; border: none; cursor:pointer; padding:10px 14px; border-radius:10px; font-weight:700; font-size:14px; }
+  .btn-primary { background: linear-gradient(180deg,#101112,#0b0b0b); color: #fff; box-shadow: 0 6px 18px rgba(16,17,18,0.12); }
+  .btn-ghost { background:transparent;border:1px solid #e6e8eb;color:#222;padding:8px 12px;border-radius:10px; }
   .btn:disabled { opacity:.6; cursor:not-allowed; transform:none; }
 
-  /* spinner */
-  .spinner {
-    display:inline-block;
-    width:16px;height:16px;border-radius:50%;
-    border:2px solid rgba(255,255,255,.25);
-    border-top-color: #fff;
-    animation: spin .7s linear infinite;
-    margin-left:8px;
-  }
+  .spinner { display:inline-block; width:16px;height:16px;border-radius:50%; border:2px solid rgba(255,255,255,.25); border-top-color: #fff; animation: spin .7s linear infinite; margin-left:8px; }
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  /* success message */
-  .modal__success {
-    padding: 18px 20px; text-align:center;
-  }
+  .modal__success { padding: 18px 20px; text-align:center; }
   .modal__success h3 { margin:0 0 8px; font-size:16px; }
   .modal__success p { color:#444; font-size:14px; margin:0 0 12px; }
 </style>
@@ -605,7 +541,6 @@ document.addEventListener('DOMContentLoaded', main);
           <div class="error" id="err-message" aria-live="polite" style="display:none"></div>
         </div>
 
-        <!-- Mailing list tick box (requested) -->
         <div class="form-row" style="margin-top:6px; display:flex; align-items:center; gap:10px;">
           <input id="mailingListInput" type="checkbox" name="mailingList" />
           <label for="mailingListInput" style="margin:0; font-size:13px; color:#333;">Add me to your mailing list</label>
@@ -621,7 +556,6 @@ document.addEventListener('DOMContentLoaded', main);
       </form>
     </div>
 
-    <!-- Success template (hidden until needed) -->
     <div id="enqSuccess" style="display:none;">
       <div class="modal__success">
         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" style="display:block;margin:0 auto 8px">
@@ -650,7 +584,6 @@ document.addEventListener('DOMContentLoaded', main);
   const doneBtn = document.getElementById('doneBtn');
   const propRefHint = document.getElementById('propRefHint');
 
-  // fields
   const fields = {
     firstName: document.getElementById('firstNameInput'),
     lastName: document.getElementById('lastNameInput'),
@@ -660,9 +593,8 @@ document.addEventListener('DOMContentLoaded', main);
     mailingList: document.getElementById('mailingListInput')
   };
 
-  // serverless endpoint to receive enquiries and send email to Kato
-  // Update this if you deploy the function to a different path / host.
-  // If your frontend remains on another host (e.g. GitHub Pages) set this to the full function URL:
+  // If this page is served from the same Vercel project as the API, keep the relative path.
+  // If you host the page elsewhere, set to the full Vercel URL, e.g.:
   // const SEND_ENDPOINT = 'https://your-project.vercel.app/api/send-enquiry';
   const SEND_ENDPOINT = '/api/send-enquiry';
 
@@ -670,7 +602,6 @@ document.addEventListener('DOMContentLoaded', main);
 
   function showModal() {
     lastFocusedEl = document.activeElement;
-    // lock background scroll so modal is centered in viewport
     try { document.documentElement.style.overflow = 'hidden'; document.body.style.overflow = 'hidden'; } catch(e){}
     modal.setAttribute('aria-hidden', 'false');
     scheduleHeightPings();
@@ -678,22 +609,17 @@ document.addEventListener('DOMContentLoaded', main);
     const title = document.getElementById('prop-title')?.textContent?.trim();
     propRefHint.textContent = title ? `About: ${title}` : '';
 
-    // reset & focus without scrolling the viewport
     form.reset();
     clearErrors();
     bodyBox.style.display = '';
     successBox.style.display = 'none';
 
-    // Focus first input but prevent browser auto-scroll where supported.
     setTimeout(() => {
-      try {
-        fields.firstName.focus({ preventScroll: true });
-      } catch (err) {
-        // Fallback: save/restore scroll
+      try { fields.firstName.focus({ preventScroll: true }); }
+      catch {
         const sx = window.scrollX || window.pageXOffset;
         const sy = window.scrollY || window.pageYOffset;
-        fields.firstName.focus();
-        window.scrollTo(sx, sy);
+        fields.firstName.focus(); window.scrollTo(sx, sy);
       }
     }, 50);
   }
@@ -725,14 +651,12 @@ document.addEventListener('DOMContentLoaded', main);
     return ok;
   }
 
-  // escape helper (server also escapes – this helps a little for logs/requests)
   function escapeForJson(s){ return String(s === undefined || s === null ? '' : s); }
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     if (!validate()) return;
 
-    // gather data
     const payload = {
       firstName: escapeForJson(fields.firstName.value.trim()),
       lastName:  escapeForJson(fields.lastName.value.trim()),
@@ -744,7 +668,6 @@ document.addEventListener('DOMContentLoaded', main);
       propertyTitle: (document.getElementById('prop-title')?.textContent || '')
     };
 
-    // UI: spinner + disable button
     document.getElementById('sendEnquiryBtn').disabled = true;
     spinner.style.display = '';
 
@@ -760,7 +683,6 @@ document.addEventListener('DOMContentLoaded', main);
         throw new Error(`Send failed: ${res.status} ${text}`);
       }
 
-      // success UI (existing)
       spinner.style.display = 'none';
       document.getElementById('sendEnquiryBtn').disabled = false;
       bodyBox.style.display = 'none';
@@ -774,35 +696,24 @@ document.addEventListener('DOMContentLoaded', main);
     }
   });
 
-  // Open/close wiring
   openBtn && openBtn.addEventListener('click', showModal);
   closeBtn && closeBtn.addEventListener('click', closeModal);
   cancelBtn && cancelBtn.addEventListener('click', closeModal);
   doneBtn && doneBtn.addEventListener('click', closeModal);
 
-  // click outside to close
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) closeModal();
-  });
-
-  // ESC key
+  modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
 
-  // Simple focus trap (keeps focus inside dialog)
   modal.addEventListener('keydown', (e) => {
     if (e.key !== 'Tab') return;
     const focusables = dialog.querySelectorAll('a[href], button:not([disabled]), textarea, input, select');
     if (focusables.length === 0) return;
     const first = focusables[0];
     const last = focusables[focusables.length - 1];
-    if (e.shiftKey && document.activeElement === first) {
-      e.preventDefault(); last.focus();
-    } else if (!e.shiftKey && document.activeElement === last) {
-      e.preventDefault(); first.focus();
-    }
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
   });
 
-  // expose for dev/debug if needed
   window.__enquiryModal = { show: showModal, close: closeModal };
 })();
 </script>
