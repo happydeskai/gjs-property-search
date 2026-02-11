@@ -1,5 +1,58 @@
 [
   {
+    "id": 352214,
+    "address": "Berrow Green Road",
+    "town": "Worcester",
+    "postcode": "WR6 6PQ",
+    "lat": 52.230157,
+    "lon": -2.368226,
+    "types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2561,
+    "size_to_sqft": 5225,
+    "summary": "Office Suites with Excellent Car Parking",
+    "features": [],
+    "rent_psf": 22500,
+    "rent": "£22,500 - £45,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 41750,
+    "epc_rating": "D (91)",
+    "images": [
+      "https://as-images.imgix.net/1ba4e7012c5391066164848625146e64-img-0173.JPEG",
+      "https://as-images.imgix.net/297fa4837418d755f43c315aa0e58392-img-0170.JPEG",
+      "https://as-images.imgix.net/e1c41978fdb6426c1472b0ff430d01b5-img-0162.JPEG",
+      "https://as-images.imgix.net/188cc6c222aefb9f5a012bc1904f8422-img-0161.JPEG",
+      "https://as-images.imgix.net/0a17a28b862720c6262d36041f558fd7-img-0154-1.JPEG",
+      "https://as-images.imgix.net/33ed5981d22cca4990a716984937c13d-img-0153.JPEG",
+      "https://as-images.imgix.net/2bc282e7be9326225532444a1882caf8-img-0155.JPEG",
+      "https://as-images.imgix.net/6cc3fea54a5b2639f4aa0d24329a7230-img-0159.JPEG",
+      "https://as-images.imgix.net/aa3c4a8f95aaa63fe832f90f8cb77b1a-img-0164.JPEG",
+      "https://as-images.imgix.net/0171633d22fd61cd51457529287e1583-img-0158.JPEG"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-11 15:39:02"
+  },
+  {
     "id": 350693,
     "address": "Willow End Park",
     "town": "Malvern",
