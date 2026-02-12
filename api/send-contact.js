@@ -5,6 +5,12 @@ function escapeHtml(str) {
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 }
+function nl2br(str) {
+  return escapeHtml(String(str || '')).replace(/\n/g, '<br>');
+}
+function safeList(arr) {
+  return Array.isArray(arr) ? arr.map(escapeHtml).join(', ') : escapeHtml(String(arr || ''));
+}
 
 // SMTP + app config from Vercel env
 const SMTP_HOST   = process.env.SMTP_HOST;
@@ -73,33 +79,66 @@ module.exports = async (req, res) => {
 
     const ip = req.headers['x-forwarded-for'] || req.socket?.remoteAddress || '';
     const ua = req.headers['user-agent'] || '';
-    const safeList = (arr) => Array.isArray(arr) ? arr.map(escapeHtml).join(', ') : escapeHtml(String(arr || ''));
 
+    const fullName = [firstName, lastName].filter(Boolean).join(' ');
+    const methods  = (Array.isArray(preferredMethods) && preferredMethods.length) ? preferredMethods.join(', ') : '';
+
+    // Plain-text (machine-friendly)
+    const text = [
+      `Website contact${reasonForContact ? ' — ' + reasonForContact : ''}`,
+      page ? `From page: ${page}` : '',
+      `Name: ${fullName}`,
+      `Email: ${email}`,
+      phone ? `Phone: ${phone}` : '',
+      company ? `Company: ${company}` : '',
+      methods ? `Preferred contact method: ${methods}` : '',
+      `GDPR consent: ${gdprConsent ? 'Yes' : 'No'}`,
+      `Newsletter opt-in: ${newsletter ? 'Yes' : 'No'}`,
+      '',
+      'Message:',
+      String(message || ''),
+      '',
+      ip || ua ? '— Context —' : '',
+      ip ? `IP: ${ip}` : '',
+      ua ? `User-Agent: ${ua}` : '',
+      (utm_source || utm_medium || utm_campaign)
+        ? `UTM: ${[utm_source, utm_medium, utm_campaign].filter(Boolean).join(' / ')}`
+        : ''
+    ].filter(Boolean).join('\n');
+
+    // Simple HTML (human-friendly, minimal markup)
     const html = `<!doctype html>
-<html><body>
-  <h2>Website contact</h2>
+<html><body style="margin:0;padding:16px;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#111;">
+  <h2 style="margin:0 0 12px 0;font-size:18px;">Website contact${reasonForContact ? ' — ' + escapeHtml(reasonForContact) : ''}</h2>
+  ${page ? `<p style="margin:0 0 10px 0;"><strong>From page:</strong> <a href="${escapeHtml(page)}" style="color:#0b5fff;text-decoration:none;">${escapeHtml(page)}</a></p>` : ''}
 
-  ${page ? `<p><strong>From page:</strong> ${escapeHtml(page)}</p>` : ''}
-  <p><strong>Name:</strong> ${escapeHtml(firstName)} ${escapeHtml(lastName)}</p>
-  <p><strong>Email:</strong> ${escapeHtml(email)}</p>
-  ${phone ? `<p><strong>Phone:</strong> ${escapeHtml(phone)}</p>` : ''}
+  <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;max-width:700px;border-collapse:collapse;margin:0 0 12px 0;">
+    <tbody>
+      <tr><td style="padding:6px 0;width:220px;"><strong>Name</strong></td><td style="padding:6px 0;">${escapeHtml(fullName)}</td></tr>
+      <tr><td style="padding:6px 0;"><strong>Email</strong></td><td style="padding:6px 0;"><a href="mailto:${escapeHtml(email)}" style="color:#0b5fff;text-decoration:none;">${escapeHtml(email)}</a></td></tr>
+      ${phone ? `<tr><td style="padding:6px 0;"><strong>Phone</strong></td><td style="padding:6px 0;">${escapeHtml(phone)}</td></tr>` : ''}
+      ${company ? `<tr><td style="padding:6px 0;"><strong>Company</strong></td><td style="padding:6px 0;">${escapeHtml(company)}</td></tr>` : ''}
+      ${(Array.isArray(preferredMethods) && preferredMethods.length) ? `<tr><td style="padding:6px 0;"><strong>Preferred contact method</strong></td><td style="padding:6px 0;">${safeList(preferredMethods)}</td></tr>` : ''}
+      ${reasonForContact ? `<tr><td style="padding:6px 0;"><strong>Reason for contact</strong></td><td style="padding:6px 0;">${escapeHtml(reasonForContact)}</td></tr>` : ''}
+      <tr><td style="padding:6px 0;"><strong>GDPR consent</strong></td><td style="padding:6px 0;">${gdprConsent ? 'Yes' : 'No'}</td></tr>
+      <tr><td style="padding:6px 0;"><strong>Newsletter opt‑in</strong></td><td style="padding:6px 0;">${newsletter ? 'Yes' : 'No'}</td></tr>
+    </tbody>
+  </table>
 
-  ${company ? `<p><strong>Company:</strong> ${escapeHtml(company)}</p>` : ''}
-  ${reasonForContact ? `<p><strong>Reason for contact:</strong> ${escapeHtml(reasonForContact)}</p>` : ''}
+  <div style="margin:12px 0 0 0;">
+    <h3 style="margin:0 0 8px 0;font-size:16px;">Message</h3>
+    <div style="font-size:15px;line-height:1.5;background:#fafafa;border:1px solid #eee;border-radius:6px;padding:10px;">
+      ${nl2br(message)}
+    </div>
+  </div>
 
-  ${preferredMethods && preferredMethods.length
-    ? `<p><strong>Preferred contact method:</strong> ${safeList(preferredMethods)}</p>` : ''}
-
-  <p><strong>GDPR consent:</strong> ${gdprConsent ? 'Yes' : 'No'}</p>
-  <p><strong>Newsletter opt-in:</strong> ${newsletter ? 'Yes' : 'No'}</p>
-
-  <h3>Message</h3>
-  <p>${escapeHtml(message)}</p>
-
-  <hr>
-  <p><strong>Client info:</strong> IP ${escapeHtml(ip)} · UA ${escapeHtml(ua)}</p>
-  ${utm_source || utm_medium || utm_campaign
-    ? `<p><strong>UTM:</strong> ${escapeHtml([utm_source, utm_medium, utm_campaign].filter(Boolean).join(' / '))}</p>` : ''}
+  ${(ip || ua || utm_source || utm_medium || utm_campaign) ? `
+  <div style="margin:14px 0 0 0;">
+    <h3 style="margin:0 0 8px 0;font-size:16px;">Context</h3>
+    ${ip ? `<p style="margin:0 0 6px 0;"><strong>IP:</strong> ${escapeHtml(ip)}</p>` : ''}
+    ${ua ? `<p style="margin:0 0 6px 0;"><strong>User‑Agent:</strong> ${escapeHtml(ua)}</p>` : ''}
+    ${(utm_source || utm_medium || utm_campaign) ? `<p style="margin:0 0 6px 0;"><strong>UTM:</strong> ${escapeHtml([utm_source, utm_medium, utm_campaign].filter(Boolean).join(' / '))}</p>` : ''}
+  </div>` : ''}
 </body></html>`;
 
     await transporter.sendMail({
@@ -107,6 +146,7 @@ module.exports = async (req, res) => {
       to: TO_CONTACT,
       subject: `Website contact${reasonForContact ? ' — ' + reasonForContact : ''}`,
       html,
+      text,         // plain-text for Flight/any parser
       replyTo: email,
       headers: { 'X-Origin': 'standard-contact' }
     });
