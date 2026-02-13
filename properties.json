@@ -965,55 +965,6 @@
     "last_updated": "2026-01-29 16:16:41"
   },
   {
-    "id": 346655,
-    "address": "Sandys Road",
-    "town": "Malvern",
-    "postcode": "WR14 1JJ",
-    "lat": 52.124584197,
-    "lon": -2.303184986,
-    "types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1289,
-    "size_to_sqft": 1289,
-    "summary": "Office To Let, Malvern",
-    "description": "2 Falstaff House is a modern self-contained office building in immaculate condition set within the popular office development of Enigma Commercial Centre. The building benefits from its' own entrance which leads into a reception area with male & female & disabled WC facilities, along with a shower. Beyond the reception, at ground floor level there is open plan office accommodation with kitchenette. The first floor is accessed via an internal staircase or passenger lift and offers more open plan office space alongside a boardroom, a private meeting room and a further kitchen facility. 2 Falstaff House also offers allocated car parking for ten cars. The property is available as a whole or on a floor by floor basis. Ground Floor 102.27 m2 1,100 ft2 First Floor 119.76 m2 1,289 ft2 Total 222.03 m2 2,389 ft2 Location 2 Falstaff House is located on Enigma Business Park which is Malvern's main commercial / business area - being approximately two miles to the north of Great Malvern town centre, eight miles south west of Worcester city centre, 21 miles east of Hereford city centre and 26 miles north of Gloucester. Malvern benefits from good transport links with the A449 leading to Worcester city centre and the A440 connecting with Junction 7 of the M5 motorway which is approximately 7 miles to the north east. The town has two railway stations, being Malvern Link and Great Malvern",
-    "features": [],
-    "rent_psf": 15500,
-    "rent": "£15,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/bf0207cf2f3b3c2bd5b71ade86649514-letting346655.jpeg",
-      "https://as-images.imgix.net/37f2a011bc5bc684731efb7d59c647da-letting346655.jpeg",
-      "https://as-images.imgix.net/7129766532d8895a4ca46e1d48c977e9-letting346655.jpeg",
-      "https://as-images.imgix.net/6bb507693f4dd443682cedc7a588bda4-letting346655.jpeg",
-      "https://as-images.imgix.net/f38f7a17e12bd0593ca337cf9fef1def-letting346655.jpeg",
-      "https://as-images.imgix.net/971bf262196c15eac2c2d545dbb23713-letting346655.jpeg",
-      "https://as-images.imgix.net/7e779cc68b780b0b767b40b146547ef2-letting346655.jpeg",
-      "https://as-images.imgix.net/73a6f43a094da5f081a57b1e041aa34c-letting346655.jpeg",
-      "https://as-images.imgix.net/bd5af782f8a715beb36aba5fa44ccaab-letting346655.jpeg",
-      "https://as-images.imgix.net/8b5c895355c104481eca6bf5701d334b-letting346655.jpeg",
-      "https://as-images.imgix.net/1fecb3230a34f0121f303fc6c27e0328-letting346655.jpeg",
-      "https://as-images.imgix.net/8134deedf15b101245307fef1f80ea3b-letting346655.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f55a054f8d21c50b2376a1405ec27230-letting346655.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-01-29 16:01:17"
-  },
-  {
     "id": 350416,
     "address": "Droitwich Enterprise Hub",
     "town": "Droitwich Spa",
