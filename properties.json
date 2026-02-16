@@ -1430,50 +1430,6 @@
     "last_updated": "2026-01-29 10:53:46"
   },
   {
-    "id": 346868,
-    "address": "Crosbie Grove",
-    "town": "Kidderminster",
-    "postcode": "DY11 7FX",
-    "lat": 52.368583679,
-    "lon": -2.259545087,
-    "types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2416,
-    "size_to_sqft": 2416,
-    "summary": "Industrial To Let, Kidderminster",
-    "description": "This modern industrial / warehouse unit has the following specification. Steel portal frames WC facilities Roller shutter door Pedestrian access door Allocated car parking Loading/unloading facilities Three phase electricity 6-metres eaves Block walls with external composite paneling Location Kidderminster itself is located to the north of Worcester and to the southwest of Stourbridge and has good road access to each, as well as Junctions 4, 5 and 6 of the M5 motorway. Kidderminster also has a mainline railway station which provides a direct link into Birmingham Snow Hill. The industrial estate is situated just off Silverwoods Way, on the former British Sugar Factory site, with easy access to both the Stourport Road and the main A442 Worcester Road which are two of the main arterial roads leading into Kidderminster Town Centre. In recent years, this part of Kidderminster has been totally transformed, attracting a number of high-profile occupiers along the Stourport Road and along Silverwoods Way itself, which has enhanced the area considerably making it a sought-after business location on the southern side of Kidderminster.",
-    "features": [],
-    "rent_psf": 24000,
-    "rent": "£24,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/7b228de4dc53ea2773e1ce0196c6133b-letting346868.jpeg",
-      "https://as-images.imgix.net/dcd06679db28973473a929dcd498ef1a-letting346868.jpeg",
-      "https://as-images.imgix.net/8e128a5397d80f16b0ba102220e1e407-letting346868.jpeg",
-      "https://as-images.imgix.net/84e52afd2d8b2dedd36cc5334b102bcb-letting346868.jpeg",
-      "https://as-images.imgix.net/ec14f6f124079b9af8601f0f2a536fc0-letting346868.jpeg",
-      "https://as-images.imgix.net/f455843d00fe8b6001daee26f3d3d06a-letting346868.jpeg",
-      "https://as-images.imgix.net/bc2d4ad8a236db38c12fffac85d1464f-letting346868.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/90118ba0a7c9326f267935fb897b8382-letting346868.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-01-29 10:52:59"
-  },
-  {
     "id": 346667,
     "address": "Unit 3,Aston Fields Industrial Estate",
     "town": "Bromsgrove",
