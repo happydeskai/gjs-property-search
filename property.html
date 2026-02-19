@@ -411,7 +411,20 @@ async function main() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', main);
+document.addEventListener('DOMContentLoaded', () => {
+  // Update the back link to restore last search
+  const backLink = document.querySelector('.back');
+  if (backLink) {
+    try {
+      const lastSearch = sessionStorage.getItem('gjs:lastSearch');
+      if (lastSearch) {
+        backLink.href = 'index.html' + lastSearch;
+      }
+    } catch(e) {}
+  }
+  
+  main();
+});
 </script>
 
 <!-- Modal CSS / Markup -->
@@ -563,7 +576,7 @@ document.addEventListener('DOMContentLoaded', main);
           <path d="M7.5 12.2l2.6 2.6 6.4-6.4" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <h3>Thanks — enquiry sent</h3>
-        <p>We’ll get back to you shortly.</p>
+        <p>We'll get back to you shortly.</p>
         <div style="text-align:center"><button id="doneBtn" class="btn btn-primary">Done</button></div>
       </div>
     </div>
