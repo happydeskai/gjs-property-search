@@ -1,5 +1,497 @@
 [
   {
+    "id": 353374,
+    "address": "169-171 Newtown Road",
+    "town": "Malvern",
+    "postcode": "WR14 1PJ",
+    "lat": 52.126083,
+    "lon": -2.331358,
+    "types": [
+      "Automotive",
+      "Development Site"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 9124,
+    "size_to_sqft": 9124,
+    "summary": "Freehold Car Sales Premises, Suitable for Development (STP)",
+    "description": "The current building offers a detached showroom and workshop sitting central within a regular plot.  The building is accessed via a showroom to the front and two roller shutter doors to the rear.\n\nThe existing building offers the following:\n\nCar Showroom\t2,572 ft2\t\t(239 m2)\nWorkshop\t6,552 ft2\t\t(609 m2)\nTotal \t9,124 ft2\t\t(848 m2)\n\nExternally there is a forecourt to the front which offers parking for 20-25 vehicles along with a further parking area to the rear for 35-40 vehicles.  The main frontage is onto Newtown Road, however, there is a rear access off Nursery Road.\n\nThe site has a total area of 0.64, as shown by the site plan.\n\nRe-Development\nThe sites extends to 0.64 acres and is situated within a residential area of Malvern, it is therefore well suited for re-development, subject to gaining the necessary planning consents.",
+    "location": "Malvern is a spa town in Worcestershire with a population of 30,462 as at the 2021 Census.  Within Malvern, the property fronts the B4503 Newtown Road, in close proximity to its junction with the A449 Worcester Road and circa 1 ½ miles west of Great Malvern town centre.\n\nThe immediate surrounding area is predominantly residential, with some local retail occupiers being located on Newtown Road.  Hills Ford are vacating due to expansion to a larger site in Worcester.",
+    "features": [
+      "Currently operating as Hills Ford motor dealership, who are relocating due to expansion into Worcester",
+      "Existing facility extends to 9,124 sq ft (848 sq m)",
+      "Regular shaped site extending to 0.64 acres",
+      "Situated in a predominantly residential area and therefore suitable for re-development, subject to planning",
+      "Has dual access off Newtown Road and Nursery Road."
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/92579b6aeac8e7bc496aea13709404ea-23.jpeg",
+      "https://as-images.imgix.net/95e0e4c9661ae3a79a57e2825f4d9c32-19.jpeg",
+      "https://as-images.imgix.net/1e98ffd0f9565d6d6d707edbc2f0facb-14.jpeg",
+      "https://as-images.imgix.net/4fed5437cbf8c65c6a12b6c552b881b0-13.jpeg",
+      "https://as-images.imgix.net/387a6b9083ea90ea3f0f06207e444b9e-1.jpeg",
+      "https://as-images.imgix.net/c59c64bd6c0adf14878c2f4526f89b65-18.jpeg",
+      "https://as-images.imgix.net/87733d5af2b11902232201ca410d01bf-15.jpeg",
+      "https://as-images.imgix.net/2c37bb1557745091d573c84ca541d2d9-16.jpeg",
+      "https://as-images.imgix.net/0974715b61b0523d37a9953f987321e5-12.jpeg",
+      "https://as-images.imgix.net/c576f7b509f7e0c267f03854ee53d717-11.jpeg",
+      "https://as-images.imgix.net/e00dea741f5b38364ad49ced736844cb-3.jpeg",
+      "https://as-images.imgix.net/34a0e0dd68e4d5f614a04d8c3322ef8a-5.jpeg",
+      "https://as-images.imgix.net/3a8f6350a25ffe8cfd407f75849fb755-8.jpeg",
+      "https://as-images.imgix.net/364afad2ae848acee0dffb6ed5427834-7.jpeg",
+      "https://as-images.imgix.net/2a60c1537b6aad5a0562a386337681c9-10.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/de51ac906d64112340d712b35ecfe498-gjs-dillon-particulars-169-newtown-road-malvern.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-19 17:02:07"
+  },
+  {
+    "id": 353370,
+    "address": "Hylton Road",
+    "town": "Worcester",
+    "postcode": "WR2 5JS",
+    "lat": 52.193804,
+    "lon": -2.232411,
+    "types": [
+      "Car Park",
+      "Development Land",
+      "Development Site",
+      "Industrial Land",
+      "Land",
+      "Open Storage",
+      "Yard"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 20865.24,
+    "size_to_sqft": 20865.24,
+    "summary": "Development site on Elm Road, Worcester",
+    "description": "Elm Road is a small cul-de-sac that adjoins Hylton Road (A443) – one of the main arterial roads to the west of Worcester, which runs southwards to Worcester city centre and other main access routes in and out of the city.  The site sits at the western end of Elm Road, which we assume it has uninterrupted access over.\n\nThere were previously multiple industrial units on the site, all of which have now been demolished leaving a clear site which we note is free from contamination.  Planning permission has been granted under reference 19/00614/FUL for: Demolish existing unit 1,2 and 5 and replace with a new 2 storey building for commercial storage (Use class B8).\n\nThe proposed development extends to 17,061 sq ft",
+    "location": "Elm Road is located in Worcester city centre.  Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London.  Worcester has excellent access to the M5 motorway, which lies adjacent to the subject property with Junction 7 being approximately one and a half miles drive south.  The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network.\n\nWorcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
+    "features": [
+      "Site area 0.479 acres",
+      "Proposed development extends to 17,061 sq ft (1,585 sq m)",
+      "Planning permission granted for a 2 storey building for commercial storage (use class B8) Reference 19/00614/FUL",
+      "Walking distance to city centre",
+      "Excellent links to the national motorway networks"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/0cf42b7478f78639dec55a7472256e01-img-4063.JPG",
+      "https://as-images.imgix.net/8bde251f9710d7d09e9a37a10cdd7371-img-4060.JPG",
+      "https://as-images.imgix.net/9e2130c6e026455f54b1d06c9d26d008-img-4047.JPG",
+      "https://as-images.imgix.net/f12fd5a80f337d25cfea6d5bf0c0250d-img-4043.JPG",
+      "https://as-images.imgix.net/7a09d35c0e38661610ce988d30be9ea0-img-4064.JPG",
+      "https://as-images.imgix.net/da749ddf479a391ca7d80a10a4bf3cc5-img-4042.JPG",
+      "https://as-images.imgix.net/030cb635e17fbd00a5aeb94a377f44f7-img-4045.JPG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/72dee4048b4a1b80d8aee2b03ffbee82-gjs-dillon-particulars-development-site-on-elm-road-worcester-wr2-5js.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-19 16:46:04"
+  },
+  {
+    "id": 353367,
+    "address": "4 Edgar Street",
+    "town": "Worcester",
+    "postcode": "WR1 2LR",
+    "lat": 52.188219,
+    "lon": -2.219159,
+    "types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1182,
+    "size_to_sqft": 1182,
+    "summary": "Period building next to Worcester Cathedral",
+    "description": "4 Edgar Street is a mid terrace office building arranged over three floors, offering office suites with character and a practical layout suitable for professional occupiers. The building benefits from recent redecoration. Natural light floods the offices through large sash windows, creating a bright and productive working environment.\n\nThe property also features kitchen facilities and WC provisions, with the added convenience of on-site car parking. Its location provides excellent access to Worcester city centre amenities and transport links, making it an ideal base for a wide range of businesses.\n\n\t\t\nTotal\t1,182 sq ft \t109.81 sq m",
+    "location": "Edgar Street is close to City Walls Road and Sidbury with good transport links.  Close by are the main shopping areas of Worcester city centre and other amenities which are within walking distance.  Several public car parks are in the vicinity.\n\nWorcester is a major West Midlands city located approximately 120 miles North West of London, 30 miles south west of Birmingham, 25 miles to the north of Cheltenham and 26 miles to the north east of Hereford city centre.  Motorway access to the city is very good with junctions 6 and 7 of the M5 motorway being within three miles of the city centre giving direct access to the national motorway network.",
+    "features": [
+      "1,182 Sq ft (109.81sq m)",
+      "Prominent self-contained office building in Worcester city centre",
+      "On-site parking",
+      "Walking distance to Worcester High Street",
+      "Good access to J6 and J7 of the M5 Motorway"
+    ],
+    "rent_psf": 11800,
+    "rent": "£11,800 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 6300,
+    "epc_rating": "E (110)",
+    "images": [
+      "https://as-images.imgix.net/52ddfd30fcac1a7604f73c1cb6eeaa24-20251007-133403505-ios.jpg",
+      "https://as-images.imgix.net/e269f8239e26409748784bc168c2ea0a-20251007-134233217-ios.jpg",
+      "https://as-images.imgix.net/1b997cd9670f4dc0237a994461e5e42e-20251007-134408708-ios.jpg",
+      "https://as-images.imgix.net/3a40a6210fa0225609ccea31752ee704-20251007-134632326-ios.jpg",
+      "https://as-images.imgix.net/3e2fd6d9e000b5b18020ab09341937eb-20251007-134458279-ios.jpg",
+      "https://as-images.imgix.net/e92ace500233b3f48c3cf5744e10a99b-20251007-134452542-ios.jpg",
+      "https://as-images.imgix.net/307237e70624807fa50d7e698904019a-20251007-134423604-ios.jpg",
+      "https://as-images.imgix.net/192ec0c4052f22c8821a14038906c816-20251007-134331571-ios.jpg",
+      "https://as-images.imgix.net/5a83164762e1e24d5ebc1f98524a4836-20251007-134158010-ios.jpg",
+      "https://as-images.imgix.net/fa7ba498ead5217e34f84d32df3fa513-20251007-134248668-ios.jpg",
+      "https://as-images.imgix.net/be2036dd2295a2578b3b263a86224b43-20251007-134122797-ios.jpg",
+      "https://as-images.imgix.net/bebb305d719aebf161d0823f6f958e66-20251007-133848178-ios.jpg",
+      "https://as-images.imgix.net/566fef15f52dad5c7e31c3a6124375eb-20251007-133831187-ios.jpg",
+      "https://as-images.imgix.net/a18f26fccb072c345ef13b53addbe8d7-20251007-134732224-ios.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/ab32a676c42530faadf8c50ec6521068-gjs-dillon-particulars-4-edgar-street-worcester.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-19 16:37:16"
+  },
+  {
+    "id": 346672,
+    "address": "20 The Shambles",
+    "town": "Worcester",
+    "postcode": "WR1 2RA",
+    "lat": 52.191112518,
+    "lon": -2.219422101,
+    "types": [
+      "Retail"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 2513,
+    "size_to_sqft": 2513,
+    "summary": "Retail For Sale, Worcester",
+    "description": "20 The Shambles comprises a mid-terraced retail unit arranged over basement, ground, first and second floors, situated within a traditional parade in the heart of Worcester city centre. The ground floor features an open-plan retail area with a suspended ceiling, LED lighting, air conditioning and a timber-framed single-glazed shopfront. A floor hatch in the main retail area provides ladder access to a small basement area, suitable for limited storage. To the rear of the ground floor are ancillary areas, with a kitchen and WC located on the first floor. The upper parts are accessed via an internal staircase and include further ancillary space with a mix of UPVC and timber-framed windows. Lighting to the upper floors consists of older-style fluorescent fittings. The property is in need of repair and modernisation in parts, with notable damp ingress evident along the right-hand side elevation at second floor level. The unit may suit a variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents. Basement352 sq ft 32.70 sq m Ground Floor 635 sq ft 58.99 sq m First Floor 780 sq ft 72.46 sq m Second Floor747 sq ft 69.40 sq m Total2,513 sq ft233.46 sq m Location The property is prominently located on The Shambles, a pedestrianised shopping street just off Worcester High Street, in a highly visible and well-trafficked position. The area is home to a mix of national and independent occupiers, with nearby retailers including Greggs, The Works, Waterstones and Marks & Spencer. Worcester's main shopping destinations-Crowngate Shopping Centre and Cathedral Square-are both within a short walking distance. Worcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
+    "features": [
+      "Prominent city centre location",
+      "Property arranged over basement, ground, first and second",
+      "Currently let at ¬£21,000 per annum"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/570a4079df62487975d4d2b75449b956-letting346672.jpeg",
+      "https://as-images.imgix.net/91d7459984edd30a2b77fe3764b65ffb-letting346672.jpeg",
+      "https://as-images.imgix.net/cbb04f12d126ea78867538bbca58455e-letting346672.jpeg",
+      "https://as-images.imgix.net/a42cfdf7168b95c249ec8a9142b68ebe-letting346672.jpeg",
+      "https://as-images.imgix.net/d27eb8caf050f6730c48fb5c4a082766-letting346672.jpeg",
+      "https://as-images.imgix.net/61b196b5fa07b79f51cbd9cf1cdddd42-letting346672.jpeg",
+      "https://as-images.imgix.net/f7d0d12227a5dc73f0c0c982ca14811c-letting346672.jpeg",
+      "https://as-images.imgix.net/7d1abe1290bc1b112de86867f098c6e2-letting346672.jpeg",
+      "https://as-images.imgix.net/193205c5527b2926b6129c137736db7c-letting346672.jpeg",
+      "https://as-images.imgix.net/fa7aa285385934527b8c969752180195-letting346672.jpeg",
+      "https://as-images.imgix.net/480a7dc576c43895fd14cd0ddc0862b1-letting346672.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/bc1813f572669afb476cf7f6d65eb50f-letting346672.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-19 16:23:53"
+  },
+  {
+    "id": 346736,
+    "address": "4 Richmond Road",
+    "town": "Malvern",
+    "postcode": "WR14 1NE",
+    "lat": 52.12851715,
+    "lon": -2.315370082,
+    "types": [
+      "Investment"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 1081,
+    "size_to_sqft": 1081,
+    "summary": "Investment For Sale, Malvern",
+    "description": "The property comprises two separate retail shops on the ground floor which extend in total to 1,081 sq ft (100.43 sq m). There is residential accommodation above which has been sold off on a long leasehold basis for a term of 125 years from 01/04/2005. The shops operate independently as a caf√à and hair salon with off street parking available to the front to the hair salon. Unit 1 - 422 sq ft (39.18 sq m) Unit 2 - 659 sq ft (61.25 sq m) The first floor accommodation has been sold off on a long leasehold basis. Tenancies Unit 1 - Trading as Sunbean caf√à & sunbeds and let for a term of 5 years from 27/02/2024, expiring 26/02/29, at a passing rent of ¬£8,750 pa. Unit 2 - Trading as Luxury Cutz and let for a term of 5 years from 01/03/222, expiring 28/02/27, at a passing rent of ¬£7,500 pa. The combined rental income is ¬£16,250 per annum. Location The property occupies a prominent position on Richmond Road, close to the junction with the A449 Worcester Road. It is situated close to the amenities of Malvern Link which offers a range of independent shops, Co-op supermarket, takeaways, eateries and community facilities. Further and more extensive facilities are available in the neighbouring town of Great Malvern or the city of Worcester.",
+    "features": [],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/7c2613fdfcb3853c29230022ad83289b-letting346736.jpeg",
+      "https://as-images.imgix.net/6f7d5d7def0d56ba650131418331d05f-letting346736.jpeg",
+      "https://as-images.imgix.net/a125ac5fb2939b81b300d757ccd2e715-letting346736.jpeg",
+      "https://as-images.imgix.net/3e420d1512f9fc6c5f902247cb9e6f3f-letting346736.jpeg",
+      "https://as-images.imgix.net/37ea2414e6f32866dd5741820b504c25-letting346736.jpeg",
+      "https://as-images.imgix.net/092435094ebfbad239394f5531850a8e-letting346736.jpeg",
+      "https://as-images.imgix.net/63966b6bfb96ae4ea5c1e79be06a862b-letting346736.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c54e99bb6da9bd70ac289900218cede0-letting346736.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-19 16:22:39"
+  },
+  {
+    "id": 346777,
+    "address": "De Salis Drive",
+    "town": "Droitwich",
+    "postcode": "WR9 0QE",
+    "lat": 52.283466339,
+    "lon": -2.168041944,
+    "types": [
+      "Office"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 2142,
+    "size_to_sqft": 2142,
+    "summary": "Office For Sale, Droitwich",
+    "description": "The property comprises a two-storey detached office building of brick cavity construction with pitched concrete tiled roof. The property benefits from timber framed double-glazed windows throughout and has been fitted with a gas-fired central system via traditional wall-mounted radiators as well as wall-mounted split-system air conditioning units. The property benefits from having approximately 12no tarmacadam surfaced car parking spaces, all located to the front of the building and the property is surrounded by well-maintained grounds. Ground Floor 990 sq ft 92 sq m First Floor 1,152 sq ft 107 sq m Total 2,142 sq ft 199 sq m Location The property is located within the popular Hampton Lovett Industrial Estate, approximately one mile north of Droitwich Town Centre. The Hampton Lovett Industrial Estate is accessed directly off the A442 which provides access to Droitwich to the south and Hartlebury and Kidderminster to the north. The location is particularly convenient for occupiers as it provides easy access to the M5 Motorway with Junction 5 situated approximately 3.25km (two miles) to the east. Birmingham city centre is situated approximately 22 miles to the north east, Bromsgrove is situated approximately 7 miles to the north east, Worcester city centre is situated approximately 8 miles to the south west, Kidderminster is situated approximately 9 miles to the north and Redditch is situated approximately 17 miles to the north east. Droitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester",
+    "features": [
+      "Floor plan available"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/54e6919c93602cb600116e3e30da2150-letting346777.jpeg",
+      "https://as-images.imgix.net/132dd9a9b0067f49aeaf4fdb8fb643af-letting346777.jpeg",
+      "https://as-images.imgix.net/4dabd90f6344e064f6f8b8f71a077dd7-letting346777.jpeg",
+      "https://as-images.imgix.net/2fdf877b09b0a44b116e1bfbfd014472-letting346777.jpeg",
+      "https://as-images.imgix.net/bb599455f9d3cd0420d64ce4ba8d4aff-letting346777.jpeg",
+      "https://as-images.imgix.net/241bbc37a9ee037427db208cc62d52e2-letting346777.jpeg",
+      "https://as-images.imgix.net/b09b0d83597654649863d849ee1f0e7f-letting346777.jpeg",
+      "https://as-images.imgix.net/2f482190c01fa145d8e32e2da6969530-letting346777.jpeg",
+      "https://as-images.imgix.net/529ea4330607dbb015cb6ab600f82be8-letting346777.jpeg",
+      "https://as-images.imgix.net/857192b4888eab6f2bd8e9e6c1a0faa6-letting346777.jpeg",
+      "https://as-images.imgix.net/784fbfb95138f1b0b9e6ee683adbe279-letting346777.jpeg",
+      "https://as-images.imgix.net/af7a7a4095486e62029d0e7a523166ee-letting346777.jpeg"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-19 16:22:13"
+  },
+  {
+    "id": 346652,
+    "address": "The Butts",
+    "town": "Worcester",
+    "postcode": "WR1 3PA",
+    "lat": 52.193748474,
+    "lon": -2.224364995,
+    "types": [
+      "Office",
+      "Development"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 19726,
+    "size_to_sqft": 19726,
+    "summary": "Office / Development / Development For Sale, Worcester",
+    "description": "The accommodation currently provides a mixture of large partitioned working areas with some individual offices. The specification of the property includes; > Air handling / air conditioning > Strip lighting / suspended ceilings with integral lighting > Ground floor kitchen area > 13 person passenger lift > WCs on all floors > An outside seating area > On site car parking",
+    "location": "Butts, just off the main A44 which forms part of the circular routes for Worcester City Centre. To the east of the property is is the main shopping/entertainment areas for Worcester whilst to the west is the picturesque River Severn. Worcester, in the West Midlands, is located 31 miles south east of Birmingham, 27 miles north of Gloucester and 23 miles north east of Hereford. Worcester has excellent connectivity being to the west of junctions 6 and 7 of the M5 motorway leading to the M42 and M6. Worcester also has direct mainline rail links to both Birmingham and London.",
+    "features": [
+      "For Sale - Offers in excess of ¬£2,950,000",
+      "St Dunstan's Building is a well located property to the west of Worcester City Centre",
+      "Constructed to suit a variety of uses (subject to planning)",
+      "To be offered with vacant possession with the HoW College relocating within the city"
+    ],
+    "business_rates_psf": 87690,
+    "rateable_value": 158000,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/098bdf0b907b5d8306a0fb1a953f5ac5-letting346652.jpeg",
+      "https://as-images.imgix.net/3e271cca0d8505975b6ac96592611f39-letting346652.jpeg",
+      "https://as-images.imgix.net/2c5cbed13289e2f3584cf42827a03015-letting346652.jpeg",
+      "https://as-images.imgix.net/828b06cf17ed29c0bcb9526178826448-letting346652.jpeg",
+      "https://as-images.imgix.net/49c222d873985cc5222358c5b741005d-letting346652.jpeg",
+      "https://as-images.imgix.net/59b5fc1d1ba72532eb9d1ca9b5c9f850-letting346652.jpeg",
+      "https://as-images.imgix.net/5f85668ecbe49422f93ea40acf7f7b29-letting346652.jpeg",
+      "https://as-images.imgix.net/6673663acb959c4eb2af1ad95c2ca02e-letting346652.jpeg",
+      "https://as-images.imgix.net/6e1b28b41af2e5b991c05d7b48619809-letting346652.jpeg",
+      "https://as-images.imgix.net/ac70cde60a66dbd0d6fff9df28d51419-letting346652.jpeg",
+      "https://as-images.imgix.net/e9d5210f42bc42b0b1bf310ade7fa354-letting346652.jpeg",
+      "https://as-images.imgix.net/057f9fd8cc26550d969b63374eb00902-letting346652.jpeg"
+    ],
+    "contacts": [
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-19 16:21:29"
+  },
+  {
+    "id": 351584,
+    "address": "155 London Road",
+    "town": "Worcester",
+    "postcode": "WR5 2ED",
+    "lat": 52.184917,
+    "lon": -2.205248,
+    "types": [
+      "Investment - Mixed use"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 1401,
+    "size_to_sqft": 1401,
+    "summary": "Prominent Mixed Use Investment Opportunity",
+    "description": "155 London Road comprises a mid-terrace mixed use property of traditional brick construction underneath a pitched tiled roof.  The building offers a retail unit over the ground floor, with residential accommodation above.  The retail unit is currently occupied by a barbers and benefits from dual access, off London Road to the front and a rear access off Wyld’s Lane.  Internally the barbers comprises a front sales area and rear storage / welfare facilities, including a kitchen and WC.\n\nThe ground floor is let and is holding over at £450.00 per calendar month. \n\nThe upper floors are access to the rear of the property and comprise a two bedroom flat arranged over the first and second floors.  At first floor level there is a reception room (recently used as a bedroom), kitchen and bathroom.  There are a further two rooms on the second floor. \n\nGround Floor Retail \t477 sq ft \t44.36 sq m \nFirst Floor Residential\t538 sq ft\t50.00 sq m\nSecond Floor Residential\t385 sq ft\t35.76 sq m\nTotal\t1,401 sq ft \t130.12 sq m",
+    "location": "The property is situated within Worcester, in the West Midlands.  Worcester lies 31 miles south west of Birmingham, 101 north west of London, 27 miles north of Gloucester and 23 miles north east of Hereford.  At the 2011 census, the population in the city was approximately 100,000.  The city has excellent transport links with a direct mainline to both Birmingham and London, via Worcester Foregate Street, Worcester Shrub Hill and Worcester Parkway Stations.  Worcester also lies to the west of Junctions 6 and 7 of the M5 motorway, providing access north to Birmingham, the M42, the M6 and the wider national motorway network.\n\nThe property lies to the east of Worcester city centre along the main arterial road of London Road.  London Road has traditionally comprised of local convenience operators interspersed by a mix of small residential dwellings & flats and larger detached residential dwellings.  This part of London Road offers a number of local retail convenience stores such as Tesco Express, a Chinese take away, a fish & chip shop and a former Post Office.  London Road runs north west towards Sidbury which provides direct access into Worcester city centre and conversely London Road also provides direct access out to Junction 7 of the M5 motorway and the Southern Link Road.  Given the inflow of traffic into the city centre, London Road is a highly exposed area that has been popular among independent retailers.",
+    "features": [
+      "Totals 1,401 sq ft (130.12 sq m) over three floors",
+      "Ground floor retail unit let to a barbers shop",
+      "Self-contained two bedroom flat over the first and second floors",
+      "Includes separate rear access off Wylds Lane",
+      "On a main arterial route into Worcester"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/5bd5cfc37063ac42de00cce69c321ef6-20251204-115818-2.jpg",
+      "https://as-images.imgix.net/20665a1c171a75ae6c013bd8a33ed4d6-20251204-115420-2.jpg",
+      "https://as-images.imgix.net/90fa448e0f55b2ef7b2c7f10bf24f2e2-20251204-115352-2.jpg",
+      "https://as-images.imgix.net/d209fbb4718110cae9f483ef2ac4f4e1-20251204-115317-2.jpg",
+      "https://as-images.imgix.net/6e393cc4d3f1d3cb0e9287f2bb225a4e-20251204-115209-1.jpg",
+      "https://as-images.imgix.net/3405799ff08611fdbe864fe20766f6f6-20251204-115152-2.jpg",
+      "https://as-images.imgix.net/270c3a43d256d1ace4fcb7519c734a4c-20251204-115122-2.jpg",
+      "https://as-images.imgix.net/5468a32f2c0f674bf9fea589d0ff1680-20251204-115646-2.jpg",
+      "https://as-images.imgix.net/6ef63199ed570584f504536329125e4a-20251204-115035-2.jpg",
+      "https://as-images.imgix.net/1e243bed4c34dcd02f01aaf61c95117e-20251204-115026-1.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6addef712e598b82fc2980d54c41ce1d-gjs-dillon-particulars-155-london-road-worcester-1.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-19 16:13:55"
+  },
+  {
+    "id": 346712,
+    "address": "64 Friar Street",
+    "town": "Droitwich",
+    "postcode": "WR9 8EF",
+    "lat": 52.268634796,
+    "lon": -2.149205923,
+    "types": [
+      "Office",
+      "Retail",
+      "Development"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 3491,
+    "size_to_sqft": 3491,
+    "summary": "Office / Retail / Development For Sale, Droitwich",
+    "description": "64 Friar Street comprises a Grade II listed mid-terrace office building arranged over the ground, first and second floors. The property was built in the late 16th Century and then rebuilt early 19th century, it is assumed to be of timber frame construction with brick elevations. The building currently offers office accommodation with office space and meeting rooms over all floors. In addition to the office space there is a storage area to the rear of the building, at ground floor level. Ground Floor1,427 sq ft132.54 sq m First Floor1,471 sq ft 136.68 sq m Second Floor 593 sq ft 55.10 sq m Total3,491 sq ft324.32 sq m Location Droitwich is a well-known Worcestershire spa town being popular with local and national companies (due to its obvious communication links) as well as having a strong business community and good facilities. Birmingham city centre is situated approximately 22 miles to the north east, Bromsgrove is situated approximately seven miles to the north east, Worcester city centre is situated approximately eight miles to the south west, Kidderminster is situated approximately nine miles to the north and Redditch is situated approximately 17 miles to the north east. The M5 motorway is in close proximity to property with Junction 5 being approximately three miles by road to the north. From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales. Droitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester.",
+    "features": [
+      "Grade II listed mid terrace property",
+      "Suitable for conversion to residential (STP)",
+      "Car parking to the rear of the property"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/7e0ce7ecd07adbd3a858694513d15f75-letting346712.jpeg",
+      "https://as-images.imgix.net/208a25074419bbcc4f9187c7563843e9-letting346712.jpeg",
+      "https://as-images.imgix.net/d998f0c7a08ee507b48c0799294ac9dc-letting346712.jpeg",
+      "https://as-images.imgix.net/f38fb219829496d335eb7acf64a58d59-letting346712.jpeg",
+      "https://as-images.imgix.net/ede26a07b996cdb539c6198d0fdfcaa8-letting346712.jpeg",
+      "https://as-images.imgix.net/d5513dd15a5d74481133a760a7249438-letting346712.jpeg",
+      "https://as-images.imgix.net/f696e7175ecc9dbf2eb90f167139f32b-letting346712.jpeg",
+      "https://as-images.imgix.net/b2f0d7f2e041d1697e1aacace3e35ab5-letting346712.jpeg",
+      "https://as-images.imgix.net/b051f1b5a82afaf8c266c14ceea983a7-letting346712.jpeg",
+      "https://as-images.imgix.net/bbb55dcd455caf01126d2bd427f270c2-letting346712.jpeg",
+      "https://as-images.imgix.net/cf9906f3029572883c55314804db62e0-letting346712.jpeg",
+      "https://as-images.imgix.net/fb1d71b6c18d3b476ae9f3122e15e074-letting346712.jpeg"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-19 16:12:30"
+  },
+  {
     "id": 346866,
     "address": "Jill Lane",
     "town": "Redditch",
@@ -2026,219 +2518,6 @@
     "last_updated": "2026-02-19 12:35:28"
   },
   {
-    "id": 346712,
-    "address": "64 Friar Street",
-    "town": "Droitwich",
-    "postcode": "WR9 8EF",
-    "lat": 52.268634796,
-    "lon": -2.149205923,
-    "types": [
-      "Office",
-      "Retail",
-      "Development"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 3491,
-    "size_to_sqft": 3491,
-    "summary": "Office / Retail / Development For Sale, Droitwich",
-    "description": "64 Friar Street comprises a Grade II listed mid-terrace office building arranged over the ground, first and second floors. The property was built in the late 16th Century and then rebuilt early 19th century, it is assumed to be of timber frame construction with brick elevations. The building currently offers office accommodation with office space and meeting rooms over all floors. In addition to the office space there is a storage area to the rear of the building, at ground floor level. Ground Floor1,427 sq ft132.54 sq m First Floor1,471 sq ft 136.68 sq m Second Floor 593 sq ft 55.10 sq m Total3,491 sq ft324.32 sq m Location Droitwich is a well-known Worcestershire spa town being popular with local and national companies (due to its obvious communication links) as well as having a strong business community and good facilities. Birmingham city centre is situated approximately 22 miles to the north east, Bromsgrove is situated approximately seven miles to the north east, Worcester city centre is situated approximately eight miles to the south west, Kidderminster is situated approximately nine miles to the north and Redditch is situated approximately 17 miles to the north east. The M5 motorway is in close proximity to property with Junction 5 being approximately three miles by road to the north. From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales. Droitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester.",
-    "features": [
-      "Grade II listed mid terrace property",
-      "Suitable for conversion to residential (STP)",
-      "Car parking to the rear of the property"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/7e0ce7ecd07adbd3a858694513d15f75-letting346712.jpeg",
-      "https://as-images.imgix.net/208a25074419bbcc4f9187c7563843e9-letting346712.jpeg",
-      "https://as-images.imgix.net/d998f0c7a08ee507b48c0799294ac9dc-letting346712.jpeg",
-      "https://as-images.imgix.net/f38fb219829496d335eb7acf64a58d59-letting346712.jpeg",
-      "https://as-images.imgix.net/ede26a07b996cdb539c6198d0fdfcaa8-letting346712.jpeg",
-      "https://as-images.imgix.net/d5513dd15a5d74481133a760a7249438-letting346712.jpeg",
-      "https://as-images.imgix.net/f696e7175ecc9dbf2eb90f167139f32b-letting346712.jpeg",
-      "https://as-images.imgix.net/b2f0d7f2e041d1697e1aacace3e35ab5-letting346712.jpeg",
-      "https://as-images.imgix.net/b051f1b5a82afaf8c266c14ceea983a7-letting346712.jpeg",
-      "https://as-images.imgix.net/bbb55dcd455caf01126d2bd427f270c2-letting346712.jpeg",
-      "https://as-images.imgix.net/cf9906f3029572883c55314804db62e0-letting346712.jpeg",
-      "https://as-images.imgix.net/fb1d71b6c18d3b476ae9f3122e15e074-letting346712.jpeg"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-13 12:49:50"
-  },
-  {
-    "id": 351584,
-    "address": "155 London Road",
-    "town": "Worcester",
-    "postcode": "WR5 2ED",
-    "lat": 52.184917,
-    "lon": -2.205248,
-    "types": [
-      "Investment - Mixed use"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 1401,
-    "size_to_sqft": 1401,
-    "summary": "Prominent Mixed Use Investment Opportunity",
-    "description": "155 London Road comprises a mid-terrace mixed use property of traditional brick construction underneath a pitched tiled roof.  The building offers a retail unit over the ground floor, with residential accommodation above.  The retail unit is currently occupied by a barbers and benefits from dual access, off London Road to the front and a rear access off Wyld’s Lane.  Internally the barbers comprises a front sales area and rear storage / welfare facilities, including a kitchen and WC.\n\nThe ground floor is let and is holding over at £450.00 per calendar month. \n\nThe upper floors are access to the rear of the property and comprise a two bedroom flat arranged over the first and second floors.  At first floor level there is a reception room (recently used as a bedroom), kitchen and bathroom.  There are a further two rooms on the second floor. \n\nGround Floor Retail \t477 sq ft \t44.36 sq m \nFirst Floor Residential\t538 sq ft\t50.00 sq m\nSecond Floor Residential\t385 sq ft\t35.76 sq m\nTotal\t1,401 sq ft \t130.12 sq m",
-    "location": "The property is situated within Worcester, in the West Midlands.  Worcester lies 31 miles south west of Birmingham, 101 north west of London, 27 miles north of Gloucester and 23 miles north east of Hereford.  At the 2011 census, the population in the city was approximately 100,000.  The city has excellent transport links with a direct mainline to both Birmingham and London, via Worcester Foregate Street, Worcester Shrub Hill and Worcester Parkway Stations.  Worcester also lies to the west of Junctions 6 and 7 of the M5 motorway, providing access north to Birmingham, the M42, the M6 and the wider national motorway network.\n\nThe property lies to the east of Worcester city centre along the main arterial road of London Road.  London Road has traditionally comprised of local convenience operators interspersed by a mix of small residential dwellings & flats and larger detached residential dwellings.  This part of London Road offers a number of local retail convenience stores such as Tesco Express, a Chinese take away, a fish & chip shop and a former Post Office.  London Road runs north west towards Sidbury which provides direct access into Worcester city centre and conversely London Road also provides direct access out to Junction 7 of the M5 motorway and the Southern Link Road.  Given the inflow of traffic into the city centre, London Road is a highly exposed area that has been popular among independent retailers.",
-    "features": [
-      "Totals 1,401 sq ft (130.12 sq m) over three floors",
-      "Ground floor retail unit let to a barbers shop",
-      "Self-contained two bedroom flat over the first and second floors",
-      "Includes separate rear access off Wylds Lane",
-      "On a main arterial route into Worcester"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/5bd5cfc37063ac42de00cce69c321ef6-20251204-115818-2.jpg",
-      "https://as-images.imgix.net/20665a1c171a75ae6c013bd8a33ed4d6-20251204-115420-2.jpg",
-      "https://as-images.imgix.net/90fa448e0f55b2ef7b2c7f10bf24f2e2-20251204-115352-2.jpg",
-      "https://as-images.imgix.net/d209fbb4718110cae9f483ef2ac4f4e1-20251204-115317-2.jpg",
-      "https://as-images.imgix.net/6e393cc4d3f1d3cb0e9287f2bb225a4e-20251204-115209-1.jpg",
-      "https://as-images.imgix.net/3405799ff08611fdbe864fe20766f6f6-20251204-115152-2.jpg",
-      "https://as-images.imgix.net/270c3a43d256d1ace4fcb7519c734a4c-20251204-115122-2.jpg",
-      "https://as-images.imgix.net/5468a32f2c0f674bf9fea589d0ff1680-20251204-115646-2.jpg",
-      "https://as-images.imgix.net/6ef63199ed570584f504536329125e4a-20251204-115035-2.jpg",
-      "https://as-images.imgix.net/1e243bed4c34dcd02f01aaf61c95117e-20251204-115026-1.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6addef712e598b82fc2980d54c41ce1d-gjs-dillon-particulars-155-london-road-worcester-1.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-13 12:12:16"
-  },
-  {
-    "id": 346652,
-    "address": "The Butts",
-    "town": "Worcester",
-    "postcode": "WR1 3PA",
-    "lat": 52.193748474,
-    "lon": -2.224364995,
-    "types": [
-      "Office",
-      "Development"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 19726,
-    "size_to_sqft": 19726,
-    "summary": "Office / Development / Development For Sale, Worcester",
-    "description": "The accommodation currently provides a mixture of large partitioned working areas with some individual offices. The specification of the property includes; > Air handling / air conditioning > Strip lighting / suspended ceilings with integral lighting > Ground floor kitchen area > 13 person passenger lift > WCs on all floors > An outside seating area > On site car parking",
-    "location": "Butts, just off the main A44 which forms part of the circular routes for Worcester City Centre. To the east of the property is is the main shopping/entertainment areas for Worcester whilst to the west is the picturesque River Severn. Worcester, in the West Midlands, is located 31 miles south east of Birmingham, 27 miles north of Gloucester and 23 miles north east of Hereford. Worcester has excellent connectivity being to the west of junctions 6 and 7 of the M5 motorway leading to the M42 and M6. Worcester also has direct mainline rail links to both Birmingham and London.",
-    "features": [
-      "For Sale - Offers in excess of ¬£2,950,000",
-      "St Dunstan's Building is a well located property to the west of Worcester City Centre",
-      "Constructed to suit a variety of uses (subject to planning)",
-      "To be offered with vacant possession with the HoW College relocating within the city"
-    ],
-    "business_rates_psf": 87690,
-    "rateable_value": 158000,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/098bdf0b907b5d8306a0fb1a953f5ac5-letting346652.jpeg",
-      "https://as-images.imgix.net/3e271cca0d8505975b6ac96592611f39-letting346652.jpeg",
-      "https://as-images.imgix.net/2c5cbed13289e2f3584cf42827a03015-letting346652.jpeg",
-      "https://as-images.imgix.net/828b06cf17ed29c0bcb9526178826448-letting346652.jpeg",
-      "https://as-images.imgix.net/49c222d873985cc5222358c5b741005d-letting346652.jpeg",
-      "https://as-images.imgix.net/59b5fc1d1ba72532eb9d1ca9b5c9f850-letting346652.jpeg",
-      "https://as-images.imgix.net/5f85668ecbe49422f93ea40acf7f7b29-letting346652.jpeg",
-      "https://as-images.imgix.net/6673663acb959c4eb2af1ad95c2ca02e-letting346652.jpeg",
-      "https://as-images.imgix.net/6e1b28b41af2e5b991c05d7b48619809-letting346652.jpeg",
-      "https://as-images.imgix.net/ac70cde60a66dbd0d6fff9df28d51419-letting346652.jpeg",
-      "https://as-images.imgix.net/e9d5210f42bc42b0b1bf310ade7fa354-letting346652.jpeg",
-      "https://as-images.imgix.net/057f9fd8cc26550d969b63374eb00902-letting346652.jpeg"
-    ],
-    "contacts": [
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-01-29 10:54:00"
-  },
-  {
-    "id": 346777,
-    "address": "De Salis Drive",
-    "town": "Droitwich",
-    "postcode": "WR9 0QE",
-    "lat": 52.283466339,
-    "lon": -2.168041944,
-    "types": [
-      "Office"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 2142,
-    "size_to_sqft": 2142,
-    "summary": "Office For Sale, Droitwich",
-    "description": "The property comprises a two-storey detached office building of brick cavity construction with pitched concrete tiled roof. The property benefits from timber framed double-glazed windows throughout and has been fitted with a gas-fired central system via traditional wall-mounted radiators as well as wall-mounted split-system air conditioning units. The property benefits from having approximately 12no tarmacadam surfaced car parking spaces, all located to the front of the building and the property is surrounded by well-maintained grounds. Ground Floor 990 sq ft 92 sq m First Floor 1,152 sq ft 107 sq m Total 2,142 sq ft 199 sq m Location The property is located within the popular Hampton Lovett Industrial Estate, approximately one mile north of Droitwich Town Centre. The Hampton Lovett Industrial Estate is accessed directly off the A442 which provides access to Droitwich to the south and Hartlebury and Kidderminster to the north. The location is particularly convenient for occupiers as it provides easy access to the M5 Motorway with Junction 5 situated approximately 3.25km (two miles) to the east. Birmingham city centre is situated approximately 22 miles to the north east, Bromsgrove is situated approximately 7 miles to the north east, Worcester city centre is situated approximately 8 miles to the south west, Kidderminster is situated approximately 9 miles to the north and Redditch is situated approximately 17 miles to the north east. Droitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester",
-    "features": [
-      "Floor plan available"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/54e6919c93602cb600116e3e30da2150-letting346777.jpeg",
-      "https://as-images.imgix.net/132dd9a9b0067f49aeaf4fdb8fb643af-letting346777.jpeg",
-      "https://as-images.imgix.net/4dabd90f6344e064f6f8b8f71a077dd7-letting346777.jpeg",
-      "https://as-images.imgix.net/2fdf877b09b0a44b116e1bfbfd014472-letting346777.jpeg",
-      "https://as-images.imgix.net/bb599455f9d3cd0420d64ce4ba8d4aff-letting346777.jpeg",
-      "https://as-images.imgix.net/241bbc37a9ee037427db208cc62d52e2-letting346777.jpeg",
-      "https://as-images.imgix.net/b09b0d83597654649863d849ee1f0e7f-letting346777.jpeg",
-      "https://as-images.imgix.net/2f482190c01fa145d8e32e2da6969530-letting346777.jpeg",
-      "https://as-images.imgix.net/529ea4330607dbb015cb6ab600f82be8-letting346777.jpeg",
-      "https://as-images.imgix.net/857192b4888eab6f2bd8e9e6c1a0faa6-letting346777.jpeg",
-      "https://as-images.imgix.net/784fbfb95138f1b0b9e6ee683adbe279-letting346777.jpeg",
-      "https://as-images.imgix.net/af7a7a4095486e62029d0e7a523166ee-letting346777.jpeg"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-01-29 10:50:27"
-  },
-  {
     "id": 346754,
     "address": "Charles Hastings Way",
     "town": "Worcester",
@@ -2289,97 +2568,5 @@
       }
     ],
     "last_updated": "2026-01-29 10:49:17"
-  },
-  {
-    "id": 346736,
-    "address": "4 Richmond Road",
-    "town": "Malvern",
-    "postcode": "WR14 1NE",
-    "lat": 52.12851715,
-    "lon": -2.315370082,
-    "types": [
-      "Investment"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 1081,
-    "size_to_sqft": 1081,
-    "summary": "Investment For Sale, Malvern",
-    "description": "The property comprises two separate retail shops on the ground floor which extend in total to 1,081 sq ft (100.43 sq m). There is residential accommodation above which has been sold off on a long leasehold basis for a term of 125 years from 01/04/2005. The shops operate independently as a caf√à and hair salon with off street parking available to the front to the hair salon. Unit 1 - 422 sq ft (39.18 sq m) Unit 2 - 659 sq ft (61.25 sq m) The first floor accommodation has been sold off on a long leasehold basis. Tenancies Unit 1 - Trading as Sunbean caf√à & sunbeds and let for a term of 5 years from 27/02/2024, expiring 26/02/29, at a passing rent of ¬£8,750 pa. Unit 2 - Trading as Luxury Cutz and let for a term of 5 years from 01/03/222, expiring 28/02/27, at a passing rent of ¬£7,500 pa. The combined rental income is ¬£16,250 per annum. Location The property occupies a prominent position on Richmond Road, close to the junction with the A449 Worcester Road. It is situated close to the amenities of Malvern Link which offers a range of independent shops, Co-op supermarket, takeaways, eateries and community facilities. Further and more extensive facilities are available in the neighbouring town of Great Malvern or the city of Worcester.",
-    "features": [],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/7c2613fdfcb3853c29230022ad83289b-letting346736.jpeg",
-      "https://as-images.imgix.net/6f7d5d7def0d56ba650131418331d05f-letting346736.jpeg",
-      "https://as-images.imgix.net/a125ac5fb2939b81b300d757ccd2e715-letting346736.jpeg",
-      "https://as-images.imgix.net/3e420d1512f9fc6c5f902247cb9e6f3f-letting346736.jpeg",
-      "https://as-images.imgix.net/37ea2414e6f32866dd5741820b504c25-letting346736.jpeg",
-      "https://as-images.imgix.net/092435094ebfbad239394f5531850a8e-letting346736.jpeg",
-      "https://as-images.imgix.net/63966b6bfb96ae4ea5c1e79be06a862b-letting346736.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c54e99bb6da9bd70ac289900218cede0-letting346736.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-01-29 10:47:15"
-  },
-  {
-    "id": 346672,
-    "address": "20 The Shambles",
-    "town": "Worcester",
-    "postcode": "WR1 2RA",
-    "lat": 52.191112518,
-    "lon": -2.219422101,
-    "types": [
-      "Retail"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 2513,
-    "size_to_sqft": 2513,
-    "summary": "Retail For Sale, Worcester",
-    "description": "20 The Shambles comprises a mid-terraced retail unit arranged over basement, ground, first and second floors, situated within a traditional parade in the heart of Worcester city centre. The ground floor features an open-plan retail area with a suspended ceiling, LED lighting, air conditioning and a timber-framed single-glazed shopfront. A floor hatch in the main retail area provides ladder access to a small basement area, suitable for limited storage. To the rear of the ground floor are ancillary areas, with a kitchen and WC located on the first floor. The upper parts are accessed via an internal staircase and include further ancillary space with a mix of UPVC and timber-framed windows. Lighting to the upper floors consists of older-style fluorescent fittings. The property is in need of repair and modernisation in parts, with notable damp ingress evident along the right-hand side elevation at second floor level. The unit may suit a variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents. Basement352 sq ft 32.70 sq m Ground Floor 635 sq ft 58.99 sq m First Floor 780 sq ft 72.46 sq m Second Floor747 sq ft 69.40 sq m Total2,513 sq ft233.46 sq m Location The property is prominently located on The Shambles, a pedestrianised shopping street just off Worcester High Street, in a highly visible and well-trafficked position. The area is home to a mix of national and independent occupiers, with nearby retailers including Greggs, The Works, Waterstones and Marks & Spencer. Worcester's main shopping destinations-Crowngate Shopping Centre and Cathedral Square-are both within a short walking distance. Worcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
-    "features": [
-      "Prominent city centre location",
-      "Property arranged over basement, ground, first and second",
-      "Currently let at ¬£21,000 per annum"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/570a4079df62487975d4d2b75449b956-letting346672.jpeg",
-      "https://as-images.imgix.net/91d7459984edd30a2b77fe3764b65ffb-letting346672.jpeg",
-      "https://as-images.imgix.net/cbb04f12d126ea78867538bbca58455e-letting346672.jpeg",
-      "https://as-images.imgix.net/a42cfdf7168b95c249ec8a9142b68ebe-letting346672.jpeg",
-      "https://as-images.imgix.net/d27eb8caf050f6730c48fb5c4a082766-letting346672.jpeg",
-      "https://as-images.imgix.net/61b196b5fa07b79f51cbd9cf1cdddd42-letting346672.jpeg",
-      "https://as-images.imgix.net/f7d0d12227a5dc73f0c0c982ca14811c-letting346672.jpeg",
-      "https://as-images.imgix.net/7d1abe1290bc1b112de86867f098c6e2-letting346672.jpeg",
-      "https://as-images.imgix.net/193205c5527b2926b6129c137736db7c-letting346672.jpeg",
-      "https://as-images.imgix.net/fa7aa285385934527b8c969752180195-letting346672.jpeg",
-      "https://as-images.imgix.net/480a7dc576c43895fd14cd0ddc0862b1-letting346672.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/bc1813f572669afb476cf7f6d65eb50f-letting346672.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-01-29 10:45:32"
   }
 ]
