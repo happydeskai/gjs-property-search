@@ -836,59 +836,6 @@
     "last_updated": "2026-02-19 15:50:54"
   },
   {
-    "id": 346656,
-    "address": "1 College Precincts",
-    "town": "Worcester",
-    "postcode": "WR1 2LG",
-    "lat": 52.188552856,
-    "lon": -2.219439029,
-    "types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1010,
-    "size_to_sqft": 1010,
-    "summary": "Office To Let, Worcester",
-    "description": "1 College Precincts is a mid-terraced, period Grade II listed property arranged over the basement, ground, first and second floors. The building is of brick construction with period Georgian features and is set on an attractive street of similar properties. Internally, the property is accessed via ground floor level with an internal staircase leading to all floors. At basement level there is an office, storage room, WC and access to a rear courtyard. Over the ground to second floors, there is a mix of office space, kitchen & WC facilities, along with further storage space. There is limited metered public parking to the front of the property, along with King Street car park close by which offers competitive annual permits. Basement 231 sq ft 21.43 sq m Ground Floor 210 sq ft 19.52 sq m First Floor 358 sq ft 33.27 sq m Second Floor211 sq ft 19.62 sq m Total 1,010 sq ft 93.84 sq m Location 1 College Precincts occupies a prominent position adjacent to the street's junction with College Street (A44), situated on the immediate edge of Worcester city centre. This well located office lies underneath the western elevation of the cathedral, with it's onlook being the cathedral grounds and Cathedral Plaza Shopping Centre. Excellent public transport links are within easy reach, with Foregate Street Train Station-offering direct connections to Birmingham New Street and London Paddington-and the Crowngate Bus Station both just a short walk away, ensuring convenience for commuters and visitors alike.",
-    "features": [
-      "City centre location overlooking Worcester Cathedral",
-      "Close proximity to public car parking",
-      "Grade II listed building"
-    ],
-    "rent_psf": 12000,
-    "rent": "£12,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/331ce56e675ba6e16799d941daa1e305-letting346656.jpeg",
-      "https://as-images.imgix.net/81a9b3e4d2784f4454e3dc88bc7f80f0-letting346656.jpeg",
-      "https://as-images.imgix.net/f148085a3444af139094b25abf80a1c9-letting346656.jpeg",
-      "https://as-images.imgix.net/bd6db6a259dccca185e22b74962183d8-letting346656.jpeg",
-      "https://as-images.imgix.net/e94e5a3197a353b6c1893f604cbcc937-letting346656.jpeg",
-      "https://as-images.imgix.net/c753c3000732d9926d5cc63b4bab575c-letting346656.jpeg",
-      "https://as-images.imgix.net/511611c3a10e4e313795840d66988c3c-letting346656.jpeg",
-      "https://as-images.imgix.net/28dca6552ddecec5a96d7fb9f938e05d-letting346656.jpeg",
-      "https://as-images.imgix.net/85b3d4f153c302bbcced87a75374fd53-letting346656.jpeg",
-      "https://as-images.imgix.net/33e6373de2f9cbbb530f653a232079eb-letting346656.jpeg",
-      "https://as-images.imgix.net/3db634f1f031a02d04061ae58d1fab80-letting346656.jpeg",
-      "https://as-images.imgix.net/a1a96731abc8d5d586bbdc716dcae28b-letting346656.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/133426b5663fbd86d5ce30721d116683-letting346656.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-19 15:50:07"
-  },
-  {
     "id": 346700,
     "address": "Kempsey Eco Business Park,Industrial / Warehouse Buildings",
     "town": "Worcester",
