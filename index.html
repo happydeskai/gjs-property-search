@@ -129,6 +129,37 @@
     .pop-sub  { color: #6b7280; font-size: 13px; margin-bottom: 4px; }
     .pop-size { font-size: 13px; margin-bottom: 10px; }
     .pop-btn  { display: inline-block; padding: 8px 12px; border-radius: 8px; background:#111; color:#fff; text-decoration:none; font-weight:600; }
+
+    /* ============================================================
+       Mobile optimisation (ONLY affects mobile; desktop unchanged)
+       Fixes horizontal "cut off" caused by 100vw full-bleed map.
+       ============================================================ */
+    @media (max-width: 640px){
+      /* Stop any accidental sideways overflow on phones */
+      html, body { overflow-x: hidden; }
+
+      /* Disable the 100vw full-bleed trick on mobile (prevents cropping) */
+      .bleed{
+        width: 100%;
+        left: auto;
+        right: auto;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 14px;
+      }
+
+      /* Slightly smaller map on mobile for better page flow */
+      #map{ height: 300px; }
+
+      /* Slightly tighter side padding on phones */
+      .wrap{ padding-left: 12px; padding-right: 12px; }
+
+      /* Force the filter grid into a single column on small screens */
+      .searchBar{ grid-template-columns: 1fr; }
+
+      /* Full-width button on mobile */
+      .btn{ width: 100%; }
+    }
   </style>
 </head>
 
@@ -139,7 +170,7 @@
     <div class="field"><label for="q">Location</label><input id="q" placeholder="Town, postcode" /></div>
     <div class="field"><label for="tenure">Tenure</label><select id="tenure"><option value="any">Any</option><option value="to let">To Let</option><option value="for sale">For Sale</option></select></div>
     <div class="field"><label for="type">Type</label><select id="type"><option value="any">Any</option></select></div>
-    <div class="field"><label for="radius">Radius</label><select id="radius"><option value="any">Any</option><option value="1">1 mile</option><option value="3">3 miles</option><option value="5">5 miles</option><option value="10">10 miles</option><option value="15">15 miles</option><option value="25">25 miles</option></select></div>
+    <div class="field"><label for="radius">Radius</label><select id="radius"><option value="any">Any</option><option value="1">1 mile</option><option value="3">3 miles</option><option value="5">5 miles</option><option value="10">10 miles</option><option value="15">15 miles</option><option value="25">25 miles</option><option value="50">50 miles</option></select></div>
     <div class="field"><label for="minSize">Min size</label><input id="minSize" type="number" inputmode="numeric" /></div>
     <div class="field"><label for="maxSize">Max size</label><input id="maxSize" type="number" inputmode="numeric" /></div>
     <button class="btn" id="searchBtn" type="button">Search</button>
@@ -148,6 +179,7 @@
   <div class="meta" id="resultsCount"></div>
   <div class="cards" id="results"></div>
 </div>
+
 <script>
 let allProperties = [];
 let map, markers, searchMarker;
@@ -309,6 +341,7 @@ function updateMap(list, focusPoint) {
   if (points.length === 1) map.setView(points[0], MAX_SEARCH_ZOOM);
   else map.fitBounds(points, { padding: [60, 60], maxZoom: MAX_SEARCH_ZOOM });
 }
+
 /* ---------- RENDER ---------- */
 function render(list, context = {}) {
   const el = document.getElementById('results');
