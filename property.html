@@ -309,8 +309,6 @@ async function main() {
 
     /* description */
     if (p.description) {
-      // For safety we insert as textContent to avoid rendering untrusted HTML.
-      // If you want to allow rich HTML, sanitize with a library (e.g. DOMPurify) before assigning to innerHTML.
       $('#desc').textContent = p.description;
       $('#descCard').style.display = '';
     } else {
@@ -384,7 +382,6 @@ async function main() {
         }).addTo(map);
         L.marker([p.lat, p.lon]).addTo(map);
 
-        // Listen for tile load events to adjust height after map finishes rendering
         map.on && map.on('tileload', scheduleHeightPings);
         map.on && map.on('load', scheduleHeightPings);
       } catch (e) {
@@ -392,17 +389,14 @@ async function main() {
       }
     }
 
-    // done rendering — ensure parent gets accurate height
     scrollTopOnce();
     scheduleHeightPings();
 
-    // observe content for changes
     if ('ResizeObserver' in window) {
       const ro = new ResizeObserver(() => scheduleHeightPings());
       ro.observe(document.getElementById('content'));
     }
 
-    // watch for images and other late layout shifts
     watchImages();
 
   } catch (err) {
@@ -412,7 +406,6 @@ async function main() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Update the back link to restore last search
   const backLink = document.querySelector('.back');
   if (backLink) {
     try {
@@ -459,10 +452,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   .modal__dialog {
     /* IMPORTANT: let the flex-centred overlay position the dialog */
-    position: relative;              /* was fixed */
-    top: auto;                       /* was 45%/50% */
+    position: relative;
+    top: auto;
     left: auto;
-    transform: scale(.995);          /* remove translate centring */
+    transform: scale(.995);
     width: min(640px, calc(100vw - 40px));
     max-width: 640px;
     background: #ffffff;
@@ -471,7 +464,6 @@ document.addEventListener('DOMContentLoaded', () => {
     overflow: hidden;
     transition: transform .18s ease, opacity .18s ease;
 
-    /* prevent off-screen on short viewports */
     max-height: calc(100dvh - 40px);
   }
 
@@ -633,18 +625,30 @@ document.addEventListener('DOMContentLoaded', () => {
     mailingList: document.getElementById('mailingListInput')
   };
 
-  // If this page is served from the same Vercel project as the API, keep the relative path.
-  // If you host the page elsewhere, set to the full Vercel URL, e.g.:
-  // const SEND_ENDPOINT = 'https://your-project.vercel.app/api/send-enquiry.js';
   const SEND_ENDPOINT = '/api/send-enquiry.js';
 
   let lastFocusedEl = null;
+
+  function centerModalInViewport() {
+    if (!modal || !dialog) return;
+    if (modal.getAttribute('aria-hidden') !== 'false') return;
+
+    const vv = window.visualViewport;
+    const viewportH = vv ? vv.height : window.innerHeight;
+
+    const dialogH = dialog.getBoundingClientRect().height;
+
+    const pad = Math.max(12, Math.floor((viewportH - dialogH) / 2));
+
+    modal.style.alignItems = 'flex-start';
+    modal.style.paddingTop = pad + 'px';
+    modal.style.paddingBottom = '12px';
+  }
 
   function showModal() {
     lastFocusedEl = document.activeElement;
     try { document.documentElement.style.overflow = 'hidden'; document.body.style.overflow = 'hidden'; } catch(e){}
     modal.setAttribute('aria-hidden', 'false');
-    scheduleHeightPings();
 
     const title = document.getElementById('prop-title')?.textContent?.trim();
     propRefHint.textContent = title ? `About: ${title}` : '';
@@ -653,6 +657,13 @@ document.addEventListener('DOMContentLoaded', () => {
     clearErrors();
     bodyBox.style.display = '';
     successBox.style.display = 'none';
+
+    centerModalInViewport();
+    setTimeout(centerModalInViewport, 0);
+    setTimeout(centerModalInViewport, 50);
+    setTimeout(centerModalInViewport, 150);
+
+    scheduleHeightPings();
 
     setTimeout(() => {
       try { fields.firstName.focus({ preventScroll: true }); }
@@ -663,9 +674,15 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }, 50);
   }
+
   function closeModal() {
     try { document.documentElement.style.overflow = ''; document.body.style.overflow = ''; } catch(e){}
     modal.setAttribute('aria-hidden', 'true');
+
+    modal.style.paddingTop = '';
+    modal.style.paddingBottom = '';
+    modal.style.alignItems = '';
+
     scheduleHeightPings();
     if (lastFocusedEl) lastFocusedEl.focus();
   }
@@ -727,12 +744,14 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('sendEnquiryBtn').disabled = false;
       bodyBox.style.display = 'none';
       successBox.style.display = '';
+      centerModalInViewport();
       scheduleHeightPings();
     } catch (err) {
       console.error('Enquiry send failed', err);
       spinner.style.display = 'none';
       document.getElementById('sendEnquiryBtn').disabled = false;
       setError('message', 'Failed to send enquiry — please try again later.');
+      centerModalInViewport();
     }
   });
 
@@ -753,6 +772,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
     else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
   });
+
+  window.addEventListener('resize', centerModalInViewport);
+  window.visualViewport && window.visualViewport.addEventListener('resize', centerModalInViewport);
+  window.visualViewport && window.visualViewport.addEventListener('scroll', centerModalInViewport);
 
   window.__enquiryModal = { show: showModal, close: closeModal };
 })();
