@@ -406,6 +406,7 @@ async function main() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Update the back link to restore last search
   const backLink = document.querySelector('.back');
   if (backLink) {
     try {
@@ -415,7 +416,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     } catch(e) {}
   }
-  
+
   main();
 });
 </script>
@@ -434,28 +435,31 @@ document.addEventListener('DOMContentLoaded', () => {
     opacity: 1;
   }
 
-  /* Modal backdrop & layout (pure flex centering) */
+  /* Modal backdrop & layout (pure flex centering + bulletproof fixed) */
   #enquiryModal {
-    display: none;
     position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
     inset: 0;
-    z-index: 1000;
+    z-index: 2147483647;
     background: rgba(16,17,18,0.55);
     backdrop-filter: blur(4px);
 
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 
     padding: 20px;
+
+    /* helps when embedded inside odd containers */
+    transform: none !important;
   }
 
   .modal__dialog {
     position: relative;
 
     width: min(640px, 100%);
-    max-height: 90vh;     /* iframe-safe */
-    overflow-y: auto;     /* dialog scrolls if needed */
+    max-height: 90vh;
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 
     background: #ffffff;
@@ -602,14 +606,40 @@ document.addEventListener('DOMContentLoaded', () => {
     mailingList: document.getElementById('mailingListInput')
   };
 
+  // If this page is served from the same Vercel project as the API, keep the relative path.
+  // If you host the page elsewhere, set to the full Vercel URL, e.g.:
+  // const SEND_ENDPOINT = 'https://your-project.vercel.app/api/send-enquiry.js';
   const SEND_ENDPOINT = '/api/send-enquiry.js';
 
   let lastFocusedEl = null;
 
+  // NEW: remember where the modal lived so we can restore it
+  const modalHomeParent = modal.parentNode;
+  const modalHomeNext = modal.nextSibling;
+
+  function moveModalToBody() {
+    try { document.body.appendChild(modal); } catch(e){}
+  }
+  function restoreModalHome() {
+    try {
+      if (!modalHomeParent) return;
+      if (modalHomeNext) modalHomeParent.insertBefore(modal, modalHomeNext);
+      else modalHomeParent.appendChild(modal);
+    } catch(e){}
+  }
+
   function showModal() {
     lastFocusedEl = document.activeElement;
+
+    // NEW: move modal out of any transformed wrappers
+    moveModalToBody();
+
     try { document.documentElement.style.overflow = 'hidden'; document.body.style.overflow = 'hidden'; } catch(e){}
     modal.setAttribute('aria-hidden', 'false');
+
+    // Tell Squarespace to fullscreen the iframe (if listener exists)
+    try { window.parent?.postMessage({ type: 'ENQUIRY_MODAL_OPEN' }, '*'); } catch(e){}
+
     scheduleHeightPings();
 
     const title = document.getElementById('prop-title')?.textContent?.trim();
@@ -633,6 +663,13 @@ document.addEventListener('DOMContentLoaded', () => {
   function closeModal() {
     try { document.documentElement.style.overflow = ''; document.body.style.overflow = ''; } catch(e){}
     modal.setAttribute('aria-hidden', 'true');
+
+    // Tell Squarespace to exit fullscreen
+    try { window.parent?.postMessage({ type: 'ENQUIRY_MODAL_CLOSE' }, '*'); } catch(e){}
+
+    // NEW: put it back where it originally was
+    restoreModalHome();
+
     scheduleHeightPings();
     if (lastFocusedEl) lastFocusedEl.focus();
   }
