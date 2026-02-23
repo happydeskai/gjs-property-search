@@ -130,15 +130,8 @@
     .pop-size { font-size: 13px; margin-bottom: 10px; }
     .pop-btn  { display: inline-block; padding: 8px 12px; border-radius: 8px; background:#111; color:#fff; text-decoration:none; font-weight:600; }
 
-    /* ============================================================
-       Mobile optimisation (ONLY affects mobile; desktop unchanged)
-       Fixes horizontal "cut off" caused by 100vw full-bleed map.
-       ============================================================ */
     @media (max-width: 640px){
-      /* Stop any accidental sideways overflow on phones */
       html, body { overflow-x: hidden; }
-
-      /* Disable the 100vw full-bleed trick on mobile (prevents cropping) */
       .bleed{
         width: 100%;
         left: auto;
@@ -147,17 +140,9 @@
         margin-right: 0;
         border-radius: 14px;
       }
-
-      /* Slightly smaller map on mobile for better page flow */
       #map{ height: 300px; }
-
-      /* Slightly tighter side padding on phones */
       .wrap{ padding-left: 12px; padding-right: 12px; }
-
-      /* Force the filter grid into a single column on small screens */
       .searchBar{ grid-template-columns: 1fr; }
-
-      /* Full-width button on mobile */
       .btn{ width: 100%; }
     }
   </style>
@@ -168,9 +153,23 @@
   <div class="bleed"><div id="map"></div></div>
   <div class="searchBar" id="searchForm">
     <div class="field"><label for="q">Location</label><input id="q" placeholder="Town, postcode" /></div>
-    <div class="field"><label for="tenure">Tenure</label><select id="tenure"><option value="any">Any</option><option value="to let">To Let</option><option value="for sale">For Sale</option></select></div>
+    <div class="field"><label for="tenure">Tenure</label>
+      <select id="tenure">
+        <option value="any">Any</option>
+        <option value="to let">To Let</option>
+        <option value="for sale">For Sale</option>
+      </select>
+    </div>
     <div class="field"><label for="type">Type</label><select id="type"><option value="any">Any</option></select></div>
-    <div class="field"><label for="radius">Radius</label><select id="radius"><option value="any">Any</option><option value="1">1 mile</option><option value="3">3 miles</option><option value="5">5 miles</option><option value="10">10 miles</option></select></div>
+    <div class="field"><label for="radius">Radius</label>
+      <select id="radius">
+        <option value="any">Any</option>
+        <option value="1">1 mile</option>
+        <option value="3">3 miles</option>
+        <option value="5">5 miles</option>
+        <option value="10">10 miles</option>
+      </select>
+    </div>
     <div class="field"><label for="minSize">Min size</label><input id="minSize" type="number" inputmode="numeric" /></div>
     <div class="field"><label for="maxSize">Max size</label><input id="maxSize" type="number" inputmode="numeric" /></div>
     <button class="btn" id="searchBtn" type="button">Search</button>
@@ -183,8 +182,6 @@
 <script>
 let allProperties = [];
 let map, markers, searchMarker;
-
-/* ---------- GEO + MAP + HELPERS ---------- */
 const MAPBOX_TOKEN = "";
 
 function haversine(lat1, lon1, lat2, lon2) {
@@ -261,7 +258,6 @@ function sizeText(p) {
   return '';
 }
 
-/* ---------- MAP ---------- */
 function initMap() {
   map = L.map('map').setView([52.5, -1.8], 6);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
@@ -295,7 +291,6 @@ function updateMap(list, focusPoint) {
           <div class="pop-title">${p.address || 'Property'}</div>
           <div class="pop-sub">${where}</div>
           <div class="pop-size">${sizeText(p)}</div>
-          <!-- UPDATED: target _self to be iframe-friendly -->
           <a class="pop-btn" target="_self" href="property.html?id=${encodeURIComponent(p.id ?? '')}">View property</a>
         </div>
       </div>
@@ -305,20 +300,16 @@ function updateMap(list, focusPoint) {
     points.push([lat, lon]);
   });
 
-  // ✅ Gold focus marker with subtle black shadow ring
   if (focusPoint && isFinite(focusPoint.lat) && isFinite(focusPoint.lon)) {
-    const GJS_GOLD = '#FFCC33'; // bright golden tone
-
-    // Gold circle with black outline
+    const GJS_GOLD = '#FFCC33';
     const sp = L.circleMarker([focusPoint.lat, focusPoint.lon], {
       radius: 12,
       weight: 3,
-      color: '#000',        // black border
-      fillColor: GJS_GOLD,  // gold center
+      color: '#000',
+      fillColor: GJS_GOLD,
       fillOpacity: 1.0
     }).addTo(searchMarker);
 
-    // Soft shadow ring
     L.circleMarker([focusPoint.lat, focusPoint.lon], {
       radius: 18,
       weight: 10,
@@ -327,23 +318,16 @@ function updateMap(list, focusPoint) {
       fill: false
     }).addTo(searchMarker);
 
-    // Tooltip label
-    sp.bindTooltip(focusPoint.label || 'Search location', {
-      direction: 'top',
-      offset: [0, -12]
-    });
-
+    sp.bindTooltip(focusPoint.label || 'Search location', { direction: 'top', offset: [0, -12] });
     points.push([focusPoint.lat, focusPoint.lon]);
   }
 
-  // Fit map to show all markers
   if (!points.length) return;
   const MAX_SEARCH_ZOOM = 11;
   if (points.length === 1) map.setView(points[0], MAX_SEARCH_ZOOM);
   else map.fitBounds(points, { padding: [60, 60], maxZoom: MAX_SEARCH_ZOOM });
 }
 
-/* ---------- RENDER ---------- */
 function render(list, context = {}) {
   const el = document.getElementById('results');
   document.getElementById('resultsCount').textContent = `${list.length} Properties Found`;
@@ -388,16 +372,14 @@ function render(list, context = {}) {
         <div class="card__footer">
           <a class="btn-ghost" href="property.html?id=${encodeURIComponent(p.id ?? '')}">View property</a>
           ${(p.brochure || p.brochure_url)
-  ? `<a class="btn-link" href="${p.brochure || p.brochure_url}" target="_blank" rel="noopener">View brochure</a>`
-  : `<a class="btn-link" aria-disabled="true">No brochure</a>`}
+            ? `<a class="btn-link" href="${p.brochure || p.brochure_url}" target="_blank" rel="noopener">View brochure</a>`
+            : `<a class="btn-link" aria-disabled="true">No brochure</a>`}
         </div>
       </article>`;
   }).join('');
 }
 
-/* ---------- FILTER FLOW ---------- */
 async function applyFilters() {
-  // Save current filter state to sessionStorage
   const params = new URLSearchParams();
   let q = document.getElementById('q').value.trim();
   const tenure = document.getElementById('tenure').value;
@@ -456,7 +438,6 @@ async function applyFilters() {
   updateMap(finalList, point);
 }
 
-/* ---------- LOAD ---------- */
 async function loadProperties() {
   try {
     const res = await fetch('./properties.json', { cache: 'no-store' });
@@ -483,7 +464,6 @@ async function loadProperties() {
   }
 }
 
-/* ---------- PREFILL ---------- */
 function getIncomingParams() {
   const sp = new URLSearchParams(location.search);
   const o = {}; for (const [k, v] of sp.entries()) o[k] = v; return o;
@@ -507,7 +487,6 @@ function prefillFromURL() {
   if (typeEl) typeEl.dataset.prefill = typePref;
 }
 
-/* ---------- INIT ---------- */
 document.addEventListener('DOMContentLoaded', () => {
   initMap();
   document.getElementById('searchBtn').onclick = applyFilters;
@@ -518,7 +497,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadProperties();
 });
 
-/* --- NEW: Robust Leaflet popup navigation inside iframes --- */
+// Robust Leaflet popup navigation inside iframes
 document.addEventListener('click', (e) => {
   const a = e.target?.closest ? e.target.closest('a.pop-btn') : null;
   if (!a) return;
