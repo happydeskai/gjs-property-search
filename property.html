@@ -422,7 +422,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     } catch(e) {}
   }
-  
+
   main();
 });
 </script>
@@ -454,31 +454,47 @@ document.addEventListener('DOMContentLoaded', () => {
     justify-content: center;
     padding: 20px;
     height: 100vh;
+    height: 100dvh; /* mobile viewport correctness (iOS/Chrome) */
   }
 
   .modal__dialog {
     position: fixed;
-    top: 45%;
+    top: 50%; /* was 45% */
     left: 50%;
     transform: translate(-50%, -50%) scale(.995);
-    width: 100%;
+    width: min(640px, calc(100vw - 40px)); /* keeps it inside padded viewport */
     max-width: 640px;
     background: #ffffff;
     border-radius: 14px;
     box-shadow: 0 20px 50px rgba(16,17,18,0.35);
     overflow: hidden;
     transition: transform .18s ease, opacity .18s ease;
+
+    /* prevent off-screen on short viewports */
+    max-height: calc(100dvh - 40px);
   }
 
   #enquiryModal[aria-hidden="false"] .modal__dialog { transform: translate(-50%, -50%) scale(1); opacity: 1; }
-  #enquiryModal[aria-hidden="true"] .modal__dialog { transform: translate(-50%, -46%) scale(.995); opacity: 0; }
+  #enquiryModal[aria-hidden="true"] .modal__dialog { transform: translate(-50%, -50%) scale(.995); opacity: 0; }
 
-  .modal__header { display:flex; align-items:center; justify-content:space-between; padding:18px 20px; border-bottom:1px solid #f0f1f3; }
+  .modal__header {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:18px 20px;
+    border-bottom:1px solid #f0f1f3;
+    flex: 0 0 auto;
+  }
   .modal__title { margin:0; font-size:18px; font-weight:700; color:#111; }
   .modal__close { background:transparent;border:none;font-size:20px;cursor:pointer;color:#555; padding:6px;border-radius:6px; }
   .modal__close:focus { outline:2px solid rgba(16,17,18,.12); }
 
-  .modal__body { padding:18px 20px 22px; }
+  .modal__body {
+    padding:18px 20px 22px;
+    overflow: auto; /* allow scrolling inside dialog on mobile */
+    -webkit-overflow-scrolling: touch;
+    max-height: calc(100dvh - 40px - 64px); /* 64px approx header height */
+  }
   .modal__hint { color:#666;font-size:13px;margin-bottom:12px; }
 
   .modern-form { display:block; gap:12px; }
@@ -509,6 +525,17 @@ document.addEventListener('DOMContentLoaded', () => {
   .modal__success { padding: 18px 20px; text-align:center; }
   .modal__success h3 { margin:0 0 8px; font-size:16px; }
   .modal__success p { color:#444; font-size:14px; margin:0 0 12px; }
+
+  /* Small screens: reduce padding a touch */
+  @media (max-width: 560px) {
+    #enquiryModal { padding: 12px; }
+    .modal__dialog {
+      width: calc(100vw - 24px);
+      max-height: calc(100dvh - 24px);
+      border-radius: 12px;
+    }
+    .modal__body { max-height: calc(100dvh - 24px - 64px); }
+  }
 </style>
 
 <div id="enquiryModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="enqTitle">
