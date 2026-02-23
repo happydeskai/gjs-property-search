@@ -422,7 +422,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     } catch(e) {}
   }
-
+  
   main();
 });
 </script>
@@ -454,15 +454,16 @@ document.addEventListener('DOMContentLoaded', () => {
     justify-content: center;
     padding: 20px;
     height: 100vh;
-    height: 100dvh; /* mobile viewport correctness (iOS/Chrome) */
+    height: 100dvh; /* robust mobile viewport */
   }
 
   .modal__dialog {
-    position: fixed;
-    top: 50%; /* was 45% */
-    left: 50%;
-    transform: translate(-50%, -50%) scale(.995);
-    width: min(640px, calc(100vw - 40px)); /* keeps it inside padded viewport */
+    /* IMPORTANT: let the flex-centred overlay position the dialog */
+    position: relative;              /* was fixed */
+    top: auto;                       /* was 45%/50% */
+    left: auto;
+    transform: scale(.995);          /* remove translate centring */
+    width: min(640px, calc(100vw - 40px));
     max-width: 640px;
     background: #ffffff;
     border-radius: 14px;
@@ -474,8 +475,8 @@ document.addEventListener('DOMContentLoaded', () => {
     max-height: calc(100dvh - 40px);
   }
 
-  #enquiryModal[aria-hidden="false"] .modal__dialog { transform: translate(-50%, -50%) scale(1); opacity: 1; }
-  #enquiryModal[aria-hidden="true"] .modal__dialog { transform: translate(-50%, -50%) scale(.995); opacity: 0; }
+  #enquiryModal[aria-hidden="false"] .modal__dialog { transform: scale(1); opacity: 1; }
+  #enquiryModal[aria-hidden="true"] .modal__dialog { transform: scale(.995); opacity: 0; }
 
   .modal__header {
     display:flex;
@@ -491,9 +492,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   .modal__body {
     padding:18px 20px 22px;
-    overflow: auto; /* allow scrolling inside dialog on mobile */
+    overflow: auto;
     -webkit-overflow-scrolling: touch;
-    max-height: calc(100dvh - 40px - 64px); /* 64px approx header height */
+    max-height: calc(100dvh - 40px - 64px);
   }
   .modal__hint { color:#666;font-size:13px;margin-bottom:12px; }
 
@@ -526,7 +527,6 @@ document.addEventListener('DOMContentLoaded', () => {
   .modal__success h3 { margin:0 0 8px; font-size:16px; }
   .modal__success p { color:#444; font-size:14px; margin:0 0 12px; }
 
-  /* Small screens: reduce padding a touch */
   @media (max-width: 560px) {
     #enquiryModal { padding: 12px; }
     .modal__dialog {
