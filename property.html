@@ -1,103 +1,3 @@
-```html
-<!-- Squarespace embed code (FULL COPY/PASTE) -->
-<style>
-  /* Make this section bleed edge‑to‑edge across the viewport */
-  .gjs-fullbleed {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-  }
-
-  .gjs-fullbleed iframe {
-    width: 100%;
-    border: 0;
-    display: block;
-    overflow: hidden;
-    height: 720px; /* initial height; will be replaced by postMessage sizing */
-  }
-
-  @media (max-width: 640px) {
-    .gjs-fullbleed iframe { height: 680px; }
-  }
-</style>
-
-<div class="gjs-fullbleed">
-  <iframe
-    id="gjs-prop-frame"
-    data-gjs-prop
-    src="https://gjs-property-search.vercel.app/"
-    scrolling="no"
-    allow="clipboard-read; clipboard-write"
-    referrerpolicy="no-referrer"
-    title="Property search"
-  ></iframe>
-</div>
-
-<!-- Forward this Squarespace page's querystring to the iframe -->
-<script>
-(function () {
-  var iframe = document.getElementById('gjs-prop-frame');
-  if (!iframe) return;
-
-  var qs = window.location.search;
-
-  // Optional fallback to last search
-  if (!qs) {
-    try {
-      var last = sessionStorage.getItem('gjs:lastSearch');
-      if (last) qs = last;
-    } catch (e) {}
-  }
-  if (!qs) return;
-
-  var url = new URL(iframe.getAttribute('src'), window.location.href);
-  var baseParams = new URLSearchParams(url.search);
-  var incoming   = new URLSearchParams(qs);
-
-  incoming.forEach(function (v, k) {
-    if (!baseParams.has(k)) baseParams.set(k, v);
-  });
-
-  url.search = baseParams.toString();
-  var newSrc = url.toString();
-  if (newSrc !== iframe.src) iframe.src = newSrc;
-})();
-</script>
-
-<!-- Listen for height messages from the Vercel app and resize the iframe -->
-<script>
-(function () {
-  var iframe = document.getElementById('gjs-prop-frame');
-  if (!iframe) return;
-
-  // Only accept messages from your Vercel origin
-  var ORIGIN = 'https://gjs-property-search.vercel.app';
-
-  window.addEventListener('message', function (event) {
-    if (!event.data || event.origin !== ORIGIN) return;
-
-    if (event.data.type === 'scroll-top') {
-      try { window.scrollTo({ top: 0, behavior: 'auto' }); } catch(e){}
-      return;
-    }
-
-    if (event.data.type === 'gjs-prop-height') {
-      var h = parseInt(event.data.height, 10);
-      if (!isNaN(h)) {
-        if (h < 200) h = 200; // sensible minimum
-        iframe.style.height = h + 'px';
-      }
-    }
-  }, false);
-})();
-</script>
-```
-
-```html
-<!-- property.html (FULL) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -131,7 +31,6 @@
     .chip{background:#f6f6f6;border:1px solid #ececec;padding:6px 10px;border-radius:999px;font-size:12px}
     .chip--accent{background:#fff7cf;border-color:#ffe899}
 
-    /* --- Modern Grid Layout --- */
     .layout{
       display:grid;
       grid-template-columns:minmax(0,1fr) 360px;
@@ -177,7 +76,6 @@
     .agent{display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:center;padding:12px 16px;border-top:1px solid #f0f2f5}
     .avatar{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#f1f3f6;color:#222;font-weight:700;border:1px solid #e9edf2}
 
-    /* Small sidebar agent card tweaks */
     #teamBox .agent { padding:12px; border-top:none; }
   </style>
 </head>
@@ -210,7 +108,6 @@
             <div class="card"><div class="card__title"><h2>Key features</h2></div><div class="card__body"><ul class="features" id="features"></ul></div></div>
           </div>
 
-          <!-- Location card (shown only if JSON contains `location`) -->
           <div class="section" id="locationCard" style="display:none">
             <div class="card">
               <div class="card__title"><h2>Location</h2></div>
@@ -235,7 +132,6 @@
             </div>
           </div>
 
-          <!-- Sidebar agents box (will be populated from `contacts` or `agents`) -->
           <div class="card" id="teamBox" style="display:none">
             <div class="card__title">Viewings & further information</div>
             <div id="agents"></div>
@@ -244,23 +140,15 @@
       </div>
     </div>
   </div>
-<script>
-/* ==============================================
-   Squarespace iframe-safe helpers (CLEAN)
-============================================== */
 
+<script>
 if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 
-/* ---------- helpers ---------- */
 const $ = (s, el=document) => el.querySelector(s);
 const getParam = n => new URLSearchParams(location.search).get(n);
-const pick = (...vals) => vals.find(v => v !== undefined && v !== null && v !== '');
 const initials = n => n ? n.trim().split(/\s+/).slice(0,2).map(w=>w[0]?.toUpperCase()||'').join('') : '';
-
-/* helper to check for http(s) URLs */
 const isHttpUrl = s => typeof s === 'string' && (/^https?:\/\//i).test(s);
 
-/* ---------- Robust iframe height reporting ---------- */
 let lastHeight = 0;
 let heightTimer = null;
 
@@ -268,11 +156,11 @@ function getPageHeight() {
   const body = document.body;
   const doc = document.documentElement;
 
-  // Exclude the enquiry modal overlay from sizing so the iframe doesn't grow huge / grey
+  // Exclude modal overlay from iframe sizing to avoid "infinite grey"
   const modal = document.getElementById('enquiryModal');
-  let prevDisplay = null;
+  let prev = null;
   if (modal && modal.getAttribute('aria-hidden') === 'false') {
-    prevDisplay = modal.style.display;
+    prev = modal.style.display;
     modal.style.display = 'none';
   }
 
@@ -282,10 +170,7 @@ function getPageHeight() {
     doc.clientHeight
   );
 
-  if (modal && prevDisplay !== null) {
-    modal.style.display = prevDisplay;
-  }
-
+  if (modal && prev !== null) modal.style.display = prev;
   return h;
 }
 
@@ -300,7 +185,7 @@ function notifyParentHeightImmediate() {
 
 function notifyParentHeight() {
   clearTimeout(heightTimer);
-  heightTimer = setTimeout(() => notifyParentHeightImmediate(), 40);
+  heightTimer = setTimeout(notifyParentHeightImmediate, 40);
 }
 
 function scheduleHeightPings() {
@@ -320,19 +205,14 @@ function watchImages() {
   });
 }
 
-/* ---------- iframe scroll-to-top ---------- */
 let didScrollTop = false;
 function scrollTopOnce() {
   if (didScrollTop) return;
   didScrollTop = true;
   window.scrollTo(0, 0);
-  try {
-    window.parent?.postMessage({ type: 'scroll-top' }, '*');
-  } catch(e){}
+  try { window.parent?.postMessage({ type: 'scroll-top' }, '*'); } catch(e){}
 }
 
-/* ---------- Safe DOM helpers ---------- */
-function safeText(el, txt) { el.textContent = txt ?? ''; }
 function createImg(src, alt) {
   const img = document.createElement('img');
   img.src = src;
@@ -340,20 +220,15 @@ function createImg(src, alt) {
   return img;
 }
 
-/* ---------- main render ---------- */
 async function main() {
   try {
     const id = getParam('id');
-    console.log('property main running, id=', id);
-
-    // Load properties.json from the same host (works on Vercel or GitHub Pages)
     const res = await fetch('/properties.json', { cache: 'no-store' });
     if (!res.ok) throw new Error('Failed to fetch properties.json: ' + res.status);
     const list = await res.json();
     const p = list.find(x => String(x.id) === String(id)) || list[0];
     if (!p) throw new Error('Property not found');
 
-    // --- Normalise common/legacy field names so the rest of the template can use stable keys
     p.agents = p.agents || p.contacts || [];
     p.brochure = p.brochure || p.brochure_url || p.brochureUrl || '';
     p.epc = p.epc || p.epc_rating || p.epcRating || '';
@@ -368,13 +243,10 @@ async function main() {
     $('#prop-title').textContent = p.address || 'Property';
     $('#prop-sub').textContent = [p.town, p.postcode].filter(Boolean).join(' ');
 
-    /* images (use DOM methods to avoid accidental injection) */
     const imgs = (p.images || []).map(i => (typeof i === 'string' ? i : i.url)).filter(Boolean);
     const hero = $('#hero');
     hero.innerHTML = '';
-    if (isHttpUrl(imgs[0])) {
-      hero.appendChild(createImg(imgs[0], p.address || 'Property image'));
-    }
+    if (isHttpUrl(imgs[0])) hero.appendChild(createImg(imgs[0], p.address || 'Property image'));
 
     const thumbsEl = $('#thumbs');
     thumbsEl.innerHTML = '';
@@ -390,17 +262,14 @@ async function main() {
 
     thumbsEl.addEventListener('click', (e) => {
       const t = e.target.closest('.thumb');
-      if (t) {
-        const src = t.dataset.src;
-        if (isHttpUrl(src)) {
-          hero.innerHTML = '';
-          hero.appendChild(createImg(src, p.address || 'Property image'));
-          scheduleHeightPings();
-        }
-      }
+      if (!t) return;
+      const src = t.dataset.src;
+      if (!isHttpUrl(src)) return;
+      hero.innerHTML = '';
+      hero.appendChild(createImg(src, p.address || 'Property image'));
+      scheduleHeightPings();
     });
 
-    /* facts (build a richer facts array) */
     const facts = [];
     if (p.size_from_sqft) {
       const size = Number(p.size_from_sqft);
@@ -422,23 +291,12 @@ async function main() {
       f.appendChild(lab); f.appendChild(val); factsEl.appendChild(f);
     });
 
-    /* description */
-    if (p.description) {
-      $('#desc').textContent = p.description;
-      $('#descCard').style.display = '';
-    } else {
-      $('#descCard').style.display = 'none';
-    }
+    if (p.description) { $('#desc').textContent = p.description; $('#descCard').style.display = ''; }
+    else $('#descCard').style.display = 'none';
 
-    /* overview */
-    if (p.overview) {
-      $('#overview').textContent = p.overview;
-      $('#overviewCard').style.display = '';
-    } else {
-      $('#overviewCard').style.display = 'none';
-    }
+    if (p.overview) { $('#overview').textContent = p.overview; $('#overviewCard').style.display = ''; }
+    else $('#overviewCard').style.display = 'none';
 
-    /* features */
     if (p.features && Array.isArray(p.features) && p.features.length) {
       const featuresEl = $('#features');
       featuresEl.innerHTML = '';
@@ -446,28 +304,15 @@ async function main() {
         const li = document.createElement('li'); li.textContent = fv; featuresEl.appendChild(li);
       });
       $('#featuresCard').style.display = '';
-    } else {
-      $('#featuresCard').style.display = 'none';
-    }
+    } else $('#featuresCard').style.display = 'none';
 
-    /* location (optional human readable location text in JSON) */
-    if (p.location) {
-      $('#location').textContent = p.location;
-      $('#locationCard').style.display = '';
-    } else {
-      $('#locationCard') && ($('#locationCard').style.display = 'none');
-    }
+    if (p.location) { $('#location').textContent = p.location; $('#locationCard').style.display = ''; }
+    else $('#locationCard').style.display = 'none';
 
-    /* brochure */
     const brochureBtn = $('#brochureBtn');
-    if (p.brochure) {
-      brochureBtn.href = p.brochure;
-      brochureBtn.style.display = '';
-    } else {
-      brochureBtn.style.display = 'none';
-    }
+    if (p.brochure) { brochureBtn.href = p.brochure; brochureBtn.style.display = ''; }
+    else brochureBtn.style.display = 'none';
 
-    /* agents (normalised from contacts) */
     if (p.agents && p.agents.length) {
       const agentsBox = document.getElementById('teamBox');
       const agentsEl = document.getElementById('agents');
@@ -483,25 +328,18 @@ async function main() {
         agentsEl.appendChild(div);
       });
       agentsBox.style.display = '';
-    } else {
-      document.getElementById('teamBox').style.display = 'none';
-    }
+    } else document.getElementById('teamBox').style.display = 'none';
 
-    /* map */
-    let map = null;
-    if (window.L && p.lat !== undefined && p.lon !== undefined && p.lat !== null && p.lon !== null) {
+    if (window.L && p.lat != null && p.lon != null) {
       try {
-        map = L.map('map').setView([p.lat, p.lon], 14);
+        const map = L.map('map').setView([p.lat, p.lon], 14);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
         L.marker([p.lat, p.lon]).addTo(map);
-
         map.on && map.on('tileload', scheduleHeightPings);
         map.on && map.on('load', scheduleHeightPings);
-      } catch (e) {
-        console.warn('Leaflet map failed to initialize', e);
-      }
+      } catch (e) { console.warn('Leaflet map failed to initialize', e); }
     }
 
     scrollTopOnce();
@@ -511,9 +349,7 @@ async function main() {
       const ro = new ResizeObserver(() => scheduleHeightPings());
       ro.observe(document.getElementById('content'));
     }
-
     watchImages();
-
   } catch (err) {
     console.error(err);
     $('#loading').textContent = 'Failed to load property';
@@ -521,119 +357,94 @@ async function main() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Update the back link to restore last search
   const backLink = document.querySelector('.back');
   if (backLink) {
     try {
       const lastSearch = sessionStorage.getItem('gjs:lastSearch');
-      if (lastSearch) {
-        backLink.href = 'index.html' + lastSearch;
-      }
+      if (lastSearch) backLink.href = 'index.html' + lastSearch;
     } catch(e) {}
   }
-
   main();
 });
 </script>
 
 <!-- Modal CSS / Markup -->
 <style>
-  /* Ensure overlay is hidden by default and only visible when aria-hidden="false" */
   #enquiryModal[aria-hidden="true"]{
-    display: none !important;
-    pointer-events: none;
-    opacity: 0;
+    display:none !important;
+    pointer-events:none;
+    opacity:0;
   }
   #enquiryModal[aria-hidden="false"]{
-    display: flex !important;
-    pointer-events: auto;
-    opacity: 1;
+    display:flex !important;
+    pointer-events:auto;
+    opacity:1;
   }
 
-  /* Modal backdrop & layout (central + allow scrolling) */
-  #enquiryModal {
-    position: fixed;
-    inset: 0;
-    z-index: 2147483647;
-    background: rgba(16,17,18,0.55);
+  #enquiryModal{
+    position:fixed;
+    inset:0;
+    z-index:1000;
+    background:rgba(16,17,18,0.55);
     backdrop-filter: blur(4px);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
   }
 
   .modal__dialog{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: min(640px, calc(100vw - 40px));
-    max-height: calc(100vh - 40px);
-    background: #ffffff;
-    border-radius: 14px;
-    box-shadow: 0 20px 50px rgba(16,17,18,0.35);
-    overflow: hidden;
-  }
-
-  .modal__header {
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:18px 20px;
-    border-bottom:1px solid #f0f1f3;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:min(640px, calc(100vw - 40px));
+    max-height:calc(100vh - 40px);
     background:#fff;
+    border-radius:14px;
+    box-shadow:0 20px 50px rgba(16,17,18,0.35);
+    overflow:hidden;
   }
-  .modal__title { margin:0; font-size:18px; font-weight:700; color:#111; }
-  .modal__close { background:transparent;border:none;font-size:20px;cursor:pointer;color:#555; padding:6px;border-radius:6px; }
-  .modal__close:focus { outline:2px solid rgba(16,17,18,.12); }
 
-  .modal__body {
+  .modal__header{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid #f0f1f3;}
+  .modal__title{margin:0;font-size:18px;font-weight:700;color:#111;}
+  .modal__close{background:transparent;border:none;font-size:20px;cursor:pointer;color:#555;padding:6px;border-radius:6px;}
+  .modal__close:focus{outline:2px solid rgba(16,17,18,.12);}
+
+  .modal__body{
     padding:18px 20px 22px;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    max-height: calc(100vh - 40px - 64px);
+    overflow:auto;
+    -webkit-overflow-scrolling:touch;
+    max-height:calc(100vh - 40px - 64px);
   }
-  .modal__hint { color:#666;font-size:13px;margin-bottom:12px; }
+  .modal__hint{color:#666;font-size:13px;margin-bottom:12px;}
 
-  .modern-form { display:block; gap:12px; }
-  .form-grid { display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
-  @media(max-width:560px){ .form-grid {grid-template-columns:1fr} }
+  .modern-form{display:block;gap:12px;}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  @media(max-width:560px){ .form-grid{grid-template-columns:1fr} }
 
-  label { display:block; font-size:13px; color:#333; margin-bottom:6px; }
-  .input, textarea {
-    width:100%; padding:10px 12px; border-radius:10px; border:1px solid #e6e8eb; background:#fff;
-    font-size:15px; color:#111; box-shadow: inset 0 1px 2px rgba(16,17,18,0.03); transition:box-shadow .12s ease, border-color .12s ease, transform .08s ease;
+  label{display:block;font-size:13px;color:#333;margin-bottom:6px;}
+  .input, textarea{
+    width:100%;padding:10px 12px;border-radius:10px;border:1px solid #e6e8eb;background:#fff;
+    font-size:15px;color:#111;box-shadow: inset 0 1px 2px rgba(16,17,18,0.03);
   }
-  .input:focus, textarea:focus { border-color: #101112; box-shadow: 0 4px 18px rgba(16,17,18,0.06); outline: none; }
-  textarea { min-height:110px; resize:vertical; }
+  .input:focus, textarea:focus{border-color:#101112;outline:none;}
+  textarea{min-height:110px;resize:vertical;}
 
-  .form-row { margin-bottom:8px; }
-  .error { color: #b91c1c; font-size:13px; margin-top:6px; }
+  .form-row{margin-bottom:8px;}
+  .error{color:#b91c1c;font-size:13px;margin-top:6px;}
 
-  .modal__actions { display:flex; gap:10px; margin-top:12px; align-items:center; }
+  .modal__actions{display:flex;gap:10px;margin-top:12px;align-items:center;}
+  .btn{display:inline-flex;align-items:center;justify-content:center;border:none;cursor:pointer;padding:10px 14px;border-radius:10px;font-weight:700;font-size:14px;}
+  .btn-primary{background:linear-gradient(180deg,#101112,#0b0b0b);color:#fff;}
+  .btn-ghost{background:transparent;border:1px solid #e6e8eb;color:#222;padding:8px 12px;border-radius:10px;}
+  .btn:disabled{opacity:.6;cursor:not-allowed;}
 
-  .btn { display:inline-flex; align-items:center; justify-content:center; border: none; cursor:pointer; padding:10px 14px; border-radius:10px; font-weight:700; font-size:14px; }
-  .btn-primary { background: linear-gradient(180deg,#101112,#0b0b0b); color: #fff; box-shadow: 0 6px 18px rgba(16,17,18,0.12); }
-  .btn-ghost { background:transparent;border:1px solid #e6e8eb;color:#222;padding:8px 12px;border-radius:10px; }
-  .btn:disabled { opacity:.6; cursor:not-allowed; transform:none; }
+  .spinner{display:inline-block;width:16px;height:16px;border-radius:50%;border:2px solid rgba(255,255,255,.25);border-top-color:#fff;animation:spin .7s linear infinite;margin-left:8px;}
+  @keyframes spin{to{transform:rotate(360deg)}}
 
-  .spinner { display:inline-block; width:16px;height:16px;border-radius:50%; border:2px solid rgba(255,255,255,.25); border-top-color: #fff; animation: spin .7s linear infinite; margin-left:8px; }
-  @keyframes spin { to { transform: rotate(360deg); } }
-
-  .modal__success { padding: 18px 20px; text-align:center; }
-  .modal__success h3 { margin:0 0 8px; font-size:16px; }
-  .modal__success p { color:#444; font-size:14px; margin:0 0 12px; }
-
-  @media (max-width: 560px) {
-    #enquiryModal { padding: 12px; }
-    .modal__dialog{
-      width: calc(100vw - 24px);
-      max-height: calc(100vh - 24px);
-      border-radius: 12px;
-    }
-    .modal__body { max-height: calc(100vh - 24px - 64px); }
-  }
+  .modal__success{padding:18px 20px;text-align:center;}
+  .modal__success h3{margin:0 0 8px;font-size:16px;}
+  .modal__success p{color:#444;font-size:14px;margin:0 0 12px;}
 </style>
 
 <div id="enquiryModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="enqTitle">
@@ -732,37 +543,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const SEND_ENDPOINT = '/api/send-enquiry.js';
-
   let lastFocusedEl = null;
-
-  function showModal() {
-    lastFocusedEl = document.activeElement;
-    modal.setAttribute('aria-hidden', 'false');
-    scheduleHeightPings();
-
-    const title = document.getElementById('prop-title')?.textContent?.trim();
-    propRefHint.textContent = title ? `About: ${title}` : '';
-
-    form.reset();
-    clearErrors();
-    bodyBox.style.display = '';
-    successBox.style.display = 'none';
-
-    setTimeout(() => {
-      try { fields.firstName.focus({ preventScroll: true }); }
-      catch {
-        const sx = window.scrollX || window.pageXOffset;
-        const sy = window.scrollY || window.pageYOffset;
-        fields.firstName.focus(); window.scrollTo(sx, sy);
-      }
-    }, 50);
-  }
-
-  function closeModal() {
-    modal.setAttribute('aria-hidden', 'true');
-    scheduleHeightPings();
-    if (lastFocusedEl) lastFocusedEl.focus();
-  }
 
   function setError(fieldName, message) {
     const el = document.getElementById('err-' + fieldName);
@@ -770,6 +551,7 @@ document.addEventListener('DOMContentLoaded', () => {
     el.textContent = message || '';
     el.style.display = message ? '' : 'none';
   }
+
   function clearErrors() {
     setError('firstName',''); setError('lastName',''); setError('email',''); setError('phone',''); setError('message','');
   }
@@ -786,6 +568,30 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function escapeForJson(s){ return String(s === undefined || s === null ? '' : s); }
+
+  function showModal() {
+    lastFocusedEl = document.activeElement;
+    modal.setAttribute('aria-hidden', 'false');
+    scheduleHeightPings();
+
+    const title = document.getElementById('prop-title')?.textContent?.trim();
+    propRefHint.textContent = title ? `About: ${title}` : '';
+
+    form.reset();
+    clearErrors();
+    bodyBox.style.display = '';
+    successBox.style.display = 'none';
+
+    setTimeout(() => {
+      try { fields.firstName.focus({ preventScroll: true }); } catch(e){}
+    }, 50);
+  }
+
+  function closeModal() {
+    modal.setAttribute('aria-hidden', 'true');
+    scheduleHeightPings();
+    if (lastFocusedEl) lastFocusedEl.focus();
+  }
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -827,6 +633,7 @@ document.addEventListener('DOMContentLoaded', () => {
       spinner.style.display = 'none';
       document.getElementById('sendEnquiryBtn').disabled = false;
       setError('message', 'Failed to send enquiry — please try again later.');
+      scheduleHeightPings();
     }
   });
 
@@ -841,16 +648,14 @@ document.addEventListener('DOMContentLoaded', () => {
   modal.addEventListener('keydown', (e) => {
     if (e.key !== 'Tab') return;
     const focusables = dialog.querySelectorAll('a[href], button:not([disabled]), textarea, input, select');
-    if (focusables.length === 0) return;
+    if (!focusables.length) return;
     const first = focusables[0];
     const last = focusables[focusables.length - 1];
     if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
     else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
   });
-
-  window.__enquiryModal = { show: showModal, close: closeModal };
 })();
 </script>
+
 </body>
 </html>
-```
