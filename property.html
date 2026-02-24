@@ -18,19 +18,10 @@
       --shadow-lg:0 30px 60px rgba(var(--ring), .14), 0 8px 20px rgba(var(--ring), .10);
     }
     *,*::before,*::after{box-sizing:border-box}
-
-    /* NEW: prevent mobile horizontal overflow / "cut off" */
-    @media (max-width: 640px){
-      html, body { overflow-x: hidden; }
-    }
-
     body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#f6f7fb}
     a{color:inherit;text-decoration:none}
     img{max-width:100%;height:auto;display:block}
-
-    /* NEW: help embedded layouts */
-    .wrap{max-width:1200px;width:100%;margin:0 auto;padding:28px 18px 24px}
-
+    .wrap{max-width:1200px;margin:0 auto;padding:28px 18px 24px}
     .topbar{margin-bottom:12px}
     .back{display:inline-flex;gap:10px;align-items:center;color:#111;font-weight:500}
     .back::before{content:"←";opacity:.8}
@@ -88,34 +79,6 @@
 
     /* Small sidebar agent card tweaks */
     #teamBox .agent { padding:12px; border-top:none; }
-
-    /* ============================================================
-       Mobile-only improvements
-       - stop "cut off" by padding tweaks
-       - cap hero height so image doesn't dominate
-       - keep gallery scrollable without forcing overflow
-       ============================================================ */
-    @media (max-width: 640px){
-      .wrap{ padding-left: 12px; padding-right: 12px; }
-
-      .hero{
-        height: 260px;      /* tweak if you want */
-        aspect-ratio: auto;
-      }
-      .hero img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-      }
-
-      .gallery{
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .thumb{ flex: 0 0 96px; }
-    }
   </style>
 </head>
 
@@ -202,29 +165,12 @@ const isHttpUrl = s => typeof s === 'string' && (/^https?:\/\//i).test(s);
 let lastHeight = 0;
 let heightTimer = null;
 
+/* UPDATED: measure based on .wrap (prevents huge/infinite iframe heights on Squarespace) */
 function getPageHeight() {
-  const body = document.body;
-  const doc = document.documentElement;
-
-  // Exclude the enquiry modal overlay from sizing so the iframe doesn't grow huge / grey
-  const modal = document.getElementById('enquiryModal');
-  let prevDisplay = null;
-  if (modal && modal.getAttribute('aria-hidden') === 'false') {
-    prevDisplay = modal.style.display;
-    modal.style.display = 'none';
-  }
-
-  const h = Math.max(
-    body.scrollHeight, doc.scrollHeight,
-    body.offsetHeight, doc.offsetHeight,
-    doc.clientHeight
-  );
-
-  if (modal && prevDisplay !== null) {
-    modal.style.display = prevDisplay;
-  }
-
-  return h;
+  const wrap = document.querySelector('.wrap');
+  if (!wrap) return document.documentElement.scrollHeight;
+  const rect = wrap.getBoundingClientRect();
+  return Math.max(Math.ceil(rect.top + window.scrollY + rect.height + 4), 300);
 }
 
 function notifyParentHeightImmediate() {
@@ -488,30 +434,32 @@ document.addEventListener('DOMContentLoaded', () => {
     opacity: 1;
   }
 
-  /* Modal backdrop & layout (central + allow scrolling) */
+  /* Modal backdrop */
   #enquiryModal {
     position: fixed;
     inset: 0;
-    z-index: 2147483647;
+    z-index: 1000;
     background: rgba(16,17,18,0.55);
     backdrop-filter: blur(4px);
     display: none;
-    align-items: center;
+    align-items: flex-start; /* UPDATED: top aligned */
     justify-content: center;
     padding: 20px;
   }
 
-  .modal__dialog{
+  /* UPDATED: open as high as possible */
+  .modal__dialog {
     position: fixed;
-    top: 50%;
+    top: 24px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     width: min(640px, calc(100vw - 40px));
-    max-height: calc(100vh - 40px);
+    max-width: 640px;
     background: #ffffff;
     border-radius: 14px;
     box-shadow: 0 20px 50px rgba(16,17,18,0.35);
     overflow: hidden;
+    max-height: calc(100dvh - 48px);
   }
 
   .modal__header {
@@ -530,7 +478,7 @@ document.addEventListener('DOMContentLoaded', () => {
     padding:18px 20px 22px;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    max-height: calc(100vh - 40px - 64px);
+    max-height: calc(100dvh - 48px - 64px);
   }
   .modal__hint { color:#666;font-size:13px;margin-bottom:12px; }
 
@@ -567,10 +515,11 @@ document.addEventListener('DOMContentLoaded', () => {
     #enquiryModal { padding: 12px; }
     .modal__dialog{
       width: calc(100vw - 24px);
-      max-height: calc(100vh - 24px);
+      max-height: calc(100dvh - 24px);
       border-radius: 12px;
+      top: 12px;
     }
-    .modal__body { max-height: calc(100vh - 24px - 64px); }
+    .modal__body { max-height: calc(100dvh - 24px - 64px); }
   }
 </style>
 
@@ -670,37 +619,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const SEND_ENDPOINT = '/api/send-enquiry.js';
-
   let lastFocusedEl = null;
-
-  function showModal() {
-    lastFocusedEl = document.activeElement;
-    modal.setAttribute('aria-hidden', 'false');
-    scheduleHeightPings();
-
-    const title = document.getElementById('prop-title')?.textContent?.trim();
-    propRefHint.textContent = title ? `About: ${title}` : '';
-
-    form.reset();
-    clearErrors();
-    bodyBox.style.display = '';
-    successBox.style.display = 'none';
-
-    setTimeout(() => {
-      try { fields.firstName.focus({ preventScroll: true }); }
-      catch {
-        const sx = window.scrollX || window.pageXOffset;
-        const sy = window.scrollY || window.pageYOffset;
-        fields.firstName.focus(); window.scrollTo(sx, sy);
-      }
-    }, 50);
-  }
-
-  function closeModal() {
-    modal.setAttribute('aria-hidden', 'true');
-    scheduleHeightPings();
-    if (lastFocusedEl) lastFocusedEl.focus();
-  }
 
   function setError(fieldName, message) {
     const el = document.getElementById('err-' + fieldName);
@@ -724,6 +643,30 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function escapeForJson(s){ return String(s === undefined || s === null ? '' : s); }
+
+  function showModal() {
+    lastFocusedEl = document.activeElement;
+    modal.setAttribute('aria-hidden', 'false');
+    scheduleHeightPings();
+
+    const title = document.getElementById('prop-title')?.textContent?.trim();
+    propRefHint.textContent = title ? `About: ${title}` : '';
+
+    form.reset();
+    clearErrors();
+    bodyBox.style.display = '';
+    successBox.style.display = 'none';
+
+    setTimeout(() => {
+      try { fields.firstName.focus({ preventScroll: true }); } catch(e){}
+    }, 50);
+  }
+
+  function closeModal() {
+    modal.setAttribute('aria-hidden', 'true');
+    scheduleHeightPings();
+    if (lastFocusedEl) lastFocusedEl.focus();
+  }
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -765,6 +708,7 @@ document.addEventListener('DOMContentLoaded', () => {
       spinner.style.display = 'none';
       document.getElementById('sendEnquiryBtn').disabled = false;
       setError('message', 'Failed to send enquiry — please try again later.');
+      scheduleHeightPings();
     }
   });
 
