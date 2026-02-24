@@ -18,10 +18,19 @@
       --shadow-lg:0 30px 60px rgba(var(--ring), .14), 0 8px 20px rgba(var(--ring), .10);
     }
     *,*::before,*::after{box-sizing:border-box}
+
+    /* NEW: prevent mobile horizontal overflow / "cut off" */
+    @media (max-width: 640px){
+      html, body { overflow-x: hidden; }
+    }
+
     body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#f6f7fb}
     a{color:inherit;text-decoration:none}
     img{max-width:100%;height:auto;display:block}
-    .wrap{max-width:1200px;margin:0 auto;padding:28px 18px 24px}
+
+    /* NEW: help embedded layouts */
+    .wrap{max-width:1200px;width:100%;margin:0 auto;padding:28px 18px 24px}
+
     .topbar{margin-bottom:12px}
     .back{display:inline-flex;gap:10px;align-items:center;color:#111;font-weight:500}
     .back::before{content:"←";opacity:.8}
@@ -81,13 +90,17 @@
     #teamBox .agent { padding:12px; border-top:none; }
 
     /* ============================================================
-       NEW: Mobile hero image sizing (prevents "too big / zoomed" look)
-       Desktop unchanged.
+       Mobile-only improvements
+       - stop "cut off" by padding tweaks
+       - cap hero height so image doesn't dominate
+       - keep gallery scrollable without forcing overflow
        ============================================================ */
     @media (max-width: 640px){
+      .wrap{ padding-left: 12px; padding-right: 12px; }
+
       .hero{
-        height: 260px;      /* adjust to taste (220–320) */
-        aspect-ratio: auto; /* let height control */
+        height: 260px;      /* tweak if you want */
+        aspect-ratio: auto;
       }
       .hero img{
         width: 100%;
@@ -95,6 +108,12 @@
         object-fit: cover;
         object-position: center;
       }
+
+      .gallery{
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
       .thumb{ flex: 0 0 96px; }
     }
   </style>
@@ -128,6 +147,7 @@
             <div class="card"><div class="card__title"><h2>Key features</h2></div><div class="card__body"><ul class="features" id="features"></ul></div></div>
           </div>
 
+          <!-- Location card (shown only if JSON contains `location`) -->
           <div class="section" id="locationCard" style="display:none">
             <div class="card">
               <div class="card__title"><h2>Location</h2></div>
@@ -152,6 +172,7 @@
             </div>
           </div>
 
+          <!-- Sidebar agents box (will be populated from `contacts` or `agents`) -->
           <div class="card" id="teamBox" style="display:none">
             <div class="card__title">Viewings & further information</div>
             <div id="agents"></div>
@@ -162,22 +183,48 @@
   </div>
 
 <script>
+/* ==============================================
+   Squarespace iframe-safe helpers (CLEAN)
+============================================== */
+
 if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 
+/* ---------- helpers ---------- */
 const $ = (s, el=document) => el.querySelector(s);
 const getParam = n => new URLSearchParams(location.search).get(n);
+const pick = (...vals) => vals.find(v => v !== undefined && v !== null && v !== '');
 const initials = n => n ? n.trim().split(/\s+/).slice(0,2).map(w=>w[0]?.toUpperCase()||'').join('') : '';
+
+/* helper to check for http(s) URLs */
 const isHttpUrl = s => typeof s === 'string' && (/^https?:\/\//i).test(s);
 
+/* ---------- Robust iframe height reporting ---------- */
 let lastHeight = 0;
 let heightTimer = null;
 
-/* Keep sizing stable in Squarespace: measure based on .wrap */
 function getPageHeight() {
-  const wrap = document.querySelector('.wrap');
-  if (!wrap) return document.documentElement.scrollHeight;
-  const rect = wrap.getBoundingClientRect();
-  return Math.max(Math.ceil(rect.top + window.scrollY + rect.height + 4), 300);
+  const body = document.body;
+  const doc = document.documentElement;
+
+  // Exclude the enquiry modal overlay from sizing so the iframe doesn't grow huge / grey
+  const modal = document.getElementById('enquiryModal');
+  let prevDisplay = null;
+  if (modal && modal.getAttribute('aria-hidden') === 'false') {
+    prevDisplay = modal.style.display;
+    modal.style.display = 'none';
+  }
+
+  const h = Math.max(
+    body.scrollHeight, doc.scrollHeight,
+    body.offsetHeight, doc.offsetHeight,
+    doc.clientHeight
+  );
+
+  if (modal && prevDisplay !== null) {
+    modal.style.display = prevDisplay;
+  }
+
+  return h;
 }
 
 function notifyParentHeightImmediate() {
@@ -191,7 +238,7 @@ function notifyParentHeightImmediate() {
 
 function notifyParentHeight() {
   clearTimeout(heightTimer);
-  heightTimer = setTimeout(notifyParentHeightImmediate, 40);
+  heightTimer = setTimeout(() => notifyParentHeightImmediate(), 40);
 }
 
 function scheduleHeightPings() {
@@ -211,14 +258,19 @@ function watchImages() {
   });
 }
 
+/* ---------- iframe scroll-to-top ---------- */
 let didScrollTop = false;
 function scrollTopOnce() {
   if (didScrollTop) return;
   didScrollTop = true;
   window.scrollTo(0, 0);
-  try { window.parent?.postMessage({ type: 'scroll-top' }, '*'); } catch(e){}
+  try {
+    window.parent?.postMessage({ type: 'scroll-top' }, '*');
+  } catch(e){}
 }
 
+/* ---------- Safe DOM helpers ---------- */
+function safeText(el, txt) { el.textContent = txt ?? ''; }
 function createImg(src, alt) {
   const img = document.createElement('img');
   img.src = src;
@@ -226,15 +278,20 @@ function createImg(src, alt) {
   return img;
 }
 
+/* ---------- main render ---------- */
 async function main() {
   try {
     const id = getParam('id');
+    console.log('property main running, id=', id);
+
+    // Load properties.json from the same host (works on Vercel or GitHub Pages)
     const res = await fetch('/properties.json', { cache: 'no-store' });
     if (!res.ok) throw new Error('Failed to fetch properties.json: ' + res.status);
     const list = await res.json();
     const p = list.find(x => String(x.id) === String(id)) || list[0];
     if (!p) throw new Error('Property not found');
 
+    // --- Normalise common/legacy field names so the rest of the template can use stable keys
     p.agents = p.agents || p.contacts || [];
     p.brochure = p.brochure || p.brochure_url || p.brochureUrl || '';
     p.epc = p.epc || p.epc_rating || p.epcRating || '';
@@ -249,10 +306,13 @@ async function main() {
     $('#prop-title').textContent = p.address || 'Property';
     $('#prop-sub').textContent = [p.town, p.postcode].filter(Boolean).join(' ');
 
+    /* images (use DOM methods to avoid accidental injection) */
     const imgs = (p.images || []).map(i => (typeof i === 'string' ? i : i.url)).filter(Boolean);
     const hero = $('#hero');
     hero.innerHTML = '';
-    if (isHttpUrl(imgs[0])) hero.appendChild(createImg(imgs[0], p.address || 'Property image'));
+    if (isHttpUrl(imgs[0])) {
+      hero.appendChild(createImg(imgs[0], p.address || 'Property image'));
+    }
 
     const thumbsEl = $('#thumbs');
     thumbsEl.innerHTML = '';
@@ -268,14 +328,17 @@ async function main() {
 
     thumbsEl.addEventListener('click', (e) => {
       const t = e.target.closest('.thumb');
-      if (!t) return;
-      const src = t.dataset.src;
-      if (!isHttpUrl(src)) return;
-      hero.innerHTML = '';
-      hero.appendChild(createImg(src, p.address || 'Property image'));
-      scheduleHeightPings();
+      if (t) {
+        const src = t.dataset.src;
+        if (isHttpUrl(src)) {
+          hero.innerHTML = '';
+          hero.appendChild(createImg(src, p.address || 'Property image'));
+          scheduleHeightPings();
+        }
+      }
     });
 
+    /* facts (build a richer facts array) */
     const facts = [];
     if (p.size_from_sqft) {
       const size = Number(p.size_from_sqft);
@@ -297,12 +360,23 @@ async function main() {
       f.appendChild(lab); f.appendChild(val); factsEl.appendChild(f);
     });
 
-    if (p.description) { $('#desc').textContent = p.description; $('#descCard').style.display = ''; }
-    else $('#descCard').style.display = 'none';
+    /* description */
+    if (p.description) {
+      $('#desc').textContent = p.description;
+      $('#descCard').style.display = '';
+    } else {
+      $('#descCard').style.display = 'none';
+    }
 
-    if (p.overview) { $('#overview').textContent = p.overview; $('#overviewCard').style.display = ''; }
-    else $('#overviewCard').style.display = 'none';
+    /* overview */
+    if (p.overview) {
+      $('#overview').textContent = p.overview;
+      $('#overviewCard').style.display = '';
+    } else {
+      $('#overviewCard').style.display = 'none';
+    }
 
+    /* features */
     if (p.features && Array.isArray(p.features) && p.features.length) {
       const featuresEl = $('#features');
       featuresEl.innerHTML = '';
@@ -310,15 +384,28 @@ async function main() {
         const li = document.createElement('li'); li.textContent = fv; featuresEl.appendChild(li);
       });
       $('#featuresCard').style.display = '';
-    } else $('#featuresCard').style.display = 'none';
+    } else {
+      $('#featuresCard').style.display = 'none';
+    }
 
-    if (p.location) { $('#location').textContent = p.location; $('#locationCard').style.display = ''; }
-    else $('#locationCard').style.display = 'none';
+    /* location (optional human readable location text in JSON) */
+    if (p.location) {
+      $('#location').textContent = p.location;
+      $('#locationCard').style.display = '';
+    } else {
+      $('#locationCard') && ($('#locationCard').style.display = 'none');
+    }
 
+    /* brochure */
     const brochureBtn = $('#brochureBtn');
-    if (p.brochure) { brochureBtn.href = p.brochure; brochureBtn.style.display = ''; }
-    else brochureBtn.style.display = 'none';
+    if (p.brochure) {
+      brochureBtn.href = p.brochure;
+      brochureBtn.style.display = '';
+    } else {
+      brochureBtn.style.display = 'none';
+    }
 
+    /* agents (normalised from contacts) */
     if (p.agents && p.agents.length) {
       const agentsBox = document.getElementById('teamBox');
       const agentsEl = document.getElementById('agents');
@@ -334,18 +421,25 @@ async function main() {
         agentsEl.appendChild(div);
       });
       agentsBox.style.display = '';
-    } else document.getElementById('teamBox').style.display = 'none';
+    } else {
+      document.getElementById('teamBox').style.display = 'none';
+    }
 
-    if (window.L && p.lat != null && p.lon != null) {
+    /* map */
+    let map = null;
+    if (window.L && p.lat !== undefined && p.lon !== undefined && p.lat !== null && p.lon !== null) {
       try {
-        const map = L.map('map').setView([p.lat, p.lon], 14);
+        map = L.map('map').setView([p.lat, p.lon], 14);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
         L.marker([p.lat, p.lon]).addTo(map);
+
         map.on && map.on('tileload', scheduleHeightPings);
         map.on && map.on('load', scheduleHeightPings);
-      } catch (e) { console.warn('Leaflet map failed to initialize', e); }
+      } catch (e) {
+        console.warn('Leaflet map failed to initialize', e);
+      }
     }
 
     scrollTopOnce();
@@ -357,6 +451,7 @@ async function main() {
     }
 
     watchImages();
+
   } catch (err) {
     console.error(err);
     $('#loading').textContent = 'Failed to load property';
@@ -364,75 +459,119 @@ async function main() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Update the back link to restore last search
   const backLink = document.querySelector('.back');
   if (backLink) {
     try {
       const lastSearch = sessionStorage.getItem('gjs:lastSearch');
-      if (lastSearch) backLink.href = 'index.html' + lastSearch;
+      if (lastSearch) {
+        backLink.href = 'index.html' + lastSearch;
+      }
     } catch(e) {}
   }
+
   main();
 });
 </script>
 
-<!-- Enquiry modal -->
+<!-- Modal CSS / Markup -->
 <style>
-  #enquiryModal[aria-hidden="true"]{ display:none !important; pointer-events:none; opacity:0; }
-  #enquiryModal[aria-hidden="false"]{ display:flex !important; pointer-events:auto; opacity:1; }
+  /* Ensure overlay is hidden by default and only visible when aria-hidden="false" */
+  #enquiryModal[aria-hidden="true"]{
+    display: none !important;
+    pointer-events: none;
+    opacity: 0;
+  }
+  #enquiryModal[aria-hidden="false"]{
+    display: flex !important;
+    pointer-events: auto;
+    opacity: 1;
+  }
 
-  #enquiryModal{
-    position:fixed;
-    inset:0;
-    z-index:1000;
-    background:rgba(16,17,18,0.55);
+  /* Modal backdrop & layout (central + allow scrolling) */
+  #enquiryModal {
+    position: fixed;
+    inset: 0;
+    z-index: 2147483647;
+    background: rgba(16,17,18,0.55);
     backdrop-filter: blur(4px);
-    align-items:flex-start;
-    justify-content:center;
-    padding:20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
   }
 
   .modal__dialog{
-    position:fixed;
-    top:24px;
-    left:50%;
-    transform:translateX(-50%);
-    width:min(640px, calc(100vw - 40px));
-    max-width:640px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(640px, calc(100vw - 40px));
+    max-height: calc(100vh - 40px);
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 20px 50px rgba(16,17,18,0.35);
+    overflow: hidden;
+  }
+
+  .modal__header {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:18px 20px;
+    border-bottom:1px solid #f0f1f3;
     background:#fff;
-    border-radius:14px;
-    box-shadow:0 20px 50px rgba(16,17,18,0.35);
-    overflow:hidden;
-    max-height:calc(100dvh - 48px);
   }
+  .modal__title { margin:0; font-size:18px; font-weight:700; color:#111; }
+  .modal__close { background:transparent;border:none;font-size:20px;cursor:pointer;color:#555; padding:6px;border-radius:6px; }
+  .modal__close:focus { outline:2px solid rgba(16,17,18,.12); }
 
-  .modal__header{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid #f0f1f3;background:#fff;}
-  .modal__title{margin:0;font-size:18px;font-weight:700;color:#111;}
-  .modal__close{background:transparent;border:none;font-size:20px;cursor:pointer;color:#555;padding:6px;border-radius:6px;}
-
-  .modal__body{
+  .modal__body {
     padding:18px 20px 22px;
-    overflow:auto;
-    -webkit-overflow-scrolling:touch;
-    max-height:calc(100dvh - 48px - 64px);
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    max-height: calc(100vh - 40px - 64px);
   }
-  .modal__hint{color:#666;font-size:13px;margin-bottom:12px;}
+  .modal__hint { color:#666;font-size:13px;margin-bottom:12px; }
 
-  .modern-form{display:block;gap:12px;}
-  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-  @media(max-width:560px){.form-grid{grid-template-columns:1fr}}
+  .modern-form { display:block; gap:12px; }
+  .form-grid { display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
+  @media(max-width:560px){ .form-grid {grid-template-columns:1fr} }
 
-  label{display:block;font-size:13px;color:#333;margin-bottom:6px;}
-  .input, textarea{width:100%;padding:10px 12px;border-radius:10px;border:1px solid #e6e8eb;background:#fff;font-size:15px;color:#111;}
-  textarea{min-height:110px;resize:vertical;}
-  .error{color:#b91c1c;font-size:13px;margin-top:6px;}
-  .modal__actions{display:flex;gap:10px;margin-top:12px;align-items:center;}
-  .btn{display:inline-flex;align-items:center;justify-content:center;border:none;cursor:pointer;padding:10px 14px;border-radius:10px;font-weight:700;font-size:14px;}
-  .btn-primary{background:linear-gradient(180deg,#101112,#0b0b0b);color:#fff;}
-  .btn-ghost{background:transparent;border:1px solid #e6e8eb;color:#222;padding:8px 12px;border-radius:10px;}
-  .spinner{display:inline-block;width:16px;height:16px;border-radius:50%;border:2px solid rgba(255,255,255,.25);border-top-color:#fff;animation:spin .7s linear infinite;margin-left:8px;}
-  @keyframes spin{to{transform:rotate(360deg)}}
+  label { display:block; font-size:13px; color:#333; margin-bottom:6px; }
+  .input, textarea {
+    width:100%; padding:10px 12px; border-radius:10px; border:1px solid #e6e8eb; background:#fff;
+    font-size:15px; color:#111; box-shadow: inset 0 1px 2px rgba(16,17,18,0.03); transition:box-shadow .12s ease, border-color .12s ease, transform .08s ease;
+  }
+  .input:focus, textarea:focus { border-color: #101112; box-shadow: 0 4px 18px rgba(16,17,18,0.06); outline: none; }
+  textarea { min-height:110px; resize:vertical; }
 
-  .modal__success{padding:18px 20px;text-align:center;}
+  .form-row { margin-bottom:8px; }
+  .error { color: #b91c1c; font-size:13px; margin-top:6px; }
+
+  .modal__actions { display:flex; gap:10px; margin-top:12px; align-items:center; }
+
+  .btn { display:inline-flex; align-items:center; justify-content:center; border: none; cursor:pointer; padding:10px 14px; border-radius:10px; font-weight:700; font-size:14px; }
+  .btn-primary { background: linear-gradient(180deg,#101112,#0b0b0b); color: #fff; box-shadow: 0 6px 18px rgba(16,17,18,0.12); }
+  .btn-ghost { background:transparent;border:1px solid #e6e8eb;color:#222;padding:8px 12px;border-radius:10px; }
+  .btn:disabled { opacity:.6; cursor:not-allowed; transform:none; }
+
+  .spinner { display:inline-block; width:16px;height:16px;border-radius:50%; border:2px solid rgba(255,255,255,.25); border-top-color: #fff; animation: spin .7s linear infinite; margin-left:8px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .modal__success { padding: 18px 20px; text-align:center; }
+  .modal__success h3 { margin:0 0 8px; font-size:16px; }
+  .modal__success p { color:#444; font-size:14px; margin:0 0 12px; }
+
+  @media (max-width: 560px) {
+    #enquiryModal { padding: 12px; }
+    .modal__dialog{
+      width: calc(100vw - 24px);
+      max-height: calc(100vh - 24px);
+      border-radius: 12px;
+    }
+    .modal__body { max-height: calc(100vh - 24px - 64px); }
+  }
 </style>
 
 <div id="enquiryModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="enqTitle">
@@ -495,6 +634,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     <div id="enqSuccess" style="display:none;">
       <div class="modal__success">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" style="display:block;margin:0 auto 8px">
+          <circle cx="12" cy="12" r="10" fill="#10B981"></circle>
+          <path d="M7.5 12.2l2.6 2.6 6.4-6.4" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
         <h3>Thanks — enquiry sent</h3>
         <p>We'll get back to you shortly.</p>
         <div style="text-align:center"><button id="doneBtn" class="btn btn-primary">Done</button></div>
@@ -527,28 +670,8 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const SEND_ENDPOINT = '/api/send-enquiry.js';
-  let lastFocusedEl = null;
 
-  function setError(fieldName, message) {
-    const el = document.getElementById('err-' + fieldName);
-    if (!el) return;
-    el.textContent = message || '';
-    el.style.display = message ? '' : 'none';
-  }
-  function clearErrors() {
-    setError('firstName',''); setError('lastName',''); setError('email',''); setError('phone',''); setError('message','');
-  }
-  function validate() {
-    clearErrors();
-    let ok = true;
-    if (!fields.firstName.value.trim()) { setError('firstName','Please enter a first name'); ok = false;}
-    if (!fields.lastName.value.trim()) { setError('lastName','Please enter a last name'); ok = false;}
-    const em = fields.email.value.trim();
-    if (!em) { setError('email','Please enter an email'); ok = false; }
-    else if (!/^\S+@\S+\.\S+$/.test(em)) { setError('email','Please enter a valid email'); ok = false; }
-    return ok;
-  }
-  function escapeForJson(s){ return String(s === undefined || s === null ? '' : s); }
+  let lastFocusedEl = null;
 
   function showModal() {
     lastFocusedEl = document.activeElement;
@@ -564,7 +687,12 @@ document.addEventListener('DOMContentLoaded', () => {
     successBox.style.display = 'none';
 
     setTimeout(() => {
-      try { fields.firstName.focus({ preventScroll: true }); } catch(e){}
+      try { fields.firstName.focus({ preventScroll: true }); }
+      catch {
+        const sx = window.scrollX || window.pageXOffset;
+        const sy = window.scrollY || window.pageYOffset;
+        fields.firstName.focus(); window.scrollTo(sx, sy);
+      }
     }, 50);
   }
 
@@ -573,6 +701,29 @@ document.addEventListener('DOMContentLoaded', () => {
     scheduleHeightPings();
     if (lastFocusedEl) lastFocusedEl.focus();
   }
+
+  function setError(fieldName, message) {
+    const el = document.getElementById('err-' + fieldName);
+    if (!el) return;
+    el.textContent = message || '';
+    el.style.display = message ? '' : 'none';
+  }
+  function clearErrors() {
+    setError('firstName',''); setError('lastName',''); setError('email',''); setError('phone',''); setError('message','');
+  }
+
+  function validate() {
+    clearErrors();
+    let ok = true;
+    if (!fields.firstName.value.trim()) { setError('firstName','Please enter a first name'); ok = false;}
+    if (!fields.lastName.value.trim()) { setError('lastName','Please enter a last name'); ok = false;}
+    const em = fields.email.value.trim();
+    if (!em) { setError('email','Please enter an email'); ok = false; }
+    else if (!/^\S+@\S+\.\S+$/.test(em)) { setError('email','Please enter a valid email'); ok = false; }
+    return ok;
+  }
+
+  function escapeForJson(s){ return String(s === undefined || s === null ? '' : s); }
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -614,7 +765,6 @@ document.addEventListener('DOMContentLoaded', () => {
       spinner.style.display = 'none';
       document.getElementById('sendEnquiryBtn').disabled = false;
       setError('message', 'Failed to send enquiry — please try again later.');
-      scheduleHeightPings();
     }
   });
 
@@ -635,6 +785,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
     else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
   });
+
+  window.__enquiryModal = { show: showModal, close: closeModal };
 })();
 </script>
 
