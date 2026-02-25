@@ -80,6 +80,16 @@
 
     /* Small sidebar agent card tweaks */
     #teamBox .agent { padding:12px; border-top:none; }
+    /* Mobile/tablet + embedded: avoid narrow centered column by stacking sidebar */
+@media (max-width: 1200px){
+  .layout{ grid-template-columns: 1fr !important; }
+  .sticky{
+    position: static !important;
+    top: unset !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+}
   </style>
 </head>
 
