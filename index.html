@@ -30,21 +30,37 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       color: var(--text);
       background: #fff;
+      /* FIX 1: prevent body from ever being wider than viewport inside iframe */
+      overflow-x: hidden;
+      max-width: 100%;
     }
 
-    .wrap{ max-width: 1200px; margin: 0 auto; padding: 12px 18px 60px; }
+    /* FIX 2: wrap must never overflow horizontally */
+    .wrap{
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 12px 18px 60px;
+      min-width: 0;
+      overflow-x: hidden;
+    }
 
+    /* FIX 3: bleed only bleeds on desktop; on mobile it's just normal flow */
     .bleed{
-      width: 100vw;
-      position: relative;
-      left: 50%;
-      right: 50%;
-      margin-left: -50vw;
-      margin-right: -50vw;
       border-radius: 16px;
       overflow: hidden;
       box-shadow: 0 10px 30px rgba(0,0,0,.06);
       margin-bottom: 18px;
+    }
+
+    @media (min-width: 641px) {
+      .bleed{
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+      }
     }
 
     #map{
@@ -57,12 +73,12 @@
     .searchBar{
       display: grid;
       grid-template-columns:
-        minmax(220px, 1.6fr)
-        minmax(120px, 1fr)
-        minmax(120px, 1fr)
-        minmax(120px, 1fr)
-        minmax(120px, 1fr)
-        minmax(120px, 1fr)
+        minmax(0, 1.6fr)
+        minmax(0, 1fr)
+        minmax(0, 1fr)
+        minmax(0, 1fr)
+        minmax(0, 1fr)
+        minmax(0, 1fr)
         140px;
       gap: 12px;
       padding: 14px;
@@ -74,6 +90,9 @@
       position: relative;
       z-index: 1;
       margin-bottom: 14px;
+      /* FIX 4: prevent searchBar from overflowing its container */
+      min-width: 0;
+      width: 100%;
     }
 
     .field{ min-width: 0; display: grid; grid-template-rows: auto 44px auto; align-content: start; }
@@ -132,16 +151,9 @@
 
     @media (max-width: 640px){
       html, body { overflow-x: hidden; }
-      .bleed{
-        width: 100%;
-        left: auto;
-        right: auto;
-        margin-left: 0;
-        margin-right: 0;
-        border-radius: 14px;
-      }
       #map{ height: 300px; }
       .wrap{ padding-left: 12px; padding-right: 12px; }
+      /* FIX 5: collapse to single column on mobile */
       .searchBar{ grid-template-columns: 1fr; }
       .btn{ width: 100%; }
     }
