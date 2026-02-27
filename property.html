@@ -21,11 +21,17 @@
     body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#f6f7fb}
     a{color:inherit;text-decoration:none}
     img{max-width:100%;height:auto;display:block}
+
+    /* --- iframe hardening (Squarespace) --- */
+    html, body { width: 100%; }
+    body { overflow-x: hidden; }
     .wrap {
       max-width:1200px;
       margin:0 auto;
       padding:28px 18px 24px;
+      min-width: 0; /* important for grid in iframes */
     }
+
     .topbar{margin-bottom:12px}
     .back{display:inline-flex;gap:10px;align-items:center;color:#111;font-weight:500}
     .back::before{content:"←";opacity:.8}
@@ -35,13 +41,18 @@
     .chip{background:#f6f6f6;border:1px solid #ececec;padding:6px 10px;border-radius:999px;font-size:12px}
     .chip--accent{background:#fff7cf;border-color:#ffe899}
 
-    /* --- Modern Grid Layout --- */
+    /* --- Modern Grid Layout (Chrome + iframe safe) --- */
 
     .layout{
       display:grid;
-      grid-template-columns: 2fr 1fr;
+      /* FIX 1: fixed 340px sidebar column removes Chrome iframe ambiguity */
+      grid-template-columns: minmax(0, 1fr) 340px;
       gap:26px;
+      align-items:start;
+      min-width: 0;
     }
+
+    .layout > * { min-width: 0; } /* prevents grid children forcing weird sizing */
 
     .sticky{
       position:sticky;
@@ -50,6 +61,9 @@
       display:flex;
       flex-direction:column;
       gap:18px;
+
+      /* FIX 2: use width instead of min-width to give Chrome a deterministic size */
+      width: 340px;
     }
 
     /* Collapse sidebar when space is tight */
@@ -60,12 +74,15 @@
 
       .sticky{
         position:static;
+        width:100%;
         max-height:none;
         overflow:visible;
       }
     }
+
     .hero-card{background:var(--card);border-radius:calc(var(--radius) + 4px);overflow:hidden;box-shadow:var(--shadow-lg)}
-    .hero{position:relative;aspect-ratio:16/9;background:#eee;overflow:hidden}
+    /* FIX 3: constrain hero width so Chrome doesn't size it before grid column resolves */
+    .hero{position:relative;aspect-ratio:16/9;background:#eee;overflow:hidden;width:100%;max-width:100%}
     .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
     .gallery{display:flex;gap:10px;padding:12px;overflow:auto;background:#fff}
     .thumb{flex:0 0 120px;aspect-ratio:4/3;border-radius:12px;overflow:hidden;border:1px solid #eee;cursor:pointer;transition:transform .12s ease}
@@ -73,8 +90,8 @@
     .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-md);border:1px solid #edf0f3;overflow:hidden}
     .card__body{padding:16px}
     .card__title{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:12px 16px 8px;border-bottom:1px solid #f0f2f5;background:#fff}
-    .actions{display:flex;gap:10px;margin-bottom:12px}
-    .btn{height:44px;padding:0 16px;border-radius:10px;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600;text-decoration:none}
+    .actions{display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+    .btn{height:44px;padding:0 16px;border-radius:10px;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600;text-decoration:none;white-space:nowrap}
     .btn-primary{background:var(--brand);color:#fff}
     .btn-primary::after{content:"";width:6px;height:6px;border-radius:999px;background:var(--accent);margin-left:8px}
     .btn-ghost{background:#fff;border:1px solid #e6e6e6}
@@ -456,12 +473,12 @@ document.addEventListener('DOMContentLoaded', () => {
     background: rgba(16,17,18,0.55);
     backdrop-filter: blur(4px);
     display: none;
-    align-items: flex-start; /* UPDATED: top aligned */
+    align-items: flex-start; /* top aligned */
     justify-content: center;
     padding: 20px;
   }
 
-  /* UPDATED: open as high as possible */
+  /* open as high as possible */
   .modal__dialog {
     position: fixed;
     top: 24px;
@@ -511,7 +528,7 @@ document.addEventListener('DOMContentLoaded', () => {
   .form-row { margin-bottom:8px; }
   .error { color: #b91c1c; font-size:13px; margin-top:6px; }
 
-  .modal__actions { display:flex; gap:10px; margin-top:12px; align-items:center; }
+  .modal__actions { display:flex; gap:10px; margin-top:12px; align-items:center; flex-wrap:wrap; }
 
   .btn { display:inline-flex; align-items:center; justify-content:center; border: none; cursor:pointer; padding:10px 14px; border-radius:10px; font-weight:700; font-size:14px; }
   .btn-primary { background: linear-gradient(180deg,#101112,#0b0b0b); color: #fff; box-shadow: 0 6px 18px rgba(16,17,18,0.12); }
