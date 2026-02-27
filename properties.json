@@ -1,5 +1,153 @@
 [
   {
+    "id": 346878,
+    "address": "58 Oxford Street",
+    "town": "Kidderminster",
+    "postcode": "DY10 1BJ",
+    "lat": 52.386146545,
+    "lon": -2.247409105,
+    "types": [
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 732,
+    "size_to_sqft": 732,
+    "summary": "Prominently positioned retail premises",
+    "description": "The property offers a retail / office area over the ground floor, which also provides a prominent frontage to Oxford Street. Also, at ground floor level is a rear kitchen and WC facilities, along with a small yard area. Over the first floor there is further accommodation set within three different rooms.",
+    "features": [],
+    "rent_psf": 9100,
+    "rent": "£9,100 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/35401594fad623b1749ab38818668325-letting346878.jpeg",
+      "https://as-images.imgix.net/c6f82fe7d76674506cfa220525cb2622-letting346878.jpeg",
+      "https://as-images.imgix.net/0d5d61c00f9255b3a0ec38f3da6384ba-letting346878.jpeg",
+      "https://as-images.imgix.net/384c5667f17749116fd744d8954a6efa-letting346878.jpeg",
+      "https://as-images.imgix.net/60282339ca390e15c7d03d91b581f043-letting346878.jpeg",
+      "https://as-images.imgix.net/69bd2522e4b17efa75349d1d61eba60a-letting346878.jpeg",
+      "https://as-images.imgix.net/98a99117018ad783ee2ff1befe7a7d59-letting346878.jpeg",
+      "https://as-images.imgix.net/3ef9ee755b6f50351de53f872886b25d-letting346878.jpeg",
+      "https://as-images.imgix.net/120c5bfa9e4427af07f9dcdc9bc3b56a-letting346878.jpeg",
+      "https://as-images.imgix.net/c71c29b5dbdbbc5a594d50bb213bd577-letting346878.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9a03acd7d302f46e1ec45ecc0238802c-letting346878.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-27 15:05:52"
+  },
+  {
+    "id": 346804,
+    "address": "3 Wassage Way,Hampton Lovett Industrial Estate",
+    "town": "Droitwich",
+    "postcode": "WR9 0NX",
+    "lat": 52.284690856,
+    "lon": -2.168148994,
+    "types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 4012,
+    "size_to_sqft": 4012,
+    "summary": "Industrial To Let, Droitwich",
+    "description": "Commercial Warehouse/Industrial Unit located at the entrance to the sought after Hampton Lovett Industrial Estate Unit 3 Wassage Way South comprises a terraced industrial/warehouse building prominently positioned at the entrance to Hampton Lovett Industrial Estate. The unit has a clear working height of circa nine foot (2.8 metres) and a concertina door providing access to a rear loading bay. Internally, the unit benefits from a gas blower heater and a three-phase electrical supply, mains water, gas and drainage.",
+    "features": [],
+    "rent_psf": 32500,
+    "rent": "£32,500 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/b1546d0c9d58235a490a4da92d06e071-letting346804.jpeg",
+      "https://as-images.imgix.net/5ec1c4188d16e6bf8e6e7687a939dcd7-letting346804.jpeg",
+      "https://as-images.imgix.net/ade755ea35eea0fb3e88e1dff7ba8324-letting346804.jpeg",
+      "https://as-images.imgix.net/4c5f816512627b82ae932fa03502c481-letting346804.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/00c57071db890da977c6b058446ac5b9-letting346804.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-27 15:03:19"
+  },
+  {
+    "id": 351584,
+    "address": "155 London Road",
+    "town": "Worcester",
+    "postcode": "WR5 2ED",
+    "lat": 52.184917,
+    "lon": -2.205248,
+    "types": [
+      "Investment - Mixed use"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 1401,
+    "size_to_sqft": 1401,
+    "summary": "Prominent Mixed Use Investment Opportunity",
+    "description": "155 London Road comprises a mid-terrace mixed use property of traditional brick construction underneath a pitched tiled roof.  The building offers a retail unit over the ground floor, with residential accommodation above.  The retail unit is currently occupied by a barbers and benefits from dual access, off London Road to the front and a rear access off Wyld’s Lane.  Internally the barbers comprises a front sales area and rear storage / welfare facilities, including a kitchen and WC.\n\nThe ground floor is let and is holding over at £450.00 per calendar month. \n\nThe upper floors are access to the rear of the property and comprise a two bedroom flat arranged over the first and second floors.  At first floor level there is a reception room (recently used as a bedroom), kitchen and bathroom.  There are a further two rooms on the second floor. \n\nGround Floor Retail \t477 sq ft \t44.36 sq m \nFirst Floor Residential\t538 sq ft\t50.00 sq m\nSecond Floor Residential\t385 sq ft\t35.76 sq m\nTotal\t1,401 sq ft \t130.12 sq m",
+    "location": "The property is situated within Worcester, in the West Midlands.  Worcester lies 31 miles south west of Birmingham, 101 north west of London, 27 miles north of Gloucester and 23 miles north east of Hereford.  At the 2011 census, the population in the city was approximately 100,000.  The city has excellent transport links with a direct mainline to both Birmingham and London, via Worcester Foregate Street, Worcester Shrub Hill and Worcester Parkway Stations.  Worcester also lies to the west of Junctions 6 and 7 of the M5 motorway, providing access north to Birmingham, the M42, the M6 and the wider national motorway network.\n\nThe property lies to the east of Worcester city centre along the main arterial road of London Road.  London Road has traditionally comprised of local convenience operators interspersed by a mix of small residential dwellings & flats and larger detached residential dwellings.  This part of London Road offers a number of local retail convenience stores such as Tesco Express, a Chinese take away, a fish & chip shop and a former Post Office.  London Road runs north west towards Sidbury which provides direct access into Worcester city centre and conversely London Road also provides direct access out to Junction 7 of the M5 motorway and the Southern Link Road.  Given the inflow of traffic into the city centre, London Road is a highly exposed area that has been popular among independent retailers.",
+    "features": [
+      "Totals 1,401 sq ft (130.12 sq m) over three floors",
+      "Ground floor retail unit let to a barbers shop",
+      "Self-contained two bedroom flat over the first and second floors",
+      "Includes separate rear access off Wylds Lane",
+      "On a main arterial route into Worcester"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/5bd5cfc37063ac42de00cce69c321ef6-20251204-115818-2.jpg",
+      "https://as-images.imgix.net/20665a1c171a75ae6c013bd8a33ed4d6-20251204-115420-2.jpg",
+      "https://as-images.imgix.net/90fa448e0f55b2ef7b2c7f10bf24f2e2-20251204-115352-2.jpg",
+      "https://as-images.imgix.net/d209fbb4718110cae9f483ef2ac4f4e1-20251204-115317-2.jpg",
+      "https://as-images.imgix.net/6e393cc4d3f1d3cb0e9287f2bb225a4e-20251204-115209-1.jpg",
+      "https://as-images.imgix.net/3405799ff08611fdbe864fe20766f6f6-20251204-115152-2.jpg",
+      "https://as-images.imgix.net/270c3a43d256d1ace4fcb7519c734a4c-20251204-115122-2.jpg",
+      "https://as-images.imgix.net/5468a32f2c0f674bf9fea589d0ff1680-20251204-115646-2.jpg",
+      "https://as-images.imgix.net/6ef63199ed570584f504536329125e4a-20251204-115035-2.jpg",
+      "https://as-images.imgix.net/1e243bed4c34dcd02f01aaf61c95117e-20251204-115026-1.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6addef712e598b82fc2980d54c41ce1d-gjs-dillon-particulars-155-london-road-worcester-1.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-02-27 14:50:49"
+  },
+  {
     "id": 346884,
     "address": "Saxon Business Park",
     "town": "Bromsgrove",
@@ -2130,154 +2278,6 @@
       }
     ],
     "last_updated": "2026-02-27 10:33:15"
-  },
-  {
-    "id": 351584,
-    "address": "155 London Road",
-    "town": "Worcester",
-    "postcode": "WR5 2ED",
-    "lat": 52.184917,
-    "lon": -2.205248,
-    "types": [
-      "Investment - Mixed use"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 1401,
-    "size_to_sqft": 1401,
-    "summary": "Prominent Mixed Use Investment Opportunity",
-    "description": "155 London Road comprises a mid-terrace mixed use property of traditional brick construction underneath a pitched tiled roof.  The building offers a retail unit over the ground floor, with residential accommodation above.  The retail unit is currently occupied by a barbers and benefits from dual access, off London Road to the front and a rear access off Wyld’s Lane.  Internally the barbers comprises a front sales area and rear storage / welfare facilities, including a kitchen and WC.\n\nThe ground floor is let and is holding over at £450.00 per calendar month. \n\nThe upper floors are access to the rear of the property and comprise a two bedroom flat arranged over the first and second floors.  At first floor level there is a reception room (recently used as a bedroom), kitchen and bathroom.  There are a further two rooms on the second floor. \n\nGround Floor Retail \t477 sq ft \t44.36 sq m \nFirst Floor Residential\t538 sq ft\t50.00 sq m\nSecond Floor Residential\t385 sq ft\t35.76 sq m\nTotal\t1,401 sq ft \t130.12 sq m",
-    "location": "The property is situated within Worcester, in the West Midlands.  Worcester lies 31 miles south west of Birmingham, 101 north west of London, 27 miles north of Gloucester and 23 miles north east of Hereford.  At the 2011 census, the population in the city was approximately 100,000.  The city has excellent transport links with a direct mainline to both Birmingham and London, via Worcester Foregate Street, Worcester Shrub Hill and Worcester Parkway Stations.  Worcester also lies to the west of Junctions 6 and 7 of the M5 motorway, providing access north to Birmingham, the M42, the M6 and the wider national motorway network.\n\nThe property lies to the east of Worcester city centre along the main arterial road of London Road.  London Road has traditionally comprised of local convenience operators interspersed by a mix of small residential dwellings & flats and larger detached residential dwellings.  This part of London Road offers a number of local retail convenience stores such as Tesco Express, a Chinese take away, a fish & chip shop and a former Post Office.  London Road runs north west towards Sidbury which provides direct access into Worcester city centre and conversely London Road also provides direct access out to Junction 7 of the M5 motorway and the Southern Link Road.  Given the inflow of traffic into the city centre, London Road is a highly exposed area that has been popular among independent retailers.",
-    "features": [
-      "Totals 1,401 sq ft (130.12 sq m) over three floors",
-      "Ground floor retail unit let to a barbers shop",
-      "Self-contained two bedroom flat over the first and second floors",
-      "Includes separate rear access off Wylds Lane",
-      "On a main arterial route into Worcester"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/5bd5cfc37063ac42de00cce69c321ef6-20251204-115818-2.jpg",
-      "https://as-images.imgix.net/20665a1c171a75ae6c013bd8a33ed4d6-20251204-115420-2.jpg",
-      "https://as-images.imgix.net/90fa448e0f55b2ef7b2c7f10bf24f2e2-20251204-115352-2.jpg",
-      "https://as-images.imgix.net/d209fbb4718110cae9f483ef2ac4f4e1-20251204-115317-2.jpg",
-      "https://as-images.imgix.net/6e393cc4d3f1d3cb0e9287f2bb225a4e-20251204-115209-1.jpg",
-      "https://as-images.imgix.net/3405799ff08611fdbe864fe20766f6f6-20251204-115152-2.jpg",
-      "https://as-images.imgix.net/270c3a43d256d1ace4fcb7519c734a4c-20251204-115122-2.jpg",
-      "https://as-images.imgix.net/5468a32f2c0f674bf9fea589d0ff1680-20251204-115646-2.jpg",
-      "https://as-images.imgix.net/6ef63199ed570584f504536329125e4a-20251204-115035-2.jpg",
-      "https://as-images.imgix.net/1e243bed4c34dcd02f01aaf61c95117e-20251204-115026-1.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6addef712e598b82fc2980d54c41ce1d-gjs-dillon-particulars-155-london-road-worcester-1.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-19 16:13:55"
-  },
-  {
-    "id": 346804,
-    "address": "3 Wassage Way,Hampton Lovett Industrial Estate",
-    "town": "Droitwich",
-    "postcode": "WR9 0NX",
-    "lat": 52.284690856,
-    "lon": -2.168148994,
-    "types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 4012,
-    "size_to_sqft": 4012,
-    "summary": "Industrial To Let, Droitwich",
-    "description": "Commercial Warehouse/Industrial Unit located at the entrance to the sought after Hampton Lovett Industrial Estate Unit 3 Wassage Way South comprises a terraced industrial/warehouse building prominently positioned at the entrance to Hampton Lovett Industrial Estate. The unit has a clear working height of circa nine foot (2.8 metres) and a concertina door providing access to a rear loading bay. Internally, the unit benefits from a gas blower heater and a three-phase electrical supply, mains water, gas and drainage. The property is situated on Hampton Lovett Industrial Estate to the north of Droitwich Spa. Droitwich is situated approximately seven miles to the north east of Worcester, six miles south west of Bromsgrove and 18 miles south west of Birmingham city centre. The town is situated immediately adjacent to the M5 with Junction 5 being approximately three miles from the property - this providing access north to the M42, M6 and wider national motorway network. Droitwich also benefits from a mainline railway station which provides direct access to Worcester and Birmingham New Street Stations",
-    "features": [],
-    "rent_psf": 32500,
-    "rent": "£32,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/b1546d0c9d58235a490a4da92d06e071-letting346804.jpeg",
-      "https://as-images.imgix.net/5ec1c4188d16e6bf8e6e7687a939dcd7-letting346804.jpeg",
-      "https://as-images.imgix.net/ade755ea35eea0fb3e88e1dff7ba8324-letting346804.jpeg",
-      "https://as-images.imgix.net/4c5f816512627b82ae932fa03502c481-letting346804.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/00c57071db890da977c6b058446ac5b9-letting346804.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-19 15:50:54"
-  },
-  {
-    "id": 346878,
-    "address": "58 Oxford Street",
-    "town": "Kidderminster",
-    "postcode": "DY10 1BJ",
-    "lat": 52.386146545,
-    "lon": -2.247409105,
-    "types": [
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 732,
-    "size_to_sqft": 732,
-    "summary": "Retail To Let, Kidderminster",
-    "description": "The property offers a retail / office area over the ground floor, which also provides a prominent frontage to Oxford Street. Also, at ground floor level is a rear kitchen and WC facilities, along with a small yard area. Over the first floor there is further accommodation set within three different rooms.",
-    "features": [],
-    "rent_psf": 9100,
-    "rent": "£9,100 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/35401594fad623b1749ab38818668325-letting346878.jpeg",
-      "https://as-images.imgix.net/c6f82fe7d76674506cfa220525cb2622-letting346878.jpeg",
-      "https://as-images.imgix.net/0d5d61c00f9255b3a0ec38f3da6384ba-letting346878.jpeg",
-      "https://as-images.imgix.net/384c5667f17749116fd744d8954a6efa-letting346878.jpeg",
-      "https://as-images.imgix.net/60282339ca390e15c7d03d91b581f043-letting346878.jpeg",
-      "https://as-images.imgix.net/69bd2522e4b17efa75349d1d61eba60a-letting346878.jpeg",
-      "https://as-images.imgix.net/98a99117018ad783ee2ff1befe7a7d59-letting346878.jpeg",
-      "https://as-images.imgix.net/3ef9ee755b6f50351de53f872886b25d-letting346878.jpeg",
-      "https://as-images.imgix.net/120c5bfa9e4427af07f9dcdc9bc3b56a-letting346878.jpeg",
-      "https://as-images.imgix.net/c71c29b5dbdbbc5a594d50bb213bd577-letting346878.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9a03acd7d302f46e1ec45ecc0238802c-letting346878.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-19 15:37:59"
   },
   {
     "id": 346823,
