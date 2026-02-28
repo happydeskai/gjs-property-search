@@ -112,10 +112,40 @@ async function run() {
       );
 
       // rent & rates
-      const rent_psf = num(
+      // The feed field rent_components.from is ambiguous — it contains the annual
+      // total for "per annum" properties, but a genuine psf for "per sq ft" ones.
+      // We normalise here so that:
+      //   rent_psf  = always £ per sq ft (or undefined)
+      //   rent_pa   = always £ per annum  (or undefined)
+      const rentRaw = num(
         p.rent_components?.from ?? p.rent_components?.from_sqft
       );
-      const rent = txt(p.rent); // formatted e.g. "£7.50 per sq ft"
+      const rent = txt(p.rent); // formatted string e.g. "£18.50 per sq ft"
+      const rentLC = rent.toLowerCase();
+      const isPerSqFt  = rentLC.includes("per sq ft") || rentLC.includes("psf");
+      const isPerAnnum = rentLC.includes("per annum") || rentLC.includes(" pa");
+
+      let rent_psf, rent_pa;
+      if (Number.isFinite(rentRaw) && rentRaw > 0) {
+        if (isPerSqFt) {
+          // feed value is already psf
+          rent_psf = rentRaw;
+          rent_pa  = Number.isFinite(size_from_sqft) && size_from_sqft > 0
+            ? Math.round(rentRaw * size_from_sqft)
+            : undefined;
+        } else if (isPerAnnum) {
+          // feed value is the annual total — derive psf from size
+          rent_pa  = rentRaw;
+          rent_psf = Number.isFinite(size_from_sqft) && size_from_sqft > 0
+            ? Math.round((rentRaw / size_from_sqft) * 100) / 100
+            : undefined;
+        } else {
+          // Unknown format (e.g. range "£x - £y") — store raw as rent_pa only
+          rent_pa  = rentRaw;
+          rent_psf = undefined;
+        }
+      }
+
       const business_rates_psf = num(p.business_rates?.rates_payable);
       const rateable_value = num(p.business_rates?.rateable_value);
 
@@ -142,7 +172,8 @@ async function run() {
 
         features,
 
-        rent_psf: Number.isFinite(rent_psf) ? rent_psf : undefined,
+        rent_psf: rent_psf !== undefined ? rent_psf : undefined,
+        rent_pa:  rent_pa  !== undefined ? rent_pa  : undefined,
         rent: rent || undefined,
 
         business_rates_psf: Number.isFinite(business_rates_psf)
