@@ -666,59 +666,6 @@
     "last_updated": "2026-02-27 15:35:11"
   },
   {
-    "id": 346708,
-    "address": "St. Richards Road",
-    "town": "Evesham",
-    "postcode": "WR11 1XG",
-    "lat": 52.080982208,
-    "lon": -1.947353959,
-    "types": [
-      "Industrial",
-      "Trade Counter"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 5057,
-    "size_to_sqft": 5057,
-    "summary": "Industrial / Trade Counter To Let, Evesham",
-    "description": "Unit 5 is a high-quality end-terrace industrial/trade counter unit of steel portal frame construction, featuring an insulated profile steel roof and a combination of block and insulated steel profile elevations. The unit benefits from a glazed pedestrian entrance, an electrically operated roller shutter door and excellent visibility within the estate. Situated within a well-established trade counter estate, the location has attracted a strong mix of national and regional occupiers, including Screwfix, Buildbase, Tile Giant, Topps Tiles, Tool Station and Easy Bathrooms. Total Area5,057 sq ft 469.80 sq m Location The property is situated within Evesham, to the south east of Worcestershire. Evesham is a market town within Wychavon which benefits from a population of approximately 25,000, according to the 2011 census. It is located approximately 14 miles south east of Worcester, 14 miles north east of Cheltenham, 27 miles south of Birmingham and 90 miles north west of London. Evesham benefits from good road communications being on the A44; which provides access to Worcester, Oxford and Junction 6 of the M5 motorway (in approximately 25 minutes) and on the A46; which provides access to Redditch, Tewkesbury and Junction 9 of the M5 motorway (in approximately 20 minutes). Evesham also has a mainline station which provides a direct access to the Worcester stations, Oxford and London Paddington.",
-    "features": [
-      "Virtual tour avaiable",
-      "Dedicated yard area",
-      "Recently refurbished",
-      "Warehouse access via 1 electric roller shutter door"
-    ],
-    "rent_psf": 12.5,
-    "rent_pa": 63213,
-    "rent": "£63,213 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/ae750669efe8d35a9c6b8fce34205ddb-letting346708.jpeg",
-      "https://as-images.imgix.net/e30f64a08dd4b48ed2cbd57c5b152b18-letting346708.jpeg",
-      "https://as-images.imgix.net/c34536f22dd0d6dbae50ef4d9a971886-letting346708.jpeg",
-      "https://as-images.imgix.net/691b51f6f133df4680985bf068e71599-letting346708.jpeg",
-      "https://as-images.imgix.net/0f97d03e3f7a7a3ff7d651fc550902ea-letting346708.jpeg",
-      "https://as-images.imgix.net/d49a58107258b3658e05800da00ed9a4-letting346708.jpeg",
-      "https://as-images.imgix.net/bdc99c9d5f44b94ffcf05b09a6d3ab19-letting346708.jpeg",
-      "https://as-images.imgix.net/c4a89cef6e795ea88437c26a9cdaaeb8-letting346708.jpeg",
-      "https://as-images.imgix.net/19a7506861e166b12cd3e8f13c0e0d5b-letting346708.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/78b4ebf64f93b0c55ab82d70bebfccaa-17173-hi-aurora-evesham-davies-road-tp-brochure-v6.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-27 15:34:32"
-  },
-  {
     "id": 346706,
     "address": "St. Richards Road",
     "town": "Evesham",
