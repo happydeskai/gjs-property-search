@@ -1,5 +1,109 @@
 [
   {
+    "id": 346660,
+    "address": "9-10 The Tything",
+    "town": "Worcester",
+    "postcode": "WR1 1HD",
+    "lat": 52.197731018,
+    "lon": -2.223536014,
+    "types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1035,
+    "size_to_sqft": 1035,
+    "summary": "Office To Let, Worcester",
+    "description": "9 - 10 The Tything comprises a prominent office that fronts The Tything. The subject suite is located on the second floor and can be accessed via the main and rear entrances. The two allocated car parking spaces are accessed via the rear entrance and off St. Oswald's Road. Internally the second floor is accessed via a staircase only. The subject office suite is self-contained having a kitchenette and WC facility. The offices look eastwards over Sansome Walk and up towards Rainbow Hill. Second Floor1,035 sq ft96.2 sq m Location The property is situated in a prominent position on The Tything which is one of the main arterial roads leading into Worcester city centre from the north, being within one quarter mile of Worcester's main pedestrianised shopping area. The offices are within walking distance of the city centre, Foregate Street Station and he County Crown Magistrates Courts.",
+    "features": [
+      "Situated on the second floor with great views over Sansome Walk",
+      "Self contained office suite with kitchenette and WC",
+      "Two allocated parking spaces"
+    ],
+    "rent_psf": 14.49,
+    "rent_pa": 15000,
+    "rent": "£15,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "C (27)",
+    "images": [
+      "https://as-images.imgix.net/a5a67766aaf3cd755627a62693ad18cc-letting346660.jpeg",
+      "https://as-images.imgix.net/3f170182e6b08d38e1d8044185a3de1b-letting346660.jpeg",
+      "https://as-images.imgix.net/18b9035288e489f87c6e3f1e4fa53921-letting346660.jpeg",
+      "https://as-images.imgix.net/4a0b71c292670dce0554bb2ef40baba0-letting346660.jpeg",
+      "https://as-images.imgix.net/a6a06805b388d46e9c863e60ea6dbedc-letting346660.jpeg",
+      "https://as-images.imgix.net/78f8c7b1c4c41989710d7c813171c726-letting346660.jpeg",
+      "https://as-images.imgix.net/086bcddab259c600f93f1bafd2b8909f-letting346660.jpeg",
+      "https://as-images.imgix.net/cec1db1a5efc4e0d736a5e5e5236107a-letting346660.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/05c72b2df54665a92200f3a5f2b2f406-letting346660.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-03-03 12:37:13"
+  },
+  {
+    "id": 346754,
+    "address": "One Kings Court",
+    "town": "Worcester",
+    "postcode": "WR5 1WS",
+    "lat": 52.19234085,
+    "lon": -2.178134918,
+    "types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3050,
+    "size_to_sqft": 3050,
+    "summary": "Office To Let, Worcester",
+    "description": "The property has recently undergone extensive refurbishment and offers highly efficient accommodation benefitting from : \n*New VRF comfort cooling \n*New LED lighting \n*Raised access flooring \n*Suspended ceilings *10 person passenger lift \n*High quality refurbished common areas including WC facilities\n*Showers \n*Up to 40 onsite car parking spaces offering a generous ratio of 1:260 sq ft with EV car chargers Location",
+    "features": [
+      "Modern, headquarters office building with striking floor to ceiling windows throughout",
+      "Well maintained landscaped environment",
+      "The second floor provides accessible, quality open plan office accommodation with first class facilities"
+    ],
+    "rent_psf": 18.5,
+    "rent_pa": 56425,
+    "rent": "£18.50 per sq ft",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/6187ce888cbb5224c306623f798a9080-letting346754.jpeg",
+      "https://as-images.imgix.net/32e849190232ef2f2507997f3bbb8a06-letting346754.jpeg",
+      "https://as-images.imgix.net/e6278d452e00dfb2e40a9eeeb3438adc-letting346754.jpeg",
+      "https://as-images.imgix.net/4b8fc70dbf3e88968c30b952700e6163-letting346754.jpeg",
+      "https://as-images.imgix.net/a252ba753e1b0b1a1c52497a1278d965-letting346754.jpeg",
+      "https://as-images.imgix.net/6b576e37adb90b6a5ccebd3c0644dfef-letting346754.jpeg",
+      "https://as-images.imgix.net/a150eef093381aefe8505e92410f6991-letting346754.jpeg",
+      "https://as-images.imgix.net/7b0783a19ad6eae0f9b59fb067b83403-letting346754.jpeg",
+      "https://as-images.imgix.net/d6ae268dbaeaa7246235bffb7d9c89a3-letting346754.jpeg",
+      "https://as-images.imgix.net/bab416789a3751d21680cc9bce3cc9f1-letting346754.jpeg",
+      "https://as-images.imgix.net/ff0654b114c96359266ee158455eb45c-letting346754.jpeg",
+      "https://as-images.imgix.net/e96e77fe640ea8d4dbb3968c25de57d3-letting346754.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/ce99ce9fee88f0c5b48fb643b5099c63-one-kings-court-worcester-particulars.pdf",
+    "contacts": [
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-03-03 12:11:35"
+  },
+  {
     "id": 346876,
     "address": "Global House",
     "town": "Worcester",
@@ -110,60 +214,6 @@
       }
     ],
     "last_updated": "2026-03-03 11:52:54"
-  },
-  {
-    "id": 346754,
-    "address": "One Kings Court",
-    "town": "Worcester",
-    "postcode": "WR5 1WS",
-    "lat": 52.19234085,
-    "lon": -2.178134918,
-    "types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3050,
-    "size_to_sqft": 3050,
-    "summary": "Office To Let, Worcester",
-    "description": "The property has recently undergone extensive refurbishment and offers highly efficient accommodation benefitting from : \n*New VRF comfort cooling \n*New LED lighting \n*Raised access flooring \n*Suspended ceilings *10 person passenger lift \n*High quality refurbished common areas including WC facilities\n*Showers \n*Up to 40 onsite car parking spaces offering a generous ratio of 1:260 sq ft with EV car chargers Location",
-    "features": [
-      "Modern, headquarters office building with striking floor to ceiling windows throughout",
-      "Well maintained landscaped environment",
-      "The second floor provides accessible, quality open plan office accommodation with first class facilities"
-    ],
-    "rent_psf": 18.5,
-    "rent_pa": 56425,
-    "rent": "£18.50 per sq ft",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/6187ce888cbb5224c306623f798a9080-letting346754.jpeg",
-      "https://as-images.imgix.net/32e849190232ef2f2507997f3bbb8a06-letting346754.jpeg",
-      "https://as-images.imgix.net/e6278d452e00dfb2e40a9eeeb3438adc-letting346754.jpeg",
-      "https://as-images.imgix.net/4b8fc70dbf3e88968c30b952700e6163-letting346754.jpeg",
-      "https://as-images.imgix.net/a252ba753e1b0b1a1c52497a1278d965-letting346754.jpeg",
-      "https://as-images.imgix.net/6b576e37adb90b6a5ccebd3c0644dfef-letting346754.jpeg",
-      "https://as-images.imgix.net/a150eef093381aefe8505e92410f6991-letting346754.jpeg",
-      "https://as-images.imgix.net/7b0783a19ad6eae0f9b59fb067b83403-letting346754.jpeg",
-      "https://as-images.imgix.net/d6ae268dbaeaa7246235bffb7d9c89a3-letting346754.jpeg",
-      "https://as-images.imgix.net/bab416789a3751d21680cc9bce3cc9f1-letting346754.jpeg",
-      "https://as-images.imgix.net/ff0654b114c96359266ee158455eb45c-letting346754.jpeg",
-      "https://as-images.imgix.net/e96e77fe640ea8d4dbb3968c25de57d3-letting346754.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/ce99ce9fee88f0c5b48fb643b5099c63-one-kings-court-worcester-particulars.pdf",
-    "contacts": [
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-03 11:49:06"
   },
   {
     "id": 346708,
@@ -1934,56 +1984,6 @@
       }
     ],
     "last_updated": "2026-02-27 12:42:31"
-  },
-  {
-    "id": 346660,
-    "address": "9-10 The Tything",
-    "town": "Worcester",
-    "postcode": "WR1 1HD",
-    "lat": 52.197731018,
-    "lon": -2.223536014,
-    "types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1035,
-    "size_to_sqft": 1035,
-    "summary": "Office To Let, Worcester",
-    "description": "9 - 10 The Tything comprises a prominent office that fronts The Tything. The subject suite is located on the second floor and can be accessed via the main and rear entrances. The two allocated car parking spaces are accessed via the rear entrance and off St. Oswald's Road. Internally the second floor is accessed via a staircase only. The subject office suite is self-contained having a kitchenette and WC facility. The offices look eastwards over Sansome Walk and up towards Rainbow Hill. Second Floor1,035 sq ft96.2 sq m Location The property is situated in a prominent position on The Tything which is one of the main arterial roads leading into Worcester city centre from the north, being within one quarter mile of Worcester's main pedestrianised shopping area. The offices are within walking distance of the city centre, Foregate Street Station and he County Crown Magistrates Courts.",
-    "features": [
-      "Situated on the second floor with great views over Sansome Walk",
-      "Self contained office suite with kitchenette and WC",
-      "Two allocated parking spaces"
-    ],
-    "rent_psf": 14.49,
-    "rent_pa": 15000,
-    "rent": "£15,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/a5a67766aaf3cd755627a62693ad18cc-letting346660.jpeg",
-      "https://as-images.imgix.net/3f170182e6b08d38e1d8044185a3de1b-letting346660.jpeg",
-      "https://as-images.imgix.net/18b9035288e489f87c6e3f1e4fa53921-letting346660.jpeg",
-      "https://as-images.imgix.net/4a0b71c292670dce0554bb2ef40baba0-letting346660.jpeg",
-      "https://as-images.imgix.net/a6a06805b388d46e9c863e60ea6dbedc-letting346660.jpeg",
-      "https://as-images.imgix.net/78f8c7b1c4c41989710d7c813171c726-letting346660.jpeg",
-      "https://as-images.imgix.net/086bcddab259c600f93f1bafd2b8909f-letting346660.jpeg",
-      "https://as-images.imgix.net/cec1db1a5efc4e0d736a5e5e5236107a-letting346660.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/05c72b2df54665a92200f3a5f2b2f406-letting346660.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-27 12:41:29"
   },
   {
     "id": 346649,
