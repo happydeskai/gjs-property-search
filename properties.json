@@ -1,5 +1,479 @@
 [
   {
+    "id": 346648,
+    "address": "The Old Mill",
+    "town": "Pershore",
+    "postcode": "WR10 1BY",
+    "lat": 52.11138916,
+    "lon": -2.082348108,
+    "types": [
+      "Retail",
+      "Office",
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 5575,
+    "size_to_sqft": 5757,
+    "summary": "Retail / Office / Industrial To Let, Pershore",
+    "description": "The Old Mill comprises a large, detached commercial premises of traditional brick construction. The building has an open-plan retail sales area, which benefits from suspended LED lighting. Ancillary accommodation is provided at ground and first floor levels, including staff and storage areas, along with a mezzanine floor. There are approximately 20 car parking spaces. Ground Floor Sales3,400 sq ft315.87 sq m Ground Floor Ancillary 520 sq ft 48.31 sq m Mezzanine Area1,349 sq ft125.33 sq m First Floor Ancillary 306 sq ft 28.43 sq m Total5,575 sq ft 517.93 sq m Location The property is prominently located on New Road in Pershore, a well-connected Worcestershire market town approximately 10 miles from Worcester and 7 miles from Evesham. The Old Mill is positioned close to the River Avon and within easy walking distance of Pershore town centre. The location benefits from good transport links, including nearby access to the A44 and Pershore railway station with services to Worcester, Oxford and London.",
+    "features": [
+      "Suitable for a variety of uses",
+      "Ground and first floor space",
+      "On site car parking",
+      "Good access to the A44, leading to the M5 motorway"
+    ],
+    "rent_psf": 5.02,
+    "rent_pa": 28000,
+    "rent": "£28,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/23387c8a7ce3b5b7fe2a131ab060c4f7-letting346648.jpeg",
+      "https://as-images.imgix.net/3e32dbaedb4939efef5d6832670c92cc-letting346648.jpeg",
+      "https://as-images.imgix.net/209a69c9adf175d282719bed4e21ecef-letting346648.jpeg",
+      "https://as-images.imgix.net/a70f037aa6b30150aff0c933cbe197ef-letting346648.jpeg",
+      "https://as-images.imgix.net/fae4d88addd61870797e6b9a1473a0f7-letting346648.jpeg",
+      "https://as-images.imgix.net/434f2a7a885c6a94b66e25a64e2d0fcf-letting346648.jpeg",
+      "https://as-images.imgix.net/90e27364575128aa53e3d53c3c11b5cc-letting346648.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6a207975ae15e397dfa5dbdbf0df0063-letting346648.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-03-03 16:10:11"
+  },
+  {
+    "id": 346736,
+    "address": "4 Richmond Road",
+    "town": "Malvern",
+    "postcode": "WR14 1NE",
+    "lat": 52.12851715,
+    "lon": -2.315370082,
+    "types": [
+      "Investment"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 1081,
+    "size_to_sqft": 1081,
+    "summary": "Investment For Sale, Malvern",
+    "description": "The property comprises two separate retail shops on the ground floor which extend in total to 1,081 sq ft (100.43 sq m). There is residential accommodation above which has been sold off on a long leasehold basis for a term of 125 years from 01/04/2005. The shops operate independently as a caf√à and hair salon with off street parking available to the front to the hair salon. \nUnit 1 - 422 sq ft (39.18 sq m)\nUnit 2 - 659 sq ft (61.25 sq m) \nThe first floor accommodation has been sold off on a long leasehold basis. \nTenancies\nUnit 1 - Trading as Sunbean caf√à & sunbeds and let for a term of 5 years from 27/02/2024, expiring 26/02/29, at a passing rent of ¬£8,750 pa. \nUnit 2 - Trading as Luxury Cutz and let for a term of 5 years from 01/03/222, expiring 28/02/27, at a passing rent of ¬£7,500 pa. \n\nThe combined rental income is ¬£16,250 per annum.",
+    "features": [],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/7c2613fdfcb3853c29230022ad83289b-letting346736.jpeg",
+      "https://as-images.imgix.net/6f7d5d7def0d56ba650131418331d05f-letting346736.jpeg",
+      "https://as-images.imgix.net/a125ac5fb2939b81b300d757ccd2e715-letting346736.jpeg",
+      "https://as-images.imgix.net/3e420d1512f9fc6c5f902247cb9e6f3f-letting346736.jpeg",
+      "https://as-images.imgix.net/37ea2414e6f32866dd5741820b504c25-letting346736.jpeg",
+      "https://as-images.imgix.net/092435094ebfbad239394f5531850a8e-letting346736.jpeg",
+      "https://as-images.imgix.net/63966b6bfb96ae4ea5c1e79be06a862b-letting346736.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c54e99bb6da9bd70ac289900218cede0-letting346736.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-03-03 16:08:35"
+  },
+  {
+    "id": 346878,
+    "address": "58 Oxford Street",
+    "town": "Kidderminster",
+    "postcode": "DY10 1BJ",
+    "lat": 52.386146545,
+    "lon": -2.247409105,
+    "types": [
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 732,
+    "size_to_sqft": 732,
+    "summary": "Prominently positioned retail premises",
+    "description": "The property offers a retail / office area over the ground floor, which also provides a prominent frontage to Oxford Street. Also, at ground floor level is a rear kitchen and WC facilities, along with a small yard area. Over the first floor there is further accommodation set within three different rooms.",
+    "features": [],
+    "rent_psf": 12.43,
+    "rent_pa": 9100,
+    "rent": "£9,100 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/35401594fad623b1749ab38818668325-letting346878.jpeg",
+      "https://as-images.imgix.net/c6f82fe7d76674506cfa220525cb2622-letting346878.jpeg",
+      "https://as-images.imgix.net/0d5d61c00f9255b3a0ec38f3da6384ba-letting346878.jpeg",
+      "https://as-images.imgix.net/384c5667f17749116fd744d8954a6efa-letting346878.jpeg",
+      "https://as-images.imgix.net/60282339ca390e15c7d03d91b581f043-letting346878.jpeg",
+      "https://as-images.imgix.net/69bd2522e4b17efa75349d1d61eba60a-letting346878.jpeg",
+      "https://as-images.imgix.net/98a99117018ad783ee2ff1befe7a7d59-letting346878.jpeg",
+      "https://as-images.imgix.net/3ef9ee755b6f50351de53f872886b25d-letting346878.jpeg",
+      "https://as-images.imgix.net/120c5bfa9e4427af07f9dcdc9bc3b56a-letting346878.jpeg",
+      "https://as-images.imgix.net/c71c29b5dbdbbc5a594d50bb213bd577-letting346878.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9a03acd7d302f46e1ec45ecc0238802c-letting346878.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-03-03 16:06:11"
+  },
+  {
+    "id": 353374,
+    "address": "169-171 Newtown Road",
+    "town": "Malvern",
+    "postcode": "WR14 1PJ",
+    "lat": 52.126083,
+    "lon": -2.331358,
+    "types": [
+      "Automotive",
+      "Development Site"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 9124,
+    "size_to_sqft": 9124,
+    "summary": "Freehold Car Sales Premises, Suitable for Development (STP)",
+    "description": "The current building offers a detached showroom and workshop sitting central within a regular plot.  The building is accessed via a showroom to the front and two roller shutter doors to the rear.\n\nThe existing building offers the following:\n\nCar Showroom\t2,572 ft2\t\t(239 m2)\nWorkshop\t6,552 ft2\t\t(609 m2)\nTotal \t9,124 ft2\t\t(848 m2)\n\nExternally there is a forecourt to the front which offers parking for 20-25 vehicles along with a further parking area to the rear for 35-40 vehicles.  The main frontage is onto Newtown Road, however, there is a rear access off Nursery Road.\n\nThe site has a total area of 0.64, as shown by the site plan.\n\nRe-Development\nThe sites extends to 0.64 acres and is situated within a residential area of Malvern, it is therefore well suited for re-development, subject to gaining the necessary planning consents.",
+    "location": "Malvern is a spa town in Worcestershire with a population of 30,462 as at the 2021 Census.  Within Malvern, the property fronts the B4503 Newtown Road, in close proximity to its junction with the A449 Worcester Road and circa 1 ½ miles west of Great Malvern town centre.\n\nThe immediate surrounding area is predominantly residential, with some local retail occupiers being located on Newtown Road.  Hills Ford are vacating due to expansion to a larger site in Worcester.",
+    "features": [
+      "Currently operating as Hills Ford motor dealership, who are relocating due to expansion into Worcester",
+      "Existing facility extends to 9,124 sq ft (848 sq m)",
+      "Regular shaped site extending to 0.64 acres",
+      "Situated in a predominantly residential area and therefore suitable for re-development, subject to planning",
+      "Has dual access off Newtown Road and Nursery Road."
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/92579b6aeac8e7bc496aea13709404ea-23.jpeg",
+      "https://as-images.imgix.net/95e0e4c9661ae3a79a57e2825f4d9c32-19.jpeg",
+      "https://as-images.imgix.net/1e98ffd0f9565d6d6d707edbc2f0facb-14.jpeg",
+      "https://as-images.imgix.net/4fed5437cbf8c65c6a12b6c552b881b0-13.jpeg",
+      "https://as-images.imgix.net/387a6b9083ea90ea3f0f06207e444b9e-1.jpeg",
+      "https://as-images.imgix.net/c59c64bd6c0adf14878c2f4526f89b65-18.jpeg",
+      "https://as-images.imgix.net/87733d5af2b11902232201ca410d01bf-15.jpeg",
+      "https://as-images.imgix.net/2c37bb1557745091d573c84ca541d2d9-16.jpeg",
+      "https://as-images.imgix.net/0974715b61b0523d37a9953f987321e5-12.jpeg",
+      "https://as-images.imgix.net/c576f7b509f7e0c267f03854ee53d717-11.jpeg",
+      "https://as-images.imgix.net/e00dea741f5b38364ad49ced736844cb-3.jpeg",
+      "https://as-images.imgix.net/34a0e0dd68e4d5f614a04d8c3322ef8a-5.jpeg",
+      "https://as-images.imgix.net/3a8f6350a25ffe8cfd407f75849fb755-8.jpeg",
+      "https://as-images.imgix.net/364afad2ae848acee0dffb6ed5427834-7.jpeg",
+      "https://as-images.imgix.net/2a60c1537b6aad5a0562a386337681c9-10.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/de51ac906d64112340d712b35ecfe498-gjs-dillon-particulars-169-newtown-road-malvern.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-03-03 16:04:50"
+  },
+  {
+    "id": 346748,
+    "address": "Betony Road",
+    "town": "Malvern",
+    "postcode": "WR14 1GS",
+    "lat": 52.127925872,
+    "lon": -2.301863908,
+    "types": [
+      "Industrial",
+      "Trade Counter"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1640,
+    "size_to_sqft": 1640,
+    "summary": "Industrial / Trade Counter To Let, Malvern",
+    "description": "Malvern Business Centre is a modern purpose-built commercial complex comprising of 9 trade counters/business units which were constructed circa 2007. The units are of modern steel portal frame construction with part block / part steel profile cladding above, surmounted by an insulated steel profile clad pitched roof incorporating brand new roof lights which provide a good amount of natural light. Internally, the unit provides a good sized ground floor warehouse / trade counter area with modern ceiling mounted halogen lighting, an electrically operated steel roller shutter door with separate pedestrian doorway and a fully sealed concrete floor. Stairs lead up to a mezzanine storage area which can be used for storage or office use. Warehouse/Trade Counter Area 1,220 sq ft 113.30 sq m Mezzanine Floor 420 sq ft 39.02 sq m Total 1,640 sq ft 152.32 sq m Location Malvern Business Centre is situated on Enigma Business Park which is Malvern's main industrial / warehouse and office area - being approximately two miles north of Great Malvern town centre, eight miles south west of Worcester city centre, 21 miles east of Hereford city centre and 26 miles north of Gloucester. Malvern benefits from good transport communications with the A449 leading to Worcester city centre and the A4440 connecting with Junction 7 of the M5 motorway, which is approximately five miles to the north east. Malvern Business Centre is fronting yet set back from Betony Road which is the main spine road leading through Enigma Business Park and as such the unit benefits from a great deal of passing trade in this location. Other occupiers on Enigma Business Park include Screwfix, City Plumbing, Malvern Panalytical, Neoperl and Aldi. Adjacent to the business park there is Enigma Retail Park where several national retailers are represented including Boots, Morrisons, Next, McDonalds, Marks and Spencer and Caf√à Nero.",
+    "features": [
+      "Ground floor warehouse with mezzanine office / storage",
+      "Two allocated parking spaces with loading / unloading",
+      "Electrically operated roller shutter door",
+      "Fully sealed concrete floor"
+    ],
+    "rent_psf": 10.98,
+    "rent_pa": 18000,
+    "rent": "£18,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/f1456fc29e52aa909cb673215a455f0b-letting346748.jpeg",
+      "https://as-images.imgix.net/105e40aeb14e4502add61fcf6462be0d-letting346748.jpeg",
+      "https://as-images.imgix.net/f1f54b75cdc7d002a2a2b71eae97c8f0-letting346748.jpeg",
+      "https://as-images.imgix.net/71d86ccfe20eca20a07c5b1c94f9e140-letting346748.jpeg",
+      "https://as-images.imgix.net/660aa199af4b16101b751eb172b402ac-letting346748.jpeg",
+      "https://as-images.imgix.net/827d0d967b4935023358b094cb8aec00-letting346748.jpeg",
+      "https://as-images.imgix.net/63dce5ff883cf1610d983be7f9338599-letting346748.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c9c0eed25d7bd0dc5f6cebe4b74697da-gjs-dillon-particulars-1-malvern-busines-centre-malvern-wr14.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-03-03 16:03:40"
+  },
+  {
+    "id": 346700,
+    "address": "Kempsey Eco Business Park,Industrial / Warehouse Buildings",
+    "town": "Worcester",
+    "postcode": "WR5 3NY",
+    "lat": 52.130516052,
+    "lon": -2.215411901,
+    "types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1011,
+    "size_to_sqft": 1958,
+    "summary": "Industrial To Let, Worcester",
+    "description": "Kempsey Eco Business Park, a forward-thinking commercial destination designed to support businesses with sustainability at its core. Strategically located just off the A38, south of Worcester, this eco-friendly development offers high-quality, energy-efficient business units tailored for modern enterprises. With a strong emphasis on sustainability, Kempsey Eco Business Park incorporates renewable energy solutions, energy-efficient buildings, and green infrastructure to create an environmentally responsible workspace. The park is ideal for businesses seeking a future-proof location that aligns with corporate social responsibility goals while offering excellent accessibility and modern facilities. Join a growing community of forward-thinking businesses at Kempsey Eco Business Park, where sustainability meets commercial success. Kempsey is a delightful village situated 3 miles to the south of Worcester on the banks of the River Severn that can date its origins back to 1500BC when the Celts made a settlement here. It continued to be inhabited through Roman and Saxon times and played an important part in the Battle of Worcester in 1651. It currently has a population of c.4500 and is home to many locally owned businesses. Kempsey Eco Business Park can be found at the South end of the village bounded by the River Severn and the A38 Tewkesbury Road. It has excellent transport links including the M5 motorway (4 miles) and Worcester Parkway railway station (6 miles), as well as easy access by foot, bike and bus.",
+    "features": [
+      "Industrial units of 1011 - 1958 sq ft",
+      "Electric car charging points",
+      "Renewable clean biomass energy",
+      "On site car parking",
+      "Bike lock station",
+      "Photovoltaics panels to generate electricity"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/31a561633691ad5a6bd71ff11dd15869-letting346700.jpeg",
+      "https://as-images.imgix.net/87f7d44e176a27b58b68f22692f33f41-letting346700.jpeg",
+      "https://as-images.imgix.net/014a66308f34ac52143eb8a8342b22bd-letting346700.jpeg",
+      "https://as-images.imgix.net/04d282fc9cf3219a19f93d31500e71cd-letting346700.jpeg",
+      "https://as-images.imgix.net/c5f3fe75c41d4e33529e80a1a4dce4d2-letting346700.jpeg",
+      "https://as-images.imgix.net/fd8c1ff224c10087f5bb713e0595cf97-letting346700.jpeg",
+      "https://as-images.imgix.net/4b6a05e107a6b3eb309e2dcc0d4ff864-letting346700.jpeg",
+      "https://as-images.imgix.net/178cfe5dabdd47f3c9b81a868ef9d182-letting346700.jpeg",
+      "https://as-images.imgix.net/4cef282a48922224ced691b1bad938c4-letting346700.jpeg",
+      "https://as-images.imgix.net/b28b65ee0c292c9dcfb6db4695774cde-letting346700.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9557998d335e296fbae63dffe0ab6408-letting346700.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-03-03 16:01:41"
+  },
+  {
+    "id": 346701,
+    "address": "Kempsey Eco Business Park,Retail Units",
+    "town": "Kempsey",
+    "postcode": "WR5 3NY",
+    "lat": 52.130516052,
+    "lon": -2.215411901,
+    "types": [
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 682,
+    "size_to_sqft": 686,
+    "summary": "Retail To Let, Kempsey",
+    "description": "Kempsey Eco Business Park, a forward-thinking commercial destination designed to support businesses with sustainability at its core. Strategically located just off the A38, south of Worcester, this eco-friendly development offers high-quality, energy-efficient business units tailored for modern enterprises. With a strong emphasis on sustainability, Kempsey Eco Business Park incorporates renewable energy solutions, energy-efficient buildings, and green infrastructure to create an environmentally responsible workspace. The park is ideal for businesses seeking a future-proof location that aligns with corporate social responsibility goals while offering excellent accessibility and modern facilities. Join a growing community of forward-thinking businesses at Kempsey Eco Business Park, where sustainability meets commercial success. Location Kempsey is a delightful village situated 3 miles to the south of Worcester on the banks of the River Severn that can date its origins back to 1500BC when the Celts made a settlement here. It continued to be inhabited through Roman and Saxon times and played an important part in the Battle of Worcester in 1651. It currently has a population of c.4500 and is home to many locally owned businesses. Kempsey Eco Business Park can be found at the South end of the village bounded by the River Severn and the A38 Tewkesbury Road. It has excellent transport links including the M5 motorway (4 miles) and Worcester Parkway railway station (6 miles), as well as easy access by foot, bike and bus.",
+    "features": [
+      "Retail units of 682 - 686 sq ft",
+      "Electric car charging points",
+      "Renewable clean biomass energy",
+      "On site car parking",
+      "Bike lock station",
+      "Photovoltaics panels to generate electricity"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/d225ba7355db81bd2f3467c0b8e9073e-letting346701.jpeg",
+      "https://as-images.imgix.net/1a84081110a33c11b93dc7123a12667b-letting346701.jpeg",
+      "https://as-images.imgix.net/f2784693b1053f2b80522d2c150329cb-letting346701.jpeg",
+      "https://as-images.imgix.net/7d211949b5d9b916b8d346cca8797578-letting346701.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/1d550fa207a8246c1a4ef1336eb7fadc-letting346701.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-03-03 16:00:42"
+  },
+  {
+    "id": 350576,
+    "address": "The Joseph Wood Building",
+    "town": "Worcester",
+    "postcode": "WR1 3PA",
+    "lat": 52.1937382,
+    "lon": -2.2253299,
+    "types": [
+      "Office",
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 911,
+    "size_to_sqft": 911,
+    "summary": "City Centre Commercial Building, Suitable for a Variety of Uses",
+    "description": "The Old Joseph Wood Building has a direct frontage to The Butts, a one way road connecting the main ring road that circles Worcester city centre.  Worcester Foregate Street Station is circa 320m east of the property.  The building is arranged over the ground and first floors and is of traditional brick construction.\n\nThe ground floor is currently arranged as an open plan office, with the first floor comprising a large open plan room which doubles up as a kitchen, break out area and meeting space. There is also a WC at first floor level.\n\nGround Floor\t493 sq ft \t45.80 sq m \nFirst Floor\t418 sq ft \t38.80 sq m \nTotal\t911 sq ft \t84.60 sq m",
+    "location": "The Old Joseph Wood Building is situated within Worcester, \nin the West Midlands.  Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London.  Worcester has excellent access to the M5 motorway, which lies adjacent to the subject property with Junction 7 being approximately one and a half miles drive south.  The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network.\n\nWorcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
+    "features": [
+      "911 sq ft (84.6 sq m)",
+      "Ground and first floor building",
+      "Within walking distance of Worcester City Centre",
+      "Excellent links to public transport",
+      "Public car parks close by",
+      "Flexible lease terms avaiable"
+    ],
+    "rent_psf": 13.17,
+    "rent_pa": 12000,
+    "rent": "£12,000 per annum Per annum exclusive",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "E (119)",
+    "images": [
+      "https://as-images.imgix.net/b258fb726e20203f5d7035b56ac76cba-20250930-094330.jpg",
+      "https://as-images.imgix.net/41b8dd67ed564fc7cb50c029f2f1bde7-20250930-092331.jpg",
+      "https://as-images.imgix.net/e96de198b03e345dae0d2f6f570f4133-20250930-091604.jpg",
+      "https://as-images.imgix.net/816f861aaa1aa85a1c218b73d3dfdeb7-20250930-091532.jpg",
+      "https://as-images.imgix.net/0e642a1266326f120025485824b643db-20250930-091423.jpg",
+      "https://as-images.imgix.net/20c2aa6de6b1b23928106b905cdef094-20250930-091650.jpg",
+      "https://as-images.imgix.net/afc456a14c7170c4f3a0f41d1360539a-20250930-091411.jpg",
+      "https://as-images.imgix.net/cc06cba4c67c19ba8872259866c55ff4-20250930-091513.jpg",
+      "https://as-images.imgix.net/fba7a823a01a3784fceb977e6c602b82-20250930-091358.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/7015bdde0f6b4ca3fc42173454657fc1-gjs-dillon-particulars-the-old-joseph-wood-building-26-the-butts-wocester-wr1-3pa-3.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-03-03 15:59:45"
+  },
+  {
+    "id": 346703,
+    "address": "Vine Street",
+    "town": "Evesham",
+    "postcode": "WR11 4RE",
+    "lat": 52.092025756,
+    "lon": -1.948582053,
+    "types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 880,
+    "size_to_sqft": 880,
+    "summary": "Office To Let, Evesham",
+    "description": "Horizons House is a two storey, multi-let office building arranged over the ground and first floors. The subject of this letting comprises the entire ground floor. The office space can be accessed via two private entrances (including one from the Abbey Park) or via a communal entrance. Over the ground floor there are two open plan office areas and WC facilities - which are for the sole use of the Tenant and are not shared with other occupiers. Ground Floor880 sq ft 81.77 sq m Horizons House is located within Evesham, a market town within Worcestershire. The town has excellent transport links being situated on the A44 and A46 - with the A44 providing access west to Junction 6 of the M5 motorway (11 miles distant) and east to the Cotswolds & Oxford; and the A46 providing access south to Junction 9 of the M5 motorway (9 miles distant) and north to Redditch & Junction 15 of the M40 motorway (17 miles distant and providing direct access to Birmingham, London & Birmingham International Airport). Evesham also has a mainline railway station which provides a direct service to Worcester (20 mins), Oxford (50 mins) & London Paddington (circa 1hr 45 mins). Horizons House benefits from being adjacent to Abbey Park and looks out over the historic Bell Tower and the twin churches of All Saints & St. Lawrence - providing an attractive place to work whilst still being adjacent to Evesham town centre.",
+    "features": [
+      "Refurbished ground floor open plan office",
+      "Stunning outlook on to the Abbey Park",
+      "Recently refurbished to a high standard",
+      "Stunning outlook on to Abbey Park",
+      "Situated adjacent to Evesham Town Centre"
+    ],
+    "rent_psf": 13.64,
+    "rent_pa": 12000,
+    "rent": "£12,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/3c10d57b08b0c667428966dcf209b6fe-letting346703.jpeg",
+      "https://as-images.imgix.net/c4bf747fb1bd9f31f730cfdea032df0d-letting346703.jpeg",
+      "https://as-images.imgix.net/d9f075a149cf3d117ba96413cf4d1750-letting346703.jpeg",
+      "https://as-images.imgix.net/6d54feab7eaa9682c9f47f1dc391df0b-letting346703.jpeg",
+      "https://as-images.imgix.net/b90519cc53bb2d4a43ea974f6cbaee98-letting346703.jpeg",
+      "https://as-images.imgix.net/2e1e4233246441744accc8a91a492340-letting346703.jpeg",
+      "https://as-images.imgix.net/35b8b431319abe4a45dbe3c26eb217ca-letting346703.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f38cf5f1e6e0e2d538c39efe52420dc3-letting346703.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-03-03 15:58:48"
+  },
+  {
     "id": 346660,
     "address": "9-10 The Tything",
     "town": "Worcester",
@@ -1060,54 +1534,6 @@
     "last_updated": "2026-02-27 15:11:28"
   },
   {
-    "id": 346878,
-    "address": "58 Oxford Street",
-    "town": "Kidderminster",
-    "postcode": "DY10 1BJ",
-    "lat": 52.386146545,
-    "lon": -2.247409105,
-    "types": [
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 732,
-    "size_to_sqft": 732,
-    "summary": "Prominently positioned retail premises",
-    "description": "The property offers a retail / office area over the ground floor, which also provides a prominent frontage to Oxford Street. Also, at ground floor level is a rear kitchen and WC facilities, along with a small yard area. Over the first floor there is further accommodation set within three different rooms.",
-    "features": [],
-    "rent_psf": 12.43,
-    "rent_pa": 9100,
-    "rent": "£9,100 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/35401594fad623b1749ab38818668325-letting346878.jpeg",
-      "https://as-images.imgix.net/c6f82fe7d76674506cfa220525cb2622-letting346878.jpeg",
-      "https://as-images.imgix.net/0d5d61c00f9255b3a0ec38f3da6384ba-letting346878.jpeg",
-      "https://as-images.imgix.net/384c5667f17749116fd744d8954a6efa-letting346878.jpeg",
-      "https://as-images.imgix.net/60282339ca390e15c7d03d91b581f043-letting346878.jpeg",
-      "https://as-images.imgix.net/69bd2522e4b17efa75349d1d61eba60a-letting346878.jpeg",
-      "https://as-images.imgix.net/98a99117018ad783ee2ff1befe7a7d59-letting346878.jpeg",
-      "https://as-images.imgix.net/3ef9ee755b6f50351de53f872886b25d-letting346878.jpeg",
-      "https://as-images.imgix.net/120c5bfa9e4427af07f9dcdc9bc3b56a-letting346878.jpeg",
-      "https://as-images.imgix.net/c71c29b5dbdbbc5a594d50bb213bd577-letting346878.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9a03acd7d302f46e1ec45ecc0238802c-letting346878.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-27 15:05:52"
-  },
-  {
     "id": 351584,
     "address": "155 London Road",
     "town": "Worcester",
@@ -1166,114 +1592,6 @@
       }
     ],
     "last_updated": "2026-02-27 14:50:49"
-  },
-  {
-    "id": 346736,
-    "address": "4 Richmond Road",
-    "town": "Malvern",
-    "postcode": "WR14 1NE",
-    "lat": 52.12851715,
-    "lon": -2.315370082,
-    "types": [
-      "Investment"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 1081,
-    "size_to_sqft": 1081,
-    "summary": "Investment For Sale, Malvern",
-    "description": "The property comprises two separate retail shops on the ground floor which extend in total to 1,081 sq ft (100.43 sq m). There is residential accommodation above which has been sold off on a long leasehold basis for a term of 125 years from 01/04/2005. The shops operate independently as a caf√à and hair salon with off street parking available to the front to the hair salon. \nUnit 1 - 422 sq ft (39.18 sq m)\nUnit 2 - 659 sq ft (61.25 sq m) \nThe first floor accommodation has been sold off on a long leasehold basis. \nTenancies\nUnit 1 - Trading as Sunbean caf√à & sunbeds and let for a term of 5 years from 27/02/2024, expiring 26/02/29, at a passing rent of ¬£8,750 pa. \nUnit 2 - Trading as Luxury Cutz and let for a term of 5 years from 01/03/222, expiring 28/02/27, at a passing rent of ¬£7,500 pa. \n\nThe combined rental income is ¬£16,250 per annum.",
-    "features": [],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/7c2613fdfcb3853c29230022ad83289b-letting346736.jpeg",
-      "https://as-images.imgix.net/6f7d5d7def0d56ba650131418331d05f-letting346736.jpeg",
-      "https://as-images.imgix.net/a125ac5fb2939b81b300d757ccd2e715-letting346736.jpeg",
-      "https://as-images.imgix.net/3e420d1512f9fc6c5f902247cb9e6f3f-letting346736.jpeg",
-      "https://as-images.imgix.net/37ea2414e6f32866dd5741820b504c25-letting346736.jpeg",
-      "https://as-images.imgix.net/092435094ebfbad239394f5531850a8e-letting346736.jpeg",
-      "https://as-images.imgix.net/63966b6bfb96ae4ea5c1e79be06a862b-letting346736.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c54e99bb6da9bd70ac289900218cede0-letting346736.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-27 13:26:05"
-  },
-  {
-    "id": 353374,
-    "address": "169-171 Newtown Road",
-    "town": "Malvern",
-    "postcode": "WR14 1PJ",
-    "lat": 52.126083,
-    "lon": -2.331358,
-    "types": [
-      "Automotive",
-      "Development Site"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 9124,
-    "size_to_sqft": 9124,
-    "summary": "Freehold Car Sales Premises, Suitable for Development (STP)",
-    "description": "The current building offers a detached showroom and workshop sitting central within a regular plot.  The building is accessed via a showroom to the front and two roller shutter doors to the rear.\n\nThe existing building offers the following:\n\nCar Showroom\t2,572 ft2\t\t(239 m2)\nWorkshop\t6,552 ft2\t\t(609 m2)\nTotal \t9,124 ft2\t\t(848 m2)\n\nExternally there is a forecourt to the front which offers parking for 20-25 vehicles along with a further parking area to the rear for 35-40 vehicles.  The main frontage is onto Newtown Road, however, there is a rear access off Nursery Road.\n\nThe site has a total area of 0.64, as shown by the site plan.\n\nRe-Development\nThe sites extends to 0.64 acres and is situated within a residential area of Malvern, it is therefore well suited for re-development, subject to gaining the necessary planning consents.",
-    "location": "Malvern is a spa town in Worcestershire with a population of 30,462 as at the 2021 Census.  Within Malvern, the property fronts the B4503 Newtown Road, in close proximity to its junction with the A449 Worcester Road and circa 1 ½ miles west of Great Malvern town centre.\n\nThe immediate surrounding area is predominantly residential, with some local retail occupiers being located on Newtown Road.  Hills Ford are vacating due to expansion to a larger site in Worcester.",
-    "features": [
-      "Currently operating as Hills Ford motor dealership, who are relocating due to expansion into Worcester",
-      "Existing facility extends to 9,124 sq ft (848 sq m)",
-      "Regular shaped site extending to 0.64 acres",
-      "Situated in a predominantly residential area and therefore suitable for re-development, subject to planning",
-      "Has dual access off Newtown Road and Nursery Road."
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/92579b6aeac8e7bc496aea13709404ea-23.jpeg",
-      "https://as-images.imgix.net/95e0e4c9661ae3a79a57e2825f4d9c32-19.jpeg",
-      "https://as-images.imgix.net/1e98ffd0f9565d6d6d707edbc2f0facb-14.jpeg",
-      "https://as-images.imgix.net/4fed5437cbf8c65c6a12b6c552b881b0-13.jpeg",
-      "https://as-images.imgix.net/387a6b9083ea90ea3f0f06207e444b9e-1.jpeg",
-      "https://as-images.imgix.net/c59c64bd6c0adf14878c2f4526f89b65-18.jpeg",
-      "https://as-images.imgix.net/87733d5af2b11902232201ca410d01bf-15.jpeg",
-      "https://as-images.imgix.net/2c37bb1557745091d573c84ca541d2d9-16.jpeg",
-      "https://as-images.imgix.net/0974715b61b0523d37a9953f987321e5-12.jpeg",
-      "https://as-images.imgix.net/c576f7b509f7e0c267f03854ee53d717-11.jpeg",
-      "https://as-images.imgix.net/e00dea741f5b38364ad49ced736844cb-3.jpeg",
-      "https://as-images.imgix.net/34a0e0dd68e4d5f614a04d8c3322ef8a-5.jpeg",
-      "https://as-images.imgix.net/3a8f6350a25ffe8cfd407f75849fb755-8.jpeg",
-      "https://as-images.imgix.net/364afad2ae848acee0dffb6ed5427834-7.jpeg",
-      "https://as-images.imgix.net/2a60c1537b6aad5a0562a386337681c9-10.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/de51ac906d64112340d712b35ecfe498-gjs-dillon-particulars-169-newtown-road-malvern.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-27 13:19:35"
   },
   {
     "id": 346672,
@@ -1418,157 +1736,6 @@
       }
     ],
     "last_updated": "2026-02-27 13:12:00"
-  },
-  {
-    "id": 346703,
-    "address": "Vine Street",
-    "town": "Evesham",
-    "postcode": "WR11 4RE",
-    "lat": 52.092025756,
-    "lon": -1.948582053,
-    "types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 880,
-    "size_to_sqft": 880,
-    "summary": "Office To Let, Evesham",
-    "description": "Horizons House is a two storey, multi-let office building arranged over the ground and first floors. The subject of this letting comprises the entire ground floor. The office space can be accessed via two private entrances (including one from the Abbey Park) or via a communal entrance. Over the ground floor there are two open plan office areas and WC facilities - which are for the sole use of the Tenant and are not shared with other occupiers. Ground Floor880 sq ft 81.77 sq m Horizons House is located within Evesham, a market town within Worcestershire. The town has excellent transport links being situated on the A44 and A46 - with the A44 providing access west to Junction 6 of the M5 motorway (11 miles distant) and east to the Cotswolds & Oxford; and the A46 providing access south to Junction 9 of the M5 motorway (9 miles distant) and north to Redditch & Junction 15 of the M40 motorway (17 miles distant and providing direct access to Birmingham, London & Birmingham International Airport). Evesham also has a mainline railway station which provides a direct service to Worcester (20 mins), Oxford (50 mins) & London Paddington (circa 1hr 45 mins). Horizons House benefits from being adjacent to Abbey Park and looks out over the historic Bell Tower and the twin churches of All Saints & St. Lawrence - providing an attractive place to work whilst still being adjacent to Evesham town centre.",
-    "features": [
-      "Refurbished ground floor open plan office",
-      "Stunning outlook on to the Abbey Park",
-      "Recently refurbished to a high standard",
-      "Stunning outlook on to Abbey Park",
-      "Situated adjacent to Evesham Town Centre"
-    ],
-    "rent_psf": 13.64,
-    "rent_pa": 12000,
-    "rent": "£12,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/3c10d57b08b0c667428966dcf209b6fe-letting346703.jpeg",
-      "https://as-images.imgix.net/c4bf747fb1bd9f31f730cfdea032df0d-letting346703.jpeg",
-      "https://as-images.imgix.net/d9f075a149cf3d117ba96413cf4d1750-letting346703.jpeg",
-      "https://as-images.imgix.net/6d54feab7eaa9682c9f47f1dc391df0b-letting346703.jpeg",
-      "https://as-images.imgix.net/b90519cc53bb2d4a43ea974f6cbaee98-letting346703.jpeg",
-      "https://as-images.imgix.net/2e1e4233246441744accc8a91a492340-letting346703.jpeg",
-      "https://as-images.imgix.net/35b8b431319abe4a45dbe3c26eb217ca-letting346703.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f38cf5f1e6e0e2d538c39efe52420dc3-letting346703.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-27 13:02:55"
-  },
-  {
-    "id": 346701,
-    "address": "Kempsey Eco Business Park,Retail Units",
-    "town": "Kempsey",
-    "postcode": "WR5 3NY",
-    "lat": 52.130516052,
-    "lon": -2.215411901,
-    "types": [
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 682,
-    "size_to_sqft": 686,
-    "summary": "Retail To Let, Kempsey",
-    "description": "Kempsey Eco Business Park, a forward-thinking commercial destination designed to support businesses with sustainability at its core. Strategically located just off the A38, south of Worcester, this eco-friendly development offers high-quality, energy-efficient business units tailored for modern enterprises. With a strong emphasis on sustainability, Kempsey Eco Business Park incorporates renewable energy solutions, energy-efficient buildings, and green infrastructure to create an environmentally responsible workspace. The park is ideal for businesses seeking a future-proof location that aligns with corporate social responsibility goals while offering excellent accessibility and modern facilities. Join a growing community of forward-thinking businesses at Kempsey Eco Business Park, where sustainability meets commercial success. Location Kempsey is a delightful village situated 3 miles to the south of Worcester on the banks of the River Severn that can date its origins back to 1500BC when the Celts made a settlement here. It continued to be inhabited through Roman and Saxon times and played an important part in the Battle of Worcester in 1651. It currently has a population of c.4500 and is home to many locally owned businesses. Kempsey Eco Business Park can be found at the South end of the village bounded by the River Severn and the A38 Tewkesbury Road. It has excellent transport links including the M5 motorway (4 miles) and Worcester Parkway railway station (6 miles), as well as easy access by foot, bike and bus.",
-    "features": [
-      "Retail units of 682 - 686 sq ft",
-      "Electric car charging points",
-      "Renewable clean biomass energy",
-      "On site car parking",
-      "Bike lock station",
-      "Photovoltaics panels to generate electricity"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/d225ba7355db81bd2f3467c0b8e9073e-letting346701.jpeg",
-      "https://as-images.imgix.net/1a84081110a33c11b93dc7123a12667b-letting346701.jpeg",
-      "https://as-images.imgix.net/f2784693b1053f2b80522d2c150329cb-letting346701.jpeg",
-      "https://as-images.imgix.net/7d211949b5d9b916b8d346cca8797578-letting346701.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/1d550fa207a8246c1a4ef1336eb7fadc-letting346701.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-27 13:02:28"
-  },
-  {
-    "id": 346700,
-    "address": "Kempsey Eco Business Park,Industrial / Warehouse Buildings",
-    "town": "Worcester",
-    "postcode": "WR5 3NY",
-    "lat": 52.130516052,
-    "lon": -2.215411901,
-    "types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1011,
-    "size_to_sqft": 1958,
-    "summary": "Industrial To Let, Worcester",
-    "description": "Kempsey Eco Business Park, a forward-thinking commercial destination designed to support businesses with sustainability at its core. Strategically located just off the A38, south of Worcester, this eco-friendly development offers high-quality, energy-efficient business units tailored for modern enterprises. With a strong emphasis on sustainability, Kempsey Eco Business Park incorporates renewable energy solutions, energy-efficient buildings, and green infrastructure to create an environmentally responsible workspace. The park is ideal for businesses seeking a future-proof location that aligns with corporate social responsibility goals while offering excellent accessibility and modern facilities. Join a growing community of forward-thinking businesses at Kempsey Eco Business Park, where sustainability meets commercial success. Kempsey is a delightful village situated 3 miles to the south of Worcester on the banks of the River Severn that can date its origins back to 1500BC when the Celts made a settlement here. It continued to be inhabited through Roman and Saxon times and played an important part in the Battle of Worcester in 1651. It currently has a population of c.4500 and is home to many locally owned businesses. Kempsey Eco Business Park can be found at the South end of the village bounded by the River Severn and the A38 Tewkesbury Road. It has excellent transport links including the M5 motorway (4 miles) and Worcester Parkway railway station (6 miles), as well as easy access by foot, bike and bus.",
-    "features": [
-      "Industrial units of 1011 - 1958 sq ft",
-      "Electric car charging points",
-      "Renewable clean biomass energy",
-      "On site car parking",
-      "Bike lock station",
-      "Photovoltaics panels to generate electricity"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/31a561633691ad5a6bd71ff11dd15869-letting346700.jpeg",
-      "https://as-images.imgix.net/87f7d44e176a27b58b68f22692f33f41-letting346700.jpeg",
-      "https://as-images.imgix.net/014a66308f34ac52143eb8a8342b22bd-letting346700.jpeg",
-      "https://as-images.imgix.net/04d282fc9cf3219a19f93d31500e71cd-letting346700.jpeg",
-      "https://as-images.imgix.net/c5f3fe75c41d4e33529e80a1a4dce4d2-letting346700.jpeg",
-      "https://as-images.imgix.net/fd8c1ff224c10087f5bb713e0595cf97-letting346700.jpeg",
-      "https://as-images.imgix.net/4b6a05e107a6b3eb309e2dcc0d4ff864-letting346700.jpeg",
-      "https://as-images.imgix.net/178cfe5dabdd47f3c9b81a868ef9d182-letting346700.jpeg",
-      "https://as-images.imgix.net/4cef282a48922224ced691b1bad938c4-letting346700.jpeg",
-      "https://as-images.imgix.net/b28b65ee0c292c9dcfb6db4695774cde-letting346700.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9557998d335e296fbae63dffe0ab6408-letting346700.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-27 13:02:10"
   },
   {
     "id": 346665,
@@ -2040,58 +2207,6 @@
     "last_updated": "2026-02-27 12:37:44"
   },
   {
-    "id": 346648,
-    "address": "The Old Mill",
-    "town": "Pershore",
-    "postcode": "WR10 1BY",
-    "lat": 52.11138916,
-    "lon": -2.082348108,
-    "types": [
-      "Retail",
-      "Office",
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 5575,
-    "size_to_sqft": 5757,
-    "summary": "Retail / Office / Industrial To Let, Pershore",
-    "description": "The Old Mill comprises a large, detached commercial premises of traditional brick construction. The building has an open-plan retail sales area, which benefits from suspended LED lighting. Ancillary accommodation is provided at ground and first floor levels, including staff and storage areas, along with a mezzanine floor. There are approximately 20 car parking spaces. Ground Floor Sales3,400 sq ft315.87 sq m Ground Floor Ancillary 520 sq ft 48.31 sq m Mezzanine Area1,349 sq ft125.33 sq m First Floor Ancillary 306 sq ft 28.43 sq m Total5,575 sq ft 517.93 sq m Location The property is prominently located on New Road in Pershore, a well-connected Worcestershire market town approximately 10 miles from Worcester and 7 miles from Evesham. The Old Mill is positioned close to the River Avon and within easy walking distance of Pershore town centre. The location benefits from good transport links, including nearby access to the A44 and Pershore railway station with services to Worcester, Oxford and London.",
-    "features": [
-      "Suitable for a variety of uses",
-      "Ground and first floor space",
-      "On site car parking",
-      "Good access to the A44, leading to the M5 motorway"
-    ],
-    "rent_psf": 5.02,
-    "rent_pa": 28000,
-    "rent": "£28,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/23387c8a7ce3b5b7fe2a131ab060c4f7-letting346648.jpeg",
-      "https://as-images.imgix.net/3e32dbaedb4939efef5d6832670c92cc-letting346648.jpeg",
-      "https://as-images.imgix.net/209a69c9adf175d282719bed4e21ecef-letting346648.jpeg",
-      "https://as-images.imgix.net/a70f037aa6b30150aff0c933cbe197ef-letting346648.jpeg",
-      "https://as-images.imgix.net/fae4d88addd61870797e6b9a1473a0f7-letting346648.jpeg",
-      "https://as-images.imgix.net/434f2a7a885c6a94b66e25a64e2d0fcf-letting346648.jpeg",
-      "https://as-images.imgix.net/90e27364575128aa53e3d53c3c11b5cc-letting346648.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6a207975ae15e397dfa5dbdbf0df0063-letting346648.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-27 12:37:24"
-  },
-  {
     "id": 346725,
     "address": "Unit 1, Droitwich Enterprise Hub",
     "town": "Droitwich",
@@ -2135,57 +2250,6 @@
       }
     ],
     "last_updated": "2026-02-27 12:19:04"
-  },
-  {
-    "id": 346748,
-    "address": "Betony Road",
-    "town": "Malvern",
-    "postcode": "WR14 1GS",
-    "lat": 52.127925872,
-    "lon": -2.301863908,
-    "types": [
-      "Industrial",
-      "Trade Counter"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1640,
-    "size_to_sqft": 1640,
-    "summary": "Industrial / Trade Counter To Let, Malvern",
-    "description": "Malvern Business Centre is a modern purpose-built commercial complex comprising of 9 trade counters/business units which were constructed circa 2007. The units are of modern steel portal frame construction with part block / part steel profile cladding above, surmounted by an insulated steel profile clad pitched roof incorporating brand new roof lights which provide a good amount of natural light. Internally, the unit provides a good sized ground floor warehouse / trade counter area with modern ceiling mounted halogen lighting, an electrically operated steel roller shutter door with separate pedestrian doorway and a fully sealed concrete floor. Stairs lead up to a mezzanine storage area which can be used for storage or office use. Warehouse/Trade Counter Area 1,220 sq ft 113.30 sq m Mezzanine Floor 420 sq ft 39.02 sq m Total 1,640 sq ft 152.32 sq m Location Malvern Business Centre is situated on Enigma Business Park which is Malvern's main industrial / warehouse and office area - being approximately two miles north of Great Malvern town centre, eight miles south west of Worcester city centre, 21 miles east of Hereford city centre and 26 miles north of Gloucester. Malvern benefits from good transport communications with the A449 leading to Worcester city centre and the A4440 connecting with Junction 7 of the M5 motorway, which is approximately five miles to the north east. Malvern Business Centre is fronting yet set back from Betony Road which is the main spine road leading through Enigma Business Park and as such the unit benefits from a great deal of passing trade in this location. Other occupiers on Enigma Business Park include Screwfix, City Plumbing, Malvern Panalytical, Neoperl and Aldi. Adjacent to the business park there is Enigma Retail Park where several national retailers are represented including Boots, Morrisons, Next, McDonalds, Marks and Spencer and Caf√à Nero.",
-    "features": [
-      "Ground floor warehouse with mezzanine office / storage",
-      "Two allocated parking spaces with loading / unloading",
-      "Electrically operated roller shutter door",
-      "Fully sealed concrete floor"
-    ],
-    "rent_psf": 10.98,
-    "rent_pa": 18000,
-    "rent": "£18,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/f1456fc29e52aa909cb673215a455f0b-letting346748.jpeg",
-      "https://as-images.imgix.net/105e40aeb14e4502add61fcf6462be0d-letting346748.jpeg",
-      "https://as-images.imgix.net/f1f54b75cdc7d002a2a2b71eae97c8f0-letting346748.jpeg",
-      "https://as-images.imgix.net/71d86ccfe20eca20a07c5b1c94f9e140-letting346748.jpeg",
-      "https://as-images.imgix.net/660aa199af4b16101b751eb172b402ac-letting346748.jpeg",
-      "https://as-images.imgix.net/827d0d967b4935023358b094cb8aec00-letting346748.jpeg",
-      "https://as-images.imgix.net/63dce5ff883cf1610d983be7f9338599-letting346748.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c9c0eed25d7bd0dc5f6cebe4b74697da-gjs-dillon-particulars-1-malvern-busines-centre-malvern-wr14.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-27 11:50:46"
   },
   {
     "id": 346750,
@@ -2349,69 +2413,5 @@
       }
     ],
     "last_updated": "2026-02-27 11:02:23"
-  },
-  {
-    "id": 350576,
-    "address": "The Joseph Wood Building",
-    "town": "Worcester",
-    "postcode": "WR1 3PA",
-    "lat": 52.1937382,
-    "lon": -2.2253299,
-    "types": [
-      "Office",
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 911,
-    "size_to_sqft": 911,
-    "summary": "City Centre Commercial Building, Suitable for a Variety of Uses",
-    "description": "The Old Joseph Wood Building has a direct frontage to The Butts, a one way road connecting the main ring road that circles Worcester city centre.  Worcester Foregate Street Station is circa 320m east of the property.  The building is arranged over the ground and first floors and is of traditional brick construction.\n\nThe ground floor is currently arranged as an open plan office, with the first floor comprising a large open plan room which doubles up as a kitchen, break out area and meeting space. There is also a WC at first floor level.\n\nGround Floor\t493 sq ft \t45.80 sq m \nFirst Floor\t418 sq ft \t38.80 sq m \nTotal\t911 sq ft \t84.60 sq m",
-    "location": "The Old Joseph Wood Building is situated within Worcester, \nin the West Midlands.  Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London.  Worcester has excellent access to the M5 motorway, which lies adjacent to the subject property with Junction 7 being approximately one and a half miles drive south.  The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network.\n\nWorcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
-    "features": [
-      "911 sq ft (84.6 sq m)",
-      "Ground and first floor building",
-      "Within walking distance of Worcester City Centre",
-      "Excellent links to public transport",
-      "Public car parks close by",
-      "Flexible lease terms avaiable"
-    ],
-    "rent_psf": 13.17,
-    "rent_pa": 12000,
-    "rent": "£12,000 per annum Per annum exclusive",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "E (119)",
-    "images": [
-      "https://as-images.imgix.net/b258fb726e20203f5d7035b56ac76cba-20250930-094330.jpg",
-      "https://as-images.imgix.net/41b8dd67ed564fc7cb50c029f2f1bde7-20250930-092331.jpg",
-      "https://as-images.imgix.net/e96de198b03e345dae0d2f6f570f4133-20250930-091604.jpg",
-      "https://as-images.imgix.net/816f861aaa1aa85a1c218b73d3dfdeb7-20250930-091532.jpg",
-      "https://as-images.imgix.net/0e642a1266326f120025485824b643db-20250930-091423.jpg",
-      "https://as-images.imgix.net/20c2aa6de6b1b23928106b905cdef094-20250930-091650.jpg",
-      "https://as-images.imgix.net/afc456a14c7170c4f3a0f41d1360539a-20250930-091411.jpg",
-      "https://as-images.imgix.net/cc06cba4c67c19ba8872259866c55ff4-20250930-091513.jpg",
-      "https://as-images.imgix.net/fba7a823a01a3784fceb977e6c602b82-20250930-091358.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/7015bdde0f6b4ca3fc42173454657fc1-gjs-dillon-particulars-the-old-joseph-wood-building-26-the-butts-wocester-wr1-3pa-3.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-27 10:40:40"
   }
 ]
