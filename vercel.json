@@ -9,6 +9,7 @@
     { "src": "/api/(.*)", "dest": "/api/$1" },
     { "src": "/property.html", "dest": "/property.html" },
     { "src": "/properties.json", "dest": "/properties.json" },
+    { "src": "/property-search/([^/]+)", "dest": "/property.html?id=$1" },
     { "src": "^/$", "dest": "/index.html" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
