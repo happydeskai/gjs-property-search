@@ -185,7 +185,17 @@ if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 
 /* ---------- helpers ---------- */
 const $ = (s, el=document) => el.querySelector(s);
-const getParam = n => new URLSearchParams(location.search).get(n);
+const getParam = n => {
+  // First try query string (?id=...)
+  const qs = new URLSearchParams(location.search).get(n);
+  if (qs) return qs;
+  // Also support path-based URLs like /property-search/353367
+  if (n === 'id') {
+    const match = location.pathname.match(/\/property-search\/([^/]+)/);
+    if (match) return match[1];
+  }
+  return null;
+};
 const pick = (...vals) => vals.find(v => v !== undefined && v !== null && v !== '');
 const initials = n => n ? n.trim().split(/\s+/).slice(0,2).map(w=>w[0]?.toUpperCase()||'').join('') : '';
 
