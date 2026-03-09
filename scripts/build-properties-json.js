@@ -56,11 +56,8 @@ async function run() {
   console.log(`Found ${props.length} properties in feed`);
 
   const out = props
-    // keep Available (or missing status)
-    .filter((p) => {
-      const status = String(p.status || "").toLowerCase();
-      return !status || status.includes("available");
-    })
+    // Include ALL properties – unavailable ones (Under Offer, Let Agreed, Sold…)
+    // are kept so they appear on the site with a clear status badge.
     .map((p, i) => {
       // availability + types
       const av = arr(p.availabilities?.type)
@@ -149,8 +146,15 @@ async function run() {
       const business_rates_psf = num(p.business_rates?.rates_payable);
       const rateable_value = num(p.business_rates?.rateable_value);
 
+      // Normalise status: capitalise first letter of each word
+      const rawStatus = txt(p.status);
+      const status = rawStatus
+        ? rawStatus.replace(/\b\w/g, (c) => c.toUpperCase())
+        : "Available";
+
       return {
         id: Number(p.id ?? p.object_id ?? i),
+        status,
         address: txt(p.address1) || txt(p.name),
         town: txt(p.town),
         postcode: txt(p.postcode),
