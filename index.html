@@ -126,6 +126,14 @@
     .card__title{ font-size: 18px; font-weight: 600; margin: 0 0 6px; color: var(--text); text-decoration: none; }
     .card__meta{ color: var(--muted); font-size: 14px; margin-top: 6px; }
     .chip{ display:inline-block; background:#f6f6f6; padding:6px 10px; border-radius:999px; font-size:12px; margin-top:8px; }
+    .status-badge{ display:inline-block; padding:4px 9px; border-radius:999px; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; margin-bottom:4px; }
+    .status-available{ background:#dcfce7; color:#15803d; }
+    .status-under-offer{ background:#fef9c3; color:#92400e; }
+    .status-let-agreed{ background:#fee2e2; color:#b91c1c; }
+    .status-sold{ background:#fee2e2; color:#b91c1c; }
+    .status-sold-stc{ background:#ffedd5; color:#c2410c; }
+    .status-other{ background:#f3f4f6; color:#374151; }
+    .card--unavailable .card__media img{ opacity:0.6; }
 
     .card__footer{ display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px; border-top: var(--border); }
     .btn-link, .btn-ghost{ height:36px; padding:0 12px; border-radius:8px; display:inline-flex; align-items:center; justify-content:center; font-size:14px; text-decoration:none; }
@@ -261,6 +269,19 @@ function getTenureLabel(p) {
   return '';
 }
 
+function getStatusBadge(p) {
+  const status = String(p.status || 'Available').trim();
+  const lc = status.toLowerCase();
+  let cls = 'status-other';
+  if (!lc || lc === 'available') cls = 'status-available';
+  else if (lc.includes('under offer')) cls = 'status-under-offer';
+  else if (lc.includes('let agreed')) cls = 'status-let-agreed';
+  else if (lc === 'sold stc' || lc.includes('subject to contract')) cls = 'status-sold-stc';
+  else if (lc === 'sold') cls = 'status-sold';
+  const isUnavailable = !(!lc || lc === 'available');
+  return { html: `<span class="status-badge ${cls}">${status}</span>`, isUnavailable };
+}
+
 function sizeText(p) {
   const a = Number(p.size_from_sqft || 0);
   const b = Number(p.size_to_sqft || 0);
@@ -364,19 +385,23 @@ function render(list, context = {}) {
     const postcode = p.postcode || '';
     const size = sizeText(p);
     const tenureLabel = getTenureLabel(p);
+    const { html: statusBadge, isUnavailable } = getStatusBadge(p);
     // FIX: distance now shown in miles (consistent with radius filter UI)
     const distStr = (typeof p.__distance === 'number' && isFinite(p.__distance))
       ? ` • ${(p.__distance / 1609.344).toFixed(1)} mi`
       : '';
 
     return `
-      <article class="card">
+      <article class="card${isUnavailable ? ' card--unavailable' : ''}">
         <div class="card__media">${img ? `<img src="${img}" alt="${address}" loading="lazy">` : ''}</div>
         <div class="card__body">
+          <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:2px;">
+            ${statusBadge}
+            ${tenureLabel ? `<span class="chip" style="margin-top:0;">${tenureLabel}</span>` : ''}
+          </div>
           <div class="card__loc">${[town, postcode].filter(Boolean).join(' ')}${distStr}</div>
           <a class="card__title" href="property.html?id=${encodeURIComponent(p.id ?? '')}" aria-label="View ${address}">${address}</a>
           ${size ? `<div class="card__meta">${size}</div>` : ''}
-          ${tenureLabel ? `<span class="chip">${tenureLabel}</span>` : ''}
         </div>
         <div class="card__footer">
           <a class="btn-ghost" href="property.html?id=${encodeURIComponent(p.id ?? '')}">View property</a>
