@@ -1,5 +1,60 @@
 [
   {
+    "id": 346669,
+    "status": "Under Offer",
+    "address": "Office at Ladybird Barn",
+    "town": "Bromsgrove",
+    "postcode": "B60 1PH",
+    "lat": 52.343273162,
+    "lon": -2.047919988,
+    "types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2648,
+    "size_to_sqft": 2648,
+    "summary": "Office To Let, Bromsgrove",
+    "description": "The office space at Ladybird Barn comprises a two-storey office building which benefits from three elevations and thus an abundance of natural light. The building is arranged over the ground and first floor and is accessed via a pedestrian door to the front of the building. Upon accessing the property there is a large reception area, two private offices, WC & kitchen facilities, along with further storage and a sever room. An internal staircase accesses the first floor which offers further office accommodation, which currently offers six offices however could be offered open plan if needed. Ground Floor1,251 sq ft 116.20 sq m First Floor1,397 sq ft 129.76 sq m Total2,648 sq ft 245.96 sq m Location Ladybird Barn lies adjacent to the A38 in Bromsgrove and is approximately one mile south of Junction 1 of the M42 and one mile east of Bromsgrove town centre. The mixed used development is accessed off Old Burcot Lane, with a prominent frontage to the busy A38. Nearby occupiers that include David Lloyd, Premier Inn, Bromsgrove Fire Station, Artrix Arts Centre and Heart of Worcestershire College. Junction 4 of the M5 motorway and Junction 1 of the M42 motorway lie close by and provide access to the M5 and M42 motorways as well as the national motorway network. Birmingham City Centre is situated approximately 15 miles to the north and Worcester City Centre is situated approximately 10 miles to the south. Bromsgrove has a mainline railway station which is situated to the east of the town. There are frequent trains to Birmingham New Street, Worcester Foregate Street and Hereford. There is also a bus station adjacent to the high street. Buses operate to a wide area of Worcestershire and the West Midlands. Birmingham Airport is around 22 miles away which equates to circa 30 mins by car.",
+    "features": [
+      "LED Lighting throughout",
+      "Large amount of air conditioning",
+      "Perimeter trunking",
+      "On site parking"
+    ],
+    "rent_psf": 10.39,
+    "rent_pa": 27500,
+    "rent": "£27,500 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/fdb9acca468b06f5363f3de86dd588e4-letting346669.jpeg",
+      "https://as-images.imgix.net/89b451855493ecf44f51834980f5843e-letting346669.jpeg",
+      "https://as-images.imgix.net/e7d9b4b640cfd6cae9f06a3980ff7a97-letting346669.jpeg",
+      "https://as-images.imgix.net/5db5e73672cf4bf14056eefc56f982e1-letting346669.jpeg",
+      "https://as-images.imgix.net/7258afedb9383f0d756cb05939d9fb80-letting346669.jpeg",
+      "https://as-images.imgix.net/47deff332f8cf80def2e3d722d8dd521-letting346669.jpeg",
+      "https://as-images.imgix.net/60787b8821bd96f2e53c427b77908073-letting346669.jpeg",
+      "https://as-images.imgix.net/db7a4489159e021a006f57b29391151f-letting346669.jpeg",
+      "https://as-images.imgix.net/ccb789225c0fd3888f9d30d34d046d96-letting346669.jpeg",
+      "https://as-images.imgix.net/256de420f5f1020a73bbe3beef3ac414-letting346669.jpeg",
+      "https://as-images.imgix.net/d7bfa4eb1a1a3e4c6578bdfa0bd1e95d-letting346669.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/08b61ea043e9871b5a9397921526c9c4-letting346669.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Head Office"
+      }
+    ],
+    "last_updated": "2026-03-09 17:17:55"
+  },
+  {
     "id": 355283,
     "status": "Available",
     "address": "Hartlebury 45, Trading Estate",
@@ -47,7 +102,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       },
       {
         "name": "Andrew Lewis",
@@ -55,44 +110,48 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 127",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
-    "last_updated": "2026-03-09 15:19:27"
+    "last_updated": "2026-03-09 16:40:22"
   },
   {
-    "id": 355287,
+    "id": 346655,
     "status": "Available",
-    "address": "Building 314, Hartlebury Trading Estate",
-    "town": "Kidderminster",
-    "postcode": "DY10 4JB",
-    "lat": 52.33425067077,
-    "lon": -2.218800555603,
+    "address": "Unit 2, Falstaff House",
+    "town": "Malvern",
+    "postcode": "WR14 1JJ",
+    "lat": 52.124584197,
+    "lon": -2.303184986,
     "types": [
-      "Industrial"
+      "Office"
     ],
     "to_let": true,
     "for_sale": false,
-    "size_from_sqft": 43967,
-    "size_to_sqft": 43967,
-    "summary": "Modern warehouse/ manufacturing building",
-    "description": "The property comprises a modern warehouse/ manufacturing building incorporating good quality two storey offices with kitchen and breakout areas.\n\nExternally there is a large rear yard area which benefits from 30m depth.  To the front of the building is a substantial car parking area.",
+    "size_from_sqft": 1289,
+    "size_to_sqft": 1289,
+    "summary": "Office To Let, Malvern",
+    "description": "2 Falstaff House is a modern self-contained office building in immaculate condition set within the popular office development of Enigma Commercial Centre. The building benefits from its' own entrance which leads into a reception area with male & female & disabled WC facilities, along with a shower. Beyond the reception, at ground floor level there is open plan office accommodation with kitchenette. The first floor is accessed via an internal staircase or passenger lift and offers more open plan office space alongside a boardroom, a private meeting room and a further kitchen facility. 2 Falstaff House also offers allocated car parking for ten cars.",
     "features": [],
-    "rent_psf": 7.75,
-    "rent_pa": 340589.25,
-    "rent": "£340,589.25 per annum",
+    "rent_psf": 12.02,
+    "rent_pa": 15500,
+    "rent": "£15,500 per annum",
     "business_rates_psf": 0,
     "rateable_value": 0,
-    "service_charge": "0.75",
     "epc_rating": "",
     "images": [
-      "https://as-images.imgix.net/c3e2f7b721efed6d652e01dac1a34afb-1.jpg",
-      "https://as-images.imgix.net/74b78cdf5295c21f27ab6178b0d0be03-2.jpg",
-      "https://as-images.imgix.net/bb5387e0009f727d298ddb4b0ae17fd0-3.jpg",
-      "https://as-images.imgix.net/8801eda635d4b17ba539b5306be6d09d-4.jpg",
-      "https://as-images.imgix.net/e441fd4d127315d80ff25afca4494ad8-5.jpg",
-      "https://as-images.imgix.net/c2dc9459e6c9b469ba67ee8cb7db355c-6.jpg",
-      "https://as-images.imgix.net/bb8354c873fae3b8471361738fde106b-7.jpg"
+      "https://as-images.imgix.net/bf0207cf2f3b3c2bd5b71ade86649514-letting346655.jpeg",
+      "https://as-images.imgix.net/37f2a011bc5bc684731efb7d59c647da-letting346655.jpeg",
+      "https://as-images.imgix.net/7129766532d8895a4ca46e1d48c977e9-letting346655.jpeg",
+      "https://as-images.imgix.net/6bb507693f4dd443682cedc7a588bda4-letting346655.jpeg",
+      "https://as-images.imgix.net/f38f7a17e12bd0593ca337cf9fef1def-letting346655.jpeg",
+      "https://as-images.imgix.net/971bf262196c15eac2c2d545dbb23713-letting346655.jpeg",
+      "https://as-images.imgix.net/7e779cc68b780b0b767b40b146547ef2-letting346655.jpeg",
+      "https://as-images.imgix.net/73a6f43a094da5f081a57b1e041aa34c-letting346655.jpeg",
+      "https://as-images.imgix.net/bd5af782f8a715beb36aba5fa44ccaab-letting346655.jpeg",
+      "https://as-images.imgix.net/8b5c895355c104481eca6bf5701d334b-letting346655.jpeg",
+      "https://as-images.imgix.net/1fecb3230a34f0121f303fc6c27e0328-letting346655.jpeg",
+      "https://as-images.imgix.net/8134deedf15b101245307fef1f80ea3b-letting346655.jpeg"
     ],
     "contacts": [
       {
@@ -101,60 +160,59 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
-    "last_updated": "2026-03-09 15:18:31"
+    "last_updated": "2026-03-09 16:40:09"
   },
   {
-    "id": 352949,
-    "status": "Under Offer",
-    "address": "59-60 Foregate Street",
+    "id": 346750,
+    "status": "Available",
+    "address": "2C Derwent Close",
     "town": "Worcester",
-    "postcode": "WR1 1DX",
-    "lat": 52.194813,
-    "lon": -2.222,
+    "postcode": "WR4 9TY",
+    "lat": 52.206310272,
+    "lon": -2.194024085,
     "types": [
-      "Office"
+      "Industrial"
     ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 3870,
-    "size_to_sqft": 3870,
-    "summary": "Prominent Retail / Office Development in Central Worcester",
-    "description": "59 – 60 Foregate Street is a Grade II listed building which comprises of a two storey retail/office building arranged over the ground, first and second floors.\n\nOver the ground floor there is a front retail area (previously used as an Estate Agents) with a glazed frontage to Foregate Street, opposite the entrance of Worcester Foregate Street train station. There is also a meeting room, rear office and kitchen over the ground floor. At first floor level there is an open plan office space, two rear offices and a store room. Over the second floor there are two offices to the front of the building, a server room, kitchenette and rear archive room. There are WC facilities throughout the building.\n\nPlanning permission is in place for mixed use commercial (Class E (c)(ii) professional services) and short stay visitor accommodation (7no. 1 bed units). Planning application reference 22/00833/FUL\n\n\tSq Ft\tSq M\nGround Floor\t1,367\t126.96\nFirst Floor\t1,465\t136.10\nSecond Floor\t1,038\t96.37\nTotal\t3,870\t359.43",
-    "location": "The property is situated in a prominent position fronting Foregate Street (being opposite Worcester Foregate Street Railway Station) close to the City Centre. Foregate Street is one of the main arterial routes leading out of Worcester city centre from the north, in an area that is synonymous with Estate Agents, Letting Agents and Recruitment Agents providing easy walking access into Worcester’s main pedestrianised High Street shopping area. \n\nWorcester is a major West Midlands city located 120 miles north west of London, 30 miles south west of Birmingham, 25 miles to the north of Cheltenham and 26 miles to the north east of Hereford. Motorway access to the city is very good with Junction 7 of the M5 motorway being within three miles of the city centre giving direct access to the national motorway network.",
-    "features": [],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2150,
+    "size_to_sqft": 2150,
+    "summary": "Industrial To Let, Worcester",
+    "description": "The property comprises an end terrace industrial / warehouse building being part of a block of three Units. Unit C is part warehouse and part offices with mezzanine storage/office accommodation above with ground floor kitchen and WC facilities and a roller shutter door to the front eleavtion. Outside the property to the front there is a hardstanding loading and unloading area shared with Units A and B and being bounded by a secure palisade fence. Accommodation Ground Floor 1,874 sq ft174.10 sq m First Floor 276 sq ft 25.66 sq m Total 2,150 sq ft199.76 sq m Additional mezzanine storage area not included in the above measurements. 2C Derwent Close is situated within Worcester, in the West Midlands. Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London. Worcester has excellent access to the M5 motorway, with Junction 6 being approximately one and a half miles to the northeast. The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network. Worcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
+    "features": [
+      "2,150 sq ft (199.76 sq m) GIA",
+      "Secured shared yard",
+      "Additional mezzanine storage area not included in the above"
+    ],
+    "rent_psf": 7.81,
+    "rent_pa": 16800,
+    "rent": "£16,800 per annum",
     "business_rates_psf": 0,
-    "rateable_value": 25500,
-    "epc_rating": "D (87)",
+    "rateable_value": 0,
+    "epc_rating": "",
     "images": [
-      "https://as-images.imgix.net/b0d8679365b6d313e0a12fe57f2ffd17-20200617-105410.jpg",
-      "https://as-images.imgix.net/85f3f4df8cfc88643559ce5375cb07ae-20200617-105205-0.jpg",
-      "https://as-images.imgix.net/47537e29b61e2c750ea4ef8c7338b5c0-20200617-105149-0.jpg",
-      "https://as-images.imgix.net/042da5379cc25e7bdf7688a74cddb6c6-20200617-105030.jpg",
-      "https://as-images.imgix.net/539fc8963ffcce6428bfcfc96525eb82-20200617-104805.jpg"
+      "https://as-images.imgix.net/61eef815f5c56ca3fff59bf1bffa0a4d-letting346750.jpeg",
+      "https://as-images.imgix.net/b5bef492a59cc4683d24e7cba82fb6e9-letting346750.jpeg",
+      "https://as-images.imgix.net/e15607aaef9b11d3e7f0b0f0f67863e3-letting346750.jpeg",
+      "https://as-images.imgix.net/9fd221d8ffcc2b7c1eca51b5fa394cca-letting346750.jpeg",
+      "https://as-images.imgix.net/fad50957c6cf6a2df2813503febbf00e-letting346750.jpeg",
+      "https://as-images.imgix.net/1441ae60add6469bdf29817d356f82a6-letting346750.jpeg"
     ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/8862c26c8b9bd29979913faca794b084-gjs-dillon-particulars-59-60-foregate-street-worcester.pdf",
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/71694072ada872f7261874a356bdc8d8-gjs-dillon-particulars-2c-derwent-close-worcester.pdf",
     "contacts": [
       {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
         "phone": "01905 676 169",
-        "mobile": "07394 569 127",
+        "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
-    "last_updated": "2026-03-03 17:27:18"
+    "last_updated": "2026-03-09 16:35:14"
   },
   {
     "id": 346719,
@@ -206,48 +264,44 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
-    "last_updated": "2026-03-03 17:26:09"
+    "last_updated": "2026-03-09 16:34:42"
   },
   {
-    "id": 346655,
+    "id": 355287,
     "status": "Available",
-    "address": "Unit 2, Falstaff House",
-    "town": "Malvern",
-    "postcode": "WR14 1JJ",
-    "lat": 52.124584197,
-    "lon": -2.303184986,
+    "address": "Building 314, Hartlebury Trading Estate",
+    "town": "Kidderminster",
+    "postcode": "DY10 4JB",
+    "lat": 52.33425067077,
+    "lon": -2.218800555603,
     "types": [
-      "Office"
+      "Industrial"
     ],
     "to_let": true,
     "for_sale": false,
-    "size_from_sqft": 1289,
-    "size_to_sqft": 1289,
-    "summary": "Office To Let, Malvern",
-    "description": "2 Falstaff House is a modern self-contained office building in immaculate condition set within the popular office development of Enigma Commercial Centre. The building benefits from its' own entrance which leads into a reception area with male & female & disabled WC facilities, along with a shower. Beyond the reception, at ground floor level there is open plan office accommodation with kitchenette. The first floor is accessed via an internal staircase or passenger lift and offers more open plan office space alongside a boardroom, a private meeting room and a further kitchen facility. 2 Falstaff House also offers allocated car parking for ten cars.",
+    "size_from_sqft": 43967,
+    "size_to_sqft": 43967,
+    "summary": "Modern warehouse/ manufacturing building",
+    "description": "The property comprises a modern warehouse/ manufacturing building incorporating good quality two storey offices with kitchen and breakout areas.\n\nExternally there is a large rear yard area which benefits from 30m depth.  To the front of the building is a substantial car parking area.",
     "features": [],
-    "rent_psf": 12.02,
-    "rent_pa": 15500,
-    "rent": "£15,500 per annum",
+    "rent_psf": 7.75,
+    "rent_pa": 340589.25,
+    "rent": "£340,589.25 per annum",
     "business_rates_psf": 0,
     "rateable_value": 0,
+    "service_charge": "0.75",
     "epc_rating": "",
     "images": [
-      "https://as-images.imgix.net/bf0207cf2f3b3c2bd5b71ade86649514-letting346655.jpeg",
-      "https://as-images.imgix.net/37f2a011bc5bc684731efb7d59c647da-letting346655.jpeg",
-      "https://as-images.imgix.net/7129766532d8895a4ca46e1d48c977e9-letting346655.jpeg",
-      "https://as-images.imgix.net/6bb507693f4dd443682cedc7a588bda4-letting346655.jpeg",
-      "https://as-images.imgix.net/f38f7a17e12bd0593ca337cf9fef1def-letting346655.jpeg",
-      "https://as-images.imgix.net/971bf262196c15eac2c2d545dbb23713-letting346655.jpeg",
-      "https://as-images.imgix.net/7e779cc68b780b0b767b40b146547ef2-letting346655.jpeg",
-      "https://as-images.imgix.net/73a6f43a094da5f081a57b1e041aa34c-letting346655.jpeg",
-      "https://as-images.imgix.net/bd5af782f8a715beb36aba5fa44ccaab-letting346655.jpeg",
-      "https://as-images.imgix.net/8b5c895355c104481eca6bf5701d334b-letting346655.jpeg",
-      "https://as-images.imgix.net/1fecb3230a34f0121f303fc6c27e0328-letting346655.jpeg",
-      "https://as-images.imgix.net/8134deedf15b101245307fef1f80ea3b-letting346655.jpeg"
+      "https://as-images.imgix.net/c3e2f7b721efed6d652e01dac1a34afb-1.jpg",
+      "https://as-images.imgix.net/74b78cdf5295c21f27ab6178b0d0be03-2.jpg",
+      "https://as-images.imgix.net/bb5387e0009f727d298ddb4b0ae17fd0-3.jpg",
+      "https://as-images.imgix.net/8801eda635d4b17ba539b5306be6d09d-4.jpg",
+      "https://as-images.imgix.net/e441fd4d127315d80ff25afca4494ad8-5.jpg",
+      "https://as-images.imgix.net/c2dc9459e6c9b469ba67ee8cb7db355c-6.jpg",
+      "https://as-images.imgix.net/bb8354c873fae3b8471361738fde106b-7.jpg"
     ],
     "contacts": [
       {
@@ -256,10 +310,60 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
+      },
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Head Office"
       }
     ],
-    "last_updated": "2026-03-03 16:53:21"
+    "last_updated": "2026-03-09 15:18:31"
+  },
+  {
+    "id": 352949,
+    "status": "Under Offer",
+    "address": "59-60 Foregate Street",
+    "town": "Worcester",
+    "postcode": "WR1 1DX",
+    "lat": 52.194813,
+    "lon": -2.222,
+    "types": [
+      "Office"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 3870,
+    "size_to_sqft": 3870,
+    "summary": "Prominent Retail / Office Development in Central Worcester",
+    "description": "59 – 60 Foregate Street is a Grade II listed building which comprises of a two storey retail/office building arranged over the ground, first and second floors.\n\nOver the ground floor there is a front retail area (previously used as an Estate Agents) with a glazed frontage to Foregate Street, opposite the entrance of Worcester Foregate Street train station. There is also a meeting room, rear office and kitchen over the ground floor. At first floor level there is an open plan office space, two rear offices and a store room. Over the second floor there are two offices to the front of the building, a server room, kitchenette and rear archive room. There are WC facilities throughout the building.\n\nPlanning permission is in place for mixed use commercial (Class E (c)(ii) professional services) and short stay visitor accommodation (7no. 1 bed units). Planning application reference 22/00833/FUL\n\n\tSq Ft\tSq M\nGround Floor\t1,367\t126.96\nFirst Floor\t1,465\t136.10\nSecond Floor\t1,038\t96.37\nTotal\t3,870\t359.43",
+    "location": "The property is situated in a prominent position fronting Foregate Street (being opposite Worcester Foregate Street Railway Station) close to the City Centre. Foregate Street is one of the main arterial routes leading out of Worcester city centre from the north, in an area that is synonymous with Estate Agents, Letting Agents and Recruitment Agents providing easy walking access into Worcester’s main pedestrianised High Street shopping area. \n\nWorcester is a major West Midlands city located 120 miles north west of London, 30 miles south west of Birmingham, 25 miles to the north of Cheltenham and 26 miles to the north east of Hereford. Motorway access to the city is very good with Junction 7 of the M5 motorway being within three miles of the city centre giving direct access to the national motorway network.",
+    "features": [],
+    "business_rates_psf": 0,
+    "rateable_value": 25500,
+    "epc_rating": "D (87)",
+    "images": [
+      "https://as-images.imgix.net/b0d8679365b6d313e0a12fe57f2ffd17-20200617-105410.jpg",
+      "https://as-images.imgix.net/85f3f4df8cfc88643559ce5375cb07ae-20200617-105205-0.jpg",
+      "https://as-images.imgix.net/47537e29b61e2c750ea4ef8c7338b5c0-20200617-105149-0.jpg",
+      "https://as-images.imgix.net/042da5379cc25e7bdf7688a74cddb6c6-20200617-105030.jpg",
+      "https://as-images.imgix.net/539fc8963ffcce6428bfcfc96525eb82-20200617-104805.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/8862c26c8b9bd29979913faca794b084-gjs-dillon-particulars-59-60-foregate-street-worcester.pdf",
+    "contacts": [
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Head Office"
+      }
+    ],
+    "last_updated": "2026-03-03 17:27:18"
   },
   {
     "id": 353367,
@@ -316,59 +420,10 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 16:50:21"
-  },
-  {
-    "id": 346750,
-    "status": "Available",
-    "address": "2C Derwent Close",
-    "town": "Worcester",
-    "postcode": "WR4 9TY",
-    "lat": 52.206310272,
-    "lon": -2.194024085,
-    "types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2150,
-    "size_to_sqft": 2150,
-    "summary": "Industrial To Let, Worcester",
-    "description": "The property comprises an end terrace industrial / warehouse building being part of a block of three Units. Unit C is part warehouse and part offices with mezzanine storage/office accommodation above with ground floor kitchen and WC facilities and a roller shutter door to the front eleavtion. Outside the property to the front there is a hardstanding loading and unloading area shared with Units A and B and being bounded by a secure palisade fence. Accommodation Ground Floor 1,874 sq ft174.10 sq m First Floor 276 sq ft 25.66 sq m Total 2,150 sq ft199.76 sq m Additional mezzanine storage area not included in the above measurements. 2C Derwent Close is situated within Worcester, in the West Midlands. Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London. Worcester has excellent access to the M5 motorway, with Junction 6 being approximately one and a half miles to the northeast. The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network. Worcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
-    "features": [
-      "2,150 sq ft (199.76 sq m) GIA",
-      "Secured shared yard",
-      "Additional mezzanine storage area not included in the above"
-    ],
-    "rent_psf": 7.81,
-    "rent_pa": 16800,
-    "rent": "£16,800 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/61eef815f5c56ca3fff59bf1bffa0a4d-letting346750.jpeg",
-      "https://as-images.imgix.net/b5bef492a59cc4683d24e7cba82fb6e9-letting346750.jpeg",
-      "https://as-images.imgix.net/e15607aaef9b11d3e7f0b0f0f67863e3-letting346750.jpeg",
-      "https://as-images.imgix.net/9fd221d8ffcc2b7c1eca51b5fa394cca-letting346750.jpeg",
-      "https://as-images.imgix.net/fad50957c6cf6a2df2813503febbf00e-letting346750.jpeg",
-      "https://as-images.imgix.net/1441ae60add6469bdf29817d356f82a6-letting346750.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/71694072ada872f7261874a356bdc8d8-gjs-dillon-particulars-2c-derwent-close-worcester.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-03 16:48:25"
   },
   {
     "id": 346824,
@@ -406,7 +461,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 127",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 16:47:29"
@@ -448,7 +503,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 127",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       },
       {
         "name": "Susanne Phipps",
@@ -456,7 +511,7 @@
         "phone": "",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 16:47:03"
@@ -511,7 +566,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 16:42:46"
@@ -571,7 +626,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 127",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       },
       {
         "name": "John Dillon",
@@ -579,7 +634,7 @@
         "phone": "01905 676 169",
         "mobile": "07500 774 775",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 16:41:29"
@@ -639,7 +694,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 16:40:56"
@@ -694,7 +749,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 16:40:01"
@@ -747,7 +802,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 16:15:13"
@@ -790,7 +845,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 16:14:34"
@@ -840,7 +895,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 127",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 16:12:40"
@@ -896,7 +951,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 16:11:25"
@@ -949,7 +1004,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 16:10:11"
@@ -992,7 +1047,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 16:08:35"
@@ -1041,7 +1096,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 16:06:11"
@@ -1100,7 +1155,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       },
       {
         "name": "Roy Wilkes",
@@ -1108,7 +1163,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 16:04:50"
@@ -1160,65 +1215,10 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 16:03:40"
-  },
-  {
-    "id": 346669,
-    "status": "Under Offer",
-    "address": "Office at Ladybird Barn",
-    "town": "Bromsgrove",
-    "postcode": "B60 1PH",
-    "lat": 52.343273162,
-    "lon": -2.047919988,
-    "types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2648,
-    "size_to_sqft": 2648,
-    "summary": "Office To Let, Bromsgrove",
-    "description": "The office space at Ladybird Barn comprises a two-storey office building which benefits from three elevations and thus an abundance of natural light. The building is arranged over the ground and first floor and is accessed via a pedestrian door to the front of the building. Upon accessing the property there is a large reception area, two private offices, WC & kitchen facilities, along with further storage and a sever room. An internal staircase accesses the first floor which offers further office accommodation, which currently offers six offices however could be offered open plan if needed. Ground Floor1,251 sq ft 116.20 sq m First Floor1,397 sq ft 129.76 sq m Total2,648 sq ft 245.96 sq m Location Ladybird Barn lies adjacent to the A38 in Bromsgrove and is approximately one mile south of Junction 1 of the M42 and one mile east of Bromsgrove town centre. The mixed used development is accessed off Old Burcot Lane, with a prominent frontage to the busy A38. Nearby occupiers that include David Lloyd, Premier Inn, Bromsgrove Fire Station, Artrix Arts Centre and Heart of Worcestershire College. Junction 4 of the M5 motorway and Junction 1 of the M42 motorway lie close by and provide access to the M5 and M42 motorways as well as the national motorway network. Birmingham City Centre is situated approximately 15 miles to the north and Worcester City Centre is situated approximately 10 miles to the south. Bromsgrove has a mainline railway station which is situated to the east of the town. There are frequent trains to Birmingham New Street, Worcester Foregate Street and Hereford. There is also a bus station adjacent to the high street. Buses operate to a wide area of Worcestershire and the West Midlands. Birmingham Airport is around 22 miles away which equates to circa 30 mins by car.",
-    "features": [
-      "LED Lighting throughout",
-      "Large amount of air conditioning",
-      "Perimeter trunking",
-      "On site parking"
-    ],
-    "rent_psf": 10.39,
-    "rent_pa": 27500,
-    "rent": "£27,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/fdb9acca468b06f5363f3de86dd588e4-letting346669.jpeg",
-      "https://as-images.imgix.net/89b451855493ecf44f51834980f5843e-letting346669.jpeg",
-      "https://as-images.imgix.net/e7d9b4b640cfd6cae9f06a3980ff7a97-letting346669.jpeg",
-      "https://as-images.imgix.net/5db5e73672cf4bf14056eefc56f982e1-letting346669.jpeg",
-      "https://as-images.imgix.net/7258afedb9383f0d756cb05939d9fb80-letting346669.jpeg",
-      "https://as-images.imgix.net/47deff332f8cf80def2e3d722d8dd521-letting346669.jpeg",
-      "https://as-images.imgix.net/60787b8821bd96f2e53c427b77908073-letting346669.jpeg",
-      "https://as-images.imgix.net/db7a4489159e021a006f57b29391151f-letting346669.jpeg",
-      "https://as-images.imgix.net/ccb789225c0fd3888f9d30d34d046d96-letting346669.jpeg",
-      "https://as-images.imgix.net/256de420f5f1020a73bbe3beef3ac414-letting346669.jpeg",
-      "https://as-images.imgix.net/d7bfa4eb1a1a3e4c6578bdfa0bd1e95d-letting346669.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/08b61ea043e9871b5a9397921526c9c4-letting346669.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-03 16:02:20"
   },
   {
     "id": 346700,
@@ -1269,7 +1269,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 16:01:41"
@@ -1317,7 +1317,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 16:00:42"
@@ -1374,7 +1374,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       },
       {
         "name": "Jorge Bray",
@@ -1382,7 +1382,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 15:59:45"
@@ -1434,7 +1434,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 15:58:48"
@@ -1486,7 +1486,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       },
       {
         "name": "Jorge Bray",
@@ -1494,7 +1494,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 15:55:09"
@@ -1545,7 +1545,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 12:37:13"
@@ -1604,7 +1604,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 12:19:37"
@@ -1659,7 +1659,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 127",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 12:11:35"
@@ -1709,7 +1709,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       },
       {
         "name": "Jorge Bray",
@@ -1717,7 +1717,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 12:06:21"
@@ -1771,7 +1771,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 11:48:23"
@@ -1821,7 +1821,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 11:42:43"
@@ -1867,7 +1867,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 127",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 11:42:06"
@@ -1930,7 +1930,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-03 11:32:34"
@@ -1990,7 +1990,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       },
       {
         "name": "Roy Wilkes",
@@ -1998,7 +1998,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-02 17:03:50"
@@ -2051,7 +2051,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       },
       {
         "name": "Roy Wilkes",
@@ -2059,7 +2059,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-01 16:03:22"
@@ -2109,7 +2109,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       },
       {
         "name": "Roy Wilkes",
@@ -2117,7 +2117,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-01 16:00:40"
@@ -2170,7 +2170,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-01 15:59:19"
@@ -2217,7 +2217,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       },
       {
         "name": "Jorge Bray",
@@ -2225,7 +2225,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-01 13:25:15"
@@ -2278,7 +2278,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-01 13:21:25"
@@ -2323,7 +2323,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       },
       {
         "name": "Roy Wilkes",
@@ -2331,7 +2331,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-01 13:20:04"
@@ -2397,7 +2397,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       },
       {
         "name": "Roy Wilkes",
@@ -2405,7 +2405,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-03-01 13:17:53"
@@ -2462,7 +2462,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 15:35:11"
@@ -2523,7 +2523,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 15:25:05"
@@ -2574,7 +2574,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 15:10:50"
@@ -2627,7 +2627,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       },
       {
         "name": "Jorge Bray",
@@ -2635,7 +2635,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 14:50:49"
@@ -2687,7 +2687,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       },
       {
         "name": "Jorge Bray",
@@ -2695,7 +2695,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 14:50:19"
@@ -2752,7 +2752,7 @@
         "phone": "",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 13:27:51"
@@ -2801,7 +2801,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 13:23:39"
@@ -2852,7 +2852,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 13:14:16"
@@ -2901,7 +2901,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 13:13:34"
@@ -2948,7 +2948,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 13:12:00"
@@ -2996,7 +2996,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 127",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 13:01:48"
@@ -3040,7 +3040,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 12:58:29"
@@ -3098,7 +3098,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 12:51:57"
@@ -3147,7 +3147,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       },
       {
         "name": "Jorge Bray",
@@ -3155,7 +3155,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 12:50:37"
@@ -3208,7 +3208,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 12:49:02"
@@ -3259,7 +3259,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 12:46:10"
@@ -3308,7 +3308,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 12:45:24"
@@ -3364,7 +3364,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 12:42:31"
@@ -3419,7 +3419,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 12:37:44"
@@ -3465,7 +3465,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 12:19:04"
@@ -3514,7 +3514,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       },
       {
         "name": "Roy Wilkes",
@@ -3522,7 +3522,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 11:41:18"
@@ -3575,7 +3575,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 11:02:59"
@@ -3629,7 +3629,7 @@
         "phone": "01905 676 169",
         "mobile": "07394 569 127",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-27 10:37:47"
@@ -3678,7 +3678,7 @@
         "phone": "",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-19 16:25:20"
@@ -3733,7 +3733,7 @@
         "phone": "01905 676 169",
         "mobile": "",
         "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
+        "branch": "Head Office"
       }
     ],
     "last_updated": "2026-02-06 11:09:47"
