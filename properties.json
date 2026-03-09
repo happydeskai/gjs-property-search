@@ -1,5 +1,118 @@
 [
   {
+    "id": 355283,
+    "address": "Hartlebury 45, Trading Estate",
+    "town": "Kidderminster",
+    "postcode": "DY10 4JB",
+    "lat": 52.334434235523,
+    "lon": -2.2188434709473,
+    "types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 44804,
+    "size_to_sqft": 44804,
+    "summary": "Hartlebury 45 is a brand-new, portal-framed manufacturing and distribution warehouse with an integral first-floor office.",
+    "description": "Hartlebury 45 is a brand-new, portal-framed manufacturing and distribution warehouse with an integral first-floor office. The building offers a clear internal eaves height of 10 metres, a floor loading capacity of 50 kN/m and up to 800 kVA of power supply.\n\nThe fitted office accommodation provides raised access floors, suspended ceilings, recessed LED lighting, carpeting, and an electric VRF/VRV heating and cooling system. The warehouse benefits from two dock and two level access doors opening onto a 50-metre-deep secure yard, with 61 car parking spaces and 14 trailer bays.\n\nSustainability features include PV roof panels, electric vehicle charging points, and energy-efficient systems, complemented by full security lighting. Combining modern design, high specification, and excellent accessibility, Hartlebury 45 provides an exceptional opportunity for occupiers seeking a premium new-build facility situated on one of Worcestershire's premier industrial estates.",
+    "features": [
+      "61 Car Parking Spaces",
+      "10m Eaves",
+      "14 Trailer Bays",
+      "800 kVA of Power Supply"
+    ],
+    "rent_psf": 9,
+    "rent_pa": 403236,
+    "rent": "£403,236 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "service_charge": "0.75",
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/0a665d9c052e45b148478031234efd5e-1.jpg",
+      "https://as-images.imgix.net/697d24aa555aa6a04c0a4e412ebc5b58-2.jpg",
+      "https://as-images.imgix.net/8ef7f4d073834ab0bb0da23325479578-3.jpg",
+      "https://as-images.imgix.net/7372e8c681d3176c87ad60cc5319c793-4.jpg",
+      "https://as-images.imgix.net/daae49c7ee5bc6ffbe8059bb7e1d2f9f-5.jpg",
+      "https://as-images.imgix.net/4cab5cf9058f6096ab8866d38531df2b-6.jpg",
+      "https://as-images.imgix.net/bf4fc95e3d4a4c594ea79313e2c54b64-7.jpg",
+      "https://as-images.imgix.net/5a039ded0374291f0db9258070b953e0-8.jpg",
+      "https://as-images.imgix.net/c61155363c2b348dcb503a5761d76799-9.jpg"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-03-09 15:19:27"
+  },
+  {
+    "id": 355287,
+    "address": "Building 314, Hartlebury Trading Estate",
+    "town": "Kidderminster",
+    "postcode": "DY10 4JB",
+    "lat": 52.33425067077,
+    "lon": -2.218800555603,
+    "types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 43967,
+    "size_to_sqft": 43967,
+    "summary": "Modern warehouse/ manufacturing building",
+    "description": "The property comprises a modern warehouse/ manufacturing building incorporating good quality two storey offices with kitchen and breakout areas.\n\nExternally there is a large rear yard area which benefits from 30m depth.  To the front of the building is a substantial car parking area.",
+    "features": [],
+    "rent_psf": 7.75,
+    "rent_pa": 340589.25,
+    "rent": "£340,589.25 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "service_charge": "0.75",
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/c3e2f7b721efed6d652e01dac1a34afb-1.jpg",
+      "https://as-images.imgix.net/74b78cdf5295c21f27ab6178b0d0be03-2.jpg",
+      "https://as-images.imgix.net/bb5387e0009f727d298ddb4b0ae17fd0-3.jpg",
+      "https://as-images.imgix.net/8801eda635d4b17ba539b5306be6d09d-4.jpg",
+      "https://as-images.imgix.net/e441fd4d127315d80ff25afca4494ad8-5.jpg",
+      "https://as-images.imgix.net/c2dc9459e6c9b469ba67ee8cb7db355c-6.jpg",
+      "https://as-images.imgix.net/bb8354c873fae3b8471361738fde106b-7.jpg"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-03-09 15:18:31"
+  },
+  {
     "id": 346655,
     "address": "Unit 2, Falstaff House",
     "town": "Malvern",
