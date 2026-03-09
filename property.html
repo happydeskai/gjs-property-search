@@ -40,6 +40,13 @@
     .chips{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 14px}
     .chip{background:#f6f6f6;border:1px solid #ececec;padding:6px 10px;border-radius:999px;font-size:12px}
     .chip--accent{background:#fff7cf;border-color:#ffe899}
+    .status-badge{ display:inline-block; padding:5px 11px; border-radius:999px; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; }
+    .status-available{ background:#dcfce7; color:#15803d; }
+    .status-under-offer{ background:#fef9c3; color:#92400e; }
+    .status-let-agreed{ background:#fee2e2; color:#b91c1c; }
+    .status-sold{ background:#fee2e2; color:#b91c1c; }
+    .status-sold-stc{ background:#ffedd5; color:#c2410c; }
+    .status-other{ background:#f3f4f6; color:#374151; }
 
     /* --- Modern Grid Layout (Chrome + iframe safe) --- */
 
@@ -292,6 +299,34 @@ async function main() {
 
     $('#prop-title').textContent = p.address || 'Property';
     $('#prop-sub').textContent = [p.town, p.postcode].filter(Boolean).join(' ');
+
+    /* status + tenure chips */
+    const chipsEl = $('#prop-chips');
+    if (chipsEl) {
+      chipsEl.innerHTML = '';
+      const status = String(p.status || 'Available').trim();
+      const lc = status.toLowerCase();
+      let cls = 'status-other';
+      if (!lc || lc === 'available') cls = 'status-available';
+      else if (lc.includes('under offer')) cls = 'status-under-offer';
+      else if (lc.includes('let agreed')) cls = 'status-let-agreed';
+      else if (lc === 'sold stc' || lc.includes('subject to contract')) cls = 'status-sold-stc';
+      else if (lc === 'sold') cls = 'status-sold';
+      const sb = document.createElement('span');
+      sb.className = `status-badge ${cls}`;
+      sb.textContent = status;
+      chipsEl.appendChild(sb);
+
+      const tenureParts = [];
+      if (p.to_let) tenureParts.push('To Let');
+      if (p.for_sale) tenureParts.push('For Sale');
+      tenureParts.forEach(label => {
+        const chip = document.createElement('span');
+        chip.className = 'chip';
+        chip.textContent = label;
+        chipsEl.appendChild(chip);
+      });
+    }
 
     /* images (use DOM methods to avoid accidental injection) */
     const imgs = (p.images || []).map(i => (typeof i === 'string' ? i : i.url)).filter(Boolean);
