@@ -176,6 +176,16 @@
         <option value="for sale">For Sale</option>
       </select>
     </div>
+    <div class="field"><label for="status">Status</label>
+      <select id="status">
+        <option value="available">Available</option>
+        <option value="any" selected>Any status</option>
+        <option value="under offer">Under Offer</option>
+        <option value="let agreed">Let Agreed</option>
+        <option value="sold">Sold</option>
+        <option value="sold stc">Sold STC</option>
+      </select>
+    </div>
     <div class="field"><label for="type">Type</label><select id="type"><option value="any">Any</option></select></div>
     <div class="field"><label for="radius">Radius</label>
       <select id="radius">
@@ -417,6 +427,7 @@ async function applyFilters() {
   const params = new URLSearchParams();
   let q = document.getElementById('q').value.trim();
   const tenure = document.getElementById('tenure').value;
+  const statusFilter = document.getElementById('status').value;
   const typeEl = document.getElementById('type');
   let type = (typeEl?.value || 'any');
   if (type === 'any' && typeEl?.dataset?.prefill) type = typeEl.dataset.prefill;
@@ -426,12 +437,14 @@ async function applyFilters() {
 
   if (q) params.set('q', q);
   if (tenure && tenure !== 'any') params.set('tenure', tenure);
+  if (statusFilter && statusFilter !== 'any') params.set('status', statusFilter);
   if (type && type !== 'any') params.set('type', type);
   if (radiusVal && radiusVal !== 'any') params.set('radius', radiusVal);
   if (minSize) params.set('minSize', minSize);
   if (maxSize) params.set('maxSize', maxSize);
 
   const tenureLC = tenure.toLowerCase();
+  const statusLC = statusFilter.toLowerCase();
   const typeLC = type.toLowerCase();
 
   // FIX: Parse size values once, used in filter below
@@ -439,6 +452,15 @@ async function applyFilters() {
   const maxSizeNum = maxSize ? Number(maxSize) : 0;
 
   const base = allProperties.filter(p => {
+    // Status filter
+    if (statusLC !== 'any') {
+      const propStatus = String(p.status || 'Available').toLowerCase();
+      if (statusLC === 'available') {
+        if (propStatus !== 'available') return false;
+      } else {
+        if (!propStatus.includes(statusLC)) return false;
+      }
+    }
     if (tenureLC !== 'any') {
       const legacy = String(p.tenure || p.transaction_type || '').toLowerCase();
       const isLet = (p.to_let === true) || /to\s*let|letting|lease/.test(legacy);
@@ -467,7 +489,15 @@ async function applyFilters() {
   if (!q) { render(base); updateMap(base); return; }
 
   const point = await geocodePlace(q);
-  if (!point) { render(base); updateMap(base); return; }
+  if (!point) {
+    // Default sort: largest instruction first (size_to_sqft or size_from_sqft descending)
+    const sorted = [...base].sort((a, b) => {
+      const sizeA = Number(a.size_to_sqft || a.size_from_sqft || 0);
+      const sizeB = Number(b.size_to_sqft || b.size_from_sqft || 0);
+      return sizeB - sizeA;
+    });
+    render(sorted); updateMap(sorted); return;
+  }
 
   let finalList = sortByDistance(base, point);
 
@@ -524,6 +554,7 @@ function prefillFromURL() {
   };
   setVal('q', incoming.q);
   setVal('tenure', (incoming.tenure || 'any').toLowerCase());
+  setVal('status', (incoming.status || 'any').toLowerCase());
   setVal('radius', incoming.radius || 'any');
   setVal('minSize', incoming.minSize);
   setVal('maxSize', incoming.maxSize);
