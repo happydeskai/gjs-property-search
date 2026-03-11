@@ -486,17 +486,18 @@ async function applyFilters() {
     return true;
   });
 
-  if (!q) { render(base); updateMap(base); return; }
+  // Default sort: largest instruction first (size_to_sqft or size_from_sqft descending)
+  const sortBySize = (list) => [...list].sort((a, b) => {
+    const sizeA = Number(a.size_to_sqft || a.size_from_sqft || 0);
+    const sizeB = Number(b.size_to_sqft || b.size_from_sqft || 0);
+    return sizeB - sizeA;
+  });
+
+  if (!q) { const sorted = sortBySize(base); render(sorted); updateMap(sorted); return; }
 
   const point = await geocodePlace(q);
   if (!point) {
-    // Default sort: largest instruction first (size_to_sqft or size_from_sqft descending)
-    const sorted = [...base].sort((a, b) => {
-      const sizeA = Number(a.size_to_sqft || a.size_from_sqft || 0);
-      const sizeB = Number(b.size_to_sqft || b.size_from_sqft || 0);
-      return sizeB - sizeA;
-    });
-    render(sorted); updateMap(sorted); return;
+    render(sortBySize(base)); updateMap(sortBySize(base)); return;
   }
 
   let finalList = sortByDistance(base, point);
