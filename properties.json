@@ -3237,59 +3237,6 @@
     "last_updated": "2026-02-27 12:50:37"
   },
   {
-    "id": 346671,
-    "status": "Available",
-    "address": "Berrow Green Road",
-    "town": "Worcester",
-    "postcode": "WR6 6PQ",
-    "lat": 52.230155944,
-    "lon": -2.368226051,
-    "types": [
-      "Land"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 9713,
-    "size_to_sqft": 9713,
-    "summary": "Land To Let, Worcester",
-    "description": "The demised yard area comprises a secure compound with direct access to the main estate road of the larger development, which leads directly to the B4197. The compound is level and ideal for storage. Location The yard area is situated in a prominent position fronting the main B4197, close to the centre of the village of Martley. The yard is part of a larger commercial complex made up of office, warehouse and outside storage accommodation.",
-    "features": [
-      "Secure fence perimeter with gated entrance",
-      "Level surface ideal for storage",
-      "Onsite water and electricity supply",
-      "0.223 acres (9,713 sq ft)"
-    ],
-    "rent_psf": 1.24,
-    "rent_pa": 12000,
-    "rent": "£12,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/199626630b5eecf6f6d5b0ef196b684e-letting346671.jpeg",
-      "https://as-images.imgix.net/2f08e180144ddcc1c2826b1a3b33bfea-letting346671.jpeg",
-      "https://as-images.imgix.net/3cd87f4293771117c4fcf64a5c00490b-letting346671.jpeg",
-      "https://as-images.imgix.net/264fe9db51aa18730b00fef25cb8fc45-letting346671.jpeg",
-      "https://as-images.imgix.net/d34e4a98f3c004682725f5ba983b284b-letting346671.jpeg",
-      "https://as-images.imgix.net/121193791f0f6d5a6c1abb1dc4316f01-letting346671.jpeg",
-      "https://as-images.imgix.net/a6b76af8038c3dcf8af31e60fe938f4e-letting346671.jpeg",
-      "https://as-images.imgix.net/2b109e994b53b98350841eaa4bbf1c9c-letting346671.jpeg",
-      "https://as-images.imgix.net/89447954e59b8e9e34d0ea6757c91df8-letting346671.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/1c8b1e94d479dc319063e75a257e975d-gjs-dillon-particulars-yard-at-edgar-estate-martley.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-27 12:49:02"
-  },
-  {
     "id": 346670,
     "status": "Under Offer",
     "address": "11a Kingswood Road",
