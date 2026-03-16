@@ -1198,49 +1198,6 @@
     "last_updated": "2026-03-03 16:10:11"
   },
   {
-    "id": 346736,
-    "status": "Available",
-    "address": "4 Richmond Road",
-    "town": "Malvern",
-    "postcode": "WR14 1NE",
-    "lat": 52.12851715,
-    "lon": -2.315370082,
-    "types": [
-      "Investment"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 1081,
-    "size_to_sqft": 1081,
-    "summary": "Investment For Sale, Malvern",
-    "description": "The property comprises two separate retail shops on the ground floor which extend in total to 1,081 sq ft (100.43 sq m). There is residential accommodation above which has been sold off on a long leasehold basis for a term of 125 years from 01/04/2005. The shops operate independently as a caf√à and hair salon with off street parking available to the front to the hair salon. \nUnit 1 - 422 sq ft (39.18 sq m)\nUnit 2 - 659 sq ft (61.25 sq m) \nThe first floor accommodation has been sold off on a long leasehold basis. \nTenancies\nUnit 1 - Trading as Sunbean caf√à & sunbeds and let for a term of 5 years from 27/02/2024, expiring 26/02/29, at a passing rent of ¬£8,750 pa. \nUnit 2 - Trading as Luxury Cutz and let for a term of 5 years from 01/03/222, expiring 28/02/27, at a passing rent of ¬£7,500 pa. \n\nThe combined rental income is ¬£16,250 per annum.",
-    "features": [],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/7c2613fdfcb3853c29230022ad83289b-letting346736.jpeg",
-      "https://as-images.imgix.net/6f7d5d7def0d56ba650131418331d05f-letting346736.jpeg",
-      "https://as-images.imgix.net/a125ac5fb2939b81b300d757ccd2e715-letting346736.jpeg",
-      "https://as-images.imgix.net/3e420d1512f9fc6c5f902247cb9e6f3f-letting346736.jpeg",
-      "https://as-images.imgix.net/37ea2414e6f32866dd5741820b504c25-letting346736.jpeg",
-      "https://as-images.imgix.net/092435094ebfbad239394f5531850a8e-letting346736.jpeg",
-      "https://as-images.imgix.net/63966b6bfb96ae4ea5c1e79be06a862b-letting346736.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c54e99bb6da9bd70ac289900218cede0-letting346736.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-03 16:08:35"
-  },
-  {
     "id": 346878,
     "status": "Available",
     "address": "58 Oxford Street",
