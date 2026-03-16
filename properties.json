@@ -1,5 +1,65 @@
 [
   {
+    "id": 352978,
+    "status": "Available",
+    "address": "14 Church Street",
+    "town": "Kidderminster",
+    "postcode": "DY10 2AH",
+    "lat": 52.389092,
+    "lon": -2.250011,
+    "types": [
+      "Office"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 6555,
+    "size_to_sqft": 6555,
+    "summary": "Substantial Office Building, Suitable for Redevelopment",
+    "description": "14 Church Street comprises a detached office building arranged over the lower ground, ground and first floors – having previously been used as a large solicitor’s office.  The current configuration offers offices over all floors, which offer a mix of cellular and larger space.\nThe building is more than suitable to be continued to be used as office space, however, also presents a redevelopment opportunity to offer quality flats within a prime town centre location.\nWe have a feasibility study which shows the option to convert the existing building to 12 units (8 x one bedroom flats and 4 x two beds); as well as an option to extend the upper floors and offer 14 units (8 x one bedroom flats and 6 x two beds).\nThe redevelopment option of the existing building offers a final scheme that is 6,555 sq ft (608.97 sq m).",
+    "location": "14 Church Street is situated within Kidderminster, Worcestershire.  Kidderminster is situated within the Wyre Forest district and lies 15 miles north of Worcester and 17 miles south west of Birmingham.  The town benefits from being in close proximity to major transport links, such as the M5 motorway, and has a mainline train station provide access to Birmingham and the national rail network.\nThe building is situated at the end of Church Street, to the northern side of Kidderminster town centre.  Church Street is characterised by a number of large period properties, predominately of Georgian construction.  Neighbouring occupiers include solicitors, banks and health care operators.  The property is also in close proximity to the Weavers Wharf shopping centre.",
+    "features": [
+      "Guide Price of £400,000 Reflecting a low capital value of £60 per sq ft on the developable area",
+      "Existing feasibility studies carried out for conversion to a 12 unit residential scheme (14 with roof extension), all STP",
+      "Situated on the fringe of Kidderminster town centre, adjacent to Weavers Wharf",
+      "Currently presents as good quality office accommodation over three floors"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 41000,
+    "epc_rating": "D (89)",
+    "images": [
+      "https://as-images.imgix.net/2768f17f88d07cb199e8c4a3abeb3719-20250703-103225910-ios.jpg",
+      "https://as-images.imgix.net/3aa4e84f55fd3460514a3e4e80a80e99-20250703-102947953-ios.jpg",
+      "https://as-images.imgix.net/0dc64708170ed2bfa50cffc030f18a95-20250703-103247778-ios.jpg",
+      "https://as-images.imgix.net/8a494f18745ed244efb8637d7ae05bde-20250703-102838805-ios.jpg",
+      "https://as-images.imgix.net/160a5252a24723d07545d5aeb4d99ebe-20250703-102807296-ios.jpg",
+      "https://as-images.imgix.net/361dc11d9d754a654b8ddf5f17270e8f-20250703-111919017-ios.jpg",
+      "https://as-images.imgix.net/14aead973626eecedc1786a875309007-20250703-112144599-ios.jpg",
+      "https://as-images.imgix.net/a8a0eea6af32b0f243c146b9ea844ea7-20250703-112155940-ios.jpg",
+      "https://as-images.imgix.net/6aea608cf38a26de7d85a7da400018f4-20250703-111953905-ios.jpg",
+      "https://as-images.imgix.net/fbe0df64c98f728adc333191dd7588e6-20250703-111830823-ios.jpg",
+      "https://as-images.imgix.net/ce786a087f68134ff27dcef7dfb032a5-20250703-112226020-ios.jpg",
+      "https://as-images.imgix.net/754e1c4103f79414ad7e4dec066e0075-20250703-111930672-ios.jpg",
+      "https://as-images.imgix.net/577013f55298dd29c4aceac8370d8374-20250703-112027121-ios.jpg",
+      "https://as-images.imgix.net/0bb941daccff23aecdf5dc306eefb48e-20250703-111808883-ios.jpg",
+      "https://as-images.imgix.net/006f90b36d90130b37c24e6d8308c08a-20250703-111843342-ios.jpg",
+      "https://as-images.imgix.net/8ae76a6e1fe9c7fbf7b0f9b5c895a029-20250703-112047308-ios.jpg",
+      "https://as-images.imgix.net/cd72e0b33900af108f820f22c2aa5019-20250703-112011873-ios.jpg",
+      "https://as-images.imgix.net/93bf15847c9e638cbc2edabe1a46b716-20251210-140559.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/e025b2a6521037f9b7e59764a7ccb24c-gjs-dillon-particulars-14-church-street-kidderminster.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-03-16 09:28:12"
+  },
+  {
     "id": 346672,
     "status": "Available",
     "address": "20 The Shambles",
@@ -58,66 +118,6 @@
       }
     ],
     "last_updated": "2026-03-12 16:07:52"
-  },
-  {
-    "id": 352978,
-    "status": "Available",
-    "address": "14 Church Street",
-    "town": "Kidderminster",
-    "postcode": "DY10 2AH",
-    "lat": 52.389092,
-    "lon": -2.250011,
-    "types": [
-      "Office"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 6555,
-    "size_to_sqft": 6555,
-    "summary": "Substantial Office Building, Suitable for Redevelopment",
-    "description": "14 Church Street comprises a detached office building arranged over the lower ground, ground and first floors – having previously been used as a large solicitor’s office.  The current configuration offers offices over all floors, which offer a mix of cellular and larger space.\nThe building is more than suitable to be continued to be used as office space, however, also presents a redevelopment opportunity to offer quality flats within a prime town centre location.\nWe have a feasibility study which shows the option to convert the existing building to 12 units (8 x one bedroom flats and 4 x two beds); as well as an option to extend the upper floors and offer 14 units (8 x one bedroom flats and 6 x two beds).\nThe redevelopment option of the existing building offers a final scheme that is 6,555 sq ft (608.97 sq m).",
-    "location": "14 Church Street is situated within Kidderminster, Worcestershire.  Kidderminster is situated within the Wyre Forest district and lies 15 miles north of Worcester and 17 miles south west of Birmingham.  The town benefits from being in close proximity to major transport links, such as the M5 motorway, and has a mainline train station provide access to Birmingham and the national rail network.\nThe building is situated at the end of Church Street, to the northern side of Kidderminster town centre.  Church Street is characterised by a number of large period properties, predominately of Georgian construction.  Neighbouring occupiers include solicitors, banks and health care operators.  The property is also in close proximity to the Weavers Wharf shopping centre.",
-    "features": [
-      "Guide Price of £400,000 Reflecting a low capital value of £60 per sq ft on the developable area",
-      "Existing feasibility studies carried out for conversion to a 12 unit residential scheme (14 with roof extension), all STP",
-      "Situated on the fringe of Kidderminster town centre, adjacent to Weavers Wharf",
-      "Currently presents as good quality office accommodation over three floors"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 41000,
-    "epc_rating": "D (89)",
-    "images": [
-      "https://as-images.imgix.net/2768f17f88d07cb199e8c4a3abeb3719-20250703-103225910-ios.jpg",
-      "https://as-images.imgix.net/3aa4e84f55fd3460514a3e4e80a80e99-20250703-102947953-ios.jpg",
-      "https://as-images.imgix.net/0dc64708170ed2bfa50cffc030f18a95-20250703-103247778-ios.jpg",
-      "https://as-images.imgix.net/8a494f18745ed244efb8637d7ae05bde-20250703-102838805-ios.jpg",
-      "https://as-images.imgix.net/160a5252a24723d07545d5aeb4d99ebe-20250703-102807296-ios.jpg",
-      "https://as-images.imgix.net/361dc11d9d754a654b8ddf5f17270e8f-20250703-111919017-ios.jpg",
-      "https://as-images.imgix.net/14aead973626eecedc1786a875309007-20250703-112144599-ios.jpg",
-      "https://as-images.imgix.net/a8a0eea6af32b0f243c146b9ea844ea7-20250703-112155940-ios.jpg",
-      "https://as-images.imgix.net/6aea608cf38a26de7d85a7da400018f4-20250703-111953905-ios.jpg",
-      "https://as-images.imgix.net/fbe0df64c98f728adc333191dd7588e6-20250703-111830823-ios.jpg",
-      "https://as-images.imgix.net/ce786a087f68134ff27dcef7dfb032a5-20250703-112226020-ios.jpg",
-      "https://as-images.imgix.net/754e1c4103f79414ad7e4dec066e0075-20250703-111930672-ios.jpg",
-      "https://as-images.imgix.net/577013f55298dd29c4aceac8370d8374-20250703-112027121-ios.jpg",
-      "https://as-images.imgix.net/0bb941daccff23aecdf5dc306eefb48e-20250703-111808883-ios.jpg",
-      "https://as-images.imgix.net/006f90b36d90130b37c24e6d8308c08a-20250703-111843342-ios.jpg",
-      "https://as-images.imgix.net/8ae76a6e1fe9c7fbf7b0f9b5c895a029-20250703-112047308-ios.jpg",
-      "https://as-images.imgix.net/cd72e0b33900af108f820f22c2aa5019-20250703-112011873-ios.jpg",
-      "https://as-images.imgix.net/93bf15847c9e638cbc2edabe1a46b716-20251210-140559.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/e025b2a6521037f9b7e59764a7ccb24c-gjs-dillon-particulars-14-church-street-kidderminster.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-12 15:51:16"
   },
   {
     "id": 354040,
