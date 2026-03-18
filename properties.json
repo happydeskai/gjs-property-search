@@ -1745,65 +1745,6 @@
     "last_updated": "2026-03-03 12:37:13"
   },
   {
-    "id": 346677,
-    "status": "Under Offer",
-    "address": "Hanbury Street",
-    "town": "Droitwich",
-    "postcode": "WR9 8PL",
-    "lat": 52.269203186,
-    "lon": -2.143748998,
-    "types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 113,
-    "size_to_sqft": 1723,
-    "summary": "Office To Let, Droitwich",
-    "description": "The Row is a meticulously designed roadside development featuring a premium selection of top specification boutique office suites, tailored for the very best independent operators. Set in the vibrant heart of Droitwich, this landmark destination serves as a unique parade for retail, leisure and business, attracting residents from across Worcestershire. Space available from 113 to 1,723 sq ft. The Row introduces a distinctive high-end offering to the area bringing a unique, place-making experience that sets a new benchmark for Droitwich. Curated by Asper Property Group, The Row offers a turn-key opportunity in a prime location and allocated parking. The Row is a collection of tastefully restored commercial suites designed to inspire. Each suite has been thoughtfully refurbished with carefully chosen materials and subtle industrial accents. From warm, neutral retail suites to welcoming communal spaces and distinctive shop fronts, every detail offers a workplace with a genuine sense of place. Droitwich offers a compelling location for business, combining strategic connectivity with a rich heritage and supportive local infrastructure. Situated in the heart of Worcestershire with excellent transport links to Birmingham, Worcester and the wider West Midlands, Droitwich Spa provides easy access to major markets while maintaining the charm and style of a historic spa town. Droitwich benefits from picturesque surroundings, a strong community spirit and a wealth of modern amenities which attracts a skilled local workforce and proactive business community.",
-    "features": [
-      "Units available from ¬£300 per calendar month",
-      "Gated secure parking",
-      "EV charging points",
-      "Air conditioning and heating",
-      "24/7 building access",
-      "CCTV and intercom",
-      "LED lighting throughout"
-    ],
-    "rent_psf": 26.55,
-    "rent_pa": 3000,
-    "rent": "£3,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/12de2117b408f9aa17dcf5bb16f78112-letting346677.jpeg",
-      "https://as-images.imgix.net/e00e464567222fe8b077d564d1c33647-letting346677.jpeg",
-      "https://as-images.imgix.net/97435a829d82a95629e5a7d2c6b729e2-letting346677.jpeg",
-      "https://as-images.imgix.net/c12dc74cd4ad3bd3eb8278e360412534-letting346677.jpeg",
-      "https://as-images.imgix.net/5c56500fbed45c457cf1c31808c7e70a-letting346677.jpeg",
-      "https://as-images.imgix.net/b392b4916b11fd84ceb99a0ecba082e2-letting346677.jpeg",
-      "https://as-images.imgix.net/f3329452c15d53edbb295f52a5373d89-letting346677.jpeg",
-      "https://as-images.imgix.net/3fde9f14af3f34b41c02121212381d60-letting346677.jpeg",
-      "https://as-images.imgix.net/0e66f586f5e4b8003e6295da1eafff63-letting346677.jpeg",
-      "https://as-images.imgix.net/2b6a11cf86d59c06674425c6d6a4b5f2-letting346677.jpeg",
-      "https://as-images.imgix.net/b9e6122bca01d449c9674b6e6b3afb80-letting346677.jpeg",
-      "https://as-images.imgix.net/1dbb824e89180b63cfc414225b162c90-letting346677.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/18345051b406d0efab9aff5c3c8441cb-the-row-hanbury-pc-v1.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-03 12:19:37"
-  },
-  {
     "id": 346754,
     "status": "Available",
     "address": "One Kings Court",
