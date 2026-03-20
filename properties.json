@@ -1,5 +1,63 @@
 [
   {
+    "id": 346876,
+    "status": "Available",
+    "address": "Global House",
+    "town": "Worcester",
+    "postcode": "WR1 2BU",
+    "lat": 52.190757751,
+    "lon": -2.214889049,
+    "types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 789,
+    "size_to_sqft": 1578,
+    "summary": "Office To Let, Worcester",
+    "description": "The property comprises a purpose-built office building that is arranged over the ground and first floors. The office accommodation provides regular open plan space throughout. Each floor has its own WC and kitchenette facilities. The property can be let as a whole or on a floor by floor basis, with each floor having its own secure access and one designated car parking space (two for the whole building).",
+    "features": [],
+    "rent_psf": 15,
+    "rent_pa": 11835,
+    "rent": "£11,835 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/81d3699fd3a8c3e1ff8ad71e3485394b-letting346876.jpeg",
+      "https://as-images.imgix.net/4f52e39571936693cc47b6ab68194fb8-letting346876.jpeg",
+      "https://as-images.imgix.net/cd87d597734734c630b934d332eb7e22-letting346876.jpeg",
+      "https://as-images.imgix.net/b8512363456752289984e71db1f6c7b9-letting346876.jpeg",
+      "https://as-images.imgix.net/f0b24d9c7fda05607b6abe2dcd692b1d-letting346876.jpeg",
+      "https://as-images.imgix.net/0d625bb21369d07af55a156cbf18a2ba-letting346876.jpeg",
+      "https://as-images.imgix.net/f7ba1836678617632874bb332a71cbd5-letting346876.jpeg",
+      "https://as-images.imgix.net/2d35be17655ca61cee5f310262154dc3-letting346876.jpeg",
+      "https://as-images.imgix.net/12cca86e3d676d8449c5f6743776b63d-letting346876.jpeg",
+      "https://as-images.imgix.net/8fb07205cbd1abbb34f94ea27e891528-letting346876.jpeg",
+      "https://as-images.imgix.net/aacee7bbfc75a7139b8d8806593cb222-letting346876.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/a61e282bf2d566aa46359bfae9695738-letting346876.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-03-20 11:16:19"
+  },
+  {
     "id": 346855,
     "status": "Available",
     "address": "George Road",
@@ -1798,64 +1856,6 @@
       }
     ],
     "last_updated": "2026-03-03 12:11:35"
-  },
-  {
-    "id": 346876,
-    "status": "Available",
-    "address": "Global House",
-    "town": "Worcester",
-    "postcode": "WR1 2BU",
-    "lat": 52.190757751,
-    "lon": -2.214889049,
-    "types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 789,
-    "size_to_sqft": 1578,
-    "summary": "Office To Let, Worcester",
-    "description": "The property comprises a purpose-built office building that is arranged over the ground and first floors. The office accommodation provides regular open plan space throughout. Each floor has its own WC and kitchenette facilities. The property can be let as a whole or on a floor by floor basis, with each floor having its own secure access and one designated car parking space (two for the whole building).",
-    "features": [],
-    "rent_psf": 15,
-    "rent_pa": 11835,
-    "rent": "£11,835 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/81d3699fd3a8c3e1ff8ad71e3485394b-letting346876.jpeg",
-      "https://as-images.imgix.net/4f52e39571936693cc47b6ab68194fb8-letting346876.jpeg",
-      "https://as-images.imgix.net/cd87d597734734c630b934d332eb7e22-letting346876.jpeg",
-      "https://as-images.imgix.net/b8512363456752289984e71db1f6c7b9-letting346876.jpeg",
-      "https://as-images.imgix.net/f0b24d9c7fda05607b6abe2dcd692b1d-letting346876.jpeg",
-      "https://as-images.imgix.net/0d625bb21369d07af55a156cbf18a2ba-letting346876.jpeg",
-      "https://as-images.imgix.net/f7ba1836678617632874bb332a71cbd5-letting346876.jpeg",
-      "https://as-images.imgix.net/2d35be17655ca61cee5f310262154dc3-letting346876.jpeg",
-      "https://as-images.imgix.net/12cca86e3d676d8449c5f6743776b63d-letting346876.jpeg",
-      "https://as-images.imgix.net/8fb07205cbd1abbb34f94ea27e891528-letting346876.jpeg",
-      "https://as-images.imgix.net/aacee7bbfc75a7139b8d8806593cb222-letting346876.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/a61e282bf2d566aa46359bfae9695738-letting346876.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-03 12:06:21"
   },
   {
     "id": 346708,
