@@ -1,5 +1,73 @@
 [
   {
+    "id": 346771,
+    "status": "Under Offer",
+    "address": "Bramley Drive",
+    "town": "Evesham",
+    "postcode": "WR11 1JH",
+    "lat": 52.074180603,
+    "lon": -1.938506007,
+    "types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 80236,
+    "size_to_sqft": 80236,
+    "summary": "Industrial To Let, Evesham",
+    "description": "The property is of modern two bay steel portal frame construction incorporating integral two storey offices with canteen and locker room facilities. - 76 car parking spaces including 4 EV points - Cycle storage racks - Secure concrete surfaced yard area - 12 metre working height - 5 dock level loading and 3 level access loading doors - 380 kVA power supply - 99 kW solar power generated from PV panels - Gas fired wall mounted blowers - Ground and first floor offices - Passenger lift to first floor offices - Wide aisle racking with capacity for up to 10,500 pallet spaces - High level LED lighting Location Evesham is located at the junction of the A44 and A46 trunk roads, approximately 17 miles to the south-east of Worcester, approximately 16 miles to the south of Redditch and 16 miles to the north of Cheltenham. Access is available to the M5 at Junction 6 (Worcester), Junction 9 (Tewkesbury) and to the M42 motorway at Junction 3 and the M40 motorway at Junction 15. The property is situated on the well-established Vale Business Park situated approximately 2 miles south of Evesham town centre. Warehouse 6,330 sq m 68,138 sq ft Two Storey Offices 734 sq m 7,900 sq ft Mezzanine 390 sq m 4,198 sq ft",
+    "features": [
+      "Fully fitted and ready for occupation",
+      "380 kVA power supply",
+      "99 kW solar power generated from PV panels",
+      "Wide aisle racking with capacity up to 10,500 pallet spaces",
+      "Ground and first floor office space",
+      "Passenger lift to first floor offices",
+      "High level LED lighting",
+      "Virtual Tour Available"
+    ],
+    "rent_psf": 7,
+    "rent_pa": 561648,
+    "rent": "£561,648 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/eeba46b4839923741278129455f1a05c-letting346771.jpeg",
+      "https://as-images.imgix.net/4dd72be6f9c9160d44ffeeb976c6c409-letting346771.jpeg",
+      "https://as-images.imgix.net/fb8e57236c1e667be874b0261e1c72b0-letting346771.jpeg",
+      "https://as-images.imgix.net/89167b7c24ba6f7d7306d10921548483-letting346771.jpeg",
+      "https://as-images.imgix.net/cb23b613eb6e4d7e26c2229de2ecfa26-letting346771.jpeg",
+      "https://as-images.imgix.net/4eea15b7d70a3dac309641c8511e1e3e-letting346771.jpeg",
+      "https://as-images.imgix.net/ebbdc8453de317d48fba4be447a4cb45-letting346771.jpeg",
+      "https://as-images.imgix.net/baf3a4275b42d92e13450c446888a6a9-letting346771.jpeg",
+      "https://as-images.imgix.net/00c0c36a0f4e88df40ab1e8745267150-letting346771.jpeg",
+      "https://as-images.imgix.net/93e98988e80d5f372a12502e7444758e-letting346771.jpeg",
+      "https://as-images.imgix.net/524ba79ea043d321ea187ddfe4fc0859-letting346771.jpeg",
+      "https://as-images.imgix.net/4b4806df7b1921f95f1b5182c92f2531-letting346771.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/693d4a1e99114bb0e6b662b5096268cc-letting346771.pdf",
+    "contacts": [
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "John Dillon",
+        "email": "johndillon@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07500 774 775",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-03-23 15:57:05"
+  },
+  {
     "id": 346876,
     "status": "Available",
     "address": "Global House",
@@ -865,74 +933,6 @@
       }
     ],
     "last_updated": "2026-03-03 16:42:46"
-  },
-  {
-    "id": 346771,
-    "status": "Under Offer",
-    "address": "Bramley Drive",
-    "town": "Evesham",
-    "postcode": "WR11 1JH",
-    "lat": 52.074180603,
-    "lon": -1.938506007,
-    "types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 80236,
-    "size_to_sqft": 80236,
-    "summary": "Industrial To Let, Evesham",
-    "description": "The property is of modern two bay steel portal frame construction incorporating integral two storey offices with canteen and locker room facilities. - 76 car parking spaces including 4 EV points - Cycle storage racks - Secure concrete surfaced yard area - 12 metre working height - 5 dock level loading and 3 level access loading doors - 380 kVA power supply - 99 kW solar power generated from PV panels - Gas fired wall mounted blowers - Ground and first floor offices - Passenger lift to first floor offices - Wide aisle racking with capacity for up to 10,500 pallet spaces - High level LED lighting Location Evesham is located at the junction of the A44 and A46 trunk roads, approximately 17 miles to the south-east of Worcester, approximately 16 miles to the south of Redditch and 16 miles to the north of Cheltenham. Access is available to the M5 at Junction 6 (Worcester), Junction 9 (Tewkesbury) and to the M42 motorway at Junction 3 and the M40 motorway at Junction 15. The property is situated on the well-established Vale Business Park situated approximately 2 miles south of Evesham town centre. Warehouse 6,330 sq m 68,138 sq ft Two Storey Offices 734 sq m 7,900 sq ft Mezzanine 390 sq m 4,198 sq ft",
-    "features": [
-      "Fully fitted and ready for occupation",
-      "380 kVA power supply",
-      "99 kW solar power generated from PV panels",
-      "Wide aisle racking with capacity up to 10,500 pallet spaces",
-      "Ground and first floor office space",
-      "Passenger lift to first floor offices",
-      "High level LED lighting",
-      "Virtual Tour Available"
-    ],
-    "rent_psf": 7,
-    "rent_pa": 561648,
-    "rent": "£561,648 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/eeba46b4839923741278129455f1a05c-letting346771.jpeg",
-      "https://as-images.imgix.net/4dd72be6f9c9160d44ffeeb976c6c409-letting346771.jpeg",
-      "https://as-images.imgix.net/fb8e57236c1e667be874b0261e1c72b0-letting346771.jpeg",
-      "https://as-images.imgix.net/89167b7c24ba6f7d7306d10921548483-letting346771.jpeg",
-      "https://as-images.imgix.net/cb23b613eb6e4d7e26c2229de2ecfa26-letting346771.jpeg",
-      "https://as-images.imgix.net/4eea15b7d70a3dac309641c8511e1e3e-letting346771.jpeg",
-      "https://as-images.imgix.net/ebbdc8453de317d48fba4be447a4cb45-letting346771.jpeg",
-      "https://as-images.imgix.net/baf3a4275b42d92e13450c446888a6a9-letting346771.jpeg",
-      "https://as-images.imgix.net/00c0c36a0f4e88df40ab1e8745267150-letting346771.jpeg",
-      "https://as-images.imgix.net/93e98988e80d5f372a12502e7444758e-letting346771.jpeg",
-      "https://as-images.imgix.net/524ba79ea043d321ea187ddfe4fc0859-letting346771.jpeg",
-      "https://as-images.imgix.net/4b4806df7b1921f95f1b5182c92f2531-letting346771.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/693d4a1e99114bb0e6b662b5096268cc-letting346771.pdf",
-    "contacts": [
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "John Dillon",
-        "email": "johndillon@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07500 774 775",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-03 16:41:29"
   },
   {
     "id": 346667,
