@@ -1423,55 +1423,6 @@
     "last_updated": "2026-03-03 16:10:11"
   },
   {
-    "id": 346878,
-    "status": "Available",
-    "address": "58 Oxford Street",
-    "town": "Kidderminster",
-    "postcode": "DY10 1BJ",
-    "lat": 52.386146545,
-    "lon": -2.247409105,
-    "types": [
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 732,
-    "size_to_sqft": 732,
-    "summary": "Prominently positioned retail premises",
-    "description": "The property offers a retail / office area over the ground floor, which also provides a prominent frontage to Oxford Street. Also, at ground floor level is a rear kitchen and WC facilities, along with a small yard area. Over the first floor there is further accommodation set within three different rooms.",
-    "features": [],
-    "rent_psf": 12.43,
-    "rent_pa": 9100,
-    "rent": "£9,100 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/35401594fad623b1749ab38818668325-letting346878.jpeg",
-      "https://as-images.imgix.net/c6f82fe7d76674506cfa220525cb2622-letting346878.jpeg",
-      "https://as-images.imgix.net/0d5d61c00f9255b3a0ec38f3da6384ba-letting346878.jpeg",
-      "https://as-images.imgix.net/384c5667f17749116fd744d8954a6efa-letting346878.jpeg",
-      "https://as-images.imgix.net/60282339ca390e15c7d03d91b581f043-letting346878.jpeg",
-      "https://as-images.imgix.net/69bd2522e4b17efa75349d1d61eba60a-letting346878.jpeg",
-      "https://as-images.imgix.net/98a99117018ad783ee2ff1befe7a7d59-letting346878.jpeg",
-      "https://as-images.imgix.net/3ef9ee755b6f50351de53f872886b25d-letting346878.jpeg",
-      "https://as-images.imgix.net/120c5bfa9e4427af07f9dcdc9bc3b56a-letting346878.jpeg",
-      "https://as-images.imgix.net/c71c29b5dbdbbc5a594d50bb213bd577-letting346878.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9a03acd7d302f46e1ec45ecc0238802c-letting346878.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-03 16:06:11"
-  },
-  {
     "id": 353374,
     "status": "Available",
     "address": "169-171 Newtown Road",
