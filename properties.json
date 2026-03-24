@@ -1,5 +1,69 @@
 [
   {
+    "id": 353370,
+    "status": "Under Offer",
+    "address": "Hylton Road",
+    "town": "Worcester",
+    "postcode": "WR2 5JS",
+    "lat": 52.193804,
+    "lon": -2.232411,
+    "types": [
+      "Car Park",
+      "Development Land",
+      "Development Site",
+      "Industrial Land",
+      "Land",
+      "Open Storage",
+      "Yard"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 20865.24,
+    "size_to_sqft": 20865.24,
+    "summary": "Development site on Elm Road, Worcester",
+    "description": "Elm Road is a small cul-de-sac that adjoins Hylton Road (A443) – one of the main arterial roads to the west of Worcester, which runs southwards to Worcester city centre and other main access routes in and out of the city.  The site sits at the western end of Elm Road, which we assume it has uninterrupted access over.\n\nThere were previously multiple industrial units on the site, all of which have now been demolished leaving a clear site which we note is free from contamination.  Planning permission has been granted under reference 19/00614/FUL for: Demolish existing unit 1,2 and 5 and replace with a new 2 storey building for commercial storage (Use class B8).\n\nThe proposed development extends to 17,061 sq ft",
+    "location": "Elm Road is located in Worcester city centre.  Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London.  Worcester has excellent access to the M5 motorway, which lies adjacent to the subject property with Junction 7 being approximately one and a half miles drive south.  The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network.\n\nWorcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
+    "features": [
+      "Site area 0.479 acres",
+      "Proposed development extends to 17,061 sq ft (1,585 sq m)",
+      "Planning permission granted for a 2 storey building for commercial storage (use class B8) Reference 19/00614/FUL",
+      "Walking distance to city centre",
+      "Excellent links to the national motorway networks"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/0cf42b7478f78639dec55a7472256e01-img-4063.JPG",
+      "https://as-images.imgix.net/8bde251f9710d7d09e9a37a10cdd7371-img-4060.JPG",
+      "https://as-images.imgix.net/9e2130c6e026455f54b1d06c9d26d008-img-4047.JPG",
+      "https://as-images.imgix.net/f12fd5a80f337d25cfea6d5bf0c0250d-img-4043.JPG",
+      "https://as-images.imgix.net/7a09d35c0e38661610ce988d30be9ea0-img-4064.JPG",
+      "https://as-images.imgix.net/da749ddf479a391ca7d80a10a4bf3cc5-img-4042.JPG",
+      "https://as-images.imgix.net/030cb635e17fbd00a5aeb94a377f44f7-img-4045.JPG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/72dee4048b4a1b80d8aee2b03ffbee82-gjs-dillon-particulars-development-site-on-elm-road-worcester-wr2-5js.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-03-24 08:51:41"
+  },
+  {
     "id": 358186,
     "status": "Available",
     "address": "44 High Street",
