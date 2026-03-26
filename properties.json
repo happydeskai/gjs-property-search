@@ -1490,58 +1490,6 @@
     "last_updated": "2026-03-03 16:04:50"
   },
   {
-    "id": 346748,
-    "status": "Available",
-    "address": "Betony Road",
-    "town": "Malvern",
-    "postcode": "WR14 1GS",
-    "lat": 52.127925872,
-    "lon": -2.301863908,
-    "types": [
-      "Industrial",
-      "Trade Counter"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1640,
-    "size_to_sqft": 1640,
-    "summary": "Industrial / Trade Counter To Let, Malvern",
-    "description": "Malvern Business Centre is a modern purpose-built commercial complex comprising of 9 trade counters/business units which were constructed circa 2007. The units are of modern steel portal frame construction with part block / part steel profile cladding above, surmounted by an insulated steel profile clad pitched roof incorporating brand new roof lights which provide a good amount of natural light. Internally, the unit provides a good sized ground floor warehouse / trade counter area with modern ceiling mounted halogen lighting, an electrically operated steel roller shutter door with separate pedestrian doorway and a fully sealed concrete floor. Stairs lead up to a mezzanine storage area which can be used for storage or office use. Warehouse/Trade Counter Area 1,220 sq ft 113.30 sq m Mezzanine Floor 420 sq ft 39.02 sq m Total 1,640 sq ft 152.32 sq m Location Malvern Business Centre is situated on Enigma Business Park which is Malvern's main industrial / warehouse and office area - being approximately two miles north of Great Malvern town centre, eight miles south west of Worcester city centre, 21 miles east of Hereford city centre and 26 miles north of Gloucester. Malvern benefits from good transport communications with the A449 leading to Worcester city centre and the A4440 connecting with Junction 7 of the M5 motorway, which is approximately five miles to the north east. Malvern Business Centre is fronting yet set back from Betony Road which is the main spine road leading through Enigma Business Park and as such the unit benefits from a great deal of passing trade in this location. Other occupiers on Enigma Business Park include Screwfix, City Plumbing, Malvern Panalytical, Neoperl and Aldi. Adjacent to the business park there is Enigma Retail Park where several national retailers are represented including Boots, Morrisons, Next, McDonalds, Marks and Spencer and Caf√à Nero.",
-    "features": [
-      "Ground floor warehouse with mezzanine office / storage",
-      "Two allocated parking spaces with loading / unloading",
-      "Electrically operated roller shutter door",
-      "Fully sealed concrete floor"
-    ],
-    "rent_psf": 10.98,
-    "rent_pa": 18000,
-    "rent": "£18,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/f1456fc29e52aa909cb673215a455f0b-letting346748.jpeg",
-      "https://as-images.imgix.net/105e40aeb14e4502add61fcf6462be0d-letting346748.jpeg",
-      "https://as-images.imgix.net/f1f54b75cdc7d002a2a2b71eae97c8f0-letting346748.jpeg",
-      "https://as-images.imgix.net/71d86ccfe20eca20a07c5b1c94f9e140-letting346748.jpeg",
-      "https://as-images.imgix.net/660aa199af4b16101b751eb172b402ac-letting346748.jpeg",
-      "https://as-images.imgix.net/827d0d967b4935023358b094cb8aec00-letting346748.jpeg",
-      "https://as-images.imgix.net/63dce5ff883cf1610d983be7f9338599-letting346748.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c9c0eed25d7bd0dc5f6cebe4b74697da-gjs-dillon-particulars-1-malvern-busines-centre-malvern-wr14.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-03 16:03:40"
-  },
-  {
     "id": 346700,
     "status": "Available",
     "address": "Kempsey Eco Business Park,Industrial / Warehouse Buildings",
@@ -2287,7 +2235,7 @@
     "features": [],
     "rent_psf": 6.87,
     "rent_pa": 75000,
-    "rent": "��75,000 per annum",
+    "rent": "£75,000 per annum",
     "business_rates_psf": 0,
     "rateable_value": 0,
     "epc_rating": "",
