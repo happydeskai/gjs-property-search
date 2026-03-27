@@ -186,7 +186,16 @@
         <option value="sold stc">Sold STC</option>
       </select>
     </div>
-    <div class="field"><label for="type">Type</label><select id="type"><option value="any">Any</option></select></div>
+    <div class="field"><label for="type">Type</label>
+      <select id="type">
+        <option value="any">Any</option>
+        <option value="Industrial">Industrial</option>
+        <option value="Office">Office</option>
+        <option value="Retail">Retail</option>
+        <option value="Development/Investment">Development/Investment</option>
+        <option value="Land">Land</option>
+      </select>
+    </div>
     <div class="field"><label for="radius">Radius</label>
       <select id="radius">
         <option value="any">Any</option>
@@ -199,26 +208,8 @@
         <option value="50">50 miles</option>
       </select>
     </div>
-    <div class="field"><label for="minSize">Min size</label>
-  <select id="minSize">
-    <option value="">No Min Size</option>
-    <option value="1000">1,000 sq ft</option>
-    <option value="2000">2,000 sq ft</option>
-    <option value="5000">5,000 sq ft</option>
-    <option value="10000">10,000 sq ft</option>
-    <option value="20000">20,000 sq ft</option>
-  </select>
-</div>
-<div class="field"><label for="maxSize">Max size</label>
-  <select id="maxSize">
-    <option value="">No Max Size</option>
-    <option value="1000">1,000 sq ft</option>
-    <option value="2000">2,000 sq ft</option>
-    <option value="5000">5,000 sq ft</option>
-    <option value="10000">10,000 sq ft</option>
-    <option value="20000">20,000 sq ft</option>
-  </select>
-</div>
+    <div class="field"><label for="minSize">Min size (sq ft)</label><input id="minSize" type="number" inputmode="numeric" placeholder="e.g. 1000" /></div>
+    <div class="field"><label for="maxSize">Max size (sq ft)</label><input id="maxSize" type="number" inputmode="numeric" placeholder="e.g. 5000" /></div>
     <button class="btn" id="searchBtn" type="button">Search</button>
   </div>
   <div class="meta" id="statusText">Loading properties…</div>
@@ -488,7 +479,7 @@ async function applyFilters() {
     }
     if (typeLC !== 'any') {
       const types = getTypesArray(p);
-      if (!types.lc.some(t => t.includes(typeLC))) return false;
+      if (!types.lc.some(t => t === typeLC)) return false;
     }
     // FIX: Size filter — property must overlap with the requested size range.
     // A property passes minSize if its largest available unit >= minSize.
@@ -538,18 +529,7 @@ async function loadProperties() {
     const raw = await res.json();
     allProperties = raw.map((p, i) => ({ id: p.id ?? p.slug ?? p.uid ?? i, ...p }));
 
-    const typeSet = new Set();
-    allProperties.forEach(p => {
-      if (Array.isArray(p.types)) p.types.forEach(t => { if (t) typeSet.add(String(t).trim()); });
-      if (p.type) typeSet.add(String(p.type).trim());
-      if (p.property_type) typeSet.add(String(p.property_type).trim());
-    });
-
     const typeSel = document.getElementById('type');
-    typeSel.innerHTML = `<option value="any">Any</option>` +
-      [...typeSet].filter(Boolean).sort((a, b) => a.localeCompare(b))
-      .map(t => `<option>${t}</option>`).join('');
-
     if (typeSel.dataset.prefill) typeSel.value = typeSel.dataset.prefill;
     applyFilters();
   } catch (e) {
