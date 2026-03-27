@@ -65,9 +65,77 @@ async function run() {
         .join(" ")
         .toLowerCase();
 
-      const types = arr(p.types?.type)
+      const rawTypes = arr(p.types?.type)
         .map((t) => (typeof t === "string" ? t : t._ ?? ""))
         .filter(Boolean);
+
+      // Map Kato types → 4 website categories
+      const TYPE_MAP = {
+        // Industrial
+        "automotive": "Industrial",
+        "business units": "Industrial",
+        "data centre": "Industrial",
+        "design and build": "Industrial",
+        "distribution": "Industrial",
+        "distribution warehouse": "Industrial",
+        "factory": "Industrial",
+        "gym": "Industrial",
+        "industrial": "Industrial",
+        "industrial (multi let scheme)": "Industrial",
+        "industrial / manufacturing": "Industrial",
+        "industrial / storage": "Industrial",
+        "industrial / warehouse": "Industrial",
+        "industrial land": "Industrial",
+        "industrial park": "Industrial",
+        "industrial/logistics": "Industrial",
+        "light industrial": "Industrial",
+        "logistics": "Industrial",
+        "open storage": "Industrial",
+        "trade": "Industrial",
+        "trade counter": "Industrial",
+        "trade counter / showroom": "Industrial",
+        "urban logistics": "Industrial",
+        "warehouse": "Industrial",
+        "workshops": "Industrial",
+        "yard": "Industrial",
+        // Office
+        "business park": "Office",
+        "education": "Office",
+        "f1 (learning and non-residential institutions)": "Office",
+        "office": "Office",
+        "serviced office": "Office",
+        // Retail
+        "a3 (restaurants and cafes)": "Retail",
+        "bar": "Retail",
+        "cafe (a1)": "Retail",
+        "class e retail / leisure": "Retail",
+        "high street retail": "Retail",
+        "retail": "Retail",
+        // Development / Investment
+        "alternative use opportunity": "Development/Investment",
+        "commercial development": "Development/Investment",
+        "development": "Development/Investment",
+        "development land": "Development/Investment",
+        "development potential": "Development/Investment",
+        "development site": "Development/Investment",
+        "investment": "Development/Investment",
+        "investment - industrial": "Development/Investment",
+        "investment - mixed use": "Development/Investment",
+        "investment - office": "Development/Investment",
+        "investment - residential": "Development/Investment",
+        "investment - retail & leisure": "Development/Investment",
+        "investment - mixed use": "Development/Investment",
+        "residential development": "Development/Investment",
+        // Multi-category (E class covers industrial/office/retail)
+        "e (commercial / business / service)": "Industrial",
+        "mixed use": "Industrial",
+        // Land stays as Land
+        "land": "Land",
+      };
+
+      const types = [...new Set(
+        rawTypes.map((t) => TYPE_MAP[t.toLowerCase()] || t)
+      )].filter(Boolean);
 
       // features
       const features = arr(p.key_selling_points?.key_selling_point)
@@ -162,6 +230,7 @@ async function run() {
         lon: Number(p.lon),
 
         types,
+        raw_types: rawTypes, // original Kato types preserved for reference
         to_let: av.includes("to let"),
         for_sale: av.includes("for sale"),
 
