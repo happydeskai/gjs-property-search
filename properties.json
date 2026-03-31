@@ -1,5 +1,124 @@
 [
   {
+    "id": 360938,
+    "status": "Available",
+    "address": "Unit 1, Sentinel House",
+    "town": "Malvern",
+    "postcode": "WR14 1GL",
+    "lat": 52.12761,
+    "lon": -2.305339,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 29995,
+    "size_to_sqft": 29995,
+    "summary": "High Specification Warehouse with Secure Yard & Parking",
+    "description": "Unit 1 Sentinel House comprises a modern, detached warehouse that has been finished to a high standard.  The unit is of a steel portal frame construction, with there being a part brick-built frontage to encompass a reception area and office space.\n\n•\t8.5m to underside of haunch\n•\tSolid level concrete floor throughout\n•\tThree 4.5m x 6m up & over roller shutter doors\n•\tLoading / Unloading to the front, rear & side\n•\tThree phase power\n•\t52 allocated car parking spaces\n\nGround Floor Office 2,062 sq ft (191.60 sq m)\nFirst Floor Office 2,259 sq ft (209.88 sq m)\nWarehouse 21,786 sq ft (2,023.95 sq m)\nTotal Floor Area 26,107 sq ft (2,425.43 sq m)\n\nMezzanine Floor 3,888 sq ft (361.20 sq m)\nTotal Floor Area (inc Mezz.) 29,995 sq ft (2,786.63 sq m)",
+    "location": "Unit 1 Sentinel House is situated on Enigma Business Park, which is Malvern’s prime out of town business park being situated approximately two miles to the north of Great Malvern and being adjacent to the very popular Enigma Retail Park (where occupiers include Morrisons, Aldi & Marks & Spencer. \n\nMalvern benefits from having good transport communications with the A449 leading to Worcester city centre and the A440 connecting with Junction 7 of the M5 motorway which are both approximately five miles to the north-east.  Hereford city centre is 21 miles to the east with Gloucester being 26 miles south.",
+    "features": [
+      "26,107 sq ft (2,425.43 sq m) GIA Plus an additional 3,888 sq ft mezzanine area",
+      "Three roller shutter doors offering three different loading points – including a secure yard",
+      "8.5m to underside of haunch",
+      "52 car parking spaces",
+      "High quality airconditioned office space",
+      "Situated at the heart of Enigma Commercial Business Park, Malvern"
+    ],
+    "rent_psf": 7.83,
+    "rent_pa": 235000,
+    "rent": "£235,000 per annum",
+    "business_rates_psf": 79920,
+    "rateable_value": 144000,
+    "epc_rating": "C (68)",
+    "images": [
+      "https://as-images.imgix.net/8f1249d0a68c3e7b33e090a4bd36529b-aerial-front.JPG",
+      "https://as-images.imgix.net/94423f7d459504bf7af4ae698e1d9b44-warehouse.jpg",
+      "https://as-images.imgix.net/47e896b37718d9af791193cd75a34f19-office.jpg",
+      "https://as-images.imgix.net/045d3b4d07856399ea153ac62fe5c08e-top-down.JPG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/1ad2e8db468cad64f949c3209c9ce4a8-gjs-dillon-particulars-unit-1-sentinel-house-malvern.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-03-31 16:38:20"
+  },
+  {
+    "id": 346841,
+    "status": "Available",
+    "address": "First Floor, Suite 1, Birchwood House,",
+    "town": "Malvern",
+    "postcode": "WR14 1JJ",
+    "lat": 52.124629974,
+    "lon": -2.30251789,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3110,
+    "size_to_sqft": 3110,
+    "summary": "Modern Grade A First Floor Office",
+    "description": "This is the final office building on the Enigma Commercial Centre development. It commands a prime location adjacent to the main entrance into the Enigma Commercial Centre. The building is constructed with brick elevations surmounted by a pitch tiled roof, in keeping with all the existing adjacent offices. \n\nFirst Floor, Suite One, comprises of 3,110 sq. ft. (288.99 sq. m.) (NIA) of open plan accommodation. \n\nAll the offices on the Enigma Commercial Centre are built to a high standard and this building includes the following: \n\n•\tAir-Conditioned  \n•\tSuspended ceilings incorporating low energy inset LED lighting\n•\tFully carpeted raised access floors - floor boxes connected to CAT 6 Data and Power distribution.\n•\tGenerous car parking provision",
+    "location": "This new office building fronts Sandys Road on Enigma Business Park, which is Malvern’s main office, industrial and commercial area, being situated approximately two miles to the north of Great Malvern. \n\nMalvern is situated approximately eight miles south west of Worcester, 21 miles east of Hereford and 26 miles north of Gloucester. The town benefits from good transport communications with the A449 leading to Worcester city centre and the A440 connecting with Junction 7 of the M5 motorway, which is approximately five miles to the north east.",
+    "features": [
+      "First floor office - 3,110 Sq Ft (288.99 Sq M) NIA",
+      "High specification, first floor office",
+      "Excellent on site car parking provision",
+      "Air conditioning and low energy LED lighting",
+      "Junction 7 of the M5 motorway is approximately 5 miles"
+    ],
+    "rent_psf": 14.79,
+    "rent_pa": 46000,
+    "rent": "£46,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 27250,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/9c8fb7c223a7aa2e028aa4c71acbfb15-letting346841.jpeg",
+      "https://as-images.imgix.net/29a31f3fc256ccea9b9f657649641497-letting346841.jpeg",
+      "https://as-images.imgix.net/fa2024a5fe3c26189f784bf83f8d3054-letting346841.jpeg",
+      "https://as-images.imgix.net/f74c018214927677539fbd6e221bbe7b-letting346841.jpeg",
+      "https://as-images.imgix.net/fe27b5fde6e0cf87bc4009470e74d62f-letting346841.jpeg",
+      "https://as-images.imgix.net/10d583c9c1bf9a47c00d4f39325626d5-letting346841.jpeg",
+      "https://as-images.imgix.net/63474868af3105abc4935d26e0f4d56d-e459d678-c816-41c7-b439-74aaa8bc2341.jpeg",
+      "https://as-images.imgix.net/f10d8dfe10e0795bec2207dc48b22c28-d0b2f772-f5d2-437a-b0c0-8883973c496a.jpeg",
+      "https://as-images.imgix.net/7ff1c91c19bce0471fb2b84bf0eaab9d-97458d02-4de1-4387-86b6-962a2244d506.jpeg"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-03-31 16:36:12"
+  },
+  {
     "id": 354040,
     "status": "Available",
     "address": "15 Aston Court",
@@ -188,68 +307,6 @@
     "last_updated": "2026-03-31 10:08:01"
   },
   {
-    "id": 360938,
-    "status": "Available",
-    "address": "Unit 1",
-    "town": "Malvern",
-    "postcode": "WR14 1GL",
-    "lat": 52.12761,
-    "lon": -2.305339,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 29995,
-    "size_to_sqft": 29995,
-    "summary": "High Specification Warehouse with Secure Yard & Parking",
-    "description": "Unit 1 Sentinel House comprises a modern, detached warehouse that has been finished to a high standard.  The unit is of a steel portal frame construction, with there being a part brick-built frontage to encompass a reception area and office space.\n\n•\t8.5m to underside of haunch\n•\tSolid level concrete floor throughout\n•\tThree 4.5m x 6m up & over roller shutter doors\n•\tLoading / Unloading to the front, rear & side\n•\tThree phase power\n•\t52 allocated car parking spaces\n\nGround Floor Office 2,062 sq ft (191.60 sq m)\nFirst Floor Office 2,259 sq ft (209.88 sq m)\nWarehouse 21,786 sq ft (2,023.95 sq m)\nTotal Floor Area 26,107 sq ft (2,425.43 sq m)\n\nMezzanine Floor 3,888 sq ft (361.20 sq m)\nTotal Floor Area (inc Mezz.) 29,995 sq ft (2,786.63 sq m)",
-    "location": "Unit 1 Sentinel House is situated on Enigma Business Park, which is Malvern’s prime out of town business park being situated approximately two miles to the north of Great Malvern and being adjacent to the very popular Enigma Retail Park (where occupiers include Morrisons, Aldi & Marks & Spencer. \n\nMalvern benefits from having good transport communications with the A449 leading to Worcester city centre and the A440 connecting with Junction 7 of the M5 motorway which are both approximately five miles to the north-east.  Hereford city centre is 21 miles to the east with Gloucester being 26 miles south.",
-    "features": [
-      "26,107 sq ft (2,425.43 sq m) GIA Plus an additional 3,888 sq ft mezzanine area",
-      "Three roller shutter doors offering three different loading points – including a secure yard",
-      "8.5m to underside of haunch",
-      "52 car parking spaces",
-      "High quality airconditioned office space",
-      "Situated at the heart of Enigma Commercial Business Park, Malvern"
-    ],
-    "rent_psf": 7.83,
-    "rent_pa": 235000,
-    "rent": "£235,000 per annum",
-    "business_rates_psf": 79920,
-    "rateable_value": 144000,
-    "epc_rating": "C (68)",
-    "images": [
-      "https://as-images.imgix.net/8f1249d0a68c3e7b33e090a4bd36529b-aerial-front.JPG",
-      "https://as-images.imgix.net/94423f7d459504bf7af4ae698e1d9b44-warehouse.jpg",
-      "https://as-images.imgix.net/47e896b37718d9af791193cd75a34f19-office.jpg",
-      "https://as-images.imgix.net/045d3b4d07856399ea153ac62fe5c08e-top-down.JPG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/1ad2e8db468cad64f949c3209c9ce4a8-gjs-dillon-particulars-unit-1-sentinel-house-malvern.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-30 17:22:08"
-  },
-  {
     "id": 358186,
     "status": "Available",
     "address": "44 High Street",
@@ -375,77 +432,6 @@
       }
     ],
     "last_updated": "2026-03-24 08:51:41"
-  },
-  {
-    "id": 346771,
-    "status": "Under Offer",
-    "address": "Bramley Drive",
-    "town": "Evesham",
-    "postcode": "WR11 1JH",
-    "lat": 52.074180603,
-    "lon": -1.938506007,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 80236,
-    "size_to_sqft": 80236,
-    "summary": "Industrial To Let, Evesham",
-    "description": "The property is of modern two bay steel portal frame construction incorporating integral two storey offices with canteen and locker room facilities. - 76 car parking spaces including 4 EV points - Cycle storage racks - Secure concrete surfaced yard area - 12 metre working height - 5 dock level loading and 3 level access loading doors - 380 kVA power supply - 99 kW solar power generated from PV panels - Gas fired wall mounted blowers - Ground and first floor offices - Passenger lift to first floor offices - Wide aisle racking with capacity for up to 10,500 pallet spaces - High level LED lighting Location Evesham is located at the junction of the A44 and A46 trunk roads, approximately 17 miles to the south-east of Worcester, approximately 16 miles to the south of Redditch and 16 miles to the north of Cheltenham. Access is available to the M5 at Junction 6 (Worcester), Junction 9 (Tewkesbury) and to the M42 motorway at Junction 3 and the M40 motorway at Junction 15. The property is situated on the well-established Vale Business Park situated approximately 2 miles south of Evesham town centre. Warehouse 6,330 sq m 68,138 sq ft Two Storey Offices 734 sq m 7,900 sq ft Mezzanine 390 sq m 4,198 sq ft",
-    "features": [
-      "Fully fitted and ready for occupation",
-      "380 kVA power supply",
-      "99 kW solar power generated from PV panels",
-      "Wide aisle racking with capacity up to 10,500 pallet spaces",
-      "Ground and first floor office space",
-      "Passenger lift to first floor offices",
-      "High level LED lighting",
-      "Virtual Tour Available"
-    ],
-    "rent_psf": 7,
-    "rent_pa": 561648,
-    "rent": "£561,648 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/eeba46b4839923741278129455f1a05c-letting346771.jpeg",
-      "https://as-images.imgix.net/4dd72be6f9c9160d44ffeeb976c6c409-letting346771.jpeg",
-      "https://as-images.imgix.net/fb8e57236c1e667be874b0261e1c72b0-letting346771.jpeg",
-      "https://as-images.imgix.net/89167b7c24ba6f7d7306d10921548483-letting346771.jpeg",
-      "https://as-images.imgix.net/cb23b613eb6e4d7e26c2229de2ecfa26-letting346771.jpeg",
-      "https://as-images.imgix.net/4eea15b7d70a3dac309641c8511e1e3e-letting346771.jpeg",
-      "https://as-images.imgix.net/ebbdc8453de317d48fba4be447a4cb45-letting346771.jpeg",
-      "https://as-images.imgix.net/baf3a4275b42d92e13450c446888a6a9-letting346771.jpeg",
-      "https://as-images.imgix.net/00c0c36a0f4e88df40ab1e8745267150-letting346771.jpeg",
-      "https://as-images.imgix.net/93e98988e80d5f372a12502e7444758e-letting346771.jpeg",
-      "https://as-images.imgix.net/524ba79ea043d321ea187ddfe4fc0859-letting346771.jpeg",
-      "https://as-images.imgix.net/4b4806df7b1921f95f1b5182c92f2531-letting346771.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/693d4a1e99114bb0e6b662b5096268cc-letting346771.pdf",
-    "contacts": [
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "John Dillon",
-        "email": "johndillon@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07500 774 775",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-23 15:57:05"
   },
   {
     "id": 346876,
