@@ -129,8 +129,8 @@ async function run() {
         // Multi-category (E class covers industrial/office/retail)
         "e (commercial / business / service)": "Industrial",
         "mixed use": "Industrial",
-        // Land stays as Land
-        "land": "Land",
+        // Land → Development/Investment
+        "land": "Development/Investment",
       };
 
       const types = [...new Set(
