@@ -1,5 +1,65 @@
 [
   {
+    "id": 352967,
+    "status": "Under Offer",
+    "address": "275 Worcester Road",
+    "town": "Malvern",
+    "postcode": "WR14 1AA",
+    "lat": 52.128145,
+    "lon": -2.313932,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 7057,
+    "size_to_sqft": 7057,
+    "summary": "Commercial Freehold Premises",
+    "description": "This prominently positioned detached three-storey property offers an excellent canvas for transformation. Originally constructed as a town house of rendered brick with a pitched tiled roof, the building has since been enhanced with a two-storey front extension added in the 1970s, featuring a concrete frame and large display windows that provide strong street presence.\nTo the rear, a part single-storey/part two-storey brick-built outbuilding with a pitched slate roof has been integrated with the main structure, creating a versatile footprint with a variety of room configurations throughout. Internally, the accommodation currently comprises a series of cellular spaces, offering exciting scope for reconfiguration or comprehensive redevelopment.\nThe site also includes a gravelled rear car park with space for approximately eight vehicles. A striking mature tree sits at the centre of the parking area and is understood to be protected by a Tree Preservation Order, adding character and a sense of established setting.\nOverall, the property represents a compelling development opportunity (subject to planning), with the scale, layout and prominence of the site lending themselves to a wide range of future uses.\nGround floor\t\t3,792.5 ft2 \t(352.46 m2)\nFirst floor retail \t\t756.5 ft2\t\t(756.5 m2)\nSecond floor retail\t\t1,737.8 ft2\t\t(161.51m2)\nThird floor retail \t\t770.3 ft2\t\t(71.59m2)\nTotal \t\t\t7,057 ft2\t\t(655.87 m2)",
+    "location": "Malvern is a spa town and civil parish in Worcester which, in the 2011 Census, had a population of just under 30,000.  The major road, which runs through the centre of Malvern is the A449 which connects Worcester to Ledbury. The M5 Motorway is accessible at Junctions 7 and 8 to the east. The M50 Motorway is accessed at Junction 1 on the A38 between Tewkesbury and Malvern.\nTwo railway stations, approximately one mile apart at Great Malvern and Malvern Link provide direct services to Worcester, Hereford, Birmingham, Oxford, Cheltenham, Gloucester and London Paddington.",
+    "features": [
+      "7,057 ft2 (655.87 m2)",
+      "Located in Malvern Link",
+      "Virtual Tour Avaiable",
+      "Car parking at rear of property",
+      "Development opportunity (STP)"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 29250,
+    "epc_rating": "C (73)",
+    "images": [
+      "https://as-images.imgix.net/9a3c51bb7bbb5311e43a620c955c7969-20251120-122705702-ios.jpg",
+      "https://as-images.imgix.net/b0218b5d4eafc397f1a8785d53ad36ba-20251120-121635934-ios.jpg",
+      "https://as-images.imgix.net/723661952ac86c1914f777fc3bd2dce4-20251120-121656176-ios.jpg",
+      "https://as-images.imgix.net/10cce6343698939b70c580510f9b7839-20251120-121948573-ios.jpg",
+      "https://as-images.imgix.net/94ae5337f8a9633264b2635e8989cc96-20251120-121805147-ios.jpg",
+      "https://as-images.imgix.net/7d50f777da10ff3b636cb7d02a32804b-20251120-120637769-ios.jpg",
+      "https://as-images.imgix.net/c62b2d03e8f55ce33328c95b88687a3e-20251120-120605171-ios.jpg",
+      "https://as-images.imgix.net/36b0b351671bb37ce8a23bfed2bbedaf-20251120-115302765-ios.jpg",
+      "https://as-images.imgix.net/98db8c5ecddac291256380a247509ff1-20251120-120656162-ios.jpg",
+      "https://as-images.imgix.net/866bfcdca10bcc681caffaa1594e7184-20251120-121459348-ios.jpg",
+      "https://as-images.imgix.net/9772c363f03eef64bbe3e82125845714-20251120-115312793-ios.jpg",
+      "https://as-images.imgix.net/1cd2bdc332315edf06b185e23ba3ba0b-20251120-121511852-ios.jpg",
+      "https://as-images.imgix.net/f691738e9b2f62d49514619d79a87e40-20251120-121454186-ios.jpg",
+      "https://as-images.imgix.net/c4f8d20529a7fdba9988a66dfef47824-20251120-120737472-ios.jpg",
+      "https://as-images.imgix.net/a3cb31ebd9c715cbec7b1352ec2589de-20251120-120611276-ios.jpg"
+    ],
+    "contacts": [
+      {
+        "name": "Susanne Phipps",
+        "email": "susannephipps@gjsdillon.co.uk",
+        "phone": "",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-04-01 10:32:30"
+  },
+  {
     "id": 360938,
     "status": "Available",
     "address": "Unit 1, Sentinel House",
@@ -2998,66 +3058,6 @@
       }
     ],
     "last_updated": "2026-02-27 14:50:19"
-  },
-  {
-    "id": 352967,
-    "status": "Under Offer",
-    "address": "275 Worcester Road",
-    "town": "Malvern",
-    "postcode": "WR14 1AA",
-    "lat": 52.128145,
-    "lon": -2.313932,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 7057,
-    "size_to_sqft": 7057,
-    "summary": "Commercial Freehold Premises",
-    "description": "This prominently positioned detached three-storey property offers an excellent canvas for transformation. Originally constructed as a town house of rendered brick with a pitched tiled roof, the building has since been enhanced with a two-storey front extension added in the 1970s, featuring a concrete frame and large display windows that provide strong street presence.\nTo the rear, a part single-storey/part two-storey brick-built outbuilding with a pitched slate roof has been integrated with the main structure, creating a versatile footprint with a variety of room configurations throughout. Internally, the accommodation currently comprises a series of cellular spaces, offering exciting scope for reconfiguration or comprehensive redevelopment.\nThe site also includes a gravelled rear car park with space for approximately eight vehicles. A striking mature tree sits at the centre of the parking area and is understood to be protected by a Tree Preservation Order, adding character and a sense of established setting.\nOverall, the property represents a compelling development opportunity (subject to planning), with the scale, layout and prominence of the site lending themselves to a wide range of future uses.\nGround floor\t\t3,792.5 ft2 \t(352.46 m2)\nFirst floor retail \t\t756.5 ft2\t\t(756.5 m2)\nSecond floor retail\t\t1,737.8 ft2\t\t(161.51m2)\nThird floor retail \t\t770.3 ft2\t\t(71.59m2)\nTotal \t\t\t7,057 ft2\t\t(655.87 m2)",
-    "location": "Malvern is a spa town and civil parish in Worcester which, in the 2011 Census, had a population of just under 30,000.  The major road, which runs through the centre of Malvern is the A449 which connects Worcester to Ledbury. The M5 Motorway is accessible at Junctions 7 and 8 to the east. The M50 Motorway is accessed at Junction 1 on the A38 between Tewkesbury and Malvern.\nTwo railway stations, approximately one mile apart at Great Malvern and Malvern Link provide direct services to Worcester, Hereford, Birmingham, Oxford, Cheltenham, Gloucester and London Paddington.",
-    "features": [
-      "7,057 ft2 (655.87 m2)",
-      "Located in Malvern Link",
-      "Virtual Tour Avaiable",
-      "Car parking at rear of property",
-      "Development opportunity (STP)"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 29250,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/9a3c51bb7bbb5311e43a620c955c7969-20251120-122705702-ios.jpg",
-      "https://as-images.imgix.net/b0218b5d4eafc397f1a8785d53ad36ba-20251120-121635934-ios.jpg",
-      "https://as-images.imgix.net/723661952ac86c1914f777fc3bd2dce4-20251120-121656176-ios.jpg",
-      "https://as-images.imgix.net/10cce6343698939b70c580510f9b7839-20251120-121948573-ios.jpg",
-      "https://as-images.imgix.net/94ae5337f8a9633264b2635e8989cc96-20251120-121805147-ios.jpg",
-      "https://as-images.imgix.net/7d50f777da10ff3b636cb7d02a32804b-20251120-120637769-ios.jpg",
-      "https://as-images.imgix.net/c62b2d03e8f55ce33328c95b88687a3e-20251120-120605171-ios.jpg",
-      "https://as-images.imgix.net/36b0b351671bb37ce8a23bfed2bbedaf-20251120-115302765-ios.jpg",
-      "https://as-images.imgix.net/98db8c5ecddac291256380a247509ff1-20251120-120656162-ios.jpg",
-      "https://as-images.imgix.net/866bfcdca10bcc681caffaa1594e7184-20251120-121459348-ios.jpg",
-      "https://as-images.imgix.net/9772c363f03eef64bbe3e82125845714-20251120-115312793-ios.jpg",
-      "https://as-images.imgix.net/1cd2bdc332315edf06b185e23ba3ba0b-20251120-121511852-ios.jpg",
-      "https://as-images.imgix.net/f691738e9b2f62d49514619d79a87e40-20251120-121454186-ios.jpg",
-      "https://as-images.imgix.net/c4f8d20529a7fdba9988a66dfef47824-20251120-120737472-ios.jpg",
-      "https://as-images.imgix.net/a3cb31ebd9c715cbec7b1352ec2589de-20251120-120611276-ios.jpg"
-    ],
-    "contacts": [
-      {
-        "name": "Susanne Phipps",
-        "email": "susannephipps@gjsdillon.co.uk",
-        "phone": "",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-27 13:27:51"
   },
   {
     "id": 346659,
