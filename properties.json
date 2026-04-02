@@ -1,5 +1,63 @@
 [
   {
+    "id": 358186,
+    "status": "Available",
+    "address": "44 High Street",
+    "town": "Bromsgrove",
+    "postcode": "B61 8HQ",
+    "lat": 52.333969,
+    "lon": -2.061572,
+    "types": [
+      "Office",
+      "Retail"
+    ],
+    "raw_types": [
+      "Office",
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1686,
+    "size_to_sqft": 1686,
+    "summary": "Bromsgrove Town Centre Retail / Office Space",
+    "description": "44 High Street offers a mid-terrace unit that forms part of a larger retail parade.  The building is arranged over the ground, first and second floors.  The property offers a retail/ office area over the ground floor, which provides a prominent frontage to the High Street.  Over the first and second floors there is ancillary office accommodation.  There are WC and kitchen facilities within the premises. \n\t\t\t\t\nGround Floor 618 sq ft / 57.4 sq m \nFirst Floor 580 sq ft / 53.9 sq m\nSecond Floor 487 sq ft / 45.2 sq m \nTotal\t1,686 sq ft\t156.5 sq m",
+    "location": "The property is situated in Bromsgrove Town Centre, to the southern end of the High Street.  Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the town centre, giving access to the Midlands motorway network.\n\nBirmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south.",
+    "features": [
+      "1,685 sq ft (156.5 sq m) NIA",
+      "Well proportioned accommodation over three floors",
+      "Benefitting from a prominent frontage",
+      "Town centre location"
+    ],
+    "rent_psf": 10.38,
+    "rent_pa": 17500,
+    "rent": "£17,500 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 10500,
+    "epc_rating": "D (97)",
+    "images": [
+      "https://as-images.imgix.net/6aee8a8e8f2294bf3cbd950496c082e9-20260323-152314355-ios.jpg",
+      "https://as-images.imgix.net/d2575591e5a3311a6e58d9d57708e829-20260323-152638652-ios.jpg",
+      "https://as-images.imgix.net/1b7a309635ce87dcac8bf28ab93edb76-20260323-152552413-ios.jpg",
+      "https://as-images.imgix.net/c75c4812fa280db7f063b37175a63e6e-20260323-152822882-ios.jpg",
+      "https://as-images.imgix.net/e67a8a8891751f093d35c7bd3297e223-20260323-153008924-ios.jpg",
+      "https://as-images.imgix.net/ad77a61d943fe287eee1e8be16afbbab-20260323-152909173-ios.jpg",
+      "https://as-images.imgix.net/0c7d321e2c4626f5856ef03a24c762eb-20260323-153116431-ios.jpg",
+      "https://as-images.imgix.net/8fc56c260b41152c74b79d6b53ca96c7-20260323-152718114-ios.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9ddc48fdb820c858498c700f80eb4e1c-gjs-dillon-particulars-44-high-street-bromsgrove-b61-8hq-2.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-04-02 11:09:44"
+  },
+  {
     "id": 352967,
     "status": "Under Offer",
     "address": "275 Worcester Road",
@@ -365,64 +423,6 @@
       }
     ],
     "last_updated": "2026-03-31 10:08:01"
-  },
-  {
-    "id": 358186,
-    "status": "Available",
-    "address": "44 High Street",
-    "town": "Bromsgrove",
-    "postcode": "B61 8HQ",
-    "lat": 52.333969,
-    "lon": -2.061572,
-    "types": [
-      "Office",
-      "Retail"
-    ],
-    "raw_types": [
-      "Office",
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1686,
-    "size_to_sqft": 1686,
-    "summary": "Bromsgrove Town Centre Retail / Office Space",
-    "description": "44 High Street offers a mid-terrace unit that forms part of a larger retail parade.  The building is arranged over the ground, first and second floors.  The property offers a retail/ office area over the ground floor, which provides a prominent frontage to the High Street.  Over the first and second floors there is ancillary office accommodation.  There are WC and kitchen facilities within the premises. \n\t\t\t\t\nGround Floor 618 sq ft / 57.4 sq m \nFirst Floor 580 sq ft / 53.9 sq m\nSecond Floor 487 sq ft / 45.2 sq m \nTotal\t1,686 sq ft\t156.5 sq m",
-    "location": "The property is situated in Bromsgrove Town Centre, to the southern end of the High Street.  Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the town centre, giving access to the Midlands motorway network.\n\nBirmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south.",
-    "features": [
-      "1,685 sq ft (156.5 sq m) NIA",
-      "Well proportioned accommodation over three floors",
-      "Benefitting from a prominent frontage",
-      "Town centre location"
-    ],
-    "rent_psf": 10.38,
-    "rent_pa": 17500,
-    "rent": "£17,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 10500,
-    "epc_rating": "D (97)",
-    "images": [
-      "https://as-images.imgix.net/6aee8a8e8f2294bf3cbd950496c082e9-20260323-152314355-ios.jpg",
-      "https://as-images.imgix.net/d2575591e5a3311a6e58d9d57708e829-20260323-152638652-ios.jpg",
-      "https://as-images.imgix.net/1b7a309635ce87dcac8bf28ab93edb76-20260323-152552413-ios.jpg",
-      "https://as-images.imgix.net/c75c4812fa280db7f063b37175a63e6e-20260323-152822882-ios.jpg",
-      "https://as-images.imgix.net/e67a8a8891751f093d35c7bd3297e223-20260323-153008924-ios.jpg",
-      "https://as-images.imgix.net/ad77a61d943fe287eee1e8be16afbbab-20260323-152909173-ios.jpg",
-      "https://as-images.imgix.net/0c7d321e2c4626f5856ef03a24c762eb-20260323-153116431-ios.jpg",
-      "https://as-images.imgix.net/8fc56c260b41152c74b79d6b53ca96c7-20260323-152718114-ios.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9ddc48fdb820c858498c700f80eb4e1c-gjs-dillon-particulars-44-high-street-bromsgrove-b61-8hq-2.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-25 12:00:18"
   },
   {
     "id": 353370,
