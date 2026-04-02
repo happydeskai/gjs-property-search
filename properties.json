@@ -1,5 +1,67 @@
 [
   {
+    "id": 360938,
+    "status": "Available",
+    "address": "Unit 1, Sentinel House",
+    "town": "Malvern",
+    "postcode": "WR14 1GL",
+    "lat": 52.12761,
+    "lon": -2.305339,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 29995,
+    "size_to_sqft": 29995,
+    "summary": "High Specification Warehouse with Secure Yard & Parking",
+    "description": "Unit 1 Sentinel House comprises a modern, detached warehouse that has been finished to a high standard.  The unit is of a steel portal frame construction, with there being a part brick-built frontage to encompass a reception area and office space.\n\n•\t8.5m to underside of haunch\n•\tSolid level concrete floor throughout\n•\tThree 4.5m x 6m up & over roller shutter doors\n•\tLoading / Unloading to the front, rear & side\n•\tThree phase power\n•\t52 allocated car parking spaces\n\nGround Floor Office 2,062 sq ft (191.60 sq m)\nFirst Floor Office 2,259 sq ft (209.88 sq m)\nWarehouse 21,786 sq ft (2,023.95 sq m)\nTotal Floor Area 26,107 sq ft (2,425.43 sq m)\n\nMezzanine Floor 3,888 sq ft (361.20 sq m)\nTotal Floor Area (inc Mezz.) 29,995 sq ft (2,786.63 sq m)",
+    "location": "Unit 1 Sentinel House is situated on Enigma Business Park, which is Malvern’s prime out of town business park being situated approximately two miles to the north of Great Malvern and being adjacent to the very popular Enigma Retail Park (where occupiers include Morrisons, Aldi & Marks & Spencer. \n\nMalvern benefits from having good transport communications with the A449 leading to Worcester city centre and the A440 connecting with Junction 7 of the M5 motorway which are both approximately five miles to the north-east.  Hereford city centre is 21 miles to the east with Gloucester being 26 miles south.",
+    "features": [
+      "26,107 sq ft (2,425.43 sq m) GIA Plus an additional 3,888 sq ft mezzanine area",
+      "Three roller shutter doors offering three different loading points – including a secure yard",
+      "8.5m to underside of haunch",
+      "52 car parking spaces",
+      "High quality airconditioned office space",
+      "Situated at the heart of Enigma Commercial Business Park, Malvern"
+    ],
+    "rent_psf": 7.83,
+    "rent_pa": 235000,
+    "rent": "£235,000 per annum",
+    "business_rates_psf": 79920,
+    "rateable_value": 144000,
+    "epc_rating": "C (68)",
+    "images": [
+      "https://as-images.imgix.net/8f1249d0a68c3e7b33e090a4bd36529b-aerial-front.JPG",
+      "https://as-images.imgix.net/94423f7d459504bf7af4ae698e1d9b44-warehouse.jpg",
+      "https://as-images.imgix.net/47e896b37718d9af791193cd75a34f19-office.jpg",
+      "https://as-images.imgix.net/045d3b4d07856399ea153ac62fe5c08e-top-down.JPG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/1ad2e8db468cad64f949c3209c9ce4a8-gjs-dillon-particulars-unit-1-sentinel-house-malvern.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-04-02 15:28:20"
+  },
+  {
     "id": 360553,
     "status": "Available",
     "address": "1 King Street",
@@ -178,68 +240,6 @@
       }
     ],
     "last_updated": "2026-04-01 10:32:30"
-  },
-  {
-    "id": 360938,
-    "status": "Available",
-    "address": "Unit 1, Sentinel House",
-    "town": "Malvern",
-    "postcode": "WR14 1GL",
-    "lat": 52.12761,
-    "lon": -2.305339,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 29995,
-    "size_to_sqft": 29995,
-    "summary": "High Specification Warehouse with Secure Yard & Parking",
-    "description": "Unit 1 Sentinel House comprises a modern, detached warehouse that has been finished to a high standard.  The unit is of a steel portal frame construction, with there being a part brick-built frontage to encompass a reception area and office space.\n\n•\t8.5m to underside of haunch\n•\tSolid level concrete floor throughout\n•\tThree 4.5m x 6m up & over roller shutter doors\n•\tLoading / Unloading to the front, rear & side\n•\tThree phase power\n•\t52 allocated car parking spaces\n\nGround Floor Office 2,062 sq ft (191.60 sq m)\nFirst Floor Office 2,259 sq ft (209.88 sq m)\nWarehouse 21,786 sq ft (2,023.95 sq m)\nTotal Floor Area 26,107 sq ft (2,425.43 sq m)\n\nMezzanine Floor 3,888 sq ft (361.20 sq m)\nTotal Floor Area (inc Mezz.) 29,995 sq ft (2,786.63 sq m)",
-    "location": "Unit 1 Sentinel House is situated on Enigma Business Park, which is Malvern’s prime out of town business park being situated approximately two miles to the north of Great Malvern and being adjacent to the very popular Enigma Retail Park (where occupiers include Morrisons, Aldi & Marks & Spencer. \n\nMalvern benefits from having good transport communications with the A449 leading to Worcester city centre and the A440 connecting with Junction 7 of the M5 motorway which are both approximately five miles to the north-east.  Hereford city centre is 21 miles to the east with Gloucester being 26 miles south.",
-    "features": [
-      "26,107 sq ft (2,425.43 sq m) GIA Plus an additional 3,888 sq ft mezzanine area",
-      "Three roller shutter doors offering three different loading points – including a secure yard",
-      "8.5m to underside of haunch",
-      "52 car parking spaces",
-      "High quality airconditioned office space",
-      "Situated at the heart of Enigma Commercial Business Park, Malvern"
-    ],
-    "rent_psf": 7.83,
-    "rent_pa": 235000,
-    "rent": "£235,000 per annum",
-    "business_rates_psf": 79920,
-    "rateable_value": 144000,
-    "epc_rating": "C (68)",
-    "images": [
-      "https://as-images.imgix.net/8f1249d0a68c3e7b33e090a4bd36529b-aerial-front.JPG",
-      "https://as-images.imgix.net/94423f7d459504bf7af4ae698e1d9b44-warehouse.jpg",
-      "https://as-images.imgix.net/47e896b37718d9af791193cd75a34f19-office.jpg",
-      "https://as-images.imgix.net/045d3b4d07856399ea153ac62fe5c08e-top-down.JPG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/1ad2e8db468cad64f949c3209c9ce4a8-gjs-dillon-particulars-unit-1-sentinel-house-malvern.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-31 16:38:20"
   },
   {
     "id": 346841,
