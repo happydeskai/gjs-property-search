@@ -1,5 +1,460 @@
 [
   {
+    "id": 346700,
+    "status": "Available",
+    "address": "Kempsey Eco Business Park,Industrial / Warehouse Buildings",
+    "town": "Worcester",
+    "postcode": "WR5 3NY",
+    "lat": 52.130516052,
+    "lon": -2.215411901,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1011,
+    "size_to_sqft": 1958,
+    "summary": "Industrial To Let, Worcester",
+    "description": "Kempsey Eco Business Park, a forward-thinking commercial destination designed to support businesses with sustainability at its core. Strategically located just off the A38, south of Worcester, this eco-friendly development offers high-quality, energy-efficient business units tailored for modern enterprises. With a strong emphasis on sustainability, Kempsey Eco Business Park incorporates renewable energy solutions, energy-efficient buildings, and green infrastructure to create an environmentally responsible workspace. The park is ideal for businesses seeking a future-proof location that aligns with corporate social responsibility goals while offering excellent accessibility and modern facilities. Join a growing community of forward-thinking businesses at Kempsey Eco Business Park, where sustainability meets commercial success. Kempsey is a delightful village situated 3 miles to the south of Worcester on the banks of the River Severn that can date its origins back to 1500BC when the Celts made a settlement here. It continued to be inhabited through Roman and Saxon times and played an important part in the Battle of Worcester in 1651. It currently has a population of c.4500 and is home to many locally owned businesses. Kempsey Eco Business Park can be found at the South end of the village bounded by the River Severn and the A38 Tewkesbury Road. It has excellent transport links including the M5 motorway (4 miles) and Worcester Parkway railway station (6 miles), as well as easy access by foot, bike and bus.",
+    "features": [
+      "Industrial units of 1011 - 1958 sq ft",
+      "Electric car charging points",
+      "Renewable clean biomass energy",
+      "On site car parking",
+      "Bike lock station",
+      "Photovoltaics panels to generate electricity"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/31a561633691ad5a6bd71ff11dd15869-letting346700.jpeg",
+      "https://as-images.imgix.net/87f7d44e176a27b58b68f22692f33f41-letting346700.jpeg",
+      "https://as-images.imgix.net/014a66308f34ac52143eb8a8342b22bd-letting346700.jpeg",
+      "https://as-images.imgix.net/04d282fc9cf3219a19f93d31500e71cd-letting346700.jpeg",
+      "https://as-images.imgix.net/c5f3fe75c41d4e33529e80a1a4dce4d2-letting346700.jpeg",
+      "https://as-images.imgix.net/fd8c1ff224c10087f5bb713e0595cf97-letting346700.jpeg",
+      "https://as-images.imgix.net/4b6a05e107a6b3eb309e2dcc0d4ff864-letting346700.jpeg",
+      "https://as-images.imgix.net/178cfe5dabdd47f3c9b81a868ef9d182-letting346700.jpeg",
+      "https://as-images.imgix.net/4cef282a48922224ced691b1bad938c4-letting346700.jpeg",
+      "https://as-images.imgix.net/b28b65ee0c292c9dcfb6db4695774cde-letting346700.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9557998d335e296fbae63dffe0ab6408-letting346700.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-04-07 14:40:06"
+  },
+  {
+    "id": 346719,
+    "status": "Under Offer",
+    "address": "15 Victoria Square",
+    "town": "Droitwich",
+    "postcode": "WR9 8DE",
+    "lat": 52.267349243,
+    "lon": -2.150681972,
+    "types": [
+      "Retail"
+    ],
+    "raw_types": [
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": true,
+    "size_from_sqft": 1374,
+    "size_to_sqft": 1374,
+    "summary": "Retail To Let or For Sale, Droitwich",
+    "description": "The property is within easy walking distance of St Andrew's Square shopping centre and the popular Waitrose supermarket, together with local leisure facilities including Droitwich Spa Lido. 15 Victoria Square offers an end of mid terrace mixed use property. The ground floor offers access off Victoria Square into a good-sized office / retail area. The first floor offers a kitchen and WC facilities. The property benefits from air conditioning. There is also a rear yard area. The property is being sold with vacant posession. Ground Floor800 ft274.35 m2 First Floor573 ft253.29 m2 Total1,374 ft2127.64 m2 Location The property is situated in a prominent position fronting Victoria Square, close to its junction with the Ombersley Street East and Hertiage Way, on the southern edge of Droitwich Town Centre. Droitwich is a well known Worcestershire spa town with good communication links to neighbouring towns and cities, with Bromsgrove town centre being seven miles to the north east, Worcester city centre being eight miles to the south west and Birmingham city centre being twenty two miles to the north. The nearest motorway access is approximately two miles to the north east of the town centre at Junction 5 of the M5 motorway.",
+    "features": [
+      "1,374 sq ft (127.64 sq m) NIA",
+      "Ground and first floor town centre building",
+      "Prominent position fronting Victoria Square",
+      "Rear yard area"
+    ],
+    "rent_psf": 13.46,
+    "rent_pa": 18500,
+    "rent": "£18,500 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/22f2510c6e28dbef90b8bfd54ed81ac1-letting346719.jpeg",
+      "https://as-images.imgix.net/24379ca643607f0592d4758b542cd5db-letting346719.jpeg",
+      "https://as-images.imgix.net/ecd298dd2d2ecee1fb6ea0ca10aa9d06-letting346719.jpeg",
+      "https://as-images.imgix.net/96d8de39a44902de5f1a449043cd49b1-letting346719.jpeg",
+      "https://as-images.imgix.net/f63015bc9aa3b68f46fdaf163105d206-letting346719.jpeg",
+      "https://as-images.imgix.net/b087861d1f254476b0500bbbd8084e50-letting346719.jpeg",
+      "https://as-images.imgix.net/d150831f491bb9524bbe9b682d6b39af-letting346719.jpeg",
+      "https://as-images.imgix.net/b9ed2a0b83a2115a7ad4aac8deec1583-letting346719.jpeg",
+      "https://as-images.imgix.net/8c6e6631f5b28a4bed2b83c1402fdc22-letting346719.jpeg",
+      "https://as-images.imgix.net/454ffe366e937ae71b401b79d0d92f41-letting346719.jpeg",
+      "https://as-images.imgix.net/9d4ec787df72eb22fe48e4fe33e94afa-letting346719.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/b10162c3062dec3cb6372a2d0f49148b-gjs-dillon-particulars-15-victoria-square-droitwich-wr9.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-04-07 14:39:09"
+  },
+  {
+    "id": 346750,
+    "status": "Available",
+    "address": "2C Derwent Close",
+    "town": "Worcester",
+    "postcode": "WR4 9TY",
+    "lat": 52.206310272,
+    "lon": -2.194024085,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2150,
+    "size_to_sqft": 2150,
+    "summary": "Industrial To Let, Worcester",
+    "description": "The property comprises an end terrace industrial / warehouse building being part of a block of three Units. Unit C is part warehouse and part offices with mezzanine storage/office accommodation above with ground floor kitchen and WC facilities and a roller shutter door to the front eleavtion. Outside the property to the front there is a hardstanding loading and unloading area shared with Units A and B and being bounded by a secure palisade fence. Accommodation Ground Floor 1,874 sq ft174.10 sq m First Floor 276 sq ft 25.66 sq m Total 2,150 sq ft199.76 sq m Additional mezzanine storage area not included in the above measurements. 2C Derwent Close is situated within Worcester, in the West Midlands. Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London. Worcester has excellent access to the M5 motorway, with Junction 6 being approximately one and a half miles to the northeast. The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network. Worcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
+    "features": [
+      "2,150 sq ft (199.76 sq m) GIA",
+      "Secured shared yard",
+      "Additional mezzanine storage area not included in the above"
+    ],
+    "rent_psf": 7.81,
+    "rent_pa": 16800,
+    "rent": "£16,800 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/61eef815f5c56ca3fff59bf1bffa0a4d-letting346750.jpeg",
+      "https://as-images.imgix.net/b5bef492a59cc4683d24e7cba82fb6e9-letting346750.jpeg",
+      "https://as-images.imgix.net/e15607aaef9b11d3e7f0b0f0f67863e3-letting346750.jpeg",
+      "https://as-images.imgix.net/9fd221d8ffcc2b7c1eca51b5fa394cca-letting346750.jpeg",
+      "https://as-images.imgix.net/fad50957c6cf6a2df2813503febbf00e-letting346750.jpeg",
+      "https://as-images.imgix.net/1441ae60add6469bdf29817d356f82a6-letting346750.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/71694072ada872f7261874a356bdc8d8-gjs-dillon-particulars-2c-derwent-close-worcester.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-04-07 14:38:31"
+  },
+  {
+    "id": 346660,
+    "status": "Available",
+    "address": "9-10 The Tything",
+    "town": "Worcester",
+    "postcode": "WR1 1HD",
+    "lat": 52.197731018,
+    "lon": -2.223536014,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1035,
+    "size_to_sqft": 1035,
+    "summary": "Office To Let, Worcester",
+    "description": "9 - 10 The Tything comprises a prominent office that fronts The Tything. The subject suite is located on the second floor and can be accessed via the main and rear entrances. The two allocated car parking spaces are accessed via the rear entrance and off St. Oswald's Road. Internally the second floor is accessed via a staircase only. The subject office suite is self-contained having a kitchenette and WC facility. The offices look eastwards over Sansome Walk and up towards Rainbow Hill. Second Floor1,035 sq ft96.2 sq m Location The property is situated in a prominent position on The Tything which is one of the main arterial roads leading into Worcester city centre from the north, being within one quarter mile of Worcester's main pedestrianised shopping area. The offices are within walking distance of the city centre, Foregate Street Station and he County Crown Magistrates Courts.",
+    "features": [
+      "Situated on the second floor with great views over Sansome Walk",
+      "Self contained office suite with kitchenette and WC",
+      "Two allocated parking spaces"
+    ],
+    "rent_psf": 14.49,
+    "rent_pa": 15000,
+    "rent": "£15,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "C (27)",
+    "images": [
+      "https://as-images.imgix.net/a5a67766aaf3cd755627a62693ad18cc-letting346660.jpeg",
+      "https://as-images.imgix.net/3f170182e6b08d38e1d8044185a3de1b-letting346660.jpeg",
+      "https://as-images.imgix.net/18b9035288e489f87c6e3f1e4fa53921-letting346660.jpeg",
+      "https://as-images.imgix.net/4a0b71c292670dce0554bb2ef40baba0-letting346660.jpeg",
+      "https://as-images.imgix.net/a6a06805b388d46e9c863e60ea6dbedc-letting346660.jpeg",
+      "https://as-images.imgix.net/78f8c7b1c4c41989710d7c813171c726-letting346660.jpeg",
+      "https://as-images.imgix.net/086bcddab259c600f93f1bafd2b8909f-letting346660.jpeg",
+      "https://as-images.imgix.net/cec1db1a5efc4e0d736a5e5e5236107a-letting346660.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/05c72b2df54665a92200f3a5f2b2f406-letting346660.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-04-07 14:36:21"
+  },
+  {
+    "id": 346841,
+    "status": "Available",
+    "address": "First Floor, Suite 1, Birchwood House,",
+    "town": "Malvern",
+    "postcode": "WR14 1JJ",
+    "lat": 52.124629974,
+    "lon": -2.30251789,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3110,
+    "size_to_sqft": 3110,
+    "summary": "Modern Grade A First Floor Office",
+    "description": "This is the final office building on the Enigma Commercial Centre development. It commands a prime location adjacent to the main entrance into the Enigma Commercial Centre. The building is constructed with brick elevations surmounted by a pitch tiled roof, in keeping with all the existing adjacent offices. \n\nFirst Floor, Suite One, comprises of 3,110 sq. ft. (288.99 sq. m.) (NIA) of open plan accommodation. \n\nAll the offices on the Enigma Commercial Centre are built to a high standard and this building includes the following: \n\n•\tAir-Conditioned  \n•\tSuspended ceilings incorporating low energy inset LED lighting\n•\tFully carpeted raised access floors - floor boxes connected to CAT 6 Data and Power distribution.\n•\tGenerous car parking provision",
+    "location": "This new office building fronts Sandys Road on Enigma Business Park, which is Malvern’s main office, industrial and commercial area, being situated approximately two miles to the north of Great Malvern. \n\nMalvern is situated approximately eight miles south west of Worcester, 21 miles east of Hereford and 26 miles north of Gloucester. The town benefits from good transport communications with the A449 leading to Worcester city centre and the A440 connecting with Junction 7 of the M5 motorway, which is approximately five miles to the north east.",
+    "features": [
+      "First floor office - 3,110 Sq Ft (288.99 Sq M) NIA",
+      "High specification, first floor office",
+      "Excellent on site car parking provision",
+      "Air conditioning and low energy LED lighting",
+      "Junction 7 of the M5 motorway is approximately 5 miles"
+    ],
+    "rent_psf": 14.79,
+    "rent_pa": 46000,
+    "rent": "£46,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 27250,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/9c8fb7c223a7aa2e028aa4c71acbfb15-letting346841.jpeg",
+      "https://as-images.imgix.net/29a31f3fc256ccea9b9f657649641497-letting346841.jpeg",
+      "https://as-images.imgix.net/fa2024a5fe3c26189f784bf83f8d3054-letting346841.jpeg",
+      "https://as-images.imgix.net/f74c018214927677539fbd6e221bbe7b-letting346841.jpeg",
+      "https://as-images.imgix.net/fe27b5fde6e0cf87bc4009470e74d62f-letting346841.jpeg",
+      "https://as-images.imgix.net/10d583c9c1bf9a47c00d4f39325626d5-letting346841.jpeg",
+      "https://as-images.imgix.net/63474868af3105abc4935d26e0f4d56d-e459d678-c816-41c7-b439-74aaa8bc2341.jpeg",
+      "https://as-images.imgix.net/f10d8dfe10e0795bec2207dc48b22c28-d0b2f772-f5d2-437a-b0c0-8883973c496a.jpeg",
+      "https://as-images.imgix.net/7ff1c91c19bce0471fb2b84bf0eaab9d-97458d02-4de1-4387-86b6-962a2244d506.jpeg"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-04-07 14:34:22"
+  },
+  {
+    "id": 346669,
+    "status": "Under Offer",
+    "address": "Office at Ladybird Barn",
+    "town": "Bromsgrove",
+    "postcode": "B60 1PH",
+    "lat": 52.343273162,
+    "lon": -2.047919988,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2648,
+    "size_to_sqft": 2648,
+    "summary": "Office To Let, Bromsgrove",
+    "description": "The office space at Ladybird Barn comprises a two-storey office building which benefits from three elevations and thus an abundance of natural light. The building is arranged over the ground and first floor and is accessed via a pedestrian door to the front of the building. Upon accessing the property there is a large reception area, two private offices, WC & kitchen facilities, along with further storage and a sever room. An internal staircase accesses the first floor which offers further office accommodation, which currently offers six offices however could be offered open plan if needed. Ground Floor1,251 sq ft 116.20 sq m First Floor1,397 sq ft 129.76 sq m Total2,648 sq ft 245.96 sq m Location Ladybird Barn lies adjacent to the A38 in Bromsgrove and is approximately one mile south of Junction 1 of the M42 and one mile east of Bromsgrove town centre. The mixed used development is accessed off Old Burcot Lane, with a prominent frontage to the busy A38. Nearby occupiers that include David Lloyd, Premier Inn, Bromsgrove Fire Station, Artrix Arts Centre and Heart of Worcestershire College. Junction 4 of the M5 motorway and Junction 1 of the M42 motorway lie close by and provide access to the M5 and M42 motorways as well as the national motorway network. Birmingham City Centre is situated approximately 15 miles to the north and Worcester City Centre is situated approximately 10 miles to the south. Bromsgrove has a mainline railway station which is situated to the east of the town. There are frequent trains to Birmingham New Street, Worcester Foregate Street and Hereford. There is also a bus station adjacent to the high street. Buses operate to a wide area of Worcestershire and the West Midlands. Birmingham Airport is around 22 miles away which equates to circa 30 mins by car.",
+    "features": [
+      "LED Lighting throughout",
+      "Large amount of air conditioning",
+      "Perimeter trunking",
+      "On site parking"
+    ],
+    "rent_psf": 10.39,
+    "rent_pa": 27500,
+    "rent": "£27,500 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/fdb9acca468b06f5363f3de86dd588e4-letting346669.jpeg",
+      "https://as-images.imgix.net/89b451855493ecf44f51834980f5843e-letting346669.jpeg",
+      "https://as-images.imgix.net/e7d9b4b640cfd6cae9f06a3980ff7a97-letting346669.jpeg",
+      "https://as-images.imgix.net/5db5e73672cf4bf14056eefc56f982e1-letting346669.jpeg",
+      "https://as-images.imgix.net/7258afedb9383f0d756cb05939d9fb80-letting346669.jpeg",
+      "https://as-images.imgix.net/47deff332f8cf80def2e3d722d8dd521-letting346669.jpeg",
+      "https://as-images.imgix.net/60787b8821bd96f2e53c427b77908073-letting346669.jpeg",
+      "https://as-images.imgix.net/db7a4489159e021a006f57b29391151f-letting346669.jpeg",
+      "https://as-images.imgix.net/ccb789225c0fd3888f9d30d34d046d96-letting346669.jpeg",
+      "https://as-images.imgix.net/256de420f5f1020a73bbe3beef3ac414-letting346669.jpeg",
+      "https://as-images.imgix.net/d7bfa4eb1a1a3e4c6578bdfa0bd1e95d-letting346669.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/08b61ea043e9871b5a9397921526c9c4-letting346669.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-04-07 14:31:40"
+  },
+  {
+    "id": 346680,
+    "status": "Available",
+    "address": "Nailers Yard",
+    "town": "Bromsgrove",
+    "postcode": "B61 8QT",
+    "lat": 52.334415435,
+    "lon": -2.063618898,
+    "types": [
+      "Office",
+      "Retail"
+    ],
+    "raw_types": [
+      "Office",
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1000,
+    "size_to_sqft": 12088,
+    "summary": "Office / Retail To Let, Bromsgrove",
+    "description": "Nailers Yard is an upcoming mixed-use development in the heart of Bromsgrove, set to transform the former Market Hall site into a vibrant commercial, cultural, and community destination. Scheduled for completion by early 2026, the project is a key part of Bromsgrove District Council's regeneration strategy. The commercial building is a standalone structure offering premium office space, ground-floor restaurant space, and a rooftop food and drink outlet. This addition is expected to enhance Bromsgrove's night-time economy and attract both new and established businesses. The total office space being delivered is 12,088 sq ft (1,123 sq m) and suites are being offered from 1,000 sq ft to single floors of circa 6,000 sq ft, or multiple floors for large companies. The total restaurant space is 3,574 sq ft (332 sq m) and is situated over the ground and top floors. Floor plans are available on request. Please contact us with your size requirement and we'd be delighted to show you how your business can be proudly located at Nailers Yard.",
+    "features": [
+      "Office space arranged over 1st, 2nd and 3rd Floors",
+      "Food and beverage opportunities over the ground, 3rd floors and roof top space",
+      "Bromsgrove town centre location"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/5e420e923e0975cd096a6bb0df64a8ff-letting346680.jpeg",
+      "https://as-images.imgix.net/021f2a59f0438efc4e9bf6bd98dc95c9-letting346680.jpeg",
+      "https://as-images.imgix.net/e23f97371fee1b4c39eef319bfa05567-letting346680.jpeg"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-04-07 14:31:01"
+  },
+  {
+    "id": 346672,
+    "status": "Available",
+    "address": "20 The Shambles",
+    "town": "Worcester",
+    "postcode": "WR1 2RA",
+    "lat": 52.191112518,
+    "lon": -2.219422101,
+    "types": [
+      "Retail"
+    ],
+    "raw_types": [
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": true,
+    "size_from_sqft": 2513,
+    "size_to_sqft": 2513,
+    "summary": "Retail For Sale, Worcester",
+    "description": "20 The Shambles comprises a mid-terraced retail unit arranged over basement, ground, first and second floors, situated within a traditional parade in the heart of Worcester city centre. The ground floor features an open-plan retail area with a suspended ceiling, LED lighting, air conditioning and a timber-framed single-glazed shopfront. A floor hatch in the main retail area provides ladder access to a small basement area, suitable for limited storage. To the rear of the ground floor are ancillary areas, with a kitchen and WC located on the first floor. The upper parts are accessed via an internal staircase and include further ancillary space with a mix of UPVC and timber-framed windows. Lighting to the upper floors consists of older-style fluorescent fittings. The property is in need of repair and modernisation in parts, with notable damp ingress evident along the right-hand side elevation at second floor level. The unit may suit a variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.",
+    "features": [
+      "Prominent city centre location",
+      "Property arranged over basement, ground, first and second",
+      "Vacant possession from July 2026"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 3.28,
+    "rateable_value": 16500,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/570a4079df62487975d4d2b75449b956-letting346672.jpeg",
+      "https://as-images.imgix.net/91d7459984edd30a2b77fe3764b65ffb-letting346672.jpeg",
+      "https://as-images.imgix.net/cbb04f12d126ea78867538bbca58455e-letting346672.jpeg",
+      "https://as-images.imgix.net/a42cfdf7168b95c249ec8a9142b68ebe-letting346672.jpeg",
+      "https://as-images.imgix.net/d27eb8caf050f6730c48fb5c4a082766-letting346672.jpeg",
+      "https://as-images.imgix.net/61b196b5fa07b79f51cbd9cf1cdddd42-letting346672.jpeg",
+      "https://as-images.imgix.net/f7d0d12227a5dc73f0c0c982ca14811c-letting346672.jpeg",
+      "https://as-images.imgix.net/7d1abe1290bc1b112de86867f098c6e2-letting346672.jpeg",
+      "https://as-images.imgix.net/193205c5527b2926b6129c137736db7c-letting346672.jpeg",
+      "https://as-images.imgix.net/fa7aa285385934527b8c969752180195-letting346672.jpeg",
+      "https://as-images.imgix.net/480a7dc576c43895fd14cd0ddc0862b1-letting346672.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/3cf79ac31d5fb6a437d917ff74d0029c-gjs-dillon-particulars-20-the-shambles-worcester.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-04-07 14:30:34"
+  },
+  {
     "id": 360553,
     "status": "Available",
     "address": "Ground Floor, 1 King Street",
@@ -242,63 +697,6 @@
     "last_updated": "2026-04-01 10:32:30"
   },
   {
-    "id": 346841,
-    "status": "Available",
-    "address": "First Floor, Suite 1, Birchwood House,",
-    "town": "Malvern",
-    "postcode": "WR14 1JJ",
-    "lat": 52.124629974,
-    "lon": -2.30251789,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3110,
-    "size_to_sqft": 3110,
-    "summary": "Modern Grade A First Floor Office",
-    "description": "This is the final office building on the Enigma Commercial Centre development. It commands a prime location adjacent to the main entrance into the Enigma Commercial Centre. The building is constructed with brick elevations surmounted by a pitch tiled roof, in keeping with all the existing adjacent offices. \n\nFirst Floor, Suite One, comprises of 3,110 sq. ft. (288.99 sq. m.) (NIA) of open plan accommodation. \n\nAll the offices on the Enigma Commercial Centre are built to a high standard and this building includes the following: \n\n•\tAir-Conditioned  \n•\tSuspended ceilings incorporating low energy inset LED lighting\n•\tFully carpeted raised access floors - floor boxes connected to CAT 6 Data and Power distribution.\n•\tGenerous car parking provision",
-    "location": "This new office building fronts Sandys Road on Enigma Business Park, which is Malvern’s main office, industrial and commercial area, being situated approximately two miles to the north of Great Malvern. \n\nMalvern is situated approximately eight miles south west of Worcester, 21 miles east of Hereford and 26 miles north of Gloucester. The town benefits from good transport communications with the A449 leading to Worcester city centre and the A440 connecting with Junction 7 of the M5 motorway, which is approximately five miles to the north east.",
-    "features": [
-      "First floor office - 3,110 Sq Ft (288.99 Sq M) NIA",
-      "High specification, first floor office",
-      "Excellent on site car parking provision",
-      "Air conditioning and low energy LED lighting",
-      "Junction 7 of the M5 motorway is approximately 5 miles"
-    ],
-    "rent_psf": 14.79,
-    "rent_pa": 46000,
-    "rent": "£46,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 27250,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/9c8fb7c223a7aa2e028aa4c71acbfb15-letting346841.jpeg",
-      "https://as-images.imgix.net/29a31f3fc256ccea9b9f657649641497-letting346841.jpeg",
-      "https://as-images.imgix.net/fa2024a5fe3c26189f784bf83f8d3054-letting346841.jpeg",
-      "https://as-images.imgix.net/f74c018214927677539fbd6e221bbe7b-letting346841.jpeg",
-      "https://as-images.imgix.net/fe27b5fde6e0cf87bc4009470e74d62f-letting346841.jpeg",
-      "https://as-images.imgix.net/10d583c9c1bf9a47c00d4f39325626d5-letting346841.jpeg",
-      "https://as-images.imgix.net/63474868af3105abc4935d26e0f4d56d-e459d678-c816-41c7-b439-74aaa8bc2341.jpeg",
-      "https://as-images.imgix.net/f10d8dfe10e0795bec2207dc48b22c28-d0b2f772-f5d2-437a-b0c0-8883973c496a.jpeg",
-      "https://as-images.imgix.net/7ff1c91c19bce0471fb2b84bf0eaab9d-97458d02-4de1-4387-86b6-962a2244d506.jpeg"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-31 16:36:12"
-  },
-  {
     "id": 354040,
     "status": "Available",
     "address": "15 Aston Court",
@@ -368,123 +766,6 @@
       }
     ],
     "last_updated": "2026-03-31 11:35:29"
-  },
-  {
-    "id": 352978,
-    "status": "Available",
-    "address": "14 Church Street",
-    "town": "Kidderminster",
-    "postcode": "DY10 2AH",
-    "lat": 52.389092,
-    "lon": -2.250011,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 6555,
-    "size_to_sqft": 6555,
-    "summary": "Substantial Office Building, Suitable for Redevelopment",
-    "description": "14 Church Street comprises a detached office building arranged over the lower ground, ground and first floors – having previously been used as a large solicitor’s office.  The current configuration offers offices over all floors, which offer a mix of cellular and larger space.\nThe building is more than suitable to be continued to be used as office space, however, also presents a redevelopment opportunity to offer quality flats within a prime town centre location.\nPlease note, there is no parking with this property. \nWe have a feasibility study which shows the option to convert the existing building to 12 units (8 x one bedroom flats and 4 x two beds); as well as an option to extend the upper floors and offer 14 units (8 x one bedroom flats and 6 x two beds).\nThe redevelopment option of the existing building offers a final scheme that is 6,555 sq ft (608.97 sq m).",
-    "location": "14 Church Street is situated within Kidderminster, Worcestershire.  Kidderminster is situated within the Wyre Forest district and lies 15 miles north of Worcester and 17 miles south west of Birmingham.  The town benefits from being in close proximity to major transport links, such as the M5 motorway, and has a mainline train station provide access to Birmingham and the national rail network.\nThe building is situated at the end of Church Street, to the northern side of Kidderminster town centre.  Church Street is characterised by a number of large period properties, predominately of Georgian construction.  Neighbouring occupiers include solicitors, banks and health care operators.  The property is also in close proximity to the Weavers Wharf shopping centre.",
-    "features": [
-      "Guide Price of £400,000 Reflecting a low capital value of £60 per sq ft on the developable area",
-      "Existing feasibility studies carried out for conversion to a 12 unit residential scheme (14 with roof extension), all STP",
-      "Situated on the fringe of Kidderminster town centre, adjacent to Weavers Wharf",
-      "Currently presents as good quality office accommodation over three floors"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 41000,
-    "epc_rating": "D (89)",
-    "images": [
-      "https://as-images.imgix.net/2768f17f88d07cb199e8c4a3abeb3719-20250703-103225910-ios.jpg",
-      "https://as-images.imgix.net/3aa4e84f55fd3460514a3e4e80a80e99-20250703-102947953-ios.jpg",
-      "https://as-images.imgix.net/0dc64708170ed2bfa50cffc030f18a95-20250703-103247778-ios.jpg",
-      "https://as-images.imgix.net/8a494f18745ed244efb8637d7ae05bde-20250703-102838805-ios.jpg",
-      "https://as-images.imgix.net/160a5252a24723d07545d5aeb4d99ebe-20250703-102807296-ios.jpg",
-      "https://as-images.imgix.net/361dc11d9d754a654b8ddf5f17270e8f-20250703-111919017-ios.jpg",
-      "https://as-images.imgix.net/14aead973626eecedc1786a875309007-20250703-112144599-ios.jpg",
-      "https://as-images.imgix.net/a8a0eea6af32b0f243c146b9ea844ea7-20250703-112155940-ios.jpg",
-      "https://as-images.imgix.net/6aea608cf38a26de7d85a7da400018f4-20250703-111953905-ios.jpg",
-      "https://as-images.imgix.net/fbe0df64c98f728adc333191dd7588e6-20250703-111830823-ios.jpg",
-      "https://as-images.imgix.net/ce786a087f68134ff27dcef7dfb032a5-20250703-112226020-ios.jpg",
-      "https://as-images.imgix.net/754e1c4103f79414ad7e4dec066e0075-20250703-111930672-ios.jpg",
-      "https://as-images.imgix.net/577013f55298dd29c4aceac8370d8374-20250703-112027121-ios.jpg",
-      "https://as-images.imgix.net/0bb941daccff23aecdf5dc306eefb48e-20250703-111808883-ios.jpg",
-      "https://as-images.imgix.net/006f90b36d90130b37c24e6d8308c08a-20250703-111843342-ios.jpg",
-      "https://as-images.imgix.net/8ae76a6e1fe9c7fbf7b0f9b5c895a029-20250703-112047308-ios.jpg",
-      "https://as-images.imgix.net/cd72e0b33900af108f820f22c2aa5019-20250703-112011873-ios.jpg",
-      "https://as-images.imgix.net/93bf15847c9e638cbc2edabe1a46b716-20251210-140559.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/e025b2a6521037f9b7e59764a7ccb24c-gjs-dillon-particulars-14-church-street-kidderminster.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-31 10:55:09"
-  },
-  {
-    "id": 346660,
-    "status": "Available",
-    "address": "9-10 The Tything",
-    "town": "Worcester",
-    "postcode": "WR1 1HD",
-    "lat": 52.197731018,
-    "lon": -2.223536014,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1035,
-    "size_to_sqft": 1035,
-    "summary": "Office To Let, Worcester",
-    "description": "9 - 10 The Tything comprises a prominent office that fronts The Tything. The subject suite is located on the second floor and can be accessed via the main and rear entrances. The two allocated car parking spaces are accessed via the rear entrance and off St. Oswald's Road. Internally the second floor is accessed via a staircase only. The subject office suite is self-contained having a kitchenette and WC facility. The offices look eastwards over Sansome Walk and up towards Rainbow Hill. Second Floor1,035 sq ft96.2 sq m Location The property is situated in a prominent position on The Tything which is one of the main arterial roads leading into Worcester city centre from the north, being within one quarter mile of Worcester's main pedestrianised shopping area. The offices are within walking distance of the city centre, Foregate Street Station and he County Crown Magistrates Courts.",
-    "features": [
-      "Situated on the second floor with great views over Sansome Walk",
-      "Self contained office suite with kitchenette and WC",
-      "Two allocated parking spaces"
-    ],
-    "rent_psf": 14.49,
-    "rent_pa": 15000,
-    "rent": "£15,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "C (27)",
-    "images": [
-      "https://as-images.imgix.net/a5a67766aaf3cd755627a62693ad18cc-letting346660.jpeg",
-      "https://as-images.imgix.net/3f170182e6b08d38e1d8044185a3de1b-letting346660.jpeg",
-      "https://as-images.imgix.net/18b9035288e489f87c6e3f1e4fa53921-letting346660.jpeg",
-      "https://as-images.imgix.net/4a0b71c292670dce0554bb2ef40baba0-letting346660.jpeg",
-      "https://as-images.imgix.net/a6a06805b388d46e9c863e60ea6dbedc-letting346660.jpeg",
-      "https://as-images.imgix.net/78f8c7b1c4c41989710d7c813171c726-letting346660.jpeg",
-      "https://as-images.imgix.net/086bcddab259c600f93f1bafd2b8909f-letting346660.jpeg",
-      "https://as-images.imgix.net/cec1db1a5efc4e0d736a5e5e5236107a-letting346660.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/05c72b2df54665a92200f3a5f2b2f406-letting346660.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-31 10:08:01"
   },
   {
     "id": 353370,
@@ -669,127 +950,6 @@
     "last_updated": "2026-03-17 17:03:27"
   },
   {
-    "id": 346672,
-    "status": "Available",
-    "address": "20 The Shambles",
-    "town": "Worcester",
-    "postcode": "WR1 2RA",
-    "lat": 52.191112518,
-    "lon": -2.219422101,
-    "types": [
-      "Retail"
-    ],
-    "raw_types": [
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": true,
-    "size_from_sqft": 2513,
-    "size_to_sqft": 2513,
-    "summary": "Retail For Sale, Worcester",
-    "description": "20 The Shambles comprises a mid-terraced retail unit arranged over basement, ground, first and second floors, situated within a traditional parade in the heart of Worcester city centre. The ground floor features an open-plan retail area with a suspended ceiling, LED lighting, air conditioning and a timber-framed single-glazed shopfront. A floor hatch in the main retail area provides ladder access to a small basement area, suitable for limited storage. To the rear of the ground floor are ancillary areas, with a kitchen and WC located on the first floor. The upper parts are accessed via an internal staircase and include further ancillary space with a mix of UPVC and timber-framed windows. Lighting to the upper floors consists of older-style fluorescent fittings. The property is in need of repair and modernisation in parts, with notable damp ingress evident along the right-hand side elevation at second floor level. The unit may suit a variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.",
-    "features": [
-      "Prominent city centre location",
-      "Property arranged over basement, ground, first and second",
-      "Vacant possession from July 2026"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 3.28,
-    "rateable_value": 16500,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/570a4079df62487975d4d2b75449b956-letting346672.jpeg",
-      "https://as-images.imgix.net/91d7459984edd30a2b77fe3764b65ffb-letting346672.jpeg",
-      "https://as-images.imgix.net/cbb04f12d126ea78867538bbca58455e-letting346672.jpeg",
-      "https://as-images.imgix.net/a42cfdf7168b95c249ec8a9142b68ebe-letting346672.jpeg",
-      "https://as-images.imgix.net/d27eb8caf050f6730c48fb5c4a082766-letting346672.jpeg",
-      "https://as-images.imgix.net/61b196b5fa07b79f51cbd9cf1cdddd42-letting346672.jpeg",
-      "https://as-images.imgix.net/f7d0d12227a5dc73f0c0c982ca14811c-letting346672.jpeg",
-      "https://as-images.imgix.net/7d1abe1290bc1b112de86867f098c6e2-letting346672.jpeg",
-      "https://as-images.imgix.net/193205c5527b2926b6129c137736db7c-letting346672.jpeg",
-      "https://as-images.imgix.net/fa7aa285385934527b8c969752180195-letting346672.jpeg",
-      "https://as-images.imgix.net/480a7dc576c43895fd14cd0ddc0862b1-letting346672.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/3cf79ac31d5fb6a437d917ff74d0029c-gjs-dillon-particulars-20-the-shambles-worcester.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-12 16:07:52"
-  },
-  {
-    "id": 346669,
-    "status": "Under Offer",
-    "address": "Office at Ladybird Barn",
-    "town": "Bromsgrove",
-    "postcode": "B60 1PH",
-    "lat": 52.343273162,
-    "lon": -2.047919988,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2648,
-    "size_to_sqft": 2648,
-    "summary": "Office To Let, Bromsgrove",
-    "description": "The office space at Ladybird Barn comprises a two-storey office building which benefits from three elevations and thus an abundance of natural light. The building is arranged over the ground and first floor and is accessed via a pedestrian door to the front of the building. Upon accessing the property there is a large reception area, two private offices, WC & kitchen facilities, along with further storage and a sever room. An internal staircase accesses the first floor which offers further office accommodation, which currently offers six offices however could be offered open plan if needed. Ground Floor1,251 sq ft 116.20 sq m First Floor1,397 sq ft 129.76 sq m Total2,648 sq ft 245.96 sq m Location Ladybird Barn lies adjacent to the A38 in Bromsgrove and is approximately one mile south of Junction 1 of the M42 and one mile east of Bromsgrove town centre. The mixed used development is accessed off Old Burcot Lane, with a prominent frontage to the busy A38. Nearby occupiers that include David Lloyd, Premier Inn, Bromsgrove Fire Station, Artrix Arts Centre and Heart of Worcestershire College. Junction 4 of the M5 motorway and Junction 1 of the M42 motorway lie close by and provide access to the M5 and M42 motorways as well as the national motorway network. Birmingham City Centre is situated approximately 15 miles to the north and Worcester City Centre is situated approximately 10 miles to the south. Bromsgrove has a mainline railway station which is situated to the east of the town. There are frequent trains to Birmingham New Street, Worcester Foregate Street and Hereford. There is also a bus station adjacent to the high street. Buses operate to a wide area of Worcestershire and the West Midlands. Birmingham Airport is around 22 miles away which equates to circa 30 mins by car.",
-    "features": [
-      "LED Lighting throughout",
-      "Large amount of air conditioning",
-      "Perimeter trunking",
-      "On site parking"
-    ],
-    "rent_psf": 10.39,
-    "rent_pa": 27500,
-    "rent": "£27,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/fdb9acca468b06f5363f3de86dd588e4-letting346669.jpeg",
-      "https://as-images.imgix.net/89b451855493ecf44f51834980f5843e-letting346669.jpeg",
-      "https://as-images.imgix.net/e7d9b4b640cfd6cae9f06a3980ff7a97-letting346669.jpeg",
-      "https://as-images.imgix.net/5db5e73672cf4bf14056eefc56f982e1-letting346669.jpeg",
-      "https://as-images.imgix.net/7258afedb9383f0d756cb05939d9fb80-letting346669.jpeg",
-      "https://as-images.imgix.net/47deff332f8cf80def2e3d722d8dd521-letting346669.jpeg",
-      "https://as-images.imgix.net/60787b8821bd96f2e53c427b77908073-letting346669.jpeg",
-      "https://as-images.imgix.net/db7a4489159e021a006f57b29391151f-letting346669.jpeg",
-      "https://as-images.imgix.net/ccb789225c0fd3888f9d30d34d046d96-letting346669.jpeg",
-      "https://as-images.imgix.net/256de420f5f1020a73bbe3beef3ac414-letting346669.jpeg",
-      "https://as-images.imgix.net/d7bfa4eb1a1a3e4c6578bdfa0bd1e95d-letting346669.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/08b61ea043e9871b5a9397921526c9c4-letting346669.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-09 17:17:55"
-  },
-  {
     "id": 355283,
     "status": "Available",
     "address": "Hartlebury 45, Trading Estate",
@@ -905,116 +1065,6 @@
       }
     ],
     "last_updated": "2026-03-09 16:40:09"
-  },
-  {
-    "id": 346750,
-    "status": "Available",
-    "address": "2C Derwent Close",
-    "town": "Worcester",
-    "postcode": "WR4 9TY",
-    "lat": 52.206310272,
-    "lon": -2.194024085,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2150,
-    "size_to_sqft": 2150,
-    "summary": "Industrial To Let, Worcester",
-    "description": "The property comprises an end terrace industrial / warehouse building being part of a block of three Units. Unit C is part warehouse and part offices with mezzanine storage/office accommodation above with ground floor kitchen and WC facilities and a roller shutter door to the front eleavtion. Outside the property to the front there is a hardstanding loading and unloading area shared with Units A and B and being bounded by a secure palisade fence. Accommodation Ground Floor 1,874 sq ft174.10 sq m First Floor 276 sq ft 25.66 sq m Total 2,150 sq ft199.76 sq m Additional mezzanine storage area not included in the above measurements. 2C Derwent Close is situated within Worcester, in the West Midlands. Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London. Worcester has excellent access to the M5 motorway, with Junction 6 being approximately one and a half miles to the northeast. The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network. Worcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
-    "features": [
-      "2,150 sq ft (199.76 sq m) GIA",
-      "Secured shared yard",
-      "Additional mezzanine storage area not included in the above"
-    ],
-    "rent_psf": 7.81,
-    "rent_pa": 16800,
-    "rent": "£16,800 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/61eef815f5c56ca3fff59bf1bffa0a4d-letting346750.jpeg",
-      "https://as-images.imgix.net/b5bef492a59cc4683d24e7cba82fb6e9-letting346750.jpeg",
-      "https://as-images.imgix.net/e15607aaef9b11d3e7f0b0f0f67863e3-letting346750.jpeg",
-      "https://as-images.imgix.net/9fd221d8ffcc2b7c1eca51b5fa394cca-letting346750.jpeg",
-      "https://as-images.imgix.net/fad50957c6cf6a2df2813503febbf00e-letting346750.jpeg",
-      "https://as-images.imgix.net/1441ae60add6469bdf29817d356f82a6-letting346750.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/71694072ada872f7261874a356bdc8d8-gjs-dillon-particulars-2c-derwent-close-worcester.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-09 16:35:14"
-  },
-  {
-    "id": 346719,
-    "status": "Under Offer",
-    "address": "15 Victoria Square",
-    "town": "Droitwich",
-    "postcode": "WR9 8DE",
-    "lat": 52.267349243,
-    "lon": -2.150681972,
-    "types": [
-      "Retail"
-    ],
-    "raw_types": [
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": true,
-    "size_from_sqft": 1374,
-    "size_to_sqft": 1374,
-    "summary": "Retail To Let or For Sale, Droitwich",
-    "description": "The property is within easy walking distance of St Andrew's Square shopping centre and the popular Waitrose supermarket, together with local leisure facilities including Droitwich Spa Lido. 15 Victoria Square offers an end of mid terrace mixed use property. The ground floor offers access off Victoria Square into a good-sized office / retail area. The first floor offers a kitchen and WC facilities. The property benefits from air conditioning. There is also a rear yard area. The property is being sold with vacant posession. Ground Floor800 ft274.35 m2 First Floor573 ft253.29 m2 Total1,374 ft2127.64 m2 Location The property is situated in a prominent position fronting Victoria Square, close to its junction with the Ombersley Street East and Hertiage Way, on the southern edge of Droitwich Town Centre. Droitwich is a well known Worcestershire spa town with good communication links to neighbouring towns and cities, with Bromsgrove town centre being seven miles to the north east, Worcester city centre being eight miles to the south west and Birmingham city centre being twenty two miles to the north. The nearest motorway access is approximately two miles to the north east of the town centre at Junction 5 of the M5 motorway.",
-    "features": [
-      "1,374 sq ft (127.64 sq m) NIA",
-      "Ground and first floor town centre building",
-      "Prominent position fronting Victoria Square",
-      "Rear yard area"
-    ],
-    "rent_psf": 13.46,
-    "rent_pa": 18500,
-    "rent": "£18,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/22f2510c6e28dbef90b8bfd54ed81ac1-letting346719.jpeg",
-      "https://as-images.imgix.net/24379ca643607f0592d4758b542cd5db-letting346719.jpeg",
-      "https://as-images.imgix.net/ecd298dd2d2ecee1fb6ea0ca10aa9d06-letting346719.jpeg",
-      "https://as-images.imgix.net/96d8de39a44902de5f1a449043cd49b1-letting346719.jpeg",
-      "https://as-images.imgix.net/f63015bc9aa3b68f46fdaf163105d206-letting346719.jpeg",
-      "https://as-images.imgix.net/b087861d1f254476b0500bbbd8084e50-letting346719.jpeg",
-      "https://as-images.imgix.net/d150831f491bb9524bbe9b682d6b39af-letting346719.jpeg",
-      "https://as-images.imgix.net/b9ed2a0b83a2115a7ad4aac8deec1583-letting346719.jpeg",
-      "https://as-images.imgix.net/8c6e6631f5b28a4bed2b83c1402fdc22-letting346719.jpeg",
-      "https://as-images.imgix.net/454ffe366e937ae71b401b79d0d92f41-letting346719.jpeg",
-      "https://as-images.imgix.net/9d4ec787df72eb22fe48e4fe33e94afa-letting346719.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/b10162c3062dec3cb6372a2d0f49148b-gjs-dillon-particulars-15-victoria-square-droitwich-wr9.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-09 16:34:42"
   },
   {
     "id": 355287,
@@ -1799,63 +1849,6 @@
       }
     ],
     "last_updated": "2026-03-03 16:04:50"
-  },
-  {
-    "id": 346700,
-    "status": "Available",
-    "address": "Kempsey Eco Business Park,Industrial / Warehouse Buildings",
-    "town": "Worcester",
-    "postcode": "WR5 3NY",
-    "lat": 52.130516052,
-    "lon": -2.215411901,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1011,
-    "size_to_sqft": 1958,
-    "summary": "Industrial To Let, Worcester",
-    "description": "Kempsey Eco Business Park, a forward-thinking commercial destination designed to support businesses with sustainability at its core. Strategically located just off the A38, south of Worcester, this eco-friendly development offers high-quality, energy-efficient business units tailored for modern enterprises. With a strong emphasis on sustainability, Kempsey Eco Business Park incorporates renewable energy solutions, energy-efficient buildings, and green infrastructure to create an environmentally responsible workspace. The park is ideal for businesses seeking a future-proof location that aligns with corporate social responsibility goals while offering excellent accessibility and modern facilities. Join a growing community of forward-thinking businesses at Kempsey Eco Business Park, where sustainability meets commercial success. Kempsey is a delightful village situated 3 miles to the south of Worcester on the banks of the River Severn that can date its origins back to 1500BC when the Celts made a settlement here. It continued to be inhabited through Roman and Saxon times and played an important part in the Battle of Worcester in 1651. It currently has a population of c.4500 and is home to many locally owned businesses. Kempsey Eco Business Park can be found at the South end of the village bounded by the River Severn and the A38 Tewkesbury Road. It has excellent transport links including the M5 motorway (4 miles) and Worcester Parkway railway station (6 miles), as well as easy access by foot, bike and bus.",
-    "features": [
-      "Industrial units of 1011 - 1958 sq ft",
-      "Electric car charging points",
-      "Renewable clean biomass energy",
-      "On site car parking",
-      "Bike lock station",
-      "Photovoltaics panels to generate electricity"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/31a561633691ad5a6bd71ff11dd15869-letting346700.jpeg",
-      "https://as-images.imgix.net/87f7d44e176a27b58b68f22692f33f41-letting346700.jpeg",
-      "https://as-images.imgix.net/014a66308f34ac52143eb8a8342b22bd-letting346700.jpeg",
-      "https://as-images.imgix.net/04d282fc9cf3219a19f93d31500e71cd-letting346700.jpeg",
-      "https://as-images.imgix.net/c5f3fe75c41d4e33529e80a1a4dce4d2-letting346700.jpeg",
-      "https://as-images.imgix.net/fd8c1ff224c10087f5bb713e0595cf97-letting346700.jpeg",
-      "https://as-images.imgix.net/4b6a05e107a6b3eb309e2dcc0d4ff864-letting346700.jpeg",
-      "https://as-images.imgix.net/178cfe5dabdd47f3c9b81a868ef9d182-letting346700.jpeg",
-      "https://as-images.imgix.net/4cef282a48922224ced691b1bad938c4-letting346700.jpeg",
-      "https://as-images.imgix.net/b28b65ee0c292c9dcfb6db4695774cde-letting346700.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9557998d335e296fbae63dffe0ab6408-letting346700.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-03 16:01:41"
   },
   {
     "id": 346701,
@@ -3273,54 +3266,6 @@
       }
     ],
     "last_updated": "2026-02-27 13:01:48"
-  },
-  {
-    "id": 346680,
-    "status": "Available",
-    "address": "Nailers Yard",
-    "town": "Bromsgrove",
-    "postcode": "B61 8QT",
-    "lat": 52.334415435,
-    "lon": -2.063618898,
-    "types": [
-      "Office",
-      "Retail"
-    ],
-    "raw_types": [
-      "Office",
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1000,
-    "size_to_sqft": 12088,
-    "summary": "Office / Retail To Let, Bromsgrove",
-    "description": "Nailers Yard is an upcoming mixed-use development in the heart of Bromsgrove, set to transform the former Market Hall site into a vibrant commercial, cultural, and community destination. Scheduled for completion by early 2026, the project is a key part of Bromsgrove District Council's regeneration strategy. The commercial building is a standalone structure offering premium office space, ground-floor restaurant space, and a rooftop food and drink outlet. This addition is expected to enhance Bromsgrove's night-time economy and attract both new and established businesses. The total office space being delivered is 12,088 sq ft (1,123 sq m) and suites are being offered from 1,000 sq ft to single floors of circa 6,000 sq ft, or multiple floors for large companies. The total restaurant space is 3,574 sq ft (332 sq m) and is situated over the ground and top floors. Floor plans are available on request. Please contact us with your size requirement and we'd be delighted to show you how your business can be proudly located at Nailers Yard.",
-    "features": [
-      "Office space arranged over 1st, 2nd and 3rd Floors",
-      "Food and beverage opportunities over the ground, 3rd floors and roof top space",
-      "Bromsgrove town centre location"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/5e420e923e0975cd096a6bb0df64a8ff-letting346680.jpeg",
-      "https://as-images.imgix.net/021f2a59f0438efc4e9bf6bd98dc95c9-letting346680.jpeg",
-      "https://as-images.imgix.net/e23f97371fee1b4c39eef319bfa05567-letting346680.jpeg"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-27 12:58:29"
   },
   {
     "id": 346674,
