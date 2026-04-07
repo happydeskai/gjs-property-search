@@ -1,5 +1,70 @@
 [
   {
+    "id": 346841,
+    "status": "Available",
+    "address": "First Floor, Suite 1, Birchwood House,",
+    "town": "Malvern",
+    "postcode": "WR14 1JJ",
+    "lat": 52.124629974,
+    "lon": -2.30251789,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3110,
+    "size_to_sqft": 3110,
+    "summary": "Modern Grade A First Floor Office",
+    "description": "This is the final office building on the Enigma Commercial Centre development. It commands a prime location adjacent to the main entrance into the Enigma Commercial Centre. The building is constructed with brick elevations surmounted by a pitch tiled roof, in keeping with all the existing adjacent offices. \n\nFirst Floor, Suite One, comprises of 3,110 sq. ft. (288.99 sq. m.) (NIA) of open plan accommodation. \n\nAll the offices on the Enigma Commercial Centre are built to a high standard and this building includes the following: \n\n•\tAir-Conditioned  \n•\tSuspended ceilings incorporating low energy inset LED lighting\n•\tFully carpeted raised access floors - floor boxes connected to CAT 6 Data and Power distribution.\n•\tGenerous car parking provision",
+    "location": "This new office building fronts Sandys Road on Enigma Business Park, which is Malvern’s main office, industrial and commercial area, being situated approximately two miles to the north of Great Malvern. \n\nMalvern is situated approximately eight miles south west of Worcester, 21 miles east of Hereford and 26 miles north of Gloucester. The town benefits from good transport communications with the A449 leading to Worcester city centre and the A440 connecting with Junction 7 of the M5 motorway, which is approximately five miles to the north east.",
+    "features": [
+      "First floor office - 3,110 Sq Ft (288.99 Sq M) NIA",
+      "High specification, first floor office",
+      "Excellent on site car parking provision",
+      "Air conditioning and low energy LED lighting",
+      "Junction 7 of the M5 motorway is approximately 5 miles"
+    ],
+    "rent_psf": 14.79,
+    "rent_pa": 46000,
+    "rent": "£46,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 27250,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/9c8fb7c223a7aa2e028aa4c71acbfb15-letting346841.jpeg",
+      "https://as-images.imgix.net/29a31f3fc256ccea9b9f657649641497-letting346841.jpeg",
+      "https://as-images.imgix.net/fa2024a5fe3c26189f784bf83f8d3054-letting346841.jpeg",
+      "https://as-images.imgix.net/f74c018214927677539fbd6e221bbe7b-letting346841.jpeg",
+      "https://as-images.imgix.net/fe27b5fde6e0cf87bc4009470e74d62f-letting346841.jpeg",
+      "https://as-images.imgix.net/10d583c9c1bf9a47c00d4f39325626d5-letting346841.jpeg",
+      "https://as-images.imgix.net/63474868af3105abc4935d26e0f4d56d-e459d678-c816-41c7-b439-74aaa8bc2341.jpeg",
+      "https://as-images.imgix.net/f10d8dfe10e0795bec2207dc48b22c28-d0b2f772-f5d2-437a-b0c0-8883973c496a.jpeg",
+      "https://as-images.imgix.net/7ff1c91c19bce0471fb2b84bf0eaab9d-97458d02-4de1-4387-86b6-962a2244d506.jpeg"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-04-07 16:35:39"
+  },
+  {
     "id": 346700,
     "status": "Available",
     "address": "Kempsey Eco Business Park,Industrial / Warehouse Buildings",
@@ -219,71 +284,6 @@
       }
     ],
     "last_updated": "2026-04-07 14:36:21"
-  },
-  {
-    "id": 346841,
-    "status": "Available",
-    "address": "First Floor, Suite 1, Birchwood House,",
-    "town": "Malvern",
-    "postcode": "WR14 1JJ",
-    "lat": 52.124629974,
-    "lon": -2.30251789,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3110,
-    "size_to_sqft": 3110,
-    "summary": "Modern Grade A First Floor Office",
-    "description": "This is the final office building on the Enigma Commercial Centre development. It commands a prime location adjacent to the main entrance into the Enigma Commercial Centre. The building is constructed with brick elevations surmounted by a pitch tiled roof, in keeping with all the existing adjacent offices. \n\nFirst Floor, Suite One, comprises of 3,110 sq. ft. (288.99 sq. m.) (NIA) of open plan accommodation. \n\nAll the offices on the Enigma Commercial Centre are built to a high standard and this building includes the following: \n\n•\tAir-Conditioned  \n•\tSuspended ceilings incorporating low energy inset LED lighting\n•\tFully carpeted raised access floors - floor boxes connected to CAT 6 Data and Power distribution.\n•\tGenerous car parking provision",
-    "location": "This new office building fronts Sandys Road on Enigma Business Park, which is Malvern’s main office, industrial and commercial area, being situated approximately two miles to the north of Great Malvern. \n\nMalvern is situated approximately eight miles south west of Worcester, 21 miles east of Hereford and 26 miles north of Gloucester. The town benefits from good transport communications with the A449 leading to Worcester city centre and the A440 connecting with Junction 7 of the M5 motorway, which is approximately five miles to the north east.",
-    "features": [
-      "First floor office - 3,110 Sq Ft (288.99 Sq M) NIA",
-      "High specification, first floor office",
-      "Excellent on site car parking provision",
-      "Air conditioning and low energy LED lighting",
-      "Junction 7 of the M5 motorway is approximately 5 miles"
-    ],
-    "rent_psf": 14.79,
-    "rent_pa": 46000,
-    "rent": "£46,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 27250,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/9c8fb7c223a7aa2e028aa4c71acbfb15-letting346841.jpeg",
-      "https://as-images.imgix.net/29a31f3fc256ccea9b9f657649641497-letting346841.jpeg",
-      "https://as-images.imgix.net/fa2024a5fe3c26189f784bf83f8d3054-letting346841.jpeg",
-      "https://as-images.imgix.net/f74c018214927677539fbd6e221bbe7b-letting346841.jpeg",
-      "https://as-images.imgix.net/fe27b5fde6e0cf87bc4009470e74d62f-letting346841.jpeg",
-      "https://as-images.imgix.net/10d583c9c1bf9a47c00d4f39325626d5-letting346841.jpeg",
-      "https://as-images.imgix.net/63474868af3105abc4935d26e0f4d56d-e459d678-c816-41c7-b439-74aaa8bc2341.jpeg",
-      "https://as-images.imgix.net/f10d8dfe10e0795bec2207dc48b22c28-d0b2f772-f5d2-437a-b0c0-8883973c496a.jpeg",
-      "https://as-images.imgix.net/7ff1c91c19bce0471fb2b84bf0eaab9d-97458d02-4de1-4387-86b6-962a2244d506.jpeg"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-04-07 14:34:22"
   },
   {
     "id": 346669,
