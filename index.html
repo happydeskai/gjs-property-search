@@ -133,7 +133,6 @@
     .status-sold{ background:#fee2e2; color:#b91c1c; }
     .status-sold-stc{ background:#ffedd5; color:#c2410c; }
     .status-other{ background:#f3f4f6; color:#374151; }
-    .card--unavailable .card__media img{ opacity:0.6; }
 
     .card__footer{ display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px; border-top: var(--border); }
     .btn-link, .btn-ghost{ height:36px; padding:0 12px; border-radius:8px; display:inline-flex; align-items:center; justify-content:center; font-size:14px; text-decoration:none; }
@@ -275,14 +274,20 @@ function milesToMeters(mi) { return mi * 1609.344; }
 
 function getPrimaryImage(p) {
   if (!p) return '';
+  let url = '';
   if (Array.isArray(p.images) && p.images[0]) {
     const img = p.images[0];
-    if (typeof img === 'string') return img;
-    if (img._) return img._;
-    if (img.url) return img.url;
+    if (typeof img === 'string') url = img;
+    else if (img._) url = img._;
+    else if (img.url) url = img.url;
   }
-  if (Array.isArray(p.photos) && p.photos[0]?.url) return p.photos[0].url;
-  return p.image || p.image_url || '';
+  if (!url && Array.isArray(p.photos) && p.photos[0]?.url) url = p.photos[0].url;
+  if (!url) url = p.image || p.image_url || '';
+  // Append imgix params to crop images at source — prevents distortion
+  if (url && url.includes('imgix.net') && !url.includes('?')) {
+    url += '?w=800&h=600&fit=crop&auto=format';
+  }
+  return url;
 }
 
 function getTypesArray(p) {
