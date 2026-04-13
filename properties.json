@@ -1214,67 +1214,6 @@
     "last_updated": "2026-03-24 08:51:41"
   },
   {
-    "id": 346876,
-    "status": "Available",
-    "address": "Global House",
-    "town": "Worcester",
-    "postcode": "WR1 2BU",
-    "lat": 52.190757751,
-    "lon": -2.214889049,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 789,
-    "size_to_sqft": 1578,
-    "summary": "Office To Let, Worcester",
-    "description": "The property comprises a purpose-built office building that is arranged over the ground and first floors. The office accommodation provides regular open plan space throughout. Each floor has its own WC and kitchenette facilities. The property can be let as a whole or on a floor by floor basis, with each floor having its own secure access and one designated car parking space (two for the whole building).",
-    "features": [],
-    "rent_psf": 15,
-    "rent_pa": 11835,
-    "rent": "£11,835 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/81d3699fd3a8c3e1ff8ad71e3485394b-letting346876.jpeg",
-      "https://as-images.imgix.net/4f52e39571936693cc47b6ab68194fb8-letting346876.jpeg",
-      "https://as-images.imgix.net/cd87d597734734c630b934d332eb7e22-letting346876.jpeg",
-      "https://as-images.imgix.net/b8512363456752289984e71db1f6c7b9-letting346876.jpeg",
-      "https://as-images.imgix.net/f0b24d9c7fda05607b6abe2dcd692b1d-letting346876.jpeg",
-      "https://as-images.imgix.net/0d625bb21369d07af55a156cbf18a2ba-letting346876.jpeg",
-      "https://as-images.imgix.net/f7ba1836678617632874bb332a71cbd5-letting346876.jpeg",
-      "https://as-images.imgix.net/2d35be17655ca61cee5f310262154dc3-letting346876.jpeg",
-      "https://as-images.imgix.net/12cca86e3d676d8449c5f6743776b63d-letting346876.jpeg",
-      "https://as-images.imgix.net/8fb07205cbd1abbb34f94ea27e891528-letting346876.jpeg",
-      "https://as-images.imgix.net/aacee7bbfc75a7139b8d8806593cb222-letting346876.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/a61e282bf2d566aa46359bfae9695738-letting346876.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-20 11:16:19"
-  },
-  {
     "id": 346855,
     "status": "Available",
     "address": "George Road",
@@ -2512,7 +2451,7 @@
     "size_from_sqft": 1485,
     "size_to_sqft": 1485,
     "summary": "Self-contained Central Worcester Office Building",
-    "description": "Bradley Stuart House comprises office accommodation arranged over the ground and first floors. The property is situated in a courtyard off Shaw Street and is surrounded by similar properties. Over the ground floor there is a good-sized board room, male & female WC’s and a kitchen. The first floor offers an open plan office area with well-integrated period features. Externally there is allocated car parking.",
+    "description": "Bradley Stuart House comprises office accommodation arranged over the ground and first floors. The property is situated in a courtyard off Shaw Street and is surrounded by similar properties. Over the ground floor there is a good-sized board room, male & female WC��s and a kitchen. The first floor offers an open plan office area with well-integrated period features. Externally there is allocated car parking.",
     "location": "Bradley Stuart House is located within Worcester city centre off Shaw Street. As the property is in a central location, this provides great access to Worcester’s excellent transport links with a direct mainline to both Birmingham and London, via Worcester Foregate Street, Worcester Shrub Hill and the new Worcester Parkway station. Worcester also lies to the west of Junctions 6 & 7 of the M5 motorway.",
     "features": [
       "1,485 sq ft (137.92 sq m) NIA",
