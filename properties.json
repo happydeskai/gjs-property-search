@@ -4024,57 +4024,5 @@
       }
     ],
     "last_updated": "2026-02-27 10:37:47"
-  },
-  {
-    "id": 346830,
-    "status": "Sold",
-    "address": "Bromsgrove Technology Centre",
-    "town": "Bromsgrove",
-    "postcode": "B60 3AL",
-    "lat": 52.318202972,
-    "lon": -2.05578494,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 1272,
-    "size_to_sqft": 1387,
-    "summary": "Office For Sale, Bromsgrove",
-    "description": "Small self contained modern offices The Bromsgrove Technology Park offers a range of accommodation from serviced offices in Basepoint, good quality warehousing at Sapphire Court and a modern courtyard development of Aston Court. The properties are situated on Aston Court, within the Bromsgrove Technology Park which is located approximately one and a half miles to the south of Bromsgrove town centre. Junction 4 of the M5 motorway and Junction 1 of the M42 motorway lie approximately three miles distant providing access to the M5 and M42 motorway as well as the national motorway network. Birmingham City Centre is situated approximately 15 miles to the north and Worcester City Centre is situated approximately 10 miles to the south.",
-    "features": [
-      "High quality offices arranged over the ground and first floors"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/ff7a352122325a0eb682cc40a084f9f9-letting346830.jpeg",
-      "https://as-images.imgix.net/0de40573f4ab81e3e8e66db384ecae9e-letting346830.jpeg",
-      "https://as-images.imgix.net/44c3178b21979b2d09acfb45012cc44e-letting346830.jpeg",
-      "https://as-images.imgix.net/2a92e13015609a56cd5a13413e8bae36-letting346830.jpeg",
-      "https://as-images.imgix.net/f4bc5db8b86ce034fdc9275384b6917c-letting346830.jpeg",
-      "https://as-images.imgix.net/7d1030ad58837d68071b1d12a541ed6c-letting346830.jpeg",
-      "https://as-images.imgix.net/e819e2b373ea606305527d668d88fb18-letting346830.jpeg",
-      "https://as-images.imgix.net/d299d28ee62fb7e4c161f3ae615b7934-letting346830.jpeg",
-      "https://as-images.imgix.net/cb33c7b61d1cf82fa8c8c3eba82b0fe7-letting346830.jpeg",
-      "https://as-images.imgix.net/a6dc01ae5bdc6c8a0982c33c9a24c0b9-letting346830.jpeg",
-      "https://as-images.imgix.net/70d17ce6d3dcec98effde7e99ed27135-letting346830.jpeg",
-      "https://as-images.imgix.net/2e3262d83eda4d5dc07f9258697bbad9-letting346830.jpeg"
-    ],
-    "contacts": [
-      {
-        "name": "Susanne Phipps",
-        "email": "susannephipps@gjsdillon.co.uk",
-        "phone": "",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-19 16:25:20"
   }
 ]
