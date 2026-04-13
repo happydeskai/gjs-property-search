@@ -177,11 +177,9 @@
     </div>
     <div class="field"><label for="status">Status</label>
       <select id="status">
-        <option value="any" selected>All properties</option>
-        <option value="available and under offer">Available &amp; Under Offer</option>
-        <option value="let agreed">Let Agreed</option>
-        <option value="sold">Sold</option>
-        <option value="sold stc">Sold STC</option>
+        <option value="any" selected>All Properties</option>
+        <option value="available">Available</option>
+        <option value="under offer">Under Offer</option>
       </select>
     </div>
     <div class="field"><label for="type">Type</label>
@@ -485,10 +483,10 @@ async function applyFilters() {
     // Status filter
     if (statusLC !== 'any') {
       const propStatus = String(p.status || 'Available').toLowerCase();
-      if (statusLC === 'available and under offer') {
-        if (propStatus !== 'available' && !propStatus.includes('under offer')) return false;
-      } else if (statusLC === 'available') {
+      if (statusLC === 'available') {
         if (propStatus !== 'available') return false;
+      } else if (statusLC === 'under offer') {
+        if (!propStatus.includes('under offer')) return false;
       } else {
         if (!propStatus.includes(statusLC)) return false;
       }
