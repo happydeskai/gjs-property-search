@@ -1,5 +1,125 @@
 [
   {
+    "id": 346665,
+    "status": "Available",
+    "address": "Conference Way",
+    "town": "Evesham",
+    "postcode": "WR11 1LB",
+    "lat": 52.070251464,
+    "lon": -1.934033036,
+    "types": [
+      "Development/Investment"
+    ],
+    "raw_types": [
+      "Development"
+    ],
+    "to_let": true,
+    "for_sale": true,
+    "size_from_sqft": 285000,
+    "size_to_sqft": 285000,
+    "summary": "Development To Let or For Sale, Evesham",
+    "description": "Benefiting from planning consent, the site offers build to suit opportunity up to 285,000 sq ft. The units would be an ideal hub for logistics, distribution and manufacturing operations.",
+    "features": [
+      "Industrial / Distribution Units",
+      "Build to suit opportunities up to 285,000 sq ft",
+      "For Sale / To Let"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/7768c0dca718829492d9865e752931bd-letting346665.jpeg",
+      "https://as-images.imgix.net/3e64fd29b4c726a25d2066091477a7f6-letting346665.jpeg",
+      "https://as-images.imgix.net/0cc69c7d783904679a9bdb969033b55c-letting346665.jpeg",
+      "https://as-images.imgix.net/566b08cf590f979254bbfcd963ef081b-letting346665.jpeg",
+      "https://as-images.imgix.net/15d24b095f6307261a91354b04b7ecd9-letting346665.jpeg",
+      "https://as-images.imgix.net/c7da43866fe80825d19541d8d661c1fb-letting346665.jpeg",
+      "https://as-images.imgix.net/47775db1137b9b22fe07012de8ecceb4-letting346665.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/12d6a6b2e26c4eed3ee6953474a82855-letting346665.pdf",
+    "contacts": [
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-04-13 14:49:30"
+  },
+  {
+    "id": 346689,
+    "status": "Available",
+    "address": "Conference Way",
+    "town": "Evesham",
+    "postcode": "WR11 1LB",
+    "lat": 52.070251464,
+    "lon": -1.934033036,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": true,
+    "size_from_sqft": 53879,
+    "size_to_sqft": 64806,
+    "summary": "Industrial To Let or For Sale, Evesham",
+    "description": "Modern high-performance units designed for efficiency, capacity and sustainability. Unit A - Warehouse 60,999 sq ft (5,667 sq m), Office 3,807 sq ft (354 sq m) - Total - 64,806 sq ft (6,021 sq m) Unit B - Warehouse 50,628 sq ft (4,704 sq m), Office 3,351 sq ft (311 sq m) - Total - 53,979 sq ft (5,015 sq m) Unit C - Warehouse 50,628 sq ft (4,701 sq m), Office 3,276 sq ft (304 sq m) - Total - 53,879 sq ft (5,005 sq m) All of the warehouses are EPC A rated and BREEAM Very Good. Please refer to the brochure for information on Dock Access Doors, Level Access Doors, Yard Depths, Clear Internal Heights, Warehouse Flooring, Floor Loadings, Power Supply and Parking (HGV, Car & EV).",
+    "location": "Trinity is a new site comprised of three units situated on Conference Way, within Vale Park, just off the A46, to the south of Evesham.",
+    "features": [
+      "Available for immediate occupation",
+      "Three units from 53,879 sq ft to 64,806 sq ft",
+      "Please refer to the brochure for further details on specification and journey times"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/b2261807ca3478fdca3ad5c132eb9ad2-letting346689.jpeg",
+      "https://as-images.imgix.net/1453d707075817893be5c10806c3c153-letting346689.jpeg",
+      "https://as-images.imgix.net/54718e2f3fe2a32556367970d5df01f9-letting346689.jpeg",
+      "https://as-images.imgix.net/7422247b677e49642a2d7cc2281a73fe-letting346689.jpeg",
+      "https://as-images.imgix.net/26cce4237522106a93318a6b21c8c079-letting346689.jpeg",
+      "https://as-images.imgix.net/4b19e8ad798c07a57b46023dca33adcf-letting346689.jpeg",
+      "https://as-images.imgix.net/a444904ce5a9b50a4903685b57fad77b-letting346689.jpeg",
+      "https://as-images.imgix.net/53d7c894e37ad7122904af7a3104b15b-letting346689.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/2285907c05a67032274db17b2ade08dc-letting346689.pdf",
+    "contacts": [
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-04-13 14:48:56"
+  },
+  {
     "id": 353370,
     "status": "Under Offer",
     "address": "Hylton Road",
@@ -1975,59 +2095,6 @@
     "last_updated": "2026-03-03 16:14:34"
   },
   {
-    "id": 346689,
-    "status": "Available",
-    "address": "Conference Way",
-    "town": "Evesham",
-    "postcode": "WR11 1LB",
-    "lat": 52.070251464,
-    "lon": -1.934033036,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": true,
-    "size_from_sqft": 53879,
-    "size_to_sqft": 64806,
-    "summary": "Industrial To Let or For Sale, Evesham",
-    "description": "Modern high-performance units designed for efficiency, capacity and sustainability. Unit A - Warehouse 60,999 sq ft (5,667 sq m), Office 3,807 sq ft (354 sq m) - Total - 64,806 sq ft (6,021 sq m) Unit B - Warehouse 50,628 sq ft (4,704 sq m), Office 3,351 sq ft (311 sq m) - Total - 53,979 sq ft (5,015 sq m) Unit C - Warehouse 50,628 sq ft (4,701 sq m), Office 3,276 sq ft (304 sq m) - Total - 53,879 sq ft (5,005 sq m) All of the warehouses are EPC A rated and BREEAM Very Good. Please refer to the brochure for information on Dock Access Doors, Level Access Doors, Yard Depths, Clear Internal Heights, Warehouse Flooring, Floor Loadings, Power Supply and Parking (HGV, Car & EV).",
-    "location": "Trinity is a new site comprised of three units situated on Conference Way, within Vale Park, just off the A46, to the south of Evesham.",
-    "features": [
-      "Available for immediate occupation",
-      "Three units from 53,879 sq ft to 64,806 sq ft",
-      "Please refer to the brochure for further details on specification and journey times"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/b2261807ca3478fdca3ad5c132eb9ad2-letting346689.jpeg",
-      "https://as-images.imgix.net/1453d707075817893be5c10806c3c153-letting346689.jpeg",
-      "https://as-images.imgix.net/54718e2f3fe2a32556367970d5df01f9-letting346689.jpeg",
-      "https://as-images.imgix.net/7422247b677e49642a2d7cc2281a73fe-letting346689.jpeg",
-      "https://as-images.imgix.net/26cce4237522106a93318a6b21c8c079-letting346689.jpeg",
-      "https://as-images.imgix.net/4b19e8ad798c07a57b46023dca33adcf-letting346689.jpeg",
-      "https://as-images.imgix.net/a444904ce5a9b50a4903685b57fad77b-letting346689.jpeg",
-      "https://as-images.imgix.net/53d7c894e37ad7122904af7a3104b15b-letting346689.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/2285907c05a67032274db17b2ade08dc-letting346689.pdf",
-    "contacts": [
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-03 16:12:40"
-  },
-  {
     "id": 346777,
     "status": "Available",
     "address": "The Radius, De Salis Court",
@@ -3442,57 +3509,6 @@
     "last_updated": "2026-02-27 13:12:00"
   },
   {
-    "id": 346665,
-    "status": "Available",
-    "address": "Conference Way",
-    "town": "Evesham",
-    "postcode": "WR11 1LB",
-    "lat": 52.070251464,
-    "lon": -1.934033036,
-    "types": [
-      "Development/Investment"
-    ],
-    "raw_types": [
-      "Development"
-    ],
-    "to_let": true,
-    "for_sale": true,
-    "size_from_sqft": 285000,
-    "size_to_sqft": 285000,
-    "summary": "Development To Let or For Sale, Evesham",
-    "description": "Benefiting from planning consent, the site offers build to suit opportunity up to 285,000 sq ft. The units would be an ideal hub for logistics, distribution and manufacturing operations.",
-    "features": [
-      "Industrial / Distribution Units",
-      "Build to suit opportunities up to 285,000 sq ft",
-      "For Sale / To Let"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/7768c0dca718829492d9865e752931bd-letting346665.jpeg",
-      "https://as-images.imgix.net/3e64fd29b4c726a25d2066091477a7f6-letting346665.jpeg",
-      "https://as-images.imgix.net/0cc69c7d783904679a9bdb969033b55c-letting346665.jpeg",
-      "https://as-images.imgix.net/566b08cf590f979254bbfcd963ef081b-letting346665.jpeg",
-      "https://as-images.imgix.net/15d24b095f6307261a91354b04b7ecd9-letting346665.jpeg",
-      "https://as-images.imgix.net/c7da43866fe80825d19541d8d661c1fb-letting346665.jpeg",
-      "https://as-images.imgix.net/47775db1137b9b22fe07012de8ecceb4-letting346665.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/12d6a6b2e26c4eed3ee6953474a82855-letting346665.pdf",
-    "contacts": [
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-27 13:01:48"
-  },
-  {
     "id": 346674,
     "status": "Under Offer",
     "address": "5 Fish Street",
@@ -4060,63 +4076,5 @@
       }
     ],
     "last_updated": "2026-02-19 16:25:20"
-  },
-  {
-    "id": 346893,
-    "status": "Let",
-    "address": "Stoke Prior",
-    "town": "Bromsgrove",
-    "postcode": "B60 4AD",
-    "lat": 52.2981096375,
-    "lon": -2.0747777912,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1987,
-    "size_to_sqft": 1987,
-    "summary": "Industrial To Let, Bromsgrove",
-    "description": "Unit 3 comprises a modern mid-terrace steel portal frame industrial/warehouse building of part brick and block/part steel profile panel cladding with a pitched steel, profile panel roof. This unit is arranged over the ground floor only and offers office space to the front, along with kitchen and WC facilities. Alongside the roller shutter door there is pedestrian access to the front and a fire escape to the rear. The property is located on Saxon Business Park, Hanbury Road, Stoke Prior and is approximately two miles south of Bromsgrove town centre. Saxon Business Park has a range of small, medium and large, local and national, office and industrial occupiers, all of whom benefit from being on an established business park location with easily accessible estate roads and on site car parking. Junction 4 of the M5 motorway and Junction 1 of the M42 motorway lie approximately three mile distant providing access to the M5 and M42 motorway as well as the national motorway network. Birmingham City Centre is situated approximately 15 miles to the north and Worcester City Centre is situated approximately 10 miles to the south. Within Saxon Business Park, the property is situated to the front of the estate. The unit is surrounded by similar commercial occupiers with a mixture of small to medium warehouse accommodation and office buildings. We would note that in the immediate vicinity there are no vacant units. This location is extremely popular with local, regional and national businesses.",
-    "features": [
-      "Roller shutter door",
-      "Parking to the front of the property",
-      "Popular business park location",
-      "Excellent motorway links to M5 and M42 motorways"
-    ],
-    "rent_psf": 9.06,
-    "rent_pa": 18000,
-    "rent": "£18,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/2ac51a6d60c6331a15da07d1f1b477be-letting346893.jpeg",
-      "https://as-images.imgix.net/1c6bf2609ee0dcaed25aba5dbc92145b-letting346893.jpeg",
-      "https://as-images.imgix.net/fc60aa03f58cc5d94049586a47aae125-letting346893.jpeg",
-      "https://as-images.imgix.net/3591947e77a17ff62ae37970a990a1d5-letting346893.jpeg",
-      "https://as-images.imgix.net/1a210b9a890faecee9ffd4a5fd2ac41d-letting346893.jpeg",
-      "https://as-images.imgix.net/0d2709580fbe0fa6a0b2e5ecd5e60de3-letting346893.jpeg",
-      "https://as-images.imgix.net/d365d6f34860767d87a4824cf9612f92-letting346893.jpeg",
-      "https://as-images.imgix.net/156bc5f8e6725a9c231c08394376dcaa-letting346893.jpeg",
-      "https://as-images.imgix.net/0e2aa5de73b3f152935c2a42076acc6c-letting346893.jpeg",
-      "https://as-images.imgix.net/91f9825166d0ca45dc2e53618ea4d4c3-letting346893.jpeg",
-      "https://as-images.imgix.net/c0d43b072c86fbaf1578c3c2f7cf84c2-letting346893.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/031642310361759acd0646f0509db7fa-letting346893.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-06 11:09:47"
   }
 ]
