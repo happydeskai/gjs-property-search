@@ -3453,68 +3453,6 @@
     "last_updated": "2026-02-27 13:12:00"
   },
   {
-    "id": 346674,
-    "status": "Under Offer",
-    "address": "5 Fish Street",
-    "town": "Worcester",
-    "postcode": "WR1 2HN",
-    "lat": 52.190158843,
-    "lon": -2.220968008,
-    "types": [
-      "Retail",
-      "Office"
-    ],
-    "raw_types": [
-      "Retail",
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 460,
-    "size_to_sqft": 460,
-    "summary": "Retail / Office To Let, Worcester",
-    "description": "5 Fish Street is a compact three-storey property of traditional construction, prominently located on Fish Street. The building offers a mix of retail and office/studio accommodation with a self-contained entrance leading to the upper floors. The ground floor provides an open-plan retail space ideal for boutique retailers or creative businesses seeking a central location. The first floor and second floor offer additional workspace, consisting of rooms suitable for offices, studios, or other small business uses. The property is highly adaptable and can accommodate a variety of occupiers. Its central location, alongside flexible usage options, makes it an attractive proposition for businesses seeking affordable, multifunctional space in Worcester city centre. \nGround Floor 113 sq ft 11.12 sq m \nFirst Floor 175 sq ft 21.23 sq m \nSecond Floor 172 sq ft 16.00 sq m \nTotal Floor Area 460 sq ft 42.75 sq m",
-    "features": [
-      "460 sq ft (42.75 sq m)",
-      "Prominent city centre location",
-      "Display window to the front",
-      "Walking distance to Worcester Railway Stations",
-      "Close to city centre car parks"
-    ],
-    "rent_psf": 21.74,
-    "rent_pa": 10000,
-    "rent": "£10,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/92b4ee589c133403ad7ff95203eecdaa-letting346674.jpeg",
-      "https://as-images.imgix.net/4d81f5cfb44f2bcada763ca1de39223a-letting346674.jpeg",
-      "https://as-images.imgix.net/0db7f25a05241bd71562940b6b9784f6-letting346674.jpeg",
-      "https://as-images.imgix.net/d45713ffbde1a6fdd5adb2f3cb65c32b-letting346674.jpeg",
-      "https://as-images.imgix.net/b204cd8ad9915de746b519b356a1e79a-letting346674.jpeg",
-      "https://as-images.imgix.net/086af044938c9c4bccc5a911c7cd058a-letting346674.jpeg",
-      "https://as-images.imgix.net/d60bdbf1c1430b08cd12eb817dc8e3e8-letting346674.jpeg",
-      "https://as-images.imgix.net/0ea980ae8aa38dab13a29395c0e3ec27-letting346674.jpeg",
-      "https://as-images.imgix.net/d1e0ae88da97d8ac1628c7c3fdde876d-letting346674.jpeg",
-      "https://as-images.imgix.net/d0ad0ba8eb68f4d37263cdb70aee19df-letting346674.jpeg",
-      "https://as-images.imgix.net/0be92716d6362df4296c4d2179dc7ad3-letting346674.jpeg",
-      "https://as-images.imgix.net/5d1e5fc629f981f443631dc48941b0a3-letting346674.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/dca04408a861e5c23c38a27074f530c0-letting346674.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-27 12:51:57"
-  },
-  {
     "id": 346673,
     "status": "Available",
     "address": "1 Fish Street",
