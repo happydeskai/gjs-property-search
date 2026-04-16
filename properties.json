@@ -1062,64 +1062,6 @@
     "last_updated": "2026-04-07 14:38:31"
   },
   {
-    "id": 346669,
-    "status": "Under Offer",
-    "address": "Office at Ladybird Barn",
-    "town": "Bromsgrove",
-    "postcode": "B60 1PH",
-    "lat": 52.343273162,
-    "lon": -2.047919988,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2648,
-    "size_to_sqft": 2648,
-    "summary": "Office To Let, Bromsgrove",
-    "description": "The office space at Ladybird Barn comprises a two-storey office building which benefits from three elevations and thus an abundance of natural light. The building is arranged over the ground and first floor and is accessed via a pedestrian door to the front of the building. Upon accessing the property there is a large reception area, two private offices, WC & kitchen facilities, along with further storage and a sever room. An internal staircase accesses the first floor which offers further office accommodation, which currently offers six offices however could be offered open plan if needed. Ground Floor1,251 sq ft 116.20 sq m First Floor1,397 sq ft 129.76 sq m Total2,648 sq ft 245.96 sq m Location Ladybird Barn lies adjacent to the A38 in Bromsgrove and is approximately one mile south of Junction 1 of the M42 and one mile east of Bromsgrove town centre. The mixed used development is accessed off Old Burcot Lane, with a prominent frontage to the busy A38. Nearby occupiers that include David Lloyd, Premier Inn, Bromsgrove Fire Station, Artrix Arts Centre and Heart of Worcestershire College. Junction 4 of the M5 motorway and Junction 1 of the M42 motorway lie close by and provide access to the M5 and M42 motorways as well as the national motorway network. Birmingham City Centre is situated approximately 15 miles to the north and Worcester City Centre is situated approximately 10 miles to the south. Bromsgrove has a mainline railway station which is situated to the east of the town. There are frequent trains to Birmingham New Street, Worcester Foregate Street and Hereford. There is also a bus station adjacent to the high street. Buses operate to a wide area of Worcestershire and the West Midlands. Birmingham Airport is around 22 miles away which equates to circa 30 mins by car.",
-    "features": [
-      "LED Lighting throughout",
-      "Large amount of air conditioning",
-      "Perimeter trunking",
-      "On site parking"
-    ],
-    "rent_psf": 10.39,
-    "rent_pa": 27500,
-    "rent": "£27,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/fdb9acca468b06f5363f3de86dd588e4-letting346669.jpeg",
-      "https://as-images.imgix.net/89b451855493ecf44f51834980f5843e-letting346669.jpeg",
-      "https://as-images.imgix.net/e7d9b4b640cfd6cae9f06a3980ff7a97-letting346669.jpeg",
-      "https://as-images.imgix.net/5db5e73672cf4bf14056eefc56f982e1-letting346669.jpeg",
-      "https://as-images.imgix.net/7258afedb9383f0d756cb05939d9fb80-letting346669.jpeg",
-      "https://as-images.imgix.net/47deff332f8cf80def2e3d722d8dd521-letting346669.jpeg",
-      "https://as-images.imgix.net/60787b8821bd96f2e53c427b77908073-letting346669.jpeg",
-      "https://as-images.imgix.net/db7a4489159e021a006f57b29391151f-letting346669.jpeg",
-      "https://as-images.imgix.net/ccb789225c0fd3888f9d30d34d046d96-letting346669.jpeg",
-      "https://as-images.imgix.net/256de420f5f1020a73bbe3beef3ac414-letting346669.jpeg",
-      "https://as-images.imgix.net/d7bfa4eb1a1a3e4c6578bdfa0bd1e95d-letting346669.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/08b61ea043e9871b5a9397921526c9c4-letting346669.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-04-07 14:31:40"
-  },
-  {
     "id": 346680,
     "status": "Available",
     "address": "Nailers Yard",
