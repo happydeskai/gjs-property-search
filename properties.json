@@ -1,5 +1,59 @@
 [
   {
+    "id": 346660,
+    "status": "Available",
+    "address": "9-10 The Tything",
+    "town": "Worcester",
+    "postcode": "WR1 1HD",
+    "lat": 52.197731018,
+    "lon": -2.223536014,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1035,
+    "size_to_sqft": 1035,
+    "summary": "Office To Let, Worcester",
+    "description": "9 - 10 The Tything comprises a prominent office that fronts The Tything. The subject suite is located on the second floor and can be accessed via the main and rear entrances. The two allocated car parking spaces are accessed via the rear entrance and off St. Oswald's Road. Internally the second floor is accessed via a staircase only. The subject office suite is self-contained having a kitchenette and WC facility. The offices look eastwards over Sansome Walk and up towards Rainbow Hill. Second Floor1,035 sq ft96.2 sq m Location The property is situated in a prominent position on The Tything which is one of the main arterial roads leading into Worcester city centre from the north, being within one quarter mile of Worcester's main pedestrianised shopping area. The offices are within walking distance of the city centre, Foregate Street Station and he County Crown Magistrates Courts.",
+    "features": [
+      "Situated on the second floor with great views over Sansome Walk",
+      "Self contained office suite with kitchenette and WC",
+      "Two allocated parking spaces"
+    ],
+    "rent_psf": 14.49,
+    "rent_pa": 15000,
+    "rent": "£15,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "C (27)",
+    "images": [
+      "https://as-images.imgix.net/3f170182e6b08d38e1d8044185a3de1b-letting346660.jpeg",
+      "https://as-images.imgix.net/18b9035288e489f87c6e3f1e4fa53921-letting346660.jpeg",
+      "https://as-images.imgix.net/a5a67766aaf3cd755627a62693ad18cc-letting346660.jpeg",
+      "https://as-images.imgix.net/4a0b71c292670dce0554bb2ef40baba0-letting346660.jpeg",
+      "https://as-images.imgix.net/a6a06805b388d46e9c863e60ea6dbedc-letting346660.jpeg",
+      "https://as-images.imgix.net/78f8c7b1c4c41989710d7c813171c726-letting346660.jpeg",
+      "https://as-images.imgix.net/086bcddab259c600f93f1bafd2b8909f-letting346660.jpeg",
+      "https://as-images.imgix.net/cec1db1a5efc4e0d736a5e5e5236107a-letting346660.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/05c72b2df54665a92200f3a5f2b2f406-letting346660.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-04-17 09:27:08"
+  },
+  {
     "id": 346866,
     "status": "Available",
     "address": "Jill Lane",
@@ -56,60 +110,6 @@
       }
     ],
     "last_updated": "2026-04-14 16:47:42"
-  },
-  {
-    "id": 346660,
-    "status": "Available",
-    "address": "9-10 The Tything",
-    "town": "Worcester",
-    "postcode": "WR1 1HD",
-    "lat": 52.197731018,
-    "lon": -2.223536014,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1035,
-    "size_to_sqft": 1035,
-    "summary": "Office To Let, Worcester",
-    "description": "9 - 10 The Tything comprises a prominent office that fronts The Tything. The subject suite is located on the second floor and can be accessed via the main and rear entrances. The two allocated car parking spaces are accessed via the rear entrance and off St. Oswald's Road. Internally the second floor is accessed via a staircase only. The subject office suite is self-contained having a kitchenette and WC facility. The offices look eastwards over Sansome Walk and up towards Rainbow Hill. Second Floor1,035 sq ft96.2 sq m Location The property is situated in a prominent position on The Tything which is one of the main arterial roads leading into Worcester city centre from the north, being within one quarter mile of Worcester's main pedestrianised shopping area. The offices are within walking distance of the city centre, Foregate Street Station and he County Crown Magistrates Courts.",
-    "features": [
-      "Situated on the second floor with great views over Sansome Walk",
-      "Self contained office suite with kitchenette and WC",
-      "Two allocated parking spaces"
-    ],
-    "rent_psf": 14.49,
-    "rent_pa": 15000,
-    "rent": "£15,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "C (27)",
-    "images": [
-      "https://as-images.imgix.net/3f170182e6b08d38e1d8044185a3de1b-letting346660.jpeg",
-      "https://as-images.imgix.net/18b9035288e489f87c6e3f1e4fa53921-letting346660.jpeg",
-      "https://as-images.imgix.net/a5a67766aaf3cd755627a62693ad18cc-letting346660.jpeg",
-      "https://as-images.imgix.net/4a0b71c292670dce0554bb2ef40baba0-letting346660.jpeg",
-      "https://as-images.imgix.net/a6a06805b388d46e9c863e60ea6dbedc-letting346660.jpeg",
-      "https://as-images.imgix.net/78f8c7b1c4c41989710d7c813171c726-letting346660.jpeg",
-      "https://as-images.imgix.net/086bcddab259c600f93f1bafd2b8909f-letting346660.jpeg",
-      "https://as-images.imgix.net/cec1db1a5efc4e0d736a5e5e5236107a-letting346660.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/05c72b2df54665a92200f3a5f2b2f406-letting346660.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-04-14 15:13:26"
   },
   {
     "id": 346657,
