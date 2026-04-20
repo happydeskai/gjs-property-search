@@ -1,5 +1,55 @@
 [
   {
+    "id": 346682,
+    "status": "Available",
+    "address": "The Piano Building,Weavers Wharf",
+    "town": "Kidderminster",
+    "postcode": "DY10 1AA",
+    "lat": 52.387104034,
+    "lon": -2.250469923,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3886,
+    "size_to_sqft": 12206,
+    "summary": "Office To Let, Kidderminster",
+    "description": "The Piano Building blends its rich industrial heritage with modern functionality. Seen from above, its unique shape resembles a grand piano, giving this iconic structure its name. Originally built as a wool warehouse for Brintons Carpets and later used as a college, it now stands as a vibrant Kidderminster landmark offering work and office spaces and inviting food and drink. The subject office space is situated over the first, second and third floors. There are WC facilities to each floor, along with lift access and accessible facilities. Each floor also has the provision of breakout and employee welfare space. The space can be offered open plan or with a combination of integrated glass meeting rooms. Floor plans are available upon request. \nFirst Floor 3,886 ft2 (361 m2)\nSecond Floor 4,263 ft2 (396 m2)\nThird Floor 4,058 ft2(377 m2)\nTotal 12,206 ft2 (1,134 m2)",
+    "location": "Location The Piano Building is located within Kidderminster, Worcestershire. Kidderminster is situated 15 miles north of Worcester and 17 miles southwest of Birmingham. The town benefits from being in close proximity to major transport links, such as the M5 & M42 motorways, and has a mainline railway station to the east of the town centre, which offers frequent services to Birmingham Snow Hill, Worcester Foregate Street and Stratford-upon-Avon. The building forms part of the gentrified Weavers Wharf Shopping Centre site, being adjacent to the Kidderminster Bus Station, Premier Inn and Tesco superstore. There are multiple other national and local retailers adjacent to the property, offering an extensive retail and food & beverage offering to occupants of the office space.",
+    "features": [
+      "Office space over 1st, 2nd and 3rd Floors",
+      "Space from 3,886 sq ft (361 sq m) to 12,206 sq ft (1,134 sq m)"
+    ],
+    "rent_psf": 16.98,
+    "rent_pa": 66000,
+    "rent": "£66,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/70429908f15693024771e2aa952891cb-letting346682.jpeg",
+      "https://as-images.imgix.net/93e4c9a6a0d0c69dbe5ad3325ff3d2d5-letting346682.jpeg",
+      "https://as-images.imgix.net/14fe2f2343d221867cb0156500d14c6e-letting346682.jpeg",
+      "https://as-images.imgix.net/243b8e040552f0825b9a2f2b7667beb8-letting346682.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/df02321ad9ec9c16dbda5df01804ce00-letting346682.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-04-20 10:22:48"
+  },
+  {
     "id": 346657,
     "status": "Available",
     "address": "29 Foregate Street",
@@ -3401,56 +3451,6 @@
       }
     ],
     "last_updated": "2026-02-27 13:23:39"
-  },
-  {
-    "id": 346682,
-    "status": "Available",
-    "address": "The Piano Building,Weavers Wharf",
-    "town": "Kidderminster",
-    "postcode": "DY10 1AA",
-    "lat": 52.387104034,
-    "lon": -2.250469923,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3886,
-    "size_to_sqft": 12206,
-    "summary": "Office To Let, Kidderminster",
-    "description": "The Piano Building blends its rich industrial heritage with modern functionality. Seen from above, its unique shape resembles a grand piano, giving this iconic structure its name. Originally built as a wool warehouse for Brintons Carpets and later used as a college, it now stands as a vibrant Kidderminster landmark offering work and office spaces and inviting food and drink. The subject office space is situated over the first, second and third floors. There are WC facilities to each floor, along with lift access and accessible facilities. Each floor also has the provision of breakout and employee welfare space. The space can be offered open plan or with a combination of integrated glass meeting rooms. Floor plans are available upon request. \nFirst Floor 3,886 ft2 (361 m2)\nSecond Floor 4,263 ft2 (396 m2)\nThird Floor 4,058 ft2(377 m2)\nTotal 12,206 ft2 (1,134 m2)",
-    "location": "Location The Piano Building is located within Kidderminster, Worcestershire. Kidderminster is situated 15 miles north of Worcester and 17 miles southwest of Birmingham. The town benefits from being in close proximity to major transport links, such as the M5 & M42 motorways, and has a mainline railway station to the east of the town centre, which offers frequent services to Birmingham Snow Hill, Worcester Foregate Street and Stratford-upon-Avon. The building forms part of the gentrified Weavers Wharf Shopping Centre site, being adjacent to the Kidderminster Bus Station, Premier Inn and Tesco superstore. There are multiple other national and local retailers adjacent to the property, offering an extensive retail and food & beverage offering to occupants of the office space.",
-    "features": [
-      "Office space over 1st, 2nd and 3rd Floors",
-      "Space from 3,886 sq ft (361 sq m) to 12,206 sq ft (1,134 sq m)"
-    ],
-    "rent_psf": 16.98,
-    "rent_pa": 66000,
-    "rent": "£66,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/70429908f15693024771e2aa952891cb-letting346682.jpeg",
-      "https://as-images.imgix.net/93e4c9a6a0d0c69dbe5ad3325ff3d2d5-letting346682.jpeg",
-      "https://as-images.imgix.net/14fe2f2343d221867cb0156500d14c6e-letting346682.jpeg",
-      "https://as-images.imgix.net/243b8e040552f0825b9a2f2b7667beb8-letting346682.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/df02321ad9ec9c16dbda5df01804ce00-letting346682.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-27 13:12:00"
   },
   {
     "id": 346673,
