@@ -12,7 +12,6 @@ function safeList(arr) {
   return Array.isArray(arr) ? arr.map(escapeHtml).join(', ') : escapeHtml(String(arr || ''));
 }
 
-// SMTP + app config from Vercel env
 const SMTP_HOST   = process.env.SMTP_HOST;
 const SMTP_PORT   = Number(process.env.SMTP_PORT || 587);
 const SMTP_USER   = process.env.SMTP_USER;
@@ -20,7 +19,6 @@ const SMTP_PASS   = process.env.SMTP_PASS;
 const FROM_EMAIL  = process.env.FROM_EMAIL || 'bamboo.admin@gjsdillon.co.uk';
 const TO_CONTACT  = process.env.TO_CONTACT || 'info@gjsdillon.co.uk';
 
-// Multi-origin CORS allow-list (supports both staging and live)
 const ALLOW_ORIGINS = (process.env.CORS_ORIGINS || process.env.CORS_ORIGIN || '*')
   .split(',')
   .map(s => s.trim())
@@ -33,7 +31,6 @@ function resolveCorsOrigin(req) {
   return ALLOW_ORIGINS[0] || '*';
 }
 
-// Brevo SMTP transport
 const transporter = nodemailer.createTransport({
   host: SMTP_HOST,
   port: SMTP_PORT,
@@ -42,7 +39,6 @@ const transporter = nodemailer.createTransport({
 });
 
 module.exports = async (req, res) => {
-  // CORS
   const allowOrigin = resolveCorsOrigin(req);
   res.setHeader('Access-Control-Allow-Origin', allowOrigin);
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -54,25 +50,24 @@ module.exports = async (req, res) => {
   try {
     const body = typeof req.body === 'object' ? req.body : JSON.parse(req.body || '{}');
 
-    // Fields from your form
     const {
       firstName = '',
       lastName = '',
       email = '',
-      newsletter = false,            // checkbox
+      newsletter = false,
       phone = '',
-      preferredMethods = [],         // array of 'Email' | 'Phone' | 'Text Message'
+      preferredMethods = [],
       company = '',
+      propertyAddress = '',
       message = '',
-      gdprConsent = false,           // required checkbox
-      reasonForContact = '',         // select
-      page = '',                     // page URL
+      gdprConsent = false,
+      reasonForContact = '',
+      page = '',
       utm_source = '',
       utm_medium = '',
       utm_campaign = ''
     } = body;
 
-    // Basic validation
     if (!email || !/^\S+@\S+\.\S+$/.test(email)) return res.status(400).json({ error: 'Invalid email' });
     if (!firstName && !lastName)    return res.status(400).json({ error: 'Missing name' });
     if (!gdprConsent)               return res.status(400).json({ error: 'GDPR consent required' });
@@ -83,7 +78,6 @@ module.exports = async (req, res) => {
     const fullName = [firstName, lastName].filter(Boolean).join(' ');
     const methods  = (Array.isArray(preferredMethods) && preferredMethods.length) ? preferredMethods.join(', ') : '';
 
-    // Plain-text (machine-friendly)
     const text = [
       `Website contact${reasonForContact ? ' — ' + reasonForContact : ''}`,
       page ? `From page: ${page}` : '',
@@ -91,6 +85,7 @@ module.exports = async (req, res) => {
       `Email: ${email}`,
       phone ? `Phone: ${phone}` : '',
       company ? `Company: ${company}` : '',
+      propertyAddress ? `Property address enquiry relates to: ${propertyAddress}` : '',
       methods ? `Preferred contact method: ${methods}` : '',
       `GDPR consent: ${gdprConsent ? 'Yes' : 'No'}`,
       `Newsletter opt-in: ${newsletter ? 'Yes' : 'No'}`,
@@ -106,7 +101,6 @@ module.exports = async (req, res) => {
         : ''
     ].filter(Boolean).join('\n');
 
-    // Simple HTML (human-friendly, minimal markup)
     const html = `<!doctype html>
 <html><body style="margin:0;padding:16px;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#111;">
   <h2 style="margin:0 0 12px 0;font-size:18px;">Website contact${reasonForContact ? ' — ' + escapeHtml(reasonForContact) : ''}</h2>
@@ -118,6 +112,7 @@ module.exports = async (req, res) => {
       <tr><td style="padding:6px 0;"><strong>Email</strong></td><td style="padding:6px 0;"><a href="mailto:${escapeHtml(email)}" style="color:#0b5fff;text-decoration:none;">${escapeHtml(email)}</a></td></tr>
       ${phone ? `<tr><td style="padding:6px 0;"><strong>Phone</strong></td><td style="padding:6px 0;">${escapeHtml(phone)}</td></tr>` : ''}
       ${company ? `<tr><td style="padding:6px 0;"><strong>Company</strong></td><td style="padding:6px 0;">${escapeHtml(company)}</td></tr>` : ''}
+      ${propertyAddress ? `<tr><td style="padding:6px 0;"><strong>Property address enquiry relates to</strong></td><td style="padding:6px 0;">${escapeHtml(propertyAddress)}</td></tr>` : ''}
       ${(Array.isArray(preferredMethods) && preferredMethods.length) ? `<tr><td style="padding:6px 0;"><strong>Preferred contact method</strong></td><td style="padding:6px 0;">${safeList(preferredMethods)}</td></tr>` : ''}
       ${reasonForContact ? `<tr><td style="padding:6px 0;"><strong>Reason for contact</strong></td><td style="padding:6px 0;">${escapeHtml(reasonForContact)}</td></tr>` : ''}
       <tr><td style="padding:6px 0;"><strong>GDPR consent</strong></td><td style="padding:6px 0;">${gdprConsent ? 'Yes' : 'No'}</td></tr>
@@ -146,7 +141,7 @@ module.exports = async (req, res) => {
       to: TO_CONTACT,
       subject: `Website contact${reasonForContact ? ' — ' + reasonForContact : ''}`,
       html,
-      text,         // plain-text for Flight/any parser
+      text,
       replyTo: email,
       headers: { 'X-Origin': 'standard-contact' }
     });
