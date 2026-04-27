@@ -1,5 +1,67 @@
 [
   {
+    "id": 360553,
+    "status": "Available",
+    "address": "Ground Floor, 1 King Street",
+    "town": "Worcester",
+    "postcode": "WR1 2NX",
+    "lat": 52.187626,
+    "lon": -2.218937,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 554,
+    "size_to_sqft": 554,
+    "summary": "Self-contained ground floor commercial premises",
+    "description": "1 King Street is a centrally located ground floor commercial unit with flexible usage. The property comprises a self-contained open plan space with kitchenette and toilet facilities.  There is one car parking space located to the rear of the property. \n\nGround Floor 554 sq ft 41 sq m\nTotal 554 sq ft 41 sq m",
+    "location": "King Street is close to City Walls Road and Sidbury with good transport links.  Close by are the main shopping areas of Worcester city centre and other amenities which are within walking distance.  Several public car parks are in the vicinity.\n\nWorcester is a major West Midlands city located approximately 120 miles North West of London, 30 miles south west of Birmingham, 25 miles to the north of Cheltenham and 26 miles to the north east of Hereford city centre.  Motorway access to the city is very good with junctions 6 and 7 of the M5 motorway being within three miles of the city centre giving direct access to the national motorway network.",
+    "features": [
+      "554.34 sq ft (51.5 sq m) NIA ground floor commercial space",
+      "Flexible usage within Use Class E (Commercial, Business and Service)",
+      "Central Worcester location with excellent local amenities",
+      "1 car parking space to the rear of the property"
+    ],
+    "rent_psf": 19.86,
+    "rent_pa": 11000,
+    "rent": "£11,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 6000,
+    "service_charge": "500",
+    "epc_rating": "B (46)",
+    "images": [
+      "https://as-images.imgix.net/883fc050d2ebc487b9af0876b6fb5771-20260326-144506528-ios-1.jpg",
+      "https://as-images.imgix.net/ff11721a19e7767f4ebdfcd6e6a419e9-20260326-144112942-ios-1.jpg",
+      "https://as-images.imgix.net/2260faf686cfc0569d6408bc666f09e8-20260326-144040559-ios-1.jpg",
+      "https://as-images.imgix.net/b52ca09760c28be088c554baf3f0ad44-20260326-144018134-ios.jpg",
+      "https://as-images.imgix.net/8b31910f6516ec0bed157f26a62a312b-20260326-143936732-ios.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/fdcbf5841d5d3b3b72344a7cf704d751-gjs-dillon-particulars-1-king-street-worcester-wr1-1.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-04-27 09:39:13"
+  },
+  {
     "id": 346682,
     "status": "Available",
     "address": "The Piano Building,Weavers Wharf",
@@ -124,68 +186,6 @@
       }
     ],
     "last_updated": "2026-04-23 15:46:28"
-  },
-  {
-    "id": 360553,
-    "status": "Available",
-    "address": "Ground Floor, 1 King Street",
-    "town": "Worcester",
-    "postcode": "WR1 2NX",
-    "lat": 52.187626,
-    "lon": -2.218937,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 554,
-    "size_to_sqft": 554,
-    "summary": "Self-contained ground floor commercial premises",
-    "description": "1 King Street is a centrally located ground floor commercial unit with flexible usage. The property comprises a self-contained open plan space with kitchenette and toilet facilities.  There is one car parking space located to the rear of the property. \n\nGround Floor 554 sq ft 41 sq m\nTotal 554 sq ft 41 sq m",
-    "location": "King Street is close to City Walls Road and Sidbury with good transport links.  Close by are the main shopping areas of Worcester city centre and other amenities which are within walking distance.  Several public car parks are in the vicinity.\n\nWorcester is a major West Midlands city located approximately 120 miles North West of London, 30 miles south west of Birmingham, 25 miles to the north of Cheltenham and 26 miles to the north east of Hereford city centre.  Motorway access to the city is very good with junctions 6 and 7 of the M5 motorway being within three miles of the city centre giving direct access to the national motorway network.",
-    "features": [
-      "554.34 sq ft (51.5 sq m) NIA ground floor commercial space",
-      "Flexible usage within Use Class E (Commercial, Business and Service)",
-      "Central Worcester location with excellent local amenities",
-      "1 car parking space to the rear of the property"
-    ],
-    "rent_psf": 19.86,
-    "rent_pa": 11000,
-    "rent": "£11,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 6000,
-    "service_charge": "500",
-    "epc_rating": "B (46)",
-    "images": [
-      "https://as-images.imgix.net/883fc050d2ebc487b9af0876b6fb5771-20260326-144506528-ios-1.jpg",
-      "https://as-images.imgix.net/ff11721a19e7767f4ebdfcd6e6a419e9-20260326-144112942-ios-1.jpg",
-      "https://as-images.imgix.net/2260faf686cfc0569d6408bc666f09e8-20260326-144040559-ios-1.jpg",
-      "https://as-images.imgix.net/b52ca09760c28be088c554baf3f0ad44-20260326-144018134-ios.jpg",
-      "https://as-images.imgix.net/8b31910f6516ec0bed157f26a62a312b-20260326-143936732-ios.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/fdcbf5841d5d3b3b72344a7cf704d751-gjs-dillon-particulars-1-king-street-worcester-wr1-1.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-04-23 13:17:05"
   },
   {
     "id": 346855,
