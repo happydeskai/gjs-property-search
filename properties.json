@@ -1,5 +1,81 @@
 [
   {
+    "id": 355238,
+    "status": "Available",
+    "address": "Units 1 & 2, Saxon Business Park",
+    "town": "Bromsgrove",
+    "postcode": "B60 4AD",
+    "lat": 52.298313008523,
+    "lon": -2.0756804251617,
+    "types": [
+      "Industrial",
+      "Development/Investment"
+    ],
+    "raw_types": [
+      "Industrial",
+      "Investment - Industrial"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 10204,
+    "size_to_sqft": 10204,
+    "summary": "Multi-Let Industrial Investment",
+    "description": "The property comprises a detached modern industrial building with ancillary office accommodation, situated within the established Saxon Business Park in Bromsgrove. Constructed in the 1990s, the building is of steel portal frame construction beneath a pitched insulated steel profile roof with a combination of brick and profile clad elevations. The property provides warehouse accommodation together with two-storey office accommodation to the front elevation including kitchen and WC facilities. The office areas have been recently refurbished and are presented in good condition. The warehouse accommodation benefits from three roller shutter loading doors and is currently configured as two self-contained units, both of which are let and income producing.\n\nExternally, the property benefits from tarmacadam surfaced parking areas providing approximately 26 car parking spaces to the front and side of the building. The property extends to approximately 10,204 sq ft (948 sq m) and provides a fully let multi-let industrial investment within an established commercial location.",
+    "location": "Bromsgrove is an established Worcestershire town located approximately 13 miles south west of Birmingham and 16 miles north east of Worcester. The town benefits from excellent connectivity, with the A38 running through Bromsgrove, whilst the M5 motorway lies to the west and the M42 commences to the north, providing access to the wider West Midlands motorway network. Bromsgrove railway station provides regular services to Birmingham New Street, Worcester and Hereford, with additional public transport connections available from the town centre. \n\nThe property is located on Saxon Business Park on Hanbury Road, a well-established commercial estate situated close to Bromsgrove town centre. The park is occupied by a range of local, regional and national businesses and benefits from convenient access to the M5 and M42 motorways, making it a popular location for industrial and business occupiers.",
+    "features": [
+      "Fully let industrial investment",
+      "Detached modern industrial building",
+      "Located on the popular Saxon Business Park",
+      "Excellent access to the M5 and M42 motorway network",
+      "Three roller shutter loading doors",
+      "Total floor area 10,204 sq ft (948 sq m) GIA"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/d4f72a9b41c0f7b6d835119b0aa43f5a-dji-0942.JPG",
+      "https://as-images.imgix.net/86450e3fe867a2303ec8a18f44a12b8e-20260311-140554.jpg",
+      "https://as-images.imgix.net/62e379d52303ab5901b8b1233122b924-20260318-094802.jpg",
+      "https://as-images.imgix.net/c49d1144361c5b42663540a37ed0d622-20260318-094940.jpg",
+      "https://as-images.imgix.net/9f41db5b98a828b5e6430152df0dbf63-20260318-094923.jpg",
+      "https://as-images.imgix.net/d063ea280da140e1344bb46c4c8fd978-20260318-094544.jpg",
+      "https://as-images.imgix.net/00f9b266e1d9d542948c3352e78d2ec7-20260318-095032.jpg",
+      "https://as-images.imgix.net/3ea50f581a21d5284753aa0d86efc9c0-20260318-095027.jpg",
+      "https://as-images.imgix.net/99a6cd3b19dcad9063d4fb539920732d-20260318-094650.jpg",
+      "https://as-images.imgix.net/1ea4388cc2181d3f6e0a2925aac4d81a-20260318-095206.jpg",
+      "https://as-images.imgix.net/79507bd6b3995aae252d76ca43e6cf8a-dji-0949.JPG",
+      "https://as-images.imgix.net/874a3041a45c30ed85eb8d5013fdbf3d-dji-0953.JPG",
+      "https://as-images.imgix.net/86b4d6115649664b8983169eeeb92df6-20260318-100145.jpg",
+      "https://as-images.imgix.net/98b78432f34caf7cc0d5e3bea19dd5fc-20260318-101033.jpg",
+      "https://as-images.imgix.net/531401dee0d0af987cc2ace2df227d11-20260318-101320.jpg",
+      "https://as-images.imgix.net/b9e4a7a3c7917633a7f32e342a7a8d6a-20260318-101209.jpg",
+      "https://as-images.imgix.net/82a9711079d8b3dbd39ae38bdd2bfef7-20260318-100209.jpg",
+      "https://as-images.imgix.net/b9cf8264d317ed6e44732cf655b38079-dji-0951.JPG",
+      "https://as-images.imgix.net/b92192c6934058125f39ef7bec17e1d3-dji-0955.JPG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f32498d0ff58e97c6cfd8a57032de533-units-1-2-saxon-business-park-bromsgrove-brochure.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-04-28 14:13:16"
+  },
+  {
     "id": 346706,
     "status": "Available",
     "address": "Unit 9, Davies Road Trade Centre",
@@ -163,82 +239,6 @@
       }
     ],
     "last_updated": "2026-04-24 15:51:45"
-  },
-  {
-    "id": 355238,
-    "status": "Available",
-    "address": "Units 1 & 2, Saxon Business Park",
-    "town": "Bromsgrove",
-    "postcode": "B60 4AD",
-    "lat": 52.298313008523,
-    "lon": -2.0756804251617,
-    "types": [
-      "Industrial",
-      "Development/Investment"
-    ],
-    "raw_types": [
-      "Industrial",
-      "Investment - Industrial"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 10204,
-    "size_to_sqft": 10204,
-    "summary": "Multi-Let Industrial Investment",
-    "description": "The property comprises a detached modern industrial building with ancillary office accommodation, situated within the established Saxon Business Park in Bromsgrove. Constructed in the 1990s, the building is of steel portal frame construction beneath a pitched insulated steel profile roof with a combination of brick and profile clad elevations. The property provides warehouse accommodation together with two-storey office accommodation to the front elevation including kitchen and WC facilities. The office areas have been recently refurbished and are presented in good condition. The warehouse accommodation benefits from three roller shutter loading doors and is currently configured as two self-contained units, both of which are let and income producing.\n\nExternally, the property benefits from tarmacadam surfaced parking areas providing approximately 26 car parking spaces to the front and side of the building. The property extends to approximately 10,204 sq ft (948 sq m) and provides a fully let multi-let industrial investment within an established commercial location.",
-    "location": "Bromsgrove is an established Worcestershire town located approximately 13 miles south west of Birmingham and 16 miles north east of Worcester. The town benefits from excellent connectivity, with the A38 running through Bromsgrove, whilst the M5 motorway lies to the west and the M42 commences to the north, providing access to the wider West Midlands motorway network. Bromsgrove railway station provides regular services to Birmingham New Street, Worcester and Hereford, with additional public transport connections available from the town centre. \n\nThe property is located on Saxon Business Park on Hanbury Road, a well-established commercial estate situated close to Bromsgrove town centre. The park is occupied by a range of local, regional and national businesses and benefits from convenient access to the M5 and M42 motorways, making it a popular location for industrial and business occupiers.",
-    "features": [
-      "Fully let industrial investment",
-      "Detached modern industrial building",
-      "Located on the popular Saxon Business Park",
-      "Excellent access to the M5 and M42 motorway network",
-      "Three roller shutter loading doors",
-      "Total floor area 10,204 sq ft (948 sq m) GIA"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/d4f72a9b41c0f7b6d835119b0aa43f5a-dji-0942.JPG",
-      "https://as-images.imgix.net/86450e3fe867a2303ec8a18f44a12b8e-20260311-140554.jpg",
-      "https://as-images.imgix.net/62e379d52303ab5901b8b1233122b924-20260318-094802.jpg",
-      "https://as-images.imgix.net/c49d1144361c5b42663540a37ed0d622-20260318-094940.jpg",
-      "https://as-images.imgix.net/9f41db5b98a828b5e6430152df0dbf63-20260318-094923.jpg",
-      "https://as-images.imgix.net/d063ea280da140e1344bb46c4c8fd978-20260318-094544.jpg",
-      "https://as-images.imgix.net/00f9b266e1d9d542948c3352e78d2ec7-20260318-095032.jpg",
-      "https://as-images.imgix.net/3ea50f581a21d5284753aa0d86efc9c0-20260318-095027.jpg",
-      "https://as-images.imgix.net/99a6cd3b19dcad9063d4fb539920732d-20260318-094650.jpg",
-      "https://as-images.imgix.net/1ea4388cc2181d3f6e0a2925aac4d81a-20260318-095206.jpg",
-      "https://as-images.imgix.net/79507bd6b3995aae252d76ca43e6cf8a-dji-0949.JPG",
-      "https://as-images.imgix.net/874a3041a45c30ed85eb8d5013fdbf3d-dji-0953.JPG",
-      "https://as-images.imgix.net/86b4d6115649664b8983169eeeb92df6-20260318-100145.jpg",
-      "https://as-images.imgix.net/98b78432f34caf7cc0d5e3bea19dd5fc-20260318-101033.jpg",
-      "https://as-images.imgix.net/531401dee0d0af987cc2ace2df227d11-20260318-101320.jpg",
-      "https://as-images.imgix.net/b9e4a7a3c7917633a7f32e342a7a8d6a-20260318-101209.jpg",
-      "https://as-images.imgix.net/82a9711079d8b3dbd39ae38bdd2bfef7-20260318-100209.jpg",
-      "https://as-images.imgix.net/b9cf8264d317ed6e44732cf655b38079-dji-0951.JPG",
-      "https://as-images.imgix.net/b92192c6934058125f39ef7bec17e1d3-dji-0955.JPG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f32498d0ff58e97c6cfd8a57032de533-units-1-2-saxon-business-park-bromsgrove-brochure.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-04-23 15:46:28"
   },
   {
     "id": 346855,
