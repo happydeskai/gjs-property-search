@@ -1,5 +1,62 @@
 [
   {
+    "id": 346700,
+    "status": "Available",
+    "address": "Kempsey Eco Business Park,Industrial / Warehouse Buildings",
+    "town": "Worcester",
+    "postcode": "WR5 3NY",
+    "lat": 52.130516052,
+    "lon": -2.215411901,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1011,
+    "size_to_sqft": 1958,
+    "summary": "Industrial To Let, Worcester",
+    "description": "Kempsey Eco Business Park, a forward-thinking commercial destination designed to support businesses with sustainability at its core. Strategically located just off the A38, south of Worcester, this eco-friendly development offers high-quality, energy-efficient business units tailored for modern enterprises. With a strong emphasis on sustainability, Kempsey Eco Business Park incorporates renewable energy solutions, energy-efficient buildings, and green infrastructure to create an environmentally responsible workspace. The park is ideal for businesses seeking a future-proof location that aligns with corporate social responsibility goals while offering excellent accessibility and modern facilities. Join a growing community of forward-thinking businesses at Kempsey Eco Business Park, where sustainability meets commercial success. Kempsey is a delightful village situated 3 miles to the south of Worcester on the banks of the River Severn that can date its origins back to 1500BC when the Celts made a settlement here. It continued to be inhabited through Roman and Saxon times and played an important part in the Battle of Worcester in 1651. It currently has a population of c.4500 and is home to many locally owned businesses. Kempsey Eco Business Park can be found at the South end of the village bounded by the River Severn and the A38 Tewkesbury Road. It has excellent transport links including the M5 motorway (4 miles) and Worcester Parkway railway station (6 miles), as well as easy access by foot, bike and bus.",
+    "features": [
+      "Industrial units of 1011 - 1958 sq ft",
+      "Electric car charging points",
+      "Renewable clean biomass energy",
+      "On site car parking",
+      "Bike lock station",
+      "Photovoltaics panels to generate electricity"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/fdc37f8a01c4e4796c6590fc56e4e5f0-20260428-094346.jpg",
+      "https://as-images.imgix.net/55aea52289f080f1f3ab93b0c392f44d-20260428-094353.jpg",
+      "https://as-images.imgix.net/014a66308f34ac52143eb8a8342b22bd-letting346700.jpeg",
+      "https://as-images.imgix.net/c5f3fe75c41d4e33529e80a1a4dce4d2-letting346700.jpeg",
+      "https://as-images.imgix.net/4b6a05e107a6b3eb309e2dcc0d4ff864-letting346700.jpeg",
+      "https://as-images.imgix.net/178cfe5dabdd47f3c9b81a868ef9d182-letting346700.jpeg",
+      "https://as-images.imgix.net/4cef282a48922224ced691b1bad938c4-letting346700.jpeg",
+      "https://as-images.imgix.net/b28b65ee0c292c9dcfb6db4695774cde-letting346700.jpeg",
+      "https://as-images.imgix.net/31a561633691ad5a6bd71ff11dd15869-letting346700.jpeg",
+      "https://as-images.imgix.net/87f7d44e176a27b58b68f22692f33f41-letting346700.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/093dfc13d5e67a4783720853c6d22274-kempsey-eco-park-brochure.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-04-29 10:28:45"
+  },
+  {
     "id": 355238,
     "status": "Available",
     "address": "Units 1 & 2, Saxon Business Park",
@@ -1702,63 +1759,6 @@
       }
     ],
     "last_updated": "2026-04-08 16:33:48"
-  },
-  {
-    "id": 346700,
-    "status": "Available",
-    "address": "Kempsey Eco Business Park,Industrial / Warehouse Buildings",
-    "town": "Worcester",
-    "postcode": "WR5 3NY",
-    "lat": 52.130516052,
-    "lon": -2.215411901,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1011,
-    "size_to_sqft": 1958,
-    "summary": "Industrial To Let, Worcester",
-    "description": "Kempsey Eco Business Park, a forward-thinking commercial destination designed to support businesses with sustainability at its core. Strategically located just off the A38, south of Worcester, this eco-friendly development offers high-quality, energy-efficient business units tailored for modern enterprises. With a strong emphasis on sustainability, Kempsey Eco Business Park incorporates renewable energy solutions, energy-efficient buildings, and green infrastructure to create an environmentally responsible workspace. The park is ideal for businesses seeking a future-proof location that aligns with corporate social responsibility goals while offering excellent accessibility and modern facilities. Join a growing community of forward-thinking businesses at Kempsey Eco Business Park, where sustainability meets commercial success. Kempsey is a delightful village situated 3 miles to the south of Worcester on the banks of the River Severn that can date its origins back to 1500BC when the Celts made a settlement here. It continued to be inhabited through Roman and Saxon times and played an important part in the Battle of Worcester in 1651. It currently has a population of c.4500 and is home to many locally owned businesses. Kempsey Eco Business Park can be found at the South end of the village bounded by the River Severn and the A38 Tewkesbury Road. It has excellent transport links including the M5 motorway (4 miles) and Worcester Parkway railway station (6 miles), as well as easy access by foot, bike and bus.",
-    "features": [
-      "Industrial units of 1011 - 1958 sq ft",
-      "Electric car charging points",
-      "Renewable clean biomass energy",
-      "On site car parking",
-      "Bike lock station",
-      "Photovoltaics panels to generate electricity"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/31a561633691ad5a6bd71ff11dd15869-letting346700.jpeg",
-      "https://as-images.imgix.net/87f7d44e176a27b58b68f22692f33f41-letting346700.jpeg",
-      "https://as-images.imgix.net/014a66308f34ac52143eb8a8342b22bd-letting346700.jpeg",
-      "https://as-images.imgix.net/04d282fc9cf3219a19f93d31500e71cd-letting346700.jpeg",
-      "https://as-images.imgix.net/c5f3fe75c41d4e33529e80a1a4dce4d2-letting346700.jpeg",
-      "https://as-images.imgix.net/fd8c1ff224c10087f5bb713e0595cf97-letting346700.jpeg",
-      "https://as-images.imgix.net/4b6a05e107a6b3eb309e2dcc0d4ff864-letting346700.jpeg",
-      "https://as-images.imgix.net/178cfe5dabdd47f3c9b81a868ef9d182-letting346700.jpeg",
-      "https://as-images.imgix.net/4cef282a48922224ced691b1bad938c4-letting346700.jpeg",
-      "https://as-images.imgix.net/b28b65ee0c292c9dcfb6db4695774cde-letting346700.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9557998d335e296fbae63dffe0ab6408-letting346700.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-04-07 14:40:06"
   },
   {
     "id": 346719,
