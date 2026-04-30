@@ -1,5 +1,124 @@
 [
   {
+    "id": 350918,
+    "status": "Available",
+    "address": "Unit 13a, St Richards Road",
+    "town": "Evesham",
+    "postcode": "WR11 1XJ",
+    "lat": 52.080721,
+    "lon": -1.944174,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial / Storage"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 10915,
+    "size_to_sqft": 10915,
+    "summary": "Warehouse / industrial unit with offices",
+    "features": [],
+    "rent_psf": 6.87,
+    "rent_pa": 75000,
+    "rent": "£75,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/651f99fb20a9c50625e8c72eb69ca2a6-20250110-112721.jpg",
+      "https://as-images.imgix.net/f5e96c25b5568fbf6cc3dbfd1d9c586f-20250110-112658.jpg",
+      "https://as-images.imgix.net/c868fd4436d00757c8fd802d5a7e4445-20250110-100648.jpg",
+      "https://as-images.imgix.net/992dfd5951d90ac6acc94184d2512a89-cam04581g0-pr0017-still004.jpg",
+      "https://as-images.imgix.net/d427769e14b3fba6626c41b3eb61cede-cam04581g0-pr0017-still003-1.jpg",
+      "https://as-images.imgix.net/e3549552789a4cb93163b91c1683c20b-cam04581g0-pr0017-still001-1.jpg",
+      "https://as-images.imgix.net/c881be2aadb25ee2ab6e87b7d467ed5c-cam04581g0-pr0017-still002.jpg",
+      "https://as-images.imgix.net/ab9072edf4a682209d5fbccad6b747e4-20250110-111848.jpg",
+      "https://as-images.imgix.net/e56ba103ae52be35219f235cba1cb429-20250110-112029.jpg",
+      "https://as-images.imgix.net/b654121edce18a110401f42305e1c9b6-20250110-112419.jpg",
+      "https://as-images.imgix.net/b54a0dc61220366570e2a147f56af7b8-20250110-112246.jpg",
+      "https://as-images.imgix.net/50a34bf4f59c9c37c5c2bcb1f0fa6a31-20250110-105232.jpg",
+      "https://as-images.imgix.net/5ec5e815e0535326a76a26620c821fc5-20250110-112419.jpg"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-04-30 13:32:27"
+  },
+  {
+    "id": 346649,
+    "status": "Available",
+    "address": "Fringe Meadow Road",
+    "town": "Redditch",
+    "postcode": "B98 9NR",
+    "lat": 52.315120697,
+    "lon": -1.888914942,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 694,
+    "size_to_sqft": 1669,
+    "summary": "Quality offices in a shared building",
+    "description": "Unit 9 comprises a modern, self-contained single-storey office building arranged to provide two suites available to let with shared communal facilities. Both suites are finished to a good standard and benefit from LED lighting, electric heating and cooling, suspended ceilings and an intruder alarm system. Each suite offers predominantly open-plan accommodation with the flexibility to incorporate private offices if required. There is also a separate partitioned meeting room, which could be made available for shared use on a booking or separate licence basis. Communal areas include a welcoming reception/entrance hall, male and female WCs and a shared kitchen, which offers basic facilities. Externally, the property benefits from on-site parking, with an allocation of approximately five spaces per suite.",
+    "features": [
+      "Suite 1 - 975 sq ft (90.61 sq m)",
+      "Suite 2 - 694 sq ft (64.52 sq m)",
+      "Both Suite 1 and 2 can be combined"
+    ],
+    "rent_psf": 9.58,
+    "rent_pa": 6650,
+    "rent": "£6,650 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/319f9680b62ff21abacdd57d284d787c-letting346649.jpeg",
+      "https://as-images.imgix.net/14b27874281c0e1f5e06aec4f1a70683-letting346649.jpeg",
+      "https://as-images.imgix.net/4fe7ade9866207f4a49900bfa8112fce-letting346649.jpeg",
+      "https://as-images.imgix.net/74a5182e7788980df742e2dbdf24306c-letting346649.jpeg",
+      "https://as-images.imgix.net/0b8e1d41a2b0d80ec70ee8ce1ffb7463-letting346649.jpeg",
+      "https://as-images.imgix.net/6183e14ac0968b64d2e7d13102f361a8-letting346649.jpeg",
+      "https://as-images.imgix.net/39f1a81f95668222e6d6b4293443535f-letting346649.jpeg",
+      "https://as-images.imgix.net/ba79f71c0e15c75bf5d06962bb05e0d0-letting346649.jpeg",
+      "https://as-images.imgix.net/42e2f9de810ffdc53c3e4a8755f94b20-letting346649.jpeg",
+      "https://as-images.imgix.net/b1660a12804ced569565b281c8d20ba8-letting346649.jpeg",
+      "https://as-images.imgix.net/8551d265630d06b2ce5e0a255f9936c2-letting346649.jpeg",
+      "https://as-images.imgix.net/a41aa27d9a57fb81c1b9c690626f7c8d-letting346649.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c82a239b18d65ac230ecb26ccc577a97-letting346649.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-04-30 12:13:03"
+  },
+  {
     "id": 346700,
     "status": "Available",
     "address": "Kempsey Eco Business Park,Industrial / Warehouse Buildings",
@@ -3101,67 +3220,6 @@
     "last_updated": "2026-03-01 16:03:22"
   },
   {
-    "id": 350918,
-    "status": "Available",
-    "address": "Unit 13a, St Richards Road",
-    "town": "Evesham",
-    "postcode": "WR11 1XJ",
-    "lat": 52.080721,
-    "lon": -1.944174,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial / Storage"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 10915,
-    "size_to_sqft": 10915,
-    "summary": "Warehouse / industrial unit with offices",
-    "features": [],
-    "rent_psf": 6.87,
-    "rent_pa": 75000,
-    "rent": "£75,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/651f99fb20a9c50625e8c72eb69ca2a6-20250110-112721.jpg",
-      "https://as-images.imgix.net/f5e96c25b5568fbf6cc3dbfd1d9c586f-20250110-112658.jpg",
-      "https://as-images.imgix.net/c868fd4436d00757c8fd802d5a7e4445-20250110-100648.jpg",
-      "https://as-images.imgix.net/992dfd5951d90ac6acc94184d2512a89-cam04581g0-pr0017-still004.jpg",
-      "https://as-images.imgix.net/d427769e14b3fba6626c41b3eb61cede-cam04581g0-pr0017-still003-1.jpg",
-      "https://as-images.imgix.net/e3549552789a4cb93163b91c1683c20b-cam04581g0-pr0017-still001-1.jpg",
-      "https://as-images.imgix.net/c881be2aadb25ee2ab6e87b7d467ed5c-cam04581g0-pr0017-still002.jpg",
-      "https://as-images.imgix.net/ab9072edf4a682209d5fbccad6b747e4-20250110-111848.jpg",
-      "https://as-images.imgix.net/e56ba103ae52be35219f235cba1cb429-20250110-112029.jpg",
-      "https://as-images.imgix.net/b654121edce18a110401f42305e1c9b6-20250110-112419.jpg",
-      "https://as-images.imgix.net/b54a0dc61220366570e2a147f56af7b8-20250110-112246.jpg",
-      "https://as-images.imgix.net/50a34bf4f59c9c37c5c2bcb1f0fa6a31-20250110-105232.jpg",
-      "https://as-images.imgix.net/5ec5e815e0535326a76a26620c821fc5-20250110-112419.jpg"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-01 16:00:40"
-  },
-  {
     "id": 352214,
     "status": "Available",
     "address": "Unit 1, Edgar Estate",
@@ -3700,64 +3758,6 @@
       }
     ],
     "last_updated": "2026-02-27 12:42:31"
-  },
-  {
-    "id": 346649,
-    "status": "Available",
-    "address": "Fringe Meadow Road",
-    "town": "Redditch",
-    "postcode": "B98 9NR",
-    "lat": 52.315120697,
-    "lon": -1.888914942,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 694,
-    "size_to_sqft": 1669,
-    "summary": "Office To Let, Redditch",
-    "description": "Unit 9 comprises a modern, self-contained single-storey office building arranged to provide two suites available to let with shared communal facilities. Both suites are finished to a good standard and benefit from LED lighting, electric heating and cooling, suspended ceilings and an intruder alarm system. Each suite offers predominantly open-plan accommodation with the flexibility to incorporate private offices if required. There is also a separate partitioned meeting room, which could be made available for shared use on a booking or separate licence basis. Communal areas include a welcoming reception/entrance hall, male and female WCs and a shared kitchen, which offers basic facilities. Externally, the property benefits from on-site parking, with an allocation of approximately five spaces per suite.",
-    "features": [
-      "Suite 1 - 975 sq ft (90.61 sq m)",
-      "Suite 2 - 694 sq ft (64.52 sq m)",
-      "Can be let as a whole"
-    ],
-    "rent_psf": 9.58,
-    "rent_pa": 6650,
-    "rent": "£6,650 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/319f9680b62ff21abacdd57d284d787c-letting346649.jpeg",
-      "https://as-images.imgix.net/14b27874281c0e1f5e06aec4f1a70683-letting346649.jpeg",
-      "https://as-images.imgix.net/4fe7ade9866207f4a49900bfa8112fce-letting346649.jpeg",
-      "https://as-images.imgix.net/74a5182e7788980df742e2dbdf24306c-letting346649.jpeg",
-      "https://as-images.imgix.net/0b8e1d41a2b0d80ec70ee8ce1ffb7463-letting346649.jpeg",
-      "https://as-images.imgix.net/6183e14ac0968b64d2e7d13102f361a8-letting346649.jpeg",
-      "https://as-images.imgix.net/39f1a81f95668222e6d6b4293443535f-letting346649.jpeg",
-      "https://as-images.imgix.net/ba79f71c0e15c75bf5d06962bb05e0d0-letting346649.jpeg",
-      "https://as-images.imgix.net/42e2f9de810ffdc53c3e4a8755f94b20-letting346649.jpeg",
-      "https://as-images.imgix.net/b1660a12804ced569565b281c8d20ba8-letting346649.jpeg",
-      "https://as-images.imgix.net/8551d265630d06b2ce5e0a255f9936c2-letting346649.jpeg",
-      "https://as-images.imgix.net/a41aa27d9a57fb81c1b9c690626f7c8d-letting346649.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c82a239b18d65ac230ecb26ccc577a97-letting346649.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-27 12:37:44"
   },
   {
     "id": 346725,
