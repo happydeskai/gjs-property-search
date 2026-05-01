@@ -1,5 +1,160 @@
 [
   {
+    "id": 346662,
+    "status": "Available",
+    "address": "Unit 15-16, Aston Fields Industrial Estate",
+    "town": "Bromsgrove",
+    "postcode": "B60 3EX",
+    "lat": 52.316474914,
+    "lon": -2.060755968,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 8642,
+    "size_to_sqft": 8642,
+    "summary": "Industrial To Let, Bromsgrove",
+    "description": "Units 15 & 16 Aston Fields Industrial Estate comprises a mid-terrace commercial property of steel frame construction with brick & block elevations. The building is currently configured as a warehouse / industrial property, that has previously been used as a trade counter. Internally, there is a good-sized warehouse area with the benefit of 4.75m eaves. Located to the front of the unit is a separate office area and WCs - offering male & female. The property is accessed via a pedestrian doors and roller shutter doors. Externally there are six car parking spaces with loading / unloading facilities to the front of the access door. Gross Internal Area8,642 sq ft802.87 sq m",
+    "features": [
+      "Large warehouse area with associated office and WC's",
+      "Situated on the popular Aston Fields Industrial Estate",
+      "Suitable for warehouse, industrial and trade counter useage",
+      "To be refurbished to a high standard complementing the good EPC rating"
+    ],
+    "rent_psf": 8.5,
+    "rent_pa": 73500,
+    "rent": "£73,500 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/3d1f4db78ac5621b72e77ee09261ca50-letting346662.jpeg",
+      "https://as-images.imgix.net/d1cae0501ffcb8956d164b29fb98bec6-letting346662.jpeg",
+      "https://as-images.imgix.net/4671d7162421f0db75d88085c87bcbb3-letting346662.jpeg",
+      "https://as-images.imgix.net/aa3aa712df55cce85bb711cc3926804d-letting346662.jpeg",
+      "https://as-images.imgix.net/8126a5957adb2178cdaedbb8bedfbd09-letting346662.jpeg",
+      "https://as-images.imgix.net/798811ac813844b15cbe01e75d5c21bc-letting346662.jpeg",
+      "https://as-images.imgix.net/ce2ce99c95df0c645181f84e048b99e6-letting346662.jpeg",
+      "https://as-images.imgix.net/803fd2ebefbe94648451648264276555-letting346662.jpeg",
+      "https://as-images.imgix.net/c02e81ff3edb601fa511a5ac5a3231f2-letting346662.jpeg",
+      "https://as-images.imgix.net/8b5be713a0863558b38a0492326c3ccb-letting346662.jpeg",
+      "https://as-images.imgix.net/31031b6b970263c651b01582c0c6ab89-letting346662.jpeg",
+      "https://as-images.imgix.net/c4632a53ab1d5b65721733a9c148e84e-letting346662.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/7ecd8a5309306c1c8c34e830343c70e0-letting346662.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-01 11:59:00"
+  },
+  {
+    "id": 346824,
+    "status": "Available",
+    "address": "Unit 1, Copcut Business Park",
+    "town": "Droitwich",
+    "postcode": "WR9 7LU",
+    "lat": 52.252487182,
+    "lon": -2.168159008,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 18000,
+    "size_to_sqft": 18000,
+    "summary": "Industrial For Sale, Droitwich",
+    "description": "New build industrial warehouse unit with ancillary office accommodation Copcut Business Park is a proposed mixed use scheme including Sainsbury's Local store, Costa Coffee Drive-Thru, 8 vehicle ultra-rapid charging centre and two industrial units including a self-storage facility and office / meeting space solutions. Unit 1 is a high specification industrial warehouse proposed to be built for completion Q4 2024 and is to provide: - Industrial warehouse with steel clad elevations and roof including translucent roof lights - Ground floor offices with toilets - First floor mezzanine - Floor loading of 50KN/M sq - Concrete floor - 8m to underside of haunch - 2 x electric roller shutter doors - Self-contained concrete yard area - 25 car parking spaces",
+    "features": [],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/48b0702a5a39ef7872e6b564d8f9fa1f-letting346824.jpeg",
+      "https://as-images.imgix.net/0935b6c88a4b90c9b20abd05e1b90a85-letting346824.jpeg",
+      "https://as-images.imgix.net/be45eba2571fb9a0645555912440e080-letting346824.jpeg",
+      "https://as-images.imgix.net/5efe1b26cbe96d8830c50b486978ba05-letting346824.jpeg",
+      "https://as-images.imgix.net/7feb970e834e5b1f55d61ffca45cdb2c-letting346824.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/cc3900e8390181e41ce6bafaedf7d0d4-letting346824.pdf",
+    "contacts": [
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-01 11:18:10"
+  },
+  {
+    "id": 346653,
+    "status": "Under Offer",
+    "address": "Land At Willow End Park",
+    "town": "Malvern",
+    "postcode": "WR13 6NN",
+    "lat": 52.075309753,
+    "lon": -2.298809051,
+    "types": [
+      "Development/Investment"
+    ],
+    "raw_types": [
+      "Development"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 27878.4,
+    "size_to_sqft": 27878.4,
+    "summary": "Development Land",
+    "description": "This parcel of land extends to approximately 0.64 acres and offers an excellent opportunity for development (subject to planning). The site has an extant permission for an 8000 sq ft office block (identical to that shown adjacent to the site) and a lapsed consent for 6 light industrial units with office facilities above totalling 11,000 sq ft. Electricity, gas and full fibre comms are within easy reach of the site and mains water and effluent disposal are within the site. The land benefits from a prominent position alongside an established business park and the site offers potential for additional parking or external yard space, depending on the end use. This is a rare opportunity to secure a well-located development site within an established commercial environment, with flexibility for a range of potential occupiers or investors.",
+    "features": [
+      "0.64 acre",
+      "Freehold",
+      "Development opportunity subject to planning",
+      "Located on an established Business Park"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/7b5774a11bb4834b2f124c1948c3496b-letting346653.jpeg",
+      "https://as-images.imgix.net/20369ebd7df47f1cd239e78e32dd059f-letting346653.jpeg",
+      "https://as-images.imgix.net/a940225a85315e9033bb65b482f12351-letting346653.jpeg",
+      "https://as-images.imgix.net/86d7325de100e6d1d814ff8d0e3623aa-letting346653.jpeg",
+      "https://as-images.imgix.net/0a9f2aa167642ba37ee7d2fa6e1b4596-letting346653.jpeg",
+      "https://as-images.imgix.net/607a5ecde22a248584ec20ce524dcbe0-letting346653.jpeg",
+      "https://as-images.imgix.net/4b95380082fc2ec7f661a6324ec27ef1-letting346653.jpeg",
+      "https://as-images.imgix.net/e8218aab4048cd31b525e998a710be9c-letting346653.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/749b5056acd607c952b42e2a2af3d11e-letting346653.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-01 11:11:40"
+  },
+  {
     "id": 346682,
     "status": "Available",
     "address": "The Piano Building,Weavers Wharf",
@@ -1636,58 +1791,6 @@
     "last_updated": "2026-04-13 12:04:29"
   },
   {
-    "id": 346653,
-    "status": "Under Offer",
-    "address": "Land At Willow End Park",
-    "town": "Malvern",
-    "postcode": "WR13 6NN",
-    "lat": 52.075309753,
-    "lon": -2.298809051,
-    "types": [
-      "Development/Investment"
-    ],
-    "raw_types": [
-      "Development"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 27878.4,
-    "size_to_sqft": 27878.4,
-    "summary": "Development For Sale, Malvern",
-    "description": "This parcel of land extends to approximately 0.64 acres and offers an excellent opportunity for development (subject to planning). The site has an extant permission for an 8000 sq ft office block (identical to that shown adjacent to the site) and a lapsed consent for 6 light industrial units with office facilities above totalling 11,000 sq ft. Electricity, gas and full fibre comms are within easy reach of the site and mains water and effluent disposal are within the site. The land benefits from a prominent position alongside an established business park and the site offers potential for additional parking or external yard space, depending on the end use. This is a rare opportunity to secure a well-located development site within an established commercial environment, with flexibility for a range of potential occupiers or investors. Location Willow End is located to the south of Great Malvern and east of Malvern Wells, in a rural location near the Three Counties Show Ground. Willow End is home to multiple office and warehouse buildings, including a recently built office/research facility. The business park is situated two and a half miles south of Great Malvern and eight and a half miles south west of Worcester. The area benefits from good transport communications with both Junction 1 of the M50 and Junction 7 of the M5 being accessible from the property. Great Malvern also benefits from a mainline railway station which provides direct access to Worcester, Hereford and London Paddington.",
-    "features": [
-      "0.64 acre",
-      "Freehold",
-      "Development opportunity subject to planning",
-      "Located on an established Business Park"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/7b5774a11bb4834b2f124c1948c3496b-letting346653.jpeg",
-      "https://as-images.imgix.net/20369ebd7df47f1cd239e78e32dd059f-letting346653.jpeg",
-      "https://as-images.imgix.net/a940225a85315e9033bb65b482f12351-letting346653.jpeg",
-      "https://as-images.imgix.net/86d7325de100e6d1d814ff8d0e3623aa-letting346653.jpeg",
-      "https://as-images.imgix.net/0a9f2aa167642ba37ee7d2fa6e1b4596-letting346653.jpeg",
-      "https://as-images.imgix.net/607a5ecde22a248584ec20ce524dcbe0-letting346653.jpeg",
-      "https://as-images.imgix.net/4b95380082fc2ec7f661a6324ec27ef1-letting346653.jpeg",
-      "https://as-images.imgix.net/e8218aab4048cd31b525e998a710be9c-letting346653.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/749b5056acd607c952b42e2a2af3d11e-letting346653.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-04-13 12:03:12"
-  },
-  {
     "id": 352949,
     "status": "Under Offer",
     "address": "59-60 Foregate Street",
@@ -2529,50 +2632,6 @@
       }
     ],
     "last_updated": "2026-03-03 16:50:21"
-  },
-  {
-    "id": 346824,
-    "status": "Available",
-    "address": "Unit 1, Copcut Business Park",
-    "town": "Droitwich",
-    "postcode": "WR9 7LU",
-    "lat": 52.252487182,
-    "lon": -2.168159008,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 18000,
-    "size_to_sqft": 18000,
-    "summary": "Industrial For Sale, Droitwich",
-    "description": "New build industrial warehouse unit with ancillary office accommodation Copcut Business Park is a proposed mixed use scheme including Sainsbury's Local store, Costa Coffee Drive-Thru, 8 vehicle ultra-rapid charging centre and two industrial units including a self-storage facility and office / meeting space solutions. Unit 1 is a high specification industrial warehouse proposed to be built for completion Q4 2024 and is to provide: - Industrial warehouse with steel clad elevations and roof including translucent roof lights - Ground floor offices with toilets - First floor mezzanine - Floor loading of 50KN/M sq - Concrete floor - 8m to underside of haunch - 2 x electric roller shutter doors - Self-contained concrete yard area - 25 car parking spaces Location - Copcut Business Park is located overlooking the main A38 Copcut island, accessed via Copcut Boulevard off Roman Way, Droitwich. The site provides immediate access to Droitwich Town Centre approximately 1 mile distant with Worcester City Centre approximately 6 miles distant via the main A38. The A38 also provides direct access to J5 M5 approximately 5 miles distant, in turn leading to the M42, M40 and National Motorway Network.",
-    "features": [],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/48b0702a5a39ef7872e6b564d8f9fa1f-letting346824.jpeg",
-      "https://as-images.imgix.net/0935b6c88a4b90c9b20abd05e1b90a85-letting346824.jpeg",
-      "https://as-images.imgix.net/be45eba2571fb9a0645555912440e080-letting346824.jpeg",
-      "https://as-images.imgix.net/5efe1b26cbe96d8830c50b486978ba05-letting346824.jpeg",
-      "https://as-images.imgix.net/7feb970e834e5b1f55d61ffca45cdb2c-letting346824.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/cc3900e8390181e41ce6bafaedf7d0d4-letting346824.pdf",
-    "contacts": [
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-03 16:47:29"
   },
   {
     "id": 346823,
@@ -3648,65 +3707,6 @@
       }
     ],
     "last_updated": "2026-02-27 12:50:37"
-  },
-  {
-    "id": 346662,
-    "status": "Available",
-    "address": "Aston Road",
-    "town": "Bromsgrove",
-    "postcode": "B60 3EX",
-    "lat": 52.316474914,
-    "lon": -2.060755968,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 8642,
-    "size_to_sqft": 8642,
-    "summary": "Industrial To Let, Bromsgrove",
-    "description": "Units 15 & 16 Aston Fields Industrial Estate comprises a mid-terrace commercial property of steel frame construction with brick & block elevations. The building is currently configured as a warehouse / industrial property, that has previously been used as a trade counter. Internally, there is a good-sized warehouse area with the benefit of 4.75m eaves. Located to the front of the unit is a separate office area and WCs - offering male & female. The property is accessed via a pedestrian doors and roller shutter doors. Externally there are six car parking spaces with loading / unloading facilities to the front of the access door. Gross Internal Area8,642 sq ft802.87 sq m Location The property is situated in Bromsgrove, to the south of the town centre on Aston Fields Industrial Estate. Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the property, giving access to the Midlands motorway network. Birmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south. Aston Fields Industrial Estate benefits from communal landscaping, allocated & communal parking and extensive security, including CCTV and security gates.",
-    "features": [
-      "Large warehouse area with associated office and WC's",
-      "Situated on the popular Aston Fields Industrial Estate",
-      "Suitable for warehouse, industrial and trade counter useage",
-      "To be refurbished to a high standard complementing the good EPC rating"
-    ],
-    "rent_psf": 8.5,
-    "rent_pa": 73500,
-    "rent": "£73,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/3d1f4db78ac5621b72e77ee09261ca50-letting346662.jpeg",
-      "https://as-images.imgix.net/d1cae0501ffcb8956d164b29fb98bec6-letting346662.jpeg",
-      "https://as-images.imgix.net/4671d7162421f0db75d88085c87bcbb3-letting346662.jpeg",
-      "https://as-images.imgix.net/aa3aa712df55cce85bb711cc3926804d-letting346662.jpeg",
-      "https://as-images.imgix.net/8126a5957adb2178cdaedbb8bedfbd09-letting346662.jpeg",
-      "https://as-images.imgix.net/798811ac813844b15cbe01e75d5c21bc-letting346662.jpeg",
-      "https://as-images.imgix.net/ce2ce99c95df0c645181f84e048b99e6-letting346662.jpeg",
-      "https://as-images.imgix.net/803fd2ebefbe94648451648264276555-letting346662.jpeg",
-      "https://as-images.imgix.net/c02e81ff3edb601fa511a5ac5a3231f2-letting346662.jpeg",
-      "https://as-images.imgix.net/8b5be713a0863558b38a0492326c3ccb-letting346662.jpeg",
-      "https://as-images.imgix.net/31031b6b970263c651b01582c0c6ab89-letting346662.jpeg",
-      "https://as-images.imgix.net/c4632a53ab1d5b65721733a9c148e84e-letting346662.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/7ecd8a5309306c1c8c34e830343c70e0-letting346662.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-27 12:42:31"
   },
   {
     "id": 346725,
