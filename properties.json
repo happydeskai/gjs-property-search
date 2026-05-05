@@ -1,5 +1,74 @@
 [
   {
+    "id": 371699,
+    "status": "Available",
+    "address": "Lower Lightwood Farm",
+    "town": "Worcester",
+    "postcode": "WR6 5LT",
+    "lat": 52.195422,
+    "lon": -2.296646,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2377,
+    "size_to_sqft": 2377,
+    "summary": "Newly refurbished, Insulated Commercial Unit",
+    "description": "The property comprises a warehouse/commercial premises.  The unit is accessed via a roller shutter door and pedestrian door.   The property benefits from an internal WC and welfare area.  There is allocated car parking.\n\nTotal\t220.79 sq m\t2,377 sq ft",
+    "location": "Lower Lightwood Farm is situated in Cotheridge, three miles west of Worcester.  The property is immediately north of the A44 and lies seven miles west of Junction 7 of the M5 motorway, which is approximately a 12 minute drive. Access has been improved by the dualling of the Southern Link Road (A4440).\n\nWorcester lies 31 miles south west of Birmingham, 101 miles north west of London, 27 miles north of Gloucester and 23 miles north east of Hereford. The city has excellent transport links with a direct mainline to both Birmingham and London, via Worcester Foregate Street, Worcester Shrub Hill and the new Worcester Parkway station. Worcester also lies to the west of Junctions 6 & 7 of the M5 motorway, providing access north to Birmingham, the M42, the M6 and the wider national motorway network.",
+    "features": [
+      "2,377 sq ft (220.79 sq m)",
+      "Newly refurbished including being fully insulated & a new WC area",
+      "Allocated car parking and loading/unloading area",
+      "Close proximity to Worcester, being on the A44",
+      "Seven miles from Junction 7 of the M5 motorway"
+    ],
+    "rent_psf": 10.1,
+    "rent_pa": 24000,
+    "rent": "£24,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/d084832ab919a03720c6f516ec9fd095-img-0682.JPEG",
+      "https://as-images.imgix.net/12adb5a7dd565df874fdc607787b4d48-img-0699.JPEG",
+      "https://as-images.imgix.net/b02c8d8812582dd54359616788e604f6-img-0683.JPEG",
+      "https://as-images.imgix.net/b413a40d801e15806c2d96bd8ed18375-img-0700.JPEG",
+      "https://as-images.imgix.net/d821bca2a6bfbf252bfbb58ce93f0836-img-0686.JPEG",
+      "https://as-images.imgix.net/0f20411831d175452ecccca4bd25daa4-img-0694.JPEG",
+      "https://as-images.imgix.net/8b443b971a218df3409c9a440fa5cca9-img-0692.JPEG",
+      "https://as-images.imgix.net/58777baf2f158fa3ca8e68151ea11262-img-0691.JPEG",
+      "https://as-images.imgix.net/140a273d9ae196f30a0dadb7512f5cb0-img-0690.JPEG",
+      "https://as-images.imgix.net/c5b56fff11d2af70f7885e2984dd439f-img-0689.JPEG",
+      "https://as-images.imgix.net/e3b8e0a11985512a8f38e3e17971c358-img-0695.JPEG",
+      "https://as-images.imgix.net/33789a86f61bea62427aba74fd4dbc5c-img-0697.JPEG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/8b9ec6bf63769f176e83e4c639a6a8e5-gjs-dillon-particulars-lower-lightwood-farm-worcester-1.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-05 17:19:22"
+  },
+  {
     "id": 371486,
     "status": "Available",
     "address": "Unit D21, Kempsey Eco Business Park",
@@ -128,75 +197,6 @@
       }
     ],
     "last_updated": "2026-05-05 17:01:03"
-  },
-  {
-    "id": 371699,
-    "status": "Available",
-    "address": "Lower Lightwood Farm",
-    "town": "Worcester",
-    "postcode": "WR6 5LT",
-    "lat": 52.195422,
-    "lon": -2.296646,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2377,
-    "size_to_sqft": 2377,
-    "summary": "Newly refurbished, Insulated Commercial Unit",
-    "description": "The property comprises a warehouse/commercial premises.  The unit is accessed via a roller shutter door and pedestrian door.   The property benefits from an internal WC and welfare area.  There is allocated car parking.\n\nTotal\t220.79 sq m\t2,377 sq ft",
-    "location": "Lower Lightwood Farm is situated in Cotheridge, three miles west of Worcester.  The property is immediately north of the A44 and lies seven miles west of Junction 7 of the M5 motorway, which is approximately a 12 minute drive. Access has been improved by the dualling of the Southern Link Road (A4440).\n\nWorcester lies 31 miles south west of Birmingham, 101 miles north west of London, 27 miles north of Gloucester and 23 miles north east of Hereford. The city has excellent transport links with a direct mainline to both Birmingham and London, via Worcester Foregate Street, Worcester Shrub Hill and the new Worcester Parkway station. Worcester also lies to the west of Junctions 6 & 7 of the M5 motorway, providing access north to Birmingham, the M42, the M6 and the wider national motorway network.",
-    "features": [
-      "2,377 sq ft (220.79 sq m)",
-      "Newly refurbished including being fully insulated & a new WC area",
-      "Allocated car parking and loading/unloading area",
-      "Close proximity to Worcester, being on the A44",
-      "Seven miles from Junction 7 of the M5 motorway"
-    ],
-    "rent_psf": 10.1,
-    "rent_pa": 24000,
-    "rent": "£24,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/d084832ab919a03720c6f516ec9fd095-img-0682.JPEG",
-      "https://as-images.imgix.net/12adb5a7dd565df874fdc607787b4d48-img-0699.JPEG",
-      "https://as-images.imgix.net/b02c8d8812582dd54359616788e604f6-img-0683.JPEG",
-      "https://as-images.imgix.net/b413a40d801e15806c2d96bd8ed18375-img-0700.JPEG",
-      "https://as-images.imgix.net/d821bca2a6bfbf252bfbb58ce93f0836-img-0686.JPEG",
-      "https://as-images.imgix.net/0f20411831d175452ecccca4bd25daa4-img-0694.JPEG",
-      "https://as-images.imgix.net/8b443b971a218df3409c9a440fa5cca9-img-0692.JPEG",
-      "https://as-images.imgix.net/58777baf2f158fa3ca8e68151ea11262-img-0691.JPEG",
-      "https://as-images.imgix.net/140a273d9ae196f30a0dadb7512f5cb0-img-0690.JPEG",
-      "https://as-images.imgix.net/c5b56fff11d2af70f7885e2984dd439f-img-0689.JPEG",
-      "https://as-images.imgix.net/e3b8e0a11985512a8f38e3e17971c358-img-0695.JPEG",
-      "https://as-images.imgix.net/33789a86f61bea62427aba74fd4dbc5c-img-0697.JPEG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/12174b2e8e2b0ea492dd0f6fd8de39bd-gjs-dillon-particulars-lower-lightwood-farm-worcester.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-05 17:00:41"
   },
   {
     "id": 346708,
