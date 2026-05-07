@@ -1,5 +1,175 @@
 [
   {
+    "id": 350416,
+    "status": "Available",
+    "address": "Unit 4, Droitwich Enterprise Hub",
+    "town": "Droitwich Spa",
+    "postcode": "WR9 9RB",
+    "lat": 52.2740227,
+    "lon": -2.1566463,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3454,
+    "size_to_sqft": 3454,
+    "summary": "Refurbished warehouse with covered yard / parking",
+    "description": "The unit provides a spacious, refurbished open-plan warehouse/workshop with roller shutter and pedestrian access. Internally, the accommodation benefits from a newly installed kitchenette and WC facilities. To the front of the property is a secure covered yard area, offering versatile space suitable for parking or operational use.\n\nThe property also benefits from a substantial electricity supply (details available upon request), which will be a key advantage for power-intensive occupiers. In addition to this unit, larger units up to 10,000 sq ft (or the whole site) are available, providing flexibility to suit a wide range of requirements.",
+    "location": "The units are situated off the A38 at its junction with A442 (Kidderminster Road), with the A442 providing access to Droitwich town centre & Droitwich railway station (both under ½ mile south east of the subject).  The A38 provides direct access to Junction 5 of M5 motorway (two miles north) and Worcester (approximately six miles south).\n\nDroitwich is one of three towns in the district of Wychavon.  It has a thriving and vibrant business community with a resident population of circa 23,000.  Junction 5 of the M5 motorway is situated within 2 miles of the Town Centre, giving access to the M42 and the M6 Motorways beyond. Access to the space is via a service road off George Baylis Road.",
+    "features": [
+      "Secure covered yard / parking area",
+      "Substantial electricity supply",
+      "Located under two miles from Junction 5 of the M5 motorway",
+      "What3Words (chefs.cheese.sample)"
+    ],
+    "rent_psf": 7.24,
+    "rent_pa": 25000,
+    "rent": "£25,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/843783c88cbffda789420d52b5fb5d95-20251223-123557691-ios-1.jpg",
+      "https://as-images.imgix.net/699729d4b2d6120d40aa75a4b48aa9d7-20251223-123540163-ios-1.jpg",
+      "https://as-images.imgix.net/650b60f60320f58358deabe0de3a9a18-20251223-124400238-ios-1.jpg",
+      "https://as-images.imgix.net/d45fdcb9b46507e6aa8eb015d8be71b8-20251223-123524839-ios-1.jpg",
+      "https://as-images.imgix.net/bbd7e50517d67e1b4488b1ddf2919e68-20251223-124644337-ios-1.jpg",
+      "https://as-images.imgix.net/4e61bca5a9587106767730a9df6f23c2-20251223-124706604-ios-1.jpg",
+      "https://as-images.imgix.net/a8edba414f02462c3bd4db77fea990b2-20251223-124658891-ios-1.jpg",
+      "https://as-images.imgix.net/2959547a08b19dee3cd2190625b04d38-20251223-124208272-ios-1.jpg",
+      "https://as-images.imgix.net/8a627df32be963503d340b232f33bcff-20251223-124135997-ios-1.jpg"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-07 16:10:15"
+  },
+  {
+    "id": 346668,
+    "status": "Available",
+    "address": "Sterling House",
+    "town": "Malvern",
+    "postcode": "WR13 6NN",
+    "lat": 52.075309753,
+    "lon": -2.298809051,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 4265,
+    "size_to_sqft": 4265,
+    "summary": "Office To Let, Malvern",
+    "description": "The property is a modern, detached, purpose-built office arranged over the ground floor. The construction is of brick and block cavity walls, surmounted by a pitched tiled roof. The building provides modern office accommodation with suspended ceilings, inset lighting, air conditioning and perimeter trunking throughout. The offices can be occupied as a whole or can be split to suit. There are WCs (male & female) and kitchens. The services are also split over each side of the ground floor, with separate meters and boilers. There are approximately 16 car parking spaces. Alternative Use Potential With minor alterations by the landlord, the building is also suitable, in whole or in part, for Use Class B8 (Storage and Distribution). It would particularly suit the distribution of small, high-value goods via courier services, catering to growing demand for flexible, high-quality last-mile distribution space. Ground Floor 4,265 sq ft 396.4 sq m",
+    "features": [
+      "Set within an established Business Park",
+      "All suites refurbished to a high specification",
+      "Excellent links to the M50/M5 motorway network"
+    ],
+    "rent_psf": 9.03,
+    "rent_pa": 38500,
+    "rent": "£38,500 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/3083298872074535a3d0f7ba781b63d6-letting346668.jpeg",
+      "https://as-images.imgix.net/824bbb43a34cc55a7fe00da15adc2901-letting346668.jpeg",
+      "https://as-images.imgix.net/1ab64046b15c7f8943f43a42276259c2-letting346668.jpeg",
+      "https://as-images.imgix.net/b0c1094ca6872a982bf2b74fc04467a7-letting346668.jpeg",
+      "https://as-images.imgix.net/b65c15a4be1b1925c5cc6b37381bf637-letting346668.jpeg",
+      "https://as-images.imgix.net/346ffcf74fc9d4fd0154e4292e648063-letting346668.jpeg",
+      "https://as-images.imgix.net/20b103b941fdb4e022fa24b7655f7001-letting346668.jpeg",
+      "https://as-images.imgix.net/a71a7a09afa622984a47eed501e6a690-letting346668.jpeg",
+      "https://as-images.imgix.net/bd7b5e4afc6bfe1e346df1cdc72869dd-letting346668.jpeg",
+      "https://as-images.imgix.net/5c7c1c174457721a1bc8b24a1e888b0a-letting346668.jpeg",
+      "https://as-images.imgix.net/f943d87988b38864f9aceed2313a326b-letting346668.jpeg",
+      "https://as-images.imgix.net/fba4239a9f7ef9ece29dd48c799cf8b2-letting346668.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/75400026e8ba9a77bd2f1b55f94ac37b-letting346668.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-07 15:22:51"
+  },
+  {
+    "id": 346680,
+    "status": "Available",
+    "address": "Nailers Yard",
+    "town": "Bromsgrove",
+    "postcode": "B61 8QT",
+    "lat": 52.334415435,
+    "lon": -2.063618898,
+    "types": [
+      "Office",
+      "Retail"
+    ],
+    "raw_types": [
+      "Office",
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1000,
+    "size_to_sqft": 12088,
+    "summary": "Office / Retail To Let, Bromsgrove",
+    "description": "Nailers Yard is an upcoming mixed-use development in the heart of Bromsgrove, set to transform the former Market Hall site into a vibrant commercial, cultural, and community destination. Scheduled for completion by early 2026, the project is a key part of Bromsgrove District Council's regeneration strategy. The commercial building is a standalone structure offering premium office space, ground-floor restaurant space, and a rooftop food and drink outlet. This addition is expected to enhance Bromsgrove's night-time economy and attract both new and established businesses. The total office space being delivered is 12,088 sq ft (1,123 sq m) and suites are being offered from 1,000 sq ft to single floors of circa 6,000 sq ft, or multiple floors for large companies. The total restaurant space is 3,574 sq ft (332 sq m) and is situated over the ground and top floors. Floor plans are available on request. Please contact us with your size requirement and we'd be delighted to show you how your business can be proudly located at Nailers Yard.",
+    "features": [
+      "Office space arranged over 1st, 2nd and 3rd Floors",
+      "Food and beverage opportunities over the ground, 3rd floors and roof top space",
+      "Bromsgrove town centre location"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/5e420e923e0975cd096a6bb0df64a8ff-letting346680.jpeg",
+      "https://as-images.imgix.net/021f2a59f0438efc4e9bf6bd98dc95c9-letting346680.jpeg",
+      "https://as-images.imgix.net/e23f97371fee1b4c39eef319bfa05567-letting346680.jpeg"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-07 15:17:19"
+  },
+  {
     "id": 355287,
     "status": "Available",
     "address": "Building 314, Hartlebury Trading Estate",
@@ -879,64 +1049,6 @@
       }
     ],
     "last_updated": "2026-05-06 15:48:56"
-  },
-  {
-    "id": 346668,
-    "status": "Available",
-    "address": "Willow End Park",
-    "town": "Malvern",
-    "postcode": "WR13 6NN",
-    "lat": 52.075309753,
-    "lon": -2.298809051,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 4265,
-    "size_to_sqft": 4265,
-    "summary": "Office To Let, Malvern",
-    "description": "The property is a modern, detached, purpose-built office arranged over the ground floor. The construction is of brick and block cavity walls, surmounted by a pitched tiled roof. The building provides modern office accommodation with suspended ceilings, inset lighting, air conditioning and perimeter trunking throughout. The offices can be occupied as a whole or can be split to suit. There are WCs (male & female) and kitchens. The services are also split over each side of the ground floor, with separate meters and boilers. There are approximately 16 car parking spaces. Alternative Use Potential With minor alterations by the landlord, the building is also suitable, in whole or in part, for Use Class B8 (Storage and Distribution). It would particularly suit the distribution of small, high-value goods via courier services, catering to growing demand for flexible, high-quality last-mile distribution space. Ground Floor 4,265 sq ft 396.4 sq m",
-    "features": [
-      "Set within an established Business Park",
-      "All suites refurbished to a high specification",
-      "Excellent links to the M50/M5 motorway network"
-    ],
-    "rent_psf": 9.03,
-    "rent_pa": 38500,
-    "rent": "£38,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/3083298872074535a3d0f7ba781b63d6-letting346668.jpeg",
-      "https://as-images.imgix.net/824bbb43a34cc55a7fe00da15adc2901-letting346668.jpeg",
-      "https://as-images.imgix.net/1ab64046b15c7f8943f43a42276259c2-letting346668.jpeg",
-      "https://as-images.imgix.net/b0c1094ca6872a982bf2b74fc04467a7-letting346668.jpeg",
-      "https://as-images.imgix.net/b65c15a4be1b1925c5cc6b37381bf637-letting346668.jpeg",
-      "https://as-images.imgix.net/346ffcf74fc9d4fd0154e4292e648063-letting346668.jpeg",
-      "https://as-images.imgix.net/20b103b941fdb4e022fa24b7655f7001-letting346668.jpeg",
-      "https://as-images.imgix.net/a71a7a09afa622984a47eed501e6a690-letting346668.jpeg",
-      "https://as-images.imgix.net/bd7b5e4afc6bfe1e346df1cdc72869dd-letting346668.jpeg",
-      "https://as-images.imgix.net/5c7c1c174457721a1bc8b24a1e888b0a-letting346668.jpeg",
-      "https://as-images.imgix.net/f943d87988b38864f9aceed2313a326b-letting346668.jpeg",
-      "https://as-images.imgix.net/fba4239a9f7ef9ece29dd48c799cf8b2-letting346668.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/75400026e8ba9a77bd2f1b55f94ac37b-letting346668.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-06 15:47:30"
   },
   {
     "id": 350409,
@@ -2896,54 +3008,6 @@
     "last_updated": "2026-04-07 14:39:09"
   },
   {
-    "id": 346680,
-    "status": "Available",
-    "address": "Nailers Yard",
-    "town": "Bromsgrove",
-    "postcode": "B61 8QT",
-    "lat": 52.334415435,
-    "lon": -2.063618898,
-    "types": [
-      "Office",
-      "Retail"
-    ],
-    "raw_types": [
-      "Office",
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1000,
-    "size_to_sqft": 12088,
-    "summary": "Office / Retail To Let, Bromsgrove",
-    "description": "Nailers Yard is an upcoming mixed-use development in the heart of Bromsgrove, set to transform the former Market Hall site into a vibrant commercial, cultural, and community destination. Scheduled for completion by early 2026, the project is a key part of Bromsgrove District Council's regeneration strategy. The commercial building is a standalone structure offering premium office space, ground-floor restaurant space, and a rooftop food and drink outlet. This addition is expected to enhance Bromsgrove's night-time economy and attract both new and established businesses. The total office space being delivered is 12,088 sq ft (1,123 sq m) and suites are being offered from 1,000 sq ft to single floors of circa 6,000 sq ft, or multiple floors for large companies. The total restaurant space is 3,574 sq ft (332 sq m) and is situated over the ground and top floors. Floor plans are available on request. Please contact us with your size requirement and we'd be delighted to show you how your business can be proudly located at Nailers Yard.",
-    "features": [
-      "Office space arranged over 1st, 2nd and 3rd Floors",
-      "Food and beverage opportunities over the ground, 3rd floors and roof top space",
-      "Bromsgrove town centre location"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/5e420e923e0975cd096a6bb0df64a8ff-letting346680.jpeg",
-      "https://as-images.imgix.net/021f2a59f0438efc4e9bf6bd98dc95c9-letting346680.jpeg",
-      "https://as-images.imgix.net/e23f97371fee1b4c39eef319bfa05567-letting346680.jpeg"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-04-07 14:31:01"
-  },
-  {
     "id": 346672,
     "status": "Available",
     "address": "20 The Shambles",
@@ -3546,70 +3610,6 @@
       }
     ],
     "last_updated": "2026-03-02 17:03:50"
-  },
-  {
-    "id": 350416,
-    "status": "Available",
-    "address": "Unit 4, Droitwich Enterprise Hub",
-    "town": "Droitwich Spa",
-    "postcode": "WR9 9RB",
-    "lat": 52.2740227,
-    "lon": -2.1566463,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3454,
-    "size_to_sqft": 3454,
-    "summary": "Refurbished warehouse with covered yard / parking",
-    "description": "The unit provides a spacious, refurbished open-plan warehouse/workshop with roller shutter and pedestrian access. Internally, the accommodation benefits from a newly installed kitchenette and WC facilities. To the front of the property is a secure covered yard area, offering versatile space suitable for parking or operational use.\n\nThe property also benefits from a substantial electricity supply (details available upon request), which will be a key advantage for power-intensive occupiers. In addition to this unit, larger units up to 10,000 sq ft (or the whole site) are available, providing flexibility to suit a wide range of requirements.",
-    "location": "The units are situated off the A38 at its junction with A442 (Kidderminster Road), with the A442 providing access to Droitwich town centre & Droitwich railway station (both under ½ mile south east of the subject).  The A38 provides direct access to Junction 5 of M5 motorway (two miles north) and Worcester (approximately six miles south).\n\nDroitwich is one of three towns in the district of Wychavon.  It has a thriving and vibrant business community with a resident population of circa 23,000.  Junction 5 of the M5 motorway is situated within 2 miles of the Town Centre, giving access to the M42 and the M6 Motorways beyond. Access to the space is via a service road off George Baylis Road.",
-    "features": [
-      "Secure covered yard / parking area",
-      "Substantial electricity supply",
-      "Located under two miles from Junction 5 of the M5 motorway",
-      "What3Words (chefs.cheese.sample)"
-    ],
-    "rent_psf": 7.24,
-    "rent_pa": 25000,
-    "rent": "£25,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/843783c88cbffda789420d52b5fb5d95-20251223-123557691-ios-1.jpg",
-      "https://as-images.imgix.net/699729d4b2d6120d40aa75a4b48aa9d7-20251223-123540163-ios-1.jpg",
-      "https://as-images.imgix.net/650b60f60320f58358deabe0de3a9a18-20251223-124400238-ios-1.jpg",
-      "https://as-images.imgix.net/d45fdcb9b46507e6aa8eb015d8be71b8-20251223-123524839-ios-1.jpg",
-      "https://as-images.imgix.net/bbd7e50517d67e1b4488b1ddf2919e68-20251223-124644337-ios-1.jpg",
-      "https://as-images.imgix.net/4e61bca5a9587106767730a9df6f23c2-20251223-124706604-ios-1.jpg",
-      "https://as-images.imgix.net/a8edba414f02462c3bd4db77fea990b2-20251223-124658891-ios-1.jpg",
-      "https://as-images.imgix.net/2959547a08b19dee3cd2190625b04d38-20251223-124208272-ios-1.jpg",
-      "https://as-images.imgix.net/8a627df32be963503d340b232f33bcff-20251223-124135997-ios-1.jpg"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-01 16:03:22"
   },
   {
     "id": 350693,
