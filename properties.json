@@ -1,5 +1,128 @@
 [
   {
+    "id": 355287,
+    "status": "Available",
+    "address": "Building 314, Hartlebury Trading Estate",
+    "town": "Kidderminster",
+    "postcode": "DY10 4JB",
+    "lat": 52.33425067077,
+    "lon": -2.218800555603,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 43967,
+    "size_to_sqft": 43967,
+    "summary": "Modern warehouse/ manufacturing building",
+    "description": "The property comprises a modern warehouse/ manufacturing building incorporating good quality two storey offices with kitchen and breakout areas.\n\nExternally there is a large rear yard area which benefits from 30m depth.  To the front of the building is a substantial car parking area.",
+    "features": [],
+    "rent_psf": 7.75,
+    "rent_pa": 340589.25,
+    "rent": "£340,589.25 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "service_charge": "0.75",
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/c3e2f7b721efed6d652e01dac1a34afb-1.jpg",
+      "https://as-images.imgix.net/74b78cdf5295c21f27ab6178b0d0be03-2.jpg",
+      "https://as-images.imgix.net/bb5387e0009f727d298ddb4b0ae17fd0-3.jpg",
+      "https://as-images.imgix.net/8801eda635d4b17ba539b5306be6d09d-4.jpg",
+      "https://as-images.imgix.net/e441fd4d127315d80ff25afca4494ad8-5.jpg",
+      "https://as-images.imgix.net/c2dc9459e6c9b469ba67ee8cb7db355c-6.jpg",
+      "https://as-images.imgix.net/bb8354c873fae3b8471361738fde106b-7.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/15a2df3f2576826e247b2ee97a5a3423-gjs-dillon-particulars-building-314-hartlebury-trading-estate.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-07 15:00:06"
+  },
+  {
+    "id": 353370,
+    "status": "Under Offer",
+    "address": "Development Site on Elm Road",
+    "town": "Worcester",
+    "postcode": "WR2 5JS",
+    "lat": 52.193804,
+    "lon": -2.232411,
+    "types": [
+      "Car Park",
+      "Development/Investment",
+      "Industrial"
+    ],
+    "raw_types": [
+      "Car Park",
+      "Development Land",
+      "Development Site",
+      "Industrial Land",
+      "Land",
+      "Open Storage",
+      "Yard"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 20865.24,
+    "size_to_sqft": 20865.24,
+    "summary": "Development site on Elm Road, Worcester",
+    "description": "Elm Road is a small cul-de-sac that adjoins Hylton Road (A443) – one of the main arterial roads to the west of Worcester, which runs southwards to Worcester city centre and other main access routes in and out of the city.  The site sits at the western end of Elm Road, which we assume it has uninterrupted access over.\n\nThere were previously multiple industrial units on the site, all of which have now been demolished leaving a clear site which we note is free from contamination.  Planning permission has been granted under reference 19/00614/FUL for: Demolish existing unit 1,2 and 5 and replace with a new 2 storey building for commercial storage (Use class B8).\n\nThe proposed development extends to 17,061 sq ft",
+    "location": "Elm Road is located in Worcester city centre.  Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London.  Worcester has excellent access to the M5 motorway, which lies adjacent to the subject property with Junction 7 being approximately one and a half miles drive south.  The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network.\n\nWorcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
+    "features": [
+      "Site area 0.479 acres",
+      "Proposed development extends to 17,061 sq ft (1,585 sq m)",
+      "Planning permission granted for a 2 storey building for commercial storage (use class B8) Reference 19/00614/FUL",
+      "Walking distance to city centre",
+      "Excellent links to the national motorway networks"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/c5f5b31034ae208463e8a6c06ea2305e-proposed-plan-2.jpg",
+      "https://as-images.imgix.net/da749ddf479a391ca7d80a10a4bf3cc5-img-4042.JPG",
+      "https://as-images.imgix.net/7a09d35c0e38661610ce988d30be9ea0-img-4064.JPG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/72dee4048b4a1b80d8aee2b03ffbee82-gjs-dillon-particulars-development-site-on-elm-road-worcester-wr2-5js.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-07 14:50:13"
+  },
+  {
     "id": 346689,
     "status": "Available",
     "address": "Trinity, Vale Park",
@@ -58,7 +181,7 @@
         "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-05-07 13:05:23"
+    "last_updated": "2026-05-07 14:46:12"
   },
   {
     "id": 346665,
@@ -1721,65 +1844,6 @@
     "last_updated": "2026-05-05 12:41:07"
   },
   {
-    "id": 346662,
-    "status": "Available",
-    "address": "Unit 15-16, Aston Fields Industrial Estate",
-    "town": "Bromsgrove",
-    "postcode": "B60 3EX",
-    "lat": 52.316474914,
-    "lon": -2.060755968,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 8642,
-    "size_to_sqft": 8642,
-    "summary": "Industrial To Let, Bromsgrove",
-    "description": "Units 15 & 16 Aston Fields Industrial Estate comprises a mid-terrace commercial property of steel frame construction with brick & block elevations. The building is currently configured as a warehouse / industrial property, that has previously been used as a trade counter. Internally, there is a good-sized warehouse area with the benefit of 4.75m eaves. Located to the front of the unit is a separate office area and WCs - offering male & female. The property is accessed via a pedestrian doors and roller shutter doors. Externally there are six car parking spaces with loading / unloading facilities to the front of the access door. Gross Internal Area8,642 sq ft802.87 sq m",
-    "features": [
-      "Large warehouse area with associated office and WC's",
-      "Situated on the popular Aston Fields Industrial Estate",
-      "Suitable for warehouse, industrial and trade counter useage",
-      "To be refurbished to a high standard complementing the good EPC rating"
-    ],
-    "rent_psf": 8.5,
-    "rent_pa": 73500,
-    "rent": "£73,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/3d1f4db78ac5621b72e77ee09261ca50-letting346662.jpeg",
-      "https://as-images.imgix.net/d1cae0501ffcb8956d164b29fb98bec6-letting346662.jpeg",
-      "https://as-images.imgix.net/4671d7162421f0db75d88085c87bcbb3-letting346662.jpeg",
-      "https://as-images.imgix.net/aa3aa712df55cce85bb711cc3926804d-letting346662.jpeg",
-      "https://as-images.imgix.net/8126a5957adb2178cdaedbb8bedfbd09-letting346662.jpeg",
-      "https://as-images.imgix.net/798811ac813844b15cbe01e75d5c21bc-letting346662.jpeg",
-      "https://as-images.imgix.net/ce2ce99c95df0c645181f84e048b99e6-letting346662.jpeg",
-      "https://as-images.imgix.net/803fd2ebefbe94648451648264276555-letting346662.jpeg",
-      "https://as-images.imgix.net/c02e81ff3edb601fa511a5ac5a3231f2-letting346662.jpeg",
-      "https://as-images.imgix.net/8b5be713a0863558b38a0492326c3ccb-letting346662.jpeg",
-      "https://as-images.imgix.net/31031b6b970263c651b01582c0c6ab89-letting346662.jpeg",
-      "https://as-images.imgix.net/c4632a53ab1d5b65721733a9c148e84e-letting346662.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/7ecd8a5309306c1c8c34e830343c70e0-letting346662.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-01 11:59:00"
-  },
-  {
     "id": 346824,
     "status": "Available",
     "address": "Unit 1, Copcut Business Park",
@@ -2657,71 +2721,6 @@
     "last_updated": "2026-04-14 12:50:38"
   },
   {
-    "id": 353370,
-    "status": "Under Offer",
-    "address": "Hylton Road",
-    "town": "Worcester",
-    "postcode": "WR2 5JS",
-    "lat": 52.193804,
-    "lon": -2.232411,
-    "types": [
-      "Car Park",
-      "Development/Investment",
-      "Industrial"
-    ],
-    "raw_types": [
-      "Car Park",
-      "Development Land",
-      "Development Site",
-      "Industrial Land",
-      "Land",
-      "Open Storage",
-      "Yard"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 20865.24,
-    "size_to_sqft": 20865.24,
-    "summary": "Development site on Elm Road, Worcester",
-    "description": "Elm Road is a small cul-de-sac that adjoins Hylton Road (A443) – one of the main arterial roads to the west of Worcester, which runs southwards to Worcester city centre and other main access routes in and out of the city.  The site sits at the western end of Elm Road, which we assume it has uninterrupted access over.\n\nThere were previously multiple industrial units on the site, all of which have now been demolished leaving a clear site which we note is free from contamination.  Planning permission has been granted under reference 19/00614/FUL for: Demolish existing unit 1,2 and 5 and replace with a new 2 storey building for commercial storage (Use class B8).\n\nThe proposed development extends to 17,061 sq ft",
-    "location": "Elm Road is located in Worcester city centre.  Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London.  Worcester has excellent access to the M5 motorway, which lies adjacent to the subject property with Junction 7 being approximately one and a half miles drive south.  The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network.\n\nWorcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
-    "features": [
-      "Site area 0.479 acres",
-      "Proposed development extends to 17,061 sq ft (1,585 sq m)",
-      "Planning permission granted for a 2 storey building for commercial storage (use class B8) Reference 19/00614/FUL",
-      "Walking distance to city centre",
-      "Excellent links to the national motorway networks"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/c5f5b31034ae208463e8a6c06ea2305e-proposed-plan-2.jpg",
-      "https://as-images.imgix.net/da749ddf479a391ca7d80a10a4bf3cc5-img-4042.JPG",
-      "https://as-images.imgix.net/7a09d35c0e38661610ce988d30be9ea0-img-4064.JPG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/72dee4048b4a1b80d8aee2b03ffbee82-gjs-dillon-particulars-development-site-on-elm-road-worcester-wr2-5js.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-04-13 12:13:16"
-  },
-  {
     "id": 352949,
     "status": "Under Offer",
     "address": "59-60 Foregate Street",
@@ -3245,63 +3244,6 @@
       }
     ],
     "last_updated": "2026-03-09 16:40:09"
-  },
-  {
-    "id": 355287,
-    "status": "Available",
-    "address": "Building 314, Hartlebury Trading Estate",
-    "town": "Kidderminster",
-    "postcode": "DY10 4JB",
-    "lat": 52.33425067077,
-    "lon": -2.218800555603,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 43967,
-    "size_to_sqft": 43967,
-    "summary": "Modern warehouse/ manufacturing building",
-    "description": "The property comprises a modern warehouse/ manufacturing building incorporating good quality two storey offices with kitchen and breakout areas.\n\nExternally there is a large rear yard area which benefits from 30m depth.  To the front of the building is a substantial car parking area.",
-    "features": [],
-    "rent_psf": 7.75,
-    "rent_pa": 340589.25,
-    "rent": "£340,589.25 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "service_charge": "0.75",
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/c3e2f7b721efed6d652e01dac1a34afb-1.jpg",
-      "https://as-images.imgix.net/74b78cdf5295c21f27ab6178b0d0be03-2.jpg",
-      "https://as-images.imgix.net/bb5387e0009f727d298ddb4b0ae17fd0-3.jpg",
-      "https://as-images.imgix.net/8801eda635d4b17ba539b5306be6d09d-4.jpg",
-      "https://as-images.imgix.net/e441fd4d127315d80ff25afca4494ad8-5.jpg",
-      "https://as-images.imgix.net/c2dc9459e6c9b469ba67ee8cb7db355c-6.jpg",
-      "https://as-images.imgix.net/bb8354c873fae3b8471361738fde106b-7.jpg"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-09 15:18:31"
   },
   {
     "id": 346823,
