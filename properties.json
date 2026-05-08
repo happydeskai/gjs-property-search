@@ -1,5 +1,53 @@
 [
   {
+    "id": 346680,
+    "status": "Available",
+    "address": "Nailers Yard",
+    "town": "Bromsgrove",
+    "postcode": "B61 8QT",
+    "lat": 52.334415435,
+    "lon": -2.063618898,
+    "types": [
+      "Office",
+      "Retail"
+    ],
+    "raw_types": [
+      "Office",
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1000,
+    "size_to_sqft": 12088,
+    "summary": "Office / Retail To Let, Bromsgrove",
+    "description": "Nailers Yard is an upcoming mixed-use development in the heart of Bromsgrove, set to transform the former Market Hall site into a vibrant commercial, cultural, and community destination. Scheduled for completion by early 2026, the project is a key part of Bromsgrove District Council's regeneration strategy. The commercial building is a standalone structure offering premium office space, ground-floor restaurant space, and a rooftop food and drink outlet. This addition is expected to enhance Bromsgrove's night-time economy and attract both new and established businesses. The total office space being delivered is 12,088 sq ft (1,123 sq m) and suites are being offered from 1,000 sq ft to single floors of circa 6,000 sq ft, or multiple floors for large companies. The total restaurant space is 3,574 sq ft (332 sq m) and is situated over the ground and top floors. Floor plans are available on request. Please contact us with your size requirement and we'd be delighted to show you how your business can be proudly located at Nailers Yard.",
+    "features": [
+      "Office space arranged over 1st, 2nd and 3rd Floors",
+      "Food and beverage opportunities over the ground, 3rd floors and roof top space",
+      "Bromsgrove town centre location"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/5e420e923e0975cd096a6bb0df64a8ff-letting346680.jpeg",
+      "https://as-images.imgix.net/021f2a59f0438efc4e9bf6bd98dc95c9-letting346680.jpeg",
+      "https://as-images.imgix.net/e23f97371fee1b4c39eef319bfa05567-letting346680.jpeg"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-08 12:12:05"
+  },
+  {
     "id": 346652,
     "status": "Under Offer",
     "address": "St. Dunstan's Building",
@@ -638,54 +686,6 @@
       }
     ],
     "last_updated": "2026-05-07 15:22:51"
-  },
-  {
-    "id": 346680,
-    "status": "Available",
-    "address": "Nailers Yard",
-    "town": "Bromsgrove",
-    "postcode": "B61 8QT",
-    "lat": 52.334415435,
-    "lon": -2.063618898,
-    "types": [
-      "Office",
-      "Retail"
-    ],
-    "raw_types": [
-      "Office",
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1000,
-    "size_to_sqft": 12088,
-    "summary": "Office / Retail To Let, Bromsgrove",
-    "description": "Nailers Yard is an upcoming mixed-use development in the heart of Bromsgrove, set to transform the former Market Hall site into a vibrant commercial, cultural, and community destination. Scheduled for completion by early 2026, the project is a key part of Bromsgrove District Council's regeneration strategy. The commercial building is a standalone structure offering premium office space, ground-floor restaurant space, and a rooftop food and drink outlet. This addition is expected to enhance Bromsgrove's night-time economy and attract both new and established businesses. The total office space being delivered is 12,088 sq ft (1,123 sq m) and suites are being offered from 1,000 sq ft to single floors of circa 6,000 sq ft, or multiple floors for large companies. The total restaurant space is 3,574 sq ft (332 sq m) and is situated over the ground and top floors. Floor plans are available on request. Please contact us with your size requirement and we'd be delighted to show you how your business can be proudly located at Nailers Yard.",
-    "features": [
-      "Office space arranged over 1st, 2nd and 3rd Floors",
-      "Food and beverage opportunities over the ground, 3rd floors and roof top space",
-      "Bromsgrove town centre location"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/5e420e923e0975cd096a6bb0df64a8ff-letting346680.jpeg",
-      "https://as-images.imgix.net/021f2a59f0438efc4e9bf6bd98dc95c9-letting346680.jpeg",
-      "https://as-images.imgix.net/e23f97371fee1b4c39eef319bfa05567-letting346680.jpeg"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-07 15:17:19"
   },
   {
     "id": 355287,
