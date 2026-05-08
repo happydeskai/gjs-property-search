@@ -1,5 +1,225 @@
 [
   {
+    "id": 346754,
+    "status": "Available",
+    "address": "One Kings Court",
+    "town": "Worcester",
+    "postcode": "WR5 1WS",
+    "lat": 52.19234085,
+    "lon": -2.178134918,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3050,
+    "size_to_sqft": 3050,
+    "summary": "Office To Let, Worcester",
+    "description": "The property has recently undergone extensive refurbishment and offers highly efficient accommodation benefitting from : \n*New VRF comfort cooling \n*New LED lighting \n*Raised access flooring \n*Suspended ceilings *10 person passenger lift \n*High quality refurbished common areas including WC facilities\n*Showers \n*Up to 40 onsite car parking spaces offering a generous ratio of 1:260 sq ft with EV car chargers Location",
+    "features": [
+      "Modern, headquarters office building with striking floor to ceiling windows throughout",
+      "Well maintained landscaped environment",
+      "The second floor provides accessible, quality open plan office accommodation with first class facilities"
+    ],
+    "rent_psf": 18.5,
+    "rent_pa": 56425,
+    "rent": "£18.50 per sq ft",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/6187ce888cbb5224c306623f798a9080-letting346754.jpeg",
+      "https://as-images.imgix.net/32e849190232ef2f2507997f3bbb8a06-letting346754.jpeg",
+      "https://as-images.imgix.net/e6278d452e00dfb2e40a9eeeb3438adc-letting346754.jpeg",
+      "https://as-images.imgix.net/4b8fc70dbf3e88968c30b952700e6163-letting346754.jpeg",
+      "https://as-images.imgix.net/a252ba753e1b0b1a1c52497a1278d965-letting346754.jpeg",
+      "https://as-images.imgix.net/6b576e37adb90b6a5ccebd3c0644dfef-letting346754.jpeg",
+      "https://as-images.imgix.net/a150eef093381aefe8505e92410f6991-letting346754.jpeg",
+      "https://as-images.imgix.net/7b0783a19ad6eae0f9b59fb067b83403-letting346754.jpeg",
+      "https://as-images.imgix.net/d6ae268dbaeaa7246235bffb7d9c89a3-letting346754.jpeg",
+      "https://as-images.imgix.net/bab416789a3751d21680cc9bce3cc9f1-letting346754.jpeg",
+      "https://as-images.imgix.net/ff0654b114c96359266ee158455eb45c-letting346754.jpeg",
+      "https://as-images.imgix.net/e96e77fe640ea8d4dbb3968c25de57d3-letting346754.jpeg"
+    ],
+    "contacts": [
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-08 14:50:46"
+  },
+  {
+    "id": 350693,
+    "status": "Available",
+    "address": "Sterling House,  Willow End Park",
+    "town": "Malvern",
+    "postcode": "WR13 6NN",
+    "lat": 52.07531,
+    "lon": -2.298809,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Business Park",
+      "Office"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 8530,
+    "size_to_sqft": 8530,
+    "summary": "A modern, detached, purpose-built two storey office building.",
+    "description": "The property comprises a modern, detached, purpose-built two storey office building of brick and block cavity construction beneath a pitched tiled roof. The accommodation provides high quality offices across both floors, featuring suspended ceilings, inset lighting, air conditioning, and perimeter trunking throughout. \n\nThe first-floor tenant is currently holding over, providing an opportunity to capture a lease renewal. The ground floor is currently vacant and can be occupied as a whole or split into two  self-contained suites, offering flexibility for an owner-occupier or investor seeking to add value through letting. Each floor benefits from its own kitchen and male and female WCs, with services separately metered and independent boilers serving each part.\n\nAlternative Use Potential With minor alterations, the building is also suitable, in part, for Use Class B8 (Storage and Distribution). It would particularly suit the distribution of small, high-value goods via courier services, catering to growing demand for flexible, high-quality last-mile distribution space.",
+    "location": "Willow End is located to the south of Great Malvern and east of Malvern Wells, in a rural location near the Three Counties Show Ground. Willow End is home to multiple office and warehouse buildings, including a recently built office/research facility. The business park is situated two and a half miles south of Great Malvern and eight and a half miles south west of Worcester. \n\nThe area benefits from good transport communications with both Junction 1 of the M50 and Junction 7 of the M5 being accessible from the property. Great Malvern also benefits from a mainline railway station which provides direct access to Worcester, Hereford and London Paddington.",
+    "features": [
+      "Opportunity to capture lease renewal.",
+      "Vacant ground floor.",
+      "Located in a popular business park.",
+      "Freehold"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "C (57)",
+    "images": [
+      "https://as-images.imgix.net/43c0fc0fa75e1343e08e2a4bf48f2bb6-dji-0869.JPG",
+      "https://as-images.imgix.net/49abdaf47064567e9cb733b3ac3ccc5f-dji-0867.JPG",
+      "https://as-images.imgix.net/ca26d58c32c1bb9e6a95a36911fb3024-20250529-093314264-ios.jpg",
+      "https://as-images.imgix.net/3532362163d6bce4361890f2c13d3b43-20250529-093153234-ios.jpg",
+      "https://as-images.imgix.net/b311dd274da22620a7b4310a018b8524-20250529-093607049-ios.jpg",
+      "https://as-images.imgix.net/032bafc5a3813d0eb22b7aede77fa6fc-20250529-093345734-ios.jpg",
+      "https://as-images.imgix.net/0bfac624e3a167267bcdf7efe7e6b0d1-20251023-095746400-ios.jpg",
+      "https://as-images.imgix.net/c43f68b4faae0553de91c547a8480406-20251023-102006346-ios.jpg",
+      "https://as-images.imgix.net/40070fb5ea7eff13c103a1d6862127e3-20251023-103407268-ios.jpg",
+      "https://as-images.imgix.net/037a517f945833e626fa85898ea2b227-dji-0876.JPG",
+      "https://as-images.imgix.net/391b0df2b4188bef932a7967de37bbae-dji-0875.JPG",
+      "https://as-images.imgix.net/5a50da7f22208504773ab4041005ae7e-dji-0873.JPG",
+      "https://as-images.imgix.net/1bedc0b97b9e5af7c270b2c573b60581-dji-0877.JPG",
+      "https://as-images.imgix.net/70da0baaf8d40b90b5704a2cb8359b25-street-view-disposal-350693.jpg"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-08 14:48:50"
+  },
+  {
+    "id": 346668,
+    "status": "Available",
+    "address": "Units A & C B7 North",
+    "town": "Malvern",
+    "postcode": "WR13 6NN",
+    "lat": 52.075309753,
+    "lon": -2.298809051,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 4265,
+    "size_to_sqft": 4265,
+    "summary": "Office To Let, Malvern",
+    "description": "The property is a modern, detached, purpose-built office arranged over the ground floor. The construction is of brick and block cavity walls, surmounted by a pitched tiled roof. The building provides modern office accommodation with suspended ceilings, inset lighting, air conditioning and perimeter trunking throughout. The offices can be occupied as a whole or can be split to suit. There are WCs (male & female) and kitchens. The services are also split over each side of the ground floor, with separate meters and boilers. There are approximately 16 car parking spaces. Alternative Use Potential With minor alterations by the landlord, the building is also suitable, in whole or in part, for Use Class B8 (Storage and Distribution). It would particularly suit the distribution of small, high-value goods via courier services, catering to growing demand for flexible, high-quality last-mile distribution space. Ground Floor 4,265 sq ft 396.4 sq m",
+    "features": [
+      "Set within an established Business Park",
+      "All suites refurbished to a high specification",
+      "Excellent links to the M50/M5 motorway network"
+    ],
+    "rent_psf": 9.03,
+    "rent_pa": 38500,
+    "rent": "£38,500 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/3083298872074535a3d0f7ba781b63d6-letting346668.jpeg",
+      "https://as-images.imgix.net/1ab64046b15c7f8943f43a42276259c2-letting346668.jpeg",
+      "https://as-images.imgix.net/b0c1094ca6872a982bf2b74fc04467a7-letting346668.jpeg",
+      "https://as-images.imgix.net/b65c15a4be1b1925c5cc6b37381bf637-letting346668.jpeg",
+      "https://as-images.imgix.net/346ffcf74fc9d4fd0154e4292e648063-letting346668.jpeg",
+      "https://as-images.imgix.net/20b103b941fdb4e022fa24b7655f7001-letting346668.jpeg",
+      "https://as-images.imgix.net/a71a7a09afa622984a47eed501e6a690-letting346668.jpeg",
+      "https://as-images.imgix.net/bd7b5e4afc6bfe1e346df1cdc72869dd-letting346668.jpeg",
+      "https://as-images.imgix.net/5c7c1c174457721a1bc8b24a1e888b0a-letting346668.jpeg",
+      "https://as-images.imgix.net/f943d87988b38864f9aceed2313a326b-letting346668.jpeg",
+      "https://as-images.imgix.net/fba4239a9f7ef9ece29dd48c799cf8b2-letting346668.jpeg"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-08 14:47:04"
+  },
+  {
+    "id": 346725,
+    "status": "Available",
+    "address": "Unit 1, Droitwich Enterprise Hub",
+    "town": "Droitwich",
+    "postcode": "WR9 9RB",
+    "lat": 52.273490905,
+    "lon": -2.154858112,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 4258,
+    "size_to_sqft": 4258,
+    "summary": "Industrial To Let, Droitwich",
+    "description": "The unit provides a spacious, refurbished open-plan warehouse/workshop with roller shutter and pedestrian access. Internally, the accommodation benefits from a newly installed kitchenette and WC facilities. To the front of the property is a secure covered yard area, offering versatile space suitable for parking or operational use. The property also benefits from a substantial electricity supply (details available upon request), which will be a key advantage for power-intensive occupiers. In addition to this unit, larger units up to 10,000 sq ft (or the whole site) are available, providing flexibility to suit a wide range of requirements.",
+    "features": [],
+    "rent_psf": 7.05,
+    "rent_pa": 30000,
+    "rent": "£30,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/dbc826e25dd26bb5bc28a78ca70839f1-letting346725.jpeg",
+      "https://as-images.imgix.net/56937de392102703a293cad0cb134548-letting346725.jpeg",
+      "https://as-images.imgix.net/42a47cbf0024dd3c5da45678a0693e87-letting346725.jpeg",
+      "https://as-images.imgix.net/6f0f80a8e16d5ff67d02de9204e42e85-letting346725.jpeg",
+      "https://as-images.imgix.net/fab7a0ad64db51324cc26137af6fe26f-letting346725.jpeg",
+      "https://as-images.imgix.net/b8f3abd6c549e2acbf9de089be676e59-letting346725.jpeg",
+      "https://as-images.imgix.net/fd280d12e920b66c10bc6ababc20f3de-letting346725.jpeg"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-08 14:39:40"
+  },
+  {
     "id": 346689,
     "status": "Available",
     "address": "Trinity, Vale Park",
@@ -223,66 +443,6 @@
       }
     ],
     "last_updated": "2026-05-07 16:59:22"
-  },
-  {
-    "id": 350693,
-    "status": "Available",
-    "address": "Sterling House,  Willow End Park",
-    "town": "Malvern",
-    "postcode": "WR13 6NN",
-    "lat": 52.07531,
-    "lon": -2.298809,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Business Park",
-      "Office"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 8530,
-    "size_to_sqft": 8530,
-    "summary": "A modern, detached, purpose-built two storey office building.",
-    "description": "The property comprises a modern, detached, purpose-built two storey office building of brick and block cavity construction beneath a pitched tiled roof. The accommodation provides high quality offices across both floors, featuring suspended ceilings, inset lighting, air conditioning, and perimeter trunking throughout. \n\nThe first-floor tenant is currently holding over, providing an opportunity to capture a lease renewal. The ground floor is currently vacant and can be occupied as a whole or split into two  self-contained suites, offering flexibility for an owner-occupier or investor seeking to add value through letting. Each floor benefits from its own kitchen and male and female WCs, with services separately metered and independent boilers serving each part.\n\nAlternative Use Potential With minor alterations, the building is also suitable, in part, for Use Class B8 (Storage and Distribution). It would particularly suit the distribution of small, high-value goods via courier services, catering to growing demand for flexible, high-quality last-mile distribution space.",
-    "location": "Willow End is located to the south of Great Malvern and east of Malvern Wells, in a rural location near the Three Counties Show Ground. Willow End is home to multiple office and warehouse buildings, including a recently built office/research facility. The business park is situated two and a half miles south of Great Malvern and eight and a half miles south west of Worcester. \n\nThe area benefits from good transport communications with both Junction 1 of the M50 and Junction 7 of the M5 being accessible from the property. Great Malvern also benefits from a mainline railway station which provides direct access to Worcester, Hereford and London Paddington.",
-    "features": [
-      "Opportunity to capture lease renewal.",
-      "Vacant ground floor.",
-      "Located in a popular business park.",
-      "Freehold"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "C (57)",
-    "images": [
-      "https://as-images.imgix.net/43c0fc0fa75e1343e08e2a4bf48f2bb6-dji-0869.JPG",
-      "https://as-images.imgix.net/49abdaf47064567e9cb733b3ac3ccc5f-dji-0867.JPG",
-      "https://as-images.imgix.net/ca26d58c32c1bb9e6a95a36911fb3024-20250529-093314264-ios.jpg",
-      "https://as-images.imgix.net/3532362163d6bce4361890f2c13d3b43-20250529-093153234-ios.jpg",
-      "https://as-images.imgix.net/b311dd274da22620a7b4310a018b8524-20250529-093607049-ios.jpg",
-      "https://as-images.imgix.net/032bafc5a3813d0eb22b7aede77fa6fc-20250529-093345734-ios.jpg",
-      "https://as-images.imgix.net/0bfac624e3a167267bcdf7efe7e6b0d1-20251023-095746400-ios.jpg",
-      "https://as-images.imgix.net/c43f68b4faae0553de91c547a8480406-20251023-102006346-ios.jpg",
-      "https://as-images.imgix.net/40070fb5ea7eff13c103a1d6862127e3-20251023-103407268-ios.jpg",
-      "https://as-images.imgix.net/037a517f945833e626fa85898ea2b227-dji-0876.JPG",
-      "https://as-images.imgix.net/391b0df2b4188bef932a7967de37bbae-dji-0875.JPG",
-      "https://as-images.imgix.net/5a50da7f22208504773ab4041005ae7e-dji-0873.JPG",
-      "https://as-images.imgix.net/1bedc0b97b9e5af7c270b2c573b60581-dji-0877.JPG",
-      "https://as-images.imgix.net/70da0baaf8d40b90b5704a2cb8359b25-street-view-disposal-350693.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6dae8cb901a247253ec06bc23e608990-draft-b7-willow-end-park-malvern-investment-brochure1.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-07 16:58:45"
   },
   {
     "id": 346703,
@@ -689,64 +849,6 @@
       }
     ],
     "last_updated": "2026-05-07 16:10:15"
-  },
-  {
-    "id": 346668,
-    "status": "Available",
-    "address": "Sterling House",
-    "town": "Malvern",
-    "postcode": "WR13 6NN",
-    "lat": 52.075309753,
-    "lon": -2.298809051,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 4265,
-    "size_to_sqft": 4265,
-    "summary": "Office To Let, Malvern",
-    "description": "The property is a modern, detached, purpose-built office arranged over the ground floor. The construction is of brick and block cavity walls, surmounted by a pitched tiled roof. The building provides modern office accommodation with suspended ceilings, inset lighting, air conditioning and perimeter trunking throughout. The offices can be occupied as a whole or can be split to suit. There are WCs (male & female) and kitchens. The services are also split over each side of the ground floor, with separate meters and boilers. There are approximately 16 car parking spaces. Alternative Use Potential With minor alterations by the landlord, the building is also suitable, in whole or in part, for Use Class B8 (Storage and Distribution). It would particularly suit the distribution of small, high-value goods via courier services, catering to growing demand for flexible, high-quality last-mile distribution space. Ground Floor 4,265 sq ft 396.4 sq m",
-    "features": [
-      "Set within an established Business Park",
-      "All suites refurbished to a high specification",
-      "Excellent links to the M50/M5 motorway network"
-    ],
-    "rent_psf": 9.03,
-    "rent_pa": 38500,
-    "rent": "£38,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/3083298872074535a3d0f7ba781b63d6-letting346668.jpeg",
-      "https://as-images.imgix.net/824bbb43a34cc55a7fe00da15adc2901-letting346668.jpeg",
-      "https://as-images.imgix.net/1ab64046b15c7f8943f43a42276259c2-letting346668.jpeg",
-      "https://as-images.imgix.net/b0c1094ca6872a982bf2b74fc04467a7-letting346668.jpeg",
-      "https://as-images.imgix.net/b65c15a4be1b1925c5cc6b37381bf637-letting346668.jpeg",
-      "https://as-images.imgix.net/346ffcf74fc9d4fd0154e4292e648063-letting346668.jpeg",
-      "https://as-images.imgix.net/20b103b941fdb4e022fa24b7655f7001-letting346668.jpeg",
-      "https://as-images.imgix.net/a71a7a09afa622984a47eed501e6a690-letting346668.jpeg",
-      "https://as-images.imgix.net/bd7b5e4afc6bfe1e346df1cdc72869dd-letting346668.jpeg",
-      "https://as-images.imgix.net/5c7c1c174457721a1bc8b24a1e888b0a-letting346668.jpeg",
-      "https://as-images.imgix.net/f943d87988b38864f9aceed2313a326b-letting346668.jpeg",
-      "https://as-images.imgix.net/fba4239a9f7ef9ece29dd48c799cf8b2-letting346668.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/75400026e8ba9a77bd2f1b55f94ac37b-letting346668.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-07 15:22:51"
   },
   {
     "id": 355287,
@@ -1272,64 +1374,6 @@
     "last_updated": "2026-05-06 16:35:54"
   },
   {
-    "id": 346754,
-    "status": "Available",
-    "address": "One Kings Court",
-    "town": "Worcester",
-    "postcode": "WR5 1WS",
-    "lat": 52.19234085,
-    "lon": -2.178134918,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3050,
-    "size_to_sqft": 3050,
-    "summary": "Office To Let, Worcester",
-    "description": "The property has recently undergone extensive refurbishment and offers highly efficient accommodation benefitting from : \n*New VRF comfort cooling \n*New LED lighting \n*Raised access flooring \n*Suspended ceilings *10 person passenger lift \n*High quality refurbished common areas including WC facilities\n*Showers \n*Up to 40 onsite car parking spaces offering a generous ratio of 1:260 sq ft with EV car chargers Location",
-    "features": [
-      "Modern, headquarters office building with striking floor to ceiling windows throughout",
-      "Well maintained landscaped environment",
-      "The second floor provides accessible, quality open plan office accommodation with first class facilities"
-    ],
-    "rent_psf": 18.5,
-    "rent_pa": 56425,
-    "rent": "£18.50 per sq ft",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/6187ce888cbb5224c306623f798a9080-letting346754.jpeg",
-      "https://as-images.imgix.net/32e849190232ef2f2507997f3bbb8a06-letting346754.jpeg",
-      "https://as-images.imgix.net/e6278d452e00dfb2e40a9eeeb3438adc-letting346754.jpeg",
-      "https://as-images.imgix.net/4b8fc70dbf3e88968c30b952700e6163-letting346754.jpeg",
-      "https://as-images.imgix.net/a252ba753e1b0b1a1c52497a1278d965-letting346754.jpeg",
-      "https://as-images.imgix.net/6b576e37adb90b6a5ccebd3c0644dfef-letting346754.jpeg",
-      "https://as-images.imgix.net/a150eef093381aefe8505e92410f6991-letting346754.jpeg",
-      "https://as-images.imgix.net/7b0783a19ad6eae0f9b59fb067b83403-letting346754.jpeg",
-      "https://as-images.imgix.net/d6ae268dbaeaa7246235bffb7d9c89a3-letting346754.jpeg",
-      "https://as-images.imgix.net/bab416789a3751d21680cc9bce3cc9f1-letting346754.jpeg",
-      "https://as-images.imgix.net/ff0654b114c96359266ee158455eb45c-letting346754.jpeg",
-      "https://as-images.imgix.net/e96e77fe640ea8d4dbb3968c25de57d3-letting346754.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/ce99ce9fee88f0c5b48fb643b5099c63-one-kings-court-worcester-particulars.pdf",
-    "contacts": [
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-06 16:08:07"
-  },
-  {
     "id": 346850,
     "status": "Available",
     "address": "Digital House",
@@ -1405,55 +1449,6 @@
       }
     ],
     "last_updated": "2026-05-06 16:05:12"
-  },
-  {
-    "id": 346725,
-    "status": "Available",
-    "address": "Unit 1, Droitwich Enterprise Hub",
-    "town": "Droitwich",
-    "postcode": "WR9 9RB",
-    "lat": 52.273490905,
-    "lon": -2.154858112,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 4258,
-    "size_to_sqft": 4258,
-    "summary": "Industrial To Let, Droitwich",
-    "description": "The unit provides a spacious, refurbished open-plan warehouse/workshop with roller shutter and pedestrian access. Internally, the accommodation benefits from a newly installed kitchenette and WC facilities. To the front of the property is a secure covered yard area, offering versatile space suitable for parking or operational use. The property also benefits from a substantial electricity supply (details available upon request), which will be a key advantage for power-intensive occupiers. In addition to this unit, larger units up to 10,000 sq ft (or the whole site) are available, providing flexibility to suit a wide range of requirements.",
-    "features": [],
-    "rent_psf": 7.05,
-    "rent_pa": 30000,
-    "rent": "£30,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/dbc826e25dd26bb5bc28a78ca70839f1-letting346725.jpeg",
-      "https://as-images.imgix.net/56937de392102703a293cad0cb134548-letting346725.jpeg",
-      "https://as-images.imgix.net/42a47cbf0024dd3c5da45678a0693e87-letting346725.jpeg",
-      "https://as-images.imgix.net/6f0f80a8e16d5ff67d02de9204e42e85-letting346725.jpeg",
-      "https://as-images.imgix.net/fab7a0ad64db51324cc26137af6fe26f-letting346725.jpeg",
-      "https://as-images.imgix.net/b8f3abd6c549e2acbf9de089be676e59-letting346725.jpeg",
-      "https://as-images.imgix.net/fd280d12e920b66c10bc6ababc20f3de-letting346725.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/8e0b4a691ec12df06dfbb1d024d4f804-letting346725.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-06 15:48:56"
   },
   {
     "id": 350409,
