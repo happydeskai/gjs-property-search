@@ -1,5 +1,51 @@
 [
   {
+    "id": 346804,
+    "status": "Available",
+    "address": "3 Wassage Way",
+    "town": "Droitwich",
+    "postcode": "WR9 0NX",
+    "lat": 52.284690856,
+    "lon": -2.168148994,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 4012,
+    "size_to_sqft": 4012,
+    "summary": "Industrial To Let, Droitwich",
+    "description": "Commercial Warehouse/Industrial Unit located at the entrance to the sought after Hampton Lovett Industrial Estate Unit 3 Wassage Way South comprises a terraced industrial/warehouse building prominently positioned at the entrance to Hampton Lovett Industrial Estate. The unit has a clear working height of circa nine foot (2.8 metres) and a concertina door providing access to a rear loading bay. Internally, the unit benefits from a gas blower heater and a three-phase electrical supply, mains water, gas and drainage.",
+    "features": [],
+    "rent_psf": 8.1,
+    "rent_pa": 32500,
+    "rent": "£32,500 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/b1546d0c9d58235a490a4da92d06e071-letting346804.jpeg",
+      "https://as-images.imgix.net/5ec1c4188d16e6bf8e6e7687a939dcd7-letting346804.jpeg",
+      "https://as-images.imgix.net/ade755ea35eea0fb3e88e1dff7ba8324-letting346804.jpeg",
+      "https://as-images.imgix.net/4c5f816512627b82ae932fa03502c481-letting346804.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c324dce224fb4bfe2a6d5b55f3e82c3e-gjs-dillon-particulars-3-wassage-way-droitwich.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-13 12:05:48"
+  },
+  {
     "id": 346649,
     "status": "Available",
     "address": "Unit 9, Centech Park",
@@ -2950,52 +2996,6 @@
       }
     ],
     "last_updated": "2026-04-20 16:42:50"
-  },
-  {
-    "id": 346804,
-    "status": "Available",
-    "address": "3 Wassage Way",
-    "town": "Droitwich",
-    "postcode": "WR9 0NX",
-    "lat": 52.284690856,
-    "lon": -2.168148994,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 4012,
-    "size_to_sqft": 4012,
-    "summary": "Industrial To Let, Droitwich",
-    "description": "Commercial Warehouse/Industrial Unit located at the entrance to the sought after Hampton Lovett Industrial Estate Unit 3 Wassage Way South comprises a terraced industrial/warehouse building prominently positioned at the entrance to Hampton Lovett Industrial Estate. The unit has a clear working height of circa nine foot (2.8 metres) and a concertina door providing access to a rear loading bay. Internally, the unit benefits from a gas blower heater and a three-phase electrical supply, mains water, gas and drainage.",
-    "features": [],
-    "rent_psf": 8.1,
-    "rent_pa": 32500,
-    "rent": "£32,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/b1546d0c9d58235a490a4da92d06e071-letting346804.jpeg",
-      "https://as-images.imgix.net/5ec1c4188d16e6bf8e6e7687a939dcd7-letting346804.jpeg",
-      "https://as-images.imgix.net/ade755ea35eea0fb3e88e1dff7ba8324-letting346804.jpeg",
-      "https://as-images.imgix.net/4c5f816512627b82ae932fa03502c481-letting346804.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/00c57071db890da977c6b058446ac5b9-letting346804.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-04-20 16:33:52"
   },
   {
     "id": 350393,
