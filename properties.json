@@ -1,5 +1,74 @@
 [
   {
+    "id": 372990,
+    "status": "Available",
+    "address": "Unit 10A and 11, Arden Business Centre",
+    "town": "Alcester",
+    "postcode": "B49 6HW",
+    "lat": 52.225734,
+    "lon": -1.86936,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 3759,
+    "size_to_sqft": 3759,
+    "summary": "Trade Counter in Established Business Centre",
+    "description": "10A and 11 Arden Business Centre comprises a modern mid terrace commercial unit.  The property was built as two separate units however has been converted to provide on large unit that is currently used as a trade counter.  The units are of a steel portal frame construction with part brick & block and part steel clad elevations.  Internally, each unit benefits from a mezzanine floor over the majority of the floor area.  Within Unit 11 there are kitchen and WC facilities.\n\n10a Arden Business Centre\t\t\nGround Floor 962 sq ft (89.37 sq m)\nMezzanine Floor 849 sq ft (78.90 sq m)\nTotal 1,811 sq ft (168.27 sq m)\n\n11 Arden Business Centre\t\t\nGround Floor 962 sq ft (89.37 sq m)\nMezzanine Floor 986 sq ft (91.56 sq m)\nTotal 1,948 sq ft (180.93 sq m)\n\t\t\nWhole Unit 3,759 sq ft (349.2 sq m)",
+    "location": "The property is located on Arden Business Centre, Arden Road, Alcester and is approximately one mile north of Alcester town centre.  Arden Business Centre has a range of small, medium and large commercial units which are occupied by local and national commercial occupiers.  The area is popular with trade counter occupiers such as the existing Tenant and nearby Screwfix.\n\nAlcester is situated in an accessible location being adjacent to the A46, A435 and A422.  The A46 leads eastwards to Stratford-upon-Avon, Warwick and Junction 15 of the M40 motorway and south to Evesham and Junction 9 of the M5 motorway.  The A435 leads north to Redditch and Junction 3 of the M42 motorway, with the A422 leading west to Worcester.",
+    "features": [
+      "Total area 3,759 sq ft (349.20 sq m) GIA",
+      "Suitable for a variety of uses",
+      "Ground floor showroom with mezzanine area",
+      "Available on a long leasehold basis with 963 years remaining",
+      "Excellent access to the M40 and M42"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 26500,
+    "epc_rating": "C (58)",
+    "images": [
+      "https://as-images.imgix.net/0b1659403f31fa3950fc6c9acd0b27dd-20260505-101631.jpg",
+      "https://as-images.imgix.net/4f496fa3796366d35630136dc7515c65-20260505-105236.jpg",
+      "https://as-images.imgix.net/cb544788e399b5f68d9a9049329e9a07-20260505-101741.jpg",
+      "https://as-images.imgix.net/50149f2fe49ae52b8ff9fa7d68732420-20260505-101823.jpg",
+      "https://as-images.imgix.net/bcba3438defa48a3ee5a4256676da377-20260505-101800.jpg",
+      "https://as-images.imgix.net/b7f5eafe69d9915be373fa59e632d240-20260505-104032.jpg",
+      "https://as-images.imgix.net/3d21a28d87cf4dd194849769a329a4e5-20260505-102916.jpg",
+      "https://as-images.imgix.net/bee6399b0f5fb5eef983f6917bccf44a-20260505-102736.jpg",
+      "https://as-images.imgix.net/649ab7521a000f5a3ef307e93e6649e7-20260505-101832.jpg",
+      "https://as-images.imgix.net/c2b971a3991044ed8525ab4b325a3bc8-20260505-101727.jpg",
+      "https://as-images.imgix.net/092c0ad32f4218be5ab394a8c7de005c-20260505-102856.jpg",
+      "https://as-images.imgix.net/0bef02cf3db1d5f7b300a62b968a17a0-20260505-103941.jpg",
+      "https://as-images.imgix.net/c86a760ba12bb0ae3d3a531bc66598c3-20260505-104200.jpg",
+      "https://as-images.imgix.net/6b4a06dad7d055e42b05598bddf12cdf-20260505-104148.jpg",
+      "https://as-images.imgix.net/a2b944af13ddcd1728ae796640d5c20f-20260505-101548.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/0ecd364b475c4cf6254064684025366e-gjs-dillon-particulars-10a-and-11-arden-business-centre-alcester-b49.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-14 10:21:27"
+  },
+  {
     "id": 346804,
     "status": "Available",
     "address": "3 Wassage Way",
