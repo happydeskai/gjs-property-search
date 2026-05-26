@@ -1,5 +1,68 @@
 [
   {
+    "id": 346672,
+    "status": "Available",
+    "address": "20 The Shambles",
+    "town": "Worcester",
+    "postcode": "WR1 2RA",
+    "lat": 52.191112518,
+    "lon": -2.219422101,
+    "types": [
+      "Retail"
+    ],
+    "raw_types": [
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": true,
+    "size_from_sqft": 2513,
+    "size_to_sqft": 2513,
+    "summary": "Retail For Sale, Worcester",
+    "description": "20 The Shambles comprises a mid-terraced retail unit arranged over basement, ground, first and second floors, situated within a traditional parade in the heart of Worcester city centre. The ground floor features an open-plan retail area with a suspended ceiling, LED lighting, air conditioning and a timber-framed single-glazed shopfront. A floor hatch in the main retail area provides ladder access to a small basement area, suitable for limited storage. To the rear of the ground floor are ancillary areas, with a kitchen and WC located on the first floor. The upper parts are accessed via an internal staircase and include further ancillary space with a mix of UPVC and timber-framed windows. Lighting to the upper floors consists of older-style fluorescent fittings. The property is in need of repair and modernisation in parts, with notable damp ingress evident along the right-hand side elevation at second floor level. The unit may suit a variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.",
+    "features": [
+      "Prominent city centre location",
+      "Property arranged over basement, ground, first and second",
+      "Vacant possession from July 2026"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 3.28,
+    "rateable_value": 16500,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/570a4079df62487975d4d2b75449b956-letting346672.jpeg",
+      "https://as-images.imgix.net/91d7459984edd30a2b77fe3764b65ffb-letting346672.jpeg",
+      "https://as-images.imgix.net/cbb04f12d126ea78867538bbca58455e-letting346672.jpeg",
+      "https://as-images.imgix.net/a42cfdf7168b95c249ec8a9142b68ebe-letting346672.jpeg",
+      "https://as-images.imgix.net/d27eb8caf050f6730c48fb5c4a082766-letting346672.jpeg",
+      "https://as-images.imgix.net/61b196b5fa07b79f51cbd9cf1cdddd42-letting346672.jpeg",
+      "https://as-images.imgix.net/f7d0d12227a5dc73f0c0c982ca14811c-letting346672.jpeg",
+      "https://as-images.imgix.net/7d1abe1290bc1b112de86867f098c6e2-letting346672.jpeg",
+      "https://as-images.imgix.net/193205c5527b2926b6129c137736db7c-letting346672.jpeg",
+      "https://as-images.imgix.net/fa7aa285385934527b8c969752180195-letting346672.jpeg",
+      "https://as-images.imgix.net/480a7dc576c43895fd14cd0ddc0862b1-letting346672.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/3cf79ac31d5fb6a437d917ff74d0029c-gjs-dillon-particulars-20-the-shambles-worcester.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-26 17:21:19"
+  },
+  {
     "id": 358186,
     "status": "Available",
     "address": "44 High Street",
@@ -3424,69 +3487,6 @@
       }
     ],
     "last_updated": "2026-04-08 16:33:48"
-  },
-  {
-    "id": 346672,
-    "status": "Available",
-    "address": "20 The Shambles",
-    "town": "Worcester",
-    "postcode": "WR1 2RA",
-    "lat": 52.191112518,
-    "lon": -2.219422101,
-    "types": [
-      "Retail"
-    ],
-    "raw_types": [
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": true,
-    "size_from_sqft": 2513,
-    "size_to_sqft": 2513,
-    "summary": "Retail For Sale, Worcester",
-    "description": "20 The Shambles comprises a mid-terraced retail unit arranged over basement, ground, first and second floors, situated within a traditional parade in the heart of Worcester city centre. The ground floor features an open-plan retail area with a suspended ceiling, LED lighting, air conditioning and a timber-framed single-glazed shopfront. A floor hatch in the main retail area provides ladder access to a small basement area, suitable for limited storage. To the rear of the ground floor are ancillary areas, with a kitchen and WC located on the first floor. The upper parts are accessed via an internal staircase and include further ancillary space with a mix of UPVC and timber-framed windows. Lighting to the upper floors consists of older-style fluorescent fittings. The property is in need of repair and modernisation in parts, with notable damp ingress evident along the right-hand side elevation at second floor level. The unit may suit a variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.",
-    "features": [
-      "Prominent city centre location",
-      "Property arranged over basement, ground, first and second",
-      "Vacant possession from July 2026"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 3.28,
-    "rateable_value": 16500,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/570a4079df62487975d4d2b75449b956-letting346672.jpeg",
-      "https://as-images.imgix.net/91d7459984edd30a2b77fe3764b65ffb-letting346672.jpeg",
-      "https://as-images.imgix.net/cbb04f12d126ea78867538bbca58455e-letting346672.jpeg",
-      "https://as-images.imgix.net/a42cfdf7168b95c249ec8a9142b68ebe-letting346672.jpeg",
-      "https://as-images.imgix.net/d27eb8caf050f6730c48fb5c4a082766-letting346672.jpeg",
-      "https://as-images.imgix.net/61b196b5fa07b79f51cbd9cf1cdddd42-letting346672.jpeg",
-      "https://as-images.imgix.net/f7d0d12227a5dc73f0c0c982ca14811c-letting346672.jpeg",
-      "https://as-images.imgix.net/7d1abe1290bc1b112de86867f098c6e2-letting346672.jpeg",
-      "https://as-images.imgix.net/193205c5527b2926b6129c137736db7c-letting346672.jpeg",
-      "https://as-images.imgix.net/fa7aa285385934527b8c969752180195-letting346672.jpeg",
-      "https://as-images.imgix.net/480a7dc576c43895fd14cd0ddc0862b1-letting346672.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/3cf79ac31d5fb6a437d917ff74d0029c-gjs-dillon-particulars-20-the-shambles-worcester.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-04-07 14:30:34"
   },
   {
     "id": 352967,
