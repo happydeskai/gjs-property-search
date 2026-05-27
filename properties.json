@@ -1,5 +1,1433 @@
 [
   {
+    "id": 352967,
+    "status": "Under Offer",
+    "address": "275 Worcester Road",
+    "town": "Malvern",
+    "postcode": "WR14 1AA",
+    "lat": 52.128145,
+    "lon": -2.313932,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 7057,
+    "size_to_sqft": 7057,
+    "summary": "Commercial Freehold Premises",
+    "description": "This prominently positioned detached three-storey property offers an excellent canvas for transformation. Originally constructed as a town house of rendered brick with a pitched tiled roof, the building has since been enhanced with a two-storey front extension added in the 1970s, featuring a concrete frame and large display windows that provide strong street presence.\nTo the rear, a part single-storey/part two-storey brick-built outbuilding with a pitched slate roof has been integrated with the main structure, creating a versatile footprint with a variety of room configurations throughout. Internally, the accommodation currently comprises a series of cellular spaces, offering exciting scope for reconfiguration or comprehensive redevelopment.\nThe site also includes a gravelled rear car park with space for approximately eight vehicles. A striking mature tree sits at the centre of the parking area and is understood to be protected by a Tree Preservation Order, adding character and a sense of established setting.\nOverall, the property represents a compelling development opportunity (subject to planning), with the scale, layout and prominence of the site lending themselves to a wide range of future uses.\nGround floor\t\t3,792.5 ft2 \t(352.46 m2)\nFirst floor retail \t\t756.5 ft2\t\t(756.5 m2)\nSecond floor retail\t\t1,737.8 ft2\t\t(161.51m2)\nThird floor retail \t\t770.3 ft2\t\t(71.59m2)\nTotal \t\t\t7,057 ft2\t\t(655.87 m2)",
+    "location": "Malvern is a spa town and civil parish in Worcester which, in the 2011 Census, had a population of just under 30,000.  The major road, which runs through the centre of Malvern is the A449 which connects Worcester to Ledbury. The M5 Motorway is accessible at Junctions 7 and 8 to the east. The M50 Motorway is accessed at Junction 1 on the A38 between Tewkesbury and Malvern.\nTwo railway stations, approximately one mile apart at Great Malvern and Malvern Link provide direct services to Worcester, Hereford, Birmingham, Oxford, Cheltenham, Gloucester and London Paddington.",
+    "features": [
+      "7,057 ft2 (655.87 m2)",
+      "Located in Malvern Link",
+      "Virtual Tour Avaiable",
+      "Car parking at rear of property",
+      "Development opportunity (STP)"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 29250,
+    "epc_rating": "C (73)",
+    "images": [
+      "https://as-images.imgix.net/9a3c51bb7bbb5311e43a620c955c7969-20251120-122705702-ios.jpg",
+      "https://as-images.imgix.net/b0218b5d4eafc397f1a8785d53ad36ba-20251120-121635934-ios.jpg",
+      "https://as-images.imgix.net/723661952ac86c1914f777fc3bd2dce4-20251120-121656176-ios.jpg",
+      "https://as-images.imgix.net/10cce6343698939b70c580510f9b7839-20251120-121948573-ios.jpg",
+      "https://as-images.imgix.net/94ae5337f8a9633264b2635e8989cc96-20251120-121805147-ios.jpg",
+      "https://as-images.imgix.net/7d50f777da10ff3b636cb7d02a32804b-20251120-120637769-ios.jpg",
+      "https://as-images.imgix.net/c62b2d03e8f55ce33328c95b88687a3e-20251120-120605171-ios.jpg",
+      "https://as-images.imgix.net/36b0b351671bb37ce8a23bfed2bbedaf-20251120-115302765-ios.jpg",
+      "https://as-images.imgix.net/98db8c5ecddac291256380a247509ff1-20251120-120656162-ios.jpg",
+      "https://as-images.imgix.net/866bfcdca10bcc681caffaa1594e7184-20251120-121459348-ios.jpg",
+      "https://as-images.imgix.net/9772c363f03eef64bbe3e82125845714-20251120-115312793-ios.jpg",
+      "https://as-images.imgix.net/1cd2bdc332315edf06b185e23ba3ba0b-20251120-121511852-ios.jpg",
+      "https://as-images.imgix.net/f691738e9b2f62d49514619d79a87e40-20251120-121454186-ios.jpg",
+      "https://as-images.imgix.net/c4f8d20529a7fdba9988a66dfef47824-20251120-120737472-ios.jpg",
+      "https://as-images.imgix.net/a3cb31ebd9c715cbec7b1352ec2589de-20251120-120611276-ios.jpg"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 17:11:02"
+  },
+  {
+    "id": 350693,
+    "status": "Available",
+    "address": "Sterling House,  Willow End Park",
+    "town": "Malvern",
+    "postcode": "WR13 6NN",
+    "lat": 52.07531,
+    "lon": -2.298809,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Business Park",
+      "Office"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 8530,
+    "size_to_sqft": 8530,
+    "summary": "A modern, detached, purpose-built two storey office building.",
+    "description": "The property comprises a modern, detached, purpose-built two storey office building of brick and block cavity construction beneath a pitched tiled roof. The accommodation provides high quality offices across both floors, featuring suspended ceilings, inset lighting, air conditioning, and perimeter trunking throughout. \n\nThe first-floor tenant is currently holding over, providing an opportunity to capture a lease renewal. The ground floor is currently vacant and can be occupied as a whole or split into two  self-contained suites, offering flexibility for an owner-occupier or investor seeking to add value through letting. Each floor benefits from its own kitchen and male and female WCs, with services separately metered and independent boilers serving each part.\n\nAlternative Use Potential With minor alterations, the building is also suitable, in part, for Use Class B8 (Storage and Distribution). It would particularly suit the distribution of small, high-value goods via courier services, catering to growing demand for flexible, high-quality last-mile distribution space.",
+    "location": "Willow End is located to the south of Great Malvern and east of Malvern Wells, in a rural location near the Three Counties Show Ground. Willow End is home to multiple office and warehouse buildings, including a recently built office/research facility. The business park is situated two and a half miles south of Great Malvern and eight and a half miles south west of Worcester. \n\nThe area benefits from good transport communications with both Junction 1 of the M50 and Junction 7 of the M5 being accessible from the property. Great Malvern also benefits from a mainline railway station which provides direct access to Worcester, Hereford and London Paddington.",
+    "features": [
+      "Opportunity to capture lease renewal.",
+      "Vacant ground floor.",
+      "Located in a popular business park.",
+      "Freehold"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "C (57)",
+    "images": [
+      "https://as-images.imgix.net/43c0fc0fa75e1343e08e2a4bf48f2bb6-dji-0869.JPG",
+      "https://as-images.imgix.net/49abdaf47064567e9cb733b3ac3ccc5f-dji-0867.JPG",
+      "https://as-images.imgix.net/ca26d58c32c1bb9e6a95a36911fb3024-20250529-093314264-ios.jpg",
+      "https://as-images.imgix.net/3532362163d6bce4361890f2c13d3b43-20250529-093153234-ios.jpg",
+      "https://as-images.imgix.net/b311dd274da22620a7b4310a018b8524-20250529-093607049-ios.jpg",
+      "https://as-images.imgix.net/032bafc5a3813d0eb22b7aede77fa6fc-20250529-093345734-ios.jpg",
+      "https://as-images.imgix.net/0bfac624e3a167267bcdf7efe7e6b0d1-20251023-095746400-ios.jpg",
+      "https://as-images.imgix.net/c43f68b4faae0553de91c547a8480406-20251023-102006346-ios.jpg",
+      "https://as-images.imgix.net/40070fb5ea7eff13c103a1d6862127e3-20251023-103407268-ios.jpg",
+      "https://as-images.imgix.net/037a517f945833e626fa85898ea2b227-dji-0876.JPG",
+      "https://as-images.imgix.net/391b0df2b4188bef932a7967de37bbae-dji-0875.JPG",
+      "https://as-images.imgix.net/5a50da7f22208504773ab4041005ae7e-dji-0873.JPG",
+      "https://as-images.imgix.net/1bedc0b97b9e5af7c270b2c573b60581-dji-0877.JPG",
+      "https://as-images.imgix.net/70da0baaf8d40b90b5704a2cb8359b25-street-view-disposal-350693.jpg"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 17:09:28"
+  },
+  {
+    "id": 353374,
+    "status": "Under Offer",
+    "address": "169-171 Newtown Road",
+    "town": "Malvern",
+    "postcode": "WR14 1PJ",
+    "lat": 52.126083,
+    "lon": -2.331358,
+    "types": [
+      "Industrial",
+      "Development/Investment"
+    ],
+    "raw_types": [
+      "Automotive",
+      "Development Site"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 9124,
+    "size_to_sqft": 9124,
+    "summary": "Freehold Car Sales Premises, Suitable for Development (STP)",
+    "description": "The current building offers a detached showroom and workshop sitting central within a regular plot.  The building is accessed via a showroom to the front and two roller shutter doors to the rear.\n\nThe existing building offers the following:\n\nCar Showroom\t2,572 ft2\t\t(239 m2)\nWorkshop\t6,552 ft2\t\t(609 m2)\nTotal \t9,124 ft2\t\t(848 m2)\n\nExternally there is a forecourt to the front which offers parking for 20-25 vehicles along with a further parking area to the rear for 35-40 vehicles.  The main frontage is onto Newtown Road, however, there is a rear access off Nursery Road.\n\nThe site has a total area of 0.64, as shown by the site plan.\n\nRe-Development\nThe sites extends to 0.64 acres and is situated within a residential area of Malvern, it is therefore well suited for re-development, subject to gaining the necessary planning consents.",
+    "location": "Malvern is a spa town in Worcestershire with a population of 30,462 as at the 2021 Census.  Within Malvern, the property fronts the B4503 Newtown Road, in close proximity to its junction with the A449 Worcester Road and circa 1 ½ miles west of Great Malvern town centre.\n\nThe immediate surrounding area is predominantly residential, with some local retail occupiers being located on Newtown Road.  Hills Ford are vacating due to expansion to a larger site in Worcester.",
+    "features": [
+      "Currently operating as Hills Ford motor dealership, who are relocating due to expansion into Worcester",
+      "Existing facility extends to 9,124 sq ft (848 sq m)",
+      "Regular shaped site extending to 0.64 acres",
+      "Situated in a predominantly residential area and therefore suitable for re-development, subject to planning",
+      "Has dual access off Newtown Road and Nursery Road."
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/92579b6aeac8e7bc496aea13709404ea-23.jpeg",
+      "https://as-images.imgix.net/95e0e4c9661ae3a79a57e2825f4d9c32-19.jpeg",
+      "https://as-images.imgix.net/1e98ffd0f9565d6d6d707edbc2f0facb-14.jpeg",
+      "https://as-images.imgix.net/4fed5437cbf8c65c6a12b6c552b881b0-13.jpeg",
+      "https://as-images.imgix.net/387a6b9083ea90ea3f0f06207e444b9e-1.jpeg",
+      "https://as-images.imgix.net/c59c64bd6c0adf14878c2f4526f89b65-18.jpeg",
+      "https://as-images.imgix.net/87733d5af2b11902232201ca410d01bf-15.jpeg",
+      "https://as-images.imgix.net/2c37bb1557745091d573c84ca541d2d9-16.jpeg",
+      "https://as-images.imgix.net/0974715b61b0523d37a9953f987321e5-12.jpeg",
+      "https://as-images.imgix.net/c576f7b509f7e0c267f03854ee53d717-11.jpeg",
+      "https://as-images.imgix.net/e00dea741f5b38364ad49ced736844cb-3.jpeg",
+      "https://as-images.imgix.net/34a0e0dd68e4d5f614a04d8c3322ef8a-5.jpeg",
+      "https://as-images.imgix.net/3a8f6350a25ffe8cfd407f75849fb755-8.jpeg",
+      "https://as-images.imgix.net/364afad2ae848acee0dffb6ed5427834-7.jpeg",
+      "https://as-images.imgix.net/2a60c1537b6aad5a0562a386337681c9-10.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/de51ac906d64112340d712b35ecfe498-gjs-dillon-particulars-169-newtown-road-malvern.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 17:08:59"
+  },
+  {
+    "id": 355238,
+    "status": "Available",
+    "address": "Units 1 & 2, Saxon Business Park",
+    "town": "Bromsgrove",
+    "postcode": "B60 4AD",
+    "lat": 52.298313008523,
+    "lon": -2.0756804251617,
+    "types": [
+      "Industrial",
+      "Development/Investment"
+    ],
+    "raw_types": [
+      "Industrial",
+      "Investment - Industrial"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 10204,
+    "size_to_sqft": 10204,
+    "summary": "Multi-Let Industrial Investment",
+    "description": "The property comprises a detached modern industrial building with ancillary office accommodation, situated within the established Saxon Business Park in Bromsgrove. Constructed in the 1990s, the building is of steel portal frame construction beneath a pitched insulated steel profile roof with a combination of brick and profile clad elevations. The property provides warehouse accommodation together with two-storey office accommodation to the front elevation including kitchen and WC facilities. The office areas have been recently refurbished and are presented in good condition. The warehouse accommodation benefits from three roller shutter loading doors and is currently configured as two self-contained units, both of which are let and income producing.\n\nExternally, the property benefits from tarmacadam surfaced parking areas providing approximately 26 car parking spaces to the front and side of the building. The property extends to approximately 10,204 sq ft (948 sq m) and provides a fully let multi-let industrial investment within an established commercial location.",
+    "location": "Bromsgrove is an established Worcestershire town located approximately 13 miles south west of Birmingham and 16 miles north east of Worcester. The town benefits from excellent connectivity, with the A38 running through Bromsgrove, whilst the M5 motorway lies to the west and the M42 commences to the north, providing access to the wider West Midlands motorway network. Bromsgrove railway station provides regular services to Birmingham New Street, Worcester and Hereford, with additional public transport connections available from the town centre. \n\nThe property is located on Saxon Business Park on Hanbury Road, a well-established commercial estate situated close to Bromsgrove town centre. The park is occupied by a range of local, regional and national businesses and benefits from convenient access to the M5 and M42 motorways, making it a popular location for industrial and business occupiers.",
+    "features": [
+      "Fully let industrial investment",
+      "Detached modern industrial building",
+      "Located on the popular Saxon Business Park",
+      "Excellent access to the M5 and M42 motorway network",
+      "Three roller shutter loading doors",
+      "Total floor area 10,204 sq ft (948 sq m) GIA"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/d4f72a9b41c0f7b6d835119b0aa43f5a-dji-0942.JPG",
+      "https://as-images.imgix.net/86450e3fe867a2303ec8a18f44a12b8e-20260311-140554.jpg",
+      "https://as-images.imgix.net/62e379d52303ab5901b8b1233122b924-20260318-094802.jpg",
+      "https://as-images.imgix.net/c49d1144361c5b42663540a37ed0d622-20260318-094940.jpg",
+      "https://as-images.imgix.net/9f41db5b98a828b5e6430152df0dbf63-20260318-094923.jpg",
+      "https://as-images.imgix.net/d063ea280da140e1344bb46c4c8fd978-20260318-094544.jpg",
+      "https://as-images.imgix.net/00f9b266e1d9d542948c3352e78d2ec7-20260318-095032.jpg",
+      "https://as-images.imgix.net/3ea50f581a21d5284753aa0d86efc9c0-20260318-095027.jpg",
+      "https://as-images.imgix.net/99a6cd3b19dcad9063d4fb539920732d-20260318-094650.jpg",
+      "https://as-images.imgix.net/1ea4388cc2181d3f6e0a2925aac4d81a-20260318-095206.jpg",
+      "https://as-images.imgix.net/79507bd6b3995aae252d76ca43e6cf8a-dji-0949.JPG",
+      "https://as-images.imgix.net/874a3041a45c30ed85eb8d5013fdbf3d-dji-0953.JPG",
+      "https://as-images.imgix.net/86b4d6115649664b8983169eeeb92df6-20260318-100145.jpg",
+      "https://as-images.imgix.net/98b78432f34caf7cc0d5e3bea19dd5fc-20260318-101033.jpg",
+      "https://as-images.imgix.net/531401dee0d0af987cc2ace2df227d11-20260318-101320.jpg",
+      "https://as-images.imgix.net/b9e4a7a3c7917633a7f32e342a7a8d6a-20260318-101209.jpg",
+      "https://as-images.imgix.net/82a9711079d8b3dbd39ae38bdd2bfef7-20260318-100209.jpg",
+      "https://as-images.imgix.net/b9cf8264d317ed6e44732cf655b38079-dji-0951.JPG",
+      "https://as-images.imgix.net/b92192c6934058125f39ef7bec17e1d3-dji-0955.JPG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f32498d0ff58e97c6cfd8a57032de533-units-1-2-saxon-business-park-bromsgrove-brochure.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 17:08:37"
+  },
+  {
+    "id": 363136,
+    "status": "Available",
+    "address": "Unit 5, The IO Centre",
+    "town": "Redditch",
+    "postcode": "B98 7AS",
+    "lat": 52.291602,
+    "lon": -1.913239,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 11343,
+    "size_to_sqft": 11343,
+    "summary": "Warehouse to be refurbished - available alongside Unit 6 The IO Centre",
+    "description": "Unit 5, The IO Centre is located on an established estate within Redditch.  Unit 5 can be let individually or as a multiple unit, alongside Unit 6 (14,423 sq ft  - 1,340 sq m) Both units are to be refurbished once the current tenant has vacated. Both properties are available by way of sublease from the outgoing occupier.",
+    "location": "The IO Centre is a premier industrial estate located on Nash Road. The property benefits from excellent road communications with Junction 3 of the M42 approximately seven miles to the north, which gives access to the M40, M5 and M6.\nThe estate is well managed, with recent upgrades including full redecoration of the external cladding, improvements to the estate lighting, and completion of road maintenance works.",
+    "features": [
+      "Unit 5 - 11,343 sq ft (1,054 sq m)",
+      "Can be let alongside Unit 6 - 14,423 sq ft (1,340 sq m)",
+      "Two storey offices",
+      "8m eaves height",
+      "Two electric level loading doors",
+      "28 car parking spaces",
+      "Kitchen and WC facilities"
+    ],
+    "rent_psf": 10.5,
+    "rent_pa": 119102,
+    "rent": "£10.50 per sq ft",
+    "business_rates_psf": 0,
+    "rateable_value": 78500,
+    "epc_rating": "E (115)",
+    "images": [
+      "https://as-images.imgix.net/c0c7339fbaafba2979d5095d3bc66b9c-dji-0980-2.JPG",
+      "https://as-images.imgix.net/ec5aec7254b3b71c25c6f7ed4910ed98-20260305-145932041-ios-1.jpg",
+      "https://as-images.imgix.net/9511871706ab8299298fbc3dc1f037e1-dji-0985-1.JPG",
+      "https://as-images.imgix.net/b026cb1c6f5ef248476632f6e7915ad7-dji-0994-1.JPG",
+      "https://as-images.imgix.net/4bf712b1fd6a2bf09ecbfce6751d8d6c-dji-0976-1.JPG",
+      "https://as-images.imgix.net/19ea67aec13c34b14a326c985c4e6269-dji-0967-1.JPG",
+      "https://as-images.imgix.net/bb504eca9af9b413f9a044fa71a58d32-20260305-144356815-ios-2.jpg",
+      "https://as-images.imgix.net/093c29198d4d3faa2001410dd9e6a824-20260305-144415250-ios-1.jpg",
+      "https://as-images.imgix.net/2ab9719abc71d457ce21422317630751-20260305-145455013-ios-1.jpg",
+      "https://as-images.imgix.net/289007207821fd8cf4d07a3c539436e0-20260305-145440513-ios-1.jpg",
+      "https://as-images.imgix.net/7be4876e67cbb6e7b89753e5372f718e-20260305-144830331-ios-1.jpg",
+      "https://as-images.imgix.net/236b7e2df35e807948b7bc1a51b82ef6-20260305-144946219-ios-1.jpg",
+      "https://as-images.imgix.net/9ecfc6257db1aaec32ba7db3e93ba3f6-20260305-144839712-ios-1.jpg",
+      "https://as-images.imgix.net/fce2a17727e138d5725e78a8d4f2d11b-20260305-144545343-ios-1.jpg",
+      "https://as-images.imgix.net/a619c4e14f618494b304fad16b431abf-20260305-144949150-ios-1.jpg",
+      "https://as-images.imgix.net/3ffdf76b4e11c7ad5d3c68d136db8c67-20260305-144920166-ios-1.jpg",
+      "https://as-images.imgix.net/1c3a70ace974b2c5df5fee8369d620c1-20260305-144506863-ios-1.jpg",
+      "https://as-images.imgix.net/c1bceddf7c84580ff34e52a35684cf10-20260305-145034795-ios-1.jpg",
+      "https://as-images.imgix.net/bda46cb492a3f2f3f9ea991e0d3a77a6-20260305-145652533-ios-1.jpg",
+      "https://as-images.imgix.net/579be81eac065d87ad012892b8d6576c-20260305-145707609-ios-1.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/b359093f84d7454b08140d9a5a7cad56-the-io-centre-redditch-brochure-units-56-12-v2.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 17:03:41"
+  },
+  {
+    "id": 346682,
+    "status": "Available",
+    "address": "The Piano Building,Weavers Wharf",
+    "town": "Kidderminster",
+    "postcode": "DY10 1AA",
+    "lat": 52.387104034,
+    "lon": -2.250469923,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3886,
+    "size_to_sqft": 12206,
+    "summary": "Office To Let, Kidderminster",
+    "description": "The Piano Building blends its rich industrial heritage with modern functionality. Seen from above, its unique shape resembles a grand piano, giving this iconic structure its name. Originally built as a wool warehouse for Brintons Carpets and later used as a college, it now stands as a vibrant Kidderminster landmark offering work and office spaces and inviting food and drink. The subject office space is situated over the first, second and third floors. There are WC facilities to each floor, along with lift access and accessible facilities. Each floor also has the provision of breakout and employee welfare space. The space can be offered open plan or with a combination of integrated glass meeting rooms. Floor plans are available upon request. \nFirst Floor 3,886 ft2 (361 m2)\nSecond Floor 4,263 ft2 (396 m2)\nThird Floor 4,058 ft2(377 m2)\nTotal 12,206 ft2 (1,134 m2)",
+    "location": "Location The Piano Building is located within Kidderminster, Worcestershire. Kidderminster is situated 15 miles north of Worcester and 17 miles southwest of Birmingham. The town benefits from being in close proximity to major transport links, such as the M5 & M42 motorways, and has a mainline railway station to the east of the town centre, which offers frequent services to Birmingham Snow Hill, Worcester Foregate Street and Stratford-upon-Avon. The building forms part of the gentrified Weavers Wharf Shopping Centre site, being adjacent to the Kidderminster Bus Station, Premier Inn and Tesco superstore. There are multiple other national and local retailers adjacent to the property, offering an extensive retail and food & beverage offering to occupants of the office space.",
+    "features": [
+      "Office space over 1st, 2nd and 3rd Floors",
+      "Space from 3,886 sq ft (361 sq m) to 12,206 sq ft (1,134 sq m)"
+    ],
+    "rent_psf": 16.98,
+    "rent_pa": 66000,
+    "rent": "£66,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/70429908f15693024771e2aa952891cb-letting346682.jpeg",
+      "https://as-images.imgix.net/93e4c9a6a0d0c69dbe5ad3325ff3d2d5-letting346682.jpeg",
+      "https://as-images.imgix.net/14fe2f2343d221867cb0156500d14c6e-letting346682.jpeg",
+      "https://as-images.imgix.net/243b8e040552f0825b9a2f2b7667beb8-letting346682.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f9e41351de443e9663c0b2120e96a748-piano-building-particulars.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 17:03:07"
+  },
+  {
+    "id": 363157,
+    "status": "Available",
+    "address": "Unit 6, The IO Centre",
+    "town": "Redditch",
+    "postcode": "B98 7AS",
+    "lat": 52.291602,
+    "lon": -1.913239,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 14423,
+    "size_to_sqft": 14423,
+    "summary": "Warehouse to be refurbished - available alongside Unit 5, The IO Centre",
+    "description": "Unit 6, The IO Centre is lcoated on an established estate within Redditch.  Unit 6 can be let on its own or as a multiple unit, alongside Unit 5 (11,343 sq ft  - 1,054 sq m) Both units are to be refurbished once the current tenant has vacated. Both properties are available by way of sublease from the outgoing occupier.",
+    "location": "Location\nThe IO Centre is a premier industrial estate located on Nash Road. The property benefits from excellent road communications with Junction 3 of the M42 approximately seven miles to the north, which gives access to the M40, M5 and M6.\nThe estate is well managed, with recent upgrades including full redecoration of the external cladding, improvements to the estate lighting, and completion of road maintenance works.",
+    "features": [
+      "Unit 6 – 14,423 sq ft (1,340 sq m)",
+      "Can be let in conjunction with Unit 5 at 11,343 sq ft (1,054 sq m)",
+      "Two storey offices",
+      "8m eaves height",
+      "Two electric level loading doors",
+      "25m deep yard",
+      "Palisade fenced / gated yard area",
+      "Kitchen and WC facilities"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 118000,
+    "epc_rating": "C (71)",
+    "images": [
+      "https://as-images.imgix.net/c300406fda67e84f01d5be768d27de06-20260305-152847271-ios-1.jpg",
+      "https://as-images.imgix.net/6c08b243c3e9cb106c463ea2b2568804-dji-0995-1.JPG",
+      "https://as-images.imgix.net/6461bb0f80e1cb63e50da265abcb8b36-dji-0991-2.JPG",
+      "https://as-images.imgix.net/a46eeeb632a0111ce81f2d95c5143e70-dji-0988-1.JPG",
+      "https://as-images.imgix.net/6f7b42c71921f8642c212a5160b8e3f8-dji-0991-1.JPG",
+      "https://as-images.imgix.net/10719e775db92a2669c50ac918ebbfde-20260305-150153249-ios-1.jpg",
+      "https://as-images.imgix.net/fc615aea85ca27a657b5c86490c64406-20260305-152358209-ios-1.jpg",
+      "https://as-images.imgix.net/9de863a2ff15dba54e01c0fcd962ba1e-20260305-150229219-ios-1.jpg",
+      "https://as-images.imgix.net/c6ce56fce9440d40c4cc3e5006d8191b-20260305-150410682-ios-1.jpg",
+      "https://as-images.imgix.net/61b9043a625b0e73e974e60cc41ea61b-20260305-152138148-ios-1.jpg",
+      "https://as-images.imgix.net/18c79d61bebe18e195b0362e406d7598-20260305-150659050-ios-1.jpg",
+      "https://as-images.imgix.net/84cc01a5653d77c8ee79fc479ee0ae05-20260305-150927856-ios-1.jpg",
+      "https://as-images.imgix.net/aaf16448f54d5358516556af951583c0-20260305-150800273-ios-2.jpg",
+      "https://as-images.imgix.net/1df12be04212a2ff4ec41e43986a7c23-20260305-150823642-ios-1.jpg",
+      "https://as-images.imgix.net/f8a79e06137430a596b6e180f4f3e0a7-20260305-151353088-ios-1.jpg",
+      "https://as-images.imgix.net/8da825491cdbe6e2b8eafe230635d376-20260305-152818068-ios-1.jpg",
+      "https://as-images.imgix.net/8884f00feab4225929325620fbf418eb-20260305-151259865-ios-1.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c2948163194f356da3a920991aec3a53-the-io-centre-redditch-brochure-units-56-12-v2.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 16:55:59"
+  },
+  {
+    "id": 346652,
+    "status": "Under Offer",
+    "address": "St. Dunstan's Building",
+    "town": "Worcester",
+    "postcode": "WR1 3PA",
+    "lat": 52.193748474,
+    "lon": -2.224364995,
+    "types": [
+      "Office",
+      "Development/Investment"
+    ],
+    "raw_types": [
+      "Office",
+      "Development"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 19726,
+    "size_to_sqft": 19726,
+    "summary": "Office / Development / Development For Sale, Worcester",
+    "description": "The accommodation currently provides a mixture of large partitioned working areas with some individual offices. The specification of the property includes; > Air handling / air conditioning > Strip lighting / suspended ceilings with integral lighting > Ground floor kitchen area > 13 person passenger lift > WCs on all floors > An outside seating area > On site car parking",
+    "location": "Butts, just off the main A44 which forms part of the circular routes for Worcester City Centre. To the east of the property is is the main shopping/entertainment areas for Worcester whilst to the west is the picturesque River Severn. Worcester, in the West Midlands, is located 31 miles south east of Birmingham, 27 miles north of Gloucester and 23 miles north east of Hereford. Worcester has excellent connectivity being to the west of junctions 6 and 7 of the M5 motorway leading to the M42 and M6. Worcester also has direct mainline rail links to both Birmingham and London.",
+    "features": [
+      "For Sale - Offers in excess of £2,950,000",
+      "St Dunstan's Building is a well located property to the west of Worcester City Centre",
+      "Constructed to suit a variety of uses (subject to planning)",
+      "To be offered with vacant possession with the HoW College relocating within the city"
+    ],
+    "business_rates_psf": 87690,
+    "rateable_value": 158000,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/098bdf0b907b5d8306a0fb1a953f5ac5-letting346652.jpeg",
+      "https://as-images.imgix.net/3e271cca0d8505975b6ac96592611f39-letting346652.jpeg",
+      "https://as-images.imgix.net/2c5cbed13289e2f3584cf42827a03015-letting346652.jpeg",
+      "https://as-images.imgix.net/828b06cf17ed29c0bcb9526178826448-letting346652.jpeg",
+      "https://as-images.imgix.net/49c222d873985cc5222358c5b741005d-letting346652.jpeg",
+      "https://as-images.imgix.net/59b5fc1d1ba72532eb9d1ca9b5c9f850-letting346652.jpeg",
+      "https://as-images.imgix.net/5f85668ecbe49422f93ea40acf7f7b29-letting346652.jpeg",
+      "https://as-images.imgix.net/6673663acb959c4eb2af1ad95c2ca02e-letting346652.jpeg",
+      "https://as-images.imgix.net/6e1b28b41af2e5b991c05d7b48619809-letting346652.jpeg",
+      "https://as-images.imgix.net/ac70cde60a66dbd0d6fff9df28d51419-letting346652.jpeg",
+      "https://as-images.imgix.net/e9d5210f42bc42b0b1bf310ade7fa354-letting346652.jpeg",
+      "https://as-images.imgix.net/057f9fd8cc26550d969b63374eb00902-letting346652.jpeg"
+    ],
+    "contacts": [
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 16:55:30"
+  },
+  {
+    "id": 353370,
+    "status": "Under Offer",
+    "address": "Development Site on Elm Road",
+    "town": "Worcester",
+    "postcode": "WR2 5JS",
+    "lat": 52.193804,
+    "lon": -2.232411,
+    "types": [
+      "Car Park",
+      "Development/Investment",
+      "Industrial"
+    ],
+    "raw_types": [
+      "Car Park",
+      "Development Land",
+      "Development Site",
+      "Industrial Land",
+      "Land",
+      "Open Storage",
+      "Yard"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 20865.24,
+    "size_to_sqft": 20865.24,
+    "summary": "Development site on Elm Road, Worcester",
+    "description": "Elm Road is a small cul-de-sac that adjoins Hylton Road (A443) – one of the main arterial roads to the west of Worcester, which runs southwards to Worcester city centre and other main access routes in and out of the city.  The site sits at the western end of Elm Road, which we assume it has uninterrupted access over.\n\nThere were previously multiple industrial units on the site, all of which have now been demolished leaving a clear site which we note is free from contamination.  Planning permission has been granted under reference 19/00614/FUL for: Demolish existing unit 1,2 and 5 and replace with a new 2 storey building for commercial storage (Use class B8).\n\nThe proposed development extends to 17,061 sq ft",
+    "location": "Elm Road is located in Worcester city centre.  Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London.  Worcester has excellent access to the M5 motorway, which lies adjacent to the subject property with Junction 7 being approximately one and a half miles drive south.  The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network.\n\nWorcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
+    "features": [
+      "Site area 0.479 acres",
+      "Proposed development extends to 17,061 sq ft (1,585 sq m)",
+      "Planning permission granted for a 2 storey building for commercial storage (use class B8) Reference 19/00614/FUL",
+      "Walking distance to city centre",
+      "Excellent links to the national motorway networks"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/c5f5b31034ae208463e8a6c06ea2305e-proposed-plan-2.jpg",
+      "https://as-images.imgix.net/da749ddf479a391ca7d80a10a4bf3cc5-img-4042.JPG",
+      "https://as-images.imgix.net/7a09d35c0e38661610ce988d30be9ea0-img-4064.JPG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/72dee4048b4a1b80d8aee2b03ffbee82-gjs-dillon-particulars-development-site-on-elm-road-worcester-wr2-5js.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 16:54:12"
+  },
+  {
+    "id": 346653,
+    "status": "Under Offer",
+    "address": "Land At Willow End Park",
+    "town": "Malvern",
+    "postcode": "WR13 6NN",
+    "lat": 52.075309753,
+    "lon": -2.298809051,
+    "types": [
+      "Development/Investment"
+    ],
+    "raw_types": [
+      "Development"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 27878.4,
+    "size_to_sqft": 27878.4,
+    "summary": "Development Land",
+    "description": "This parcel of land extends to approximately 0.64 acres and offers an excellent opportunity for development (subject to planning). The site has an extant permission for an 8000 sq ft office block (identical to that shown adjacent to the site) and a lapsed consent for 6 light industrial units with office facilities above totalling 11,000 sq ft. Electricity, gas and full fibre comms are within easy reach of the site and mains water and effluent disposal are within the site. The land benefits from a prominent position alongside an established business park and the site offers potential for additional parking or external yard space, depending on the end use. This is a rare opportunity to secure a well-located development site within an established commercial environment, with flexibility for a range of potential occupiers or investors.",
+    "location": "Willow End is located to the south of Great Malvern and east of Malvern Wells, in a rural location near the Three Counties Show Ground. Willow End is home to multiple office and warehouse buildings, including a recently built office/research facility. The business park is situated two and a half miles south of Great Malvern and eight and a half miles south west of Worcester. The area benefits from good transport communications with both Junction 1 of the M50 and Junction 7 of the M5 being accessible from the property. Great Malvern also benefits from a mainline railway station which provides direct access to Worcester, Hereford and London Paddington.",
+    "features": [
+      "0.64 acre",
+      "Freehold",
+      "Development opportunity subject to planning",
+      "Located on an established Business Park"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/7b5774a11bb4834b2f124c1948c3496b-letting346653.jpeg",
+      "https://as-images.imgix.net/20369ebd7df47f1cd239e78e32dd059f-letting346653.jpeg",
+      "https://as-images.imgix.net/a940225a85315e9033bb65b482f12351-letting346653.jpeg",
+      "https://as-images.imgix.net/86d7325de100e6d1d814ff8d0e3623aa-letting346653.jpeg",
+      "https://as-images.imgix.net/0a9f2aa167642ba37ee7d2fa6e1b4596-letting346653.jpeg",
+      "https://as-images.imgix.net/607a5ecde22a248584ec20ce524dcbe0-letting346653.jpeg",
+      "https://as-images.imgix.net/4b95380082fc2ec7f661a6324ec27ef1-letting346653.jpeg",
+      "https://as-images.imgix.net/e8218aab4048cd31b525e998a710be9c-letting346653.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/749b5056acd607c952b42e2a2af3d11e-letting346653.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 16:51:31"
+  },
+  {
+    "id": 360938,
+    "status": "Available",
+    "address": "Unit 1, Sentinel House",
+    "town": "Malvern",
+    "postcode": "WR14 1GL",
+    "lat": 52.12761,
+    "lon": -2.305339,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 29995,
+    "size_to_sqft": 29995,
+    "summary": "High Specification Warehouse with Secure Yard & Parking",
+    "description": "Unit 1 Sentinel House comprises a modern, detached warehouse that has been finished to a high standard.  The unit is of a steel portal frame construction, with there being a part brick-built frontage to encompass a reception area and office space.\n\n•\t8.5m to underside of haunch\n•\tSolid level concrete floor throughout\n•\tThree 4.5m x 6m up & over roller shutter doors\n•\tLoading / Unloading to the front, rear & side\n•\tThree phase power\n•\t52 allocated car parking spaces\n\nGround Floor Office 2,062 sq ft (191.60 sq m)\nFirst Floor Office 2,259 sq ft (209.88 sq m)\nWarehouse 21,786 sq ft (2,023.95 sq m)\nTotal Floor Area 26,107 sq ft (2,425.43 sq m)\n\nMezzanine Floor 3,888 sq ft (361.20 sq m)\nTotal Floor Area (inc Mezz.) 29,995 sq ft (2,786.63 sq m)",
+    "location": "Unit 1 Sentinel House is situated on Enigma Business Park, which is Malvern’s prime out of town business park being situated approximately two miles to the north of Great Malvern and being adjacent to the very popular Enigma Retail Park (where occupiers include Morrisons, Aldi & Marks & Spencer. \n\nMalvern benefits from having good transport communications with the A449 leading to Worcester city centre and the A440 connecting with Junction 7 of the M5 motorway which are both approximately five miles to the north-east.  Hereford city centre is 21 miles to the east with Gloucester being 26 miles south.",
+    "features": [
+      "26,107 sq ft (2,425.43 sq m) GIA Plus an additional 3,888 sq ft mezzanine area",
+      "Three roller shutter doors offering three different loading points – including a secure yard",
+      "8.5m to underside of haunch",
+      "52 car parking spaces",
+      "High quality airconditioned office space",
+      "Situated at the heart of Enigma Commercial Business Park, Malvern"
+    ],
+    "rent_psf": 7.83,
+    "rent_pa": 235000,
+    "rent": "£235,000 per annum",
+    "business_rates_psf": 79920,
+    "rateable_value": 144000,
+    "epc_rating": "C (68)",
+    "images": [
+      "https://as-images.imgix.net/8f1249d0a68c3e7b33e090a4bd36529b-aerial-front.JPG",
+      "https://as-images.imgix.net/94423f7d459504bf7af4ae698e1d9b44-warehouse.jpg",
+      "https://as-images.imgix.net/47e896b37718d9af791193cd75a34f19-office.jpg",
+      "https://as-images.imgix.net/045d3b4d07856399ea153ac62fe5c08e-top-down.JPG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/1ad2e8db468cad64f949c3209c9ce4a8-gjs-dillon-particulars-unit-1-sentinel-house-malvern.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 16:50:14"
+  },
+  {
+    "id": 363173,
+    "status": "Available",
+    "address": "Unit 12, The IO Centre",
+    "town": "Redditch",
+    "postcode": "B98 7AS",
+    "lat": 52.291602,
+    "lon": -1.913239,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 31834,
+    "size_to_sqft": 31834,
+    "summary": "Warehouse with Offices - to be refurbished",
+    "description": "Unit 12, The IO Centre is located on an established estate within Redditch.  The unit is to be refurbished once the current tenant has vacated. The property is available by way of a sublease from the outgoing occupier.",
+    "location": "The IO Centre is a premier industrial estate located on Nash Road. The property benefits from excellent road communications with Junction 3 of the M42 approximately seven miles to the north, which gives access to the M40, M5 and M6.\nThe estate is well managed, with recent upgrades including full redecoration of the external cladding, improvements to the estate lighting, and completion of road maintenance works.",
+    "features": [
+      "Unit 12 - 31,834 sq ft (2,958 sq m)",
+      "Two storey offices",
+      "9.5m eaves height",
+      "Four electric level loading doors",
+      "45 car parking spaces",
+      "40m deep yard",
+      "Palisade fenced / gated yard area",
+      "Kitchen and WC facilities"
+    ],
+    "rent_psf": 10.5,
+    "rent_pa": 334257,
+    "rent": "£10.50 per sq ft",
+    "business_rates_psf": 0,
+    "rateable_value": 226000,
+    "epc_rating": "C (66)",
+    "images": [
+      "https://as-images.imgix.net/0ef80a0612b24e462530ec5f74c03a66-dji-0963-1.JPG",
+      "https://as-images.imgix.net/29d2bd4b77dc0d7f0139d0627c167dd1-20260305-155606938-ios-1.jpg",
+      "https://as-images.imgix.net/bfb3c2abc6a1b6a1956b6a0ad690761f-20260305-155537789-ios-1.jpg",
+      "https://as-images.imgix.net/663d5b0d51ecae241d780c71832a9acd-20260305-154039807-ios-1.jpg",
+      "https://as-images.imgix.net/d43cbb5eaa3150c150c44e81ddad8d98-dji-0960-1.JPG",
+      "https://as-images.imgix.net/0c8350cc44b5aab23f46d24ffca57c62-20260305-154103412-ios-1.jpg",
+      "https://as-images.imgix.net/56506afb5460ead7d7c55d78686a6b9e-20260305-154231180-ios-1.jpg",
+      "https://as-images.imgix.net/7c4e55f0d38c3ffb7e8776261829c865-20260305-154026408-ios-1.jpg",
+      "https://as-images.imgix.net/32cd9ee956df0f9bac2bdd3f257e5167-20260305-153246138-ios-1.jpg",
+      "https://as-images.imgix.net/3829d675550ebf4d20ef1a455ce55e14-20260305-154649082-ios-1.jpg",
+      "https://as-images.imgix.net/1d2be7af7e3e92b50298bad4debeded7-20260305-153544892-ios-1.jpg",
+      "https://as-images.imgix.net/775a4ec4dd26fc7d6e1f0e5b9bd30383-20260305-153403734-ios-1.jpg",
+      "https://as-images.imgix.net/87df4c7797257860060099e878badfcb-20260305-154949770-ios-1.jpg",
+      "https://as-images.imgix.net/f8e2fc249fed9b15f48c2314d9943fc2-20260305-154839927-ios-1.jpg",
+      "https://as-images.imgix.net/d36b9fb3a9031ea6b9461adcce1c4d1b-20260305-153934754-ios-1.jpg",
+      "https://as-images.imgix.net/17edf7fbb891d5dbb20cdccef3d46e9e-20260305-153801490-ios-1.jpg",
+      "https://as-images.imgix.net/c605db316db470eb516a9ef48968976b-20260305-154322989-ios-1.jpg",
+      "https://as-images.imgix.net/ff1846d3aadad5d3399300a1c3b6a475-20260305-153819379-ios-1.jpg",
+      "https://as-images.imgix.net/cfe80fb0e9dedbff4ef7130948017110-20260305-154010189-ios-1.jpg",
+      "https://as-images.imgix.net/5acb370f9d176fb5e2be14fff92f0bfc-20260305-153632207-ios-1.jpg",
+      "https://as-images.imgix.net/7d7fe36d26d975a3fca833d23f9a1120-dji-0965-1.JPG",
+      "https://as-images.imgix.net/c6c617d1996a299d075094588fecfd43-dji-0964-1.JPG",
+      "https://as-images.imgix.net/bc03231046b886a627fb687802f785a2-dji-0959-1.JPG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6e05f47f66755b844db04e4f1244ce0e-the-io-centre-redditch-brochure-units-56-12-v2.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 16:49:07"
+  },
+  {
+    "id": 355287,
+    "status": "Available",
+    "address": "Building 314, Hartlebury Trading Estate",
+    "town": "Kidderminster",
+    "postcode": "DY10 4JB",
+    "lat": 52.33425067077,
+    "lon": -2.218800555603,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 43967,
+    "size_to_sqft": 43967,
+    "summary": "Modern warehouse/ manufacturing building",
+    "description": "The property comprises a modern warehouse/ manufacturing building incorporating good quality two storey offices with kitchen and breakout areas.\n\nExternally there is a large rear yard area which benefits from 30m depth.  To the front of the building is a substantial car parking area.",
+    "features": [],
+    "rent_psf": 7.75,
+    "rent_pa": 340589.25,
+    "rent": "£340,589.25 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "service_charge": "0.75",
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/c3e2f7b721efed6d652e01dac1a34afb-1.jpg",
+      "https://as-images.imgix.net/74b78cdf5295c21f27ab6178b0d0be03-2.jpg",
+      "https://as-images.imgix.net/bb5387e0009f727d298ddb4b0ae17fd0-3.jpg",
+      "https://as-images.imgix.net/8801eda635d4b17ba539b5306be6d09d-4.jpg",
+      "https://as-images.imgix.net/e441fd4d127315d80ff25afca4494ad8-5.jpg",
+      "https://as-images.imgix.net/c2dc9459e6c9b469ba67ee8cb7db355c-6.jpg",
+      "https://as-images.imgix.net/bb8354c873fae3b8471361738fde106b-7.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/15a2df3f2576826e247b2ee97a5a3423-gjs-dillon-particulars-building-314-hartlebury-trading-estate.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 16:43:51"
+  },
+  {
+    "id": 355283,
+    "status": "Available",
+    "address": "Hartlebury 45, Trading Estate",
+    "town": "Kidderminster",
+    "postcode": "DY10 4JB",
+    "lat": 52.334434235523,
+    "lon": -2.2188434709473,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 44804,
+    "size_to_sqft": 44804,
+    "summary": "Hartlebury 45 is a brand-new, portal-framed manufacturing and distribution warehouse with an integral first-floor office.",
+    "description": "Hartlebury 45 is a brand-new, portal-framed manufacturing and distribution warehouse with an integral first-floor office. The building offers a clear internal eaves height of 10 metres, a floor loading capacity of 50 kN/m and up to 800 kVA of power supply.\n\nThe fitted office accommodation provides raised access floors, suspended ceilings, recessed LED lighting, carpeting, and an electric VRF/VRV heating and cooling system. The warehouse benefits from two dock and two level access doors opening onto a 50-metre-deep secure yard, with 61 car parking spaces and 14 trailer bays.\n\nSustainability features include PV roof panels, electric vehicle charging points, and energy-efficient systems, complemented by full security lighting. Combining modern design, high specification, and excellent accessibility, Hartlebury 45 provides an exceptional opportunity for occupiers seeking a premium new-build facility situated on one of Worcestershire's premier industrial estates.",
+    "features": [
+      "61 Car Parking Spaces",
+      "10m Eaves",
+      "14 Trailer Bays",
+      "800 kVA of Power Supply"
+    ],
+    "rent_psf": 9,
+    "rent_pa": 403236,
+    "rent": "£403,236 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "service_charge": "0.75",
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/0a665d9c052e45b148478031234efd5e-1.jpg",
+      "https://as-images.imgix.net/697d24aa555aa6a04c0a4e412ebc5b58-2.jpg",
+      "https://as-images.imgix.net/8ef7f4d073834ab0bb0da23325479578-3.jpg",
+      "https://as-images.imgix.net/7372e8c681d3176c87ad60cc5319c793-4.jpg",
+      "https://as-images.imgix.net/daae49c7ee5bc6ffbe8059bb7e1d2f9f-5.jpg",
+      "https://as-images.imgix.net/4cab5cf9058f6096ab8866d38531df2b-6.jpg",
+      "https://as-images.imgix.net/bf4fc95e3d4a4c594ea79313e2c54b64-7.jpg",
+      "https://as-images.imgix.net/5a039ded0374291f0db9258070b953e0-8.jpg",
+      "https://as-images.imgix.net/c61155363c2b348dcb503a5761d76799-9.jpg"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 16:43:07"
+  },
+  {
+    "id": 346665,
+    "status": "Available",
+    "address": "Development Land at Trinity Vale Park",
+    "town": "Evesham",
+    "postcode": "WR11 1LB",
+    "lat": 52.070251464,
+    "lon": -1.934033036,
+    "types": [
+      "Development/Investment"
+    ],
+    "raw_types": [
+      "Development"
+    ],
+    "to_let": true,
+    "for_sale": true,
+    "size_from_sqft": 285000,
+    "size_to_sqft": 285000,
+    "summary": "Development  Land To Let or For Sale, Evesham",
+    "description": "Benefiting from planning consent, the site offers build to suit opportunity up to 285,000 sq ft. The units would be an ideal hub for logistics, distribution and manufacturing operations.",
+    "features": [
+      "Industrial / Distribution Units",
+      "Build to suit opportunities up to 285,000 sq ft",
+      "For Sale / To Let"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/7768c0dca718829492d9865e752931bd-letting346665.jpeg",
+      "https://as-images.imgix.net/3e64fd29b4c726a25d2066091477a7f6-letting346665.jpeg",
+      "https://as-images.imgix.net/0cc69c7d783904679a9bdb969033b55c-letting346665.jpeg",
+      "https://as-images.imgix.net/566b08cf590f979254bbfcd963ef081b-letting346665.jpeg",
+      "https://as-images.imgix.net/15d24b095f6307261a91354b04b7ecd9-letting346665.jpeg",
+      "https://as-images.imgix.net/c7da43866fe80825d19541d8d661c1fb-letting346665.jpeg",
+      "https://as-images.imgix.net/47775db1137b9b22fe07012de8ecceb4-letting346665.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/12d6a6b2e26c4eed3ee6953474a82855-letting346665.pdf",
+    "contacts": [
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 16:41:43"
+  },
+  {
+    "id": 346689,
+    "status": "Available",
+    "address": "Trinity, Vale Park",
+    "town": "Evesham",
+    "postcode": "WR11 1LB",
+    "lat": 52.070251464,
+    "lon": -1.934033036,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": true,
+    "size_from_sqft": 53879,
+    "size_to_sqft": 64806,
+    "summary": "Industrial To Let or For Sale, Evesham",
+    "description": "Modern high-performance units designed for efficiency, capacity and sustainability. Unit A - Warehouse 60,999 sq ft (5,667 sq m), Office 3,807 sq ft (354 sq m) - Total - 64,806 sq ft (6,021 sq m) Unit B - Warehouse 50,628 sq ft (4,704 sq m), Office 3,351 sq ft (311 sq m) - Total - 53,979 sq ft (5,015 sq m) Unit C - Warehouse 50,628 sq ft (4,701 sq m), Office 3,276 sq ft (304 sq m) - Total - 53,879 sq ft (5,005 sq m) All of the warehouses are EPC A rated and BREEAM Very Good. Please refer to the brochure for information on Dock Access Doors, Level Access Doors, Yard Depths, Clear Internal Heights, Warehouse Flooring, Floor Loadings, Power Supply and Parking (HGV, Car & EV).",
+    "location": "Trinity is a new site comprised of three units situated on Conference Way, within Vale Park, just off the A46, to the south of Evesham.",
+    "features": [
+      "Available for immediate occupation",
+      "Three units from 53,879 sq ft to 64,806 sq ft",
+      "Please refer to the brochure for further details on specification and journey times"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/b2261807ca3478fdca3ad5c132eb9ad2-letting346689.jpeg",
+      "https://as-images.imgix.net/1453d707075817893be5c10806c3c153-letting346689.jpeg",
+      "https://as-images.imgix.net/54718e2f3fe2a32556367970d5df01f9-letting346689.jpeg",
+      "https://as-images.imgix.net/7422247b677e49642a2d7cc2281a73fe-letting346689.jpeg",
+      "https://as-images.imgix.net/26cce4237522106a93318a6b21c8c079-letting346689.jpeg",
+      "https://as-images.imgix.net/4b19e8ad798c07a57b46023dca33adcf-letting346689.jpeg",
+      "https://as-images.imgix.net/a444904ce5a9b50a4903685b57fad77b-letting346689.jpeg",
+      "https://as-images.imgix.net/53d7c894e37ad7122904af7a3104b15b-letting346689.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/2285907c05a67032274db17b2ade08dc-letting346689.pdf",
+    "contacts": [
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 16:41:19"
+  },
+  {
+    "id": 350409,
+    "status": "Available",
+    "address": "Unit 2, Droitwich Enterprise Hub",
+    "town": "Droitwich Spa",
+    "postcode": "WR9 9RB",
+    "lat": 52.2740227,
+    "lon": -2.1566463,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial / Storage"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 4316,
+    "size_to_sqft": 4316,
+    "summary": "Refurbished Warehouse with Covered Yard/Parking",
+    "description": "The unit provides a spacious, refurbished open-plan warehouse/workshop with roller shutter and pedestrian access. Internally, the accommodation benefits from a newly installed kitchenette and WC facilities. To the front of the property is a secure covered yard area, offering versatile space suitable for parking or operational use.\n\nThe property also benefits from a substantial electricity supply (details available upon request), which will be a key advantage for power-intensive occupiers. In addition to this unit, larger units up to 10,000 sq ft (or the whole site) are available, providing flexibility to suit a wide range of requirements.\n\nWarehouse\t4,222 sq ft\t392.23  sq m\nToilets\t94      sq ft\t8.73       sq m\nTotal\t4,316 sq ft\t400.97  sq m",
+    "location": "The units are situated off the A38 at its junction with A442 (Kidderminster Road), with the A442 providing access to Droitwich town centre & Droitwich railway station (both under ½ mile south east of the subject).  The A38 provides direct access to Junction 5 of M5 motorway (two miles north) and Worcester (approximately six miles south).\n\nDroitwich is one of three towns in the district of Wychavon.  It has a thriving and vibrant business community with a resident population of circa 23,000.  Junction 5 of the M5 motorway is situated within 2 miles of the Town Centre, giving access to the M42 and the M6 Motorways beyond. Access to the space is via a service road off George Baylis Road.",
+    "features": [
+      "Total Gross Internal Area of 4,316 sq ft (400.97 sq m)",
+      "Secure covered yard/parking area",
+      "Substantial electricity supply",
+      "Located under two miles from Junction 5 of the M5 motorway",
+      "What3Words (chefs.cheese.sample)"
+    ],
+    "rent_psf": 7.18,
+    "rent_pa": 31000,
+    "rent": "£31,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/20b1c1ea03c546a21b11c18464def877-20251223-124626808-ios-1.jpg",
+      "https://as-images.imgix.net/38aa9b5078644de02ecfd16472ac5461-20251223-124742601-ios-1.jpg",
+      "https://as-images.imgix.net/17474a39d2d0fc4dab31c23758b1cc4b-20251223-124617235-ios-1.jpg",
+      "https://as-images.imgix.net/5e1c61c91a86784ae6db0d61f29eafa4-20251223-124750801-ios-1.jpg",
+      "https://as-images.imgix.net/e0225f9308b668575394b5dadb1e96c9-20251223-124804479-ios-1.jpg",
+      "https://as-images.imgix.net/652e2ad53016dc1666e13599d143b9f7-20251223-124826603-ios-1.jpg",
+      "https://as-images.imgix.net/2e4a59a81a7ab3d107bb67043ddef677-20251223-124815370-ios-1.jpg",
+      "https://as-images.imgix.net/55487570e80eb4ac2013ac35d0803012-20251223-124836744-ios-1.jpg"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 16:27:28"
+  },
+  {
+    "id": 346648,
+    "status": "Available",
+    "address": "The Old Mill",
+    "town": "Pershore",
+    "postcode": "WR10 1BY",
+    "lat": 52.11138916,
+    "lon": -2.082348108,
+    "types": [
+      "Retail",
+      "Office",
+      "Industrial"
+    ],
+    "raw_types": [
+      "Retail",
+      "Office",
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 5575,
+    "size_to_sqft": 5757,
+    "summary": "Retail / Office / Industrial To Let, Pershore",
+    "description": "The Old Mill comprises a large, detached commercial premises of traditional brick construction. The building has an open-plan retail sales area, which benefits from suspended LED lighting. Ancillary accommodation is provided at ground and first floor levels, including staff and storage areas, along with a mezzanine floor. There are approximately 20 car parking spaces. Ground Floor Sales3,400 sq ft315.87 sq m Ground Floor Ancillary 520 sq ft 48.31 sq m Mezzanine Area1,349 sq ft125.33 sq m First Floor Ancillary 306 sq ft 28.43 sq m Total5,575 sq ft 517.93 sq m",
+    "location": "Location The property is prominently located on New Road in Pershore, a well-connected Worcestershire market town approximately 10 miles from Worcester and 7 miles from Evesham. The Old Mill is positioned close to the River Avon and within easy walking distance of Pershore town centre. The location benefits from good transport links, including nearby access to the A44 and Pershore railway station with services to Worcester, Oxford and London.",
+    "features": [
+      "Suitable for a variety of uses",
+      "Ground and first floor space",
+      "On site car parking",
+      "Good access to the A44, leading to the M5 motorway"
+    ],
+    "rent_psf": 5.02,
+    "rent_pa": 28000,
+    "rent": "£28,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/23387c8a7ce3b5b7fe2a131ab060c4f7-letting346648.jpeg",
+      "https://as-images.imgix.net/3e32dbaedb4939efef5d6832670c92cc-letting346648.jpeg",
+      "https://as-images.imgix.net/209a69c9adf175d282719bed4e21ecef-letting346648.jpeg",
+      "https://as-images.imgix.net/a70f037aa6b30150aff0c933cbe197ef-letting346648.jpeg",
+      "https://as-images.imgix.net/fae4d88addd61870797e6b9a1473a0f7-letting346648.jpeg",
+      "https://as-images.imgix.net/434f2a7a885c6a94b66e25a64e2d0fcf-letting346648.jpeg",
+      "https://as-images.imgix.net/90e27364575128aa53e3d53c3c11b5cc-letting346648.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6a207975ae15e397dfa5dbdbf0df0063-letting346648.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 16:05:09"
+  },
+  {
+    "id": 350918,
+    "status": "Available",
+    "address": "Unit 13a, St Richards Road",
+    "town": "Evesham",
+    "postcode": "WR11 1XJ",
+    "lat": 52.080721,
+    "lon": -1.944174,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial / Storage"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 10915,
+    "size_to_sqft": 10915,
+    "summary": "Warehouse / industrial unit with offices",
+    "description": "13A St. Richards Road comprises a detached industrial / warehouse property that is situated on the Four Pools Industrial Estate.  The property is accessed directly off St. Richards Road and occupies a predominant position within the wider industrial estate.\n\nInternally the property offers a large, rectangular industrial / warehouse area of the ground floor, which benefits from a minimum eaves height of 5.7m and a maximum eaves height of 7.7m.  The warehouse is accessed via four roller shutter doors and a pedestrian door, along with access from the office space.\n\nThe office accommodation is situated to the front of the building and is arranged over the ground and first floors.  At ground floor level there is an open plan office, WC and kitchen.  At first floor level there are two further WCs, a meeting room, office and storage area.\n\nExternally the property benefits from a large, secure yard, which offers parking, loading / unloading space and space to turn vehicles within.  There is also an open storage area to the rear of the building.\n\nGround Floor Warehouse 9,197 sq ft 854.37 sq m\nGround Floor Offices 859 sq ft 79.81 sq m \nFirst Floor Offices 859 sq ft 79.81 sq m\nTotal 10,915 sq ft 1,013.99 sq m",
+    "location": "The property is situated within Evesham, to the south east of Worcestershire.  Evesham is a market town within Wychavon which benefits from a population of approximately 25,000, according to the 2011 census.  It is located approximately 14 miles south east of Worcester, 14 miles north east of Cheltenham, 27 miles south of Birmingham and 90 miles north west of London.\n\nEvesham benefits from good road communications being on the A44; which provides access to Worcester, Oxford and Junction 6 of the M5 motorway (in approximately 25 minutes) and on the A46; which provides access to Redditch, Tewkesbury and Junction 9 of the M5 motorway (in approximately 20 minutes). Evesham also has a mainline station which provides a direct access to the Worcester stations, Oxford and London Paddington.",
+    "features": [
+      "10,915 sq ft (1,013 sq m) GIA",
+      "Minimum eaves height 5.7m",
+      "Maximum eaves height 7.7m",
+      "Warehouse access via 4 roller shutter doors",
+      "Large secure yard"
+    ],
+    "rent_psf": 6.87,
+    "rent_pa": 75000,
+    "rent": "£75,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/651f99fb20a9c50625e8c72eb69ca2a6-20250110-112721.jpg",
+      "https://as-images.imgix.net/f5e96c25b5568fbf6cc3dbfd1d9c586f-20250110-112658.jpg",
+      "https://as-images.imgix.net/c868fd4436d00757c8fd802d5a7e4445-20250110-100648.jpg",
+      "https://as-images.imgix.net/992dfd5951d90ac6acc94184d2512a89-cam04581g0-pr0017-still004.jpg",
+      "https://as-images.imgix.net/d427769e14b3fba6626c41b3eb61cede-cam04581g0-pr0017-still003-1.jpg",
+      "https://as-images.imgix.net/e3549552789a4cb93163b91c1683c20b-cam04581g0-pr0017-still001-1.jpg",
+      "https://as-images.imgix.net/c881be2aadb25ee2ab6e87b7d467ed5c-cam04581g0-pr0017-still002.jpg",
+      "https://as-images.imgix.net/ab9072edf4a682209d5fbccad6b747e4-20250110-111848.jpg",
+      "https://as-images.imgix.net/e56ba103ae52be35219f235cba1cb429-20250110-112029.jpg",
+      "https://as-images.imgix.net/b654121edce18a110401f42305e1c9b6-20250110-112419.jpg",
+      "https://as-images.imgix.net/b54a0dc61220366570e2a147f56af7b8-20250110-112246.jpg",
+      "https://as-images.imgix.net/50a34bf4f59c9c37c5c2bcb1f0fa6a31-20250110-105232.jpg",
+      "https://as-images.imgix.net/5ec5e815e0535326a76a26620c821fc5-20250110-112419.jpg"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 15:51:37"
+  },
+  {
+    "id": 346769,
+    "status": "Under Offer",
+    "address": "Unit 7, Wassage Way South",
+    "town": "Droitwich Spa",
+    "postcode": "WR9 0NX",
+    "lat": 52.284690856,
+    "lon": -2.168148994,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 11764,
+    "size_to_sqft": 11764,
+    "summary": "Commercial Warehouse with Office Space",
+    "description": "7 Wassage Way comprises a pair of semi-detached warehouse units, current laid out and occupied as one single premises, with associated office accommodation towards the front with an ample on-site car parking provision. The building is of steel portal framed construction with brick and blockwork elevations to low level and metal cladding above, beneath a shallow metal-clad pitched roof, with intermittent translucent rooflights. The warehouse has been fitted out with modern LED lighting along with new heating. To the front of the building is a single storey office with cavity brick elevations and a pitched tiled roof. The property includes WC and kitchen facilities as well as mezzanine storage areas within the warehouse. The property benefits from having approximately 12 car parking spaces to the front of the building. \nWarehouse and Offices 10,032 sq ft 932 sq m \nMezzanine Storage 1,152 sq ft 161 sq m \nTotal 11,764 sq ft 1,093 sq m",
+    "location": "The property is situated on Hampton Lovett Industrial Estate to the north of Droitwich Spa. Droitwich is situated approximately seven miles to the north east of Worcester, six miles south west of Bromsgrove and 18 miles south west of Birmingham city centre. The town is situated immediately adjacent to the M5 with Junction 5 being approximately three miles from the property - this providing access north to the M42, M6 and wider national motorway network. Droitwich also benefits from a mainline railway station which provides direct access to Worcester and Birmingham New Street Stations.",
+    "features": [
+      "LED lighting the warehouse",
+      "Mezzanine storage area",
+      "12 car parking spaces to the front of the property"
+    ],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/e20d20c4d3ab916efb9ba8f9a62348fd-letting346769.jpeg",
+      "https://as-images.imgix.net/6a3fcebe08646856b8f348ed4e432323-letting346769.jpeg",
+      "https://as-images.imgix.net/9fefd1571df24b428c3d83cbf4af9533-letting346769.jpeg",
+      "https://as-images.imgix.net/13760fc6c23e06cf461c0a0d18c7d4d4-letting346769.jpeg",
+      "https://as-images.imgix.net/38681146950aa6bde1b9eea139ad0447-letting346769.jpeg",
+      "https://as-images.imgix.net/10744a78ad649ba68b5372419fb2e286-letting346769.jpeg",
+      "https://as-images.imgix.net/9bb444b6bf287cb571b18af0b1f23bb6-letting346769.jpeg",
+      "https://as-images.imgix.net/2d8897a6b9c0c4887b4084362e8f0909-letting346769.jpeg",
+      "https://as-images.imgix.net/546b8e8e18743c937ecdaf4ce56f205e-letting346769.jpeg",
+      "https://as-images.imgix.net/740845b6e0ab0f7b1d50f81ed7bdf09a-letting346769.jpeg",
+      "https://as-images.imgix.net/dc574ccdc761eb912f59595091c60ce8-letting346769.jpeg",
+      "https://as-images.imgix.net/da22256d03170b84022318c797a0758f-letting346769.jpeg"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 15:49:14"
+  },
+  {
+    "id": 346680,
+    "status": "Available",
+    "address": "Nailers Yard",
+    "town": "Bromsgrove",
+    "postcode": "B61 8QT",
+    "lat": 52.334415435,
+    "lon": -2.063618898,
+    "types": [
+      "Office",
+      "Retail"
+    ],
+    "raw_types": [
+      "Office",
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1000,
+    "size_to_sqft": 12088,
+    "summary": "Office / Retail To Let, Bromsgrove",
+    "description": "Nailers Yard is an upcoming mixed-use development in the heart of Bromsgrove, set to transform the former Market Hall site into a vibrant commercial, cultural, and community destination. Scheduled for completion by early 2026, the project is a key part of Bromsgrove District Council's regeneration strategy. The commercial building is a standalone structure offering premium office space, ground-floor restaurant space, and a rooftop food and drink outlet. This addition is expected to enhance Bromsgrove's night-time economy and attract both new and established businesses. The total office space being delivered is 12,088 sq ft (1,123 sq m) and suites are being offered from 1,000 sq ft to single floors of circa 6,000 sq ft, or multiple floors for large companies. The total restaurant space is 3,574 sq ft (332 sq m) and is situated over the ground and top floors. Floor plans are available on request. Please contact us with your size requirement and we'd be delighted to show you how your business can be proudly located at Nailers Yard.",
+    "location": "Set in the heart of Worcestershire, Bromsgrove is a town blending heritage charm with contemporary growth. Just 30 minutes from Birmingham and with easy access to the M5, M42, and direct rail links, Bromsgrove offers exceptional connectivity for ambitious businesses. Bromsgrove is home to a growing, affluent population and a thriving local economy, making it a compelling location for both office occupiers and hospitality operators. The town's latest regeneration project, Nailers Yard, is at the centre of this transformation. With bold new spaces designed for work, culture, and cuisine, it offers a fresh canvas for operators seeking high footfall, community engagement, and standout design in a one-of-a-kind setting.",
+    "features": [
+      "Office space arranged over 1st, 2nd and 3rd Floors",
+      "Food and beverage opportunities over the ground, 3rd floors and roof top space",
+      "Bromsgrove town centre location"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/5e420e923e0975cd096a6bb0df64a8ff-letting346680.jpeg",
+      "https://as-images.imgix.net/021f2a59f0438efc4e9bf6bd98dc95c9-letting346680.jpeg",
+      "https://as-images.imgix.net/e23f97371fee1b4c39eef319bfa05567-letting346680.jpeg"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 15:47:42"
+  },
+  {
+    "id": 346823,
+    "status": "Available",
+    "address": "Unit 1, Copcut Business Park",
+    "town": "Droitwich",
+    "postcode": "WR9 7LU",
+    "lat": 52.252487182,
+    "lon": -2.168159008,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 18000,
+    "size_to_sqft": 18000,
+    "summary": "Industrial To Let, Droitwich",
+    "description": "New build industrial warehouse unit with ancillary office accommodation Copcut Business Park is a proposed mixed use scheme including Sainsbury's Local store, Costa Coffee Drive-Thru, 8 vehicle ultra-rapid charging centre and two industrial units including a self-storage facility and office / meeting space solutions. Unit 1 is a high specification industrial warehouse proposed to be built for completion Q4 2024 and is to provide : - Industrial warehouse with steel clad elevations and roof including translucent roof lights - Ground floor offices with toilets - First floor mezzanine - Floor loading of 50KN/M sq - Concrete floor - 8m to underside of haunch - 2 x electric roller shutter doors - Self-contained concrete yard area - 25 car parking spaces",
+    "location": "Copcut Business Park is located overlooking the main A38 Copcut island, accessed via Copcut Boulevard off Roman Way, Droitwich. The site provides immediate access to Droitwich Town Centre approximately 1 mile distant with Worcester City Centre approximately 6 miles distant via the main A38. The A38 also provides direct access to J5 M5 approximately 5 miles distant, in turn leading to the M42, M40 and National Motorway Network.",
+    "features": [],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/229ca8934c4d50da4d7d994cc2e87a77-letting346823.jpeg",
+      "https://as-images.imgix.net/f6ac0d1aca8e9f756e74117de75fd5d3-letting346823.jpeg",
+      "https://as-images.imgix.net/e9f69c23a2ebeb8ce57f3bc8e06f18d7-letting346823.jpeg",
+      "https://as-images.imgix.net/966b6cfcaf0cc6c9f88c90d57ae8a2fc-letting346823.jpeg",
+      "https://as-images.imgix.net/48b2e09f55b9aed19b59b5b173afd431-letting346823.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/ab175056e01a9a2e539520313077bdbe-letting346823.pdf",
+    "contacts": [
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Susanne Phipps",
+        "email": "susannephipps@gjsdillon.co.uk",
+        "phone": "",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 15:46:35"
+  },
+  {
+    "id": 346824,
+    "status": "Available",
+    "address": "Unit 1, Copcut Business Park",
+    "town": "Droitwich",
+    "postcode": "WR9 7LU",
+    "lat": 52.252487182,
+    "lon": -2.168159008,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 18000,
+    "size_to_sqft": 18000,
+    "summary": "Industrial For Sale, Droitwich",
+    "description": "New build industrial warehouse unit with ancillary office accommodation Copcut Business Park is a proposed mixed use scheme including Sainsbury's Local store, Costa Coffee Drive-Thru, 8 vehicle ultra-rapid charging centre and two industrial units including a self-storage facility and office / meeting space solutions. Unit 1 is a high specification industrial warehouse proposed to be built for completion Q4 2024 and is to provide: - Industrial warehouse with steel clad elevations and roof including translucent roof lights - Ground floor offices with toilets - First floor mezzanine - Floor loading of 50KN/M sq - Concrete floor - 8m to underside of haunch - 2 x electric roller shutter doors - Self-contained concrete yard area - 25 car parking spaces",
+    "location": "Copcut Business Park is located overlooking the main A38 Copcut island, accessed via Copcut Boulevard off Roman Way, Droitwich. The site provides immediate access to Droitwich Town Centre approximately 1 mile distant with Worcester City Centre approximately 6 miles distant via the main A38. The A38 also provides direct access to J5 M5 approximately 5 miles distant, in turn leading to the M42, M40 and National Motorway Network.",
+    "features": [],
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/48b0702a5a39ef7872e6b564d8f9fa1f-letting346824.jpeg",
+      "https://as-images.imgix.net/0935b6c88a4b90c9b20abd05e1b90a85-letting346824.jpeg",
+      "https://as-images.imgix.net/be45eba2571fb9a0645555912440e080-letting346824.jpeg",
+      "https://as-images.imgix.net/5efe1b26cbe96d8830c50b486978ba05-letting346824.jpeg",
+      "https://as-images.imgix.net/7feb970e834e5b1f55d61ffca45cdb2c-letting346824.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/cc3900e8390181e41ce6bafaedf7d0d4-letting346824.pdf",
+    "contacts": [
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-05-27 15:43:37"
+  },
+  {
     "id": 360553,
     "status": "Available",
     "address": "Ground Floor, 1 King Street",
@@ -288,64 +1716,6 @@
     "last_updated": "2026-05-26 11:27:37"
   },
   {
-    "id": 346652,
-    "status": "Under Offer",
-    "address": "St. Dunstan's Building",
-    "town": "Worcester",
-    "postcode": "WR1 3PA",
-    "lat": 52.193748474,
-    "lon": -2.224364995,
-    "types": [
-      "Office",
-      "Development/Investment"
-    ],
-    "raw_types": [
-      "Office",
-      "Development"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 19726,
-    "size_to_sqft": 19726,
-    "summary": "Office / Development / Development For Sale, Worcester",
-    "description": "The accommodation currently provides a mixture of large partitioned working areas with some individual offices. The specification of the property includes; > Air handling / air conditioning > Strip lighting / suspended ceilings with integral lighting > Ground floor kitchen area > 13 person passenger lift > WCs on all floors > An outside seating area > On site car parking",
-    "location": "Butts, just off the main A44 which forms part of the circular routes for Worcester City Centre. To the east of the property is is the main shopping/entertainment areas for Worcester whilst to the west is the picturesque River Severn. Worcester, in the West Midlands, is located 31 miles south east of Birmingham, 27 miles north of Gloucester and 23 miles north east of Hereford. Worcester has excellent connectivity being to the west of junctions 6 and 7 of the M5 motorway leading to the M42 and M6. Worcester also has direct mainline rail links to both Birmingham and London.",
-    "features": [
-      "For Sale - Offers in excess of ¬£2,950,000",
-      "St Dunstan's Building is a well located property to the west of Worcester City Centre",
-      "Constructed to suit a variety of uses (subject to planning)",
-      "To be offered with vacant possession with the HoW College relocating within the city"
-    ],
-    "business_rates_psf": 87690,
-    "rateable_value": 158000,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/098bdf0b907b5d8306a0fb1a953f5ac5-letting346652.jpeg",
-      "https://as-images.imgix.net/3e271cca0d8505975b6ac96592611f39-letting346652.jpeg",
-      "https://as-images.imgix.net/2c5cbed13289e2f3584cf42827a03015-letting346652.jpeg",
-      "https://as-images.imgix.net/828b06cf17ed29c0bcb9526178826448-letting346652.jpeg",
-      "https://as-images.imgix.net/49c222d873985cc5222358c5b741005d-letting346652.jpeg",
-      "https://as-images.imgix.net/59b5fc1d1ba72532eb9d1ca9b5c9f850-letting346652.jpeg",
-      "https://as-images.imgix.net/5f85668ecbe49422f93ea40acf7f7b29-letting346652.jpeg",
-      "https://as-images.imgix.net/6673663acb959c4eb2af1ad95c2ca02e-letting346652.jpeg",
-      "https://as-images.imgix.net/6e1b28b41af2e5b991c05d7b48619809-letting346652.jpeg",
-      "https://as-images.imgix.net/ac70cde60a66dbd0d6fff9df28d51419-letting346652.jpeg",
-      "https://as-images.imgix.net/e9d5210f42bc42b0b1bf310ade7fa354-letting346652.jpeg",
-      "https://as-images.imgix.net/057f9fd8cc26550d969b63374eb00902-letting346652.jpeg"
-    ],
-    "contacts": [
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-19 14:27:26"
-  },
-  {
     "id": 372990,
     "status": "Available",
     "address": "Unit 10A and 11, Arden Business Centre",
@@ -534,68 +1904,6 @@
     "last_updated": "2026-05-12 10:51:30"
   },
   {
-    "id": 360938,
-    "status": "Available",
-    "address": "Unit 1, Sentinel House",
-    "town": "Malvern",
-    "postcode": "WR14 1GL",
-    "lat": 52.12761,
-    "lon": -2.305339,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 29995,
-    "size_to_sqft": 29995,
-    "summary": "High Specification Warehouse with Secure Yard & Parking",
-    "description": "Unit 1 Sentinel House comprises a modern, detached warehouse that has been finished to a high standard.  The unit is of a steel portal frame construction, with there being a part brick-built frontage to encompass a reception area and office space.\n\n•\t8.5m to underside of haunch\n•\tSolid level concrete floor throughout\n•\tThree 4.5m x 6m up & over roller shutter doors\n•\tLoading / Unloading to the front, rear & side\n•\tThree phase power\n•\t52 allocated car parking spaces\n\nGround Floor Office 2,062 sq ft (191.60 sq m)\nFirst Floor Office 2,259 sq ft (209.88 sq m)\nWarehouse 21,786 sq ft (2,023.95 sq m)\nTotal Floor Area 26,107 sq ft (2,425.43 sq m)\n\nMezzanine Floor 3,888 sq ft (361.20 sq m)\nTotal Floor Area (inc Mezz.) 29,995 sq ft (2,786.63 sq m)",
-    "location": "Unit 1 Sentinel House is situated on Enigma Business Park, which is Malvern’s prime out of town business park being situated approximately two miles to the north of Great Malvern and being adjacent to the very popular Enigma Retail Park (where occupiers include Morrisons, Aldi & Marks & Spencer. \n\nMalvern benefits from having good transport communications with the A449 leading to Worcester city centre and the A440 connecting with Junction 7 of the M5 motorway which are both approximately five miles to the north-east.  Hereford city centre is 21 miles to the east with Gloucester being 26 miles south.",
-    "features": [
-      "26,107 sq ft (2,425.43 sq m) GIA Plus an additional 3,888 sq ft mezzanine area",
-      "Three roller shutter doors offering three different loading points – including a secure yard",
-      "8.5m to underside of haunch",
-      "52 car parking spaces",
-      "High quality airconditioned office space",
-      "Situated at the heart of Enigma Commercial Business Park, Malvern"
-    ],
-    "rent_psf": 7.83,
-    "rent_pa": 235000,
-    "rent": "£235,000 per annum",
-    "business_rates_psf": 79920,
-    "rateable_value": 144000,
-    "epc_rating": "C (68)",
-    "images": [
-      "https://as-images.imgix.net/8f1249d0a68c3e7b33e090a4bd36529b-aerial-front.JPG",
-      "https://as-images.imgix.net/94423f7d459504bf7af4ae698e1d9b44-warehouse.jpg",
-      "https://as-images.imgix.net/47e896b37718d9af791193cd75a34f19-office.jpg",
-      "https://as-images.imgix.net/045d3b4d07856399ea153ac62fe5c08e-top-down.JPG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/1ad2e8db468cad64f949c3209c9ce4a8-gjs-dillon-particulars-unit-1-sentinel-house-malvern.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-12 09:39:47"
-  },
-  {
     "id": 346754,
     "status": "Available",
     "address": "One Kings Court",
@@ -651,65 +1959,6 @@
       }
     ],
     "last_updated": "2026-05-08 14:50:46"
-  },
-  {
-    "id": 350693,
-    "status": "Available",
-    "address": "Sterling House,  Willow End Park",
-    "town": "Malvern",
-    "postcode": "WR13 6NN",
-    "lat": 52.07531,
-    "lon": -2.298809,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Business Park",
-      "Office"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 8530,
-    "size_to_sqft": 8530,
-    "summary": "A modern, detached, purpose-built two storey office building.",
-    "description": "The property comprises a modern, detached, purpose-built two storey office building of brick and block cavity construction beneath a pitched tiled roof. The accommodation provides high quality offices across both floors, featuring suspended ceilings, inset lighting, air conditioning, and perimeter trunking throughout. \n\nThe first-floor tenant is currently holding over, providing an opportunity to capture a lease renewal. The ground floor is currently vacant and can be occupied as a whole or split into two  self-contained suites, offering flexibility for an owner-occupier or investor seeking to add value through letting. Each floor benefits from its own kitchen and male and female WCs, with services separately metered and independent boilers serving each part.\n\nAlternative Use Potential With minor alterations, the building is also suitable, in part, for Use Class B8 (Storage and Distribution). It would particularly suit the distribution of small, high-value goods via courier services, catering to growing demand for flexible, high-quality last-mile distribution space.",
-    "location": "Willow End is located to the south of Great Malvern and east of Malvern Wells, in a rural location near the Three Counties Show Ground. Willow End is home to multiple office and warehouse buildings, including a recently built office/research facility. The business park is situated two and a half miles south of Great Malvern and eight and a half miles south west of Worcester. \n\nThe area benefits from good transport communications with both Junction 1 of the M50 and Junction 7 of the M5 being accessible from the property. Great Malvern also benefits from a mainline railway station which provides direct access to Worcester, Hereford and London Paddington.",
-    "features": [
-      "Opportunity to capture lease renewal.",
-      "Vacant ground floor.",
-      "Located in a popular business park.",
-      "Freehold"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "C (57)",
-    "images": [
-      "https://as-images.imgix.net/43c0fc0fa75e1343e08e2a4bf48f2bb6-dji-0869.JPG",
-      "https://as-images.imgix.net/49abdaf47064567e9cb733b3ac3ccc5f-dji-0867.JPG",
-      "https://as-images.imgix.net/ca26d58c32c1bb9e6a95a36911fb3024-20250529-093314264-ios.jpg",
-      "https://as-images.imgix.net/3532362163d6bce4361890f2c13d3b43-20250529-093153234-ios.jpg",
-      "https://as-images.imgix.net/b311dd274da22620a7b4310a018b8524-20250529-093607049-ios.jpg",
-      "https://as-images.imgix.net/032bafc5a3813d0eb22b7aede77fa6fc-20250529-093345734-ios.jpg",
-      "https://as-images.imgix.net/0bfac624e3a167267bcdf7efe7e6b0d1-20251023-095746400-ios.jpg",
-      "https://as-images.imgix.net/c43f68b4faae0553de91c547a8480406-20251023-102006346-ios.jpg",
-      "https://as-images.imgix.net/40070fb5ea7eff13c103a1d6862127e3-20251023-103407268-ios.jpg",
-      "https://as-images.imgix.net/037a517f945833e626fa85898ea2b227-dji-0876.JPG",
-      "https://as-images.imgix.net/391b0df2b4188bef932a7967de37bbae-dji-0875.JPG",
-      "https://as-images.imgix.net/5a50da7f22208504773ab4041005ae7e-dji-0873.JPG",
-      "https://as-images.imgix.net/1bedc0b97b9e5af7c270b2c573b60581-dji-0877.JPG",
-      "https://as-images.imgix.net/70da0baaf8d40b90b5704a2cb8359b25-street-view-disposal-350693.jpg"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-08 14:48:50"
   },
   {
     "id": 346668,
@@ -814,115 +2063,6 @@
       }
     ],
     "last_updated": "2026-05-08 14:39:40"
-  },
-  {
-    "id": 346689,
-    "status": "Available",
-    "address": "Trinity, Vale Park",
-    "town": "Evesham",
-    "postcode": "WR11 1LB",
-    "lat": 52.070251464,
-    "lon": -1.934033036,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": true,
-    "size_from_sqft": 53879,
-    "size_to_sqft": 64806,
-    "summary": "Industrial To Let or For Sale, Evesham",
-    "description": "Modern high-performance units designed for efficiency, capacity and sustainability. Unit A - Warehouse 60,999 sq ft (5,667 sq m), Office 3,807 sq ft (354 sq m) - Total - 64,806 sq ft (6,021 sq m) Unit B - Warehouse 50,628 sq ft (4,704 sq m), Office 3,351 sq ft (311 sq m) - Total - 53,979 sq ft (5,015 sq m) Unit C - Warehouse 50,628 sq ft (4,701 sq m), Office 3,276 sq ft (304 sq m) - Total - 53,879 sq ft (5,005 sq m) All of the warehouses are EPC A rated and BREEAM Very Good. Please refer to the brochure for information on Dock Access Doors, Level Access Doors, Yard Depths, Clear Internal Heights, Warehouse Flooring, Floor Loadings, Power Supply and Parking (HGV, Car & EV).",
-    "location": "Trinity is a new site comprised of three units situated on Conference Way, within Vale Park, just off the A46, to the south of Evesham.",
-    "features": [
-      "Available for immediate occupation",
-      "Three units from 53,879 sq ft to 64,806 sq ft",
-      "Please refer to the brochure for further details on specification and journey times"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/b2261807ca3478fdca3ad5c132eb9ad2-letting346689.jpeg",
-      "https://as-images.imgix.net/1453d707075817893be5c10806c3c153-letting346689.jpeg",
-      "https://as-images.imgix.net/54718e2f3fe2a32556367970d5df01f9-letting346689.jpeg",
-      "https://as-images.imgix.net/7422247b677e49642a2d7cc2281a73fe-letting346689.jpeg",
-      "https://as-images.imgix.net/26cce4237522106a93318a6b21c8c079-letting346689.jpeg",
-      "https://as-images.imgix.net/4b19e8ad798c07a57b46023dca33adcf-letting346689.jpeg",
-      "https://as-images.imgix.net/a444904ce5a9b50a4903685b57fad77b-letting346689.jpeg",
-      "https://as-images.imgix.net/53d7c894e37ad7122904af7a3104b15b-letting346689.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/2285907c05a67032274db17b2ade08dc-letting346689.pdf",
-    "contacts": [
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-08 14:07:57"
-  },
-  {
-    "id": 346680,
-    "status": "Available",
-    "address": "Nailers Yard",
-    "town": "Bromsgrove",
-    "postcode": "B61 8QT",
-    "lat": 52.334415435,
-    "lon": -2.063618898,
-    "types": [
-      "Office",
-      "Retail"
-    ],
-    "raw_types": [
-      "Office",
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1000,
-    "size_to_sqft": 12088,
-    "summary": "Office / Retail To Let, Bromsgrove",
-    "description": "Nailers Yard is an upcoming mixed-use development in the heart of Bromsgrove, set to transform the former Market Hall site into a vibrant commercial, cultural, and community destination. Scheduled for completion by early 2026, the project is a key part of Bromsgrove District Council's regeneration strategy. The commercial building is a standalone structure offering premium office space, ground-floor restaurant space, and a rooftop food and drink outlet. This addition is expected to enhance Bromsgrove's night-time economy and attract both new and established businesses. The total office space being delivered is 12,088 sq ft (1,123 sq m) and suites are being offered from 1,000 sq ft to single floors of circa 6,000 sq ft, or multiple floors for large companies. The total restaurant space is 3,574 sq ft (332 sq m) and is situated over the ground and top floors. Floor plans are available on request. Please contact us with your size requirement and we'd be delighted to show you how your business can be proudly located at Nailers Yard.",
-    "features": [
-      "Office space arranged over 1st, 2nd and 3rd Floors",
-      "Food and beverage opportunities over the ground, 3rd floors and roof top space",
-      "Bromsgrove town centre location"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/5e420e923e0975cd096a6bb0df64a8ff-letting346680.jpeg",
-      "https://as-images.imgix.net/021f2a59f0438efc4e9bf6bd98dc95c9-letting346680.jpeg",
-      "https://as-images.imgix.net/e23f97371fee1b4c39eef319bfa05567-letting346680.jpeg"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-08 12:12:05"
   },
   {
     "id": 346703,
@@ -1271,188 +2411,6 @@
       }
     ],
     "last_updated": "2026-05-07 16:10:15"
-  },
-  {
-    "id": 355287,
-    "status": "Available",
-    "address": "Building 314, Hartlebury Trading Estate",
-    "town": "Kidderminster",
-    "postcode": "DY10 4JB",
-    "lat": 52.33425067077,
-    "lon": -2.218800555603,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 43967,
-    "size_to_sqft": 43967,
-    "summary": "Modern warehouse/ manufacturing building",
-    "description": "The property comprises a modern warehouse/ manufacturing building incorporating good quality two storey offices with kitchen and breakout areas.\n\nExternally there is a large rear yard area which benefits from 30m depth.  To the front of the building is a substantial car parking area.",
-    "features": [],
-    "rent_psf": 7.75,
-    "rent_pa": 340589.25,
-    "rent": "£340,589.25 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "service_charge": "0.75",
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/c3e2f7b721efed6d652e01dac1a34afb-1.jpg",
-      "https://as-images.imgix.net/74b78cdf5295c21f27ab6178b0d0be03-2.jpg",
-      "https://as-images.imgix.net/bb5387e0009f727d298ddb4b0ae17fd0-3.jpg",
-      "https://as-images.imgix.net/8801eda635d4b17ba539b5306be6d09d-4.jpg",
-      "https://as-images.imgix.net/e441fd4d127315d80ff25afca4494ad8-5.jpg",
-      "https://as-images.imgix.net/c2dc9459e6c9b469ba67ee8cb7db355c-6.jpg",
-      "https://as-images.imgix.net/bb8354c873fae3b8471361738fde106b-7.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/15a2df3f2576826e247b2ee97a5a3423-gjs-dillon-particulars-building-314-hartlebury-trading-estate.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-07 15:00:06"
-  },
-  {
-    "id": 353370,
-    "status": "Under Offer",
-    "address": "Development Site on Elm Road",
-    "town": "Worcester",
-    "postcode": "WR2 5JS",
-    "lat": 52.193804,
-    "lon": -2.232411,
-    "types": [
-      "Car Park",
-      "Development/Investment",
-      "Industrial"
-    ],
-    "raw_types": [
-      "Car Park",
-      "Development Land",
-      "Development Site",
-      "Industrial Land",
-      "Land",
-      "Open Storage",
-      "Yard"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 20865.24,
-    "size_to_sqft": 20865.24,
-    "summary": "Development site on Elm Road, Worcester",
-    "description": "Elm Road is a small cul-de-sac that adjoins Hylton Road (A443) – one of the main arterial roads to the west of Worcester, which runs southwards to Worcester city centre and other main access routes in and out of the city.  The site sits at the western end of Elm Road, which we assume it has uninterrupted access over.\n\nThere were previously multiple industrial units on the site, all of which have now been demolished leaving a clear site which we note is free from contamination.  Planning permission has been granted under reference 19/00614/FUL for: Demolish existing unit 1,2 and 5 and replace with a new 2 storey building for commercial storage (Use class B8).\n\nThe proposed development extends to 17,061 sq ft",
-    "location": "Elm Road is located in Worcester city centre.  Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London.  Worcester has excellent access to the M5 motorway, which lies adjacent to the subject property with Junction 7 being approximately one and a half miles drive south.  The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network.\n\nWorcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
-    "features": [
-      "Site area 0.479 acres",
-      "Proposed development extends to 17,061 sq ft (1,585 sq m)",
-      "Planning permission granted for a 2 storey building for commercial storage (use class B8) Reference 19/00614/FUL",
-      "Walking distance to city centre",
-      "Excellent links to the national motorway networks"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/c5f5b31034ae208463e8a6c06ea2305e-proposed-plan-2.jpg",
-      "https://as-images.imgix.net/da749ddf479a391ca7d80a10a4bf3cc5-img-4042.JPG",
-      "https://as-images.imgix.net/7a09d35c0e38661610ce988d30be9ea0-img-4064.JPG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/72dee4048b4a1b80d8aee2b03ffbee82-gjs-dillon-particulars-development-site-on-elm-road-worcester-wr2-5js.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-07 14:50:13"
-  },
-  {
-    "id": 346665,
-    "status": "Available",
-    "address": "Development Land at Trinity Vale Park",
-    "town": "Evesham",
-    "postcode": "WR11 1LB",
-    "lat": 52.070251464,
-    "lon": -1.934033036,
-    "types": [
-      "Development/Investment"
-    ],
-    "raw_types": [
-      "Development"
-    ],
-    "to_let": true,
-    "for_sale": true,
-    "size_from_sqft": 285000,
-    "size_to_sqft": 285000,
-    "summary": "Development  Land To Let or For Sale, Evesham",
-    "description": "Benefiting from planning consent, the site offers build to suit opportunity up to 285,000 sq ft. The units would be an ideal hub for logistics, distribution and manufacturing operations.",
-    "features": [
-      "Industrial / Distribution Units",
-      "Build to suit opportunities up to 285,000 sq ft",
-      "For Sale / To Let"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/7768c0dca718829492d9865e752931bd-letting346665.jpeg",
-      "https://as-images.imgix.net/3e64fd29b4c726a25d2066091477a7f6-letting346665.jpeg",
-      "https://as-images.imgix.net/0cc69c7d783904679a9bdb969033b55c-letting346665.jpeg",
-      "https://as-images.imgix.net/566b08cf590f979254bbfcd963ef081b-letting346665.jpeg",
-      "https://as-images.imgix.net/15d24b095f6307261a91354b04b7ecd9-letting346665.jpeg",
-      "https://as-images.imgix.net/c7da43866fe80825d19541d8d661c1fb-letting346665.jpeg",
-      "https://as-images.imgix.net/47775db1137b9b22fe07012de8ecceb4-letting346665.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/12d6a6b2e26c4eed3ee6953474a82855-letting346665.pdf",
-    "contacts": [
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-07 13:04:25"
   },
   {
     "id": 346750,
@@ -1873,62 +2831,6 @@
     "last_updated": "2026-05-06 16:05:12"
   },
   {
-    "id": 350409,
-    "status": "Available",
-    "address": "Unit 2, Droitwich Enterprise Hub",
-    "town": "Droitwich Spa",
-    "postcode": "WR9 9RB",
-    "lat": 52.2740227,
-    "lon": -2.1566463,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial / Storage"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 4316,
-    "size_to_sqft": 4316,
-    "summary": "Refurbished Warehouse with Covered Yard/Parking",
-    "features": [],
-    "rent_psf": 7.18,
-    "rent_pa": 31000,
-    "rent": "£31,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/20b1c1ea03c546a21b11c18464def877-20251223-124626808-ios-1.jpg",
-      "https://as-images.imgix.net/38aa9b5078644de02ecfd16472ac5461-20251223-124742601-ios-1.jpg",
-      "https://as-images.imgix.net/17474a39d2d0fc4dab31c23758b1cc4b-20251223-124617235-ios-1.jpg",
-      "https://as-images.imgix.net/5e1c61c91a86784ae6db0d61f29eafa4-20251223-124750801-ios-1.jpg",
-      "https://as-images.imgix.net/e0225f9308b668575394b5dadb1e96c9-20251223-124804479-ios-1.jpg",
-      "https://as-images.imgix.net/652e2ad53016dc1666e13599d143b9f7-20251223-124826603-ios-1.jpg",
-      "https://as-images.imgix.net/2e4a59a81a7ab3d107bb67043ddef677-20251223-124815370-ios-1.jpg",
-      "https://as-images.imgix.net/55487570e80eb4ac2013ac35d0803012-20251223-124836744-ios-1.jpg"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-06 15:42:42"
-  },
-  {
     "id": 346708,
     "status": "Available",
     "address": "Unit 5, Davids Road Trade Centre",
@@ -1984,359 +2886,6 @@
       }
     ],
     "last_updated": "2026-05-06 15:37:16"
-  },
-  {
-    "id": 352214,
-    "status": "Available",
-    "address": "Unit 1, Edgar Estate",
-    "town": "Worcester",
-    "postcode": "WR6 6PQ",
-    "lat": 52.230157,
-    "lon": -2.368226,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2561,
-    "size_to_sqft": 5225,
-    "summary": "Office Suites with Excellent Car Parking",
-    "features": [],
-    "rent_psf": 8.79,
-    "rent_pa": 22500,
-    "rent": "£22,500 - £45,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 41750,
-    "epc_rating": "D (91)",
-    "images": [
-      "https://as-images.imgix.net/1ba4e7012c5391066164848625146e64-img-0173.JPEG",
-      "https://as-images.imgix.net/297fa4837418d755f43c315aa0e58392-img-0170.JPEG",
-      "https://as-images.imgix.net/e1c41978fdb6426c1472b0ff430d01b5-img-0162.JPEG",
-      "https://as-images.imgix.net/188cc6c222aefb9f5a012bc1904f8422-img-0161.JPEG",
-      "https://as-images.imgix.net/0a17a28b862720c6262d36041f558fd7-img-0154-1.JPEG",
-      "https://as-images.imgix.net/33ed5981d22cca4990a716984937c13d-img-0153.JPEG",
-      "https://as-images.imgix.net/2bc282e7be9326225532444a1882caf8-img-0155.JPEG",
-      "https://as-images.imgix.net/6cc3fea54a5b2639f4aa0d24329a7230-img-0159.JPEG",
-      "https://as-images.imgix.net/aa3c4a8f95aaa63fe832f90f8cb77b1a-img-0164.JPEG",
-      "https://as-images.imgix.net/0171633d22fd61cd51457529287e1583-img-0158.JPEG"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-06 15:34:57"
-  },
-  {
-    "id": 346648,
-    "status": "Available",
-    "address": "The Old Mill",
-    "town": "Pershore",
-    "postcode": "WR10 1BY",
-    "lat": 52.11138916,
-    "lon": -2.082348108,
-    "types": [
-      "Retail",
-      "Office",
-      "Industrial"
-    ],
-    "raw_types": [
-      "Retail",
-      "Office",
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 5575,
-    "size_to_sqft": 5757,
-    "summary": "Retail / Office / Industrial To Let, Pershore",
-    "description": "The Old Mill comprises a large, detached commercial premises of traditional brick construction. The building has an open-plan retail sales area, which benefits from suspended LED lighting. Ancillary accommodation is provided at ground and first floor levels, including staff and storage areas, along with a mezzanine floor. There are approximately 20 car parking spaces. Ground Floor Sales3,400 sq ft315.87 sq m Ground Floor Ancillary 520 sq ft 48.31 sq m Mezzanine Area1,349 sq ft125.33 sq m First Floor Ancillary 306 sq ft 28.43 sq m Total5,575 sq ft 517.93 sq m",
-    "features": [
-      "Suitable for a variety of uses",
-      "Ground and first floor space",
-      "On site car parking",
-      "Good access to the A44, leading to the M5 motorway"
-    ],
-    "rent_psf": 5.02,
-    "rent_pa": 28000,
-    "rent": "£28,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/23387c8a7ce3b5b7fe2a131ab060c4f7-letting346648.jpeg",
-      "https://as-images.imgix.net/3e32dbaedb4939efef5d6832670c92cc-letting346648.jpeg",
-      "https://as-images.imgix.net/209a69c9adf175d282719bed4e21ecef-letting346648.jpeg",
-      "https://as-images.imgix.net/a70f037aa6b30150aff0c933cbe197ef-letting346648.jpeg",
-      "https://as-images.imgix.net/fae4d88addd61870797e6b9a1473a0f7-letting346648.jpeg",
-      "https://as-images.imgix.net/434f2a7a885c6a94b66e25a64e2d0fcf-letting346648.jpeg",
-      "https://as-images.imgix.net/90e27364575128aa53e3d53c3c11b5cc-letting346648.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6a207975ae15e397dfa5dbdbf0df0063-letting346648.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-06 15:30:09"
-  },
-  {
-    "id": 363173,
-    "status": "Available",
-    "address": "Unit 12, The IO Centre",
-    "town": "Redditch",
-    "postcode": "B98 7AS",
-    "lat": 52.291602,
-    "lon": -1.913239,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 31834,
-    "size_to_sqft": 31834,
-    "summary": "Warehouse with Offices - to be refurbished",
-    "description": "Unit 12, The IO Centre is located on an established estate within Redditch.  The unit is to be refurbished once the current tenant has vacated. The property is available by way of a sublease from the outgoing occupier.",
-    "location": "The IO Centre is a premier industrial estate located on Nash Road. The property benefits from excellent road communications with Junction 3 of the M42 approximately seven miles to the north, which gives access to the M40, M5 and M6.\nThe estate is well managed, with recent upgrades including full redecoration of the external cladding, improvements to the estate lighting, and completion of road maintenance works.",
-    "features": [
-      "Unit 12 - 31,834 sq ft (2,958 sq m)",
-      "Two storey offices",
-      "9.5m eaves height",
-      "Four electric level loading doors",
-      "45 car parking spaces",
-      "40m deep yard",
-      "Palisade fenced / gated yard area",
-      "Kitchen and WC facilities"
-    ],
-    "rent_psf": 10.5,
-    "rent_pa": 334257,
-    "rent": "£10.50 per sq ft",
-    "business_rates_psf": 0,
-    "rateable_value": 226000,
-    "epc_rating": "C (66)",
-    "images": [
-      "https://as-images.imgix.net/0ef80a0612b24e462530ec5f74c03a66-dji-0963-1.JPG",
-      "https://as-images.imgix.net/29d2bd4b77dc0d7f0139d0627c167dd1-20260305-155606938-ios-1.jpg",
-      "https://as-images.imgix.net/bfb3c2abc6a1b6a1956b6a0ad690761f-20260305-155537789-ios-1.jpg",
-      "https://as-images.imgix.net/663d5b0d51ecae241d780c71832a9acd-20260305-154039807-ios-1.jpg",
-      "https://as-images.imgix.net/d43cbb5eaa3150c150c44e81ddad8d98-dji-0960-1.JPG",
-      "https://as-images.imgix.net/0c8350cc44b5aab23f46d24ffca57c62-20260305-154103412-ios-1.jpg",
-      "https://as-images.imgix.net/56506afb5460ead7d7c55d78686a6b9e-20260305-154231180-ios-1.jpg",
-      "https://as-images.imgix.net/7c4e55f0d38c3ffb7e8776261829c865-20260305-154026408-ios-1.jpg",
-      "https://as-images.imgix.net/32cd9ee956df0f9bac2bdd3f257e5167-20260305-153246138-ios-1.jpg",
-      "https://as-images.imgix.net/3829d675550ebf4d20ef1a455ce55e14-20260305-154649082-ios-1.jpg",
-      "https://as-images.imgix.net/1d2be7af7e3e92b50298bad4debeded7-20260305-153544892-ios-1.jpg",
-      "https://as-images.imgix.net/775a4ec4dd26fc7d6e1f0e5b9bd30383-20260305-153403734-ios-1.jpg",
-      "https://as-images.imgix.net/87df4c7797257860060099e878badfcb-20260305-154949770-ios-1.jpg",
-      "https://as-images.imgix.net/f8e2fc249fed9b15f48c2314d9943fc2-20260305-154839927-ios-1.jpg",
-      "https://as-images.imgix.net/d36b9fb3a9031ea6b9461adcce1c4d1b-20260305-153934754-ios-1.jpg",
-      "https://as-images.imgix.net/17edf7fbb891d5dbb20cdccef3d46e9e-20260305-153801490-ios-1.jpg",
-      "https://as-images.imgix.net/c605db316db470eb516a9ef48968976b-20260305-154322989-ios-1.jpg",
-      "https://as-images.imgix.net/ff1846d3aadad5d3399300a1c3b6a475-20260305-153819379-ios-1.jpg",
-      "https://as-images.imgix.net/cfe80fb0e9dedbff4ef7130948017110-20260305-154010189-ios-1.jpg",
-      "https://as-images.imgix.net/5acb370f9d176fb5e2be14fff92f0bfc-20260305-153632207-ios-1.jpg",
-      "https://as-images.imgix.net/7d7fe36d26d975a3fca833d23f9a1120-dji-0965-1.JPG",
-      "https://as-images.imgix.net/c6c617d1996a299d075094588fecfd43-dji-0964-1.JPG",
-      "https://as-images.imgix.net/bc03231046b886a627fb687802f785a2-dji-0959-1.JPG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6e05f47f66755b844db04e4f1244ce0e-the-io-centre-redditch-brochure-units-56-12-v2.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-06 13:22:43"
-  },
-  {
-    "id": 363157,
-    "status": "Available",
-    "address": "Unit 6, The IO Centre",
-    "town": "Redditch",
-    "postcode": "B98 7AS",
-    "lat": 52.291602,
-    "lon": -1.913239,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 14423,
-    "size_to_sqft": 14423,
-    "summary": "Warehouse to be refurbished - available alongside Unit 5, The IO Centre",
-    "description": "Unit 6, The IO Centre is lcoated on an established estate within Redditch.  Unit 6 can be let on its own or as a multiple unit, alongside Unit 5 (11,343 sq ft  - 1,054 sq m) Both units are to be refurbished once the current tenant has vacated. Both properties are available by way of sublease from the outgoing occupier.",
-    "location": "Location\nThe IO Centre is a premier industrial estate located on Nash Road. The property benefits from excellent road communications with Junction 3 of the M42 approximately seven miles to the north, which gives access to the M40, M5 and M6.\nThe estate is well managed, with recent upgrades including full redecoration of the external cladding, improvements to the estate lighting, and completion of road maintenance works.",
-    "features": [
-      "Unit 6 – 14,423 sq ft (1,340 sq m)",
-      "Can be let in conjunction with Unit 5 at 11,343 sq ft (1,054 sq m)",
-      "Two storey offices",
-      "8m eaves height",
-      "Two electric level loading doors",
-      "25m deep yard",
-      "Palisade fenced / gated yard area",
-      "Kitchen and WC facilities"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 118000,
-    "epc_rating": "C (71)",
-    "images": [
-      "https://as-images.imgix.net/c300406fda67e84f01d5be768d27de06-20260305-152847271-ios-1.jpg",
-      "https://as-images.imgix.net/6c08b243c3e9cb106c463ea2b2568804-dji-0995-1.JPG",
-      "https://as-images.imgix.net/6461bb0f80e1cb63e50da265abcb8b36-dji-0991-2.JPG",
-      "https://as-images.imgix.net/a46eeeb632a0111ce81f2d95c5143e70-dji-0988-1.JPG",
-      "https://as-images.imgix.net/6f7b42c71921f8642c212a5160b8e3f8-dji-0991-1.JPG",
-      "https://as-images.imgix.net/10719e775db92a2669c50ac918ebbfde-20260305-150153249-ios-1.jpg",
-      "https://as-images.imgix.net/fc615aea85ca27a657b5c86490c64406-20260305-152358209-ios-1.jpg",
-      "https://as-images.imgix.net/9de863a2ff15dba54e01c0fcd962ba1e-20260305-150229219-ios-1.jpg",
-      "https://as-images.imgix.net/c6ce56fce9440d40c4cc3e5006d8191b-20260305-150410682-ios-1.jpg",
-      "https://as-images.imgix.net/61b9043a625b0e73e974e60cc41ea61b-20260305-152138148-ios-1.jpg",
-      "https://as-images.imgix.net/18c79d61bebe18e195b0362e406d7598-20260305-150659050-ios-1.jpg",
-      "https://as-images.imgix.net/84cc01a5653d77c8ee79fc479ee0ae05-20260305-150927856-ios-1.jpg",
-      "https://as-images.imgix.net/aaf16448f54d5358516556af951583c0-20260305-150800273-ios-2.jpg",
-      "https://as-images.imgix.net/1df12be04212a2ff4ec41e43986a7c23-20260305-150823642-ios-1.jpg",
-      "https://as-images.imgix.net/f8a79e06137430a596b6e180f4f3e0a7-20260305-151353088-ios-1.jpg",
-      "https://as-images.imgix.net/8da825491cdbe6e2b8eafe230635d376-20260305-152818068-ios-1.jpg",
-      "https://as-images.imgix.net/8884f00feab4225929325620fbf418eb-20260305-151259865-ios-1.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c2948163194f356da3a920991aec3a53-the-io-centre-redditch-brochure-units-56-12-v2.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-06 13:22:12"
-  },
-  {
-    "id": 363136,
-    "status": "Available",
-    "address": "Unit 5, The IO Centre",
-    "town": "Redditch",
-    "postcode": "B98 7AS",
-    "lat": 52.291602,
-    "lon": -1.913239,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 11343,
-    "size_to_sqft": 11343,
-    "summary": "Warehouse to be refurbished - available alongside Unit 6 The IO Centre",
-    "description": "Unit 5, The IO Centre is located on an established estate within Redditch.  Unit 5 can be let individually or as a multiple unit, alongside Unit 6 (14,423 sq ft  - 1,340 sq m) Both units are to be refurbished once the current tenant has vacated. Both properties are available by way of sublease from the outgoing occupier.",
-    "location": "The IO Centre is a premier industrial estate located on Nash Road. The property benefits from excellent road communications with Junction 3 of the M42 approximately seven miles to the north, which gives access to the M40, M5 and M6.\nThe estate is well managed, with recent upgrades including full redecoration of the external cladding, improvements to the estate lighting, and completion of road maintenance works.",
-    "features": [
-      "Unit 5 - 11,343 sq ft (1,054 sq m)",
-      "Can be let alongside Unit 6 - 14,423 sq ft (1,340 sq m)",
-      "Two storey offices",
-      "8m eaves height",
-      "Two electric level loading doors",
-      "28 car parking spaces",
-      "Kitchen and WC facilities"
-    ],
-    "rent_psf": 10.5,
-    "rent_pa": 119102,
-    "rent": "£10.50 per sq ft",
-    "business_rates_psf": 0,
-    "rateable_value": 78500,
-    "epc_rating": "E (115)",
-    "images": [
-      "https://as-images.imgix.net/c0c7339fbaafba2979d5095d3bc66b9c-dji-0980-2.JPG",
-      "https://as-images.imgix.net/ec5aec7254b3b71c25c6f7ed4910ed98-20260305-145932041-ios-1.jpg",
-      "https://as-images.imgix.net/9511871706ab8299298fbc3dc1f037e1-dji-0985-1.JPG",
-      "https://as-images.imgix.net/b026cb1c6f5ef248476632f6e7915ad7-dji-0994-1.JPG",
-      "https://as-images.imgix.net/4bf712b1fd6a2bf09ecbfce6751d8d6c-dji-0976-1.JPG",
-      "https://as-images.imgix.net/19ea67aec13c34b14a326c985c4e6269-dji-0967-1.JPG",
-      "https://as-images.imgix.net/bb504eca9af9b413f9a044fa71a58d32-20260305-144356815-ios-2.jpg",
-      "https://as-images.imgix.net/093c29198d4d3faa2001410dd9e6a824-20260305-144415250-ios-1.jpg",
-      "https://as-images.imgix.net/2ab9719abc71d457ce21422317630751-20260305-145455013-ios-1.jpg",
-      "https://as-images.imgix.net/289007207821fd8cf4d07a3c539436e0-20260305-145440513-ios-1.jpg",
-      "https://as-images.imgix.net/7be4876e67cbb6e7b89753e5372f718e-20260305-144830331-ios-1.jpg",
-      "https://as-images.imgix.net/236b7e2df35e807948b7bc1a51b82ef6-20260305-144946219-ios-1.jpg",
-      "https://as-images.imgix.net/9ecfc6257db1aaec32ba7db3e93ba3f6-20260305-144839712-ios-1.jpg",
-      "https://as-images.imgix.net/fce2a17727e138d5725e78a8d4f2d11b-20260305-144545343-ios-1.jpg",
-      "https://as-images.imgix.net/a619c4e14f618494b304fad16b431abf-20260305-144949150-ios-1.jpg",
-      "https://as-images.imgix.net/3ffdf76b4e11c7ad5d3c68d136db8c67-20260305-144920166-ios-1.jpg",
-      "https://as-images.imgix.net/1c3a70ace974b2c5df5fee8369d620c1-20260305-144506863-ios-1.jpg",
-      "https://as-images.imgix.net/c1bceddf7c84580ff34e52a35684cf10-20260305-145034795-ios-1.jpg",
-      "https://as-images.imgix.net/bda46cb492a3f2f3f9ea991e0d3a77a6-20260305-145652533-ios-1.jpg",
-      "https://as-images.imgix.net/579be81eac065d87ad012892b8d6576c-20260305-145707609-ios-1.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/b359093f84d7454b08140d9a5a7cad56-the-io-centre-redditch-brochure-units-56-12-v2.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-06 13:21:33"
   },
   {
     "id": 371486,
@@ -2778,289 +3327,6 @@
     "last_updated": "2026-05-05 12:41:07"
   },
   {
-    "id": 346824,
-    "status": "Available",
-    "address": "Unit 1, Copcut Business Park",
-    "town": "Droitwich",
-    "postcode": "WR9 7LU",
-    "lat": 52.252487182,
-    "lon": -2.168159008,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 18000,
-    "size_to_sqft": 18000,
-    "summary": "Industrial For Sale, Droitwich",
-    "description": "New build industrial warehouse unit with ancillary office accommodation Copcut Business Park is a proposed mixed use scheme including Sainsbury's Local store, Costa Coffee Drive-Thru, 8 vehicle ultra-rapid charging centre and two industrial units including a self-storage facility and office / meeting space solutions. Unit 1 is a high specification industrial warehouse proposed to be built for completion Q4 2024 and is to provide: - Industrial warehouse with steel clad elevations and roof including translucent roof lights - Ground floor offices with toilets - First floor mezzanine - Floor loading of 50KN/M sq - Concrete floor - 8m to underside of haunch - 2 x electric roller shutter doors - Self-contained concrete yard area - 25 car parking spaces",
-    "features": [],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/48b0702a5a39ef7872e6b564d8f9fa1f-letting346824.jpeg",
-      "https://as-images.imgix.net/0935b6c88a4b90c9b20abd05e1b90a85-letting346824.jpeg",
-      "https://as-images.imgix.net/be45eba2571fb9a0645555912440e080-letting346824.jpeg",
-      "https://as-images.imgix.net/5efe1b26cbe96d8830c50b486978ba05-letting346824.jpeg",
-      "https://as-images.imgix.net/7feb970e834e5b1f55d61ffca45cdb2c-letting346824.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/cc3900e8390181e41ce6bafaedf7d0d4-letting346824.pdf",
-    "contacts": [
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-01 11:18:10"
-  },
-  {
-    "id": 346653,
-    "status": "Under Offer",
-    "address": "Land At Willow End Park",
-    "town": "Malvern",
-    "postcode": "WR13 6NN",
-    "lat": 52.075309753,
-    "lon": -2.298809051,
-    "types": [
-      "Development/Investment"
-    ],
-    "raw_types": [
-      "Development"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 27878.4,
-    "size_to_sqft": 27878.4,
-    "summary": "Development Land",
-    "description": "This parcel of land extends to approximately 0.64 acres and offers an excellent opportunity for development (subject to planning). The site has an extant permission for an 8000 sq ft office block (identical to that shown adjacent to the site) and a lapsed consent for 6 light industrial units with office facilities above totalling 11,000 sq ft. Electricity, gas and full fibre comms are within easy reach of the site and mains water and effluent disposal are within the site. The land benefits from a prominent position alongside an established business park and the site offers potential for additional parking or external yard space, depending on the end use. This is a rare opportunity to secure a well-located development site within an established commercial environment, with flexibility for a range of potential occupiers or investors.",
-    "features": [
-      "0.64 acre",
-      "Freehold",
-      "Development opportunity subject to planning",
-      "Located on an established Business Park"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/7b5774a11bb4834b2f124c1948c3496b-letting346653.jpeg",
-      "https://as-images.imgix.net/20369ebd7df47f1cd239e78e32dd059f-letting346653.jpeg",
-      "https://as-images.imgix.net/a940225a85315e9033bb65b482f12351-letting346653.jpeg",
-      "https://as-images.imgix.net/86d7325de100e6d1d814ff8d0e3623aa-letting346653.jpeg",
-      "https://as-images.imgix.net/0a9f2aa167642ba37ee7d2fa6e1b4596-letting346653.jpeg",
-      "https://as-images.imgix.net/607a5ecde22a248584ec20ce524dcbe0-letting346653.jpeg",
-      "https://as-images.imgix.net/4b95380082fc2ec7f661a6324ec27ef1-letting346653.jpeg",
-      "https://as-images.imgix.net/e8218aab4048cd31b525e998a710be9c-letting346653.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/749b5056acd607c952b42e2a2af3d11e-letting346653.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-01 11:11:40"
-  },
-  {
-    "id": 346682,
-    "status": "Available",
-    "address": "The Piano Building,Weavers Wharf",
-    "town": "Kidderminster",
-    "postcode": "DY10 1AA",
-    "lat": 52.387104034,
-    "lon": -2.250469923,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3886,
-    "size_to_sqft": 12206,
-    "summary": "Office To Let, Kidderminster",
-    "description": "The Piano Building blends its rich industrial heritage with modern functionality. Seen from above, its unique shape resembles a grand piano, giving this iconic structure its name. Originally built as a wool warehouse for Brintons Carpets and later used as a college, it now stands as a vibrant Kidderminster landmark offering work and office spaces and inviting food and drink. The subject office space is situated over the first, second and third floors. There are WC facilities to each floor, along with lift access and accessible facilities. Each floor also has the provision of breakout and employee welfare space. The space can be offered open plan or with a combination of integrated glass meeting rooms. Floor plans are available upon request. \nFirst Floor 3,886 ft2 (361 m2)\nSecond Floor 4,263 ft2 (396 m2)\nThird Floor 4,058 ft2(377 m2)\nTotal 12,206 ft2 (1,134 m2)",
-    "location": "Location The Piano Building is located within Kidderminster, Worcestershire. Kidderminster is situated 15 miles north of Worcester and 17 miles southwest of Birmingham. The town benefits from being in close proximity to major transport links, such as the M5 & M42 motorways, and has a mainline railway station to the east of the town centre, which offers frequent services to Birmingham Snow Hill, Worcester Foregate Street and Stratford-upon-Avon. The building forms part of the gentrified Weavers Wharf Shopping Centre site, being adjacent to the Kidderminster Bus Station, Premier Inn and Tesco superstore. There are multiple other national and local retailers adjacent to the property, offering an extensive retail and food & beverage offering to occupants of the office space.",
-    "features": [
-      "Office space over 1st, 2nd and 3rd Floors",
-      "Space from 3,886 sq ft (361 sq m) to 12,206 sq ft (1,134 sq m)"
-    ],
-    "rent_psf": 16.98,
-    "rent_pa": 66000,
-    "rent": "£66,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/70429908f15693024771e2aa952891cb-letting346682.jpeg",
-      "https://as-images.imgix.net/93e4c9a6a0d0c69dbe5ad3325ff3d2d5-letting346682.jpeg",
-      "https://as-images.imgix.net/14fe2f2343d221867cb0156500d14c6e-letting346682.jpeg",
-      "https://as-images.imgix.net/243b8e040552f0825b9a2f2b7667beb8-letting346682.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f9e41351de443e9663c0b2120e96a748-piano-building-particulars.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-01 10:49:49"
-  },
-  {
-    "id": 355238,
-    "status": "Available",
-    "address": "Units 1 & 2, Saxon Business Park",
-    "town": "Bromsgrove",
-    "postcode": "B60 4AD",
-    "lat": 52.298313008523,
-    "lon": -2.0756804251617,
-    "types": [
-      "Industrial",
-      "Development/Investment"
-    ],
-    "raw_types": [
-      "Industrial",
-      "Investment - Industrial"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 10204,
-    "size_to_sqft": 10204,
-    "summary": "Multi-Let Industrial Investment",
-    "description": "The property comprises a detached modern industrial building with ancillary office accommodation, situated within the established Saxon Business Park in Bromsgrove. Constructed in the 1990s, the building is of steel portal frame construction beneath a pitched insulated steel profile roof with a combination of brick and profile clad elevations. The property provides warehouse accommodation together with two-storey office accommodation to the front elevation including kitchen and WC facilities. The office areas have been recently refurbished and are presented in good condition. The warehouse accommodation benefits from three roller shutter loading doors and is currently configured as two self-contained units, both of which are let and income producing.\n\nExternally, the property benefits from tarmacadam surfaced parking areas providing approximately 26 car parking spaces to the front and side of the building. The property extends to approximately 10,204 sq ft (948 sq m) and provides a fully let multi-let industrial investment within an established commercial location.",
-    "location": "Bromsgrove is an established Worcestershire town located approximately 13 miles south west of Birmingham and 16 miles north east of Worcester. The town benefits from excellent connectivity, with the A38 running through Bromsgrove, whilst the M5 motorway lies to the west and the M42 commences to the north, providing access to the wider West Midlands motorway network. Bromsgrove railway station provides regular services to Birmingham New Street, Worcester and Hereford, with additional public transport connections available from the town centre. \n\nThe property is located on Saxon Business Park on Hanbury Road, a well-established commercial estate situated close to Bromsgrove town centre. The park is occupied by a range of local, regional and national businesses and benefits from convenient access to the M5 and M42 motorways, making it a popular location for industrial and business occupiers.",
-    "features": [
-      "Fully let industrial investment",
-      "Detached modern industrial building",
-      "Located on the popular Saxon Business Park",
-      "Excellent access to the M5 and M42 motorway network",
-      "Three roller shutter loading doors",
-      "Total floor area 10,204 sq ft (948 sq m) GIA"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/d4f72a9b41c0f7b6d835119b0aa43f5a-dji-0942.JPG",
-      "https://as-images.imgix.net/86450e3fe867a2303ec8a18f44a12b8e-20260311-140554.jpg",
-      "https://as-images.imgix.net/62e379d52303ab5901b8b1233122b924-20260318-094802.jpg",
-      "https://as-images.imgix.net/c49d1144361c5b42663540a37ed0d622-20260318-094940.jpg",
-      "https://as-images.imgix.net/9f41db5b98a828b5e6430152df0dbf63-20260318-094923.jpg",
-      "https://as-images.imgix.net/d063ea280da140e1344bb46c4c8fd978-20260318-094544.jpg",
-      "https://as-images.imgix.net/00f9b266e1d9d542948c3352e78d2ec7-20260318-095032.jpg",
-      "https://as-images.imgix.net/3ea50f581a21d5284753aa0d86efc9c0-20260318-095027.jpg",
-      "https://as-images.imgix.net/99a6cd3b19dcad9063d4fb539920732d-20260318-094650.jpg",
-      "https://as-images.imgix.net/1ea4388cc2181d3f6e0a2925aac4d81a-20260318-095206.jpg",
-      "https://as-images.imgix.net/79507bd6b3995aae252d76ca43e6cf8a-dji-0949.JPG",
-      "https://as-images.imgix.net/874a3041a45c30ed85eb8d5013fdbf3d-dji-0953.JPG",
-      "https://as-images.imgix.net/86b4d6115649664b8983169eeeb92df6-20260318-100145.jpg",
-      "https://as-images.imgix.net/98b78432f34caf7cc0d5e3bea19dd5fc-20260318-101033.jpg",
-      "https://as-images.imgix.net/531401dee0d0af987cc2ace2df227d11-20260318-101320.jpg",
-      "https://as-images.imgix.net/b9e4a7a3c7917633a7f32e342a7a8d6a-20260318-101209.jpg",
-      "https://as-images.imgix.net/82a9711079d8b3dbd39ae38bdd2bfef7-20260318-100209.jpg",
-      "https://as-images.imgix.net/b9cf8264d317ed6e44732cf655b38079-dji-0951.JPG",
-      "https://as-images.imgix.net/b92192c6934058125f39ef7bec17e1d3-dji-0955.JPG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f32498d0ff58e97c6cfd8a57032de533-units-1-2-saxon-business-park-bromsgrove-brochure.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-01 10:38:42"
-  },
-  {
-    "id": 350918,
-    "status": "Available",
-    "address": "Unit 13a, St Richards Road",
-    "town": "Evesham",
-    "postcode": "WR11 1XJ",
-    "lat": 52.080721,
-    "lon": -1.944174,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial / Storage"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 10915,
-    "size_to_sqft": 10915,
-    "summary": "Warehouse / industrial unit with offices",
-    "features": [],
-    "rent_psf": 6.87,
-    "rent_pa": 75000,
-    "rent": "£75,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/651f99fb20a9c50625e8c72eb69ca2a6-20250110-112721.jpg",
-      "https://as-images.imgix.net/f5e96c25b5568fbf6cc3dbfd1d9c586f-20250110-112658.jpg",
-      "https://as-images.imgix.net/c868fd4436d00757c8fd802d5a7e4445-20250110-100648.jpg",
-      "https://as-images.imgix.net/992dfd5951d90ac6acc94184d2512a89-cam04581g0-pr0017-still004.jpg",
-      "https://as-images.imgix.net/d427769e14b3fba6626c41b3eb61cede-cam04581g0-pr0017-still003-1.jpg",
-      "https://as-images.imgix.net/e3549552789a4cb93163b91c1683c20b-cam04581g0-pr0017-still001-1.jpg",
-      "https://as-images.imgix.net/c881be2aadb25ee2ab6e87b7d467ed5c-cam04581g0-pr0017-still002.jpg",
-      "https://as-images.imgix.net/ab9072edf4a682209d5fbccad6b747e4-20250110-111848.jpg",
-      "https://as-images.imgix.net/e56ba103ae52be35219f235cba1cb429-20250110-112029.jpg",
-      "https://as-images.imgix.net/b654121edce18a110401f42305e1c9b6-20250110-112419.jpg",
-      "https://as-images.imgix.net/b54a0dc61220366570e2a147f56af7b8-20250110-112246.jpg",
-      "https://as-images.imgix.net/50a34bf4f59c9c37c5c2bcb1f0fa6a31-20250110-105232.jpg",
-      "https://as-images.imgix.net/5ec5e815e0535326a76a26620c821fc5-20250110-112419.jpg"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-04-30 13:32:27"
-  },
-  {
     "id": 350576,
     "status": "Under Offer",
     "address": "The Joseph Wood Building",
@@ -3418,254 +3684,6 @@
     "last_updated": "2026-04-13 11:51:28"
   },
   {
-    "id": 353374,
-    "status": "Under Offer",
-    "address": "169-171 Newtown Road",
-    "town": "Malvern",
-    "postcode": "WR14 1PJ",
-    "lat": 52.126083,
-    "lon": -2.331358,
-    "types": [
-      "Industrial",
-      "Development/Investment"
-    ],
-    "raw_types": [
-      "Automotive",
-      "Development Site"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 9124,
-    "size_to_sqft": 9124,
-    "summary": "Freehold Car Sales Premises, Suitable for Development (STP)",
-    "description": "The current building offers a detached showroom and workshop sitting central within a regular plot.  The building is accessed via a showroom to the front and two roller shutter doors to the rear.\n\nThe existing building offers the following:\n\nCar Showroom\t2,572 ft2\t\t(239 m2)\nWorkshop\t6,552 ft2\t\t(609 m2)\nTotal \t9,124 ft2\t\t(848 m2)\n\nExternally there is a forecourt to the front which offers parking for 20-25 vehicles along with a further parking area to the rear for 35-40 vehicles.  The main frontage is onto Newtown Road, however, there is a rear access off Nursery Road.\n\nThe site has a total area of 0.64, as shown by the site plan.\n\nRe-Development\nThe sites extends to 0.64 acres and is situated within a residential area of Malvern, it is therefore well suited for re-development, subject to gaining the necessary planning consents.",
-    "location": "Malvern is a spa town in Worcestershire with a population of 30,462 as at the 2021 Census.  Within Malvern, the property fronts the B4503 Newtown Road, in close proximity to its junction with the A449 Worcester Road and circa 1 ½ miles west of Great Malvern town centre.\n\nThe immediate surrounding area is predominantly residential, with some local retail occupiers being located on Newtown Road.  Hills Ford are vacating due to expansion to a larger site in Worcester.",
-    "features": [
-      "Currently operating as Hills Ford motor dealership, who are relocating due to expansion into Worcester",
-      "Existing facility extends to 9,124 sq ft (848 sq m)",
-      "Regular shaped site extending to 0.64 acres",
-      "Situated in a predominantly residential area and therefore suitable for re-development, subject to planning",
-      "Has dual access off Newtown Road and Nursery Road."
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/92579b6aeac8e7bc496aea13709404ea-23.jpeg",
-      "https://as-images.imgix.net/95e0e4c9661ae3a79a57e2825f4d9c32-19.jpeg",
-      "https://as-images.imgix.net/1e98ffd0f9565d6d6d707edbc2f0facb-14.jpeg",
-      "https://as-images.imgix.net/4fed5437cbf8c65c6a12b6c552b881b0-13.jpeg",
-      "https://as-images.imgix.net/387a6b9083ea90ea3f0f06207e444b9e-1.jpeg",
-      "https://as-images.imgix.net/c59c64bd6c0adf14878c2f4526f89b65-18.jpeg",
-      "https://as-images.imgix.net/87733d5af2b11902232201ca410d01bf-15.jpeg",
-      "https://as-images.imgix.net/2c37bb1557745091d573c84ca541d2d9-16.jpeg",
-      "https://as-images.imgix.net/0974715b61b0523d37a9953f987321e5-12.jpeg",
-      "https://as-images.imgix.net/c576f7b509f7e0c267f03854ee53d717-11.jpeg",
-      "https://as-images.imgix.net/e00dea741f5b38364ad49ced736844cb-3.jpeg",
-      "https://as-images.imgix.net/34a0e0dd68e4d5f614a04d8c3322ef8a-5.jpeg",
-      "https://as-images.imgix.net/3a8f6350a25ffe8cfd407f75849fb755-8.jpeg",
-      "https://as-images.imgix.net/364afad2ae848acee0dffb6ed5427834-7.jpeg",
-      "https://as-images.imgix.net/2a60c1537b6aad5a0562a386337681c9-10.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/de51ac906d64112340d712b35ecfe498-gjs-dillon-particulars-169-newtown-road-malvern.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-04-08 16:33:48"
-  },
-  {
-    "id": 352967,
-    "status": "Under Offer",
-    "address": "275 Worcester Road",
-    "town": "Malvern",
-    "postcode": "WR14 1AA",
-    "lat": 52.128145,
-    "lon": -2.313932,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 7057,
-    "size_to_sqft": 7057,
-    "summary": "Commercial Freehold Premises",
-    "description": "This prominently positioned detached three-storey property offers an excellent canvas for transformation. Originally constructed as a town house of rendered brick with a pitched tiled roof, the building has since been enhanced with a two-storey front extension added in the 1970s, featuring a concrete frame and large display windows that provide strong street presence.\nTo the rear, a part single-storey/part two-storey brick-built outbuilding with a pitched slate roof has been integrated with the main structure, creating a versatile footprint with a variety of room configurations throughout. Internally, the accommodation currently comprises a series of cellular spaces, offering exciting scope for reconfiguration or comprehensive redevelopment.\nThe site also includes a gravelled rear car park with space for approximately eight vehicles. A striking mature tree sits at the centre of the parking area and is understood to be protected by a Tree Preservation Order, adding character and a sense of established setting.\nOverall, the property represents a compelling development opportunity (subject to planning), with the scale, layout and prominence of the site lending themselves to a wide range of future uses.\nGround floor\t\t3,792.5 ft2 \t(352.46 m2)\nFirst floor retail \t\t756.5 ft2\t\t(756.5 m2)\nSecond floor retail\t\t1,737.8 ft2\t\t(161.51m2)\nThird floor retail \t\t770.3 ft2\t\t(71.59m2)\nTotal \t\t\t7,057 ft2\t\t(655.87 m2)",
-    "location": "Malvern is a spa town and civil parish in Worcester which, in the 2011 Census, had a population of just under 30,000.  The major road, which runs through the centre of Malvern is the A449 which connects Worcester to Ledbury. The M5 Motorway is accessible at Junctions 7 and 8 to the east. The M50 Motorway is accessed at Junction 1 on the A38 between Tewkesbury and Malvern.\nTwo railway stations, approximately one mile apart at Great Malvern and Malvern Link provide direct services to Worcester, Hereford, Birmingham, Oxford, Cheltenham, Gloucester and London Paddington.",
-    "features": [
-      "7,057 ft2 (655.87 m2)",
-      "Located in Malvern Link",
-      "Virtual Tour Avaiable",
-      "Car parking at rear of property",
-      "Development opportunity (STP)"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 29250,
-    "epc_rating": "C (73)",
-    "images": [
-      "https://as-images.imgix.net/9a3c51bb7bbb5311e43a620c955c7969-20251120-122705702-ios.jpg",
-      "https://as-images.imgix.net/b0218b5d4eafc397f1a8785d53ad36ba-20251120-121635934-ios.jpg",
-      "https://as-images.imgix.net/723661952ac86c1914f777fc3bd2dce4-20251120-121656176-ios.jpg",
-      "https://as-images.imgix.net/10cce6343698939b70c580510f9b7839-20251120-121948573-ios.jpg",
-      "https://as-images.imgix.net/94ae5337f8a9633264b2635e8989cc96-20251120-121805147-ios.jpg",
-      "https://as-images.imgix.net/7d50f777da10ff3b636cb7d02a32804b-20251120-120637769-ios.jpg",
-      "https://as-images.imgix.net/c62b2d03e8f55ce33328c95b88687a3e-20251120-120605171-ios.jpg",
-      "https://as-images.imgix.net/36b0b351671bb37ce8a23bfed2bbedaf-20251120-115302765-ios.jpg",
-      "https://as-images.imgix.net/98db8c5ecddac291256380a247509ff1-20251120-120656162-ios.jpg",
-      "https://as-images.imgix.net/866bfcdca10bcc681caffaa1594e7184-20251120-121459348-ios.jpg",
-      "https://as-images.imgix.net/9772c363f03eef64bbe3e82125845714-20251120-115312793-ios.jpg",
-      "https://as-images.imgix.net/1cd2bdc332315edf06b185e23ba3ba0b-20251120-121511852-ios.jpg",
-      "https://as-images.imgix.net/f691738e9b2f62d49514619d79a87e40-20251120-121454186-ios.jpg",
-      "https://as-images.imgix.net/c4f8d20529a7fdba9988a66dfef47824-20251120-120737472-ios.jpg",
-      "https://as-images.imgix.net/a3cb31ebd9c715cbec7b1352ec2589de-20251120-120611276-ios.jpg"
-    ],
-    "contacts": [
-      {
-        "name": "Susanne Phipps",
-        "email": "susannephipps@gjsdillon.co.uk",
-        "phone": "",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-04-01 10:32:30"
-  },
-  {
-    "id": 355283,
-    "status": "Available",
-    "address": "Hartlebury 45, Trading Estate",
-    "town": "Kidderminster",
-    "postcode": "DY10 4JB",
-    "lat": 52.334434235523,
-    "lon": -2.2188434709473,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 44804,
-    "size_to_sqft": 44804,
-    "summary": "Hartlebury 45 is a brand-new, portal-framed manufacturing and distribution warehouse with an integral first-floor office.",
-    "description": "Hartlebury 45 is a brand-new, portal-framed manufacturing and distribution warehouse with an integral first-floor office. The building offers a clear internal eaves height of 10 metres, a floor loading capacity of 50 kN/m and up to 800 kVA of power supply.\n\nThe fitted office accommodation provides raised access floors, suspended ceilings, recessed LED lighting, carpeting, and an electric VRF/VRV heating and cooling system. The warehouse benefits from two dock and two level access doors opening onto a 50-metre-deep secure yard, with 61 car parking spaces and 14 trailer bays.\n\nSustainability features include PV roof panels, electric vehicle charging points, and energy-efficient systems, complemented by full security lighting. Combining modern design, high specification, and excellent accessibility, Hartlebury 45 provides an exceptional opportunity for occupiers seeking a premium new-build facility situated on one of Worcestershire's premier industrial estates.",
-    "features": [
-      "61 Car Parking Spaces",
-      "10m Eaves",
-      "14 Trailer Bays",
-      "800 kVA of Power Supply"
-    ],
-    "rent_psf": 9,
-    "rent_pa": 403236,
-    "rent": "£403,236 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "service_charge": "0.75",
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/0a665d9c052e45b148478031234efd5e-1.jpg",
-      "https://as-images.imgix.net/697d24aa555aa6a04c0a4e412ebc5b58-2.jpg",
-      "https://as-images.imgix.net/8ef7f4d073834ab0bb0da23325479578-3.jpg",
-      "https://as-images.imgix.net/7372e8c681d3176c87ad60cc5319c793-4.jpg",
-      "https://as-images.imgix.net/daae49c7ee5bc6ffbe8059bb7e1d2f9f-5.jpg",
-      "https://as-images.imgix.net/4cab5cf9058f6096ab8866d38531df2b-6.jpg",
-      "https://as-images.imgix.net/bf4fc95e3d4a4c594ea79313e2c54b64-7.jpg",
-      "https://as-images.imgix.net/5a039ded0374291f0db9258070b953e0-8.jpg",
-      "https://as-images.imgix.net/c61155363c2b348dcb503a5761d76799-9.jpg"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-09 16:40:22"
-  },
-  {
-    "id": 346823,
-    "status": "Available",
-    "address": "Unit 1, Copcut Business Park",
-    "town": "Droitwich",
-    "postcode": "WR9 7LU",
-    "lat": 52.252487182,
-    "lon": -2.168159008,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 18000,
-    "size_to_sqft": 18000,
-    "summary": "Industrial To Let, Droitwich",
-    "description": "New build industrial warehouse unit with ancillary office accommodation Copcut Business Park is a proposed mixed use scheme including Sainsbury's Local store, Costa Coffee Drive-Thru, 8 vehicle ultra-rapid charging centre and two industrial units including a self-storage facility and office / meeting space solutions. Unit 1 is a high specification industrial warehouse proposed to be built for completion Q4 2024 and is to provide : - Industrial warehouse with steel clad elevations and roof including translucent roof lights - Ground floor offices with toilets - First floor mezzanine - Floor loading of 50KN/M sq - Concrete floor - 8m to underside of haunch - 2 x electric roller shutter doors - Self-contained concrete yard area - 25 car parking spaces",
-    "features": [],
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/229ca8934c4d50da4d7d994cc2e87a77-letting346823.jpeg",
-      "https://as-images.imgix.net/f6ac0d1aca8e9f756e74117de75fd5d3-letting346823.jpeg",
-      "https://as-images.imgix.net/e9f69c23a2ebeb8ce57f3bc8e06f18d7-letting346823.jpeg",
-      "https://as-images.imgix.net/966b6cfcaf0cc6c9f88c90d57ae8a2fc-letting346823.jpeg",
-      "https://as-images.imgix.net/48b2e09f55b9aed19b59b5b173afd431-letting346823.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/ab175056e01a9a2e539520313077bdbe-letting346823.pdf",
-    "contacts": [
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Susanne Phipps",
-        "email": "susannephipps@gjsdillon.co.uk",
-        "phone": "",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-03-03 16:47:03"
-  },
-  {
     "id": 346667,
     "status": "Available",
     "address": "Unit 3,Aston Fields Industrial Estate",
@@ -3793,60 +3811,6 @@
       }
     ],
     "last_updated": "2026-03-03 11:32:34"
-  },
-  {
-    "id": 346769,
-    "status": "Under Offer",
-    "address": "Unit 7, Wassage Way South",
-    "town": "Droitwich Spa",
-    "postcode": "WR9 0NX",
-    "lat": 52.284690856,
-    "lon": -2.168148994,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 11764,
-    "size_to_sqft": 11764,
-    "summary": "Commercial Warehouse with Office Space",
-    "description": "7 Wassage Way comprises a pair of semi-detached warehouse units, current laid out and occupied as one single premises, with associated office accommodation towards the front with an ample on-site car parking provision. The building is of steel portal framed construction with brick and blockwork elevations to low level and metal cladding above, beneath a shallow metal-clad pitched roof, with intermittent translucent rooflights. The warehouse has been fitted out with modern LED lighting along with new heating. To the front of the building is a single storey office with cavity brick elevations and a pitched tiled roof. The property includes WC and kitchen facilities as well as mezzanine storage areas within the warehouse. The property benefits from having approximately 12 car parking spaces to the front of the building. \nWarehouse and Offices 10,032 sq ft 932 sq m \nMezzanine Storage 1,152 sq ft 161 sq m \nTotal 11,764 sq ft 1,093 sq m",
-    "features": [
-      "LED lighting the warehouse",
-      "Mezzanine storage area",
-      "12 car parking spaces to the front of the property"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/e20d20c4d3ab916efb9ba8f9a62348fd-letting346769.jpeg",
-      "https://as-images.imgix.net/6a3fcebe08646856b8f348ed4e432323-letting346769.jpeg",
-      "https://as-images.imgix.net/9fefd1571df24b428c3d83cbf4af9533-letting346769.jpeg",
-      "https://as-images.imgix.net/13760fc6c23e06cf461c0a0d18c7d4d4-letting346769.jpeg",
-      "https://as-images.imgix.net/38681146950aa6bde1b9eea139ad0447-letting346769.jpeg",
-      "https://as-images.imgix.net/10744a78ad649ba68b5372419fb2e286-letting346769.jpeg",
-      "https://as-images.imgix.net/9bb444b6bf287cb571b18af0b1f23bb6-letting346769.jpeg",
-      "https://as-images.imgix.net/2d8897a6b9c0c4887b4084362e8f0909-letting346769.jpeg",
-      "https://as-images.imgix.net/546b8e8e18743c937ecdaf4ce56f205e-letting346769.jpeg",
-      "https://as-images.imgix.net/740845b6e0ab0f7b1d50f81ed7bdf09a-letting346769.jpeg",
-      "https://as-images.imgix.net/dc574ccdc761eb912f59595091c60ce8-letting346769.jpeg",
-      "https://as-images.imgix.net/da22256d03170b84022318c797a0758f-letting346769.jpeg"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-02-27 15:10:50"
   },
   {
     "id": 346659,
