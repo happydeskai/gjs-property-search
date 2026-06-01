@@ -1,5 +1,77 @@
 [
   {
+    "id": 354040,
+    "status": "Available",
+    "address": "15 Aston Court",
+    "town": "Bromsgrove",
+    "postcode": "B60 3AL",
+    "lat": 52.318276,
+    "lon": -2.056079,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2266,
+    "size_to_sqft": 2266,
+    "summary": "Modern detached offices with allocated parking",
+    "description": "15 Aston Court is a modern detached purpose built office building of brick main wall construction surmounted by a pitched tiled roof providing predominantly modern open plan office accommodation on the first floor, with the ground floor offering good quality partitions to provide private offices and meeting room space all with modern suspended ceilings, LG3 lighting, raised access floors and WC facilities on both floors.\n\nGround Floor 1,145 sq ft 106.34 sq m\nFirst Floor 1,121 sq ft 104.15 sq m\nTotal 2,266 sq ft 210.49 sq m",
+    "location": "The property is situated in a prominent position on Aston Court, situated on the Bromsgrove Enterprise Park which is located approximately one and a half miles to the south of Bromsgrove town centre.  The Bromsgrove Enterprise Park offers a range of accommodation from serviced offices in Basepoint, good quality warehousing at Sapphire Court and a modern courtyard development of Aston Court.\n\nJunction 4 of the M5 motorway and Junction 1 of the M42 motorway lie approximately three miles distant providing access to the M5 and M42 motorway as well as the national motorway network.  Birmingham City Centre is situated approximately 15 miles to the north and Worcester City Centre is situated approximately 10 miles to the south.\nBromsgrove has a mainline railway station, which is situated close to Sherwood Road. There are frequent trains to Birmingham New Street, Worcester Foregate Street and Hereford. There is also a bus station adjacent to the high street.  Buses operate to a wide area of Worcestershire and the West Midlands.",
+    "features": [
+      "2,266 sq ft (210.49 m2) NIA",
+      "Modern open plan offices over two floors with separate meeting / boardroom facilities",
+      "Comfort cooling",
+      "Raised access flooring",
+      "12 allocated parking spaces",
+      "Walking distance to Bromsgrove Train Station"
+    ],
+    "rent_psf": 13.9,
+    "rent_pa": 31500,
+    "rent": "£31,500 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 26795,
+    "epc_rating": "C (86)",
+    "images": [
+      "https://as-images.imgix.net/ed0c6ec407407d4555b95207df8507a8-20260217-091554-1.jpg",
+      "https://as-images.imgix.net/a179e71e16d6dc6a2c82100a74ae584e-20260217-091446.jpg",
+      "https://as-images.imgix.net/c6d377d9d90915b14c47a728c2c1ce16-20260217-090925.jpg",
+      "https://as-images.imgix.net/66345eedecdfb852a382bd1423a398bf-20260217-090803.jpg",
+      "https://as-images.imgix.net/7202e29d4e8fb18eb963cc7e7718d9e8-20260217-090727.jpg",
+      "https://as-images.imgix.net/456a3936642f936b6defe3d0b586554f-20260217-090652.jpg",
+      "https://as-images.imgix.net/03ae5bca011d2d9ef01ebf06d6484d84-20260217-091201-1.jpg",
+      "https://as-images.imgix.net/8fd8930626be8c2a8137880d7c878a94-20260217-090105.jpg",
+      "https://as-images.imgix.net/f5c959887ecbe424d954adeaa083f1ac-20260217-090148.jpg",
+      "https://as-images.imgix.net/fe95889b9693fa63c06624b8e29a3b76-20260217-091144.jpg",
+      "https://as-images.imgix.net/594fda2444ed55544fa93b14aa25f5df-20260217-091314.jpg",
+      "https://as-images.imgix.net/1956d7caddb5f1052ba93dfefd80ff1e-20260217-090532.jpg",
+      "https://as-images.imgix.net/71fc0b88ee1fd11e8ae5f3b0e9cdd09a-20260217-090416.jpg",
+      "https://as-images.imgix.net/768b2d04d04f071c009a1d6defc9a53d-20260217-090519.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/73fce566e13ab29780ac8217f9553d03-gjs-dillon-particulars-15-aston-court-bromsgrove.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-06-01 11:33:05"
+  },
+  {
     "id": 372990,
     "status": "Available",
     "address": "Unit 10A and 11, Arden Business Centre",
@@ -908,78 +980,6 @@
       }
     ],
     "last_updated": "2026-05-28 16:41:39"
-  },
-  {
-    "id": 354040,
-    "status": "Available",
-    "address": "15 Aston Court",
-    "town": "Bromsgrove",
-    "postcode": "B60 3AL",
-    "lat": 52.318276,
-    "lon": -2.056079,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2266,
-    "size_to_sqft": 2266,
-    "summary": "Modern detached offices with allocated parking",
-    "description": "15 Aston Court is a modern detached purpose built office building of brick main wall construction surmounted by a pitched tiled roof providing predominantly modern open plan office accommodation on the first floor, with the ground floor offering good quality partitions to provide private offices and meeting room space all with modern suspended ceilings, LG3 lighting, raised access floors and WC facilities on both floors.\n\nGround Floor 1,145 sq ft 106.34 sq m\nFirst Floor 1,121 sq ft 104.15 sq m\nTotal 2,266 sq ft 210.49 sq m",
-    "location": "The property is situated in a prominent position on Aston Court, situated on the Bromsgrove Enterprise Park which is located approximately one and a half miles to the south of Bromsgrove town centre.  The Bromsgrove Enterprise Park offers a range of accommodation from serviced offices in Basepoint, good quality warehousing at Sapphire Court and a modern courtyard development of Aston Court.\n\nJunction 4 of the M5 motorway and Junction 1 of the M42 motorway lie approximately three miles distant providing access to the M5 and M42 motorway as well as the national motorway network.  Birmingham City Centre is situated approximately 15 miles to the north and Worcester City Centre is situated approximately 10 miles to the south.\nBromsgrove has a mainline railway station, which is situated close to Sherwood Road. There are frequent trains to Birmingham New Street, Worcester Foregate Street and Hereford. There is also a bus station adjacent to the high street.  Buses operate to a wide area of Worcestershire and the West Midlands.",
-    "features": [
-      "2,266 sq ft (210.49 m2) NIA",
-      "Modern open plan offices over two floors with separate meeting / boardroom facilities",
-      "Comfort cooling",
-      "Raised access flooring",
-      "12 allocated parking spaces",
-      "Walking distance to Bromsgrove Train Station"
-    ],
-    "rent_psf": 13.9,
-    "rent_pa": 31500,
-    "rent": "£31,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 26795,
-    "epc_rating": "C (86)",
-    "images": [
-      "https://as-images.imgix.net/ed0c6ec407407d4555b95207df8507a8-20260217-091554-1.jpg",
-      "https://as-images.imgix.net/a179e71e16d6dc6a2c82100a74ae584e-20260217-091446.jpg",
-      "https://as-images.imgix.net/c6d377d9d90915b14c47a728c2c1ce16-20260217-090925.jpg",
-      "https://as-images.imgix.net/66345eedecdfb852a382bd1423a398bf-20260217-090803.jpg",
-      "https://as-images.imgix.net/7202e29d4e8fb18eb963cc7e7718d9e8-20260217-090727.jpg",
-      "https://as-images.imgix.net/456a3936642f936b6defe3d0b586554f-20260217-090652.jpg",
-      "https://as-images.imgix.net/03ae5bca011d2d9ef01ebf06d6484d84-20260217-091201-1.jpg",
-      "https://as-images.imgix.net/8fd8930626be8c2a8137880d7c878a94-20260217-090105.jpg",
-      "https://as-images.imgix.net/f5c959887ecbe424d954adeaa083f1ac-20260217-090148.jpg",
-      "https://as-images.imgix.net/fe95889b9693fa63c06624b8e29a3b76-20260217-091144.jpg",
-      "https://as-images.imgix.net/594fda2444ed55544fa93b14aa25f5df-20260217-091314.jpg",
-      "https://as-images.imgix.net/1956d7caddb5f1052ba93dfefd80ff1e-20260217-090532.jpg",
-      "https://as-images.imgix.net/71fc0b88ee1fd11e8ae5f3b0e9cdd09a-20260217-090416.jpg",
-      "https://as-images.imgix.net/768b2d04d04f071c009a1d6defc9a53d-20260217-090519.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/73fce566e13ab29780ac8217f9553d03-gjs-dillon-particulars-15-aston-court-bromsgrove.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-28 16:41:18"
   },
   {
     "id": 371699,
