@@ -72,9 +72,7 @@
     .avatar{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#f1f3f6;color:#222;font-weight:700;border:1px solid #e9edf2}
     #teamBox .agent{padding:12px;border-top:none}
 
-    /* =============================================
-       MEDIA SECTION
-    ============================================= */
+    /* MEDIA SECTION */
     .media-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);padding:12px 14px 0;background:#fff}
     .media-tabs{display:flex;gap:6px;padding:8px 12px 10px;background:#fff;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;border-bottom:1px solid #f0f2f5}
     .media-tabs::-webkit-scrollbar{display:none}
@@ -97,19 +95,42 @@
     .fp-btn{height:34px;padding:0 14px;border-radius:8px;border:1px solid #e6e8eb;background:#fff;font-size:13px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:6px;text-decoration:none;color:#111}
     .fp-btn:hover{background:#f6f7fb}
 
-    /* Virtual tours panel */
+    /* Virtual tours */
     .tours-selector{display:flex;gap:8px;padding:10px 12px;background:#f8f9fa;border-bottom:1px solid #f0f2f5;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
     .tours-selector::-webkit-scrollbar{display:none}
     .tour-pill{flex:0 0 auto;height:32px;padding:0 14px;border-radius:999px;border:1px solid #ddd;background:#fff;font-size:13px;font-weight:600;color:#555;cursor:pointer;transition:all .12s ease;white-space:nowrap}
     .tour-pill:hover{border-color:#999;color:#111}
     .tour-pill.active{background:#111;color:#fff;border-color:#111}
-    .tour-viewer{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);overflow:hidden;cursor:pointer}
-    .tour-preview{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;transition:background .2s}
-    .tour-preview:hover{background:rgba(255,255,255,0.05)}
-    .tour-play-btn{width:80px;height:80px;border-radius:50%;background:rgba(255,255,255,0.15);border:2px solid rgba(255,255,255,0.4);display:flex;align-items:center;justify-content:center;transition:transform .15s ease,background .15s ease}
-    .tour-preview:hover .tour-play-btn{transform:scale(1.08);background:rgba(255,255,255,0.25)}
-    .tour-preview-label{color:#fff;font-weight:700;font-size:18px;letter-spacing:.01em}
-    .tour-preview-sub{color:rgba(255,255,255,0.6);font-size:13px}
+
+    /* Tour iframe container */
+    .tour-iframe-wrap{
+      position:relative;
+      aspect-ratio:16/9;
+      background:#111;
+      overflow:hidden;
+    }
+    .tour-iframe-wrap iframe{
+      position:absolute;inset:0;
+      width:100%;height:100%;
+      border:none;
+    }
+    /* Loading overlay */
+    .tour-loading{
+      position:absolute;inset:0;
+      display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;
+      background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);
+      transition:opacity .4s ease;
+      pointer-events:none;
+    }
+    .tour-loading.hidden{opacity:0;}
+    .tour-loading-spinner{
+      width:40px;height:40px;border-radius:50%;
+      border:3px solid rgba(255,255,255,0.2);
+      border-top-color:#fff;
+      animation:spin .8s linear infinite;
+    }
+    .tour-loading-text{color:rgba(255,255,255,0.7);font-size:13px;}
+    @keyframes spin{to{transform:rotate(360deg)}}
     .tour-actions{display:flex;gap:8px;padding:8px 12px;background:#fff;border-top:1px solid #f0f2f5}
   </style>
 </head>
@@ -153,16 +174,21 @@
 
             <!-- VIRTUAL TOURS PANEL -->
             <div class="media-panel" id="panel-tours">
-              <!-- Secondary tour selector (shown when >1 tour) -->
+              <!-- Secondary pill selector (multiple tours only) -->
               <div class="tours-selector" id="tours-selector" style="display:none"></div>
-              <!-- Tour viewer -->
-              <div class="tour-viewer" id="tour-viewer">
-                <div class="tour-preview" id="tour-preview">
-                  <div class="tour-play-btn">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><polygon points="5,3 19,12 5,21" fill="#fff"/></svg>
-                  </div>
-                  <div class="tour-preview-label" id="tour-preview-label">Open Virtual Tour</div>
-                  <div class="tour-preview-sub">Opens in a new tab</div>
+              <!-- iframe embed -->
+              <div class="tour-iframe-wrap">
+                <iframe
+                  id="tour-iframe"
+                  src=""
+                  allowfullscreen
+                  allow="vr; xr-spatial-tracking; gyroscope; accelerometer"
+                  title="Virtual tour">
+                </iframe>
+                <!-- Loading overlay — hides once iframe loads -->
+                <div class="tour-loading" id="tour-loading">
+                  <div class="tour-loading-spinner"></div>
+                  <div class="tour-loading-text">Loading virtual tour&#8230;</div>
                 </div>
               </div>
               <div class="tour-actions">
@@ -237,182 +263,170 @@ let didScrollTop=false;
 function scrollTopOnce(){if(didScrollTop)return;didScrollTop=true;window.scrollTo(0,0);try{window.parent?.postMessage({type:'scroll-top'},'*');}catch(e){}}
 function createImg(src,alt){const i=document.createElement('img');i.src=src;i.alt=alt||'';return i;}
 
-/* ---- Tour label helper — extract a short name from the URL ---- */
-function tourLabel(url, index, total) {
-  if (total === 1) return 'Open Virtual Tour';
-  // Try to extract something readable from the URL path
-  try {
-    const path = new URL(url).pathname.replace(/\//g,'');
-    // Common patterns: unitatrinityvalepark → Unit A, unitbsomething → Unit B
-    const unitMatch = path.match(/unit([a-z])/i);
-    if (unitMatch) return 'Unit ' + unitMatch[1].toUpperCase();
-    // floor match
-    const floorMatch = path.match(/(ground|first|second|third|lower|upper)/i);
-    if (floorMatch) return floorMatch[1].charAt(0).toUpperCase() + floorMatch[1].slice(1) + ' Floor';
-  } catch(e){}
-  return 'Tour ' + (index + 1);
+/* Tour label helper */
+function tourLabel(url, index, total){
+  if(total===1) return 'Virtual Tour';
+  try{
+    const path=new URL(url).pathname.replace(/\//g,'');
+    const unitMatch=path.match(/unit([a-z])/i);
+    if(unitMatch) return 'Unit '+unitMatch[1].toUpperCase();
+    const floorMatch=path.match(/(ground|first|second|third|lower|upper)/i);
+    if(floorMatch) return floorMatch[1].charAt(0).toUpperCase()+floorMatch[1].slice(1)+' Floor';
+  }catch(e){}
+  return 'Tour '+(index+1);
 }
 
-/* ---- Set active tour ---- */
-function setActiveTour(url, label) {
-  const openBtn = document.getElementById('tour-open-btn');
-  const previewLabel = document.getElementById('tour-preview-label');
-  const preview = document.getElementById('tour-preview');
-  if (openBtn) openBtn.href = url;
-  if (previewLabel) previewLabel.textContent = label || 'Open Virtual Tour';
-  if (preview) {
-    // Re-attach click to new URL
-    preview.onclick = () => window.open(url, '_blank', 'noopener');
+/* Load a tour into the iframe */
+function loadTour(url){
+  const iframe=document.getElementById('tour-iframe');
+  const loading=document.getElementById('tour-loading');
+  const openBtn=document.getElementById('tour-open-btn');
+
+  if(openBtn) openBtn.href=url;
+  if(loading) loading.classList.remove('hidden');
+
+  if(iframe){
+    iframe.src='';
+    // Small delay so loading overlay is visible before iframe starts loading
+    setTimeout(()=>{
+      iframe.src=url;
+      iframe.onload=()=>{
+        if(loading) loading.classList.add('hidden');
+        scheduleHeightPings();
+      };
+    }, 50);
   }
+
   // Update active pill
-  document.querySelectorAll('.tour-pill').forEach(p => {
-    p.classList.toggle('active', p.dataset.url === url);
-  });
+  document.querySelectorAll('.tour-pill').forEach(p=>p.classList.toggle('active', p.dataset.url===url));
 }
 
-/* ---- Main tab switcher ---- */
-function switchTab(id) {
-  document.querySelectorAll('.media-tab[data-tab]').forEach(t => t.classList.toggle('active', t.dataset.tab===id));
-  document.querySelectorAll('.media-panel').forEach(p => p.classList.toggle('active', p.id==='panel-'+id));
+/* Tab switcher */
+function switchTab(id){
+  document.querySelectorAll('.media-tab[data-tab]').forEach(t=>t.classList.toggle('active',t.dataset.tab===id));
+  document.querySelectorAll('.media-panel').forEach(p=>p.classList.toggle('active',p.id==='panel-'+id));
   scheduleHeightPings();
 }
 
-/* ---- Init all media ---- */
-function initMediaTabs(p) {
-  // Support both old single field and new array field
-  const tourUrls = Array.isArray(p.virtual_tour_urls)
-    ? p.virtual_tour_urls.filter(Boolean)
-    : (p.virtual_tour_url ? [p.virtual_tour_url] : []);
+/* Init media */
+function initMediaTabs(p){
+  const tourUrls=Array.isArray(p.virtual_tour_urls)?p.virtual_tour_urls.filter(Boolean):(p.virtual_tour_url?[p.virtual_tour_url]:[]);
+  const floorPlans=Array.isArray(p.floor_plan_urls)?p.floor_plan_urls.filter(Boolean):[];
+  const imgs=(p.images||[]).filter(Boolean);
+  const hasPhotos=imgs.length>0;
+  const hasFloorPlans=floorPlans.length>0;
+  const hasTours=tourUrls.length>0;
 
-  const floorPlans = Array.isArray(p.floor_plan_urls) ? p.floor_plan_urls.filter(Boolean) : [];
-  const imgs = (p.images||[]).filter(Boolean);
-  const hasPhotos = imgs.length > 0;
-  const hasFloorPlans = floorPlans.length > 0;
-  const hasTours = tourUrls.length > 0;
-
-  const mediaHeader = document.getElementById('media-header');
-  const tabsEl = document.getElementById('media-tabs');
-  const showTabs = hasFloorPlans || hasTours;
-
-  if (!showTabs) { mediaHeader.style.display='none'; return; }
+  const mediaHeader=document.getElementById('media-header');
+  const tabsEl=document.getElementById('media-tabs');
+  const showTabs=hasFloorPlans||hasTours;
+  if(!showTabs){mediaHeader.style.display='none';return;}
 
   mediaHeader.style.display='';
   tabsEl.innerHTML='';
 
-  // Photos tab
-  if (hasPhotos) {
+  if(hasPhotos){
     const btn=document.createElement('button');
-    btn.type='button'; btn.className='media-tab active';
-    btn.textContent='Photos ('+imgs.length+')';
-    btn.dataset.tab='photos';
-    btn.addEventListener('click', ()=>switchTab('photos'));
+    btn.type='button';btn.className='media-tab active';
+    btn.textContent='Photos ('+imgs.length+')';btn.dataset.tab='photos';
+    btn.addEventListener('click',()=>switchTab('photos'));
+    tabsEl.appendChild(btn);
+  }
+  if(hasFloorPlans){
+    const btn=document.createElement('button');
+    btn.type='button';btn.className='media-tab';
+    btn.textContent='Floor Plans ('+floorPlans.length+')';btn.dataset.tab='floorplans';
+    btn.addEventListener('click',()=>switchTab('floorplans'));
+    tabsEl.appendChild(btn);
+  }
+  if(hasTours){
+    const btn=document.createElement('button');
+    btn.type='button';btn.className='media-tab';
+    btn.textContent='Virtual Tours ('+tourUrls.length+')';btn.dataset.tab='tours';
+    btn.addEventListener('click',()=>switchTab('tours'));
     tabsEl.appendChild(btn);
   }
 
-  // Floor Plans tab
-  if (hasFloorPlans) {
-    const btn=document.createElement('button');
-    btn.type='button'; btn.className='media-tab';
-    btn.textContent='Floor Plans ('+floorPlans.length+')';
-    btn.dataset.tab='floorplans';
-    btn.addEventListener('click', ()=>switchTab('floorplans'));
-    tabsEl.appendChild(btn);
-  }
-
-  // Virtual Tours tab
-  if (hasTours) {
-    const btn=document.createElement('button');
-    btn.type='button'; btn.className='media-tab';
-    btn.textContent='Virtual Tours ('+tourUrls.length+')';
-    btn.dataset.tab='tours';
-    btn.addEventListener('click', ()=>switchTab('tours'));
-    tabsEl.appendChild(btn);
-  }
-
-  /* ---- Floor plans setup ---- */
-  if (hasFloorPlans) {
-    const isPdf = u => typeof u==='string' && u.toLowerCase().endsWith('.pdf');
+  /* Floor plans */
+  if(hasFloorPlans){
+    const isPdf=u=>typeof u==='string'&&u.toLowerCase().endsWith('.pdf');
     const fpViewer=document.getElementById('fp-viewer');
     const fpMain=document.getElementById('fp-main');
     const fpThumbs=document.getElementById('fp-thumbs');
     const fpDownload=document.getElementById('fp-download');
     const firstUrl=floorPlans[0];
-
-    if (isPdf(firstUrl)) {
-      fpMain.style.display='none';
-      const msg=document.createElement('div'); msg.className='fp-pdf-msg';
-      msg.innerHTML='\uD83D\uDCC4 PDF floor plan<br><span style="font-size:12px;color:#999">Use the download button below to view</span>';
-      fpViewer.appendChild(msg);
-    } else { fpMain.src=firstUrl; fpMain.style.display=''; }
-
+    if(isPdf(firstUrl)){fpMain.style.display='none';const msg=document.createElement('div');msg.className='fp-pdf-msg';msg.innerHTML='\uD83D\uDCC4 PDF floor plan<br><span style="font-size:12px;color:#999">Use the download button below to view</span>';fpViewer.appendChild(msg);}
+    else{fpMain.src=firstUrl;fpMain.style.display='';}
     const firstPdf=floorPlans.find(isPdf);
-    if (fpDownload){fpDownload.href=firstPdf||firstUrl;fpDownload.style.display='';}
-
-    if (floorPlans.length>1) {
+    if(fpDownload){fpDownload.href=firstPdf||firstUrl;fpDownload.style.display='';}
+    if(floorPlans.length>1){
       fpThumbs.style.display='flex';
       floorPlans.forEach((url,i)=>{
-        const btn=document.createElement('button'); btn.type='button';
-        btn.className='fp-thumb'+(i===0?' active':'');
-        if (!isPdf(url)){const img=document.createElement('img');img.src=url;img.alt='Floor plan '+(i+1);btn.appendChild(img);}
+        const btn=document.createElement('button');btn.type='button';btn.className='fp-thumb'+(i===0?' active':'');
+        if(!isPdf(url)){const img=document.createElement('img');img.src=url;img.alt='Floor plan '+(i+1);btn.appendChild(img);}
         else{const lbl=document.createElement('div');lbl.className='fp-thumb-label';lbl.textContent='Plan '+(i+1);btn.appendChild(lbl);}
         btn.addEventListener('click',()=>{
-          document.querySelectorAll('.fp-thumb').forEach(t=>t.classList.remove('active'));
-          btn.classList.add('active');
+          document.querySelectorAll('.fp-thumb').forEach(t=>t.classList.remove('active'));btn.classList.add('active');
           const ex=fpViewer.querySelector('.fp-pdf-msg');
-          if (!isPdf(url)){if(ex)ex.remove();fpMain.src=url;fpMain.style.display='';}
+          if(!isPdf(url)){if(ex)ex.remove();fpMain.src=url;fpMain.style.display='';}
           else{fpMain.style.display='none';if(!ex){const m=document.createElement('div');m.className='fp-pdf-msg';m.innerHTML='\uD83D\uDCC4 PDF floor plan<br><span style="font-size:12px;color:#999">Use the download button below to view</span>';fpViewer.appendChild(m);}}
-          if (fpDownload){fpDownload.href=url;fpDownload.style.display='';}
+          if(fpDownload){fpDownload.href=url;fpDownload.style.display='';}
           scheduleHeightPings();
         });
         fpThumbs.appendChild(btn);
       });
     }
-
     const fsBtn=document.getElementById('fp-fullscreen');
-    if (fsBtn) fsBtn.addEventListener('click',()=>{if(fpViewer.requestFullscreen)fpViewer.requestFullscreen();else if(fpViewer.webkitRequestFullscreen)fpViewer.webkitRequestFullscreen();});
-
+    if(fsBtn)fsBtn.addEventListener('click',()=>{if(fpViewer.requestFullscreen)fpViewer.requestFullscreen();else if(fpViewer.webkitRequestFullscreen)fpViewer.webkitRequestFullscreen();});
     const sidebarFp=document.getElementById('sidebarFpBtn');
-    if (sidebarFp){sidebarFp.href=firstPdf||firstUrl;sidebarFp.style.display='';}
+    if(sidebarFp){sidebarFp.href=firstPdf||firstUrl;sidebarFp.style.display='';}
   }
 
-  /* ---- Virtual tours setup ---- */
-  if (hasTours) {
+  /* Virtual tours */
+  if(hasTours){
     const selector=document.getElementById('tours-selector');
-
-    if (tourUrls.length > 1) {
-      // Show secondary selector with pill buttons
+    if(tourUrls.length>1){
       selector.style.display='flex';
-      tourUrls.forEach((url, i) => {
-        const label = tourLabel(url, i, tourUrls.length);
+      tourUrls.forEach((url,i)=>{
+        const label=tourLabel(url,i,tourUrls.length);
         const pill=document.createElement('button');
-        pill.type='button'; pill.className='tour-pill'+(i===0?' active':'');
-        pill.textContent=label; pill.dataset.url=url;
-        pill.addEventListener('click', ()=>setActiveTour(url, label));
+        pill.type='button';pill.className='tour-pill'+(i===0?' active':'');
+        pill.textContent=label;pill.dataset.url=url;
+        pill.addEventListener('click',()=>loadTour(url));
         selector.appendChild(pill);
       });
-    } else {
-      selector.style.display='none';
+    }else{selector.style.display='none';}
+
+    // Load first tour by default (lazy — only when tab is first clicked)
+    let toursLoaded=false;
+    const toursTab=tabsEl.querySelector('[data-tab="tours"]');
+    if(toursTab){
+      toursTab.addEventListener('click',()=>{
+        if(!toursLoaded){
+          toursLoaded=true;
+          loadTour(tourUrls[0]);
+        }
+      },{once:false});
     }
 
-    // Set first tour as default
-    const firstLabel = tourLabel(tourUrls[0], 0, tourUrls.length);
-    setActiveTour(tourUrls[0], firstLabel);
+    // Set open btn href immediately
+    const openBtn=document.getElementById('tour-open-btn');
+    if(openBtn) openBtn.href=tourUrls[0];
 
-    // Sidebar button — link to first tour
     const sidebarTour=document.getElementById('sidebarTourBtn');
-    if (sidebarTour){sidebarTour.href=tourUrls[0];sidebarTour.style.display='';}
+    if(sidebarTour){sidebarTour.href=tourUrls[0];sidebarTour.style.display='';}
   }
 }
 
-/* ---- MAIN ---- */
+/* MAIN */
 async function main(){
   try{
     const id=getParam('id');
     const res=await fetch('/properties.json',{cache:'no-store'});
-    if (!res.ok) throw new Error('fetch failed: '+res.status);
+    if(!res.ok)throw new Error('fetch failed: '+res.status);
     const list=await res.json();
     const p=list.find(x=>String(x.id)===String(id))||list[0];
-    if (!p) throw new Error('not found');
+    if(!p)throw new Error('not found');
 
     p.agents=p.agents||p.contacts||[];
     p.brochure=p.brochure||p.brochure_url||p.brochureUrl||'';
@@ -428,15 +442,15 @@ async function main(){
     $('#prop-sub').textContent=[p.town,p.postcode].filter(Boolean).join(' ');
 
     const chipsEl=$('#prop-chips');
-    if (chipsEl){
+    if(chipsEl){
       chipsEl.innerHTML='';
       const status=String(p.status||'Available').trim(),lc=status.toLowerCase();
       let cls='status-other';
-      if (!lc||lc==='available')cls='status-available';
-      else if (lc.includes('under offer'))cls='status-under-offer';
-      else if (lc.includes('let agreed'))cls='status-let-agreed';
-      else if (lc==='sold stc'||lc.includes('subject to contract'))cls='status-sold-stc';
-      else if (lc==='sold')cls='status-sold';
+      if(!lc||lc==='available')cls='status-available';
+      else if(lc.includes('under offer'))cls='status-under-offer';
+      else if(lc.includes('let agreed'))cls='status-let-agreed';
+      else if(lc==='sold stc'||lc.includes('subject to contract'))cls='status-sold-stc';
+      else if(lc==='sold')cls='status-sold';
       const sb=document.createElement('span');sb.className='status-badge '+cls;sb.textContent=status;chipsEl.appendChild(sb);
       const tp=[];if(p.to_let)tp.push('To Let');if(p.for_sale)tp.push('For Sale');
       tp.forEach(l=>{const c=document.createElement('span');c.className='chip';c.textContent=l;chipsEl.appendChild(c);});
@@ -444,40 +458,39 @@ async function main(){
 
     const imgs=(p.images||[]).map(i=>(typeof i==='string'?i:i.url)).filter(Boolean);
     const hero=$('#hero');hero.innerHTML='';
-    if (isHttpUrl(imgs[0]))hero.appendChild(createImg(imgs[0],p.address||'Property image'));
-
+    if(isHttpUrl(imgs[0]))hero.appendChild(createImg(imgs[0],p.address||'Property image'));
     const thumbsEl=$('#thumbs');thumbsEl.innerHTML='';
     imgs.forEach(u=>{if(!isHttpUrl(u))return;const btn=document.createElement('button');btn.type='button';btn.className='thumb';btn.dataset.src=u;btn.appendChild(createImg(u,p.address?'Thumbnail for '+p.address:'Thumbnail'));thumbsEl.appendChild(btn);});
     thumbsEl.addEventListener('click',e=>{const t=e.target.closest('.thumb');if(t&&isHttpUrl(t.dataset.src)){hero.innerHTML='';hero.appendChild(createImg(t.dataset.src,p.address||'Property image'));scheduleHeightPings();}});
 
     const facts=[];
-    if (p.size_from_sqft){const s=Number(p.size_from_sqft);facts.push(['Size',Number.isFinite(s)?s.toLocaleString()+' sq ft':String(p.size_from_sqft)]);}
-    if (p.epc)facts.push(['EPC',String(p.epc)]);
-    if (p.rent_text)facts.push(['Rent',String(p.rent_text)]);
-    if (p.rateable_value)facts.push(['Rateable value',String(p.rateable_value)]);
-    if (p.last_updated)facts.push(['Updated',String(p.last_updated)]);
-    if (p.types&&p.types.length)facts.push(['Type',p.types.join(', ')]);
+    if(p.size_from_sqft){const s=Number(p.size_from_sqft);facts.push(['Size',Number.isFinite(s)?s.toLocaleString()+' sq ft':String(p.size_from_sqft)]);}
+    if(p.epc)facts.push(['EPC',String(p.epc)]);
+    if(p.rent_text)facts.push(['Rent',String(p.rent_text)]);
+    if(p.rateable_value)facts.push(['Rateable value',String(p.rateable_value)]);
+    if(p.last_updated)facts.push(['Updated',String(p.last_updated)]);
+    if(p.types&&p.types.length)facts.push(['Type',p.types.join(', ')]);
     const factsEl=$('#facts');factsEl.innerHTML='';
     facts.forEach(([l,v])=>{const f=document.createElement('div');f.className='fact';const la=document.createElement('div');la.className='label';la.textContent=l;const va=document.createElement('div');va.className='value';va.textContent=v;f.appendChild(la);f.appendChild(va);factsEl.appendChild(f);});
 
-    if (p.description){$('#desc').textContent=p.description;$('#descCard').style.display='';}else{$('#descCard').style.display='none';}
-    if (p.overview){$('#overview').textContent=p.overview;$('#overviewCard').style.display='';}else{$('#overviewCard').style.display='none';}
-    if (p.features&&Array.isArray(p.features)&&p.features.length){const fe=$('#features');fe.innerHTML='';p.features.forEach(fv=>{const li=document.createElement('li');li.textContent=fv;fe.appendChild(li);});$('#featuresCard').style.display='';}else{$('#featuresCard').style.display='none';}
-    if (p.location){$('#location').textContent=p.location;$('#locationCard').style.display='';}else{$('#locationCard')&&($('#locationCard').style.display='none');}
-    if (p.marketing_text_transport){$('#transport').textContent=p.marketing_text_transport;$('#transportCard').style.display='';}else{$('#transportCard')&&($('#transportCard').style.display='none');}
+    if(p.description){$('#desc').textContent=p.description;$('#descCard').style.display='';}else{$('#descCard').style.display='none';}
+    if(p.overview){$('#overview').textContent=p.overview;$('#overviewCard').style.display='';}else{$('#overviewCard').style.display='none';}
+    if(p.features&&Array.isArray(p.features)&&p.features.length){const fe=$('#features');fe.innerHTML='';p.features.forEach(fv=>{const li=document.createElement('li');li.textContent=fv;fe.appendChild(li);});$('#featuresCard').style.display='';}else{$('#featuresCard').style.display='none';}
+    if(p.location){$('#location').textContent=p.location;$('#locationCard').style.display='';}else{$('#locationCard')&&($('#locationCard').style.display='none');}
+    if(p.marketing_text_transport){$('#transport').textContent=p.marketing_text_transport;$('#transportCard').style.display='';}else{$('#transportCard')&&($('#transportCard').style.display='none');}
 
     const brochureBtn=$('#brochureBtn');
-    if (p.brochure){brochureBtn.href=p.brochure;brochureBtn.style.display='';}else{brochureBtn.style.display='none';}
+    if(p.brochure){brochureBtn.href=p.brochure;brochureBtn.style.display='';}else{brochureBtn.style.display='none';}
 
     initMediaTabs(p);
 
-    if (p.agents&&p.agents.length){
+    if(p.agents&&p.agents.length){
       const ab=document.getElementById('teamBox'),ae=document.getElementById('agents');ae.innerHTML='';
       p.agents.forEach(a=>{const d=document.createElement('div');d.className='agent';const av=document.createElement('div');av.className='avatar';av.textContent=initials(a.name||'');const info=document.createElement('div');const nm=document.createElement('div');nm.style.fontWeight='600';nm.textContent=a.name||'';const ct=document.createElement('div');ct.className='muted';ct.textContent=a.phone||a.email||'';info.appendChild(nm);info.appendChild(ct);d.appendChild(av);d.appendChild(info);ae.appendChild(d);});
       ab.style.display='';
     }else{document.getElementById('teamBox').style.display='none';}
 
-    if (window.L&&p.lat!=null&&p.lon!=null){
+    if(window.L&&p.lat!=null&&p.lon!=null){
       try{
         const map=L.map('map').setView([p.lat,p.lon],14);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
@@ -487,7 +500,7 @@ async function main(){
     }
 
     scrollTopOnce();scheduleHeightPings();
-    if ('ResizeObserver' in window) new ResizeObserver(()=>scheduleHeightPings()).observe(document.getElementById('content'));
+    if('ResizeObserver' in window)new ResizeObserver(()=>scheduleHeightPings()).observe(document.getElementById('content'));
     watchImages();
 
   }catch(err){console.error(err);$('#loading').textContent='Failed to load property';}
@@ -495,7 +508,7 @@ async function main(){
 
 document.addEventListener('DOMContentLoaded',()=>{
   const bl=document.querySelector('.back');
-  if (bl){try{const ls=sessionStorage.getItem('gjs:lastSearch');if(ls)bl.href='index.html'+ls;}catch(e){}}
+  if(bl){try{const ls=sessionStorage.getItem('gjs:lastSearch');if(ls)bl.href='index.html'+ls;}catch(e){}}
   main();
 });
 </script>
@@ -523,7 +536,6 @@ document.addEventListener('DOMContentLoaded',()=>{
   .error{color:#b91c1c;font-size:13px;margin-top:6px}
   .modal__actions{display:flex;gap:10px;margin-top:12px;align-items:center;flex-wrap:wrap}
   .spinner{display:inline-block;width:16px;height:16px;border-radius:50%;border:2px solid rgba(255,255,255,.25);border-top-color:#fff;animation:spin .7s linear infinite;margin-left:8px}
-  @keyframes spin{to{transform:rotate(360deg)}}
   .modal__success{padding:18px 20px;text-align:center}
   .modal__success h3{margin:0 0 8px;font-size:16px}
   .modal__success p{color:#444;font-size:14px;margin:0 0 12px}
