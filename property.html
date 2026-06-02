@@ -496,6 +496,8 @@ function initMediaTabs(p) {
     const overlay = document.getElementById('tour-overlay');
     const fsBtn = document.getElementById('tour-fullscreen-btn');
     if (fsBtn) fsBtn.href = tourUrl;
+    const tourIframe = document.getElementById('tour-iframe');
+    if (tourIframe) tourIframe.dataset.tourUrl = tourUrl;
 
     if (overlay) {
       overlay.addEventListener('click', () => {
