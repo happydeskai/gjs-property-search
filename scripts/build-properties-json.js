@@ -260,7 +260,13 @@ async function run() {
         epc_rating,
 
         images: extractImages(p.images),
-        brochure_url: txt(p.files?.file?.url) || undefined,
+        brochure_url: (() => {
+  const files = arr(p.files?.file);
+  const brochure = files.find(
+    (f) => txt(f?.description).toLowerCase() === "brochure" || txt(f?.type) === "11"
+  );
+  return txt(brochure?.url) || undefined;
+})(),
 
         contacts,
         last_updated: txt(p.last_updated) || txt(p.created_at) || undefined,
