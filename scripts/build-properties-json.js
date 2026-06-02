@@ -268,6 +268,20 @@ async function run() {
   return txt(brochure?.url) || undefined;
 })(),
 
+        floor_plan_urls: (() => {
+  const files = arr(p.files?.file);
+  return files
+    .filter((f) => txt(f?.description).toLowerCase() === "floor plan" || txt(f?.type) === "15")
+    .map((f) => txt(f?.url))
+    .filter(Boolean);
+})(),
+
+        virtual_tour_url: (() => {
+  const videos = arr(p.videos_detail?.video);
+  const tour = videos.find((v) => txt(v?.url).includes("giraffe360") || txt(v?.url).includes("tour."));
+  return txt(tour?.url) || txt(p.videos?.url) || undefined;
+})(),
+
         contacts,
         last_updated: txt(p.last_updated) || txt(p.created_at) || undefined,
       };
