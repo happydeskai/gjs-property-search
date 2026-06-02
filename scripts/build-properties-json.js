@@ -276,10 +276,15 @@ async function run() {
     .filter(Boolean);
 })(),
 
-        virtual_tour_url: (() => {
+        virtual_tour_urls: (() => {
   const videos = arr(p.videos_detail?.video);
-  const tour = videos.find((v) => txt(v?.url).includes("giraffe360") || txt(v?.url).includes("tour."));
-  return txt(tour?.url) || txt(p.videos?.url) || undefined;
+  const urls = videos
+    .map((v) => txt(v?.url))
+    .filter((u) => u && (u.includes("giraffe360") || u.includes("tour.")));
+  if (urls.length) return urls;
+  // fallback to <videos><url> entries
+  const fallback = arr(p.videos?.url).map(txt).filter(Boolean);
+  return fallback.length ? fallback : undefined;
 })(),
 
         contacts,
