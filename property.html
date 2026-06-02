@@ -48,17 +48,17 @@
     .hero-card{background:var(--card);border-radius:calc(var(--radius) + 4px);overflow:hidden;box-shadow:var(--shadow-lg)}
     .hero{position:relative;aspect-ratio:16/9;background:#eee;overflow:hidden;width:100%;max-width:100%}
     .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-    .gallery{display:flex;gap:10px;padding:12px;overflow:auto;background:#fff}
+    .gallery{display:flex;gap:10px;padding:10px 12px 12px;overflow:auto;background:#fff}
     .thumb{flex:0 0 120px;aspect-ratio:4/3;border-radius:12px;overflow:hidden;border:1px solid #eee;cursor:pointer;transition:transform .12s ease}
     .thumb:hover{transform:translateY(-2px)}
     .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-md);border:1px solid #edf0f3;overflow:hidden}
     .card__body{padding:16px}
     .card__title{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:12px 16px 8px;border-bottom:1px solid #f0f2f5;background:#fff}
-    .actions{display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
-    .btn{height:44px;padding:0 16px;border-radius:10px;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600;text-decoration:none;white-space:nowrap}
+    .actions{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
+    .btn{height:44px;padding:0 16px;border-radius:10px;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600;font-size:14px;text-decoration:none;white-space:nowrap;width:100%}
     .btn-primary{background:var(--brand);color:#fff}
     .btn-primary::after{content:"";width:6px;height:6px;border-radius:999px;background:var(--accent);margin-left:8px}
-    .btn-ghost{background:#fff;border:1px solid #ddd;color:#111;font-size:14px}
+    .btn-ghost{background:#fff;border:1px solid #ddd;color:#111}
     #map{height:260px;border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm)}
     .facts{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
     @media(max-width:700px){.facts{grid-template-columns:1fr}}
@@ -72,29 +72,59 @@
     .avatar{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#f1f3f6;color:#222;font-weight:700;border:1px solid #e9edf2}
     #teamBox .agent{padding:12px;border-top:none}
 
-    /* MEDIA TABS */
-    .media-tabs{display:flex;gap:6px;padding:10px 12px 12px;background:#fff;border-top:1px solid #f0f2f5;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+    /* =============================================
+       MEDIA SECTION
+    ============================================= */
+
+    /* Section label above tabs */
+    .media-label{
+      font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;
+      color:var(--muted);padding:12px 14px 0;background:#fff;
+    }
+
+    /* Tab bar */
+    .media-tabs{
+      display:flex;gap:6px;padding:8px 12px 10px;background:#fff;
+      overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;
+      border-bottom:1px solid #f0f2f5;
+    }
     .media-tabs::-webkit-scrollbar{display:none}
-    .media-tab{flex:0 0 auto;height:36px;padding:0 16px;border-radius:999px;border:1px solid #e6e8eb;background:#fff;font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;transition:all .12s ease;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center}
-    .media-tab:hover{border-color:#ccc;color:#111}
+    .media-tab{
+      flex:0 0 auto;height:34px;padding:0 14px;border-radius:999px;
+      border:1px solid #e6e8eb;background:#fff;font-size:13px;font-weight:600;
+      color:var(--muted);cursor:pointer;transition:all .12s ease;white-space:nowrap;
+      text-decoration:none;display:inline-flex;align-items:center;
+    }
+    .media-tab:hover{border-color:#bbb;color:#111}
     .media-tab.active{background:#111;color:#fff;border-color:#111}
-    /* Tour tab is an anchor — give it a distinct hover to signal it opens externally */
-    a.media-tab{color:var(--muted)}
+    /* Tour tab — link style, signals external */
     a.media-tab:hover{background:#f0f7ff;border-color:#3b82f6;color:#1d4ed8}
+
     .media-panel{display:none}
     .media-panel.active{display:block}
 
     /* Floor plans */
-    .fp-viewer{position:relative;aspect-ratio:16/9;background:#f6f7fb;overflow:hidden;display:flex;align-items:center;justify-content:center}
+    .fp-viewer{
+      position:relative;aspect-ratio:16/9;background:#f6f7fb;
+      overflow:hidden;display:flex;align-items:center;justify-content:center;
+    }
     .fp-viewer img{max-width:100%;max-height:100%;object-fit:contain}
     .fp-pdf-msg{padding:40px;text-align:center;color:#666;font-size:14px;line-height:1.6}
-    .fp-thumbs{display:flex;gap:8px;padding:10px 12px;background:#fff;overflow-x:auto}
-    .fp-thumb{flex:0 0 90px;aspect-ratio:4/3;border-radius:8px;overflow:hidden;border:2px solid transparent;cursor:pointer;transition:border-color .12s;background:#f6f7fb;display:flex;align-items:center;justify-content:center}
+    .fp-thumbs{display:flex;gap:8px;padding:10px 12px;background:#fff;overflow-x:auto;border-bottom:1px solid #f0f2f5}
+    .fp-thumb{
+      flex:0 0 90px;aspect-ratio:4/3;border-radius:8px;overflow:hidden;
+      border:2px solid transparent;cursor:pointer;transition:border-color .12s;
+      background:#f6f7fb;display:flex;align-items:center;justify-content:center;
+    }
     .fp-thumb.active{border-color:#111}
     .fp-thumb img{width:100%;height:100%;object-fit:cover}
     .fp-thumb-label{font-size:11px;font-weight:600;color:#666;text-align:center;padding:4px}
-    .fp-actions{display:flex;gap:8px;padding:8px 12px;background:#fff;border-top:1px solid #f0f2f5;flex-wrap:wrap}
-    .fp-btn{height:34px;padding:0 14px;border-radius:8px;border:1px solid #e6e8eb;background:#fff;font-size:13px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:6px;text-decoration:none;color:#111}
+    .fp-actions{display:flex;gap:8px;padding:8px 12px;background:#fff;flex-wrap:wrap}
+    .fp-btn{
+      height:34px;padding:0 14px;border-radius:8px;border:1px solid #e6e8eb;
+      background:#fff;font-size:13px;font-weight:600;cursor:pointer;
+      display:inline-flex;align-items:center;gap:6px;text-decoration:none;color:#111;
+    }
     .fp-btn:hover{background:#f6f7fb}
   </style>
 </head>
@@ -112,6 +142,12 @@
         <div>
           <div class="hero-card">
 
+            <!-- SECTION LABEL + TAB BAR (above image, injected by JS when needed) -->
+            <div id="media-header" style="display:none">
+              <div class="media-label">Property Media</div>
+              <div class="media-tabs" id="media-tabs"></div>
+            </div>
+
             <!-- PHOTOS PANEL -->
             <div class="media-panel active" id="panel-photos">
               <div class="hero" id="hero"></div>
@@ -125,13 +161,10 @@
               </div>
               <div class="fp-thumbs" id="fp-thumbs" style="display:none"></div>
               <div class="fp-actions">
-                <button class="fp-btn" id="fp-fullscreen" type="button">&#x26F6; Fullscreen</button>
-                <a class="fp-btn" id="fp-download" href="#" target="_blank" rel="noopener" style="display:none">&#8595; Download</a>
+                <button class="fp-btn" id="fp-fullscreen" type="button">Fullscreen</button>
+                <a class="fp-btn" id="fp-download" href="#" target="_blank" rel="noopener" style="display:none">Download</a>
               </div>
             </div>
-
-            <!-- TAB BAR (rendered by JS) -->
-            <div class="media-tabs" id="media-tabs" style="display:none"></div>
 
           </div>
 
@@ -159,8 +192,8 @@
               <div class="actions">
                 <button class="btn btn-primary" id="enquireBtn" type="button">Enquire now</button>
                 <a class="btn btn-ghost" id="brochureBtn" target="_blank" rel="noopener" style="display:none">Download brochure</a>
-                <a class="btn btn-ghost" id="sidebarTourBtn" target="_blank" rel="noopener" style="display:none">&#9654; Virtual tour</a>
-                <a class="btn btn-ghost" id="sidebarFpBtn" target="_blank" rel="noopener" style="display:none">&#8595; Floor plans</a>
+                <a class="btn btn-ghost" id="sidebarTourBtn" target="_blank" rel="noopener" style="display:none">View virtual tour</a>
+                <a class="btn btn-ghost" id="sidebarFpBtn" target="_blank" rel="noopener" style="display:none">Download floor plans</a>
               </div>
               <div id="map"></div>
             </div>
@@ -181,126 +214,108 @@ const $ = (s, el=document) => el.querySelector(s);
 const getParam = n => {
   const qs = new URLSearchParams(location.search).get(n);
   if (qs) return qs;
-  if (n === 'id') {
-    const m = location.pathname.match(/\/property-search\/([^/]+)/);
-    if (m) return m[1];
-  }
+  if (n === 'id') { const m=location.pathname.match(/\/property-search\/([^/]+)/); if(m) return m[1]; }
   return null;
 };
 const initials = n => n ? n.trim().split(/\s+/).slice(0,2).map(w=>w[0]?.toUpperCase()||'').join('') : '';
-const isHttpUrl = s => typeof s === 'string' && /^https?:\/\//i.test(s);
+const isHttpUrl = s => typeof s==='string' && /^https?:\/\//i.test(s);
 
-let lastHeight = 0, heightTimer = null;
-function getPageHeight() {
-  const w = document.querySelector('.wrap');
-  if (!w) return document.documentElement.scrollHeight;
-  const r = w.getBoundingClientRect();
-  return Math.max(Math.ceil(r.top + window.scrollY + r.height + 4), 300);
-}
-function notifyParentHeightImmediate() {
-  try { const h=getPageHeight(); if(Math.abs(h-lastHeight)<6)return; lastHeight=h; window.parent?.postMessage({type:'gjs-prop-height',height:h},'*'); } catch(e){}
-}
-function notifyParentHeight() { clearTimeout(heightTimer); heightTimer=setTimeout(notifyParentHeightImmediate,40); }
-function scheduleHeightPings() {
-  notifyParentHeight();
-  setTimeout(notifyParentHeight,120); setTimeout(notifyParentHeight,350);
-  setTimeout(notifyParentHeight,900); setTimeout(notifyParentHeight,2000);
-}
-function watchImages() {
-  Array.from(document.images||[]).forEach(img => {
-    if (img.complete) return;
-    img.addEventListener('load', scheduleHeightPings, {once:true});
-    img.addEventListener('error', scheduleHeightPings, {once:true});
-  });
-}
-let didScrollTop = false;
-function scrollTopOnce() {
-  if (didScrollTop) return; didScrollTop=true;
-  window.scrollTo(0,0);
-  try { window.parent?.postMessage({type:'scroll-top'},'*'); } catch(e){}
-}
-function createImg(src, alt) { const i=document.createElement('img'); i.src=src; i.alt=alt||''; return i; }
+let lastHeight=0, heightTimer=null;
+function getPageHeight(){const w=document.querySelector('.wrap');if(!w)return document.documentElement.scrollHeight;const r=w.getBoundingClientRect();return Math.max(Math.ceil(r.top+window.scrollY+r.height+4),300);}
+function notifyParentHeightImmediate(){try{const h=getPageHeight();if(Math.abs(h-lastHeight)<6)return;lastHeight=h;window.parent?.postMessage({type:'gjs-prop-height',height:h},'*');}catch(e){}}
+function notifyParentHeight(){clearTimeout(heightTimer);heightTimer=setTimeout(notifyParentHeightImmediate,40);}
+function scheduleHeightPings(){notifyParentHeight();setTimeout(notifyParentHeight,120);setTimeout(notifyParentHeight,350);setTimeout(notifyParentHeight,900);setTimeout(notifyParentHeight,2000);}
+function watchImages(){Array.from(document.images||[]).forEach(img=>{if(img.complete)return;img.addEventListener('load',scheduleHeightPings,{once:true});img.addEventListener('error',scheduleHeightPings,{once:true});});}
+let didScrollTop=false;
+function scrollTopOnce(){if(didScrollTop)return;didScrollTop=true;window.scrollTo(0,0);try{window.parent?.postMessage({type:'scroll-top'},'*');}catch(e){}}
+function createImg(src,alt){const i=document.createElement('img');i.src=src;i.alt=alt||'';return i;}
 
 /* MEDIA TABS */
-function switchTab(id) {
-  document.querySelectorAll('.media-tab[data-tab]').forEach(t => t.classList.toggle('active', t.dataset.tab===id));
-  document.querySelectorAll('.media-panel').forEach(p => p.classList.toggle('active', p.id==='panel-'+id));
+function switchTab(id){
+  document.querySelectorAll('.media-tab[data-tab]').forEach(t=>t.classList.toggle('active',t.dataset.tab===id));
+  document.querySelectorAll('.media-panel').forEach(p=>p.classList.toggle('active',p.id==='panel-'+id));
   scheduleHeightPings();
 }
 
-function initMediaTabs(p) {
-  const floorPlans = Array.isArray(p.floor_plan_urls) ? p.floor_plan_urls.filter(Boolean) : [];
-  const tourUrl = p.virtual_tour_url || '';
-  const hasPhotos = (p.images||[]).length > 0;
-  const hasFloorPlans = floorPlans.length > 0;
-  const hasTour = !!tourUrl;
-  const tabsEl = document.getElementById('media-tabs');
+function initMediaTabs(p){
+  const floorPlans=Array.isArray(p.floor_plan_urls)?p.floor_plan_urls.filter(Boolean):[];
+  const tourUrl=p.virtual_tour_url||'';
+  const imgs=(p.images||[]).filter(Boolean);
+  const hasPhotos=imgs.length>0;
+  const hasFloorPlans=floorPlans.length>0;
+  const hasTour=!!tourUrl;
 
-  // Need at least one switchable tab (photos/floorplans) plus optionally tour
-  const switchableCount = [hasPhotos, hasFloorPlans].filter(Boolean).length;
-  const anyMedia = switchableCount > 0 && (switchableCount > 1 || hasTour);
+  const mediaHeader=document.getElementById('media-header');
+  const tabsEl=document.getElementById('media-tabs');
 
-  if (!anyMedia) { tabsEl.style.display='none'; return; }
+  // Only show tabs if there's more than just photos
+  const showTabs=hasFloorPlans||hasTour;
+  if(!showTabs){mediaHeader.style.display='none';return;}
 
-  tabsEl.innerHTML=''; tabsEl.style.display='flex';
+  mediaHeader.style.display='';
+  tabsEl.innerHTML='';
 
-  // Photos tab (button)
-  if (hasPhotos) {
+  // Photos tab
+  if(hasPhotos){
     const btn=document.createElement('button');
-    btn.type='button'; btn.className='media-tab active'; btn.textContent='Photos'; btn.dataset.tab='photos';
-    btn.addEventListener('click', ()=>switchTab('photos'));
+    btn.type='button';btn.className='media-tab active';
+    btn.textContent='Photos ('+imgs.length+')';
+    btn.dataset.tab='photos';
+    btn.addEventListener('click',()=>switchTab('photos'));
     tabsEl.appendChild(btn);
   }
 
-  // Floor Plans tab (button)
-  if (hasFloorPlans) {
+  // Floor Plans tab
+  if(hasFloorPlans){
     const btn=document.createElement('button');
-    btn.type='button'; btn.className='media-tab'; btn.textContent='Floor Plans'; btn.dataset.tab='floorplans';
-    btn.addEventListener('click', ()=>switchTab('floorplans'));
+    btn.type='button';btn.className='media-tab';
+    btn.textContent='Floor Plans ('+floorPlans.length+')';
+    btn.dataset.tab='floorplans';
+    btn.addEventListener('click',()=>switchTab('floorplans'));
     tabsEl.appendChild(btn);
   }
 
-  // Virtual Tour tab (anchor — opens new tab, never switches panel)
-  if (hasTour) {
+  // Virtual Tour tab — anchor, opens new tab
+  if(hasTour){
     const a=document.createElement('a');
-    a.className='media-tab'; a.href=tourUrl; a.target='_blank'; a.rel='noopener';
-    a.innerHTML='&#9654; Virtual Tour';
+    a.className='media-tab';a.href=tourUrl;a.target='_blank';a.rel='noopener';
+    a.textContent='Virtual Tour';
     tabsEl.appendChild(a);
   }
 
-  /* ---- Floor plans setup ---- */
-  if (hasFloorPlans) {
-    const isPdf = u => typeof u==='string' && u.toLowerCase().endsWith('.pdf');
+  /* Floor plans setup */
+  if(hasFloorPlans){
+    const isPdf=u=>typeof u==='string'&&u.toLowerCase().endsWith('.pdf');
     const fpViewer=document.getElementById('fp-viewer');
     const fpMain=document.getElementById('fp-main');
     const fpThumbs=document.getElementById('fp-thumbs');
     const fpDownload=document.getElementById('fp-download');
     const firstUrl=floorPlans[0];
 
-    if (isPdf(firstUrl)) {
+    if(isPdf(firstUrl)){
       fpMain.style.display='none';
-      const msg=document.createElement('div'); msg.className='fp-pdf-msg';
+      const msg=document.createElement('div');msg.className='fp-pdf-msg';
       msg.innerHTML='\uD83D\uDCC4 PDF floor plan<br><span style="font-size:12px;color:#999">Use the download button below to view</span>';
       fpViewer.appendChild(msg);
-    } else { fpMain.src=firstUrl; fpMain.style.display=''; }
+    }else{fpMain.src=firstUrl;fpMain.style.display='';}
 
     const firstPdf=floorPlans.find(isPdf);
-    if (fpDownload) { fpDownload.href=firstPdf||firstUrl; fpDownload.style.display=''; }
+    if(fpDownload){fpDownload.href=firstPdf||firstUrl;fpDownload.style.display='';}
 
-    if (floorPlans.length > 1) {
+    if(floorPlans.length>1){
       fpThumbs.style.display='flex';
-      floorPlans.forEach((url,i) => {
-        const btn=document.createElement('button'); btn.type='button';
+      floorPlans.forEach((url,i)=>{
+        const btn=document.createElement('button');btn.type='button';
         btn.className='fp-thumb'+(i===0?' active':'');
-        if (!isPdf(url)) { const img=document.createElement('img'); img.src=url; img.alt='Floor plan '+(i+1); btn.appendChild(img); }
-        else { const lbl=document.createElement('div'); lbl.className='fp-thumb-label'; lbl.textContent='Plan '+(i+1); btn.appendChild(lbl); }
-        btn.addEventListener('click', ()=>{
+        if(!isPdf(url)){const img=document.createElement('img');img.src=url;img.alt='Floor plan '+(i+1);btn.appendChild(img);}
+        else{const lbl=document.createElement('div');lbl.className='fp-thumb-label';lbl.textContent='Plan '+(i+1);btn.appendChild(lbl);}
+        btn.addEventListener('click',()=>{
           document.querySelectorAll('.fp-thumb').forEach(t=>t.classList.remove('active'));
           btn.classList.add('active');
           const ex=fpViewer.querySelector('.fp-pdf-msg');
-          if (!isPdf(url)) { if(ex)ex.remove(); fpMain.src=url; fpMain.style.display=''; }
-          else { fpMain.style.display='none'; if(!ex){const m=document.createElement('div');m.className='fp-pdf-msg';m.innerHTML='\uD83D\uDCC4 PDF floor plan<br><span style="font-size:12px;color:#999">Use the download button below to view</span>';fpViewer.appendChild(m);} }
-          if (fpDownload){fpDownload.href=url;fpDownload.style.display='';}
+          if(!isPdf(url)){if(ex)ex.remove();fpMain.src=url;fpMain.style.display='';}
+          else{fpMain.style.display='none';if(!ex){const m=document.createElement('div');m.className='fp-pdf-msg';m.innerHTML='\uD83D\uDCC4 PDF floor plan<br><span style="font-size:12px;color:#999">Use the download button below to view</span>';fpViewer.appendChild(m);}}
+          if(fpDownload){fpDownload.href=url;fpDownload.style.display='';}
           scheduleHeightPings();
         });
         fpThumbs.appendChild(btn);
@@ -308,28 +323,28 @@ function initMediaTabs(p) {
     }
 
     const fsBtn=document.getElementById('fp-fullscreen');
-    if (fsBtn) fsBtn.addEventListener('click', ()=>{ if(fpViewer.requestFullscreen)fpViewer.requestFullscreen(); else if(fpViewer.webkitRequestFullscreen)fpViewer.webkitRequestFullscreen(); });
+    if(fsBtn)fsBtn.addEventListener('click',()=>{if(fpViewer.requestFullscreen)fpViewer.requestFullscreen();else if(fpViewer.webkitRequestFullscreen)fpViewer.webkitRequestFullscreen();});
 
     const sidebarFp=document.getElementById('sidebarFpBtn');
-    if (sidebarFp) { sidebarFp.href=firstPdf||firstUrl; sidebarFp.style.display=''; }
+    if(sidebarFp){sidebarFp.href=firstPdf||firstUrl;sidebarFp.style.display='';}
   }
 
-  /* ---- Virtual tour sidebar button ---- */
-  if (hasTour) {
+  /* Tour sidebar button */
+  if(hasTour){
     const sidebarTour=document.getElementById('sidebarTourBtn');
-    if (sidebarTour) { sidebarTour.href=tourUrl; sidebarTour.style.display=''; }
+    if(sidebarTour){sidebarTour.href=tourUrl;sidebarTour.style.display='';}
   }
 }
 
 /* MAIN */
-async function main() {
-  try {
+async function main(){
+  try{
     const id=getParam('id');
     const res=await fetch('/properties.json',{cache:'no-store'});
-    if (!res.ok) throw new Error('fetch failed: '+res.status);
+    if(!res.ok)throw new Error('fetch failed: '+res.status);
     const list=await res.json();
     const p=list.find(x=>String(x.id)===String(id))||list[0];
-    if (!p) throw new Error('not found');
+    if(!p)throw new Error('not found');
 
     p.agents=p.agents||p.contacts||[];
     p.brochure=p.brochure||p.brochure_url||p.brochureUrl||'';
@@ -345,76 +360,73 @@ async function main() {
     $('#prop-sub').textContent=[p.town,p.postcode].filter(Boolean).join(' ');
 
     const chipsEl=$('#prop-chips');
-    if (chipsEl) {
+    if(chipsEl){
       chipsEl.innerHTML='';
-      const status=String(p.status||'Available').trim(), lc=status.toLowerCase();
+      const status=String(p.status||'Available').trim(),lc=status.toLowerCase();
       let cls='status-other';
-      if (!lc||lc==='available') cls='status-available';
-      else if (lc.includes('under offer')) cls='status-under-offer';
-      else if (lc.includes('let agreed')) cls='status-let-agreed';
-      else if (lc==='sold stc'||lc.includes('subject to contract')) cls='status-sold-stc';
-      else if (lc==='sold') cls='status-sold';
-      const sb=document.createElement('span'); sb.className='status-badge '+cls; sb.textContent=status; chipsEl.appendChild(sb);
-      const tp=[];
-      if (p.to_let) tp.push('To Let');
-      if (p.for_sale) tp.push('For Sale');
-      tp.forEach(l=>{ const c=document.createElement('span'); c.className='chip'; c.textContent=l; chipsEl.appendChild(c); });
+      if(!lc||lc==='available')cls='status-available';
+      else if(lc.includes('under offer'))cls='status-under-offer';
+      else if(lc.includes('let agreed'))cls='status-let-agreed';
+      else if(lc==='sold stc'||lc.includes('subject to contract'))cls='status-sold-stc';
+      else if(lc==='sold')cls='status-sold';
+      const sb=document.createElement('span');sb.className='status-badge '+cls;sb.textContent=status;chipsEl.appendChild(sb);
+      const tp=[];if(p.to_let)tp.push('To Let');if(p.for_sale)tp.push('For Sale');
+      tp.forEach(l=>{const c=document.createElement('span');c.className='chip';c.textContent=l;chipsEl.appendChild(c);});
     }
 
     const imgs=(p.images||[]).map(i=>(typeof i==='string'?i:i.url)).filter(Boolean);
-    const hero=$('#hero'); hero.innerHTML='';
-    if (isHttpUrl(imgs[0])) hero.appendChild(createImg(imgs[0],p.address||'Property image'));
+    const hero=$('#hero');hero.innerHTML='';
+    if(isHttpUrl(imgs[0]))hero.appendChild(createImg(imgs[0],p.address||'Property image'));
 
-    const thumbsEl=$('#thumbs'); thumbsEl.innerHTML='';
-    imgs.forEach(u=>{ if(!isHttpUrl(u))return; const btn=document.createElement('button'); btn.type='button'; btn.className='thumb'; btn.dataset.src=u; btn.appendChild(createImg(u,p.address?'Thumbnail for '+p.address:'Thumbnail')); thumbsEl.appendChild(btn); });
-    thumbsEl.addEventListener('click', e=>{ const t=e.target.closest('.thumb'); if(t&&isHttpUrl(t.dataset.src)){ hero.innerHTML=''; hero.appendChild(createImg(t.dataset.src,p.address||'Property image')); scheduleHeightPings(); } });
+    const thumbsEl=$('#thumbs');thumbsEl.innerHTML='';
+    imgs.forEach(u=>{if(!isHttpUrl(u))return;const btn=document.createElement('button');btn.type='button';btn.className='thumb';btn.dataset.src=u;btn.appendChild(createImg(u,p.address?'Thumbnail for '+p.address:'Thumbnail'));thumbsEl.appendChild(btn);});
+    thumbsEl.addEventListener('click',e=>{const t=e.target.closest('.thumb');if(t&&isHttpUrl(t.dataset.src)){hero.innerHTML='';hero.appendChild(createImg(t.dataset.src,p.address||'Property image'));scheduleHeightPings();}});
 
     const facts=[];
-    if (p.size_from_sqft) { const s=Number(p.size_from_sqft); facts.push(['Size',Number.isFinite(s)?s.toLocaleString()+' sq ft':String(p.size_from_sqft)]); }
-    if (p.epc) facts.push(['EPC',String(p.epc)]);
-    if (p.rent_text) facts.push(['Rent',String(p.rent_text)]);
-    if (p.rateable_value) facts.push(['Rateable value',String(p.rateable_value)]);
-    if (p.last_updated) facts.push(['Updated',String(p.last_updated)]);
-    if (p.types&&p.types.length) facts.push(['Type',p.types.join(', ')]);
-    const factsEl=$('#facts'); factsEl.innerHTML='';
-    facts.forEach(([l,v])=>{ const f=document.createElement('div'); f.className='fact'; const la=document.createElement('div'); la.className='label'; la.textContent=l; const va=document.createElement('div'); va.className='value'; va.textContent=v; f.appendChild(la); f.appendChild(va); factsEl.appendChild(f); });
+    if(p.size_from_sqft){const s=Number(p.size_from_sqft);facts.push(['Size',Number.isFinite(s)?s.toLocaleString()+' sq ft':String(p.size_from_sqft)]);}
+    if(p.epc)facts.push(['EPC',String(p.epc)]);
+    if(p.rent_text)facts.push(['Rent',String(p.rent_text)]);
+    if(p.rateable_value)facts.push(['Rateable value',String(p.rateable_value)]);
+    if(p.last_updated)facts.push(['Updated',String(p.last_updated)]);
+    if(p.types&&p.types.length)facts.push(['Type',p.types.join(', ')]);
+    const factsEl=$('#facts');factsEl.innerHTML='';
+    facts.forEach(([l,v])=>{const f=document.createElement('div');f.className='fact';const la=document.createElement('div');la.className='label';la.textContent=l;const va=document.createElement('div');va.className='value';va.textContent=v;f.appendChild(la);f.appendChild(va);factsEl.appendChild(f);});
 
-    if (p.description){$('#desc').textContent=p.description;$('#descCard').style.display='';}else{$('#descCard').style.display='none';}
-    if (p.overview){$('#overview').textContent=p.overview;$('#overviewCard').style.display='';}else{$('#overviewCard').style.display='none';}
-    if (p.features&&Array.isArray(p.features)&&p.features.length){ const fe=$('#features'); fe.innerHTML=''; p.features.forEach(fv=>{const li=document.createElement('li');li.textContent=fv;fe.appendChild(li);}); $('#featuresCard').style.display=''; }else{$('#featuresCard').style.display='none';}
-    if (p.location){$('#location').textContent=p.location;$('#locationCard').style.display='';}else{$('#locationCard')&&($('#locationCard').style.display='none');}
+    if(p.description){$('#desc').textContent=p.description;$('#descCard').style.display='';}else{$('#descCard').style.display='none';}
+    if(p.overview){$('#overview').textContent=p.overview;$('#overviewCard').style.display='';}else{$('#overviewCard').style.display='none';}
+    if(p.features&&Array.isArray(p.features)&&p.features.length){const fe=$('#features');fe.innerHTML='';p.features.forEach(fv=>{const li=document.createElement('li');li.textContent=fv;fe.appendChild(li);});$('#featuresCard').style.display='';}else{$('#featuresCard').style.display='none';}
+    if(p.location){$('#location').textContent=p.location;$('#locationCard').style.display='';}else{$('#locationCard')&&($('#locationCard').style.display='none');}
 
     const brochureBtn=$('#brochureBtn');
-    if (p.brochure){brochureBtn.href=p.brochure;brochureBtn.style.display='';}else{brochureBtn.style.display='none';}
+    if(p.brochure){brochureBtn.href=p.brochure;brochureBtn.style.display='';}else{brochureBtn.style.display='none';}
 
     initMediaTabs(p);
 
-    if (p.agents&&p.agents.length){
-      const ab=document.getElementById('teamBox'),ae=document.getElementById('agents'); ae.innerHTML='';
-      p.agents.forEach(a=>{ const d=document.createElement('div'); d.className='agent'; const av=document.createElement('div'); av.className='avatar'; av.textContent=initials(a.name||''); const info=document.createElement('div'); const nm=document.createElement('div'); nm.style.fontWeight='600'; nm.textContent=a.name||''; const ct=document.createElement('div'); ct.className='muted'; ct.textContent=a.phone||a.email||''; info.appendChild(nm); info.appendChild(ct); d.appendChild(av); d.appendChild(info); ae.appendChild(d); });
+    if(p.agents&&p.agents.length){
+      const ab=document.getElementById('teamBox'),ae=document.getElementById('agents');ae.innerHTML='';
+      p.agents.forEach(a=>{const d=document.createElement('div');d.className='agent';const av=document.createElement('div');av.className='avatar';av.textContent=initials(a.name||'');const info=document.createElement('div');const nm=document.createElement('div');nm.style.fontWeight='600';nm.textContent=a.name||'';const ct=document.createElement('div');ct.className='muted';ct.textContent=a.phone||a.email||'';info.appendChild(nm);info.appendChild(ct);d.appendChild(av);d.appendChild(info);ae.appendChild(d);});
       ab.style.display='';
     }else{document.getElementById('teamBox').style.display='none';}
 
-    if (window.L&&p.lat!=null&&p.lon!=null){
+    if(window.L&&p.lat!=null&&p.lon!=null){
       try{
         const map=L.map('map').setView([p.lat,p.lon],14);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
         L.marker([p.lat,p.lon]).addTo(map);
-        map.on&&map.on('tileload',scheduleHeightPings);
-        map.on&&map.on('load',scheduleHeightPings);
+        map.on&&map.on('tileload',scheduleHeightPings);map.on&&map.on('load',scheduleHeightPings);
       }catch(e){console.warn('Map failed',e);}
     }
 
-    scrollTopOnce(); scheduleHeightPings();
-    if ('ResizeObserver' in window) new ResizeObserver(()=>scheduleHeightPings()).observe(document.getElementById('content'));
+    scrollTopOnce();scheduleHeightPings();
+    if('ResizeObserver' in window)new ResizeObserver(()=>scheduleHeightPings()).observe(document.getElementById('content'));
     watchImages();
 
   }catch(err){console.error(err);$('#loading').textContent='Failed to load property';}
 }
 
-document.addEventListener('DOMContentLoaded', ()=>{
+document.addEventListener('DOMContentLoaded',()=>{
   const bl=document.querySelector('.back');
-  if (bl){try{const ls=sessionStorage.getItem('gjs:lastSearch');if(ls)bl.href='index.html'+ls;}catch(e){}}
+  if(bl){try{const ls=sessionStorage.getItem('gjs:lastSearch');if(ls)bl.href='index.html'+ls;}catch(e){}}
   main();
 });
 </script>
@@ -493,7 +505,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         </div>
         <div class="modal__actions">
           <button id="sendEnquiryBtn" class="btn btn-primary" type="submit">Send enquiry <span id="enqSpinner" class="spinner" style="display:none"></span></button>
-          <button id="cancelEnquiryBtn" type="button" class="btn btn-ghost">Cancel</button>
+          <button id="cancelEnquiryBtn" type="button" class="btn btn-ghost" style="width:auto">Cancel</button>
         </div>
       </form>
     </div>
@@ -505,7 +517,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         </svg>
         <h3>Thanks &#8212; enquiry sent</h3>
         <p>We'll get back to you shortly.</p>
-        <div style="text-align:center"><button id="doneBtn" class="btn btn-primary">Done</button></div>
+        <div style="text-align:center"><button id="doneBtn" class="btn btn-primary" style="width:auto">Done</button></div>
       </div>
     </div>
   </div>
