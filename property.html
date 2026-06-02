@@ -349,6 +349,19 @@ function createImg(src, alt) {
 function switchTab(id) {
   document.querySelectorAll('.media-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === id));
   document.querySelectorAll('.media-panel').forEach(panel => panel.classList.toggle('active', panel.id === `panel-${id}`));
+
+  // Auto-load tour iframe when tab is selected
+  if (id === 'tour') {
+    const iframe = document.getElementById('tour-iframe');
+    const overlay = document.getElementById('tour-overlay');
+    if (iframe && !iframe.src) {
+      const tourUrl = iframe.dataset.tourUrl;
+      if (tourUrl) {
+        iframe.src = tourUrl;
+        if (overlay) overlay.classList.add('hidden');
+      }
+    }
+  }
   scheduleHeightPings();
 }
 
