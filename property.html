@@ -180,6 +180,9 @@
           <div class="section" id="locationCard" style="display:none">
             <div class="card"><div class="card__title"><h2>Location</h2></div><div class="card__body" id="location"></div></div>
           </div>
+          <div class="section" id="transportCard" style="display:none">
+            <div class="card"><div class="card__title"><h2>Transport &amp; connections</h2></div><div class="card__body" id="transport"></div></div>
+          </div>
           <div class="section" id="descCard" style="display:none">
             <div class="card"><div class="card__title"><h2>Description</h2></div><div class="card__body" id="desc"></div></div>
           </div>
@@ -396,6 +399,7 @@ async function main(){
     if(p.overview){$('#overview').textContent=p.overview;$('#overviewCard').style.display='';}else{$('#overviewCard').style.display='none';}
     if(p.features&&Array.isArray(p.features)&&p.features.length){const fe=$('#features');fe.innerHTML='';p.features.forEach(fv=>{const li=document.createElement('li');li.textContent=fv;fe.appendChild(li);});$('#featuresCard').style.display='';}else{$('#featuresCard').style.display='none';}
     if(p.location){$('#location').textContent=p.location;$('#locationCard').style.display='';}else{$('#locationCard')&&($('#locationCard').style.display='none');}
+    if(p.marketing_text_transport){$('#transport').textContent=p.marketing_text_transport;$('#transportCard').style.display='';}else{$('#transportCard')&&($('#transportCard').style.display='none');}
 
     const brochureBtn=$('#brochureBtn');
     if(p.brochure){brochureBtn.href=p.brochure;brochureBtn.style.display='';}else{brochureBtn.style.display='none';}
