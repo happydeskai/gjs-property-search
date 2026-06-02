@@ -1,5 +1,76 @@
 [
   {
+    "id": 372990,
+    "status": "Available",
+    "address": "Unit 10A and 11, Arden Business Centre",
+    "town": "Alcester",
+    "postcode": "B49 6HW",
+    "lat": 52.225734,
+    "lon": -1.86936,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": true,
+    "size_from_sqft": 3759,
+    "size_to_sqft": 3759,
+    "summary": "Trade Counter in Established Business Centre",
+    "description": "10A and 11 Arden Business Centre comprises a modern mid terrace commercial unit.  The property was built as two separate units however has been converted to provide on large unit that is currently used as a trade counter.  The units are of a steel portal frame construction with part brick & block and part steel clad elevations.  Internally, each unit benefits from a mezzanine floor over the majority of the floor area.  Within Unit 11 there are kitchen and WC facilities.\n\n10a Arden Business Centre\t\t\nGround Floor 962 sq ft (89.37 sq m)\nMezzanine Floor 849 sq ft (78.90 sq m)\nTotal 1,811 sq ft (168.27 sq m)\n\n11 Arden Business Centre\t\t\nGround Floor 962 sq ft (89.37 sq m)\nMezzanine Floor 986 sq ft (91.56 sq m)\nTotal 1,948 sq ft (180.93 sq m)\n\t\t\nWhole Unit 3,759 sq ft (349.2 sq m)",
+    "location": "The property is located on Arden Business Centre, Arden Road, Alcester and is approximately one mile north of Alcester town centre.  Arden Business Centre has a range of small, medium and large commercial units which are occupied by local and national commercial occupiers.  The area is popular with trade counter occupiers such as the existing Tenant and nearby Screwfix.\n\nAlcester is situated in an accessible location being adjacent to the A46, A435 and A422.  The A46 leads eastwards to Stratford-upon-Avon, Warwick and Junction 15 of the M40 motorway and south to Evesham and Junction 9 of the M5 motorway.  The A435 leads north to Redditch and Junction 3 of the M42 motorway, with the A422 leading west to Worcester.",
+    "features": [
+      "Total area 3,759 sq ft (349.20 sq m) GIA",
+      "Suitable for a variety of uses",
+      "Ground floor showroom with mezzanine area",
+      "Available on a long leasehold basis with 963 years remaining",
+      "Excellent access to the M40 and M42"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 26500,
+    "epc_rating": "C (58)",
+    "images": [
+      "https://as-images.imgix.net/0b1659403f31fa3950fc6c9acd0b27dd-20260505-101631.jpg",
+      "https://as-images.imgix.net/4f496fa3796366d35630136dc7515c65-20260505-105236.jpg",
+      "https://as-images.imgix.net/cb544788e399b5f68d9a9049329e9a07-20260505-101741.jpg",
+      "https://as-images.imgix.net/50149f2fe49ae52b8ff9fa7d68732420-20260505-101823.jpg",
+      "https://as-images.imgix.net/bcba3438defa48a3ee5a4256676da377-20260505-101800.jpg",
+      "https://as-images.imgix.net/b7f5eafe69d9915be373fa59e632d240-20260505-104032.jpg",
+      "https://as-images.imgix.net/3d21a28d87cf4dd194849769a329a4e5-20260505-102916.jpg",
+      "https://as-images.imgix.net/bee6399b0f5fb5eef983f6917bccf44a-20260505-102736.jpg",
+      "https://as-images.imgix.net/649ab7521a000f5a3ef307e93e6649e7-20260505-101832.jpg",
+      "https://as-images.imgix.net/c2b971a3991044ed8525ab4b325a3bc8-20260505-101727.jpg",
+      "https://as-images.imgix.net/092c0ad32f4218be5ab394a8c7de005c-20260505-102856.jpg",
+      "https://as-images.imgix.net/0bef02cf3db1d5f7b300a62b968a17a0-20260505-103941.jpg",
+      "https://as-images.imgix.net/c86a760ba12bb0ae3d3a531bc66598c3-20260505-104200.jpg",
+      "https://as-images.imgix.net/6b4a06dad7d055e42b05598bddf12cdf-20260505-104148.jpg",
+      "https://as-images.imgix.net/a2b944af13ddcd1728ae796640d5c20f-20260505-101548.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/5067c2d36f008effa16c0a4fb65333e4-gjs-dillon-particulars-10a-and-11-arden-business-centre-alcester-b49-2.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-06-02 14:52:09"
+  },
+  {
     "id": 355283,
     "status": "Available",
     "address": "Hartlebury 45, Trading Estate",
@@ -207,76 +278,6 @@
     "last_updated": "2026-06-01 11:33:05"
   },
   {
-    "id": 372990,
-    "status": "Available",
-    "address": "Unit 10A and 11, Arden Business Centre",
-    "town": "Alcester",
-    "postcode": "B49 6HW",
-    "lat": 52.225734,
-    "lon": -1.86936,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 3759,
-    "size_to_sqft": 3759,
-    "summary": "Trade Counter in Established Business Centre",
-    "description": "10A and 11 Arden Business Centre comprises a modern mid terrace commercial unit.  The property was built as two separate units however has been converted to provide on large unit that is currently used as a trade counter.  The units are of a steel portal frame construction with part brick & block and part steel clad elevations.  Internally, each unit benefits from a mezzanine floor over the majority of the floor area.  Within Unit 11 there are kitchen and WC facilities.\n\n10a Arden Business Centre\t\t\nGround Floor 962 sq ft (89.37 sq m)\nMezzanine Floor 849 sq ft (78.90 sq m)\nTotal 1,811 sq ft (168.27 sq m)\n\n11 Arden Business Centre\t\t\nGround Floor 962 sq ft (89.37 sq m)\nMezzanine Floor 986 sq ft (91.56 sq m)\nTotal 1,948 sq ft (180.93 sq m)\n\t\t\nWhole Unit 3,759 sq ft (349.2 sq m)",
-    "location": "The property is located on Arden Business Centre, Arden Road, Alcester and is approximately one mile north of Alcester town centre.  Arden Business Centre has a range of small, medium and large commercial units which are occupied by local and national commercial occupiers.  The area is popular with trade counter occupiers such as the existing Tenant and nearby Screwfix.\n\nAlcester is situated in an accessible location being adjacent to the A46, A435 and A422.  The A46 leads eastwards to Stratford-upon-Avon, Warwick and Junction 15 of the M40 motorway and south to Evesham and Junction 9 of the M5 motorway.  The A435 leads north to Redditch and Junction 3 of the M42 motorway, with the A422 leading west to Worcester.",
-    "features": [
-      "Total area 3,759 sq ft (349.20 sq m) GIA",
-      "Suitable for a variety of uses",
-      "Ground floor showroom with mezzanine area",
-      "Available on a long leasehold basis with 963 years remaining",
-      "Excellent access to the M40 and M42"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 26500,
-    "epc_rating": "C (58)",
-    "images": [
-      "https://as-images.imgix.net/0b1659403f31fa3950fc6c9acd0b27dd-20260505-101631.jpg",
-      "https://as-images.imgix.net/4f496fa3796366d35630136dc7515c65-20260505-105236.jpg",
-      "https://as-images.imgix.net/cb544788e399b5f68d9a9049329e9a07-20260505-101741.jpg",
-      "https://as-images.imgix.net/50149f2fe49ae52b8ff9fa7d68732420-20260505-101823.jpg",
-      "https://as-images.imgix.net/bcba3438defa48a3ee5a4256676da377-20260505-101800.jpg",
-      "https://as-images.imgix.net/b7f5eafe69d9915be373fa59e632d240-20260505-104032.jpg",
-      "https://as-images.imgix.net/3d21a28d87cf4dd194849769a329a4e5-20260505-102916.jpg",
-      "https://as-images.imgix.net/bee6399b0f5fb5eef983f6917bccf44a-20260505-102736.jpg",
-      "https://as-images.imgix.net/649ab7521a000f5a3ef307e93e6649e7-20260505-101832.jpg",
-      "https://as-images.imgix.net/c2b971a3991044ed8525ab4b325a3bc8-20260505-101727.jpg",
-      "https://as-images.imgix.net/092c0ad32f4218be5ab394a8c7de005c-20260505-102856.jpg",
-      "https://as-images.imgix.net/0bef02cf3db1d5f7b300a62b968a17a0-20260505-103941.jpg",
-      "https://as-images.imgix.net/c86a760ba12bb0ae3d3a531bc66598c3-20260505-104200.jpg",
-      "https://as-images.imgix.net/6b4a06dad7d055e42b05598bddf12cdf-20260505-104148.jpg",
-      "https://as-images.imgix.net/a2b944af13ddcd1728ae796640d5c20f-20260505-101548.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/5067c2d36f008effa16c0a4fb65333e4-gjs-dillon-particulars-10a-and-11-arden-business-centre-alcester-b49-2.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-29 15:29:17"
-  },
-  {
     "id": 360553,
     "status": "Available",
     "address": "Ground Floor, 1 King Street",
@@ -448,7 +449,9 @@
       "https://s3-eu-west-1.amazonaws.com/agents-society-assets/ad23ab661081df9375e8c810e5d1b801-cam04581g0-pr0048-build01-floor00.png",
       "https://s3-eu-west-1.amazonaws.com/agents-society-assets/556dfc0951d79f572905e3918db9bc62-cam04581g0-pr0048-build01.png"
     ],
-    "virtual_tour_url": "https://tour.giraffe360.com/falstaffhouse",
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/falstaffhouse"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -1005,7 +1008,9 @@
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6f3adf2f3f27b9f0b2182d1a0ef15d9f-gjs-dillon-particulars-the-radius-de-salis-court-droitwich-wr9.pdf",
     "floor_plan_urls": [],
-    "virtual_tour_url": "https://tour.giraffe360.com/theradiusdroitwich",
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/theradiusdroitwich"
+    ],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -1549,7 +1554,9 @@
       "https://s3-eu-west-1.amazonaws.com/agents-society-assets/2aad98b8f2a4b1885e7c7ecfba21b33c-cam04581g0-pr0024-build01-floor00.png",
       "https://s3-eu-west-1.amazonaws.com/agents-society-assets/5d5e7126e3aed9d8185120bf025b8cdd-cam04581g0-pr0024-build01-floor01.png"
     ],
-    "virtual_tour_url": "https://vimeo.com/887182637/dbc7b741b6?share=copy",
+    "virtual_tour_urls": [
+      "https://vimeo.com/887182637/dbc7b741b6?share=copy"
+    ],
     "contacts": [
       {
         "name": "Andrew Lewis",
@@ -1693,7 +1700,9 @@
     "floor_plan_urls": [
       "https://s3-eu-west-1.amazonaws.com/agents-society-assets/ee336c4a9a5be2ecd9a6824265b7f4c2-digital-house-floor-plan.png"
     ],
-    "virtual_tour_url": "https://tour.giraffe360.com/digitalhouse",
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/digitalhouse"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -1762,7 +1771,9 @@
     "floor_plan_urls": [
       "https://s3-eu-west-1.amazonaws.com/agents-society-assets/c880eae303023db4e2d3bacea43313d1-20251223-124208272-ios-1.jpg"
     ],
-    "virtual_tour_url": "https://tour.giraffe360.com/e47983e23c9845a5828ea1bb764f753c",
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/e47983e23c9845a5828ea1bb764f753c"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -1834,7 +1845,9 @@
     "floor_plan_urls": [
       "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/5c8c9860a8eaa7a3af681909dffca9eb-existing-floor-plan-64-friar-street-droitwich.pdf"
     ],
-    "virtual_tour_url": "https://tour.giraffe360.com/64friarstreetdroitwich",
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/64friarstreetdroitwich"
+    ],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -1948,7 +1961,9 @@
     "floor_plan_urls": [
       "https://s3-eu-west-1.amazonaws.com/agents-society-assets/508814846e04a1fdf6c399b9c38d2855-cam04581g0-pr0046-build01-floor00.png"
     ],
-    "virtual_tour_url": "https://tour.giraffe360.com/952d7f6736444750b8880899800c0879/",
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/952d7f6736444750b8880899800c0879/"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -2010,7 +2025,9 @@
     "floor_plan_urls": [
       "https://s3-eu-west-1.amazonaws.com/agents-society-assets/8fa0e965183aa2da87dbafb688345510-cam04581g0-pr0037-build01-floor00.png"
     ],
-    "virtual_tour_url": "https://tour.giraffe360.com/unitsaandcwillowendpark/",
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/unitsaandcwillowendpark/"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -2071,7 +2088,9 @@
     "floor_plan_urls": [
       "https://s3-eu-west-1.amazonaws.com/agents-society-assets/9eca1ad6d9ef20416eba4f7f2f37f49d-unit-2-deh-floor-plan-2.png"
     ],
-    "virtual_tour_url": "https://tour.giraffe360.com/3a87e068981f4a30856349064dc77abc",
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/3a87e068981f4a30856349064dc77abc"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -2139,7 +2158,9 @@
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/a0537a2b3f3e78d66854e005ec0259c7-17173-hi-aurora-evesham-davies-road-tp-brochure-v10.pdf",
     "floor_plan_urls": [],
-    "virtual_tour_url": "https://tour.giraffe360.com/unit5daviesroadevesham/",
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/unit5daviesroadevesham/"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -2277,7 +2298,9 @@
       "https://s3-eu-west-1.amazonaws.com/agents-society-assets/b1194d6d3383ecb248aacaea63188585-floor-plan-1st-floor-275-worcester-road-malvern.png",
       "https://s3-eu-west-1.amazonaws.com/agents-society-assets/4f71878ca03257cf80e32b75062e29da-floor-plan-ground-floor-275-worcester-road-malvern.png"
     ],
-    "virtual_tour_url": "https://tour.giraffe360.com/275worcesterroadmalvern",
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/275worcesterroadmalvern"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -2343,7 +2366,10 @@
       "https://s3-eu-west-1.amazonaws.com/agents-society-assets/34ef223232203313f3885adade72ef02-cam04581g0-pr0050-build01-floor00.png",
       "https://s3-eu-west-1.amazonaws.com/agents-society-assets/2c361a067f3ec98ad7f739b2e594b738-cam04581g0-pr0050-build01-floor01.png"
     ],
-    "virtual_tour_url": "https://tour.giraffe360.com/b503b39097664a9cb1927f7c44de521a",
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/b503b39097664a9cb1927f7c44de521a",
+      "https://tour.giraffe360.com/unitsaandcwillowendpark"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -2762,7 +2788,9 @@
     "floor_plan_urls": [
       "https://s3-eu-west-1.amazonaws.com/agents-society-assets/1d232b2a5450fd714ef375d7edeb9647-letting346652.jpeg"
     ],
-    "virtual_tour_url": "https://tour.giraffe360.com/d429457cf40a42f79b8def7287a17291",
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/d429457cf40a42f79b8def7287a17291"
+    ],
     "contacts": [
       {
         "name": "Andrew Lewis",
@@ -3203,7 +3231,11 @@
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/2285907c05a67032274db17b2ade08dc-letting346689.pdf",
     "floor_plan_urls": [],
-    "virtual_tour_url": "https://tour.giraffe360.com/unitatrinityvalepark",
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/unitatrinityvalepark",
+      "https://tour.giraffe360.com/unitbtrinityvalepark",
+      "https://tour.giraffe360.com/unitctrinityvalepark"
+    ],
     "contacts": [
       {
         "name": "Andrew Lewis",
@@ -3339,7 +3371,9 @@
       "https://s3-eu-west-1.amazonaws.com/agents-society-assets/626374ae0f903be915f49b399fd99d76-cam04581g0-pr0017-build01-floor01.png",
       "https://s3-eu-west-1.amazonaws.com/agents-society-assets/67a369e51d143da1196e1479700b3dbe-cam04581g0-pr0017-build01-floor00.png"
     ],
-    "virtual_tour_url": "https://tour.giraffe360.com/13astrichardsroadevesham",
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/13astrichardsroadevesham"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
