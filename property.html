@@ -29,7 +29,7 @@
       max-width:1200px;
       margin:0 auto;
       padding:28px 18px 24px;
-      min-width: 0; /* important for grid in iframes */
+      min-width: 0;
     }
 
     .topbar{margin-bottom:12px}
@@ -48,18 +48,14 @@
     .status-sold-stc{ background:#ffedd5; color:#c2410c; }
     .status-other{ background:#f3f4f6; color:#374151; }
 
-    /* --- Modern Grid Layout (Chrome + iframe safe) --- */
-
     .layout{
       display:grid;
-      /* FIX 1: fixed 340px sidebar column removes Chrome iframe ambiguity */
       grid-template-columns: minmax(0, 1fr) 340px;
       gap:26px;
       align-items:start;
       min-width: 0;
     }
-
-    .layout > * { min-width: 0; } /* prevents grid children forcing weird sizing */
+    .layout > * { min-width: 0; }
 
     .sticky{
       position:sticky;
@@ -68,27 +64,15 @@
       display:flex;
       flex-direction:column;
       gap:18px;
-
-      /* FIX 2: use width instead of min-width to give Chrome a deterministic size */
       width: 340px;
     }
 
-    /* Collapse sidebar when space is tight */
     @media (max-width:760px){
-      .layout{
-        grid-template-columns:1fr;
-      }
-
-      .sticky{
-        position:static;
-        width:100%;
-        max-height:none;
-        overflow:visible;
-      }
+      .layout{ grid-template-columns:1fr; }
+      .sticky{ position:static; width:100%; max-height:none; overflow:visible; }
     }
 
     .hero-card{background:var(--card);border-radius:calc(var(--radius) + 4px);overflow:hidden;box-shadow:var(--shadow-lg)}
-    /* FIX 3: constrain hero width so Chrome doesn't size it before grid column resolves */
     .hero{position:relative;aspect-ratio:16/9;background:#eee;overflow:hidden;width:100%;max-width:100%}
     .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
     .gallery{display:flex;gap:10px;padding:12px;overflow:auto;background:#fff}
@@ -113,10 +97,77 @@
     .features li{margin:6px 0}
     .agent{display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:center;padding:12px 16px;border-top:1px solid #f0f2f5}
     .avatar{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#f1f3f6;color:#222;font-weight:700;border:1px solid #e9edf2}
-
-    /* Small sidebar agent card tweaks */
     #teamBox .agent { padding:12px; border-top:none; }
 
+    /* =============================================
+       MEDIA TABS
+    ============================================= */
+    .media-tabs{
+      display:flex;gap:6px;padding:10px 12px 0;background:#fff;
+      border-top:1px solid #f0f2f5;overflow-x:auto;
+      -webkit-overflow-scrolling:touch;scrollbar-width:none;
+    }
+    .media-tabs::-webkit-scrollbar{display:none}
+    .media-tab{
+      flex:0 0 auto;height:36px;padding:0 16px;border-radius:999px;
+      border:1px solid #e6e8eb;background:#fff;font-size:13px;font-weight:600;
+      color:var(--muted);cursor:pointer;transition:all .12s ease;white-space:nowrap;
+    }
+    .media-tab:hover{border-color:#ccc;color:#111}
+    .media-tab.active{background:#111;color:#fff;border-color:#111}
+
+    .media-panel{display:none}
+    .media-panel.active{display:block}
+
+    /* Floor plan viewer */
+    .fp-viewer{
+      position:relative;aspect-ratio:16/9;background:#f6f7fb;
+      overflow:hidden;display:flex;align-items:center;justify-content:center;
+    }
+    .fp-viewer img{max-width:100%;max-height:100%;object-fit:contain}
+    .fp-viewer .fp-pdf-msg{
+      padding:40px;text-align:center;color:#666;font-size:14px;line-height:1.6;
+    }
+    .fp-thumbs{display:flex;gap:8px;padding:10px 12px;background:#fff;overflow-x:auto}
+    .fp-thumb{
+      flex:0 0 90px;aspect-ratio:4/3;border-radius:8px;overflow:hidden;
+      border:2px solid transparent;cursor:pointer;transition:border-color .12s;
+      background:#f6f7fb;display:flex;align-items:center;justify-content:center;
+    }
+    .fp-thumb.active{border-color:#111}
+    .fp-thumb img{width:100%;height:100%;object-fit:cover}
+    .fp-thumb-label{font-size:11px;font-weight:600;color:#666;text-align:center;padding:4px}
+    .fp-actions{
+      display:flex;gap:8px;padding:8px 12px;background:#fff;
+      border-top:1px solid #f0f2f5;flex-wrap:wrap;
+    }
+    .fp-btn{
+      height:34px;padding:0 14px;border-radius:8px;border:1px solid #e6e8eb;
+      background:#fff;font-size:13px;font-weight:600;cursor:pointer;
+      display:inline-flex;align-items:center;gap:6px;text-decoration:none;color:#111;
+    }
+    .fp-btn:hover{background:#f6f7fb}
+
+    /* Virtual tour */
+    .tour-wrap{position:relative;aspect-ratio:16/9;background:#111;overflow:hidden}
+    .tour-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:none}
+    .tour-overlay{
+      position:absolute;inset:0;display:flex;flex-direction:column;
+      align-items:center;justify-content:center;gap:12px;
+      background:rgba(16,17,18,.65);cursor:pointer;transition:opacity .2s;
+    }
+    .tour-overlay.hidden{opacity:0;pointer-events:none}
+    .tour-play{
+      width:68px;height:68px;border-radius:50%;background:#fff;
+      display:flex;align-items:center;justify-content:center;
+      box-shadow:0 4px 18px rgba(0,0,0,.25);
+    }
+    .tour-play svg{margin-left:4px}
+    .tour-label{color:#fff;font-weight:600;font-size:15px;letter-spacing:.01em}
+    .tour-actions{
+      display:flex;gap:8px;padding:8px 12px;background:#fff;
+      border-top:1px solid #f0f2f5;
+    }
   </style>
 </head>
 
@@ -132,8 +183,44 @@
       <div class="layout">
         <div>
           <div class="hero-card">
-            <div class="hero" id="hero"></div>
-            <div class="gallery" id="thumbs"></div>
+
+            <!-- PHOTOS PANEL -->
+            <div class="media-panel active" id="panel-photos">
+              <div class="hero" id="hero"></div>
+              <div class="gallery" id="thumbs"></div>
+            </div>
+
+            <!-- FLOOR PLANS PANEL -->
+            <div class="media-panel" id="panel-floorplans">
+              <div class="fp-viewer" id="fp-viewer">
+                <img id="fp-main" src="" alt="Floor plan" />
+              </div>
+              <div class="fp-thumbs" id="fp-thumbs" style="display:none"></div>
+              <div class="fp-actions">
+                <button class="fp-btn" id="fp-fullscreen" type="button">⛶ Fullscreen</button>
+                <a class="fp-btn" id="fp-download" href="#" target="_blank" rel="noopener" style="display:none">↓ Download</a>
+              </div>
+            </div>
+
+            <!-- VIRTUAL TOUR PANEL -->
+            <div class="media-panel" id="panel-tour">
+              <div class="tour-wrap">
+                <iframe id="tour-iframe" src="" allowfullscreen allow="xr-spatial-tracking" title="Virtual tour"></iframe>
+                <div class="tour-overlay" id="tour-overlay">
+                  <div class="tour-play">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="#111"><polygon points="5,3 19,12 5,21"/></svg>
+                  </div>
+                  <span class="tour-label">Start Virtual Tour</span>
+                </div>
+              </div>
+              <div class="tour-actions">
+                <a class="fp-btn" id="tour-fullscreen-btn" href="#" target="_blank" rel="noopener">⛶ Open fullscreen tour</a>
+              </div>
+            </div>
+
+            <!-- TAB BAR (rendered by JS below the active panel) -->
+            <div class="media-tabs" id="media-tabs" style="display:none"></div>
+
           </div>
 
           <div class="section">
@@ -148,7 +235,6 @@
             <div class="card"><div class="card__title"><h2>Key features</h2></div><div class="card__body"><ul class="features" id="features"></ul></div></div>
           </div>
 
-          <!-- Location card (shown only if JSON contains `location`) -->
           <div class="section" id="locationCard" style="display:none">
             <div class="card">
               <div class="card__title"><h2>Location</h2></div>
@@ -167,15 +253,16 @@
             <div class="card__body">
               <div class="actions">
                 <button class="btn btn-primary" id="enquireBtn" type="button">Enquire now</button>
-                <a class="btn btn-ghost" id="brochureBtn" target="_blank" rel="noopener">Download brochure</a>
+                <a class="btn btn-ghost" id="brochureBtn" target="_blank" rel="noopener" style="display:none">Download brochure</a>
+                <a class="btn btn-ghost" id="sidebarTourBtn" target="_blank" rel="noopener" style="display:none">▶ Virtual tour</a>
+                <a class="btn btn-ghost" id="sidebarFpBtn" target="_blank" rel="noopener" style="display:none">↓ Floor plans</a>
               </div>
               <div id="map"></div>
             </div>
           </div>
 
-          <!-- Sidebar agents box (will be populated from `contacts` or `agents`) -->
           <div class="card" id="teamBox" style="display:none">
-            <div class="card__title">Viewings & further information</div>
+            <div class="card__title">Viewings &amp; further information</div>
             <div id="agents"></div>
           </div>
         </aside>
@@ -184,19 +271,12 @@
   </div>
 
 <script>
-/* ==============================================
-   Squarespace iframe-safe helpers (CLEAN)
-============================================== */
-
 if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 
-/* ---------- helpers ---------- */
 const $ = (s, el=document) => el.querySelector(s);
 const getParam = n => {
-  // First try query string (?id=...)
   const qs = new URLSearchParams(location.search).get(n);
   if (qs) return qs;
-  // Also support path-based URLs like /property-search/353367
   if (n === 'id') {
     const match = location.pathname.match(/\/property-search\/([^/]+)/);
     if (match) return match[1];
@@ -205,15 +285,12 @@ const getParam = n => {
 };
 const pick = (...vals) => vals.find(v => v !== undefined && v !== null && v !== '');
 const initials = n => n ? n.trim().split(/\s+/).slice(0,2).map(w=>w[0]?.toUpperCase()||'').join('') : '';
-
-/* helper to check for http(s) URLs */
 const isHttpUrl = s => typeof s === 'string' && (/^https?:\/\//i).test(s);
 
-/* ---------- Robust iframe height reporting ---------- */
+/* ---------- iframe height reporting ---------- */
 let lastHeight = 0;
 let heightTimer = null;
 
-/* UPDATED: measure based on .wrap (prevents huge/infinite iframe heights on Squarespace) */
 function getPageHeight() {
   const wrap = document.querySelector('.wrap');
   if (!wrap) return document.documentElement.scrollHeight;
@@ -244,48 +321,210 @@ function scheduleHeightPings() {
 }
 
 function watchImages() {
-  const imgs = Array.from(document.images || []);
-  imgs.forEach(img => {
+  Array.from(document.images || []).forEach(img => {
     if (img.complete) return;
     img.addEventListener('load', scheduleHeightPings, { once: true });
     img.addEventListener('error', scheduleHeightPings, { once: true });
   });
 }
 
-/* ---------- iframe scroll-to-top ---------- */
 let didScrollTop = false;
 function scrollTopOnce() {
   if (didScrollTop) return;
   didScrollTop = true;
   window.scrollTo(0, 0);
-  try {
-    window.parent?.postMessage({ type: 'scroll-top' }, '*');
-  } catch(e){}
+  try { window.parent?.postMessage({ type: 'scroll-top' }, '*'); } catch(e){}
 }
 
-/* ---------- Safe DOM helpers ---------- */
 function safeText(el, txt) { el.textContent = txt ?? ''; }
 function createImg(src, alt) {
   const img = document.createElement('img');
-  img.src = src;
-  img.alt = alt || '';
+  img.src = src; img.alt = alt || '';
   return img;
 }
 
-/* ---------- main render ---------- */
+/* ==============================================
+   MEDIA TABS
+============================================== */
+function switchTab(id) {
+  document.querySelectorAll('.media-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === id));
+  document.querySelectorAll('.media-panel').forEach(panel => panel.classList.toggle('active', panel.id === `panel-${id}`));
+  scheduleHeightPings();
+}
+
+function initMediaTabs(p) {
+  const floorPlans = Array.isArray(p.floor_plan_urls) ? p.floor_plan_urls.filter(Boolean) : [];
+  const tourUrl = p.virtual_tour_url || '';
+  const hasPhotos = (p.images || []).length > 0;
+  const hasFloorPlans = floorPlans.length > 0;
+  const hasTour = !!tourUrl;
+
+  const tabsEl = document.getElementById('media-tabs');
+  const mediaCount = [hasPhotos, hasFloorPlans, hasTour].filter(Boolean).length;
+
+  // Only show tab bar if more than one media type exists
+  if (mediaCount < 2) { tabsEl.style.display = 'none'; return; }
+
+  tabsEl.innerHTML = '';
+  tabsEl.style.display = 'flex';
+
+  const tabs = [];
+  if (hasPhotos) tabs.push({ id: 'photos', label: 'Photos' });
+  if (hasFloorPlans) tabs.push({ id: 'floorplans', label: 'Floor Plans' });
+  if (hasTour) tabs.push({ id: 'tour', label: '▶ Virtual Tour' });
+
+  tabs.forEach(t => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'media-tab' + (t.id === 'photos' ? ' active' : '');
+    btn.textContent = t.label;
+    btn.dataset.tab = t.id;
+    btn.addEventListener('click', () => switchTab(t.id));
+    tabsEl.appendChild(btn);
+  });
+
+  /* ---- Floor plans setup ---- */
+  if (hasFloorPlans) {
+    const isPdf = u => typeof u === 'string' && u.toLowerCase().endsWith('.pdf');
+    const fpViewer = document.getElementById('fp-viewer');
+    const fpMain = document.getElementById('fp-main');
+    const fpThumbs = document.getElementById('fp-thumbs');
+    const fpDownload = document.getElementById('fp-download');
+
+    const firstUrl = floorPlans[0];
+
+    if (isPdf(firstUrl)) {
+      // PDF — can't display inline, show message + download
+      fpMain.style.display = 'none';
+      const msg = document.createElement('div');
+      msg.className = 'fp-pdf-msg';
+      msg.innerHTML = '📄 PDF floor plan<br><span style="font-size:12px;color:#999">Use the download button below to view</span>';
+      fpViewer.appendChild(msg);
+    } else {
+      fpMain.src = firstUrl;
+      fpMain.style.display = '';
+    }
+
+    // Download button — link to first PDF if any, else first plan
+    const firstPdf = floorPlans.find(isPdf);
+    if (fpDownload) {
+      const downloadTarget = firstPdf || firstUrl;
+      fpDownload.href = downloadTarget;
+      fpDownload.style.display = '';
+    }
+
+    // Thumbnails (only if multiple plans)
+    if (floorPlans.length > 1) {
+      fpThumbs.style.display = 'flex';
+      floorPlans.forEach((url, i) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'fp-thumb' + (i === 0 ? ' active' : '');
+
+        if (!isPdf(url)) {
+          const img = document.createElement('img');
+          img.src = url; img.alt = `Floor plan ${i + 1}`;
+          btn.appendChild(img);
+        } else {
+          const lbl = document.createElement('div');
+          lbl.className = 'fp-thumb-label';
+          lbl.textContent = `Plan ${i + 1}`;
+          btn.appendChild(lbl);
+        }
+
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.fp-thumb').forEach(t => t.classList.remove('active'));
+          btn.classList.add('active');
+
+          // Update main viewer
+          const existing = fpViewer.querySelector('.fp-pdf-msg');
+          if (!isPdf(url)) {
+            if (existing) existing.remove();
+            fpMain.src = url;
+            fpMain.style.display = '';
+          } else {
+            fpMain.style.display = 'none';
+            if (!existing) {
+              const msg = document.createElement('div');
+              msg.className = 'fp-pdf-msg';
+              msg.innerHTML = '📄 PDF floor plan<br><span style="font-size:12px;color:#999">Use the download button below to view</span>';
+              fpViewer.appendChild(msg);
+            }
+          }
+
+          // Update download link
+          if (fpDownload) { fpDownload.href = url; fpDownload.style.display = ''; }
+          scheduleHeightPings();
+        });
+
+        fpThumbs.appendChild(btn);
+      });
+    }
+
+    // Fullscreen button
+    const fsBtn = document.getElementById('fp-fullscreen');
+    if (fsBtn) {
+      fsBtn.addEventListener('click', () => {
+        if (fpViewer.requestFullscreen) fpViewer.requestFullscreen();
+        else if (fpViewer.webkitRequestFullscreen) fpViewer.webkitRequestFullscreen();
+      });
+    }
+
+    // Sidebar floor plans button
+    const sidebarFp = document.getElementById('sidebarFpBtn');
+    if (sidebarFp) {
+      sidebarFp.href = firstPdf || firstUrl;
+      sidebarFp.style.display = '';
+    }
+  }
+
+  /* ---- Virtual tour setup ---- */
+  if (hasTour) {
+    const overlay = document.getElementById('tour-overlay');
+    const fsBtn = document.getElementById('tour-fullscreen-btn');
+    if (fsBtn) fsBtn.href = tourUrl;
+
+    if (overlay) {
+      overlay.addEventListener('click', () => {
+        const iframe = document.getElementById('tour-iframe');
+        if (iframe && !iframe.src) iframe.src = tourUrl;
+        overlay.classList.add('hidden');
+        scheduleHeightPings();
+      });
+    }
+
+    // Also load tour when tab is clicked (lazy)
+    const tourTab = tabsEl.querySelector('[data-tab="tour"]');
+    if (tourTab) {
+      tourTab.addEventListener('click', () => {
+        // iframe loads on overlay click — nothing to do here
+      });
+    }
+
+    // Sidebar tour button
+    const sidebarTour = document.getElementById('sidebarTourBtn');
+    if (sidebarTour) {
+      sidebarTour.href = tourUrl;
+      sidebarTour.style.display = '';
+    }
+  }
+}
+
+/* ==============================================
+   MAIN RENDER
+============================================== */
 async function main() {
   try {
     const id = getParam('id');
     console.log('property main running, id=', id);
 
-    // Load properties.json from the same host (works on Vercel or GitHub Pages)
     const res = await fetch('/properties.json', { cache: 'no-store' });
     if (!res.ok) throw new Error('Failed to fetch properties.json: ' + res.status);
     const list = await res.json();
     const p = list.find(x => String(x.id) === String(id)) || list[0];
     if (!p) throw new Error('Property not found');
 
-    // --- Normalise common/legacy field names so the rest of the template can use stable keys
+    // Normalise field names
     p.agents = p.agents || p.contacts || [];
     p.brochure = p.brochure || p.brochure_url || p.brochureUrl || '';
     p.epc = p.epc || p.epc_rating || p.epcRating || '';
@@ -328,7 +567,7 @@ async function main() {
       });
     }
 
-    /* images (use DOM methods to avoid accidental injection) */
+    /* images */
     const imgs = (p.images || []).map(i => (typeof i === 'string' ? i : i.url)).filter(Boolean);
     const hero = $('#hero');
     hero.innerHTML = '';
@@ -360,7 +599,7 @@ async function main() {
       }
     });
 
-    /* facts (build a richer facts array) */
+    /* facts */
     const facts = [];
     if (p.size_from_sqft) {
       const size = Number(p.size_from_sqft);
@@ -410,7 +649,7 @@ async function main() {
       $('#featuresCard').style.display = 'none';
     }
 
-    /* location (optional human readable location text in JSON) */
+    /* location */
     if (p.location) {
       $('#location').textContent = p.location;
       $('#locationCard').style.display = '';
@@ -427,7 +666,10 @@ async function main() {
       brochureBtn.style.display = 'none';
     }
 
-    /* agents (normalised from contacts) */
+    /* media tabs (floor plans + virtual tour) */
+    initMediaTabs(p);
+
+    /* agents */
     if (p.agents && p.agents.length) {
       const agentsBox = document.getElementById('teamBox');
       const agentsEl = document.getElementById('agents');
@@ -448,15 +690,13 @@ async function main() {
     }
 
     /* map */
-    let map = null;
     if (window.L && p.lat !== undefined && p.lon !== undefined && p.lat !== null && p.lon !== null) {
       try {
-        map = L.map('map').setView([p.lat, p.lon], 14);
+        const map = L.map('map').setView([p.lat, p.lon], 14);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
         L.marker([p.lat, p.lon]).addTo(map);
-
         map.on && map.on('tileload', scheduleHeightPings);
         map.on && map.on('load', scheduleHeightPings);
       } catch (e) {
@@ -481,121 +721,61 @@ async function main() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Update the back link to restore last search
   const backLink = document.querySelector('.back');
   if (backLink) {
     try {
       const lastSearch = sessionStorage.getItem('gjs:lastSearch');
-      if (lastSearch) {
-        backLink.href = 'index.html' + lastSearch;
-      }
+      if (lastSearch) backLink.href = 'index.html' + lastSearch;
     } catch(e) {}
   }
-
   main();
 });
 </script>
 
-<!-- Modal CSS / Markup -->
+<!-- =============================================
+     ENQUIRY MODAL
+============================================= -->
 <style>
-  /* Ensure overlay is hidden by default and only visible when aria-hidden="false" */
-  #enquiryModal[aria-hidden="true"]{
-    display: none !important;
-    pointer-events: none;
-    opacity: 0;
-  }
-  #enquiryModal[aria-hidden="false"]{
-    display: flex !important;
-    pointer-events: auto;
-    opacity: 1;
-  }
+  #enquiryModal[aria-hidden="true"]{ display:none !important; pointer-events:none; opacity:0; }
+  #enquiryModal[aria-hidden="false"]{ display:flex !important; pointer-events:auto; opacity:1; }
 
-  /* Modal backdrop */
   #enquiryModal {
-    position: fixed;
-    inset: 0;
-    z-index: 1000;
-    background: rgba(16,17,18,0.55);
-    backdrop-filter: blur(4px);
-    display: none;
-    align-items: flex-start; /* top aligned */
-    justify-content: center;
-    padding: 20px;
+    position:fixed; inset:0; z-index:1000;
+    background:rgba(16,17,18,0.55); backdrop-filter:blur(4px);
+    display:none; align-items:flex-start; justify-content:center; padding:20px;
   }
-
-  /* open as high as possible */
   .modal__dialog {
-    position: fixed;
-    top: 24px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(640px, calc(100vw - 40px));
-    max-width: 640px;
-    background: #ffffff;
-    border-radius: 14px;
-    box-shadow: 0 20px 50px rgba(16,17,18,0.35);
-    overflow: hidden;
-    max-height: calc(100dvh - 48px);
+    position:fixed; top:24px; left:50%; transform:translateX(-50%);
+    width:min(640px, calc(100vw - 40px)); max-width:640px;
+    background:#ffffff; border-radius:14px;
+    box-shadow:0 20px 50px rgba(16,17,18,0.35);
+    overflow:hidden; max-height:calc(100dvh - 48px);
   }
-
-  .modal__header {
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:18px 20px;
-    border-bottom:1px solid #f0f1f3;
-    background:#fff;
-  }
+  .modal__header { display:flex; align-items:center; justify-content:space-between; padding:18px 20px; border-bottom:1px solid #f0f1f3; background:#fff; }
   .modal__title { margin:0; font-size:18px; font-weight:700; color:#111; }
-  .modal__close { background:transparent;border:none;font-size:20px;cursor:pointer;color:#555; padding:6px;border-radius:6px; }
+  .modal__close { background:transparent; border:none; font-size:20px; cursor:pointer; color:#555; padding:6px; border-radius:6px; }
   .modal__close:focus { outline:2px solid rgba(16,17,18,.12); }
-
-  .modal__body {
-    padding:18px 20px 22px;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    max-height: calc(100dvh - 48px - 64px);
-  }
-  .modal__hint { color:#666;font-size:13px;margin-bottom:12px; }
-
+  .modal__body { padding:18px 20px 22px; overflow:auto; -webkit-overflow-scrolling:touch; max-height:calc(100dvh - 48px - 64px); }
+  .modal__hint { color:#666; font-size:13px; margin-bottom:12px; }
   .modern-form { display:block; gap:12px; }
-  .form-grid { display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
-  @media(max-width:560px){ .form-grid {grid-template-columns:1fr} }
-
+  .form-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  @media(max-width:560px){ .form-grid { grid-template-columns:1fr } }
   label { display:block; font-size:13px; color:#333; margin-bottom:6px; }
-  .input, textarea {
-    width:100%; padding:10px 12px; border-radius:10px; border:1px solid #e6e8eb; background:#fff;
-    font-size:15px; color:#111; box-shadow: inset 0 1px 2px rgba(16,17,18,0.03); transition:box-shadow .12s ease, border-color .12s ease, transform .08s ease;
-  }
-  .input:focus, textarea:focus { border-color: #101112; box-shadow: 0 4px 18px rgba(16,17,18,0.06); outline: none; }
+  .input, textarea { width:100%; padding:10px 12px; border-radius:10px; border:1px solid #e6e8eb; background:#fff; font-size:15px; color:#111; box-shadow:inset 0 1px 2px rgba(16,17,18,0.03); transition:box-shadow .12s ease, border-color .12s ease; }
+  .input:focus, textarea:focus { border-color:#101112; box-shadow:0 4px 18px rgba(16,17,18,0.06); outline:none; }
   textarea { min-height:110px; resize:vertical; }
-
   .form-row { margin-bottom:8px; }
-  .error { color: #b91c1c; font-size:13px; margin-top:6px; }
-
+  .error { color:#b91c1c; font-size:13px; margin-top:6px; }
   .modal__actions { display:flex; gap:10px; margin-top:12px; align-items:center; flex-wrap:wrap; }
-
-  .btn { display:inline-flex; align-items:center; justify-content:center; border: none; cursor:pointer; padding:10px 14px; border-radius:10px; font-weight:700; font-size:14px; }
-  .btn-primary { background: linear-gradient(180deg,#101112,#0b0b0b); color: #fff; box-shadow: 0 6px 18px rgba(16,17,18,0.12); }
-  .btn-ghost { background:transparent;border:1px solid #e6e8eb;color:#222;padding:8px 12px;border-radius:10px; }
-  .btn:disabled { opacity:.6; cursor:not-allowed; transform:none; }
-
-  .spinner { display:inline-block; width:16px;height:16px;border-radius:50%; border:2px solid rgba(255,255,255,.25); border-top-color: #fff; animation: spin .7s linear infinite; margin-left:8px; }
-  @keyframes spin { to { transform: rotate(360deg); } }
-
-  .modal__success { padding: 18px 20px; text-align:center; }
+  .spinner { display:inline-block; width:16px; height:16px; border-radius:50%; border:2px solid rgba(255,255,255,.25); border-top-color:#fff; animation:spin .7s linear infinite; margin-left:8px; }
+  @keyframes spin { to { transform:rotate(360deg); } }
+  .modal__success { padding:18px 20px; text-align:center; }
   .modal__success h3 { margin:0 0 8px; font-size:16px; }
   .modal__success p { color:#444; font-size:14px; margin:0 0 12px; }
-
-  @media (max-width: 560px) {
-    #enquiryModal { padding: 12px; }
-    .modal__dialog{
-      width: calc(100vw - 24px);
-      max-height: calc(100dvh - 24px);
-      border-radius: 12px;
-      top: 12px;
-    }
-    .modal__body { max-height: calc(100dvh - 24px - 64px); }
+  @media (max-width:560px) {
+    #enquiryModal { padding:12px; }
+    .modal__dialog { width:calc(100vw - 24px); max-height:calc(100dvh - 24px); border-radius:12px; top:12px; }
+    .modal__body { max-height:calc(100dvh - 24px - 64px); }
   }
 </style>
 
@@ -608,7 +788,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     <div class="modal__body" id="enqBody">
       <p id="propRefHint" class="modal__hint"></p>
-
       <form id="enqForm" class="modern-form" novalidate>
         <div class="form-grid">
           <div class="form-row">
@@ -622,7 +801,6 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="error" id="err-lastName" aria-live="polite" style="display:none"></div>
           </div>
         </div>
-
         <div class="form-grid" style="margin-top:6px;">
           <div class="form-row">
             <label for="emailInput">Email</label>
@@ -635,18 +813,15 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="error" id="err-phone" aria-live="polite" style="display:none"></div>
           </div>
         </div>
-
         <div class="form-row" style="margin-top:6px;">
           <label for="messageInput">Message</label>
           <textarea id="messageInput" class="input" name="message" placeholder="Optional message..."></textarea>
           <div class="error" id="err-message" aria-live="polite" style="display:none"></div>
         </div>
-
         <div class="form-row" style="margin-top:6px; display:flex; align-items:center; gap:10px;">
           <input id="mailingListInput" type="checkbox" name="mailingList" />
           <label for="mailingListInput" style="margin:0; font-size:13px; color:#333;">Add me to your mailing list</label>
         </div>
-
         <div class="modal__actions">
           <button id="sendEnquiryBtn" class="btn btn-primary" type="submit">
             Send enquiry
@@ -706,36 +881,27 @@ document.addEventListener('DOMContentLoaded', () => {
   function clearErrors() {
     setError('firstName',''); setError('lastName',''); setError('email',''); setError('phone',''); setError('message','');
   }
-
   function validate() {
     clearErrors();
     let ok = true;
-    if (!fields.firstName.value.trim()) { setError('firstName','Please enter a first name'); ok = false;}
-    if (!fields.lastName.value.trim()) { setError('lastName','Please enter a last name'); ok = false;}
+    if (!fields.firstName.value.trim()) { setError('firstName','Please enter a first name'); ok = false; }
+    if (!fields.lastName.value.trim()) { setError('lastName','Please enter a last name'); ok = false; }
     const em = fields.email.value.trim();
     if (!em) { setError('email','Please enter an email'); ok = false; }
     else if (!/^\S+@\S+\.\S+$/.test(em)) { setError('email','Please enter a valid email'); ok = false; }
     return ok;
   }
-
   function escapeForJson(s){ return String(s === undefined || s === null ? '' : s); }
 
   function showModal() {
     lastFocusedEl = document.activeElement;
     modal.setAttribute('aria-hidden', 'false');
     scheduleHeightPings();
-
     const title = document.getElementById('prop-title')?.textContent?.trim();
     propRefHint.textContent = title ? `About: ${title}` : '';
-
-    form.reset();
-    clearErrors();
-    bodyBox.style.display = '';
-    successBox.style.display = 'none';
-
-    setTimeout(() => {
-      try { fields.firstName.focus({ preventScroll: true }); } catch(e){}
-    }, 50);
+    form.reset(); clearErrors();
+    bodyBox.style.display = ''; successBox.style.display = 'none';
+    setTimeout(() => { try { fields.firstName.focus({ preventScroll: true }); } catch(e){} }, 50);
   }
 
   function closeModal() {
@@ -747,7 +913,6 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     if (!validate()) return;
-
     const payload = {
       firstName: escapeForJson(fields.firstName.value.trim()),
       lastName:  escapeForJson(fields.lastName.value.trim()),
@@ -758,26 +923,21 @@ document.addEventListener('DOMContentLoaded', () => {
       propertyId: getParam('id') || '',
       propertyTitle: (document.getElementById('prop-title')?.textContent || '')
     };
-
     document.getElementById('sendEnquiryBtn').disabled = true;
     spinner.style.display = '';
-
     try {
       const res = await fetch(SEND_ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
       });
-
       if (!res.ok) {
         const text = await res.text().catch(()=>res.statusText);
         throw new Error(`Send failed: ${res.status} ${text}`);
       }
-
       spinner.style.display = 'none';
       document.getElementById('sendEnquiryBtn').disabled = false;
-      bodyBox.style.display = 'none';
-      successBox.style.display = '';
+      bodyBox.style.display = 'none'; successBox.style.display = '';
       scheduleHeightPings();
     } catch (err) {
       console.error('Enquiry send failed', err);
@@ -792,20 +952,16 @@ document.addEventListener('DOMContentLoaded', () => {
   closeBtn && closeBtn.addEventListener('click', closeModal);
   cancelBtn && cancelBtn.addEventListener('click', closeModal);
   doneBtn && doneBtn.addEventListener('click', closeModal);
-
   modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
-
   modal.addEventListener('keydown', (e) => {
     if (e.key !== 'Tab') return;
     const focusables = dialog.querySelectorAll('a[href], button:not([disabled]), textarea, input, select');
     if (focusables.length === 0) return;
-    const first = focusables[0];
-    const last = focusables[focusables.length - 1];
+    const first = focusables[0]; const last = focusables[focusables.length - 1];
     if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
     else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
   });
-
   window.__enquiryModal = { show: showModal, close: closeModal };
 })();
 </script>
