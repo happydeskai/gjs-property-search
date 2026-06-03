@@ -51,8 +51,8 @@
     .gallery{display:flex;gap:10px;padding:10px 12px 12px;overflow:auto;background:#fff}
     .thumb{flex:0 0 120px;aspect-ratio:4/3;border-radius:12px;overflow:hidden;border:1px solid #eee;cursor:pointer;transition:transform .12s ease}
     .thumb:hover{transform:translateY(-2px)}
-    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-md);border:1px solid #edf0f3;overflow:hidden}
-    .card__body{padding:16px}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-md);border:1px solid #edf0f3;overflow:visible}
+    .card__body{padding:16px;overflow:visible}
     .card__title{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:12px 16px 8px;border-bottom:1px solid #f0f2f5;background:#fff}
     .actions{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
     .btn{height:44px;padding:0 16px;border-radius:10px;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600;font-size:14px;text-decoration:none;white-space:nowrap;width:100%}
@@ -64,8 +64,8 @@
     .btn-dropdown-wrap{position:relative;width:100%}
     .btn-dropdown{width:100%;background:#fff;border:1px solid #ddd;color:#111;height:44px;padding:0 16px;border-radius:10px;font-weight:600;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:8px}
     .btn-dropdown::after{content:"▾";font-size:12px;opacity:.6}
-    .btn-dropdown-menu{position:absolute;top:calc(100% + 4px);left:0;right:0;background:#fff;border:1px solid #ddd;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.12);z-index:100;overflow:hidden;display:none}
-    .btn-dropdown-menu.open{display:block}
+    .btn-dropdown-menu{position:absolute;top:calc(100% + 4px);left:0;right:0;background:#fff;border:1px solid #ddd;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.12);z-index:200;overflow:hidden;opacity:0;transform:translateY(-6px);transition:opacity .15s ease,transform .15s ease;pointer-events:none}
+    .btn-dropdown-menu.open{opacity:1;transform:translateY(0);pointer-events:auto}
     .btn-dropdown-item{display:block;width:100%;padding:10px 16px;text-align:left;background:none;border:none;font-size:14px;font-weight:500;cursor:pointer;color:#111}
     .btn-dropdown-item:hover{background:#f6f7fb}
 
