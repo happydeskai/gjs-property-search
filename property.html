@@ -53,7 +53,7 @@
     .thumb:hover{transform:translateY(-2px)}
     .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-md);border:1px solid #edf0f3;overflow:visible}
     .card__body{padding:16px;overflow:visible}
-    .card__title{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:12px 16px 8px;border-bottom:1px solid #f0f2f5;background:#fff}
+    .card__title{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:12px 16px 8px;border-bottom:1px solid #f0f2f5;background:#fff;border-radius:var(--radius) var(--radius) 0 0}
     .actions{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
     .btn{height:44px;padding:0 16px;border-radius:10px;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600;font-size:14px;text-decoration:none;white-space:nowrap;width:100%}
     .btn-primary{background:var(--brand);color:#fff}
@@ -63,10 +63,30 @@
     /* Tour dropdown */
     .btn-dropdown-wrap{position:relative;width:100%}
     .btn-dropdown{width:100%;background:#fff;border:1px solid #ddd;color:#111;height:44px;padding:0 16px;border-radius:10px;font-weight:600;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:8px}
-    .btn-dropdown::after{content:"▾";font-size:12px;opacity:.6}
-    .btn-dropdown-menu{position:absolute;top:calc(100% + 4px);left:0;right:0;background:#fff;border:1px solid #ddd;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.12);z-index:200;overflow:hidden;opacity:0;transform:translateY(-6px);transition:opacity .15s ease,transform .15s ease;pointer-events:none}
-    .btn-dropdown-menu.open{opacity:1;transform:translateY(0);pointer-events:auto}
-    .btn-dropdown-item{display:block;width:100%;padding:10px 16px;text-align:left;background:none;border:none;font-size:14px;font-weight:500;cursor:pointer;color:#111}
+    .btn-dropdown-chevron{font-size:11px;opacity:.5;transition:transform .2s ease;display:inline-block}
+    .btn-dropdown-chevron.open{transform:rotate(180deg)}
+    .btn-dropdown-menu{
+      position:absolute;
+      top:calc(100% + 6px);
+      left:0;right:0;
+      background:#fff;
+      border:1px solid #ddd;
+      border-radius:10px;
+      box-shadow:0 8px 24px rgba(0,0,0,.14);
+      z-index:9999;
+      overflow:hidden;
+      opacity:0;
+      transform:translateY(-8px);
+      transition:opacity .15s ease,transform .15s ease;
+      pointer-events:none;
+    }
+    .btn-dropdown-menu.open{
+      opacity:1;
+      transform:translateY(0);
+      pointer-events:auto;
+    }
+    .btn-dropdown-item{display:block;width:100%;padding:11px 16px;text-align:left;background:none;border:none;border-bottom:1px solid #f0f2f5;font-size:14px;font-weight:500;cursor:pointer;color:#111}
+    .btn-dropdown-item:last-child{border-bottom:none}
     .btn-dropdown-item:hover{background:#f6f7fb}
 
     #map{height:260px;border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm)}
@@ -111,8 +131,6 @@
     .tour-pill{flex:0 0 auto;height:32px;padding:0 14px;border-radius:999px;border:1px solid #ddd;background:#fff;font-size:13px;font-weight:600;color:#555;cursor:pointer;transition:all .12s ease;white-space:nowrap}
     .tour-pill:hover{border-color:#999;color:#111}
     .tour-pill.active{background:#111;color:#fff;border-color:#111}
-
-    /* Tour iframe container */
     .tour-iframe-wrap{position:relative;aspect-ratio:16/9;background:#111;overflow:hidden}
     .tour-iframe-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:none}
     .tour-loading{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);transition:opacity .4s ease;pointer-events:none}
@@ -136,32 +154,22 @@
       <div class="layout">
         <div>
           <div class="hero-card">
-
-            <!-- SECTION LABEL + TAB BAR -->
             <div id="media-header" style="display:none">
               <div class="media-label">Property Media</div>
               <div class="media-tabs" id="media-tabs"></div>
             </div>
-
-            <!-- PHOTOS PANEL -->
             <div class="media-panel active" id="panel-photos">
               <div class="hero" id="hero"></div>
               <div class="gallery" id="thumbs"></div>
             </div>
-
-            <!-- FLOOR PLANS PANEL -->
             <div class="media-panel" id="panel-floorplans">
-              <div class="fp-viewer" id="fp-viewer">
-                <img id="fp-main" src="" alt="Floor plan" />
-              </div>
+              <div class="fp-viewer" id="fp-viewer"><img id="fp-main" src="" alt="Floor plan" /></div>
               <div class="fp-thumbs" id="fp-thumbs" style="display:none"></div>
               <div class="fp-actions">
                 <button class="fp-btn" id="fp-fullscreen" type="button">Fullscreen</button>
                 <a class="fp-btn" id="fp-download" href="#" target="_blank" rel="noopener" style="display:none">Download</a>
               </div>
             </div>
-
-            <!-- VIRTUAL TOURS PANEL -->
             <div class="media-panel" id="panel-tours">
               <div class="tours-selector" id="tours-selector" style="display:none"></div>
               <div class="tour-iframe-wrap">
@@ -175,7 +183,6 @@
                 <a class="fp-btn" id="tour-open-btn" href="#" target="_blank" rel="noopener">Open fullscreen tour</a>
               </div>
             </div>
-
           </div>
 
           <div class="section">
@@ -205,9 +212,11 @@
               <div class="actions">
                 <button class="btn btn-primary" id="enquireBtn" type="button">Enquire now</button>
                 <a class="btn btn-ghost" id="brochureBtn" target="_blank" rel="noopener" style="display:none">Download brochure</a>
-                <!-- Tour button — replaced by JS with either a plain link or a dropdown -->
-                <div id="sidebarTourWrap" style="display:none">
-                  <button class="btn-dropdown" id="sidebarTourBtn" type="button">View virtual tour</button>
+                <div class="btn-dropdown-wrap" id="sidebarTourWrap" style="display:none">
+                  <button class="btn-dropdown" id="sidebarTourBtn" type="button">
+                    <span>View virtual tour</span>
+                    <span class="btn-dropdown-chevron" id="sidebarTourChevron">▾</span>
+                  </button>
                   <div class="btn-dropdown-menu" id="sidebarTourMenu"></div>
                 </div>
                 <a class="btn btn-ghost" id="sidebarFpBtn" target="_blank" rel="noopener" style="display:none">Download floor plans</a>
@@ -247,7 +256,6 @@ let didScrollTop=false;
 function scrollTopOnce(){if(didScrollTop)return;didScrollTop=true;window.scrollTo(0,0);try{window.parent?.postMessage({type:'scroll-top'},'*');}catch(e){}}
 function createImg(src,alt){const i=document.createElement('img');i.src=src;i.alt=alt||'';return i;}
 
-/* Tour label helper */
 function tourLabel(url, index, total){
   if(total===1) return 'Virtual Tour';
   try{
@@ -260,7 +268,6 @@ function tourLabel(url, index, total){
   return 'Tour '+(index+1);
 }
 
-/* Load a tour into the iframe */
 function loadTour(url){
   const iframe=document.getElementById('tour-iframe');
   const loading=document.getElementById('tour-loading');
@@ -277,14 +284,12 @@ function loadTour(url){
   document.querySelectorAll('.tour-pill').forEach(p=>p.classList.toggle('active',p.dataset.url===url));
 }
 
-/* Tab switcher */
 function switchTab(id){
   document.querySelectorAll('.media-tab[data-tab]').forEach(t=>t.classList.toggle('active',t.dataset.tab===id));
   document.querySelectorAll('.media-panel').forEach(p=>p.classList.toggle('active',p.id==='panel-'+id));
   scheduleHeightPings();
 }
 
-/* Init media */
 function initMediaTabs(p){
   const tourUrls=Array.isArray(p.virtual_tour_urls)?p.virtual_tour_urls.filter(Boolean):(p.virtual_tour_url?[p.virtual_tour_url]:[]);
   const floorPlans=Array.isArray(p.floor_plan_urls)?p.floor_plan_urls.filter(Boolean):[];
@@ -323,7 +328,6 @@ function initMediaTabs(p){
     tabsEl.appendChild(btn);
   }
 
-  /* Floor plans */
   if(hasFloorPlans){
     const isPdf=u=>typeof u==='string'&&u.toLowerCase().endsWith('.pdf');
     const fpViewer=document.getElementById('fp-viewer');
@@ -358,7 +362,6 @@ function initMediaTabs(p){
     if(sidebarFp){sidebarFp.href=firstPdf||firstUrl;sidebarFp.style.display='';}
   }
 
-  /* Virtual tours */
   if(hasTours){
     const selector=document.getElementById('tours-selector');
     if(tourUrls.length>1){
@@ -384,14 +387,15 @@ function initMediaTabs(p){
     const openBtn=document.getElementById('tour-open-btn');
     if(openBtn) openBtn.href=tourUrls[0];
 
-    /* Sidebar tour — plain link for single, dropdown for multiple */
+    /* Sidebar — single tour: plain link. Multiple tours: dropdown. */
     const sidebarWrap=document.getElementById('sidebarTourWrap');
     const sidebarBtn=document.getElementById('sidebarTourBtn');
     const sidebarMenu=document.getElementById('sidebarTourMenu');
+    const sidebarChevron=document.getElementById('sidebarTourChevron');
 
     if(sidebarWrap){
       if(tourUrls.length===1){
-        // Replace with a plain anchor button
+        // Replace the whole wrap with a plain anchor
         const a=document.createElement('a');
         a.className='btn btn-ghost';
         a.href=tourUrls[0];
@@ -400,24 +404,37 @@ function initMediaTabs(p){
         a.textContent='View virtual tour';
         sidebarWrap.replaceWith(a);
       } else {
-        // Show dropdown
         sidebarWrap.style.display='';
         sidebarMenu.innerHTML='';
         tourUrls.forEach((url,i)=>{
           const label=tourLabel(url,i,tourUrls.length);
           const item=document.createElement('button');
-          item.type='button';item.className='btn-dropdown-item';item.textContent=label;
-          item.addEventListener('click',()=>{window.open(url,'_blank','noopener');sidebarMenu.classList.remove('open');});
+          item.type='button';
+          item.className='btn-dropdown-item';
+          item.textContent=label;
+          item.addEventListener('click',()=>{
+            window.open(url,'_blank','noopener');
+            sidebarMenu.classList.remove('open');
+            if(sidebarChevron) sidebarChevron.classList.remove('open');
+          });
           sidebarMenu.appendChild(item);
         });
-        sidebarBtn.addEventListener('click',()=>sidebarMenu.classList.toggle('open'));
-        document.addEventListener('click',(e)=>{if(sidebarWrap&&!sidebarWrap.contains(e.target))sidebarMenu.classList.remove('open');});
+
+        sidebarBtn.addEventListener('click',(e)=>{
+          e.stopPropagation();
+          const isOpen=sidebarMenu.classList.toggle('open');
+          if(sidebarChevron) sidebarChevron.classList.toggle('open', isOpen);
+        });
+
+        document.addEventListener('click',()=>{
+          sidebarMenu.classList.remove('open');
+          if(sidebarChevron) sidebarChevron.classList.remove('open');
+        });
       }
     }
   }
 }
 
-/* MAIN */
 async function main(){
   try{
     const id=getParam('id');
