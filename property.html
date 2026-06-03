@@ -62,7 +62,7 @@
 
     /* Tour dropdown */
     .btn-dropdown-wrap{position:relative;width:100%}
-    .btn-dropdown{width:100%;background:#fff;border:1px solid #ddd;color:#111;height:44px;padding:0 16px;border-radius:10px;font-weight:600;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:8px}
+    .btn-dropdown{width:100%;background:#fff;border:1px solid #ddd;color:#111;height:44px;padding:0 16px;border-radius:10px;font-weight:600;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;position:relative}
     .btn-dropdown-chevron{font-size:11px;opacity:.5;transition:transform .2s ease;display:inline-block}
     .btn-dropdown-chevron.open{transform:rotate(180deg)}
     .btn-dropdown-menu{
@@ -215,7 +215,7 @@
                 <div class="btn-dropdown-wrap" id="sidebarTourWrap" style="display:none">
                   <button class="btn-dropdown" id="sidebarTourBtn" type="button">
                     <span>View virtual tour</span>
-                    <span class="btn-dropdown-chevron" id="sidebarTourChevron">▾</span>
+                    <span class="btn-dropdown-chevron" id="sidebarTourChevron" style="position:absolute;right:16px">▾</span>
                   </button>
                   <div class="btn-dropdown-menu" id="sidebarTourMenu"></div>
                 </div>
