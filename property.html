@@ -59,6 +59,16 @@
     .btn-primary{background:var(--brand);color:#fff}
     .btn-primary::after{content:"";width:6px;height:6px;border-radius:999px;background:var(--accent);margin-left:8px}
     .btn-ghost{background:#fff;border:1px solid #ddd;color:#111}
+
+    /* Tour dropdown */
+    .btn-dropdown-wrap{position:relative;width:100%}
+    .btn-dropdown{width:100%;background:#fff;border:1px solid #ddd;color:#111;height:44px;padding:0 16px;border-radius:10px;font-weight:600;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:8px}
+    .btn-dropdown::after{content:"▾";font-size:12px;opacity:.6}
+    .btn-dropdown-menu{position:absolute;top:calc(100% + 4px);left:0;right:0;background:#fff;border:1px solid #ddd;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.12);z-index:100;overflow:hidden;display:none}
+    .btn-dropdown-menu.open{display:block}
+    .btn-dropdown-item{display:block;width:100%;padding:10px 16px;text-align:left;background:none;border:none;font-size:14px;font-weight:500;cursor:pointer;color:#111}
+    .btn-dropdown-item:hover{background:#f6f7fb}
+
     #map{height:260px;border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm)}
     .facts{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
     @media(max-width:700px){.facts{grid-template-columns:1fr}}
@@ -103,33 +113,12 @@
     .tour-pill.active{background:#111;color:#fff;border-color:#111}
 
     /* Tour iframe container */
-    .tour-iframe-wrap{
-      position:relative;
-      aspect-ratio:16/9;
-      background:#111;
-      overflow:hidden;
-    }
-    .tour-iframe-wrap iframe{
-      position:absolute;inset:0;
-      width:100%;height:100%;
-      border:none;
-    }
-    /* Loading overlay */
-    .tour-loading{
-      position:absolute;inset:0;
-      display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;
-      background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);
-      transition:opacity .4s ease;
-      pointer-events:none;
-    }
-    .tour-loading.hidden{opacity:0;}
-    .tour-loading-spinner{
-      width:40px;height:40px;border-radius:50%;
-      border:3px solid rgba(255,255,255,0.2);
-      border-top-color:#fff;
-      animation:spin .8s linear infinite;
-    }
-    .tour-loading-text{color:rgba(255,255,255,0.7);font-size:13px;}
+    .tour-iframe-wrap{position:relative;aspect-ratio:16/9;background:#111;overflow:hidden}
+    .tour-iframe-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:none}
+    .tour-loading{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);transition:opacity .4s ease;pointer-events:none}
+    .tour-loading.hidden{opacity:0}
+    .tour-loading-spinner{width:40px;height:40px;border-radius:50%;border:3px solid rgba(255,255,255,0.2);border-top-color:#fff;animation:spin .8s linear infinite}
+    .tour-loading-text{color:rgba(255,255,255,0.7);font-size:13px}
     @keyframes spin{to{transform:rotate(360deg)}}
     .tour-actions{display:flex;gap:8px;padding:8px 12px;background:#fff;border-top:1px solid #f0f2f5}
   </style>
@@ -174,18 +163,9 @@
 
             <!-- VIRTUAL TOURS PANEL -->
             <div class="media-panel" id="panel-tours">
-              <!-- Secondary pill selector (multiple tours only) -->
               <div class="tours-selector" id="tours-selector" style="display:none"></div>
-              <!-- iframe embed -->
               <div class="tour-iframe-wrap">
-                <iframe
-                  id="tour-iframe"
-                  src=""
-                  allowfullscreen
-                  allow="vr; xr-spatial-tracking; gyroscope; accelerometer"
-                  title="Virtual tour">
-                </iframe>
-                <!-- Loading overlay — hides once iframe loads -->
+                <iframe id="tour-iframe" src="" allowfullscreen allow="vr; xr-spatial-tracking; gyroscope; accelerometer" title="Virtual tour"></iframe>
                 <div class="tour-loading" id="tour-loading">
                   <div class="tour-loading-spinner"></div>
                   <div class="tour-loading-text">Loading virtual tour&#8230;</div>
@@ -225,7 +205,11 @@
               <div class="actions">
                 <button class="btn btn-primary" id="enquireBtn" type="button">Enquire now</button>
                 <a class="btn btn-ghost" id="brochureBtn" target="_blank" rel="noopener" style="display:none">Download brochure</a>
-                <a class="btn btn-ghost" id="sidebarTourBtn" target="_blank" rel="noopener" style="display:none">View virtual tour</a>
+                <!-- Tour button — replaced by JS with either a plain link or a dropdown -->
+                <div id="sidebarTourWrap" style="display:none">
+                  <button class="btn-dropdown" id="sidebarTourBtn" type="button">View virtual tour</button>
+                  <div class="btn-dropdown-menu" id="sidebarTourMenu"></div>
+                </div>
                 <a class="btn btn-ghost" id="sidebarFpBtn" target="_blank" rel="noopener" style="display:none">Download floor plans</a>
               </div>
               <div id="map"></div>
@@ -281,24 +265,16 @@ function loadTour(url){
   const iframe=document.getElementById('tour-iframe');
   const loading=document.getElementById('tour-loading');
   const openBtn=document.getElementById('tour-open-btn');
-
   if(openBtn) openBtn.href=url;
   if(loading) loading.classList.remove('hidden');
-
   if(iframe){
     iframe.src='';
-    // Small delay so loading overlay is visible before iframe starts loading
     setTimeout(()=>{
       iframe.src=url;
-      iframe.onload=()=>{
-        if(loading) loading.classList.add('hidden');
-        scheduleHeightPings();
-      };
-    }, 50);
+      iframe.onload=()=>{if(loading)loading.classList.add('hidden');scheduleHeightPings();};
+    },50);
   }
-
-  // Update active pill
-  document.querySelectorAll('.tour-pill').forEach(p=>p.classList.toggle('active', p.dataset.url===url));
+  document.querySelectorAll('.tour-pill').forEach(p=>p.classList.toggle('active',p.dataset.url===url));
 }
 
 /* Tab switcher */
@@ -397,24 +373,47 @@ function initMediaTabs(p){
       });
     }else{selector.style.display='none';}
 
-    // Load first tour by default (lazy — only when tab is first clicked)
     let toursLoaded=false;
     const toursTab=tabsEl.querySelector('[data-tab="tours"]');
     if(toursTab){
       toursTab.addEventListener('click',()=>{
-        if(!toursLoaded){
-          toursLoaded=true;
-          loadTour(tourUrls[0]);
-        }
+        if(!toursLoaded){toursLoaded=true;loadTour(tourUrls[0]);}
       },{once:false});
     }
 
-    // Set open btn href immediately
     const openBtn=document.getElementById('tour-open-btn');
     if(openBtn) openBtn.href=tourUrls[0];
 
-    const sidebarTour=document.getElementById('sidebarTourBtn');
-    if(sidebarTour){sidebarTour.href=tourUrls[0];sidebarTour.style.display='';}
+    /* Sidebar tour — plain link for single, dropdown for multiple */
+    const sidebarWrap=document.getElementById('sidebarTourWrap');
+    const sidebarBtn=document.getElementById('sidebarTourBtn');
+    const sidebarMenu=document.getElementById('sidebarTourMenu');
+
+    if(sidebarWrap){
+      if(tourUrls.length===1){
+        // Replace with a plain anchor button
+        const a=document.createElement('a');
+        a.className='btn btn-ghost';
+        a.href=tourUrls[0];
+        a.target='_blank';
+        a.rel='noopener';
+        a.textContent='View virtual tour';
+        sidebarWrap.replaceWith(a);
+      } else {
+        // Show dropdown
+        sidebarWrap.style.display='';
+        sidebarMenu.innerHTML='';
+        tourUrls.forEach((url,i)=>{
+          const label=tourLabel(url,i,tourUrls.length);
+          const item=document.createElement('button');
+          item.type='button';item.className='btn-dropdown-item';item.textContent=label;
+          item.addEventListener('click',()=>{window.open(url,'_blank','noopener');sidebarMenu.classList.remove('open');});
+          sidebarMenu.appendChild(item);
+        });
+        sidebarBtn.addEventListener('click',()=>sidebarMenu.classList.toggle('open'));
+        document.addEventListener('click',(e)=>{if(sidebarWrap&&!sidebarWrap.contains(e.target))sidebarMenu.classList.remove('open');});
+      }
+    }
   }
 }
 
