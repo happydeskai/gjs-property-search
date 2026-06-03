@@ -1,5 +1,70 @@
 [
   {
+    "id": 371486,
+    "status": "Under Offer",
+    "address": "Unit D21, Kempsey Eco Business Park",
+    "town": "Worcester",
+    "postcode": "WR5 3NY",
+    "lat": 52.1284093,
+    "lon": -2.216683,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1061,
+    "size_to_sqft": 1061,
+    "summary": "High Quality Industrial / Warehouse Unit",
+    "description": "Kempsey Eco Business Park is a forward-thinking commercial destination designed to support businesses with sustainability at its core. Strategically located just off the A38, south of Worcester, this eco-friendly development offers high-quality, energy-efficient business units tailored for modern enterprises.\n\nWith a strong emphasis on sustainability, Kempsey Eco Business Park incorporates renewable energy solutions, energy-efficient buildings, and green infrastructure to create an environmentally responsible workspace. The park is ideal for businesses seeking a future-proof location that aligns with corporate social responsibility goals while offering excellent accessibility and modern facilities.\n\nJoin a growing community of forward-thinking businesses at Kempsey Eco Business Park, where sustainability meets commercial success.",
+    "location": "Kempsey is a delightful village situated 3 miles to the south of Worcester on the banks of the River Severn that can date its origins back to 1500BC when the Celts made a settlement here. It continued to be inhabited through Roman and Saxon times and played an important part in the Battle of Worcester in 1651. Kempsey currently has population of c.4500 and is home to many locally owned businesses.\nKempsey Eco Business Park can be found at the South end of the village bounded by the River Severn and the A38 Tewkesbury Road. It has excellent transport links including the M5 motorway (4 miles) and Worcester Parkway railway station (6 miles), as well as easy access by foot, bike and bus.",
+    "features": [
+      "1,061sq ft (99m2)",
+      "Electric car charging points",
+      "Renewable clean biomass energy",
+      "On site car parking",
+      "Bike lock station",
+      "Photovoltaics panels to generate electricity"
+    ],
+    "rent_psf": 11.99,
+    "rent_pa": 12726.07,
+    "rent": "£12,726.07 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "estate_charge": "1468.41",
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/daf20715a6db167023b2ce18bdde9dde-img-0780.JPEG",
+      "https://as-images.imgix.net/c5afdd399a15a2a27ce4e43d12d0637e-img-0777.JPEG",
+      "https://as-images.imgix.net/327647f6aef7e6c235baa513cf7a6314-img-0782.JPEG",
+      "https://as-images.imgix.net/50e9d4a01e8dba3db2fd0ff1f00f4fc1-img-0773.JPEG",
+      "https://as-images.imgix.net/e6b45c1ce53ab8234782d99d3dd82319-img-0776.JPEG",
+      "https://as-images.imgix.net/615c91cdd767ec925af70a10cabc4b8d-img-0774.JPEG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/02df33dd2a68ba455f3e30a81a99f009-d21-kempsey-eco-park-brochure1.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-06-03 15:49:25"
+  },
+  {
     "id": 372990,
     "status": "Available",
     "address": "Unit 10A and 11, Arden Business Centre",
@@ -3256,62 +3321,6 @@
     "last_updated": "2026-05-27 15:51:37"
   },
   {
-    "id": 346769,
-    "status": "Under Offer",
-    "address": "Unit 7, Wassage Way South",
-    "town": "Droitwich Spa",
-    "postcode": "WR9 0NX",
-    "lat": 52.284690856,
-    "lon": -2.168148994,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 11764,
-    "size_to_sqft": 11764,
-    "summary": "Commercial Warehouse with Office Space",
-    "description": "7 Wassage Way comprises a pair of semi-detached warehouse units, current laid out and occupied as one single premises, with associated office accommodation towards the front with an ample on-site car parking provision. The building is of steel portal framed construction with brick and blockwork elevations to low level and metal cladding above, beneath a shallow metal-clad pitched roof, with intermittent translucent rooflights. The warehouse has been fitted out with modern LED lighting along with new heating. To the front of the building is a single storey office with cavity brick elevations and a pitched tiled roof. The property includes WC and kitchen facilities as well as mezzanine storage areas within the warehouse. The property benefits from having approximately 12 car parking spaces to the front of the building. \nWarehouse and Offices 10,032 sq ft 932 sq m \nMezzanine Storage 1,152 sq ft 161 sq m \nTotal 11,764 sq ft 1,093 sq m",
-    "location": "The property is situated on Hampton Lovett Industrial Estate to the north of Droitwich Spa. Droitwich is situated approximately seven miles to the north east of Worcester, six miles south west of Bromsgrove and 18 miles south west of Birmingham city centre. The town is situated immediately adjacent to the M5 with Junction 5 being approximately three miles from the property - this providing access north to the M42, M6 and wider national motorway network. Droitwich also benefits from a mainline railway station which provides direct access to Worcester and Birmingham New Street Stations.",
-    "features": [
-      "LED lighting the warehouse",
-      "Mezzanine storage area",
-      "12 car parking spaces to the front of the property"
-    ],
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/e20d20c4d3ab916efb9ba8f9a62348fd-letting346769.jpeg",
-      "https://as-images.imgix.net/6a3fcebe08646856b8f348ed4e432323-letting346769.jpeg",
-      "https://as-images.imgix.net/9fefd1571df24b428c3d83cbf4af9533-letting346769.jpeg",
-      "https://as-images.imgix.net/13760fc6c23e06cf461c0a0d18c7d4d4-letting346769.jpeg",
-      "https://as-images.imgix.net/38681146950aa6bde1b9eea139ad0447-letting346769.jpeg",
-      "https://as-images.imgix.net/10744a78ad649ba68b5372419fb2e286-letting346769.jpeg",
-      "https://as-images.imgix.net/9bb444b6bf287cb571b18af0b1f23bb6-letting346769.jpeg",
-      "https://as-images.imgix.net/2d8897a6b9c0c4887b4084362e8f0909-letting346769.jpeg",
-      "https://as-images.imgix.net/546b8e8e18743c937ecdaf4ce56f205e-letting346769.jpeg",
-      "https://as-images.imgix.net/740845b6e0ab0f7b1d50f81ed7bdf09a-letting346769.jpeg",
-      "https://as-images.imgix.net/dc574ccdc761eb912f59595091c60ce8-letting346769.jpeg",
-      "https://as-images.imgix.net/da22256d03170b84022318c797a0758f-letting346769.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/8022af9337b20802373d692f5d40f0cf-gjs-dillon-particulars-7-wassage-way-droitwich.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-27 15:49:14"
-  },
-  {
     "id": 346680,
     "status": "Available",
     "address": "Nailers Yard",
@@ -3627,71 +3636,6 @@
       }
     ],
     "last_updated": "2026-05-06 16:42:53"
-  },
-  {
-    "id": 371486,
-    "status": "Available",
-    "address": "Unit D21, Kempsey Eco Business Park",
-    "town": "Worcester",
-    "postcode": "WR5 3NY",
-    "lat": 52.1284093,
-    "lon": -2.216683,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1061,
-    "size_to_sqft": 1061,
-    "summary": "High Quality Industrial / Warehouse Unit",
-    "description": "Kempsey Eco Business Park is a forward-thinking commercial destination designed to support businesses with sustainability at its core. Strategically located just off the A38, south of Worcester, this eco-friendly development offers high-quality, energy-efficient business units tailored for modern enterprises.\n\nWith a strong emphasis on sustainability, Kempsey Eco Business Park incorporates renewable energy solutions, energy-efficient buildings, and green infrastructure to create an environmentally responsible workspace. The park is ideal for businesses seeking a future-proof location that aligns with corporate social responsibility goals while offering excellent accessibility and modern facilities.\n\nJoin a growing community of forward-thinking businesses at Kempsey Eco Business Park, where sustainability meets commercial success.",
-    "location": "Kempsey is a delightful village situated 3 miles to the south of Worcester on the banks of the River Severn that can date its origins back to 1500BC when the Celts made a settlement here. It continued to be inhabited through Roman and Saxon times and played an important part in the Battle of Worcester in 1651. Kempsey currently has population of c.4500 and is home to many locally owned businesses.\nKempsey Eco Business Park can be found at the South end of the village bounded by the River Severn and the A38 Tewkesbury Road. It has excellent transport links including the M5 motorway (4 miles) and Worcester Parkway railway station (6 miles), as well as easy access by foot, bike and bus.",
-    "features": [
-      "1,061sq ft (99m2)",
-      "Electric car charging points",
-      "Renewable clean biomass energy",
-      "On site car parking",
-      "Bike lock station",
-      "Photovoltaics panels to generate electricity"
-    ],
-    "rent_psf": 11.99,
-    "rent_pa": 12726.07,
-    "rent": "£12,726.07 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "estate_charge": "1468.41",
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/daf20715a6db167023b2ce18bdde9dde-img-0780.JPEG",
-      "https://as-images.imgix.net/c5afdd399a15a2a27ce4e43d12d0637e-img-0777.JPEG",
-      "https://as-images.imgix.net/327647f6aef7e6c235baa513cf7a6314-img-0782.JPEG",
-      "https://as-images.imgix.net/50e9d4a01e8dba3db2fd0ff1f00f4fc1-img-0773.JPEG",
-      "https://as-images.imgix.net/e6b45c1ce53ab8234782d99d3dd82319-img-0776.JPEG",
-      "https://as-images.imgix.net/615c91cdd767ec925af70a10cabc4b8d-img-0774.JPEG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/02df33dd2a68ba455f3e30a81a99f009-d21-kempsey-eco-park-brochure1.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-06 10:45:53"
   },
   {
     "id": 346673,
