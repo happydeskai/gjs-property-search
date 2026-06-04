@@ -248,9 +248,6 @@ async function run() {
         rent_psf: rent_psf !== undefined ? rent_psf : undefined,
         rent_pa:  rent_pa  !== undefined ? rent_pa  : undefined,
         rent: rent || undefined,
-        rent_psf: rent_psf !== undefined ? rent_psf : undefined,
-        rent_pa:  rent_pa  !== undefined ? rent_pa  : undefined,
-        rent: rent || undefined,
 
         // SALE PRICE
         price: (() => {
