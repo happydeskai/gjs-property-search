@@ -1,5 +1,72 @@
 [
   {
+    "id": 375850,
+    "status": "Coming Soon",
+    "address": "Unit 24A, Wassage Way",
+    "town": "Droitwich",
+    "postcode": "WR9 0NX",
+    "lat": 52.28469,
+    "lon": -2.168149,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial / Warehouse"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 2196,
+    "size_to_sqft": 2196,
+    "summary": "Freehold Industrial / Warehouse Unit located on popular Droitwich Spa Industrial Estate",
+    "description": "This freehold property is a purpose built steel portal frame industrial/workshop unit with part brick and part block walls with steel profile panel cladding surmounted by a pitched steel profile panel clad roof.\n\nInternally the property provides a large open plan workshop with an office area on the left hand side of the unit with a store, kitchen area and WC.\nTo the front of the property there is a concrete hardstanding loading/unloading area with a large communal car park for occupiers and visitors.",
+    "location": "Droitwich is a well-known Worcestershire spa town being popular with local and national companies (due to its obvious communication links) as well as having a strong business community and good shopping facilities.\n\nBirmingham city centre is situated approximately 22 miles to the north east, Bromsgrove is situated approximately 7 miles to the north east, Worcester city centre is situated approximately 8 miles to the south west, Kidderminster is situated approximately 9 miles to the north and Redditch is situated approximately 17 miles to the north east.\n\nDroitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester.\n\nThe property is located within the popular Hampton Lovett Industrial Estate, approximately one mile north of Droitwich Town Centre.  The Hampton Lovett Industrial Estate is accessed directly off the A442 which provides access to Droitwich to the south and Hartlebury and Kidderminster to the north.  The location is particularly convenient for occupiers as it provides easy access to the M5 Motorway with Junction 5 situated approximately 3.25km (two miles) to the east.",
+    "features": [
+      "Warehouse space - 1,408 sq ft (130.81 sqm)",
+      "Ground floor offices / kitchen - 788 sq ft (73.20 sqm)",
+      "Loading / unloading bay to the front of the unit",
+      "Located on Hampton Lovett Trading Estate",
+      "Vacant possesion"
+    ],
+    "price": "£297,500",
+    "price_value": 297500,
+    "business_rates_psf": 0,
+    "rateable_value": 15500,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/98565f2500ee340c125101041a9e7f33-20260603-095141540-ios.jpg",
+      "https://as-images.imgix.net/0793869a43c18f98e8417f78606dcf88-20260603-095212935-ios.jpg",
+      "https://as-images.imgix.net/7f9513572193ed620a7efe965089d8d9-24a-wassage-internal-1.jpg",
+      "https://as-images.imgix.net/f31c6b5561c2b3ce9a3889e862be01c2-24a-wassage-internal-3.jpg",
+      "https://as-images.imgix.net/48c9ce0d9f6cb6f5be26fccf707025fb-24a-wassage-internal-2.jpg",
+      "https://as-images.imgix.net/3c09ce97e74958af86e847d55fd2e180-24a-wassage-internal-4.jpg",
+      "https://as-images.imgix.net/89b098ad7738da20a5eecc53de80c8ee-20260603-092251769-ios.jpg",
+      "https://as-images.imgix.net/f49a0cd0a2bb915b68fd3d18e0733bdc-20260603-092046081-ios.jpg",
+      "https://as-images.imgix.net/2a31803677ef097b7a62fae510c38543-20260603-091930231-ios-1.jpg",
+      "https://as-images.imgix.net/29d969d83af680649c655b808c4f90eb-20260603-094901371-ios.jpg",
+      "https://as-images.imgix.net/905fabda8b7f20b23dd150d70044c9a9-20260603-094922390-ios.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/04c3ae1686f583dfdb60494787594c75-final-gjs-dillon-limited-unit-24a-wassage-way-hampton-lovett-industrial-estate-droitwich-wr9-0nx.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-06-04 16:59:48"
+  },
+  {
     "id": 372990,
     "status": "Available",
     "address": "Unit 10A and 11, Arden Business Centre",
