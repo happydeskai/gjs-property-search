@@ -28,6 +28,8 @@
       "Ground floor showroom with mezzanine area",
       "Excellent access to the M40 and M24 motorways"
     ],
+    "price": "£375,000",
+    "price_value": 375000,
     "business_rates_psf": 0,
     "rateable_value": 26500,
     "epc_rating": "C (58)",
@@ -67,7 +69,7 @@
         "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-06-04 11:40:29"
+    "last_updated": "2026-06-04 12:27:24"
   },
   {
     "id": 371486,
@@ -545,6 +547,8 @@
     "rent_psf": 13.46,
     "rent_pa": 18500,
     "rent": "£18,500 per annum",
+    "price": "£205,000",
+    "price_value": 205000,
     "business_rates_psf": 0,
     "rateable_value": 0,
     "epc_rating": "",
@@ -602,6 +606,8 @@
       "Includes separate rear access off Wylds Lane",
       "On a main arterial route into Worcester"
     ],
+    "price": "£230,000 exclusive",
+    "price_value": 230000,
     "business_rates_psf": 0,
     "rateable_value": 0,
     "epc_rating": "",
@@ -667,6 +673,7 @@
       "Central location within Worcester City Centre",
       "Grade II listed building"
     ],
+    "price": "On Application",
     "business_rates_psf": 0,
     "rateable_value": 15000,
     "epc_rating": "E (122)",
@@ -781,6 +788,8 @@
     "rent_psf": 11.64,
     "rent_pa": 18000,
     "rent": "£18,000 per annum",
+    "price": "£280,000",
+    "price_value": 280000,
     "business_rates_psf": 0,
     "rateable_value": 0,
     "epc_rating": "D (81)",
@@ -839,6 +848,8 @@
       "Grade II listed Building - register number 1390154",
       "Close to Foregate Street Station"
     ],
+    "price": "Offers from £225,000",
+    "price_value": 225000,
     "business_rates_psf": 0,
     "rateable_value": 19250,
     "epc_rating": "D (100)",
@@ -1032,6 +1043,8 @@
       "Air conditioning",
       "New key point..."
     ],
+    "price": "£325,000",
+    "price_value": 325000,
     "business_rates_psf": 0,
     "rateable_value": 0,
     "epc_rating": "",
@@ -1334,6 +1347,8 @@
       "Vacant possession from July 2026"
     ],
     "rent": "On Application",
+    "price": "£275,000",
+    "price_value": 275000,
     "business_rates_psf": 3.28,
     "rateable_value": 16500,
     "epc_rating": "",
@@ -1453,6 +1468,8 @@
       "Prime visibility on a well-trafficked local parade",
       "Potential for future growth"
     ],
+    "price": "£400,000",
+    "price_value": 400000,
     "business_rates_psf": 0,
     "rateable_value": 0,
     "epc_rating": "",
@@ -1832,6 +1849,7 @@
       "Suitable for conversion to residential (STP)",
       "Car parking to the rear of the property"
     ],
+    "price": "On Application",
     "business_rates_psf": 0,
     "rateable_value": 0,
     "epc_rating": "",
@@ -2247,6 +2265,8 @@
       "Car parking at rear of property",
       "Development opportunity (STP)"
     ],
+    "price": "£395,000",
+    "price_value": 395000,
     "business_rates_psf": 0,
     "rateable_value": 29250,
     "epc_rating": "C (73)",
@@ -2308,6 +2328,8 @@
       "Located in a popular business park.",
       "Freehold"
     ],
+    "price": "£795,000",
+    "price_value": 795000,
     "business_rates_psf": 0,
     "rateable_value": 0,
     "epc_rating": "C (57)",
@@ -2370,6 +2392,8 @@
       "Situated in a predominantly residential area and therefore suitable for re-development, subject to planning",
       "Has dual access off Newtown Road and Nursery Road."
     ],
+    "price": "£750,000",
+    "price_value": 750000,
     "business_rates_psf": 0,
     "rateable_value": 0,
     "epc_rating": "",
@@ -2442,6 +2466,8 @@
       "Three roller shutter loading doors",
       "Total floor area 10,204 sq ft (948 sq m) GIA"
     ],
+    "price": "£830,000",
+    "price_value": 830000,
     "business_rates_psf": 0,
     "rateable_value": 0,
     "epc_rating": "",
@@ -2720,6 +2746,8 @@
       "Constructed to suit a variety of uses (subject to planning)",
       "To be offered with vacant possession with the HoW College relocating within the city"
     ],
+    "price": "£2,950,000",
+    "price_value": 2950000,
     "business_rates_psf": 87690,
     "rateable_value": 158000,
     "epc_rating": "",
@@ -2777,6 +2805,8 @@
       "Development opportunity subject to planning",
       "Located on an established Business Park"
     ],
+    "price": "£255,000",
+    "price_value": 255000,
     "business_rates_psf": 0,
     "rateable_value": 0,
     "epc_rating": "",
@@ -3032,6 +3062,7 @@
       "For Sale / To Let"
     ],
     "rent": "On Application",
+    "price": "On Application",
     "business_rates_psf": 0,
     "rateable_value": 0,
     "epc_rating": "",
@@ -3092,6 +3123,7 @@
       "Please refer to the brochure for further details on specification and journey times"
     ],
     "rent": "On Application",
+    "price": "On Application",
     "business_rates_psf": 0,
     "rateable_value": 0,
     "epc_rating": "",
@@ -3381,6 +3413,7 @@
     "description": "New build industrial warehouse unit with ancillary office accommodation Copcut Business Park is a proposed mixed use scheme including Sainsbury's Local store, Costa Coffee Drive-Thru, 8 vehicle ultra-rapid charging centre and two industrial units including a self-storage facility and office / meeting space solutions. Unit 1 is a high specification industrial warehouse proposed to be built for completion Q4 2024 and is to provide: - Industrial warehouse with steel clad elevations and roof including translucent roof lights - Ground floor offices with toilets - First floor mezzanine - Floor loading of 50KN/M sq - Concrete floor - 8m to underside of haunch - 2 x electric roller shutter doors - Self-contained concrete yard area - 25 car parking spaces",
     "location": "Copcut Business Park is located overlooking the main A38 Copcut island, accessed via Copcut Boulevard off Roman Way, Droitwich. The site provides immediate access to Droitwich Town Centre approximately 1 mile distant with Worcester City Centre approximately 6 miles distant via the main A38. The A38 also provides direct access to J5 M5 approximately 5 miles distant, in turn leading to the M42, M40 and National Motorway Network.",
     "features": [],
+    "price": "On Application",
     "business_rates_psf": 0,
     "rateable_value": 0,
     "epc_rating": "",
@@ -3792,6 +3825,8 @@
       "Raised access flooring",
       "Excellent links to the national motorway networks"
     ],
+    "price": "£190,000",
+    "price_value": 190000,
     "business_rates_psf": 0,
     "rateable_value": 0,
     "epc_rating": "A (21)",
