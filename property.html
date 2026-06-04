@@ -368,6 +368,7 @@ async function main() {
     }
     if (p.epc) facts.push(['EPC', String(p.epc)]);
     if (p.rent_text) facts.push(['Rent', String(p.rent_text)]);
+    if (p.price) facts.push(['Price', String(p.price)]);
     if (p.rateable_value) facts.push(['Rateable value', String(p.rateable_value)]);
     if (p.last_updated) facts.push(['Updated', String(p.last_updated)]);
     if (p.types && p.types.length) facts.push(['Type', p.types.join(', ')]);
