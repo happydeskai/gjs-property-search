@@ -1,5 +1,65 @@
 [
   {
+    "id": 346665,
+    "status": "Available",
+    "address": "Development Land at Trinity Vale Park",
+    "town": "Evesham",
+    "postcode": "WR11 1LB",
+    "lat": 52.070251464,
+    "lon": -1.934033036,
+    "types": [
+      "Development/Investment"
+    ],
+    "raw_types": [
+      "Development"
+    ],
+    "to_let": true,
+    "for_sale": true,
+    "size_from_sqft": 285000,
+    "size_to_sqft": 285000,
+    "summary": "Development  Land To Let or For Sale, Evesham",
+    "description": "Benefiting from planning consent, the site offers build to suit opportunity up to 285,000 sq ft. The units would be an ideal hub for logistics, distribution and manufacturing operations.",
+    "features": [
+      "Industrial / Distribution Units",
+      "Build to suit opportunities up to 285,000 sq ft",
+      "For Sale / To Let"
+    ],
+    "rent": "On Application",
+    "price": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/7768c0dca718829492d9865e752931bd-letting346665.jpeg",
+      "https://as-images.imgix.net/3e64fd29b4c726a25d2066091477a7f6-letting346665.jpeg",
+      "https://as-images.imgix.net/0cc69c7d783904679a9bdb969033b55c-letting346665.jpeg",
+      "https://as-images.imgix.net/566b08cf590f979254bbfcd963ef081b-letting346665.jpeg",
+      "https://as-images.imgix.net/15d24b095f6307261a91354b04b7ecd9-letting346665.jpeg",
+      "https://as-images.imgix.net/c7da43866fe80825d19541d8d661c1fb-letting346665.jpeg",
+      "https://as-images.imgix.net/47775db1137b9b22fe07012de8ecceb4-letting346665.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/12d6a6b2e26c4eed3ee6953474a82855-letting346665.pdf",
+    "contacts": [
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-06-08 11:31:42"
+  },
+  {
     "id": 363157,
     "status": "Available",
     "address": "Unit 6, The IO Centre",
@@ -665,65 +725,6 @@
       }
     ],
     "last_updated": "2026-05-28 17:17:23"
-  },
-  {
-    "id": 346655,
-    "status": "Under Offer",
-    "address": "Unit 2, Falstaff House",
-    "town": "Malvern",
-    "postcode": "WR14 1JJ",
-    "lat": 52.124584197,
-    "lon": -2.303184986,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1289,
-    "size_to_sqft": 1289,
-    "summary": "Office To Let, Malvern",
-    "description": "2 Falstaff House is a modern self-contained office building in immaculate condition set within the popular office development of Enigma Commercial Centre. The building benefits from its' own entrance which leads into a reception area with male & female & disabled WC facilities, along with a shower. Beyond the reception, at ground floor level there is open plan office accommodation with kitchenette. The first floor is accessed via an internal staircase or passenger lift and offers more open plan office space alongside a boardroom, a private meeting room and a further kitchen facility. 2 Falstaff House also offers allocated car parking for ten cars.",
-    "location": "The property is available as a whole or on a floor by floor basis. Ground Floor 102.27 m2 1,100 ft2 First Floor 119.76 m2 1,289 ft2 Total 222.03 m2 2,389 ft2 Location 2 Falstaff House is located on Enigma Business Park which is Malvern's main commercial / business area - being approximately two miles to the north of Great Malvern town centre, eight miles south west of Worcester city centre, 21 miles east of Hereford city centre and 26 miles north of Gloucester. Malvern benefits from good transport links with the A449 leading to Worcester city centre and the A440 connecting with Junction 7 of the M5 motorway which is approximately 7 miles to the north east. The town has two railway stations, being Malvern Link and Great Malvern",
-    "features": [
-      "Located on Malvern's main business park",
-      "10 on site car parking spaces",
-      "Open plan working environment"
-    ],
-    "rent_psf": 12.02,
-    "rent_pa": 15500,
-    "rent": "£15,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/bf0207cf2f3b3c2bd5b71ade86649514-letting346655.jpeg",
-      "https://as-images.imgix.net/37f2a011bc5bc684731efb7d59c647da-letting346655.jpeg",
-      "https://as-images.imgix.net/7129766532d8895a4ca46e1d48c977e9-letting346655.jpeg",
-      "https://as-images.imgix.net/6bb507693f4dd443682cedc7a588bda4-letting346655.jpeg",
-      "https://as-images.imgix.net/f38f7a17e12bd0593ca337cf9fef1def-letting346655.jpeg",
-      "https://as-images.imgix.net/971bf262196c15eac2c2d545dbb23713-letting346655.jpeg",
-      "https://as-images.imgix.net/7e779cc68b780b0b767b40b146547ef2-letting346655.jpeg",
-      "https://as-images.imgix.net/73a6f43a094da5f081a57b1e041aa34c-letting346655.jpeg",
-      "https://as-images.imgix.net/bd5af782f8a715beb36aba5fa44ccaab-letting346655.jpeg",
-      "https://as-images.imgix.net/8b5c895355c104481eca6bf5701d334b-letting346655.jpeg",
-      "https://as-images.imgix.net/1fecb3230a34f0121f303fc6c27e0328-letting346655.jpeg",
-      "https://as-images.imgix.net/8134deedf15b101245307fef1f80ea3b-letting346655.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f55a054f8d21c50b2376a1405ec27230-letting346655.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-28 17:16:57"
   },
   {
     "id": 346719,
@@ -3168,66 +3169,6 @@
       }
     ],
     "last_updated": "2026-05-27 16:43:51"
-  },
-  {
-    "id": 346665,
-    "status": "Available",
-    "address": "Development Land at Trinity Vale Park",
-    "town": "Evesham",
-    "postcode": "WR11 1LB",
-    "lat": 52.070251464,
-    "lon": -1.934033036,
-    "types": [
-      "Development/Investment"
-    ],
-    "raw_types": [
-      "Development"
-    ],
-    "to_let": true,
-    "for_sale": true,
-    "size_from_sqft": 285000,
-    "size_to_sqft": 285000,
-    "summary": "Development  Land To Let or For Sale, Evesham",
-    "description": "Benefiting from planning consent, the site offers build to suit opportunity up to 285,000 sq ft. The units would be an ideal hub for logistics, distribution and manufacturing operations.",
-    "features": [
-      "Industrial / Distribution Units",
-      "Build to suit opportunities up to 285,000 sq ft",
-      "For Sale / To Let"
-    ],
-    "rent": "On Application",
-    "price": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/7768c0dca718829492d9865e752931bd-letting346665.jpeg",
-      "https://as-images.imgix.net/3e64fd29b4c726a25d2066091477a7f6-letting346665.jpeg",
-      "https://as-images.imgix.net/0cc69c7d783904679a9bdb969033b55c-letting346665.jpeg",
-      "https://as-images.imgix.net/566b08cf590f979254bbfcd963ef081b-letting346665.jpeg",
-      "https://as-images.imgix.net/15d24b095f6307261a91354b04b7ecd9-letting346665.jpeg",
-      "https://as-images.imgix.net/c7da43866fe80825d19541d8d661c1fb-letting346665.jpeg",
-      "https://as-images.imgix.net/47775db1137b9b22fe07012de8ecceb4-letting346665.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/12d6a6b2e26c4eed3ee6953474a82855-letting346665.pdf",
-    "contacts": [
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-27 16:41:43"
   },
   {
     "id": 346689,
