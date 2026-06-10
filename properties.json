@@ -1,5 +1,71 @@
 [
   {
+    "id": 351584,
+    "status": "Available",
+    "address": "155 London Road",
+    "town": "Worcester",
+    "postcode": "WR5 2ED",
+    "lat": 52.184917,
+    "lon": -2.205248,
+    "types": [
+      "Development/Investment"
+    ],
+    "raw_types": [
+      "Investment - Mixed use"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 1401,
+    "size_to_sqft": 1401,
+    "summary": "Prominent Mixed Use Investment Opportunity",
+    "description": "155 London Road comprises a mid-terrace mixed use property of traditional brick construction underneath a pitched tiled roof.  The building offers a retail unit over the ground floor, with residential accommodation above.  The retail unit is currently occupied by a barbers and benefits from dual access, off London Road to the front and a rear access off Wyld’s Lane.  Internally the barbers comprises a front sales area and rear storage / welfare facilities, including a kitchen and WC.\n\nThe ground floor is let and is holding over at £450.00 per calendar month. \n\nThe upper floors are access to the rear of the property and comprise a two bedroom flat arranged over the first and second floors.  At first floor level there is a reception room (recently used as a bedroom), kitchen and bathroom.  There are a further two rooms on the second floor. \n\nGround Floor Retail \t477 sq ft \t44.36 sq m \nFirst Floor Residential\t538 sq ft\t50.00 sq m\nSecond Floor Residential\t385 sq ft\t35.76 sq m\nTotal\t1,401 sq ft \t130.12 sq m",
+    "location": "The property is situated within Worcester, in the West Midlands.  Worcester lies 31 miles south west of Birmingham, 101 north west of London, 27 miles north of Gloucester and 23 miles north east of Hereford.  At the 2011 census, the population in the city was approximately 100,000.  The city has excellent transport links with a direct mainline to both Birmingham and London, via Worcester Foregate Street, Worcester Shrub Hill and Worcester Parkway Stations.  Worcester also lies to the west of Junctions 6 and 7 of the M5 motorway, providing access north to Birmingham, the M42, the M6 and the wider national motorway network.\n\nThe property lies to the east of Worcester city centre along the main arterial road of London Road.  London Road has traditionally comprised of local convenience operators interspersed by a mix of small residential dwellings & flats and larger detached residential dwellings.  This part of London Road offers a number of local retail convenience stores such as Tesco Express, a Chinese take away, a fish & chip shop and a former Post Office.  London Road runs north west towards Sidbury which provides direct access into Worcester city centre and conversely London Road also provides direct access out to Junction 7 of the M5 motorway and the Southern Link Road.  Given the inflow of traffic into the city centre, London Road is a highly exposed area that has been popular among independent retailers.",
+    "features": [
+      "Totals 1,401 sq ft (130.12 sq m) over three floors",
+      "Ground floor retail unit let to a barbers shop",
+      "Self-contained two bedroom flat over the first and second floors",
+      "Includes separate rear access off Wylds Lane",
+      "On a main arterial route into Worcester"
+    ],
+    "price": "£230,000 exclusive",
+    "price_value": 230000,
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/5bd5cfc37063ac42de00cce69c321ef6-20251204-115818-2.jpg",
+      "https://as-images.imgix.net/20665a1c171a75ae6c013bd8a33ed4d6-20251204-115420-2.jpg",
+      "https://as-images.imgix.net/90fa448e0f55b2ef7b2c7f10bf24f2e2-20251204-115352-2.jpg",
+      "https://as-images.imgix.net/d209fbb4718110cae9f483ef2ac4f4e1-20251204-115317-2.jpg",
+      "https://as-images.imgix.net/6e393cc4d3f1d3cb0e9287f2bb225a4e-20251204-115209-1.jpg",
+      "https://as-images.imgix.net/3405799ff08611fdbe864fe20766f6f6-20251204-115152-2.jpg",
+      "https://as-images.imgix.net/270c3a43d256d1ace4fcb7519c734a4c-20251204-115122-2.jpg",
+      "https://as-images.imgix.net/5468a32f2c0f674bf9fea589d0ff1680-20251204-115646-2.jpg",
+      "https://as-images.imgix.net/6ef63199ed570584f504536329125e4a-20251204-115035-2.jpg",
+      "https://as-images.imgix.net/1e243bed4c34dcd02f01aaf61c95117e-20251204-115026-1.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/d11fba1b9cce1cc6157cfb633c764631-gjs-dillon-particulars-155-london-road-worcester-2.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-06-10 10:52:54"
+  },
+  {
     "id": 346657,
     "status": "Available",
     "address": "Ground Floor Office, 29 Foregate Street",
@@ -845,72 +911,6 @@
       }
     ],
     "last_updated": "2026-05-28 17:07:34"
-  },
-  {
-    "id": 351584,
-    "status": "Available",
-    "address": "155 London Road",
-    "town": "Worcester",
-    "postcode": "WR5 2ED",
-    "lat": 52.184917,
-    "lon": -2.205248,
-    "types": [
-      "Development/Investment"
-    ],
-    "raw_types": [
-      "Investment - Mixed use"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 1401,
-    "size_to_sqft": 1401,
-    "summary": "Prominent Mixed Use Investment Opportunity",
-    "description": "155 London Road comprises a mid-terrace mixed use property of traditional brick construction underneath a pitched tiled roof.  The building offers a retail unit over the ground floor, with residential accommodation above.  The retail unit is currently occupied by a barbers and benefits from dual access, off London Road to the front and a rear access off Wyld’s Lane.  Internally the barbers comprises a front sales area and rear storage / welfare facilities, including a kitchen and WC.\n\nThe ground floor is let and is holding over at £450.00 per calendar month. \n\nThe upper floors are access to the rear of the property and comprise a two bedroom flat arranged over the first and second floors.  At first floor level there is a reception room (recently used as a bedroom), kitchen and bathroom.  There are a further two rooms on the second floor. \n\nGround Floor Retail \t477 sq ft \t44.36 sq m \nFirst Floor Residential\t538 sq ft\t50.00 sq m\nSecond Floor Residential\t385 sq ft\t35.76 sq m\nTotal\t1,401 sq ft \t130.12 sq m",
-    "location": "The property is situated within Worcester, in the West Midlands.  Worcester lies 31 miles south west of Birmingham, 101 north west of London, 27 miles north of Gloucester and 23 miles north east of Hereford.  At the 2011 census, the population in the city was approximately 100,000.  The city has excellent transport links with a direct mainline to both Birmingham and London, via Worcester Foregate Street, Worcester Shrub Hill and Worcester Parkway Stations.  Worcester also lies to the west of Junctions 6 and 7 of the M5 motorway, providing access north to Birmingham, the M42, the M6 and the wider national motorway network.\n\nThe property lies to the east of Worcester city centre along the main arterial road of London Road.  London Road has traditionally comprised of local convenience operators interspersed by a mix of small residential dwellings & flats and larger detached residential dwellings.  This part of London Road offers a number of local retail convenience stores such as Tesco Express, a Chinese take away, a fish & chip shop and a former Post Office.  London Road runs north west towards Sidbury which provides direct access into Worcester city centre and conversely London Road also provides direct access out to Junction 7 of the M5 motorway and the Southern Link Road.  Given the inflow of traffic into the city centre, London Road is a highly exposed area that has been popular among independent retailers.",
-    "features": [
-      "Totals 1,401 sq ft (130.12 sq m) over three floors",
-      "Ground floor retail unit let to a barbers shop",
-      "Self-contained two bedroom flat over the first and second floors",
-      "Includes separate rear access off Wylds Lane",
-      "On a main arterial route into Worcester"
-    ],
-    "price": "£230,000 exclusive",
-    "price_value": 230000,
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/5bd5cfc37063ac42de00cce69c321ef6-20251204-115818-2.jpg",
-      "https://as-images.imgix.net/20665a1c171a75ae6c013bd8a33ed4d6-20251204-115420-2.jpg",
-      "https://as-images.imgix.net/90fa448e0f55b2ef7b2c7f10bf24f2e2-20251204-115352-2.jpg",
-      "https://as-images.imgix.net/d209fbb4718110cae9f483ef2ac4f4e1-20251204-115317-2.jpg",
-      "https://as-images.imgix.net/6e393cc4d3f1d3cb0e9287f2bb225a4e-20251204-115209-1.jpg",
-      "https://as-images.imgix.net/3405799ff08611fdbe864fe20766f6f6-20251204-115152-2.jpg",
-      "https://as-images.imgix.net/270c3a43d256d1ace4fcb7519c734a4c-20251204-115122-2.jpg",
-      "https://as-images.imgix.net/5468a32f2c0f674bf9fea589d0ff1680-20251204-115646-2.jpg",
-      "https://as-images.imgix.net/6ef63199ed570584f504536329125e4a-20251204-115035-2.jpg",
-      "https://as-images.imgix.net/1e243bed4c34dcd02f01aaf61c95117e-20251204-115026-1.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6addef712e598b82fc2980d54c41ce1d-gjs-dillon-particulars-155-london-road-worcester-1.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-28 17:06:43"
   },
   {
     "id": 352941,
