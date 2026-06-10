@@ -1,5 +1,55 @@
 [
   {
+    "id": 376681,
+    "status": "Available",
+    "address": "Unit 18 Aston Fields Industrial Estate",
+    "town": "Bromsgrove",
+    "postcode": "B60 3EX",
+    "lat": 52.316476,
+    "lon": -2.060756,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3786,
+    "size_to_sqft": 3786,
+    "summary": "Well located premises suitable for a variety of commercial uses",
+    "description": "Unit 18 Aston Fields Industrial Estate comprises a mid-terrace commercial property of steel frame construction with brick & block elevations.  The building is currently configured as a warehouse / industrial property.\n\nInternally, there is a good-sized warehouse area with the benefit of 4.75m eaves.  Located to the front of the unit is a separate office area and WCs.  The property is accessed via a pedestrian door and roller shutter doors. Externally there are car parking spaces and loading / unloading facilities to the front of the property. \n\nGross Internal Area\t3,786 sq ft\t352 sq m",
+    "location": "The property is situated in Bromsgrove, to the south of the town centre on Aston Fields Industrial Estate. Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the property, giving access to the Midlands motorway network.\n\nBirmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south.\n\nAston Fields Industrial Estate benefits from communal landscaping, allocated & communal parking and extensive security, including CCTV and security gates.",
+    "features": [
+      "3,786 sq ft (352 sq m) GIA",
+      "Large warehouse area with associated office and WC's",
+      "Situated on the popular Aston Fields Industrial Estate",
+      "Suitable for warehouse, industrial or trade counter useage"
+    ],
+    "rent_psf": 8.98,
+    "rent_pa": 34000,
+    "rent": "£34,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 34250,
+    "epc_rating": "C (58)",
+    "images": [
+      "https://as-images.imgix.net/9b6adee9cebcb3e60f6f3841efc8233a-frnt-page-image.png",
+      "https://as-images.imgix.net/416c7a02f268f5c980f94441f50d1d09-map.png"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/0fd0b32b5b641e82cf5e3b947c8a6b20-gjs-dillon-particulars-unit-18-aston-fields-industrial-estate-bromsgrove.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-06-10 12:40:36"
+  },
+  {
     "id": 351584,
     "status": "Available",
     "address": "155 London Road",
