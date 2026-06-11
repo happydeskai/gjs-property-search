@@ -64,7 +64,453 @@
         "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-06-10 17:15:39"
+    "last_updated": "2026-06-11 11:23:14"
+  },
+  {
+    "id": 346750,
+    "status": "Under Offer",
+    "address": "2C Derwent Close",
+    "town": "Worcester",
+    "postcode": "WR4 9TY",
+    "lat": 52.206310272,
+    "lon": -2.194024085,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2150,
+    "size_to_sqft": 2150,
+    "summary": "Industrial To Let, Worcester",
+    "description": "The property comprises an end terrace industrial / warehouse building being part of a block of three Units. Unit C is part warehouse and part offices with mezzanine storage/office accommodation above with ground floor kitchen and WC facilities and a roller shutter door to the front elevation. Outside the property to the front there is a hardstanding loading and unloading area shared with Units A and B and being bounded by a secure palisade fence. Accommodation Ground Floor 1,874 sq ft 174.10 sq m First Floor 276 sq ft 25.66 sq m Total 2,150 sq ft 199.76 sq m Additional mezzanine storage area not included in the above measurements.",
+    "location": "2C Derwent Close is situated within Worcester, in the West Midlands. Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London. Worcester has excellent access to the M5 motorway, with Junction 6 being approximately one and a half miles to the northeast. The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network. Worcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
+    "features": [
+      "2,150 sq ft (199.76 sq m) GIA",
+      "Secured shared yard",
+      "Additional mezzanine storage area not included in the above"
+    ],
+    "rent_psf": 7.81,
+    "rent_pa": 16800,
+    "rent": "£16,800 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/61eef815f5c56ca3fff59bf1bffa0a4d-letting346750.jpeg",
+      "https://as-images.imgix.net/b5bef492a59cc4683d24e7cba82fb6e9-letting346750.jpeg",
+      "https://as-images.imgix.net/e15607aaef9b11d3e7f0b0f0f67863e3-letting346750.jpeg",
+      "https://as-images.imgix.net/9fd221d8ffcc2b7c1eca51b5fa394cca-letting346750.jpeg",
+      "https://as-images.imgix.net/fad50957c6cf6a2df2813503febbf00e-letting346750.jpeg",
+      "https://as-images.imgix.net/1441ae60add6469bdf29817d356f82a6-letting346750.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/71694072ada872f7261874a356bdc8d8-gjs-dillon-particulars-2c-derwent-close-worcester.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-06-11 11:03:08"
+  },
+  {
+    "id": 371482,
+    "status": "Under Offer",
+    "address": "Unit D18, Kempsey Eco Business Park",
+    "town": "Worcester",
+    "postcode": "WR5 3NY",
+    "lat": 52.1284093,
+    "lon": -2.216683,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1495,
+    "size_to_sqft": 1495,
+    "summary": "High Quality Industrial / Warehouse Unit",
+    "description": "Kempsey Eco Business Park is a forward-thinking commercial destination designed to support businesses with sustainability at its core. Strategically located just off the A38, south of Worcester, this eco-friendly development offers high-quality, energy-efficient business units tailored for modern enterprises.\n\nWith a strong emphasis on sustainability, Kempsey Eco Business Park incorporates renewable energy solutions, energy-efficient buildings, and green infrastructure to create an environmentally responsible workspace. The park is ideal for businesses seeking a future-proof location that aligns with corporate social responsibility goals while offering excellent accessibility and modern facilities.\n\nJoin a growing community of forward-thinking businesses at Kempsey Eco Business Park, where sustainability meets commercial success.",
+    "location": "Kempsey is a delightful village situated 3 miles to the south of Worcester on the banks of the River Severn that can date its origins back to 1500BC when the Celts made a settlement here. It continued to be inhabited through Roman and Saxon times and played an important part in the Battle of Worcester in 1651. Kempsey currently has population of c.4500 and is home to many locally owned businesses.\nKempsey Eco Business Park can be found at the South end of the village bounded by the River Severn and the A38 Tewkesbury Road. It has excellent transport links including the M5 motorway (4 miles) and Worcester Parkway railway station (6 miles), as well as easy access by foot, bike and bus.",
+    "features": [
+      "1,495 sq ft (139m2)",
+      "Electric car charging points",
+      "Renewable clean biomass energy",
+      "On site car parking",
+      "Bike lock station",
+      "Photovoltaics panels to generate electricity"
+    ],
+    "rent_psf": 12,
+    "rent_pa": 17938.64,
+    "rent": "£17,938.64 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "estate_charge": "2069.87",
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/608d3b9a3fb3da287cfc951712f7bde1-img-0766-2.JPEG",
+      "https://as-images.imgix.net/506f4f429a85fb20b85733400aac062e-img-0769.JPEG",
+      "https://as-images.imgix.net/28629648e550c11ea945a5531b8be454-img-0765.JPEG",
+      "https://as-images.imgix.net/bc9d680bfe9bf0273faa947228518fb6-img-0764-1.JPEG",
+      "https://as-images.imgix.net/f795c25f7e14f18b5d5471facad353eb-img-0761.JPEG",
+      "https://as-images.imgix.net/1e42a05a61c142c6983d88b9e9b2cc2a-img-0759.JPEG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/bb1ca3508ef6c2d4a1d6af57dd1090db-d18-kempsey-eco-park-brochure-1.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-06-11 11:01:43"
+  },
+  {
+    "id": 346648,
+    "status": "Under Offer",
+    "address": "The Old Mill",
+    "town": "Pershore",
+    "postcode": "WR10 1BY",
+    "lat": 52.11138916,
+    "lon": -2.082348108,
+    "types": [
+      "Retail",
+      "Office",
+      "Industrial"
+    ],
+    "raw_types": [
+      "Retail",
+      "Office",
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 5575,
+    "size_to_sqft": 5757,
+    "summary": "Retail / Office / Industrial To Let, Pershore",
+    "description": "The Old Mill comprises a large, detached commercial premises of traditional brick construction. The building has an open-plan retail sales area, which benefits from suspended LED lighting. Ancillary accommodation is provided at ground and first floor levels, including staff and storage areas, along with a mezzanine floor. There are approximately 20 car parking spaces. Ground Floor Sales3,400 sq ft315.87 sq m Ground Floor Ancillary 520 sq ft 48.31 sq m Mezzanine Area1,349 sq ft125.33 sq m First Floor Ancillary 306 sq ft 28.43 sq m Total5,575 sq ft 517.93 sq m",
+    "location": "Location The property is prominently located on New Road in Pershore, a well-connected Worcestershire market town approximately 10 miles from Worcester and 7 miles from Evesham. The Old Mill is positioned close to the River Avon and within easy walking distance of Pershore town centre. The location benefits from good transport links, including nearby access to the A44 and Pershore railway station with services to Worcester, Oxford and London.",
+    "features": [
+      "Suitable for a variety of uses",
+      "Ground and first floor space",
+      "On site car parking",
+      "Good access to the A44, leading to the M5 motorway"
+    ],
+    "rent_psf": 5.02,
+    "rent_pa": 28000,
+    "rent": "£28,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/23387c8a7ce3b5b7fe2a131ab060c4f7-letting346648.jpeg",
+      "https://as-images.imgix.net/3e32dbaedb4939efef5d6832670c92cc-letting346648.jpeg",
+      "https://as-images.imgix.net/209a69c9adf175d282719bed4e21ecef-letting346648.jpeg",
+      "https://as-images.imgix.net/a70f037aa6b30150aff0c933cbe197ef-letting346648.jpeg",
+      "https://as-images.imgix.net/fae4d88addd61870797e6b9a1473a0f7-letting346648.jpeg",
+      "https://as-images.imgix.net/434f2a7a885c6a94b66e25a64e2d0fcf-letting346648.jpeg",
+      "https://as-images.imgix.net/90e27364575128aa53e3d53c3c11b5cc-letting346648.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6a207975ae15e397dfa5dbdbf0df0063-letting346648.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-06-11 11:00:51"
+  },
+  {
+    "id": 360553,
+    "status": "Under Offer",
+    "address": "Ground Floor, 1 King Street",
+    "town": "Worcester",
+    "postcode": "WR1 2NX",
+    "lat": 52.187626,
+    "lon": -2.218937,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 554,
+    "size_to_sqft": 554,
+    "summary": "Self-contained ground floor commercial premises",
+    "description": "1 King Street is a centrally located ground floor commercial unit with flexible usage. The property comprises a self-contained open plan space with kitchenette and toilet facilities.  There is one car parking space located to the rear of the property. \n\nGround Floor 554 sq ft 41 sq m\nTotal 554 sq ft 41 sq m",
+    "location": "King Street is close to City Walls Road and Sidbury with good transport links.  Close by are the main shopping areas of Worcester city centre and other amenities which are within walking distance.  Several public car parks are in the vicinity.\n\nWorcester is a major West Midlands city located approximately 120 miles North West of London, 30 miles south west of Birmingham, 25 miles to the north of Cheltenham and 26 miles to the north east of Hereford city centre.  Motorway access to the city is very good with junctions 6 and 7 of the M5 motorway being within three miles of the city centre giving direct access to the national motorway network.",
+    "features": [
+      "554.34 sq ft (51.5 sq m) NIA ground floor commercial space",
+      "Flexible usage within Use Class E (Commercial, Business and Service)",
+      "Central Worcester location with excellent local amenities",
+      "1 car parking space to the rear of the property"
+    ],
+    "rent_psf": 19.86,
+    "rent_pa": 11000,
+    "rent": "£11,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 6000,
+    "service_charge": "500",
+    "epc_rating": "B (46)",
+    "images": [
+      "https://as-images.imgix.net/883fc050d2ebc487b9af0876b6fb5771-20260326-144506528-ios-1.jpg",
+      "https://as-images.imgix.net/ff11721a19e7767f4ebdfcd6e6a419e9-20260326-144112942-ios-1.jpg",
+      "https://as-images.imgix.net/2260faf686cfc0569d6408bc666f09e8-20260326-144040559-ios-1.jpg",
+      "https://as-images.imgix.net/b52ca09760c28be088c554baf3f0ad44-20260326-144018134-ios.jpg",
+      "https://as-images.imgix.net/8b31910f6516ec0bed157f26a62a312b-20260326-143936732-ios.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/fdcbf5841d5d3b3b72344a7cf704d751-gjs-dillon-particulars-1-king-street-worcester-wr1-1.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-06-11 11:00:21"
+  },
+  {
+    "id": 358186,
+    "status": "Under Offer",
+    "address": "44 High Street",
+    "town": "Bromsgrove",
+    "postcode": "B61 8HQ",
+    "lat": 52.333969,
+    "lon": -2.061572,
+    "types": [
+      "Office",
+      "Retail"
+    ],
+    "raw_types": [
+      "Office",
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1686,
+    "size_to_sqft": 1686,
+    "summary": "Bromsgrove Town Centre Retail / Office Space",
+    "description": "44 High Street offers a mid-terrace unit that forms part of a larger retail parade.  The building is arranged over the ground, first and second floors.  The property offers a retail/ office area over the ground floor, which provides a prominent frontage to the High Street.  Over the first and second floors there is ancillary office accommodation.  There are WC and kitchen facilities within the premises. \n\t\t\t\t\nGround Floor 618 sq ft / 57.4 sq m \nFirst Floor 580 sq ft / 53.9 sq m\nSecond Floor 487 sq ft / 45.2 sq m \nTotal\t1,686 sq ft\t156.5 sq m",
+    "location": "The property is situated in Bromsgrove Town Centre, to the southern end of the High Street.  Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the town centre, giving access to the Midlands motorway network.\n\nBirmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south.",
+    "features": [
+      "1,685 sq ft (156.5 sq m) NIA",
+      "Well proportioned accommodation over three floors",
+      "Benefitting from a prominent frontage",
+      "Town centre location"
+    ],
+    "rent_psf": 10.38,
+    "rent_pa": 17500,
+    "rent": "£17,500 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 10500,
+    "epc_rating": "D (97)",
+    "images": [
+      "https://as-images.imgix.net/6aee8a8e8f2294bf3cbd950496c082e9-20260323-152314355-ios.jpg",
+      "https://as-images.imgix.net/d2575591e5a3311a6e58d9d57708e829-20260323-152638652-ios.jpg",
+      "https://as-images.imgix.net/1b7a309635ce87dcac8bf28ab93edb76-20260323-152552413-ios.jpg",
+      "https://as-images.imgix.net/c75c4812fa280db7f063b37175a63e6e-20260323-152822882-ios.jpg",
+      "https://as-images.imgix.net/e67a8a8891751f093d35c7bd3297e223-20260323-153008924-ios.jpg",
+      "https://as-images.imgix.net/ad77a61d943fe287eee1e8be16afbbab-20260323-152909173-ios.jpg",
+      "https://as-images.imgix.net/0c7d321e2c4626f5856ef03a24c762eb-20260323-153116431-ios.jpg",
+      "https://as-images.imgix.net/8fc56c260b41152c74b79d6b53ca96c7-20260323-152718114-ios.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9ddc48fdb820c858498c700f80eb4e1c-gjs-dillon-particulars-44-high-street-bromsgrove-b61-8hq-2.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-06-11 10:59:56"
+  },
+  {
+    "id": 346850,
+    "status": "Under Offer",
+    "address": "Digital House",
+    "town": "Kidderminster",
+    "postcode": "DY11 7QH",
+    "lat": 52.360488891,
+    "lon": -2.266505956,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3212,
+    "size_to_sqft": 3212,
+    "summary": "Office To Let, Kidderminster",
+    "description": "Digital House is self-contained office premises, which is securely fenced and gated with generous parking. Both the ground floor right and first floor suites have been let. The remaining Ground Floor, Left Suite is finished to an immaculate standard with a dedicated entrance and reception, a mixture of open plan and private offices together with kitchen and WC facilities. High specification fixtures include suspended ceilings, perimeter trunking, air conditioning and LED lighting with sensors. Ground Floor, Left Suite298.41 sq m3,212 sq ft",
+    "location": "The property is located off the A451 Stourport Road, approximately two miles south of Kidderminster town centre and one and half miles north of Stourport-On-Severn. The property has easy access to the main A442 Worcester Road, which combined with the A451 are the two main arterial roads leading into Kidderminster Town Centre. In recent years, this part of Kidderminster has been totally transformed, attracting a number of high-profile occupiers along the Stourport Road and Silverwoods Way.",
+    "features": [
+      "High specification finished to immaculate standard",
+      "Open plan offices with kitchen and WC",
+      "Self-contained office block with ample parking",
+      "Suspended ceilings, perimeter trunking, air conditioning and LED lighting"
+    ],
+    "rent_psf": 12.5,
+    "rent_pa": 40150,
+    "rent": "£12.50 per sq ft",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/97e35fefce848e5234dc16c6567c2d7c-20260122-121456-1-1-1.jpg",
+      "https://as-images.imgix.net/0d5a23cc2cab4c30ea7c43a17d6687b9-20260122-121441.jpg",
+      "https://as-images.imgix.net/be6e613d9b4109a430e3f295586237bf-20260122-121310.jpg",
+      "https://as-images.imgix.net/9c85b03a54eeffcb244e67477c9fa994-20260122-121248.jpg",
+      "https://as-images.imgix.net/25a8eee432f79c500b3cf58732e9af76-20260122-120957.jpg",
+      "https://as-images.imgix.net/6e06fe320e659032200e718bf24273af-20260122-120946.jpg",
+      "https://as-images.imgix.net/837f1b31e4cb4c84ef7e24943da5d4f6-20260122-115328.jpg",
+      "https://as-images.imgix.net/5078e857570bc31f663a7feda0b3cfb7-20260122-115719.jpg",
+      "https://as-images.imgix.net/a161658386ac9d155bc6fc1eecaa0e34-20260122-114954.jpg",
+      "https://as-images.imgix.net/5c79c81ef1b6277f325395a8ff3b8386-20260122-114933.jpg",
+      "https://as-images.imgix.net/7f5385400c49b2efcd2699a53aa65469-20260122-114916.jpg",
+      "https://as-images.imgix.net/1ce24dbde565ac6f5feacb9fedbf1a3e-20260122-115426.jpg",
+      "https://as-images.imgix.net/0f44612b1b878fb84d4776220ccc0b17-20260122-115003.jpg",
+      "https://as-images.imgix.net/0b6fb4d8fd4efbab9b45e8011e9062bd-20260122-114902.jpg",
+      "https://as-images.imgix.net/9ffffa986dc35e41cf306337962b2b6b-20260122-115012.jpg",
+      "https://as-images.imgix.net/1d75e83bb9628416a8731d8bb7861269-20260122-114843.jpg",
+      "https://as-images.imgix.net/b66c7a50e38c28fb01ccae9e80f171a0-20260122-115438.jpg",
+      "https://as-images.imgix.net/89c358d912775787336bfb7bb194ed2d-20260122-115448.jpg",
+      "https://as-images.imgix.net/01774fdf62d0d26bdca84e8e1b7c34a0-20260122-115503.jpg",
+      "https://as-images.imgix.net/9634501a93248473c66dc1d5ea0973f3-20260122-120204.jpg",
+      "https://as-images.imgix.net/5ba4e937fb433870b1bbdc011544aaf0-20260122-120251.jpg",
+      "https://as-images.imgix.net/e54bc86d38d6ada8734ed98d1fe3369c-20260122-120408.jpg",
+      "https://as-images.imgix.net/af0e1b3cbc597de29d76c7607ef8778f-20260122-120213.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9b758c44bbf1caa6c0a63edcfe6c2ee8-gjs-dillon-ground-floor-left-suite-digital-house-kidderminster-1.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-06-11 10:59:29"
+  },
+  {
+    "id": 350918,
+    "status": "Under Offer",
+    "address": "Unit 13a, St Richards Road",
+    "town": "Evesham",
+    "postcode": "WR11 1XJ",
+    "lat": 52.080721,
+    "lon": -1.944174,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial / Storage"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 10915,
+    "size_to_sqft": 10915,
+    "summary": "Warehouse / industrial unit with offices",
+    "description": "13A St. Richards Road comprises a detached industrial / warehouse property that is situated on the Four Pools Industrial Estate.  The property is accessed directly off St. Richards Road and occupies a predominant position within the wider industrial estate.\n\nInternally the property offers a large, rectangular industrial / warehouse area of the ground floor, which benefits from a minimum eaves height of 5.7m and a maximum eaves height of 7.7m.  The warehouse is accessed via four roller shutter doors and a pedestrian door, along with access from the office space.\n\nThe office accommodation is situated to the front of the building and is arranged over the ground and first floors.  At ground floor level there is an open plan office, WC and kitchen.  At first floor level there are two further WCs, a meeting room, office and storage area.\n\nExternally the property benefits from a large, secure yard, which offers parking, loading / unloading space and space to turn vehicles within.  There is also an open storage area to the rear of the building.\n\nGround Floor Warehouse 9,197 sq ft 854.37 sq m\nGround Floor Offices 859 sq ft 79.81 sq m \nFirst Floor Offices 859 sq ft 79.81 sq m\nTotal 10,915 sq ft 1,013.99 sq m",
+    "location": "The property is situated within Evesham, to the south east of Worcestershire.  Evesham is a market town within Wychavon which benefits from a population of approximately 25,000, according to the 2011 census.  It is located approximately 14 miles south east of Worcester, 14 miles north east of Cheltenham, 27 miles south of Birmingham and 90 miles north west of London.\n\nEvesham benefits from good road communications being on the A44; which provides access to Worcester, Oxford and Junction 6 of the M5 motorway (in approximately 25 minutes) and on the A46; which provides access to Redditch, Tewkesbury and Junction 9 of the M5 motorway (in approximately 20 minutes). Evesham also has a mainline station which provides a direct access to the Worcester stations, Oxford and London Paddington.",
+    "features": [
+      "10,915 sq ft (1,013 sq m) GIA",
+      "Minimum eaves height 5.7m",
+      "Maximum eaves height 7.7m",
+      "Warehouse access via 4 roller shutter doors",
+      "Large secure yard"
+    ],
+    "rent_psf": 6.87,
+    "rent_pa": 75000,
+    "rent": "£75,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/651f99fb20a9c50625e8c72eb69ca2a6-20250110-112721.jpg",
+      "https://as-images.imgix.net/f5e96c25b5568fbf6cc3dbfd1d9c586f-20250110-112658.jpg",
+      "https://as-images.imgix.net/c868fd4436d00757c8fd802d5a7e4445-20250110-100648.jpg",
+      "https://as-images.imgix.net/992dfd5951d90ac6acc94184d2512a89-cam04581g0-pr0017-still004.jpg",
+      "https://as-images.imgix.net/d427769e14b3fba6626c41b3eb61cede-cam04581g0-pr0017-still003-1.jpg",
+      "https://as-images.imgix.net/e3549552789a4cb93163b91c1683c20b-cam04581g0-pr0017-still001-1.jpg",
+      "https://as-images.imgix.net/c881be2aadb25ee2ab6e87b7d467ed5c-cam04581g0-pr0017-still002.jpg",
+      "https://as-images.imgix.net/ab9072edf4a682209d5fbccad6b747e4-20250110-111848.jpg",
+      "https://as-images.imgix.net/e56ba103ae52be35219f235cba1cb429-20250110-112029.jpg",
+      "https://as-images.imgix.net/b654121edce18a110401f42305e1c9b6-20250110-112419.jpg",
+      "https://as-images.imgix.net/b54a0dc61220366570e2a147f56af7b8-20250110-112246.jpg",
+      "https://as-images.imgix.net/50a34bf4f59c9c37c5c2bcb1f0fa6a31-20250110-105232.jpg",
+      "https://as-images.imgix.net/5ec5e815e0535326a76a26620c821fc5-20250110-112419.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/36e0bdf3e346311418f554e771fdade2-gjs-dillon-particulars-13a-st-richards-road-evesham-wr11-1.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-06-11 10:58:40"
   },
   {
     "id": 376681,
@@ -784,68 +1230,6 @@
     "last_updated": "2026-06-01 11:33:05"
   },
   {
-    "id": 360553,
-    "status": "Available",
-    "address": "Ground Floor, 1 King Street",
-    "town": "Worcester",
-    "postcode": "WR1 2NX",
-    "lat": 52.187626,
-    "lon": -2.218937,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 554,
-    "size_to_sqft": 554,
-    "summary": "Self-contained ground floor commercial premises",
-    "description": "1 King Street is a centrally located ground floor commercial unit with flexible usage. The property comprises a self-contained open plan space with kitchenette and toilet facilities.  There is one car parking space located to the rear of the property. \n\nGround Floor 554 sq ft 41 sq m\nTotal 554 sq ft 41 sq m",
-    "location": "King Street is close to City Walls Road and Sidbury with good transport links.  Close by are the main shopping areas of Worcester city centre and other amenities which are within walking distance.  Several public car parks are in the vicinity.\n\nWorcester is a major West Midlands city located approximately 120 miles North West of London, 30 miles south west of Birmingham, 25 miles to the north of Cheltenham and 26 miles to the north east of Hereford city centre.  Motorway access to the city is very good with junctions 6 and 7 of the M5 motorway being within three miles of the city centre giving direct access to the national motorway network.",
-    "features": [
-      "554.34 sq ft (51.5 sq m) NIA ground floor commercial space",
-      "Flexible usage within Use Class E (Commercial, Business and Service)",
-      "Central Worcester location with excellent local amenities",
-      "1 car parking space to the rear of the property"
-    ],
-    "rent_psf": 19.86,
-    "rent_pa": 11000,
-    "rent": "£11,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 6000,
-    "service_charge": "500",
-    "epc_rating": "B (46)",
-    "images": [
-      "https://as-images.imgix.net/883fc050d2ebc487b9af0876b6fb5771-20260326-144506528-ios-1.jpg",
-      "https://as-images.imgix.net/ff11721a19e7767f4ebdfcd6e6a419e9-20260326-144112942-ios-1.jpg",
-      "https://as-images.imgix.net/2260faf686cfc0569d6408bc666f09e8-20260326-144040559-ios-1.jpg",
-      "https://as-images.imgix.net/b52ca09760c28be088c554baf3f0ad44-20260326-144018134-ios.jpg",
-      "https://as-images.imgix.net/8b31910f6516ec0bed157f26a62a312b-20260326-143936732-ios.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/fdcbf5841d5d3b3b72344a7cf704d751-gjs-dillon-particulars-1-king-street-worcester-wr1-1.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-29 14:13:40"
-  },
-  {
     "id": 346884,
     "status": "Available",
     "address": "Unit 5, West Court",
@@ -1011,71 +1395,6 @@
       }
     ],
     "last_updated": "2026-05-28 17:04:09"
-  },
-  {
-    "id": 371482,
-    "status": "Available",
-    "address": "Unit D18, Kempsey Eco Business Park",
-    "town": "Worcester",
-    "postcode": "WR5 3NY",
-    "lat": 52.1284093,
-    "lon": -2.216683,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1495,
-    "size_to_sqft": 1495,
-    "summary": "High Quality Industrial / Warehouse Unit",
-    "description": "Kempsey Eco Business Park is a forward-thinking commercial destination designed to support businesses with sustainability at its core. Strategically located just off the A38, south of Worcester, this eco-friendly development offers high-quality, energy-efficient business units tailored for modern enterprises.\n\nWith a strong emphasis on sustainability, Kempsey Eco Business Park incorporates renewable energy solutions, energy-efficient buildings, and green infrastructure to create an environmentally responsible workspace. The park is ideal for businesses seeking a future-proof location that aligns with corporate social responsibility goals while offering excellent accessibility and modern facilities.\n\nJoin a growing community of forward-thinking businesses at Kempsey Eco Business Park, where sustainability meets commercial success.",
-    "location": "Kempsey is a delightful village situated 3 miles to the south of Worcester on the banks of the River Severn that can date its origins back to 1500BC when the Celts made a settlement here. It continued to be inhabited through Roman and Saxon times and played an important part in the Battle of Worcester in 1651. Kempsey currently has population of c.4500 and is home to many locally owned businesses.\nKempsey Eco Business Park can be found at the South end of the village bounded by the River Severn and the A38 Tewkesbury Road. It has excellent transport links including the M5 motorway (4 miles) and Worcester Parkway railway station (6 miles), as well as easy access by foot, bike and bus.",
-    "features": [
-      "1,495 sq ft (139m2)",
-      "Electric car charging points",
-      "Renewable clean biomass energy",
-      "On site car parking",
-      "Bike lock station",
-      "Photovoltaics panels to generate electricity"
-    ],
-    "rent_psf": 12,
-    "rent_pa": 17938.64,
-    "rent": "£17,938.64 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "estate_charge": "2069.87",
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/608d3b9a3fb3da287cfc951712f7bde1-img-0766-2.JPEG",
-      "https://as-images.imgix.net/506f4f429a85fb20b85733400aac062e-img-0769.JPEG",
-      "https://as-images.imgix.net/28629648e550c11ea945a5531b8be454-img-0765.JPEG",
-      "https://as-images.imgix.net/bc9d680bfe9bf0273faa947228518fb6-img-0764-1.JPEG",
-      "https://as-images.imgix.net/f795c25f7e14f18b5d5471facad353eb-img-0761.JPEG",
-      "https://as-images.imgix.net/1e42a05a61c142c6983d88b9e9b2cc2a-img-0759.JPEG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/bb1ca3508ef6c2d4a1d6af57dd1090db-d18-kempsey-eco-park-brochure-1.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-28 17:03:41"
   },
   {
     "id": 346866,
@@ -1274,64 +1593,6 @@
     "last_updated": "2026-05-28 16:57:29"
   },
   {
-    "id": 358186,
-    "status": "Available",
-    "address": "44 High Street",
-    "town": "Bromsgrove",
-    "postcode": "B61 8HQ",
-    "lat": 52.333969,
-    "lon": -2.061572,
-    "types": [
-      "Office",
-      "Retail"
-    ],
-    "raw_types": [
-      "Office",
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1686,
-    "size_to_sqft": 1686,
-    "summary": "Bromsgrove Town Centre Retail / Office Space",
-    "description": "44 High Street offers a mid-terrace unit that forms part of a larger retail parade.  The building is arranged over the ground, first and second floors.  The property offers a retail/ office area over the ground floor, which provides a prominent frontage to the High Street.  Over the first and second floors there is ancillary office accommodation.  There are WC and kitchen facilities within the premises. \n\t\t\t\t\nGround Floor 618 sq ft / 57.4 sq m \nFirst Floor 580 sq ft / 53.9 sq m\nSecond Floor 487 sq ft / 45.2 sq m \nTotal\t1,686 sq ft\t156.5 sq m",
-    "location": "The property is situated in Bromsgrove Town Centre, to the southern end of the High Street.  Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the town centre, giving access to the Midlands motorway network.\n\nBirmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south.",
-    "features": [
-      "1,685 sq ft (156.5 sq m) NIA",
-      "Well proportioned accommodation over three floors",
-      "Benefitting from a prominent frontage",
-      "Town centre location"
-    ],
-    "rent_psf": 10.38,
-    "rent_pa": 17500,
-    "rent": "£17,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 10500,
-    "epc_rating": "D (97)",
-    "images": [
-      "https://as-images.imgix.net/6aee8a8e8f2294bf3cbd950496c082e9-20260323-152314355-ios.jpg",
-      "https://as-images.imgix.net/d2575591e5a3311a6e58d9d57708e829-20260323-152638652-ios.jpg",
-      "https://as-images.imgix.net/1b7a309635ce87dcac8bf28ab93edb76-20260323-152552413-ios.jpg",
-      "https://as-images.imgix.net/c75c4812fa280db7f063b37175a63e6e-20260323-152822882-ios.jpg",
-      "https://as-images.imgix.net/e67a8a8891751f093d35c7bd3297e223-20260323-153008924-ios.jpg",
-      "https://as-images.imgix.net/ad77a61d943fe287eee1e8be16afbbab-20260323-152909173-ios.jpg",
-      "https://as-images.imgix.net/0c7d321e2c4626f5856ef03a24c762eb-20260323-153116431-ios.jpg",
-      "https://as-images.imgix.net/8fc56c260b41152c74b79d6b53ca96c7-20260323-152718114-ios.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9ddc48fdb820c858498c700f80eb4e1c-gjs-dillon-particulars-44-high-street-bromsgrove-b61-8hq-2.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-28 16:55:12"
-  },
-  {
     "id": 346777,
     "status": "Available",
     "address": "The Radius, De Salis Court",
@@ -1392,59 +1653,6 @@
       }
     ],
     "last_updated": "2026-05-28 16:41:59"
-  },
-  {
-    "id": 346750,
-    "status": "Available",
-    "address": "2C Derwent Close",
-    "town": "Worcester",
-    "postcode": "WR4 9TY",
-    "lat": 52.206310272,
-    "lon": -2.194024085,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2150,
-    "size_to_sqft": 2150,
-    "summary": "Industrial To Let, Worcester",
-    "description": "The property comprises an end terrace industrial / warehouse building being part of a block of three Units. Unit C is part warehouse and part offices with mezzanine storage/office accommodation above with ground floor kitchen and WC facilities and a roller shutter door to the front elevation. Outside the property to the front there is a hardstanding loading and unloading area shared with Units A and B and being bounded by a secure palisade fence. Accommodation Ground Floor 1,874 sq ft 174.10 sq m First Floor 276 sq ft 25.66 sq m Total 2,150 sq ft 199.76 sq m Additional mezzanine storage area not included in the above measurements.",
-    "location": "2C Derwent Close is situated within Worcester, in the West Midlands. Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London. Worcester has excellent access to the M5 motorway, with Junction 6 being approximately one and a half miles to the northeast. The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network. Worcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
-    "features": [
-      "2,150 sq ft (199.76 sq m) GIA",
-      "Secured shared yard",
-      "Additional mezzanine storage area not included in the above"
-    ],
-    "rent_psf": 7.81,
-    "rent_pa": 16800,
-    "rent": "£16,800 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/61eef815f5c56ca3fff59bf1bffa0a4d-letting346750.jpeg",
-      "https://as-images.imgix.net/b5bef492a59cc4683d24e7cba82fb6e9-letting346750.jpeg",
-      "https://as-images.imgix.net/e15607aaef9b11d3e7f0b0f0f67863e3-letting346750.jpeg",
-      "https://as-images.imgix.net/9fd221d8ffcc2b7c1eca51b5fa394cca-letting346750.jpeg",
-      "https://as-images.imgix.net/fad50957c6cf6a2df2813503febbf00e-letting346750.jpeg",
-      "https://as-images.imgix.net/1441ae60add6469bdf29817d356f82a6-letting346750.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/71694072ada872f7261874a356bdc8d8-gjs-dillon-particulars-2c-derwent-close-worcester.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-28 16:41:39"
   },
   {
     "id": 371699,
@@ -1994,85 +2202,6 @@
     "last_updated": "2026-05-27 17:22:30"
   },
   {
-    "id": 346850,
-    "status": "Available",
-    "address": "Digital House",
-    "town": "Kidderminster",
-    "postcode": "DY11 7QH",
-    "lat": 52.360488891,
-    "lon": -2.266505956,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3212,
-    "size_to_sqft": 3212,
-    "summary": "Office To Let, Kidderminster",
-    "description": "Digital House is self-contained office premises, which is securely fenced and gated with generous parking. Both the ground floor right and first floor suites have been let. The remaining Ground Floor, Left Suite is finished to an immaculate standard with a dedicated entrance and reception, a mixture of open plan and private offices together with kitchen and WC facilities. High specification fixtures include suspended ceilings, perimeter trunking, air conditioning and LED lighting with sensors. Ground Floor, Left Suite298.41 sq m3,212 sq ft",
-    "location": "The property is located off the A451 Stourport Road, approximately two miles south of Kidderminster town centre and one and half miles north of Stourport-On-Severn. The property has easy access to the main A442 Worcester Road, which combined with the A451 are the two main arterial roads leading into Kidderminster Town Centre. In recent years, this part of Kidderminster has been totally transformed, attracting a number of high-profile occupiers along the Stourport Road and Silverwoods Way.",
-    "features": [
-      "High specification finished to immaculate standard",
-      "Open plan offices with kitchen and WC",
-      "Self-contained office block with ample parking",
-      "Suspended ceilings, perimeter trunking, air conditioning and LED lighting"
-    ],
-    "rent_psf": 12.5,
-    "rent_pa": 40150,
-    "rent": "£12.50 per sq ft",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/97e35fefce848e5234dc16c6567c2d7c-20260122-121456-1-1-1.jpg",
-      "https://as-images.imgix.net/0d5a23cc2cab4c30ea7c43a17d6687b9-20260122-121441.jpg",
-      "https://as-images.imgix.net/be6e613d9b4109a430e3f295586237bf-20260122-121310.jpg",
-      "https://as-images.imgix.net/9c85b03a54eeffcb244e67477c9fa994-20260122-121248.jpg",
-      "https://as-images.imgix.net/25a8eee432f79c500b3cf58732e9af76-20260122-120957.jpg",
-      "https://as-images.imgix.net/6e06fe320e659032200e718bf24273af-20260122-120946.jpg",
-      "https://as-images.imgix.net/837f1b31e4cb4c84ef7e24943da5d4f6-20260122-115328.jpg",
-      "https://as-images.imgix.net/5078e857570bc31f663a7feda0b3cfb7-20260122-115719.jpg",
-      "https://as-images.imgix.net/a161658386ac9d155bc6fc1eecaa0e34-20260122-114954.jpg",
-      "https://as-images.imgix.net/5c79c81ef1b6277f325395a8ff3b8386-20260122-114933.jpg",
-      "https://as-images.imgix.net/7f5385400c49b2efcd2699a53aa65469-20260122-114916.jpg",
-      "https://as-images.imgix.net/1ce24dbde565ac6f5feacb9fedbf1a3e-20260122-115426.jpg",
-      "https://as-images.imgix.net/0f44612b1b878fb84d4776220ccc0b17-20260122-115003.jpg",
-      "https://as-images.imgix.net/0b6fb4d8fd4efbab9b45e8011e9062bd-20260122-114902.jpg",
-      "https://as-images.imgix.net/9ffffa986dc35e41cf306337962b2b6b-20260122-115012.jpg",
-      "https://as-images.imgix.net/1d75e83bb9628416a8731d8bb7861269-20260122-114843.jpg",
-      "https://as-images.imgix.net/b66c7a50e38c28fb01ccae9e80f171a0-20260122-115438.jpg",
-      "https://as-images.imgix.net/89c358d912775787336bfb7bb194ed2d-20260122-115448.jpg",
-      "https://as-images.imgix.net/01774fdf62d0d26bdca84e8e1b7c34a0-20260122-115503.jpg",
-      "https://as-images.imgix.net/9634501a93248473c66dc1d5ea0973f3-20260122-120204.jpg",
-      "https://as-images.imgix.net/5ba4e937fb433870b1bbdc011544aaf0-20260122-120251.jpg",
-      "https://as-images.imgix.net/e54bc86d38d6ada8734ed98d1fe3369c-20260122-120408.jpg",
-      "https://as-images.imgix.net/af0e1b3cbc597de29d76c7607ef8778f-20260122-120213.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9b758c44bbf1caa6c0a63edcfe6c2ee8-gjs-dillon-ground-floor-left-suite-digital-house-kidderminster-1.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-27 17:21:55"
-  },
-  {
     "id": 350416,
     "status": "Available",
     "address": "Unit 4, Droitwich Enterprise Hub",
@@ -2429,64 +2558,6 @@
       }
     ],
     "last_updated": "2026-05-27 17:15:39"
-  },
-  {
-    "id": 346708,
-    "status": "Available",
-    "address": "Unit 5, Davids Road Trade Centre",
-    "town": "Evesham",
-    "postcode": "WR11 1XG",
-    "lat": 52.080982208,
-    "lon": -1.947353959,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial",
-      "Trade Counter"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 5057,
-    "size_to_sqft": 5057,
-    "summary": "Industrial / Trade Counter To Let, Evesham",
-    "description": "Unit 5 is a high-quality end-terrace industrial/trade counter unit of steel portal frame construction, featuring an insulated profile steel roof and a combination of block and insulated steel profile elevations. The unit benefits from a glazed pedestrian entrance, an electrically operated roller shutter door and excellent visibility within the estate. Situated within a well-established trade counter estate, the location has attracted a strong mix of national and regional occupiers, including Screwfix, Buildbase, Tile Giant, Topps Tiles, Tool Station and Easy Bathrooms. Total Area5,057 sq ft 469.80 sqm",
-    "location": "The property is situated within Evesham, to the south east of Worcestershire. Evesham is a market town within Wychavon which benefits from a population of approximately 25,000, according to the 2011 census. It is located approximately 14 miles south east of Worcester, 14 miles north east of Cheltenham, 27 miles south of Birmingham and 90 miles north west of London. Evesham benefits from good road communications being on the A44; which provides access to Worcester, Oxford and Junction 6 of the M5 motorway (in approximately 25 minutes) and on the A46; which provides access to Redditch, Tewkesbury and Junction 9 of the M5 motorway (in approximately 20 minutes). Evesham also has a mainline station which provides a direct access to the Worcester stations, Oxford and London Paddington.",
-    "features": [
-      "Virtual tour avaiable",
-      "Dedicated yard area",
-      "Recently refurbished",
-      "Warehouse access via 1 electric roller shutter door"
-    ],
-    "rent_psf": 12.5,
-    "rent_pa": 63213,
-    "rent": "£63,213 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/ae750669efe8d35a9c6b8fce34205ddb-letting346708.jpeg",
-      "https://as-images.imgix.net/e30f64a08dd4b48ed2cbd57c5b152b18-letting346708.jpeg",
-      "https://as-images.imgix.net/c34536f22dd0d6dbae50ef4d9a971886-letting346708.jpeg",
-      "https://as-images.imgix.net/691b51f6f133df4680985bf068e71599-letting346708.jpeg",
-      "https://as-images.imgix.net/0f97d03e3f7a7a3ff7d651fc550902ea-letting346708.jpeg",
-      "https://as-images.imgix.net/d49a58107258b3658e05800da00ed9a4-letting346708.jpeg",
-      "https://as-images.imgix.net/bdc99c9d5f44b94ffcf05b09a6d3ab19-letting346708.jpeg",
-      "https://as-images.imgix.net/c4a89cef6e795ea88437c26a9cdaaeb8-letting346708.jpeg",
-      "https://as-images.imgix.net/19a7506861e166b12cd3e8f13c0e0d5b-letting346708.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/a0537a2b3f3e78d66854e005ec0259c7-17173-hi-aurora-evesham-davies-road-tp-brochure-v10.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-27 17:15:10"
   },
   {
     "id": 352214,
@@ -3340,135 +3411,6 @@
       }
     ],
     "last_updated": "2026-05-27 16:41:19"
-  },
-  {
-    "id": 346648,
-    "status": "Available",
-    "address": "The Old Mill",
-    "town": "Pershore",
-    "postcode": "WR10 1BY",
-    "lat": 52.11138916,
-    "lon": -2.082348108,
-    "types": [
-      "Retail",
-      "Office",
-      "Industrial"
-    ],
-    "raw_types": [
-      "Retail",
-      "Office",
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 5575,
-    "size_to_sqft": 5757,
-    "summary": "Retail / Office / Industrial To Let, Pershore",
-    "description": "The Old Mill comprises a large, detached commercial premises of traditional brick construction. The building has an open-plan retail sales area, which benefits from suspended LED lighting. Ancillary accommodation is provided at ground and first floor levels, including staff and storage areas, along with a mezzanine floor. There are approximately 20 car parking spaces. Ground Floor Sales3,400 sq ft315.87 sq m Ground Floor Ancillary 520 sq ft 48.31 sq m Mezzanine Area1,349 sq ft125.33 sq m First Floor Ancillary 306 sq ft 28.43 sq m Total5,575 sq ft 517.93 sq m",
-    "location": "Location The property is prominently located on New Road in Pershore, a well-connected Worcestershire market town approximately 10 miles from Worcester and 7 miles from Evesham. The Old Mill is positioned close to the River Avon and within easy walking distance of Pershore town centre. The location benefits from good transport links, including nearby access to the A44 and Pershore railway station with services to Worcester, Oxford and London.",
-    "features": [
-      "Suitable for a variety of uses",
-      "Ground and first floor space",
-      "On site car parking",
-      "Good access to the A44, leading to the M5 motorway"
-    ],
-    "rent_psf": 5.02,
-    "rent_pa": 28000,
-    "rent": "£28,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/23387c8a7ce3b5b7fe2a131ab060c4f7-letting346648.jpeg",
-      "https://as-images.imgix.net/3e32dbaedb4939efef5d6832670c92cc-letting346648.jpeg",
-      "https://as-images.imgix.net/209a69c9adf175d282719bed4e21ecef-letting346648.jpeg",
-      "https://as-images.imgix.net/a70f037aa6b30150aff0c933cbe197ef-letting346648.jpeg",
-      "https://as-images.imgix.net/fae4d88addd61870797e6b9a1473a0f7-letting346648.jpeg",
-      "https://as-images.imgix.net/434f2a7a885c6a94b66e25a64e2d0fcf-letting346648.jpeg",
-      "https://as-images.imgix.net/90e27364575128aa53e3d53c3c11b5cc-letting346648.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6a207975ae15e397dfa5dbdbf0df0063-letting346648.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-27 16:05:09"
-  },
-  {
-    "id": 350918,
-    "status": "Available",
-    "address": "Unit 13a, St Richards Road",
-    "town": "Evesham",
-    "postcode": "WR11 1XJ",
-    "lat": 52.080721,
-    "lon": -1.944174,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial / Storage"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 10915,
-    "size_to_sqft": 10915,
-    "summary": "Warehouse / industrial unit with offices",
-    "description": "13A St. Richards Road comprises a detached industrial / warehouse property that is situated on the Four Pools Industrial Estate.  The property is accessed directly off St. Richards Road and occupies a predominant position within the wider industrial estate.\n\nInternally the property offers a large, rectangular industrial / warehouse area of the ground floor, which benefits from a minimum eaves height of 5.7m and a maximum eaves height of 7.7m.  The warehouse is accessed via four roller shutter doors and a pedestrian door, along with access from the office space.\n\nThe office accommodation is situated to the front of the building and is arranged over the ground and first floors.  At ground floor level there is an open plan office, WC and kitchen.  At first floor level there are two further WCs, a meeting room, office and storage area.\n\nExternally the property benefits from a large, secure yard, which offers parking, loading / unloading space and space to turn vehicles within.  There is also an open storage area to the rear of the building.\n\nGround Floor Warehouse 9,197 sq ft 854.37 sq m\nGround Floor Offices 859 sq ft 79.81 sq m \nFirst Floor Offices 859 sq ft 79.81 sq m\nTotal 10,915 sq ft 1,013.99 sq m",
-    "location": "The property is situated within Evesham, to the south east of Worcestershire.  Evesham is a market town within Wychavon which benefits from a population of approximately 25,000, according to the 2011 census.  It is located approximately 14 miles south east of Worcester, 14 miles north east of Cheltenham, 27 miles south of Birmingham and 90 miles north west of London.\n\nEvesham benefits from good road communications being on the A44; which provides access to Worcester, Oxford and Junction 6 of the M5 motorway (in approximately 25 minutes) and on the A46; which provides access to Redditch, Tewkesbury and Junction 9 of the M5 motorway (in approximately 20 minutes). Evesham also has a mainline station which provides a direct access to the Worcester stations, Oxford and London Paddington.",
-    "features": [
-      "10,915 sq ft (1,013 sq m) GIA",
-      "Minimum eaves height 5.7m",
-      "Maximum eaves height 7.7m",
-      "Warehouse access via 4 roller shutter doors",
-      "Large secure yard"
-    ],
-    "rent_psf": 6.87,
-    "rent_pa": 75000,
-    "rent": "£75,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/651f99fb20a9c50625e8c72eb69ca2a6-20250110-112721.jpg",
-      "https://as-images.imgix.net/f5e96c25b5568fbf6cc3dbfd1d9c586f-20250110-112658.jpg",
-      "https://as-images.imgix.net/c868fd4436d00757c8fd802d5a7e4445-20250110-100648.jpg",
-      "https://as-images.imgix.net/992dfd5951d90ac6acc94184d2512a89-cam04581g0-pr0017-still004.jpg",
-      "https://as-images.imgix.net/d427769e14b3fba6626c41b3eb61cede-cam04581g0-pr0017-still003-1.jpg",
-      "https://as-images.imgix.net/e3549552789a4cb93163b91c1683c20b-cam04581g0-pr0017-still001-1.jpg",
-      "https://as-images.imgix.net/c881be2aadb25ee2ab6e87b7d467ed5c-cam04581g0-pr0017-still002.jpg",
-      "https://as-images.imgix.net/ab9072edf4a682209d5fbccad6b747e4-20250110-111848.jpg",
-      "https://as-images.imgix.net/e56ba103ae52be35219f235cba1cb429-20250110-112029.jpg",
-      "https://as-images.imgix.net/b654121edce18a110401f42305e1c9b6-20250110-112419.jpg",
-      "https://as-images.imgix.net/b54a0dc61220366570e2a147f56af7b8-20250110-112246.jpg",
-      "https://as-images.imgix.net/50a34bf4f59c9c37c5c2bcb1f0fa6a31-20250110-105232.jpg",
-      "https://as-images.imgix.net/5ec5e815e0535326a76a26620c821fc5-20250110-112419.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/36e0bdf3e346311418f554e771fdade2-gjs-dillon-particulars-13a-st-richards-road-evesham-wr11-1.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-27 15:51:37"
   },
   {
     "id": 346680,
