@@ -1,5 +1,194 @@
 [
   {
+    "id": 352967,
+    "status": "Under Offer",
+    "address": "275 Worcester Road",
+    "town": "Malvern",
+    "postcode": "WR14 1AA",
+    "lat": 52.128145,
+    "lon": -2.313932,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 7057,
+    "size_to_sqft": 7057,
+    "summary": "Commercial Freehold Premises",
+    "description": "This prominently positioned detached three-storey property offers an excellent canvas for transformation. Originally constructed as a town house of rendered brick with a pitched tiled roof, the building has since been enhanced with a two-storey front extension added in the 1970s, featuring a concrete frame and large display windows that provide strong street presence.\nTo the rear, a part single-storey/part two-storey brick-built outbuilding with a pitched slate roof has been integrated with the main structure, creating a versatile footprint with a variety of room configurations throughout. Internally, the accommodation currently comprises a series of cellular spaces, offering exciting scope for reconfiguration or comprehensive redevelopment.\nThe site also includes a gravelled rear car park with space for approximately eight vehicles. A striking mature tree sits at the centre of the parking area and is understood to be protected by a Tree Preservation Order, adding character and a sense of established setting.\nOverall, the property represents a compelling development opportunity (subject to planning), with the scale, layout and prominence of the site lending themselves to a wide range of future uses.\nGround floor\t\t3,792.5 ft2 \t(352.46 m2)\nFirst floor retail \t\t756.5 ft2\t\t(756.5 m2)\nSecond floor retail\t\t1,737.8 ft2\t\t(161.51m2)\nThird floor retail \t\t770.3 ft2\t\t(71.59m2)\nTotal \t\t\t7,057 ft2\t\t(655.87 m2)",
+    "location": "Malvern is a spa town and civil parish in Worcester which, in the 2011 Census, had a population of just under 30,000.  The major road, which runs through the centre of Malvern is the A449 which connects Worcester to Ledbury. The M5 Motorway is accessible at Junctions 7 and 8 to the east. The M50 Motorway is accessed at Junction 1 on the A38 between Tewkesbury and Malvern.\nTwo railway stations, approximately one mile apart at Great Malvern and Malvern Link provide direct services to Worcester, Hereford, Birmingham, Oxford, Cheltenham, Gloucester and London Paddington.",
+    "features": [
+      "7,057 ft2 (655.87 m2)",
+      "Located in Malvern Link",
+      "Virtual Tour Avaiable",
+      "Car parking at rear of property",
+      "Development opportunity (STP)"
+    ],
+    "price": "£395,000",
+    "price_value": 395000,
+    "business_rates_psf": 0,
+    "rateable_value": 29250,
+    "epc_rating": "C (73)",
+    "images": [
+      "https://as-images.imgix.net/9a3c51bb7bbb5311e43a620c955c7969-20251120-122705702-ios.jpg",
+      "https://as-images.imgix.net/b0218b5d4eafc397f1a8785d53ad36ba-20251120-121635934-ios.jpg",
+      "https://as-images.imgix.net/723661952ac86c1914f777fc3bd2dce4-20251120-121656176-ios.jpg",
+      "https://as-images.imgix.net/10cce6343698939b70c580510f9b7839-20251120-121948573-ios.jpg",
+      "https://as-images.imgix.net/94ae5337f8a9633264b2635e8989cc96-20251120-121805147-ios.jpg",
+      "https://as-images.imgix.net/7d50f777da10ff3b636cb7d02a32804b-20251120-120637769-ios.jpg",
+      "https://as-images.imgix.net/c62b2d03e8f55ce33328c95b88687a3e-20251120-120605171-ios.jpg",
+      "https://as-images.imgix.net/36b0b351671bb37ce8a23bfed2bbedaf-20251120-115302765-ios.jpg",
+      "https://as-images.imgix.net/98db8c5ecddac291256380a247509ff1-20251120-120656162-ios.jpg",
+      "https://as-images.imgix.net/866bfcdca10bcc681caffaa1594e7184-20251120-121459348-ios.jpg",
+      "https://as-images.imgix.net/9772c363f03eef64bbe3e82125845714-20251120-115312793-ios.jpg",
+      "https://as-images.imgix.net/1cd2bdc332315edf06b185e23ba3ba0b-20251120-121511852-ios.jpg",
+      "https://as-images.imgix.net/f691738e9b2f62d49514619d79a87e40-20251120-121454186-ios.jpg",
+      "https://as-images.imgix.net/c4f8d20529a7fdba9988a66dfef47824-20251120-120737472-ios.jpg",
+      "https://as-images.imgix.net/a3cb31ebd9c715cbec7b1352ec2589de-20251120-120611276-ios.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/77bfd847b2eca60e35636efc9b426f7e-gjs-dillon-particulars-275-worcester-road-malvern.pdf",
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-06-17 16:24:21"
+  },
+  {
+    "id": 346754,
+    "status": "Available",
+    "address": "One Kings Court",
+    "town": "Worcester",
+    "postcode": "WR5 1WS",
+    "lat": 52.19234085,
+    "lon": -2.178134918,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3050,
+    "size_to_sqft": 3050,
+    "summary": "Office To Let, Worcester",
+    "description": "The property has recently undergone extensive refurbishment and offers highly efficient accommodation benefitting from : \n*New VRF comfort cooling \n*New LED lighting \n*Raised access flooring \n*Suspended ceilings *10 person passenger lift \n*High quality refurbished common areas including WC facilities\n*Showers \n*Up to 40 onsite car parking spaces offering a generous ratio of 1:260 sq ft with EV car chargers Location",
+    "location": "*Prominent, highly visible office premises with a frontage to Newtown Road, a main arterial road to Worcester city centre \n*Excellent access to the national motorway network - Junctions 6 and 7 of the M5 less than two miles / a five-minute drive away \n*Easy access to Worcester Shrub Hill (1 1/2 miles) and Worcestershire Parkway (3 1/2 miles) railway stations with frequent direct services to London, Birmingham, Cardiff and Nottingham\n*Birmingham Airport approximately 30 miles to the North East \n*Located adjacent to a large employee catchment area and other business park locations",
+    "features": [
+      "Modern, headquarters office building with striking floor to ceiling windows throughout",
+      "Well maintained landscaped environment",
+      "The second floor provides accessible, quality open plan office accommodation with first class facilities"
+    ],
+    "rent_psf": 18.5,
+    "rent_pa": 56425,
+    "rent": "£18.50 per sq ft",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/6187ce888cbb5224c306623f798a9080-letting346754.jpeg",
+      "https://as-images.imgix.net/32e849190232ef2f2507997f3bbb8a06-letting346754.jpeg",
+      "https://as-images.imgix.net/e6278d452e00dfb2e40a9eeeb3438adc-letting346754.jpeg",
+      "https://as-images.imgix.net/4b8fc70dbf3e88968c30b952700e6163-letting346754.jpeg",
+      "https://as-images.imgix.net/a252ba753e1b0b1a1c52497a1278d965-letting346754.jpeg",
+      "https://as-images.imgix.net/6b576e37adb90b6a5ccebd3c0644dfef-letting346754.jpeg",
+      "https://as-images.imgix.net/a150eef093381aefe8505e92410f6991-letting346754.jpeg",
+      "https://as-images.imgix.net/7b0783a19ad6eae0f9b59fb067b83403-letting346754.jpeg",
+      "https://as-images.imgix.net/d6ae268dbaeaa7246235bffb7d9c89a3-letting346754.jpeg",
+      "https://as-images.imgix.net/bab416789a3751d21680cc9bce3cc9f1-letting346754.jpeg",
+      "https://as-images.imgix.net/ff0654b114c96359266ee158455eb45c-letting346754.jpeg",
+      "https://as-images.imgix.net/e96e77fe640ea8d4dbb3968c25de57d3-letting346754.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/ce99ce9fee88f0c5b48fb643b5099c63-one-kings-court-worcester-particulars.pdf",
+    "contacts": [
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-06-17 15:37:22"
+  },
+  {
+    "id": 356104,
+    "status": "Available",
+    "address": "Unit 3 Forest Industrial Park",
+    "town": "Kidderminster",
+    "postcode": "DY11 7FX",
+    "lat": 52.368556,
+    "lon": -2.259501,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3364,
+    "size_to_sqft": 3364,
+    "summary": "High Bay Industrial / Warehouse Unit",
+    "description": "This modern industrial / warehouse unit has the following specification.\n\n•\tSteel portal frames\n•\tWC facilities\n•\tRoller shutter door\n•\tPedestrian access door\n•\tAllocated car parking  \n•\tLoading/unloading facilities\n•\tThree phase electricity\n•\t6m eaves \n•\tBlock walls with external composite paneling",
+    "location": "Kidderminster itself is located to the north of Worcester and to the southwest of Stourbridge and has good road access to each, as well as Junctions 4, 5 and 6 of the M5 motorway.  Kidderminster also has a mainline railway station which provides a direct link into Birmingham Snow Hill.\n\nThe industrial estate is situated just off Silverwoods Way, on the former British Sugar Factory site, with easy access to both the Stourport Road and the main A442 Worcester Road which are two of the main arterial roads leading into Kidderminster Town Centre. In recent years, this part of Kidderminster has been totally transformed, attracting a number of high-profile occupiers along the Stourport Road and along Silverwoods Way itself, which has enhanced the area considerably making it a sought-after business location on the southern side of Kidderminster.",
+    "features": [
+      "6m eaves height",
+      "Roller shutter door",
+      "Pedestrian access door",
+      "Three phase electricity",
+      "Good loading and unloading facilities",
+      "Allocated on site car parking"
+    ],
+    "rent_psf": 10,
+    "rent_pa": 33640,
+    "rent": "£33,640 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 25750,
+    "service_charge": "1682",
+    "epc_rating": "B (47)",
+    "images": [
+      "https://as-images.imgix.net/be2571563c0209353c876fb01857f13a-20260325-122429365-ios.jpg",
+      "https://as-images.imgix.net/6dc14c70d7c485df7f9cee9c6a008b6d-20260325-122451372-ios.jpg",
+      "https://as-images.imgix.net/027ad4848fc109aec539bf454b8a52fa-20260325-121943571-ios.jpg",
+      "https://as-images.imgix.net/d35f1719986fa79a8ae770f4dbfa161f-20260325-121717666-ios.jpg",
+      "https://as-images.imgix.net/97776aaad4b08958020a07cd9d89cfd0-20260325-121624476-ios.jpg",
+      "https://as-images.imgix.net/0dd09c458414fdf4d1ea91179b1221da-20260325-121615414-ios.jpg",
+      "https://as-images.imgix.net/efab1c28c45d4916223ca12e86f6fa79-20260325-121130241-ios.jpg",
+      "https://as-images.imgix.net/9be6dcdfc7bb76cf1ef21fd416ff14a1-20260325-122324857-ios.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/3686ca78f0a3f33ebb8eaad0677a18a4-final-gjs-dillon-particulars-unit-3-forest-industrial-park-kidderminster-1.pdf",
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-06-17 15:23:24"
+  },
+  {
     "id": 346850,
     "status": "Under Offer",
     "address": "Digital House",
@@ -76,7 +265,7 @@
         "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-06-17 14:52:51"
+    "last_updated": "2026-06-17 15:18:55"
   },
   {
     "id": 350416,
@@ -1943,73 +2132,6 @@
     "last_updated": "2026-06-02 09:08:13"
   },
   {
-    "id": 356104,
-    "status": "Available",
-    "address": "Unit 3",
-    "town": "Kidderminster",
-    "postcode": "DY11 7FX",
-    "lat": 52.368556,
-    "lon": -2.259501,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3364,
-    "size_to_sqft": 3364,
-    "summary": "High Bay Industrial / Warehouse Unit",
-    "description": "This modern industrial / warehouse unit has the following specification.\n\n•\tSteel portal frames\n•\tWC facilities\n•\tRoller shutter door\n•\tPedestrian access door\n•\tAllocated car parking  \n•\tLoading/unloading facilities\n•\tThree phase electricity\n•\t6m eaves \n•\tBlock walls with external composite paneling",
-    "location": "Kidderminster itself is located to the north of Worcester and to the southwest of Stourbridge and has good road access to each, as well as Junctions 4, 5 and 6 of the M5 motorway.  Kidderminster also has a mainline railway station which provides a direct link into Birmingham Snow Hill.\n\nThe industrial estate is situated just off Silverwoods Way, on the former British Sugar Factory site, with easy access to both the Stourport Road and the main A442 Worcester Road which are two of the main arterial roads leading into Kidderminster Town Centre. In recent years, this part of Kidderminster has been totally transformed, attracting a number of high-profile occupiers along the Stourport Road and along Silverwoods Way itself, which has enhanced the area considerably making it a sought-after business location on the southern side of Kidderminster.",
-    "features": [
-      "6m eaves height",
-      "Roller shutter door",
-      "Pedestrian access door",
-      "Three phase electricity",
-      "Good loading and unloading facilities",
-      "Allocated on site car parking"
-    ],
-    "rent_psf": 10,
-    "rent_pa": 33640,
-    "rent": "£33,640 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 25750,
-    "service_charge": "1682",
-    "epc_rating": "B (47)",
-    "images": [
-      "https://as-images.imgix.net/be2571563c0209353c876fb01857f13a-20260325-122429365-ios.jpg",
-      "https://as-images.imgix.net/6dc14c70d7c485df7f9cee9c6a008b6d-20260325-122451372-ios.jpg",
-      "https://as-images.imgix.net/027ad4848fc109aec539bf454b8a52fa-20260325-121943571-ios.jpg",
-      "https://as-images.imgix.net/d35f1719986fa79a8ae770f4dbfa161f-20260325-121717666-ios.jpg",
-      "https://as-images.imgix.net/97776aaad4b08958020a07cd9d89cfd0-20260325-121624476-ios.jpg",
-      "https://as-images.imgix.net/0dd09c458414fdf4d1ea91179b1221da-20260325-121615414-ios.jpg",
-      "https://as-images.imgix.net/efab1c28c45d4916223ca12e86f6fa79-20260325-121130241-ios.jpg",
-      "https://as-images.imgix.net/9be6dcdfc7bb76cf1ef21fd416ff14a1-20260325-122324857-ios.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/3686ca78f0a3f33ebb8eaad0677a18a4-final-gjs-dillon-particulars-unit-3-forest-industrial-park-kidderminster-1.pdf",
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-06-01 16:48:50"
-  },
-  {
     "id": 354040,
     "status": "Available",
     "address": "15 Aston Court",
@@ -2812,65 +2934,6 @@
     "last_updated": "2026-05-27 17:23:39"
   },
   {
-    "id": 346754,
-    "status": "Available",
-    "address": "One Kings Court",
-    "town": "Worcester",
-    "postcode": "WR5 1WS",
-    "lat": 52.19234085,
-    "lon": -2.178134918,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3050,
-    "size_to_sqft": 3050,
-    "summary": "Office To Let, Worcester",
-    "description": "The property has recently undergone extensive refurbishment and offers highly efficient accommodation benefitting from : \n*New VRF comfort cooling \n*New LED lighting \n*Raised access flooring \n*Suspended ceilings *10 person passenger lift \n*High quality refurbished common areas including WC facilities\n*Showers \n*Up to 40 onsite car parking spaces offering a generous ratio of 1:260 sq ft with EV car chargers Location",
-    "location": "*Prominent, highly visible office premises with a frontage to Newtown Road, a main arterial road to Worcester city centre \n*Excellent access to the national motorway network - Junctions 6 and 7 of the M5 less than two miles / a five-minute drive away \n*Easy access to Worcester Shrub Hill (1 1/2 miles) and Worcestershire Parkway (3 1/2 miles) railway stations with frequent direct services to London, Birmingham, Cardiff and Nottingham\n*Birmingham Airport approximately 30 miles to the North East \n*Located adjacent to a large employee catchment area and other business park locations",
-    "features": [
-      "Modern, headquarters office building with striking floor to ceiling windows throughout",
-      "Well maintained landscaped environment",
-      "The second floor provides accessible, quality open plan office accommodation with first class facilities"
-    ],
-    "rent_psf": 18.5,
-    "rent_pa": 56425,
-    "rent": "£18.50 per sq ft",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/6187ce888cbb5224c306623f798a9080-letting346754.jpeg",
-      "https://as-images.imgix.net/32e849190232ef2f2507997f3bbb8a06-letting346754.jpeg",
-      "https://as-images.imgix.net/e6278d452e00dfb2e40a9eeeb3438adc-letting346754.jpeg",
-      "https://as-images.imgix.net/4b8fc70dbf3e88968c30b952700e6163-letting346754.jpeg",
-      "https://as-images.imgix.net/a252ba753e1b0b1a1c52497a1278d965-letting346754.jpeg",
-      "https://as-images.imgix.net/6b576e37adb90b6a5ccebd3c0644dfef-letting346754.jpeg",
-      "https://as-images.imgix.net/a150eef093381aefe8505e92410f6991-letting346754.jpeg",
-      "https://as-images.imgix.net/7b0783a19ad6eae0f9b59fb067b83403-letting346754.jpeg",
-      "https://as-images.imgix.net/d6ae268dbaeaa7246235bffb7d9c89a3-letting346754.jpeg",
-      "https://as-images.imgix.net/bab416789a3751d21680cc9bce3cc9f1-letting346754.jpeg",
-      "https://as-images.imgix.net/ff0654b114c96359266ee158455eb45c-letting346754.jpeg",
-      "https://as-images.imgix.net/e96e77fe640ea8d4dbb3968c25de57d3-letting346754.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/ce99ce9fee88f0c5b48fb643b5099c63-one-kings-court-worcester-particulars.pdf",
-    "contacts": [
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-27 17:23:00"
-  },
-  {
     "id": 346841,
     "status": "Available",
     "address": "First Floor, Suite 1, Birchwood House,",
@@ -3055,69 +3118,6 @@
       }
     ],
     "last_updated": "2026-05-27 17:13:13"
-  },
-  {
-    "id": 352967,
-    "status": "Under Offer",
-    "address": "275 Worcester Road",
-    "town": "Malvern",
-    "postcode": "WR14 1AA",
-    "lat": 52.128145,
-    "lon": -2.313932,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 7057,
-    "size_to_sqft": 7057,
-    "summary": "Commercial Freehold Premises",
-    "description": "This prominently positioned detached three-storey property offers an excellent canvas for transformation. Originally constructed as a town house of rendered brick with a pitched tiled roof, the building has since been enhanced with a two-storey front extension added in the 1970s, featuring a concrete frame and large display windows that provide strong street presence.\nTo the rear, a part single-storey/part two-storey brick-built outbuilding with a pitched slate roof has been integrated with the main structure, creating a versatile footprint with a variety of room configurations throughout. Internally, the accommodation currently comprises a series of cellular spaces, offering exciting scope for reconfiguration or comprehensive redevelopment.\nThe site also includes a gravelled rear car park with space for approximately eight vehicles. A striking mature tree sits at the centre of the parking area and is understood to be protected by a Tree Preservation Order, adding character and a sense of established setting.\nOverall, the property represents a compelling development opportunity (subject to planning), with the scale, layout and prominence of the site lending themselves to a wide range of future uses.\nGround floor\t\t3,792.5 ft2 \t(352.46 m2)\nFirst floor retail \t\t756.5 ft2\t\t(756.5 m2)\nSecond floor retail\t\t1,737.8 ft2\t\t(161.51m2)\nThird floor retail \t\t770.3 ft2\t\t(71.59m2)\nTotal \t\t\t7,057 ft2\t\t(655.87 m2)",
-    "location": "Malvern is a spa town and civil parish in Worcester which, in the 2011 Census, had a population of just under 30,000.  The major road, which runs through the centre of Malvern is the A449 which connects Worcester to Ledbury. The M5 Motorway is accessible at Junctions 7 and 8 to the east. The M50 Motorway is accessed at Junction 1 on the A38 between Tewkesbury and Malvern.\nTwo railway stations, approximately one mile apart at Great Malvern and Malvern Link provide direct services to Worcester, Hereford, Birmingham, Oxford, Cheltenham, Gloucester and London Paddington.",
-    "features": [
-      "7,057 ft2 (655.87 m2)",
-      "Located in Malvern Link",
-      "Virtual Tour Avaiable",
-      "Car parking at rear of property",
-      "Development opportunity (STP)"
-    ],
-    "price": "£395,000",
-    "price_value": 395000,
-    "business_rates_psf": 0,
-    "rateable_value": 29250,
-    "epc_rating": "C (73)",
-    "images": [
-      "https://as-images.imgix.net/9a3c51bb7bbb5311e43a620c955c7969-20251120-122705702-ios.jpg",
-      "https://as-images.imgix.net/b0218b5d4eafc397f1a8785d53ad36ba-20251120-121635934-ios.jpg",
-      "https://as-images.imgix.net/723661952ac86c1914f777fc3bd2dce4-20251120-121656176-ios.jpg",
-      "https://as-images.imgix.net/10cce6343698939b70c580510f9b7839-20251120-121948573-ios.jpg",
-      "https://as-images.imgix.net/94ae5337f8a9633264b2635e8989cc96-20251120-121805147-ios.jpg",
-      "https://as-images.imgix.net/7d50f777da10ff3b636cb7d02a32804b-20251120-120637769-ios.jpg",
-      "https://as-images.imgix.net/c62b2d03e8f55ce33328c95b88687a3e-20251120-120605171-ios.jpg",
-      "https://as-images.imgix.net/36b0b351671bb37ce8a23bfed2bbedaf-20251120-115302765-ios.jpg",
-      "https://as-images.imgix.net/98db8c5ecddac291256380a247509ff1-20251120-120656162-ios.jpg",
-      "https://as-images.imgix.net/866bfcdca10bcc681caffaa1594e7184-20251120-121459348-ios.jpg",
-      "https://as-images.imgix.net/9772c363f03eef64bbe3e82125845714-20251120-115312793-ios.jpg",
-      "https://as-images.imgix.net/1cd2bdc332315edf06b185e23ba3ba0b-20251120-121511852-ios.jpg",
-      "https://as-images.imgix.net/f691738e9b2f62d49514619d79a87e40-20251120-121454186-ios.jpg",
-      "https://as-images.imgix.net/c4f8d20529a7fdba9988a66dfef47824-20251120-120737472-ios.jpg",
-      "https://as-images.imgix.net/a3cb31ebd9c715cbec7b1352ec2589de-20251120-120611276-ios.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/77bfd847b2eca60e35636efc9b426f7e-gjs-dillon-particulars-275-worcester-road-malvern.pdf",
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-27 17:11:02"
   },
   {
     "id": 353374,
