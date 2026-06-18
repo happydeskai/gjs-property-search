@@ -291,6 +291,25 @@ async function run() {
   return txt(brochure?.url) || undefined;
 })(),
 
+        floor_plan_urls: (() => {
+  const files = arr(p.files?.file);
+  return files
+    .filter((f) => txt(f?.description).toLowerCase() === "floor plan" || txt(f?.type) === "15")
+    .map((f) => txt(f?.url))
+    .filter(Boolean);
+})(),
+
+        virtual_tour_urls: (() => {
+  const videos = arr(p.videos_detail?.video);
+  const urls = videos
+    .map((v) => txt(v?.url))
+    .filter((u) => u && (u.includes("giraffe360") || u.includes("tour.")));
+  if (urls.length) return urls;
+  // fallback to <videos><url> entries
+  const fallback = arr(p.videos?.url).map(txt).filter(Boolean);
+  return fallback.length ? fallback : undefined;
+})(),
+
         contacts,
         last_updated: txt(p.last_updated) || txt(p.created_at) || undefined,
       };

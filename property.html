@@ -21,17 +21,9 @@
     body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#f6f7fb}
     a{color:inherit;text-decoration:none}
     img{max-width:100%;height:auto;display:block}
-
-    /* --- iframe hardening (Squarespace) --- */
-    html, body { width: 100%; }
-    body { overflow-x: hidden; }
-    .wrap {
-      max-width:1200px;
-      margin:0 auto;
-      padding:28px 18px 24px;
-      min-width: 0; /* important for grid in iframes */
-    }
-
+    html,body{width:100%}
+    body{overflow-x:hidden}
+    .wrap{max-width:1200px;margin:0 auto;padding:28px 18px 24px;min-width:0}
     .topbar{margin-bottom:12px}
     .back{display:inline-flex;gap:10px;align-items:center;color:#111;font-weight:500}
     .back::before{content:"←";opacity:.8}
@@ -39,69 +31,64 @@
     .muted{color:var(--muted)}
     .chips{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 14px}
     .chip{background:#f6f6f6;border:1px solid #ececec;padding:6px 10px;border-radius:999px;font-size:12px}
-    .chip--accent{background:#fff7cf;border-color:#ffe899}
-    .status-badge{ display:inline-block; padding:5px 11px; border-radius:999px; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; }
-    .status-available{ background:#dcfce7; color:#15803d; }
-    .status-under-offer{ background:#fef9c3; color:#92400e; }
-    .status-let-agreed{ background:#fee2e2; color:#b91c1c; }
-    .status-sold{ background:#fee2e2; color:#b91c1c; }
-    .status-sold-stc{ background:#ffedd5; color:#c2410c; }
-    .status-other{ background:#f3f4f6; color:#374151; }
-
-    /* --- Modern Grid Layout (Chrome + iframe safe) --- */
-
-    .layout{
-      display:grid;
-      /* FIX 1: fixed 340px sidebar column removes Chrome iframe ambiguity */
-      grid-template-columns: minmax(0, 1fr) 340px;
-      gap:26px;
-      align-items:start;
-      min-width: 0;
+    .status-badge{display:inline-block;padding:5px 11px;border-radius:999px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+    .status-available{background:#dcfce7;color:#15803d}
+    .status-under-offer{background:#fef9c3;color:#92400e}
+    .status-let-agreed{background:#fee2e2;color:#b91c1c}
+    .status-sold{background:#fee2e2;color:#b91c1c}
+    .status-sold-stc{background:#ffedd5;color:#c2410c}
+    .status-other{background:#f3f4f6;color:#374151}
+    .layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:26px;align-items:start;min-width:0}
+    .layout > *{min-width:0}
+    .sticky{position:sticky;top:18px;align-self:start;display:flex;flex-direction:column;gap:18px;width:340px}
+    @media(max-width:760px){
+      .layout{grid-template-columns:1fr}
+      .sticky{position:static;width:100%;max-height:none;overflow:visible}
     }
-
-    .layout > * { min-width: 0; } /* prevents grid children forcing weird sizing */
-
-    .sticky{
-      position:sticky;
-      top:18px;
-      align-self:start;
-      display:flex;
-      flex-direction:column;
-      gap:18px;
-
-      /* FIX 2: use width instead of min-width to give Chrome a deterministic size */
-      width: 340px;
-    }
-
-    /* Collapse sidebar when space is tight */
-    @media (max-width:760px){
-      .layout{
-        grid-template-columns:1fr;
-      }
-
-      .sticky{
-        position:static;
-        width:100%;
-        max-height:none;
-        overflow:visible;
-      }
-    }
-
     .hero-card{background:var(--card);border-radius:calc(var(--radius) + 4px);overflow:hidden;box-shadow:var(--shadow-lg)}
-    /* FIX 3: constrain hero width so Chrome doesn't size it before grid column resolves */
     .hero{position:relative;aspect-ratio:16/9;background:#eee;overflow:hidden;width:100%;max-width:100%}
     .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-    .gallery{display:flex;gap:10px;padding:12px;overflow:auto;background:#fff}
+    .gallery{display:flex;gap:10px;padding:10px 12px 12px;overflow:auto;background:#fff}
     .thumb{flex:0 0 120px;aspect-ratio:4/3;border-radius:12px;overflow:hidden;border:1px solid #eee;cursor:pointer;transition:transform .12s ease}
     .thumb:hover{transform:translateY(-2px)}
-    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-md);border:1px solid #edf0f3;overflow:hidden}
-    .card__body{padding:16px}
-    .card__title{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:12px 16px 8px;border-bottom:1px solid #f0f2f5;background:#fff}
-    .actions{display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap}
-    .btn{height:44px;padding:0 16px;border-radius:10px;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600;text-decoration:none;white-space:nowrap}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-md);border:1px solid #edf0f3;overflow:visible}
+    .card__body{padding:16px;overflow:visible}
+    .card__title{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:12px 16px 8px;border-bottom:1px solid #f0f2f5;background:#fff;border-radius:var(--radius) var(--radius) 0 0}
+    .actions{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
+    .btn{height:44px;padding:0 16px;border-radius:10px;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600;font-size:14px;text-decoration:none;white-space:nowrap;width:100%}
     .btn-primary{background:var(--brand);color:#fff}
     .btn-primary::after{content:"";width:6px;height:6px;border-radius:999px;background:var(--accent);margin-left:8px}
-    .btn-ghost{background:#fff;border:1px solid #e6e6e6}
+    .btn-ghost{background:#fff;border:1px solid #ddd;color:#111}
+
+    /* Tour dropdown */
+    .btn-dropdown-wrap{position:relative;width:100%}
+    .btn-dropdown{width:100%;background:#fff;border:1px solid #ddd;color:#111;height:44px;padding:0 16px;border-radius:10px;font-weight:600;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;position:relative}
+    .btn-dropdown-chevron{font-size:11px;opacity:.5;transition:transform .2s ease;display:inline-block}
+    .btn-dropdown-chevron.open{transform:rotate(180deg)}
+    .btn-dropdown-menu{
+      position:absolute;
+      top:calc(100% + 6px);
+      left:0;right:0;
+      background:#fff;
+      border:1px solid #ddd;
+      border-radius:10px;
+      box-shadow:0 8px 24px rgba(0,0,0,.14);
+      z-index:9999;
+      overflow:hidden;
+      opacity:0;
+      transform:translateY(-8px);
+      transition:opacity .15s ease,transform .15s ease;
+      pointer-events:none;
+    }
+    .btn-dropdown-menu.open{
+      opacity:1;
+      transform:translateY(0);
+      pointer-events:auto;
+    }
+    .btn-dropdown-item{display:block;width:100%;padding:11px 16px;text-align:left;background:none;border:none;border-bottom:1px solid #f0f2f5;font-size:14px;font-weight:500;cursor:pointer;color:#111}
+    .btn-dropdown-item:last-child{border-bottom:none}
+    .btn-dropdown-item:hover{background:#f6f7fb}
+
     #map{height:260px;border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm)}
     .facts{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
     @media(max-width:700px){.facts{grid-template-columns:1fr}}
@@ -113,17 +100,52 @@
     .features li{margin:6px 0}
     .agent{display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:center;padding:12px 16px;border-top:1px solid #f0f2f5}
     .avatar{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#f1f3f6;color:#222;font-weight:700;border:1px solid #e9edf2}
+    #teamBox .agent{padding:12px;border-top:none}
 
-    /* Small sidebar agent card tweaks */
-    #teamBox .agent { padding:12px; border-top:none; }
+    /* MEDIA SECTION */
+    .media-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);padding:12px 14px 0;background:#fff}
+    .media-tabs{display:flex;gap:6px;padding:8px 12px 10px;background:#fff;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;border-bottom:1px solid #f0f2f5}
+    .media-tabs::-webkit-scrollbar{display:none}
+    .media-tab{flex:0 0 auto;height:34px;padding:0 14px;border-radius:999px;border:1px solid #e6e8eb;background:#fff;font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;transition:all .12s ease;white-space:nowrap;display:inline-flex;align-items:center;text-decoration:none}
+    .media-tab:hover{border-color:#bbb;color:#111}
+    .media-tab.active{background:#111;color:#fff;border-color:#111}
+    .media-panel{display:none}
+    .media-panel.active{display:block}
 
+    /* Floor plans */
+    .fp-viewer{position:relative;aspect-ratio:16/9;background:#f6f7fb;overflow:hidden;display:flex;align-items:center;justify-content:center}
+    .fp-viewer img{max-width:100%;max-height:100%;object-fit:contain}
+    .fp-pdf-msg{padding:40px;text-align:center;color:#666;font-size:14px;line-height:1.6}
+    .fp-thumbs{display:flex;gap:8px;padding:10px 12px;background:#fff;overflow-x:auto;border-bottom:1px solid #f0f2f5}
+    .fp-thumb{flex:0 0 90px;aspect-ratio:4/3;border-radius:8px;overflow:hidden;border:2px solid transparent;cursor:pointer;transition:border-color .12s;background:#f6f7fb;display:flex;align-items:center;justify-content:center}
+    .fp-thumb.active{border-color:#111}
+    .fp-thumb img{width:100%;height:100%;object-fit:cover}
+    .fp-thumb-label{font-size:11px;font-weight:600;color:#666;text-align:center;padding:4px}
+    .fp-actions{display:flex;gap:8px;padding:8px 12px;background:#fff;flex-wrap:wrap}
+    .fp-btn{height:34px;padding:0 14px;border-radius:8px;border:1px solid #e6e8eb;background:#fff;font-size:13px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:6px;text-decoration:none;color:#111}
+    .fp-btn:hover{background:#f6f7fb}
+
+    /* Virtual tours */
+    .tours-selector{display:flex;gap:8px;padding:10px 12px;background:#f8f9fa;border-bottom:1px solid #f0f2f5;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+    .tours-selector::-webkit-scrollbar{display:none}
+    .tour-pill{flex:0 0 auto;height:32px;padding:0 14px;border-radius:999px;border:1px solid #ddd;background:#fff;font-size:13px;font-weight:600;color:#555;cursor:pointer;transition:all .12s ease;white-space:nowrap}
+    .tour-pill:hover{border-color:#999;color:#111}
+    .tour-pill.active{background:#111;color:#fff;border-color:#111}
+    .tour-iframe-wrap{position:relative;aspect-ratio:16/9;background:#111;overflow:hidden}
+    .tour-iframe-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:none}
+    .tour-loading{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);transition:opacity .4s ease;pointer-events:none}
+    .tour-loading.hidden{opacity:0}
+    .tour-loading-spinner{width:40px;height:40px;border-radius:50%;border:3px solid rgba(255,255,255,0.2);border-top-color:#fff;animation:spin .8s linear infinite}
+    .tour-loading-text{color:rgba(255,255,255,0.7);font-size:13px}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .tour-actions{display:flex;gap:8px;padding:8px 12px;background:#fff;border-top:1px solid #f0f2f5}
   </style>
 </head>
 
 <body>
   <div class="wrap">
     <div class="topbar"><a class="back" href="index.html">Back to results</a></div>
-    <div id="loading" class="muted">Loading…</div>
+    <div id="loading" class="muted">Loading&#8230;</div>
     <div id="content" style="display:none">
       <h1 id="prop-title">Property</h1>
       <div class="muted" id="prop-sub"></div>
@@ -132,30 +154,52 @@
       <div class="layout">
         <div>
           <div class="hero-card">
-            <div class="hero" id="hero"></div>
-            <div class="gallery" id="thumbs"></div>
+            <div id="media-header" style="display:none">
+              <div class="media-label">Property Media</div>
+              <div class="media-tabs" id="media-tabs"></div>
+            </div>
+            <div class="media-panel active" id="panel-photos">
+              <div class="hero" id="hero"></div>
+              <div class="gallery" id="thumbs"></div>
+            </div>
+            <div class="media-panel" id="panel-floorplans">
+              <div class="fp-viewer" id="fp-viewer"><img id="fp-main" src="" alt="Floor plan" /></div>
+              <div class="fp-thumbs" id="fp-thumbs" style="display:none"></div>
+              <div class="fp-actions">
+                <button class="fp-btn" id="fp-fullscreen" type="button">Fullscreen</button>
+                <a class="fp-btn" id="fp-download" href="#" target="_blank" rel="noopener" style="display:none">Download</a>
+              </div>
+            </div>
+            <div class="media-panel" id="panel-tours">
+              <div class="tours-selector" id="tours-selector" style="display:none"></div>
+              <div class="tour-iframe-wrap">
+                <iframe id="tour-iframe" src="" allowfullscreen allow="vr; xr-spatial-tracking; gyroscope; accelerometer" title="Virtual tour"></iframe>
+                <div class="tour-loading" id="tour-loading">
+                  <div class="tour-loading-spinner"></div>
+                  <div class="tour-loading-text">Loading virtual tour&#8230;</div>
+                </div>
+              </div>
+              <div class="tour-actions">
+                <a class="fp-btn" id="tour-open-btn" href="#" target="_blank" rel="noopener">Open fullscreen tour</a>
+              </div>
+            </div>
           </div>
 
           <div class="section">
             <div class="card"><div class="card__title">Key details</div><div class="card__body"><div class="facts" id="facts"></div></div></div>
           </div>
-
           <div class="section" id="overviewCard" style="display:none">
             <div class="card"><div class="card__title"><h2>Overview</h2></div><div class="card__body" id="overview"></div></div>
           </div>
-
           <div class="section" id="featuresCard" style="display:none">
             <div class="card"><div class="card__title"><h2>Key features</h2></div><div class="card__body"><ul class="features" id="features"></ul></div></div>
           </div>
-
-          <!-- Location card (shown only if JSON contains `location`) -->
           <div class="section" id="locationCard" style="display:none">
-            <div class="card">
-              <div class="card__title"><h2>Location</h2></div>
-              <div class="card__body" id="location"></div>
-            </div>
+            <div class="card"><div class="card__title"><h2>Location</h2></div><div class="card__body" id="location"></div></div>
           </div>
-
+          <div class="section" id="transportCard" style="display:none">
+            <div class="card"><div class="card__title"><h2>Transport &amp; connections</h2></div><div class="card__body" id="transport"></div></div>
+          </div>
           <div class="section" id="descCard" style="display:none">
             <div class="card"><div class="card__title"><h2>Description</h2></div><div class="card__body" id="desc"></div></div>
           </div>
@@ -167,15 +211,21 @@
             <div class="card__body">
               <div class="actions">
                 <button class="btn btn-primary" id="enquireBtn" type="button">Enquire now</button>
-                <a class="btn btn-ghost" id="brochureBtn" target="_blank" rel="noopener">Download brochure</a>
+                <a class="btn btn-ghost" id="brochureBtn" target="_blank" rel="noopener" style="display:none">Download brochure</a>
+                <div class="btn-dropdown-wrap" id="sidebarTourWrap" style="display:none">
+                  <button class="btn-dropdown" id="sidebarTourBtn" type="button">
+                    <span>View virtual tour</span>
+                    <span class="btn-dropdown-chevron" id="sidebarTourChevron" style="position:absolute;right:16px">▾</span>
+                  </button>
+                  <div class="btn-dropdown-menu" id="sidebarTourMenu"></div>
+                </div>
+                <a class="btn btn-ghost" id="sidebarFpBtn" target="_blank" rel="noopener" style="display:none">Download floor plans</a>
               </div>
               <div id="map"></div>
             </div>
           </div>
-
-          <!-- Sidebar agents box (will be populated from `contacts` or `agents`) -->
           <div class="card" id="teamBox" style="display:none">
-            <div class="card__title">Viewings & further information</div>
+            <div class="card__title">Viewings &amp; further information</div>
             <div id="agents"></div>
           </div>
         </aside>
@@ -184,432 +234,337 @@
   </div>
 
 <script>
-/* ==============================================
-   Squarespace iframe-safe helpers (CLEAN)
-============================================== */
-
 if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 
-/* ---------- helpers ---------- */
 const $ = (s, el=document) => el.querySelector(s);
 const getParam = n => {
-  // First try query string (?id=...)
   const qs = new URLSearchParams(location.search).get(n);
   if (qs) return qs;
-  // Also support path-based URLs like /property-search/353367
-  if (n === 'id') {
-    const match = location.pathname.match(/\/property-search\/([^/]+)/);
-    if (match) return match[1];
-  }
+  if (n==='id'){const m=location.pathname.match(/\/property-search\/([^/]+)/);if(m)return m[1];}
   return null;
 };
-const pick = (...vals) => vals.find(v => v !== undefined && v !== null && v !== '');
 const initials = n => n ? n.trim().split(/\s+/).slice(0,2).map(w=>w[0]?.toUpperCase()||'').join('') : '';
+const isHttpUrl = s => typeof s==='string' && /^https?:\/\//i.test(s);
 
-/* helper to check for http(s) URLs */
-const isHttpUrl = s => typeof s === 'string' && (/^https?:\/\//i).test(s);
+let lastHeight=0, heightTimer=null;
+function getPageHeight(){const w=document.querySelector('.wrap');if(!w)return document.documentElement.scrollHeight;const r=w.getBoundingClientRect();return Math.max(Math.ceil(r.top+window.scrollY+r.height+4),300);}
+function notifyParentHeightImmediate(){try{const h=getPageHeight();if(Math.abs(h-lastHeight)<6)return;lastHeight=h;window.parent?.postMessage({type:'gjs-prop-height',height:h},'*');}catch(e){}}
+function notifyParentHeight(){clearTimeout(heightTimer);heightTimer=setTimeout(notifyParentHeightImmediate,40);}
+function scheduleHeightPings(){notifyParentHeight();setTimeout(notifyParentHeight,120);setTimeout(notifyParentHeight,350);setTimeout(notifyParentHeight,900);setTimeout(notifyParentHeight,2000);}
+function watchImages(){Array.from(document.images||[]).forEach(img=>{if(img.complete)return;img.addEventListener('load',scheduleHeightPings,{once:true});img.addEventListener('error',scheduleHeightPings,{once:true});});}
+let didScrollTop=false;
+function scrollTopOnce(){if(didScrollTop)return;didScrollTop=true;window.scrollTo(0,0);try{window.parent?.postMessage({type:'scroll-top'},'*');}catch(e){}}
+function createImg(src,alt){const i=document.createElement('img');i.src=src;i.alt=alt||'';return i;}
 
-/* ---------- Robust iframe height reporting ---------- */
-let lastHeight = 0;
-let heightTimer = null;
-
-/* UPDATED: measure based on .wrap (prevents huge/infinite iframe heights on Squarespace) */
-function getPageHeight() {
-  const wrap = document.querySelector('.wrap');
-  if (!wrap) return document.documentElement.scrollHeight;
-  const rect = wrap.getBoundingClientRect();
-  return Math.max(Math.ceil(rect.top + window.scrollY + rect.height + 4), 300);
+function tourLabel(url, index, total){
+  if(total===1) return 'Virtual Tour';
+  try{
+    const path=new URL(url).pathname.replace(/\//g,'');
+    const unitMatch=path.match(/unit([a-z])/i);
+    if(unitMatch) return 'Unit '+unitMatch[1].toUpperCase();
+    const floorMatch=path.match(/(ground|first|second|third|lower|upper)/i);
+    if(floorMatch) return floorMatch[1].charAt(0).toUpperCase()+floorMatch[1].slice(1)+' Floor';
+  }catch(e){}
+  return 'Tour '+(index+1);
 }
 
-function notifyParentHeightImmediate() {
-  try {
-    const h = getPageHeight();
-    if (Math.abs(h - lastHeight) < 6) return;
-    lastHeight = h;
-    window.parent?.postMessage({ type: 'gjs-prop-height', height: h }, '*');
-  } catch (e){}
+function loadTour(url){
+  const iframe=document.getElementById('tour-iframe');
+  const loading=document.getElementById('tour-loading');
+  const openBtn=document.getElementById('tour-open-btn');
+  if(openBtn) openBtn.href=url;
+  if(loading) loading.classList.remove('hidden');
+  if(iframe){
+    iframe.src='';
+    setTimeout(()=>{
+      iframe.src=url;
+      iframe.onload=()=>{if(loading)loading.classList.add('hidden');scheduleHeightPings();};
+    },50);
+  }
+  document.querySelectorAll('.tour-pill').forEach(p=>p.classList.toggle('active',p.dataset.url===url));
 }
 
-function notifyParentHeight() {
-  clearTimeout(heightTimer);
-  heightTimer = setTimeout(() => notifyParentHeightImmediate(), 40);
+function switchTab(id){
+  document.querySelectorAll('.media-tab[data-tab]').forEach(t=>t.classList.toggle('active',t.dataset.tab===id));
+  document.querySelectorAll('.media-panel').forEach(p=>p.classList.toggle('active',p.id==='panel-'+id));
+  scheduleHeightPings();
 }
 
-function scheduleHeightPings() {
-  notifyParentHeight();
-  setTimeout(notifyParentHeight, 120);
-  setTimeout(notifyParentHeight, 350);
-  setTimeout(notifyParentHeight, 900);
-  setTimeout(notifyParentHeight, 2000);
-}
+function initMediaTabs(p){
+  const tourUrls=Array.isArray(p.virtual_tour_urls)?p.virtual_tour_urls.filter(Boolean):(p.virtual_tour_url?[p.virtual_tour_url]:[]);
+  const floorPlans=Array.isArray(p.floor_plan_urls)?p.floor_plan_urls.filter(Boolean):[];
+  const imgs=(p.images||[]).filter(Boolean);
+  const hasPhotos=imgs.length>0;
+  const hasFloorPlans=floorPlans.length>0;
+  const hasTours=tourUrls.length>0;
 
-function watchImages() {
-  const imgs = Array.from(document.images || []);
-  imgs.forEach(img => {
-    if (img.complete) return;
-    img.addEventListener('load', scheduleHeightPings, { once: true });
-    img.addEventListener('error', scheduleHeightPings, { once: true });
-  });
-}
+  const mediaHeader=document.getElementById('media-header');
+  const tabsEl=document.getElementById('media-tabs');
+  const showTabs=hasFloorPlans||hasTours;
+  if(!showTabs){mediaHeader.style.display='none';return;}
 
-/* ---------- iframe scroll-to-top ---------- */
-let didScrollTop = false;
-function scrollTopOnce() {
-  if (didScrollTop) return;
-  didScrollTop = true;
-  window.scrollTo(0, 0);
-  try {
-    window.parent?.postMessage({ type: 'scroll-top' }, '*');
-  } catch(e){}
-}
+  mediaHeader.style.display='';
+  tabsEl.innerHTML='';
 
-/* ---------- Safe DOM helpers ---------- */
-function safeText(el, txt) { el.textContent = txt ?? ''; }
-function createImg(src, alt) {
-  const img = document.createElement('img');
-  img.src = src;
-  img.alt = alt || '';
-  return img;
-}
+  if(hasPhotos){
+    const btn=document.createElement('button');
+    btn.type='button';btn.className='media-tab active';
+    btn.textContent='Photos ('+imgs.length+')';btn.dataset.tab='photos';
+    btn.addEventListener('click',()=>switchTab('photos'));
+    tabsEl.appendChild(btn);
+  }
+  if(hasFloorPlans){
+    const btn=document.createElement('button');
+    btn.type='button';btn.className='media-tab';
+    btn.textContent='Floor Plans ('+floorPlans.length+')';btn.dataset.tab='floorplans';
+    btn.addEventListener('click',()=>switchTab('floorplans'));
+    tabsEl.appendChild(btn);
+  }
+  if(hasTours){
+    const btn=document.createElement('button');
+    btn.type='button';btn.className='media-tab';
+    btn.textContent='Virtual Tours ('+tourUrls.length+')';btn.dataset.tab='tours';
+    btn.addEventListener('click',()=>switchTab('tours'));
+    tabsEl.appendChild(btn);
+  }
 
-/* ---------- main render ---------- */
-async function main() {
-  try {
-    const id = getParam('id');
-    console.log('property main running, id=', id);
-
-    // Load properties.json from the same host (works on Vercel or GitHub Pages)
-    const res = await fetch('/properties.json', { cache: 'no-store' });
-    if (!res.ok) throw new Error('Failed to fetch properties.json: ' + res.status);
-    const list = await res.json();
-    const p = list.find(x => String(x.id) === String(id)) || list[0];
-    if (!p) throw new Error('Property not found');
-
-    // --- Normalise common/legacy field names so the rest of the template can use stable keys
-    p.agents = p.agents || p.contacts || [];
-    p.brochure = p.brochure || p.brochure_url || p.brochureUrl || '';
-    p.epc = p.epc || p.epc_rating || p.epcRating || '';
-    p.rent_text = p.rent || (p.rent_psf ? (typeof p.rent_psf === 'number' ? `£${p.rent_psf.toLocaleString()} per sq ft` : String(p.rent_psf)) : '') || '';
-    p.rateable_value = p.rateable_value || p.rateableValue || p.rateable || '';
-    p.last_updated = p.last_updated || p.updated_at || p.lastUpdated || '';
-    p.types = p.types || p.type || [];
-
-    $('#loading').style.display = 'none';
-    $('#content').style.display = '';
-
-    $('#prop-title').textContent = p.address || 'Property';
-    $('#prop-sub').textContent = [p.town, p.postcode].filter(Boolean).join(' ');
-
-    /* status + tenure chips */
-    const chipsEl = $('#prop-chips');
-    if (chipsEl) {
-      chipsEl.innerHTML = '';
-      const status = String(p.status || 'Available').trim();
-      const lc = status.toLowerCase();
-      let cls = 'status-other';
-      if (!lc || lc === 'available') cls = 'status-available';
-      else if (lc.includes('under offer')) cls = 'status-under-offer';
-      else if (lc.includes('let agreed')) cls = 'status-let-agreed';
-      else if (lc === 'sold stc' || lc.includes('subject to contract')) cls = 'status-sold-stc';
-      else if (lc === 'sold') cls = 'status-sold';
-      const sb = document.createElement('span');
-      sb.className = `status-badge ${cls}`;
-      sb.textContent = status;
-      chipsEl.appendChild(sb);
-
-      const tenureParts = [];
-      if (p.to_let) tenureParts.push('To Let');
-      if (p.for_sale) tenureParts.push('For Sale');
-      tenureParts.forEach(label => {
-        const chip = document.createElement('span');
-        chip.className = 'chip';
-        chip.textContent = label;
-        chipsEl.appendChild(chip);
-      });
-    }
-
-    /* images (use DOM methods to avoid accidental injection) */
-    const imgs = (p.images || []).map(i => (typeof i === 'string' ? i : i.url)).filter(Boolean);
-    const hero = $('#hero');
-    hero.innerHTML = '';
-    if (isHttpUrl(imgs[0])) {
-      hero.appendChild(createImg(imgs[0], p.address || 'Property image'));
-    }
-
-    const thumbsEl = $('#thumbs');
-    thumbsEl.innerHTML = '';
-    imgs.forEach(u => {
-      if (!isHttpUrl(u)) return;
-      const btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = 'thumb';
-      btn.dataset.src = u;
-      btn.appendChild(createImg(u, p.address ? `Thumbnail for ${p.address}` : 'Thumbnail'));
-      thumbsEl.appendChild(btn);
-    });
-
-    thumbsEl.addEventListener('click', (e) => {
-      const t = e.target.closest('.thumb');
-      if (t) {
-        const src = t.dataset.src;
-        if (isHttpUrl(src)) {
-          hero.innerHTML = '';
-          hero.appendChild(createImg(src, p.address || 'Property image'));
+  if(hasFloorPlans){
+    const isPdf=u=>typeof u==='string'&&u.toLowerCase().endsWith('.pdf');
+    const fpViewer=document.getElementById('fp-viewer');
+    const fpMain=document.getElementById('fp-main');
+    const fpThumbs=document.getElementById('fp-thumbs');
+    const fpDownload=document.getElementById('fp-download');
+    const firstUrl=floorPlans[0];
+    if(isPdf(firstUrl)){fpMain.style.display='none';const msg=document.createElement('div');msg.className='fp-pdf-msg';msg.innerHTML='\uD83D\uDCC4 PDF floor plan<br><span style="font-size:12px;color:#999">Use the download button below to view</span>';fpViewer.appendChild(msg);}
+    else{fpMain.src=firstUrl;fpMain.style.display='';}
+    const firstPdf=floorPlans.find(isPdf);
+    if(fpDownload){fpDownload.href=firstPdf||firstUrl;fpDownload.style.display='';}
+    if(floorPlans.length>1){
+      fpThumbs.style.display='flex';
+      floorPlans.forEach((url,i)=>{
+        const btn=document.createElement('button');btn.type='button';btn.className='fp-thumb'+(i===0?' active':'');
+        if(!isPdf(url)){const img=document.createElement('img');img.src=url;img.alt='Floor plan '+(i+1);btn.appendChild(img);}
+        else{const lbl=document.createElement('div');lbl.className='fp-thumb-label';lbl.textContent='Plan '+(i+1);btn.appendChild(lbl);}
+        btn.addEventListener('click',()=>{
+          document.querySelectorAll('.fp-thumb').forEach(t=>t.classList.remove('active'));btn.classList.add('active');
+          const ex=fpViewer.querySelector('.fp-pdf-msg');
+          if(!isPdf(url)){if(ex)ex.remove();fpMain.src=url;fpMain.style.display='';}
+          else{fpMain.style.display='none';if(!ex){const m=document.createElement('div');m.className='fp-pdf-msg';m.innerHTML='\uD83D\uDCC4 PDF floor plan<br><span style="font-size:12px;color:#999">Use the download button below to view</span>';fpViewer.appendChild(m);}}
+          if(fpDownload){fpDownload.href=url;fpDownload.style.display='';}
           scheduleHeightPings();
-        }
-      }
-    });
+        });
+        fpThumbs.appendChild(btn);
 
-    /* facts (build a richer facts array) */
-    const facts = [];
-    if (p.size_from_sqft) {
-      const size = Number(p.size_from_sqft);
-      facts.push(['Size', Number.isFinite(size) ? `${size.toLocaleString()} sq ft` : String(p.size_from_sqft)]);
-    }
-    if (p.epc) facts.push(['EPC', String(p.epc)]);
-    if (p.rent_text) facts.push(['Rent', String(p.rent_text)]);
-    if (p.price) facts.push(['Price', String(p.price)]);
-    if (p.rateable_value) facts.push(['Rateable value', String(p.rateable_value)]);
-    if (p.last_updated) facts.push(['Updated', String(p.last_updated)]);
-    if (p.types && p.types.length) facts.push(['Type', p.types.join(', ')]);
+    const fsBtn=document.getElementById('fp-fullscreen');
+    if(fsBtn)fsBtn.addEventListener('click',()=>{if(fpViewer.requestFullscreen)fpViewer.requestFullscreen();else if(fpViewer.webkitRequestFullscreen)fpViewer.webkitRequestFullscreen();});
+    const sidebarFp=document.getElementById('sidebarFpBtn');
+    if(sidebarFp){sidebarFp.href=firstPdf||firstUrl;sidebarFp.style.display='';}
+  }
 
-    const factsEl = $('#facts');
-    factsEl.innerHTML = '';
-    facts.forEach(([label, value]) => {
-      const f = document.createElement('div');
-      f.className = 'fact';
-      const lab = document.createElement('div'); lab.className = 'label'; lab.textContent = label;
-      const val = document.createElement('div'); val.className = 'value'; val.textContent = value;
-      f.appendChild(lab); f.appendChild(val); factsEl.appendChild(f);
-    });
-
-    /* description */
-    if (p.description) {
-      $('#desc').textContent = p.description;
-      $('#descCard').style.display = '';
-    } else {
-      $('#descCard').style.display = 'none';
-    }
-
-    /* overview */
-    if (p.overview) {
-      $('#overview').textContent = p.overview;
-      $('#overviewCard').style.display = '';
-    } else {
-      $('#overviewCard').style.display = 'none';
-    }
-
-    /* features */
-    if (p.features && Array.isArray(p.features) && p.features.length) {
-      const featuresEl = $('#features');
-      featuresEl.innerHTML = '';
-      p.features.forEach(fv => {
-        const li = document.createElement('li'); li.textContent = fv; featuresEl.appendChild(li);
+  if(hasTours){
+    const selector=document.getElementById('tours-selector');
+    if(tourUrls.length>1){
+      selector.style.display='flex';
+      tourUrls.forEach((url,i)=>{
+        const label=tourLabel(url,i,tourUrls.length);
+        const pill=document.createElement('button');
+        pill.type='button';pill.className='tour-pill'+(i===0?' active':'');
+        pill.textContent=label;pill.dataset.url=url;
+        pill.addEventListener('click',()=>loadTour(url));
+        selector.appendChild(pill);
       });
-      $('#featuresCard').style.display = '';
-    } else {
-      $('#featuresCard').style.display = 'none';
+    }else{selector.style.display='none';}
+
+    let toursLoaded=false;
+    const toursTab=tabsEl.querySelector('[data-tab="tours"]');
+    if(toursTab){
+      toursTab.addEventListener('click',()=>{
+        if(!toursLoaded){toursLoaded=true;loadTour(tourUrls[0]);}
+      },{once:false});
     }
 
-    /* location (optional human readable location text in JSON) */
-    if (p.location) {
-      $('#location').textContent = p.location;
-      $('#locationCard').style.display = '';
-    } else {
-      $('#locationCard') && ($('#locationCard').style.display = 'none');
-    }
+    const openBtn=document.getElementById('tour-open-btn');
+    if(openBtn) openBtn.href=tourUrls[0];
 
-    /* brochure */
-    const brochureBtn = $('#brochureBtn');
-    if (p.brochure) {
-      brochureBtn.href = p.brochure;
-      brochureBtn.style.display = '';
-    } else {
-      brochureBtn.style.display = 'none';
-    }
+    /* Sidebar — single tour: plain link. Multiple tours: dropdown. */
+    const sidebarWrap=document.getElementById('sidebarTourWrap');
+    const sidebarBtn=document.getElementById('sidebarTourBtn');
+    const sidebarMenu=document.getElementById('sidebarTourMenu');
+    const sidebarChevron=document.getElementById('sidebarTourChevron');
 
-    /* agents (normalised from contacts) */
-    if (p.agents && p.agents.length) {
-      const agentsBox = document.getElementById('teamBox');
-      const agentsEl = document.getElementById('agents');
-      agentsEl.innerHTML = '';
-      p.agents.forEach(a => {
-        const div = document.createElement('div'); div.className = 'agent';
-        const av = document.createElement('div'); av.className = 'avatar'; av.textContent = initials(a.name || '');
-        const info = document.createElement('div');
-        const name = document.createElement('div'); name.style.fontWeight = '600'; name.textContent = a.name || '';
-        const contact = document.createElement('div'); contact.className = 'muted'; contact.textContent = a.phone || a.email || '';
-        info.appendChild(name); info.appendChild(contact);
-        div.appendChild(av); div.appendChild(info);
-        agentsEl.appendChild(div);
-      });
-      agentsBox.style.display = '';
-    } else {
-      document.getElementById('teamBox').style.display = 'none';
-    }
+    if(sidebarWrap){
+      if(tourUrls.length===1){
+        // Replace the whole wrap with a plain anchor
+        const a=document.createElement('a');
+        a.className='btn btn-ghost';
+        a.href=tourUrls[0];
+        a.target='_blank';
+        a.rel='noopener';
+        a.textContent='View virtual tour';
+        sidebarWrap.replaceWith(a);
+      } else {
+        sidebarWrap.style.display='';
+        sidebarMenu.innerHTML='';
+        tourUrls.forEach((url,i)=>{
+          const label=tourLabel(url,i,tourUrls.length);
+          const item=document.createElement('button');
+          item.type='button';
+          item.className='btn-dropdown-item';
+          item.textContent=label;
+          item.addEventListener('click',()=>{
+            window.open(url,'_blank','noopener');
+            sidebarMenu.classList.remove('open');
+            if(sidebarChevron) sidebarChevron.classList.remove('open');
+          });
+          sidebarMenu.appendChild(item);
+        });
 
-    /* map */
-    let map = null;
-    if (window.L && p.lat !== undefined && p.lon !== undefined && p.lat !== null && p.lon !== null) {
-      try {
-        map = L.map('map').setView([p.lat, p.lon], 14);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-        L.marker([p.lat, p.lon]).addTo(map);
+        sidebarBtn.addEventListener('click',(e)=>{
+          e.stopPropagation();
+          const isOpen=sidebarMenu.classList.toggle('open');
+          if(sidebarChevron) sidebarChevron.classList.toggle('open', isOpen);
+        });
 
-        map.on && map.on('tileload', scheduleHeightPings);
-        map.on && map.on('load', scheduleHeightPings);
-      } catch (e) {
-        console.warn('Leaflet map failed to initialize', e);
+        document.addEventListener('click',()=>{
+          sidebarMenu.classList.remove('open');
+          if(sidebarChevron) sidebarChevron.classList.remove('open');
+        });
       }
     }
+  }
+}
 
-    scrollTopOnce();
-    scheduleHeightPings();
+async function main(){
+  try{
+    const id=getParam('id');
+    const res=await fetch('/properties.json',{cache:'no-store'});
+    if(!res.ok)throw new Error('fetch failed: '+res.status);
+    const list=await res.json();
+    const p=list.find(x=>String(x.id)===String(id))||list[0];
+    if(!p)throw new Error('not found');
 
-    if ('ResizeObserver' in window) {
-      const ro = new ResizeObserver(() => scheduleHeightPings());
-      ro.observe(document.getElementById('content'));
+    p.agents=p.agents||p.contacts||[];
+    p.brochure=p.brochure||p.brochure_url||p.brochureUrl||'';
+    p.epc=p.epc||p.epc_rating||p.epcRating||'';
+    p.rent_text=p.rent||(p.rent_psf?(typeof p.rent_psf==='number'?'\u00A3'+p.rent_psf.toLocaleString()+' per sq ft':String(p.rent_psf)):'')||'';
+    p.rateable_value=p.rateable_value||p.rateableValue||p.rateable||'';
+    p.last_updated=p.last_updated||p.updated_at||p.lastUpdated||'';
+    p.types=p.types||p.type||[];
+
+    $('#loading').style.display='none';
+    $('#content').style.display='';
+    $('#prop-title').textContent=p.address||'Property';
+    $('#prop-sub').textContent=[p.town,p.postcode].filter(Boolean).join(' ');
+
+    const chipsEl=$('#prop-chips');
+    if(chipsEl){
+      chipsEl.innerHTML='';
+      const status=String(p.status||'Available').trim(),lc=status.toLowerCase();
+      let cls='status-other';
+      if(!lc||lc==='available')cls='status-available';
+      else if(lc.includes('under offer'))cls='status-under-offer';
+      else if(lc.includes('let agreed'))cls='status-let-agreed';
+      else if(lc==='sold stc'||lc.includes('subject to contract'))cls='status-sold-stc';
+      else if(lc==='sold')cls='status-sold';
+      const sb=document.createElement('span');sb.className='status-badge '+cls;sb.textContent=status;chipsEl.appendChild(sb);
+      const tp=[];if(p.to_let)tp.push('To Let');if(p.for_sale)tp.push('For Sale');
+      tp.forEach(l=>{const c=document.createElement('span');c.className='chip';c.textContent=l;chipsEl.appendChild(c);});
     }
 
+    const imgs=(p.images||[]).map(i=>(typeof i==='string'?i:i.url)).filter(Boolean);
+    const hero=$('#hero');hero.innerHTML='';
+    if(isHttpUrl(imgs[0]))hero.appendChild(createImg(imgs[0],p.address||'Property image'));
+    const thumbsEl=$('#thumbs');thumbsEl.innerHTML='';
+    imgs.forEach(u=>{if(!isHttpUrl(u))return;const btn=document.createElement('button');btn.type='button';btn.className='thumb';btn.dataset.src=u;btn.appendChild(createImg(u,p.address?'Thumbnail for '+p.address:'Thumbnail'));thumbsEl.appendChild(btn);});
+    thumbsEl.addEventListener('click',e=>{const t=e.target.closest('.thumb');if(t&&isHttpUrl(t.dataset.src)){hero.innerHTML='';hero.appendChild(createImg(t.dataset.src,p.address||'Property image'));scheduleHeightPings();}});
+
+    const facts=[];
+    if(p.size_from_sqft){const s=Number(p.size_from_sqft);facts.push(['Size',Number.isFinite(s)?s.toLocaleString()+' sq ft':String(p.size_from_sqft)]);}
+    if(p.epc)facts.push(['EPC',String(p.epc)]);
+    if(p.rent_text)facts.push(['Rent',String(p.rent_text)]);
+    if(p.rateable_value)facts.push(['Rateable value',String(p.rateable_value)]);
+    if(p.last_updated)facts.push(['Updated',String(p.last_updated)]);
+    if(p.types&&p.types.length)facts.push(['Type',p.types.join(', ')]);
+    const factsEl=$('#facts');factsEl.innerHTML='';
+    facts.forEach(([l,v])=>{const f=document.createElement('div');f.className='fact';const la=document.createElement('div');la.className='label';la.textContent=l;const va=document.createElement('div');va.className='value';va.textContent=v;f.appendChild(la);f.appendChild(va);factsEl.appendChild(f);});
+
+    if(p.description){$('#desc').textContent=p.description;$('#descCard').style.display='';}else{$('#descCard').style.display='none';}
+    if(p.overview){$('#overview').textContent=p.overview;$('#overviewCard').style.display='';}else{$('#overviewCard').style.display='none';}
+    if(p.features&&Array.isArray(p.features)&&p.features.length){const fe=$('#features');fe.innerHTML='';p.features.forEach(fv=>{const li=document.createElement('li');li.textContent=fv;fe.appendChild(li);});$('#featuresCard').style.display='';}else{$('#featuresCard').style.display='none';}
+    if(p.location){$('#location').textContent=p.location;$('#locationCard').style.display='';}else{$('#locationCard')&&($('#locationCard').style.display='none');}
+    if(p.marketing_text_transport){$('#transport').textContent=p.marketing_text_transport;$('#transportCard').style.display='';}else{$('#transportCard')&&($('#transportCard').style.display='none');}
+
+    const brochureBtn=$('#brochureBtn');
+    if(p.brochure){brochureBtn.href=p.brochure;brochureBtn.style.display='';}else{brochureBtn.style.display='none';}
+
+    initMediaTabs(p);
+
+    if(p.agents&&p.agents.length){
+      const ab=document.getElementById('teamBox'),ae=document.getElementById('agents');ae.innerHTML='';
+      p.agents.forEach(a=>{const d=document.createElement('div');d.className='agent';const av=document.createElement('div');av.className='avatar';av.textContent=initials(a.name||'');const info=document.createElement('div');const nm=document.createElement('div');nm.style.fontWeight='600';nm.textContent=a.name||'';const ct=document.createElement('div');ct.className='muted';ct.textContent=a.phone||a.email||'';info.appendChild(nm);info.appendChild(ct);d.appendChild(av);d.appendChild(info);ae.appendChild(d);});
+      ab.style.display='';
+    }else{document.getElementById('teamBox').style.display='none';}
+
+    if(window.L&&p.lat!=null&&p.lon!=null){
+      try{
+        const map=L.map('map').setView([p.lat,p.lon],14);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+        L.marker([p.lat,p.lon]).addTo(map);
+        map.on&&map.on('tileload',scheduleHeightPings);map.on&&map.on('load',scheduleHeightPings);
+      }catch(e){console.warn('Map failed',e);}
+    }
+
+    scrollTopOnce();scheduleHeightPings();
+    if('ResizeObserver' in window)new ResizeObserver(()=>scheduleHeightPings()).observe(document.getElementById('content'));
     watchImages();
 
-  } catch (err) {
-    console.error(err);
-    $('#loading').textContent = 'Failed to load property';
-  }
+  }catch(err){console.error(err);$('#loading').textContent='Failed to load property';}
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  // Update the back link to restore last search
-  const backLink = document.querySelector('.back');
-  if (backLink) {
-    try {
-      const lastSearch = sessionStorage.getItem('gjs:lastSearch');
-      if (lastSearch) {
-        backLink.href = 'index.html' + lastSearch;
-      }
-    } catch(e) {}
-  }
-
+document.addEventListener('DOMContentLoaded',()=>{
+  const bl=document.querySelector('.back');
+  if(bl){try{const ls=sessionStorage.getItem('gjs:lastSearch');if(ls)bl.href='index.html'+ls;}catch(e){}}
   main();
 });
 </script>
 
-<!-- Modal CSS / Markup -->
+<!-- ENQUIRY MODAL -->
 <style>
-  /* Ensure overlay is hidden by default and only visible when aria-hidden="false" */
-  #enquiryModal[aria-hidden="true"]{
-    display: none !important;
-    pointer-events: none;
-    opacity: 0;
-  }
-  #enquiryModal[aria-hidden="false"]{
-    display: flex !important;
-    pointer-events: auto;
-    opacity: 1;
-  }
-
-  /* Modal backdrop */
-  #enquiryModal {
-    position: fixed;
-    inset: 0;
-    z-index: 1000;
-    background: rgba(16,17,18,0.55);
-    backdrop-filter: blur(4px);
-    display: none;
-    align-items: flex-start; /* top aligned */
-    justify-content: center;
-    padding: 20px;
-  }
-
-  /* open as high as possible */
-  .modal__dialog {
-    position: fixed;
-    top: 24px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(640px, calc(100vw - 40px));
-    max-width: 640px;
-    background: #ffffff;
-    border-radius: 14px;
-    box-shadow: 0 20px 50px rgba(16,17,18,0.35);
-    overflow: hidden;
-    max-height: calc(100dvh - 48px);
-  }
-
-  .modal__header {
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:18px 20px;
-    border-bottom:1px solid #f0f1f3;
-    background:#fff;
-  }
-  .modal__title { margin:0; font-size:18px; font-weight:700; color:#111; }
-  .modal__close { background:transparent;border:none;font-size:20px;cursor:pointer;color:#555; padding:6px;border-radius:6px; }
-  .modal__close:focus { outline:2px solid rgba(16,17,18,.12); }
-
-  .modal__body {
-    padding:18px 20px 22px;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    max-height: calc(100dvh - 48px - 64px);
-  }
-  .modal__hint { color:#666;font-size:13px;margin-bottom:12px; }
-
-  .modern-form { display:block; gap:12px; }
-  .form-grid { display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
-  @media(max-width:560px){ .form-grid {grid-template-columns:1fr} }
-
-  label { display:block; font-size:13px; color:#333; margin-bottom:6px; }
-  .input, textarea {
-    width:100%; padding:10px 12px; border-radius:10px; border:1px solid #e6e8eb; background:#fff;
-    font-size:15px; color:#111; box-shadow: inset 0 1px 2px rgba(16,17,18,0.03); transition:box-shadow .12s ease, border-color .12s ease, transform .08s ease;
-  }
-  .input:focus, textarea:focus { border-color: #101112; box-shadow: 0 4px 18px rgba(16,17,18,0.06); outline: none; }
-  textarea { min-height:110px; resize:vertical; }
-
-  .form-row { margin-bottom:8px; }
-  .error { color: #b91c1c; font-size:13px; margin-top:6px; }
-
-  .modal__actions { display:flex; gap:10px; margin-top:12px; align-items:center; flex-wrap:wrap; }
-
-  .btn { display:inline-flex; align-items:center; justify-content:center; border: none; cursor:pointer; padding:10px 14px; border-radius:10px; font-weight:700; font-size:14px; }
-  .btn-primary { background: linear-gradient(180deg,#101112,#0b0b0b); color: #fff; box-shadow: 0 6px 18px rgba(16,17,18,0.12); }
-  .btn-ghost { background:transparent;border:1px solid #e6e8eb;color:#222;padding:8px 12px;border-radius:10px; }
-  .btn:disabled { opacity:.6; cursor:not-allowed; transform:none; }
-
-  .spinner { display:inline-block; width:16px;height:16px;border-radius:50%; border:2px solid rgba(255,255,255,.25); border-top-color: #fff; animation: spin .7s linear infinite; margin-left:8px; }
-  @keyframes spin { to { transform: rotate(360deg); } }
-
-  .modal__success { padding: 18px 20px; text-align:center; }
-  .modal__success h3 { margin:0 0 8px; font-size:16px; }
-  .modal__success p { color:#444; font-size:14px; margin:0 0 12px; }
-
-  @media (max-width: 560px) {
-    #enquiryModal { padding: 12px; }
-    .modal__dialog{
-      width: calc(100vw - 24px);
-      max-height: calc(100dvh - 24px);
-      border-radius: 12px;
-      top: 12px;
-    }
-    .modal__body { max-height: calc(100dvh - 24px - 64px); }
-  }
+  #enquiryModal[aria-hidden="true"]{display:none !important;pointer-events:none;opacity:0}
+  #enquiryModal[aria-hidden="false"]{display:flex !important;pointer-events:auto;opacity:1}
+  #enquiryModal{position:fixed;inset:0;z-index:1000;background:rgba(16,17,18,0.55);backdrop-filter:blur(4px);display:none;align-items:flex-start;justify-content:center;padding:20px}
+  .modal__dialog{position:fixed;top:24px;left:50%;transform:translateX(-50%);width:min(640px,calc(100vw - 40px));max-width:640px;background:#fff;border-radius:14px;box-shadow:0 20px 50px rgba(16,17,18,0.35);overflow:hidden;max-height:calc(100dvh - 48px)}
+  .modal__header{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid #f0f1f3;background:#fff}
+  .modal__title{margin:0;font-size:18px;font-weight:700;color:#111}
+  .modal__close{background:transparent;border:none;font-size:20px;cursor:pointer;color:#555;padding:6px;border-radius:6px}
+  .modal__close:focus{outline:2px solid rgba(16,17,18,.12)}
+  .modal__body{padding:18px 20px 22px;overflow:auto;-webkit-overflow-scrolling:touch;max-height:calc(100dvh - 48px - 64px)}
+  .modal__hint{color:#666;font-size:13px;margin-bottom:12px}
+  .modern-form{display:block;gap:12px}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:560px){.form-grid{grid-template-columns:1fr}}
+  label{display:block;font-size:13px;color:#333;margin-bottom:6px}
+  .input,textarea{width:100%;padding:10px 12px;border-radius:10px;border:1px solid #e6e8eb;background:#fff;font-size:15px;color:#111;box-shadow:inset 0 1px 2px rgba(16,17,18,0.03);transition:box-shadow .12s ease,border-color .12s ease}
+  .input:focus,textarea:focus{border-color:#101112;box-shadow:0 4px 18px rgba(16,17,18,0.06);outline:none}
+  textarea{min-height:110px;resize:vertical}
+  .form-row{margin-bottom:8px}
+  .error{color:#b91c1c;font-size:13px;margin-top:6px}
+  .modal__actions{display:flex;gap:10px;margin-top:12px;align-items:center;flex-wrap:wrap}
+  .spinner{display:inline-block;width:16px;height:16px;border-radius:50%;border:2px solid rgba(255,255,255,.25);border-top-color:#fff;animation:spin .7s linear infinite;margin-left:8px}
+  .modal__success{padding:18px 20px;text-align:center}
+  .modal__success h3{margin:0 0 8px;font-size:16px}
+  .modal__success p{color:#444;font-size:14px;margin:0 0 12px}
+  @media(max-width:560px){#enquiryModal{padding:12px}.modal__dialog{width:calc(100vw - 24px);max-height:calc(100dvh - 24px);border-radius:12px;top:12px}.modal__body{max-height:calc(100dvh - 24px - 64px)}}
 </style>
 
 <div id="enquiryModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="enqTitle">
   <div class="modal__dialog" role="document">
     <div class="modal__header">
       <h2 id="enqTitle" class="modal__title">Enquire now</h2>
-      <button class="modal__close" id="closeModal" aria-label="Close enquiry dialog">✕</button>
+      <button class="modal__close" id="closeModal" aria-label="Close enquiry dialog">&#x2715;</button>
     </div>
-
     <div class="modal__body" id="enqBody">
       <p id="propRefHint" class="modal__hint"></p>
-
       <form id="enqForm" class="modern-form" novalidate>
         <div class="form-grid">
           <div class="form-row">
@@ -623,8 +578,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="error" id="err-lastName" aria-live="polite" style="display:none"></div>
           </div>
         </div>
-
-        <div class="form-grid" style="margin-top:6px;">
+        <div class="form-grid" style="margin-top:6px">
           <div class="form-row">
             <label for="emailInput">Email</label>
             <input id="emailInput" class="input" type="email" name="email" autocomplete="email" required>
@@ -636,37 +590,30 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="error" id="err-phone" aria-live="polite" style="display:none"></div>
           </div>
         </div>
-
-        <div class="form-row" style="margin-top:6px;">
+        <div class="form-row" style="margin-top:6px">
           <label for="messageInput">Message</label>
           <textarea id="messageInput" class="input" name="message" placeholder="Optional message..."></textarea>
           <div class="error" id="err-message" aria-live="polite" style="display:none"></div>
         </div>
-
-        <div class="form-row" style="margin-top:6px; display:flex; align-items:center; gap:10px;">
+        <div class="form-row" style="margin-top:6px;display:flex;align-items:center;gap:10px">
           <input id="mailingListInput" type="checkbox" name="mailingList" />
-          <label for="mailingListInput" style="margin:0; font-size:13px; color:#333;">Add me to your mailing list</label>
+          <label for="mailingListInput" style="margin:0;font-size:13px;color:#333">Add me to your mailing list</label>
         </div>
-
         <div class="modal__actions">
-          <button id="sendEnquiryBtn" class="btn btn-primary" type="submit">
-            Send enquiry
-            <span id="enqSpinner" class="spinner" style="display:none"></span>
-          </button>
-          <button id="cancelEnquiryBtn" type="button" class="btn btn-ghost">Cancel</button>
+          <button id="sendEnquiryBtn" class="btn btn-primary" type="submit">Send enquiry <span id="enqSpinner" class="spinner" style="display:none"></span></button>
+          <button id="cancelEnquiryBtn" type="button" class="btn btn-ghost" style="width:auto">Cancel</button>
         </div>
       </form>
     </div>
-
-    <div id="enqSuccess" style="display:none;">
+    <div id="enqSuccess" style="display:none">
       <div class="modal__success">
         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" style="display:block;margin:0 auto 8px">
           <circle cx="12" cy="12" r="10" fill="#10B981"></circle>
           <path d="M7.5 12.2l2.6 2.6 6.4-6.4" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-        <h3>Thanks — enquiry sent</h3>
+        <h3>Thanks &#8212; enquiry sent</h3>
         <p>We'll get back to you shortly.</p>
-        <div style="text-align:center"><button id="doneBtn" class="btn btn-primary">Done</button></div>
+        <div style="text-align:center"><button id="doneBtn" class="btn btn-primary" style="width:auto">Done</button></div>
       </div>
     </div>
   </div>
@@ -674,140 +621,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <script>
 (function(){
-  const modal = document.getElementById('enquiryModal');
-  const dialog = modal.querySelector('.modal__dialog');
-  const openBtn = document.getElementById('enquireBtn');
-  const closeBtn = document.getElementById('closeModal');
-  const cancelBtn = document.getElementById('cancelEnquiryBtn');
-  const form = document.getElementById('enqForm');
-  const spinner = document.getElementById('enqSpinner');
-  const successBox = document.getElementById('enqSuccess');
-  const bodyBox = document.getElementById('enqBody');
-  const doneBtn = document.getElementById('doneBtn');
-  const propRefHint = document.getElementById('propRefHint');
-
-  const fields = {
-    firstName: document.getElementById('firstNameInput'),
-    lastName: document.getElementById('lastNameInput'),
-    email: document.getElementById('emailInput'),
-    phone: document.getElementById('phoneInput'),
-    message: document.getElementById('messageInput'),
-    mailingList: document.getElementById('mailingListInput')
-  };
-
-  const SEND_ENDPOINT = '/api/send-enquiry.js';
-  let lastFocusedEl = null;
-
-  function setError(fieldName, message) {
-    const el = document.getElementById('err-' + fieldName);
-    if (!el) return;
-    el.textContent = message || '';
-    el.style.display = message ? '' : 'none';
-  }
-  function clearErrors() {
-    setError('firstName',''); setError('lastName',''); setError('email',''); setError('phone',''); setError('message','');
-  }
-
-  function validate() {
-    clearErrors();
-    let ok = true;
-    if (!fields.firstName.value.trim()) { setError('firstName','Please enter a first name'); ok = false;}
-    if (!fields.lastName.value.trim()) { setError('lastName','Please enter a last name'); ok = false;}
-    const em = fields.email.value.trim();
-    if (!em) { setError('email','Please enter an email'); ok = false; }
-    else if (!/^\S+@\S+\.\S+$/.test(em)) { setError('email','Please enter a valid email'); ok = false; }
-    return ok;
-  }
-
-  function escapeForJson(s){ return String(s === undefined || s === null ? '' : s); }
-
-  function showModal() {
-    lastFocusedEl = document.activeElement;
-    modal.setAttribute('aria-hidden', 'false');
-    scheduleHeightPings();
-
-    const title = document.getElementById('prop-title')?.textContent?.trim();
-    propRefHint.textContent = title ? `About: ${title}` : '';
-
-    form.reset();
-    clearErrors();
-    bodyBox.style.display = '';
-    successBox.style.display = 'none';
-
-    setTimeout(() => {
-      try { fields.firstName.focus({ preventScroll: true }); } catch(e){}
-    }, 50);
-  }
-
-  function closeModal() {
-    modal.setAttribute('aria-hidden', 'true');
-    scheduleHeightPings();
-    if (lastFocusedEl) lastFocusedEl.focus();
-  }
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    if (!validate()) return;
-
-    const payload = {
-      firstName: escapeForJson(fields.firstName.value.trim()),
-      lastName:  escapeForJson(fields.lastName.value.trim()),
-      email:     escapeForJson(fields.email.value.trim()),
-      phone:     escapeForJson(fields.phone.value.trim()),
-      message:   escapeForJson(fields.message.value.trim()),
-      mailingList: !!fields.mailingList.checked,
-      propertyId: getParam('id') || '',
-      propertyTitle: (document.getElementById('prop-title')?.textContent || '')
-    };
-
-    document.getElementById('sendEnquiryBtn').disabled = true;
-    spinner.style.display = '';
-
-    try {
-      const res = await fetch(SEND_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
-
-      if (!res.ok) {
-        const text = await res.text().catch(()=>res.statusText);
-        throw new Error(`Send failed: ${res.status} ${text}`);
-      }
-
-      spinner.style.display = 'none';
-      document.getElementById('sendEnquiryBtn').disabled = false;
-      bodyBox.style.display = 'none';
-      successBox.style.display = '';
-      scheduleHeightPings();
-    } catch (err) {
-      console.error('Enquiry send failed', err);
-      spinner.style.display = 'none';
-      document.getElementById('sendEnquiryBtn').disabled = false;
-      setError('message', 'Failed to send enquiry — please try again later.');
-      scheduleHeightPings();
-    }
+  const modal=document.getElementById('enquiryModal'),dialog=modal.querySelector('.modal__dialog');
+  const openBtn=document.getElementById('enquireBtn'),closeBtn=document.getElementById('closeModal'),cancelBtn=document.getElementById('cancelEnquiryBtn');
+  const form=document.getElementById('enqForm'),spinner=document.getElementById('enqSpinner');
+  const successBox=document.getElementById('enqSuccess'),bodyBox=document.getElementById('enqBody');
+  const doneBtn=document.getElementById('doneBtn'),propRefHint=document.getElementById('propRefHint');
+  const fields={firstName:document.getElementById('firstNameInput'),lastName:document.getElementById('lastNameInput'),email:document.getElementById('emailInput'),phone:document.getElementById('phoneInput'),message:document.getElementById('messageInput'),mailingList:document.getElementById('mailingListInput')};
+  const SEND_ENDPOINT='/api/send-enquiry.js';
+  let lastFocusedEl=null;
+  function setError(f,m){const el=document.getElementById('err-'+f);if(!el)return;el.textContent=m||'';el.style.display=m?'':'none';}
+  function clearErrors(){['firstName','lastName','email','phone','message'].forEach(f=>setError(f,''));}
+  function validate(){clearErrors();let ok=true;if(!fields.firstName.value.trim()){setError('firstName','Please enter a first name');ok=false;}if(!fields.lastName.value.trim()){setError('lastName','Please enter a last name');ok=false;}const em=fields.email.value.trim();if(!em){setError('email','Please enter an email');ok=false;}else if(!/^\S+@\S+\.\S+$/.test(em)){setError('email','Please enter a valid email');ok=false;}return ok;}
+  function esc(s){return String(s==null?'':s);}
+  function showModal(){lastFocusedEl=document.activeElement;modal.setAttribute('aria-hidden','false');scheduleHeightPings();propRefHint.textContent=(document.getElementById('prop-title')?.textContent?.trim()||'')?'About: '+document.getElementById('prop-title').textContent.trim():'';form.reset();clearErrors();bodyBox.style.display='';successBox.style.display='none';setTimeout(()=>{try{fields.firstName.focus({preventScroll:true});}catch(e){}},50);}
+  function closeModal(){modal.setAttribute('aria-hidden','true');scheduleHeightPings();if(lastFocusedEl)lastFocusedEl.focus();}
+  form.addEventListener('submit',async e=>{
+    e.preventDefault();if(!validate())return;
+    const payload={firstName:esc(fields.firstName.value.trim()),lastName:esc(fields.lastName.value.trim()),email:esc(fields.email.value.trim()),phone:esc(fields.phone.value.trim()),message:esc(fields.message.value.trim()),mailingList:!!fields.mailingList.checked,propertyId:getParam('id')||'',propertyTitle:document.getElementById('prop-title')?.textContent||''};
+    document.getElementById('sendEnquiryBtn').disabled=true;spinner.style.display='';
+    try{const res=await fetch(SEND_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});if(!res.ok)throw new Error('Send failed: '+res.status);spinner.style.display='none';document.getElementById('sendEnquiryBtn').disabled=false;bodyBox.style.display='none';successBox.style.display='';scheduleHeightPings();}
+    catch(err){console.error(err);spinner.style.display='none';document.getElementById('sendEnquiryBtn').disabled=false;setError('message','Failed to send enquiry — please try again later.');scheduleHeightPings();}
   });
-
-  openBtn && openBtn.addEventListener('click', showModal);
-  closeBtn && closeBtn.addEventListener('click', closeModal);
-  cancelBtn && cancelBtn.addEventListener('click', closeModal);
-  doneBtn && doneBtn.addEventListener('click', closeModal);
-
-  modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
-
-  modal.addEventListener('keydown', (e) => {
-    if (e.key !== 'Tab') return;
-    const focusables = dialog.querySelectorAll('a[href], button:not([disabled]), textarea, input, select');
-    if (focusables.length === 0) return;
-    const first = focusables[0];
-    const last = focusables[focusables.length - 1];
-    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
-    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
-  });
-
-  window.__enquiryModal = { show: showModal, close: closeModal };
+  openBtn&&openBtn.addEventListener('click',showModal);
+  closeBtn&&closeBtn.addEventListener('click',closeModal);
+  cancelBtn&&cancelBtn.addEventListener('click',closeModal);
+  doneBtn&&doneBtn.addEventListener('click',closeModal);
+  modal.addEventListener('click',e=>{if(e.target===modal)closeModal();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+  modal.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const fs=dialog.querySelectorAll('a[href],button:not([disabled]),textarea,input,select');if(!fs.length)return;const f=fs[0],l=fs[fs.length-1];if(e.shiftKey&&document.activeElement===f){e.preventDefault();l.focus();}else if(!e.shiftKey&&document.activeElement===l){e.preventDefault();f.focus();}});
+  window.__enquiryModal={show:showModal,close:closeModal};
 })();
 </script>
 
