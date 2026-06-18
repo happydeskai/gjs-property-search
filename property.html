@@ -219,7 +219,13 @@
                   </button>
                   <div class="btn-dropdown-menu" id="sidebarTourMenu"></div>
                 </div>
-                <a class="btn btn-ghost" id="sidebarFpBtn" target="_blank" rel="noopener" style="display:none">Download floor plans</a>
+                <div class="btn-dropdown-wrap" id="sidebarFpWrap" style="display:none">
+                  <button class="btn-dropdown" id="sidebarFpBtn" type="button">
+                    <span>Download floor plans</span>
+                    <span class="btn-dropdown-chevron" id="sidebarFpChevron" style="position:absolute;right:16px">▾</span>
+                  </button>
+                  <div class="btn-dropdown-menu" id="sidebarFpMenu"></div>
+                </div>
               </div>
               <div id="map"></div>
             </div>
@@ -358,8 +364,34 @@ function initMediaTabs(p){
     }
     const fsBtn=document.getElementById('fp-fullscreen');
     if(fsBtn)fsBtn.addEventListener('click',()=>{if(fpViewer.requestFullscreen)fpViewer.requestFullscreen();else if(fpViewer.webkitRequestFullscreen)fpViewer.webkitRequestFullscreen();});
-    const sidebarFp=document.getElementById('sidebarFpBtn');
-    if(sidebarFp){sidebarFp.href=firstPdf||firstUrl;sidebarFp.style.display='';}
+    const sidebarFpWrap=document.getElementById('sidebarFpWrap');
+    const sidebarFpBtn=document.getElementById('sidebarFpBtn');
+    const sidebarFpMenu=document.getElementById('sidebarFpMenu');
+    const sidebarFpChevron=document.getElementById('sidebarFpChevron');
+    if(sidebarFpWrap){
+      if(floorPlans.length===1){
+        const a=document.createElement('a');
+        a.className='btn btn-ghost';a.href=floorPlans[0];a.target='_blank';a.rel='noopener';a.textContent='Download floor plan';
+        sidebarFpWrap.replaceWith(a);
+      } else {
+        sidebarFpWrap.style.display='';
+        floorPlans.forEach((url,i)=>{
+          const item=document.createElement('a');
+          item.className='btn-dropdown-item';item.href=url;item.target='_blank';item.rel='noopener';item.download='';
+          item.textContent='Floor Plan '+(i+1);
+          sidebarFpMenu.appendChild(item);
+        });
+        sidebarFpBtn.addEventListener('click',(e)=>{
+          e.stopPropagation();
+          const isOpen=sidebarFpMenu.classList.toggle('open');
+          if(sidebarFpChevron)sidebarFpChevron.classList.toggle('open',isOpen);
+        });
+        document.addEventListener('click',()=>{
+          sidebarFpMenu.classList.remove('open');
+          if(sidebarFpChevron)sidebarFpChevron.classList.remove('open');
+        });
+      }
+    }
   }
 
   if(hasTours){
