@@ -441,6 +441,7 @@ function render(list, context = {}) {
           <a class="card__title" href="property.html?id=${encodeURIComponent(p.id ?? '')}" aria-label="View ${address}">${address}</a>
           ${size ? `<div class="card__meta">${size}</div>` : ''}
 ${p.rent ? `<div class="card__meta" style="font-weight:600;color:#111;">${p.rent}</div>` : ''}
+${p.price && !p.rent ? `<div class="card__meta" style="font-weight:600;color:#111;">${p.price}</div>` : ''}
         </div>
         <div class="card__footer">
           <a class="btn-ghost" href="property.html?id=${encodeURIComponent(p.id ?? '')}">View property</a>

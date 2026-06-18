@@ -249,6 +249,29 @@ async function run() {
         rent_pa:  rent_pa  !== undefined ? rent_pa  : undefined,
         rent: rent || undefined,
 
+        // SALE PRICE
+        price: (() => {
+          const priceText = txt(p.price);
+          const onApp = txt(p.price_components?.on_application);
+          if (onApp === "1") return "On Application";
+          const qualifier = txt(p.price_components?.qualifier);
+          const value = num(p.price_components?.value);
+          if (priceText) return priceText;
+          if (Number.isFinite(value) && value > 0) {
+            return (qualifier ? qualifier + " " : "") + "£" + value.toLocaleString();
+          }
+          return undefined;
+        })(),
+
+        price_value: (() => {
+          const v = num(p.price_components?.value);
+          return Number.isFinite(v) && v > 0 ? v : undefined;
+        })(),
+
+        business_rates_psf: Number.isFinite(business_rates_psf)
+          ? business_rates_psf
+          : undefined,
+
         business_rates_psf: Number.isFinite(business_rates_psf)
           ? business_rates_psf
           : undefined,

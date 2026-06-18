@@ -354,8 +354,7 @@ function initMediaTabs(p){
           scheduleHeightPings();
         });
         fpThumbs.appendChild(btn);
-      });
-    }
+
     const fsBtn=document.getElementById('fp-fullscreen');
     if(fsBtn)fsBtn.addEventListener('click',()=>{if(fpViewer.requestFullscreen)fpViewer.requestFullscreen();else if(fpViewer.webkitRequestFullscreen)fpViewer.webkitRequestFullscreen();});
     const sidebarFp=document.getElementById('sidebarFpBtn');
