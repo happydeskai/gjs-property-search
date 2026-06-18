@@ -1,5 +1,66 @@
 [
   {
+    "id": 346652,
+    "status": "Under Offer",
+    "address": "St. Dunstan's Building",
+    "town": "Worcester",
+    "postcode": "WR1 3PA",
+    "lat": 52.193748474,
+    "lon": -2.224364995,
+    "types": [
+      "Office",
+      "Development/Investment"
+    ],
+    "raw_types": [
+      "Office",
+      "Development"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 19726,
+    "size_to_sqft": 19726,
+    "summary": "Office / Development / Development For Sale, Worcester",
+    "description": "The accommodation currently provides a mixture of large partitioned working areas with some individual offices. The specification of the property includes; > Air handling / air conditioning > Strip lighting / suspended ceilings with integral lighting > Ground floor kitchen area > 13 person passenger lift > WCs on all floors > An outside seating area > On site car parking",
+    "location": "Butts, just off the main A44 which forms part of the circular routes for Worcester City Centre. To the east of the property is is the main shopping/entertainment areas for Worcester whilst to the west is the picturesque River Severn. Worcester, in the West Midlands, is located 31 miles south east of Birmingham, 27 miles north of Gloucester and 23 miles north east of Hereford. Worcester has excellent connectivity being to the west of junctions 6 and 7 of the M5 motorway leading to the M42 and M6. Worcester also has direct mainline rail links to both Birmingham and London.",
+    "features": [
+      "For Sale - Offers in excess of £2,950,000",
+      "St Dunstan's Building is a well located property to the west of Worcester City Centre",
+      "Constructed to suit a variety of uses (subject to planning)",
+      "To be offered with vacant possession with the HoW College relocating within the city"
+    ],
+    "price": "£2,950,000",
+    "price_value": 2950000,
+    "business_rates_psf": 87690,
+    "rateable_value": 158000,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/098bdf0b907b5d8306a0fb1a953f5ac5-letting346652.jpeg",
+      "https://as-images.imgix.net/3e271cca0d8505975b6ac96592611f39-letting346652.jpeg",
+      "https://as-images.imgix.net/2c5cbed13289e2f3584cf42827a03015-letting346652.jpeg",
+      "https://as-images.imgix.net/828b06cf17ed29c0bcb9526178826448-letting346652.jpeg",
+      "https://as-images.imgix.net/49c222d873985cc5222358c5b741005d-letting346652.jpeg",
+      "https://as-images.imgix.net/59b5fc1d1ba72532eb9d1ca9b5c9f850-letting346652.jpeg",
+      "https://as-images.imgix.net/5f85668ecbe49422f93ea40acf7f7b29-letting346652.jpeg",
+      "https://as-images.imgix.net/6673663acb959c4eb2af1ad95c2ca02e-letting346652.jpeg",
+      "https://as-images.imgix.net/6e1b28b41af2e5b991c05d7b48619809-letting346652.jpeg",
+      "https://as-images.imgix.net/ac70cde60a66dbd0d6fff9df28d51419-letting346652.jpeg",
+      "https://as-images.imgix.net/e9d5210f42bc42b0b1bf310ade7fa354-letting346652.jpeg",
+      "https://as-images.imgix.net/057f9fd8cc26550d969b63374eb00902-letting346652.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/170388499ee6aed5bb36c2e4462e8fe4-gjs-dillon-particulars-st-dunstan-s-building-worcester-1.pdf",
+    "contacts": [
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-06-18 09:48:32"
+  },
+  {
     "id": 352967,
     "status": "Under Offer",
     "address": "275 Worcester Road",
@@ -647,67 +708,6 @@
       }
     ],
     "last_updated": "2026-06-17 14:15:51"
-  },
-  {
-    "id": 346652,
-    "status": "Under Offer",
-    "address": "St. Dunstan's Building",
-    "town": "Worcester",
-    "postcode": "WR1 3PA",
-    "lat": 52.193748474,
-    "lon": -2.224364995,
-    "types": [
-      "Office",
-      "Development/Investment"
-    ],
-    "raw_types": [
-      "Office",
-      "Development"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 19726,
-    "size_to_sqft": 19726,
-    "summary": "Office / Development / Development For Sale, Worcester",
-    "description": "The accommodation currently provides a mixture of large partitioned working areas with some individual offices. The specification of the property includes; > Air handling / air conditioning > Strip lighting / suspended ceilings with integral lighting > Ground floor kitchen area > 13 person passenger lift > WCs on all floors > An outside seating area > On site car parking",
-    "location": "Butts, just off the main A44 which forms part of the circular routes for Worcester City Centre. To the east of the property is is the main shopping/entertainment areas for Worcester whilst to the west is the picturesque River Severn. Worcester, in the West Midlands, is located 31 miles south east of Birmingham, 27 miles north of Gloucester and 23 miles north east of Hereford. Worcester has excellent connectivity being to the west of junctions 6 and 7 of the M5 motorway leading to the M42 and M6. Worcester also has direct mainline rail links to both Birmingham and London.",
-    "features": [
-      "For Sale - Offers in excess of £2,950,000",
-      "St Dunstan's Building is a well located property to the west of Worcester City Centre",
-      "Constructed to suit a variety of uses (subject to planning)",
-      "To be offered with vacant possession with the HoW College relocating within the city"
-    ],
-    "price": "£2,950,000",
-    "price_value": 2950000,
-    "business_rates_psf": 87690,
-    "rateable_value": 158000,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/098bdf0b907b5d8306a0fb1a953f5ac5-letting346652.jpeg",
-      "https://as-images.imgix.net/3e271cca0d8505975b6ac96592611f39-letting346652.jpeg",
-      "https://as-images.imgix.net/2c5cbed13289e2f3584cf42827a03015-letting346652.jpeg",
-      "https://as-images.imgix.net/828b06cf17ed29c0bcb9526178826448-letting346652.jpeg",
-      "https://as-images.imgix.net/49c222d873985cc5222358c5b741005d-letting346652.jpeg",
-      "https://as-images.imgix.net/59b5fc1d1ba72532eb9d1ca9b5c9f850-letting346652.jpeg",
-      "https://as-images.imgix.net/5f85668ecbe49422f93ea40acf7f7b29-letting346652.jpeg",
-      "https://as-images.imgix.net/6673663acb959c4eb2af1ad95c2ca02e-letting346652.jpeg",
-      "https://as-images.imgix.net/6e1b28b41af2e5b991c05d7b48619809-letting346652.jpeg",
-      "https://as-images.imgix.net/ac70cde60a66dbd0d6fff9df28d51419-letting346652.jpeg",
-      "https://as-images.imgix.net/e9d5210f42bc42b0b1bf310ade7fa354-letting346652.jpeg",
-      "https://as-images.imgix.net/057f9fd8cc26550d969b63374eb00902-letting346652.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/170388499ee6aed5bb36c2e4462e8fe4-gjs-dillon-particulars-st-dunstan-s-building-worcester-1.pdf",
-    "contacts": [
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-06-17 13:08:47"
   },
   {
     "id": 346689,
