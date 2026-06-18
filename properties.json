@@ -48,6 +48,14 @@
       "https://as-images.imgix.net/057f9fd8cc26550d969b63374eb00902-letting346652.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/170388499ee6aed5bb36c2e4462e8fe4-gjs-dillon-particulars-st-dunstan-s-building-worcester-1.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/97c78b548e9af2362df3f3c650ca64e6-cam04581g0-pr0044-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/b01c9bcebe83759e96f469c93f31672a-cam04581g0-pr0044-build01-floor01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/495072e33a2ea30eac8fc30dd7ecfa89-cam04581g0-pr0044-build01-floor02.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/unitctrinityvalepark"
+    ],
     "contacts": [
       {
         "name": "Andrew Lewis",
@@ -111,6 +119,15 @@
       "https://as-images.imgix.net/a3cb31ebd9c715cbec7b1352ec2589de-20251120-120611276-ios.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/77bfd847b2eca60e35636efc9b426f7e-gjs-dillon-particulars-275-worcester-road-malvern.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/ed7f8302b9a19856fee161d069dc1e95-floor-plan-whole-building-275-worcester-road-malvern.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/225336ebf536a18bfc64f68ff3afea00-floor-plan-2nd-floor-275-worcester-road-malvern.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/b1194d6d3383ecb248aacaea63188585-floor-plan-1st-floor-275-worcester-road-malvern.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/4f71878ca03257cf80e32b75062e29da-floor-plan-ground-floor-275-worcester-road-malvern.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/275worcesterroadmalvern"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -170,6 +187,12 @@
       "https://as-images.imgix.net/e96e77fe640ea8d4dbb3968c25de57d3-letting346754.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/ce99ce9fee88f0c5b48fb643b5099c63-one-kings-court-worcester-particulars.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/92b42dd6b8d95fb627b597e0d7f438d1-cam04581g0-pr0024-build01-floor01.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/3ac4be51f7d54db88e8f88da612d3012"
+    ],
     "contacts": [
       {
         "name": "Andrew Lewis",
@@ -229,6 +252,7 @@
       "https://as-images.imgix.net/9be6dcdfc7bb76cf1ef21fd416ff14a1-20260325-122324857-ios.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/3686ca78f0a3f33ebb8eaad0677a18a4-final-gjs-dillon-particulars-unit-3-forest-industrial-park-kidderminster-1.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -308,6 +332,12 @@
       "https://as-images.imgix.net/af0e1b3cbc597de29d76c7607ef8778f-20260122-120213.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9b758c44bbf1caa6c0a63edcfe6c2ee8-gjs-dillon-ground-floor-left-suite-digital-house-kidderminster-1.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/701421093833990fb9e4d281ebad468e-cam04581g0-pr0056-build01-floor00.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/digitalhouse"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -373,6 +403,12 @@
       "https://as-images.imgix.net/8a627df32be963503d340b232f33bcff-20251223-124135997-ios-1.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/8cbf77ae043c07d2fec310f637e385dd-gjs-dillon-particulars-unit-4-george-baylis-road-droitwich-spa-2.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/efeece29a2a141dddff8d5758d5988ec-cam04581g0-pr0055-build01-floor00.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/e47983e23c9845a5828ea1bb764f753c"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -442,6 +478,16 @@
       "https://as-images.imgix.net/fb1d71b6c18d3b476ae9f3122e15e074-letting346712.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/44b1cb784d201a2b45cb2f6dde61c241-gjs-dillon-particulars-64-friar-street-droitwich-wr9.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/e99eba03ea5a0805839d22d5ef547562-cam04581g0-pr0047-build01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/f7403e337f01a91c4b4d3d2a128fc99a-cam04581g0-pr0047-build01-floor-neg01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/0fe6fb4d425aa252064d431d55f37851-cam04581g0-pr0047-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/20ca3ede82ced4a1edafbb71bedb5b86-cam04581g0-pr0047-build01-floor01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/c54e093d2cf0f87cccc5c7e24e8e1d46-cam04581g0-pr0047-build01-floor02.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/64friarstreetdroitwich"
+    ],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -499,6 +545,12 @@
       "https://as-images.imgix.net/55487570e80eb4ac2013ac35d0803012-20251223-124836744-ios-1.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/dc97f353c0ed7f2c88cbcafaa4b1fc67-gjs-dillon-particulars-unit-2-george-baylis-road-droitwich-spa.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/5c59ff465940be34f87d9ed27feffe06-cam04581g0-pr0053-build01-floor00.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/unit2droitwichenterprise"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -569,6 +621,15 @@
       "https://as-images.imgix.net/70da0baaf8d40b90b5704a2cb8359b25-street-view-disposal-350693.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6dae8cb901a247253ec06bc23e608990-draft-b7-willow-end-park-malvern-investment-brochure1.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/11e55b3149b385b74845905b0896c448-cam04581g0-pr0050-build01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/2c361a067f3ec98ad7f739b2e594b738-cam04581g0-pr0050-build01-floor01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/dce4b2c66ac957ef51a1f76a611e09a4-cam04581g0-pr0037-build01-floor00.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/b503b39097664a9cb1927f7c44de521a",
+      "https://tour.giraffe360.com/unitsaandcwillowendpark"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -627,6 +688,12 @@
       "https://as-images.imgix.net/fba4239a9f7ef9ece29dd48c799cf8b2-letting346668.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/75400026e8ba9a77bd2f1b55f94ac37b-letting346668.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/52fbe8e23cfd7edd1b9ebd9fcc41d58c-cam04581g0-pr0037-build01-floor00.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/unitsaandcwillowendpark/"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -689,6 +756,14 @@
       "https://as-images.imgix.net/5ec5e815e0535326a76a26620c821fc5-20250110-112419.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/36e0bdf3e346311418f554e771fdade2-gjs-dillon-particulars-13a-st-richards-road-evesham-wr11-1.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/c14598fe6d2e99edd0bd4d1f051cd729-cam04581g0-pr0017-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/f2f91a307edef161c9e0b7d4c1094931-cam04581g0-pr0017-build01-floor01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/12a31422532ac669f840bde246e856fa-cam04581g0-pr0017-build01.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/13astrichardsroadevesham"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -751,6 +826,16 @@
       "https://as-images.imgix.net/53d7c894e37ad7122904af7a3104b15b-letting346689.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/2285907c05a67032274db17b2ade08dc-letting346689.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/16de819147631b8f30adc1f649ee1f43-cam04581g0-pr0028-build01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/fd922c8366bd7bdad08dab04e9916e25-cam04581g0-pr0029-build01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/940c82aabbd01bae478579c89d61ca63-cam04581g0-pr0030-build01.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/unitatrinityvalepark",
+      "https://tour.giraffe360.com/unitbtrinityvalepark",
+      "https://tour.giraffe360.com/unitctrinityvalepark"
+    ],
     "contacts": [
       {
         "name": "Andrew Lewis",
@@ -815,6 +900,12 @@
       "https://as-images.imgix.net/fd280d12e920b66c10bc6ababc20f3de-letting346725.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/8e0b4a691ec12df06dfbb1d024d4f804-letting346725.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/b1eac49106fccf3a450813de8a874707-cam04581g0-pr0046-build01-floor00.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/952d7f6736444750b8880899800c0879/"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -877,6 +968,9 @@
       "https://as-images.imgix.net/3f681d6824ce127fa9ecdb9030a264df-20250922-132827184-ios.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c4eeca36497f3354daf39f0dddbcea16-gjs-dillon-particulars-ground-floor-29-foregate-street-worcester-wr11-8.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/a9009a3012a365f87efb581c354ef46d-ground-floor-plan.png"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -933,6 +1027,7 @@
       "https://as-images.imgix.net/35b8b431319abe4a45dbe3c26eb217ca-letting346703.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f38cf5f1e6e0e2d538c39efe52420dc3-letting346703.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -988,6 +1083,7 @@
       "https://as-images.imgix.net/cec1db1a5efc4e0d736a5e5e5236107a-letting346660.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/05c72b2df54665a92200f3a5f2b2f406-letting346660.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -1045,6 +1141,7 @@
       "https://as-images.imgix.net/615c91cdd767ec925af70a10cabc4b8d-img-0774.JPEG"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/02df33dd2a68ba455f3e30a81a99f009-d21-kempsey-eco-park-brochure1.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -1106,6 +1203,7 @@
       "https://as-images.imgix.net/3808b5da4d3ec61de59cdc34b27c8f28-letting346673.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/774a57685af3dc8b9ce3b2dad0c0cc59-gjs-dillon-particulars-1-fish-street-worcester-3.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -1177,6 +1275,7 @@
       "https://as-images.imgix.net/a18f26fccb072c345ef13b53addbe8d7-20251007-134732224-ios.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/ab32a676c42530faadf8c50ec6521068-gjs-dillon-particulars-4-edgar-street-worcester.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -1235,6 +1334,9 @@
       "https://as-images.imgix.net/0bc966cab825dfe4ffcd5e6f2830f38a-20251028-144953458-ios-2.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/b8e76050a0f9f702eba50f9fd1dc0117-gjs-dillon-12-aston-court-bromsgrove-3.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/dc06e5eaf80cd787dc40174ac19aeeaf-unit-12-aston-court-bromsgrove-floor-plan-2.jpg"
+    ],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -1306,6 +1408,7 @@
       "https://as-images.imgix.net/917fd14d782aae9a0dc2d04841303a15-20260216-142910.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/36d85a905982ce3dbe62384b7d25e6f0-gjs-dillon-particulars-5-west-court-saxon-business-park.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -1367,6 +1470,7 @@
       "https://as-images.imgix.net/77b47b7c7bb2ed8425c8b22867c23fc4-letting346866.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/388fc76040458a15d7db8e67d7a94405-gjs-dillon-particulars-21-chestnut-court-redditch.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -1426,6 +1530,7 @@
       "https://as-images.imgix.net/905fabda8b7f20b23dd150d70044c9a9-20260603-094922390-ios.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/04c3ae1686f583dfdb60494787594c75-final-gjs-dillon-limited-unit-24a-wassage-way-hampton-lovett-industrial-estate-droitwich-wr9-0nx.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -1487,6 +1592,7 @@
       "https://as-images.imgix.net/1441ae60add6469bdf29817d356f82a6-letting346750.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/71694072ada872f7261874a356bdc8d8-gjs-dillon-particulars-2c-derwent-close-worcester.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -1544,6 +1650,7 @@
       "https://as-images.imgix.net/1e42a05a61c142c6983d88b9e9b2cc2a-img-0759.JPEG"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/bb1ca3508ef6c2d4a1d6af57dd1090db-d18-kempsey-eco-park-brochure-1.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -1611,6 +1718,7 @@
       "https://as-images.imgix.net/90e27364575128aa53e3d53c3c11b5cc-letting346648.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6a207975ae15e397dfa5dbdbf0df0063-letting346648.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -1665,6 +1773,7 @@
       "https://as-images.imgix.net/8b31910f6516ec0bed157f26a62a312b-20260326-143936732-ios.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/fdcbf5841d5d3b3b72344a7cf704d751-gjs-dillon-particulars-1-king-street-worcester-wr1-1.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -1731,6 +1840,7 @@
       "https://as-images.imgix.net/8fc56c260b41152c74b79d6b53ca96c7-20260323-152718114-ios.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9ddc48fdb820c858498c700f80eb4e1c-gjs-dillon-particulars-44-high-street-bromsgrove-b61-8hq-2.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -1781,6 +1891,7 @@
       "https://as-images.imgix.net/416c7a02f268f5c980f94441f50d1d09-map.png"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/0fd0b32b5b641e82cf5e3b947c8a6b20-gjs-dillon-particulars-unit-18-aston-fields-industrial-estate-bromsgrove.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -1839,6 +1950,9 @@
       "https://as-images.imgix.net/1e243bed4c34dcd02f01aaf61c95117e-20251204-115026-1.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/d11fba1b9cce1cc6157cfb633c764631-gjs-dillon-particulars-155-london-road-worcester-2.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/73060478bb1a3f9d151e7f22ec32bc69-floor-plan-155-london-road-worcester.jpg"
+    ],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -1899,6 +2013,7 @@
       "https://as-images.imgix.net/47775db1137b9b22fe07012de8ecceb4-letting346665.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/12d6a6b2e26c4eed3ee6953474a82855-letting346665.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Andrew Lewis",
@@ -1974,6 +2089,7 @@
       "https://as-images.imgix.net/8884f00feab4225929325620fbf418eb-20260305-151259865-ios-1.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c2948163194f356da3a920991aec3a53-the-io-centre-redditch-brochure-units-56-12-v2.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -2046,6 +2162,7 @@
       "https://as-images.imgix.net/a2b944af13ddcd1728ae796640d5c20f-20260505-101548.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/5067c2d36f008effa16c0a4fb65333e4-gjs-dillon-particulars-10a-and-11-arden-business-centre-alcester-b49-2.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -2111,6 +2228,7 @@
       "https://as-images.imgix.net/c61155363c2b348dcb503a5761d76799-9.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/e47acdbd9b377013ccd1db2541463c4f-44-804-sq-ft-building-45-1.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -2183,6 +2301,7 @@
       "https://as-images.imgix.net/768b2d04d04f071c009a1d6defc9a53d-20260217-090519.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/73fce566e13ab29780ac8217f9553d03-gjs-dillon-particulars-15-aston-court-bromsgrove.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -2252,6 +2371,7 @@
       "https://as-images.imgix.net/9d4ec787df72eb22fe48e4fe33e94afa-letting346719.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/b10162c3062dec3cb6372a2d0f49148b-gjs-dillon-particulars-15-victoria-square-droitwich-wr9.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -2302,6 +2422,7 @@
       "https://as-images.imgix.net/3d363aeab4426faafb6515b608a770f6-20210226-091550.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/3f89fe6750e53a724995e33509a960bb-gjs-dillon-particulars-bradley-stuart-house.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Andrew Lewis",
@@ -2370,6 +2491,7 @@
       "https://as-images.imgix.net/88025787d464d989fa0a409a19754d9a-20251210-140706.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c78aeac653f3142bc7790411822747f0-gjs-dillon-particulars-7-shaw-street-worcester-wr1.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -2429,6 +2551,7 @@
       "https://as-images.imgix.net/a41aa27d9a57fb81c1b9c690626f7c8d-letting346649.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c82a239b18d65ac230ecb26ccc577a97-letting346649.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -2499,6 +2622,10 @@
       "https://as-images.imgix.net/af7a7a4095486e62029d0e7a523166ee-letting346777.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6f3adf2f3f27b9f0b2182d1a0ef15d9f-gjs-dillon-particulars-the-radius-de-salis-court-droitwich-wr9.pdf",
+    "floor_plan_urls": [],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/theradiusdroitwich"
+    ],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -2560,6 +2687,7 @@
       "https://as-images.imgix.net/33789a86f61bea62427aba74fd4dbc5c-img-0697.JPEG"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/8b9ec6bf63769f176e83e4c639a6a8e5-gjs-dillon-particulars-lower-lightwood-farm-worcester-1.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -2631,6 +2759,7 @@
       "https://as-images.imgix.net/160376493646255613009638ca9a6690-letting346667.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/5b9321ab4ceed99944e0aace18c03255-letting346667.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -2691,6 +2820,7 @@
       "https://as-images.imgix.net/96c4ef40794930217761f5c99f3e51dd-letting346855.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/0aefd715135e8367eeea8cc2656c3d2e-gjs-dillon-f2-sapphire-court-particulars.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -2749,6 +2879,7 @@
       "https://as-images.imgix.net/480a7dc576c43895fd14cd0ddc0862b1-letting346672.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/3cf79ac31d5fb6a437d917ff74d0029c-gjs-dillon-particulars-20-the-shambles-worcester.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -2812,6 +2943,7 @@
       "https://as-images.imgix.net/c00a87520001bccaee8f261238813870-letting346670.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/eaf21ce0263a71a141e11806b8f6bafb-letting346670.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -2867,6 +2999,7 @@
       "https://as-images.imgix.net/c124968a79ff48a87249494fdce28820-letting346659.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/300f89dee99545165456f1a516d6de0c-letting346659.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -2921,6 +3054,7 @@
       "https://as-images.imgix.net/422c606f10a8c007e4ac8e2df0dcb168-letting346706.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/7dba641d5a67d0ff0bdf4ece9e917299-17173-hi-aurora-evesham-davies-road-tp-brochure-v10.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -2979,6 +3113,9 @@
       "https://as-images.imgix.net/7ff1c91c19bce0471fb2b84bf0eaab9d-97458d02-4de1-4387-86b6-962a2244d506.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f6e89bc6af21048e43fcc09045d5151e-particulars-birchwood-house-enigma-commercial-centre-malvern-wr14-1jj1-2.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/68ef2c86045d9729071f6a5af2bc4f69-1st-floor-birchwood-house-floor-plan.png"
+    ],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -3040,6 +3177,7 @@
       "https://as-images.imgix.net/4c5f816512627b82ae932fa03502c481-letting346804.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c324dce224fb4bfe2a6d5b55f3e82c3e-gjs-dillon-particulars-3-wassage-way-droitwich.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -3099,6 +3237,9 @@
       "https://as-images.imgix.net/0171633d22fd61cd51457529287e1583-img-0158.JPEG"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/12b012511da0040785d8bc42dad01a6a-gjs-dillon-particulars-edgar-house-martley.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/da214aea8310290e7939a4c1e72357e4-detailed-floor-plans-edgar-house.pdf"
+    ],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -3172,6 +3313,7 @@
       "https://as-images.imgix.net/2a60c1537b6aad5a0562a386337681c9-10.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/de51ac906d64112340d712b35ecfe498-gjs-dillon-particulars-169-newtown-road-malvern.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -3250,6 +3392,7 @@
       "https://as-images.imgix.net/b92192c6934058125f39ef7bec17e1d3-dji-0955.JPG"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f32498d0ff58e97c6cfd8a57032de533-units-1-2-saxon-business-park-bromsgrove-brochure.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -3329,6 +3472,7 @@
       "https://as-images.imgix.net/579be81eac065d87ad012892b8d6576c-20260305-145707609-ios-1.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/b359093f84d7454b08140d9a5a7cad56-the-io-centre-redditch-brochure-units-56-12-v2.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -3387,6 +3531,7 @@
       "https://as-images.imgix.net/243b8e040552f0825b9a2f2b7667beb8-letting346682.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f9e41351de443e9663c0b2120e96a748-piano-building-particulars.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -3442,6 +3587,7 @@
       "https://as-images.imgix.net/e8218aab4048cd31b525e998a710be9c-letting346653.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/749b5056acd607c952b42e2a2af3d11e-letting346653.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -3496,6 +3642,7 @@
       "https://as-images.imgix.net/045d3b4d07856399ea153ac62fe5c08e-top-down.JPG"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/1ad2e8db468cad64f949c3209c9ce4a8-gjs-dillon-particulars-unit-1-sentinel-house-malvern.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -3579,6 +3726,7 @@
       "https://as-images.imgix.net/bc03231046b886a627fb687802f785a2-dji-0959-1.JPG"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6e05f47f66755b844db04e4f1244ce0e-the-io-centre-redditch-brochure-units-56-12-v2.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -3637,6 +3785,7 @@
       "https://as-images.imgix.net/bb8354c873fae3b8471361738fde106b-7.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/15a2df3f2576826e247b2ee97a5a3423-gjs-dillon-particulars-building-314-hartlebury-trading-estate.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -3695,6 +3844,10 @@
       "https://as-images.imgix.net/e23f97371fee1b4c39eef319bfa05567-letting346680.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/25da4983149363e78b276871ec926dfa-gjs-dillon-particulars-nailers-yard-bromsgrove-1.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/930fbd54b5829743166ffd273830f733-ground-first-second-floor-nailers-yard-bromsgrove-1.pdf",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/525058fe64b17bc2f04f662fd4dff68b-third-floor-nailers-yard-bromsgrove-1.pdf"
+    ],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -3741,6 +3894,7 @@
       "https://as-images.imgix.net/48b2e09f55b9aed19b59b5b173afd431-letting346823.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/ab175056e01a9a2e539520313077bdbe-letting346823.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Andrew Lewis",
@@ -3795,6 +3949,7 @@
       "https://as-images.imgix.net/7feb970e834e5b1f55d61ffca45cdb2c-letting346824.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/cc3900e8390181e41ce6bafaedf7d0d4-letting346824.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Andrew Lewis",
@@ -3856,6 +4011,7 @@
       "https://as-images.imgix.net/fba7a823a01a3784fceb977e6c602b82-20250930-091358.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/7015bdde0f6b4ca3fc42173454657fc1-gjs-dillon-particulars-the-old-joseph-wood-building-26-the-butts-wocester-wr1-3pa-3.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
