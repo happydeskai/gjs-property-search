@@ -2,7 +2,7 @@
   {
     "id": 346706,
     "status": "Available",
-    "address": "Unit 9, Davies Road Trade Centre",
+    "address": "Davies Road Trade Centre",
     "town": "Evesham",
     "postcode": "WR11 1XG",
     "lat": 52.080982208,
@@ -16,19 +16,19 @@
     ],
     "to_let": true,
     "for_sale": false,
-    "size_from_sqft": 2888,
-    "size_to_sqft": 2888,
+    "size_from_sqft": 2791,
+    "size_to_sqft": 5679,
     "summary": "Industrial / Trade Counter To Let, Evesham",
-    "description": "Unit 9 is a well-presented industrial/trade counter unit of steel portal frame construction, featuring an insulated profile steel roof and a combination of block and insulated steel profile elevations. The unit benefits from a glazed pedestrian entrance, an electrically operated roller shutter door and a dedicated yard/loading area with ample car parking. Situated within a well-established trade counter estate, the location has attracted a strong mix of national and regional occupiers, including Screwfix, Buildbase, Tile Giant, Topps Tiles, Tool Station and Easy Bathrooms. Total Area2,888 sq ft 268.3 sq m Location The property is situated within Evesham, to the south east of Worcestershire. Evesham is a market town within Wychavon which benefits from a population of approximately 25,000, according to the 2011 census. It is located approximately 14 miles south east of Worcester, 14 miles north east of Cheltenham, 27 miles south of Birmingham and 90 miles north west of London. Evesham benefits from good road communications being on the A44; which provides access to Worcester, Oxford and Junction 6 of the M5 motorway (in approximately 25 minutes) and on the A46; which provides access to Redditch, Tewkesbury and Junction 9 of the M5 motorway (in approximately 20 minutes). Evesham also has a mainline station which provides a direct access to the Worcester stations, Oxford and London Paddington.",
+    "description": "Davies Road Trade Centre is a well-presented industrial/trade counter scheme of steel portal frame construction, featuring an insulated profile steel roof and a combination of block and insulated steel profile elevations. The units benefit from a glazed pedestrian entrance, an electrically operated roller shutter door and a dedicated yard/loading area with ample car parking. Situated within a well-established trade counter estate, the location has attracted a strong mix of national and regional occupiers, including Screwfix, Buildbase, Tile Giant, Topps Tiles, Tool Station and Easy Bathrooms.",
     "location": "The property is situated within Evesham, to the south east of Worcestershire. Evesham is a market town within Wychavon which benefits from a population of approximately 25,000, according to the 2011 census. It is located approximately 14 miles south east of Worcester, 14 miles north east of Cheltenham, 27 miles south of Birmingham and 90 miles north west of London. Evesham benefits from good road communications being on the A44; which provides access to Worcester, Oxford and Junction 6 of the M5 motorway (in approximately 25 minutes) and on the A46; which provides access to Redditch, Tewkesbury and Junction 9 of the M5 motorway (in approximately 20 minutes). Evesham also has a mainline station which provides a direct access to the Worcester stations, Oxford and London Paddington.",
     "features": [
-      "Warehouse access via 1 roller shutter door",
+      "Warehouse access via roller shutter door",
       "Recently refurbished",
       "Dedicated yard area"
     ],
     "rent_psf": 12.5,
-    "rent_pa": 36100,
-    "rent": "£36,100 per annum",
+    "rent_pa": 34888,
+    "rent": "£12.50 per sq ft",
     "business_rates_psf": 0,
     "rateable_value": 0,
     "epc_rating": "",
@@ -50,9 +50,17 @@
         "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
         "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-06-19 12:08:20"
+    "last_updated": "2026-06-19 12:52:34"
   },
   {
     "id": 350693,
