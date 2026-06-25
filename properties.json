@@ -1,5 +1,142 @@
 [
   {
+    "id": 353374,
+    "status": "Under Offer",
+    "address": "169-171 Newtown Road",
+    "town": "Malvern",
+    "postcode": "WR14 1PJ",
+    "lat": 52.126083,
+    "lon": -2.331358,
+    "types": [
+      "Industrial",
+      "Development/Investment"
+    ],
+    "raw_types": [
+      "Automotive",
+      "Development Site"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 9124,
+    "size_to_sqft": 9124,
+    "summary": "Freehold Car Sales Premises, Suitable for Development (STP)",
+    "description": "The current building offers a detached showroom and workshop sitting central within a regular plot.  The building is accessed via a showroom to the front and two roller shutter doors to the rear.\n\nThe existing building offers the following:\n\nCar Showroom\t2,572 ft2\t\t(239 m2)\nWorkshop\t6,552 ft2\t\t(609 m2)\nTotal \t9,124 ft2\t\t(848 m2)\n\nExternally there is a forecourt to the front which offers parking for 20-25 vehicles along with a further parking area to the rear for 35-40 vehicles.  The main frontage is onto Newtown Road, however, there is a rear access off Nursery Road.\n\nThe site has a total area of 0.64, as shown by the site plan.\n\nRe-Development\nThe sites extends to 0.64 acres and is situated within a residential area of Malvern, it is therefore well suited for re-development, subject to gaining the necessary planning consents.",
+    "location": "Malvern is a spa town in Worcestershire with a population of 30,462 as at the 2021 Census.  Within Malvern, the property fronts the B4503 Newtown Road, in close proximity to its junction with the A449 Worcester Road and circa 1 ½ miles west of Great Malvern town centre.\n\nThe immediate surrounding area is predominantly residential, with some local retail occupiers being located on Newtown Road.  Hills Ford are vacating due to expansion to a larger site in Worcester.",
+    "features": [
+      "Currently operating as Hills Ford motor dealership, who are relocating due to expansion into Worcester",
+      "Existing facility extends to 9,124 sq ft (848 sq m)",
+      "Regular shaped site extending to 0.64 acres",
+      "Situated in a predominantly residential area and therefore suitable for re-development, subject to planning",
+      "Has dual access off Newtown Road and Nursery Road."
+    ],
+    "price": "£750,000",
+    "price_value": 750000,
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/92579b6aeac8e7bc496aea13709404ea-23.jpeg",
+      "https://as-images.imgix.net/95e0e4c9661ae3a79a57e2825f4d9c32-19.jpeg",
+      "https://as-images.imgix.net/1e98ffd0f9565d6d6d707edbc2f0facb-14.jpeg",
+      "https://as-images.imgix.net/4fed5437cbf8c65c6a12b6c552b881b0-13.jpeg",
+      "https://as-images.imgix.net/387a6b9083ea90ea3f0f06207e444b9e-1.jpeg",
+      "https://as-images.imgix.net/c59c64bd6c0adf14878c2f4526f89b65-18.jpeg",
+      "https://as-images.imgix.net/87733d5af2b11902232201ca410d01bf-15.jpeg",
+      "https://as-images.imgix.net/2c37bb1557745091d573c84ca541d2d9-16.jpeg",
+      "https://as-images.imgix.net/0974715b61b0523d37a9953f987321e5-12.jpeg",
+      "https://as-images.imgix.net/c576f7b509f7e0c267f03854ee53d717-11.jpeg",
+      "https://as-images.imgix.net/e00dea741f5b38364ad49ced736844cb-3.jpeg",
+      "https://as-images.imgix.net/34a0e0dd68e4d5f614a04d8c3322ef8a-5.jpeg",
+      "https://as-images.imgix.net/3a8f6350a25ffe8cfd407f75849fb755-8.jpeg",
+      "https://as-images.imgix.net/364afad2ae848acee0dffb6ed5427834-7.jpeg",
+      "https://as-images.imgix.net/2a60c1537b6aad5a0562a386337681c9-10.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/1681895d6b6e7e5285a1ffc97b912db6-gjs-dillon-particulars-169-newtown-road-malvern.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-06-25 17:07:10"
+  },
+  {
+    "id": 360938,
+    "status": "Available",
+    "address": "Unit 1, Sentinel House",
+    "town": "Malvern",
+    "postcode": "WR14 1GH",
+    "lat": 52.12761,
+    "lon": -2.305339,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 29995,
+    "size_to_sqft": 29995,
+    "summary": "High Specification Warehouse with Secure Yard & Parking",
+    "description": "Unit 1 Sentinel House comprises a modern, detached warehouse that has been finished to a high standard.  The unit is of a steel portal frame construction, with there being a part brick-built frontage to encompass a reception area and office space.\n\n•\t8.5m to underside of haunch\n•\tSolid level concrete floor throughout\n•\tThree 4.5m x 6m up & over roller shutter doors\n•\tLoading / Unloading to the front, rear & side\n•\tThree phase power\n•\t52 allocated car parking spaces\n\nGround Floor Office 2,062 sq ft (191.60 sq m)\nFirst Floor Office 2,259 sq ft (209.88 sq m)\nWarehouse 21,786 sq ft (2,023.95 sq m)\nTotal Floor Area 26,107 sq ft (2,425.43 sq m)\n\nMezzanine Floor 3,888 sq ft (361.20 sq m)\nTotal Floor Area (inc Mezz.) 29,995 sq ft (2,786.63 sq m)",
+    "location": "Unit 1 Sentinel House is situated on Enigma Business Park, which is Malvern’s prime out of town business park being situated approximately two miles to the north of Great Malvern and being adjacent to the very popular Enigma Retail Park (where occupiers include Morrisons, Aldi & Marks & Spencer. \n\nMalvern benefits from having good transport communications with the A449 leading to Worcester city centre and the A440 connecting with Junction 7 of the M5 motorway which are both approximately five miles to the north-east.  Hereford city centre is 21 miles to the east with Gloucester being 26 miles south.",
+    "features": [
+      "26,107 sq ft (2,425.43 sq m) GIA Plus an additional 3,888 sq ft mezzanine area",
+      "Three roller shutter doors offering three different loading points – including a secure yard",
+      "8.5m to underside of haunch",
+      "52 car parking spaces",
+      "High quality airconditioned office space",
+      "Situated at the heart of Enigma Commercial Business Park, Malvern"
+    ],
+    "rent_psf": 7.83,
+    "rent_pa": 235000,
+    "rent": "£235,000 per annum",
+    "business_rates_psf": 79920,
+    "rateable_value": 144000,
+    "epc_rating": "C (68)",
+    "images": [
+      "https://as-images.imgix.net/8f1249d0a68c3e7b33e090a4bd36529b-aerial-front.JPG",
+      "https://as-images.imgix.net/94423f7d459504bf7af4ae698e1d9b44-warehouse.jpg",
+      "https://as-images.imgix.net/47e896b37718d9af791193cd75a34f19-office.jpg",
+      "https://as-images.imgix.net/045d3b4d07856399ea153ac62fe5c08e-top-down.JPG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/3dbacf3f8ba3d1f4f955f21b587eb33d-gjs-dillon-particulars-unit-1-sentinel-house-malvern-1.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-06-25 16:40:45"
+  },
+  {
     "id": 346667,
     "status": "Available",
     "address": "Unit 3,Aston Fields Industrial Estate",
@@ -3439,80 +3576,6 @@
     "last_updated": "2026-05-27 17:13:13"
   },
   {
-    "id": 353374,
-    "status": "Under Offer",
-    "address": "169-171 Newtown Road",
-    "town": "Malvern",
-    "postcode": "WR14 1PJ",
-    "lat": 52.126083,
-    "lon": -2.331358,
-    "types": [
-      "Industrial",
-      "Development/Investment"
-    ],
-    "raw_types": [
-      "Automotive",
-      "Development Site"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 9124,
-    "size_to_sqft": 9124,
-    "summary": "Freehold Car Sales Premises, Suitable for Development (STP)",
-    "description": "The current building offers a detached showroom and workshop sitting central within a regular plot.  The building is accessed via a showroom to the front and two roller shutter doors to the rear.\n\nThe existing building offers the following:\n\nCar Showroom\t2,572 ft2\t\t(239 m2)\nWorkshop\t6,552 ft2\t\t(609 m2)\nTotal \t9,124 ft2\t\t(848 m2)\n\nExternally there is a forecourt to the front which offers parking for 20-25 vehicles along with a further parking area to the rear for 35-40 vehicles.  The main frontage is onto Newtown Road, however, there is a rear access off Nursery Road.\n\nThe site has a total area of 0.64, as shown by the site plan.\n\nRe-Development\nThe sites extends to 0.64 acres and is situated within a residential area of Malvern, it is therefore well suited for re-development, subject to gaining the necessary planning consents.",
-    "location": "Malvern is a spa town in Worcestershire with a population of 30,462 as at the 2021 Census.  Within Malvern, the property fronts the B4503 Newtown Road, in close proximity to its junction with the A449 Worcester Road and circa 1 ½ miles west of Great Malvern town centre.\n\nThe immediate surrounding area is predominantly residential, with some local retail occupiers being located on Newtown Road.  Hills Ford are vacating due to expansion to a larger site in Worcester.",
-    "features": [
-      "Currently operating as Hills Ford motor dealership, who are relocating due to expansion into Worcester",
-      "Existing facility extends to 9,124 sq ft (848 sq m)",
-      "Regular shaped site extending to 0.64 acres",
-      "Situated in a predominantly residential area and therefore suitable for re-development, subject to planning",
-      "Has dual access off Newtown Road and Nursery Road."
-    ],
-    "price": "£750,000",
-    "price_value": 750000,
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/92579b6aeac8e7bc496aea13709404ea-23.jpeg",
-      "https://as-images.imgix.net/95e0e4c9661ae3a79a57e2825f4d9c32-19.jpeg",
-      "https://as-images.imgix.net/1e98ffd0f9565d6d6d707edbc2f0facb-14.jpeg",
-      "https://as-images.imgix.net/4fed5437cbf8c65c6a12b6c552b881b0-13.jpeg",
-      "https://as-images.imgix.net/387a6b9083ea90ea3f0f06207e444b9e-1.jpeg",
-      "https://as-images.imgix.net/c59c64bd6c0adf14878c2f4526f89b65-18.jpeg",
-      "https://as-images.imgix.net/87733d5af2b11902232201ca410d01bf-15.jpeg",
-      "https://as-images.imgix.net/2c37bb1557745091d573c84ca541d2d9-16.jpeg",
-      "https://as-images.imgix.net/0974715b61b0523d37a9953f987321e5-12.jpeg",
-      "https://as-images.imgix.net/c576f7b509f7e0c267f03854ee53d717-11.jpeg",
-      "https://as-images.imgix.net/e00dea741f5b38364ad49ced736844cb-3.jpeg",
-      "https://as-images.imgix.net/34a0e0dd68e4d5f614a04d8c3322ef8a-5.jpeg",
-      "https://as-images.imgix.net/3a8f6350a25ffe8cfd407f75849fb755-8.jpeg",
-      "https://as-images.imgix.net/364afad2ae848acee0dffb6ed5427834-7.jpeg",
-      "https://as-images.imgix.net/2a60c1537b6aad5a0562a386337681c9-10.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/de51ac906d64112340d712b35ecfe498-gjs-dillon-particulars-169-newtown-road-malvern.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-27 17:08:59"
-  },
-  {
     "id": 355238,
     "status": "Available",
     "address": "Units 1 & 2, Saxon Business Park",
@@ -3697,69 +3760,6 @@
       }
     ],
     "last_updated": "2026-05-27 16:51:31"
-  },
-  {
-    "id": 360938,
-    "status": "Available",
-    "address": "Unit 1, Sentinel House",
-    "town": "Malvern",
-    "postcode": "WR14 1GL",
-    "lat": 52.12761,
-    "lon": -2.305339,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 29995,
-    "size_to_sqft": 29995,
-    "summary": "High Specification Warehouse with Secure Yard & Parking",
-    "description": "Unit 1 Sentinel House comprises a modern, detached warehouse that has been finished to a high standard.  The unit is of a steel portal frame construction, with there being a part brick-built frontage to encompass a reception area and office space.\n\n•\t8.5m to underside of haunch\n•\tSolid level concrete floor throughout\n•\tThree 4.5m x 6m up & over roller shutter doors\n•\tLoading / Unloading to the front, rear & side\n•\tThree phase power\n•\t52 allocated car parking spaces\n\nGround Floor Office 2,062 sq ft (191.60 sq m)\nFirst Floor Office 2,259 sq ft (209.88 sq m)\nWarehouse 21,786 sq ft (2,023.95 sq m)\nTotal Floor Area 26,107 sq ft (2,425.43 sq m)\n\nMezzanine Floor 3,888 sq ft (361.20 sq m)\nTotal Floor Area (inc Mezz.) 29,995 sq ft (2,786.63 sq m)",
-    "location": "Unit 1 Sentinel House is situated on Enigma Business Park, which is Malvern’s prime out of town business park being situated approximately two miles to the north of Great Malvern and being adjacent to the very popular Enigma Retail Park (where occupiers include Morrisons, Aldi & Marks & Spencer. \n\nMalvern benefits from having good transport communications with the A449 leading to Worcester city centre and the A440 connecting with Junction 7 of the M5 motorway which are both approximately five miles to the north-east.  Hereford city centre is 21 miles to the east with Gloucester being 26 miles south.",
-    "features": [
-      "26,107 sq ft (2,425.43 sq m) GIA Plus an additional 3,888 sq ft mezzanine area",
-      "Three roller shutter doors offering three different loading points – including a secure yard",
-      "8.5m to underside of haunch",
-      "52 car parking spaces",
-      "High quality airconditioned office space",
-      "Situated at the heart of Enigma Commercial Business Park, Malvern"
-    ],
-    "rent_psf": 7.83,
-    "rent_pa": 235000,
-    "rent": "£235,000 per annum",
-    "business_rates_psf": 79920,
-    "rateable_value": 144000,
-    "epc_rating": "C (68)",
-    "images": [
-      "https://as-images.imgix.net/8f1249d0a68c3e7b33e090a4bd36529b-aerial-front.JPG",
-      "https://as-images.imgix.net/94423f7d459504bf7af4ae698e1d9b44-warehouse.jpg",
-      "https://as-images.imgix.net/47e896b37718d9af791193cd75a34f19-office.jpg",
-      "https://as-images.imgix.net/045d3b4d07856399ea153ac62fe5c08e-top-down.JPG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/1ad2e8db468cad64f949c3209c9ce4a8-gjs-dillon-particulars-unit-1-sentinel-house-malvern.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-27 16:50:14"
   },
   {
     "id": 355287,
