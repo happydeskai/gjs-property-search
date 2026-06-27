@@ -139,102 +139,424 @@
     .tour-loading-text{color:rgba(255,255,255,0.7);font-size:13px}
     @keyframes spin{to{transform:rotate(360deg)}}
     .tour-actions{display:flex;gap:8px;padding:8px 12px;background:#fff;border-top:1px solid #f0f2f5}
+
+    /* ============================================================
+       PROPERTY PAGE REDESIGN v2
+       All new classes; existing classes above are untouched.
+       ============================================================ */
+    body.prop-page-v2 { background: #fff; }
+
+    /* Yellow hero section */
+    .prop-hero {
+      background: #f4c20d;
+      position: relative;
+      overflow: hidden;
+      padding: 48px 0 0;
+    }
+    .prop-hero__inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 18px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+    /* Decorative building silhouette watermark */
+    .prop-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='500' opacity='0.07'%3E%3Crect x='40' y='200' width='200' height='300' fill='%23000'/%3E%3Crect x='280' y='100' width='300' height='400' fill='%23000'/%3E%3Crect x='620' y='160' width='180' height='340' fill='%23000'/%3E%3Crect x='100' y='250' width='100' height='250' fill='%23000'/%3E%3Crect x='310' y='130' width='240' height='370' fill='%23000'/%3E%3C/svg%3E");
+      background-size: cover;
+      background-position: right center;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .prop-hero__left, .prop-hero__right { position: relative; z-index: 1; }
+    .prop-hero__title {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -.02em;
+      color: #111;
+      margin: 0 0 8px;
+      line-height: 1.2;
+    }
+    .prop-hero__tenure {
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: #111;
+      margin-bottom: 10px;
+    }
+    .prop-hero__desc {
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+    .prop-hero__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 20px;
+      font-size: 14px;
+      color: #222;
+    }
+    .prop-hero__meta span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .prop-hero__carousel {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: #e5a500;
+      box-shadow: 0 20px 50px rgba(0,0,0,.18);
+    }
+    .prop-hero__carousel img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .prop-hero__carousel-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      background: rgba(255,255,255,.85);
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 18px;
+      color: #111;
+      box-shadow: 0 2px 8px rgba(0,0,0,.14);
+      transition: background .12s;
+    }
+    .prop-hero__carousel-nav:hover { background: #fff; }
+    .prop-hero__carousel-nav--prev { left: 10px; }
+    .prop-hero__carousel-nav--next { right: 10px; }
+    .prop-hero__carousel-empty {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(0,0,0,.3);
+      font-size: 14px;
+    }
+    /* Hero thumbs row */
+    .prop-hero__thumbs {
+      display: flex;
+      gap: 8px;
+      padding: 12px 0 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .prop-hero__thumbs::-webkit-scrollbar { display: none; }
+    .prop-hero__thumb {
+      flex: 0 0 72px;
+      aspect-ratio: 4/3;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: border-color .12s;
+      background: rgba(0,0,0,.1);
+    }
+    .prop-hero__thumb.active { border-color: #111; }
+    .prop-hero__thumb img { width: 100%; height: 100%; object-fit: cover; }
+    /* Space below hero carousel so it bleeds nicely */
+    .prop-hero__right-wrap {
+      padding-bottom: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Black action bar */
+    .prop-actions {
+      background: #111;
+      padding: 14px 18px;
+    }
+    .prop-actions__inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .prop-actions__left { display: flex; gap: 10px; flex-wrap: wrap; }
+    .btn-action-outline {
+      height: 42px;
+      padding: 0 18px;
+      border: 1.5px solid rgba(255,255,255,.5);
+      background: transparent;
+      color: #fff;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: border-color .12s, background .12s;
+    }
+    .btn-action-outline:hover { border-color: #fff; background: rgba(255,255,255,.08); }
+    .btn-action-enquire {
+      height: 42px;
+      padding: 0 22px;
+      background: #f4c20d;
+      color: #111;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      white-space: nowrap;
+      transition: background .12s;
+    }
+    .btn-action-enquire:hover { background: #e0b00c; }
+
+    /* Two-column content grid */
+    .prop-content-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 32px 18px 48px;
+    }
+    .prop-content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-bottom: 32px;
+    }
+    .prop-content-col h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 0 0 14px;
+    }
+    .prop-features-list {
+      padding-left: 20px;
+      margin: 0;
+    }
+    .prop-features-list li { margin: 8px 0; font-size: 15px; line-height: 1.5; }
+    .prop-desc-section { margin-bottom: 32px; }
+    .prop-desc-section h2 { font-size: 22px; font-weight: 700; margin: 0 0 12px; }
+    .prop-desc-section p { font-size: 15px; line-height: 1.7; color: #333; white-space: pre-wrap; }
+    .prop-details-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+    .prop-detail-card {
+      background: #f8f9fa;
+      border: 1px solid #eef0f3;
+      border-radius: 12px;
+      padding: 14px;
+    }
+    .prop-detail-card .label { font-size: 12px; color: #6b7280; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 4px; }
+    .prop-detail-card .value { font-weight: 600; font-size: 15px; }
+    .prop-agents-section { margin-top: 16px; }
+    .prop-agents-section h2 { font-size: 18px; font-weight: 700; margin: 0 0 14px; }
+    .prop-agent-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px;
+      border: 1px solid #eef0f3;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      background: #fff;
+    }
+    .prop-agent-avatar {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      background: #f1f3f6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+      border: 1px solid #e9edf2;
+      flex-shrink: 0;
+    }
+    .prop-agent-name { font-weight: 600; font-size: 15px; }
+    .prop-agent-contact { font-size: 14px; color: #6b7280; }
+    .prop-map-section { margin-top: 32px; }
+    .prop-map-section h2 { font-size: 18px; font-weight: 700; margin: 0 0 12px; }
+    #prop-map-v2 { height: 280px; border-radius: 14px; overflow: hidden; border: 1px solid #eef0f3; }
+    .prop-media-section { margin-bottom: 32px; }
+    .prop-media-section h2 { font-size: 18px; font-weight: 700; margin: 0 0 12px; }
+
+    @media (max-width: 760px) {
+      .prop-hero__inner { grid-template-columns: 1fr; gap: 20px; padding-top: 0; }
+      .prop-hero { padding: 28px 0 0; }
+      .prop-hero__title { font-size: 22px; }
+      .prop-content-grid { grid-template-columns: 1fr; gap: 24px; }
+      .prop-details-grid { grid-template-columns: 1fr; }
+      .prop-actions__inner { flex-direction: column; align-items: flex-start; }
+      .btn-action-outline, .btn-action-enquire { width: 100%; justify-content: center; }
+    }
   </style>
 </head>
 
-<body>
-  <div class="wrap">
-    <div class="topbar"><a class="back" href="index.html">Back to results</a></div>
-    <div id="loading" class="muted">Loading&#8230;</div>
-    <div id="content" style="display:none">
-      <h1 id="prop-title">Property</h1>
-      <div class="muted" id="prop-sub"></div>
-      <div class="chips" id="prop-chips"></div>
+<body class="prop-page-v2">
+  <!-- Back link -->
+  <div style="max-width:1200px;margin:0 auto;padding:16px 18px 0;">
+    <a class="back" href="index.html" id="backLink">Back to results</a>
+  </div>
 
-      <div class="layout">
-        <div>
-          <div class="hero-card">
-            <div id="media-header" style="display:none">
-              <div class="media-label">Property Media</div>
-              <div class="media-tabs" id="media-tabs"></div>
-            </div>
-            <div class="media-panel active" id="panel-photos">
-              <div class="hero" id="hero"></div>
-              <div class="gallery" id="thumbs"></div>
-            </div>
-            <div class="media-panel" id="panel-floorplans">
-              <div class="fp-viewer" id="fp-viewer"><img id="fp-main" src="" alt="Floor plan" /></div>
-              <div class="fp-thumbs" id="fp-thumbs" style="display:none"></div>
-              <div class="fp-actions">
-                <button class="fp-btn" id="fp-fullscreen" type="button">Fullscreen</button>
-                <a class="fp-btn" id="fp-download" href="#" target="_blank" rel="noopener" style="display:none">Download</a>
-              </div>
-            </div>
-            <div class="media-panel" id="panel-tours">
-              <div class="tours-selector" id="tours-selector" style="display:none"></div>
-              <div class="tour-iframe-wrap">
-                <iframe id="tour-iframe" src="" allowfullscreen allow="vr; xr-spatial-tracking; gyroscope; accelerometer" title="Virtual tour"></iframe>
-                <div class="tour-loading" id="tour-loading">
-                  <div class="tour-loading-spinner"></div>
-                  <div class="tour-loading-text">Loading virtual tour&#8230;</div>
-                </div>
-              </div>
-              <div class="tour-actions">
-                <a class="fp-btn" id="tour-open-btn" href="#" target="_blank" rel="noopener">Open fullscreen tour</a>
-              </div>
-            </div>
-          </div>
+  <div id="loading" style="max-width:1200px;margin:0 auto;padding:28px 18px;color:#6b7280;">Loading&#8230;</div>
 
-          <div class="section">
-            <div class="card"><div class="card__title">Key details</div><div class="card__body"><div class="facts" id="facts"></div></div></div>
+  <div id="content" style="display:none">
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="prop-hero" id="prop-hero">
+      <div class="prop-hero__inner">
+        <!-- Left: title, tenure, description, meta -->
+        <div class="prop-hero__left">
+          <h1 class="prop-hero__title" id="prop-title">Property</h1>
+          <div class="prop-hero__tenure" id="prop-tenure"></div>
+          <div class="prop-hero__desc" id="prop-desc-hero"></div>
+          <div class="prop-hero__meta" id="prop-meta-hero"></div>
+        </div>
+        <!-- Right: image carousel -->
+        <div class="prop-hero__right-wrap">
+          <div class="prop-hero__carousel" id="hero-carousel">
+            <span class="prop-hero__carousel-empty" id="hero-empty">No image available</span>
+            <button class="prop-hero__carousel-nav prop-hero__carousel-nav--prev" id="hero-prev" style="display:none" aria-label="Previous image">&#8249;</button>
+            <button class="prop-hero__carousel-nav prop-hero__carousel-nav--next" id="hero-next" style="display:none" aria-label="Next image">&#8250;</button>
           </div>
-          <div class="section" id="overviewCard" style="display:none">
-            <div class="card"><div class="card__title"><h2>Overview</h2></div><div class="card__body" id="overview"></div></div>
+          <div class="prop-hero__thumbs" id="hero-thumbs"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BLACK ACTION BAR ===== -->
+    <div class="prop-actions">
+      <div class="prop-actions__inner">
+        <div class="prop-actions__left">
+          <a class="btn-action-outline" id="actionBrochure" href="#" target="_blank" rel="noopener" style="display:none">Download Brochure</a>
+          <a class="btn-action-outline" id="actionTour" href="#" target="_blank" rel="noopener" style="display:none">360° Tour</a>
+          <!-- Floor plan download (shown when available) -->
+          <a class="btn-action-outline" id="actionFloorplan" href="#" target="_blank" rel="noopener" style="display:none">Floor Plan</a>
+        </div>
+        <button class="btn-action-enquire" id="enquireBtn" type="button">Enquire now</button>
+      </div>
+    </div>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <div class="prop-content-wrap">
+
+      <!-- Key details facts strip -->
+      <div class="prop-details-grid" id="facts-v2"></div>
+
+      <!-- Two-column: Key Features | Location -->
+      <div class="prop-content-grid" id="prop-two-col" style="display:none">
+        <div class="prop-content-col" id="col-features" style="display:none">
+          <h2>Key Features</h2>
+          <ul class="prop-features-list" id="features"></ul>
+        </div>
+        <div class="prop-content-col" id="col-location" style="display:none">
+          <h2>Location</h2>
+          <p id="location" style="font-size:15px;line-height:1.7;color:#333;margin:0;white-space:pre-wrap;"></p>
+        </div>
+      </div>
+
+      <!-- Description -->
+      <div class="prop-desc-section" id="descCard" style="display:none">
+        <h2>Description</h2>
+        <p id="desc"></p>
+      </div>
+
+      <!-- Overview -->
+      <div class="prop-desc-section" id="overviewCard" style="display:none">
+        <h2>Overview</h2>
+        <p id="overview"></p>
+      </div>
+
+      <!-- Transport -->
+      <div class="prop-desc-section" id="transportCard" style="display:none">
+        <h2>Transport &amp; Connections</h2>
+        <p id="transport"></p>
+      </div>
+
+      <!-- Floor plans / Tours media section -->
+      <div class="prop-media-section" id="mediaSectionWrap" style="display:none">
+        <div class="hero-card">
+          <div id="media-header" style="display:none">
+            <div class="media-label">Property Media</div>
+            <div class="media-tabs" id="media-tabs"></div>
           </div>
-          <div class="section" id="featuresCard" style="display:none">
-            <div class="card"><div class="card__title"><h2>Key features</h2></div><div class="card__body"><ul class="features" id="features"></ul></div></div>
+          <!-- Photos panel (hidden in v2 — images shown in hero carousel above) -->
+          <div class="media-panel" id="panel-photos" style="display:none">
+            <div class="hero" id="hero"></div>
+            <div class="gallery" id="thumbs"></div>
           </div>
-          <div class="section" id="locationCard" style="display:none">
-            <div class="card"><div class="card__title"><h2>Location</h2></div><div class="card__body" id="location"></div></div>
+          <div class="media-panel" id="panel-floorplans">
+            <div class="fp-viewer" id="fp-viewer"><img id="fp-main" src="" alt="Floor plan" /></div>
+            <div class="fp-thumbs" id="fp-thumbs" style="display:none"></div>
+            <div class="fp-actions">
+              <button class="fp-btn" id="fp-fullscreen" type="button">Fullscreen</button>
+              <a class="fp-btn" id="fp-download" href="#" target="_blank" rel="noopener" style="display:none">Download</a>
+            </div>
           </div>
-          <div class="section" id="transportCard" style="display:none">
-            <div class="card"><div class="card__title"><h2>Transport &amp; connections</h2></div><div class="card__body" id="transport"></div></div>
-          </div>
-          <div class="section" id="descCard" style="display:none">
-            <div class="card"><div class="card__title"><h2>Description</h2></div><div class="card__body" id="desc"></div></div>
+          <div class="media-panel active" id="panel-tours">
+            <div class="tours-selector" id="tours-selector" style="display:none"></div>
+            <div class="tour-iframe-wrap">
+              <iframe id="tour-iframe" src="" allowfullscreen allow="vr; xr-spatial-tracking; gyroscope; accelerometer" title="Virtual tour"></iframe>
+              <div class="tour-loading" id="tour-loading">
+                <div class="tour-loading-spinner"></div>
+                <div class="tour-loading-text">Loading virtual tour&#8230;</div>
+              </div>
+            </div>
+            <div class="tour-actions">
+              <a class="fp-btn" id="tour-open-btn" href="#" target="_blank" rel="noopener">Open fullscreen tour</a>
+            </div>
           </div>
         </div>
+      </div>
 
-        <aside class="sticky">
-          <div class="card">
-            <div class="card__title">Enquire about this property</div>
-            <div class="card__body">
-              <div class="actions">
-                <button class="btn btn-primary" id="enquireBtn" type="button">Enquire now</button>
-                <a class="btn btn-ghost" id="brochureBtn" target="_blank" rel="noopener" style="display:none">Download brochure</a>
-                <div class="btn-dropdown-wrap" id="sidebarTourWrap" style="display:none">
-                  <button class="btn-dropdown" id="sidebarTourBtn" type="button">
-                    <span>View virtual tour</span>
-                    <span class="btn-dropdown-chevron" id="sidebarTourChevron" style="position:absolute;right:16px">▾</span>
-                  </button>
-                  <div class="btn-dropdown-menu" id="sidebarTourMenu"></div>
-                </div>
-                <div class="btn-dropdown-wrap" id="sidebarFpWrap" style="display:none">
-                  <button class="btn-dropdown" id="sidebarFpBtn" type="button">
-                    <span>Download floor plans</span>
-                    <span class="btn-dropdown-chevron" id="sidebarFpChevron" style="position:absolute;right:16px">▾</span>
-                  </button>
-                  <div class="btn-dropdown-menu" id="sidebarFpMenu"></div>
-                </div>
-              </div>
-              <div id="map"></div>
-            </div>
-          </div>
-          <div class="card" id="teamBox" style="display:none">
-            <div class="card__title">Viewings &amp; further information</div>
-            <div id="agents"></div>
-          </div>
-        </aside>
+      <!-- Agent contacts -->
+      <div class="prop-agents-section" id="teamBox" style="display:none">
+        <h2>Viewings &amp; Further Information</h2>
+        <div id="agents"></div>
+      </div>
+
+      <!-- Location map -->
+      <div class="prop-map-section" id="mapSection" style="display:none">
+        <h2>Location Map</h2>
+        <div id="prop-map-v2"></div>
+      </div>
+
+      <!-- Hidden legacy elements that existing JS references -->
+      <div id="map" style="display:none"></div>
+      <div id="prop-chips" style="display:none"></div>
+      <div class="facts" id="facts" style="display:none"></div>
+      <a id="brochureBtn" style="display:none"></a>
+      <div id="sidebarTourWrap" style="display:none">
+        <button id="sidebarTourBtn" type="button"></button>
+        <div id="sidebarTourMenu"></div>
+        <span id="sidebarTourChevron"></span>
+      </div>
+      <div id="sidebarFpWrap" style="display:none">
+        <button id="sidebarFpBtn" type="button"></button>
+        <div id="sidebarFpMenu"></div>
+        <span id="sidebarFpChevron"></span>
       </div>
     </div>
   </div>
@@ -486,64 +808,143 @@ async function main(){
 
     $('#loading').style.display='none';
     $('#content').style.display='';
-    $('#prop-title').textContent=p.address||'Property';
-    $('#prop-sub').textContent=[p.town,p.postcode].filter(Boolean).join(' ');
 
-    const chipsEl=$('#prop-chips');
-    if(chipsEl){
-      chipsEl.innerHTML='';
-      const status=String(p.status||'Available').trim(),lc=status.toLowerCase();
-      let cls='status-other';
-      if(!lc||lc==='available')cls='status-available';
-      else if(lc.includes('under offer'))cls='status-under-offer';
-      else if(lc.includes('let agreed'))cls='status-let-agreed';
-      else if(lc==='sold stc'||lc.includes('subject to contract'))cls='status-sold-stc';
-      else if(lc==='sold')cls='status-sold';
-      const sb=document.createElement('span');sb.className='status-badge '+cls;sb.textContent=status;chipsEl.appendChild(sb);
-      const tp=[];if(p.to_let)tp.push('To Let');if(p.for_sale)tp.push('For Sale');
-      tp.forEach(l=>{const c=document.createElement('span');c.className='chip';c.textContent=l;chipsEl.appendChild(c);});
+    // ---- v2: Hero section ----
+    $('#prop-title').textContent=p.address||'Property';
+
+    // Tenure
+    const tenureLabels=[];if(p.to_let)tenureLabels.push('To Let');if(p.for_sale)tenureLabels.push('For Sale');
+    const tenureEl=$('#prop-tenure');if(tenureEl)tenureEl.textContent=tenureLabels.join(' / ');
+
+    // Short description in hero
+    const heroDescEl=$('#prop-desc-hero');
+    if(heroDescEl&&p.description){
+      heroDescEl.textContent=p.description.length>160?p.description.slice(0,160).trimEnd()+'…':p.description;
     }
 
-    const imgs=(p.images||[]).map(i=>(typeof i==='string'?i:i.url)).filter(Boolean);
-    const hero=$('#hero');hero.innerHTML='';
-    if(isHttpUrl(imgs[0]))hero.appendChild(createImg(imgs[0],p.address||'Property image'));
-    const thumbsEl=$('#thumbs');thumbsEl.innerHTML='';
-    imgs.forEach(u=>{if(!isHttpUrl(u))return;const btn=document.createElement('button');btn.type='button';btn.className='thumb';btn.dataset.src=u;btn.appendChild(createImg(u,p.address?'Thumbnail for '+p.address:'Thumbnail'));thumbsEl.appendChild(btn);});
-    thumbsEl.addEventListener('click',e=>{const t=e.target.closest('.thumb');if(t&&isHttpUrl(t.dataset.src)){hero.innerHTML='';hero.appendChild(createImg(t.dataset.src,p.address||'Property image'));scheduleHeightPings();}});
+    // Meta icons row in hero (type, size, price)
+    const heroMetaEl=$('#prop-meta-hero');
+    if(heroMetaEl){
+      const metas=[];
+      if(p.types&&p.types.length)metas.push(`<span>🏢 ${p.types.join(', ')}</span>`);
+      const sz=(()=>{const a=Number(p.size_from_sqft||0),b=Number(p.size_to_sqft||0);if(a&&b&&a!==b)return`${a.toLocaleString()}–${b.toLocaleString()} sq ft`;if(a)return`${a.toLocaleString()} sq ft`;if(b)return`${b.toLocaleString()} sq ft`;return'';})();
+      if(sz)metas.push(`<span>✕ ${sz}</span>`);
+      const pr=p.rent_text||p.rent||(p.price&&!p.rent_text?p.price:'')||'';
+      if(pr)metas.push(`<span>£ ${pr}</span>`);
+      heroMetaEl.innerHTML=metas.join('');
+    }
 
-    const facts=[];
-    if(p.size_from_sqft){const s=Number(p.size_from_sqft);facts.push(['Size',Number.isFinite(s)?s.toLocaleString()+' sq ft':String(p.size_from_sqft)]);}
-    if(p.epc)facts.push(['EPC',String(p.epc)]);
-    if(p.rent_text)facts.push(['Rent',String(p.rent_text)]);
-    if(p.rateable_value)facts.push(['Rateable value',String(p.rateable_value)]);
-    if(p.last_updated)facts.push(['Updated',String(p.last_updated)]);
-    if(p.types&&p.types.length)facts.push(['Type',p.types.join(', ')]);
+    // Hero carousel
+    const imgs=(p.images||[]).map(i=>(typeof i==='string'?i:i.url||i._)).filter(u=>isHttpUrl(u));
+    const carouselEl=$('#hero-carousel');
+    const emptyEl=$('#hero-empty');
+    const prevBtn=$('#hero-prev');
+    const nextBtn=$('#hero-next');
+    const thumbsWrapEl=$('#hero-thumbs');
+    let currentImg=0;
+
+    function setHeroImg(idx){
+      if(!imgs.length)return;
+      currentImg=Math.max(0,Math.min(idx,imgs.length-1));
+      const existing=carouselEl.querySelector('img');
+      if(existing)existing.remove();
+      const img=document.createElement('img');img.src=imgs[currentImg];img.alt=p.address||'Property';
+      carouselEl.insertBefore(img,prevBtn||carouselEl.firstChild);
+      thumbsWrapEl&&thumbsWrapEl.querySelectorAll('.prop-hero__thumb').forEach((t,i)=>t.classList.toggle('active',i===currentImg));
+      scheduleHeightPings();
+    }
+
+    if(imgs.length){
+      if(emptyEl)emptyEl.style.display='none';
+      if(imgs.length>1&&prevBtn&&nextBtn){
+        prevBtn.style.display='';nextBtn.style.display='';
+        prevBtn.addEventListener('click',()=>setHeroImg(currentImg-1));
+        nextBtn.addEventListener('click',()=>setHeroImg(currentImg+1));
+      }
+      setHeroImg(0);
+      // Thumbnails
+      if(thumbsWrapEl){
+        imgs.forEach((u,i)=>{
+          const btn=document.createElement('button');btn.type='button';btn.className='prop-hero__thumb'+(i===0?' active':'');
+          const img=document.createElement('img');img.src=u;img.alt='Thumbnail '+(i+1);btn.appendChild(img);
+          btn.addEventListener('click',()=>setHeroImg(i));
+          thumbsWrapEl.appendChild(btn);
+        });
+      }
+    }
+
+    // ---- v2: Action bar ----
+    const actionBrochure=$('#actionBrochure');
+    if(p.brochure&&actionBrochure){actionBrochure.href=p.brochure;actionBrochure.style.display='';}
+    const tourUrls2=Array.isArray(p.virtual_tour_urls)?p.virtual_tour_urls.filter(Boolean):(p.virtual_tour_url?[p.virtual_tour_url]:[]);
+    const actionTour=$('#actionTour');
+    if(tourUrls2.length&&actionTour){actionTour.href=tourUrls2[0];actionTour.style.display='';}
+    const floorPlans2=Array.isArray(p.floor_plan_urls)?p.floor_plan_urls.filter(Boolean):[];
+    const actionFloorplan=$('#actionFloorplan');
+    if(floorPlans2.length&&actionFloorplan){actionFloorplan.href=floorPlans2[0];actionFloorplan.style.display='';}
+
+    // ---- v2: Key details grid ----
+    const facts2=[];
+    if(p.size_from_sqft){const s=Number(p.size_from_sqft);facts2.push(['Size',Number.isFinite(s)?s.toLocaleString()+' sq ft':String(p.size_from_sqft)]);}
+    if(p.epc)facts2.push(['EPC',String(p.epc)]);
+    if(p.rent_text)facts2.push(['Rent',String(p.rent_text)]);
+    if(p.rateable_value)facts2.push(['Rateable value',String(p.rateable_value)]);
+    if(p.last_updated)facts2.push(['Updated',String(p.last_updated)]);
+    if(p.types&&p.types.length)facts2.push(['Type',p.types.join(', ')]);
+    const factsV2El=$('#facts-v2');
+    if(factsV2El){factsV2El.innerHTML='';facts2.forEach(([l,v])=>{const f=document.createElement('div');f.className='prop-detail-card';const la=document.createElement('div');la.className='label';la.textContent=l;const va=document.createElement('div');va.className='value';va.textContent=v;f.appendChild(la);f.appendChild(va);factsV2El.appendChild(f);});}
+
+    // Legacy facts (hidden but referenced by initMediaTabs)
     const factsEl=$('#facts');factsEl.innerHTML='';
-    facts.forEach(([l,v])=>{const f=document.createElement('div');f.className='fact';const la=document.createElement('div');la.className='label';la.textContent=l;const va=document.createElement('div');va.className='value';va.textContent=v;f.appendChild(la);f.appendChild(va);factsEl.appendChild(f);});
+    facts2.forEach(([l,v])=>{const f=document.createElement('div');f.className='fact';const la=document.createElement('div');la.className='label';la.textContent=l;const va=document.createElement('div');va.className='value';va.textContent=v;f.appendChild(la);f.appendChild(va);factsEl.appendChild(f);});
+
+    // ---- v2: Two-column content ----
+    let showTwoCol=false;
+    if(p.features&&Array.isArray(p.features)&&p.features.length){
+      const fe=$('#features');fe.innerHTML='';p.features.forEach(fv=>{const li=document.createElement('li');li.textContent=fv;fe.appendChild(li);});
+      const colF=$('#col-features');if(colF)colF.style.display='';showTwoCol=true;
+    }
+    if(p.location){$('#location').textContent=p.location;const colL=$('#col-location');if(colL)colL.style.display='';showTwoCol=true;}
+    const twoCol=$('#prop-two-col');if(twoCol)twoCol.style.display=showTwoCol?'':'none';
 
     if(p.description){$('#desc').textContent=p.description;$('#descCard').style.display='';}else{$('#descCard').style.display='none';}
     if(p.overview){$('#overview').textContent=p.overview;$('#overviewCard').style.display='';}else{$('#overviewCard').style.display='none';}
-    if(p.features&&Array.isArray(p.features)&&p.features.length){const fe=$('#features');fe.innerHTML='';p.features.forEach(fv=>{const li=document.createElement('li');li.textContent=fv;fe.appendChild(li);});$('#featuresCard').style.display='';}else{$('#featuresCard').style.display='none';}
-    if(p.location){$('#location').textContent=p.location;$('#locationCard').style.display='';}else{$('#locationCard')&&($('#locationCard').style.display='none');}
     if(p.marketing_text_transport){$('#transport').textContent=p.marketing_text_transport;$('#transportCard').style.display='';}else{$('#transportCard')&&($('#transportCard').style.display='none');}
 
+    // Legacy brochureBtn (hidden, kept for initMediaTabs compatibility)
     const brochureBtn=$('#brochureBtn');
-    if(p.brochure){brochureBtn.href=p.brochure;brochureBtn.style.display='';}else{brochureBtn.style.display='none';}
+    if(p.brochure){brochureBtn.href=p.brochure;brochureBtn.style.display='none';}
 
-    initMediaTabs(p);
+    // Media section (floor plans / tours) - show only if there's non-photo media
+    const hasFloorPlans2=floorPlans2.length>0,hasTours2=tourUrls2.length>0;
+    const mediaSect=$('#mediaSectionWrap');
+    if(mediaSect&&(hasFloorPlans2||hasTours2)){mediaSect.style.display='';initMediaTabs(p);}
 
+    // ---- v2: Agent cards ----
     if(p.agents&&p.agents.length){
       const ab=document.getElementById('teamBox'),ae=document.getElementById('agents');ae.innerHTML='';
-      p.agents.forEach(a=>{const d=document.createElement('div');d.className='agent';const av=document.createElement('div');av.className='avatar';av.textContent=initials(a.name||'');const info=document.createElement('div');const nm=document.createElement('div');nm.style.fontWeight='600';nm.textContent=a.name||'';const ct=document.createElement('div');ct.className='muted';ct.textContent=a.phone||a.email||'';info.appendChild(nm);info.appendChild(ct);d.appendChild(av);d.appendChild(info);ae.appendChild(d);});
+      p.agents.forEach(a=>{
+        const d=document.createElement('div');d.className='prop-agent-card';
+        const av=document.createElement('div');av.className='prop-agent-avatar';av.textContent=initials(a.name||'');
+        const info=document.createElement('div');
+        const nm=document.createElement('div');nm.className='prop-agent-name';nm.textContent=a.name||'';
+        const ct=document.createElement('div');ct.className='prop-agent-contact';ct.textContent=a.phone||a.email||'';
+        info.appendChild(nm);info.appendChild(ct);d.appendChild(av);d.appendChild(info);ae.appendChild(d);
+      });
       ab.style.display='';
     }else{document.getElementById('teamBox').style.display='none';}
 
+    // ---- v2: Map ----
     if(window.L&&p.lat!=null&&p.lon!=null){
       try{
-        const map=L.map('map').setView([p.lat,p.lon],14);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
-        L.marker([p.lat,p.lon]).addTo(map);
-        map.on&&map.on('tileload',scheduleHeightPings);map.on&&map.on('load',scheduleHeightPings);
+        const mapSect=$('#mapSection');if(mapSect)mapSect.style.display='';
+        const mapEl=document.getElementById('prop-map-v2');
+        if(mapEl){
+          const map=L.map(mapEl).setView([p.lat,p.lon],14);
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+          L.marker([p.lat,p.lon]).addTo(map);
+          map.on&&map.on('tileload',scheduleHeightPings);map.on&&map.on('load',scheduleHeightPings);
+        }
       }catch(e){console.warn('Map failed',e);}
     }
 
@@ -555,7 +956,7 @@ async function main(){
 }
 
 document.addEventListener('DOMContentLoaded',()=>{
-  const bl=document.querySelector('.back');
+  const bl=document.getElementById('backLink');
   if(bl){try{const ls=sessionStorage.getItem('gjs:lastSearch');if(ls)bl.href='index.html'+ls;}catch(e){}}
   main();
 });

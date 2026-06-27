@@ -747,11 +747,11 @@ async function applyFilters() {
     return sizeB - sizeA;
   });
 
-  if (!q) { const sorted = sortBySize(base); render(sorted); updateMap(sorted); return; }
+  if (!q) { const sorted = sortBySize(base); render(sorted); try{updateMap(sorted);}catch(e){} return; }
 
   const point = await geocodePlace(q);
   if (!point) {
-    render(sortBySize(base)); updateMap(sortBySize(base)); return;
+    const s=sortBySize(base); render(s); try{updateMap(s);}catch(e){} return;
   }
 
   let finalList = sortByDistance(base, point);
@@ -765,7 +765,7 @@ async function applyFilters() {
   if (finalList.length > 60) finalList = finalList.slice(0, 60);
 
   render(finalList, { nearLabel: point.label || q, radiusMiles });
-  updateMap(finalList, point);
+  try{updateMap(finalList, point);}catch(e){}
 }
 
 async function loadProperties() {
@@ -808,7 +808,7 @@ function prefillFromURL() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  initMap();
+  try { initMap(); } catch(e) { console.warn('Map unavailable:', e.message); }
   document.getElementById('searchBtn').onclick = applyFilters;
   document.getElementById('q').addEventListener('keydown', e => {
     if (e.key === 'Enter') { e.preventDefault(); applyFilters(); }
