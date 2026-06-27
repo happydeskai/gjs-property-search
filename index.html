@@ -160,14 +160,214 @@
       .searchBar{ grid-template-columns: 1fr; }
       .btn{ width: 100%; }
     }
+
+    /* ============================================================
+       REDESIGN v2 — scoped under .search-page-v2 / .property-card--v2
+       Original classes above are untouched for safety.
+       ============================================================ */
+
+    /* Search bar v2 */
+    .search-page-v2 .searchBar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 18px;
+      border: 1px solid #e7e7e7;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: none;
+      align-items: flex-end;
+      margin-bottom: 8px;
+    }
+    .search-page-v2 .searchBar .field {
+      flex: 1 1 120px;
+      min-width: 0;
+    }
+    .search-page-v2 .searchBar .field--location {
+      flex: 2 1 180px;
+    }
+    .search-page-v2 .search-row-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .btn-search-v2 {
+      height: 44px;
+      padding: 0 28px;
+      background: #f4c20d;
+      color: #111;
+      border-radius: 999px;
+      border: none;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .btn-search-v2:hover { background: #e0b00c; }
+
+    /* Result count v2 */
+    .search-page-v2 .v2-result-summary {
+      margin: 4px 0 14px;
+    }
+    .search-page-v2 .v2-result-summary .v2-showing {
+      font-size: 14px;
+      color: #666;
+    }
+    .search-page-v2 .v2-result-summary .v2-found {
+      font-size: 14px;
+      font-weight: 600;
+      color: #111;
+    }
+
+    /* Property card v2 */
+    .property-card--v2 {
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      border: 1px solid #e7e7e7;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,.04);
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .property-card--v2:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    }
+    .property-card--v2 .card-media {
+      position: relative;
+      aspect-ratio: 4 / 3;
+      background: #eee;
+      overflow: hidden;
+    }
+    .property-card--v2 .card-media img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .property-card--v2 .card-status-banner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #f4c20d;
+      color: #111;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      padding: 5px 10px;
+      border-bottom-right-radius: 8px;
+    }
+    .property-card--v2 .card-status-banner--available {
+      background: #22c55e;
+      color: #fff;
+    }
+    .property-card--v2 .card-body {
+      padding: 14px;
+      flex: 1;
+    }
+    .property-card--v2 .card-address-link {
+      display: block;
+      font-size: 15px;
+      font-weight: 700;
+      color: #1a56db;
+      text-decoration: underline;
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+    .property-card--v2 .card-address-link:hover { color: #1e40af; }
+    .property-card--v2 .card-tenure {
+      font-size: 13px;
+      font-weight: 700;
+      color: #111;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      margin-bottom: 6px;
+    }
+    .property-card--v2 .card-desc {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+    .property-card--v2 .card-meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      font-size: 13px;
+      color: #444;
+      margin-bottom: 2px;
+    }
+    .property-card--v2 .card-meta-row span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .property-card--v2 .card-meta-icon {
+      font-size: 14px;
+      line-height: 1;
+    }
+    .property-card--v2 .card-footer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 12px 14px;
+      border-top: 1px solid #e7e7e7;
+    }
+    .property-card--v2 .btn-card-primary {
+      height: 36px;
+      padding: 0 14px;
+      background: #111;
+      color: #fff;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .property-card--v2 .btn-card-primary:hover { background: #333; }
+    .property-card--v2 .btn-card-tour {
+      height: 36px;
+      padding: 0 14px;
+      background: #f4c20d;
+      color: #111;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .property-card--v2 .btn-card-tour:hover { background: #e0b00c; }
+
+    @media (max-width: 640px) {
+      .search-page-v2 .searchBar .field { flex: 1 1 100%; }
+      .search-page-v2 .searchBar .field--location { flex: 1 1 100%; }
+      .property-card--v2 .card-footer { flex-direction: column; }
+      .property-card--v2 .btn-card-primary,
+      .property-card--v2 .btn-card-tour { width: 100%; justify-content: center; }
+    }
   </style>
 </head>
 
 <body>
-<div class="wrap">
+<div class="wrap search-page-v2">
+  <!-- Map is above search bar in v2 design -->
   <div class="bleed"><div id="map"></div></div>
+
+  <!-- Search bar v2: flat, all fields in one row, Search button below -->
   <div class="searchBar" id="searchForm">
-    <div class="field"><label for="q">Location</label><input id="q" placeholder="Town, postcode" /></div>
+    <div class="field field--location"><label for="q">Location</label><input id="q" placeholder="Town, postcode" /></div>
     <div class="field"><label for="tenure">Tenure</label>
       <select id="tenure">
         <option value="any">Any</option>
@@ -223,10 +423,18 @@
         <option value="20000">20,000 sq ft</option>
       </select>
     </div>
-    <button class="btn" id="searchBtn" type="button">Search</button>
   </div>
-  <div class="meta" id="statusText">Loading properties…</div>
-  <div class="meta" id="resultsCount"></div>
+  <!-- Search button below the fields row -->
+  <div class="search-row-actions">
+    <button class="btn-search-v2" id="searchBtn" type="button">Search</button>
+  </div>
+
+  <!-- Result summary v2: two lines -->
+  <div class="v2-result-summary" id="v2ResultSummary" aria-live="polite">
+    <div class="v2-showing" id="statusText">Loading properties…</div>
+    <div class="v2-found" id="resultsCount"></div>
+  </div>
+
   <div class="cards" id="results"></div>
 </div>
 
@@ -399,10 +607,16 @@ function updateMap(list, focusPoint) {
   else map.fitBounds(points, { padding: [60, 60], maxZoom: MAX_SEARCH_ZOOM });
 }
 
+function getStatusBannerClass(p) {
+  const lc = String(p.status || 'Available').toLowerCase();
+  if (!lc || lc === 'available') return 'card-status-banner--available';
+  return ''; // yellow (default)
+}
+
 function render(list, context = {}) {
   const el = document.getElementById('results');
-  document.getElementById('resultsCount').textContent = `${list.length} Properties Found`;
 
+  // v2: two-line result count
   const parts = [`Showing ${list.length} of ${allProperties.length}`];
   if (context.nearLabel) {
     if (context.radiusMiles)
@@ -410,6 +624,7 @@ function render(list, context = {}) {
     parts.push(`of "${context.nearLabel}"`);
   }
   document.getElementById('statusText').textContent = parts.join(' ');
+  document.getElementById('resultsCount').textContent = `${list.length} Properties Found`;
 
   if (!list.length) {
     el.innerHTML = `<div class="empty">No properties match your filters.</div>`;
@@ -419,35 +634,42 @@ function render(list, context = {}) {
   el.innerHTML = list.map(p => {
     const img = getPrimaryImage(p);
     const address = p.address || 'Property';
-    const town = p.town || '';
-    const postcode = p.postcode || '';
     const size = sizeText(p);
     const tenureLabel = getTenureLabel(p);
-    const { html: statusBadge, isUnavailable } = getStatusBadge(p);
-    // FIX: distance now shown in miles (consistent with radius filter UI)
-    const distStr = (typeof p.__distance === 'number' && isFinite(p.__distance))
-      ? ` • ${(p.__distance / 1609.344).toFixed(1)} mi`
-      : '';
+    const statusText = String(p.status || 'Available').trim();
+    const statusBannerCls = getStatusBannerClass(p);
+    const types = getTypesArray(p);
+    const typeLabel = types.raw[0] || '';
+    const hasTour = Array.isArray(p.virtual_tour_urls) && p.virtual_tour_urls.length > 0;
+    const tourUrl = hasTour ? p.virtual_tour_urls[0] : '';
+    const brochureUrl = p.brochure || p.brochure_url || '';
+    const desc = p.description ? (p.description.length > 120 ? p.description.slice(0, 120).trimEnd() + '…' : p.description) : '';
+    const price = p.rent || (p.price && !p.rent ? p.price : '');
 
     return `
-      <article class="card${isUnavailable ? ' card--unavailable' : ''}">
-        <div class="card__media">${img ? `<img src="${img}" alt="${address}" loading="lazy">` : ''}</div>
-        <div class="card__body">
-          <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:2px;">
-            ${statusBadge}
-            ${tenureLabel ? `<span class="chip" style="margin-top:0;">${tenureLabel}</span>` : ''}
-          </div>
-          <div class="card__loc">${[town, postcode].filter(Boolean).join(' ')}${distStr}</div>
-          <a class="card__title" href="property.html?id=${encodeURIComponent(p.id ?? '')}" aria-label="View ${address}">${address}</a>
-          ${size ? `<div class="card__meta">${size}</div>` : ''}
-${p.rent ? `<div class="card__meta" style="font-weight:600;color:#111;">${p.rent}</div>` : ''}
-${p.price && !p.rent ? `<div class="card__meta" style="font-weight:600;color:#111;">${p.price}</div>` : ''}
+      <article class="property-card--v2">
+        <div class="card-media">
+          ${img ? `<img src="${img}" alt="${address}" loading="lazy">` : ''}
+          <span class="card-status-banner ${statusBannerCls}">${statusText}</span>
         </div>
-        <div class="card__footer">
-          <a class="btn-ghost" href="property.html?id=${encodeURIComponent(p.id ?? '')}">View property</a>
-          ${(p.brochure || p.brochure_url)
-            ? `<a class="btn-link" href="${p.brochure || p.brochure_url}" target="_blank" rel="noopener">View brochure</a>`
-            : `<span class="btn-link btn-link--disabled" aria-disabled="true">No brochure</span>`}
+        <div class="card-body">
+          <a class="card-address-link" href="property.html?id=${encodeURIComponent(p.id ?? '')}" aria-label="View ${address}">${address}</a>
+          ${tenureLabel ? `<div class="card-tenure">${tenureLabel}</div>` : ''}
+          ${desc ? `<div class="card-desc">${desc}</div>` : ''}
+          <div class="card-meta-row">
+            ${typeLabel ? `<span><span class="card-meta-icon">🏢</span>${typeLabel}</span>` : ''}
+            ${size ? `<span><span class="card-meta-icon">✕</span>${size}</span>` : ''}
+            ${price ? `<span><span class="card-meta-icon">£</span>${price}</span>` : ''}
+          </div>
+        </div>
+        <div class="card-footer">
+          <a class="btn-card-primary" href="property.html?id=${encodeURIComponent(p.id ?? '')}">View Property</a>
+          ${brochureUrl
+            ? `<a class="btn-card-primary" href="${brochureUrl}" target="_blank" rel="noopener">View Brochure</a>`
+            : ''}
+          ${hasTour
+            ? `<a class="btn-card-tour" href="${tourUrl}" target="_blank" rel="noopener">360° Tour</a>`
+            : ''}
         </div>
       </article>`;
   }).join('');
