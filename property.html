@@ -120,37 +120,21 @@
     .pc-btn--dark{ background:var(--btn-dark); color:#fff; }
     .pc-btn--tour{ background:var(--amber); color:var(--btn-dark); }
 
-    /* Media (floor plans / tours) — kept for completeness, hidden in new layout */
-    .media-section{ padding:0 0 40px; }
-    .media-section h2.section{ margin-bottom:16px; }
-    .hero-card{ background:#fff; border-radius:14px; overflow:hidden; border:1px solid var(--border); }
-    .media-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#6b7280;padding:12px 14px 0;background:#fff}
-    .media-tabs{display:flex;gap:6px;padding:8px 12px 10px;background:#fff;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid #f0f2f5}
-    .media-tabs::-webkit-scrollbar{display:none}
-    .media-tab{flex:0 0 auto;height:34px;padding:0 14px;border-radius:999px;border:1px solid #e6e8eb;background:#fff;font-size:13px;font-weight:600;color:#6b7280;cursor:pointer;white-space:nowrap;display:inline-flex;align-items:center}
-    .media-tab.active{background:#111;color:#fff;border-color:#111}
-    .media-panel{display:none}.media-panel.active{display:block}
-    .fp-viewer{position:relative;aspect-ratio:16/9;background:#f6f7fb;overflow:hidden;display:flex;align-items:center;justify-content:center}
-    .fp-viewer img{max-width:100%;max-height:100%;object-fit:contain}
-    .fp-pdf-msg{padding:40px;text-align:center;color:#666;font-size:14px;line-height:1.6}
-    .fp-thumbs{display:flex;gap:8px;padding:10px 12px;background:#fff;overflow-x:auto;border-bottom:1px solid #f0f2f5}
-    .fp-thumb{flex:0 0 90px;aspect-ratio:4/3;border-radius:8px;overflow:hidden;border:2px solid transparent;cursor:pointer;background:#f6f7fb;display:flex;align-items:center;justify-content:center}
-    .fp-thumb.active{border-color:#111}
-    .fp-thumb img{width:100%;height:100%;object-fit:cover}
-    .fp-thumb-label{font-size:11px;font-weight:600;color:#666;text-align:center;padding:4px}
-    .fp-actions{display:flex;gap:8px;padding:8px 12px;background:#fff;flex-wrap:wrap}
-    .fp-btn{height:34px;padding:0 14px;border-radius:8px;border:1px solid #e6e8eb;background:#fff;font-size:13px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:6px;text-decoration:none;color:#111}
-    .tours-selector{display:flex;gap:8px;padding:10px 12px;background:#f8f9fa;border-bottom:1px solid #f0f2f5;overflow-x:auto;scrollbar-width:none}
-    .tour-pill{flex:0 0 auto;height:32px;padding:0 14px;border-radius:999px;border:1px solid #ddd;background:#fff;font-size:13px;font-weight:600;color:#555;cursor:pointer;white-space:nowrap}
-    .tour-pill.active{background:#111;color:#fff;border-color:#111}
-    .tour-iframe-wrap{position:relative;aspect-ratio:16/9;background:#111;overflow:hidden}
-    .tour-iframe-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:none}
-    .tour-loading{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:linear-gradient(135deg,#1a1a2e,#0f3460);transition:opacity .4s;pointer-events:none}
-    .tour-loading.hidden{opacity:0}
-    .tour-loading-spinner{width:40px;height:40px;border-radius:50%;border:3px solid rgba(255,255,255,0.2);border-top-color:#fff;animation:spin .8s linear infinite}
-    .tour-loading-text{color:rgba(255,255,255,0.7);font-size:13px}
-    @keyframes spin{to{transform:rotate(360deg)}}
-    .tour-actions{display:flex;gap:8px;padding:8px 12px;background:#fff;border-top:1px solid #f0f2f5}
+    /* -------- LIGHTBOX -------- */
+    .lightbox{ position:fixed; inset:0; background:rgba(0,0,0,.88); z-index:100; display:flex; flex-direction:column; }
+    .lightbox[hidden]{ display:none; }
+    .lb-top{ display:flex; align-items:center; justify-content:space-between; padding:18px 28px; color:#fff; }
+    .lb-title{ font-size:16px; font-weight:600; }
+    .lb-actions{ display:flex; gap:10px; }
+    .lb-actions .btn{ padding:9px 16px; font-size:13px; }
+    .lb-close{ background:none; border:0; color:#fff; font-size:30px; line-height:1; cursor:pointer; padding:0; }
+    .lb-stage{ flex:1; display:flex; align-items:center; justify-content:center; gap:24px; padding:0 28px; min-height:0; }
+    .lb-stage img{ max-width:80%; max-height:100%; object-fit:contain; background:#fff; border-radius:6px; }
+    .lb-nav{ width:52px; height:52px; border-radius:50%; border:0; background:rgba(255,255,255,.15); color:#fff; font-size:24px; cursor:pointer; flex:none; }
+    .lb-thumbs{ display:flex; gap:10px; justify-content:center; padding:18px; overflow-x:auto; }
+    .lb-thumbs img{ width:90px; height:64px; object-fit:cover; border-radius:5px; opacity:.55; cursor:pointer; border:2px solid transparent; flex:none; }
+    .lb-thumbs img.is-active{ opacity:1; border-color:var(--amber); }
+    .btn .count{ font-weight:700; opacity:.55; }
 
     /* Responsive */
     @media(max-width:760px){
@@ -202,7 +186,9 @@
       <div class="wrap">
         <div class="action-left">
           <a class="btn btn--white" id="actionBrochure" href="#" target="_blank" rel="noopener" style="display:none">Download Brochure</a>
-          <a class="btn btn--white" id="actionTour" href="#" target="_blank" rel="noopener" style="display:none">360&deg; Tour</a>
+          <button class="btn btn--white" id="actionPhotos" type="button" style="display:none">Photos <span class="count" id="photosCount"></span></button>
+          <button class="btn btn--white" id="actionFloorPlans" type="button" style="display:none">Floor Plans <span class="count" id="floorPlansCount"></span></button>
+          <a class="btn btn--white" id="actionTour" href="#" target="_blank" rel="noopener" style="display:none">360&deg; Tour <span class="count" id="tourCount"></span></a>
         </div>
         <button class="btn btn--amber" id="enquireBtn" type="button">Enquire now</button>
       </div>
@@ -228,37 +214,6 @@
           <div id="transportCard" style="display:none">
             <h2 class="section">Transport &amp; Connections</h2>
             <p class="body-copy" id="transport"></p>
-          </div>
-          <!-- Floor plans / tours media (shown if available) -->
-          <div class="media-section" id="mediaSectionWrap" style="display:none">
-            <h2 class="section" id="mediaHeading" style="display:none">Property Media</h2>
-            <div class="hero-card">
-              <div id="media-header" style="display:none">
-                <div class="media-label">Property Media</div>
-                <div class="media-tabs" id="media-tabs"></div>
-              </div>
-              <div class="media-panel" id="panel-floorplans">
-                <div class="fp-viewer" id="fp-viewer"><img id="fp-main" src="" alt="Floor plan" /></div>
-                <div class="fp-thumbs" id="fp-thumbs" style="display:none"></div>
-                <div class="fp-actions">
-                  <button class="fp-btn" id="fp-fullscreen" type="button">Fullscreen</button>
-                  <a class="fp-btn" id="fp-download" href="#" target="_blank" rel="noopener" style="display:none">Download</a>
-                </div>
-              </div>
-              <div class="media-panel active" id="panel-tours">
-                <div class="tours-selector" id="tours-selector" style="display:none"></div>
-                <div class="tour-iframe-wrap">
-                  <iframe id="tour-iframe" src="" allowfullscreen allow="vr; xr-spatial-tracking; gyroscope; accelerometer" title="Virtual tour"></iframe>
-                  <div class="tour-loading" id="tour-loading">
-                    <div class="tour-loading-spinner"></div>
-                    <div class="tour-loading-text">Loading virtual tour&#8230;</div>
-                  </div>
-                </div>
-                <div class="tour-actions">
-                  <a class="fp-btn" id="tour-open-btn" href="#" target="_blank" rel="noopener">Open fullscreen tour</a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <!-- Right: Location + map -->
@@ -356,68 +311,62 @@ function watchImages(){Array.from(document.images||[]).forEach(img=>{if(img.comp
 let didScrollTop=false;
 function scrollTopOnce(){if(didScrollTop)return;didScrollTop=true;window.scrollTo(0,0);try{window.parent?.postMessage({type:'scroll-top'},'*');}catch(e){}}
 
-function tourLabel(url, index, total){
-  if(total===1) return 'Virtual Tour';
-  try{
-    const path=new URL(url).pathname.replace(/\//g,'');
-    const unitMatch=path.match(/unit([a-z])/i);
-    if(unitMatch) return 'Unit '+unitMatch[1].toUpperCase();
-    const floorMatch=path.match(/(ground|first|second|third|lower|upper)/i);
-    if(floorMatch) return floorMatch[1].charAt(0).toUpperCase()+floorMatch[1].slice(1)+' Floor';
-  }catch(e){}
-  return 'Tour '+(index+1);
-}
+/* -------- Lightbox -------- */
+(function(){
+  const lb=document.getElementById('lightbox');
+  const lbImg=document.getElementById('lb-img');
+  const lbTitle=document.getElementById('lb-title');
+  const lbThumbs=document.getElementById('lb-thumbs');
+  const lbDownload=document.getElementById('lb-download');
+  const lbPrev=document.getElementById('lb-prev');
+  const lbNext=document.getElementById('lb-next');
+  const lbClose=document.getElementById('lb-close');
+  let lbUrls=[], lbIdx=0;
 
-function loadTour(url){
-  const iframe=document.getElementById('tour-iframe');
-  const loading=document.getElementById('tour-loading');
-  const openBtn=document.getElementById('tour-open-btn');
-  if(openBtn) openBtn.href=url;
-  if(loading) loading.classList.remove('hidden');
-  if(iframe){iframe.src='';setTimeout(()=>{iframe.src=url;iframe.onload=()=>{if(loading)loading.classList.add('hidden');scheduleHeightPings();};},50);}
-  document.querySelectorAll('.tour-pill').forEach(p=>p.classList.toggle('active',p.dataset.url===url));
-}
-
-function switchTab(id){
-  document.querySelectorAll('.media-tab[data-tab]').forEach(t=>t.classList.toggle('active',t.dataset.tab===id));
-  document.querySelectorAll('.media-panel').forEach(p=>p.classList.toggle('active',p.id==='panel-'+id));
-  scheduleHeightPings();
-}
-
-function initMediaTabs(p){
-  const tourUrls=Array.isArray(p.virtual_tour_urls)?p.virtual_tour_urls.filter(Boolean):(p.virtual_tour_url?[p.virtual_tour_url]:[]);
-  const floorPlans=Array.isArray(p.floor_plan_urls)?p.floor_plan_urls.filter(Boolean):[];
-  const hasFloorPlans=floorPlans.length>0, hasTours=tourUrls.length>0;
-  if(!hasFloorPlans&&!hasTours){document.getElementById('media-header').style.display='none';return;}
-
-  document.getElementById('media-header').style.display='';
-  const tabsEl=document.getElementById('media-tabs'); tabsEl.innerHTML='';
-  if(hasFloorPlans){const btn=document.createElement('button');btn.type='button';btn.className='media-tab active';btn.textContent='Floor Plans ('+floorPlans.length+')';btn.dataset.tab='floorplans';btn.addEventListener('click',()=>switchTab('floorplans'));tabsEl.appendChild(btn);}
-  if(hasTours){const btn=document.createElement('button');btn.type='button';btn.className='media-tab'+(hasFloorPlans?'':' active');btn.textContent='Virtual Tours ('+tourUrls.length+')';btn.dataset.tab='tours';btn.addEventListener('click',()=>switchTab('tours'));tabsEl.appendChild(btn);}
-
-  if(hasFloorPlans){
-    const isPdf=u=>typeof u==='string'&&u.toLowerCase().endsWith('.pdf');
-    const fpViewer=document.getElementById('fp-viewer'),fpMain=document.getElementById('fp-main'),fpThumbs=document.getElementById('fp-thumbs'),fpDownload=document.getElementById('fp-download');
-    const firstUrl=floorPlans[0];
-    if(isPdf(firstUrl)){fpMain.style.display='none';const msg=document.createElement('div');msg.className='fp-pdf-msg';msg.innerHTML='&#128196; PDF floor plan<br><span style="font-size:12px;color:#999">Use the download button below to view</span>';fpViewer.appendChild(msg);}
-    else{fpMain.src=firstUrl;fpMain.style.display='';}
-    const firstPdf=floorPlans.find(isPdf);
-    if(fpDownload){fpDownload.href=firstPdf||firstUrl;fpDownload.style.display='';}
-    if(floorPlans.length>1){fpThumbs.style.display='flex';floorPlans.forEach((url,i)=>{const btn=document.createElement('button');btn.type='button';btn.className='fp-thumb'+(i===0?' active':'');if(!isPdf(url)){const img=document.createElement('img');img.src=url;img.alt='Floor plan '+(i+1);btn.appendChild(img);}else{const lbl=document.createElement('div');lbl.className='fp-thumb-label';lbl.textContent='Plan '+(i+1);btn.appendChild(lbl);}btn.addEventListener('click',()=>{document.querySelectorAll('.fp-thumb').forEach(t=>t.classList.remove('active'));btn.classList.add('active');const ex=fpViewer.querySelector('.fp-pdf-msg');if(!isPdf(url)){if(ex)ex.remove();fpMain.src=url;fpMain.style.display='';}else{fpMain.style.display='none';if(!ex){const m=document.createElement('div');m.className='fp-pdf-msg';m.innerHTML='&#128196; PDF floor plan<br><span style="font-size:12px;color:#999">Use the download button below to view</span>';fpViewer.appendChild(m);}}if(fpDownload){fpDownload.href=url;fpDownload.style.display='';}scheduleHeightPings();});fpThumbs.appendChild(btn);});}
-    const fsBtn=document.getElementById('fp-fullscreen');
-    if(fsBtn)fsBtn.addEventListener('click',()=>{if(fpViewer.requestFullscreen)fpViewer.requestFullscreen();else if(fpViewer.webkitRequestFullscreen)fpViewer.webkitRequestFullscreen();});
+  function lbShow(urls, idx, title, showDownload){
+    lbUrls=urls; lbIdx=idx;
+    lbTitle.textContent=title||'';
+    lbDownload.style.display=showDownload?'':'none';
+    lbThumbs.innerHTML='';
+    urls.forEach((u,i)=>{
+      const img=document.createElement('img');
+      img.src=u; img.alt='';
+      if(i===idx)img.classList.add('is-active');
+      img.addEventListener('click',()=>lbGo(i));
+      lbThumbs.appendChild(img);
+    });
+    lbPrev.style.display=urls.length>1?'':'none';
+    lbNext.style.display=urls.length>1?'':'none';
+    lbSetImg(idx);
+    lb.removeAttribute('hidden');
+    document.body.style.overflow='hidden';
   }
 
-  if(hasTours){
-    const selector=document.getElementById('tours-selector');
-    if(tourUrls.length>1){selector.style.display='flex';tourUrls.forEach((url,i)=>{const label=tourLabel(url,i,tourUrls.length);const pill=document.createElement('button');pill.type='button';pill.className='tour-pill'+(i===0?' active':'');pill.textContent=label;pill.dataset.url=url;pill.addEventListener('click',()=>loadTour(url));selector.appendChild(pill);});}else{selector.style.display='none';}
-    const toursTab=tabsEl.querySelector('[data-tab="tours"]');
-    if(toursTab){let loaded=false;toursTab.addEventListener('click',()=>{if(!loaded){loaded=true;loadTour(tourUrls[0]);}});}
-    if(!hasFloorPlans)loadTour(tourUrls[0]);
-    const openBtn=document.getElementById('tour-open-btn');if(openBtn)openBtn.href=tourUrls[0];
+  function lbSetImg(idx){
+    lbIdx=idx;
+    lbImg.src=lbUrls[idx]||'';
+    if(lbDownload.style.display!=='none')lbDownload.href=lbUrls[idx]||'#';
+    lbThumbs.querySelectorAll('img').forEach((el,i)=>el.classList.toggle('is-active',i===idx));
   }
-  if(!hasFloorPlans&&hasTours){switchTab('tours');}else if(hasFloorPlans){switchTab('floorplans');}
-}
+
+  function lbGo(idx){lbSetImg(Math.max(0,Math.min(idx,lbUrls.length-1)));}
+
+  function lbHide(){lb.setAttribute('hidden','');document.body.style.overflow='';}
+
+  lbClose&&lbClose.addEventListener('click',lbHide);
+  lbPrev&&lbPrev.addEventListener('click',()=>lbGo((lbIdx-1+lbUrls.length)%lbUrls.length));
+  lbNext&&lbNext.addEventListener('click',()=>lbGo((lbIdx+1)%lbUrls.length));
+  lb&&lb.addEventListener('click',e=>{if(e.target===lb)lbHide();});
+  document.addEventListener('keydown',e=>{
+    if(lb&&!lb.hasAttribute('hidden')){
+      if(e.key==='Escape')lbHide();
+      if(e.key==='ArrowLeft')lbGo((lbIdx-1+lbUrls.length)%lbUrls.length);
+      if(e.key==='ArrowRight')lbGo((lbIdx+1)%lbUrls.length);
+    }
+  });
+
+  window.__lightbox={show:lbShow};
+})();
 
 /* Haversine distance in km */
 function haversine(lat1,lon1,lat2,lon2){
@@ -540,9 +489,29 @@ async function main(){
     /* --- Action bar --- */
     const actionBrochure=$('#actionBrochure');
     if(p.brochure&&actionBrochure){actionBrochure.href=p.brochure;actionBrochure.style.display='';}
+
     const tourUrls2=Array.isArray(p.virtual_tour_urls)?p.virtual_tour_urls.filter(Boolean):(p.virtual_tour_url?[p.virtual_tour_url]:[]);
     const actionTour=$('#actionTour');
-    if(tourUrls2.length&&actionTour){actionTour.href=tourUrls2[0];actionTour.style.display='';}
+    if(tourUrls2.length&&actionTour){
+      actionTour.href=tourUrls2[0];actionTour.style.display='';
+      const tc=$('#tourCount');if(tc)tc.textContent='('+tourUrls2.length+')';
+    }
+
+    const photoUrls=imgs; // already built from p.images above
+    const actionPhotos=$('#actionPhotos');
+    if(photoUrls.length&&actionPhotos){
+      actionPhotos.style.display='';
+      const pc=$('#photosCount');if(pc)pc.textContent='('+photoUrls.length+')';
+      actionPhotos.addEventListener('click',()=>window.__lightbox?.show(photoUrls,0,'Photos',false));
+    }
+
+    const floorPlanUrls=Array.isArray(p.floor_plan_urls)?p.floor_plan_urls.filter(Boolean):[];
+    const actionFloorPlans=$('#actionFloorPlans');
+    if(floorPlanUrls.length&&actionFloorPlans){
+      actionFloorPlans.style.display='';
+      const fpc=$('#floorPlansCount');if(fpc)fpc.textContent='('+floorPlanUrls.length+')';
+      actionFloorPlans.addEventListener('click',()=>window.__lightbox?.show(floorPlanUrls,0,'Floor Plans',true));
+    }
 
     /* --- Left column: Key Features, Description --- */
     if(p.features&&Array.isArray(p.features)&&p.features.length){
@@ -552,12 +521,6 @@ async function main(){
     if(p.description){$('#desc').textContent=p.description;$('#descCard').style.display='';}
     if(p.overview){$('#overview').textContent=p.overview;$('#overviewCard').style.display='';}
     if(p.marketing_text_transport){$('#transport').textContent=p.marketing_text_transport;$('#transportCard').style.display='';}
-
-    /* Floor plans / tours */
-    const floorPlans2=Array.isArray(p.floor_plan_urls)?p.floor_plan_urls.filter(Boolean):[];
-    const hasFloorPlans2=floorPlans2.length>0,hasTours2=tourUrls2.length>0;
-    const mediaSect=$('#mediaSectionWrap');
-    if(mediaSect&&(hasFloorPlans2||hasTours2)){mediaSect.style.display='';initMediaTabs(p);}
 
     /* --- Right column: Location + map --- */
     if(p.location){$('#location').textContent=p.location;$('#col-location').style.display='';}
@@ -615,6 +578,23 @@ document.addEventListener('DOMContentLoaded',()=>{
   main();
 });
 </script>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox" id="lightbox" hidden>
+  <div class="lb-top">
+    <span class="lb-title" id="lb-title"></span>
+    <div class="lb-actions">
+      <a class="btn btn--white" id="lb-download" href="#" download target="_blank" rel="noopener" style="display:none">Download</a>
+    </div>
+    <button class="lb-close" id="lb-close" aria-label="Close">&times;</button>
+  </div>
+  <div class="lb-stage">
+    <button class="lb-nav" id="lb-prev" aria-label="Previous">&#8249;</button>
+    <img id="lb-img" src="" alt="" />
+    <button class="lb-nav" id="lb-next" aria-label="Next">&#8250;</button>
+  </div>
+  <div class="lb-thumbs" id="lb-thumbs"></div>
+</div>
 
 <!-- ===== ENQUIRY MODAL (unchanged) ===== -->
 <style>
