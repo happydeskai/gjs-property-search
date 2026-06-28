@@ -360,21 +360,17 @@
       gap: 6px;
       line-height: 1.4;
     }
-    /* Meta icon: yellow pill/dot rendered via CSS — never emoji */
+    /* Meta icons — inline SVG, sized to match mockup */
     .property-card--v2 .card-meta-icon {
-      display: inline-block;
-      width: 14px;
-      height: 14px;
-      background: #f4c20d;
-      border-radius: 3px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 18px;
+      height: 18px;
       flex-shrink: 0;
-      font-size: 9px;
-      font-weight: 900;
-      font-style: normal;
-      color: #111;
-      line-height: 14px;
-      text-align: center;
-      letter-spacing: 0;
+    }
+    .property-card--v2 .card-meta-icon svg {
+      display: block;
     }
 
     /* Footer — buttons flush to bottom */
@@ -730,9 +726,9 @@ function render(list, context = {}) {
           ${tenureLabel ? `<div class="card-tenure">${tenureLabel}</div>` : ''}
           ${desc ? `<div class="card-desc">${desc}</div>` : ''}
           <div class="card-meta-row">
-            ${typeLabel ? `<span><span class="card-meta-icon" aria-hidden="true">T</span>${typeLabel}</span>` : ''}
-            ${size ? `<span><span class="card-meta-icon" aria-hidden="true">m²</span>${size}</span>` : ''}
-            ${price ? `<span><span class="card-meta-icon" aria-hidden="true">£</span>${price}</span>` : ''}
+            ${typeLabel ? `<span><span class="card-meta-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="5" width="14" height="10" rx="1" stroke="#888" stroke-width="1.4"/><rect x="5" y="1" width="6" height="5" rx="1" stroke="#888" stroke-width="1.4"/><line x1="1" y1="9" x2="15" y2="9" stroke="#888" stroke-width="1.2"/><line x1="6" y1="9" x2="6" y2="15" stroke="#888" stroke-width="1.2"/><line x1="10" y1="9" x2="10" y2="15" stroke="#888" stroke-width="1.2"/></svg></span>${typeLabel}</span>` : ''}
+            ${size ? `<span><span class="card-meta-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="2.5" y1="2.5" x2="13.5" y2="13.5" stroke="#e07b2a" stroke-width="2" stroke-linecap="round"/><line x1="13.5" y1="2.5" x2="2.5" y2="13.5" stroke="#e07b2a" stroke-width="2" stroke-linecap="round"/></svg></span>${size}</span>` : ''}
+            ${price ? `<span><span class="card-meta-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><text x="2" y="13" font-family="Georgia,serif" font-size="13" font-weight="700" fill="#f4c20d">£</text></svg></span>${price}</span>` : ''}
           </div>
         </div>
         <div class="card-footer">
