@@ -295,19 +295,27 @@
       flex-direction: column;
     }
 
-    /* Title: blue link, bold, ~15px, tight line-height */
-    .property-card--v2 .card-address-link {
+    /* Title: dark, card-native — NOT a browser blue link */
+    .property-card--v2 .card-address-link,
+    .property-card--v2 .card-address-link:link,
+    .property-card--v2 .card-address-link:visited,
+    .property-card--v2 .card-address-link:active {
       display: block;
       font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
       font-size: 15px;
       font-weight: 700;
-      color: #1a56db;
-      text-decoration: underline;
-      text-underline-offset: 2px;
+      color: #111;
+      text-decoration: none;
       line-height: 1.25;
       margin-bottom: 5px;
     }
-    .property-card--v2 .card-address-link:hover { color: #1e40af; }
+    .property-card--v2 .card-address-link:hover,
+    .property-card--v2 .card-address-link:focus {
+      color: #111;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      outline: none;
+    }
 
     /* TO LET / FOR SALE — prominent, uppercase, bold */
     .property-card--v2 .card-tenure {
@@ -352,19 +360,21 @@
       gap: 6px;
       line-height: 1.4;
     }
-    /* Flat SVG-style icon replacement — no emoji color rendering */
+    /* Meta icon: yellow pill/dot rendered via CSS — never emoji */
     .property-card--v2 .card-meta-icon {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 16px;
-      height: 16px;
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      background: #f4c20d;
+      border-radius: 3px;
       flex-shrink: 0;
+      font-size: 9px;
+      font-weight: 900;
       font-style: normal;
-      font-size: 13px;
-      color: #f4c20d;
-      font-weight: 700;
-      line-height: 1;
+      color: #111;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 0;
     }
 
     /* Footer — buttons flush to bottom */
@@ -720,9 +730,9 @@ function render(list, context = {}) {
           ${tenureLabel ? `<div class="card-tenure">${tenureLabel}</div>` : ''}
           ${desc ? `<div class="card-desc">${desc}</div>` : ''}
           <div class="card-meta-row">
-            ${typeLabel ? `<span><span class="card-meta-icon" aria-hidden="true">■</span>${typeLabel}</span>` : ''}
-            ${size ? `<span><span class="card-meta-icon" aria-hidden="true">⊞</span>${size}</span>` : ''}
-            ${price ? `<span>${price}</span>` : ''}
+            ${typeLabel ? `<span><span class="card-meta-icon" aria-hidden="true">T</span>${typeLabel}</span>` : ''}
+            ${size ? `<span><span class="card-meta-icon" aria-hidden="true">m²</span>${size}</span>` : ''}
+            ${price ? `<span><span class="card-meta-icon" aria-hidden="true">£</span>${price}</span>` : ''}
           </div>
         </div>
         <div class="card-footer">
