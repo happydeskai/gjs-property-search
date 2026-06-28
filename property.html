@@ -399,7 +399,7 @@ document.addEventListener('DOMContentLoaded', function(){
       const urls = Array.isArray(rawFloorPlans) ? rawFloorPlans : [];
       fpUnits = urls.length ? [{
         name: 'Floor Plans',
-        plans: urls.map((u,i)=>({url:u, caption:'Plan '+(i+1), size:''}))
+        plans: urls.map((u,i)=>({url:u, caption:planLabel(u,i,urls.length), size:''}))
       }] : [];
     }
   }
@@ -568,13 +568,27 @@ document.addEventListener('DOMContentLoaded', function(){
     lbIframe.src = tourUrls[curIdx] || '';
   }
 
+  function parseLabelFromUrl(url){
+    try{
+      const path = decodeURIComponent(new URL(url).pathname).replace(/[-_]/g,' ');
+      const um = path.match(/unit\s*([a-z0-9]+)/i);
+      if(um) return 'Unit '+um[1].toUpperCase();
+      const fm = path.match(/(ground|first|second|third|fourth|lower|upper|basement|mezzanine)/i);
+      if(fm) return fm[1].charAt(0).toUpperCase()+fm[1].slice(1)+' Floor';
+    }catch(e){}
+    return null;
+  }
+
+  function planLabel(url, i, total){
+    const parsed = parseLabelFromUrl(url);
+    if(parsed) return parsed;
+    return total === 1 ? 'Floor Plan' : 'Plan '+(i+1);
+  }
+
   function tourLabel(url, i, total){
     if(total===1)return 'Virtual Tour';
-    try{
-      const path=new URL(url).pathname.replace(/\//g,'');
-      const um=path.match(/unit([a-z])/i);if(um)return 'Unit '+um[1].toUpperCase();
-      const fm=path.match(/(ground|first|second|third|lower|upper)/i);if(fm)return fm[1].charAt(0).toUpperCase()+fm[1].slice(1)+' Floor';
-    }catch(e){}
+    const parsed = parseLabelFromUrl(url);
+    if(parsed) return parsed;
     return 'Tour '+(i+1);
   }
 
