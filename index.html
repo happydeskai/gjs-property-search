@@ -259,6 +259,7 @@
       aspect-ratio: 4 / 3;
       background: #eee;
       overflow: hidden;
+      flex-shrink: 0;
     }
     .property-card--v2 .card-media img {
       position: absolute;
@@ -273,91 +274,133 @@
       left: 10px;
       background: #f4c20d;
       color: #111;
-      font-size: 11px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 10px;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: .05em;
-      padding: 5px 12px;
-      border-radius: 6px;
+      letter-spacing: .07em;
+      padding: 4px 10px;
+      border-radius: 5px;
     }
     .property-card--v2 .card-status-banner--available {
       background: #22c55e;
       color: #fff;
     }
+
+    /* Card body — tight vertical rhythm matching mockup */
     .property-card--v2 .card-body {
-      padding: 14px;
+      padding: 12px 14px 10px;
       flex: 1;
+      display: flex;
+      flex-direction: column;
     }
+
+    /* Title: blue link, bold, ~15px, tight line-height */
     .property-card--v2 .card-address-link {
       display: block;
+      font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
       font-size: 15px;
       font-weight: 700;
       color: #1a56db;
       text-decoration: underline;
-      margin-bottom: 4px;
-      line-height: 1.3;
+      text-underline-offset: 2px;
+      line-height: 1.25;
+      margin-bottom: 5px;
     }
     .property-card--v2 .card-address-link:hover { color: #1e40af; }
+
+    /* TO LET / FOR SALE — prominent, uppercase, bold */
     .property-card--v2 .card-tenure {
+      font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
       font-size: 13px;
-      font-weight: 700;
+      font-weight: 800;
       color: #111;
       text-transform: uppercase;
-      letter-spacing: .04em;
+      letter-spacing: .06em;
       margin-bottom: 6px;
     }
+
+    /* Description — 2-line truncation, grey, compact */
     .property-card--v2 .card-desc {
+      font-family: 'Roboto', sans-serif;
       font-size: 13px;
-      color: #666;
+      font-weight: 400;
+      color: #555;
+      line-height: 1.45;
       margin-bottom: 10px;
-      line-height: 1.5;
+      /* clamp to 2 visible lines */
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
+
+    /* Meta rows — stacked vertically, one item per line, like the mockup */
     .property-card--v2 .card-meta-row {
       display: flex;
-      flex-wrap: wrap;
-      gap: 8px 16px;
+      flex-direction: column;
+      gap: 4px;
+      font-family: 'Roboto', sans-serif;
       font-size: 13px;
       color: #444;
-      margin-bottom: 2px;
+      margin-bottom: 0;
+      margin-top: auto; /* push meta to bottom of body before footer */
     }
     .property-card--v2 .card-meta-row span {
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 6px;
+      line-height: 1.4;
     }
+    /* Flat SVG-style icon replacement — no emoji color rendering */
     .property-card--v2 .card-meta-icon {
-      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      font-style: normal;
+      font-size: 13px;
+      color: #f4c20d;
+      font-weight: 700;
       line-height: 1;
     }
+
+    /* Footer — buttons flush to bottom */
     .property-card--v2 .card-footer {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
-      padding: 12px 14px;
-      border-top: 1px solid #e7e7e7;
+      gap: 7px;
+      padding: 10px 14px 12px;
+      border-top: 1px solid #efefef;
+      margin-top: 10px;
     }
     .property-card--v2 .btn-card-primary {
-      height: 36px;
-      padding: 0 14px;
+      height: 34px;
+      padding: 0 13px;
       background: #111;
       color: #fff;
-      border-radius: 8px;
+      border-radius: 7px;
+      font-family: 'Roboto', sans-serif;
       font-size: 13px;
-      font-weight: 600;
+      font-weight: 500;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
       border: none;
       cursor: pointer;
       white-space: nowrap;
+      letter-spacing: .01em;
     }
-    .property-card--v2 .btn-card-primary:hover { background: #333; }
+    .property-card--v2 .btn-card-primary:hover { background: #2a2a2a; }
     .property-card--v2 .btn-card-tour {
-      height: 36px;
-      padding: 0 14px;
+      height: 34px;
+      padding: 0 13px;
       background: #f4c20d;
       color: #111;
-      border-radius: 8px;
+      border-radius: 7px;
+      font-family: 'Roboto', sans-serif;
       font-size: 13px;
       font-weight: 700;
       text-decoration: none;
@@ -366,6 +409,7 @@
       border: none;
       cursor: pointer;
       white-space: nowrap;
+      letter-spacing: .01em;
     }
     .property-card--v2 .btn-card-tour:hover { background: #e0b00c; }
 
@@ -676,9 +720,9 @@ function render(list, context = {}) {
           ${tenureLabel ? `<div class="card-tenure">${tenureLabel}</div>` : ''}
           ${desc ? `<div class="card-desc">${desc}</div>` : ''}
           <div class="card-meta-row">
-            ${typeLabel ? `<span><span class="card-meta-icon">🏢</span>${typeLabel}</span>` : ''}
-            ${size ? `<span><span class="card-meta-icon">✕</span>${size}</span>` : ''}
-            ${price ? `<span><span class="card-meta-icon">£</span>${price}</span>` : ''}
+            ${typeLabel ? `<span><span class="card-meta-icon" aria-hidden="true">■</span>${typeLabel}</span>` : ''}
+            ${size ? `<span><span class="card-meta-icon" aria-hidden="true">⊞</span>${size}</span>` : ''}
+            ${price ? `<span>${price}</span>` : ''}
           </div>
         </div>
         <div class="card-footer">
