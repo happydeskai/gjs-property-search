@@ -350,6 +350,7 @@ function scrollTopOnce(){if(didScrollTop)return;didScrollTop=true;window.scrollT
 
 /* -------- Lightbox — tabbed (Photos / Floor Plans / 360° Tour) -------- */
 (function(){
+document.addEventListener('DOMContentLoaded', function(){
   /* ---- element refs ---- */
   const lb          = document.getElementById('lightbox');
   const lbTabsEl    = document.getElementById('lb-tabs');
@@ -614,6 +615,7 @@ function scrollTopOnce(){if(didScrollTop)return;didScrollTop=true;window.scrollT
 
   /* ---- public API ---- */
   window.__lightbox = { setData, open };
+}); // end DOMContentLoaded
 })();
 
 /* Haversine distance in km */
