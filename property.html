@@ -79,7 +79,9 @@
     .agent{ display:flex; align-items:center; gap:20px; }
     .agent-photo{ width:120px; height:140px; border-radius:8px; background:#d9d9d9; flex:none; object-fit:cover; display:block; }
     .agent-name{ font-size:16px; font-weight:700; }
-    .agent-role{ font-size:15px; color:var(--ink-soft); margin-bottom:12px; }
+    .agent-role{ font-size:15px; color:var(--ink-soft); margin-bottom:4px; }
+    .agent-phone{ display:block; font-size:15px; font-weight:600; color:var(--ink); text-decoration:none; margin:6px 0 0; }
+    .agent-phone:hover{ text-decoration:underline; }
 
     .form-card{ background:var(--amber); border-radius:14px; padding:32px; }
     .form-card input,.form-card textarea{
@@ -279,7 +281,8 @@
             <div>
               <div class="agent-name" id="agentName"></div>
               <div class="agent-role" id="agentRole"></div>
-              <button class="btn btn--amber" style="padding:8px 18px;" id="agentContact" type="button">Contact</button>
+              <a class="agent-phone" id="agentPhone" href="#" style="display:none"></a>
+              <button class="btn btn--amber" style="padding:8px 18px;margin-top:14px;" id="agentContact" type="button">Contact</button>
             </div>
           </div>
         </div>
@@ -850,13 +853,26 @@ async function main(){
     }
 
     /* --- Viewing section: agent --- */
+    const AGENTS={
+      andrew:  {photo:'/agents/andrew.jpg',  mobile:'07394 569127'},
+      jorge:   {photo:'/agents/jorge.jpg',   mobile:'07394 569128'},
+      roy:     {photo:'/agents/roy.jpg',     mobile:'07842 442068'},
+      susanne: {photo:'/agents/susanne.jpg', mobile:null},
+    };
+    const MAIN_PHONE='01905 676169';
     if(p.agents&&p.agents.length){
       const a=p.agents[0];
-      const nameEl=$('#agentName'),roleEl=$('#agentRole'),box=$('#agentBox'),contactBtn=$('#agentContact');
-      if(nameEl)nameEl.textContent=a.name||'';
-      if(roleEl)roleEl.textContent=a.role||a.title||a.job_title||'';
-      if(box)box.style.display='';
-      if(contactBtn)contactBtn.addEventListener('click',()=>window.__enquiryModal?.show());
+      const firstName=(a.name||'').split(' ')[0].toLowerCase();
+      const agentData=AGENTS[firstName]||{};
+      const phone=agentData.mobile||MAIN_PHONE;
+      const photoEl=$('#agentPhoto');
+      if(photoEl&&agentData.photo){photoEl.src=agentData.photo;photoEl.alt=a.name||'';}
+      const nameEl=$('#agentName');if(nameEl)nameEl.textContent=a.name||'';
+      const roleEl=$('#agentRole');if(roleEl)roleEl.textContent=a.role||a.title||a.job_title||'';
+      const phoneEl=$('#agentPhone');
+      if(phoneEl){phoneEl.href='tel:'+phone.replace(/\s/g,'');phoneEl.textContent=phone;phoneEl.style.display='';}
+      const box=$('#agentBox');if(box)box.style.display='';
+      const contactBtn=$('#agentContact');if(contactBtn)contactBtn.addEventListener('click',()=>window.__enquiryModal?.show());
     }
 
     /* --- Nearby properties (closest 4, excluding self) --- */
