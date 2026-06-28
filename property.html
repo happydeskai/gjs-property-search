@@ -478,17 +478,22 @@ document.addEventListener('DOMContentLoaded', function(){
   /* ---- FLOOR PLANS mode ---- */
   function showFloorPlans(unitIdx, planIdx){
     curUnit = unitIdx || 0; curIdx = planIdx || 0;
-    /* show image, hide iframe */
     lbImgwrap.hidden = false; lbIframeWrap.hidden = true;
     lbZoom.hidden = false; lbCaption.hidden = false;
-    /* download all — href to first plan, text "Download all" */
     lbDlAll.hidden = fpUnits.length === 0;
     lbDlOne.hidden = false;
-    /* unit pills */
-    const multi = fpUnits.length > 1;
-    lbUnitsEl.hidden = !multi;
-    if(multi){
-      lbUnitsEl.innerHTML = '';
+    lbPrev.hidden = true; lbNext.hidden = true; /* nav replaced by pills */
+
+    const multiUnit = fpUnits.length > 1;
+    const unit = fpUnits[curUnit] || {name:'', plans:[]};
+
+    /* Always show pills in the unit-pill row.
+       Multi-unit  → one pill per UNIT (clicking switches unit, resets to plan 0)
+       Single unit → one pill per PLAN (clicking selects that plan directly) */
+    lbUnitsEl.hidden = false;
+    lbUnitsEl.innerHTML = '';
+
+    if(multiUnit){
       fpUnits.forEach((u,i)=>{
         const btn = document.createElement('button');
         btn.className = 'lb-unit' + (i === curUnit ? ' is-active' : '');
@@ -496,13 +501,30 @@ document.addEventListener('DOMContentLoaded', function(){
         btn.addEventListener('click', ()=>{ zoomLevel=1; showFloorPlans(i,0); });
         lbUnitsEl.appendChild(btn);
       });
+      /* within-unit: thumb strip for floors */
+      buildThumbs(unit.plans.map(p=>({url:p.url, label:p.caption})));
+    } else {
+      /* single unit: plan pills at top, no thumb strip */
+      unit.plans.forEach((p,i)=>{
+        const btn = document.createElement('button');
+        btn.className = 'lb-unit' + (i === curIdx ? ' is-active' : '');
+        btn.textContent = p.caption;
+        btn.dataset.idx = i;
+        btn.addEventListener('click', ()=>{ goFloorPlan(i); syncPlanPills(); });
+        lbUnitsEl.appendChild(btn);
+      });
+      lbThumbsEl.hidden = true;
     }
-    /* nav & thumbs */
-    const unit = fpUnits[curUnit] || {name:'',plans:[]};
-    const multi2 = unit.plans.length > 1;
-    lbPrev.hidden = !multi2; lbNext.hidden = !multi2;
-    buildThumbs(unit.plans.map(p=>({url:p.url, label:p.caption})));
+
+    if(lbDlAll && unit.plans.length){
+      lbDlAll.onclick = ()=>{ unit.plans.forEach((p,i)=>{ const a=document.createElement('a');a.href=p.url;a.download=p.caption||('plan-'+(i+1));a.click(); }); };
+    }
+
     goFloorPlan(curIdx);
+  }
+
+  function syncPlanPills(){
+    lbUnitsEl.querySelectorAll('.lb-unit').forEach((btn,i)=>btn.classList.toggle('is-active', i===curIdx));
   }
 
   function goFloorPlan(idx){
@@ -513,17 +535,12 @@ document.addEventListener('DOMContentLoaded', function(){
     zoomLevel = 1;
     lbImg.src = plan.url;
     lbImg.style.transform = 'scale(1)';
-    /* caption */
     lbCapTitle.textContent = (fpUnits.length > 1 ? fpUnits[curUnit].name + ' — ' : '') + plan.caption;
     lbCapSub.textContent   = (plan.size ? plan.size + ' · ' : '') + (curIdx+1) + ' of ' + unit.plans.length;
-    /* download per-plan */
     lbDlOne.href = plan.url;
     lbDlOne.download = plan.caption || 'floor-plan';
-    /* download all: zip of this unit's plans (link to first as fallback) */
-    if(lbDlAll && unit.plans.length){
-      lbDlAll.onclick = ()=>{ unit.plans.forEach((p,i)=>{ const a=document.createElement('a');a.href=p.url;a.download=p.caption||('plan-'+(i+1));a.click(); }); };
-    }
-    updateThumbActive(curIdx);
+    if(fpUnits.length > 1) updateThumbActive(curIdx);
+    else syncPlanPills();
   }
 
   /* ---- 360° TOUR mode ---- */
