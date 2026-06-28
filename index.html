@@ -431,7 +431,11 @@
     .property-card--v2 .btn-card-tour:hover { background: #e0a800; }
 
     /* When all 3 buttons are present, spread them evenly across the row */
-    .property-card--v2 .card-footer:has(.btn-card-tour) > * { flex: 1 1 0; }
+    .property-card--v2 .card-footer:has(.btn-card-tour) > * { flex: 1 1 0; min-width: 0; }
+    .property-card--v2 .card-footer:has(.btn-card-tour) .btn-card-primary,
+    .property-card--v2 .card-footer:has(.btn-card-tour) .btn-card-tour {
+      padding-left: 8px; padding-right: 8px; font-size: 12px; justify-content: center; overflow: hidden;
+    }
 
     @media (max-width: 640px) {
       .search-page-v2 .searchBar .field { flex: 1 1 100%; }
