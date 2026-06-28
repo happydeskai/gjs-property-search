@@ -5,6 +5,11 @@
   <title>Property Search</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
   <!-- Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -166,6 +171,20 @@
        Original classes above are untouched for safety.
        ============================================================ */
 
+    /* Fonts */
+    .search-page-v2 h1, .search-page-v2 h2, .search-page-v2 h3,
+    .property-card--v2 .card-tenure {
+      font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    }
+    .search-page-v2, .search-page-v2 p, .search-page-v2 input,
+    .search-page-v2 select, .search-page-v2 button,
+    .property-card--v2, .property-card--v2 .card-desc,
+    .property-card--v2 .card-meta-row, .property-card--v2 .card-address-link,
+    .property-card--v2 .btn-card-primary, .property-card--v2 .btn-card-tour,
+    .v2-result-summary {
+      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
     /* Search bar v2 */
     .search-page-v2 .searchBar {
       display: flex;
@@ -250,16 +269,16 @@
     }
     .property-card--v2 .card-status-banner {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 10px;
+      left: 10px;
       background: #f4c20d;
       color: #111;
       font-size: 11px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: .05em;
-      padding: 5px 10px;
-      border-bottom-right-radius: 8px;
+      padding: 5px 12px;
+      border-radius: 6px;
     }
     .property-card--v2 .card-status-banner--available {
       background: #22c55e;
@@ -554,11 +573,11 @@ function updateMap(list, focusPoint) {
     if (!isFinite(lat) || !isFinite(lon)) return;
 
     const m = L.circleMarker([lat, lon], {
-      radius: 7,
-      weight: 2,
+      radius: 8,
+      weight: 1.5,
       color: '#111',
-      fillColor: '#111',
-      fillOpacity: 0.85
+      fillColor: '#f4c20d',
+      fillOpacity: 1
     });
 
     const img = getPrimaryImage(p);
