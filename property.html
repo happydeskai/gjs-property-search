@@ -297,6 +297,9 @@
           <div id="viewingSuccess" style="display:none;padding:20px 0;color:var(--btn-dark);font-weight:600;font-size:15px;">
             &#10003; Thanks — we'll be in touch shortly.
           </div>
+          <div id="viewingError" style="display:none;padding:10px 0 0;color:#b91c1c;font-size:14px;font-weight:500;">
+            Something went wrong — please try again or call us directly.
+          </div>
         </div>
       </div>
     </section>
@@ -1056,19 +1059,25 @@ document.addEventListener('DOMContentLoaded',()=>{
   /* Viewing form → same endpoint */
   const vForm=document.getElementById('viewingForm');
   const vSuccess=document.getElementById('viewingSuccess');
+  const vError=document.getElementById('viewingError');
   if(vForm){
     vForm.addEventListener('submit',async e=>{
       e.preventDefault();
       const name=document.getElementById('vName').value.trim();
       const email=document.getElementById('vEmail').value.trim();
       if(!name||!email)return;
+      if(vError)vError.style.display='none';
       const payload={firstName:name,lastName:'',email,phone:document.getElementById('vPhone').value.trim(),message:document.getElementById('vMessage').value.trim(),company:document.getElementById('vCompany').value.trim(),propertyId:getParam('id')||'',propertyTitle:document.getElementById('prop-title')?.textContent||''};
       const submitBtn=vForm.querySelector('button[type="submit"]');if(submitBtn)submitBtn.disabled=true;
       try{
         const res=await fetch('/api/send-enquiry.js',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
         if(!res.ok)throw new Error(res.status);
         vForm.style.display='none';if(vSuccess)vSuccess.style.display='';
-      }catch(err){console.error(err);if(submitBtn)submitBtn.disabled=false;}
+      }catch(err){
+        console.error(err);
+        if(submitBtn)submitBtn.disabled=false;
+        if(vError)vError.style.display='';
+      }
     });
   }
 })();
