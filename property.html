@@ -571,7 +571,8 @@ document.addEventListener('DOMContentLoaded', function(){
   function parseLabelFromUrl(url){
     try{
       const path = decodeURIComponent(new URL(url).pathname).replace(/[-_]/g,' ');
-      const um = path.match(/unit\s*([a-z0-9]+)/i);
+      /* Match "unit" followed by 1-2 alphanumeric chars only (stops "unitAtrinityValepark" → "A") */
+      const um = path.match(/unit\s*([a-z0-9]{1,2})(?=[^a-z0-9]|$)/i);
       if(um) return 'Unit '+um[1].toUpperCase();
       const fm = path.match(/(ground|first|second|third|fourth|lower|upper|basement|mezzanine)/i);
       if(fm) return fm[1].charAt(0).toUpperCase()+fm[1].slice(1)+' Floor';
@@ -582,7 +583,7 @@ document.addEventListener('DOMContentLoaded', function(){
   function planLabel(url, i, total){
     const parsed = parseLabelFromUrl(url);
     if(parsed) return parsed;
-    return total === 1 ? 'Floor Plan' : 'Plan '+(i+1);
+    return total === 1 ? 'Floor Plan' : 'Unit '+(i+1);
   }
 
   function tourLabel(url, i, total){
