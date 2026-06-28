@@ -429,6 +429,9 @@
     }
     .property-card--v2 .btn-card-tour:hover { background: #e0a800; }
 
+    /* When all 3 buttons are present, spread them evenly across the row */
+    .property-card--v2 .card-footer:has(.btn-card-tour) > * { flex: 1 1 0; }
+
     @media (max-width: 640px) {
       .search-page-v2 .searchBar .field { flex: 1 1 100%; }
       .search-page-v2 .searchBar .field--location { flex: 1 1 100%; }
