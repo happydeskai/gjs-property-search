@@ -3,10 +3,12 @@
     { "src": "api/**/*.js", "use": "@vercel/node" },
     { "src": "index.html", "use": "@vercel/static" },
     { "src": "property.html", "use": "@vercel/static" },
-    { "src": "properties.json", "use": "@vercel/static" }
+    { "src": "properties.json", "use": "@vercel/static" },
+    { "src": "public/**", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/agents/(.*)", "dest": "/public/agents/$1" },
     { "src": "/property.html", "dest": "/property.html" },
     { "src": "/properties.json", "dest": "/properties.json" },
     { "src": "/property-search/([^/]+)", "dest": "/property.html?id=$1" },
