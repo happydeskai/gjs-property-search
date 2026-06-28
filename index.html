@@ -8,7 +8,9 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome 6 Solid (for card icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -243,71 +245,102 @@
     .property-card--v2 {
       display: flex;
       flex-direction: column;
-      background: #fff;
-      border: 1px solid #e7e7e7;
-      border-radius: 12px;
+      background: #fafafa;
+      border: 1px solid #eee;
+      border-radius: 14px;
       overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,.04);
+      box-shadow: 0 2px 10px rgba(0,0,0,.05);
       transition: transform .15s ease, box-shadow .15s ease;
     }
     .property-card--v2:hover {
       transform: translateY(-2px);
-      box-shadow: 0 10px 25px rgba(0,0,0,.08);
+      box-shadow: 0 12px 28px rgba(0,0,0,.1);
     }
+    /* Image inset with padding + rounded corners */
     .property-card--v2 .card-media {
       position: relative;
-      aspect-ratio: 4 / 3;
-      background: #eee;
-      overflow: hidden;
+      padding: 10px 10px 0;
+      background: #fafafa;
       flex-shrink: 0;
     }
-    .property-card--v2 .card-media img {
+    .property-card--v2 .card-media-inner {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      background: #ddd;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    .property-card--v2 .card-media-inner img {
       position: absolute;
       inset: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
+    /* Carousel arrows */
+    .property-card--v2 .card-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,.45);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 11px;
+      z-index: 2;
+      padding: 0;
+    }
+    .property-card--v2 .card-arrow--prev { left: 8px; }
+    .property-card--v2 .card-arrow--next { right: 8px; }
+    .property-card--v2 .card-arrow:hover { background: rgba(0,0,0,.7); }
+    /* Status badge */
     .property-card--v2 .card-status-banner {
       position: absolute;
-      top: 10px;
-      left: 10px;
-      background: #f4c20d;
+      top: 8px;
+      left: 8px;
+      background: #f5b400;
       color: #111;
-      font-family: 'Roboto', sans-serif;
-      font-size: 10px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 11px;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: .07em;
-      padding: 4px 10px;
-      border-radius: 5px;
+      letter-spacing: .08em;
+      padding: 5px 12px;
+      border-radius: 12px;
+      z-index: 3;
     }
     .property-card--v2 .card-status-banner--available {
       background: #22c55e;
       color: #fff;
     }
 
-    /* Card body — tight vertical rhythm matching mockup */
+    /* Card body */
     .property-card--v2 .card-body {
-      padding: 12px 14px 10px;
+      padding: 16px 16px 12px;
       flex: 1;
       display: flex;
       flex-direction: column;
     }
 
-    /* Title: dark, card-native — NOT a browser blue link */
+    /* Title — light weight, large, Poppins */
     .property-card--v2 .card-address-link,
     .property-card--v2 .card-address-link:link,
     .property-card--v2 .card-address-link:visited,
     .property-card--v2 .card-address-link:active {
       display: block;
-      font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-      font-size: 15px;
-      font-weight: 700;
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 300;
       color: #111;
       text-decoration: none;
-      line-height: 1.25;
-      margin-bottom: 5px;
+      line-height: 1.3;
+      margin-bottom: 6px;
     }
     .property-card--v2 .card-address-link:hover,
     .property-card--v2 .card-address-link:focus {
@@ -317,114 +350,110 @@
       outline: none;
     }
 
-    /* TO LET / FOR SALE — prominent, uppercase, bold */
+    /* TO LET — bold, black, prominent */
     .property-card--v2 .card-tenure {
-      font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-      font-size: 13px;
-      font-weight: 800;
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
       color: #111;
       text-transform: uppercase;
-      letter-spacing: .06em;
-      margin-bottom: 6px;
+      letter-spacing: .04em;
+      margin-bottom: 8px;
     }
 
-    /* Description — 2-line truncation, grey, compact */
+    /* Description — darker, larger, not clamped */
     .property-card--v2 .card-desc {
       font-family: 'Roboto', sans-serif;
-      font-size: 13px;
+      font-size: 14px;
       font-weight: 400;
-      color: #555;
-      line-height: 1.45;
-      margin-bottom: 10px;
-      /* clamp to 2 visible lines */
+      color: #333;
+      line-height: 1.55;
+      margin-bottom: 14px;
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
 
-    /* Meta rows — stacked vertically, one item per line, like the mockup */
+    /* Meta rows — Font Awesome icons */
     .property-card--v2 .card-meta-row {
       display: flex;
       flex-direction: column;
-      gap: 4px;
-      font-family: 'Roboto', sans-serif;
-      font-size: 13px;
-      color: #444;
-      margin-bottom: 0;
-      margin-top: auto; /* push meta to bottom of body before footer */
+      gap: 7px;
+      margin-top: auto;
     }
     .property-card--v2 .card-meta-row span {
       display: flex;
       align-items: center;
-      gap: 6px;
-      line-height: 1.4;
+      gap: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.3;
     }
-    /* Meta icons — inline SVG, sized to match mockup */
     .property-card--v2 .card-meta-icon {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 18px;
-      height: 18px;
+      width: 20px;
+      text-align: center;
       flex-shrink: 0;
-    }
-    .property-card--v2 .card-meta-icon svg {
-      display: block;
+      font-size: 18px;
+      color: #f5b400;
     }
 
-    /* Footer — buttons flush to bottom */
+    /* Footer — taller buttons, full-width spread */
     .property-card--v2 .card-footer {
       display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-      padding: 10px 14px 12px;
-      border-top: 1px solid #efefef;
-      margin-top: 10px;
+      gap: 8px;
+      padding: 12px 16px 16px;
+      border-top: 1px solid #eee;
+      margin-top: 14px;
     }
     .property-card--v2 .btn-card-primary {
-      height: 34px;
-      padding: 0 13px;
+      flex: 1;
+      height: 46px;
+      padding: 0 10px;
       background: #111;
       color: #fff;
-      border-radius: 7px;
-      font-family: 'Roboto', sans-serif;
-      font-size: 13px;
-      font-weight: 500;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       border: none;
       cursor: pointer;
       white-space: nowrap;
       letter-spacing: .01em;
     }
-    .property-card--v2 .btn-card-primary:hover { background: #2a2a2a; }
+    .property-card--v2 .btn-card-primary:hover { background: #2a2a2a; color: #fff; }
     .property-card--v2 .btn-card-tour {
-      height: 34px;
-      padding: 0 13px;
-      background: #f4c20d;
+      flex: 1;
+      height: 46px;
+      padding: 0 10px;
+      background: #f5b400;
       color: #111;
-      border-radius: 7px;
-      font-family: 'Roboto', sans-serif;
-      font-size: 13px;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
       font-weight: 700;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       border: none;
       cursor: pointer;
       white-space: nowrap;
       letter-spacing: .01em;
     }
-    .property-card--v2 .btn-card-tour:hover { background: #e0b00c; }
+    .property-card--v2 .btn-card-tour:hover { background: #e0a800; }
 
     @media (max-width: 640px) {
       .search-page-v2 .searchBar .field { flex: 1 1 100%; }
       .search-page-v2 .searchBar .field--location { flex: 1 1 100%; }
-      .property-card--v2 .card-footer { flex-direction: column; }
+      .property-card--v2 .card-footer { flex-wrap: wrap; }
       .property-card--v2 .btn-card-primary,
-      .property-card--v2 .btn-card-tour { width: 100%; justify-content: center; }
+      .property-card--v2 .btn-card-tour { flex: 1 1 calc(50% - 4px); }
     }
   </style>
 </head>
@@ -712,23 +741,27 @@ function render(list, context = {}) {
     const hasTour = Array.isArray(p.virtual_tour_urls) && p.virtual_tour_urls.length > 0;
     const tourUrl = hasTour ? p.virtual_tour_urls[0] : '';
     const brochureUrl = p.brochure || p.brochure_url || '';
-    const desc = p.description ? (p.description.length > 120 ? p.description.slice(0, 120).trimEnd() + '…' : p.description) : '';
+    const desc = p.description || '';
     const price = p.rent || (p.price && !p.rent ? p.price : '');
 
     return `
       <article class="property-card--v2">
         <div class="card-media">
-          ${img ? `<img src="${img}" alt="${address}" loading="lazy">` : ''}
-          <span class="card-status-banner ${statusBannerCls}">${statusText}</span>
+          <div class="card-media-inner">
+            ${img ? `<img src="${img}" alt="${address}" loading="lazy">` : ''}
+            <span class="card-status-banner ${statusBannerCls}">${statusText}</span>
+            <button class="card-arrow card-arrow--prev" aria-label="Previous image">&#8249;</button>
+            <button class="card-arrow card-arrow--next" aria-label="Next image">&#8250;</button>
+          </div>
         </div>
         <div class="card-body">
           <a class="card-address-link" href="property.html?id=${encodeURIComponent(p.id ?? '')}" aria-label="View ${address}">${address}</a>
           ${tenureLabel ? `<div class="card-tenure">${tenureLabel}</div>` : ''}
           ${desc ? `<div class="card-desc">${desc}</div>` : ''}
           <div class="card-meta-row">
-            ${typeLabel ? `<span><span class="card-meta-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="1.5" y="1.5" width="21" height="21" rx="2.5" fill="none" stroke="#f4c20d" stroke-width="2.5"/><rect x="4" y="4" width="3" height="3" rx="0.6" fill="#f4c20d"/><rect x="8.5" y="4" width="3" height="3" rx="0.6" fill="#f4c20d"/><rect x="13" y="4" width="3" height="3" rx="0.6" fill="#f4c20d"/><rect x="17" y="4" width="3" height="3" rx="0.6" fill="#f4c20d"/><rect x="4" y="8.5" width="3" height="3" rx="0.6" fill="#f4c20d"/><rect x="8.5" y="8.5" width="3" height="3" rx="0.6" fill="#f4c20d"/><rect x="13" y="8.5" width="3" height="3" rx="0.6" fill="#f4c20d"/><rect x="17" y="8.5" width="3" height="3" rx="0.6" fill="#f4c20d"/><rect x="4" y="13" width="3" height="3" rx="0.6" fill="#f4c20d"/><rect x="17" y="13" width="3" height="3" rx="0.6" fill="#f4c20d"/><rect x="9.5" y="14" width="5" height="8.5" rx="0.6" fill="#f4c20d"/></svg></span>${typeLabel}</span>` : ''}
-            ${size ? `<span><span class="card-meta-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#f4c20d"><path d="M2 2v7l2.5-2.5 3.2 3.2 2.1-2.1L6.5 4.5 9 2H2zm13 0l2.5 2.5-3.2 3.2 2.1 2.1 3.2-3.2L22 9V2h-7zM6.8 14.8L3.5 18 2 15v7h7l-2.5-2.5 3.4-3.4-3.1-2.3zm10.4 0l-3.1 2.3 3.4 3.4L15 22h7v-7l-1.5 2.5-3.3-2.7z"/></svg></span>${size}</span>` : ''}
-            ${price ? `<span><span class="card-meta-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><text x="1" y="16" font-family="'Arial Black','Arial Bold',Arial,sans-serif" font-size="16" font-weight="900" fill="#f4c20d">£</text></svg></span>${price}</span>` : ''}
+            ${typeLabel ? `<span><i class="card-meta-icon fa-solid fa-building" aria-hidden="true"></i>${typeLabel}</span>` : ''}
+            ${size ? `<span><i class="card-meta-icon fa-solid fa-maximize" aria-hidden="true"></i>${size}</span>` : ''}
+            ${price ? `<span><i class="card-meta-icon fa-solid fa-sterling-sign" aria-hidden="true"></i>${price}</span>` : ''}
           </div>
         </div>
         <div class="card-footer">
