@@ -282,23 +282,25 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      background: rgba(0,0,0,.45);
+      background: rgba(0,0,0,.38);
       color: #fff;
       border: none;
-      border-radius: 50%;
-      width: 28px;
-      height: 28px;
+      border-radius: 4px;
+      width: 26px;
+      top: 0;
+      height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      font-size: 11px;
+      font-size: 16px;
       z-index: 2;
       padding: 0;
+      transform: none;
     }
-    .property-card--v2 .card-arrow--prev { left: 8px; }
-    .property-card--v2 .card-arrow--next { right: 8px; }
-    .property-card--v2 .card-arrow:hover { background: rgba(0,0,0,.7); }
+    .property-card--v2 .card-arrow--prev { left: 0; }
+    .property-card--v2 .card-arrow--next { right: 0; }
+    .property-card--v2 .card-arrow:hover { background: rgba(0,0,0,.6); }
     /* Status badge */
     .property-card--v2 .card-status-banner {
       position: absolute;
@@ -312,7 +314,7 @@
       text-transform: uppercase;
       letter-spacing: .08em;
       padding: 5px 12px;
-      border-radius: 12px;
+      border-radius: 8px;
       z-index: 3;
     }
     .property-card--v2 .card-status-banner--available {
@@ -366,7 +368,7 @@
       font-family: 'Roboto', sans-serif;
       font-size: 14px;
       font-weight: 400;
-      color: #333;
+      color: #222;
       line-height: 1.55;
       margin-bottom: 14px;
       display: -webkit-box;
@@ -392,30 +394,31 @@
       line-height: 1.3;
     }
     .property-card--v2 .card-meta-icon {
-      width: 20px;
+      width: 22px;
       text-align: center;
       flex-shrink: 0;
-      font-size: 18px;
+      font-size: 16px;
       color: #f5b400;
+      line-height: 1;
     }
 
-    /* Footer — taller buttons, full-width spread */
+    /* Footer — no divider, compact equal-width buttons left-aligned */
     .property-card--v2 .card-footer {
       display: flex;
+      flex-wrap: wrap;
       gap: 8px;
       padding: 12px 16px 16px;
-      border-top: 1px solid #eee;
       margin-top: 14px;
     }
     .property-card--v2 .btn-card-primary {
-      flex: 1;
-      height: 46px;
-      padding: 0 10px;
+      flex: 0 0 auto;
+      height: 44px;
+      padding: 0 16px;
       background: #111;
       color: #fff;
-      border-radius: 8px;
+      border-radius: 6px;
       font-family: 'Poppins', sans-serif;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 600;
       text-decoration: none;
       display: inline-flex;
@@ -428,14 +431,14 @@
     }
     .property-card--v2 .btn-card-primary:hover { background: #2a2a2a; color: #fff; }
     .property-card--v2 .btn-card-tour {
-      flex: 1;
-      height: 46px;
-      padding: 0 10px;
+      flex: 0 0 auto;
+      height: 44px;
+      padding: 0 16px;
       background: #f5b400;
       color: #111;
-      border-radius: 8px;
+      border-radius: 6px;
       font-family: 'Poppins', sans-serif;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 700;
       text-decoration: none;
       display: inline-flex;
