@@ -731,7 +731,7 @@ async function main(){
     const tenureEl=$('#prop-tenure');if(tenureEl)tenureEl.textContent=tenureLabels.join(' / ');
 
     const heroDescEl=$('#prop-desc-hero');
-    if(heroDescEl&&p.description){const _s=p.description.match(/[^.!?]+[.!?]+/g)||[];heroDescEl.textContent=_s.length?_s.slice(0,2).join(' ').trim():p.description;}
+    if(heroDescEl&&p.description){const _s=p.description.match(/[^.!?]+[.!?]+/g)||[];heroDescEl.textContent=_s.length?_s.slice(0,1).join(' ').trim():p.description;}
 
     /* Hero meta with inline SVGs */
     const heroMetaEl=$('#prop-meta-hero');
