@@ -9,6 +9,7 @@
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/$1" },
     { "src": "/agents/(.*)", "dest": "/public/agents/$1" },
+    { "src": "/hero-bg.jpg", "dest": "/public/hero-bg.jpg" },
     { "src": "/property.html", "dest": "/property.html" },
     { "src": "/properties.json", "dest": "/properties.json" },
     { "src": "/property-search/([^/]+)", "dest": "/property.html?id=$1" },
