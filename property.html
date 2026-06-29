@@ -134,7 +134,7 @@
     .pc-btn--tour{ background:var(--amber); color:var(--btn-dark); }
 
     /* -------- LIGHTBOX -------- */
-    .lightbox{ position:fixed; inset:0; background:rgba(0,0,0,.9); z-index:9999; display:flex; flex-direction:column; }
+    .lightbox{ position:fixed; inset:0; background:rgba(0,0,0,.9); z-index:9999; display:flex; flex-direction:column; transition:opacity 0.1s ease; }
     .lightbox[hidden]{ display:none; }
 
     /* top bar: tabs left, actions right */
@@ -432,10 +432,12 @@ document.addEventListener('DOMContentLoaded', function(){
     zoomLevel = 1;
     renderTabs();
     activateMode(mode, 0);
+    lb.style.opacity = '0';
     lb.removeAttribute('hidden');
     document.body.style.overflow = 'hidden';
     window.scrollTo(0, 0);
     try { window.parent.postMessage({ type: 'lightbox-open' }, '*'); } catch(e) {}
+    setTimeout(function(){ lb.style.opacity = '1'; }, 120);
   }
 
   function close(){
