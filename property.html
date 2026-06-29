@@ -29,9 +29,19 @@
     /* -------- 1. HERO -------- */
     .hero{
       background:var(--amber);
-      background-image:linear-gradient(135deg, rgba(0,0,0,0.04) 1px, transparent 1px);
-      background-size:42px 42px;
+      position:relative;
+      overflow:hidden;
     }
+    .hero::before{
+      content:'';
+      position:absolute;
+      inset:0;
+      background:url('/hero-bg.jpg') center/cover no-repeat;
+      opacity:0.10;
+      pointer-events:none;
+      z-index:0;
+    }
+    .hero-inner{ position:relative; z-index:1; }
     .hero-inner{
       display:grid; grid-template-columns:1fr 1.05fr; gap:48px;
       align-items:center; padding:64px 0;
