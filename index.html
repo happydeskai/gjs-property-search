@@ -912,7 +912,7 @@ document.addEventListener('click', (e) => {
     var body = document.body, html = document.documentElement;
     return Math.max(
       body ? body.scrollHeight : 0, body ? body.offsetHeight : 0,
-      html ? html.clientHeight : 0, html ? html.scrollHeight : 0, html ? html.offsetHeight : 0
+      html ? html.scrollHeight : 0, html ? html.offsetHeight : 0
     );
   }
   function postHeight() {
