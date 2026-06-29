@@ -434,15 +434,15 @@ document.addEventListener('DOMContentLoaded', function(){
     activateMode(mode, 0);
     lb.removeAttribute('hidden');
     document.body.style.overflow = 'hidden';
-    // Scroll iframe to top so fixed lightbox is visible in viewport
     window.scrollTo(0, 0);
-    try { window.parent.postMessage({ type: 'scroll-top' }, '*'); } catch(e) {}
+    try { window.parent.postMessage({ type: 'lightbox-open' }, '*'); } catch(e) {}
   }
 
   function close(){
     lb.setAttribute('hidden', '');
     document.body.style.overflow = '';
-    lbIframe.src = '';   // stop tour playback
+    lbIframe.src = '';
+    try { window.parent.postMessage({ type: 'lightbox-close' }, '*'); } catch(e) {}
   }
 
   /* ---- tabs ---- */
