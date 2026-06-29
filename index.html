@@ -738,7 +738,7 @@ function render(list, context = {}) {
     return `
       <article class="property-card--v2">
         <div class="card-media">
-          ${img ? `<img src="${img}" alt="${address}" loading="lazy">` : ''}
+          ${img ? `<img src="${img}" alt="${address}" loading="eager">` : ''}
           <span class="card-status-banner ${statusBannerCls}">${statusText}</span>
           <button class="card-arrow card-arrow--prev" aria-label="Previous image">&#8249;</button>
           <button class="card-arrow card-arrow--next" aria-label="Next image">&#8250;</button>
