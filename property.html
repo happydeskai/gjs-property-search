@@ -361,6 +361,7 @@ function notifyParentHeightImmediate(){try{const h=getPageHeight();if(Math.abs(h
 function notifyParentHeight(){clearTimeout(heightTimer);heightTimer=setTimeout(notifyParentHeightImmediate,40);}
 function scheduleHeightPings(){notifyParentHeight();setTimeout(notifyParentHeight,120);setTimeout(notifyParentHeight,350);setTimeout(notifyParentHeight,900);setTimeout(notifyParentHeight,2000);}
 function watchImages(){Array.from(document.images||[]).forEach(img=>{if(img.complete)return;img.addEventListener('load',scheduleHeightPings,{once:true});img.addEventListener('error',scheduleHeightPings,{once:true});});}
+window.addEventListener('message',function(e){if(e.data&&e.data.type==='gjs-request-height')scheduleHeightPings();});
 
 let didScrollTop=false;
 function scrollTopOnce(){if(didScrollTop)return;didScrollTop=true;window.scrollTo(0,0);try{window.parent?.postMessage({type:'scroll-top'},'*');}catch(e){}}

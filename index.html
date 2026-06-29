@@ -917,31 +917,49 @@ document.addEventListener('click', (e) => {
 
 <!-- ---------- Auto-resize for Squarespace embed ---------- -->
 <script>
-(function() {
-  const MSG_TYPE = 'gjs-prop-height';
-  const frameId = new URLSearchParams(location.search).get('frameId') || 'search';
-  function calcHeight() {
-    const wrap = document.querySelector('.wrap');
-    if (!wrap) return document.documentElement.scrollHeight;
-    const rect = wrap.getBoundingClientRect();
-    return Math.max(Math.ceil(rect.top + window.scrollY + rect.height + 4), 300);
+(function () {
+  var lastHeight = 0;
+  function getDocumentHeight() {
+    var body = document.body, html = document.documentElement;
+    return Math.max(
+      body ? body.scrollHeight : 0, body ? body.offsetHeight : 0,
+      html ? html.clientHeight : 0, html ? html.scrollHeight : 0, html ? html.offsetHeight : 0
+    );
   }
-  function sendHeight() {
-    const h = calcHeight();
-    window.parent?.postMessage({ type: MSG_TYPE, id: frameId, height: h }, '*');
+  function postHeight() {
+    var h = getDocumentHeight();
+    if (!h || h === lastHeight) return;
+    lastHeight = h;
+    window.parent.postMessage({ type: 'gjs-height', height: h }, '*');
   }
-  const ro = new ResizeObserver(sendHeight);
-  ro.observe(document.documentElement); ro.observe(document.body);
-  const mo = new MutationObserver(sendHeight);
-  mo.observe(document.body, { childList: true, subtree: true, attributes: true, characterData: true });
-  window.addEventListener('load', sendHeight);
-  document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('img').forEach(i => {
-      if (!i.complete) i.addEventListener('load', sendHeight, { once: true });
-    });
+  function postHeightSoon() {
+    requestAnimationFrame(function () { requestAnimationFrame(postHeight); });
+  }
+  window.addEventListener('load', function () {
+    postHeightSoon();
+    setTimeout(postHeight, 150); setTimeout(postHeight, 500); setTimeout(postHeight, 1200);
   });
-  let ticks = 0;
-  const poll = setInterval(() => { sendHeight(); if (++ticks >= 10) clearInterval(poll); }, 1000);
+  window.addEventListener('resize', postHeightSoon);
+  window.addEventListener('message', function (e) {
+    if (e.data && e.data.type === 'gjs-request-height') postHeightSoon();
+  });
+  if ('ResizeObserver' in window) {
+    var ro = new ResizeObserver(postHeightSoon);
+    ro.observe(document.documentElement);
+    if (document.body) ro.observe(document.body);
+  }
+  if ('MutationObserver' in window) {
+    var mo = new MutationObserver(postHeightSoon);
+    mo.observe(document.documentElement, { childList: true, subtree: true, attributes: true });
+  }
+  document.addEventListener('click', function () {
+    setTimeout(postHeightSoon, 0); setTimeout(postHeightSoon, 150); setTimeout(postHeightSoon, 500);
+  }, true);
+  [history.pushState, history.replaceState].forEach(function (fn, i) {
+    var key = i === 0 ? 'pushState' : 'replaceState';
+    history[key] = function () { fn.apply(history, arguments); setTimeout(postHeightSoon, 0); setTimeout(postHeightSoon, 300); };
+  });
+  window.addEventListener('popstate', function () { setTimeout(postHeightSoon, 0); setTimeout(postHeightSoon, 300); });
 })();
 </script>
 
