@@ -434,6 +434,9 @@ document.addEventListener('DOMContentLoaded', function(){
     activateMode(mode, 0);
     lb.removeAttribute('hidden');
     document.body.style.overflow = 'hidden';
+    // Scroll iframe to top so fixed lightbox is visible in viewport
+    window.scrollTo(0, 0);
+    try { window.parent.postMessage({ type: 'scroll-top' }, '*'); } catch(e) {}
   }
 
   function close(){
