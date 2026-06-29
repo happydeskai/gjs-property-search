@@ -11,8 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
   <!-- Leaflet -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js" defer></script>
 
   <style>
     *, *::before, *::after { box-sizing: border-box; }
@@ -847,7 +848,7 @@ async function applyFilters() {
 
 async function loadProperties() {
   try {
-    const res = await fetch('./properties.json', { cache: 'no-store' });
+    const res = await fetch('./properties.json', { cache: 'default' });
     const raw = await res.json();
     allProperties = raw.map((p, i) => ({ id: p.id ?? p.slug ?? p.uid ?? i, ...p }));
 
