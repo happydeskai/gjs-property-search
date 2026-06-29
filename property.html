@@ -75,7 +75,7 @@
     .btn--amber{ background:var(--amber); color:var(--ink); }
 
     /* -------- 3. INFO GRID -------- */
-    .info{ padding:60px 0; }
+    .info{ padding:40px 0; }
     .info-grid{ display:grid; grid-template-columns:1fr 1fr; gap:56px; }
     .feat-list{ list-style:none; margin:0 0 36px; padding:0; }
     .feat-list li{ font-size:16px; line-height:1.9; padding-left:18px; position:relative; }
@@ -84,7 +84,7 @@
     .loc-map{ width:100%; aspect-ratio:16/10; border-radius:12px; margin-top:20px; overflow:hidden; }
 
     /* -------- 4. REQUEST A VIEWING -------- */
-    .viewing{ background:var(--grey-band); padding:60px 0; }
+    .viewing{ background:var(--grey-band); padding:40px 0; }
     .viewing-grid{ display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start; }
     .viewing-blurb{ font-size:16px; line-height:1.6; color:var(--ink-soft); max-width:380px; margin:0 0 28px; }
     .agent{ display:flex; align-items:flex-start; gap:24px; }
@@ -106,7 +106,7 @@
     .btn--dark{ background:#000; color:#fff; border-radius:8px; padding:12px 26px; font-family:inherit; font-size:14px; font-weight:600; border:0; cursor:pointer; }
 
     /* -------- 5. OTHER PROPERTIES NEARBY -------- */
-    .nearby{ padding:60px 0 80px; }
+    .nearby{ padding:40px 0 48px; }
     .nearby-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:22px; align-items:stretch; }
 
     /* Nearby cards — smaller spec from reference */
@@ -362,7 +362,7 @@ const getParam = n => {
 const isHttpUrl = s => typeof s==='string' && /^https?:\/\//i.test(s);
 
 let lastHeight=0, heightTimer=null;
-function getPageHeight(){const b=document.body;return Math.max(b.scrollHeight,b.offsetHeight,300);}
+function getPageHeight(){const b=document.body,h=document.documentElement;return Math.max(b.scrollHeight,b.offsetHeight,h.scrollHeight,300);}
 function notifyParentHeightImmediate(){try{const h=getPageHeight();if(Math.abs(h-lastHeight)<6)return;lastHeight=h;window.parent?.postMessage({type:'gjs-prop-height',height:h},'*');}catch(e){}}
 function notifyParentHeight(){clearTimeout(heightTimer);heightTimer=setTimeout(notifyParentHeightImmediate,40);}
 function scheduleHeightPings(){notifyParentHeight();setTimeout(notifyParentHeight,120);setTimeout(notifyParentHeight,350);setTimeout(notifyParentHeight,900);setTimeout(notifyParentHeight,2000);}
