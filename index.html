@@ -42,7 +42,7 @@
     .wrap{
       max-width: none;
       margin: 0 auto;
-      padding: 12px 18px 60px;
+      padding: 12px 18px 120px;
       min-width: 0;
       overflow-x: hidden;
     }
@@ -928,7 +928,7 @@ document.addEventListener('click', (e) => {
   function postHeight() {
     var h = getDocumentHeight();
     if (!h) return;
-    window.parent.postMessage({ type: 'gjs-height', height: h + 40 }, '*');
+    window.parent.postMessage({ type: 'gjs-height', height: h + 120 }, '*');
   }
   function postHeightSoon() {
     requestAnimationFrame(function () { requestAnimationFrame(postHeight); });
@@ -936,7 +936,7 @@ document.addEventListener('click', (e) => {
   window.addEventListener('load', function () {
     postHeightSoon();
     setTimeout(postHeight, 150); setTimeout(postHeight, 500); setTimeout(postHeight, 1200);
-    setTimeout(postHeight, 2500); setTimeout(postHeight, 4000);
+    setTimeout(postHeight, 2500); setTimeout(postHeight, 4000); setTimeout(postHeight, 6000); setTimeout(postHeight, 9000);
   });
   window.addEventListener('resize', postHeightSoon);
   window.addEventListener('message', function (e) {
