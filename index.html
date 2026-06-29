@@ -908,47 +908,32 @@ document.addEventListener('click', (e) => {
 <!-- ---------- Auto-resize for Squarespace embed ---------- -->
 <script>
 (function () {
-  function getDocumentHeight() {
+  var sent = false;
+  function getHeight() {
     var body = document.body, html = document.documentElement;
-    return Math.max(
-      body ? body.scrollHeight : 0, body ? body.offsetHeight : 0,
-      html ? html.scrollHeight : 0, html ? html.offsetHeight : 0
-    );
+    return Math.max(body.scrollHeight, body.offsetHeight, html.scrollHeight, html.offsetHeight);
   }
-  function postHeight() {
-    var h = getDocumentHeight();
-    if (!h) return;
-    window.parent.postMessage({ type: 'gjs-height', height: h + 20 }, '*');
+  function send() {
+    var h = getHeight();
+    if (!h || h < 100) return;
+    window.parent.postMessage({ type: 'gjs-height', height: h }, '*');
   }
-  function postHeightSoon() {
-    requestAnimationFrame(function () { requestAnimationFrame(postHeight); });
-  }
+  // Fire once after load + once after images settle
   window.addEventListener('load', function () {
-    postHeightSoon();
-    setTimeout(postHeight, 150); setTimeout(postHeight, 500); setTimeout(postHeight, 1200);
-    setTimeout(postHeight, 2500); setTimeout(postHeight, 4000); setTimeout(postHeight, 6000); setTimeout(postHeight, 9000);
+    setTimeout(send, 200);
+    setTimeout(send, 1000);
+    setTimeout(send, 3000);
   });
-  window.addEventListener('resize', postHeightSoon);
+  // Re-send on request from parent
   window.addEventListener('message', function (e) {
-    if (e.data && e.data.type === 'gjs-request-height') postHeightSoon();
+    if (e.data && e.data.type === 'gjs-request-height') setTimeout(send, 100);
   });
-  if ('ResizeObserver' in window) {
-    var ro = new ResizeObserver(postHeightSoon);
-    ro.observe(document.documentElement);
-    if (document.body) ro.observe(document.body);
-  }
-  if ('MutationObserver' in window) {
-    var mo = new MutationObserver(postHeightSoon);
-    mo.observe(document.documentElement, { childList: true, subtree: true, attributes: true });
-  }
-  document.addEventListener('click', function () {
-    setTimeout(postHeightSoon, 0); setTimeout(postHeightSoon, 150); setTimeout(postHeightSoon, 500);
-  }, true);
-  [history.pushState, history.replaceState].forEach(function (fn, i) {
-    var key = i === 0 ? 'pushState' : 'replaceState';
-    history[key] = function () { fn.apply(history, arguments); setTimeout(postHeightSoon, 0); setTimeout(postHeightSoon, 300); };
+  // Re-send after route changes (detail page nav)
+  ['pushState','replaceState'].forEach(function(k){
+    var orig = history[k];
+    history[k] = function(){ orig.apply(history,arguments); setTimeout(send,500); };
   });
-  window.addEventListener('popstate', function () { setTimeout(postHeightSoon, 0); setTimeout(postHeightSoon, 300); });
+  window.addEventListener('popstate', function(){ setTimeout(send,500); });
 })();
 </script>
 
