@@ -911,8 +911,8 @@ document.addEventListener('click', (e) => {
 (function () {
   var sent = false;
   function getHeight() {
-    var body = document.body, html = document.documentElement;
-    return Math.max(body.scrollHeight, body.offsetHeight, html.scrollHeight, html.offsetHeight);
+    var body = document.body;
+    return Math.max(body.scrollHeight, body.offsetHeight, 100);
   }
   function send() {
     var h = getHeight();

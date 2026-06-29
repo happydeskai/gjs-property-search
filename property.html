@@ -362,7 +362,7 @@ const getParam = n => {
 const isHttpUrl = s => typeof s==='string' && /^https?:\/\//i.test(s);
 
 let lastHeight=0, heightTimer=null;
-function getPageHeight(){const b=document.body,h=document.documentElement;return Math.max(b.scrollHeight,b.offsetHeight,h.scrollHeight,300);}
+function getPageHeight(){const b=document.body;return Math.max(b.scrollHeight,b.offsetHeight,300);}
 function notifyParentHeightImmediate(){try{const h=getPageHeight();if(Math.abs(h-lastHeight)<6)return;lastHeight=h;window.parent?.postMessage({type:'gjs-prop-height',height:h},'*');}catch(e){}}
 function notifyParentHeight(){clearTimeout(heightTimer);heightTimer=setTimeout(notifyParentHeightImmediate,40);}
 function scheduleHeightPings(){notifyParentHeight();setTimeout(notifyParentHeight,120);setTimeout(notifyParentHeight,350);setTimeout(notifyParentHeight,900);setTimeout(notifyParentHeight,2000);}
