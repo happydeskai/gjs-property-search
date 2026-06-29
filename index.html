@@ -918,7 +918,6 @@ document.addEventListener('click', (e) => {
 <!-- ---------- Auto-resize for Squarespace embed ---------- -->
 <script>
 (function () {
-  var lastHeight = 0;
   function getDocumentHeight() {
     var body = document.body, html = document.documentElement;
     return Math.max(
@@ -928,9 +927,8 @@ document.addEventListener('click', (e) => {
   }
   function postHeight() {
     var h = getDocumentHeight();
-    if (!h || h === lastHeight) return;
-    lastHeight = h;
-    window.parent.postMessage({ type: 'gjs-height', height: h }, '*');
+    if (!h) return;
+    window.parent.postMessage({ type: 'gjs-height', height: h + 40 }, '*');
   }
   function postHeightSoon() {
     requestAnimationFrame(function () { requestAnimationFrame(postHeight); });
@@ -938,6 +936,7 @@ document.addEventListener('click', (e) => {
   window.addEventListener('load', function () {
     postHeightSoon();
     setTimeout(postHeight, 150); setTimeout(postHeight, 500); setTimeout(postHeight, 1200);
+    setTimeout(postHeight, 2500); setTimeout(postHeight, 4000);
   });
   window.addEventListener('resize', postHeightSoon);
   window.addEventListener('message', function (e) {
