@@ -935,6 +935,9 @@ document.addEventListener('click', (e) => {
     setTimeout(send, 1000);
     setTimeout(send, 3000);
   });
+  // Tell parent we're back on the search page (clears ?property= from URL)
+  try { window.parent.postMessage({ type: 'gjs-back-to-search' }, '*'); } catch(e) {}
+
   // Re-send on request from parent
   window.addEventListener('message', function (e) {
     if (e.data && e.data.type === 'gjs-request-height') setTimeout(send, 100);
