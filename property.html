@@ -705,7 +705,8 @@ const iconMaximize=`<svg width="12" height="12" viewBox="0 0 512 512" fill="curr
 const iconPound=`<svg width="10" height="12" viewBox="0 0 320 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M112 160.4c0-35.5 28.8-64.4 64.4-64.4c6.9 0 13.8 1.1 20.4 3.3l81.2 27.1c16.8 5.6 34.9-3.5 40.5-20.2s-3.5-34.9-20.2-40.5L217 38.6c-13.1-4.4-26.8-6.6-40.6-6.6C105.5 32 48 89.5 48 160.4V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H48v74.8c0 17.2-5.5 33.9-15.6 47.7L6.4 446.9c-7.3 9.8-8.4 22.9-3 33.9S20.3 498.7 32.4 498.7H288c17.7 0 32-14.3 32-32s-14.3-32-32-32H93.3c5.6-13.9 8.5-28.8 8.5-43.9V288H208c17.7 0 32-14.3 32-32s-14.3-32-32-32H112V160.4z"/></svg>`;
 
 function renderNearbyCard(p){
-  const img=(p.images||[]).map(i=>typeof i==='string'?i:i.url||i._).filter(isHttpUrl)[0]||'';
+  let img=(p.images||[]).map(i=>typeof i==='string'?i:i.url||i._).filter(isHttpUrl)[0]||'';
+  if(img&&img.includes('imgix.net')&&!img.includes('?'))img+='?w=600&h=412&fit=crop&auto=format';
   const address=p.address||'Property';
   const tenures=[];if(p.to_let)tenures.push('To Let');if(p.for_sale)tenures.push('For Sale');
   const tenureLabel=tenures.join(' / ');
