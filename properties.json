@@ -1,5 +1,76 @@
 [
   {
+    "id": 346884,
+    "status": "Available",
+    "address": "Unit 5, West Court",
+    "town": "Bromsgrove",
+    "postcode": "B604AD",
+    "lat": 52.298109637,
+    "lon": -2.074777791,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1217,
+    "size_to_sqft": 1217,
+    "summary": "Office To Let, Bromsgrove",
+    "description": "Two storey office building on a popular business park The premises comprises of a completely refurbished mid terrace office building arranged over the ground and first floor with plenty of IT cabling. There are WC facilities, a kitchen and on site allocated parking is available with an EV charge point",
+    "location": "The property is located on Saxon Business Park, Hanbury Road, Stoke Prior, approximately 2 miles south of Bromsgrove town centre. Saxon Business Park has a range of small, medium and large, local and national, office and industrial occupiers, all of whom benefit from being on an established business park location with easily accessible estate roads and onsite car parking. Junction 5 of the M5 motorway is approximately 1 mile distant and junction 1 of the M42 motorway is approximately 3 miles distant, providing access to the M40 and M6 national motorway networks.",
+    "features": [
+      "1,217 sq ft (113.06 sq m) NIA",
+      "Open plan accommodation",
+      "Popular business park location",
+      "Allocated on site car parking with EV charge point",
+      "Fully refurbished to a high standard"
+    ],
+    "rent_psf": 13.8,
+    "rent_pa": 16800,
+    "rent": "£16,800 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/07da9133fb2c757e8ebfce5c9f66a75a-letting346884.jpeg",
+      "https://as-images.imgix.net/4c93965e3edb7d5e3985d623d8f66e68-20260216-142614.jpg",
+      "https://as-images.imgix.net/69a3c8355d2d69b365b77ea79990e5cd-20260216-142733.jpg",
+      "https://as-images.imgix.net/3fd44529597b81cdf2addffeaf4ff791-20260216-142824.jpg",
+      "https://as-images.imgix.net/3a3916408aec2ff6275c77f7af11390e-20260216-142743.jpg",
+      "https://as-images.imgix.net/ac44058127a6fdaad13e19c59b80d6ce-20260216-142446.jpg",
+      "https://as-images.imgix.net/08bc0945c4cd6646ea18a93f3bcf5d91-20260216-142400.jpg",
+      "https://as-images.imgix.net/9edc8296f63c00b80ef76def5498d244-20260216-142425.jpg",
+      "https://as-images.imgix.net/6cd74ecfa1eba5ac264f98c38f494a91-20260216-142413.jpg",
+      "https://as-images.imgix.net/20e68bb874095929958ed41499c6f6b5-20260216-142440.jpg",
+      "https://as-images.imgix.net/c9393b6d4c58793d017c3b352086b8ad-20260216-142858.jpg",
+      "https://as-images.imgix.net/e8637e34a54ed6aa1fc05da6c8fb8a2f-20260216-142836.jpg",
+      "https://as-images.imgix.net/2eb35a5b4320947c891b3222081e0627-20260216-142846.jpg",
+      "https://as-images.imgix.net/917fd14d782aae9a0dc2d04841303a15-20260216-142910.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/0537aaf90f959b8c84592920f2153389-gjs-dillon-particulars-5-west-court-saxon-business-park.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/877b058b58a6971b7d766d3ffac1aae2-cam04581g0-pr0063-build01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/6c12aa2fd1fe0abdd6cb277170aa7ed4-cam04581g0-pr0063-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/067fb922afdce31ba8bb1c3a913d46ea-cam04581g0-pr0063-build01-floor01.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/5westcourtbromsgrove"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-07-01 11:30:17"
+  },
+  {
     "id": 352214,
     "status": "Available",
     "address": "Unit 1, Edgar Estate",
@@ -290,77 +361,6 @@
       }
     ],
     "last_updated": "2026-06-30 10:56:05"
-  },
-  {
-    "id": 346884,
-    "status": "Available",
-    "address": "Unit 5, West Court",
-    "town": "Bromsgrove",
-    "postcode": "B604AD",
-    "lat": 52.298109637,
-    "lon": -2.074777791,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1217,
-    "size_to_sqft": 1217,
-    "summary": "Office To Let, Bromsgrove",
-    "description": "Two storey office building on a popular business park The premises comprises of a completely refurbished mid terrace office building arranged over the ground and first floor with plenty of IT cabling. There are WC facilities, a kitchen and on site allocated parking is available with an EV charge point",
-    "location": "The property is located on Saxon Business Park, Hanbury Road, Stoke Prior, approximately 2 miles south of Bromsgrove town centre. Saxon Business Park has a range of small, medium and large, local and national, office and industrial occupiers, all of whom benefit from being on an established business park location with easily accessible estate roads and onsite car parking. Junction 5 of the M5 motorway is approximately 1 mile distant and junction 1 of the M42 motorway is approximately 3 miles distant, providing access to the M40 and M6 national motorway networks.",
-    "features": [
-      "1,217 sq ft (113.06 sq m) NIA",
-      "Open plan accommodation",
-      "Popular business park location",
-      "Allocated on site car parking with EV charge point",
-      "Fully refurbished to a high standard"
-    ],
-    "rent_psf": 13.8,
-    "rent_pa": 16800,
-    "rent": "£16,800 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/07da9133fb2c757e8ebfce5c9f66a75a-letting346884.jpeg",
-      "https://as-images.imgix.net/4c93965e3edb7d5e3985d623d8f66e68-20260216-142614.jpg",
-      "https://as-images.imgix.net/69a3c8355d2d69b365b77ea79990e5cd-20260216-142733.jpg",
-      "https://as-images.imgix.net/3fd44529597b81cdf2addffeaf4ff791-20260216-142824.jpg",
-      "https://as-images.imgix.net/3a3916408aec2ff6275c77f7af11390e-20260216-142743.jpg",
-      "https://as-images.imgix.net/ac44058127a6fdaad13e19c59b80d6ce-20260216-142446.jpg",
-      "https://as-images.imgix.net/08bc0945c4cd6646ea18a93f3bcf5d91-20260216-142400.jpg",
-      "https://as-images.imgix.net/9edc8296f63c00b80ef76def5498d244-20260216-142425.jpg",
-      "https://as-images.imgix.net/6cd74ecfa1eba5ac264f98c38f494a91-20260216-142413.jpg",
-      "https://as-images.imgix.net/20e68bb874095929958ed41499c6f6b5-20260216-142440.jpg",
-      "https://as-images.imgix.net/c9393b6d4c58793d017c3b352086b8ad-20260216-142858.jpg",
-      "https://as-images.imgix.net/e8637e34a54ed6aa1fc05da6c8fb8a2f-20260216-142836.jpg",
-      "https://as-images.imgix.net/2eb35a5b4320947c891b3222081e0627-20260216-142846.jpg",
-      "https://as-images.imgix.net/917fd14d782aae9a0dc2d04841303a15-20260216-142910.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/0537aaf90f959b8c84592920f2153389-gjs-dillon-particulars-5-west-court-saxon-business-park.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/877b058b58a6971b7d766d3ffac1aae2-cam04581g0-pr0063-build01.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/6c12aa2fd1fe0abdd6cb277170aa7ed4-cam04581g0-pr0063-build01-floor00.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/067fb922afdce31ba8bb1c3a913d46ea-cam04581g0-pr0063-build01-floor01.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/5westcourtbromsgrove"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-06-29 13:17:09"
   },
   {
     "id": 346657,
