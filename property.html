@@ -928,6 +928,7 @@ async function main(){
     /* Legacy stubs */
     const brochureBtn=$('#brochureBtn');if(p.brochure&&brochureBtn){brochureBtn.href=p.brochure;}
 
+    try { window.parent.postMessage({ type: 'gjs-prop-id', id: String(p.id) }, '*'); } catch(e) {}
     scrollTopOnce();scheduleHeightPings();
     var ldr=document.getElementById("page-loader");if(ldr)ldr.style.display="none";
     if('ResizeObserver' in window)new ResizeObserver(()=>scheduleHeightPings()).observe(document.getElementById('content'));
