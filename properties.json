@@ -1,5 +1,74 @@
 [
   {
+    "id": 379671,
+    "status": "Available",
+    "address": "13 The Foregate",
+    "town": "Worcester",
+    "postcode": "WR1 3QD",
+    "lat": 52.193969,
+    "lon": -2.221177,
+    "types": [
+      "Retail",
+      "Office"
+    ],
+    "raw_types": [
+      "Class E Retail / Leisure",
+      "Office",
+      "Retail",
+      "High Street Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2668,
+    "size_to_sqft": 2668,
+    "summary": "Extensive retail premises with unique features throughout",
+    "description": "13 The Foregate is a retail property that forms part of the wider Hopmarket development.  It is arranged over the basement, ground and first floor levels.\n\nThe ground floor is immediately accessed off The Foregate, which comprises the northern end of Worcester’s main retail area.  There is an entrance foyer which leads to a large (887 sq ft) trading area.  Off the main sales area there are further rooms, a kitchen and two rear staff / storage areas.  There are a further two rooms and a WC on the first floor, which is accessed via an internal staircase to the rear of the property.  Th basement area offers further accommodation, including a room that forms part of the former banking vault.\n\nThe property benefits from gas central heating throughout.\n\nBasement\t70.59 sq m\t760 sq ft\nGround Floor\t152.20 sq m\t1,638 sq ft\nFirst Floor\t25.12 sq m\t270 sq ft\nTotal\t247.91 sq m\t2,668 sq ft",
+    "location": "Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London.  Worcester has excellent access to the M5 motorway, which lies adjacent to the subject property with Junction 7 being approximately one and a half miles drive south.  The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network.\n\nWorcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
+    "features": [
+      "Total net area of 2,668 sq ft (247.91 sq m)",
+      "Extensive space arranged over the basement, ground and first floor",
+      "Large ground floor trading area accessed directly off The Foregate",
+      "Unique features throughout owing to the former banking use",
+      "Fitted out to a good standard, ready for immediate occupation"
+    ],
+    "rent_psf": 7.87,
+    "rent_pa": 21000,
+    "rent": "£21,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 16500,
+    "service_charge": "7100",
+    "epc_rating": "C (66)",
+    "images": [
+      "https://as-images.imgix.net/194034cda35ecfa9ca4cf0480e50b995-img-1016.JPEG",
+      "https://as-images.imgix.net/82abf5bb4839b7d94e1ef3548e1961f3-img-1022.JPEG",
+      "https://as-images.imgix.net/2d9caf76b8790f39065e991b69f8b46d-img-1021.JPEG",
+      "https://as-images.imgix.net/849810e8778d6c4b59d3d2e26f4c5e92-img-1018.JPEG",
+      "https://as-images.imgix.net/8af52036a509dcf4d47d66af6a0e015f-img-1023.JPEG",
+      "https://as-images.imgix.net/f8b7da6f4e6762fc2bad47115388441b-img-1025.JPEG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/aeaa97eae7be415fc52298e89f35d939-gjs-dillon-particulars-13-the-foregate-worcester.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-07-02 11:12:52"
+  },
+  {
     "id": 346660,
     "status": "Available",
     "address": "Suite 4, 9-10 The Tything",
