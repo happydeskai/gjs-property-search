@@ -212,6 +212,19 @@
     @media(max-width:480px){
       .nearby-grid{ grid-template-columns:1fr; }
     }
+    /* Mobile-only polish (phones) — does not affect desktop */
+    @media(max-width:600px){
+      /* Lightbox: reclaim width/height so photos render large on phones */
+      .lb-stage{ padding:0 6px; gap:6px; }
+      .lb-nav{ width:36px; height:36px; font-size:18px; }
+      .lb-top{ padding:10px 12px; }
+      .lb-tab{ padding:8px 12px; font-size:13px; }
+      .lb-thumbs{ padding:8px 12px 12px; }
+      .lb-thumb img{ width:64px; height:46px; }
+      /* Viewing form: stack paired inputs so placeholder text fits */
+      .form-row-pair{ flex-direction:column; gap:0; }
+      .form-card{ padding:22px; }
+    }
   </style>
 </head>
 

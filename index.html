@@ -437,6 +437,10 @@
     @media (max-width: 640px) {
       .search-page-v2 .searchBar .field { flex: 1 1 100%; }
       .search-page-v2 .searchBar .field--location { flex: 1 1 100%; }
+      /* Footer buttons wrap on mobile so "View Brochure" isn't clipped */
+      .property-card--v2 .card-footer { flex-wrap: wrap; }
+      .property-card--v2 .card-footer .btn-card-primary,
+      .property-card--v2 .card-footer .btn-card-tour { flex: 1 1 auto; justify-content: center; }
     }
   </style>
 </head>
