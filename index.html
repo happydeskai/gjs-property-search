@@ -5,9 +5,24 @@
   <title>Property Search</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    @font-face {
+      font-family: 'CenturyGothicGJS';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/691d8a9556fcd46935d926f3/assets/6db719bf-c56e-48ad-a74c-e66e30ce2664/font.ttf') format('truetype');
+    }
+  </style>
+
   <!-- Leaflet -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js" defer></script>
 
   <style>
     *, *::before, *::after { box-sizing: border-box; }
@@ -27,7 +42,7 @@
 
     body{
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      font-family: 'Roboto', Arial, sans-serif;
       color: var(--text);
       background: #fff;
       overflow-x: hidden;
@@ -35,9 +50,9 @@
     }
 
     .wrap{
-      max-width: 1200px;
+      max-width: none;
       margin: 0 auto;
-      padding: 12px 18px 60px;
+      padding: 0 56px 8px;
       min-width: 0;
       overflow-x: hidden;
     }
@@ -47,17 +62,7 @@
       overflow: hidden;
       box-shadow: 0 10px 30px rgba(0,0,0,.06);
       margin-bottom: 18px;
-    }
-
-    @media (min-width: 641px) {
-      .bleed{
-        width: 100vw;
-        position: relative;
-        left: 50%;
-        right: 50%;
-        margin-left: -50vw;
-        margin-right: -50vw;
-      }
+      width: 100%;
     }
 
     #map{
@@ -105,7 +110,7 @@
 
     .meta{ color: var(--muted); margin: 8px 0 12px; }
 
-    .cards{ display: grid; grid-template-columns: 1fr; gap: var(--gap); margin-top: 10px; border-top: var(--border); padding-top: 16px; }
+    .cards{ display: grid; grid-template-columns: 1fr; gap: var(--gap); margin-top: 10px; border-top: var(--border); padding-top: 16px; margin-bottom: 0; }
     @media (min-width: 640px){ .cards{ grid-template-columns: repeat(2, minmax(0,1fr)); } }
     @media (min-width: 1024px){ .cards{ grid-template-columns: repeat(3, minmax(0,1fr)); } }
 
@@ -160,14 +165,290 @@
       .searchBar{ grid-template-columns: 1fr; }
       .btn{ width: 100%; }
     }
+
+    /* ============================================================
+       REDESIGN v2 — scoped under .search-page-v2 / .property-card--v2
+       Original classes above are untouched for safety.
+       ============================================================ */
+
+    /* Fonts */
+    .search-page-v2 h1, .search-page-v2 h2, .search-page-v2 h3,
+    .property-card--v2 .card-tenure {
+      font-family: 'CenturyGothicGJS', 'Century Gothic', sans-serif;
+    }
+    .search-page-v2, .search-page-v2 p, .search-page-v2 input,
+    .search-page-v2 select, .search-page-v2 button,
+    .property-card--v2, .property-card--v2 .card-desc,
+    .property-card--v2 .card-meta-row, .property-card--v2 .card-address-link,
+    .property-card--v2 .btn-card-primary, .property-card--v2 .btn-card-tour,
+    .v2-result-summary {
+      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    /* Search bar v2 */
+    .search-page-v2 .searchBar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 18px;
+      border: 1px solid #e7e7e7;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: none;
+      align-items: flex-end;
+      margin-bottom: 8px;
+    }
+    .search-page-v2 .searchBar .field {
+      flex: 1 1 120px;
+      min-width: 0;
+    }
+    .search-page-v2 .searchBar .field--location {
+      flex: 2 1 180px;
+    }
+    .search-page-v2 .search-row-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .btn-search-v2 {
+      height: 44px;
+      padding: 0 28px;
+      background: #f4c20d;
+      color: #111;
+      border-radius: 999px;
+      border: none;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .btn-search-v2:hover { background: #e0b00c; }
+
+    /* Result count v2 */
+    .search-page-v2 .v2-result-summary {
+      margin: 4px 0 14px;
+    }
+    .search-page-v2 .v2-result-summary .v2-showing {
+      font-size: 14px;
+      color: #666;
+    }
+    .search-page-v2 .v2-result-summary .v2-found {
+      font-size: 14px;
+      font-weight: 600;
+      color: #111;
+    }
+
+    /* ── Property card v2 — values copied verbatim from reference ── */
+    .property-card--v2 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background: #F4F4F5;
+      border: 1px solid #E8E8E8;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: none;
+    }
+
+    /* Image: edge-to-edge, 16/11 ratio */
+    .property-card--v2 .card-media {
+      position: relative;
+      aspect-ratio: 16 / 11;
+      background: #ddd center / cover no-repeat;
+      flex-shrink: 0;
+    }
+    .property-card--v2 .card-media img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Carousel arrows: 44×74px dark rectangles, flush to edges */
+    .property-card--v2 .card-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 74px;
+      border: 0;
+      background: rgba(40,40,40,0.55);
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      z-index: 2;
+    }
+    .property-card--v2 .card-arrow--prev { left: 0; }
+    .property-card--v2 .card-arrow--next { right: 0; }
+    .property-card--v2 .card-arrow:hover { background: rgba(40,40,40,0.8); }
+
+    /* Status badge: rounded rectangle, not pill */
+    .property-card--v2 .card-status-banner {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-family: 'CenturyGothicGJS', 'Century Gothic', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      background: #F5B400;
+      color: #141414;
+      z-index: 3;
+    }
+    .property-card--v2 .card-status-banner--available {
+      background: #22A45D;
+      color: #fff;
+    }
+
+    /* Card body */
+    .property-card--v2 .card-body {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 22px 24px 24px;
+      background: #F4F4F5;
+    }
+
+    /* Title: 25px weight-300 Century Gothic */
+    .property-card--v2 .card-address-link,
+    .property-card--v2 .card-address-link:link,
+    .property-card--v2 .card-address-link:visited,
+    .property-card--v2 .card-address-link:active {
+      display: block;
+      margin: 0 0 12px;
+      font-family: 'CenturyGothicGJS', 'Century Gothic', sans-serif;
+      font-size: 25px;
+      font-weight: 300;
+      line-height: 1.18;
+      letter-spacing: -0.01em;
+      color: #1C1C1C;
+      text-decoration: none;
+    }
+    .property-card--v2 .card-address-link:hover,
+    .property-card--v2 .card-address-link:focus {
+      color: #1C1C1C;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      outline: none;
+    }
+
+    /* TO LET: 17px bold */
+    .property-card--v2 .card-tenure {
+      font-family: 'CenturyGothicGJS', 'Century Gothic', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: #1C1C1C;
+      margin-bottom: 14px;
+    }
+
+    /* Description: 16px, ink-soft, 3-line clamp */
+    .property-card--v2 .card-desc {
+      margin: 0 0 18px;
+      font-family: 'Roboto', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.45;
+      color: #3A3A3A;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Meta rows */
+    .property-card--v2 .card-meta-row {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      margin-bottom: 22px;
+    }
+    .property-card--v2 .card-meta-row > span {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: 'Roboto', Arial, sans-serif;
+      font-size: 16px;
+      color: #1C1C1C;
+    }
+    .property-card--v2 .card-meta-icon {
+      width: 22px;
+      display: inline-flex;
+      justify-content: center;
+      color: #F5B400;
+      flex: none;
+    }
+
+    /* Footer: margin-top:auto pins to bottom; nowrap keeps 360° Tour on same row */
+    .property-card--v2 .card-footer {
+      margin-top: auto;
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 8px;
+      padding: 0;
+    }
+    .property-card--v2 .btn-card-primary {
+      flex: 0 0 auto;
+      white-space: nowrap;
+      padding: 11px 12px;
+      border: 0;
+      border-radius: 6px;
+      font-family: 'Roboto', Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      background: #141414;
+      color: #fff;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+    }
+    .property-card--v2 .btn-card-primary:hover { background: #2a2a2a; color: #fff; }
+    .property-card--v2 .btn-card-tour {
+      flex: 0 0 auto;
+      white-space: nowrap;
+      padding: 11px 12px;
+      border: 0;
+      border-radius: 6px;
+      font-family: 'Roboto', Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      background: #F5B400;
+      color: #141414;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .property-card--v2 .btn-card-tour:hover { background: #e0a800; }
+
+    /* When all 3 buttons are present, wrap onto two rows */
+    .property-card--v2 .card-footer:has(.btn-card-tour) { flex-wrap: wrap; }
+    .property-card--v2 .card-footer:has(.btn-card-tour) .btn-card-tour { order: 3; }
+
+    @media (max-width: 640px) {
+      .search-page-v2 .searchBar .field { flex: 1 1 100%; }
+      .search-page-v2 .searchBar .field--location { flex: 1 1 100%; }
+    }
   </style>
 </head>
 
 <body>
-<div class="wrap">
+<div class="wrap search-page-v2">
+  <!-- Map is above search bar in v2 design -->
   <div class="bleed"><div id="map"></div></div>
+
+  <!-- Search bar v2: flat, all fields in one row, Search button below -->
   <div class="searchBar" id="searchForm">
-    <div class="field"><label for="q">Location</label><input id="q" placeholder="Town, postcode" /></div>
+    <div class="field field--location"><label for="q">Location</label><input id="q" placeholder="Town, postcode" /></div>
     <div class="field"><label for="tenure">Tenure</label>
       <select id="tenure">
         <option value="any">Any</option>
@@ -223,11 +504,23 @@
         <option value="20000">20,000 sq ft</option>
       </select>
     </div>
-    <button class="btn" id="searchBtn" type="button">Search</button>
   </div>
-  <div class="meta" id="statusText">Loading properties…</div>
-  <div class="meta" id="resultsCount"></div>
+  <!-- Search button below the fields row -->
+  <div class="search-row-actions">
+    <button class="btn-search-v2" id="searchBtn" type="button">Search</button>
+  </div>
+
+  <!-- Result summary v2: two lines -->
+  <div class="v2-result-summary" id="v2ResultSummary" aria-live="polite">
+    <div class="v2-showing" id="statusText">Loading properties…</div>
+    <div class="v2-found" id="resultsCount"></div>
+  </div>
+
   <div class="cards" id="results"></div>
+</div>
+
+<div style="background:#111;padding:36px 56px;margin-top:32px;">
+  <p style="margin:0;color:#F5B400;font-family:'CenturyGothicGJS','Century Gothic',sans-serif;font-size:22px;font-weight:400;font-style:italic;text-align:center;letter-spacing:-0.01em;">Regional knowledge and commercial expertise, with you at every stage.</p>
 </div>
 
 <script>
@@ -346,11 +639,11 @@ function updateMap(list, focusPoint) {
     if (!isFinite(lat) || !isFinite(lon)) return;
 
     const m = L.circleMarker([lat, lon], {
-      radius: 7,
-      weight: 2,
-      color: '#111',
-      fillColor: '#111',
-      fillOpacity: 0.85
+      radius: 8,
+      weight: 0,
+      color: 'transparent',
+      fillColor: '#f4c20d',
+      fillOpacity: 1
     });
 
     const img = getPrimaryImage(p);
@@ -399,10 +692,16 @@ function updateMap(list, focusPoint) {
   else map.fitBounds(points, { padding: [60, 60], maxZoom: MAX_SEARCH_ZOOM });
 }
 
+function getStatusBannerClass(p) {
+  const lc = String(p.status || 'Available').toLowerCase();
+  if (!lc || lc === 'available') return 'card-status-banner--available';
+  return ''; // yellow (default)
+}
+
 function render(list, context = {}) {
   const el = document.getElementById('results');
-  document.getElementById('resultsCount').textContent = `${list.length} Properties Found`;
 
+  // v2: two-line result count
   const parts = [`Showing ${list.length} of ${allProperties.length}`];
   if (context.nearLabel) {
     if (context.radiusMiles)
@@ -410,6 +709,7 @@ function render(list, context = {}) {
     parts.push(`of "${context.nearLabel}"`);
   }
   document.getElementById('statusText').textContent = parts.join(' ');
+  document.getElementById('resultsCount').textContent = `${list.length} Properties Found`;
 
   if (!list.length) {
     el.innerHTML = `<div class="empty">No properties match your filters.</div>`;
@@ -419,35 +719,45 @@ function render(list, context = {}) {
   el.innerHTML = list.map(p => {
     const img = getPrimaryImage(p);
     const address = p.address || 'Property';
-    const town = p.town || '';
-    const postcode = p.postcode || '';
     const size = sizeText(p);
     const tenureLabel = getTenureLabel(p);
-    const { html: statusBadge, isUnavailable } = getStatusBadge(p);
-    // FIX: distance now shown in miles (consistent with radius filter UI)
-    const distStr = (typeof p.__distance === 'number' && isFinite(p.__distance))
-      ? ` • ${(p.__distance / 1609.344).toFixed(1)} mi`
-      : '';
+    const statusText = String(p.status || 'Available').trim();
+    const statusBannerCls = getStatusBannerClass(p);
+    const types = getTypesArray(p);
+    const typeLabel = types.raw[0] || '';
+    const hasTour = Array.isArray(p.virtual_tour_urls) && p.virtual_tour_urls.length > 0;
+    const tourUrl = hasTour ? p.virtual_tour_urls[0] : '';
+    const brochureUrl = p.brochure || p.brochure_url || '';
+    const desc = p.description || '';
+    const price = p.rent || (p.price && !p.rent ? p.price : '');
+
+    // Inline SVG icons — exact paths from reference file, no tracing
+    const iconBuilding = `<svg width="17" height="20" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="2" width="18" height="24" rx="1.6" stroke="currentColor" stroke-width="2.2"/><g fill="currentColor"><rect x="5.6" y="5.4" width="2.1" height="2.1"/><rect x="9" y="5.4" width="2.1" height="2.1"/><rect x="12.4" y="5.4" width="2.1" height="2.1"/><rect x="15.8" y="5.4" width="2.1" height="2.1"/><rect x="5.6" y="9.1" width="2.1" height="2.1"/><rect x="9" y="9.1" width="2.1" height="2.1"/><rect x="12.4" y="9.1" width="2.1" height="2.1"/><rect x="15.8" y="9.1" width="2.1" height="2.1"/><rect x="5.6" y="12.8" width="2.1" height="2.1"/><rect x="9" y="12.8" width="2.1" height="2.1"/><rect x="12.4" y="12.8" width="2.1" height="2.1"/><rect x="15.8" y="12.8" width="2.1" height="2.1"/><rect x="5.6" y="16.5" width="2.1" height="2.1"/><rect x="9" y="16.5" width="2.1" height="2.1"/><rect x="12.4" y="16.5" width="2.1" height="2.1"/><rect x="15.8" y="16.5" width="2.1" height="2.1"/><rect x="5.6" y="20.2" width="2.1" height="2.1"/><rect x="15.8" y="20.2" width="2.1" height="2.1"/><rect x="9.7" y="20.2" width="4.1" height="5.8"/></g></svg>`;
+    const iconMaximize = `<svg width="17" height="17" viewBox="0 0 512 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M344 0H488c13.3 0 24 10.7 24 24V168c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2l-39-39-87 87c-9.4 9.4-24.6 9.4-33.9 0l-32-32c-9.4-9.4-9.4-24.6 0-33.9l87-87L327 33c-6.9-6.9-8.9-17.2-5.2-26.2S334.3 0 344 0zM168 512H24c-13.3 0-24-10.7-24-24V344c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2l39 39 87-87c9.4-9.4 24.6-9.4 33.9 0l32 32c9.4 9.4 9.4 24.6 0 33.9l-87 87 39 39c6.9 6.9 8.9 17.2 5.2 26.2S177.7 512 168 512zM496 344V488c0 13.3-10.7 24-24 24H328c-9.7 0-18.5-5.8-22.2-14.8s-1.7-19.3 5.2-26.2l39-39-87-87c-9.4-9.4-9.4-24.6 0-33.9l32-32c9.4-9.4 24.6-9.4 33.9 0l87 87 39-39c6.9-6.9 17.2-8.9 26.2-5.2s14.8 12.5 14.8 22.2zM168 0c9.7 0 18.5 5.8 22.2 14.8s1.7 19.3-5.2 26.2l-39 39 87 87c9.4 9.4 9.4 24.6 0 33.9l-32 32c-9.4 9.4-24.6 9.4-33.9 0l-87-87L41 224c-6.9 6.9-17.2 8.9-26.2 5.2S0 216.7 0 207V24C0 10.7 10.7 0 24 0H168z"/></svg>`;
+    const iconPound = `<svg width="13" height="17" viewBox="0 0 320 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M112 160.4c0-35.5 28.8-64.4 64.4-64.4c6.9 0 13.8 1.1 20.4 3.3l81.2 27.1c16.8 5.6 34.9-3.5 40.5-20.2s-3.5-34.9-20.2-40.5L217 38.6c-13.1-4.4-26.8-6.6-40.6-6.6C105.5 32 48 89.5 48 160.4V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H48v74.8c0 17.2-5.5 33.9-15.6 47.7L6.4 446.9c-7.3 9.8-8.4 22.9-3 33.9S20.3 498.7 32.4 498.7H288c17.7 0 32-14.3 32-32s-14.3-32-32-32H93.3c5.6-13.9 8.5-28.8 8.5-43.9V288H208c17.7 0 32-14.3 32-32s-14.3-32-32-32H112V160.4z"/></svg>`;
 
     return `
-      <article class="card${isUnavailable ? ' card--unavailable' : ''}">
-        <div class="card__media">${img ? `<img src="${img}" alt="${address}" loading="lazy">` : ''}</div>
-        <div class="card__body">
-          <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:2px;">
-            ${statusBadge}
-            ${tenureLabel ? `<span class="chip" style="margin-top:0;">${tenureLabel}</span>` : ''}
-          </div>
-          <div class="card__loc">${[town, postcode].filter(Boolean).join(' ')}${distStr}</div>
-          <a class="card__title" href="property.html?id=${encodeURIComponent(p.id ?? '')}" aria-label="View ${address}">${address}</a>
-          ${size ? `<div class="card__meta">${size}</div>` : ''}
-${p.rent ? `<div class="card__meta" style="font-weight:600;color:#111;">${p.rent}</div>` : ''}
-${p.price && !p.rent ? `<div class="card__meta" style="font-weight:600;color:#111;">${p.price}</div>` : ''}
+      <article class="property-card--v2">
+        <div class="card-media">
+          ${img ? `<img src="${img}" alt="${address}" loading="eager">` : ''}
+          <span class="card-status-banner ${statusBannerCls}">${statusText}</span>
+          <button class="card-arrow card-arrow--prev" aria-label="Previous image">&#8249;</button>
+          <button class="card-arrow card-arrow--next" aria-label="Next image">&#8250;</button>
         </div>
-        <div class="card__footer">
-          <a class="btn-ghost" href="property.html?id=${encodeURIComponent(p.id ?? '')}">View property</a>
-          ${(p.brochure || p.brochure_url)
-            ? `<a class="btn-link" href="${p.brochure || p.brochure_url}" target="_blank" rel="noopener">View brochure</a>`
-            : `<span class="btn-link btn-link--disabled" aria-disabled="true">No brochure</span>`}
+        <div class="card-body">
+          <a class="card-address-link" href="property.html?id=${encodeURIComponent(p.id ?? '')}">${address}</a>
+          ${tenureLabel ? `<div class="card-tenure">${tenureLabel}</div>` : ''}
+          ${desc ? `<p class="card-desc">${desc}</p>` : ''}
+          <div class="card-meta-row">
+            ${typeLabel ? `<span><span class="card-meta-icon" aria-hidden="true">${iconBuilding}</span>${typeLabel}</span>` : ''}
+            ${size ? `<span><span class="card-meta-icon" aria-hidden="true">${iconMaximize}</span>${size}</span>` : ''}
+            ${price ? `<span><span class="card-meta-icon" aria-hidden="true">${iconPound}</span>${price}</span>` : ''}
+          </div>
+          <div class="card-footer">
+            <a class="btn-card-primary" href="property.html?id=${encodeURIComponent(p.id ?? '')}">View Property</a>
+            ${brochureUrl ? `<a class="btn-card-primary" href="${brochureUrl}" target="_blank" rel="noopener">View Brochure</a>` : ''}
+            ${hasTour ? `<a class="btn-card-tour" href="${tourUrl}" target="_blank" rel="noopener">360&deg; Tour</a>` : ''}
+          </div>
         </div>
       </article>`;
   }).join('');
@@ -525,11 +835,11 @@ async function applyFilters() {
     return sizeB - sizeA;
   });
 
-  if (!q) { const sorted = sortBySize(base); render(sorted); updateMap(sorted); return; }
+  if (!q) { const sorted = sortBySize(base); render(sorted); try{updateMap(sorted);}catch(e){} return; }
 
   const point = await geocodePlace(q);
   if (!point) {
-    render(sortBySize(base)); updateMap(sortBySize(base)); return;
+    const s=sortBySize(base); render(s); try{updateMap(s);}catch(e){} return;
   }
 
   let finalList = sortByDistance(base, point);
@@ -543,12 +853,12 @@ async function applyFilters() {
   if (finalList.length > 60) finalList = finalList.slice(0, 60);
 
   render(finalList, { nearLabel: point.label || q, radiusMiles });
-  updateMap(finalList, point);
+  try{updateMap(finalList, point);}catch(e){}
 }
 
 async function loadProperties() {
   try {
-    const res = await fetch('./properties.json', { cache: 'no-store' });
+    const res = await fetch('./properties.json', { cache: 'default' });
     const raw = await res.json();
     allProperties = raw.map((p, i) => ({ id: p.id ?? p.slug ?? p.uid ?? i, ...p }));
 
@@ -586,7 +896,7 @@ function prefillFromURL() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  initMap();
+  try { initMap(); } catch(e) { console.warn('Map unavailable:', e.message); }
   document.getElementById('searchBtn').onclick = applyFilters;
   document.getElementById('q').addEventListener('keydown', e => {
     if (e.key === 'Enter') { e.preventDefault(); applyFilters(); }
@@ -608,31 +918,36 @@ document.addEventListener('click', (e) => {
 
 <!-- ---------- Auto-resize for Squarespace embed ---------- -->
 <script>
-(function() {
-  const MSG_TYPE = 'gjs-prop-height';
-  const frameId = new URLSearchParams(location.search).get('frameId') || 'search';
-  function calcHeight() {
-    const wrap = document.querySelector('.wrap');
-    if (!wrap) return document.documentElement.scrollHeight;
-    const rect = wrap.getBoundingClientRect();
-    return Math.max(Math.ceil(rect.top + window.scrollY + rect.height + 4), 300);
+(function () {
+  var sent = false;
+  function getHeight() {
+    var body = document.body;
+    return Math.max(body.scrollHeight, body.offsetHeight, 100);
   }
-  function sendHeight() {
-    const h = calcHeight();
-    window.parent?.postMessage({ type: MSG_TYPE, id: frameId, height: h }, '*');
+  function send() {
+    var h = getHeight();
+    if (!h || h < 100) return;
+    window.parent.postMessage({ type: 'gjs-height', height: h }, '*');
   }
-  const ro = new ResizeObserver(sendHeight);
-  ro.observe(document.documentElement); ro.observe(document.body);
-  const mo = new MutationObserver(sendHeight);
-  mo.observe(document.body, { childList: true, subtree: true, attributes: true, characterData: true });
-  window.addEventListener('load', sendHeight);
-  document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('img').forEach(i => {
-      if (!i.complete) i.addEventListener('load', sendHeight, { once: true });
-    });
+  // Fire once after load + once after images settle
+  window.addEventListener('load', function () {
+    setTimeout(send, 200);
+    setTimeout(send, 1000);
+    setTimeout(send, 3000);
   });
-  let ticks = 0;
-  const poll = setInterval(() => { sendHeight(); if (++ticks >= 10) clearInterval(poll); }, 1000);
+  // Tell parent we're back on the search page (clears ?property= from URL)
+  try { window.parent.postMessage({ type: 'gjs-back-to-search' }, '*'); } catch(e) {}
+
+  // Re-send on request from parent
+  window.addEventListener('message', function (e) {
+    if (e.data && e.data.type === 'gjs-request-height') setTimeout(send, 100);
+  });
+  // Re-send after route changes (detail page nav)
+  ['pushState','replaceState'].forEach(function(k){
+    var orig = history[k];
+    history[k] = function(){ orig.apply(history,arguments); setTimeout(send,500); };
+  });
+  window.addEventListener('popstate', function(){ setTimeout(send,500); });
 })();
 </script>
 
