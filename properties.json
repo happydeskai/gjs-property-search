@@ -52,7 +52,14 @@
       "https://as-images.imgix.net/6f56c2f56fe76721bd0d4df42c7da41f-img-1154.JPEG"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f4e8ce13e4f6379470227be140963164-gjs-dillon-particulars-alpha-house-hampton-lovett-droitwich.pdf",
-    "floor_plan_urls": [],
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/dfe42f7681ba157ba467982a6a9cabc6-cam04581g0-pr0067-build01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/d5df69244b6a9caa1c7d8396a9e4c60b-cam04581g0-pr0067-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/0c1f88fde3825bc3e5c851efffd917cf-cam04581g0-pr0067-build01-floor01.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/alphahousedroitwich"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -71,7 +78,7 @@
         "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-07-06 13:32:34"
+    "last_updated": "2026-07-06 17:09:23"
   },
   {
     "id": 346680,
