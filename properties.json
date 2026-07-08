@@ -1,5 +1,86 @@
 [
   {
+    "id": 380213,
+    "status": "Available",
+    "address": "Alpha House",
+    "town": "Droitwich",
+    "postcode": "WR9 0NX",
+    "lat": 52.28469,
+    "lon": -2.168149,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3979,
+    "size_to_sqft": 3979,
+    "summary": "Modern Headquarters Office close to the M5",
+    "description": "Alpha House comprises a detached, modern office premises arranged over the ground and first floors.  The main entrance comprises a reception area with WC facilities.  This is replicated over the first floor with further WC facilities.  Each floor offers open plan office accommodation which benefits from an abundance of natural light, having four glazed elevations.  There are currently glazed meeting rooms on the ground floor.\n\nExternally there is a secure car park with the benefit of 17 car parking spaces, including the provision of EV chargers.\n\nGround\t185.91 sq m 2,001 sq ft\nFirst\t183.76 sq m 1,978 sq ft\nTotal       369.67 sq m 3,979 sq ft\n(NIA)",
+    "location": "Hampton Lovett Business Park lies to the north of Droitwich town centre, approximately three miles from Junction 5 of the M5 motorway.  From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales.\n\nThe estate is home to a number of local, national and multi-national occupiers who all take advantage of the great road connections.",
+    "features": [
+      "Total net internal area of 3,979 sq ft (369.67 sq m), arranged over the ground and first floor",
+      "Full open plan workspace over the first floor",
+      "Secure car park for 17 cars",
+      "Situated a three mile drive from Junction 5 of the M5 motorway",
+      "Detached office premises with an abundance of glazing to all four elevations"
+    ],
+    "rent_psf": 16.34,
+    "rent_pa": 65000,
+    "rent": "£65,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/cdfeedbaf431b3fbb0a8310a453fd4a4-dji-0035.JPG",
+      "https://as-images.imgix.net/d46cd836b698df5e7cfbe7e1b70f0c7b-dji-0036.JPG",
+      "https://as-images.imgix.net/3c0cf3c2403033b94ef23ffd6f184284-dji-0024.JPG",
+      "https://as-images.imgix.net/f57dc576bebb70590fc5cb0aaad4460f-dji-0026.JPG",
+      "https://as-images.imgix.net/9f7ea7212a0230221441a08851edf7a3-dji-0025.JPG",
+      "https://as-images.imgix.net/230775ae3ecfed3b3e4f709c7e2d00d0-img-1126.JPEG",
+      "https://as-images.imgix.net/ffda75abe09c2ae27246776a54b16bf5-img-1131.JPEG",
+      "https://as-images.imgix.net/a00f4c088d0266e6cad5fdc8ae6d85e9-img-1123.JPEG",
+      "https://as-images.imgix.net/b2f9c78b0d3b33d1b17dfeb8f2712a87-img-1129.JPEG",
+      "https://as-images.imgix.net/66783acce81c48e28bcdd442e82061cc-img-1120.JPEG",
+      "https://as-images.imgix.net/6b59b07b8dadaaf74a6750cc19f305d0-img-1136.JPEG",
+      "https://as-images.imgix.net/ce8083b28c3fb6327a3bb97e6fa35358-img-1146.JPEG",
+      "https://as-images.imgix.net/b7465aad014993fabb43d973a5199eb9-img-1143.JPEG",
+      "https://as-images.imgix.net/c81bd84aecb0d88270825a549a8c4d24-img-1141.JPEG",
+      "https://as-images.imgix.net/767a3cf449361c249cace5837d52e33b-img-1140.JPEG",
+      "https://as-images.imgix.net/6f56c2f56fe76721bd0d4df42c7da41f-img-1154.JPEG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f4e8ce13e4f6379470227be140963164-gjs-dillon-particulars-alpha-house-hampton-lovett-droitwich.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/dfe42f7681ba157ba467982a6a9cabc6-cam04581g0-pr0067-build01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/d5df69244b6a9caa1c7d8396a9e4c60b-cam04581g0-pr0067-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/0c1f88fde3825bc3e5c851efffd917cf-cam04581g0-pr0067-build01-floor01.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/alphahousedroitwich"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-07-08 16:30:12"
+  },
+  {
     "id": 346884,
     "status": "Available",
     "address": "Unit 5, West Court",
@@ -261,87 +342,6 @@
       }
     ],
     "last_updated": "2026-07-07 10:46:16"
-  },
-  {
-    "id": 380213,
-    "status": "Available",
-    "address": "Alpha House",
-    "town": "Droitwich",
-    "postcode": "WR9 0NX",
-    "lat": 52.28469,
-    "lon": -2.168149,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3979,
-    "size_to_sqft": 3979,
-    "summary": "Modern Headquarters Office close to the M5",
-    "description": "Alpha House comprises a detached, modern office premises arranged over the ground and first floors.  The main entrance comprises a reception area with WC facilities.  This is replicated over the first floor with further WC facilities.  Each floor offers open plan office accommodation which benefits from an abundance of natural light, having four glazed elevations.  There are currently glazed meeting rooms on the ground floor.\n\nExternally there is a secure car park with the benefit of 17 car parking spaces, including the provision of EV chargers.\n\nGround\t185.91 sq ft 2,001 sq m\nFirst\t183.76 sq ft 1,978 sq m \nTotal       369.67 sq ft 3,979 sq m \n(NIA)",
-    "location": "Hampton Lovett Business Park lies to the north of Droitwich town centre, approximately three miles from Junction 5 of the M5 motorway.  From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales.\n\nThe estate is home to a number of local, national and multi-national occupiers who all take advantage of the great road connections.",
-    "features": [
-      "Total net internal area of 3,979 sq ft (369.67 sq m), arranged over the ground and first floor",
-      "Full open plan workspace over the first floor",
-      "Secure car park for 17 cars",
-      "Situated a three mile drive from Junction 5 of the M5 motorway",
-      "Detached office premises with an abundance of glazing to all four elevations"
-    ],
-    "rent_psf": 16.34,
-    "rent_pa": 65000,
-    "rent": "£65,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/cdfeedbaf431b3fbb0a8310a453fd4a4-dji-0035.JPG",
-      "https://as-images.imgix.net/d46cd836b698df5e7cfbe7e1b70f0c7b-dji-0036.JPG",
-      "https://as-images.imgix.net/3c0cf3c2403033b94ef23ffd6f184284-dji-0024.JPG",
-      "https://as-images.imgix.net/f57dc576bebb70590fc5cb0aaad4460f-dji-0026.JPG",
-      "https://as-images.imgix.net/9f7ea7212a0230221441a08851edf7a3-dji-0025.JPG",
-      "https://as-images.imgix.net/230775ae3ecfed3b3e4f709c7e2d00d0-img-1126.JPEG",
-      "https://as-images.imgix.net/ffda75abe09c2ae27246776a54b16bf5-img-1131.JPEG",
-      "https://as-images.imgix.net/a00f4c088d0266e6cad5fdc8ae6d85e9-img-1123.JPEG",
-      "https://as-images.imgix.net/b2f9c78b0d3b33d1b17dfeb8f2712a87-img-1129.JPEG",
-      "https://as-images.imgix.net/66783acce81c48e28bcdd442e82061cc-img-1120.JPEG",
-      "https://as-images.imgix.net/6b59b07b8dadaaf74a6750cc19f305d0-img-1136.JPEG",
-      "https://as-images.imgix.net/ce8083b28c3fb6327a3bb97e6fa35358-img-1146.JPEG",
-      "https://as-images.imgix.net/b7465aad014993fabb43d973a5199eb9-img-1143.JPEG",
-      "https://as-images.imgix.net/c81bd84aecb0d88270825a549a8c4d24-img-1141.JPEG",
-      "https://as-images.imgix.net/767a3cf449361c249cace5837d52e33b-img-1140.JPEG",
-      "https://as-images.imgix.net/6f56c2f56fe76721bd0d4df42c7da41f-img-1154.JPEG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f4e8ce13e4f6379470227be140963164-gjs-dillon-particulars-alpha-house-hampton-lovett-droitwich.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/dfe42f7681ba157ba467982a6a9cabc6-cam04581g0-pr0067-build01.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/d5df69244b6a9caa1c7d8396a9e4c60b-cam04581g0-pr0067-build01-floor00.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/0c1f88fde3825bc3e5c851efffd917cf-cam04581g0-pr0067-build01-floor01.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/alphahousedroitwich"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-07-06 17:09:23"
   },
   {
     "id": 346680,
