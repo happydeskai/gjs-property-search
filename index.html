@@ -939,8 +939,11 @@ document.addEventListener('click', (e) => {
     setTimeout(send, 1000);
     setTimeout(send, 3000);
   });
-  // Tell parent we're back on the search page (clears ?property= from URL)
-  try { window.parent.postMessage({ type: 'gjs-back-to-search' }, '*'); } catch(e) {}
+  // Tell parent we're back on the search page (clears ?property= from parent URL)
+  // Only fire if we don't have search params ourselves (i.e. not arriving from home search)
+  if (!location.search || !new URLSearchParams(location.search).get('q')) {
+    try { window.parent.postMessage({ type: 'gjs-back-to-search' }, '*'); } catch(e) {}
+  }
 
   // Re-send on request from parent
   window.addEventListener('message', function (e) {
