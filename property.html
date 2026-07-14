@@ -731,7 +731,7 @@ function renderNearbyCard(p){
   const typeLabel=types[0]||'';
   const sizeA=Number(p.size_from_sqft||0),sizeB=Number(p.size_to_sqft||0);
   const size=sizeA&&sizeB&&sizeA!==sizeB?`${sizeA.toLocaleString()}–${sizeB.toLocaleString()} sq ft`:sizeA?`${sizeA.toLocaleString()} sq ft`:sizeB?`${sizeB.toLocaleString()} sq ft`:'';
-  const price=p.rent||p.price||'';
+  const price=(p.to_let&&p.for_sale&&p.rent&&p.price)?`${p.rent} / ${p.price}`:(p.rent||p.price||'');
   const desc=p.description||'';
   const statusText=(p.status||'').toUpperCase()||'AVAILABLE';
   const statusCls=statusText==='AVAILABLE'?'pc-badge--available':'';
@@ -796,7 +796,7 @@ async function main(){
       const sA=Number(p.size_from_sqft||0),sB=Number(p.size_to_sqft||0);
       const sz=sA&&sB&&sA!==sB?`${sA.toLocaleString()}–${sB.toLocaleString()} sq ft`:sA?`${sA.toLocaleString()} sq ft`:sB?`${sB.toLocaleString()} sq ft`:'';
       if(sz)rows.push(`<div class="hero-meta-row"><span class="ic">${iconMaximize.replace('width="12" height="12"','width="17" height="17"')}</span><span>${sz}</span></div>`);
-      const pr=p.rent||p.price||'';
+      const pr=(p.to_let&&p.for_sale&&p.rent&&p.price)?`${p.rent} / ${p.price}`:(p.rent||p.price||'');
       if(pr)rows.push(`<div class="hero-meta-row"><span class="ic">${iconPound.replace('width="10" height="12"','width="13" height="17"')}</span><span>${pr}</span></div>`);
       heroMetaEl.innerHTML=rows.join('');
     }
