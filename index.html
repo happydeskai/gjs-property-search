@@ -548,19 +548,42 @@ function sortByDistance(list, point) {
   }).sort((a, b) => a.d - b.d).map(({ p, d }) => ({ ...p, __distance: d }));
 }
 
+// GJS's patch is Worcestershire — used to disambiguate bare place names
+// (e.g. "broome" → Worcestershire, not Norfolk). Only applied when the query
+// is ambiguous; specific searches (comma, county, extra word, postcode) are trusted as-is.
+const WM_ANCHOR = { lat: 52.1936, lon: -2.2216 }; // Worcester
+function isSpecificQuery(q) {
+  // A comma, more than one word, or any digit (postcode) = user was specific
+  return /,/.test(q) || /\s/.test(q.trim()) || /\d/.test(q);
+}
+function distSq(aLat, aLon, bLat, bLon) {
+  const dLat = aLat - bLat, dLon = aLon - bLon;
+  return dLat * dLat + dLon * dLon;
+}
 async function geocodePlace(q) {
   const query = q.trim(); if (!query) return null;
+  const specific = isSpecificQuery(query);
+  const limit = specific ? 1 : 5;
   try {
     if (MAPBOX_TOKEN) {
-      const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(query)}.json?limit=1&country=gb&access_token=${MAPBOX_TOKEN}`;
-      const r = await fetch(url); const j = await r.json(); const f = j.features && j.features[0]; if (!f) return null;
+      const prox = specific ? '' : `&proximity=${WM_ANCHOR.lon},${WM_ANCHOR.lat}`;
+      const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(query)}.json?limit=${limit}&country=gb${prox}&access_token=${MAPBOX_TOKEN}`;
+      const r = await fetch(url); const j = await r.json();
+      const feats = (j.features || []);
+      if (!feats.length) return null;
+      const f = specific ? feats[0] : feats.reduce((best, c) =>
+        distSq(c.center[1], c.center[0], WM_ANCHOR.lat, WM_ANCHOR.lon) <
+        distSq(best.center[1], best.center[0], WM_ANCHOR.lat, WM_ANCHOR.lon) ? c : best, feats[0]);
       return { lat: f.center[1], lon: f.center[0], label: f.place_name };
     } else {
-      const url = `https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=gb&q=${encodeURIComponent(query)}`;
+      const url = `https://nominatim.openstreetmap.org/search?format=json&limit=${limit}&countrycodes=gb&q=${encodeURIComponent(query)}`;
       const r = await fetch(url, { headers: { 'Accept-Language': 'en', 'User-Agent': 'GJSDillon-PropertySearch/1.0' } });
       const j = await r.json();
       if (!Array.isArray(j) || !j[0]) return null;
-      return { lat: Number(j[0].lat), lon: Number(j[0].lon), label: j[0].display_name };
+      const f = specific ? j[0] : j.reduce((best, c) =>
+        distSq(Number(c.lat), Number(c.lon), WM_ANCHOR.lat, WM_ANCHOR.lon) <
+        distSq(Number(best.lat), Number(best.lon), WM_ANCHOR.lat, WM_ANCHOR.lon) ? c : best, j[0]);
+      return { lat: Number(f.lat), lon: Number(f.lon), label: f.display_name };
     }
   } catch (e) { console.warn('Geocode failed:', e); return null; }
 }
