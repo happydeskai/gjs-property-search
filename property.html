@@ -1060,6 +1060,9 @@ document.addEventListener('DOMContentLoaded',()=>{
           <input id="mailingListInput" type="checkbox" name="mailingList" />
           <label for="mailingListInput" style="margin:0;font-size:13px;color:#333">Add me to your mailing list</label>
         </div>
+        <p style="margin:8px 0 0;font-size:12px;color:#888;line-height:1.5;">By submitting this form you agree to GJS Dillon processing your details in order to respond to your enquiry. Your information will not be shared with third parties. See our <a href="https://www.gjsdillon.co.uk/terms-privacy-policy" target="_blank" rel="noopener" style="color:#888;text-decoration:underline;">Privacy Policy</a> for more information.</p>
+        <div style="display:none">
+        </div>
         <div class="modal__actions">
           <button id="sendEnquiryBtn" class="btn-modal-primary" type="submit">Send enquiry <span id="enqSpinner" class="spinner" style="display:none"></span></button>
           <button id="cancelEnquiryBtn" type="button" class="btn-modal-ghost">Cancel</button>
@@ -1099,7 +1102,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     e.preventDefault();if(!validate())return;
     const payload={firstName:fields.firstName.value.trim(),lastName:fields.lastName.value.trim(),email:fields.email.value.trim(),phone:fields.phone.value.trim(),message:fields.message.value.trim(),mailingList:!!fields.mailingList.checked,propertyId:getParam('id')||'',propertyTitle:document.getElementById('prop-title')?.textContent||''};
     document.getElementById('sendEnquiryBtn').disabled=true;spinner.style.display='';
-    try{const res=await fetch(SEND_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});if(!res.ok)throw new Error('Send failed: '+res.status);spinner.style.display='none';document.getElementById('sendEnquiryBtn').disabled=false;bodyBox.style.display='none';successBox.style.display='';scheduleHeightPings();}
+    try{const res=await fetch(SEND_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});if(!res.ok)throw new Error('Send failed: '+res.status);window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'gjs_contact_form_success',form_name:'GJS Property Enquiry',form_id:'enqForm',newsletter_signup:payload.mailingList?'Yes':'No'});spinner.style.display='none';document.getElementById('sendEnquiryBtn').disabled=false;bodyBox.style.display='none';successBox.style.display='';scheduleHeightPings();}
     catch(err){console.error(err);spinner.style.display='none';document.getElementById('sendEnquiryBtn').disabled=false;setError('message','Failed to send — please try again later.');}
   });
   openBtn&&openBtn.addEventListener('click',showModal);
@@ -1127,6 +1130,7 @@ document.addEventListener('DOMContentLoaded',()=>{
       try{
         const res=await fetch('/api/send-enquiry.js',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
         if(!res.ok)throw new Error(res.status);
+        window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'gjs_contact_form_success',form_name:'GJS Viewing Request',form_id:'viewingForm',newsletter_signup:'No'});
         vForm.style.display='none';if(vSuccess)vSuccess.style.display='';
       }catch(err){
         console.error(err);
