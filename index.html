@@ -543,6 +543,14 @@
 let allProperties = [];
 let map, markers = [], searchMarkers = [], infoWindow, pendingMapRender = null;
 let _mapsPromise;
+
+// Light/muted map style: pale grey landscape & parks (green removed), roads/labels kept.
+const GJS_MAP_STYLE = [
+  { featureType: 'landscape.natural', elementType: 'geometry', stylers: [{ color: '#f3f4f2' }] },
+  { featureType: 'poi.park',          elementType: 'geometry', stylers: [{ color: '#eaeceb' }] },
+  { featureType: 'poi.park',          elementType: 'labels',   stylers: [{ visibility: 'off' }] },
+  { featureType: 'poi',               elementType: 'geometry', stylers: [{ color: '#f1f1f1' }] }
+];
 const MAPBOX_TOKEN = "";
 
 function haversine(lat1, lon1, lat2, lon2) {
@@ -691,7 +699,8 @@ function initMap() {
     mapTypeControl: false,
     streetViewControl: false,
     fullscreenControl: false,
-    clickableIcons: false
+    clickableIcons: false,
+    styles: GJS_MAP_STYLE
   });
   infoWindow = new google.maps.InfoWindow({ maxWidth: 340 });
   // If results arrived before the map finished loading, draw them now.

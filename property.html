@@ -398,6 +398,14 @@ const isHttpUrl = s => typeof s==='string' && /^https?:\/\//i.test(s);
 
 // Load Google Maps JS API using the key served from /api/maps-key (Vercel env var).
 let _mapsPromise;
+
+// Light/muted map style: pale grey landscape & parks (green removed), roads/labels kept.
+const GJS_MAP_STYLE = [
+  { featureType: 'landscape.natural', elementType: 'geometry', stylers: [{ color: '#f3f4f2' }] },
+  { featureType: 'poi.park',          elementType: 'geometry', stylers: [{ color: '#eaeceb' }] },
+  { featureType: 'poi.park',          elementType: 'labels',   stylers: [{ visibility: 'off' }] },
+  { featureType: 'poi',               elementType: 'geometry', stylers: [{ color: '#f1f1f1' }] }
+];
 function loadGoogleMaps(){
   if(window.google&&window.google.maps)return Promise.resolve();
   if(_mapsPromise)return _mapsPromise;
@@ -922,7 +930,7 @@ async function main(){
         const mapEl=document.getElementById('prop-map-v2');
         if(!mapEl)return;
         const pos={lat:Number(p.lat),lng:Number(p.lon)};
-        const map=new google.maps.Map(mapEl,{center:pos,zoom:14,mapTypeControl:false,streetViewControl:false,fullscreenControl:false});
+        const map=new google.maps.Map(mapEl,{center:pos,zoom:14,mapTypeControl:false,streetViewControl:false,fullscreenControl:false,styles:GJS_MAP_STYLE});
         new google.maps.Marker({position:pos,map});
         google.maps.event.addListenerOnce(map,'idle',scheduleHeightPings);
       }).catch(e=>{console.warn('Map failed',e);$('#mapSection').style.display='none';});
