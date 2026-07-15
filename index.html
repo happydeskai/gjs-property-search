@@ -19,6 +19,10 @@
     }
   </style>
 
+  <!-- Ensure the page origin is sent as referrer (embedded via a no-referrer iframe),
+       so Google Maps HTTP-referrer key restrictions can match. -->
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
   <!-- Google Maps JS API is loaded dynamically below; key is served from /api/maps-key -->
   <link rel="preconnect" href="https://maps.googleapis.com" crossorigin />
   <link rel="preconnect" href="https://maps.gstatic.com" crossorigin />
