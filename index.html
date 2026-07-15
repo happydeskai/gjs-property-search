@@ -660,7 +660,7 @@ function sizeText(p) {
 function loadGoogleMaps() {
   if (window.google && window.google.maps) return Promise.resolve();
   if (_mapsPromise) return _mapsPromise;
-  _mapsPromise = fetch('/api/maps-key')
+  _mapsPromise = fetch('/api/maps-key.js')
     .then(r => r.json())
     .then(({ key }) => {
       if (!key) throw new Error('Google Maps API key not configured');
