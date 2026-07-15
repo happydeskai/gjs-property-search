@@ -36,20 +36,20 @@
     "rateable_value": 18750,
     "epc_rating": "C (73)",
     "images": [
-      "https://as-images.imgix.net/bd31fb81d81b3da4ca5ca2d7215f9b89-letting346667.jpeg",
-      "https://as-images.imgix.net/4c939adecf7975812d60d376b4d5e9f0-letting346667.jpeg",
-      "https://as-images.imgix.net/c54d16e9f26d027b0683a3686272288b-letting346667.jpeg",
+      "https://as-images.imgix.net/96277afd1d935ff1eef14c737084a2be-20260715-141050-1.jpg",
+      "https://as-images.imgix.net/dce12f7d189b020e2c2f45eca0fa4c11-20260715-141523-1.jpg",
+      "https://as-images.imgix.net/717445a3795a84a6ca8da61efea81083-20260715-141612-1.jpg",
       "https://as-images.imgix.net/496a91004a5f347744ba2941ae183648-letting346667.jpeg",
       "https://as-images.imgix.net/03d955c31c6b8635099876ec53bca61a-letting346667.jpeg",
       "https://as-images.imgix.net/f973c3e1348e9eae28509f2feb3950d2-letting346667.jpeg",
+      "https://as-images.imgix.net/0b81f6d26d5d454ec972149d79975da2-20260715-141633-1.jpg",
       "https://as-images.imgix.net/355cb5fe29b635f8b1b3a94ef7367b69-letting346667.jpeg",
       "https://as-images.imgix.net/f72527da7a0edd13f78b2a5bf6d782e6-letting346667.jpeg",
       "https://as-images.imgix.net/d5ce7b420d355b76fd119ae42708a68c-letting346667.jpeg",
       "https://as-images.imgix.net/6286f210bf7afa95860cb783f8e404a9-letting346667.jpeg",
-      "https://as-images.imgix.net/a0a1bd62570fb0f9abe82100831ae92e-letting346667.jpeg",
       "https://as-images.imgix.net/160376493646255613009638ca9a6690-letting346667.jpeg"
     ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/8a87e6033f60343204a32fe57bb82b0a-gjs-dillon-particulars-unit-3-aston-fields-industrial-estate-bromsgrove.pdf",
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/cd94666863ad559becbfa0f5ff80cca8-gjs-dillon-particulars-unit-3-aston-fields-industrial-estate-bromsgrove.pdf",
     "floor_plan_urls": [
       "https://s3-eu-west-1.amazonaws.com/agents-society-assets/35c9fd230bb3f9c14f69440b07975ccd-cam04581g0-pr0061-build01.png"
     ],
@@ -66,7 +66,7 @@
         "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-07-14 17:06:19"
+    "last_updated": "2026-07-15 16:14:20"
   },
   {
     "id": 377589,
