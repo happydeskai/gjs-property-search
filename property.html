@@ -15,9 +15,9 @@
       src: url('https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/691d8a9556fcd46935d926f3/assets/6db719bf-c56e-48ad-a74c-e66e30ce2664/font.ttf') format('truetype');
     }
   </style>
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js" defer></script>
+  <!-- Google Maps JS API is loaded dynamically below; key is served from /api/maps-key -->
+  <link rel="preconnect" href="https://maps.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://maps.gstatic.com" crossorigin />
 
   <style>
     :root{
@@ -391,6 +391,23 @@ const getParam = n => {
   return null;
 };
 const isHttpUrl = s => typeof s==='string' && /^https?:\/\//i.test(s);
+
+// Load Google Maps JS API using the key served from /api/maps-key (Vercel env var).
+let _mapsPromise;
+function loadGoogleMaps(){
+  if(window.google&&window.google.maps)return Promise.resolve();
+  if(_mapsPromise)return _mapsPromise;
+  _mapsPromise=fetch('/api/maps-key').then(r=>r.json()).then(({key})=>{
+    if(!key)throw new Error('Google Maps API key not configured');
+    return new Promise((resolve,reject)=>{
+      const s=document.createElement('script');
+      s.src='https://maps.googleapis.com/maps/api/js?key='+encodeURIComponent(key)+'&loading=async';
+      s.async=true;s.onload=resolve;s.onerror=()=>reject(new Error('Failed to load Google Maps script'));
+      document.head.appendChild(s);
+    });
+  });
+  return _mapsPromise;
+}
 
 let lastHeight=0, heightTimer=null;
 function getPageHeight(){const b=document.body;return Math.max(b.scrollHeight,b.offsetHeight,300);}
@@ -895,17 +912,16 @@ async function main(){
     /* --- Right column: Location + map --- */
     if(p.location){$('#location').textContent=p.location;$('#col-location').style.display='';}
 
-    if(window.L&&p.lat!=null&&p.lon!=null){
-      try{
-        $('#mapSection').style.display='';
+    if(p.lat!=null&&p.lon!=null){
+      $('#mapSection').style.display='';
+      loadGoogleMaps().then(()=>{
         const mapEl=document.getElementById('prop-map-v2');
-        if(mapEl){
-          const map=L.map(mapEl).setView([p.lat,p.lon],14);
-          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
-          L.marker([p.lat,p.lon]).addTo(map);
-          map.on&&map.on('tileload',scheduleHeightPings);
-        }
-      }catch(e){console.warn('Map failed',e);}
+        if(!mapEl)return;
+        const pos={lat:Number(p.lat),lng:Number(p.lon)};
+        const map=new google.maps.Map(mapEl,{center:pos,zoom:14,mapTypeControl:false,streetViewControl:false,fullscreenControl:false});
+        new google.maps.Marker({position:pos,map});
+        google.maps.event.addListenerOnce(map,'idle',scheduleHeightPings);
+      }).catch(e=>{console.warn('Map failed',e);$('#mapSection').style.display='none';});
     }
 
     /* --- Viewing section: agent --- */
