@@ -930,7 +930,7 @@ async function main(){
         const mapEl=document.getElementById('prop-map-v2');
         if(!mapEl)return;
         const pos={lat:Number(p.lat),lng:Number(p.lon)};
-        const map=new google.maps.Map(mapEl,{center:pos,zoom:14,mapTypeControl:false,streetViewControl:false,fullscreenControl:false,styles:GJS_MAP_STYLE});
+        const map=new google.maps.Map(mapEl,{center:pos,zoom:14,mapTypeControl:true,streetViewControl:false,fullscreenControl:false,styles:GJS_MAP_STYLE});
         new google.maps.Marker({position:pos,map});
         google.maps.event.addListenerOnce(map,'idle',scheduleHeightPings);
       }).catch(e=>{console.warn('Map failed',e);$('#mapSection').style.display='none';});
