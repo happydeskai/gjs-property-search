@@ -19,10 +19,13 @@
     }
   </style>
 
-  <!-- Leaflet -->
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js" defer></script>
+  <!-- Ensure the page origin is sent as referrer (embedded via a no-referrer iframe),
+       so Google Maps HTTP-referrer key restrictions can match. -->
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <!-- Google Maps JS API is loaded dynamically below; key is served from /api/maps-key -->
+  <link rel="preconnect" href="https://maps.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://maps.gstatic.com" crossorigin />
 
   <style>
     *, *::before, *::after { box-sizing: border-box; }
@@ -147,11 +150,20 @@
     .btn-link--disabled{ background:#ccc; color:#fff; border:none; cursor:default; opacity:.6; pointer-events:none; }
     .empty{ padding: 24px; color: var(--muted); }
 
-    .prop-popup .leaflet-popup-content { margin: 0 !important; }
-    .prop-popup .leaflet-popup-content-wrapper { padding: 0; border-radius: 12px; overflow: hidden; }
-    .prop-popup .leaflet-popup-tip { display: none; }
-    .pop-card { width: 320px; background: #fff; }
-    .pop-img  { width: 100%; height: 160px; background-size: cover; background-position: center; background-color: #eee; }
+    /* Google Maps InfoWindow: strip default chrome so .pop-card sits flush */
+    .gm-style .gm-style-iw-c { padding: 0 !important; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,.18); max-width: 340px !important; }
+    .gm-style .gm-style-iw-ch { padding-top: 0 !important; }
+    .gm-style .gm-style-iw-d { overflow: hidden !important; padding: 0 !important; max-height: none !important; }
+    /* Close button floats neatly over the photo */
+    .gm-style .gm-style-iw-c button.gm-ui-hover-effect {
+      top: 6px !important; right: 6px !important; opacity: 1 !important;
+      width: 26px !important; height: 26px !important;
+      background: rgba(255,255,255,.92) !important; border-radius: 999px !important;
+      box-shadow: 0 1px 4px rgba(0,0,0,.25) !important;
+    }
+    .gm-style .gm-style-iw-c button.gm-ui-hover-effect > span { margin: 5px !important; width: 16px !important; height: 16px !important; }
+    .pop-card { display:block; width: 320px; background: #fff; text-decoration:none; color:inherit; cursor:pointer; }
+    .pop-img  { width: 100%; height: 130px; background-size: cover; background-position: center; background-color: #eee; }
     .pop-body { padding: 12px 14px; }
     .pop-title{ font-weight: 700; margin: 0 0 4px; }
     .pop-sub  { color: #6b7280; font-size: 13px; margin-bottom: 4px; }
@@ -529,7 +541,16 @@
 
 <script>
 let allProperties = [];
-let map, markers, searchMarker;
+let map, markers = [], searchMarkers = [], infoWindow, pendingMapRender = null;
+let _mapsPromise;
+
+// Light/muted map style: pale grey landscape & parks (green removed), roads/labels kept.
+const GJS_MAP_STYLE = [
+  { featureType: 'landscape.natural', elementType: 'geometry', stylers: [{ color: '#f3f4f2' }] },
+  { featureType: 'poi.park',          elementType: 'geometry', stylers: [{ color: '#eaeceb' }] },
+  { featureType: 'poi.park',          elementType: 'labels',   stylers: [{ visibility: 'off' }] },
+  { featureType: 'poi',               elementType: 'geometry', stylers: [{ color: '#f1f1f1' }] }
+];
 const MAPBOX_TOKEN = "";
 
 function haversine(lat1, lon1, lat2, lon2) {
@@ -649,74 +670,136 @@ function sizeText(p) {
   return '';
 }
 
+// Dynamically load the Google Maps JS API using the key served from /api/maps-key.
+// Keeping the key server-side (Vercel env var) means it never lives in the repo and
+// can be rotated or scoped per-environment without a code change.
+function loadGoogleMaps() {
+  if (window.google && window.google.maps) return Promise.resolve();
+  if (_mapsPromise) return _mapsPromise;
+  _mapsPromise = fetch('/api/maps-key.js')
+    .then(r => r.json())
+    .then(({ key }) => {
+      if (!key) throw new Error('Google Maps API key not configured');
+      return new Promise((resolve, reject) => {
+        const s = document.createElement('script');
+        s.src = 'https://maps.googleapis.com/maps/api/js?key=' + encodeURIComponent(key);
+        s.async = true;
+        s.onload = resolve;
+        s.onerror = () => reject(new Error('Failed to load Google Maps script'));
+        document.head.appendChild(s);
+      });
+    });
+  return _mapsPromise;
+}
+
 function initMap() {
-  map = L.map('map').setView([52.5, -1.8], 6);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-  markers = L.layerGroup().addTo(map);
-  searchMarker = L.layerGroup().addTo(map);
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: { lat: 52.5, lng: -1.8 },
+    zoom: 6,
+    mapTypeControl: true,
+    streetViewControl: false,
+    fullscreenControl: false,
+    clickableIcons: false,
+    styles: GJS_MAP_STYLE
+  });
+  infoWindow = new google.maps.InfoWindow({ maxWidth: 340 });
+  // If results arrived before the map finished loading, draw them now.
+  if (pendingMapRender) {
+    const args = pendingMapRender;
+    pendingMapRender = null;
+    updateMap(args.list, args.focusPoint);
+  }
 }
 
 function updateMap(list, focusPoint) {
-  markers.clearLayers();
-  searchMarker.clearLayers();
-  const points = [];
+  // Map may still be loading (async). Stash the latest request and replay it in initMap.
+  if (!map) { pendingMapRender = { list, focusPoint }; return; }
+
+  markers.forEach(m => m.setMap(null)); markers = [];
+  searchMarkers.forEach(m => m.setMap(null)); searchMarkers = [];
+  const bounds = new google.maps.LatLngBounds();
+  let count = 0;
 
   list.forEach(p => {
     const lat = Number(p.lat), lon = Number(p.lon);
     if (!isFinite(lat) || !isFinite(lon)) return;
 
-    const m = L.circleMarker([lat, lon], {
-      radius: 8,
-      weight: 0,
-      color: 'transparent',
-      fillColor: '#f4c20d',
-      fillOpacity: 1
+    const m = new google.maps.Marker({
+      position: { lat, lng: lon },
+      map,
+      icon: {
+        path: google.maps.SymbolPath.CIRCLE,
+        scale: 8,
+        fillColor: '#f4c20d',
+        fillOpacity: 1,
+        strokeWeight: 0
+      }
     });
 
     const img = getPrimaryImage(p);
     const where = [p.town, p.postcode].filter(Boolean).join(' ');
     const html = `
-      <div class="pop-card">
+      <a class="pop-card" target="_self" href="property.html?id=${encodeURIComponent(p.id ?? '')}">
         <div class="pop-img" style="background-image:url('${(img || '').replace(/'/g, "%27")}')"></div>
         <div class="pop-body">
           <div class="pop-title">${p.address || 'Property'}</div>
           <div class="pop-sub">${where}</div>
           <div class="pop-size">${sizeText(p)}</div>
-          <a class="pop-btn" target="_self" href="property.html?id=${encodeURIComponent(p.id ?? '')}">View property</a>
+          <span class="pop-btn">View property</span>
         </div>
-      </div>
+      </a>
     `;
-    m.bindPopup(html, { className: 'prop-popup', maxWidth: 340 });
-    m.addTo(markers);
-    points.push([lat, lon]);
+    m.addListener('click', () => {
+      infoWindow.setContent(html);
+      infoWindow.open(map, m);
+    });
+    markers.push(m);
+    bounds.extend({ lat, lng: lon });
+    count++;
   });
 
   if (focusPoint && isFinite(focusPoint.lat) && isFinite(focusPoint.lon)) {
     const GJS_GOLD = '#FFCC33';
-    const sp = L.circleMarker([focusPoint.lat, focusPoint.lon], {
-      radius: 12,
-      weight: 3,
-      color: '#000',
-      fillColor: GJS_GOLD,
-      fillOpacity: 1.0
-    }).addTo(searchMarker);
+    const pos = { lat: focusPoint.lat, lng: focusPoint.lon };
 
-    L.circleMarker([focusPoint.lat, focusPoint.lon], {
-      radius: 18,
-      weight: 10,
-      color: 'rgba(0,0,0,0.25)',
-      opacity: 0.25,
-      fill: false
-    }).addTo(searchMarker);
+    // Soft halo behind the search pin
+    searchMarkers.push(new google.maps.Marker({
+      position: pos, map, clickable: false, zIndex: 998,
+      icon: {
+        path: google.maps.SymbolPath.CIRCLE,
+        scale: 18,
+        fillColor: '#000', fillOpacity: 0.12,
+        strokeColor: '#000', strokeOpacity: 0.25, strokeWeight: 10
+      }
+    }));
 
-    sp.bindTooltip(focusPoint.label || 'Search location', { direction: 'top', offset: [0, -12] });
-    points.push([focusPoint.lat, focusPoint.lon]);
+    // Gold search pin
+    searchMarkers.push(new google.maps.Marker({
+      position: pos, map, zIndex: 999,
+      title: focusPoint.label || 'Search location',
+      icon: {
+        path: google.maps.SymbolPath.CIRCLE,
+        scale: 12,
+        fillColor: GJS_GOLD, fillOpacity: 1,
+        strokeColor: '#000', strokeWeight: 3
+      }
+    }));
+
+    bounds.extend(pos);
+    count++;
   }
 
-  if (!points.length) return;
+  if (!count) return;
   const MAX_SEARCH_ZOOM = 11;
-  if (points.length === 1) map.setView(points[0], MAX_SEARCH_ZOOM);
-  else map.fitBounds(points, { padding: [60, 60], maxZoom: MAX_SEARCH_ZOOM });
+  if (count === 1) {
+    map.setCenter(bounds.getCenter());
+    map.setZoom(MAX_SEARCH_ZOOM);
+  } else {
+    map.fitBounds(bounds, 60);
+    google.maps.event.addListenerOnce(map, 'idle', () => {
+      if (map.getZoom() > MAX_SEARCH_ZOOM) map.setZoom(MAX_SEARCH_ZOOM);
+    });
+  }
 }
 
 function getStatusBannerClass(p) {
@@ -925,7 +1008,9 @@ function prefillFromURL() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  try { initMap(); } catch(e) { console.warn('Map unavailable:', e.message); }
+  loadGoogleMaps()
+    .then(() => { try { initMap(); } catch(e) { console.warn('Map unavailable:', e.message); } })
+    .catch(e => console.warn('Google Maps failed to load:', e.message));
   document.getElementById('searchBtn').onclick = applyFilters;
   document.getElementById('q').addEventListener('keydown', e => {
     if (e.key === 'Enter') { e.preventDefault(); applyFilters(); }
@@ -934,9 +1019,9 @@ document.addEventListener('DOMContentLoaded', () => {
   loadProperties();
 });
 
-// Robust Leaflet popup navigation inside iframes
+// Robust InfoWindow popup navigation inside iframes
 document.addEventListener('click', (e) => {
-  const a = e.target?.closest ? e.target.closest('a.pop-btn') : null;
+  const a = e.target?.closest ? e.target.closest('a.pop-card, a.pop-btn') : null;
   if (!a) return;
   const href = a.getAttribute('href');
   if (!href) return;
