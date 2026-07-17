@@ -1,5 +1,82 @@
 [
   {
+    "id": 383292,
+    "status": "Coming Soon",
+    "address": "The Old Post Office",
+    "town": "Droitwich",
+    "postcode": "WR9 7PA",
+    "lat": 52.290109,
+    "lon": -2.118234,
+    "types": [
+      "Development/Investment"
+    ],
+    "raw_types": [
+      "Development Site"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 2052,
+    "size_to_sqft": 2052,
+    "summary": "Mixed Use Investment Property Suitable for Development",
+    "description": "The Old Post Office comprises a detached mixed-use freehold property occupying a prominent position fronting the A38 Worcester Road in Wychbold.\n\nThe property provides ground floor commercial accommodation extending to approximately 793 sq ft (73.66 sq m), together with a substantial self-contained four-bedroom residential dwelling extending to approximately 1,259 sq ft (117.01 sq m). Externally, the property benefits from on-site parking, a detached garage and an enclosed rear garden.\n\nThe property offers a rare opportunity to acquire a mixed-use freehold asset with considerable scope for refurbishment, reconfiguration and enhancement. Given the scale of the site and existing accommodation, the property may also present redevelopment potential for alternative residential or mixed-use schemes, subject to the necessary statutory consents.\n\nThe asset is considered suitable for owner occupiers, investors and developers seeking a value-add opportunity in a well-connected location\n\nGround Floor Commercial\t793 sq ft \t73.66 sq m\nResidential Ground and First\t1,259 sq ft\t117.01 sq m\nTotal\t2,052 sq ft\t190.67 sq ft",
+    "location": "The property occupies a prominent roadside position on the A38 Worcester Road within the village of Wychbold, approximately 3 miles north of Droitwich Spa and 5 miles south of Bromsgrove. \n\nThe property benefits from excellent accessibility, lying within approximately 1 mile of Junction 5 of the M5 motorway, providing convenient access to Worcester, Birmingham and the wider Midlands motorway network. Droitwich Spa and Bromsgrove railway stations provide regular services to Birmingham, Worcester and beyond. The surrounding area comprises a mix of residential, commercial and roadside occupiers, with a range of local amenities and services available nearby.",
+    "features": [
+      "Building totals 2,052 ft2 (190.67 m2)",
+      "Ground floor commercial unit 793 ft2 (73.66 m2)",
+      "Four bedroom house / flat 1,259 ft2 (117.01 m2)",
+      "Development opportunity",
+      "Under one mile from Junction 5 of the M5 Motorway"
+    ],
+    "price": "£380,000",
+    "price_value": 380000,
+    "business_rates_psf": 0,
+    "rateable_value": 6000,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/bac164e7ac830fa487b8e2c515c4bf77-the-old-po-26-2.jpg",
+      "https://as-images.imgix.net/2392dd023040849e5eb0eb520b2903ce-the-old-po-4-2.jpg",
+      "https://as-images.imgix.net/7affee230bc07bcb566a3d43e796fed9-the-old-po-7-1.jpg",
+      "https://as-images.imgix.net/fd863c8e21135673efc8078e02f94824-the-old-po-28-1.jpg",
+      "https://as-images.imgix.net/836f36970e8f1a13aea2f2ed0b348b39-the-old-po-8-1.jpg",
+      "https://as-images.imgix.net/675aca620ea4ccefc409baef6b4b8939-the-old-po-14-1.jpg",
+      "https://as-images.imgix.net/e3406cfa79dfc980a7678dd234638372-the-old-po-13.jpg",
+      "https://as-images.imgix.net/dceef8ba65e82923db46b79d00863360-the-old-po-16.jpg",
+      "https://as-images.imgix.net/a69b9ad75820b4985e442ff833f90392-the-old-po-24-1.jpg",
+      "https://as-images.imgix.net/bd9590f2fc6e504317927743176d23fb-the-old-po-19-1.jpg",
+      "https://as-images.imgix.net/1624f7afc710a1b894195778aa06f505-the-old-po-20-1.jpg",
+      "https://as-images.imgix.net/2d949f6ad3af044de0f8696d8e948d0a-the-old-po-3-1.jpg",
+      "https://as-images.imgix.net/e7c04b2c29af0365f3a1dbf9afc93938-the-old-po-2.jpg",
+      "https://as-images.imgix.net/a882dbfd9699fa1f9a408a3ad904121f-the-old-po-23-1.jpg",
+      "https://as-images.imgix.net/502ddee14d1e8e019874920fd6b06120-the-old-po-10-1.jpg",
+      "https://as-images.imgix.net/684d675a56bef2adbb2adbf87525f7b6-the-old-po-11-1.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/01692364c2d111e62cddb279a41b00ba-gjs-dillon-particulars-the-old-post-office-wychbold.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/57d0801d13c34f48d55d22685079c3d9-cam04581g0-pr0068-build01-floor01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/24f8f717812813b7ccf36c0023a7d690-cam04581g0-pr0068-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/dd7f166a0fbaaeb4bb1b494eed3d2c3b-cam04581g0-pr0068-build01.png"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-07-17 13:26:32"
+  },
+  {
     "id": 380642,
     "status": "Available",
     "address": "The Studio",
