@@ -1,5 +1,133 @@
 [
   {
+    "id": 376681,
+    "status": "Available",
+    "address": "Unit 18 Aston Fields Industrial Estate",
+    "town": "Bromsgrove",
+    "postcode": "B60 3EX",
+    "lat": 52.316476,
+    "lon": -2.060756,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3786,
+    "size_to_sqft": 3786,
+    "summary": "Well located premises suitable for a variety of commercial uses",
+    "description": "Unit 18 Aston Fields Industrial Estate comprises a mid-terrace commercial property of steel frame construction with brick & block elevations.  The building is currently configured as a warehouse / industrial property.\n\nInternally, there is a good-sized warehouse area with the benefit of 4.75m eaves.  Located to the front of the unit is a separate office area and WCs.  The property is accessed via a pedestrian door and roller shutter doors. Externally there are car parking spaces and loading / unloading facilities to the front of the property. \n\nGross Internal Area\t3,786 sq ft\t352 sq m",
+    "location": "The property is situated in Bromsgrove, to the south of the town centre on Aston Fields Industrial Estate. Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the property, giving access to the Midlands motorway network.\n\nBirmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south.\n\nAston Fields Industrial Estate benefits from communal landscaping, allocated & communal parking and extensive security, including CCTV and security gates.",
+    "features": [
+      "3,786 sq ft (352 sq m) GIA",
+      "Large warehouse area with associated office and WC's",
+      "Situated on the popular Aston Fields Industrial Estate",
+      "Suitable for warehouse, industrial or trade counter useage"
+    ],
+    "rent_psf": 8.98,
+    "rent_pa": 34000,
+    "rent": "£34,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 34250,
+    "epc_rating": "C (58)",
+    "images": [
+      "https://as-images.imgix.net/9b6adee9cebcb3e60f6f3841efc8233a-frnt-page-image.png",
+      "https://as-images.imgix.net/416c7a02f268f5c980f94441f50d1d09-map.png"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/0fd0b32b5b641e82cf5e3b947c8a6b20-gjs-dillon-particulars-unit-18-aston-fields-industrial-estate-bromsgrove.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-07-20 13:15:04"
+  },
+  {
+    "id": 383292,
+    "status": "Available",
+    "address": "The Old Post Office",
+    "town": "Droitwich",
+    "postcode": "WR9 7PA",
+    "lat": 52.290109,
+    "lon": -2.118234,
+    "types": [
+      "Development/Investment"
+    ],
+    "raw_types": [
+      "Development Site"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 2052,
+    "size_to_sqft": 2052,
+    "summary": "Mixed Use Investment Property Suitable for Development",
+    "description": "The Old Post Office comprises a detached mixed-use freehold property occupying a prominent position fronting the A38 Worcester Road in Wychbold.\n\nThe property provides ground floor commercial accommodation extending to approximately 793 sq ft (73.66 sq m), together with a substantial self-contained four-bedroom residential dwelling extending to approximately 1,259 sq ft (117.01 sq m). Externally, the property benefits from on-site parking, a detached garage and an enclosed rear garden.\n\nThe property offers a rare opportunity to acquire a mixed-use freehold asset with considerable scope for refurbishment, reconfiguration and enhancement. Given the scale of the site and existing accommodation, the property may also present redevelopment potential for alternative residential or mixed-use schemes, subject to the necessary statutory consents.\n\nThe asset is considered suitable for owner occupiers, investors and developers seeking a value-add opportunity in a well-connected location\n\nGround Floor Commercial\t793 sq ft \t73.66 sq m\nResidential Ground and First\t1,259 sq ft\t117.01 sq m\nTotal\t2,052 sq ft\t190.67 sq ft",
+    "location": "The property occupies a prominent roadside position on the A38 Worcester Road within the village of Wychbold, approximately 3 miles north of Droitwich Spa and 5 miles south of Bromsgrove. \n\nThe property benefits from excellent accessibility, lying within approximately 1 mile of Junction 5 of the M5 motorway, providing convenient access to Worcester, Birmingham and the wider Midlands motorway network. Droitwich Spa and Bromsgrove railway stations provide regular services to Birmingham, Worcester and beyond. The surrounding area comprises a mix of residential, commercial and roadside occupiers, with a range of local amenities and services available nearby.",
+    "features": [
+      "Building totals 2,052 ft2 (190.67 m2)",
+      "Ground floor commercial unit 793 ft2 (73.66 m2)",
+      "Four bedroom house / flat 1,259 ft2 (117.01 m2)",
+      "Development opportunity",
+      "Under one mile from Junction 5 of the M5 Motorway"
+    ],
+    "price": "£380,000",
+    "price_value": 380000,
+    "business_rates_psf": 0,
+    "rateable_value": 6000,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/bac164e7ac830fa487b8e2c515c4bf77-the-old-po-26-2.jpg",
+      "https://as-images.imgix.net/2392dd023040849e5eb0eb520b2903ce-the-old-po-4-2.jpg",
+      "https://as-images.imgix.net/7affee230bc07bcb566a3d43e796fed9-the-old-po-7-1.jpg",
+      "https://as-images.imgix.net/fd863c8e21135673efc8078e02f94824-the-old-po-28-1.jpg",
+      "https://as-images.imgix.net/836f36970e8f1a13aea2f2ed0b348b39-the-old-po-8-1.jpg",
+      "https://as-images.imgix.net/675aca620ea4ccefc409baef6b4b8939-the-old-po-14-1.jpg",
+      "https://as-images.imgix.net/e3406cfa79dfc980a7678dd234638372-the-old-po-13.jpg",
+      "https://as-images.imgix.net/dceef8ba65e82923db46b79d00863360-the-old-po-16.jpg",
+      "https://as-images.imgix.net/a69b9ad75820b4985e442ff833f90392-the-old-po-24-1.jpg",
+      "https://as-images.imgix.net/bd9590f2fc6e504317927743176d23fb-the-old-po-19-1.jpg",
+      "https://as-images.imgix.net/1624f7afc710a1b894195778aa06f505-the-old-po-20-1.jpg",
+      "https://as-images.imgix.net/2d949f6ad3af044de0f8696d8e948d0a-the-old-po-3-1.jpg",
+      "https://as-images.imgix.net/e7c04b2c29af0365f3a1dbf9afc93938-the-old-po-2.jpg",
+      "https://as-images.imgix.net/a882dbfd9699fa1f9a408a3ad904121f-the-old-po-23-1.jpg",
+      "https://as-images.imgix.net/502ddee14d1e8e019874920fd6b06120-the-old-po-10-1.jpg",
+      "https://as-images.imgix.net/684d675a56bef2adbb2adbf87525f7b6-the-old-po-11-1.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f25fb783187e4de987acc44772667554-gjs-dillon-particulars-the-old-post-office-wychbold-1.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/57d0801d13c34f48d55d22685079c3d9-cam04581g0-pr0068-build01-floor01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/24f8f717812813b7ccf36c0023a7d690-cam04581g0-pr0068-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/dd7f166a0fbaaeb4bb1b494eed3d2c3b-cam04581g0-pr0068-build01.png"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-07-20 12:54:45"
+  },
+  {
     "id": 380642,
     "status": "Available",
     "address": "The Studio",
@@ -8,10 +136,11 @@
     "lat": 52.404336,
     "lon": -2.1445,
     "types": [
-      "Office",
-      "Industrial"
+      "Industrial",
+      "Office"
     ],
     "raw_types": [
+      "Industrial",
       "Office",
       "Warehouse"
     ],
@@ -79,65 +208,60 @@
         "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-07-20 12:01:27"
+    "last_updated": "2026-07-20 12:24:48"
   },
   {
-    "id": 383292,
+    "id": 353367,
     "status": "Available",
-    "address": "The Old Post Office",
-    "town": "Droitwich",
-    "postcode": "WR9 7PA",
-    "lat": 52.290109,
-    "lon": -2.118234,
+    "address": "4 Edgar Street",
+    "town": "Worcester",
+    "postcode": "WR1 2LR",
+    "lat": 52.188219,
+    "lon": -2.219159,
     "types": [
-      "Development/Investment"
+      "Office"
     ],
     "raw_types": [
-      "Development Site"
+      "Office"
     ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 2052,
-    "size_to_sqft": 2052,
-    "summary": "Mixed Use Investment Property Suitable for Development",
-    "description": "The Old Post Office comprises a detached mixed-use freehold property occupying a prominent position fronting the A38 Worcester Road in Wychbold.\n\nThe property provides ground floor commercial accommodation extending to approximately 793 sq ft (73.66 sq m), together with a substantial self-contained four-bedroom residential dwelling extending to approximately 1,259 sq ft (117.01 sq m). Externally, the property benefits from on-site parking, a detached garage and an enclosed rear garden.\n\nThe property offers a rare opportunity to acquire a mixed-use freehold asset with considerable scope for refurbishment, reconfiguration and enhancement. Given the scale of the site and existing accommodation, the property may also present redevelopment potential for alternative residential or mixed-use schemes, subject to the necessary statutory consents.\n\nThe asset is considered suitable for owner occupiers, investors and developers seeking a value-add opportunity in a well-connected location\n\nGround Floor Commercial\t793 sq ft \t73.66 sq m\nResidential Ground and First\t1,259 sq ft\t117.01 sq m\nTotal\t2,052 sq ft\t190.67 sq ft",
-    "location": "The property occupies a prominent roadside position on the A38 Worcester Road within the village of Wychbold, approximately 3 miles north of Droitwich Spa and 5 miles south of Bromsgrove. \n\nThe property benefits from excellent accessibility, lying within approximately 1 mile of Junction 5 of the M5 motorway, providing convenient access to Worcester, Birmingham and the wider Midlands motorway network. Droitwich Spa and Bromsgrove railway stations provide regular services to Birmingham, Worcester and beyond. The surrounding area comprises a mix of residential, commercial and roadside occupiers, with a range of local amenities and services available nearby.",
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1182,
+    "size_to_sqft": 1182,
+    "summary": "Period building next to Worcester Cathedral",
+    "description": "4 Edgar Street is a mid terrace office building arranged over three floors, offering office suites with character and a practical layout suitable for professional occupiers. The building benefits from recent redecoration. Natural light floods the offices through large sash windows, creating a bright and productive working environment.\n\nThe property also features kitchen facilities and WC provisions, with the added convenience of on-site car parking. Its location provides excellent access to Worcester city centre amenities and transport links, making it an ideal base for a wide range of businesses.\n\n\t\t\nTotal\t1,182 sq ft \t109.81 sq m",
+    "location": "Edgar Street is close to City Walls Road and Sidbury with good transport links.  Close by are the main shopping areas of Worcester city centre and other amenities which are within walking distance.  Several public car parks are in the vicinity.\n\nWorcester is a major West Midlands city located approximately 120 miles North West of London, 30 miles south west of Birmingham, 25 miles to the north of Cheltenham and 26 miles to the north east of Hereford city centre.  Motorway access to the city is very good with junctions 6 and 7 of the M5 motorway being within three miles of the city centre giving direct access to the national motorway network.",
     "features": [
-      "Building totals 2,052 ft2 (190.67 m2)",
-      "Ground floor commercial unit 793 ft2 (73.66 m2)",
-      "Four bedroom house / flat 1,259 ft2 (117.01 m2)",
-      "Development opportunity",
-      "Under one mile from Junction 5 of the M5 Motorway"
+      "1,182 Sq ft (109.81sq m)",
+      "Prominent self-contained office building in Worcester city centre",
+      "On-site parking",
+      "Walking distance to Worcester High Street",
+      "Good access to J6 and J7 of the M5 Motorway"
     ],
-    "price": "£380,000",
-    "price_value": 380000,
+    "rent_psf": 9.98,
+    "rent_pa": 11800,
+    "rent": "£11,800 per annum",
     "business_rates_psf": 0,
-    "rateable_value": 6000,
-    "epc_rating": "",
+    "rateable_value": 6300,
+    "epc_rating": "E (110)",
     "images": [
-      "https://as-images.imgix.net/bac164e7ac830fa487b8e2c515c4bf77-the-old-po-26-2.jpg",
-      "https://as-images.imgix.net/2392dd023040849e5eb0eb520b2903ce-the-old-po-4-2.jpg",
-      "https://as-images.imgix.net/7affee230bc07bcb566a3d43e796fed9-the-old-po-7-1.jpg",
-      "https://as-images.imgix.net/fd863c8e21135673efc8078e02f94824-the-old-po-28-1.jpg",
-      "https://as-images.imgix.net/836f36970e8f1a13aea2f2ed0b348b39-the-old-po-8-1.jpg",
-      "https://as-images.imgix.net/675aca620ea4ccefc409baef6b4b8939-the-old-po-14-1.jpg",
-      "https://as-images.imgix.net/e3406cfa79dfc980a7678dd234638372-the-old-po-13.jpg",
-      "https://as-images.imgix.net/dceef8ba65e82923db46b79d00863360-the-old-po-16.jpg",
-      "https://as-images.imgix.net/a69b9ad75820b4985e442ff833f90392-the-old-po-24-1.jpg",
-      "https://as-images.imgix.net/bd9590f2fc6e504317927743176d23fb-the-old-po-19-1.jpg",
-      "https://as-images.imgix.net/1624f7afc710a1b894195778aa06f505-the-old-po-20-1.jpg",
-      "https://as-images.imgix.net/2d949f6ad3af044de0f8696d8e948d0a-the-old-po-3-1.jpg",
-      "https://as-images.imgix.net/e7c04b2c29af0365f3a1dbf9afc93938-the-old-po-2.jpg",
-      "https://as-images.imgix.net/a882dbfd9699fa1f9a408a3ad904121f-the-old-po-23-1.jpg",
-      "https://as-images.imgix.net/502ddee14d1e8e019874920fd6b06120-the-old-po-10-1.jpg",
-      "https://as-images.imgix.net/684d675a56bef2adbb2adbf87525f7b6-the-old-po-11-1.jpg"
+      "https://as-images.imgix.net/52ddfd30fcac1a7604f73c1cb6eeaa24-20251007-133403505-ios.jpg",
+      "https://as-images.imgix.net/e269f8239e26409748784bc168c2ea0a-20251007-134233217-ios.jpg",
+      "https://as-images.imgix.net/1b997cd9670f4dc0237a994461e5e42e-20251007-134408708-ios.jpg",
+      "https://as-images.imgix.net/3a40a6210fa0225609ccea31752ee704-20251007-134632326-ios.jpg",
+      "https://as-images.imgix.net/3e2fd6d9e000b5b18020ab09341937eb-20251007-134458279-ios.jpg",
+      "https://as-images.imgix.net/e92ace500233b3f48c3cf5744e10a99b-20251007-134452542-ios.jpg",
+      "https://as-images.imgix.net/307237e70624807fa50d7e698904019a-20251007-134423604-ios.jpg",
+      "https://as-images.imgix.net/192ec0c4052f22c8821a14038906c816-20251007-134331571-ios.jpg",
+      "https://as-images.imgix.net/5a83164762e1e24d5ebc1f98524a4836-20251007-134158010-ios.jpg",
+      "https://as-images.imgix.net/fa7ba498ead5217e34f84d32df3fa513-20251007-134248668-ios.jpg",
+      "https://as-images.imgix.net/be2036dd2295a2578b3b263a86224b43-20251007-134122797-ios.jpg",
+      "https://as-images.imgix.net/bebb305d719aebf161d0823f6f958e66-20251007-133848178-ios.jpg",
+      "https://as-images.imgix.net/566fef15f52dad5c7e31c3a6124375eb-20251007-133831187-ios.jpg",
+      "https://as-images.imgix.net/a18f26fccb072c345ef13b53addbe8d7-20251007-134732224-ios.jpg"
     ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/01692364c2d111e62cddb279a41b00ba-gjs-dillon-particulars-the-old-post-office-wychbold.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/57d0801d13c34f48d55d22685079c3d9-cam04581g0-pr0068-build01-floor01.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/24f8f717812813b7ccf36c0023a7d690-cam04581g0-pr0068-build01-floor00.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/dd7f166a0fbaaeb4bb1b494eed3d2c3b-cam04581g0-pr0068-build01.png"
-    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/ab32a676c42530faadf8c50ec6521068-gjs-dillon-particulars-4-edgar-street-worcester.pdf",
+    "floor_plan_urls": [],
     "contacts": [
       {
         "name": "Roy Wilkes",
@@ -146,17 +270,9 @@
         "mobile": "",
         "company": "GJS Dillon Limited",
         "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-07-20 11:59:56"
+    "last_updated": "2026-07-20 12:13:59"
   },
   {
     "id": 377589,
@@ -684,57 +800,6 @@
       }
     ],
     "last_updated": "2026-07-13 12:25:36"
-  },
-  {
-    "id": 376681,
-    "status": "Available",
-    "address": "Unit 18 Aston Fields Industrial Estate",
-    "town": "Bromsgrove",
-    "postcode": "B60 3EX",
-    "lat": 52.316476,
-    "lon": -2.060756,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3786,
-    "size_to_sqft": 3786,
-    "summary": "Well located premises suitable for a variety of commercial uses",
-    "description": "Unit 18 Aston Fields Industrial Estate comprises a mid-terrace commercial property of steel frame construction with brick & block elevations.  The building is currently configured as a warehouse / industrial property.\n\nInternally, there is a good-sized warehouse area with the benefit of 4.75m eaves.  Located to the front of the unit is a separate office area and WCs.  The property is accessed via a pedestrian door and roller shutter doors. Externally there are car parking spaces and loading / unloading facilities to the front of the property. \n\nGross Internal Area\t3,786 sq ft\t352 sq m",
-    "location": "The property is situated in Bromsgrove, to the south of the town centre on Aston Fields Industrial Estate. Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the property, giving access to the Midlands motorway network.\n\nBirmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south.\n\nAston Fields Industrial Estate benefits from communal landscaping, allocated & communal parking and extensive security, including CCTV and security gates.",
-    "features": [
-      "3,786 sq ft (352 sq m) GIA",
-      "Large warehouse area with associated office and WC's",
-      "Situated on the popular Aston Fields Industrial Estate",
-      "Suitable for warehouse, industrial or trade counter useage"
-    ],
-    "rent_psf": 8.98,
-    "rent_pa": 34000,
-    "rent": "£34,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 34250,
-    "epc_rating": "C (58)",
-    "images": [
-      "https://as-images.imgix.net/9b6adee9cebcb3e60f6f3841efc8233a-frnt-page-image.png",
-      "https://as-images.imgix.net/416c7a02f268f5c980f94441f50d1d09-map.png"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/0fd0b32b5b641e82cf5e3b947c8a6b20-gjs-dillon-particulars-unit-18-aston-fields-industrial-estate-bromsgrove.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-07-13 10:55:27"
   },
   {
     "id": 350693,
@@ -2924,70 +2989,6 @@
       }
     ],
     "last_updated": "2026-06-17 09:54:53"
-  },
-  {
-    "id": 353367,
-    "status": "Under Offer",
-    "address": "4 Edgar Street",
-    "town": "Worcester",
-    "postcode": "WR1 2LR",
-    "lat": 52.188219,
-    "lon": -2.219159,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1182,
-    "size_to_sqft": 1182,
-    "summary": "Period building next to Worcester Cathedral",
-    "description": "4 Edgar Street is a mid terrace office building arranged over three floors, offering office suites with character and a practical layout suitable for professional occupiers. The building benefits from recent redecoration. Natural light floods the offices through large sash windows, creating a bright and productive working environment.\n\nThe property also features kitchen facilities and WC provisions, with the added convenience of on-site car parking. Its location provides excellent access to Worcester city centre amenities and transport links, making it an ideal base for a wide range of businesses.\n\n\t\t\nTotal\t1,182 sq ft \t109.81 sq m",
-    "location": "Edgar Street is close to City Walls Road and Sidbury with good transport links.  Close by are the main shopping areas of Worcester city centre and other amenities which are within walking distance.  Several public car parks are in the vicinity.\n\nWorcester is a major West Midlands city located approximately 120 miles North West of London, 30 miles south west of Birmingham, 25 miles to the north of Cheltenham and 26 miles to the north east of Hereford city centre.  Motorway access to the city is very good with junctions 6 and 7 of the M5 motorway being within three miles of the city centre giving direct access to the national motorway network.",
-    "features": [
-      "1,182 Sq ft (109.81sq m)",
-      "Prominent self-contained office building in Worcester city centre",
-      "On-site parking",
-      "Walking distance to Worcester High Street",
-      "Good access to J6 and J7 of the M5 Motorway"
-    ],
-    "rent_psf": 9.98,
-    "rent_pa": 11800,
-    "rent": "£11,800 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 6300,
-    "epc_rating": "E (110)",
-    "images": [
-      "https://as-images.imgix.net/52ddfd30fcac1a7604f73c1cb6eeaa24-20251007-133403505-ios.jpg",
-      "https://as-images.imgix.net/e269f8239e26409748784bc168c2ea0a-20251007-134233217-ios.jpg",
-      "https://as-images.imgix.net/1b997cd9670f4dc0237a994461e5e42e-20251007-134408708-ios.jpg",
-      "https://as-images.imgix.net/3a40a6210fa0225609ccea31752ee704-20251007-134632326-ios.jpg",
-      "https://as-images.imgix.net/3e2fd6d9e000b5b18020ab09341937eb-20251007-134458279-ios.jpg",
-      "https://as-images.imgix.net/e92ace500233b3f48c3cf5744e10a99b-20251007-134452542-ios.jpg",
-      "https://as-images.imgix.net/307237e70624807fa50d7e698904019a-20251007-134423604-ios.jpg",
-      "https://as-images.imgix.net/192ec0c4052f22c8821a14038906c816-20251007-134331571-ios.jpg",
-      "https://as-images.imgix.net/5a83164762e1e24d5ebc1f98524a4836-20251007-134158010-ios.jpg",
-      "https://as-images.imgix.net/fa7ba498ead5217e34f84d32df3fa513-20251007-134248668-ios.jpg",
-      "https://as-images.imgix.net/be2036dd2295a2578b3b263a86224b43-20251007-134122797-ios.jpg",
-      "https://as-images.imgix.net/bebb305d719aebf161d0823f6f958e66-20251007-133848178-ios.jpg",
-      "https://as-images.imgix.net/566fef15f52dad5c7e31c3a6124375eb-20251007-133831187-ios.jpg",
-      "https://as-images.imgix.net/a18f26fccb072c345ef13b53addbe8d7-20251007-134732224-ios.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/ab32a676c42530faadf8c50ec6521068-gjs-dillon-particulars-4-edgar-street-worcester.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-06-17 09:53:40"
   },
   {
     "id": 350393,
