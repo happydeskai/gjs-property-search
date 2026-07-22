@@ -1,5 +1,59 @@
 [
   {
+    "id": 346680,
+    "status": "Available",
+    "address": "Nailers Yard",
+    "town": "Bromsgrove",
+    "postcode": "B61 8QT",
+    "lat": 52.334415435,
+    "lon": -2.063618898,
+    "types": [
+      "Retail",
+      "Office"
+    ],
+    "raw_types": [
+      "A3 (Restaurants and Cafes)",
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1000,
+    "size_to_sqft": 12088,
+    "summary": "Office / Retail To Let, Bromsgrove",
+    "description": "Nailers Yard is an upcoming mixed-use development in the heart of Bromsgrove, set to transform the former Market Hall site into a vibrant commercial, cultural, and community destination. Scheduled for completion by early 2026, the project is a key part of Bromsgrove District Council's regeneration strategy. The commercial building is a standalone structure offering premium office space, ground-floor restaurant space, and a rooftop food and drink outlet. This addition is expected to enhance Bromsgrove's night-time economy and attract both new and established businesses. The available office space is 5,424 sq ft (504 sq m) and suites are being offered from 1,087 sq ft. The total restaurant space is 3,519 sq ft (327 sq m) and is situated over the ground and top floors. Floor plans are available on request. Please contact us with your size requirement and we'd be delighted to show you how your business can be proudly located at Nailers Yard.",
+    "location": "Set in the heart of Worcestershire, Bromsgrove is a town blending heritage charm with contemporary growth. Just 30 minutes from Birmingham and with easy access to the M5, M42, and direct rail links, Bromsgrove offers exceptional connectivity for ambitious businesses. Bromsgrove is home to a growing, affluent population and a thriving local economy, making it a compelling location for both office occupiers and hospitality operators. The town's latest regeneration project, Nailers Yard, is at the centre of this transformation. With bold new spaces designed for work, culture, and cuisine, it offers a fresh canvas for operators seeking high footfall, community engagement, and standout design in a one-of-a-kind setting.",
+    "features": [
+      "Office space arranged over 1st and 3rd Floors",
+      "Food and beverage opportunities over the ground and 3rd floor",
+      "Bromsgrove town centre location"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/5e420e923e0975cd096a6bb0df64a8ff-letting346680.jpeg",
+      "https://as-images.imgix.net/021f2a59f0438efc4e9bf6bd98dc95c9-letting346680.jpeg",
+      "https://as-images.imgix.net/e23f97371fee1b4c39eef319bfa05567-letting346680.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/25da4983149363e78b276871ec926dfa-gjs-dillon-particulars-nailers-yard-bromsgrove-1.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/930fbd54b5829743166ffd273830f733-ground-first-second-floor-nailers-yard-bromsgrove-1.pdf",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/525058fe64b17bc2f04f662fd4dff68b-third-floor-nailers-yard-bromsgrove-1.pdf"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-07-22 15:56:05"
+  },
+  {
     "id": 346703,
     "status": "Under Offer",
     "address": "Horizons House, Vine Street",
@@ -1203,60 +1257,6 @@
     "last_updated": "2026-07-07 10:46:16"
   },
   {
-    "id": 346680,
-    "status": "Available",
-    "address": "Nailers Yard",
-    "town": "Bromsgrove",
-    "postcode": "B61 8QT",
-    "lat": 52.334415435,
-    "lon": -2.063618898,
-    "types": [
-      "Retail",
-      "Office"
-    ],
-    "raw_types": [
-      "A3 (Restaurants and Cafes)",
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1000,
-    "size_to_sqft": 12088,
-    "summary": "Office / Retail To Let, Bromsgrove",
-    "description": "Nailers Yard is an upcoming mixed-use development in the heart of Bromsgrove, set to transform the former Market Hall site into a vibrant commercial, cultural, and community destination. Scheduled for completion by early 2026, the project is a key part of Bromsgrove District Council's regeneration strategy. The commercial building is a standalone structure offering premium office space, ground-floor restaurant space, and a rooftop food and drink outlet. This addition is expected to enhance Bromsgrove's night-time economy and attract both new and established businesses. The total office space being delivered is 12,088 sq ft (1,123 sq m) and suites are being offered from 1,000 sq ft to single floors of circa 6,000 sq ft, or multiple floors for large companies. The total restaurant space is 3,574 sq ft (332 sq m) and is situated over the ground and top floors. Floor plans are available on request. Please contact us with your size requirement and we'd be delighted to show you how your business can be proudly located at Nailers Yard.",
-    "location": "Set in the heart of Worcestershire, Bromsgrove is a town blending heritage charm with contemporary growth. Just 30 minutes from Birmingham and with easy access to the M5, M42, and direct rail links, Bromsgrove offers exceptional connectivity for ambitious businesses. Bromsgrove is home to a growing, affluent population and a thriving local economy, making it a compelling location for both office occupiers and hospitality operators. The town's latest regeneration project, Nailers Yard, is at the centre of this transformation. With bold new spaces designed for work, culture, and cuisine, it offers a fresh canvas for operators seeking high footfall, community engagement, and standout design in a one-of-a-kind setting.",
-    "features": [
-      "Office space arranged over 1st, 2nd and 3rd Floors",
-      "Food and beverage opportunities over the ground, 3rd floors and roof top space",
-      "Bromsgrove town centre location"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/5e420e923e0975cd096a6bb0df64a8ff-letting346680.jpeg",
-      "https://as-images.imgix.net/021f2a59f0438efc4e9bf6bd98dc95c9-letting346680.jpeg",
-      "https://as-images.imgix.net/e23f97371fee1b4c39eef319bfa05567-letting346680.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/25da4983149363e78b276871ec926dfa-gjs-dillon-particulars-nailers-yard-bromsgrove-1.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/930fbd54b5829743166ffd273830f733-ground-first-second-floor-nailers-yard-bromsgrove-1.pdf",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/525058fe64b17bc2f04f662fd4dff68b-third-floor-nailers-yard-bromsgrove-1.pdf"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-07-02 15:58:21"
-  },
-  {
     "id": 358186,
     "status": "Available",
     "address": "44 High Street",
@@ -1444,84 +1444,6 @@
       }
     ],
     "last_updated": "2026-07-01 15:49:32"
-  },
-  {
-    "id": 350918,
-    "status": "Under Offer",
-    "address": "Unit 13a, St Richards Road",
-    "town": "Evesham",
-    "postcode": "WR11 1XJ",
-    "lat": 52.080721,
-    "lon": -1.944174,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial / Storage"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 10915,
-    "size_to_sqft": 10915,
-    "summary": "Warehouse / industrial unit with offices",
-    "description": "13A St. Richards Road comprises a detached industrial / warehouse property that is situated on the Four Pools Industrial Estate.  The property is accessed directly off St. Richards Road and occupies a predominant position within the wider industrial estate.\n\nInternally the property offers a large, rectangular industrial / warehouse area of the ground floor, which benefits from a minimum eaves height of 5.7m and a maximum eaves height of 7.7m.  The warehouse is accessed via four roller shutter doors and a pedestrian door, along with access from the office space.\n\nThe office accommodation is situated to the front of the building and is arranged over the ground and first floors.  At ground floor level there is an open plan office, WC and kitchen.  At first floor level there are two further WCs, a meeting room, office and storage area.\n\nExternally the property benefits from a large, secure yard, which offers parking, loading / unloading space and space to turn vehicles within.  There is also an open storage area to the rear of the building.\n\nGround Floor Warehouse 9,197 sq ft 854.37 sq m\nGround Floor Offices 859 sq ft 79.81 sq m \nFirst Floor Offices 859 sq ft 79.81 sq m\nTotal 10,915 sq ft 1,013.99 sq m",
-    "location": "The property is situated within Evesham, to the south east of Worcestershire.  Evesham is a market town within Wychavon which benefits from a population of approximately 25,000, according to the 2011 census.  It is located approximately 14 miles south east of Worcester, 14 miles north east of Cheltenham, 27 miles south of Birmingham and 90 miles north west of London.\n\nEvesham benefits from good road communications being on the A44; which provides access to Worcester, Oxford and Junction 6 of the M5 motorway (in approximately 25 minutes) and on the A46; which provides access to Redditch, Tewkesbury and Junction 9 of the M5 motorway (in approximately 20 minutes). Evesham also has a mainline station which provides a direct access to the Worcester stations, Oxford and London Paddington.",
-    "features": [
-      "10,915 sq ft (1,013 sq m) GIA",
-      "Minimum eaves height 5.7m",
-      "Maximum eaves height 7.7m",
-      "Warehouse access via 4 roller shutter doors",
-      "Large secure yard"
-    ],
-    "rent_psf": 6.87,
-    "rent_pa": 75000,
-    "rent": "£75,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/651f99fb20a9c50625e8c72eb69ca2a6-20250110-112721.jpg",
-      "https://as-images.imgix.net/f5e96c25b5568fbf6cc3dbfd1d9c586f-20250110-112658.jpg",
-      "https://as-images.imgix.net/c868fd4436d00757c8fd802d5a7e4445-20250110-100648.jpg",
-      "https://as-images.imgix.net/992dfd5951d90ac6acc94184d2512a89-cam04581g0-pr0017-still004.jpg",
-      "https://as-images.imgix.net/d427769e14b3fba6626c41b3eb61cede-cam04581g0-pr0017-still003-1.jpg",
-      "https://as-images.imgix.net/e3549552789a4cb93163b91c1683c20b-cam04581g0-pr0017-still001-1.jpg",
-      "https://as-images.imgix.net/c881be2aadb25ee2ab6e87b7d467ed5c-cam04581g0-pr0017-still002.jpg",
-      "https://as-images.imgix.net/ab9072edf4a682209d5fbccad6b747e4-20250110-111848.jpg",
-      "https://as-images.imgix.net/e56ba103ae52be35219f235cba1cb429-20250110-112029.jpg",
-      "https://as-images.imgix.net/b654121edce18a110401f42305e1c9b6-20250110-112419.jpg",
-      "https://as-images.imgix.net/b54a0dc61220366570e2a147f56af7b8-20250110-112246.jpg",
-      "https://as-images.imgix.net/50a34bf4f59c9c37c5c2bcb1f0fa6a31-20250110-105232.jpg",
-      "https://as-images.imgix.net/5ec5e815e0535326a76a26620c821fc5-20250110-112419.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/36e0bdf3e346311418f554e771fdade2-gjs-dillon-particulars-13a-st-richards-road-evesham-wr11-1.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/c14598fe6d2e99edd0bd4d1f051cd729-cam04581g0-pr0017-build01-floor00.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/f2f91a307edef161c9e0b7d4c1094931-cam04581g0-pr0017-build01-floor01.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/12a31422532ac669f840bde246e856fa-cam04581g0-pr0017-build01.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/13astrichardsroadevesham"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-07-01 14:58:24"
   },
   {
     "id": 346652,
@@ -4258,62 +4180,6 @@
       }
     ],
     "last_updated": "2026-05-27 17:03:07"
-  },
-  {
-    "id": 346653,
-    "status": "Under Offer",
-    "address": "Land At Willow End Park",
-    "town": "Malvern",
-    "postcode": "WR13 6NN",
-    "lat": 52.075309753,
-    "lon": -2.298809051,
-    "types": [
-      "Development/Investment"
-    ],
-    "raw_types": [
-      "Development"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 27878.4,
-    "size_to_sqft": 27878.4,
-    "summary": "Development Land",
-    "description": "This parcel of land extends to approximately 0.64 acres and offers an excellent opportunity for development (subject to planning). The site has an extant permission for an 8000 sq ft office block (identical to that shown adjacent to the site) and a lapsed consent for 6 light industrial units with office facilities above totalling 11,000 sq ft. Electricity, gas and full fibre comms are within easy reach of the site and mains water and effluent disposal are within the site. The land benefits from a prominent position alongside an established business park and the site offers potential for additional parking or external yard space, depending on the end use. This is a rare opportunity to secure a well-located development site within an established commercial environment, with flexibility for a range of potential occupiers or investors.",
-    "location": "Willow End is located to the south of Great Malvern and east of Malvern Wells, in a rural location near the Three Counties Show Ground. Willow End is home to multiple office and warehouse buildings, including a recently built office/research facility. The business park is situated two and a half miles south of Great Malvern and eight and a half miles south west of Worcester. The area benefits from good transport communications with both Junction 1 of the M50 and Junction 7 of the M5 being accessible from the property. Great Malvern also benefits from a mainline railway station which provides direct access to Worcester, Hereford and London Paddington.",
-    "features": [
-      "0.64 acre",
-      "Freehold",
-      "Development opportunity subject to planning",
-      "Located on an established Business Park"
-    ],
-    "price": "£255,000",
-    "price_value": 255000,
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/7b5774a11bb4834b2f124c1948c3496b-letting346653.jpeg",
-      "https://as-images.imgix.net/20369ebd7df47f1cd239e78e32dd059f-letting346653.jpeg",
-      "https://as-images.imgix.net/a940225a85315e9033bb65b482f12351-letting346653.jpeg",
-      "https://as-images.imgix.net/86d7325de100e6d1d814ff8d0e3623aa-letting346653.jpeg",
-      "https://as-images.imgix.net/0a9f2aa167642ba37ee7d2fa6e1b4596-letting346653.jpeg",
-      "https://as-images.imgix.net/607a5ecde22a248584ec20ce524dcbe0-letting346653.jpeg",
-      "https://as-images.imgix.net/4b95380082fc2ec7f661a6324ec27ef1-letting346653.jpeg",
-      "https://as-images.imgix.net/e8218aab4048cd31b525e998a710be9c-letting346653.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/749b5056acd607c952b42e2a2af3d11e-letting346653.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-27 16:51:31"
   },
   {
     "id": 355287,
