@@ -1,5 +1,62 @@
 [
   {
+    "id": 346703,
+    "status": "Under Offer",
+    "address": "Horizons House, Vine Street",
+    "town": "Evesham",
+    "postcode": "WR11 4RE",
+    "lat": 52.092025756,
+    "lon": -1.948582053,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 880,
+    "size_to_sqft": 880,
+    "summary": "Office To Let, Evesham",
+    "description": "Horizons House is a two storey, multi-let office building arranged over the ground and first floors. The subject of this letting comprises the entire ground floor. The office space can be accessed via two private entrances (including one from the Abbey Park) or via a communal entrance. Over the ground floor there are two open plan office areas and WC facilities - which are for the sole use of the Tenant and are not shared with other occupiers. Ground Floor 880 sq ft 81.77 sq m",
+    "location": "Horizons House is located within Evesham, a market town within Worcestershire. The town has excellent transport links being situated on the A44 and A46 - with the A44 providing access west to Junction 6 of the M5 motorway (11 miles distant) and east to the Cotswolds & Oxford; and the A46 providing access south to Junction 9 of the M5 motorway (9 miles distant) and north to Redditch & Junction 15 of the M40 motorway (17 miles distant and providing direct access to Birmingham, London & Birmingham International Airport). Evesham also has a mainline railway station which provides a direct service to Worcester (20 mins), Oxford (50 mins) & London Paddington (circa 1hr 45 mins). Horizons House benefits from being adjacent to Abbey Park and looks out over the historic Bell Tower and the twin churches of All Saints & St. Lawrence - providing an attractive place to work whilst still being adjacent to Evesham town centre.",
+    "features": [
+      "Refurbished ground floor open plan office",
+      "Stunning outlook on to the Abbey Park",
+      "Recently refurbished to a high standard",
+      "Stunning outlook on to Abbey Park",
+      "Situated adjacent to Evesham Town Centre"
+    ],
+    "rent_psf": 13.64,
+    "rent_pa": 12000,
+    "rent": "£12,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/3c10d57b08b0c667428966dcf209b6fe-letting346703.jpeg",
+      "https://as-images.imgix.net/c4bf747fb1bd9f31f730cfdea032df0d-letting346703.jpeg",
+      "https://as-images.imgix.net/d9f075a149cf3d117ba96413cf4d1750-letting346703.jpeg",
+      "https://as-images.imgix.net/6d54feab7eaa9682c9f47f1dc391df0b-letting346703.jpeg",
+      "https://as-images.imgix.net/b90519cc53bb2d4a43ea974f6cbaee98-letting346703.jpeg",
+      "https://as-images.imgix.net/2e1e4233246441744accc8a91a492340-letting346703.jpeg",
+      "https://as-images.imgix.net/35b8b431319abe4a45dbe3c26eb217ca-letting346703.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f38cf5f1e6e0e2d538c39efe52420dc3-letting346703.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-07-22 14:18:25"
+  },
+  {
     "id": 383292,
     "status": "Available",
     "address": "The Old Post Office",
@@ -2805,63 +2862,6 @@
       }
     ],
     "last_updated": "2026-06-17 13:04:55"
-  },
-  {
-    "id": 346703,
-    "status": "Available",
-    "address": "Horizons House, Vine Street",
-    "town": "Evesham",
-    "postcode": "WR11 4RE",
-    "lat": 52.092025756,
-    "lon": -1.948582053,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 880,
-    "size_to_sqft": 880,
-    "summary": "Office To Let, Evesham",
-    "description": "Horizons House is a two storey, multi-let office building arranged over the ground and first floors. The subject of this letting comprises the entire ground floor. The office space can be accessed via two private entrances (including one from the Abbey Park) or via a communal entrance. Over the ground floor there are two open plan office areas and WC facilities - which are for the sole use of the Tenant and are not shared with other occupiers. Ground Floor 880 sq ft 81.77 sq m",
-    "location": "Horizons House is located within Evesham, a market town within Worcestershire. The town has excellent transport links being situated on the A44 and A46 - with the A44 providing access west to Junction 6 of the M5 motorway (11 miles distant) and east to the Cotswolds & Oxford; and the A46 providing access south to Junction 9 of the M5 motorway (9 miles distant) and north to Redditch & Junction 15 of the M40 motorway (17 miles distant and providing direct access to Birmingham, London & Birmingham International Airport). Evesham also has a mainline railway station which provides a direct service to Worcester (20 mins), Oxford (50 mins) & London Paddington (circa 1hr 45 mins). Horizons House benefits from being adjacent to Abbey Park and looks out over the historic Bell Tower and the twin churches of All Saints & St. Lawrence - providing an attractive place to work whilst still being adjacent to Evesham town centre.",
-    "features": [
-      "Refurbished ground floor open plan office",
-      "Stunning outlook on to the Abbey Park",
-      "Recently refurbished to a high standard",
-      "Stunning outlook on to Abbey Park",
-      "Situated adjacent to Evesham Town Centre"
-    ],
-    "rent_psf": 13.64,
-    "rent_pa": 12000,
-    "rent": "£12,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/3c10d57b08b0c667428966dcf209b6fe-letting346703.jpeg",
-      "https://as-images.imgix.net/c4bf747fb1bd9f31f730cfdea032df0d-letting346703.jpeg",
-      "https://as-images.imgix.net/d9f075a149cf3d117ba96413cf4d1750-letting346703.jpeg",
-      "https://as-images.imgix.net/6d54feab7eaa9682c9f47f1dc391df0b-letting346703.jpeg",
-      "https://as-images.imgix.net/b90519cc53bb2d4a43ea974f6cbaee98-letting346703.jpeg",
-      "https://as-images.imgix.net/2e1e4233246441744accc8a91a492340-letting346703.jpeg",
-      "https://as-images.imgix.net/35b8b431319abe4a45dbe3c26eb217ca-letting346703.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f38cf5f1e6e0e2d538c39efe52420dc3-letting346703.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-06-17 10:00:45"
   },
   {
     "id": 371486,
