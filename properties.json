@@ -1,5 +1,99 @@
 [
   {
+    "id": 377589,
+    "status": "Available",
+    "address": "7 Aston Court",
+    "town": "Bromsgrove",
+    "postcode": "B60 3AL",
+    "lat": 52.318276,
+    "lon": -2.056079,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 2278,
+    "size_to_sqft": 2278,
+    "summary": "Modern self contained offices with onsite car parking",
+    "description": "7 Aston Court is a modern end terrace purpose built office building of brick main wall construction surmounted by a pitched tiled roof.  The building is arranged over the ground and first floors, with the ground floor offering open plan office space, a modern kitchen and WC facilities.  The first floor offers partitioned office with a mixture of glazed and solid demountable walls, with there being a further WC on this floor.  The building offers modern suspended ceilings throughout, along with LG3 lighting, comfort cooling and raised accessed floors.\n\nThe property has the benefit of 10 car parking spaces, although we note that four are leased to the occupier of 5 Aston Court (IRS) until September 2026.",
+    "location": "Aston Court is within the Bromsgrove Enterprise Park which is located approximately one and a half miles to the south of Bromsgrove town centre.  The Bromsgrove Enterprise Park offers a range of accommodation from serviced offices in Basepoint, good quality warehousing at Sapphire Court and a modern courtyard development of Aston Court.\n\nJunction 4 of the M5 motorway and Junction 1 of the M42 motorway lie approximately three miles distant providing access to the M5 and M42 motorway as well as the national motorway network.  Birmingham City Centre is situated approximately 15 miles to the north and Worcester City Centre is situated approximately 10 miles to the south.\nBromsgrove has a mainline railway station, which is situated close to Aston Court. There are frequent trains to Birmingham New Street, Worcester Foregate Street and Hereford. There is also a bus station adjacent to the high street.  Buses operate to a wide area of Worcestershire and the West Midlands.",
+    "features": [
+      "2,278 sq ft (211.63 sq m)",
+      "Modern open plan office accommodation over two floors",
+      "A mix of open plan and partitioned offices",
+      "Comfort cooling",
+      "10 allocated car parking spaces"
+    ],
+    "price": "£375,000",
+    "price_value": 375000,
+    "business_rates_psf": 0,
+    "rateable_value": 27500,
+    "estate_charge": "3400",
+    "epc_rating": "B (33)",
+    "images": [
+      "https://as-images.imgix.net/b748d44a15864ea894b6c895a38baa43-20260716-124510-1.jpg",
+      "https://as-images.imgix.net/e8d47bbe5ec3cbcb317d2b9a7ed577c3-20260716-124535-1.jpg",
+      "https://as-images.imgix.net/9e60e19f445dbe8869b172ccce995a42-20260716-125138.jpg",
+      "https://as-images.imgix.net/491f442c09cdd0482f41467644339a70-20260716-125128.jpg",
+      "https://as-images.imgix.net/3c542af87f3ea9c7a3823311065a3f4b-20260716-125118.jpg",
+      "https://as-images.imgix.net/6c90abb472b2f449702d2736f3006791-20260716-125009.jpg",
+      "https://as-images.imgix.net/57d9c578c5a5ed343b0776b343faf419-20260716-125752.jpg",
+      "https://as-images.imgix.net/e7de289e71ea8d71d07996133b623fd1-20260716-125213.jpg",
+      "https://as-images.imgix.net/34ff6d2e1494af8abc25ebe374114188-20260716-125203.jpg",
+      "https://as-images.imgix.net/c24536efd9fbf49e9d53dc4e0b58a4a4-20260716-125725.jpg",
+      "https://as-images.imgix.net/80f7c396f726ae1913d28c0d05d01a20-20260716-125101.jpg",
+      "https://as-images.imgix.net/da8ccc7208168518f13054cb3a3fb55a-20260716-125223.jpg",
+      "https://as-images.imgix.net/2fd534281dfd297f7aed2dbefb4553fa-20260716-125921.jpg",
+      "https://as-images.imgix.net/f58d8cfb0bc862265047f308e3277bdb-20260716-125852.jpg",
+      "https://as-images.imgix.net/5dcc1b0d2e21b7a977ad47ab7c150ba3-20260716-125654.jpg",
+      "https://as-images.imgix.net/33ec94456f1000a5c2115b403b00775f-20260716-125713.jpg",
+      "https://as-images.imgix.net/1f9ecaf4d97134756a658bc0956aa529-20260716-125844.jpg",
+      "https://as-images.imgix.net/4e99cc596c18eaafe06715c5256124d7-20260716-125859.jpg",
+      "https://as-images.imgix.net/fee5a17dea416b195302aeb2e27c7e8a-20260716-125051.jpg",
+      "https://as-images.imgix.net/99b41b78f8934dec264bc57d86c6beb0-20260716-125703.jpg",
+      "https://as-images.imgix.net/658b1e5a862a6e403b5fe8e250a34903-20260716-125807.jpg",
+      "https://as-images.imgix.net/b2dc68e513c132134b70166483f092c9-20260716-125642.jpg",
+      "https://as-images.imgix.net/ead44e16f5468aaf8af8a3ce8ff1fc86-20260716-125912.jpg",
+      "https://as-images.imgix.net/887c9979e90da4f963a912d93bc4d75e-20260716-125534.jpg",
+      "https://as-images.imgix.net/2a029a99e7fbca6963b38cce08c98b50-20260716-125824.jpg",
+      "https://as-images.imgix.net/2f9dd652f5dac35566e8dd63cedcbd8b-20260716-125758.jpg",
+      "https://as-images.imgix.net/1b37c56d3e0f30161cc60acf6b5c7801-20260716-125559.jpg",
+      "https://as-images.imgix.net/2f810f7ccefc4953a1e732d21ec6754f-20260716-125647.jpg",
+      "https://as-images.imgix.net/b46b8344a63b958bf7fdfe73351637f5-20260716-124520-1.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/8b8c58cd508c70d84d149b32a00cc6f4-gjs-dillon-particulars-7-aston-court-bromsgrove-b60-3.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/87bf2657a4dc592b08830be6b3049069-cam04581g0-pr0069-build01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/f858d330e16a662fdf9d980f91771064-cam04581g0-pr0069-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/bc91c96db1a66fd1a42a493e5bd482da-cam04581g0-pr0069-build01-floor01.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/7astoncourtbromsgrove"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-07-28 12:28:26"
+  },
+  {
     "id": 346652,
     "status": "Under Offer",
     "address": "St. Dunstan's Building",
@@ -1907,99 +2001,6 @@
       }
     ],
     "last_updated": "2026-07-21 11:53:53"
-  },
-  {
-    "id": 377589,
-    "status": "Available",
-    "address": "7 Aston Court",
-    "town": "Bromsgrove",
-    "postcode": "B60 3AL",
-    "lat": 52.318276,
-    "lon": -2.056079,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 2278,
-    "size_to_sqft": 2278,
-    "summary": "Modern self contained offices with onsite car parking",
-    "description": "7 Aston Court is a modern end terrace purpose built office building of brick main wall construction surmounted by a pitched tiled roof.  The building is arranged over the ground and first floors, with the ground floor offering open plan office space, a modern kitchen and WC facilities.  The first floor offers partitioned office with a mixture of glazed and solid demountable walls, with there being a further WC on this floor.  The building offers modern suspended ceilings throughout, along with LG3 lighting, comfort cooling and raised accessed floors.\n\nThe property has the benefit of 10 car parking spaces, although we note that four are leased to the occupier of 5 Aston Court (IRS) until September 2026.",
-    "location": "Aston Court is within the Bromsgrove Enterprise Park which is located approximately one and a half miles to the south of Bromsgrove town centre.  The Bromsgrove Enterprise Park offers a range of accommodation from serviced offices in Basepoint, good quality warehousing at Sapphire Court and a modern courtyard development of Aston Court.\n\nJunction 4 of the M5 motorway and Junction 1 of the M42 motorway lie approximately three miles distant providing access to the M5 and M42 motorway as well as the national motorway network.  Birmingham City Centre is situated approximately 15 miles to the north and Worcester City Centre is situated approximately 10 miles to the south.\nBromsgrove has a mainline railway station, which is situated close to Aston Court. There are frequent trains to Birmingham New Street, Worcester Foregate Street and Hereford. There is also a bus station adjacent to the high street.  Buses operate to a wide area of Worcestershire and the West Midlands.",
-    "features": [
-      "2,278 sq ft (211.63 sq m)",
-      "Modern open plan office accommodation over two floors",
-      "A mix of open plan and partitioned offices",
-      "Comfort cooling",
-      "10 allocated car parking spaces"
-    ],
-    "price": "£375,000",
-    "price_value": 375000,
-    "business_rates_psf": 0,
-    "rateable_value": 27500,
-    "estate_charge": "3400",
-    "epc_rating": "B (33)",
-    "images": [
-      "https://as-images.imgix.net/b748d44a15864ea894b6c895a38baa43-20260716-124510-1.jpg",
-      "https://as-images.imgix.net/e8d47bbe5ec3cbcb317d2b9a7ed577c3-20260716-124535-1.jpg",
-      "https://as-images.imgix.net/9e60e19f445dbe8869b172ccce995a42-20260716-125138.jpg",
-      "https://as-images.imgix.net/491f442c09cdd0482f41467644339a70-20260716-125128.jpg",
-      "https://as-images.imgix.net/3c542af87f3ea9c7a3823311065a3f4b-20260716-125118.jpg",
-      "https://as-images.imgix.net/6c90abb472b2f449702d2736f3006791-20260716-125009.jpg",
-      "https://as-images.imgix.net/57d9c578c5a5ed343b0776b343faf419-20260716-125752.jpg",
-      "https://as-images.imgix.net/e7de289e71ea8d71d07996133b623fd1-20260716-125213.jpg",
-      "https://as-images.imgix.net/34ff6d2e1494af8abc25ebe374114188-20260716-125203.jpg",
-      "https://as-images.imgix.net/c24536efd9fbf49e9d53dc4e0b58a4a4-20260716-125725.jpg",
-      "https://as-images.imgix.net/80f7c396f726ae1913d28c0d05d01a20-20260716-125101.jpg",
-      "https://as-images.imgix.net/da8ccc7208168518f13054cb3a3fb55a-20260716-125223.jpg",
-      "https://as-images.imgix.net/2fd534281dfd297f7aed2dbefb4553fa-20260716-125921.jpg",
-      "https://as-images.imgix.net/f58d8cfb0bc862265047f308e3277bdb-20260716-125852.jpg",
-      "https://as-images.imgix.net/5dcc1b0d2e21b7a977ad47ab7c150ba3-20260716-125654.jpg",
-      "https://as-images.imgix.net/33ec94456f1000a5c2115b403b00775f-20260716-125713.jpg",
-      "https://as-images.imgix.net/1f9ecaf4d97134756a658bc0956aa529-20260716-125844.jpg",
-      "https://as-images.imgix.net/4e99cc596c18eaafe06715c5256124d7-20260716-125859.jpg",
-      "https://as-images.imgix.net/fee5a17dea416b195302aeb2e27c7e8a-20260716-125051.jpg",
-      "https://as-images.imgix.net/99b41b78f8934dec264bc57d86c6beb0-20260716-125703.jpg",
-      "https://as-images.imgix.net/658b1e5a862a6e403b5fe8e250a34903-20260716-125807.jpg",
-      "https://as-images.imgix.net/b2dc68e513c132134b70166483f092c9-20260716-125642.jpg",
-      "https://as-images.imgix.net/ead44e16f5468aaf8af8a3ce8ff1fc86-20260716-125912.jpg",
-      "https://as-images.imgix.net/887c9979e90da4f963a912d93bc4d75e-20260716-125534.jpg",
-      "https://as-images.imgix.net/2a029a99e7fbca6963b38cce08c98b50-20260716-125824.jpg",
-      "https://as-images.imgix.net/2f9dd652f5dac35566e8dd63cedcbd8b-20260716-125758.jpg",
-      "https://as-images.imgix.net/1b37c56d3e0f30161cc60acf6b5c7801-20260716-125559.jpg",
-      "https://as-images.imgix.net/2f810f7ccefc4953a1e732d21ec6754f-20260716-125647.jpg",
-      "https://as-images.imgix.net/b46b8344a63b958bf7fdfe73351637f5-20260716-124520-1.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/8b8c58cd508c70d84d149b32a00cc6f4-gjs-dillon-particulars-7-aston-court-bromsgrove-b60-3.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/a7ebfca2919da73e91ff6f82d1f1333a-cam04581g0-pr0069-build01.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/356e0768c41d225b9a79344a66414904-cam04581g0-pr0069-build01-floor00.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/7astoncourtbromsgrove"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-07-20 17:10:28"
   },
   {
     "id": 376681,
