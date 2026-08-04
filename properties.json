@@ -1,5 +1,56 @@
 [
   {
+    "id": 376681,
+    "status": "Available",
+    "address": "Unit 18 Aston Fields Industrial Estate",
+    "town": "Bromsgrove",
+    "postcode": "B60 3EX",
+    "lat": 52.316476,
+    "lon": -2.060756,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3786,
+    "size_to_sqft": 3786,
+    "summary": "Well located premises suitable for a variety of commercial uses",
+    "description": "Unit 18 Aston Fields Industrial Estate comprises a mid-terrace commercial property of steel frame construction with brick & block elevations.  The building is currently configured as a warehouse / industrial property.\n\nInternally, there is a good-sized warehouse area with the benefit of 4.75m eaves.  Located to the front of the unit is a separate office area and WCs.  The property is accessed via a pedestrian door and roller shutter doors. Externally there are car parking spaces and loading / unloading facilities to the front of the property. \n\nGross Internal Area\t3,786 sq ft\t352 sq m",
+    "location": "The property is situated in Bromsgrove, to the south of the town centre on Aston Fields Industrial Estate. Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the property, giving access to the Midlands motorway network.\n\nBirmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south.\n\nAston Fields Industrial Estate benefits from communal landscaping, allocated & communal parking and extensive security, including CCTV and security gates.",
+    "features": [
+      "3,786 sq ft (352 sq m) GIA",
+      "Large warehouse area with associated office and WC's",
+      "Situated on the popular Aston Fields Industrial Estate",
+      "Suitable for warehouse, industrial or trade counter useage"
+    ],
+    "rent_psf": 9.03,
+    "rent_pa": 34200,
+    "rent": "£34,200 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 34250,
+    "epc_rating": "C (58)",
+    "images": [
+      "https://as-images.imgix.net/9b6adee9cebcb3e60f6f3841efc8233a-frnt-page-image.png",
+      "https://as-images.imgix.net/416c7a02f268f5c980f94441f50d1d09-map.png"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c20c397e5d8a3db69a38d8c90c682584-gjs-dillon-particulars-unit-18-aston-fields-industrial-estate-bromsgrove.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-08-04 11:08:32"
+  },
+  {
     "id": 346706,
     "status": "Available",
     "address": "Evesham Trade Centre",
@@ -33,15 +84,18 @@
     "rateable_value": 0,
     "epc_rating": "",
     "images": [
-      "https://as-images.imgix.net/e964e4b14ea0b382c5e859e23f5744a2-letting346706.jpeg",
+      "https://as-images.imgix.net/d955a84f3065c245c090c20c432c855d-img-1325.JPEG",
       "https://as-images.imgix.net/23dd1cf57ec0e79ccc201943bb107b1e-letting346706.jpeg",
-      "https://as-images.imgix.net/51e1ff60e4dd3b70f5f573d43574db90-letting346706.jpeg",
       "https://as-images.imgix.net/bdb3b04c7c998894c59aac457a3878b2-letting346706.jpeg",
       "https://as-images.imgix.net/9076ba0914117231c69cb23856c264aa-letting346706.jpeg",
-      "https://as-images.imgix.net/422c606f10a8c007e4ac8e2df0dcb168-letting346706.jpeg"
+      "https://as-images.imgix.net/422c606f10a8c007e4ac8e2df0dcb168-letting346706.jpeg",
+      "https://as-images.imgix.net/51e1ff60e4dd3b70f5f573d43574db90-letting346706.jpeg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/7dba641d5a67d0ff0bdf4ece9e917299-17173-hi-aurora-evesham-davies-road-tp-brochure-v10.pdf",
     "floor_plan_urls": [],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/eveshamtradepark"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -60,7 +114,7 @@
         "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-07-28 16:12:55"
+    "last_updated": "2026-08-04 11:02:52"
   },
   {
     "id": 377589,
@@ -2003,57 +2057,6 @@
     "last_updated": "2026-07-21 11:53:53"
   },
   {
-    "id": 376681,
-    "status": "Available",
-    "address": "Unit 18 Aston Fields Industrial Estate",
-    "town": "Bromsgrove",
-    "postcode": "B60 3EX",
-    "lat": 52.316476,
-    "lon": -2.060756,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3786,
-    "size_to_sqft": 3786,
-    "summary": "Well located premises suitable for a variety of commercial uses",
-    "description": "Unit 18 Aston Fields Industrial Estate comprises a mid-terrace commercial property of steel frame construction with brick & block elevations.  The building is currently configured as a warehouse / industrial property.\n\nInternally, there is a good-sized warehouse area with the benefit of 4.75m eaves.  Located to the front of the unit is a separate office area and WCs.  The property is accessed via a pedestrian door and roller shutter doors. Externally there are car parking spaces and loading / unloading facilities to the front of the property. \n\nGross Internal Area\t3,786 sq ft\t352 sq m",
-    "location": "The property is situated in Bromsgrove, to the south of the town centre on Aston Fields Industrial Estate. Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the property, giving access to the Midlands motorway network.\n\nBirmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south.\n\nAston Fields Industrial Estate benefits from communal landscaping, allocated & communal parking and extensive security, including CCTV and security gates.",
-    "features": [
-      "3,786 sq ft (352 sq m) GIA",
-      "Large warehouse area with associated office and WC's",
-      "Situated on the popular Aston Fields Industrial Estate",
-      "Suitable for warehouse, industrial or trade counter useage"
-    ],
-    "rent_psf": 8.98,
-    "rent_pa": 34000,
-    "rent": "£34,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 34250,
-    "epc_rating": "C (58)",
-    "images": [
-      "https://as-images.imgix.net/9b6adee9cebcb3e60f6f3841efc8233a-frnt-page-image.png",
-      "https://as-images.imgix.net/416c7a02f268f5c980f94441f50d1d09-map.png"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/0fd0b32b5b641e82cf5e3b947c8a6b20-gjs-dillon-particulars-unit-18-aston-fields-industrial-estate-bromsgrove.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-07-20 13:15:04"
-  },
-  {
     "id": 353367,
     "status": "Available",
     "address": "4 Edgar Street",
@@ -3051,7 +3054,7 @@
     "size_from_sqft": 29995,
     "size_to_sqft": 29995,
     "summary": "High Specification Warehouse with Secure Yard & Parking",
-    "description": "Unit 1 Sentinel House comprises a modern, detached warehouse that has been finished to a high standard.  The unit is of a steel portal frame construction, with there being a part brick-built frontage to encompass a reception area and office space.\n\n���\t8.5m to underside of haunch\n•\tSolid level concrete floor throughout\n•\tThree 4.5m x 6m up & over roller shutter doors\n•\tLoading / Unloading to the front, rear & side\n•\tThree phase power\n•\t52 allocated car parking spaces\n\nGround Floor Office 2,062 sq ft (191.60 sq m)\nFirst Floor Office 2,259 sq ft (209.88 sq m)\nWarehouse 21,786 sq ft (2,023.95 sq m)\nTotal Floor Area 26,107 sq ft (2,425.43 sq m)\n\nMezzanine Floor 3,888 sq ft (361.20 sq m)\nTotal Floor Area (inc Mezz.) 29,995 sq ft (2,786.63 sq m)",
+    "description": "Unit 1 Sentinel House comprises a modern, detached warehouse that has been finished to a high standard.  The unit is of a steel portal frame construction, with there being a part brick-built frontage to encompass a reception area and office space.\n\n•\t8.5m to underside of haunch\n•\tSolid level concrete floor throughout\n•\tThree 4.5m x 6m up & over roller shutter doors\n•\tLoading / Unloading to the front, rear & side\n•\tThree phase power\n•\t52 allocated car parking spaces\n\nGround Floor Office 2,062 sq ft (191.60 sq m)\nFirst Floor Office 2,259 sq ft (209.88 sq m)\nWarehouse 21,786 sq ft (2,023.95 sq m)\nTotal Floor Area 26,107 sq ft (2,425.43 sq m)\n\nMezzanine Floor 3,888 sq ft (361.20 sq m)\nTotal Floor Area (inc Mezz.) 29,995 sq ft (2,786.63 sq m)",
     "location": "Unit 1 Sentinel House is situated on Enigma Business Park, which is Malvern’s prime out of town business park being situated approximately two miles to the north of Great Malvern and being adjacent to the very popular Enigma Retail Park (where occupiers include Morrisons, Aldi & Marks & Spencer. \n\nMalvern benefits from having good transport communications with the A449 leading to Worcester city centre and the A440 connecting with Junction 7 of the M5 motorway which are both approximately five miles to the north-east.  Hereford city centre is 21 miles to the east with Gloucester being 26 miles south.",
     "features": [
       "26,107 sq ft (2,425.43 sq m) GIA Plus an additional 3,888 sq ft mezzanine area",
