@@ -1,5 +1,72 @@
 [
   {
+    "id": 380382,
+    "status": "Available",
+    "address": "Unit 5A, Four Pools Industrial Estate",
+    "town": "Evesham",
+    "postcode": "WR11 1XJ",
+    "lat": 52.080651,
+    "lon": -1.95004,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Trade Counter",
+      "Warehouse"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2658,
+    "size_to_sqft": 2658,
+    "summary": "Warehouse / Trade Counter Space with Excellent Road Frontage",
+    "description": "5A Four Pools Industrial Estate comprises an end terrace warehouse / trade counter property which has a direct frontage to St. Richards Road.  This gives the unit a high profile position and benefits from significant passing traffic, given the local occupiers listed above and adjacent Aldi supermarket.\n\nInternally the property offers a regular shaped industrial / warehouse area, which benefits from a maximum eaves height of 5.35m.  The warehouse is accessed via a roller shutter door and internally from the office space.  Situated off the warehouse is a mezzanine storage area.\n\nThe office / trade counter accommodation is situated to the front of the building and offers an open plan office / retail area, a further separate office, WCs and a kitchen.\n\nExternally the property benefits from a line marked parking area for six vehicles, along with unloading/loading facilities adjacent to the roller shutter door.\n\nOffice / Trade Counter Area\t47.40 sq m\t510 sq ft\nWarehouse\t152.22 sq m\t1,638 sq ft\nMezzanine Storage\t47.40 sq m\t510 sq ft\nTotal\t247.02 sq m\t2,658 sq ft",
+    "location": "Evesham is a busy market town to the south east of Worcestershire.  It is located approximately 14 miles south east of Worcester, 14 miles north east of Cheltenham, 27 miles south of Birmingham and 90 miles north east of London.\n\nEvesham benefits from good road communications being on the A44; which provides access to Worcester, Oxford and Junction 6 of the M5 motorway (in approximately 25 minutes) and on the A46; which provides access to Redditch, Tewkesbury and Junction 9 of the M5 motorway (in approximately 20 minutes). Evesham also has a mainline station which provides a direct access to the Worcester stations, Oxford and London Paddington.\n\nFour Pools Industrial Estate is situated at the heart of Evesham’s commercial centre, with occupiers including Screwfix, Toolstation, Howdens, Jewson, B&Q, Huws Gray and many more national and local occupiers.",
+    "features": [
+      "Total GIA of 2,658 sq ft (247.02 sq m)",
+      "Trade counter / office frontage to St. Richards Road",
+      "Warehouse accessed via a roller shutter door",
+      "Self-contained with WC and",
+      "Car parking for six vehicles to the front of the unit",
+      "Situated in the commercial centre of Evesham, with surrounding occupiers including Screwfix, Toolstation, Howdens and more...."
+    ],
+    "rent_psf": 6.77,
+    "rent_pa": 18000,
+    "rent": "£18,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 20000,
+    "epc_rating": "B (43)",
+    "images": [
+      "https://as-images.imgix.net/8dea65147fe8e18f5804d4647ca02fcb-img-1206.JPEG",
+      "https://as-images.imgix.net/bf5fc6ed3451571ae393f8087953a114-img-1195.JPEG",
+      "https://as-images.imgix.net/4bfdf023d7f2da30198a8486623c403f-img-1189.JPEG",
+      "https://as-images.imgix.net/8bead6cebee00cf92a4af458bf6094a6-img-1196.JPEG",
+      "https://as-images.imgix.net/deae279988a8e6583fdf1e3d7b7c6bc1-img-1192.JPEG",
+      "https://as-images.imgix.net/c32da7f25772ee5cb9c890e361283cf0-img-1198.JPEG",
+      "https://as-images.imgix.net/4dc7de0429c78bbc53c682adc72211c2-img-1200.JPEG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/3068ae68a2b5a59717fb26c6d2d10ab6-gjs-dillon-particulars-5a-four-pools-industrial-estate-evesham.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-08-04 16:24:50"
+  },
+  {
     "id": 376681,
     "status": "Available",
     "address": "Unit 18 Aston Fields Industrial Estate",
@@ -2365,73 +2432,6 @@
       }
     ],
     "last_updated": "2026-07-08 16:30:12"
-  },
-  {
-    "id": 380382,
-    "status": "Available",
-    "address": "Unit 5A, Four Pools Industrial Estate",
-    "town": "Evesham",
-    "postcode": "WR11 1XJ",
-    "lat": 52.080651,
-    "lon": -1.95004,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Trade Counter",
-      "Warehouse"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2658,
-    "size_to_sqft": 2658,
-    "summary": "Warehouse / Trade Counter Space with Excellent Road Frontage",
-    "description": "5A Four Pools Industrial Estate comprises an end terrace warehouse / trade counter property which has a direct frontage to St. Richards Road.  This gives the unit a high profile position and benefits from significant passing traffic, given the local occupiers listed above and adjacent Aldi supermarket.\n\nInternally the property offers a regular shaped industrial / warehouse area, which benefits from a maximum eaves height of 5.35m.  The warehouse is accessed via a roller shutter door and internally from the office space.  Situated off the warehouse is a mezzanine storage area.\n\nThe office / trade counter accommodation is situated to the front of the building and offers an open plan office / retail area, a further separate office, WCs and a kitchen.\n\nExternally the property benefits from a line marked parking area for six vehicles, along with unloading/loading facilities adjacent to the roller shutter door.\n\nOffice / Trade Counter Area\t47.40 sq m\t510 sq ft\nWarehouse\t152.22 sq m\t1,638 sq ft\nMezzanine Storage\t47.40 sq m\t510 sq ft\nTotal\t247.02 sq m\t2,658 sq ft",
-    "location": "Evesham is a busy market town to the south east of Worcestershire.  It is located approximately 14 miles south east of Worcester, 14 miles north east of Cheltenham, 27 miles south of Birmingham and 90 miles north east of London.\n\nEvesham benefits from good road communications being on the A44; which provides access to Worcester, Oxford and Junction 6 of the M5 motorway (in approximately 25 minutes) and on the A46; which provides access to Redditch, Tewkesbury and Junction 9 of the M5 motorway (in approximately 20 minutes). Evesham also has a mainline station which provides a direct access to the Worcester stations, Oxford and London Paddington.\n\nFour Pools Industrial Estate is situated at the heart of Evesham’s commercial centre, with occupiers including Screwfix, Toolstation, Howdens, Jewson, B&Q, Huws Gray and many more national and local occupiers.",
-    "features": [
-      "Total GIA of 2,658 sq ft (247.02 sq m)",
-      "Trade counter / office frontage to St. Richards Road",
-      "Warehouse accessed via a roller shutter door",
-      "Self-contained with WC and",
-      "Car parking for six vehicles to the front of the unit",
-      "Situated in the commercial centre of Evesham, with surrounding occupiers including Screwfix, Toolstation, Howdens and more...."
-    ],
-    "rent_psf": 6.77,
-    "rent_pa": 18000,
-    "rent": "£18,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 20000,
-    "epc_rating": "B (43)",
-    "images": [
-      "https://as-images.imgix.net/8dea65147fe8e18f5804d4647ca02fcb-img-1206.JPEG",
-      "https://as-images.imgix.net/bf5fc6ed3451571ae393f8087953a114-img-1195.JPEG",
-      "https://as-images.imgix.net/4bfdf023d7f2da30198a8486623c403f-img-1189.JPEG",
-      "https://as-images.imgix.net/8bead6cebee00cf92a4af458bf6094a6-img-1196.JPEG",
-      "https://as-images.imgix.net/deae279988a8e6583fdf1e3d7b7c6bc1-img-1192.JPEG",
-      "https://as-images.imgix.net/c32da7f25772ee5cb9c890e361283cf0-img-1198.JPEG",
-      "https://as-images.imgix.net/4dc7de0429c78bbc53c682adc72211c2-img-1200.JPEG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/3068ae68a2b5a59717fb26c6d2d10ab6-gjs-dillon-particulars-5a-four-pools-industrial-estate-evesham.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-07-08 12:51:38"
   },
   {
     "id": 346750,
