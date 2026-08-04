@@ -353,6 +353,14 @@
       outline: none;
     }
 
+    /* Location line: town + postcode, muted, sits under the title */
+    .property-card--v2 .card-loc {
+      font-family: 'Roboto', Arial, sans-serif;
+      font-size: 15px;
+      color: #6b7280;
+      margin: -6px 0 12px;
+    }
+
     /* TO LET: 17px bold */
     .property-card--v2 .card-tenure {
       font-family: 'CenturyGothicGJS', 'Century Gothic', sans-serif;
@@ -629,6 +637,21 @@ function getPrimaryImage(p) {
   return url;
 }
 
+// Full ordered list of image URLs for a property (search-card carousel).
+// Mirrors getPrimaryImage's extraction + imgix cropping, but keeps every image.
+function getAllImages(p) {
+  if (!p) return [];
+  const urls = [];
+  (Array.isArray(p.images) ? p.images : []).forEach(img => {
+    let u = typeof img === 'string' ? img : (img && (img._ || img.url)) || '';
+    if (u) urls.push(u);
+  });
+  if (!urls.length && Array.isArray(p.photos)) p.photos.forEach(ph => ph?.url && urls.push(ph.url));
+  return urls.map(u =>
+    (u.includes('imgix.net') && !u.includes('?')) ? u + '?w=800&h=600&fit=crop&auto=format' : u
+  );
+}
+
 function getTypesArray(p) {
   const out = [];
   if (Array.isArray(p.types)) out.push(...p.types.filter(Boolean));
@@ -826,9 +849,11 @@ function render(list, context = {}) {
     return;
   }
 
-  el.innerHTML = list.map(p => {
-    const img = getPrimaryImage(p);
+  el.innerHTML = list.map((p, i) => {
+    const imgs = getAllImages(p);
+    const img = imgs[0] || '';
     const address = p.address || 'Property';
+    const where = [p.town, p.postcode].filter(Boolean).join(' ');
     const size = sizeText(p);
     const tenureLabel = getTenureLabel(p);
     const statusText = String(p.status || 'Available').trim();
@@ -849,15 +874,17 @@ function render(list, context = {}) {
     const iconPound = `<svg width="13" height="17" viewBox="0 0 320 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M112 160.4c0-35.5 28.8-64.4 64.4-64.4c6.9 0 13.8 1.1 20.4 3.3l81.2 27.1c16.8 5.6 34.9-3.5 40.5-20.2s-3.5-34.9-20.2-40.5L217 38.6c-13.1-4.4-26.8-6.6-40.6-6.6C105.5 32 48 89.5 48 160.4V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H48v74.8c0 17.2-5.5 33.9-15.6 47.7L6.4 446.9c-7.3 9.8-8.4 22.9-3 33.9S20.3 498.7 32.4 498.7H288c17.7 0 32-14.3 32-32s-14.3-32-32-32H93.3c5.6-13.9 8.5-28.8 8.5-43.9V288H208c17.7 0 32-14.3 32-32s-14.3-32-32-32H112V160.4z"/></svg>`;
 
     return `
-      <article class="property-card--v2">
+      <article class="property-card--v2" data-idx="${i}">
         <div class="card-media">
           ${img ? `<img src="${img}" alt="${address}" loading="eager">` : ''}
           <span class="card-status-banner ${statusBannerCls}">${statusText}</span>
+          ${imgs.length > 1 ? `
           <button class="card-arrow card-arrow--prev" aria-label="Previous image">&#8249;</button>
-          <button class="card-arrow card-arrow--next" aria-label="Next image">&#8250;</button>
+          <button class="card-arrow card-arrow--next" aria-label="Next image">&#8250;</button>` : ''}
         </div>
         <div class="card-body">
           <a class="card-address-link" href="property.html?id=${encodeURIComponent(p.id ?? '')}">${address}</a>
+          ${where ? `<div class="card-loc">${where}</div>` : ''}
           ${tenureLabel ? `<div class="card-tenure">${tenureLabel}</div>` : ''}
           ${desc ? `<p class="card-desc">${desc}</p>` : ''}
           <div class="card-meta-row">
@@ -873,6 +900,22 @@ function render(list, context = {}) {
         </div>
       </article>`;
   }).join('');
+
+  // Wire the per-card photo carousel. Cards are rebuilt on every render(),
+  // so bind fresh handlers here; card indices line up with `list`.
+  el.querySelectorAll('.property-card--v2').forEach(card => {
+    const idx = Number(card.dataset.idx);
+    const imgs = getAllImages(list[idx]);
+    if (imgs.length < 2) return;
+    const imgEl = card.querySelector('.card-media img');
+    const prev = card.querySelector('.card-arrow--prev');
+    const next = card.querySelector('.card-arrow--next');
+    if (!imgEl || !prev || !next) return;
+    let cur = 0;
+    const show = i => { cur = (i + imgs.length) % imgs.length; imgEl.src = imgs[cur]; };
+    prev.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); show(cur - 1); });
+    next.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); show(cur + 1); });
+  });
 }
 
 async function applyFilters() {
