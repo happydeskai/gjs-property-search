@@ -50,8 +50,8 @@
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6f3adf2f3f27b9f0b2182d1a0ef15d9f-gjs-dillon-particulars-the-radius-de-salis-court-droitwich-wr9.pdf",
     "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/7da151a2ae2306b52aa04639f327ed1b-cam04581g0-pr0026-build01-floor00-1.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/1a4df66f139567efecbfe35a2ae4d8b5-cam04581g0-pr0026-build01-floor01-1.png"
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/0922922d0d59c316b7c45d2cab21bef2-cam04581g0-pr0026-build01-floor00-1.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/c95cba8c66c0d68c68478321d9a8572b-cam04581g0-pr0026-build01-floor01-1.png"
     ],
     "virtual_tour_urls": [
       "https://tour.giraffe360.com/theradiusdroitwich"
@@ -66,7 +66,7 @@
         "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-08-10 17:06:17"
+    "last_updated": "2026-08-10 17:19:55"
   },
   {
     "id": 346660,
