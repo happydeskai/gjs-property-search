@@ -1,5 +1,405 @@
 [
   {
+    "id": 363157,
+    "status": "Available",
+    "address": "Unit 6, The IO Centre",
+    "town": "Redditch",
+    "postcode": "B98 7AS",
+    "lat": 52.291602,
+    "lon": -1.913239,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 14423,
+    "size_to_sqft": 14423,
+    "summary": "Warehouse to be refurbished - available alongside Unit 5, The IO Centre",
+    "description": "Unit 6, The IO Centre is lcoated on an established estate within Redditch.  Unit 6 can be let on its own or as a multiple unit, alongside Unit 5 (11,343 sq ft  - 1,054 sq m) Both units are to be refurbished once the current tenant has vacated. \n\nThe property is available on sublease of an existing tenancy, which expires in June 2032. A new lease may be available subject to the Landlord’s approval.",
+    "location": "Location\nThe IO Centre is a premier industrial estate located on Nash Road. The property benefits from excellent road communications with Junction 3 of the M42 approximately seven miles to the north, which gives access to the M40, M5 and M6.\n\nThe estate is well managed, with recent upgrades including full redecoration of the external cladding, improvements to the estate lighting, and completion of road maintenance works.",
+    "features": [
+      "Unit 6 – 14,423 sq ft (1,340 sq m)",
+      "Can be let in conjunction with Unit 5 at 11,343 sq ft (1,054 sq m)",
+      "Two storey offices",
+      "8m eaves height",
+      "Two electric level loading doors",
+      "25m yard depth",
+      "Palisade fenced / gated yard area",
+      "Kitchen and WC facilities"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 118000,
+    "epc_rating": "C (71)",
+    "images": [
+      "https://as-images.imgix.net/c300406fda67e84f01d5be768d27de06-20260305-152847271-ios-1.jpg",
+      "https://as-images.imgix.net/a46eeeb632a0111ce81f2d95c5143e70-dji-0988-1.JPG",
+      "https://as-images.imgix.net/6f7b42c71921f8642c212a5160b8e3f8-dji-0991-1.JPG",
+      "https://as-images.imgix.net/10719e775db92a2669c50ac918ebbfde-20260305-150153249-ios-1.jpg",
+      "https://as-images.imgix.net/fc615aea85ca27a657b5c86490c64406-20260305-152358209-ios-1.jpg",
+      "https://as-images.imgix.net/9de863a2ff15dba54e01c0fcd962ba1e-20260305-150229219-ios-1.jpg",
+      "https://as-images.imgix.net/c6ce56fce9440d40c4cc3e5006d8191b-20260305-150410682-ios-1.jpg",
+      "https://as-images.imgix.net/61b9043a625b0e73e974e60cc41ea61b-20260305-152138148-ios-1.jpg",
+      "https://as-images.imgix.net/18c79d61bebe18e195b0362e406d7598-20260305-150659050-ios-1.jpg",
+      "https://as-images.imgix.net/84cc01a5653d77c8ee79fc479ee0ae05-20260305-150927856-ios-1.jpg",
+      "https://as-images.imgix.net/aaf16448f54d5358516556af951583c0-20260305-150800273-ios-2.jpg",
+      "https://as-images.imgix.net/1df12be04212a2ff4ec41e43986a7c23-20260305-150823642-ios-1.jpg",
+      "https://as-images.imgix.net/f8a79e06137430a596b6e180f4f3e0a7-20260305-151353088-ios-1.jpg",
+      "https://as-images.imgix.net/8da825491cdbe6e2b8eafe230635d376-20260305-152818068-ios-1.jpg",
+      "https://as-images.imgix.net/8884f00feab4225929325620fbf418eb-20260305-151259865-ios-1.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f57fb8e2dc2dd9cabd9279ff70c9405f-the-io-centre-redditch-brochure-units-5-6-12-v3.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-08-12 16:01:48"
+  },
+  {
+    "id": 363173,
+    "status": "Available",
+    "address": "Unit 12, The IO Centre",
+    "town": "Redditch",
+    "postcode": "B98 7AS",
+    "lat": 52.291602,
+    "lon": -1.913239,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 31834,
+    "size_to_sqft": 31834,
+    "summary": "Warehouse with Offices - to be refurbished",
+    "description": "Unit 12, The IO Centre is located on an established estate within Redditch.  The unit is to be refurbished once the current tenant has vacated. \n\nThe property is available on sublease of an existing tenancy, which expires in June 2032. A new lease may be available subject to the Landlord’s approval.",
+    "location": "The IO Centre is a premier industrial estate located on Nash Road. The property benefits from excellent road communications with Junction 3 of the M42 approximately seven miles to the north, which gives access to the M40, M5 and M6.\n\nThe estate is well managed, with recent upgrades including full redecoration of the external cladding, improvements to the estate lighting, and completion of road maintenance works.",
+    "features": [
+      "Unit 12 - 31,834 sq ft (2,958 sq m)",
+      "Two storey offices",
+      "9.5m eaves height",
+      "Four electric level loading doors",
+      "45 car parking spaces",
+      "40m yard depth",
+      "Palisade fenced / gated yard area",
+      "Kitchen and WC facilities"
+    ],
+    "rent_psf": 11.5,
+    "rent_pa": 366091,
+    "rent": "£11.50 per sq ft",
+    "business_rates_psf": 0,
+    "rateable_value": 226000,
+    "epc_rating": "C (66)",
+    "images": [
+      "https://as-images.imgix.net/0ef80a0612b24e462530ec5f74c03a66-dji-0963-1.JPG",
+      "https://as-images.imgix.net/29d2bd4b77dc0d7f0139d0627c167dd1-20260305-155606938-ios-1.jpg",
+      "https://as-images.imgix.net/bfb3c2abc6a1b6a1956b6a0ad690761f-20260305-155537789-ios-1.jpg",
+      "https://as-images.imgix.net/663d5b0d51ecae241d780c71832a9acd-20260305-154039807-ios-1.jpg",
+      "https://as-images.imgix.net/d43cbb5eaa3150c150c44e81ddad8d98-dji-0960-1.JPG",
+      "https://as-images.imgix.net/32cd9ee956df0f9bac2bdd3f257e5167-20260305-153246138-ios-1.jpg",
+      "https://as-images.imgix.net/3829d675550ebf4d20ef1a455ce55e14-20260305-154649082-ios-1.jpg",
+      "https://as-images.imgix.net/1d2be7af7e3e92b50298bad4debeded7-20260305-153544892-ios-1.jpg",
+      "https://as-images.imgix.net/775a4ec4dd26fc7d6e1f0e5b9bd30383-20260305-153403734-ios-1.jpg",
+      "https://as-images.imgix.net/87df4c7797257860060099e878badfcb-20260305-154949770-ios-1.jpg",
+      "https://as-images.imgix.net/f8e2fc249fed9b15f48c2314d9943fc2-20260305-154839927-ios-1.jpg",
+      "https://as-images.imgix.net/d36b9fb3a9031ea6b9461adcce1c4d1b-20260305-153934754-ios-1.jpg",
+      "https://as-images.imgix.net/17edf7fbb891d5dbb20cdccef3d46e9e-20260305-153801490-ios-1.jpg",
+      "https://as-images.imgix.net/c605db316db470eb516a9ef48968976b-20260305-154322989-ios-1.jpg",
+      "https://as-images.imgix.net/ff1846d3aadad5d3399300a1c3b6a475-20260305-153819379-ios-1.jpg",
+      "https://as-images.imgix.net/cfe80fb0e9dedbff4ef7130948017110-20260305-154010189-ios-1.jpg",
+      "https://as-images.imgix.net/5acb370f9d176fb5e2be14fff92f0bfc-20260305-153632207-ios-1.jpg",
+      "https://as-images.imgix.net/7c4e55f0d38c3ffb7e8776261829c865-20260305-154026408-ios-1.jpg",
+      "https://as-images.imgix.net/56506afb5460ead7d7c55d78686a6b9e-20260305-154231180-ios-1.jpg",
+      "https://as-images.imgix.net/0c8350cc44b5aab23f46d24ffca57c62-20260305-154103412-ios-1.jpg",
+      "https://as-images.imgix.net/7d7fe36d26d975a3fca833d23f9a1120-dji-0965-1.JPG",
+      "https://as-images.imgix.net/c6c617d1996a299d075094588fecfd43-dji-0964-1.JPG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9d4d8712d375924ddd084a1dc9ee16a5-the-io-centre-redditch-brochure-units-5-6-12-v3.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-08-12 15:57:34"
+  },
+  {
+    "id": 346841,
+    "status": "Under Offer",
+    "address": "First Floor, Suite 1, Birchwood House,",
+    "town": "Malvern",
+    "postcode": "WR14 1JJ",
+    "lat": 52.124629974,
+    "lon": -2.30251789,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3110,
+    "size_to_sqft": 3110,
+    "summary": "Modern Grade A First Floor Office",
+    "description": "This is the final office building on the Enigma Commercial Centre development. It commands a prime location adjacent to the main entrance into the Enigma Commercial Centre. The building is constructed with brick elevations surmounted by a pitch tiled roof, in keeping with all the existing adjacent offices. \n\nFirst Floor, Suite One, comprises of 3,110 sq. ft. (288.99 sq. m.) (NIA) of open plan accommodation. \n\nAll the offices on the Enigma Commercial Centre are built to a high standard and this building includes the following: \n\n•\tAir-Conditioned  \n•\tSuspended ceilings incorporating low energy inset LED lighting\n•\tFully carpeted raised access floors - floor boxes connected to CAT 6 Data and Power distribution.\n•\tGenerous car parking provision",
+    "location": "This new office building fronts Sandys Road on Enigma Business Park, which is Malvern’s main office, industrial and commercial area, being situated approximately two miles to the north of Great Malvern. \n\nMalvern is situated approximately eight miles south west of Worcester, 21 miles east of Hereford and 26 miles north of Gloucester. The town benefits from good transport communications with the A449 leading to Worcester city centre and the A440 connecting with Junction 7 of the M5 motorway, which is approximately five miles to the north east.",
+    "features": [
+      "First floor office - 3,110 Sq Ft (288.99 Sq M) NIA",
+      "High specification, first floor office",
+      "Excellent on site car parking provision",
+      "Air conditioning and low energy LED lighting",
+      "Junction 7 of the M5 motorway is approximately 5 miles"
+    ],
+    "rent_psf": 14.79,
+    "rent_pa": 46000,
+    "rent": "£46,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 27250,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/9c8fb7c223a7aa2e028aa4c71acbfb15-letting346841.jpeg",
+      "https://as-images.imgix.net/29a31f3fc256ccea9b9f657649641497-letting346841.jpeg",
+      "https://as-images.imgix.net/fa2024a5fe3c26189f784bf83f8d3054-letting346841.jpeg",
+      "https://as-images.imgix.net/f74c018214927677539fbd6e221bbe7b-letting346841.jpeg",
+      "https://as-images.imgix.net/fe27b5fde6e0cf87bc4009470e74d62f-letting346841.jpeg",
+      "https://as-images.imgix.net/10d583c9c1bf9a47c00d4f39325626d5-letting346841.jpeg",
+      "https://as-images.imgix.net/63474868af3105abc4935d26e0f4d56d-e459d678-c816-41c7-b439-74aaa8bc2341.jpeg",
+      "https://as-images.imgix.net/f10d8dfe10e0795bec2207dc48b22c28-d0b2f772-f5d2-437a-b0c0-8883973c496a.jpeg",
+      "https://as-images.imgix.net/7ff1c91c19bce0471fb2b84bf0eaab9d-97458d02-4de1-4387-86b6-962a2244d506.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f6e89bc6af21048e43fcc09045d5151e-particulars-birchwood-house-enigma-commercial-centre-malvern-wr14-1jj1-2.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/68ef2c86045d9729071f6a5af2bc4f69-1st-floor-birchwood-house-floor-plan.png"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-08-12 15:38:45"
+  },
+  {
+    "id": 377589,
+    "status": "Available",
+    "address": "7 Aston Court",
+    "town": "Bromsgrove",
+    "postcode": "B60 3AL",
+    "lat": 52.318276,
+    "lon": -2.056079,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 2278,
+    "size_to_sqft": 2278,
+    "summary": "Modern self contained offices with onsite car parking",
+    "description": "7 Aston Court is a modern end terrace purpose built office building of brick main wall construction surmounted by a pitched tiled roof.  The building is arranged over the ground and first floors, with the ground floor offering open plan office space, a modern kitchen and WC facilities.  The first floor offers partitioned office with a mixture of glazed and solid demountable walls, with there being a further WC on this floor.  The building offers modern suspended ceilings throughout, along with LG3 lighting, comfort cooling and raised accessed floors.\n\nThe property has the benefit of 10 car parking spaces, although we note that four are leased to the occupier of 5 Aston Court (IRS) until September 2026.",
+    "location": "Aston Court is within the Bromsgrove Enterprise Park which is located approximately one and a half miles to the south of Bromsgrove town centre.  The Bromsgrove Enterprise Park offers a range of accommodation from serviced offices in Basepoint, good quality warehousing at Sapphire Court and a modern courtyard development of Aston Court.\n\nJunction 4 of the M5 motorway and Junction 1 of the M42 motorway lie approximately three miles distant providing access to the M5 and M42 motorway as well as the national motorway network.  Birmingham City Centre is situated approximately 15 miles to the north and Worcester City Centre is situated approximately 10 miles to the south.\nBromsgrove has a mainline railway station, which is situated close to Aston Court. There are frequent trains to Birmingham New Street, Worcester Foregate Street and Hereford. There is also a bus station adjacent to the high street.  Buses operate to a wide area of Worcestershire and the West Midlands.",
+    "features": [
+      "2,278 sq ft (211.63 sq m)",
+      "Modern open plan office accommodation over two floors",
+      "A mix of open plan and partitioned offices",
+      "Comfort cooling",
+      "10 allocated car parking spaces"
+    ],
+    "price": "£375,000",
+    "price_value": 375000,
+    "business_rates_psf": 0,
+    "rateable_value": 27500,
+    "estate_charge": "3400",
+    "epc_rating": "B (33)",
+    "images": [
+      "https://as-images.imgix.net/b748d44a15864ea894b6c895a38baa43-20260716-124510-1.jpg",
+      "https://as-images.imgix.net/e8d47bbe5ec3cbcb317d2b9a7ed577c3-20260716-124535-1.jpg",
+      "https://as-images.imgix.net/9e60e19f445dbe8869b172ccce995a42-20260716-125138.jpg",
+      "https://as-images.imgix.net/491f442c09cdd0482f41467644339a70-20260716-125128.jpg",
+      "https://as-images.imgix.net/3c542af87f3ea9c7a3823311065a3f4b-20260716-125118.jpg",
+      "https://as-images.imgix.net/6c90abb472b2f449702d2736f3006791-20260716-125009.jpg",
+      "https://as-images.imgix.net/57d9c578c5a5ed343b0776b343faf419-20260716-125752.jpg",
+      "https://as-images.imgix.net/e7de289e71ea8d71d07996133b623fd1-20260716-125213.jpg",
+      "https://as-images.imgix.net/34ff6d2e1494af8abc25ebe374114188-20260716-125203.jpg",
+      "https://as-images.imgix.net/c24536efd9fbf49e9d53dc4e0b58a4a4-20260716-125725.jpg",
+      "https://as-images.imgix.net/80f7c396f726ae1913d28c0d05d01a20-20260716-125101.jpg",
+      "https://as-images.imgix.net/da8ccc7208168518f13054cb3a3fb55a-20260716-125223.jpg",
+      "https://as-images.imgix.net/2fd534281dfd297f7aed2dbefb4553fa-20260716-125921.jpg",
+      "https://as-images.imgix.net/f58d8cfb0bc862265047f308e3277bdb-20260716-125852.jpg",
+      "https://as-images.imgix.net/5dcc1b0d2e21b7a977ad47ab7c150ba3-20260716-125654.jpg",
+      "https://as-images.imgix.net/33ec94456f1000a5c2115b403b00775f-20260716-125713.jpg",
+      "https://as-images.imgix.net/1f9ecaf4d97134756a658bc0956aa529-20260716-125844.jpg",
+      "https://as-images.imgix.net/4e99cc596c18eaafe06715c5256124d7-20260716-125859.jpg",
+      "https://as-images.imgix.net/fee5a17dea416b195302aeb2e27c7e8a-20260716-125051.jpg",
+      "https://as-images.imgix.net/99b41b78f8934dec264bc57d86c6beb0-20260716-125703.jpg",
+      "https://as-images.imgix.net/658b1e5a862a6e403b5fe8e250a34903-20260716-125807.jpg",
+      "https://as-images.imgix.net/b2dc68e513c132134b70166483f092c9-20260716-125642.jpg",
+      "https://as-images.imgix.net/ead44e16f5468aaf8af8a3ce8ff1fc86-20260716-125912.jpg",
+      "https://as-images.imgix.net/887c9979e90da4f963a912d93bc4d75e-20260716-125534.jpg",
+      "https://as-images.imgix.net/2a029a99e7fbca6963b38cce08c98b50-20260716-125824.jpg",
+      "https://as-images.imgix.net/2f9dd652f5dac35566e8dd63cedcbd8b-20260716-125758.jpg",
+      "https://as-images.imgix.net/1b37c56d3e0f30161cc60acf6b5c7801-20260716-125559.jpg",
+      "https://as-images.imgix.net/2f810f7ccefc4953a1e732d21ec6754f-20260716-125647.jpg",
+      "https://as-images.imgix.net/b46b8344a63b958bf7fdfe73351637f5-20260716-124520-1.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/8b8c58cd508c70d84d149b32a00cc6f4-gjs-dillon-particulars-7-aston-court-bromsgrove-b60-3.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/f858d330e16a662fdf9d980f91771064-cam04581g0-pr0069-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/bc91c96db1a66fd1a42a493e5bd482da-cam04581g0-pr0069-build01-floor01.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/7astoncourtbromsgrove"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-08-12 14:37:01"
+  },
+  {
+    "id": 380213,
+    "status": "Available",
+    "address": "Alpha House",
+    "town": "Droitwich",
+    "postcode": "WR9 0NX",
+    "lat": 52.28469,
+    "lon": -2.168149,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3979,
+    "size_to_sqft": 3979,
+    "summary": "Modern Headquarters Office close to the M5",
+    "description": "Alpha House comprises a detached, modern office premises arranged over the ground and first floors.  The main entrance comprises a reception area with WC facilities.  This is replicated over the first floor with further WC facilities.  Each floor offers open plan office accommodation which benefits from an abundance of natural light, having four glazed elevations.  There are currently glazed meeting rooms on the ground floor.\n\nExternally there is a secure car park with the benefit of 17 car parking spaces, including the provision of EV chargers.\n\nGround\t185.91 sq m 2,001 sq ft\nFirst\t183.76 sq m 1,978 sq ft\nTotal       369.67 sq m 3,979 sq ft\n(NIA)",
+    "location": "Hampton Lovett Business Park lies to the north of Droitwich town centre, approximately three miles from Junction 5 of the M5 motorway.  From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales.\n\nThe estate is home to a number of local, national and multi-national occupiers who all take advantage of the great road connections.",
+    "features": [
+      "Total net internal area of 3,979 sq ft (369.67 sq m), arranged over the ground and first floor",
+      "Full open plan workspace over the first floor",
+      "Secure car park for 17 cars",
+      "Situated a three mile drive from Junction 5 of the M5 motorway",
+      "Detached office premises with an abundance of glazing to all four elevations"
+    ],
+    "rent_psf": 16.34,
+    "rent_pa": 65000,
+    "rent": "£65,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/cdfeedbaf431b3fbb0a8310a453fd4a4-dji-0035.JPG",
+      "https://as-images.imgix.net/d46cd836b698df5e7cfbe7e1b70f0c7b-dji-0036.JPG",
+      "https://as-images.imgix.net/3c0cf3c2403033b94ef23ffd6f184284-dji-0024.JPG",
+      "https://as-images.imgix.net/f57dc576bebb70590fc5cb0aaad4460f-dji-0026.JPG",
+      "https://as-images.imgix.net/9f7ea7212a0230221441a08851edf7a3-dji-0025.JPG",
+      "https://as-images.imgix.net/230775ae3ecfed3b3e4f709c7e2d00d0-img-1126.JPEG",
+      "https://as-images.imgix.net/ffda75abe09c2ae27246776a54b16bf5-img-1131.JPEG",
+      "https://as-images.imgix.net/a00f4c088d0266e6cad5fdc8ae6d85e9-img-1123.JPEG",
+      "https://as-images.imgix.net/b2f9c78b0d3b33d1b17dfeb8f2712a87-img-1129.JPEG",
+      "https://as-images.imgix.net/66783acce81c48e28bcdd442e82061cc-img-1120.JPEG",
+      "https://as-images.imgix.net/6b59b07b8dadaaf74a6750cc19f305d0-img-1136.JPEG",
+      "https://as-images.imgix.net/ce8083b28c3fb6327a3bb97e6fa35358-img-1146.JPEG",
+      "https://as-images.imgix.net/b7465aad014993fabb43d973a5199eb9-img-1143.JPEG",
+      "https://as-images.imgix.net/c81bd84aecb0d88270825a549a8c4d24-img-1141.JPEG",
+      "https://as-images.imgix.net/767a3cf449361c249cace5837d52e33b-img-1140.JPEG",
+      "https://as-images.imgix.net/6f56c2f56fe76721bd0d4df42c7da41f-img-1154.JPEG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f4e8ce13e4f6379470227be140963164-gjs-dillon-particulars-alpha-house-hampton-lovett-droitwich.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/dfe42f7681ba157ba467982a6a9cabc6-cam04581g0-pr0067-build01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/d5df69244b6a9caa1c7d8396a9e4c60b-cam04581g0-pr0067-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/0c1f88fde3825bc3e5c851efffd917cf-cam04581g0-pr0067-build01-floor01.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/alphahousedroitwich"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-08-12 14:17:51"
+  },
+  {
     "id": 388662,
     "status": "Available",
     "address": "Priory House",
@@ -675,100 +1075,6 @@
       }
     ],
     "last_updated": "2026-08-04 11:08:32"
-  },
-  {
-    "id": 377589,
-    "status": "Available",
-    "address": "7 Aston Court",
-    "town": "Bromsgrove",
-    "postcode": "B60 3AL",
-    "lat": 52.318276,
-    "lon": -2.056079,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 2278,
-    "size_to_sqft": 2278,
-    "summary": "Modern self contained offices with onsite car parking",
-    "description": "7 Aston Court is a modern end terrace purpose built office building of brick main wall construction surmounted by a pitched tiled roof.  The building is arranged over the ground and first floors, with the ground floor offering open plan office space, a modern kitchen and WC facilities.  The first floor offers partitioned office with a mixture of glazed and solid demountable walls, with there being a further WC on this floor.  The building offers modern suspended ceilings throughout, along with LG3 lighting, comfort cooling and raised accessed floors.\n\nThe property has the benefit of 10 car parking spaces, although we note that four are leased to the occupier of 5 Aston Court (IRS) until September 2026.",
-    "location": "Aston Court is within the Bromsgrove Enterprise Park which is located approximately one and a half miles to the south of Bromsgrove town centre.  The Bromsgrove Enterprise Park offers a range of accommodation from serviced offices in Basepoint, good quality warehousing at Sapphire Court and a modern courtyard development of Aston Court.\n\nJunction 4 of the M5 motorway and Junction 1 of the M42 motorway lie approximately three miles distant providing access to the M5 and M42 motorway as well as the national motorway network.  Birmingham City Centre is situated approximately 15 miles to the north and Worcester City Centre is situated approximately 10 miles to the south.\nBromsgrove has a mainline railway station, which is situated close to Aston Court. There are frequent trains to Birmingham New Street, Worcester Foregate Street and Hereford. There is also a bus station adjacent to the high street.  Buses operate to a wide area of Worcestershire and the West Midlands.",
-    "features": [
-      "2,278 sq ft (211.63 sq m)",
-      "Modern open plan office accommodation over two floors",
-      "A mix of open plan and partitioned offices",
-      "Comfort cooling",
-      "10 allocated car parking spaces"
-    ],
-    "price": "£375,000",
-    "price_value": 375000,
-    "business_rates_psf": 0,
-    "rateable_value": 27500,
-    "estate_charge": "3400",
-    "epc_rating": "B (33)",
-    "images": [
-      "https://as-images.imgix.net/b748d44a15864ea894b6c895a38baa43-20260716-124510-1.jpg",
-      "https://as-images.imgix.net/e8d47bbe5ec3cbcb317d2b9a7ed577c3-20260716-124535-1.jpg",
-      "https://as-images.imgix.net/9e60e19f445dbe8869b172ccce995a42-20260716-125138.jpg",
-      "https://as-images.imgix.net/491f442c09cdd0482f41467644339a70-20260716-125128.jpg",
-      "https://as-images.imgix.net/3c542af87f3ea9c7a3823311065a3f4b-20260716-125118.jpg",
-      "https://as-images.imgix.net/6c90abb472b2f449702d2736f3006791-20260716-125009.jpg",
-      "https://as-images.imgix.net/57d9c578c5a5ed343b0776b343faf419-20260716-125752.jpg",
-      "https://as-images.imgix.net/e7de289e71ea8d71d07996133b623fd1-20260716-125213.jpg",
-      "https://as-images.imgix.net/34ff6d2e1494af8abc25ebe374114188-20260716-125203.jpg",
-      "https://as-images.imgix.net/c24536efd9fbf49e9d53dc4e0b58a4a4-20260716-125725.jpg",
-      "https://as-images.imgix.net/80f7c396f726ae1913d28c0d05d01a20-20260716-125101.jpg",
-      "https://as-images.imgix.net/da8ccc7208168518f13054cb3a3fb55a-20260716-125223.jpg",
-      "https://as-images.imgix.net/2fd534281dfd297f7aed2dbefb4553fa-20260716-125921.jpg",
-      "https://as-images.imgix.net/f58d8cfb0bc862265047f308e3277bdb-20260716-125852.jpg",
-      "https://as-images.imgix.net/5dcc1b0d2e21b7a977ad47ab7c150ba3-20260716-125654.jpg",
-      "https://as-images.imgix.net/33ec94456f1000a5c2115b403b00775f-20260716-125713.jpg",
-      "https://as-images.imgix.net/1f9ecaf4d97134756a658bc0956aa529-20260716-125844.jpg",
-      "https://as-images.imgix.net/4e99cc596c18eaafe06715c5256124d7-20260716-125859.jpg",
-      "https://as-images.imgix.net/fee5a17dea416b195302aeb2e27c7e8a-20260716-125051.jpg",
-      "https://as-images.imgix.net/99b41b78f8934dec264bc57d86c6beb0-20260716-125703.jpg",
-      "https://as-images.imgix.net/658b1e5a862a6e403b5fe8e250a34903-20260716-125807.jpg",
-      "https://as-images.imgix.net/b2dc68e513c132134b70166483f092c9-20260716-125642.jpg",
-      "https://as-images.imgix.net/ead44e16f5468aaf8af8a3ce8ff1fc86-20260716-125912.jpg",
-      "https://as-images.imgix.net/887c9979e90da4f963a912d93bc4d75e-20260716-125534.jpg",
-      "https://as-images.imgix.net/2a029a99e7fbca6963b38cce08c98b50-20260716-125824.jpg",
-      "https://as-images.imgix.net/2f9dd652f5dac35566e8dd63cedcbd8b-20260716-125758.jpg",
-      "https://as-images.imgix.net/1b37c56d3e0f30161cc60acf6b5c7801-20260716-125559.jpg",
-      "https://as-images.imgix.net/2f810f7ccefc4953a1e732d21ec6754f-20260716-125647.jpg",
-      "https://as-images.imgix.net/b46b8344a63b958bf7fdfe73351637f5-20260716-124520-1.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/8b8c58cd508c70d84d149b32a00cc6f4-gjs-dillon-particulars-7-aston-court-bromsgrove-b60-3.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/87bf2657a4dc592b08830be6b3049069-cam04581g0-pr0069-build01.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/f858d330e16a662fdf9d980f91771064-cam04581g0-pr0069-build01-floor00.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/bc91c96db1a66fd1a42a493e5bd482da-cam04581g0-pr0069-build01-floor01.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/7astoncourtbromsgrove"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-07-28 12:28:26"
   },
   {
     "id": 346652,
@@ -2618,87 +2924,6 @@
     "last_updated": "2026-07-14 17:01:49"
   },
   {
-    "id": 380213,
-    "status": "Available",
-    "address": "Alpha House",
-    "town": "Droitwich",
-    "postcode": "WR9 0NX",
-    "lat": 52.28469,
-    "lon": -2.168149,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3979,
-    "size_to_sqft": 3979,
-    "summary": "Modern Headquarters Office close to the M5",
-    "description": "Alpha House comprises a detached, modern office premises arranged over the ground and first floors.  The main entrance comprises a reception area with WC facilities.  This is replicated over the first floor with further WC facilities.  Each floor offers open plan office accommodation which benefits from an abundance of natural light, having four glazed elevations.  There are currently glazed meeting rooms on the ground floor.\n\nExternally there is a secure car park with the benefit of 17 car parking spaces, including the provision of EV chargers.\n\nGround\t185.91 sq m 2,001 sq ft\nFirst\t183.76 sq m 1,978 sq ft\nTotal       369.67 sq m 3,979 sq ft\n(NIA)",
-    "location": "Hampton Lovett Business Park lies to the north of Droitwich town centre, approximately three miles from Junction 5 of the M5 motorway.  From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales.\n\nThe estate is home to a number of local, national and multi-national occupiers who all take advantage of the great road connections.",
-    "features": [
-      "Total net internal area of 3,979 sq ft (369.67 sq m), arranged over the ground and first floor",
-      "Full open plan workspace over the first floor",
-      "Secure car park for 17 cars",
-      "Situated a three mile drive from Junction 5 of the M5 motorway",
-      "Detached office premises with an abundance of glazing to all four elevations"
-    ],
-    "rent_psf": 16.34,
-    "rent_pa": 65000,
-    "rent": "£65,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/cdfeedbaf431b3fbb0a8310a453fd4a4-dji-0035.JPG",
-      "https://as-images.imgix.net/d46cd836b698df5e7cfbe7e1b70f0c7b-dji-0036.JPG",
-      "https://as-images.imgix.net/3c0cf3c2403033b94ef23ffd6f184284-dji-0024.JPG",
-      "https://as-images.imgix.net/f57dc576bebb70590fc5cb0aaad4460f-dji-0026.JPG",
-      "https://as-images.imgix.net/9f7ea7212a0230221441a08851edf7a3-dji-0025.JPG",
-      "https://as-images.imgix.net/230775ae3ecfed3b3e4f709c7e2d00d0-img-1126.JPEG",
-      "https://as-images.imgix.net/ffda75abe09c2ae27246776a54b16bf5-img-1131.JPEG",
-      "https://as-images.imgix.net/a00f4c088d0266e6cad5fdc8ae6d85e9-img-1123.JPEG",
-      "https://as-images.imgix.net/b2f9c78b0d3b33d1b17dfeb8f2712a87-img-1129.JPEG",
-      "https://as-images.imgix.net/66783acce81c48e28bcdd442e82061cc-img-1120.JPEG",
-      "https://as-images.imgix.net/6b59b07b8dadaaf74a6750cc19f305d0-img-1136.JPEG",
-      "https://as-images.imgix.net/ce8083b28c3fb6327a3bb97e6fa35358-img-1146.JPEG",
-      "https://as-images.imgix.net/b7465aad014993fabb43d973a5199eb9-img-1143.JPEG",
-      "https://as-images.imgix.net/c81bd84aecb0d88270825a549a8c4d24-img-1141.JPEG",
-      "https://as-images.imgix.net/767a3cf449361c249cace5837d52e33b-img-1140.JPEG",
-      "https://as-images.imgix.net/6f56c2f56fe76721bd0d4df42c7da41f-img-1154.JPEG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f4e8ce13e4f6379470227be140963164-gjs-dillon-particulars-alpha-house-hampton-lovett-droitwich.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/dfe42f7681ba157ba467982a6a9cabc6-cam04581g0-pr0067-build01.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/d5df69244b6a9caa1c7d8396a9e4c60b-cam04581g0-pr0067-build01-floor00.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/0c1f88fde3825bc3e5c851efffd917cf-cam04581g0-pr0067-build01-floor01.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/alphahousedroitwich"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-07-08 16:30:12"
-  },
-  {
     "id": 346750,
     "status": "Available",
     "address": "2C Derwent Close",
@@ -3301,166 +3526,6 @@
       }
     ],
     "last_updated": "2026-06-25 16:40:45"
-  },
-  {
-    "id": 363173,
-    "status": "Available",
-    "address": "Unit 12, The IO Centre",
-    "town": "Redditch",
-    "postcode": "B98 7AS",
-    "lat": 52.291602,
-    "lon": -1.913239,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 31834,
-    "size_to_sqft": 31834,
-    "summary": "Warehouse with Offices - to be refurbished",
-    "description": "Unit 12, The IO Centre is located on an established estate within Redditch.  The unit is to be refurbished once the current tenant has vacated. \n\nThe property is available on sublease of an existing tenancy, which expires in June 2032. A new lease may be available subject to the Landlord’s approval.",
-    "location": "The IO Centre is a premier industrial estate located on Nash Road. The property benefits from excellent road communications with Junction 3 of the M42 approximately seven miles to the north, which gives access to the M40, M5 and M6.\n\nThe estate is well managed, with recent upgrades including full redecoration of the external cladding, improvements to the estate lighting, and completion of road maintenance works.",
-    "features": [
-      "Unit 12 - 31,834 sq ft (2,958 sq m)",
-      "Two storey offices",
-      "9.5m eaves height",
-      "Four electric level loading doors",
-      "45 car parking spaces",
-      "40m yard depth",
-      "Palisade fenced / gated yard area",
-      "Kitchen and WC facilities"
-    ],
-    "rent_psf": 11.5,
-    "rent_pa": 366091,
-    "rent": "£11.50 per sq ft",
-    "business_rates_psf": 0,
-    "rateable_value": 226000,
-    "epc_rating": "C (66)",
-    "images": [
-      "https://as-images.imgix.net/0ef80a0612b24e462530ec5f74c03a66-dji-0963-1.JPG",
-      "https://as-images.imgix.net/29d2bd4b77dc0d7f0139d0627c167dd1-20260305-155606938-ios-1.jpg",
-      "https://as-images.imgix.net/bfb3c2abc6a1b6a1956b6a0ad690761f-20260305-155537789-ios-1.jpg",
-      "https://as-images.imgix.net/663d5b0d51ecae241d780c71832a9acd-20260305-154039807-ios-1.jpg",
-      "https://as-images.imgix.net/d43cbb5eaa3150c150c44e81ddad8d98-dji-0960-1.JPG",
-      "https://as-images.imgix.net/0c8350cc44b5aab23f46d24ffca57c62-20260305-154103412-ios-1.jpg",
-      "https://as-images.imgix.net/56506afb5460ead7d7c55d78686a6b9e-20260305-154231180-ios-1.jpg",
-      "https://as-images.imgix.net/7c4e55f0d38c3ffb7e8776261829c865-20260305-154026408-ios-1.jpg",
-      "https://as-images.imgix.net/32cd9ee956df0f9bac2bdd3f257e5167-20260305-153246138-ios-1.jpg",
-      "https://as-images.imgix.net/3829d675550ebf4d20ef1a455ce55e14-20260305-154649082-ios-1.jpg",
-      "https://as-images.imgix.net/1d2be7af7e3e92b50298bad4debeded7-20260305-153544892-ios-1.jpg",
-      "https://as-images.imgix.net/775a4ec4dd26fc7d6e1f0e5b9bd30383-20260305-153403734-ios-1.jpg",
-      "https://as-images.imgix.net/87df4c7797257860060099e878badfcb-20260305-154949770-ios-1.jpg",
-      "https://as-images.imgix.net/f8e2fc249fed9b15f48c2314d9943fc2-20260305-154839927-ios-1.jpg",
-      "https://as-images.imgix.net/d36b9fb3a9031ea6b9461adcce1c4d1b-20260305-153934754-ios-1.jpg",
-      "https://as-images.imgix.net/17edf7fbb891d5dbb20cdccef3d46e9e-20260305-153801490-ios-1.jpg",
-      "https://as-images.imgix.net/c605db316db470eb516a9ef48968976b-20260305-154322989-ios-1.jpg",
-      "https://as-images.imgix.net/ff1846d3aadad5d3399300a1c3b6a475-20260305-153819379-ios-1.jpg",
-      "https://as-images.imgix.net/cfe80fb0e9dedbff4ef7130948017110-20260305-154010189-ios-1.jpg",
-      "https://as-images.imgix.net/5acb370f9d176fb5e2be14fff92f0bfc-20260305-153632207-ios-1.jpg",
-      "https://as-images.imgix.net/7d7fe36d26d975a3fca833d23f9a1120-dji-0965-1.JPG",
-      "https://as-images.imgix.net/c6c617d1996a299d075094588fecfd43-dji-0964-1.JPG",
-      "https://as-images.imgix.net/bc03231046b886a627fb687802f785a2-dji-0959-1.JPG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9d4d8712d375924ddd084a1dc9ee16a5-the-io-centre-redditch-brochure-units-5-6-12-v3.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-06-25 14:22:23"
-  },
-  {
-    "id": 363157,
-    "status": "Available",
-    "address": "Unit 6, The IO Centre",
-    "town": "Redditch",
-    "postcode": "B98 7AS",
-    "lat": 52.291602,
-    "lon": -1.913239,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 14423,
-    "size_to_sqft": 14423,
-    "summary": "Warehouse to be refurbished - available alongside Unit 5, The IO Centre",
-    "description": "Unit 6, The IO Centre is lcoated on an established estate within Redditch.  Unit 6 can be let on its own or as a multiple unit, alongside Unit 5 (11,343 sq ft  - 1,054 sq m) Both units are to be refurbished once the current tenant has vacated. \n\nThe property is available on sublease of an existing tenancy, which expires in June 2032. A new lease may be available subject to the Landlord’s approval.",
-    "location": "Location\nThe IO Centre is a premier industrial estate located on Nash Road. The property benefits from excellent road communications with Junction 3 of the M42 approximately seven miles to the north, which gives access to the M40, M5 and M6.\n\nThe estate is well managed, with recent upgrades including full redecoration of the external cladding, improvements to the estate lighting, and completion of road maintenance works.",
-    "features": [
-      "Unit 6 – 14,423 sq ft (1,340 sq m)",
-      "Can be let in conjunction with Unit 5 at 11,343 sq ft (1,054 sq m)",
-      "Two storey offices",
-      "8m eaves height",
-      "Two electric level loading doors",
-      "25m yard depth",
-      "Palisade fenced / gated yard area",
-      "Kitchen and WC facilities"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 118000,
-    "epc_rating": "C (71)",
-    "images": [
-      "https://as-images.imgix.net/c300406fda67e84f01d5be768d27de06-20260305-152847271-ios-1.jpg",
-      "https://as-images.imgix.net/6c08b243c3e9cb106c463ea2b2568804-dji-0995-1.JPG",
-      "https://as-images.imgix.net/6461bb0f80e1cb63e50da265abcb8b36-dji-0991-2.JPG",
-      "https://as-images.imgix.net/a46eeeb632a0111ce81f2d95c5143e70-dji-0988-1.JPG",
-      "https://as-images.imgix.net/6f7b42c71921f8642c212a5160b8e3f8-dji-0991-1.JPG",
-      "https://as-images.imgix.net/10719e775db92a2669c50ac918ebbfde-20260305-150153249-ios-1.jpg",
-      "https://as-images.imgix.net/fc615aea85ca27a657b5c86490c64406-20260305-152358209-ios-1.jpg",
-      "https://as-images.imgix.net/9de863a2ff15dba54e01c0fcd962ba1e-20260305-150229219-ios-1.jpg",
-      "https://as-images.imgix.net/c6ce56fce9440d40c4cc3e5006d8191b-20260305-150410682-ios-1.jpg",
-      "https://as-images.imgix.net/61b9043a625b0e73e974e60cc41ea61b-20260305-152138148-ios-1.jpg",
-      "https://as-images.imgix.net/18c79d61bebe18e195b0362e406d7598-20260305-150659050-ios-1.jpg",
-      "https://as-images.imgix.net/84cc01a5653d77c8ee79fc479ee0ae05-20260305-150927856-ios-1.jpg",
-      "https://as-images.imgix.net/aaf16448f54d5358516556af951583c0-20260305-150800273-ios-2.jpg",
-      "https://as-images.imgix.net/1df12be04212a2ff4ec41e43986a7c23-20260305-150823642-ios-1.jpg",
-      "https://as-images.imgix.net/f8a79e06137430a596b6e180f4f3e0a7-20260305-151353088-ios-1.jpg",
-      "https://as-images.imgix.net/8da825491cdbe6e2b8eafe230635d376-20260305-152818068-ios-1.jpg",
-      "https://as-images.imgix.net/8884f00feab4225929325620fbf418eb-20260305-151259865-ios-1.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f57fb8e2dc2dd9cabd9279ff70c9405f-the-io-centre-redditch-brochure-units-5-6-12-v3.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-06-25 14:21:43"
   },
   {
     "id": 363136,
@@ -4137,75 +4202,6 @@
       }
     ],
     "last_updated": "2026-05-28 16:58:04"
-  },
-  {
-    "id": 346841,
-    "status": "Available",
-    "address": "First Floor, Suite 1, Birchwood House,",
-    "town": "Malvern",
-    "postcode": "WR14 1JJ",
-    "lat": 52.124629974,
-    "lon": -2.30251789,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3110,
-    "size_to_sqft": 3110,
-    "summary": "Modern Grade A First Floor Office",
-    "description": "This is the final office building on the Enigma Commercial Centre development. It commands a prime location adjacent to the main entrance into the Enigma Commercial Centre. The building is constructed with brick elevations surmounted by a pitch tiled roof, in keeping with all the existing adjacent offices. \n\nFirst Floor, Suite One, comprises of 3,110 sq. ft. (288.99 sq. m.) (NIA) of open plan accommodation. \n\nAll the offices on the Enigma Commercial Centre are built to a high standard and this building includes the following: \n\n•\tAir-Conditioned  \n•\tSuspended ceilings incorporating low energy inset LED lighting\n•\tFully carpeted raised access floors - floor boxes connected to CAT 6 Data and Power distribution.\n•\tGenerous car parking provision",
-    "location": "This new office building fronts Sandys Road on Enigma Business Park, which is Malvern’s main office, industrial and commercial area, being situated approximately two miles to the north of Great Malvern. \n\nMalvern is situated approximately eight miles south west of Worcester, 21 miles east of Hereford and 26 miles north of Gloucester. The town benefits from good transport communications with the A449 leading to Worcester city centre and the A440 connecting with Junction 7 of the M5 motorway, which is approximately five miles to the north east.",
-    "features": [
-      "First floor office - 3,110 Sq Ft (288.99 Sq M) NIA",
-      "High specification, first floor office",
-      "Excellent on site car parking provision",
-      "Air conditioning and low energy LED lighting",
-      "Junction 7 of the M5 motorway is approximately 5 miles"
-    ],
-    "rent_psf": 14.79,
-    "rent_pa": 46000,
-    "rent": "£46,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 27250,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/9c8fb7c223a7aa2e028aa4c71acbfb15-letting346841.jpeg",
-      "https://as-images.imgix.net/29a31f3fc256ccea9b9f657649641497-letting346841.jpeg",
-      "https://as-images.imgix.net/fa2024a5fe3c26189f784bf83f8d3054-letting346841.jpeg",
-      "https://as-images.imgix.net/f74c018214927677539fbd6e221bbe7b-letting346841.jpeg",
-      "https://as-images.imgix.net/fe27b5fde6e0cf87bc4009470e74d62f-letting346841.jpeg",
-      "https://as-images.imgix.net/10d583c9c1bf9a47c00d4f39325626d5-letting346841.jpeg",
-      "https://as-images.imgix.net/63474868af3105abc4935d26e0f4d56d-e459d678-c816-41c7-b439-74aaa8bc2341.jpeg",
-      "https://as-images.imgix.net/f10d8dfe10e0795bec2207dc48b22c28-d0b2f772-f5d2-437a-b0c0-8883973c496a.jpeg",
-      "https://as-images.imgix.net/7ff1c91c19bce0471fb2b84bf0eaab9d-97458d02-4de1-4387-86b6-962a2244d506.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f6e89bc6af21048e43fcc09045d5151e-particulars-birchwood-house-enigma-commercial-centre-malvern-wr14-1jj1-2.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/68ef2c86045d9729071f6a5af2bc4f69-1st-floor-birchwood-house-floor-plan.png"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-05-27 17:22:30"
   },
   {
     "id": 346823,
