@@ -62,6 +62,7 @@ module.exports = async (req, res) => {
       message = '',
       gdprConsent = false,
       reasonForContact = '',
+      howHeard = '',
       page = '',
       utm_source = '',
       utm_medium = '',
@@ -86,6 +87,7 @@ module.exports = async (req, res) => {
       phone ? `Phone: ${phone}` : '',
       company ? `Company: ${company}` : '',
       propertyAddress ? `Property address enquiry relates to: ${propertyAddress}` : '',
+      howHeard ? `How did you hear about us: ${howHeard}` : '',
       methods ? `Preferred contact method: ${methods}` : '',
       `GDPR consent: ${gdprConsent ? 'Yes' : 'No'}`,
       `Newsletter opt-in: ${newsletter ? 'Yes' : 'No'}`,
@@ -113,6 +115,7 @@ module.exports = async (req, res) => {
       ${phone ? `<tr><td style="padding:6px 0;"><strong>Phone</strong></td><td style="padding:6px 0;">${escapeHtml(phone)}</td></tr>` : ''}
       ${company ? `<tr><td style="padding:6px 0;"><strong>Company</strong></td><td style="padding:6px 0;">${escapeHtml(company)}</td></tr>` : ''}
       ${propertyAddress ? `<tr><td style="padding:6px 0;"><strong>Property address enquiry relates to</strong></td><td style="padding:6px 0;">${escapeHtml(propertyAddress)}</td></tr>` : ''}
+      ${howHeard ? `<tr><td style="padding:6px 0;"><strong>How did you hear about us</strong></td><td style="padding:6px 0;">${escapeHtml(howHeard)}</td></tr>` : ''}
       ${(Array.isArray(preferredMethods) && preferredMethods.length) ? `<tr><td style="padding:6px 0;"><strong>Preferred contact method</strong></td><td style="padding:6px 0;">${safeList(preferredMethods)}</td></tr>` : ''}
       ${reasonForContact ? `<tr><td style="padding:6px 0;"><strong>Reason for contact</strong></td><td style="padding:6px 0;">${escapeHtml(reasonForContact)}</td></tr>` : ''}
       <tr><td style="padding:6px 0;"><strong>GDPR consent</strong></td><td style="padding:6px 0;">${gdprConsent ? 'Yes' : 'No'}</td></tr>
