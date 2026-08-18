@@ -1,5 +1,77 @@
 [
   {
+    "id": 346672,
+    "status": "Available",
+    "address": "20 The Shambles",
+    "town": "Worcester",
+    "postcode": "WR1 2RA",
+    "lat": 52.191112518,
+    "lon": -2.219422101,
+    "types": [
+      "Retail"
+    ],
+    "raw_types": [
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": true,
+    "size_from_sqft": 2513,
+    "size_to_sqft": 2513,
+    "summary": "Refurbished retail premises in central location",
+    "description": "20 The Shambles comprises a mid-terraced retail unit arranged over basement, ground, first and second floors, situated within a traditional parade in the heart of Worcester city centre. The ground floor features an open-plan retail area with a suspended ceiling, LED lighting, air conditioning and a timber-framed single-glazed shopfront. A floor hatch in the main retail area provides ladder access to a small basement area, suitable for limited storage. To the rear of the ground floor are ancillary areas, with a kitchen and WC located on the first floor. The upper parts are accessed via an internal staircase and include restricted ancillary space. The unit may suit a variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.\n\nProperty Restrictions\nThere is a Covenant on the property register stating no pubs, bars / alcohol to be sold on the premises. \nThere was an ‘alterations notice’ issued by Hereford and Worcester Fire and Rescue Service on 30/10/2020. This means that only part of the first floor can be used with restrictions and the remainder of the first floor and the whole of the second floor.",
+    "location": "The property is prominently located on The Shambles, a pedestrianised shopping street just off Worcester High Street, in a highly visible and well-trafficked position. The area is home to a mix of national and independent occupiers, with nearby retailers including Greggs, The Works, Waterstones and Marks & Spencer. Worcester's main shopping destinations-Crowngate Shopping Centre and Cathedral Square-are both within a short walking distance. Worcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
+    "features": [
+      "Prominent city centre location",
+      "Vacant possesion",
+      "Property arranged over basement, ground, first and second floor  (restrictions apply)",
+      "Virtual tour available"
+    ],
+    "rent": "On Application",
+    "price": "£275,000",
+    "price_value": 275000,
+    "business_rates_psf": 3.28,
+    "rateable_value": 16500,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/23f1863acd60f1af23359babb585307c-20260812-111711-1.jpg",
+      "https://as-images.imgix.net/0cba58bc1accd86c095e58415c7ae322-20260812-112709.jpg",
+      "https://as-images.imgix.net/fe8842083ff1fab276c9b5d8578a85de-20260812-112655.jpg",
+      "https://as-images.imgix.net/13a90d525c02f4949180bb5d9c7e9366-20260812-112831.jpg",
+      "https://as-images.imgix.net/c43a4de2e4f188f1c3817a797e2db1fc-20260812-112724.jpg",
+      "https://as-images.imgix.net/ff3287e349ffb0761748dd4731a1d682-20260812-113209.jpg",
+      "https://as-images.imgix.net/58331fc8f692f9017ea7dcad82f34739-20260812-112904.jpg",
+      "https://as-images.imgix.net/246e2a5256782e50fdc51b5b9d3affbe-20260812-113714.jpg",
+      "https://as-images.imgix.net/fa7aa285385934527b8c969752180195-letting346672.jpeg",
+      "https://as-images.imgix.net/480a7dc576c43895fd14cd0ddc0862b1-letting346672.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/bf9cd95a344faf95330fdd5058828619-gjs-dillon-particulars-20-the-shambles-worcester-3.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/aa4c1c29defe5a3e0ee800aacf351cca-cam04581g0-pr0074-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/93dc2e0712bdffc3a1a1f20035b3f383-cam04581g0-pr0074-build01-floor01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/b8ee60f675de63a74658120e86b1ac61-cam04581g0-pr0074-build01-floor02.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/713b114b590855a6eb01e272c00602a2-cam04581g0-pr0074-build01.png"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-08-18 14:53:55"
+  },
+  {
     "id": 389415,
     "status": "Available",
     "address": "17 Victoria Square",
@@ -136,78 +208,6 @@
       }
     ],
     "last_updated": "2026-08-18 11:57:36"
-  },
-  {
-    "id": 346672,
-    "status": "Available",
-    "address": "20 The Shambles",
-    "town": "Worcester",
-    "postcode": "WR1 2RA",
-    "lat": 52.191112518,
-    "lon": -2.219422101,
-    "types": [
-      "Retail"
-    ],
-    "raw_types": [
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": true,
-    "size_from_sqft": 2513,
-    "size_to_sqft": 2513,
-    "summary": "Retail For Sale, Worcester",
-    "description": "20 The Shambles comprises a mid-terraced retail unit arranged over basement, ground, first and second floors, situated within a traditional parade in the heart of Worcester city centre. The ground floor features an open-plan retail area with a suspended ceiling, LED lighting, air conditioning and a timber-framed single-glazed shopfront. A floor hatch in the main retail area provides ladder access to a small basement area, suitable for limited storage. To the rear of the ground floor are ancillary areas, with a kitchen and WC located on the first floor. The upper parts are accessed via an internal staircase and include further ancillary space with a mix of UPVC and timber-framed windows. Lighting to the upper floors consists of older-style fluorescent fittings. The property is in need of repair and modernisation in parts, with notable damp ingress evident along the right-hand side elevation at second floor level. The unit may suit a variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.",
-    "location": "The property is prominently located on The Shambles, a pedestrianised shopping street just off Worcester High Street, in a highly visible and well-trafficked position. The area is home to a mix of national and independent occupiers, with nearby retailers including Greggs, The Works, Waterstones and Marks & Spencer. Worcester's main shopping destinations-Crowngate Shopping Centre and Cathedral Square-are both within a short walking distance. Worcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
-    "features": [
-      "Prominent city centre location",
-      "Property arranged over basement, ground, first and second",
-      "Vacant possession from July 2026"
-    ],
-    "rent": "On Application",
-    "price": "£275,000",
-    "price_value": 275000,
-    "business_rates_psf": 3.28,
-    "rateable_value": 16500,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/570a4079df62487975d4d2b75449b956-letting346672.jpeg",
-      "https://as-images.imgix.net/91d7459984edd30a2b77fe3764b65ffb-letting346672.jpeg",
-      "https://as-images.imgix.net/cbb04f12d126ea78867538bbca58455e-letting346672.jpeg",
-      "https://as-images.imgix.net/a42cfdf7168b95c249ec8a9142b68ebe-letting346672.jpeg",
-      "https://as-images.imgix.net/d27eb8caf050f6730c48fb5c4a082766-letting346672.jpeg",
-      "https://as-images.imgix.net/61b196b5fa07b79f51cbd9cf1cdddd42-letting346672.jpeg",
-      "https://as-images.imgix.net/f7d0d12227a5dc73f0c0c982ca14811c-letting346672.jpeg",
-      "https://as-images.imgix.net/7d1abe1290bc1b112de86867f098c6e2-letting346672.jpeg",
-      "https://as-images.imgix.net/193205c5527b2926b6129c137736db7c-letting346672.jpeg",
-      "https://as-images.imgix.net/fa7aa285385934527b8c969752180195-letting346672.jpeg",
-      "https://as-images.imgix.net/480a7dc576c43895fd14cd0ddc0862b1-letting346672.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/3cf79ac31d5fb6a437d917ff74d0029c-gjs-dillon-particulars-20-the-shambles-worcester.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/aa4c1c29defe5a3e0ee800aacf351cca-cam04581g0-pr0074-build01-floor00.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/93dc2e0712bdffc3a1a1f20035b3f383-cam04581g0-pr0074-build01-floor01.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/b8ee60f675de63a74658120e86b1ac61-cam04581g0-pr0074-build01-floor02.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/713b114b590855a6eb01e272c00602a2-cam04581g0-pr0074-build01.png"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-08-18 11:15:47"
   },
   {
     "id": 388662,
