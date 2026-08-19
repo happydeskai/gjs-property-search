@@ -1,5 +1,78 @@
 [
   {
+    "id": 389940,
+    "status": "Available",
+    "address": "Nailers Yard",
+    "town": "Bromsgrove",
+    "postcode": "B61 8NR",
+    "lat": 52.333591,
+    "lon": -2.063347,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2820,
+    "size_to_sqft": 2820,
+    "summary": "First Floor Office Suite at Nailers Yard, Bromsgrove",
+    "description": "Nailers Yard is an upcoming mixed-use development in the heart of Bromsgrove, set to transform the former Market Hall site into a vibrant commercial, cultural, and community destination. The project is a key part of Bromsgrove District Council’s regeneration strategy.\n\nThe commercial building is a standalone structure offering premium office space, ground-floor restaurant space, and a rooftop food and drink outlet. This addition is expected to enhance Bromsgrove’s night-time economy and attract both new and established businesses.",
+    "location": "Set in the heart of Worcestershire, Bromsgrove is a town blending heritage charm with contemporary growth. Just 30 minutes from Birmingham and with easy access to the M5, M42, and direct rail links, Bromsgrove offers exceptional connectivity for ambitious businesses.\n\nBromsgrove is home to a growing, affluent population and a thriving local economy, making it a compelling location for both office occupiers and hospitality operators. The town’s latest regeneration project, Nailers Yard, is at the centre of this transformation. With bold new spaces designed for work, culture, and cuisine, it offers a fresh canvas for operators seeking high footfall, community engagement, and standout design in a one-of-a-kind setting.",
+    "features": [
+      "A new commercial & cultural hub in Bromsgrove Town Centre",
+      "First floor office suite 2,820 sq ft (262 sq m)",
+      "Remote controlled ceiling mounted HVAC",
+      "Kitchenette",
+      "WC and shower facilities"
+    ],
+    "rent_psf": 21.28,
+    "rent_pa": 60000,
+    "rent": "£60,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "service_charge": "5.9",
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/e1c9cc1dfa20b849d0aa7740866000fb-market-hall-view-05-v026.jpg",
+      "https://as-images.imgix.net/842cab807f179cd7c5dd5e7eec3f5079-20260622-140640.jpg",
+      "https://as-images.imgix.net/49a8b2c568c1f2f87a051e8e7dedcffe-20260622-140715-1.jpg",
+      "https://as-images.imgix.net/1f8bd4df915badd70253003f0b757c90-20260622-140653.jpg",
+      "https://as-images.imgix.net/840be673e616025bdd0596a2963c531f-20260622-140542.jpg",
+      "https://as-images.imgix.net/d87dc07a60d103f17d7106a6b47a1c83-20260622-141023.jpg",
+      "https://as-images.imgix.net/66ee26df3df69e1e95f98d60d56cdc9c-20260622-141110.jpg",
+      "https://as-images.imgix.net/d4d55233e16e1a456fd95271b54f7839-20260622-141042.jpg",
+      "https://as-images.imgix.net/dfe968123430cc24a769caa5572dffd8-20260622-141143.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/30265c35dc7732e319137151ad03804f-gjs-dillon-particulars-nailers-yard-bromsgrove-large-office-1.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/8575fa8cec1c734d9961ffae6e5fe4d4-cam04581g0-pr0071-build01-floor01.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/nailersyardbromsgrove"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-08-19 15:06:32"
+  },
+  {
     "id": 346672,
     "status": "Available",
     "address": "20 The Shambles",
