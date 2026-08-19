@@ -1,5 +1,86 @@
 [
   {
+    "id": 389974,
+    "status": "Available",
+    "address": "Nailers Yard",
+    "town": "Bromsgrove",
+    "postcode": "B61 8NR",
+    "lat": 52.333591,
+    "lon": -2.063347,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1087,
+    "size_to_sqft": 1517,
+    "summary": "Ground and Third Floor Office Suites at Nailers Yard, Bromsgrove",
+    "description": "Nailers Yard is an upcoming mixed-use development in the heart of Bromsgrove, set to transform the former Market Hall site into a vibrant commercial, cultural, and community destination. The project is a key part of Bromsgrove District Council’s regeneration strategy.\n\nThe commercial building is a standalone structure offering premium office space, ground-floor restaurant space, and a rooftop food and drink outlet. This addition is expected to enhance Bromsgrove’s night-time economy and attract both new and established businesses.",
+    "location": "Set in the heart of Worcestershire, Bromsgrove is a town blending heritage charm with contemporary growth. Just 30 minutes from Birmingham and with easy access to the M5, M42, and direct rail links, Bromsgrove offers exceptional connectivity for ambitious businesses.\n\nBromsgrove is home to a growing, affluent population and a thriving local economy, making it a compelling location for both office occupiers and hospitality operators. The town’s latest regeneration project, Nailers Yard, is at the centre of this transformation. With bold new spaces designed for work, culture, and cuisine, it offers a fresh canvas for operators seeking high footfall, community engagement, and standout design in a one-of-a-kind setting.",
+    "features": [
+      "A new commercial & cultural hub in Bromsgrove Town Centre",
+      "Ground floor office suite 1,517 sq ft (141 sq m)",
+      "Third floor office suite 1,087 sq ft (101 sq m)",
+      "Remote controlled ceiling mounted HVAC",
+      "WC and shower facilities"
+    ],
+    "rent_psf": 20.24,
+    "rent_pa": 22000,
+    "rent": "£22,000 - £33,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "service_charge": "5.9",
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/4a60befb2a63c60f890886f10f44c282-market-hall-view-05-v026.jpg",
+      "https://as-images.imgix.net/f73c22b163955cc4ad64e9c5205a8703-20260730-142852.jpg",
+      "https://as-images.imgix.net/d85014f85fc41a091ff2feac4f44cc38-20260730-142913.jpg",
+      "https://as-images.imgix.net/49e9654ad4c494e5cd3770567b864fb2-20260730-143817.jpg",
+      "https://as-images.imgix.net/a894913fcab6cbb0a65e01717684e564-20260730-143800.jpg",
+      "https://as-images.imgix.net/4bdb19187e4c60606be6652411db0a4d-20260730-143829.jpg",
+      "https://as-images.imgix.net/a4decc5c64a013114d24b7a8bd49591b-20260622-141626.jpg",
+      "https://as-images.imgix.net/2210685af0c57fc76905d29bc85b584a-20260622-141749.jpg",
+      "https://as-images.imgix.net/08d9a96f0c77707f10cea9741a504b7b-20260622-141738.jpg",
+      "https://as-images.imgix.net/57a5eaddfaf0579aa6be7195d6cea654-20260622-141809.jpg",
+      "https://as-images.imgix.net/c14c93f7989262257fd9a09f1fe5881c-20260622-141803.jpg",
+      "https://as-images.imgix.net/52bec2987416953886987dc457dc5bba-20260730-143013.jpg",
+      "https://as-images.imgix.net/14b622e0336822d852249f8392a6a134-20260622-141831.jpg",
+      "https://as-images.imgix.net/09dd40d6bc35ce6c94c05d3170aee148-20260730-143217.jpg",
+      "https://as-images.imgix.net/f23a45770061d7b05605ad05598e8c7f-20260622-141826.jpg",
+      "https://as-images.imgix.net/a5bd4ec6ceaab04f01a32eb10794de78-20260730-143443.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/2fca40bf09832efbab185bbd4c4fbb14-gjs-dillon-particulars-nailers-yard-bromsgrove-small-offices-2.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/2c77c872c5959870b8c41fa93d4f399b-cam04581g0-pr0071-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/a3ad06e0df3ec9857b67f256e7d0fec2-cam04581g0-pr0071-build01-floor02.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/nailersyardbromsgrove"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-08-19 16:00:04"
+  },
+  {
     "id": 389940,
     "status": "Available",
     "address": "Nailers Yard",
@@ -2861,60 +2942,6 @@
       }
     ],
     "last_updated": "2026-07-24 12:10:00"
-  },
-  {
-    "id": 346680,
-    "status": "Available",
-    "address": "Nailers Yard",
-    "town": "Bromsgrove",
-    "postcode": "B61 8QT",
-    "lat": 52.334415435,
-    "lon": -2.063618898,
-    "types": [
-      "Retail",
-      "Office"
-    ],
-    "raw_types": [
-      "A3 (Restaurants and Cafes)",
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1000,
-    "size_to_sqft": 12088,
-    "summary": "Office / Retail To Let, Bromsgrove",
-    "description": "Nailers Yard is an upcoming mixed-use development in the heart of Bromsgrove, set to transform the former Market Hall site into a vibrant commercial, cultural, and community destination. Scheduled for completion by early 2026, the project is a key part of Bromsgrove District Council's regeneration strategy. The commercial building is a standalone structure offering premium office space, ground-floor restaurant space, and a rooftop food and drink outlet. This addition is expected to enhance Bromsgrove's night-time economy and attract both new and established businesses. The available office space is 5,424 sq ft (504 sq m) and suites are being offered from 1,087 sq ft. The total restaurant space is 3,519 sq ft (327 sq m) and is situated over the ground and top floors. Floor plans are available on request. Please contact us with your size requirement and we'd be delighted to show you how your business can be proudly located at Nailers Yard.",
-    "location": "Set in the heart of Worcestershire, Bromsgrove is a town blending heritage charm with contemporary growth. Just 30 minutes from Birmingham and with easy access to the M5, M42, and direct rail links, Bromsgrove offers exceptional connectivity for ambitious businesses. Bromsgrove is home to a growing, affluent population and a thriving local economy, making it a compelling location for both office occupiers and hospitality operators. The town's latest regeneration project, Nailers Yard, is at the centre of this transformation. With bold new spaces designed for work, culture, and cuisine, it offers a fresh canvas for operators seeking high footfall, community engagement, and standout design in a one-of-a-kind setting.",
-    "features": [
-      "Office space arranged over 1st and 3rd Floors",
-      "Food and beverage opportunities over the ground and 3rd floor",
-      "Bromsgrove town centre location"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/5e420e923e0975cd096a6bb0df64a8ff-letting346680.jpeg",
-      "https://as-images.imgix.net/021f2a59f0438efc4e9bf6bd98dc95c9-letting346680.jpeg",
-      "https://as-images.imgix.net/e23f97371fee1b4c39eef319bfa05567-letting346680.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/25da4983149363e78b276871ec926dfa-gjs-dillon-particulars-nailers-yard-bromsgrove-1.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/930fbd54b5829743166ffd273830f733-ground-first-second-floor-nailers-yard-bromsgrove-1.pdf",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/525058fe64b17bc2f04f662fd4dff68b-third-floor-nailers-yard-bromsgrove-1.pdf"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-07-22 15:56:05"
   },
   {
     "id": 346884,
