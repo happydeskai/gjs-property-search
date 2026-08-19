@@ -1,5 +1,146 @@
 [
   {
+    "id": 388662,
+    "status": "Available",
+    "address": "Priory House",
+    "town": "Droitwich",
+    "postcode": "WR9 8EQ",
+    "lat": 52.269196,
+    "lon": -2.150754,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3095,
+    "size_to_sqft": 3095,
+    "summary": "Character Offices with Parking in Droitwich",
+    "description": "Priory House comprises a detached Listed property of timber frame construction.  The building is noted as being one of the oldest in Droitwich, however has been converted to provided modern office accommodation.  The building benefits from a charming reception area, which offers kitchen, WC facilities and a waiting room.  \n\nOver the ground and first floor the property offers a mix of open plan and cellular office space, including a large, ornate board room.  The office space is carpeted and benefits from fluorescent strip lighting and wall mounted radiators throughout.\n\nPriory House has a large car park, which is a major plus point given its town centre location.\n\nGround Floor\t1,374 sq ft \t127.69 sq m\nFirst Floor\t1,721 sq ft \t159.87 sq m\nTotal\t3,095 sq ft \t287.56 sq m",
+    "location": "The property is situated in a prominent position fronting the Saltway (B4090), at its junction with Priory Lane and at the end of Friar Street, which in turn leads to the High Street, within Droitwich Town Centre. \n\nDroitwich is a well known Worcestershire spa town with good communication links to neighbouring towns and cities, with Bromsgrove town centre being seven miles to the north east, Worcester city centre being eight miles to the south west and Birmingham city centre being twenty two miles to the north.  The nearest motorway access is approximately two miles to the north east of the town centre at Junction 5 of the M5 motorway.\n\nThe property is within easy walking distance of St Andrew’s Square shopping centre and the popular Waitrose supermarket, together with local leisure facilities including Droitwich Spa Lido.",
+    "features": [
+      "Grade II listed Building",
+      "3,095 sq ft (287.56 sq m) modern office accommodation",
+      "Large ornate boardroom",
+      "Mix of open plan and cellular offices",
+      "Car park to the rear of the property"
+    ],
+    "rent_psf": 9.69,
+    "rent_pa": 30000,
+    "rent": "£30,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/639035ab59c3e463cd4f8a1fe5240fae-img-0933.JPEG",
+      "https://as-images.imgix.net/527bc6e8c4f0fe543b00c374234a97fa-20260805-111846.jpg",
+      "https://as-images.imgix.net/8b48e0189cdb58e83968294af1ba6348-20260805-111820.jpg",
+      "https://as-images.imgix.net/0c3581ef0c9385327fa0104790ad35af-20260805-113619.jpg",
+      "https://as-images.imgix.net/ceb140666c9d78b9651f3b532f56117a-20260805-120754.jpg",
+      "https://as-images.imgix.net/59402512db595cf909692db63359c8f0-20260805-115800.jpg",
+      "https://as-images.imgix.net/49c12e9a9197517167ea49fff882666b-20260805-121051.jpg",
+      "https://as-images.imgix.net/5824a8288218e976c8bed0ea891dd004-20260805-120946.jpg",
+      "https://as-images.imgix.net/fec20dcbdf7a6791e22e11e8478d8363-20260805-112824.jpg",
+      "https://as-images.imgix.net/4c1c5831688b41292f7e003aef263f01-20260805-120812.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/4cc8048b33826390144cac3fba8a3a7b-gjs-dillon-particulars-priory-house-droitwich-1.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/f1a6a3aa46daed860f1633e6ecc2c0a2-cam04581g0-pr0073-build01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/3a5d10e5f9d20606cf2eb60cdbe09437-cam04581g0-pr0073-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/a88f3eba9112d99dd922701a6b6fc699-cam04581g0-pr0073-build01-floor01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/341c6992f821f70d4fc5d192993f75d5-cam04581g0-pr0073-build01-floor02.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/prioryhousedroitwich"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-08-19 16:40:56"
+  },
+  {
+    "id": 389993,
+    "status": "Coming Soon",
+    "address": "Nailers Yard",
+    "town": "Bromsgrove",
+    "postcode": "B61 8NR",
+    "lat": 52.333591,
+    "lon": -2.063347,
+    "types": [
+      "Retail"
+    ],
+    "raw_types": [
+      "Cafe (A1)"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1184,
+    "size_to_sqft": 3519,
+    "summary": "Ground and Third Floor Food and Beverage Suites at Nailers Yard, Bromsgrove",
+    "description": "Nailers Yard is an upcoming mixed-use development in the heart of Bromsgrove, set to transform the former Market Hall site into a vibrant commercial, cultural, and community destination. The project is a key part of Bromsgrove District Council’s regeneration strategy.\n\nThe commercial building is a standalone structure offering premium office space, ground-floor restaurant space, and a rooftop food and drink outlet. This addition is expected to enhance Bromsgrove’s night-time economy and attract both new and established businesses.",
+    "location": "Set in the heart of Worcestershire, Bromsgrove is a town blending heritage charm with contemporary growth. Just 30 minutes from Birmingham and with easy access to the M5, M42, and direct rail links, Bromsgrove offers exceptional connectivity for ambitious businesses.\n\nBromsgrove is home to a growing, affluent population and a thriving local economy, making it a compelling location for both office occupiers and hospitality operators. The town’s latest regeneration project, Nailers Yard, is at the centre of this transformation. With bold new spaces designed for work, culture, and cuisine, it offers a fresh canvas for operators seeking high footfall, community engagement, and standout design in a one-of-a-kind setting.",
+    "features": [
+      "A new commercial & cultural hub in Bromsgrove Town Centre",
+      "Ground floor food and beverage suite 1,517 sq ft (141 sq m)",
+      "Third floor food and beverage suite 1,087 sq ft (101 sq m)",
+      "Remote controlled ceiling mounted HVAC",
+      "WC and shower facilities"
+    ],
+    "rent_psf": 21.11,
+    "rent_pa": 25000,
+    "rent": "£25,000 - £60,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/908301b55ac7f82da57b9ebe418c17ba-market-hall-view-05-v026.jpg",
+      "https://as-images.imgix.net/dc2b99740d1beab2f300422a4e58473a-20260608-111831.jpg",
+      "https://as-images.imgix.net/2873e3f7f1726ab9d99d74991d085393-20260608-111607.jpg",
+      "https://as-images.imgix.net/dcfe4c57e0d8a0db7f618b8cfa9ca173-20260608-111625.jpg",
+      "https://as-images.imgix.net/5074bc8731554bd56c6a07347b2eb0a2-20260608-111642.jpg",
+      "https://as-images.imgix.net/be67174694151e8ea68def47d465ba0b-20260608-111720.jpg",
+      "https://as-images.imgix.net/bf1488fbeb44287884dfac3b6086f458-20260608-111736.jpg",
+      "https://as-images.imgix.net/f2bb99b119dac4ddb5cdd9cae22312a5-20260608-111757.jpg",
+      "https://as-images.imgix.net/3bdbe2a6dc86229e2c22e9fb8792317f-20260608-111900.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/3334d3c15e07881ee6571160daf9b3e0-gjs-dillon-particulars-nailers-yard-bromsgrove-food-and-beverage.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/1305dad63e08c0fa53f20f10ee772330-cam04581g0-pr0071-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/fbf5aa401494272925e6f57f80844368-cam04581g0-pr0071-build01-floor02.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/nailersyardbromsgrove"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-08-19 16:37:56"
+  },
+  {
     "id": 389974,
     "status": "Available",
     "address": "Nailers Yard",
@@ -223,74 +364,6 @@
       }
     ],
     "last_updated": "2026-08-19 12:58:26"
-  },
-  {
-    "id": 388662,
-    "status": "Available",
-    "address": "Priory House",
-    "town": "Droitwich",
-    "postcode": "WR9 8EQ",
-    "lat": 52.269196,
-    "lon": -2.150754,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3095,
-    "size_to_sqft": 3095,
-    "summary": "Character Offices with Parking in Droitwich",
-    "description": "Priory House comprises a detached Listed property of timber frame construction.  The building is noted as being one of the oldest in Droitwich, however has been converted to provided modern office accommodation.  The building benefits from a charming reception area, which offers kitchen, WC facilities and a waiting room.  \n\nOver the ground and first floor the property offers a mix of open plan and cellular office space, including a large, ornate board room.  The office space is carpeted and benefits from fluorescent strip lighting and wall mounted radiators throughout.\n\nPriory House has a large car park, which is a major plus point given its town centre location.\n\nGround Floor\t1,374 sq ft \t127.69 sq m\nFirst Floor\t1,721 sq ft \t159.87 sq m\nTotal\t3,095 sq ft \t287.56 sq m",
-    "location": "The property is situated in a prominent position fronting the Saltway (B4090), at its junction with Priory Lane and at the end of Friar Street, which in turn leads to the High Street, within Droitwich Town Centre. \n\nDroitwich is a well known Worcestershire spa town with good communication links to neighbouring towns and cities, with Bromsgrove town centre being seven miles to the north east, Worcester city centre being eight miles to the south west and Birmingham city centre being twenty two miles to the north.  The nearest motorway access is approximately two miles to the north east of the town centre at Junction 5 of the M5 motorway.\n\nThe property is within easy walking distance of St Andrew’s Square shopping centre and the popular Waitrose supermarket, together with local leisure facilities including Droitwich Spa Lido.",
-    "features": [
-      "Grade II listed Building",
-      "3,095 sq ft (287.56 sq m) modern office accommodation",
-      "Large ornate boardroom",
-      "Mix of open plan and cellular offices",
-      "Car park to the rear of the property"
-    ],
-    "rent_psf": 9.69,
-    "rent_pa": 30000,
-    "rent": "£30,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/639035ab59c3e463cd4f8a1fe5240fae-img-0933.JPEG",
-      "https://as-images.imgix.net/527bc6e8c4f0fe543b00c374234a97fa-20260805-111846.jpg",
-      "https://as-images.imgix.net/8b48e0189cdb58e83968294af1ba6348-20260805-111820.jpg",
-      "https://as-images.imgix.net/0c3581ef0c9385327fa0104790ad35af-20260805-113619.jpg",
-      "https://as-images.imgix.net/ceb140666c9d78b9651f3b532f56117a-20260805-120754.jpg",
-      "https://as-images.imgix.net/59402512db595cf909692db63359c8f0-20260805-115800.jpg",
-      "https://as-images.imgix.net/49c12e9a9197517167ea49fff882666b-20260805-121051.jpg",
-      "https://as-images.imgix.net/5824a8288218e976c8bed0ea891dd004-20260805-120946.jpg",
-      "https://as-images.imgix.net/fec20dcbdf7a6791e22e11e8478d8363-20260805-112824.jpg",
-      "https://as-images.imgix.net/4c1c5831688b41292f7e003aef263f01-20260805-120812.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/4cc8048b33826390144cac3fba8a3a7b-gjs-dillon-particulars-priory-house-droitwich-1.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/f1a6a3aa46daed860f1633e6ecc2c0a2-cam04581g0-pr0073-build01.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/3a5d10e5f9d20606cf2eb60cdbe09437-cam04581g0-pr0073-build01-floor00.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/a88f3eba9112d99dd922701a6b6fc699-cam04581g0-pr0073-build01-floor01.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/341c6992f821f70d4fc5d192993f75d5-cam04581g0-pr0073-build01-floor02.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/prioryhousedroitwich"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-08-19 10:37:47"
   },
   {
     "id": 380213,
