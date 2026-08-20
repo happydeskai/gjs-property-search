@@ -1,75 +1,7 @@
 [
   {
-    "id": 388662,
-    "status": "Available",
-    "address": "Priory House",
-    "town": "Droitwich",
-    "postcode": "WR9 8EQ",
-    "lat": 52.269196,
-    "lon": -2.150754,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3095,
-    "size_to_sqft": 3095,
-    "summary": "Character Offices with Parking in Droitwich",
-    "description": "Priory House comprises a detached Listed property of timber frame construction.  The building is noted as being one of the oldest in Droitwich, however has been converted to provided modern office accommodation.  The building benefits from a charming reception area, which offers kitchen, WC facilities and a waiting room.  \n\nOver the ground and first floor the property offers a mix of open plan and cellular office space, including a large, ornate board room.  The office space is carpeted and benefits from fluorescent strip lighting and wall mounted radiators throughout.\n\nPriory House has a large car park, which is a major plus point given its town centre location.\n\nGround Floor\t1,374 sq ft \t127.69 sq m\nFirst Floor\t1,721 sq ft \t159.87 sq m\nTotal\t3,095 sq ft \t287.56 sq m",
-    "location": "The property is situated in a prominent position fronting the Saltway (B4090), at its junction with Priory Lane and at the end of Friar Street, which in turn leads to the High Street, within Droitwich Town Centre. \n\nDroitwich is a well known Worcestershire spa town with good communication links to neighbouring towns and cities, with Bromsgrove town centre being seven miles to the north east, Worcester city centre being eight miles to the south west and Birmingham city centre being twenty two miles to the north.  The nearest motorway access is approximately two miles to the north east of the town centre at Junction 5 of the M5 motorway.\n\nThe property is within easy walking distance of St Andrew’s Square shopping centre and the popular Waitrose supermarket, together with local leisure facilities including Droitwich Spa Lido.",
-    "features": [
-      "Grade II listed Building",
-      "3,095 sq ft (287.56 sq m) modern office accommodation",
-      "Large ornate boardroom",
-      "Mix of open plan and cellular offices",
-      "Car park to the rear of the property"
-    ],
-    "rent_psf": 9.69,
-    "rent_pa": 30000,
-    "rent": "£30,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/639035ab59c3e463cd4f8a1fe5240fae-img-0933.JPEG",
-      "https://as-images.imgix.net/527bc6e8c4f0fe543b00c374234a97fa-20260805-111846.jpg",
-      "https://as-images.imgix.net/8b48e0189cdb58e83968294af1ba6348-20260805-111820.jpg",
-      "https://as-images.imgix.net/0c3581ef0c9385327fa0104790ad35af-20260805-113619.jpg",
-      "https://as-images.imgix.net/ceb140666c9d78b9651f3b532f56117a-20260805-120754.jpg",
-      "https://as-images.imgix.net/59402512db595cf909692db63359c8f0-20260805-115800.jpg",
-      "https://as-images.imgix.net/49c12e9a9197517167ea49fff882666b-20260805-121051.jpg",
-      "https://as-images.imgix.net/5824a8288218e976c8bed0ea891dd004-20260805-120946.jpg",
-      "https://as-images.imgix.net/fec20dcbdf7a6791e22e11e8478d8363-20260805-112824.jpg",
-      "https://as-images.imgix.net/4c1c5831688b41292f7e003aef263f01-20260805-120812.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/4cc8048b33826390144cac3fba8a3a7b-gjs-dillon-particulars-priory-house-droitwich-1.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/f1a6a3aa46daed860f1633e6ecc2c0a2-cam04581g0-pr0073-build01.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/3a5d10e5f9d20606cf2eb60cdbe09437-cam04581g0-pr0073-build01-floor00.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/a88f3eba9112d99dd922701a6b6fc699-cam04581g0-pr0073-build01-floor01.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/341c6992f821f70d4fc5d192993f75d5-cam04581g0-pr0073-build01-floor02.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/prioryhousedroitwich"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-08-19 16:40:56"
-  },
-  {
     "id": 389993,
-    "status": "Coming Soon",
+    "status": "Available",
     "address": "Nailers Yard",
     "town": "Bromsgrove",
     "postcode": "B61 8NR",
@@ -138,7 +70,75 @@
         "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-08-19 16:37:56"
+    "last_updated": "2026-08-20 09:03:04"
+  },
+  {
+    "id": 388662,
+    "status": "Available",
+    "address": "Priory House",
+    "town": "Droitwich",
+    "postcode": "WR9 8EQ",
+    "lat": 52.269196,
+    "lon": -2.150754,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3095,
+    "size_to_sqft": 3095,
+    "summary": "Character Offices with Parking in Droitwich",
+    "description": "Priory House comprises a detached Listed property of timber frame construction.  The building is noted as being one of the oldest in Droitwich, however has been converted to provided modern office accommodation.  The building benefits from a charming reception area, which offers kitchen, WC facilities and a waiting room.  \n\nOver the ground and first floor the property offers a mix of open plan and cellular office space, including a large, ornate board room.  The office space is carpeted and benefits from fluorescent strip lighting and wall mounted radiators throughout.\n\nPriory House has a large car park, which is a major plus point given its town centre location.\n\nGround Floor\t1,374 sq ft \t127.69 sq m\nFirst Floor\t1,721 sq ft \t159.87 sq m\nTotal\t3,095 sq ft \t287.56 sq m",
+    "location": "The property is situated in a prominent position fronting the Saltway (B4090), at its junction with Priory Lane and at the end of Friar Street, which in turn leads to the High Street, within Droitwich Town Centre. \n\nDroitwich is a well known Worcestershire spa town with good communication links to neighbouring towns and cities, with Bromsgrove town centre being seven miles to the north east, Worcester city centre being eight miles to the south west and Birmingham city centre being twenty two miles to the north.  The nearest motorway access is approximately two miles to the north east of the town centre at Junction 5 of the M5 motorway.\n\nThe property is within easy walking distance of St Andrew’s Square shopping centre and the popular Waitrose supermarket, together with local leisure facilities including Droitwich Spa Lido.",
+    "features": [
+      "Grade II listed Building",
+      "3,095 sq ft (287.56 sq m) modern office accommodation",
+      "Large ornate boardroom",
+      "Mix of open plan and cellular offices",
+      "Car park to the rear of the property"
+    ],
+    "rent_psf": 9.69,
+    "rent_pa": 30000,
+    "rent": "£30,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/639035ab59c3e463cd4f8a1fe5240fae-img-0933.JPEG",
+      "https://as-images.imgix.net/527bc6e8c4f0fe543b00c374234a97fa-20260805-111846.jpg",
+      "https://as-images.imgix.net/8b48e0189cdb58e83968294af1ba6348-20260805-111820.jpg",
+      "https://as-images.imgix.net/0c3581ef0c9385327fa0104790ad35af-20260805-113619.jpg",
+      "https://as-images.imgix.net/ceb140666c9d78b9651f3b532f56117a-20260805-120754.jpg",
+      "https://as-images.imgix.net/59402512db595cf909692db63359c8f0-20260805-115800.jpg",
+      "https://as-images.imgix.net/49c12e9a9197517167ea49fff882666b-20260805-121051.jpg",
+      "https://as-images.imgix.net/5824a8288218e976c8bed0ea891dd004-20260805-120946.jpg",
+      "https://as-images.imgix.net/fec20dcbdf7a6791e22e11e8478d8363-20260805-112824.jpg",
+      "https://as-images.imgix.net/4c1c5831688b41292f7e003aef263f01-20260805-120812.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/4cc8048b33826390144cac3fba8a3a7b-gjs-dillon-particulars-priory-house-droitwich-1.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/f1a6a3aa46daed860f1633e6ecc2c0a2-cam04581g0-pr0073-build01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/3a5d10e5f9d20606cf2eb60cdbe09437-cam04581g0-pr0073-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/a88f3eba9112d99dd922701a6b6fc699-cam04581g0-pr0073-build01-floor01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/341c6992f821f70d4fc5d192993f75d5-cam04581g0-pr0073-build01-floor02.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/prioryhousedroitwich"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-08-19 16:40:56"
   },
   {
     "id": 389974,
@@ -1459,87 +1459,6 @@
       }
     ],
     "last_updated": "2026-08-07 14:31:23"
-  },
-  {
-    "id": 384123,
-    "status": "Available",
-    "address": "The Studio",
-    "town": "Stourbridge",
-    "postcode": "DY9 0HA",
-    "lat": 52.404336,
-    "lon": -2.1445,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial",
-      "Warehouse"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3498,
-    "size_to_sqft": 8597,
-    "summary": "Quality Offices with Studio / Warehouse space in Unique Location",
-    "description": "The Studio splits into two separate buildings, which are linked by a covered walkway.  Externally the site offers parking for circa 50 cars, including having the provision for EV charging.  There is also a loading/unloading area to the front of the roller shutter door access to the studio / warehouse building.  The site is surrounded by residential properties and open countryside, making the property an accessible site set within a unique working environment.\n\nTo the rear of the site is the studio building, which comprises a large warehouse that has been converted to a commercial studio.  In addition, there is integral office space over the ground and first floors, including a board room, along with WC and kitchen facilities.\n\nSize\tSq M\tSq Ft\nGround\t362.03\t3,897\nFirst\t111.63\t1,202\nTotal \t473.66\t5,099 (NIA)\n\nTo the front of the site is the main office building.  Over the ground floor there is a reception, two separate offices / meeting rooms and a large open plan office.  The highlight of this building is the large conservatory, which offers meeting and breakout space.  Located off the open plan office is a mezzanine floor which offers further office / meeting space.  The first floor is accessed via an internal staircase and offers further separate offices and meeting rooms.  There are WCs and kitchen facilities throughout.\n\nSize\tSq M Sq Ft\nGround 222.57 2,396\nMezzanine Office 31.77 342\nFirst Floor 70.59\t760\nTotal 324.93\t3,498 (NIA)",
-    "location": "The Studio is situated in the attractive village of Broome, approximately 2 miles south of Stourbridge and 4 miles north of Kidderminster, benefiting from a pleasant rural setting whilst remaining readily accessible to the wider West Midlands. The property enjoys convenient access to the A491 and A456, providing links to the regional motorway network via the M5 (Junctions 3 and 4). A wide range of amenities are available in nearby Stourbridge, together with rail services connecting to Birmingham and the surrounding area.",
-    "features": [
-      "Total gross internal area of 8,597 sq ft (798.59 sq m) – with the studio / warehouse building being 5,099 sq ft (473.66 sq m) and the offices 3,498 sq ft (324.93 sq m)",
-      "Available To Let as a whole site, or as two separate buildings",
-      "Functional commercial space situated in an attractive rural setting.  The buildings have been finished with employee welfare in mind, making The Studio an exceptional place to work from",
-      "Situated a six mile (10-15 minute) drive from Junction 4 of the M5 Motorway"
-    ],
-    "rent_psf": 12.15,
-    "rent_pa": 42500,
-    "rent": "£42,500 - £94,000 per annum £42,500 for office building only. £42,500 for studio/warehouse. £94,000 per annum for whole site",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/dd0b8df6662fff50041c268c621b0b08-dji-0009.JPG",
-      "https://as-images.imgix.net/90e703894c1ff99ad9578ebb3506b30c-img-1079.JPEG",
-      "https://as-images.imgix.net/12dc97eb9c07b836ed1718214a5c5592-dji-0006.JPG",
-      "https://as-images.imgix.net/0db5734680a7fb3afe7fd4a216a575f8-img-1066.JPEG",
-      "https://as-images.imgix.net/6f1b4d7fdcdf83c2bfdae31c8f5ff0b3-img-1069.JPEG",
-      "https://as-images.imgix.net/347bbcf17682e6d4ab1793bb45631222-dji-0015.JPG",
-      "https://as-images.imgix.net/48ee85d339442ce2c8c6db9509c55ad5-dji-0013.JPG",
-      "https://as-images.imgix.net/c18ec0be1938fcf778b063685bea3816-img-1072.JPEG",
-      "https://as-images.imgix.net/ae5b329963c96935eda2187342f21adc-img-1071.JPEG",
-      "https://as-images.imgix.net/1b956d457c6244ca12706a31156ed212-img-1074.JPEG",
-      "https://as-images.imgix.net/d9845382673a4072e144b1567c55eca0-img-1051.JPEG",
-      "https://as-images.imgix.net/0ccea1cd923965f9267f0228606a36e2-img-1049.JPEG",
-      "https://as-images.imgix.net/559b4b401546c8b813101763ac72c8ce-img-1047.JPEG",
-      "https://as-images.imgix.net/0df3e988c4e7a90a94630bd520a90075-img-1058.JPEG",
-      "https://as-images.imgix.net/22c205e5bee9659f2d693b4927bc7bba-img-1057.JPEG",
-      "https://as-images.imgix.net/c1d091fd1a8eb61a6f60a2b12bd43f18-img-1061.JPEG",
-      "https://as-images.imgix.net/fe319ebbc77b67485ac7dede0aea0b8e-img-1052.JPEG",
-      "https://as-images.imgix.net/2085f6bc6a6844d13a3b6013580d60d9-img-1064.JPEG",
-      "https://as-images.imgix.net/f6ae514cb759049b4bda4dc02cb6de51-img-1056.JPEG",
-      "https://as-images.imgix.net/90e46a5eb5cfcf0a5d780185184ac549-img-1053.JPEG",
-      "https://as-images.imgix.net/5444ba84a976c564bbcd9630de6be3cf-img-1062.JPEG",
-      "https://as-images.imgix.net/941961a775f1b42df8e4c38f452e01ec-dji-0019.JPG",
-      "https://as-images.imgix.net/0ebac1f74f69e4eda75b882880ebb21d-dji-0010.JPG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/63685dab583e4f3dc8bc1376ce1ef2d1-gjs-dillon-particulars-the-studio-broome-stourbridge.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-08-07 14:30:01"
   },
   {
     "id": 376681,
