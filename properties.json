@@ -1,5 +1,76 @@
 [
   {
+    "id": 389415,
+    "status": "Available",
+    "address": "17 Victoria Square",
+    "town": "Droitwich",
+    "postcode": "WR9 8DE",
+    "lat": 52.267363,
+    "lon": -2.150675,
+    "types": [
+      "Retail"
+    ],
+    "raw_types": [
+      "Retail"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 3043,
+    "size_to_sqft": 3043,
+    "summary": "High Street Retail Premises with upper floor accommodation.",
+    "description": "17 Victoria Square is an end of terrace, two-storey building with a wide shop frontage to Victoria Square and return frontage onto St Andrew’s Square shopping centre. The property is currently occupied by TG Jones and further benefits from ancillary office accommodation at first floor level. The building is set over two storeys of timber frame and solid brick construction underneath pitched tiled roofs.  The building has been fitted with UPVC double-glazed units throughout.\n\n17 Victoria Square comprises a typical layout and modern fit-out, with an extensive retailing area at ground floor level and staircase leading to first floor office accommodation, together with kitchen and wc facilities. The property will be sold with vacant possession.",
+    "location": "Droitwich is a well-known Worcestershire spa town being popular with local and national companies as well as having a strong business community and good shopping facilities. Birmingham is situated approximately 22 miles to the north-east, Bromsgrove is situated approximately 7 miles to the north-east, Worcester is situated approximately 8 miles to the south-west, Kidderminster is situated approximately 9 miles to the north and Redditch is situated approximately 17 miles to the north-east.   \n\nDroitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester.",
+    "features": [
+      "Ground and First Floor",
+      "Separate access to staircase",
+      "To be sold with vacant possession",
+      "Good access to junctions 5 and 6 of the M5 motorway"
+    ],
+    "price": "£450,000",
+    "price_value": 450000,
+    "business_rates_psf": 31200,
+    "rateable_value": 65000,
+    "epc_rating": "C (55)",
+    "images": [
+      "https://as-images.imgix.net/b3eb31ecc43e9f5f4525c45acab459a0-20260810-141216737-ios.jpg",
+      "https://as-images.imgix.net/a08628dc3d1b667bfbd2f6d3821b4586-20260810-135917058-ios.jpg",
+      "https://as-images.imgix.net/d4784c7259c6f87db776003735f95e88-20260810-134840663-ios.jpg",
+      "https://as-images.imgix.net/3776380388b037c4d74c1404c7f2e52f-20260810-134848717-ios.jpg",
+      "https://as-images.imgix.net/28e99da33e24426dbf967f8e8bc25c9c-20260810-135806611-ios.jpg",
+      "https://as-images.imgix.net/800bf23d97e7e66fb1cdad9b88478ef3-20260810-135842739-ios.jpg",
+      "https://as-images.imgix.net/7d726f5b212c80543d81df2350c08436-20260810-135724160-ios.jpg",
+      "https://as-images.imgix.net/d9dfa802b6d14c61462174d6f04854f6-20260810-135206749-ios.jpg",
+      "https://as-images.imgix.net/461d42aeb16c443a721d0f5a708598aa-20260810-135532230-ios.jpg",
+      "https://as-images.imgix.net/c1cd79edd3fcc8b66aa4970ff8c4faed-20260810-135010978-ios.jpg",
+      "https://as-images.imgix.net/02455766febf06d9170138da7ca6f775-20260810-134949200-ios.jpg",
+      "https://as-images.imgix.net/106e8f49314b0b4c5319cb6941acbc3f-20260810-135421410-ios.jpg",
+      "https://as-images.imgix.net/fc335f0de499450ceb25a87a3907ad00-20260810-135344583-ios.jpg",
+      "https://as-images.imgix.net/4640a9ca22f8582122bf7d54dc374ddc-20260810-135104652-ios.jpg",
+      "https://as-images.imgix.net/fd2d24026e6f4543f409830b89b05521-20260810-140029097-ios.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/625422bd68cc86163c9c1a9fa9a23483-e3a74a10b1d62170af97b1dd8f9e5626-1.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-08-20 12:31:41"
+  },
+  {
     "id": 346672,
     "status": "Available",
     "address": "20 The Shambles",
@@ -502,77 +573,6 @@
       }
     ],
     "last_updated": "2026-08-19 10:34:52"
-  },
-  {
-    "id": 389415,
-    "status": "Available",
-    "address": "17 Victoria Square",
-    "town": "Droitwich",
-    "postcode": "WR9 8DE",
-    "lat": 52.267363,
-    "lon": -2.150675,
-    "types": [
-      "Retail"
-    ],
-    "raw_types": [
-      "Retail"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 3043,
-    "size_to_sqft": 3043,
-    "summary": "High Street Retail Premises with upper floor accommodation.",
-    "description": "17 Victoria Square is an end of terrace, two-storey building with a wide shop frontage to Victoria Square and return frontage onto St Andrew’s Square shopping centre. The property is currently occupied by TG Jones and further benefits from ancillary office accommodation at first floor level. The building is set over two storeys of timber frame and solid brick construction underneath pitched tiled roofs.  The building has been fitted with UPVC double-glazed units throughout.\n\n17 Victoria Square comprises a typical layout and modern fit-out, with an extensive retailing area at ground floor level and staircase leading to first floor office accommodation, together with kitchen and wc facilities. The property will be sold with vacant possession.",
-    "location": "Droitwich is a well-known Worcestershire spa town being popular with local and national companies as well as having a strong business community and good shopping facilities. Birmingham is situated approximately 22 miles to the north-east, Bromsgrove is situated approximately 7 miles to the north-east, Worcester is situated approximately 8 miles to the south-west, Kidderminster is situated approximately 9 miles to the north and Redditch is situated approximately 17 miles to the north-east.   \n\nDroitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester.",
-    "features": [
-      "Ground and First Floor",
-      "Separate access to staircase",
-      "To be sold with vacant possession",
-      "Good access to junctions 5 and 6 of the M5 motorway"
-    ],
-    "price": "£450,000",
-    "price_value": 450000,
-    "business_rates_psf": 31200,
-    "rateable_value": 65000,
-    "epc_rating": "C (55)",
-    "images": [
-      "https://as-images.imgix.net/b3eb31ecc43e9f5f4525c45acab459a0-20260810-141216737-ios.jpg",
-      "https://as-images.imgix.net/a08628dc3d1b667bfbd2f6d3821b4586-20260810-135917058-ios.jpg",
-      "https://as-images.imgix.net/d4784c7259c6f87db776003735f95e88-20260810-134840663-ios.jpg",
-      "https://as-images.imgix.net/3776380388b037c4d74c1404c7f2e52f-20260810-134848717-ios.jpg",
-      "https://as-images.imgix.net/28e99da33e24426dbf967f8e8bc25c9c-20260810-135806611-ios.jpg",
-      "https://as-images.imgix.net/800bf23d97e7e66fb1cdad9b88478ef3-20260810-135842739-ios.jpg",
-      "https://as-images.imgix.net/7d726f5b212c80543d81df2350c08436-20260810-135724160-ios.jpg",
-      "https://as-images.imgix.net/d9dfa802b6d14c61462174d6f04854f6-20260810-135206749-ios.jpg",
-      "https://as-images.imgix.net/461d42aeb16c443a721d0f5a708598aa-20260810-135532230-ios.jpg",
-      "https://as-images.imgix.net/c1cd79edd3fcc8b66aa4970ff8c4faed-20260810-135010978-ios.jpg",
-      "https://as-images.imgix.net/02455766febf06d9170138da7ca6f775-20260810-134949200-ios.jpg",
-      "https://as-images.imgix.net/106e8f49314b0b4c5319cb6941acbc3f-20260810-135421410-ios.jpg",
-      "https://as-images.imgix.net/fc335f0de499450ceb25a87a3907ad00-20260810-135344583-ios.jpg",
-      "https://as-images.imgix.net/4640a9ca22f8582122bf7d54dc374ddc-20260810-135104652-ios.jpg",
-      "https://as-images.imgix.net/fd2d24026e6f4543f409830b89b05521-20260810-140029097-ios.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/625422bd68cc86163c9c1a9fa9a23483-e3a74a10b1d62170af97b1dd8f9e5626-1.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-08-18 12:08:38"
   },
   {
     "id": 380382,
