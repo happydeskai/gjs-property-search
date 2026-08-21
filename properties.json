@@ -2209,62 +2209,6 @@
     "last_updated": "2026-07-27 16:40:00"
   },
   {
-    "id": 346670,
-    "status": "Under Offer",
-    "address": "11a Kingswood Road",
-    "town": "Droitwich",
-    "postcode": "WR9 0QH",
-    "lat": 52.285240173,
-    "lon": -2.172755002,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1114,
-    "size_to_sqft": 2575,
-    "summary": "Office To Let, Droitwich",
-    "description": "The property is a modern two storey detached office building, accessed via a front door which leads to an entrance hall and stairway, benefiting from a double storey glazed elevation. Off the entrance hall are WC facilities, with there being further WC facilities and a kitchen on the first floor. Both floors offer a balanced mix of open plan office space and individual meeting rooms. The offices have been finished to a high standard with LED lighting and air conditioning throughout. Externally, the property benefits from a private car park with parking for at least 13 cars. Ground Floor 1,114 sq ft 103.47 sq m First Floor 1,159 sq ft 107.66 sq m Whole Building 2,575 sq ft 239.22 sq m",
-    "location": "The property is located within the popular Hampton Lovett Industrial Estate, approximately one mile north of Droitwich Town Centre. The Hampton Lovett Industrial Estate is accessed directly off the A442 which provides access to Droitwich to the south and Hartlebury and Kidderminster to the north. The location is particularly convenient for occupiers as it provides easy access to the M5 Motorway with Junction 5 situated approximately 3.25km (two miles) to the east. Birmingham city centre is situated approximately 22 miles to the north east, Bromsgrove is situated approximately 7 miles to the north east, Worcester city centre is situated approximately 8 miles to the south west, Kidderminster is situated approximately 9 miles to the north and Redditch is situated approximately 17 miles to the north east. Droitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester.",
-    "features": [
-      "Offices can be let individually or as a whole",
-      "Open plan offices with separate meeting rooms",
-      "LED lighting throughout the building",
-      "Air conditioned"
-    ],
-    "rent_psf": 11.67,
-    "rent_pa": 13000,
-    "rent": "£13,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "C (53)",
-    "images": [
-      "https://as-images.imgix.net/3ad5c8ab8ae1b6fc86c795a6f4fdc35e-letting346670.jpeg",
-      "https://as-images.imgix.net/74a5c00aaec936c4dfa3868968630036-letting346670.jpeg",
-      "https://as-images.imgix.net/c64618b552073c7842de44b7cccf5480-letting346670.jpeg",
-      "https://as-images.imgix.net/f3977a1837ea9fe67d62030f34edaace-letting346670.jpeg",
-      "https://as-images.imgix.net/b264930c27b0263ec9c18b1df734a469-letting346670.jpeg",
-      "https://as-images.imgix.net/e7eb2ea5def801cf0f423d567110d4b9-letting346670.jpeg",
-      "https://as-images.imgix.net/c00a87520001bccaee8f261238813870-letting346670.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/eaf21ce0263a71a141e11806b8f6bafb-letting346670.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-07-27 16:39:26"
-  },
-  {
     "id": 346668,
     "status": "Available",
     "address": "Units A & C B7 North",
