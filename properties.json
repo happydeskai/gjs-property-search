@@ -1,5 +1,83 @@
 [
   {
+    "id": 389516,
+    "status": "Available",
+    "address": "Unit 105, Pointon Way",
+    "town": "Droitwich",
+    "postcode": "WR9 0LW",
+    "lat": 52.281577,
+    "lon": -2.175892,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 42574,
+    "size_to_sqft": 42574,
+    "summary": "Industrial / Warehouse Unit with Offices and Parking on Stonebridge Cross Business Park",
+    "location": "Stonebridge Cross Business Park lies to the north of Droitwich town centre, approximately 3 miles from junction 5 of the M5 motorway. From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales.  The business park provides a modern business and logistics hub with all units being built to a high standard with their own car parking and secure service yards.",
+    "features": [
+      "Steel portal frame construction",
+      "Gated yard and barrier entrance car park",
+      "8.6m eaves",
+      "Two storey, quality offices",
+      "2 dock level loading doors",
+      "35 m yard depth",
+      "50 car parking spaces with EV charging points"
+    ],
+    "rent_psf": 7.75,
+    "rent_pa": 330000,
+    "rent": "£330,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/6e47af51ab02c67cc1a9681928c10bfa-img-1384.JPEG",
+      "https://as-images.imgix.net/a9e42c92aee59dd9a1a463a1ca5635a8-img-1381.JPEG",
+      "https://as-images.imgix.net/46a189ad0718eb799ed43c991bab8ad3-dji-0046.JPG",
+      "https://as-images.imgix.net/b4a6daf630446dfa30042398648daca3-dji-0043.JPG",
+      "https://as-images.imgix.net/3f3fd6c47637829aa26127c49abe4445-img-1363.JPEG",
+      "https://as-images.imgix.net/907f83a912610b97c8a19fa1f0d608f8-img-1365.JPEG",
+      "https://as-images.imgix.net/56fb8cb9065e3e0c010d2f7442dcaf41-img-1362-1.JPEG",
+      "https://as-images.imgix.net/2c2adf912eb368a2641022671f2f6269-img-1349.JPEG",
+      "https://as-images.imgix.net/6aa5dc20e246c4acbf66285c22bcff39-img-1351.JPEG",
+      "https://as-images.imgix.net/a7972478cdf3e704f2a6e47e85fba445-img-1353.JPEG",
+      "https://as-images.imgix.net/669651db79f713ca42676ed58ebd9996-img-1355.JPEG",
+      "https://as-images.imgix.net/83eea3b79fa8c7d1bfe8da942e51016e-img-1360.JPEG",
+      "https://as-images.imgix.net/e7a72607242b18d9156ff52b3c77cdb1-img-1358.JPEG",
+      "https://as-images.imgix.net/200cc125df4bb7651e719f27139166e5-img-1375.JPEG",
+      "https://as-images.imgix.net/3926d94d851fa476ab5f6bdf32a6e427-img-1357.JPEG",
+      "https://as-images.imgix.net/93189a1bfcba1d58b4da60b5e3eeba6c-img-1376.JPEG",
+      "https://as-images.imgix.net/7ac19f03f5a4346e96d24032143d57fa-img-1367.JPEG",
+      "https://as-images.imgix.net/15fae3f49d06c57fe038c2bcf137260e-dji-0049.JPG",
+      "https://as-images.imgix.net/0ae19c4365ac1219506702b4277fde50-img-1378.JPEG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/3d0552a679d0c441180f80846f07b295-pointon-way-droitwich-brochure-9387-v-1.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-08-25 12:02:21"
+  },
+  {
     "id": 351584,
     "status": "Available",
     "address": "155 London Road",
@@ -2337,84 +2415,6 @@
       }
     ],
     "last_updated": "2026-08-18 11:57:36"
-  },
-  {
-    "id": 389516,
-    "status": "Available",
-    "address": "Unit 105, Pointon Way",
-    "town": "Droitwich",
-    "postcode": "WR9 0LW",
-    "lat": 52.281577,
-    "lon": -2.175892,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 42574,
-    "size_to_sqft": 42574,
-    "summary": "Industrial / Warehouse Unit with Offices and Parking on Stonebridge Cross Business Park",
-    "location": "Stonebridge Cross Business Park lies to the north of Droitwich town centre, approximately 3 miles from junction 5 of the M5 motorway. From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales.  The business park provides a modern business and logistics hub with all units being built to a high standard with their own car parking and secure service yards.",
-    "features": [
-      "Steel portal frame construction",
-      "Gated yard and barrier entrance car park",
-      "8.6m eaves",
-      "Two storey, quality offices",
-      "2 dock level loading doors",
-      "35 m yard depth",
-      "50 car parking spaces with EV charging points"
-    ],
-    "rent_psf": 7.75,
-    "rent_pa": 330000,
-    "rent": "£330,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/6e47af51ab02c67cc1a9681928c10bfa-img-1384.JPEG",
-      "https://as-images.imgix.net/a9e42c92aee59dd9a1a463a1ca5635a8-img-1381.JPEG",
-      "https://as-images.imgix.net/46a189ad0718eb799ed43c991bab8ad3-dji-0046.JPG",
-      "https://as-images.imgix.net/b4a6daf630446dfa30042398648daca3-dji-0043.JPG",
-      "https://as-images.imgix.net/3f3fd6c47637829aa26127c49abe4445-img-1363.JPEG",
-      "https://as-images.imgix.net/907f83a912610b97c8a19fa1f0d608f8-img-1365.JPEG",
-      "https://as-images.imgix.net/56fb8cb9065e3e0c010d2f7442dcaf41-img-1362-1.JPEG",
-      "https://as-images.imgix.net/2c2adf912eb368a2641022671f2f6269-img-1349.JPEG",
-      "https://as-images.imgix.net/6aa5dc20e246c4acbf66285c22bcff39-img-1351.JPEG",
-      "https://as-images.imgix.net/a7972478cdf3e704f2a6e47e85fba445-img-1353.JPEG",
-      "https://as-images.imgix.net/669651db79f713ca42676ed58ebd9996-img-1355.JPEG",
-      "https://as-images.imgix.net/83eea3b79fa8c7d1bfe8da942e51016e-img-1360.JPEG",
-      "https://as-images.imgix.net/e7a72607242b18d9156ff52b3c77cdb1-img-1358.JPEG",
-      "https://as-images.imgix.net/200cc125df4bb7651e719f27139166e5-img-1375.JPEG",
-      "https://as-images.imgix.net/3926d94d851fa476ab5f6bdf32a6e427-img-1357.JPEG",
-      "https://as-images.imgix.net/93189a1bfcba1d58b4da60b5e3eeba6c-img-1376.JPEG",
-      "https://as-images.imgix.net/7ac19f03f5a4346e96d24032143d57fa-img-1367.JPEG",
-      "https://as-images.imgix.net/15fae3f49d06c57fe038c2bcf137260e-dji-0049.JPG",
-      "https://as-images.imgix.net/0ae19c4365ac1219506702b4277fde50-img-1378.JPEG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/3d0552a679d0c441180f80846f07b295-pointon-way-droitwich-brochure-9387-v-1.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-08-14 14:57:08"
   },
   {
     "id": 346649,
