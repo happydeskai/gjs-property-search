@@ -1,5 +1,69 @@
 [
   {
+    "id": 353367,
+    "status": "Available",
+    "address": "4 Edgar Street",
+    "town": "Worcester",
+    "postcode": "WR1 2LR",
+    "lat": 52.188219,
+    "lon": -2.219159,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1182,
+    "size_to_sqft": 1182,
+    "summary": "Period building next to Worcester Cathedral",
+    "description": "4 Edgar Street is a mid terrace office building arranged over three floors, offering office suites with character and a practical layout suitable for professional occupiers. The building benefits from recent redecoration. Natural light floods the offices through large sash windows, creating a bright and productive working environment.\n\nThe property also features kitchen facilities and WC provisions, with the added convenience of on-site car parking. Its location provides excellent access to Worcester city centre amenities and transport links, making it an ideal base for a wide range of businesses.\n\n\t\t\nTotal\t1,182 sq ft \t109.81 sq m",
+    "location": "Edgar Street is close to City Walls Road and Sidbury with good transport links.  Close by are the main shopping areas of Worcester city centre and other amenities which are within walking distance.  Several public car parks are in the vicinity.\n\nWorcester is a major West Midlands city located approximately 120 miles North West of London, 30 miles south west of Birmingham, 25 miles to the north of Cheltenham and 26 miles to the north east of Hereford city centre.  Motorway access to the city is very good with junctions 6 and 7 of the M5 motorway being within three miles of the city centre giving direct access to the national motorway network.",
+    "features": [
+      "1,182 Sq ft (109.81sq m)",
+      "Prominent self-contained office building in Worcester city centre",
+      "On-site parking",
+      "Walking distance to Worcester High Street",
+      "Good access to J6 and J7 of the M5 Motorway"
+    ],
+    "rent_psf": 9.98,
+    "rent_pa": 11800,
+    "rent": "£11,800 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 6300,
+    "epc_rating": "E (110)",
+    "images": [
+      "https://as-images.imgix.net/52ddfd30fcac1a7604f73c1cb6eeaa24-20251007-133403505-ios.jpg",
+      "https://as-images.imgix.net/e269f8239e26409748784bc168c2ea0a-20251007-134233217-ios.jpg",
+      "https://as-images.imgix.net/1b997cd9670f4dc0237a994461e5e42e-20251007-134408708-ios.jpg",
+      "https://as-images.imgix.net/3a40a6210fa0225609ccea31752ee704-20251007-134632326-ios.jpg",
+      "https://as-images.imgix.net/3e2fd6d9e000b5b18020ab09341937eb-20251007-134458279-ios.jpg",
+      "https://as-images.imgix.net/e92ace500233b3f48c3cf5744e10a99b-20251007-134452542-ios.jpg",
+      "https://as-images.imgix.net/307237e70624807fa50d7e698904019a-20251007-134423604-ios.jpg",
+      "https://as-images.imgix.net/192ec0c4052f22c8821a14038906c816-20251007-134331571-ios.jpg",
+      "https://as-images.imgix.net/5a83164762e1e24d5ebc1f98524a4836-20251007-134158010-ios.jpg",
+      "https://as-images.imgix.net/fa7ba498ead5217e34f84d32df3fa513-20251007-134248668-ios.jpg",
+      "https://as-images.imgix.net/be2036dd2295a2578b3b263a86224b43-20251007-134122797-ios.jpg",
+      "https://as-images.imgix.net/bebb305d719aebf161d0823f6f958e66-20251007-133848178-ios.jpg",
+      "https://as-images.imgix.net/566fef15f52dad5c7e31c3a6124375eb-20251007-133831187-ios.jpg",
+      "https://as-images.imgix.net/a18f26fccb072c345ef13b53addbe8d7-20251007-134732224-ios.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/ab32a676c42530faadf8c50ec6521068-gjs-dillon-particulars-4-edgar-street-worcester.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-08-26 11:03:26"
+  },
+  {
     "id": 389516,
     "status": "Available",
     "address": "Unit 105, Pointon Way",
@@ -1488,70 +1552,6 @@
       }
     ],
     "last_updated": "2026-08-24 12:39:57"
-  },
-  {
-    "id": 353367,
-    "status": "Available",
-    "address": "4 Edgar Street",
-    "town": "Worcester",
-    "postcode": "WR1 2LR",
-    "lat": 52.188219,
-    "lon": -2.219159,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1182,
-    "size_to_sqft": 1182,
-    "summary": "Period building next to Worcester Cathedral",
-    "description": "4 Edgar Street is a mid terrace office building arranged over three floors, offering office suites with character and a practical layout suitable for professional occupiers. The building benefits from recent redecoration. Natural light floods the offices through large sash windows, creating a bright and productive working environment.\n\nThe property also features kitchen facilities and WC provisions, with the added convenience of on-site car parking. Its location provides excellent access to Worcester city centre amenities and transport links, making it an ideal base for a wide range of businesses.\n\n\t\t\nTotal\t1,182 sq ft \t109.81 sq m",
-    "location": "Edgar Street is close to City Walls Road and Sidbury with good transport links.  Close by are the main shopping areas of Worcester city centre and other amenities which are within walking distance.  Several public car parks are in the vicinity.\n\nWorcester is a major West Midlands city located approximately 120 miles North West of London, 30 miles south west of Birmingham, 25 miles to the north of Cheltenham and 26 miles to the north east of Hereford city centre.  Motorway access to the city is very good with junctions 6 and 7 of the M5 motorway being within three miles of the city centre giving direct access to the national motorway network.",
-    "features": [
-      "1,182 Sq ft (109.81sq m)",
-      "Prominent self-contained office building in Worcester city centre",
-      "On-site parking",
-      "Walking distance to Worcester High Street",
-      "Good access to J6 and J7 of the M5 Motorway"
-    ],
-    "rent_psf": 9.98,
-    "rent_pa": 11800,
-    "rent": "£11,800 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 6300,
-    "epc_rating": "E (110)",
-    "images": [
-      "https://as-images.imgix.net/52ddfd30fcac1a7604f73c1cb6eeaa24-20251007-133403505-ios.jpg",
-      "https://as-images.imgix.net/e269f8239e26409748784bc168c2ea0a-20251007-134233217-ios.jpg",
-      "https://as-images.imgix.net/1b997cd9670f4dc0237a994461e5e42e-20251007-134408708-ios.jpg",
-      "https://as-images.imgix.net/3a40a6210fa0225609ccea31752ee704-20251007-134632326-ios.jpg",
-      "https://as-images.imgix.net/3e2fd6d9e000b5b18020ab09341937eb-20251007-134458279-ios.jpg",
-      "https://as-images.imgix.net/e92ace500233b3f48c3cf5744e10a99b-20251007-134452542-ios.jpg",
-      "https://as-images.imgix.net/307237e70624807fa50d7e698904019a-20251007-134423604-ios.jpg",
-      "https://as-images.imgix.net/192ec0c4052f22c8821a14038906c816-20251007-134331571-ios.jpg",
-      "https://as-images.imgix.net/5a83164762e1e24d5ebc1f98524a4836-20251007-134158010-ios.jpg",
-      "https://as-images.imgix.net/fa7ba498ead5217e34f84d32df3fa513-20251007-134248668-ios.jpg",
-      "https://as-images.imgix.net/be2036dd2295a2578b3b263a86224b43-20251007-134122797-ios.jpg",
-      "https://as-images.imgix.net/bebb305d719aebf161d0823f6f958e66-20251007-133848178-ios.jpg",
-      "https://as-images.imgix.net/566fef15f52dad5c7e31c3a6124375eb-20251007-133831187-ios.jpg",
-      "https://as-images.imgix.net/a18f26fccb072c345ef13b53addbe8d7-20251007-134732224-ios.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/ab32a676c42530faadf8c50ec6521068-gjs-dillon-particulars-4-edgar-street-worcester.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-08-24 12:39:35"
   },
   {
     "id": 346884,
