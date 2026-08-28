@@ -1,5 +1,74 @@
 [
   {
+    "id": 396537,
+    "status": "Available",
+    "address": "Three Springs House",
+    "town": "Worcester",
+    "postcode": "WR5 1BW",
+    "lat": 52.191008,
+    "lon": -2.212897,
+    "types": [
+      "Development/Investment"
+    ],
+    "raw_types": [
+      "Development",
+      "Commercial Development",
+      "Development Site",
+      "Investment"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 10782,
+    "size_to_sqft": 10782,
+    "summary": "Freehold Development Opportunity in Central Worcester",
+    "description": "Three Springs House comprises a brick building arranged over the ground and first floors.  The building fronts Vincent Road to the east, with Three Springs Trading Estate being to the rear.  \nThe building was most recently occupied as offices over part of the ground and the whole of the first floor, with there being two commercial units over the ground floor.  There is a main reception area which offers a central core to all four areas of the building.\nIndicative plans are available showing development to 21 flats – arranged as 11 x one bedroom flats over the ground floor and eight x one bedroom plus two x two bedroom flats over the first floor.\n\nGround Floor (Unit 9)\t\t2,174 sq ft\t201.97 sq m\nGround Floor (Units 9A & 10)\t3,255 sq ft\t302.40 sq m\nFirst Floor (Unit 10A)\t\t2,177 sq ft\t202.25 sq m\nFirst Floor (Unit 10B)\t\t3,176 sq ft\t295.06 sq m\n\nTotal\t\t\t\t10,782 sq ft\t1,001.68 sq m\n\nAlternative Uses\nShould an alternative use be sought, the office space is eligible for permitted development with reports & surveys available for a car free scheme.  Applicants should make their own enquiries with Worcester City Council.",
+    "location": "Three Springs House is located on Vincent Road, to the front of Three Springs Trading Estate in Worcester.  The property forms part of an established commercial and residential area, with industrial accommodation to the rear and housing along the remainder of Vincent Road.\nThe property is situated circa 600m east of Worcester city centre.  The city offers a broad range of shops, restaurants, cafes and leisure facilities, centred around the High Street and Cathedral.\nThere is therefore good connectivity, with Worcester Foregate Street and Worcester Shrub Hill being in walking distance, and providing links to Birmingham, London and other regional destinations.  The M5 motorway runs to the east of the city, with Junctions 6 & 7 being easily accessed from the property.",
+    "features": [
+      "Two storey building totalling 10,782 sq ft",
+      "For sale with vacant possession",
+      "Previously occupied as office accommodation with ground floor workshop space",
+      "Situated 600m east of Worcester City Centre",
+      "Plans available showing development to 21 flats – arranged as 11 x   one bedroom flats over the ground floor and eight x one bedroom plus two x two bedroom flats over the first floor"
+    ],
+    "price": "£800,000 Offers Over",
+    "price_value": 800000,
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/4fde780f34f252270252dab414c2d8ee-img-1404.JPEG",
+      "https://as-images.imgix.net/6ae1ea2a705d9d71e42f894a6bb4b64d-img-1397.JPEG",
+      "https://as-images.imgix.net/93433e57ac12184a54ef6cefbec5d6f7-img-1403.JPEG",
+      "https://as-images.imgix.net/7c5ccb1a9b1c358d9b591e39c6f1d244-img-1410.JPEG",
+      "https://as-images.imgix.net/ae6959c702016e54350975636778c784-img-1408.JPEG",
+      "https://as-images.imgix.net/915f0d7ad8bb66479be9cabbd32540fe-img-1411.JPEG",
+      "https://as-images.imgix.net/7688582f97e84fe799d07d2e62431a7a-img-1421.JPEG",
+      "https://as-images.imgix.net/f5350d6831064927bd306574ad8e7b87-img-1418.JPEG",
+      "https://as-images.imgix.net/f3c6370e8ceb39265b1d0c78437af998-img-1412.JPEG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/a33279199ac51a3569051c5aac927e7e-gjs-dillon-particulars-three-springs-house-worcester-2.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-08-28 19:16:40"
+  },
+  {
     "id": 346706,
     "status": "Available",
     "address": "Evesham Trade Centre",
