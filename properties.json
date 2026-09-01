@@ -1,5 +1,144 @@
 [
   {
+    "id": 358186,
+    "status": "Available",
+    "address": "44 High Street",
+    "town": "Bromsgrove",
+    "postcode": "B61 8HQ",
+    "lat": 52.333969,
+    "lon": -2.061572,
+    "types": [
+      "Office",
+      "Retail"
+    ],
+    "raw_types": [
+      "Office",
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1686,
+    "size_to_sqft": 1686,
+    "summary": "Bromsgrove Town Centre Retail / Office Space",
+    "description": "44 High Street offers a mid-terrace unit that forms part of a larger retail parade.  The building is arranged over the ground, first and second floors.  The property offers a retail/ office area over the ground floor, which provides a prominent frontage to the High Street.  Over the first and second floors there is ancillary office accommodation.  There are WC and kitchen facilities within the premises. \n\t\t\t\t\nGround Floor 618 sq ft / 57.4 sq m \nFirst Floor 580 sq ft / 53.9 sq m\nSecond Floor 487 sq ft / 45.2 sq m \nTotal\t1,686 sq ft\t156.5 sq m",
+    "location": "The property is situated in Bromsgrove Town Centre, to the southern end of the High Street.  Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the town centre, giving access to the Midlands motorway network.\n\nBirmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south.",
+    "features": [
+      "1,685 sq ft (156.5 sq m) NIA",
+      "Well proportioned accommodation over three floors",
+      "Benefitting from a prominent frontage",
+      "Town centre location"
+    ],
+    "rent_psf": 10.38,
+    "rent_pa": 17500,
+    "rent": "£17,500 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 10500,
+    "epc_rating": "D (97)",
+    "images": [
+      "https://as-images.imgix.net/6aee8a8e8f2294bf3cbd950496c082e9-20260323-152314355-ios.jpg",
+      "https://as-images.imgix.net/d2575591e5a3311a6e58d9d57708e829-20260323-152638652-ios.jpg",
+      "https://as-images.imgix.net/1b7a309635ce87dcac8bf28ab93edb76-20260323-152552413-ios.jpg",
+      "https://as-images.imgix.net/c75c4812fa280db7f063b37175a63e6e-20260323-152822882-ios.jpg",
+      "https://as-images.imgix.net/e67a8a8891751f093d35c7bd3297e223-20260323-153008924-ios.jpg",
+      "https://as-images.imgix.net/ad77a61d943fe287eee1e8be16afbbab-20260323-152909173-ios.jpg",
+      "https://as-images.imgix.net/0c7d321e2c4626f5856ef03a24c762eb-20260323-153116431-ios.jpg",
+      "https://as-images.imgix.net/8fc56c260b41152c74b79d6b53ca96c7-20260323-152718114-ios.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/4de98ad7a141fb2df886c9e0b7f13223-gjs-dillon-particulars-44-high-street-bromsgrove-b61-8hq.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-09-01 12:47:47"
+  },
+  {
+    "id": 380642,
+    "status": "Available",
+    "address": "The Studio",
+    "town": "Stourbridge",
+    "postcode": "DY9 0HA",
+    "lat": 52.404336,
+    "lon": -2.1445,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3498,
+    "size_to_sqft": 8597,
+    "summary": "Quality Offices with Studio / Warehouse space in Unique Location",
+    "description": "The Studio splits into two separate buildings, which are linked by a covered walkway.  Externally the site offers parking for circa 50 cars, including having the provision for EV charging.  There is also a loading/unloading area to the front of the roller shutter door access to the studio / warehouse building.  The site is surrounded by residential properties and open countryside, making the property an accessible site set within a unique working environment.\n\nTo the rear of the site is the studio building, which comprises a large warehouse that has been converted to a commercial studio.  In addition, there is integral office space over the ground and first floors, including a board room, along with WC and kitchen facilities.\n\nSize\tSq M\tSq Ft\nGround\t362.03\t3,897\nFirst\t111.63\t1,202\nTotal \t473.66\t5,099 (NIA)\n\nTo the front of the site is the main office building.  Over the ground floor there is a reception, two separate offices / meeting rooms and a large open plan office.  The highlight of this building is the large conservatory, which offers meeting and breakout space.  Located off the open plan office is a mezzanine floor which offers further office / meeting space.  The first floor is accessed via an internal staircase and offers further separate offices and meeting rooms.  There are WCs and kitchen facilities throughout.\n\nSize\tSq M Sq Ft\nGround 222.57 2,396\nMezzanine Office 31.77 342\nFirst Floor 70.59\t760\nTotal 324.93\t3,498 (NIA)",
+    "location": "The Studio is situated in the attractive village of Broome, approximately 2 miles south of Stourbridge and 4 miles north of Kidderminster, benefiting from a pleasant rural setting whilst remaining readily accessible to the wider West Midlands. The property enjoys convenient access to the A491 and A456, providing links to the regional motorway network via the M5 (Junctions 3 and 4). A wide range of amenities are available in nearby Stourbridge, together with rail services connecting to Birmingham and the surrounding area.",
+    "features": [
+      "Total gross internal area of 8,597 sq ft (798.59 sq m) – with the studio / warehouse building being 5,099 sq ft (473.66 sq m) and the offices 3,498 sq ft (324.93 sq m)",
+      "Available To Let as a whole site, or as two separate buildings",
+      "Functional commercial space situated in an attractive rural setting.  The buildings have been finished with employee welfare in mind, making The Studio an exceptional place to work from",
+      "Situated a six mile (10-15 minute) drive from Junction 4 of the M5 Motorway"
+    ],
+    "rent_psf": 12.15,
+    "rent_pa": 42500,
+    "rent": "£42,500 - £94,000 per annum £42,500 for office building only. £42,500 for studio/warehouse. £94,000 per annum for whole site",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/8c7690d28554c6935bd6cab0cfde7359-dji-0009.JPG",
+      "https://as-images.imgix.net/adc17b7947afbbf22db58b6ca54400a6-img-1079.JPEG",
+      "https://as-images.imgix.net/3284b2c54efc66ef578e47af08adca53-dji-0006.JPG",
+      "https://as-images.imgix.net/3c941d28e5da10c54e86e7646241acba-img-1066.JPEG",
+      "https://as-images.imgix.net/2625050dcdfa403b9b58190b5fbdff06-img-1069.JPEG",
+      "https://as-images.imgix.net/ec976dfdeb25349655e4811ccffb8185-dji-0015.JPG",
+      "https://as-images.imgix.net/ff062e99b9bb08d365632b7ba287ce64-dji-0013.JPG",
+      "https://as-images.imgix.net/f9a055dc8b93dd9ce89c37a9bcfa7803-img-1072.JPEG",
+      "https://as-images.imgix.net/f4b3d46f69c7a7fce7a8932bd03db199-img-1071.JPEG",
+      "https://as-images.imgix.net/331f1d1cf60aec42a08883bb7f158972-img-1074.JPEG",
+      "https://as-images.imgix.net/9bc4c66a2c6fe6b54ebf57974cfc0742-img-1051.JPEG",
+      "https://as-images.imgix.net/750744a4e9e2a6f179e189bec6dfa9a5-img-1049.JPEG",
+      "https://as-images.imgix.net/6ca0a2e0b35f6cbed8065c112d07e517-img-1047.JPEG",
+      "https://as-images.imgix.net/94e745252ea66738d454ece05edfbfcc-img-1058.JPEG",
+      "https://as-images.imgix.net/cb894064bc0ee7f8d09663f28b129740-img-1057.JPEG",
+      "https://as-images.imgix.net/fec278630cb7c4ab80d5866f090a213b-img-1061.JPEG",
+      "https://as-images.imgix.net/cb654d97bab4fc550a61d6ed63ebe045-img-1052.JPEG",
+      "https://as-images.imgix.net/4e15af89ff90f0cc9a32236872c11e8e-img-1064.JPEG",
+      "https://as-images.imgix.net/96d6b573ac61e3cb7c20eb4c8a44fa54-img-1056.JPEG",
+      "https://as-images.imgix.net/db3996a7cdb361097de8da29f25420c9-img-1053.JPEG",
+      "https://as-images.imgix.net/e42c85110ab740637f670bf8c5777961-img-1062.JPEG",
+      "https://as-images.imgix.net/106e0690a2bb52876aa3bc88d3742e28-dji-0019.JPG",
+      "https://as-images.imgix.net/2affe87bc6b7efe5728ee783b431afc9-dji-0010.JPG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c90489e1ca4c150bccdb7524b16d765b-gjs-dillon-particulars-the-studio-broome-stourbridge.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-09-01 09:15:59"
+  },
+  {
     "id": 396537,
     "status": "Available",
     "address": "Three Springs House",
@@ -1133,7 +1272,7 @@
       {
         "name": "Susanne Phipps",
         "email": "susannephipps@gjsdillon.co.uk",
-        "phone": "",
+        "phone": "01905 676169",
         "mobile": "",
         "company": "GJS Dillon Limited",
         "branch": "Droitwich"
@@ -1568,65 +1707,6 @@
       }
     ],
     "last_updated": "2026-08-24 12:43:53"
-  },
-  {
-    "id": 358186,
-    "status": "Available",
-    "address": "44 High Street",
-    "town": "Bromsgrove",
-    "postcode": "B61 8HQ",
-    "lat": 52.333969,
-    "lon": -2.061572,
-    "types": [
-      "Office",
-      "Retail"
-    ],
-    "raw_types": [
-      "Office",
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1686,
-    "size_to_sqft": 1686,
-    "summary": "Bromsgrove Town Centre Retail / Office Space",
-    "description": "44 High Street offers a mid-terrace unit that forms part of a larger retail parade.  The building is arranged over the ground, first and second floors.  The property offers a retail/ office area over the ground floor, which provides a prominent frontage to the High Street.  Over the first and second floors there is ancillary office accommodation.  There are WC and kitchen facilities within the premises. \n\t\t\t\t\nGround Floor 618 sq ft / 57.4 sq m \nFirst Floor 580 sq ft / 53.9 sq m\nSecond Floor 487 sq ft / 45.2 sq m \nTotal\t1,686 sq ft\t156.5 sq m",
-    "location": "The property is situated in Bromsgrove Town Centre, to the southern end of the High Street.  Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the town centre, giving access to the Midlands motorway network.\n\nBirmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south.",
-    "features": [
-      "1,685 sq ft (156.5 sq m) NIA",
-      "Well proportioned accommodation over three floors",
-      "Benefitting from a prominent frontage",
-      "Town centre location"
-    ],
-    "rent_psf": 10.38,
-    "rent_pa": 17500,
-    "rent": "£17,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 10500,
-    "epc_rating": "D (97)",
-    "images": [
-      "https://as-images.imgix.net/6aee8a8e8f2294bf3cbd950496c082e9-20260323-152314355-ios.jpg",
-      "https://as-images.imgix.net/d2575591e5a3311a6e58d9d57708e829-20260323-152638652-ios.jpg",
-      "https://as-images.imgix.net/1b7a309635ce87dcac8bf28ab93edb76-20260323-152552413-ios.jpg",
-      "https://as-images.imgix.net/c75c4812fa280db7f063b37175a63e6e-20260323-152822882-ios.jpg",
-      "https://as-images.imgix.net/e67a8a8891751f093d35c7bd3297e223-20260323-153008924-ios.jpg",
-      "https://as-images.imgix.net/ad77a61d943fe287eee1e8be16afbbab-20260323-152909173-ios.jpg",
-      "https://as-images.imgix.net/0c7d321e2c4626f5856ef03a24c762eb-20260323-153116431-ios.jpg",
-      "https://as-images.imgix.net/8fc56c260b41152c74b79d6b53ca96c7-20260323-152718114-ios.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9ddc48fdb820c858498c700f80eb4e1c-gjs-dillon-particulars-44-high-street-bromsgrove-b61-8hq-2.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-08-24 12:43:42"
   },
   {
     "id": 371699,
@@ -3203,86 +3283,6 @@
       }
     ],
     "last_updated": "2026-08-10 16:44:37"
-  },
-  {
-    "id": 380642,
-    "status": "Available",
-    "address": "The Studio",
-    "town": "Stourbridge",
-    "postcode": "DY9 0HA",
-    "lat": 52.404336,
-    "lon": -2.1445,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3498,
-    "size_to_sqft": 8597,
-    "summary": "Quality Offices with Studio / Warehouse space in Unique Location",
-    "description": "The Studio splits into two separate buildings, which are linked by a covered walkway.  Externally the site offers parking for circa 50 cars, including having the provision for EV charging.  There is also a loading/unloading area to the front of the roller shutter door access to the studio / warehouse building.  The site is surrounded by residential properties and open countryside, making the property an accessible site set within a unique working environment.\n\nTo the rear of the site is the studio building, which comprises a large warehouse that has been converted to a commercial studio.  In addition, there is integral office space over the ground and first floors, including a board room, along with WC and kitchen facilities.\n\nSize\tSq M\tSq Ft\nGround\t362.03\t3,897\nFirst\t111.63\t1,202\nTotal \t473.66\t5,099 (NIA)\n\nTo the front of the site is the main office building.  Over the ground floor there is a reception, two separate offices / meeting rooms and a large open plan office.  The highlight of this building is the large conservatory, which offers meeting and breakout space.  Located off the open plan office is a mezzanine floor which offers further office / meeting space.  The first floor is accessed via an internal staircase and offers further separate offices and meeting rooms.  There are WCs and kitchen facilities throughout.\n\nSize\tSq M Sq Ft\nGround 222.57 2,396\nMezzanine Office 31.77 342\nFirst Floor 70.59\t760\nTotal 324.93\t3,498 (NIA)",
-    "location": "The Studio is situated in the attractive village of Broome, approximately 2 miles south of Stourbridge and 4 miles north of Kidderminster, benefiting from a pleasant rural setting whilst remaining readily accessible to the wider West Midlands. The property enjoys convenient access to the A491 and A456, providing links to the regional motorway network via the M5 (Junctions 3 and 4). A wide range of amenities are available in nearby Stourbridge, together with rail services connecting to Birmingham and the surrounding area.",
-    "features": [
-      "Total gross internal area of 8,597 sq ft (798.59 sq m) – with the studio / warehouse building being 5,099 sq ft (473.66 sq m) and the offices 3,498 sq ft (324.93 sq m)",
-      "Available To Let as a whole site, or as two separate buildings",
-      "Functional commercial space situated in an attractive rural setting.  The buildings have been finished with employee welfare in mind, making The Studio an exceptional place to work from",
-      "Situated a six mile (10-15 minute) drive from Junction 4 of the M5 Motorway"
-    ],
-    "rent_psf": 12.15,
-    "rent_pa": 42500,
-    "rent": "£42,500 - £94,000 per annum £42,500 for office building only. £42,500 for studio/warehouse. £94,000 per annum for whole site",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/8c7690d28554c6935bd6cab0cfde7359-dji-0009.JPG",
-      "https://as-images.imgix.net/adc17b7947afbbf22db58b6ca54400a6-img-1079.JPEG",
-      "https://as-images.imgix.net/3284b2c54efc66ef578e47af08adca53-dji-0006.JPG",
-      "https://as-images.imgix.net/3c941d28e5da10c54e86e7646241acba-img-1066.JPEG",
-      "https://as-images.imgix.net/2625050dcdfa403b9b58190b5fbdff06-img-1069.JPEG",
-      "https://as-images.imgix.net/ec976dfdeb25349655e4811ccffb8185-dji-0015.JPG",
-      "https://as-images.imgix.net/ff062e99b9bb08d365632b7ba287ce64-dji-0013.JPG",
-      "https://as-images.imgix.net/f9a055dc8b93dd9ce89c37a9bcfa7803-img-1072.JPEG",
-      "https://as-images.imgix.net/f4b3d46f69c7a7fce7a8932bd03db199-img-1071.JPEG",
-      "https://as-images.imgix.net/331f1d1cf60aec42a08883bb7f158972-img-1074.JPEG",
-      "https://as-images.imgix.net/9bc4c66a2c6fe6b54ebf57974cfc0742-img-1051.JPEG",
-      "https://as-images.imgix.net/750744a4e9e2a6f179e189bec6dfa9a5-img-1049.JPEG",
-      "https://as-images.imgix.net/6ca0a2e0b35f6cbed8065c112d07e517-img-1047.JPEG",
-      "https://as-images.imgix.net/94e745252ea66738d454ece05edfbfcc-img-1058.JPEG",
-      "https://as-images.imgix.net/cb894064bc0ee7f8d09663f28b129740-img-1057.JPEG",
-      "https://as-images.imgix.net/fec278630cb7c4ab80d5866f090a213b-img-1061.JPEG",
-      "https://as-images.imgix.net/cb654d97bab4fc550a61d6ed63ebe045-img-1052.JPEG",
-      "https://as-images.imgix.net/4e15af89ff90f0cc9a32236872c11e8e-img-1064.JPEG",
-      "https://as-images.imgix.net/96d6b573ac61e3cb7c20eb4c8a44fa54-img-1056.JPEG",
-      "https://as-images.imgix.net/db3996a7cdb361097de8da29f25420c9-img-1053.JPEG",
-      "https://as-images.imgix.net/e42c85110ab740637f670bf8c5777961-img-1062.JPEG",
-      "https://as-images.imgix.net/106e0690a2bb52876aa3bc88d3742e28-dji-0019.JPG",
-      "https://as-images.imgix.net/2affe87bc6b7efe5728ee783b431afc9-dji-0010.JPG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c90489e1ca4c150bccdb7524b16d765b-gjs-dillon-particulars-the-studio-broome-stourbridge.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-08-07 14:31:23"
   },
   {
     "id": 376681,
