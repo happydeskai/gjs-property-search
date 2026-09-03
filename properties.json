@@ -58,7 +58,18 @@
       "https://as-images.imgix.net/2affe87bc6b7efe5728ee783b431afc9-dji-0010.JPG"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/d12ebe4717d54d44474f0e13a37300c9-gjs-dillon-particulars-the-studio-broome-stourbridge-1.pdf",
-    "floor_plan_urls": [],
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/12b1fea0722a887ecd6a07c13ecbded0-cam04581g0-pr0076-all-build.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/e0b5dc476bc3a0397175632a69b35668-cam04581g0-pr0076-build01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/b30014ef1bf7d46da7444b2e5dbb0d76-cam04581g0-pr0076-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/467fbc1db9b30145984583f6bc6f4f04-cam04581g0-pr0076-build01-floor01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/f31676422f112a8fd345d148e483daa3-cam04581g0-pr0076-build02.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/bef4b7f2ebdfc04d1f64b0d19be443fa-cam04581g0-pr0076-build02-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/e253c2ea7395fbeecc5cd77a8d5acdab-cam04581g0-pr0076-build02-floor01.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/thestudiobroome"
+    ],
     "contacts": [
       {
         "name": "Jorge Bray",
@@ -77,7 +88,7 @@
         "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-09-01 15:56:27"
+    "last_updated": "2026-09-03 12:06:23"
   },
   {
     "id": 354040,
