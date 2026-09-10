@@ -18,6 +18,12 @@ const SMTP_USER   = process.env.SMTP_USER;
 const SMTP_PASS   = process.env.SMTP_PASS;
 const FROM_EMAIL  = process.env.FROM_EMAIL || 'bamboo.admin@gjsdillon.co.uk';
 const TO_CONTACT  = process.env.TO_CONTACT || 'info@gjsdillon.co.uk';
+// CRM intake address (Flight). Currently the UAT/test system — set the TO_CRM env var
+// in Vercel to switch to the live address. Comma-separate for multiple recipients,
+// or set it to an empty string to turn the CRM copy off entirely.
+const TO_CRM      = process.env.TO_CRM === undefined
+  ? '6aa15b6a07cc4-gjs-dillon-uat@uat-app.co.uk'
+  : process.env.TO_CRM;
 
 const ALLOW_ORIGINS = (process.env.CORS_ORIGINS || process.env.CORS_ORIGIN || '*')
   .split(',')
@@ -139,15 +145,28 @@ module.exports = async (req, res) => {
   </div>` : ''}
 </body></html>`;
 
+    const subject = `Website contact${reasonForContact ? ' — ' + reasonForContact : ''}`;
+    const mail = { from: FROM_EMAIL, subject, html, text, replyTo: email };
+
+    // Primary recipient — must succeed; a failure here still returns 500 as before.
     await transporter.sendMail({
-      from: FROM_EMAIL,
+      ...mail,
       to: TO_CONTACT,
-      subject: `Website contact${reasonForContact ? ' — ' + reasonForContact : ''}`,
-      html,
-      text,
-      replyTo: email,
       headers: { 'X-Origin': 'standard-contact' }
     });
+
+    // CRM copy — best effort. Never fail the visitor's submission because the CRM is down.
+    if (TO_CRM) {
+      try {
+        await transporter.sendMail({
+          ...mail,
+          to: TO_CRM,
+          headers: { 'X-Origin': 'standard-contact-crm' }
+        });
+      } catch (crmErr) {
+        console.error('send-contact CRM copy failed', crmErr);
+      }
+    }
 
     res.status(200).json({ ok: true });
   } catch (err) {
