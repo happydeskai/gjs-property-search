@@ -1,5 +1,88 @@
 [
   {
+    "id": 363173,
+    "status": "Available",
+    "address": "Unit 12, The IO Centre",
+    "town": "Redditch",
+    "postcode": "B98 7AS",
+    "lat": 52.291602,
+    "lon": -1.913239,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 31834,
+    "size_to_sqft": 31834,
+    "summary": "Warehouse with Offices - to be refurbished",
+    "description": "Unit 12, The IO Centre is located on an established estate within Redditch.  The unit is to be refurbished once the current tenant has vacated. \n\nThe property is available on sublease of an existing tenancy, which expires in June 2032. A new lease may be available subject to the Landlord’s approval.",
+    "location": "The IO Centre is a premier industrial estate located on Nash Road. The property benefits from excellent road communications with Junction 3 of the M42 approximately seven miles to the north, which gives access to the M40, M5 and M6.\n\nThe estate is well managed, with recent upgrades including full redecoration of the external cladding, improvements to the estate lighting, and completion of road maintenance works.",
+    "features": [
+      "Unit 12 - 31,834 sq ft (2,958 sq m)",
+      "Two storey offices",
+      "9.5m eaves height",
+      "Four electric level loading doors",
+      "45 car parking spaces",
+      "40m yard depth",
+      "Palisade fenced / gated yard area",
+      "Kitchen and WC facilities"
+    ],
+    "rent_psf": 11.5,
+    "rent_pa": 366091,
+    "rent": "£11.50 per sq ft",
+    "business_rates_psf": 0,
+    "rateable_value": 226000,
+    "epc_rating": "C (66)",
+    "images": [
+      "https://as-images.imgix.net/0ef80a0612b24e462530ec5f74c03a66-dji-0963-1.JPG",
+      "https://as-images.imgix.net/29d2bd4b77dc0d7f0139d0627c167dd1-20260305-155606938-ios-1.jpg",
+      "https://as-images.imgix.net/bfb3c2abc6a1b6a1956b6a0ad690761f-20260305-155537789-ios-1.jpg",
+      "https://as-images.imgix.net/663d5b0d51ecae241d780c71832a9acd-20260305-154039807-ios-1.jpg",
+      "https://as-images.imgix.net/d43cbb5eaa3150c150c44e81ddad8d98-dji-0960-1.JPG",
+      "https://as-images.imgix.net/32cd9ee956df0f9bac2bdd3f257e5167-20260305-153246138-ios-1.jpg",
+      "https://as-images.imgix.net/3829d675550ebf4d20ef1a455ce55e14-20260305-154649082-ios-1.jpg",
+      "https://as-images.imgix.net/1d2be7af7e3e92b50298bad4debeded7-20260305-153544892-ios-1.jpg",
+      "https://as-images.imgix.net/775a4ec4dd26fc7d6e1f0e5b9bd30383-20260305-153403734-ios-1.jpg",
+      "https://as-images.imgix.net/87df4c7797257860060099e878badfcb-20260305-154949770-ios-1.jpg",
+      "https://as-images.imgix.net/f8e2fc249fed9b15f48c2314d9943fc2-20260305-154839927-ios-1.jpg",
+      "https://as-images.imgix.net/d36b9fb3a9031ea6b9461adcce1c4d1b-20260305-153934754-ios-1.jpg",
+      "https://as-images.imgix.net/17edf7fbb891d5dbb20cdccef3d46e9e-20260305-153801490-ios-1.jpg",
+      "https://as-images.imgix.net/c605db316db470eb516a9ef48968976b-20260305-154322989-ios-1.jpg",
+      "https://as-images.imgix.net/ff1846d3aadad5d3399300a1c3b6a475-20260305-153819379-ios-1.jpg",
+      "https://as-images.imgix.net/cfe80fb0e9dedbff4ef7130948017110-20260305-154010189-ios-1.jpg",
+      "https://as-images.imgix.net/5acb370f9d176fb5e2be14fff92f0bfc-20260305-153632207-ios-1.jpg",
+      "https://as-images.imgix.net/7c4e55f0d38c3ffb7e8776261829c865-20260305-154026408-ios-1.jpg",
+      "https://as-images.imgix.net/56506afb5460ead7d7c55d78686a6b9e-20260305-154231180-ios-1.jpg",
+      "https://as-images.imgix.net/0c8350cc44b5aab23f46d24ffca57c62-20260305-154103412-ios-1.jpg",
+      "https://as-images.imgix.net/7d7fe36d26d975a3fca833d23f9a1120-dji-0965-1.JPG",
+      "https://as-images.imgix.net/c6c617d1996a299d075094588fecfd43-dji-0964-1.JPG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9d4d8712d375924ddd084a1dc9ee16a5-the-io-centre-redditch-brochure-units-5-6-12-v3.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-09-16 13:01:49"
+  },
+  {
     "id": 383292,
     "status": "Available",
     "address": "The Old Post Office",
@@ -2931,89 +3014,6 @@
       }
     ],
     "last_updated": "2026-08-12 16:01:48"
-  },
-  {
-    "id": 363173,
-    "status": "Available",
-    "address": "Unit 12, The IO Centre",
-    "town": "Redditch",
-    "postcode": "B98 7AS",
-    "lat": 52.291602,
-    "lon": -1.913239,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 31834,
-    "size_to_sqft": 31834,
-    "summary": "Warehouse with Offices - to be refurbished",
-    "description": "Unit 12, The IO Centre is located on an established estate within Redditch.  The unit is to be refurbished once the current tenant has vacated. \n\nThe property is available on sublease of an existing tenancy, which expires in June 2032. A new lease may be available subject to the Landlord’s approval.",
-    "location": "The IO Centre is a premier industrial estate located on Nash Road. The property benefits from excellent road communications with Junction 3 of the M42 approximately seven miles to the north, which gives access to the M40, M5 and M6.\n\nThe estate is well managed, with recent upgrades including full redecoration of the external cladding, improvements to the estate lighting, and completion of road maintenance works.",
-    "features": [
-      "Unit 12 - 31,834 sq ft (2,958 sq m)",
-      "Two storey offices",
-      "9.5m eaves height",
-      "Four electric level loading doors",
-      "45 car parking spaces",
-      "40m yard depth",
-      "Palisade fenced / gated yard area",
-      "Kitchen and WC facilities"
-    ],
-    "rent_psf": 11.5,
-    "rent_pa": 366091,
-    "rent": "£11.50 per sq ft",
-    "business_rates_psf": 0,
-    "rateable_value": 226000,
-    "epc_rating": "C (66)",
-    "images": [
-      "https://as-images.imgix.net/0ef80a0612b24e462530ec5f74c03a66-dji-0963-1.JPG",
-      "https://as-images.imgix.net/29d2bd4b77dc0d7f0139d0627c167dd1-20260305-155606938-ios-1.jpg",
-      "https://as-images.imgix.net/bfb3c2abc6a1b6a1956b6a0ad690761f-20260305-155537789-ios-1.jpg",
-      "https://as-images.imgix.net/663d5b0d51ecae241d780c71832a9acd-20260305-154039807-ios-1.jpg",
-      "https://as-images.imgix.net/d43cbb5eaa3150c150c44e81ddad8d98-dji-0960-1.JPG",
-      "https://as-images.imgix.net/32cd9ee956df0f9bac2bdd3f257e5167-20260305-153246138-ios-1.jpg",
-      "https://as-images.imgix.net/3829d675550ebf4d20ef1a455ce55e14-20260305-154649082-ios-1.jpg",
-      "https://as-images.imgix.net/1d2be7af7e3e92b50298bad4debeded7-20260305-153544892-ios-1.jpg",
-      "https://as-images.imgix.net/775a4ec4dd26fc7d6e1f0e5b9bd30383-20260305-153403734-ios-1.jpg",
-      "https://as-images.imgix.net/87df4c7797257860060099e878badfcb-20260305-154949770-ios-1.jpg",
-      "https://as-images.imgix.net/f8e2fc249fed9b15f48c2314d9943fc2-20260305-154839927-ios-1.jpg",
-      "https://as-images.imgix.net/d36b9fb3a9031ea6b9461adcce1c4d1b-20260305-153934754-ios-1.jpg",
-      "https://as-images.imgix.net/17edf7fbb891d5dbb20cdccef3d46e9e-20260305-153801490-ios-1.jpg",
-      "https://as-images.imgix.net/c605db316db470eb516a9ef48968976b-20260305-154322989-ios-1.jpg",
-      "https://as-images.imgix.net/ff1846d3aadad5d3399300a1c3b6a475-20260305-153819379-ios-1.jpg",
-      "https://as-images.imgix.net/cfe80fb0e9dedbff4ef7130948017110-20260305-154010189-ios-1.jpg",
-      "https://as-images.imgix.net/5acb370f9d176fb5e2be14fff92f0bfc-20260305-153632207-ios-1.jpg",
-      "https://as-images.imgix.net/7c4e55f0d38c3ffb7e8776261829c865-20260305-154026408-ios-1.jpg",
-      "https://as-images.imgix.net/56506afb5460ead7d7c55d78686a6b9e-20260305-154231180-ios-1.jpg",
-      "https://as-images.imgix.net/0c8350cc44b5aab23f46d24ffca57c62-20260305-154103412-ios-1.jpg",
-      "https://as-images.imgix.net/7d7fe36d26d975a3fca833d23f9a1120-dji-0965-1.JPG",
-      "https://as-images.imgix.net/c6c617d1996a299d075094588fecfd43-dji-0964-1.JPG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9d4d8712d375924ddd084a1dc9ee16a5-the-io-centre-redditch-brochure-units-5-6-12-v3.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-08-12 15:57:34"
   },
   {
     "id": 346841,
