@@ -1,5 +1,135 @@
 [
   {
+    "id": 346668,
+    "status": "Available",
+    "address": "Sterling House",
+    "town": "Malvern",
+    "postcode": "WR13 6NN",
+    "lat": 52.075309753,
+    "lon": -2.298809051,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 4265,
+    "size_to_sqft": 4265,
+    "summary": "Office To Let, Malvern",
+    "description": "The property is a modern, detached, purpose-built office arranged over the ground floor. The construction is of brick and block cavity walls, surmounted by a pitched tiled roof. The building provides modern office accommodation with suspended ceilings, inset lighting, air conditioning and perimeter trunking throughout. \n\nThe offices can be occupied as a whole or can be split to suit. There are WCs (male & female) and kitchens. The services are also split over each side of the ground floor, with separate meters and boilers. \n\nThere are approximately 16 car parking spaces. \n\nAlternative Use Potential: \nWith minor alterations by the landlord, the building is also suitable, in whole or in part, for Use Class B8 (Storage and Distribution). It would particularly suit the distribution of small, high-value goods via courier services, catering to growing demand for flexible, high-quality last-mile distribution space. \n\nGround Floor Half: 2,132.5 sq ft 198.2 sq m\nGround Floor Whole: 4,265 sq ft 396.4 sq m",
+    "location": "Willow End is located to the south of Great Malvern and east of Malvern Wells, in a rural location near the Three Counties Show Ground. Willow End is home to multiple office and warehouse buildings, including a recently built office/research facility. The business park is situated two and a half miles south of Great Malvern and eight and a half miles south west of Worcester. \n\nThe area benefits from good transport communications with both Junction 1 of the M50 and Junction 7 of the M5 being accessible from the property. Great Malvern also benefits from a mainline railway station which provides direct access to Worcester, Hereford and London Paddington.",
+    "features": [
+      "Set within an established Business Park",
+      "All suites refurbished to a high specification",
+      "Excellent links to the M50/M5 motorway network"
+    ],
+    "rent_psf": 9.03,
+    "rent_pa": 38500,
+    "rent": "£38,500 per annum | Half Floor Rent: £19,250 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/3083298872074535a3d0f7ba781b63d6-letting346668.jpeg",
+      "https://as-images.imgix.net/1ab64046b15c7f8943f43a42276259c2-letting346668.jpeg",
+      "https://as-images.imgix.net/b0c1094ca6872a982bf2b74fc04467a7-letting346668.jpeg",
+      "https://as-images.imgix.net/b65c15a4be1b1925c5cc6b37381bf637-letting346668.jpeg",
+      "https://as-images.imgix.net/346ffcf74fc9d4fd0154e4292e648063-letting346668.jpeg",
+      "https://as-images.imgix.net/20b103b941fdb4e022fa24b7655f7001-letting346668.jpeg",
+      "https://as-images.imgix.net/a71a7a09afa622984a47eed501e6a690-letting346668.jpeg",
+      "https://as-images.imgix.net/5c7c1c174457721a1bc8b24a1e888b0a-letting346668.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/1ebcd9e66f932941b3b1096d24470b19-gjs-dillon-particulars-unit-a-c-b7-willow-end-park-malvern-1.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/52fbe8e23cfd7edd1b9ebd9fcc41d58c-cam04581g0-pr0037-build01-floor00.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/unitsaandcwillowendpark/"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-09-21 14:04:30"
+  },
+  {
+    "id": 346667,
+    "status": "Under Offer",
+    "address": "Unit 3, Aston Fields Industrial Estate",
+    "town": "Bromsgrove",
+    "postcode": "B60 3EX",
+    "lat": 52.316474914,
+    "lon": -2.060755968,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial",
+      "Trade Counter"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2407,
+    "size_to_sqft": 2407,
+    "summary": "Industrial / Trade Counter To Let, Bromsgrove",
+    "description": "Unit 3 Aston Fields Industrial Estate comprises a mid-terrace commercial property of steel frame construction with brick & block elevations. The building is currently configured as a warehouse / industrial property, that has previously been used as a trade counter. Internally, there is a good-sized warehouse area with the benefit of 4.75m eaves. Located to the front of the unit is a separate office area and WCs - offering male & female. The property is accessed via a pedestrian door and roller shutter door. Externally there are two car parking spaces with loading / unloading facilities to the front of the access door.",
+    "location": "The property is situated in Bromsgrove, to the south of the town centre on Aston Fields Industrial Estate. Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the property, giving access to the Midlands motorway network. Birmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south. Aston Fields Industrial Estate benefits from communal landscaping, allocated & communal parking and extensive security, including CCTV and security gates.",
+    "features": [
+      "2,407 sq ft (223.62 sq m) GIA",
+      "Guide Rental of ¬£22,500 per annum (¬£1,875 per calendar month)",
+      "Large warehouse area with associated office & WCs",
+      "Situated on the popular Aston Fields Industrial Estate",
+      "Suitable for warehouse, industrial and trade counter usage",
+      "To be refurbished to a high standard, complementing the good EPC rating"
+    ],
+    "rent_psf": 9.35,
+    "rent_pa": 22500,
+    "rent": "£22,500 per annum",
+    "business_rates_psf": 9356.25,
+    "rateable_value": 18750,
+    "epc_rating": "C (73)",
+    "images": [
+      "https://as-images.imgix.net/96277afd1d935ff1eef14c737084a2be-20260715-141050-1.jpg",
+      "https://as-images.imgix.net/dce12f7d189b020e2c2f45eca0fa4c11-20260715-141523-1.jpg",
+      "https://as-images.imgix.net/717445a3795a84a6ca8da61efea81083-20260715-141612-1.jpg",
+      "https://as-images.imgix.net/496a91004a5f347744ba2941ae183648-letting346667.jpeg",
+      "https://as-images.imgix.net/03d955c31c6b8635099876ec53bca61a-letting346667.jpeg",
+      "https://as-images.imgix.net/f973c3e1348e9eae28509f2feb3950d2-letting346667.jpeg",
+      "https://as-images.imgix.net/0b81f6d26d5d454ec972149d79975da2-20260715-141633-1.jpg",
+      "https://as-images.imgix.net/355cb5fe29b635f8b1b3a94ef7367b69-letting346667.jpeg",
+      "https://as-images.imgix.net/f72527da7a0edd13f78b2a5bf6d782e6-letting346667.jpeg",
+      "https://as-images.imgix.net/d5ce7b420d355b76fd119ae42708a68c-letting346667.jpeg",
+      "https://as-images.imgix.net/6286f210bf7afa95860cb783f8e404a9-letting346667.jpeg",
+      "https://as-images.imgix.net/160376493646255613009638ca9a6690-letting346667.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/cd94666863ad559becbfa0f5ff80cca8-gjs-dillon-particulars-unit-3-aston-fields-industrial-estate-bromsgrove.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/35c9fd230bb3f9c14f69440b07975ccd-cam04581g0-pr0061-build01.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/3astonfieldsbromsgrove"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-09-21 11:06:38"
+  },
+  {
     "id": 404835,
     "status": "Available",
     "address": "Unit 9, Wassage Way South",
@@ -64,7 +194,7 @@
         "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-09-18 13:12:06"
+    "last_updated": "2026-09-21 10:15:37"
   },
   {
     "id": 363173,
@@ -328,7 +458,7 @@
     "size_from_sqft": 3364,
     "size_to_sqft": 3364,
     "summary": "High Bay Industrial / Warehouse Unit",
-    "description": "This modern industrial / warehouse unit has the following specification.\n\n•\tSteel portal frames\n•\tWC facilities\n•\tRoller shutter door\n•\tPedestrian access door\n•\tAllocated car parking  \n•\tLoading/unloading facilities\n•\tThree phase electricity\n•\t6m eaves \n•\tBlock walls with external composite paneling",
+    "description": "This modern industrial / warehouse unit has the following specification.\n\n•\tSteel portal frames\n���\tWC facilities\n•\tRoller shutter door\n•\tPedestrian access door\n•\tAllocated car parking  \n•\tLoading/unloading facilities\n•\tThree phase electricity\n•\t6m eaves \n•\tBlock walls with external composite paneling",
     "location": "Kidderminster itself is located to the north of Worcester and to the southwest of Stourbridge and has good road access to each, as well as Junctions 4, 5 and 6 of the M5 motorway.  Kidderminster also has a mainline railway station which provides a direct link into Birmingham Snow Hill.\n\nThe industrial estate is situated just off Silverwoods Way, on the former British Sugar Factory site, with easy access to both the Stourport Road and the main A442 Worcester Road which are two of the main arterial roads leading into Kidderminster Town Centre. In recent years, this part of Kidderminster has been totally transformed, attracting a number of high-profile occupiers along the Stourport Road and along Silverwoods Way itself, which has enhanced the area considerably making it a sought-after business location on the southern side of Kidderminster.",
     "features": [
       "6m eaves height",
@@ -3936,70 +4066,6 @@
     "last_updated": "2026-07-27 16:40:00"
   },
   {
-    "id": 346668,
-    "status": "Available",
-    "address": "Units A & C B7 North",
-    "town": "Malvern",
-    "postcode": "WR13 6NN",
-    "lat": 52.075309753,
-    "lon": -2.298809051,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 4265,
-    "size_to_sqft": 4265,
-    "summary": "Office To Let, Malvern",
-    "description": "The property is a modern, detached, purpose-built office arranged over the ground floor. The construction is of brick and block cavity walls, surmounted by a pitched tiled roof. The building provides modern office accommodation with suspended ceilings, inset lighting, air conditioning and perimeter trunking throughout. The offices can be occupied as a whole or can be split to suit. There are WCs (male & female) and kitchens. The services are also split over each side of the ground floor, with separate meters and boilers. There are approximately 16 car parking spaces. Alternative Use Potential With minor alterations by the landlord, the building is also suitable, in whole or in part, for Use Class B8 (Storage and Distribution). It would particularly suit the distribution of small, high-value goods via courier services, catering to growing demand for flexible, high-quality last-mile distribution space. Ground Floor 4,265 sq ft 396.4 sq m",
-    "location": "Willow End is located to the south of Great Malvern and east of Malvern Wells, in a rural location near the Three Counties Show Ground. Willow End is home to multiple office and warehouse buildings, including a recently built office/research facility. The business park is situated two and a half miles south of Great Malvern and eight and a half miles south west of Worcester. The area benefits from good transport communications with both Junction 1 of the M50 and Junction 7 of the M5 being accessible from the property. Great Malvern also benefits from a mainline railway station which provides direct access to Worcester, Hereford and London Paddington.",
-    "features": [
-      "Set within an established Business Park",
-      "All suites refurbished to a high specification",
-      "Excellent links to the M50/M5 motorway network"
-    ],
-    "rent_psf": 9.03,
-    "rent_pa": 38500,
-    "rent": "£38,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/3083298872074535a3d0f7ba781b63d6-letting346668.jpeg",
-      "https://as-images.imgix.net/1ab64046b15c7f8943f43a42276259c2-letting346668.jpeg",
-      "https://as-images.imgix.net/b0c1094ca6872a982bf2b74fc04467a7-letting346668.jpeg",
-      "https://as-images.imgix.net/b65c15a4be1b1925c5cc6b37381bf637-letting346668.jpeg",
-      "https://as-images.imgix.net/346ffcf74fc9d4fd0154e4292e648063-letting346668.jpeg",
-      "https://as-images.imgix.net/20b103b941fdb4e022fa24b7655f7001-letting346668.jpeg",
-      "https://as-images.imgix.net/a71a7a09afa622984a47eed501e6a690-letting346668.jpeg",
-      "https://as-images.imgix.net/bd7b5e4afc6bfe1e346df1cdc72869dd-letting346668.jpeg",
-      "https://as-images.imgix.net/5c7c1c174457721a1bc8b24a1e888b0a-letting346668.jpeg",
-      "https://as-images.imgix.net/f943d87988b38864f9aceed2313a326b-letting346668.jpeg",
-      "https://as-images.imgix.net/fba4239a9f7ef9ece29dd48c799cf8b2-letting346668.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/1ebcd9e66f932941b3b1096d24470b19-gjs-dillon-particulars-unit-a-c-b7-willow-end-park-malvern-1.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/52fbe8e23cfd7edd1b9ebd9fcc41d58c-cam04581g0-pr0037-build01-floor00.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/unitsaandcwillowendpark/"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-07-27 16:39:07"
-  },
-  {
     "id": 355287,
     "status": "Available",
     "address": "Building 314, Hartlebury Trading Estate",
@@ -4381,74 +4447,5 @@
       }
     ],
     "last_updated": "2026-07-27 16:36:27"
-  },
-  {
-    "id": 346667,
-    "status": "Available",
-    "address": "Unit 3, Aston Fields Industrial Estate",
-    "town": "Bromsgrove",
-    "postcode": "B60 3EX",
-    "lat": 52.316474914,
-    "lon": -2.060755968,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial",
-      "Trade Counter"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2407,
-    "size_to_sqft": 2407,
-    "summary": "Industrial / Trade Counter To Let, Bromsgrove",
-    "description": "Unit 3 Aston Fields Industrial Estate comprises a mid-terrace commercial property of steel frame construction with brick & block elevations. The building is currently configured as a warehouse / industrial property, that has previously been used as a trade counter. Internally, there is a good-sized warehouse area with the benefit of 4.75m eaves. Located to the front of the unit is a separate office area and WCs - offering male & female. The property is accessed via a pedestrian door and roller shutter door. Externally there are two car parking spaces with loading / unloading facilities to the front of the access door.",
-    "location": "The property is situated in Bromsgrove, to the south of the town centre on Aston Fields Industrial Estate. Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the property, giving access to the Midlands motorway network. Birmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south. Aston Fields Industrial Estate benefits from communal landscaping, allocated & communal parking and extensive security, including CCTV and security gates.",
-    "features": [
-      "2,407 sq ft (223.62 sq m) GIA",
-      "Guide Rental of ¬£22,500 per annum (¬£1,875 per calendar month)",
-      "Large warehouse area with associated office & WCs",
-      "Situated on the popular Aston Fields Industrial Estate",
-      "Suitable for warehouse, industrial and trade counter usage",
-      "To be refurbished to a high standard, complementing the good EPC rating"
-    ],
-    "rent_psf": 9.35,
-    "rent_pa": 22500,
-    "rent": "£22,500 per annum",
-    "business_rates_psf": 9356.25,
-    "rateable_value": 18750,
-    "epc_rating": "C (73)",
-    "images": [
-      "https://as-images.imgix.net/96277afd1d935ff1eef14c737084a2be-20260715-141050-1.jpg",
-      "https://as-images.imgix.net/dce12f7d189b020e2c2f45eca0fa4c11-20260715-141523-1.jpg",
-      "https://as-images.imgix.net/717445a3795a84a6ca8da61efea81083-20260715-141612-1.jpg",
-      "https://as-images.imgix.net/496a91004a5f347744ba2941ae183648-letting346667.jpeg",
-      "https://as-images.imgix.net/03d955c31c6b8635099876ec53bca61a-letting346667.jpeg",
-      "https://as-images.imgix.net/f973c3e1348e9eae28509f2feb3950d2-letting346667.jpeg",
-      "https://as-images.imgix.net/0b81f6d26d5d454ec972149d79975da2-20260715-141633-1.jpg",
-      "https://as-images.imgix.net/355cb5fe29b635f8b1b3a94ef7367b69-letting346667.jpeg",
-      "https://as-images.imgix.net/f72527da7a0edd13f78b2a5bf6d782e6-letting346667.jpeg",
-      "https://as-images.imgix.net/d5ce7b420d355b76fd119ae42708a68c-letting346667.jpeg",
-      "https://as-images.imgix.net/6286f210bf7afa95860cb783f8e404a9-letting346667.jpeg",
-      "https://as-images.imgix.net/160376493646255613009638ca9a6690-letting346667.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/cd94666863ad559becbfa0f5ff80cca8-gjs-dillon-particulars-unit-3-aston-fields-industrial-estate-bromsgrove.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/35c9fd230bb3f9c14f69440b07975ccd-cam04581g0-pr0061-build01.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/3astonfieldsbromsgrove"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-07-27 16:03:41"
   }
 ]
