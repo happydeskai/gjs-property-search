@@ -1,5 +1,211 @@
 [
   {
+    "id": 346668,
+    "status": "Available",
+    "address": "Sterling House",
+    "town": "Malvern",
+    "postcode": "WR13 6NN",
+    "lat": 52.075309753,
+    "lon": -2.298809051,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2132.5,
+    "size_to_sqft": 4265,
+    "summary": "Office To Let, Malvern",
+    "description": "The property is a modern, detached, purpose-built office arranged over the ground floor. The construction is of brick and block cavity walls, surmounted by a pitched tiled roof. The building provides modern office accommodation with suspended ceilings, inset lighting, air conditioning and perimeter trunking throughout. \n\nThe offices can be occupied as a whole or can be split to suit. There are WCs (male & female) and kitchens. The services are also split over each side of the ground floor, with separate meters and boilers. \n\nThere are approximately 16 car parking spaces. \n\nAlternative Use Potential: \nWith minor alterations by the landlord, the building is also suitable, in whole or in part, for Use Class B8 (Storage and Distribution). It would particularly suit the distribution of small, high-value goods via courier services, catering to growing demand for flexible, high-quality last-mile distribution space.",
+    "location": "Willow End is located to the south of Great Malvern and east of Malvern Wells, in a rural location near the Three Counties Show Ground. Willow End is home to multiple office and warehouse buildings, including a recently built office/research facility. The business park is situated two and a half miles south of Great Malvern and eight and a half miles south west of Worcester. \n\nThe area benefits from good transport communications with both Junction 1 of the M50 and Junction 7 of the M5 being accessible from the property. Great Malvern also benefits from a mainline railway station which provides direct access to Worcester, Hereford and London Paddington.",
+    "features": [
+      "Set within an established Business Park",
+      "All suites refurbished to a high specification",
+      "Excellent links to the M50/M5 motorway network"
+    ],
+    "rent_psf": 9.03,
+    "rent_pa": 19250,
+    "rent": "£19,250 - £38,500 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/3083298872074535a3d0f7ba781b63d6-letting346668.jpeg",
+      "https://as-images.imgix.net/b65c15a4be1b1925c5cc6b37381bf637-letting346668.jpeg",
+      "https://as-images.imgix.net/1ab64046b15c7f8943f43a42276259c2-letting346668.jpeg",
+      "https://as-images.imgix.net/b0c1094ca6872a982bf2b74fc04467a7-letting346668.jpeg",
+      "https://as-images.imgix.net/346ffcf74fc9d4fd0154e4292e648063-letting346668.jpeg",
+      "https://as-images.imgix.net/20b103b941fdb4e022fa24b7655f7001-letting346668.jpeg",
+      "https://as-images.imgix.net/a71a7a09afa622984a47eed501e6a690-letting346668.jpeg",
+      "https://as-images.imgix.net/5c7c1c174457721a1bc8b24a1e888b0a-letting346668.jpeg",
+      "https://as-images.imgix.net/07f9c5ab696e28549c3098d0bfe88073-20250529-093314264-ios.jpg",
+      "https://as-images.imgix.net/2aa8e0c4c3ecae674b70e7b8e19db9d1-20250529-093345734-ios.jpg",
+      "https://as-images.imgix.net/f9e7405df038ffef583daa89b5d9866e-20250529-093353512-ios.jpg",
+      "https://as-images.imgix.net/a65ea9b9dc3bfdba8148086471911299-20250529-093434457-ios.jpg",
+      "https://as-images.imgix.net/531861b86e39da98c4ade6d4f81969f1-20250529-093153234-ios.jpg",
+      "https://as-images.imgix.net/8c8e7f71f5ada1a579ad0765089b9a09-20250529-093456931-ios.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/1ebcd9e66f932941b3b1096d24470b19-gjs-dillon-particulars-unit-a-c-b7-willow-end-park-malvern-1.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/52fbe8e23cfd7edd1b9ebd9fcc41d58c-cam04581g0-pr0037-build01-floor00.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/unitsaandcwillowendpark/"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-09-22 12:27:42"
+  },
+  {
+    "id": 346649,
+    "status": "Available",
+    "address": "Unit 9, Centech Park",
+    "town": "Redditch",
+    "postcode": "B98 9NR",
+    "lat": 52.315120697,
+    "lon": -1.888914942,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 694,
+    "size_to_sqft": 1669,
+    "summary": "Quality offices in a shared building",
+    "description": "Unit 9 comprises a modern, self-contained single-storey office building arranged to provide two suites available to let with shared communal facilities. Both suites are finished to a good standard and benefit from LED lighting, electric heating and cooling, suspended ceilings and an intruder alarm system. Each suite offers predominantly open-plan accommodation with the flexibility to incorporate private offices if required. There is also a separate partitioned meeting room, which could be made available for shared use on a booking or separate licence basis. Communal areas include a welcoming reception/entrance hall, male and female WCs and a shared kitchen, which offers basic facilities. Externally, the property benefits from on-site parking, with an allocation of approximately five spaces per suite.",
+    "location": "Centech Park occupies a prominent position on Fringe Meadow Road within the well-established Moons Moat North Industrial Estate - Redditch's premier business location. The park forms part of a thriving commercial hub that attracts a strong mix of regional and national occupiers. The estate benefits from outstanding transport connectivity, situated just off the A4023, which links directly to Junction 2 of the M42 within minutes. This provides easy access to the wider Midlands motorway network, including the M5, M6 and M40, ensuring efficient distribution routes across the UK. Redditch town centre lies approximately 3 miles to the west, offering a range of retail and amenity facilities, with Redditch Train Station providing direct services to Birmingham New Street in under 40 minutes. The City of Birmingham is located approximately 15 miles north, making Centech Park ideally positioned for businesses seeking excellent regional access while benefiting from a strong local labour pool and established commercial environment.",
+    "features": [
+      "Suite 1 - 975 sq ft (90.61 sq m)",
+      "Suite 2 - 694 sq ft (64.52 sq m)",
+      "Both Suite 1 and 2 can be combined"
+    ],
+    "rent_psf": 9.58,
+    "rent_pa": 6650,
+    "rent": "£6,650 - £15,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "B (38)",
+    "images": [
+      "https://as-images.imgix.net/319f9680b62ff21abacdd57d284d787c-letting346649.jpeg",
+      "https://as-images.imgix.net/14b27874281c0e1f5e06aec4f1a70683-letting346649.jpeg",
+      "https://as-images.imgix.net/4fe7ade9866207f4a49900bfa8112fce-letting346649.jpeg",
+      "https://as-images.imgix.net/74a5182e7788980df742e2dbdf24306c-letting346649.jpeg",
+      "https://as-images.imgix.net/0b8e1d41a2b0d80ec70ee8ce1ffb7463-letting346649.jpeg",
+      "https://as-images.imgix.net/6183e14ac0968b64d2e7d13102f361a8-letting346649.jpeg",
+      "https://as-images.imgix.net/39f1a81f95668222e6d6b4293443535f-letting346649.jpeg",
+      "https://as-images.imgix.net/ba79f71c0e15c75bf5d06962bb05e0d0-letting346649.jpeg",
+      "https://as-images.imgix.net/42e2f9de810ffdc53c3e4a8755f94b20-letting346649.jpeg",
+      "https://as-images.imgix.net/b1660a12804ced569565b281c8d20ba8-letting346649.jpeg",
+      "https://as-images.imgix.net/8551d265630d06b2ce5e0a255f9936c2-letting346649.jpeg",
+      "https://as-images.imgix.net/a41aa27d9a57fb81c1b9c690626f7c8d-letting346649.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/af583ab5c67eac068a1dd6a2b45ce6af-gjs-dillon-particulars-centech-park-unit-9-fringe-meadow-road-redditch-b98-9nr.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/adb502b343d7bbad32c724f3d96d41d9-cam04581g0-pr0062-build01-floor00.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/suite1and2centechpark"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-09-22 11:23:52"
+  },
+  {
+    "id": 405132,
+    "status": "Available",
+    "address": "Unit 7",
+    "town": "Bromsgrove",
+    "postcode": "B60 3EX",
+    "lat": 52.316476,
+    "lon": -2.060756,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Light Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2278,
+    "size_to_sqft": 2278,
+    "summary": "Well Located Premises Suitable for a Variety of Commercial Uses",
+    "description": "Unit 7 Aston Fields Industrial Estate comprises an end-terrace commercial property of steel frame construction with brick & block elevations.  The building is currently configured as a warehouse / industrial property, that has previously been used as a trade counter.\n\nInternally, there is a good-sized warehouse area with the benefit of 4.75m eaves.  Located to the front of the unit is a kitchen and WCs – offering male & female.  The property is accessed via a pedestrian door and roller shutter door. Externally there are two car parking spaces with loading / unloading facilities to the front of the access door.\n\nGross Internal Area\t2,278 sq ft\t211.63 sq m",
+    "location": "The property is situated in Bromsgrove, to the south of the town centre on Aston Fields Industrial Estate. Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the property, giving access to the Midlands motorway network.\n\nBirmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south.\n\nAston Fields Industrial Estate benefits from communal landscaping, allocated & communal parking and extensive security, including CCTV and security gates.",
+    "features": [
+      "2,278 sq ft (211.63 sq m) GIA",
+      "Guide Rental of £22,500 per annum (£1,875 per calendar month)",
+      "Large warehouse area with kitchen and WCs",
+      "To be refurbished prior to occupation",
+      "Situated on the popular Aston Fields Industrial Estate",
+      "Suitable for warehouse, industrial and trade counter usage"
+    ],
+    "rent_psf": 9.88,
+    "rent_pa": 22500,
+    "rent": "£22,500 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 22750,
+    "epc_rating": "C (51)",
+    "images": [
+      "https://as-images.imgix.net/528b3ed0fac454d3dd77f75946fe6f33-20260918-110416753-ios.jpg",
+      "https://as-images.imgix.net/071a088ca3df980f36e0678ee42f981b-20260918-104816342-ios.jpg",
+      "https://as-images.imgix.net/eeb3e15d686a80d09fe7dcc2320a9fd1-20260918-105006617-ios.jpg",
+      "https://as-images.imgix.net/0bbda105364e6127a94a61ddaf93d538-20260918-104640471-ios.jpg",
+      "https://as-images.imgix.net/1710bbede8c237684e90e4f1a117190e-20260918-104827912-ios.jpg",
+      "https://as-images.imgix.net/af8ea4ddb6bf76865a03f4aa00617c71-20260918-104716469-ios.jpg",
+      "https://as-images.imgix.net/4906f621fad778093d0a44c436694f3c-20260918-105048767-ios.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9bb99b4bda34705c804ba8e0cee14aa4-gjs-dillon-particulars-unit-7-aston-fields-industrial-estate-bromsgrove.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-09-22 11:08:48"
+  },
+  {
     "id": 346754,
     "status": "Available",
     "address": "One Kings Court",
@@ -63,139 +269,6 @@
       }
     ],
     "last_updated": "2026-09-21 16:21:10"
-  },
-  {
-    "id": 405132,
-    "status": "Available",
-    "address": "Unit 7",
-    "town": "Bromsgrove",
-    "postcode": "B60 3EX",
-    "lat": 52.316476,
-    "lon": -2.060756,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Light Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2278,
-    "size_to_sqft": 2278,
-    "summary": "Well Located Premises Suitable for a Variety of Commercial Uses",
-    "description": "Unit 7 Aston Fields Industrial Estate comprises an end-terrace commercial property of steel frame construction with brick & block elevations.  The building is currently configured as a warehouse / industrial property, that has previously been used as a trade counter.\n\nInternally, there is a good-sized warehouse area with the benefit of 4.75m eaves.  Located to the front of the unit is a kitchen and WCs – offering male & female.  The property is accessed via a pedestrian door and roller shutter door. Externally there are two car parking spaces with loading / unloading facilities to the front of the access door.\n\nGross Internal Area\t2,278 sq ft\t211.63 sq m",
-    "location": "The property is situated in Bromsgrove, to the south of the town centre on Aston Fields Industrial Estate. Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the property, giving access to the Midlands motorway network.\n\nBirmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south.\n\nAston Fields Industrial Estate benefits from communal landscaping, allocated & communal parking and extensive security, including CCTV and security gates.",
-    "features": [
-      "2,278 sq ft (211.63 sq m) GIA",
-      "Guide Rental of £22,500 per annum (£1,875 per calendar month)",
-      "Large warehouse area with kitchen and WCs",
-      "To be refurbished prior to occupation",
-      "Situated on the popular Aston Fields Industrial Estate",
-      "Suitable for warehouse, industrial and trade counter usage"
-    ],
-    "rent_psf": 9.88,
-    "rent_pa": 22500,
-    "rent": "£22,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 22750,
-    "epc_rating": "C (51)",
-    "images": [
-      "https://as-images.imgix.net/528b3ed0fac454d3dd77f75946fe6f33-20260918-110416753-ios.jpg",
-      "https://as-images.imgix.net/071a088ca3df980f36e0678ee42f981b-20260918-104816342-ios.jpg",
-      "https://as-images.imgix.net/eeb3e15d686a80d09fe7dcc2320a9fd1-20260918-105006617-ios.jpg",
-      "https://as-images.imgix.net/0bbda105364e6127a94a61ddaf93d538-20260918-104640471-ios.jpg",
-      "https://as-images.imgix.net/1710bbede8c237684e90e4f1a117190e-20260918-104827912-ios.jpg",
-      "https://as-images.imgix.net/af8ea4ddb6bf76865a03f4aa00617c71-20260918-104716469-ios.jpg",
-      "https://as-images.imgix.net/4906f621fad778093d0a44c436694f3c-20260918-105048767-ios.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/031ee5b7a545151c7fd7f68b5d54b7ea-gjs-dillon-particulars-unit-7-aston-fields-industrial-estate-bromsgrove-1.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-09-21 16:13:36"
-  },
-  {
-    "id": 346668,
-    "status": "Available",
-    "address": "Sterling House",
-    "town": "Malvern",
-    "postcode": "WR13 6NN",
-    "lat": 52.075309753,
-    "lon": -2.298809051,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 4265,
-    "size_to_sqft": 4265,
-    "summary": "Office To Let, Malvern",
-    "description": "The property is a modern, detached, purpose-built office arranged over the ground floor. The construction is of brick and block cavity walls, surmounted by a pitched tiled roof. The building provides modern office accommodation with suspended ceilings, inset lighting, air conditioning and perimeter trunking throughout. \n\nThe offices can be occupied as a whole or can be split to suit. There are WCs (male & female) and kitchens. The services are also split over each side of the ground floor, with separate meters and boilers. \n\nThere are approximately 16 car parking spaces. \n\nAlternative Use Potential: \nWith minor alterations by the landlord, the building is also suitable, in whole or in part, for Use Class B8 (Storage and Distribution). It would particularly suit the distribution of small, high-value goods via courier services, catering to growing demand for flexible, high-quality last-mile distribution space. \n\nGround Floor Half: 2,132.5 sq ft 198.2 sq m\nGround Floor Whole: 4,265 sq ft 396.4 sq m",
-    "location": "Willow End is located to the south of Great Malvern and east of Malvern Wells, in a rural location near the Three Counties Show Ground. Willow End is home to multiple office and warehouse buildings, including a recently built office/research facility. The business park is situated two and a half miles south of Great Malvern and eight and a half miles south west of Worcester. \n\nThe area benefits from good transport communications with both Junction 1 of the M50 and Junction 7 of the M5 being accessible from the property. Great Malvern also benefits from a mainline railway station which provides direct access to Worcester, Hereford and London Paddington.",
-    "features": [
-      "Set within an established Business Park",
-      "All suites refurbished to a high specification",
-      "Excellent links to the M50/M5 motorway network"
-    ],
-    "rent_psf": 9.03,
-    "rent_pa": 38500,
-    "rent": "£38,500 per annum | Half Floor Rent: £19,250 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/3083298872074535a3d0f7ba781b63d6-letting346668.jpeg",
-      "https://as-images.imgix.net/b65c15a4be1b1925c5cc6b37381bf637-letting346668.jpeg",
-      "https://as-images.imgix.net/1ab64046b15c7f8943f43a42276259c2-letting346668.jpeg",
-      "https://as-images.imgix.net/b0c1094ca6872a982bf2b74fc04467a7-letting346668.jpeg",
-      "https://as-images.imgix.net/346ffcf74fc9d4fd0154e4292e648063-letting346668.jpeg",
-      "https://as-images.imgix.net/20b103b941fdb4e022fa24b7655f7001-letting346668.jpeg",
-      "https://as-images.imgix.net/a71a7a09afa622984a47eed501e6a690-letting346668.jpeg",
-      "https://as-images.imgix.net/5c7c1c174457721a1bc8b24a1e888b0a-letting346668.jpeg",
-      "https://as-images.imgix.net/07f9c5ab696e28549c3098d0bfe88073-20250529-093314264-ios.jpg",
-      "https://as-images.imgix.net/2aa8e0c4c3ecae674b70e7b8e19db9d1-20250529-093345734-ios.jpg",
-      "https://as-images.imgix.net/f9e7405df038ffef583daa89b5d9866e-20250529-093353512-ios.jpg",
-      "https://as-images.imgix.net/a65ea9b9dc3bfdba8148086471911299-20250529-093434457-ios.jpg",
-      "https://as-images.imgix.net/531861b86e39da98c4ade6d4f81969f1-20250529-093153234-ios.jpg",
-      "https://as-images.imgix.net/8c8e7f71f5ada1a579ad0765089b9a09-20250529-093456931-ios.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/1ebcd9e66f932941b3b1096d24470b19-gjs-dillon-particulars-unit-a-c-b7-willow-end-park-malvern-1.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/52fbe8e23cfd7edd1b9ebd9fcc41d58c-cam04581g0-pr0037-build01-floor00.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/unitsaandcwillowendpark/"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-09-21 15:46:52"
   },
   {
     "id": 346667,
@@ -3074,79 +3147,6 @@
       }
     ],
     "last_updated": "2026-08-18 11:57:36"
-  },
-  {
-    "id": 346649,
-    "status": "Available",
-    "address": "Unit 9, Centech Park",
-    "town": "Redditch",
-    "postcode": "B98 9NR",
-    "lat": 52.315120697,
-    "lon": -1.888914942,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 694,
-    "size_to_sqft": 1669,
-    "summary": "Quality offices in a shared building",
-    "description": "Unit 9 comprises a modern, self-contained single-storey office building arranged to provide two suites available to let with shared communal facilities. Both suites are finished to a good standard and benefit from LED lighting, electric heating and cooling, suspended ceilings and an intruder alarm system. Each suite offers predominantly open-plan accommodation with the flexibility to incorporate private offices if required. There is also a separate partitioned meeting room, which could be made available for shared use on a booking or separate licence basis. Communal areas include a welcoming reception/entrance hall, male and female WCs and a shared kitchen, which offers basic facilities. Externally, the property benefits from on-site parking, with an allocation of approximately five spaces per suite.",
-    "location": "Centech Park occupies a prominent position on Fringe Meadow Road within the well-established Moons Moat North Industrial Estate - Redditch's premier business location. The park forms part of a thriving commercial hub that attracts a strong mix of regional and national occupiers. The estate benefits from outstanding transport connectivity, situated just off the A4023, which links directly to Junction 2 of the M42 within minutes. This provides easy access to the wider Midlands motorway network, including the M5, M6 and M40, ensuring efficient distribution routes across the UK. Redditch town centre lies approximately 3 miles to the west, offering a range of retail and amenity facilities, with Redditch Train Station providing direct services to Birmingham New Street in under 40 minutes. The City of Birmingham is located approximately 15 miles north, making Centech Park ideally positioned for businesses seeking excellent regional access while benefiting from a strong local labour pool and established commercial environment.",
-    "features": [
-      "Suite 1 - 975 sq ft (90.61 sq m)",
-      "Suite 2 - 694 sq ft (64.52 sq m)",
-      "Both Suite 1 and 2 can be combined"
-    ],
-    "rent_psf": 9.58,
-    "rent_pa": 6650,
-    "rent": "£6,650 - £15,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "B (38)",
-    "images": [
-      "https://as-images.imgix.net/319f9680b62ff21abacdd57d284d787c-letting346649.jpeg",
-      "https://as-images.imgix.net/14b27874281c0e1f5e06aec4f1a70683-letting346649.jpeg",
-      "https://as-images.imgix.net/4fe7ade9866207f4a49900bfa8112fce-letting346649.jpeg",
-      "https://as-images.imgix.net/74a5182e7788980df742e2dbdf24306c-letting346649.jpeg",
-      "https://as-images.imgix.net/0b8e1d41a2b0d80ec70ee8ce1ffb7463-letting346649.jpeg",
-      "https://as-images.imgix.net/6183e14ac0968b64d2e7d13102f361a8-letting346649.jpeg",
-      "https://as-images.imgix.net/39f1a81f95668222e6d6b4293443535f-letting346649.jpeg",
-      "https://as-images.imgix.net/ba79f71c0e15c75bf5d06962bb05e0d0-letting346649.jpeg",
-      "https://as-images.imgix.net/42e2f9de810ffdc53c3e4a8755f94b20-letting346649.jpeg",
-      "https://as-images.imgix.net/b1660a12804ced569565b281c8d20ba8-letting346649.jpeg",
-      "https://as-images.imgix.net/8551d265630d06b2ce5e0a255f9936c2-letting346649.jpeg",
-      "https://as-images.imgix.net/a41aa27d9a57fb81c1b9c690626f7c8d-letting346649.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/af583ab5c67eac068a1dd6a2b45ce6af-gjs-dillon-particulars-centech-park-unit-9-fringe-meadow-road-redditch-b98-9nr.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/adb502b343d7bbad32c724f3d96d41d9-cam04581g0-pr0062-build01-floor00.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/suite1and2centechpark"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-08-14 12:33:13"
   },
   {
     "id": 360553,
