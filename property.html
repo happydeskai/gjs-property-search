@@ -62,7 +62,13 @@
       align-items:center; padding:64px 0;
     }
     .hero-title{ font-size:34px; font-weight:300; line-height:1.18; margin:0 0 14px; letter-spacing:-0.01em; }
-    .hero-status{ font-size:18px; font-weight:700; margin:0 0 18px; }
+    .hero-status{ font-size:18px; font-weight:700; margin:0 0 18px; display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
+    .hero-badge{ display:inline-block; padding:7px 14px; border-radius:8px; font-size:13px; font-weight:700; letter-spacing:.04em;
+      text-transform:uppercase; white-space:nowrap; background:var(--btn-dark); color:#fff; }
+    .hero-badge--available{ background:#22A45D; color:#fff; }
+    .hero-media-badge{ position:absolute; top:16px; left:16px; z-index:3; padding:8px 16px; border-radius:8px; font-size:13px; font-weight:700;
+      letter-spacing:.04em; text-transform:uppercase; white-space:nowrap; background:var(--amber); color:var(--btn-dark); }
+    .hero-media-badge.hero-badge--available{ background:#22A45D; color:#fff; }
     .hero-desc{ font-size:16px; line-height:1.5; max-width:440px; margin:0 0 24px; color:#2a2400; }
     .hero-meta{ display:flex; flex-direction:column; gap:12px; }
     .hero-meta-row{ display:flex; align-items:center; gap:12px; font-size:16px; font-weight:500; }
@@ -252,11 +258,12 @@
       <div class="wrap hero-inner">
         <div>
           <h1 class="hero-title" id="prop-title">Property</h1>
-          <div class="hero-status" id="prop-tenure"></div>
+          <div class="hero-status"><span class="hero-badge" id="prop-status" hidden></span><span id="prop-tenure"></span></div>
           <p class="hero-desc" id="prop-desc-hero"></p>
           <div class="hero-meta" id="prop-meta-hero"></div>
         </div>
         <div class="hero-media" id="hero-carousel">
+          <span class="hero-media-badge" id="hero-media-status" hidden></span>
           <span id="hero-empty" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(0,0,0,.3);font-size:14px;">No image available</span>
           <button class="hero-arrow prev" id="hero-prev" style="display:none" aria-label="Previous image">&#8249;</button>
           <button class="hero-arrow next" id="hero-next" style="display:none" aria-label="Next image">&#8250;</button>
@@ -812,6 +819,14 @@ async function main(){
 
     const tenureLabels=[];if(p.to_let)tenureLabels.push('To Let');if(p.for_sale)tenureLabels.push('For Sale');
     const tenureEl=$('#prop-tenure');if(tenureEl)tenureEl.textContent=tenureLabels.join(' / ');
+
+    const statusText=(p.status||'').toUpperCase()||'AVAILABLE';
+    ['#prop-status','#hero-media-status'].forEach(sel=>{
+      const el=$(sel);if(!el)return;
+      el.textContent=statusText;
+      el.classList.toggle('hero-badge--available',statusText==='AVAILABLE');
+      el.hidden=false;
+    });
 
     const heroDescEl=$('#prop-desc-hero');
     if(heroDescEl&&p.description){const _s=p.description.match(/[^.!?]+[.!?]+/g)||[];heroDescEl.textContent=_s.length?_s.slice(0,1).join(' ').trim():p.description;}
