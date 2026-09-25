@@ -1,5 +1,279 @@
 [
   {
+    "id": 346703,
+    "status": "Under Offer",
+    "address": "Horizons House, Vine Street",
+    "town": "Evesham",
+    "postcode": "WR11 4RE",
+    "lat": 52.092025756,
+    "lon": -1.948582053,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 880,
+    "size_to_sqft": 880,
+    "summary": "Office To Let, Evesham",
+    "description": "Horizons House is a two storey, multi-let office building arranged over the ground and first floors. The subject of this letting comprises the entire ground floor. The office space can be accessed via two private entrances (including one from the Abbey Park) or via a communal entrance. Over the ground floor there are two open plan office areas and WC facilities - which are for the sole use of the Tenant and are not shared with other occupiers. Ground Floor 880 sq ft 81.77 sq m",
+    "location": "Horizons House is located within Evesham, a market town within Worcestershire. The town has excellent transport links being situated on the A44 and A46 - with the A44 providing access west to Junction 6 of the M5 motorway (11 miles distant) and east to the Cotswolds & Oxford; and the A46 providing access south to Junction 9 of the M5 motorway (9 miles distant) and north to Redditch & Junction 15 of the M40 motorway (17 miles distant and providing direct access to Birmingham, London & Birmingham International Airport). Evesham also has a mainline railway station which provides a direct service to Worcester (20 mins), Oxford (50 mins) & London Paddington (circa 1hr 45 mins). Horizons House benefits from being adjacent to Abbey Park and looks out over the historic Bell Tower and the twin churches of All Saints & St. Lawrence - providing an attractive place to work whilst still being adjacent to Evesham town centre.",
+    "features": [
+      "Refurbished ground floor open plan office",
+      "Stunning outlook on to the Abbey Park",
+      "Recently refurbished to a high standard",
+      "Stunning outlook on to Abbey Park",
+      "Situated adjacent to Evesham Town Centre"
+    ],
+    "rent_psf": 13.64,
+    "rent_pa": 12000,
+    "rent": "£12,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/3c10d57b08b0c667428966dcf209b6fe-letting346703.jpeg",
+      "https://as-images.imgix.net/c4bf747fb1bd9f31f730cfdea032df0d-letting346703.jpeg",
+      "https://as-images.imgix.net/d9f075a149cf3d117ba96413cf4d1750-letting346703.jpeg",
+      "https://as-images.imgix.net/6d54feab7eaa9682c9f47f1dc391df0b-letting346703.jpeg",
+      "https://as-images.imgix.net/b90519cc53bb2d4a43ea974f6cbaee98-letting346703.jpeg",
+      "https://as-images.imgix.net/2e1e4233246441744accc8a91a492340-letting346703.jpeg",
+      "https://as-images.imgix.net/35b8b431319abe4a45dbe3c26eb217ca-letting346703.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f38cf5f1e6e0e2d538c39efe52420dc3-letting346703.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-09-25 14:28:35"
+  },
+  {
+    "id": 346668,
+    "status": "Available",
+    "address": "Stirling House",
+    "town": "Malvern",
+    "postcode": "WR13 6NN",
+    "lat": 52.075309753,
+    "lon": -2.298809051,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2133,
+    "size_to_sqft": 4265,
+    "summary": "Office To Let, Malvern",
+    "description": "The property is a modern, detached, purpose-built office arranged over the ground floor. The construction is of brick and block cavity walls, surmounted by a pitched tiled roof. The building provides modern office accommodation with suspended ceilings, inset lighting, air conditioning and perimeter trunking throughout. \n\nThe offices can be occupied as a whole or can be split to suit. There are WCs (male & female) and kitchens. The services are also split over each side of the ground floor, with separate meters and boilers. \n\nThere are approximately 16 car parking spaces. \n\nAlternative use potential with minor alterations by the landlord, the building is also suitable, in whole or in part, for Use Class B8 (Storage and Distribution). It would particularly suit the distribution of small, high-value goods via courier services, catering to growing demand for flexible, high-quality last-mile distribution space.",
+    "location": "Willow End is located to the south of Great Malvern and east of Malvern Wells, in a rural location near the Three Counties Show Ground. Willow End is home to multiple office and warehouse buildings, including a recently built office/research facility. The business park is situated two and a half miles south of Great Malvern and eight and a half miles south west of Worcester. \n\nThe area benefits from good transport communications with both Junction 1 of the M50 and Junction 7 of the M5 being accessible from the property. Great Malvern also benefits from a mainline railway station which provides direct access to Worcester, Hereford and London Paddington.",
+    "features": [
+      "Set within an established Business Park",
+      "All suites refurbished to a high specification",
+      "Excellent links to the M50/M5 motorway network"
+    ],
+    "rent_psf": 9.02,
+    "rent_pa": 19250,
+    "rent": "£19,250 - £38,500 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/8cf8ca971ed6323134b5fffa256c0e1c-dji-0869.JPG",
+      "https://as-images.imgix.net/b65c15a4be1b1925c5cc6b37381bf637-letting346668.jpeg",
+      "https://as-images.imgix.net/06de64da58634a09d6ac646fb6cbed7c-dji-0877.JPG",
+      "https://as-images.imgix.net/07f9c5ab696e28549c3098d0bfe88073-20250529-093314264-ios.jpg",
+      "https://as-images.imgix.net/2aa8e0c4c3ecae674b70e7b8e19db9d1-20250529-093345734-ios.jpg",
+      "https://as-images.imgix.net/f9e7405df038ffef583daa89b5d9866e-20250529-093353512-ios.jpg",
+      "https://as-images.imgix.net/a65ea9b9dc3bfdba8148086471911299-20250529-093434457-ios.jpg",
+      "https://as-images.imgix.net/531861b86e39da98c4ade6d4f81969f1-20250529-093153234-ios.jpg",
+      "https://as-images.imgix.net/8c8e7f71f5ada1a579ad0765089b9a09-20250529-093456931-ios.jpg",
+      "https://as-images.imgix.net/3083298872074535a3d0f7ba781b63d6-letting346668.jpeg",
+      "https://as-images.imgix.net/b0c1094ca6872a982bf2b74fc04467a7-letting346668.jpeg",
+      "https://as-images.imgix.net/346ffcf74fc9d4fd0154e4292e648063-letting346668.jpeg",
+      "https://as-images.imgix.net/20b103b941fdb4e022fa24b7655f7001-letting346668.jpeg",
+      "https://as-images.imgix.net/5c7c1c174457721a1bc8b24a1e888b0a-letting346668.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/40b405e87faf86a33578f282ce5d93e8-db27fea46078d4f3044f71a994637d05-1.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/52fbe8e23cfd7edd1b9ebd9fcc41d58c-cam04581g0-pr0037-build01-floor00.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/unitsaandcwillowendpark/"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-09-25 14:18:15"
+  },
+  {
+    "id": 350693,
+    "status": "Available",
+    "address": "Stirling House,  Willow End Park",
+    "town": "Malvern",
+    "postcode": "WR13 6NN",
+    "lat": 52.07531,
+    "lon": -2.298809,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Business Park",
+      "Office"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 8530,
+    "size_to_sqft": 8530,
+    "summary": "A modern, detached, purpose-built two storey office building.",
+    "description": "The property comprises a modern, detached, purpose-built two storey office building of brick and block cavity construction beneath a pitched tiled roof. The accommodation provides high quality offices across both floors, featuring suspended ceilings, inset lighting, air conditioning, and perimeter trunking throughout. \n\nThe first-floor tenant is currently holding over, providing an opportunity to capture a lease renewal. The ground floor is currently vacant and can be occupied as a whole or split into two  self-contained suites, offering flexibility for an owner-occupier or investor seeking to add value through letting. Each floor benefits from its own kitchen and male and female WCs, with services separately metered and independent boilers serving each part.\n\nAlternative Use Potential With minor alterations, the building is also suitable, in part, for Use Class B8 (Storage and Distribution). It would particularly suit the distribution of small, high-value goods via courier services, catering to growing demand for flexible, high-quality last-mile distribution space.",
+    "location": "Willow End is located to the south of Great Malvern and east of Malvern Wells, in a rural location near the Three Counties Show Ground. Willow End is home to multiple office and warehouse buildings, including a recently built office/research facility. The business park is situated two and a half miles south of Great Malvern and eight and a half miles south west of Worcester. \n\nThe area benefits from good transport communications with both Junction 1 of the M50 and Junction 7 of the M5 being accessible from the property. Great Malvern also benefits from a mainline railway station which provides direct access to Worcester, Hereford and London Paddington.",
+    "features": [
+      "Opportunity to capture lease renewal.",
+      "Vacant ground floor.",
+      "Located in a popular business park.",
+      "Freehold"
+    ],
+    "price": "£795,000",
+    "price_value": 795000,
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "C (57)",
+    "images": [
+      "https://as-images.imgix.net/49abdaf47064567e9cb733b3ac3ccc5f-dji-0867.JPG",
+      "https://as-images.imgix.net/43c0fc0fa75e1343e08e2a4bf48f2bb6-dji-0869.JPG",
+      "https://as-images.imgix.net/ca26d58c32c1bb9e6a95a36911fb3024-20250529-093314264-ios.jpg",
+      "https://as-images.imgix.net/3532362163d6bce4361890f2c13d3b43-20250529-093153234-ios.jpg",
+      "https://as-images.imgix.net/b311dd274da22620a7b4310a018b8524-20250529-093607049-ios.jpg",
+      "https://as-images.imgix.net/032bafc5a3813d0eb22b7aede77fa6fc-20250529-093345734-ios.jpg",
+      "https://as-images.imgix.net/0bfac624e3a167267bcdf7efe7e6b0d1-20251023-095746400-ios.jpg",
+      "https://as-images.imgix.net/c43f68b4faae0553de91c547a8480406-20251023-102006346-ios.jpg",
+      "https://as-images.imgix.net/40070fb5ea7eff13c103a1d6862127e3-20251023-103407268-ios.jpg",
+      "https://as-images.imgix.net/037a517f945833e626fa85898ea2b227-dji-0876.JPG",
+      "https://as-images.imgix.net/391b0df2b4188bef932a7967de37bbae-dji-0875.JPG",
+      "https://as-images.imgix.net/5a50da7f22208504773ab4041005ae7e-dji-0873.JPG",
+      "https://as-images.imgix.net/1bedc0b97b9e5af7c270b2c573b60581-dji-0877.JPG",
+      "https://as-images.imgix.net/70da0baaf8d40b90b5704a2cb8359b25-street-view-disposal-350693.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/bb0939eda4cc1ea7ffa39032bd04c01b-sterling-house-willow-end-park-malvern-investment-brochure.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/11e55b3149b385b74845905b0896c448-cam04581g0-pr0050-build01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/2c361a067f3ec98ad7f739b2e594b738-cam04581g0-pr0050-build01-floor01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/dce4b2c66ac957ef51a1f76a611e09a4-cam04581g0-pr0037-build01-floor00.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/b503b39097664a9cb1927f7c44de521a",
+      "https://tour.giraffe360.com/unitsaandcwillowendpark"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-09-25 14:14:59"
+  },
+  {
+    "id": 389415,
+    "status": "Available",
+    "address": "17 Victoria Square",
+    "town": "Droitwich",
+    "postcode": "WR9 8DE",
+    "lat": 52.267363,
+    "lon": -2.150675,
+    "types": [
+      "Retail"
+    ],
+    "raw_types": [
+      "Retail"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 3043,
+    "size_to_sqft": 3043,
+    "summary": "High Street Retail Premises with upper floor accommodation.",
+    "description": "17 Victoria Square is an end of terrace, two-storey building with a wide shop frontage to Victoria Square and return frontage onto St Andrew’s Square shopping centre. The property is currently occupied by TG Jones and further benefits from ancillary office accommodation at first floor level. The building is set over two storeys of timber frame and solid brick construction underneath pitched tiled roofs.  The building has been fitted with UPVC double-glazed units throughout.\n\n17 Victoria Square comprises a typical layout and modern fit-out, with an extensive retailing area at ground floor level and staircase leading to first floor office accommodation, together with kitchen and wc facilities. The property will be sold with vacant possession.",
+    "location": "Droitwich is a well-known Worcestershire spa town being popular with local and national companies as well as having a strong business community and good shopping facilities. Birmingham is situated approximately 22 miles to the north-east, Bromsgrove is situated approximately 7 miles to the north-east, Worcester is situated approximately 8 miles to the south-west, Kidderminster is situated approximately 9 miles to the north and Redditch is situated approximately 17 miles to the north-east.   \n\nDroitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester.",
+    "features": [
+      "Ground and First Floor",
+      "Separate access to staircase",
+      "To be sold with vacant possession",
+      "Good access to junctions 5 and 6 of the M5 motorway"
+    ],
+    "price": "£450,000",
+    "price_value": 450000,
+    "business_rates_psf": 31200,
+    "rateable_value": 65000,
+    "epc_rating": "C (55)",
+    "images": [
+      "https://as-images.imgix.net/b3eb31ecc43e9f5f4525c45acab459a0-20260810-141216737-ios.jpg",
+      "https://as-images.imgix.net/a08628dc3d1b667bfbd2f6d3821b4586-20260810-135917058-ios.jpg",
+      "https://as-images.imgix.net/d4784c7259c6f87db776003735f95e88-20260810-134840663-ios.jpg",
+      "https://as-images.imgix.net/3776380388b037c4d74c1404c7f2e52f-20260810-134848717-ios.jpg",
+      "https://as-images.imgix.net/28e99da33e24426dbf967f8e8bc25c9c-20260810-135806611-ios.jpg",
+      "https://as-images.imgix.net/800bf23d97e7e66fb1cdad9b88478ef3-20260810-135842739-ios.jpg",
+      "https://as-images.imgix.net/7d726f5b212c80543d81df2350c08436-20260810-135724160-ios.jpg",
+      "https://as-images.imgix.net/d9dfa802b6d14c61462174d6f04854f6-20260810-135206749-ios.jpg",
+      "https://as-images.imgix.net/461d42aeb16c443a721d0f5a708598aa-20260810-135532230-ios.jpg",
+      "https://as-images.imgix.net/c1cd79edd3fcc8b66aa4970ff8c4faed-20260810-135010978-ios.jpg",
+      "https://as-images.imgix.net/02455766febf06d9170138da7ca6f775-20260810-134949200-ios.jpg",
+      "https://as-images.imgix.net/106e8f49314b0b4c5319cb6941acbc3f-20260810-135421410-ios.jpg",
+      "https://as-images.imgix.net/fc335f0de499450ceb25a87a3907ad00-20260810-135344583-ios.jpg",
+      "https://as-images.imgix.net/4640a9ca22f8582122bf7d54dc374ddc-20260810-135104652-ios.jpg",
+      "https://as-images.imgix.net/fd2d24026e6f4543f409830b89b05521-20260810-140029097-ios.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/625422bd68cc86163c9c1a9fa9a23483-e3a74a10b1d62170af97b1dd8f9e5626-1.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-09-25 12:33:58"
+  },
+  {
     "id": 355238,
     "status": "Under Offer",
     "address": "Units 1 & 2, Saxon Business Park",
@@ -77,152 +351,6 @@
       }
     ],
     "last_updated": "2026-09-23 17:26:59"
-  },
-  {
-    "id": 346668,
-    "status": "Available",
-    "address": "Sterling House",
-    "town": "Malvern",
-    "postcode": "WR13 6NN",
-    "lat": 52.075309753,
-    "lon": -2.298809051,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2133,
-    "size_to_sqft": 4265,
-    "summary": "Office To Let, Malvern",
-    "description": "The property is a modern, detached, purpose-built office arranged over the ground floor. The construction is of brick and block cavity walls, surmounted by a pitched tiled roof. The building provides modern office accommodation with suspended ceilings, inset lighting, air conditioning and perimeter trunking throughout. \n\nThe offices can be occupied as a whole or can be split to suit. There are WCs (male & female) and kitchens. The services are also split over each side of the ground floor, with separate meters and boilers. \n\nThere are approximately 16 car parking spaces. \n\nAlternative use potential with minor alterations by the landlord, the building is also suitable, in whole or in part, for Use Class B8 (Storage and Distribution). It would particularly suit the distribution of small, high-value goods via courier services, catering to growing demand for flexible, high-quality last-mile distribution space.",
-    "location": "Willow End is located to the south of Great Malvern and east of Malvern Wells, in a rural location near the Three Counties Show Ground. Willow End is home to multiple office and warehouse buildings, including a recently built office/research facility. The business park is situated two and a half miles south of Great Malvern and eight and a half miles south west of Worcester. \n\nThe area benefits from good transport communications with both Junction 1 of the M50 and Junction 7 of the M5 being accessible from the property. Great Malvern also benefits from a mainline railway station which provides direct access to Worcester, Hereford and London Paddington.",
-    "features": [
-      "Set within an established Business Park",
-      "All suites refurbished to a high specification",
-      "Excellent links to the M50/M5 motorway network"
-    ],
-    "rent_psf": 9.02,
-    "rent_pa": 19250,
-    "rent": "£19,250 - £38,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/8cf8ca971ed6323134b5fffa256c0e1c-dji-0869.JPG",
-      "https://as-images.imgix.net/b65c15a4be1b1925c5cc6b37381bf637-letting346668.jpeg",
-      "https://as-images.imgix.net/06de64da58634a09d6ac646fb6cbed7c-dji-0877.JPG",
-      "https://as-images.imgix.net/07f9c5ab696e28549c3098d0bfe88073-20250529-093314264-ios.jpg",
-      "https://as-images.imgix.net/2aa8e0c4c3ecae674b70e7b8e19db9d1-20250529-093345734-ios.jpg",
-      "https://as-images.imgix.net/f9e7405df038ffef583daa89b5d9866e-20250529-093353512-ios.jpg",
-      "https://as-images.imgix.net/a65ea9b9dc3bfdba8148086471911299-20250529-093434457-ios.jpg",
-      "https://as-images.imgix.net/531861b86e39da98c4ade6d4f81969f1-20250529-093153234-ios.jpg",
-      "https://as-images.imgix.net/8c8e7f71f5ada1a579ad0765089b9a09-20250529-093456931-ios.jpg",
-      "https://as-images.imgix.net/3083298872074535a3d0f7ba781b63d6-letting346668.jpeg",
-      "https://as-images.imgix.net/b0c1094ca6872a982bf2b74fc04467a7-letting346668.jpeg",
-      "https://as-images.imgix.net/346ffcf74fc9d4fd0154e4292e648063-letting346668.jpeg",
-      "https://as-images.imgix.net/20b103b941fdb4e022fa24b7655f7001-letting346668.jpeg",
-      "https://as-images.imgix.net/5c7c1c174457721a1bc8b24a1e888b0a-letting346668.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/40b405e87faf86a33578f282ce5d93e8-db27fea46078d4f3044f71a994637d05-1.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/52fbe8e23cfd7edd1b9ebd9fcc41d58c-cam04581g0-pr0037-build01-floor00.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/unitsaandcwillowendpark/"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-09-22 15:33:17"
-  },
-  {
-    "id": 350693,
-    "status": "Available",
-    "address": "Sterling House,  Willow End Park",
-    "town": "Malvern",
-    "postcode": "WR13 6NN",
-    "lat": 52.07531,
-    "lon": -2.298809,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Business Park",
-      "Office"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 8530,
-    "size_to_sqft": 8530,
-    "summary": "A modern, detached, purpose-built two storey office building.",
-    "description": "The property comprises a modern, detached, purpose-built two storey office building of brick and block cavity construction beneath a pitched tiled roof. The accommodation provides high quality offices across both floors, featuring suspended ceilings, inset lighting, air conditioning, and perimeter trunking throughout. \n\nThe first-floor tenant is currently holding over, providing an opportunity to capture a lease renewal. The ground floor is currently vacant and can be occupied as a whole or split into two  self-contained suites, offering flexibility for an owner-occupier or investor seeking to add value through letting. Each floor benefits from its own kitchen and male and female WCs, with services separately metered and independent boilers serving each part.\n\nAlternative Use Potential With minor alterations, the building is also suitable, in part, for Use Class B8 (Storage and Distribution). It would particularly suit the distribution of small, high-value goods via courier services, catering to growing demand for flexible, high-quality last-mile distribution space.",
-    "location": "Willow End is located to the south of Great Malvern and east of Malvern Wells, in a rural location near the Three Counties Show Ground. Willow End is home to multiple office and warehouse buildings, including a recently built office/research facility. The business park is situated two and a half miles south of Great Malvern and eight and a half miles south west of Worcester. \n\nThe area benefits from good transport communications with both Junction 1 of the M50 and Junction 7 of the M5 being accessible from the property. Great Malvern also benefits from a mainline railway station which provides direct access to Worcester, Hereford and London Paddington.",
-    "features": [
-      "Opportunity to capture lease renewal.",
-      "Vacant ground floor.",
-      "Located in a popular business park.",
-      "Freehold"
-    ],
-    "price": "£795,000",
-    "price_value": 795000,
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "C (57)",
-    "images": [
-      "https://as-images.imgix.net/49abdaf47064567e9cb733b3ac3ccc5f-dji-0867.JPG",
-      "https://as-images.imgix.net/43c0fc0fa75e1343e08e2a4bf48f2bb6-dji-0869.JPG",
-      "https://as-images.imgix.net/ca26d58c32c1bb9e6a95a36911fb3024-20250529-093314264-ios.jpg",
-      "https://as-images.imgix.net/3532362163d6bce4361890f2c13d3b43-20250529-093153234-ios.jpg",
-      "https://as-images.imgix.net/b311dd274da22620a7b4310a018b8524-20250529-093607049-ios.jpg",
-      "https://as-images.imgix.net/032bafc5a3813d0eb22b7aede77fa6fc-20250529-093345734-ios.jpg",
-      "https://as-images.imgix.net/0bfac624e3a167267bcdf7efe7e6b0d1-20251023-095746400-ios.jpg",
-      "https://as-images.imgix.net/c43f68b4faae0553de91c547a8480406-20251023-102006346-ios.jpg",
-      "https://as-images.imgix.net/40070fb5ea7eff13c103a1d6862127e3-20251023-103407268-ios.jpg",
-      "https://as-images.imgix.net/037a517f945833e626fa85898ea2b227-dji-0876.JPG",
-      "https://as-images.imgix.net/391b0df2b4188bef932a7967de37bbae-dji-0875.JPG",
-      "https://as-images.imgix.net/5a50da7f22208504773ab4041005ae7e-dji-0873.JPG",
-      "https://as-images.imgix.net/1bedc0b97b9e5af7c270b2c573b60581-dji-0877.JPG",
-      "https://as-images.imgix.net/70da0baaf8d40b90b5704a2cb8359b25-street-view-disposal-350693.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/bb0939eda4cc1ea7ffa39032bd04c01b-sterling-house-willow-end-park-malvern-investment-brochure.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/11e55b3149b385b74845905b0896c448-cam04581g0-pr0050-build01.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/2c361a067f3ec98ad7f739b2e594b738-cam04581g0-pr0050-build01-floor01.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/dce4b2c66ac957ef51a1f76a611e09a4-cam04581g0-pr0037-build01-floor00.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/b503b39097664a9cb1927f7c44de521a",
-      "https://tour.giraffe360.com/unitsaandcwillowendpark"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-09-22 14:24:16"
   },
   {
     "id": 346649,
@@ -2735,77 +2863,6 @@
     "last_updated": "2026-08-24 12:39:00"
   },
   {
-    "id": 389415,
-    "status": "Available",
-    "address": "17 Victoria Square",
-    "town": "Droitwich",
-    "postcode": "WR9 8DE",
-    "lat": 52.267363,
-    "lon": -2.150675,
-    "types": [
-      "Retail"
-    ],
-    "raw_types": [
-      "Retail"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 3043,
-    "size_to_sqft": 3043,
-    "summary": "High Street Retail Premises with upper floor accommodation.",
-    "description": "17 Victoria Square is an end of terrace, two-storey building with a wide shop frontage to Victoria Square and return frontage onto St Andrew’s Square shopping centre. The property is currently occupied by TG Jones and further benefits from ancillary office accommodation at first floor level. The building is set over two storeys of timber frame and solid brick construction underneath pitched tiled roofs.  The building has been fitted with UPVC double-glazed units throughout.\n\n17 Victoria Square comprises a typical layout and modern fit-out, with an extensive retailing area at ground floor level and staircase leading to first floor office accommodation, together with kitchen and wc facilities. The property will be sold with vacant possession.",
-    "location": "Droitwich is a well-known Worcestershire spa town being popular with local and national companies as well as having a strong business community and good shopping facilities. Birmingham is situated approximately 22 miles to the north-east, Bromsgrove is situated approximately 7 miles to the north-east, Worcester is situated approximately 8 miles to the south-west, Kidderminster is situated approximately 9 miles to the north and Redditch is situated approximately 17 miles to the north-east.   \n\nDroitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester.",
-    "features": [
-      "Ground and First Floor",
-      "Separate access to staircase",
-      "To be sold with vacant possession",
-      "Good access to junctions 5 and 6 of the M5 motorway"
-    ],
-    "price": "£450,000",
-    "price_value": 450000,
-    "business_rates_psf": 31200,
-    "rateable_value": 65000,
-    "epc_rating": "C (55)",
-    "images": [
-      "https://as-images.imgix.net/b3eb31ecc43e9f5f4525c45acab459a0-20260810-141216737-ios.jpg",
-      "https://as-images.imgix.net/a08628dc3d1b667bfbd2f6d3821b4586-20260810-135917058-ios.jpg",
-      "https://as-images.imgix.net/d4784c7259c6f87db776003735f95e88-20260810-134840663-ios.jpg",
-      "https://as-images.imgix.net/3776380388b037c4d74c1404c7f2e52f-20260810-134848717-ios.jpg",
-      "https://as-images.imgix.net/28e99da33e24426dbf967f8e8bc25c9c-20260810-135806611-ios.jpg",
-      "https://as-images.imgix.net/800bf23d97e7e66fb1cdad9b88478ef3-20260810-135842739-ios.jpg",
-      "https://as-images.imgix.net/7d726f5b212c80543d81df2350c08436-20260810-135724160-ios.jpg",
-      "https://as-images.imgix.net/d9dfa802b6d14c61462174d6f04854f6-20260810-135206749-ios.jpg",
-      "https://as-images.imgix.net/461d42aeb16c443a721d0f5a708598aa-20260810-135532230-ios.jpg",
-      "https://as-images.imgix.net/c1cd79edd3fcc8b66aa4970ff8c4faed-20260810-135010978-ios.jpg",
-      "https://as-images.imgix.net/02455766febf06d9170138da7ca6f775-20260810-134949200-ios.jpg",
-      "https://as-images.imgix.net/106e8f49314b0b4c5319cb6941acbc3f-20260810-135421410-ios.jpg",
-      "https://as-images.imgix.net/fc335f0de499450ceb25a87a3907ad00-20260810-135344583-ios.jpg",
-      "https://as-images.imgix.net/4640a9ca22f8582122bf7d54dc374ddc-20260810-135104652-ios.jpg",
-      "https://as-images.imgix.net/fd2d24026e6f4543f409830b89b05521-20260810-140029097-ios.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/625422bd68cc86163c9c1a9fa9a23483-e3a74a10b1d62170af97b1dd8f9e5626-1.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-08-24 09:24:12"
-  },
-  {
     "id": 389974,
     "status": "Available",
     "address": "Nailers Yard",
@@ -4158,63 +4215,6 @@
       }
     ],
     "last_updated": "2026-07-27 16:41:00"
-  },
-  {
-    "id": 346703,
-    "status": "Under Offer",
-    "address": "Horizons House, Vine Street",
-    "town": "Evesham",
-    "postcode": "WR11 4RE",
-    "lat": 52.092025756,
-    "lon": -1.948582053,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 880,
-    "size_to_sqft": 880,
-    "summary": "Office To Let, Evesham",
-    "description": "Horizons House is a two storey, multi-let office building arranged over the ground and first floors. The subject of this letting comprises the entire ground floor. The office space can be accessed via two private entrances (including one from the Abbey Park) or via a communal entrance. Over the ground floor there are two open plan office areas and WC facilities - which are for the sole use of the Tenant and are not shared with other occupiers. Ground Floor 880 sq ft 81.77 sq m",
-    "location": "Horizons House is located within Evesham, a market town within Worcestershire. The town has excellent transport links being situated on the A44 and A46 - with the A44 providing access west to Junction 6 of the M5 motorway (11 miles distant) and east to the Cotswolds & Oxford; and the A46 providing access south to Junction 9 of the M5 motorway (9 miles distant) and north to Redditch & Junction 15 of the M40 motorway (17 miles distant and providing direct access to Birmingham, London & Birmingham International Airport). Evesham also has a mainline railway station which provides a direct service to Worcester (20 mins), Oxford (50 mins) & London Paddington (circa 1hr 45 mins). Horizons House benefits from being adjacent to Abbey Park and looks out over the historic Bell Tower and the twin churches of All Saints & St. Lawrence - providing an attractive place to work whilst still being adjacent to Evesham town centre.",
-    "features": [
-      "Refurbished ground floor open plan office",
-      "Stunning outlook on to the Abbey Park",
-      "Recently refurbished to a high standard",
-      "Stunning outlook on to Abbey Park",
-      "Situated adjacent to Evesham Town Centre"
-    ],
-    "rent_psf": 13.64,
-    "rent_pa": 12000,
-    "rent": "£12,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/3c10d57b08b0c667428966dcf209b6fe-letting346703.jpeg",
-      "https://as-images.imgix.net/c4bf747fb1bd9f31f730cfdea032df0d-letting346703.jpeg",
-      "https://as-images.imgix.net/d9f075a149cf3d117ba96413cf4d1750-letting346703.jpeg",
-      "https://as-images.imgix.net/6d54feab7eaa9682c9f47f1dc391df0b-letting346703.jpeg",
-      "https://as-images.imgix.net/b90519cc53bb2d4a43ea974f6cbaee98-letting346703.jpeg",
-      "https://as-images.imgix.net/2e1e4233246441744accc8a91a492340-letting346703.jpeg",
-      "https://as-images.imgix.net/35b8b431319abe4a45dbe3c26eb217ca-letting346703.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f38cf5f1e6e0e2d538c39efe52420dc3-letting346703.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-07-27 16:40:00"
   },
   {
     "id": 355287,
