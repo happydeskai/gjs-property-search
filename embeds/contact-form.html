@@ -1,0 +1,310 @@
+<!--
+  GJS Dillon website contact form.
+  This is NOT served from this repo: it is pasted into a Squarespace Code block on
+  gjsdillon.co.uk. It posts to api/send-contact.js (deployed on Vercel), which emails
+  info@ and the Flight CRM. Keep the field names in sync with that handler, and the
+  dropdown values in sync with the CRM's picklists (the CRM matches them exactly).
+  After changing this file, paste the whole thing back into the Squarespace block.
+-->
+<style>
+  :root {
+    --gjs-brand: #FFC400;
+    --gjs-dark:  #111;
+    --gjs-text:  #222;
+    --gjs-border:#DDD;
+    --gjs-gap:   clamp(36px, 6vw, 72px);
+  }
+
+  .gjs-contact-wrap {
+    background: var(--gjs-brand);
+    border-radius: 18px;
+    padding: 88px 28px;
+    margin: 24px 0;
+  }
+
+  .gjs-contact { max-width: 1100px; margin: 0 auto; color: var(--gjs-dark); font-size: 16px; line-height: 1.45; }
+  .gjs-contact h2 { display: none; }
+  .gjs-grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); column-gap: var(--gjs-gap); row-gap: 14px; }
+  @media (max-width: 720px){ .gjs-grid { grid-template-columns: 1fr; } }
+  .gjs-field { margin-bottom: 14px; }
+  .gjs-label { font-weight: 600; margin-bottom: 6px; display: flex; gap: 8px; align-items: baseline; }
+  .gjs-req { font-size: 12px; opacity: 0.8; }
+  .gjs-input, .gjs-select, .gjs-textarea { width: 100%; padding: 12px; border: 1px solid var(--gjs-border); border-radius: 8px; font: inherit; background: #fff; color: var(--gjs-text); }
+  .gjs-input[aria-invalid="true"], .gjs-textarea[aria-invalid="true"] { border-color: #C62828; box-shadow: 0 0 0 1px #C62828; }
+  .gjs-textarea { min-height: 120px; }
+  .gjs-fieldset { border: 0; padding: 0; margin: 0 0 14px; min-width: 0; }
+  .gjs-fieldset legend { font-weight: 600; padding: 0; margin-bottom: 10px; }
+  .gjs-fieldset .gjs-label { font-weight: 500; }
+  .gjs-checks { display: flex; gap: 16px; flex-wrap: wrap; }
+  .gjs-checks label { display: inline-flex; gap: 8px; align-items: center; }
+  .gjs-actions { margin-top: 16px; display: flex; gap: 12px; align-items: center; }
+  .gjs-btn { background: var(--gjs-dark); color: #fff; border: none; border-radius: 8px; padding: 12px 18px; font: inherit; cursor: pointer; }
+  .gjs-btn[disabled]{ opacity: 0.6; cursor: not-allowed; }
+  .gjs-msg { display: none; padding: 12px; border-radius: 8px; }
+  .gjs-msg.ok { background: #E8F5E9; border: 1px solid #C8E6C9; }
+  .gjs-msg.err { background: #FDECEA; border: 1px solid #F5C6CB; }
+
+  .sqs-block-code:has(.gjs-contact-wrap),
+  .sqs-block-html:has(.gjs-contact-wrap) {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .sqs-block-code:has(.gjs-contact-wrap) .sqs-block-content,
+  .sqs-block-html:has(.gjs-contact-wrap) .sqs-block-content {
+    padding: 0 !important;
+  }
+
+  .page-section:has(.gjs-contact-wrap),
+  .sqs-section:has(.gjs-contact-wrap) {
+    min-height: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+</style>
+
+<div class="gjs-contact-wrap">
+  <div class="gjs-contact">
+    <form id="gjsContactForm" novalidate>
+
+      <div class="gjs-grid">
+        <div class="gjs-field">
+          <div class="gjs-label">First Name <span class="gjs-req">(required)</span></div>
+          <input class="gjs-input" type="text" name="firstName" required>
+        </div>
+        <div class="gjs-field">
+          <div class="gjs-label">Last Name <span class="gjs-req">(required)</span></div>
+          <input class="gjs-input" type="text" name="lastName" required>
+        </div>
+      </div>
+
+      <div class="gjs-field">
+        <div class="gjs-label">Email <span class="gjs-req">(required)</span></div>
+        <input class="gjs-input" type="email" name="email" required>
+      </div>
+
+      <div class="gjs-field">
+        <label class="gjs-checks">
+          <input type="checkbox" name="newsletter" value="1"> Sign up for news and updates
+        </label>
+      </div>
+
+      <div class="gjs-field">
+        <div class="gjs-label">Phone</div>
+        <input class="gjs-input" type="tel" name="phone">
+      </div>
+
+      <div class="gjs-field">
+        <div class="gjs-label">Preferred contact method</div>
+        <div class="gjs-checks">
+          <label><input type="checkbox" name="preferredMethods" value="Email"> Email</label>
+          <label><input type="checkbox" name="preferredMethods" value="Phone"> Phone</label>
+          <label><input type="checkbox" name="preferredMethods" value="Text Message"> Text Message</label>
+        </div>
+      </div>
+
+      <div class="gjs-field">
+        <div class="gjs-label">Company Name</div>
+        <input class="gjs-input" type="text" name="company">
+      </div>
+
+      <fieldset class="gjs-fieldset">
+        <legend>Property address enquiry relates to</legend>
+        <div class="gjs-field">
+          <div class="gjs-label">Address Line 1 <span class="gjs-req">(required)</span></div>
+          <input class="gjs-input" type="text" name="addressLine1" autocomplete="address-line1" required>
+        </div>
+        <div class="gjs-field">
+          <div class="gjs-label">Address Line 2</div>
+          <input class="gjs-input" type="text" name="addressLine2" autocomplete="address-line2">
+        </div>
+        <div class="gjs-grid">
+          <div class="gjs-field">
+            <div class="gjs-label">Town <span class="gjs-req">(required)</span></div>
+            <input class="gjs-input" type="text" name="town" autocomplete="address-level2" required>
+          </div>
+          <div class="gjs-field">
+            <div class="gjs-label">Postcode <span class="gjs-req">(required)</span></div>
+            <input class="gjs-input" type="text" name="postcode" autocomplete="postal-code" autocapitalize="characters" required>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="gjs-field">
+        <div class="gjs-label">Reason for message</div>
+        <textarea class="gjs-textarea" name="message" required></textarea>
+      </div>
+
+      <div class="gjs-field">
+        <div class="gjs-label">Reason for contact</div>
+        <select class="gjs-select" name="reasonForContact">
+          <option value="">Select an option</option>
+          <option>Buy/sell/let/rent a property</option>
+          <option>Valuation services</option>
+          <option>Building surveying services</option>
+          <option>Property consultancy services</option>
+          <option>Property management services</option>
+          <option>Working at GJS Dillon</option>
+          <option>Becoming a supplier</option>
+          <option>Add to mailing list</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="gjs-field">
+        <div class="gjs-label">How did you hear about us?</div>
+        <select class="gjs-select" name="howHeard">
+          <option value="">Select an option</option>
+          <option>Email</option>
+          <option>LinkedIn</option>
+          <option>Google</option>
+          <option>Existing Client</option>
+          <option>Newsletter</option>
+          <option>Referral – family/friend</option>
+          <option>Referral – Professional e.g. solicitor, bank</option>
+          <option>GJS Dillon event</option>
+          <option>Networking event</option>
+          <option>RICS website</option>
+          <option>For Sale/Let board</option>
+          <option>Advertisement</option>
+          <option>Rightmove/Zoopla</option>
+        </select>
+      </div>
+
+      <div class="gjs-field">
+        <p style="font-size:13px;color:#3A3A3A;line-height:1.5;margin:0;">By submitting this form you agree to GJS Dillon processing your details in order to respond to your enquiry. Your information will not be shared with third parties. See our <a href="https://www.gjsdillon.co.uk/terms-privacy-policy" target="_blank" rel="noopener" style="color:#3A3A3A;text-decoration:underline;">Privacy Policy</a> for more information.</p>
+      </div>
+
+      <input type="text" name="company_internal" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px">
+
+      <div class="gjs-actions">
+        <button type="submit" class="gjs-btn" id="gjsSend">Submit</button>
+        <div id="gjsOk"  class="gjs-msg ok">Thanks — your message has been sent.</div>
+        <div id="gjsErr" class="gjs-msg err" role="alert">Sorry — we couldn't send your message. Please try again later.</div>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<script>
+(function () {
+  var FORM = document.getElementById('gjsContactForm');
+  var BTN  = document.getElementById('gjsSend');
+  var OK   = document.getElementById('gjsOk');
+  var ERR  = document.getElementById('gjsErr');
+
+  var ENDPOINT = 'https://gjs-property-search.vercel.app/api/send-contact.js';
+
+  // Same pattern the server checks (api/send-contact.js normalisePostcode).
+  var POSTCODE_RE = /^[A-Z]{1,2}\d[A-Z\d]?\d[A-Z]{2}$/;
+
+  function getUTM() {
+    var p = new URLSearchParams(location.search);
+    return {
+      utm_source:   p.get('utm_source')   || '',
+      utm_medium:   p.get('utm_medium')   || '',
+      utm_campaign: p.get('utm_campaign') || ''
+    };
+  }
+
+  function showError(text) {
+    ERR.textContent = text;
+    ERR.style.display = 'block';
+  }
+
+  // Returns the first invalid field (and flags every invalid one), or null.
+  function validate() {
+    var first = null;
+    FORM.querySelectorAll('input[required]').forEach(function (el) {
+      var v = el.value.trim();
+      var bad = !v;
+      if (!bad && el.type === 'email') bad = !/^\S+@\S+\.\S+$/.test(v);
+      if (!bad && el.name === 'postcode') bad = !POSTCODE_RE.test(v.toUpperCase().replace(/\s+/g, ''));
+      el.setAttribute('aria-invalid', bad ? 'true' : 'false');
+      if (bad && !first) first = el;
+    });
+    return first;
+  }
+
+  FORM.addEventListener('input', function (e) {
+    if (e.target.getAttribute('aria-invalid') === 'true') e.target.removeAttribute('aria-invalid');
+  });
+
+  FORM.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    OK.style.display = 'none';
+    ERR.style.display = 'none';
+
+    if (FORM.company_internal && FORM.company_internal.value) return;
+
+    var invalid = validate();
+    if (invalid) {
+      showError(invalid.name === 'postcode'
+        ? 'Please enter a valid UK postcode.'
+        : 'Please fill in all the required fields.');
+      invalid.focus();
+      return;
+    }
+
+    var fd = new FormData(FORM);
+    var methods = fd.getAll('preferredMethods');
+    var utm = getUTM();
+
+    var payload = {
+      firstName: fd.get('firstName') || '',
+      lastName:  fd.get('lastName')  || '',
+      email:     fd.get('email')     || '',
+      newsletter: !!fd.get('newsletter'),
+      phone:     fd.get('phone')     || '',
+      preferredMethods: methods,
+      company:   fd.get('company')   || '',
+      addressLine1: fd.get('addressLine1') || '',
+      addressLine2: fd.get('addressLine2') || '',
+      town:      fd.get('town')      || '',
+      postcode:  fd.get('postcode')  || '',
+      message:   fd.get('message')   || '',
+      gdprConsent: true,
+      reasonForContact: fd.get('reasonForContact') || '',
+      howHeard: fd.get('howHeard') || '',
+      page: location.href,
+      utm_source: utm.utm_source,
+      utm_medium: utm.utm_medium,
+      utm_campaign: utm.utm_campaign
+    };
+
+    BTN.disabled = true;
+
+    try {
+      var r = await fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'gjs_contact_form_success',
+        form_name: 'GJS Contact Form',
+        form_id: 'gjsContactForm',
+        reason_for_contact: payload.reasonForContact || 'Not selected',
+        newsletter_signup: payload.newsletter ? 'Yes' : 'No',
+        preferred_contact_methods: methods.join(', ') || 'Not selected'
+      });
+
+      OK.style.display = 'block';
+      FORM.reset();
+
+    } catch (err) {
+      console.error('contact send error', err);
+      showError('Sorry — we couldn\'t send your message. Please try again later.');
+    } finally {
+      BTN.disabled = false;
+    }
+  });
+
+})();
+</script>
