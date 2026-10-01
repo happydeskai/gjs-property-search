@@ -8,8 +8,11 @@ function escapeHtml(str) {
 function nl2br(str) {
   return escapeHtml(String(str || '')).replace(/\n/g, '<br>');
 }
-function safeList(arr) {
-  return Array.isArray(arr) ? arr.map(escapeHtml).join(', ') : escapeHtml(String(arr || ''));
+// UK postcode -> canonical "AA9A 9AA" form, or '' if it doesn't look like one.
+function normalisePostcode(str) {
+  const compact = String(str || '').toUpperCase().replace(/\s+/g, '');
+  if (!/^[A-Z]{1,2}\d[A-Z\d]?\d[A-Z]{2}$/.test(compact)) return '';
+  return compact.slice(0, -3) + ' ' + compact.slice(-3);
 }
 
 const SMTP_HOST   = process.env.SMTP_HOST;
@@ -65,6 +68,10 @@ module.exports = async (req, res) => {
       preferredMethods = [],
       company = '',
       propertyAddress = '',
+      addressLine1 = '',
+      addressLine2 = '',
+      town = '',
+      postcode = '',
       message = '',
       gdprConsent = false,
       reasonForContact = '',
@@ -79,53 +86,76 @@ module.exports = async (req, res) => {
     if (!firstName && !lastName)    return res.status(400).json({ error: 'Missing name' });
     if (!gdprConsent)               return res.status(400).json({ error: 'GDPR consent required' });
 
+    // The current form sends the property address as separate fields, which the CRM
+    // requires (it matches existing properties on postcode). The previous form sent one
+    // free-text `propertyAddress`; still accept that so a cached copy of the old embed
+    // doesn't start failing. Only payloads carrying the new keys are held to the new rules.
+    const splitAddress = ['addressLine1', 'town', 'postcode'].some(k => k in body);
+    const pc = normalisePostcode(postcode);
+    if (splitAddress) {
+      if (!String(addressLine1).trim()) return res.status(400).json({ error: 'Missing address line 1' });
+      if (!String(town).trim())         return res.status(400).json({ error: 'Missing town' });
+      if (!pc)                          return res.status(400).json({ error: 'Invalid postcode' });
+    }
+
     const ip = req.headers['x-forwarded-for'] || req.socket?.remoteAddress || '';
     const ua = req.headers['user-agent'] || '';
 
     const fullName = [firstName, lastName].filter(Boolean).join(' ');
     const methods  = (Array.isArray(preferredMethods) && preferredMethods.length) ? preferredMethods.join(', ') : '';
+    const utm      = [utm_source, utm_medium, utm_campaign].filter(Boolean).join(' / ');
+
+    // Single source of truth for both the plain-text and HTML bodies. The CRM parses the
+    // plain-text part, so every field must appear there with exactly the same label and
+    // value as in the HTML. Empty optional fields are left out of both.
+    const rows = [
+      ['Reason for contact', reasonForContact],
+      ['Name', fullName],
+      ['Email', email],
+      ['Phone', phone],
+      ['Company', company],
+      ...(splitAddress
+        ? [
+            ['Address Line 1', String(addressLine1).trim()],
+            ['Address Line 2', String(addressLine2).trim()],
+            ['Town', String(town).trim()],
+            ['Postcode', pc]
+          ]
+        : [['Property address enquiry relates to', propertyAddress]]),
+      ['How did you hear about us', howHeard],
+      ['Preferred contact method', methods],
+      ['GDPR consent', gdprConsent ? 'Yes' : 'No'],
+      ['Newsletter opt-in', newsletter ? 'Yes' : 'No']
+    ].filter(([, value]) => value);
+
+    const contextRows = [
+      ['IP', ip],
+      ['User-Agent', ua],
+      ['UTM', utm]
+    ].filter(([, value]) => value);
+
+    const heading = `Website contact${reasonForContact ? ' — ' + reasonForContact : ''}`;
 
     const text = [
-      `Website contact${reasonForContact ? ' — ' + reasonForContact : ''}`,
+      heading,
       page ? `From page: ${page}` : '',
-      `Name: ${fullName}`,
-      `Email: ${email}`,
-      phone ? `Phone: ${phone}` : '',
-      company ? `Company: ${company}` : '',
-      propertyAddress ? `Property address enquiry relates to: ${propertyAddress}` : '',
-      howHeard ? `How did you hear about us: ${howHeard}` : '',
-      methods ? `Preferred contact method: ${methods}` : '',
-      `GDPR consent: ${gdprConsent ? 'Yes' : 'No'}`,
-      `Newsletter opt-in: ${newsletter ? 'Yes' : 'No'}`,
+      ...rows.map(([label, value]) => `${label}: ${value}`),
       '',
       'Message:',
       String(message || ''),
       '',
-      ip || ua ? '— Context —' : '',
-      ip ? `IP: ${ip}` : '',
-      ua ? `User-Agent: ${ua}` : '',
-      (utm_source || utm_medium || utm_campaign)
-        ? `UTM: ${[utm_source, utm_medium, utm_campaign].filter(Boolean).join(' / ')}`
-        : ''
+      contextRows.length ? '— Context —' : '',
+      ...contextRows.map(([label, value]) => `${label}: ${value}`)
     ].filter(Boolean).join('\n');
 
     const html = `<!doctype html>
 <html><body style="margin:0;padding:16px;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#111;">
-  <h2 style="margin:0 0 12px 0;font-size:18px;">Website contact${reasonForContact ? ' — ' + escapeHtml(reasonForContact) : ''}</h2>
+  <h2 style="margin:0 0 12px 0;font-size:18px;">${escapeHtml(heading)}</h2>
   ${page ? `<p style="margin:0 0 10px 0;"><strong>From page:</strong> <a href="${escapeHtml(page)}" style="color:#0b5fff;text-decoration:none;">${escapeHtml(page)}</a></p>` : ''}
 
   <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;max-width:700px;border-collapse:collapse;margin:0 0 12px 0;">
     <tbody>
-      <tr><td style="padding:6px 0;width:220px;"><strong>Name</strong></td><td style="padding:6px 0;">${escapeHtml(fullName)}</td></tr>
-      <tr><td style="padding:6px 0;"><strong>Email</strong></td><td style="padding:6px 0;"><a href="mailto:${escapeHtml(email)}" style="color:#0b5fff;text-decoration:none;">${escapeHtml(email)}</a></td></tr>
-      ${phone ? `<tr><td style="padding:6px 0;"><strong>Phone</strong></td><td style="padding:6px 0;">${escapeHtml(phone)}</td></tr>` : ''}
-      ${company ? `<tr><td style="padding:6px 0;"><strong>Company</strong></td><td style="padding:6px 0;">${escapeHtml(company)}</td></tr>` : ''}
-      ${propertyAddress ? `<tr><td style="padding:6px 0;"><strong>Property address enquiry relates to</strong></td><td style="padding:6px 0;">${escapeHtml(propertyAddress)}</td></tr>` : ''}
-      ${howHeard ? `<tr><td style="padding:6px 0;"><strong>How did you hear about us</strong></td><td style="padding:6px 0;">${escapeHtml(howHeard)}</td></tr>` : ''}
-      ${(Array.isArray(preferredMethods) && preferredMethods.length) ? `<tr><td style="padding:6px 0;"><strong>Preferred contact method</strong></td><td style="padding:6px 0;">${safeList(preferredMethods)}</td></tr>` : ''}
-      ${reasonForContact ? `<tr><td style="padding:6px 0;"><strong>Reason for contact</strong></td><td style="padding:6px 0;">${escapeHtml(reasonForContact)}</td></tr>` : ''}
-      <tr><td style="padding:6px 0;"><strong>GDPR consent</strong></td><td style="padding:6px 0;">${gdprConsent ? 'Yes' : 'No'}</td></tr>
-      <tr><td style="padding:6px 0;"><strong>Newsletter opt‑in</strong></td><td style="padding:6px 0;">${newsletter ? 'Yes' : 'No'}</td></tr>
+      ${rows.map(([label, value]) => `<tr><td style="padding:6px 0;width:220px;"><strong>${escapeHtml(label)}</strong></td><td style="padding:6px 0;">${escapeHtml(value)}</td></tr>`).join('\n      ')}
     </tbody>
   </table>
 
@@ -136,16 +166,14 @@ module.exports = async (req, res) => {
     </div>
   </div>
 
-  ${(ip || ua || utm_source || utm_medium || utm_campaign) ? `
+  ${contextRows.length ? `
   <div style="margin:14px 0 0 0;">
     <h3 style="margin:0 0 8px 0;font-size:16px;">Context</h3>
-    ${ip ? `<p style="margin:0 0 6px 0;"><strong>IP:</strong> ${escapeHtml(ip)}</p>` : ''}
-    ${ua ? `<p style="margin:0 0 6px 0;"><strong>User‑Agent:</strong> ${escapeHtml(ua)}</p>` : ''}
-    ${(utm_source || utm_medium || utm_campaign) ? `<p style="margin:0 0 6px 0;"><strong>UTM:</strong> ${escapeHtml([utm_source, utm_medium, utm_campaign].filter(Boolean).join(' / '))}</p>` : ''}
+    ${contextRows.map(([label, value]) => `<p style="margin:0 0 6px 0;"><strong>${escapeHtml(label)}:</strong> ${escapeHtml(value)}</p>`).join('\n    ')}
   </div>` : ''}
 </body></html>`;
 
-    const subject = `Website contact${reasonForContact ? ' — ' + reasonForContact : ''}`;
+    const subject = heading;
     const mail = { from: FROM_EMAIL, subject, html, text, replyTo: email };
 
     // Primary recipient — must succeed; a failure here still returns 500 as before.

@@ -145,4 +145,88 @@ describe('POST /api/send-contact', () => {
     expect(statusOf(res)).toBe(400);
     expect(mockSendMail).not.toHaveBeenCalled();
   });
+
+  describe('email content', () => {
+    const fullBody = () => ({
+      ...validBody(),
+      phone: '01905 000000',
+      company: 'John Smith Ltd',
+      addressLine1: '7 Roman Way Business Centre',
+      addressLine2: 'Berry Hill Industrial Estate',
+      town: 'Droitwich',
+      postcode: 'wr99aj',
+      reasonForContact: 'Valuation services',
+      howHeard: 'Existing Client',
+      preferredMethods: ['Email', 'Phone'],
+      newsletter: true
+    });
+
+    const send = async (body) => {
+      const handler = loadHandler({ TO_CRM: '' });
+      const res = makeRes();
+      await handler(makeReq(body), res);
+      return { res, mail: mockSendMail.mock.calls[0] && mockSendMail.mock.calls[0][0] };
+    };
+
+    const htmlRows = (html) =>
+      [...html.matchAll(/<tr><td[^>]*><strong>(.*?)<\/strong><\/td><td[^>]*>(.*?)<\/td><\/tr>/g)]
+        .map(([, label, value]) => [label, value]);
+
+    it('puts every HTML field into the plain-text body with the same label and value', async () => {
+      const { mail } = await send(fullBody());
+      const rows = htmlRows(mail.html);
+
+      expect(rows.length).toBeGreaterThan(5);
+      for (const [label, value] of rows) {
+        expect(mail.text).toContain(`${label}: ${value}`);
+      }
+      expect(mail.text).toContain('Reason for contact: Valuation services');
+      expect(mail.text).toContain('How did you hear about us: Existing Client');
+    });
+
+    it('sends the property address as separate fields with a normalised postcode', async () => {
+      const { res, mail } = await send(fullBody());
+
+      expect(statusOf(res)).toBe(200);
+      expect(mail.text).toContain('Address Line 1: 7 Roman Way Business Centre');
+      expect(mail.text).toContain('Address Line 2: Berry Hill Industrial Estate');
+      expect(mail.text).toContain('Town: Droitwich');
+      expect(mail.text).toContain('Postcode: WR9 9AJ');
+      expect(mail.text).not.toContain('Property address enquiry relates to');
+    });
+
+    it('leaves out an empty Address Line 2', async () => {
+      const { mail } = await send({ ...fullBody(), addressLine2: '' });
+
+      expect(mail.text).not.toContain('Address Line 2');
+      expect(mail.html).not.toContain('Address Line 2');
+    });
+
+    it.each([
+      ['addressLine1', '', 'Missing address line 1'],
+      ['town', '  ', 'Missing town'],
+      ['postcode', '', 'Invalid postcode'],
+      ['postcode', 'not a postcode', 'Invalid postcode']
+    ])('rejects %s = %p before sending anything', async (field, value, error) => {
+      const { res } = await send({ ...fullBody(), [field]: value });
+
+      expect(statusOf(res)).toBe(400);
+      expect(res.json).toHaveBeenCalledWith({ error });
+      expect(mockSendMail).not.toHaveBeenCalled();
+    });
+
+    it('still accepts the old single-box address payload', async () => {
+      const { res, mail } = await send({ ...validBody(), propertyAddress: '1 High St, Worcester WR1 1AA' });
+
+      expect(statusOf(res)).toBe(200);
+      expect(mail.text).toContain('Property address enquiry relates to: 1 High St, Worcester WR1 1AA');
+    });
+
+    it('escapes user input in the HTML body', async () => {
+      const { mail } = await send({ ...fullBody(), company: '<b>Evil</b> & Co' });
+
+      expect(mail.html).toContain('&lt;b&gt;Evil&lt;/b&gt; &amp; Co');
+      expect(mail.text).toContain('Company: <b>Evil</b> & Co');
+    });
+  });
 });
