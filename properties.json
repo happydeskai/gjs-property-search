@@ -1,5 +1,329 @@
 [
   {
+    "id": 406541,
+    "status": "Available",
+    "address": "Unit 16, North Bank",
+    "town": "Droitwich",
+    "postcode": "WR9 9AU",
+    "lat": 52.283486937564,
+    "lon": -2.1589894034271,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Light Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3968,
+    "size_to_sqft": 3968,
+    "description": "Unit 16 North Bank comprises a detached industrial unit of steel portal frame with part brick elevations and part steel profile sheet, under a pitched, steel profile sheet roof with intermittent roof lights.  \n\nThe accommodation includes workshop with a height to eaves of 5.9m, two roller shutter doors and a gas fired hot air heater (which needs recommissioning), the workshop incorporates two storey offices with ground floor comprising office, reception and w.c. facilities, and a further two \noffices to the first floor.",
+    "location": "The property is situated in Droitwich, to the north of the town centre on Berry Hill Industrial Estate. The M5 motorway is in close proximity to property with Junction 5 being approximately two miles by road to the north. From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales. \n\nDroitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time \nof approximately 2 hrs 35 mins to London Paddington via Worcester.",
+    "features": [],
+    "rent_psf": 8.57,
+    "rent_pa": 34000,
+    "rent": "£34,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 32000,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/1f5b5d25548cfbb993e106755a858521-img-1588.JPEG",
+      "https://as-images.imgix.net/cc75fc84663d1cce3e07f0319559dc45-20261006-120401.jpg",
+      "https://as-images.imgix.net/c29cd864fee1e275897cfbe501fc117b-dji-0134.JPG",
+      "https://as-images.imgix.net/29f04b16c3e4d3c7d05bb1344a76cf94-img-5859-1.jpeg",
+      "https://as-images.imgix.net/825f4958f0bfedb1089f4fb83e03ff4f-dji-0137.JPG",
+      "https://as-images.imgix.net/b9b640f8a24a047471fd1c1472cd82bb-img-5860-1.jpeg",
+      "https://as-images.imgix.net/21495800867eb187549ee457fa94986e-img-5862-1.jpeg",
+      "https://as-images.imgix.net/2edc661c5ad8792f0b9149270d1fc821-img-5871.jpeg",
+      "https://as-images.imgix.net/712ad3ae785c5ecc3fa25ba75859f77e-img-5870.jpeg",
+      "https://as-images.imgix.net/71248884fd0e5803571378b5c2d5665f-dji-0142.JPG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/2fa801e82c83f0d720aaeac5ef6e61c2-gjs-dillon-particulars-unit-16-north-bank-berry-hill-ie-droitwich.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-06 16:10:45"
+  },
+  {
+    "id": 389516,
+    "status": "Available",
+    "address": "Unit 105, Pointon Way",
+    "town": "Droitwich",
+    "postcode": "WR9 0LW",
+    "lat": 52.281577,
+    "lon": -2.175892,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 42574,
+    "size_to_sqft": 42574,
+    "summary": "Industrial / Warehouse Unit with Offices and Parking on Stonebridge Cross Business Park",
+    "description": "Stonebridge Cross is one of the main industrial parks within Worcestershire, comprising a variety of medium to large warehouse, distribution and manufacturing units.  Occupiers on site include VAX, Muller, AKW, Bibby Distribution and Spire.\n\n105 Pointon Way comprises a stand-alone commercial unit which is accessed directly off the main estate road.  Externally the unit offers a barrier accessed car park for circa 50 cars, including electric charging points.  To the rear of the unit is a large yard measuring approximately 65m by 35m.  The yard provides direct access to the warehouse space via two level access loading doors which measure 5.10m in height.\n\nInternally the property offers two storeys of office accommodation with direct access off the car park.  This is arranged to provide an open plan office space, reception and cellular meeting rooms over the ground floor with further open plan offices over the first floor.  There are WC facilities, kitchens and ample storage on each floor.  There is a store which sits alongside the warehouse and office accommodation which also offers further offices and a canteen above.",
+    "location": "Stonebridge Cross Business Park lies to the north of Droitwich town centre, approximately 3 miles from junction 5 of the M5 motorway. From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales.  The business park provides a modern business and logistics hub with all units being built to a high standard with their own car parking and secure service yards.",
+    "features": [
+      "Steel portal frame construction",
+      "Gated yard and barrier entrance car park",
+      "8.6m eaves",
+      "Two storey, quality offices",
+      "2 dock level loading doors",
+      "35 m yard depth",
+      "50 car parking spaces with EV charging points"
+    ],
+    "rent_psf": 7.75,
+    "rent_pa": 330000,
+    "rent": "£330,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/6e47af51ab02c67cc1a9681928c10bfa-img-1384.JPEG",
+      "https://as-images.imgix.net/a9e42c92aee59dd9a1a463a1ca5635a8-img-1381.JPEG",
+      "https://as-images.imgix.net/46a189ad0718eb799ed43c991bab8ad3-dji-0046.JPG",
+      "https://as-images.imgix.net/b4a6daf630446dfa30042398648daca3-dji-0043.JPG",
+      "https://as-images.imgix.net/3f3fd6c47637829aa26127c49abe4445-img-1363.JPEG",
+      "https://as-images.imgix.net/907f83a912610b97c8a19fa1f0d608f8-img-1365.JPEG",
+      "https://as-images.imgix.net/56fb8cb9065e3e0c010d2f7442dcaf41-img-1362-1.JPEG",
+      "https://as-images.imgix.net/2c2adf912eb368a2641022671f2f6269-img-1349.JPEG",
+      "https://as-images.imgix.net/6aa5dc20e246c4acbf66285c22bcff39-img-1351.JPEG",
+      "https://as-images.imgix.net/a7972478cdf3e704f2a6e47e85fba445-img-1353.JPEG",
+      "https://as-images.imgix.net/669651db79f713ca42676ed58ebd9996-img-1355.JPEG",
+      "https://as-images.imgix.net/83eea3b79fa8c7d1bfe8da942e51016e-img-1360.JPEG",
+      "https://as-images.imgix.net/e7a72607242b18d9156ff52b3c77cdb1-img-1358.JPEG",
+      "https://as-images.imgix.net/200cc125df4bb7651e719f27139166e5-img-1375.JPEG",
+      "https://as-images.imgix.net/3926d94d851fa476ab5f6bdf32a6e427-img-1357.JPEG",
+      "https://as-images.imgix.net/93189a1bfcba1d58b4da60b5e3eeba6c-img-1376.JPEG",
+      "https://as-images.imgix.net/7ac19f03f5a4346e96d24032143d57fa-img-1367.JPEG",
+      "https://as-images.imgix.net/15fae3f49d06c57fe038c2bcf137260e-dji-0049.JPG",
+      "https://as-images.imgix.net/0ae19c4365ac1219506702b4277fde50-img-1378.JPEG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/3d0552a679d0c441180f80846f07b295-pointon-way-droitwich-brochure-9387-v-1.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-06 16:07:58"
+  },
+  {
+    "id": 404835,
+    "status": "Available",
+    "address": "Unit 9, Wassage Way South",
+    "town": "Droitwich",
+    "postcode": "WR9 0QG",
+    "lat": 52.28469,
+    "lon": -2.168149,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2016,
+    "size_to_sqft": 2016,
+    "summary": "Warehouse / Industrial Unit on the Popular Hampton Lovett Industrial Estate",
+    "description": "Unit 9 Wassage Way South comprises a terraced industrial/warehouse buildings prominently positioned at the entrance to Hampton Lovett Industrial Estate. The unit has a clear working height of circa nine foot (2.8 metres) and a roller shutter door providing access to a rear loading bay.   Internally, the unit benefits from a gas blower heater and a three-phase electrical supply, mains water, gas and drainage.\n\nThe unit is due to be refurbished.",
+    "location": "The property is situated on Hampton Lovett Industrial Estate to the north of Droitwich Spa. Droitwich is situated approximately seven miles to the north east of Worcester, six miles south west of Bromsgrove and 18 miles south west of Birmingham city centre. \n\nThe town is situated immediately adjacent to the M5 with Junction 5 being approximately three miles from the property – this providing access north to the M42, M6 and wider national motorway network. Droitwich also benefits from a mainline railway station which provides direct access to Worcester and Birmingham New Street Stations.",
+    "features": [
+      "2,016 sq ft (187.39 sq m)",
+      "Located at the entrance to Hampton Lovett Industrial Estate",
+      "The unit is due for refurbishment",
+      "Loading / unloading to the rear of the property",
+      "Three Phase Electricity supply",
+      "3 miles from Junction 5 of the M5 motorway"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 15750,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/096fb24986a5f5142507db7f268f1998-20260827-130205449-ios.jpg",
+      "https://as-images.imgix.net/d1faae8b99aeda1365f9818814c424bb-20260827-125956956-ios.jpg",
+      "https://as-images.imgix.net/027ed85d1f3409c9d99c818608db8fed-20260827-125918709-ios.jpg",
+      "https://as-images.imgix.net/f1f314cf5bfeffbb8e58ef8be93d36a1-20260827-125942380-ios.jpg",
+      "https://as-images.imgix.net/ab163ce35a00238d9c67d29c1996a514-20260827-125933683-ios.jpg",
+      "https://as-images.imgix.net/d82f90f118967764a53d3ec9aa5e7873-20260827-125836118-ios.jpg",
+      "https://as-images.imgix.net/b6700b553950a3384712937cb306ea67-20260827-125735939-ios.jpg",
+      "https://as-images.imgix.net/af16f811840618167f60619c6d01cf25-20260827-125755692-ios.jpg",
+      "https://as-images.imgix.net/f763afd5b30d0169195255a758e650e0-20260827-125819220-ios.jpg",
+      "https://as-images.imgix.net/130832db4f42be511ca81bcdba6ad775-20260827-124932019-ios.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/82a3f7c7d5091e962ffadf1ed1864efe-2026-gjs-particulars-unit-9-wassage-way-south-hampton-lovett-industrial-estate.docx",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-06 15:48:00"
+  },
+  {
+    "id": 405132,
+    "status": "Available",
+    "address": "Unit 7",
+    "town": "Bromsgrove",
+    "postcode": "B60 3EX",
+    "lat": 52.316476,
+    "lon": -2.060756,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Light Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2278,
+    "size_to_sqft": 2278,
+    "summary": "Well Located Premises Suitable for a Variety of Commercial Uses",
+    "description": "Unit 7 Aston Fields Industrial Estate comprises an end-terrace commercial property of steel frame construction with brick & block elevations.  The building is currently configured as a warehouse / industrial property, that has previously been used as a trade counter.\n\nInternally, there is a good-sized warehouse area with the benefit of 4.75m eaves.  Located to the front of the unit is a kitchen and WCs – offering male & female.  The property is accessed via a pedestrian door and roller shutter door. Externally there are two car parking spaces with loading / unloading facilities to the front of the access door.\n\nGross Internal Area\t2,278 sq ft\t211.63 sq m",
+    "location": "The property is situated in Bromsgrove, to the south of the town centre on Aston Fields Industrial Estate. Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the property, giving access to the Midlands motorway network.\n\nBirmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south.\n\nAston Fields Industrial Estate benefits from communal landscaping, allocated & communal parking and extensive security, including CCTV and security gates.",
+    "features": [
+      "2,278 sq ft (211.63 sq m) GIA",
+      "Guide Rental of £22,500 per annum (£1,875 per calendar month)",
+      "Large warehouse area with kitchen and WCs",
+      "To be refurbished prior to occupation",
+      "Situated on the popular Aston Fields Industrial Estate",
+      "Suitable for warehouse, industrial and trade counter usage"
+    ],
+    "rent_psf": 9.88,
+    "rent_pa": 22500,
+    "rent": "£22,500 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 22750,
+    "epc_rating": "C (51)",
+    "images": [
+      "https://as-images.imgix.net/528b3ed0fac454d3dd77f75946fe6f33-20260918-110416753-ios.jpg",
+      "https://as-images.imgix.net/071a088ca3df980f36e0678ee42f981b-20260918-104816342-ios.jpg",
+      "https://as-images.imgix.net/eeb3e15d686a80d09fe7dcc2320a9fd1-20260918-105006617-ios.jpg",
+      "https://as-images.imgix.net/0bbda105364e6127a94a61ddaf93d538-20260918-104640471-ios.jpg",
+      "https://as-images.imgix.net/1710bbede8c237684e90e4f1a117190e-20260918-104827912-ios.jpg",
+      "https://as-images.imgix.net/af8ea4ddb6bf76865a03f4aa00617c71-20260918-104716469-ios.jpg",
+      "https://as-images.imgix.net/4906f621fad778093d0a44c436694f3c-20260918-105048767-ios.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9bb99b4bda34705c804ba8e0cee14aa4-gjs-dillon-particulars-unit-7-aston-fields-industrial-estate-bromsgrove.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-06 14:53:54"
+  },
+  {
+    "id": 376681,
+    "status": "Available",
+    "address": "Unit 18 Aston Fields Industrial Estate",
+    "town": "Bromsgrove",
+    "postcode": "B60 3EX",
+    "lat": 52.316476,
+    "lon": -2.060756,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3786,
+    "size_to_sqft": 3786,
+    "summary": "Well located premises suitable for a variety of commercial uses",
+    "description": "Unit 18 Aston Fields Industrial Estate comprises a mid-terrace commercial property of steel frame construction with brick & block elevations.  The building is currently configured as a warehouse / industrial property.\n\nInternally, there is a good-sized warehouse area with the benefit of 4.75m eaves.  Located to the front of the unit is a separate office area and WCs.  The property is accessed via a pedestrian door and roller shutter doors. Externally there are car parking spaces and loading / unloading facilities to the front of the property. \n\nGross Internal Area\t3,786 sq ft\t352 sq m",
+    "location": "The property is situated in Bromsgrove, to the south of the town centre on Aston Fields Industrial Estate. Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the property, giving access to the Midlands motorway network.\n\nBirmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south.\n\nAston Fields Industrial Estate benefits from communal landscaping, allocated & communal parking and extensive security, including CCTV and security gates.",
+    "features": [
+      "3,786 sq ft (352 sq m) GIA",
+      "Large warehouse area with associated office and WC's",
+      "Situated on the popular Aston Fields Industrial Estate",
+      "Suitable for warehouse, industrial or trade counter useage"
+    ],
+    "rent_psf": 9.03,
+    "rent_pa": 34200,
+    "rent": "£34,200 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 34250,
+    "epc_rating": "C (58)",
+    "images": [
+      "https://as-images.imgix.net/9b6adee9cebcb3e60f6f3841efc8233a-frnt-page-image.png",
+      "https://as-images.imgix.net/416c7a02f268f5c980f94441f50d1d09-map.png"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c20c397e5d8a3db69a38d8c90c682584-gjs-dillon-particulars-unit-18-aston-fields-industrial-estate-bromsgrove.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-06 11:02:25"
+  },
+  {
     "id": 346682,
     "status": "Available",
     "address": "The Piano Building,Weavers Wharf",
@@ -1038,57 +1362,6 @@
       }
     ],
     "last_updated": "2026-10-05 16:10:14"
-  },
-  {
-    "id": 376681,
-    "status": "Available",
-    "address": "Unit 18 Aston Fields Industrial Estate",
-    "town": "Bromsgrove",
-    "postcode": "B60 3EX",
-    "lat": 52.316476,
-    "lon": -2.060756,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3786,
-    "size_to_sqft": 3786,
-    "summary": "Well located premises suitable for a variety of commercial uses",
-    "description": "Unit 18 Aston Fields Industrial Estate comprises a mid-terrace commercial property of steel frame construction with brick & block elevations.  The building is currently configured as a warehouse / industrial property.\n\nInternally, there is a good-sized warehouse area with the benefit of 4.75m eaves.  Located to the front of the unit is a separate office area and WCs.  The property is accessed via a pedestrian door and roller shutter doors. Externally there are car parking spaces and loading / unloading facilities to the front of the property. \n\nGross Internal Area\t3,786 sq ft\t352 sq m",
-    "location": "The property is situated in Bromsgrove, to the south of the town centre on Aston Fields Industrial Estate. Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the property, giving access to the Midlands motorway network.\n\nBirmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south.\n\nAston Fields Industrial Estate benefits from communal landscaping, allocated & communal parking and extensive security, including CCTV and security gates.",
-    "features": [
-      "3,786 sq ft (352 sq m) GIA",
-      "Large warehouse area with associated office and WC's",
-      "Situated on the popular Aston Fields Industrial Estate",
-      "Suitable for warehouse, industrial or trade counter useage"
-    ],
-    "rent_psf": 9.03,
-    "rent_pa": 34200,
-    "rent": "£34,200 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 34250,
-    "epc_rating": "C (58)",
-    "images": [
-      "https://as-images.imgix.net/9b6adee9cebcb3e60f6f3841efc8233a-frnt-page-image.png",
-      "https://as-images.imgix.net/416c7a02f268f5c980f94441f50d1d09-map.png"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c20c397e5d8a3db69a38d8c90c682584-gjs-dillon-particulars-unit-18-aston-fields-industrial-estate-bromsgrove.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-05 16:07:57"
   },
   {
     "id": 346652,
@@ -2719,85 +2992,6 @@
     "last_updated": "2026-10-05 15:56:09"
   },
   {
-    "id": 389516,
-    "status": "Available",
-    "address": "Unit 105, Pointon Way",
-    "town": "Droitwich",
-    "postcode": "WR9 0LW",
-    "lat": 52.281577,
-    "lon": -2.175892,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 42574,
-    "size_to_sqft": 42574,
-    "summary": "Industrial / Warehouse Unit with Offices and Parking on Stonebridge Cross Business Park",
-    "description": "Stonebridge Cross is one of the main industrial parks within Worcestershire, comprising a variety of medium to large warehouse, distribution and manufacturing units.  Occupiers on site include VAX, Muller, AKW, Bibby Distribution and Spire.\n\n105 Pointon Way comprises a stand-alone commercial unit which is accessed directly off the main estate road.  Externally the unit offers a barrier accessed car park for circa 50 cars, including electric charging points.  To the rear of the unit is a large yard measuring approximately 65m by 35m.  The yard provides direct access to the warehouse space via two level access loading doors which measure 5.10m in height.\n\nInternally the property offers two storeys of office accommodation with direct access off the car park.  This is arranged to provide an open plan office space, reception and cellular meeting rooms over the ground floor with further open plan offices over the first floor.  There are WC facilities, kitchens and ample storage on each floor.  There is a store which sits alongside the warehouse and office accommodation which also offers further offices and a canteen above.",
-    "location": "Stonebridge Cross Business Park lies to the north of Droitwich town centre, approximately 3 miles from junction 5 of the M5 motorway. From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales.  The business park provides a modern business and logistics hub with all units being built to a high standard with their own car parking and secure service yards.",
-    "features": [
-      "Steel portal frame construction",
-      "Gated yard and barrier entrance car park",
-      "8.6m eaves",
-      "Two storey, quality offices",
-      "2 dock level loading doors",
-      "35 m yard depth",
-      "50 car parking spaces with EV charging points"
-    ],
-    "rent_psf": 7.75,
-    "rent_pa": 330000,
-    "rent": "£330,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/6e47af51ab02c67cc1a9681928c10bfa-img-1384.JPEG",
-      "https://as-images.imgix.net/a9e42c92aee59dd9a1a463a1ca5635a8-img-1381.JPEG",
-      "https://as-images.imgix.net/46a189ad0718eb799ed43c991bab8ad3-dji-0046.JPG",
-      "https://as-images.imgix.net/b4a6daf630446dfa30042398648daca3-dji-0043.JPG",
-      "https://as-images.imgix.net/3f3fd6c47637829aa26127c49abe4445-img-1363.JPEG",
-      "https://as-images.imgix.net/907f83a912610b97c8a19fa1f0d608f8-img-1365.JPEG",
-      "https://as-images.imgix.net/56fb8cb9065e3e0c010d2f7442dcaf41-img-1362-1.JPEG",
-      "https://as-images.imgix.net/2c2adf912eb368a2641022671f2f6269-img-1349.JPEG",
-      "https://as-images.imgix.net/6aa5dc20e246c4acbf66285c22bcff39-img-1351.JPEG",
-      "https://as-images.imgix.net/a7972478cdf3e704f2a6e47e85fba445-img-1353.JPEG",
-      "https://as-images.imgix.net/669651db79f713ca42676ed58ebd9996-img-1355.JPEG",
-      "https://as-images.imgix.net/83eea3b79fa8c7d1bfe8da942e51016e-img-1360.JPEG",
-      "https://as-images.imgix.net/e7a72607242b18d9156ff52b3c77cdb1-img-1358.JPEG",
-      "https://as-images.imgix.net/200cc125df4bb7651e719f27139166e5-img-1375.JPEG",
-      "https://as-images.imgix.net/3926d94d851fa476ab5f6bdf32a6e427-img-1357.JPEG",
-      "https://as-images.imgix.net/93189a1bfcba1d58b4da60b5e3eeba6c-img-1376.JPEG",
-      "https://as-images.imgix.net/7ac19f03f5a4346e96d24032143d57fa-img-1367.JPEG",
-      "https://as-images.imgix.net/15fae3f49d06c57fe038c2bcf137260e-dji-0049.JPG",
-      "https://as-images.imgix.net/0ae19c4365ac1219506702b4277fde50-img-1378.JPEG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/3d0552a679d0c441180f80846f07b295-pointon-way-droitwich-brochure-9387-v-1.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-05 15:55:50"
-  },
-  {
     "id": 354040,
     "status": "Available",
     "address": "15 Aston Court",
@@ -3009,72 +3203,6 @@
       }
     ],
     "last_updated": "2026-10-05 14:06:01"
-  },
-  {
-    "id": 405132,
-    "status": "Available",
-    "address": "Unit 7",
-    "town": "Bromsgrove",
-    "postcode": "B60 3EX",
-    "lat": 52.316476,
-    "lon": -2.060756,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Light Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2278,
-    "size_to_sqft": 2278,
-    "summary": "Well Located Premises Suitable for a Variety of Commercial Uses",
-    "description": "Unit 7 Aston Fields Industrial Estate comprises an end-terrace commercial property of steel frame construction with brick & block elevations.  The building is currently configured as a warehouse / industrial property, that has previously been used as a trade counter.\n\nInternally, there is a good-sized warehouse area with the benefit of 4.75m eaves.  Located to the front of the unit is a kitchen and WCs – offering male & female.  The property is accessed via a pedestrian door and roller shutter door. Externally there are two car parking spaces with loading / unloading facilities to the front of the access door.\n\nGross Internal Area\t2,278 sq ft\t211.63 sq m",
-    "location": "The property is situated in Bromsgrove, to the south of the town centre on Aston Fields Industrial Estate. Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the property, giving access to the Midlands motorway network.\n\nBirmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south.\n\nAston Fields Industrial Estate benefits from communal landscaping, allocated & communal parking and extensive security, including CCTV and security gates.",
-    "features": [
-      "2,278 sq ft (211.63 sq m) GIA",
-      "Guide Rental of £22,500 per annum (£1,875 per calendar month)",
-      "Large warehouse area with kitchen and WCs",
-      "To be refurbished prior to occupation",
-      "Situated on the popular Aston Fields Industrial Estate",
-      "Suitable for warehouse, industrial and trade counter usage"
-    ],
-    "rent_psf": 9.88,
-    "rent_pa": 22500,
-    "rent": "£22,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 22750,
-    "epc_rating": "C (51)",
-    "images": [
-      "https://as-images.imgix.net/528b3ed0fac454d3dd77f75946fe6f33-20260918-110416753-ios.jpg",
-      "https://as-images.imgix.net/071a088ca3df980f36e0678ee42f981b-20260918-104816342-ios.jpg",
-      "https://as-images.imgix.net/eeb3e15d686a80d09fe7dcc2320a9fd1-20260918-105006617-ios.jpg",
-      "https://as-images.imgix.net/0bbda105364e6127a94a61ddaf93d538-20260918-104640471-ios.jpg",
-      "https://as-images.imgix.net/1710bbede8c237684e90e4f1a117190e-20260918-104827912-ios.jpg",
-      "https://as-images.imgix.net/af8ea4ddb6bf76865a03f4aa00617c71-20260918-104716469-ios.jpg",
-      "https://as-images.imgix.net/4906f621fad778093d0a44c436694f3c-20260918-105048767-ios.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9bb99b4bda34705c804ba8e0cee14aa4-gjs-dillon-particulars-unit-7-aston-fields-industrial-estate-bromsgrove.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-05 10:14:32"
   },
   {
     "id": 377589,
@@ -4173,73 +4301,6 @@
       }
     ],
     "last_updated": "2026-09-21 11:06:38"
-  },
-  {
-    "id": 404835,
-    "status": "Available",
-    "address": "Unit 9, Wassage Way South",
-    "town": "Droitwich",
-    "postcode": "WR9 0QG",
-    "lat": 52.28469,
-    "lon": -2.168149,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2016,
-    "size_to_sqft": 2016,
-    "summary": "Warehouse / Industrial Unit on the Popular Hampton Lovett Industrial Estate",
-    "description": "Unit 9 Wassage Way South comprises a terraced industrial/warehouse buildings prominently positioned at the entrance to Hampton Lovett Industrial Estate. The unit has a clear working height of circa nine foot (2.8 metres) and a roller shutter door providing access to a rear loading bay.   Internally, the unit benefits from a gas blower heater and a three-phase electrical supply, mains water, gas and drainage.\n\nThe unit is due to be refurbished.",
-    "location": "The property is situated on Hampton Lovett Industrial Estate to the north of Droitwich Spa. Droitwich is situated approximately seven miles to the north east of Worcester, six miles south west of Bromsgrove and 18 miles south west of Birmingham city centre. \n\nThe town is situated immediately adjacent to the M5 with Junction 5 being approximately three miles from the property – this providing access north to the M42, M6 and wider national motorway network. Droitwich also benefits from a mainline railway station which provides direct access to Worcester and Birmingham New Street Stations.",
-    "features": [
-      "2,016 sq ft (187.39 sq m)",
-      "Located at the entrance to Hampton Lovett Industrial Estate",
-      "The unit is due for refurbishment",
-      "Loading / unloading to the rear of the property",
-      "Three Phase Electricity supply",
-      "3 miles from Junction 5 of the M5 motorway"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 15750,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/096fb24986a5f5142507db7f268f1998-20260827-130205449-ios.jpg",
-      "https://as-images.imgix.net/d1faae8b99aeda1365f9818814c424bb-20260827-125956956-ios.jpg",
-      "https://as-images.imgix.net/027ed85d1f3409c9d99c818608db8fed-20260827-125918709-ios.jpg",
-      "https://as-images.imgix.net/f1f314cf5bfeffbb8e58ef8be93d36a1-20260827-125942380-ios.jpg",
-      "https://as-images.imgix.net/ab163ce35a00238d9c67d29c1996a514-20260827-125933683-ios.jpg",
-      "https://as-images.imgix.net/d82f90f118967764a53d3ec9aa5e7873-20260827-125836118-ios.jpg",
-      "https://as-images.imgix.net/b6700b553950a3384712937cb306ea67-20260827-125735939-ios.jpg",
-      "https://as-images.imgix.net/af16f811840618167f60619c6d01cf25-20260827-125755692-ios.jpg",
-      "https://as-images.imgix.net/f763afd5b30d0169195255a758e650e0-20260827-125819220-ios.jpg",
-      "https://as-images.imgix.net/130832db4f42be511ca81bcdba6ad775-20260827-124932019-ios.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/91da5382ecedff17001b7bc2269f9632-2026-gjs-particulars-units-9-hampton-lovett-industrial-estate.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-09-21 10:15:37"
   },
   {
     "id": 380213,
