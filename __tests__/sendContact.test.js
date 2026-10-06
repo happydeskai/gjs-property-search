@@ -206,7 +206,9 @@ describe('POST /api/send-contact', () => {
       ['addressLine1', '', 'Missing address line 1'],
       ['town', '  ', 'Missing town'],
       ['postcode', '', 'Invalid postcode'],
-      ['postcode', 'not a postcode', 'Invalid postcode']
+      ['postcode', 'not a postcode', 'Invalid postcode'],
+      ['reasonForContact', '', 'Missing reason for contact'],
+      ['howHeard', '', 'Missing how did you hear about us']
     ])('rejects %s = %p before sending anything', async (field, value, error) => {
       const { res } = await send({ ...fullBody(), [field]: value });
 

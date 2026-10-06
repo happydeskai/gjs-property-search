@@ -96,6 +96,8 @@ module.exports = async (req, res) => {
       if (!String(addressLine1).trim()) return res.status(400).json({ error: 'Missing address line 1' });
       if (!String(town).trim())         return res.status(400).json({ error: 'Missing town' });
       if (!pc)                          return res.status(400).json({ error: 'Invalid postcode' });
+      if (!String(reasonForContact).trim()) return res.status(400).json({ error: 'Missing reason for contact' });
+      if (!String(howHeard).trim())         return res.status(400).json({ error: 'Missing how did you hear about us' });
     }
 
     const ip = req.headers['x-forwarded-for'] || req.socket?.remoteAddress || '';
