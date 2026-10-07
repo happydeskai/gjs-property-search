@@ -17,7 +17,8 @@
     "for_sale": false,
     "size_from_sqft": 3968,
     "size_to_sqft": 3968,
-    "description": "Unit 16 North Bank comprises a detached industrial unit of steel portal frame with part brick elevations and part steel profile sheet, under a pitched, steel profile sheet roof with intermittent roof lights.  \n\nThe accommodation includes workshop with a height to eaves of 5.9m, two roller shutter doors and a gas fired hot air heater (which needs recommissioning), the workshop incorporates two storey offices with ground floor comprising office, reception and w.c. facilities, and a further two \noffices to the first floor.",
+    "summary": "Industrial/Garage space on the popular Berry Hill Industrial Estate",
+    "description": "Unit 16 North Bank comprises a detached industrial unit of steel portal frame with part brick elevations and part steel profile sheet, under a pitched, steel profile sheet roof with intermittent roof lights.  \n\nThe accommodation includes workshop with a height to eaves of 5.9m, two roller shutter doors and a gas fired hot air heater (which needs recommissioning), the workshop incorporates two storey offices with ground floor comprising office, reception and w.c. facilities, and a further two offices to the first floor.",
     "location": "The property is situated in Droitwich, to the north of the town centre on Berry Hill Industrial Estate. The M5 motorway is in close proximity to property with Junction 5 being approximately two miles by road to the north. From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales. \n\nDroitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time \nof approximately 2 hrs 35 mins to London Paddington via Worcester.",
     "features": [],
     "rent_psf": 8.57,
@@ -39,7 +40,11 @@
       "https://as-images.imgix.net/71248884fd0e5803571378b5c2d5665f-dji-0142.JPG"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/2fa801e82c83f0d720aaeac5ef6e61c2-gjs-dillon-particulars-unit-16-north-bank-berry-hill-ie-droitwich.pdf",
-    "floor_plan_urls": [],
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/b17c79cfa854ccf9bbc75de0ebbcd489-cam04581g0-pr0077-build01-floor01.jpg",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/544b59405fbd3cd39023f555fce5cecf-cam04581g0-pr0077-build01.jpg",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/dcb9e6d09fd8f0fa48b8c9ec0a45ab44-cam04581g0-pr0077-build01-floor00.jpg"
+    ],
     "contacts": [
       {
         "name": "Fergus Edwards",
@@ -58,7 +63,7 @@
         "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-10-06 16:10:45"
+    "last_updated": "2026-10-07 14:47:31"
   },
   {
     "id": 389516,
@@ -510,66 +515,6 @@
       }
     ],
     "last_updated": "2026-10-05 16:13:07"
-  },
-  {
-    "id": 346648,
-    "status": "Under Offer",
-    "address": "The Old Mill",
-    "town": "Pershore",
-    "postcode": "WR10 1BY",
-    "lat": 52.11138916,
-    "lon": -2.082348108,
-    "types": [
-      "Retail",
-      "Office",
-      "Industrial"
-    ],
-    "raw_types": [
-      "Retail",
-      "Office",
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 5575,
-    "size_to_sqft": 5757,
-    "summary": "Retail / Office / Industrial To Let, Pershore",
-    "description": "The Old Mill comprises a large, detached commercial premises of traditional brick construction. The building has an open-plan retail sales area, which benefits from suspended LED lighting. Ancillary accommodation is provided at ground and first floor levels, including staff and storage areas, along with a mezzanine floor. There are approximately 20 car parking spaces. Ground Floor Sales3,400 sq ft315.87 sq m Ground Floor Ancillary 520 sq ft 48.31 sq m Mezzanine Area1,349 sq ft125.33 sq m First Floor Ancillary 306 sq ft 28.43 sq m Total5,575 sq ft 517.93 sq m",
-    "location": "Location The property is prominently located on New Road in Pershore, a well-connected Worcestershire market town approximately 10 miles from Worcester and 7 miles from Evesham. The Old Mill is positioned close to the River Avon and within easy walking distance of Pershore town centre. The location benefits from good transport links, including nearby access to the A44 and Pershore railway station with services to Worcester, Oxford and London.",
-    "features": [
-      "Suitable for a variety of uses",
-      "Ground and first floor space",
-      "On site car parking",
-      "Good access to the A44, leading to the M5 motorway"
-    ],
-    "rent_psf": 5.02,
-    "rent_pa": 28000,
-    "rent": "£28,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/23387c8a7ce3b5b7fe2a131ab060c4f7-letting346648.jpeg",
-      "https://as-images.imgix.net/3e32dbaedb4939efef5d6832670c92cc-letting346648.jpeg",
-      "https://as-images.imgix.net/209a69c9adf175d282719bed4e21ecef-letting346648.jpeg",
-      "https://as-images.imgix.net/a70f037aa6b30150aff0c933cbe197ef-letting346648.jpeg",
-      "https://as-images.imgix.net/fae4d88addd61870797e6b9a1473a0f7-letting346648.jpeg",
-      "https://as-images.imgix.net/434f2a7a885c6a94b66e25a64e2d0fcf-letting346648.jpeg",
-      "https://as-images.imgix.net/90e27364575128aa53e3d53c3c11b5cc-letting346648.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6a207975ae15e397dfa5dbdbf0df0063-letting346648.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-05 16:13:01"
   },
   {
     "id": 355287,
