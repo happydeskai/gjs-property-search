@@ -21,11 +21,11 @@ const SMTP_USER   = process.env.SMTP_USER;
 const SMTP_PASS   = process.env.SMTP_PASS;
 const FROM_EMAIL  = process.env.FROM_EMAIL || 'bamboo.admin@gjsdillon.co.uk';
 const TO_CONTACT  = process.env.TO_CONTACT || 'info@gjsdillon.co.uk';
-// CRM intake address (Flight). Currently the UAT/test system — set the TO_CRM env var
-// in Vercel to switch to the live address. Comma-separate for multiple recipients,
-// or set it to an empty string to turn the CRM copy off entirely.
+// CRM intake address (Flight production). Every submission goes to TO_CONTACT and a
+// copy comes here. Override with the TO_CRM env var in Vercel; comma-separate for
+// multiple recipients, or set it to an empty string to turn the CRM copy off entirely.
 const TO_CRM      = process.env.TO_CRM === undefined
-  ? '6aa15b6a07cc4-gjs-dillon-uat@uat-app.co.uk'
+  ? '6abf8982e76fa-gjs-dillon-production@flightcrm.co.uk'
   : process.env.TO_CRM;
 
 const ALLOW_ORIGINS = (process.env.CORS_ORIGINS || process.env.CORS_ORIGIN || '*')

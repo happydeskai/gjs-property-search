@@ -12,7 +12,7 @@ jest.mock('nodemailer', () => ({
 }));
 
 const TO_CONTACT = 'info@gjsdillon.co.uk';
-const TO_CRM = '6aa15b6a07cc4-gjs-dillon-uat@uat-app.co.uk';
+const TO_CRM = '6abf8982e76fa-gjs-dillon-production@flightcrm.co.uk';
 
 const loadHandler = (env = {}) => {
   jest.resetModules();
