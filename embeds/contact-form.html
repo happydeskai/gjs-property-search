@@ -30,7 +30,7 @@
   .gjs-label { font-weight: 600; margin-bottom: 6px; display: flex; gap: 8px; align-items: baseline; }
   .gjs-req { font-size: 12px; opacity: 0.8; }
   .gjs-input, .gjs-select, .gjs-textarea { width: 100%; padding: 12px; border: 1px solid var(--gjs-border); border-radius: 8px; font: inherit; background: #fff; color: var(--gjs-text); }
-  .gjs-input[aria-invalid="true"], .gjs-textarea[aria-invalid="true"] { border-color: #C62828; box-shadow: 0 0 0 1px #C62828; }
+  .gjs-input[aria-invalid="true"], .gjs-select[aria-invalid="true"], .gjs-textarea[aria-invalid="true"] { border-color: #C62828; box-shadow: 0 0 0 1px #C62828; }
   .gjs-textarea { min-height: 120px; }
   .gjs-fieldset { border: 0; padding: 0; margin: 0 0 14px; min-width: 0; }
   .gjs-fieldset legend { font-weight: 600; padding: 0; margin-bottom: 10px; }
@@ -137,8 +137,8 @@
       </div>
 
       <div class="gjs-field">
-        <div class="gjs-label">Reason for contact</div>
-        <select class="gjs-select" name="reasonForContact">
+        <div class="gjs-label">Reason for contact <span class="gjs-req">(required)</span></div>
+        <select class="gjs-select" name="reasonForContact" required>
           <option value="">Select an option</option>
           <option>Buy/sell/let/rent a property</option>
           <option>Valuation services</option>
@@ -153,8 +153,8 @@
       </div>
 
       <div class="gjs-field">
-        <div class="gjs-label">How did you hear about us?</div>
-        <select class="gjs-select" name="howHeard">
+        <div class="gjs-label">How did you hear about us? <span class="gjs-req">(required)</span></div>
+        <select class="gjs-select" name="howHeard" required>
           <option value="">Select an option</option>
           <option>Email</option>
           <option>LinkedIn</option>
@@ -217,7 +217,7 @@
   // Returns the first invalid field (and flags every invalid one), or null.
   function validate() {
     var first = null;
-    FORM.querySelectorAll('input[required]').forEach(function (el) {
+    FORM.querySelectorAll('input[required], select[required]').forEach(function (el) {
       var v = el.value.trim();
       var bad = !v;
       if (!bad && el.type === 'email') bad = !/^\S+@\S+\.\S+$/.test(v);
