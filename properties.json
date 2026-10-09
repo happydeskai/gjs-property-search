@@ -1,5 +1,147 @@
 [
   {
+    "id": 346777,
+    "status": "Available",
+    "address": "The Radius, De Salis Court",
+    "town": "Droitwich",
+    "postcode": "WR9 0QE",
+    "lat": 52.283466339,
+    "lon": -2.168041944,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 2142,
+    "size_to_sqft": 2142,
+    "summary": "Office For Sale, Droitwich",
+    "description": "The property comprises a two-storey detached office building of brick cavity construction with pitched concrete tiled roof. The property benefits from timber framed double-glazed windows throughout and has been fitted with a gas-fired central system via traditional wall-mounted radiators as well as wall-mounted split-system air conditioning units. The property benefits from having approximately 12no tarmacadam surfaced car parking spaces, all located to the front of the building and the property is surrounded by well-maintained grounds. \nGround Floor 990 sq ft 92 sq m\nFirst Floor 1,152 sq ft 107 sq m \nTotal 2,142 sq ft 199 sq m",
+    "location": "The property is located within the popular Hampton Lovett Industrial Estate, approximately one mile north of Droitwich Town Centre. The Hampton Lovett Industrial Estate is accessed directly off the A442 which provides access to Droitwich to the south and Hartlebury and Kidderminster to the north. The location is particularly convenient for occupiers as it provides easy access to the M5 Motorway with Junction 5 situated approximately 3.25km (two miles) to the east. Birmingham city centre is situated approximately 22 miles to the north east, Bromsgrove is situated approximately 7 miles to the north east, Worcester city centre is situated approximately 8 miles to the south west, Kidderminster is situated approximately 9 miles to the north and Redditch is situated approximately 17 miles to the north east. Droitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester",
+    "features": [
+      "2,142 sq ft (199 sq m) NIA",
+      "Two storey detatched office space",
+      "Conservatory and garden",
+      "Located on the popular Hampton Lovett Industrial Estate",
+      "12 car parking spaces",
+      "Air conditioning",
+      "New key point..."
+    ],
+    "price": "£325,000",
+    "price_value": 325000,
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/54e6919c93602cb600116e3e30da2150-letting346777.jpeg",
+      "https://as-images.imgix.net/132dd9a9b0067f49aeaf4fdb8fb643af-letting346777.jpeg",
+      "https://as-images.imgix.net/4dabd90f6344e064f6f8b8f71a077dd7-letting346777.jpeg",
+      "https://as-images.imgix.net/2fdf877b09b0a44b116e1bfbfd014472-letting346777.jpeg",
+      "https://as-images.imgix.net/bb599455f9d3cd0420d64ce4ba8d4aff-letting346777.jpeg",
+      "https://as-images.imgix.net/241bbc37a9ee037427db208cc62d52e2-letting346777.jpeg",
+      "https://as-images.imgix.net/b09b0d83597654649863d849ee1f0e7f-letting346777.jpeg",
+      "https://as-images.imgix.net/2f482190c01fa145d8e32e2da6969530-letting346777.jpeg",
+      "https://as-images.imgix.net/529ea4330607dbb015cb6ab600f82be8-letting346777.jpeg",
+      "https://as-images.imgix.net/857192b4888eab6f2bd8e9e6c1a0faa6-letting346777.jpeg",
+      "https://as-images.imgix.net/784fbfb95138f1b0b9e6ee683adbe279-letting346777.jpeg",
+      "https://as-images.imgix.net/af7a7a4095486e62029d0e7a523166ee-letting346777.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6f3adf2f3f27b9f0b2182d1a0ef15d9f-gjs-dillon-particulars-the-radius-de-salis-court-droitwich-wr9.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/0922922d0d59c316b7c45d2cab21bef2-cam04581g0-pr0026-build01-floor00-1.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/c95cba8c66c0d68c68478321d9a8572b-cam04581g0-pr0026-build01-floor01-1.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/theradiusdroitwich"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-09 15:42:34"
+  },
+  {
+    "id": 426352,
+    "status": "Available",
+    "address": "Malvern Hills Science Park",
+    "town": "Malvern",
+    "postcode": "WR14 3SZ",
+    "lat": 52.104819,
+    "lon": -2.311898,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 420,
+    "size_to_sqft": 2648,
+    "summary": "Flexible Offices and Laboratories To Let",
+    "description": "Malvern Hills Science Park offers high-quality office and laboratory accommodation within a thriving business community at the foot of the Malvern Hills.  Home to around 400 people working across science, engineering and technology businesses, the park provides a professional environment designed to help companies of all sizes grow.  From start-ups to established international organisations, occupiers benefit from modern accommodation, flexible lease terms and an extensive range of on-site facilities.",
+    "location": "Malvern Hills Science Park occupies a strategic position on Geraldine Road, at the foot of the Malvern Hills in an Area of Outstanding Natural Beauty. Located in the heart of the UK's Cyber Valley, adjacent to QinteiQ and close to GCHQ, the park has become one of the country's leading locations for science, technology, engineering and cyber businesses.  Excellent road and rail connections provide easy access to Worcester, Birmingham, London and the wider Midlands.",
+    "features": [
+      "Short and long term lease options",
+      "Modern meeting and conference facilities",
+      "High-speed business broadband",
+      "24/7 secure electronic access",
+      "EV charging points",
+      "Ample on-site parking",
+      "On-site Beacon Cafe",
+      "Manned reception",
+      "Beautiful landscaped surroundings"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/57c21b64fb06b90004518502f1393f31-reception.jpg",
+      "https://as-images.imgix.net/cc51fff4193d29617226e66f413ebf26-phase-photos-phase-1-and-phase-5.jpg",
+      "https://as-images.imgix.net/a4d761249e02c146234e2e9e88975bf0-mhsp-phase-1-2-5-hill-view.jpg",
+      "https://as-images.imgix.net/bb0c8cc588f3142a1f30733abd4318fc-cafe-august-26.jpg",
+      "https://as-images.imgix.net/123e719889150f8ce1479b44406f2fa6-cafe-hill-view-aug-26.jpg",
+      "https://as-images.imgix.net/9cca9c4a7db68396ac85293a97304c9b-split-office-ground-floor.jpg",
+      "https://as-images.imgix.net/9a13a839bce3c3d1c69791870c232111-split-office-1st-floor-2.jpg",
+      "https://as-images.imgix.net/c95d1bff88f9ad3df686e6dc2cfc3a47-office-1.jpg",
+      "https://as-images.imgix.net/9dbe81e890bd11aac70ce038dcfe599c-office-7.jpg",
+      "https://as-images.imgix.net/8024c7e03cda0b0266b56b374f714a2b-office-8.jpg",
+      "https://as-images.imgix.net/01c9d53ae72632c639e6ef0eda2dd392-office-9.jpg",
+      "https://as-images.imgix.net/74df3d333661ab2e7a19ed95acf4d935-flexible-meeting-room-ph3-boardtable-view.jpg",
+      "https://as-images.imgix.net/faae6ea58bd10241f05214d55795d6f5-flexible-meeting-room-innovations-july-26.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c2232ae46700c634e32fa9c9d30b4644-malvern-hills-science-park-particulars.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-09 14:57:37"
+  },
+  {
     "id": 406541,
     "status": "Available",
     "address": "Unit 16, North Bank",
@@ -908,75 +1050,6 @@
       }
     ],
     "last_updated": "2026-10-05 16:11:34"
-  },
-  {
-    "id": 346777,
-    "status": "Available",
-    "address": "The Radius, De Salis Court",
-    "town": "Droitwich",
-    "postcode": "WR9 0QE",
-    "lat": 52.283466339,
-    "lon": -2.168041944,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 2142,
-    "size_to_sqft": 2142,
-    "summary": "Office For Sale, Droitwich",
-    "description": "The property comprises a two-storey detached office building of brick cavity construction with pitched concrete tiled roof. The property benefits from timber framed double-glazed windows throughout and has been fitted with a gas-fired central system via traditional wall-mounted radiators as well as wall-mounted split-system air conditioning units. The property benefits from having approximately 12no tarmacadam surfaced car parking spaces, all located to the front of the building and the property is surrounded by well-maintained grounds. \nGround Floor 990 sq ft 92 sq m\nFirst Floor 1,152 sq ft 107 sq m \nTotal 2,142 sq ft 199 sq m",
-    "location": "The property is located within the popular Hampton Lovett Industrial Estate, approximately one mile north of Droitwich Town Centre. The Hampton Lovett Industrial Estate is accessed directly off the A442 which provides access to Droitwich to the south and Hartlebury and Kidderminster to the north. The location is particularly convenient for occupiers as it provides easy access to the M5 Motorway with Junction 5 situated approximately 3.25km (two miles) to the east. Birmingham city centre is situated approximately 22 miles to the north east, Bromsgrove is situated approximately 7 miles to the north east, Worcester city centre is situated approximately 8 miles to the south west, Kidderminster is situated approximately 9 miles to the north and Redditch is situated approximately 17 miles to the north east. Droitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester",
-    "features": [
-      "2,142 sq ft (199 sq m) NIA",
-      "Two storey detatched office space",
-      "Conservatory and garden",
-      "Located on the popular Hampton Lovett Industrial Estate",
-      "12 car parking spaces",
-      "Air conditioning",
-      "New key point..."
-    ],
-    "price": "£325,000",
-    "price_value": 325000,
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/54e6919c93602cb600116e3e30da2150-letting346777.jpeg",
-      "https://as-images.imgix.net/132dd9a9b0067f49aeaf4fdb8fb643af-letting346777.jpeg",
-      "https://as-images.imgix.net/4dabd90f6344e064f6f8b8f71a077dd7-letting346777.jpeg",
-      "https://as-images.imgix.net/2fdf877b09b0a44b116e1bfbfd014472-letting346777.jpeg",
-      "https://as-images.imgix.net/bb599455f9d3cd0420d64ce4ba8d4aff-letting346777.jpeg",
-      "https://as-images.imgix.net/241bbc37a9ee037427db208cc62d52e2-letting346777.jpeg",
-      "https://as-images.imgix.net/b09b0d83597654649863d849ee1f0e7f-letting346777.jpeg",
-      "https://as-images.imgix.net/2f482190c01fa145d8e32e2da6969530-letting346777.jpeg",
-      "https://as-images.imgix.net/529ea4330607dbb015cb6ab600f82be8-letting346777.jpeg",
-      "https://as-images.imgix.net/857192b4888eab6f2bd8e9e6c1a0faa6-letting346777.jpeg",
-      "https://as-images.imgix.net/784fbfb95138f1b0b9e6ee683adbe279-letting346777.jpeg",
-      "https://as-images.imgix.net/af7a7a4095486e62029d0e7a523166ee-letting346777.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6f3adf2f3f27b9f0b2182d1a0ef15d9f-gjs-dillon-particulars-the-radius-de-salis-court-droitwich-wr9.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/0922922d0d59c316b7c45d2cab21bef2-cam04581g0-pr0026-build01-floor00-1.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/c95cba8c66c0d68c68478321d9a8572b-cam04581g0-pr0026-build01-floor01-1.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/theradiusdroitwich"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-05 16:11:28"
   },
   {
     "id": 389940,
@@ -2771,7 +2844,7 @@
       "Grade II listed Building - register number 1390154",
       "Close to Foregate Street Station"
     ],
-    "price": "Offers from £225,000",
+    "price": "Offers from ��225,000",
     "price_value": 225000,
     "business_rates_psf": 0,
     "rateable_value": 19250,
