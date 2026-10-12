@@ -1,5 +1,74 @@
 [
   {
+    "id": 406541,
+    "status": "Available",
+    "address": "Unit 16, North Bank",
+    "town": "Droitwich",
+    "postcode": "WR9 9AU",
+    "lat": 52.283486937564,
+    "lon": -2.1589894034271,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Light Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3968,
+    "size_to_sqft": 3968,
+    "summary": "Industrial/Garage space on the popular Berry Hill Industrial Estate",
+    "description": "Unit 16 North Bank comprises a detached industrial unit of steel portal frame with part brick elevations and part steel profile sheet, under a pitched, steel profile sheet roof with intermittent roof lights.  \n\nThe accommodation includes workshop with a height to eaves of 5.9m and two roller shutter doors. the workshop incorporates two storey offices with ground floor comprising office, reception and w.c. facilities, and a further two offices to the first floor.",
+    "location": "The property is situated in Droitwich, to the north of the town centre on Berry Hill Industrial Estate. The M5 motorway is in close proximity to property with Junction 5 being approximately two miles by road to the north. From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales. \n\nDroitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester.",
+    "features": [],
+    "rent_psf": 8.57,
+    "rent_pa": 34000,
+    "rent": "£34,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 32000,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/1f5b5d25548cfbb993e106755a858521-img-1588.JPEG",
+      "https://as-images.imgix.net/cc75fc84663d1cce3e07f0319559dc45-20261006-120401.jpg",
+      "https://as-images.imgix.net/c29cd864fee1e275897cfbe501fc117b-dji-0134.JPG",
+      "https://as-images.imgix.net/c773bc52e381690969705a86da5aa7ca-20261006-120533.jpg",
+      "https://as-images.imgix.net/825f4958f0bfedb1089f4fb83e03ff4f-dji-0137.JPG",
+      "https://as-images.imgix.net/b9b640f8a24a047471fd1c1472cd82bb-img-5860-1.jpeg",
+      "https://as-images.imgix.net/21495800867eb187549ee457fa94986e-img-5862-1.jpeg",
+      "https://as-images.imgix.net/2edc661c5ad8792f0b9149270d1fc821-img-5871.jpeg",
+      "https://as-images.imgix.net/712ad3ae785c5ecc3fa25ba75859f77e-img-5870.jpeg",
+      "https://as-images.imgix.net/71248884fd0e5803571378b5c2d5665f-dji-0142.JPG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/ebd0773b2c749c8d6c313ed377c58bb8-gjs-dillon-particulars-unit-16-north-bank-berrry-hill-ie-2.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/b17c79cfa854ccf9bbc75de0ebbcd489-cam04581g0-pr0077-build01-floor01.jpg",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/544b59405fbd3cd39023f555fce5cecf-cam04581g0-pr0077-build01.jpg",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/dcb9e6d09fd8f0fa48b8c9ec0a45ab44-cam04581g0-pr0077-build01-floor00.jpg"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/unit16northbank"
+    ],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-12 10:09:18"
+  },
+  {
     "id": 346777,
     "status": "Available",
     "address": "The Radius, De Salis Court",
@@ -140,72 +209,6 @@
       }
     ],
     "last_updated": "2026-10-09 14:57:37"
-  },
-  {
-    "id": 406541,
-    "status": "Available",
-    "address": "Unit 16, North Bank",
-    "town": "Droitwich",
-    "postcode": "WR9 9AU",
-    "lat": 52.283486937564,
-    "lon": -2.1589894034271,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Light Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3968,
-    "size_to_sqft": 3968,
-    "summary": "Industrial/Garage space on the popular Berry Hill Industrial Estate",
-    "description": "Unit 16 North Bank comprises a detached industrial unit of steel portal frame with part brick elevations and part steel profile sheet, under a pitched, steel profile sheet roof with intermittent roof lights.  \n\nThe accommodation includes workshop with a height to eaves of 5.9m, two roller shutter doors and a gas fired hot air heater (which needs recommissioning), the workshop incorporates two storey offices with ground floor comprising office, reception and w.c. facilities, and a further two offices to the first floor.",
-    "location": "The property is situated in Droitwich, to the north of the town centre on Berry Hill Industrial Estate. The M5 motorway is in close proximity to property with Junction 5 being approximately two miles by road to the north. From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales. \n\nDroitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester.",
-    "features": [],
-    "rent_psf": 8.57,
-    "rent_pa": 34000,
-    "rent": "£34,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 32000,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/1f5b5d25548cfbb993e106755a858521-img-1588.JPEG",
-      "https://as-images.imgix.net/cc75fc84663d1cce3e07f0319559dc45-20261006-120401.jpg",
-      "https://as-images.imgix.net/c29cd864fee1e275897cfbe501fc117b-dji-0134.JPG",
-      "https://as-images.imgix.net/c773bc52e381690969705a86da5aa7ca-20261006-120533.jpg",
-      "https://as-images.imgix.net/825f4958f0bfedb1089f4fb83e03ff4f-dji-0137.JPG",
-      "https://as-images.imgix.net/b9b640f8a24a047471fd1c1472cd82bb-img-5860-1.jpeg",
-      "https://as-images.imgix.net/21495800867eb187549ee457fa94986e-img-5862-1.jpeg",
-      "https://as-images.imgix.net/2edc661c5ad8792f0b9149270d1fc821-img-5871.jpeg",
-      "https://as-images.imgix.net/712ad3ae785c5ecc3fa25ba75859f77e-img-5870.jpeg",
-      "https://as-images.imgix.net/71248884fd0e5803571378b5c2d5665f-dji-0142.JPG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/2fa801e82c83f0d720aaeac5ef6e61c2-gjs-dillon-particulars-unit-16-north-bank-berry-hill-ie-droitwich.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/b17c79cfa854ccf9bbc75de0ebbcd489-cam04581g0-pr0077-build01-floor01.jpg",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/544b59405fbd3cd39023f555fce5cecf-cam04581g0-pr0077-build01.jpg",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/dcb9e6d09fd8f0fa48b8c9ec0a45ab44-cam04581g0-pr0077-build01-floor00.jpg"
-    ],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-07 16:47:28"
   },
   {
     "id": 389516,
@@ -2844,7 +2847,7 @@
       "Grade II listed Building - register number 1390154",
       "Close to Foregate Street Station"
     ],
-    "price": "Offers from ��225,000",
+    "price": "Offers from £225,000",
     "price_value": 225000,
     "business_rates_psf": 0,
     "rateable_value": 19250,
