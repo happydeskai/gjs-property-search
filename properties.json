@@ -1,5 +1,351 @@
 [
   {
+    "id": 404835,
+    "status": "Available",
+    "address": "Unit 9, Wassage Way South",
+    "town": "Droitwich",
+    "postcode": "WR9 0QG",
+    "lat": 52.28469,
+    "lon": -2.168149,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2016,
+    "size_to_sqft": 2016,
+    "summary": "Warehouse / Industrial Unit on the Popular Hampton Lovett Industrial Estate",
+    "description": "Unit 9 Wassage Way South comprises a terraced industrial/warehouse buildings prominently positioned at the entrance to Hampton Lovett Industrial Estate. The unit has a clear working height of circa nine foot (2.8 metres) and a roller shutter door providing access to a rear loading bay.   Internally, the unit benefits from a gas blower heater and a three-phase electrical supply, mains water, gas and drainage.\n\nThe unit is due to be refurbished.",
+    "location": "The property is situated on Hampton Lovett Industrial Estate to the north of Droitwich Spa. Droitwich is situated approximately seven miles to the north east of Worcester, six miles south west of Bromsgrove and 18 miles south west of Birmingham city centre. \n\nThe town is situated immediately adjacent to the M5 with Junction 5 being approximately three miles from the property – this providing access north to the M42, M6 and wider national motorway network. Droitwich also benefits from a mainline railway station which provides direct access to Worcester and Birmingham New Street Stations.",
+    "features": [
+      "2,016 sq ft (187.39 sq m)",
+      "Located at the entrance to Hampton Lovett Industrial Estate",
+      "The unit is due for refurbishment",
+      "Loading / unloading to the rear of the property",
+      "Three Phase Electricity supply",
+      "3 miles from Junction 5 of the M5 motorway"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 15750,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/130832db4f42be511ca81bcdba6ad775-20260827-124932019-ios.jpg",
+      "https://as-images.imgix.net/d1faae8b99aeda1365f9818814c424bb-20260827-125956956-ios.jpg",
+      "https://as-images.imgix.net/027ed85d1f3409c9d99c818608db8fed-20260827-125918709-ios.jpg",
+      "https://as-images.imgix.net/f1f314cf5bfeffbb8e58ef8be93d36a1-20260827-125942380-ios.jpg",
+      "https://as-images.imgix.net/ab163ce35a00238d9c67d29c1996a514-20260827-125933683-ios.jpg",
+      "https://as-images.imgix.net/d82f90f118967764a53d3ec9aa5e7873-20260827-125836118-ios.jpg",
+      "https://as-images.imgix.net/b6700b553950a3384712937cb306ea67-20260827-125735939-ios.jpg",
+      "https://as-images.imgix.net/af16f811840618167f60619c6d01cf25-20260827-125755692-ios.jpg",
+      "https://as-images.imgix.net/f763afd5b30d0169195255a758e650e0-20260827-125819220-ios.jpg",
+      "https://as-images.imgix.net/096fb24986a5f5142507db7f268f1998-20260827-130205449-ios.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/82a3f7c7d5091e962ffadf1ed1864efe-2026-gjs-particulars-unit-9-wassage-way-south-hampton-lovett-industrial-estate.docx",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-13 15:58:08"
+  },
+  {
+    "id": 406541,
+    "status": "Available",
+    "address": "Unit 16, North Bank",
+    "town": "Droitwich",
+    "postcode": "WR9 9AU",
+    "lat": 52.283486937564,
+    "lon": -2.1589894034271,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Light Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3968,
+    "size_to_sqft": 3968,
+    "summary": "Industrial/Garage space on the popular Berry Hill Industrial Estate",
+    "description": "Unit 16 North Bank comprises a detached industrial unit of steel portal frame with part brick elevations and part steel profile sheet, under a pitched, steel profile sheet roof with intermittent roof lights.  \n\nThe accommodation includes workshop with a height to eaves of 5.9m and two roller shutter doors. the workshop incorporates two storey offices with ground floor comprising office, reception and w.c. facilities, and a further two offices to the first floor.",
+    "location": "The property is situated in Droitwich, to the north of the town centre on Berry Hill Industrial Estate. The M5 motorway is in close proximity to property with Junction 5 being approximately two miles by road to the north. From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales. \n\nDroitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester.",
+    "features": [],
+    "rent_psf": 8.57,
+    "rent_pa": 34000,
+    "rent": "£34,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 32000,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/1f5b5d25548cfbb993e106755a858521-img-1588.JPEG",
+      "https://as-images.imgix.net/cc75fc84663d1cce3e07f0319559dc45-20261006-120401.jpg",
+      "https://as-images.imgix.net/c29cd864fee1e275897cfbe501fc117b-dji-0134.JPG",
+      "https://as-images.imgix.net/c773bc52e381690969705a86da5aa7ca-20261006-120533.jpg",
+      "https://as-images.imgix.net/825f4958f0bfedb1089f4fb83e03ff4f-dji-0137.JPG",
+      "https://as-images.imgix.net/b9b640f8a24a047471fd1c1472cd82bb-img-5860-1.jpeg",
+      "https://as-images.imgix.net/21495800867eb187549ee457fa94986e-img-5862-1.jpeg",
+      "https://as-images.imgix.net/2edc661c5ad8792f0b9149270d1fc821-img-5871.jpeg",
+      "https://as-images.imgix.net/712ad3ae785c5ecc3fa25ba75859f77e-img-5870.jpeg",
+      "https://as-images.imgix.net/71248884fd0e5803571378b5c2d5665f-dji-0142.JPG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/ebd0773b2c749c8d6c313ed377c58bb8-gjs-dillon-particulars-unit-16-north-bank-berrry-hill-ie-2.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/b17c79cfa854ccf9bbc75de0ebbcd489-cam04581g0-pr0077-build01-floor01.jpg",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/544b59405fbd3cd39023f555fce5cecf-cam04581g0-pr0077-build01.jpg",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/dcb9e6d09fd8f0fa48b8c9ec0a45ab44-cam04581g0-pr0077-build01-floor00.jpg"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/unit16northbank"
+    ],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-13 15:54:28"
+  },
+  {
+    "id": 346689,
+    "status": "Available",
+    "address": "Trinity, Vale Park",
+    "town": "Evesham",
+    "postcode": "WR11 1LB",
+    "lat": 52.070251464,
+    "lon": -1.934033036,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": true,
+    "size_from_sqft": 53879,
+    "size_to_sqft": 64806,
+    "summary": "Industrial To Let or For Sale, Evesham",
+    "description": "Modern high-performance units designed for efficiency, capacity and sustainability. Unit A - Warehouse 60,999 sq ft (5,667 sq m), Office 3,807 sq ft (354 sq m) - Total - 64,806 sq ft (6,021 sq m) Unit B - Warehouse 50,628 sq ft (4,704 sq m), Office 3,351 sq ft (311 sq m) - Total - 53,979 sq ft (5,015 sq m) Unit C - Warehouse 50,628 sq ft (4,701 sq m), Office 3,276 sq ft (304 sq m) - Total - 53,879 sq ft (5,005 sq m) All of the warehouses are EPC A rated and BREEAM Very Good. Please refer to the brochure for information on Dock Access Doors, Level Access Doors, Yard Depths, Clear Internal Heights, Warehouse Flooring, Floor Loadings, Power Supply and Parking (HGV, Car & EV).",
+    "location": "Trinity is a new site comprised of three units situated on Conference Way, within Vale Park, just off the A46, to the south of Evesham.",
+    "features": [
+      "Available for immediate occupation",
+      "Three units from 53,879 sq ft to 64,806 sq ft",
+      "Please refer to the brochure for further details on specification and journey times"
+    ],
+    "rent": "On Application",
+    "price": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/b2261807ca3478fdca3ad5c132eb9ad2-letting346689.jpeg",
+      "https://as-images.imgix.net/1453d707075817893be5c10806c3c153-letting346689.jpeg",
+      "https://as-images.imgix.net/54718e2f3fe2a32556367970d5df01f9-letting346689.jpeg",
+      "https://as-images.imgix.net/7422247b677e49642a2d7cc2281a73fe-letting346689.jpeg",
+      "https://as-images.imgix.net/26cce4237522106a93318a6b21c8c079-letting346689.jpeg",
+      "https://as-images.imgix.net/4b19e8ad798c07a57b46023dca33adcf-letting346689.jpeg",
+      "https://as-images.imgix.net/a444904ce5a9b50a4903685b57fad77b-letting346689.jpeg",
+      "https://as-images.imgix.net/53d7c894e37ad7122904af7a3104b15b-letting346689.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/2285907c05a67032274db17b2ade08dc-letting346689.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/16de819147631b8f30adc1f649ee1f43-cam04581g0-pr0028-build01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/fd922c8366bd7bdad08dab04e9916e25-cam04581g0-pr0029-build01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/940c82aabbd01bae478579c89d61ca63-cam04581g0-pr0030-build01.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/unitatrinityvalepark",
+      "https://tour.giraffe360.com/unitbtrinityvalepark",
+      "https://tour.giraffe360.com/unitctrinityvalepark"
+    ],
+    "contacts": [
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-13 15:52:26"
+  },
+  {
+    "id": 346706,
+    "status": "Available",
+    "address": "Davies Road Trade Centre",
+    "town": "Evesham",
+    "postcode": "WR11 1XG",
+    "lat": 52.080497257668,
+    "lon": -1.9462135798233,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial",
+      "Trade Counter"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2791,
+    "size_to_sqft": 5679,
+    "summary": "Industrial / Trade Counter To Let, Evesham",
+    "description": "Davies Road Trade Centre is a well-presented industrial/trade counter scheme of steel portal frame construction, featuring an insulated profile steel roof and a combination of block and insulated steel profile elevations. The units benefit from a glazed pedestrian entrance, an electrically operated roller shutter door and a dedicated yard/loading area with ample car parking. Situated within a well-established trade counter estate, the location has attracted a strong mix of national and regional occupiers, including Screwfix, Buildbase, Tile Giant, Topps Tiles, Tool Station and Easy Bathrooms.",
+    "location": "The property is situated within Evesham, to the south east of Worcestershire. Evesham is a market town within Wychavon which benefits from a population of approximately 25,000, according to the 2011 census. It is located approximately 14 miles south east of Worcester, 14 miles north east of Cheltenham, 27 miles south of Birmingham and 90 miles north west of London. Evesham benefits from good road communications being on the A44; which provides access to Worcester, Oxford and Junction 6 of the M5 motorway (in approximately 25 minutes) and on the A46; which provides access to Redditch, Tewkesbury and Junction 9 of the M5 motorway (in approximately 20 minutes). Evesham also has a mainline station which provides a direct access to the Worcester stations, Oxford and London Paddington.",
+    "features": [
+      "Recently refurbished",
+      "Dedicated yard/loading",
+      "Two units remaining",
+      "Electrically operated roller  shutter door"
+    ],
+    "rent_psf": 12.5,
+    "rent_pa": 34888,
+    "rent": "£12.50 per sq ft",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/d955a84f3065c245c090c20c432c855d-img-1325.JPEG",
+      "https://as-images.imgix.net/23dd1cf57ec0e79ccc201943bb107b1e-letting346706.jpeg",
+      "https://as-images.imgix.net/bdb3b04c7c998894c59aac457a3878b2-letting346706.jpeg",
+      "https://as-images.imgix.net/9076ba0914117231c69cb23856c264aa-letting346706.jpeg",
+      "https://as-images.imgix.net/422c606f10a8c007e4ac8e2df0dcb168-letting346706.jpeg",
+      "https://as-images.imgix.net/51e1ff60e4dd3b70f5f573d43574db90-letting346706.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/7dba641d5a67d0ff0bdf4ece9e917299-17173-hi-aurora-evesham-davies-road-tp-brochure-v10.pdf",
+    "floor_plan_urls": [],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/eveshamtradepark"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-13 15:48:24"
+  },
+  {
+    "id": 389415,
+    "status": "Available",
+    "address": "17 Victoria Square",
+    "town": "Droitwich",
+    "postcode": "WR9 8DE",
+    "lat": 52.267363,
+    "lon": -2.150675,
+    "types": [
+      "Retail"
+    ],
+    "raw_types": [
+      "Retail"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 3043,
+    "size_to_sqft": 3043,
+    "summary": "High Street Retail Premises with upper floor accommodation.",
+    "description": "17 Victoria Square is an end of terrace, two-storey building with a wide shop frontage to Victoria Square and return frontage onto St Andrew’s Square shopping centre. The property is currently occupied by TG Jones and further benefits from ancillary office accommodation at first floor level. The building is set over two storeys of timber frame and solid brick construction underneath pitched tiled roofs.  The building has been fitted with UPVC double-glazed units throughout.\n\n17 Victoria Square comprises a typical layout and modern fit-out, with an extensive retailing area at ground floor level and staircase leading to first floor office accommodation, together with kitchen and wc facilities. The property will be sold with vacant possession.",
+    "location": "Droitwich is a well-known Worcestershire spa town being popular with local and national companies as well as having a strong business community and good shopping facilities. Birmingham is situated approximately 22 miles to the north-east, Bromsgrove is situated approximately 7 miles to the north-east, Worcester is situated approximately 8 miles to the south-west, Kidderminster is situated approximately 9 miles to the north and Redditch is situated approximately 17 miles to the north-east.   \n\nDroitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester.",
+    "features": [
+      "Ground and First Floor",
+      "Separate access to staircase",
+      "To be sold with vacant possession",
+      "Good access to junctions 5 and 6 of the M5 motorway"
+    ],
+    "price": "£450,000",
+    "price_value": 450000,
+    "business_rates_psf": 31200,
+    "rateable_value": 65000,
+    "epc_rating": "C (55)",
+    "images": [
+      "https://as-images.imgix.net/b3eb31ecc43e9f5f4525c45acab459a0-20260810-141216737-ios.jpg",
+      "https://as-images.imgix.net/a08628dc3d1b667bfbd2f6d3821b4586-20260810-135917058-ios.jpg",
+      "https://as-images.imgix.net/d4784c7259c6f87db776003735f95e88-20260810-134840663-ios.jpg",
+      "https://as-images.imgix.net/3776380388b037c4d74c1404c7f2e52f-20260810-134848717-ios.jpg",
+      "https://as-images.imgix.net/28e99da33e24426dbf967f8e8bc25c9c-20260810-135806611-ios.jpg",
+      "https://as-images.imgix.net/800bf23d97e7e66fb1cdad9b88478ef3-20260810-135842739-ios.jpg",
+      "https://as-images.imgix.net/7d726f5b212c80543d81df2350c08436-20260810-135724160-ios.jpg",
+      "https://as-images.imgix.net/d9dfa802b6d14c61462174d6f04854f6-20260810-135206749-ios.jpg",
+      "https://as-images.imgix.net/461d42aeb16c443a721d0f5a708598aa-20260810-135532230-ios.jpg",
+      "https://as-images.imgix.net/c1cd79edd3fcc8b66aa4970ff8c4faed-20260810-135010978-ios.jpg",
+      "https://as-images.imgix.net/02455766febf06d9170138da7ca6f775-20260810-134949200-ios.jpg",
+      "https://as-images.imgix.net/106e8f49314b0b4c5319cb6941acbc3f-20260810-135421410-ios.jpg",
+      "https://as-images.imgix.net/fc335f0de499450ceb25a87a3907ad00-20260810-135344583-ios.jpg",
+      "https://as-images.imgix.net/4640a9ca22f8582122bf7d54dc374ddc-20260810-135104652-ios.jpg",
+      "https://as-images.imgix.net/fd2d24026e6f4543f409830b89b05521-20260810-140029097-ios.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/625422bd68cc86163c9c1a9fa9a23483-e3a74a10b1d62170af97b1dd8f9e5626-1.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-13 13:05:08"
+  },
+  {
     "id": 351584,
     "status": "Under Offer",
     "address": "155 London Road",
@@ -144,75 +490,6 @@
       }
     ],
     "last_updated": "2026-10-12 14:10:35"
-  },
-  {
-    "id": 406541,
-    "status": "Available",
-    "address": "Unit 16, North Bank",
-    "town": "Droitwich",
-    "postcode": "WR9 9AU",
-    "lat": 52.283486937564,
-    "lon": -2.1589894034271,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Light Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3968,
-    "size_to_sqft": 3968,
-    "summary": "Industrial/Garage space on the popular Berry Hill Industrial Estate",
-    "description": "Unit 16 North Bank comprises a detached industrial unit of steel portal frame with part brick elevations and part steel profile sheet, under a pitched, steel profile sheet roof with intermittent roof lights.  \n\nThe accommodation includes workshop with a height to eaves of 5.9m and two roller shutter doors. the workshop incorporates two storey offices with ground floor comprising office, reception and w.c. facilities, and a further two offices to the first floor.",
-    "location": "The property is situated in Droitwich, to the north of the town centre on Berry Hill Industrial Estate. The M5 motorway is in close proximity to property with Junction 5 being approximately two miles by road to the north. From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales. \n\nDroitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester.",
-    "features": [],
-    "rent_psf": 8.57,
-    "rent_pa": 34000,
-    "rent": "£34,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 32000,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/1f5b5d25548cfbb993e106755a858521-img-1588.JPEG",
-      "https://as-images.imgix.net/cc75fc84663d1cce3e07f0319559dc45-20261006-120401.jpg",
-      "https://as-images.imgix.net/c29cd864fee1e275897cfbe501fc117b-dji-0134.JPG",
-      "https://as-images.imgix.net/c773bc52e381690969705a86da5aa7ca-20261006-120533.jpg",
-      "https://as-images.imgix.net/825f4958f0bfedb1089f4fb83e03ff4f-dji-0137.JPG",
-      "https://as-images.imgix.net/b9b640f8a24a047471fd1c1472cd82bb-img-5860-1.jpeg",
-      "https://as-images.imgix.net/21495800867eb187549ee457fa94986e-img-5862-1.jpeg",
-      "https://as-images.imgix.net/2edc661c5ad8792f0b9149270d1fc821-img-5871.jpeg",
-      "https://as-images.imgix.net/712ad3ae785c5ecc3fa25ba75859f77e-img-5870.jpeg",
-      "https://as-images.imgix.net/71248884fd0e5803571378b5c2d5665f-dji-0142.JPG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/ebd0773b2c749c8d6c313ed377c58bb8-gjs-dillon-particulars-unit-16-north-bank-berrry-hill-ie-2.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/b17c79cfa854ccf9bbc75de0ebbcd489-cam04581g0-pr0077-build01-floor01.jpg",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/544b59405fbd3cd39023f555fce5cecf-cam04581g0-pr0077-build01.jpg",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/dcb9e6d09fd8f0fa48b8c9ec0a45ab44-cam04581g0-pr0077-build01-floor00.jpg"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/unit16northbank"
-    ],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-12 10:09:18"
   },
   {
     "id": 346777,
@@ -434,73 +711,6 @@
       }
     ],
     "last_updated": "2026-10-06 16:07:58"
-  },
-  {
-    "id": 404835,
-    "status": "Available",
-    "address": "Unit 9, Wassage Way South",
-    "town": "Droitwich",
-    "postcode": "WR9 0QG",
-    "lat": 52.28469,
-    "lon": -2.168149,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2016,
-    "size_to_sqft": 2016,
-    "summary": "Warehouse / Industrial Unit on the Popular Hampton Lovett Industrial Estate",
-    "description": "Unit 9 Wassage Way South comprises a terraced industrial/warehouse buildings prominently positioned at the entrance to Hampton Lovett Industrial Estate. The unit has a clear working height of circa nine foot (2.8 metres) and a roller shutter door providing access to a rear loading bay.   Internally, the unit benefits from a gas blower heater and a three-phase electrical supply, mains water, gas and drainage.\n\nThe unit is due to be refurbished.",
-    "location": "The property is situated on Hampton Lovett Industrial Estate to the north of Droitwich Spa. Droitwich is situated approximately seven miles to the north east of Worcester, six miles south west of Bromsgrove and 18 miles south west of Birmingham city centre. \n\nThe town is situated immediately adjacent to the M5 with Junction 5 being approximately three miles from the property – this providing access north to the M42, M6 and wider national motorway network. Droitwich also benefits from a mainline railway station which provides direct access to Worcester and Birmingham New Street Stations.",
-    "features": [
-      "2,016 sq ft (187.39 sq m)",
-      "Located at the entrance to Hampton Lovett Industrial Estate",
-      "The unit is due for refurbishment",
-      "Loading / unloading to the rear of the property",
-      "Three Phase Electricity supply",
-      "3 miles from Junction 5 of the M5 motorway"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 15750,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/096fb24986a5f5142507db7f268f1998-20260827-130205449-ios.jpg",
-      "https://as-images.imgix.net/d1faae8b99aeda1365f9818814c424bb-20260827-125956956-ios.jpg",
-      "https://as-images.imgix.net/027ed85d1f3409c9d99c818608db8fed-20260827-125918709-ios.jpg",
-      "https://as-images.imgix.net/f1f314cf5bfeffbb8e58ef8be93d36a1-20260827-125942380-ios.jpg",
-      "https://as-images.imgix.net/ab163ce35a00238d9c67d29c1996a514-20260827-125933683-ios.jpg",
-      "https://as-images.imgix.net/d82f90f118967764a53d3ec9aa5e7873-20260827-125836118-ios.jpg",
-      "https://as-images.imgix.net/b6700b553950a3384712937cb306ea67-20260827-125735939-ios.jpg",
-      "https://as-images.imgix.net/af16f811840618167f60619c6d01cf25-20260827-125755692-ios.jpg",
-      "https://as-images.imgix.net/f763afd5b30d0169195255a758e650e0-20260827-125819220-ios.jpg",
-      "https://as-images.imgix.net/130832db4f42be511ca81bcdba6ad775-20260827-124932019-ios.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/82a3f7c7d5091e962ffadf1ed1864efe-2026-gjs-particulars-unit-9-wassage-way-south-hampton-lovett-industrial-estate.docx",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-06 15:48:00"
   },
   {
     "id": 405132,
@@ -865,78 +1075,6 @@
       }
     ],
     "last_updated": "2026-10-05 16:12:55"
-  },
-  {
-    "id": 346689,
-    "status": "Available",
-    "address": "Trinity, Vale Park",
-    "town": "Evesham",
-    "postcode": "WR11 1LB",
-    "lat": 52.070251464,
-    "lon": -1.934033036,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": true,
-    "size_from_sqft": 53879,
-    "size_to_sqft": 64806,
-    "summary": "Industrial To Let or For Sale, Evesham",
-    "description": "Modern high-performance units designed for efficiency, capacity and sustainability. Unit A - Warehouse 60,999 sq ft (5,667 sq m), Office 3,807 sq ft (354 sq m) - Total - 64,806 sq ft (6,021 sq m) Unit B - Warehouse 50,628 sq ft (4,704 sq m), Office 3,351 sq ft (311 sq m) - Total - 53,979 sq ft (5,015 sq m) Unit C - Warehouse 50,628 sq ft (4,701 sq m), Office 3,276 sq ft (304 sq m) - Total - 53,879 sq ft (5,005 sq m) All of the warehouses are EPC A rated and BREEAM Very Good. Please refer to the brochure for information on Dock Access Doors, Level Access Doors, Yard Depths, Clear Internal Heights, Warehouse Flooring, Floor Loadings, Power Supply and Parking (HGV, Car & EV).",
-    "location": "Trinity is a new site comprised of three units situated on Conference Way, within Vale Park, just off the A46, to the south of Evesham.",
-    "features": [
-      "Available for immediate occupation",
-      "Three units from 53,879 sq ft to 64,806 sq ft",
-      "Please refer to the brochure for further details on specification and journey times"
-    ],
-    "rent": "On Application",
-    "price": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/b2261807ca3478fdca3ad5c132eb9ad2-letting346689.jpeg",
-      "https://as-images.imgix.net/1453d707075817893be5c10806c3c153-letting346689.jpeg",
-      "https://as-images.imgix.net/54718e2f3fe2a32556367970d5df01f9-letting346689.jpeg",
-      "https://as-images.imgix.net/7422247b677e49642a2d7cc2281a73fe-letting346689.jpeg",
-      "https://as-images.imgix.net/26cce4237522106a93318a6b21c8c079-letting346689.jpeg",
-      "https://as-images.imgix.net/4b19e8ad798c07a57b46023dca33adcf-letting346689.jpeg",
-      "https://as-images.imgix.net/a444904ce5a9b50a4903685b57fad77b-letting346689.jpeg",
-      "https://as-images.imgix.net/53d7c894e37ad7122904af7a3104b15b-letting346689.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/2285907c05a67032274db17b2ade08dc-letting346689.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/16de819147631b8f30adc1f649ee1f43-cam04581g0-pr0028-build01.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/fd922c8366bd7bdad08dab04e9916e25-cam04581g0-pr0029-build01.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/940c82aabbd01bae478579c89d61ca63-cam04581g0-pr0030-build01.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/unitatrinityvalepark",
-      "https://tour.giraffe360.com/unitbtrinityvalepark",
-      "https://tour.giraffe360.com/unitctrinityvalepark"
-    ],
-    "contacts": [
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-05 16:12:47"
   },
   {
     "id": 346855,
@@ -3453,72 +3591,6 @@
     "last_updated": "2026-09-29 16:14:46"
   },
   {
-    "id": 346706,
-    "status": "Available",
-    "address": "Evesham Trade Centre",
-    "town": "Evesham",
-    "postcode": "WR11 1XG",
-    "lat": 52.080982208,
-    "lon": -1.947353959,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial",
-      "Trade Counter"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2791,
-    "size_to_sqft": 5679,
-    "summary": "Industrial / Trade Counter To Let, Evesham",
-    "description": "Davies Road Trade Centre is a well-presented industrial/trade counter scheme of steel portal frame construction, featuring an insulated profile steel roof and a combination of block and insulated steel profile elevations. The units benefit from a glazed pedestrian entrance, an electrically operated roller shutter door and a dedicated yard/loading area with ample car parking. Situated within a well-established trade counter estate, the location has attracted a strong mix of national and regional occupiers, including Screwfix, Buildbase, Tile Giant, Topps Tiles, Tool Station and Easy Bathrooms.",
-    "location": "The property is situated within Evesham, to the south east of Worcestershire. Evesham is a market town within Wychavon which benefits from a population of approximately 25,000, according to the 2011 census. It is located approximately 14 miles south east of Worcester, 14 miles north east of Cheltenham, 27 miles south of Birmingham and 90 miles north west of London. Evesham benefits from good road communications being on the A44; which provides access to Worcester, Oxford and Junction 6 of the M5 motorway (in approximately 25 minutes) and on the A46; which provides access to Redditch, Tewkesbury and Junction 9 of the M5 motorway (in approximately 20 minutes). Evesham also has a mainline station which provides a direct access to the Worcester stations, Oxford and London Paddington.",
-    "features": [
-      "Warehouse access via roller shutter door",
-      "Recently refurbished",
-      "Dedicated yard area"
-    ],
-    "rent_psf": 12.5,
-    "rent_pa": 34888,
-    "rent": "£12.50 per sq ft",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/d955a84f3065c245c090c20c432c855d-img-1325.JPEG",
-      "https://as-images.imgix.net/23dd1cf57ec0e79ccc201943bb107b1e-letting346706.jpeg",
-      "https://as-images.imgix.net/bdb3b04c7c998894c59aac457a3878b2-letting346706.jpeg",
-      "https://as-images.imgix.net/9076ba0914117231c69cb23856c264aa-letting346706.jpeg",
-      "https://as-images.imgix.net/422c606f10a8c007e4ac8e2df0dcb168-letting346706.jpeg",
-      "https://as-images.imgix.net/51e1ff60e4dd3b70f5f573d43574db90-letting346706.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/7dba641d5a67d0ff0bdf4ece9e917299-17173-hi-aurora-evesham-davies-road-tp-brochure-v10.pdf",
-    "floor_plan_urls": [],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/eveshamtradepark"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-09-29 16:14:18"
-  },
-  {
     "id": 346657,
     "status": "Available",
     "address": "Ground Floor Office, 29 Foregate Street",
@@ -4119,77 +4191,6 @@
       }
     ],
     "last_updated": "2026-09-29 11:20:14"
-  },
-  {
-    "id": 389415,
-    "status": "Available",
-    "address": "17 Victoria Square",
-    "town": "Droitwich",
-    "postcode": "WR9 8DE",
-    "lat": 52.267363,
-    "lon": -2.150675,
-    "types": [
-      "Retail"
-    ],
-    "raw_types": [
-      "Retail"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 3043,
-    "size_to_sqft": 3043,
-    "summary": "High Street Retail Premises with upper floor accommodation.",
-    "description": "17 Victoria Square is an end of terrace, two-storey building with a wide shop frontage to Victoria Square and return frontage onto St Andrew’s Square shopping centre. The property is currently occupied by TG Jones and further benefits from ancillary office accommodation at first floor level. The building is set over two storeys of timber frame and solid brick construction underneath pitched tiled roofs.  The building has been fitted with UPVC double-glazed units throughout.\n\n17 Victoria Square comprises a typical layout and modern fit-out, with an extensive retailing area at ground floor level and staircase leading to first floor office accommodation, together with kitchen and wc facilities. The property will be sold with vacant possession.",
-    "location": "Droitwich is a well-known Worcestershire spa town being popular with local and national companies as well as having a strong business community and good shopping facilities. Birmingham is situated approximately 22 miles to the north-east, Bromsgrove is situated approximately 7 miles to the north-east, Worcester is situated approximately 8 miles to the south-west, Kidderminster is situated approximately 9 miles to the north and Redditch is situated approximately 17 miles to the north-east.   \n\nDroitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester.",
-    "features": [
-      "Ground and First Floor",
-      "Separate access to staircase",
-      "To be sold with vacant possession",
-      "Good access to junctions 5 and 6 of the M5 motorway"
-    ],
-    "price": "£450,000",
-    "price_value": 450000,
-    "business_rates_psf": 31200,
-    "rateable_value": 65000,
-    "epc_rating": "C (55)",
-    "images": [
-      "https://as-images.imgix.net/b3eb31ecc43e9f5f4525c45acab459a0-20260810-141216737-ios.jpg",
-      "https://as-images.imgix.net/a08628dc3d1b667bfbd2f6d3821b4586-20260810-135917058-ios.jpg",
-      "https://as-images.imgix.net/d4784c7259c6f87db776003735f95e88-20260810-134840663-ios.jpg",
-      "https://as-images.imgix.net/3776380388b037c4d74c1404c7f2e52f-20260810-134848717-ios.jpg",
-      "https://as-images.imgix.net/28e99da33e24426dbf967f8e8bc25c9c-20260810-135806611-ios.jpg",
-      "https://as-images.imgix.net/800bf23d97e7e66fb1cdad9b88478ef3-20260810-135842739-ios.jpg",
-      "https://as-images.imgix.net/7d726f5b212c80543d81df2350c08436-20260810-135724160-ios.jpg",
-      "https://as-images.imgix.net/d9dfa802b6d14c61462174d6f04854f6-20260810-135206749-ios.jpg",
-      "https://as-images.imgix.net/461d42aeb16c443a721d0f5a708598aa-20260810-135532230-ios.jpg",
-      "https://as-images.imgix.net/c1cd79edd3fcc8b66aa4970ff8c4faed-20260810-135010978-ios.jpg",
-      "https://as-images.imgix.net/02455766febf06d9170138da7ca6f775-20260810-134949200-ios.jpg",
-      "https://as-images.imgix.net/106e8f49314b0b4c5319cb6941acbc3f-20260810-135421410-ios.jpg",
-      "https://as-images.imgix.net/fc335f0de499450ceb25a87a3907ad00-20260810-135344583-ios.jpg",
-      "https://as-images.imgix.net/4640a9ca22f8582122bf7d54dc374ddc-20260810-135104652-ios.jpg",
-      "https://as-images.imgix.net/fd2d24026e6f4543f409830b89b05521-20260810-140029097-ios.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/625422bd68cc86163c9c1a9fa9a23483-e3a74a10b1d62170af97b1dd8f9e5626-1.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-09-29 11:19:24"
   },
   {
     "id": 350693,
