@@ -1,5 +1,128 @@
 [
   {
+    "id": 356104,
+    "status": "Available",
+    "address": "Unit 3 Forest Industrial Park",
+    "town": "Kidderminster",
+    "postcode": "DY11 7FX",
+    "lat": 52.368556,
+    "lon": -2.259501,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3364,
+    "size_to_sqft": 3364,
+    "summary": "High Bay Industrial / Warehouse Unit",
+    "description": "This modern industrial / warehouse unit has the following specification.\n\n•\tSteel portal frames\n•\tWC facilities\n•\tRoller shutter door\n•\tPedestrian access door\n•\tAllocated car parking  \n•\tLoading/unloading facilities\n•\tThree phase electricity\n•\t6m eaves \n•\tBlock walls with external composite paneling",
+    "location": "Kidderminster itself is located to the north of Worcester and to the southwest of Stourbridge and has good road access to each, as well as Junctions 4, 5 and 6 of the M5 motorway.  Kidderminster also has a mainline railway station which provides a direct link into Birmingham Snow Hill.\n\nThe industrial estate is situated just off Silverwoods Way, on the former British Sugar Factory site, with easy access to both the Stourport Road and the main A442 Worcester Road which are two of the main arterial roads leading into Kidderminster Town Centre. In recent years, this part of Kidderminster has been totally transformed, attracting a number of high-profile occupiers along the Stourport Road and along Silverwoods Way itself, which has enhanced the area considerably making it a sought-after business location on the southern side of Kidderminster.",
+    "features": [
+      "6m eaves height",
+      "Electric roller shutter door",
+      "Three phase electricity",
+      "Allocated on site car parking"
+    ],
+    "rent_psf": 10,
+    "rent_pa": 33640,
+    "rent": "£33,640 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 25750,
+    "service_charge": "1682",
+    "epc_rating": "B (47)",
+    "images": [
+      "https://as-images.imgix.net/be2571563c0209353c876fb01857f13a-20260325-122429365-ios.jpg",
+      "https://as-images.imgix.net/6dc14c70d7c485df7f9cee9c6a008b6d-20260325-122451372-ios.jpg",
+      "https://as-images.imgix.net/027ad4848fc109aec539bf454b8a52fa-20260325-121943571-ios.jpg",
+      "https://as-images.imgix.net/d35f1719986fa79a8ae770f4dbfa161f-20260325-121717666-ios.jpg",
+      "https://as-images.imgix.net/97776aaad4b08958020a07cd9d89cfd0-20260325-121624476-ios.jpg",
+      "https://as-images.imgix.net/0dd09c458414fdf4d1ea91179b1221da-20260325-121615414-ios.jpg",
+      "https://as-images.imgix.net/efab1c28c45d4916223ca12e86f6fa79-20260325-121130241-ios.jpg",
+      "https://as-images.imgix.net/9be6dcdfc7bb76cf1ef21fd416ff14a1-20260325-122324857-ios.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/3686ca78f0a3f33ebb8eaad0677a18a4-final-gjs-dillon-particulars-unit-3-forest-industrial-park-kidderminster-1.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-14 15:54:52"
+  },
+  {
+    "id": 426611,
+    "status": "Available",
+    "address": "31 Pump Street",
+    "town": "Worcester",
+    "postcode": "WR1 2QX",
+    "lat": 52.19092789301,
+    "lon": -2.2188203200989,
+    "types": [
+      "Retail"
+    ],
+    "raw_types": [
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 583,
+    "size_to_sqft": 583,
+    "summary": "Retail premises in central location",
+    "description": "31 Pump Street is an end-terrace ground floor retail unit situated within the heart of Worcester city centre. The unit features an open-plan retail area with suspended ceiling, air conditioning, and two single-glazed shop frontages facing out onto both Pump Street and New Street. Towards the rear of the unit are ancillary areas suitable for limited storage, in addition to a WC. The unit may suit a variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.",
+    "location": "The property is prominently located on the corner Pump Street and New Street. Both streets are located just off Worcester High Street, in a highly visible and well-trafficked position. The area is also home to a mix of national and independent occupiers. \n\nWorcester's main shopping destinations - Crowngate Shopping Centre and Cathedral Square - are both within a short walking distance. Worcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
+    "features": [
+      "Prominent city centre position",
+      "Vacant possession",
+      "583 sq ft (54.17 sq m) NIA",
+      "Guide Rental of £15,000 per annum (£1,250 per calendar month)"
+    ],
+    "rent_psf": 25.73,
+    "rent_pa": 15000,
+    "rent": "£15,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 11000,
+    "epc_rating": "D (78)",
+    "images": [
+      "https://as-images.imgix.net/312e3b15dc2e8e7ac7b5b728ef233944-20261008-161548.jpg",
+      "https://as-images.imgix.net/e61cc6ebde7245f0e60f8f12cc564c8c-20261008-161538.jpg",
+      "https://as-images.imgix.net/759a9d3c6f330a1635c406681b44d434-20261008-160952.jpg",
+      "https://as-images.imgix.net/0b5e5ff89cd58dda28ba011369351606-20261008-161505.jpg",
+      "https://as-images.imgix.net/7d601d6ed5b3e278843f943ac468ff28-20261008-161140.jpg",
+      "https://as-images.imgix.net/8824eceafc2ed56214f92e06c3216fa4-20261008-162148.jpg",
+      "https://as-images.imgix.net/4e5a8383f771da74fcfa83407b771c65-20261008-160957.jpg",
+      "https://as-images.imgix.net/e5c0669d9232f9661fce7ee568c2c44f-20261008-161034.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/5acf6a34475c6d809f79c1fcd412a3b9-gjs-dillon-particulars-31-pump-street-worcester.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-14 11:54:34"
+  },
+  {
     "id": 404835,
     "status": "Available",
     "address": "Unit 9, Wassage Way South",
@@ -3237,74 +3360,6 @@
       }
     ],
     "last_updated": "2026-10-05 15:55:35"
-  },
-  {
-    "id": 356104,
-    "status": "Available",
-    "address": "Unit 3 Forest Industrial Park",
-    "town": "Kidderminster",
-    "postcode": "DY11 7FX",
-    "lat": 52.368556,
-    "lon": -2.259501,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3364,
-    "size_to_sqft": 3364,
-    "summary": "High Bay Industrial / Warehouse Unit",
-    "description": "This modern industrial / warehouse unit has the following specification.\n\n•\tSteel portal frames\n•\tWC facilities\n•\tRoller shutter door\n•\tPedestrian access door\n•\tAllocated car parking  \n•\tLoading/unloading facilities\n•\tThree phase electricity\n•\t6m eaves \n•\tBlock walls with external composite paneling",
-    "location": "Kidderminster itself is located to the north of Worcester and to the southwest of Stourbridge and has good road access to each, as well as Junctions 4, 5 and 6 of the M5 motorway.  Kidderminster also has a mainline railway station which provides a direct link into Birmingham Snow Hill.\n\nThe industrial estate is situated just off Silverwoods Way, on the former British Sugar Factory site, with easy access to both the Stourport Road and the main A442 Worcester Road which are two of the main arterial roads leading into Kidderminster Town Centre. In recent years, this part of Kidderminster has been totally transformed, attracting a number of high-profile occupiers along the Stourport Road and along Silverwoods Way itself, which has enhanced the area considerably making it a sought-after business location on the southern side of Kidderminster.",
-    "features": [
-      "6m eaves height",
-      "Roller shutter door",
-      "Pedestrian access door",
-      "Three phase electricity",
-      "Good loading and unloading facilities",
-      "Allocated on site car parking"
-    ],
-    "rent_psf": 10,
-    "rent_pa": 33640,
-    "rent": "£33,640 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 25750,
-    "service_charge": "1682",
-    "epc_rating": "B (47)",
-    "images": [
-      "https://as-images.imgix.net/be2571563c0209353c876fb01857f13a-20260325-122429365-ios.jpg",
-      "https://as-images.imgix.net/6dc14c70d7c485df7f9cee9c6a008b6d-20260325-122451372-ios.jpg",
-      "https://as-images.imgix.net/027ad4848fc109aec539bf454b8a52fa-20260325-121943571-ios.jpg",
-      "https://as-images.imgix.net/d35f1719986fa79a8ae770f4dbfa161f-20260325-121717666-ios.jpg",
-      "https://as-images.imgix.net/97776aaad4b08958020a07cd9d89cfd0-20260325-121624476-ios.jpg",
-      "https://as-images.imgix.net/0dd09c458414fdf4d1ea91179b1221da-20260325-121615414-ios.jpg",
-      "https://as-images.imgix.net/efab1c28c45d4916223ca12e86f6fa79-20260325-121130241-ios.jpg",
-      "https://as-images.imgix.net/9be6dcdfc7bb76cf1ef21fd416ff14a1-20260325-122324857-ios.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/3686ca78f0a3f33ebb8eaad0677a18a4-final-gjs-dillon-particulars-unit-3-forest-industrial-park-kidderminster-1.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-05 15:55:27"
   },
   {
     "id": 346754,
