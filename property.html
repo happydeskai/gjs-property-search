@@ -950,6 +950,7 @@ async function main(){
     /* --- Viewing section: agent --- */
     const AGENTS={
       andrew:  {photo:'/agents/andrew.jpg',  mobile:'07394 569127'},
+      fergus:  {photo:'/agents/fergus.jpg',  mobile:'07394 569126'},
       jorge:   {photo:'/agents/jorge.jpg',   mobile:'07394 569128'},
       roy:     {photo:'/agents/roy.jpg',     mobile:'07842 442068'},
       susanne: {photo:'/agents/susanne.jpg', mobile:null},
@@ -959,7 +960,7 @@ async function main(){
       const a=p.agents[0];
       const firstName=(a.name||'').split(' ')[0].toLowerCase();
       const agentData=AGENTS[firstName]||{};
-      const phone=agentData.mobile||MAIN_PHONE;
+      const phone=agentData.mobile||(a.mobile||'').trim()||MAIN_PHONE;
       const photoEl=$('#agentPhoto');
       if(photoEl&&agentData.photo){photoEl.src=agentData.photo;photoEl.alt=a.name||'';}
       const nameEl=$('#agentName');if(nameEl)nameEl.textContent=a.name||'';
