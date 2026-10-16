@@ -2914,7 +2914,7 @@
     "description": "Unit 6, The IO Centre is lcoated on an established estate within Redditch.  Unit 6 can be let on its own or as a multiple unit, alongside Unit 5 (11,343 sq ft  - 1,054 sq m) Both units are to be refurbished once the current tenant has vacated. \n\nThe property is available on sublease of an existing tenancy, which expires in June 2032. A new lease may be available subject to the Landlord’s approval.",
     "location": "Location\nThe IO Centre is a premier industrial estate located on Nash Road. The property benefits from excellent road communications with Junction 3 of the M42 approximately seven miles to the north, which gives access to the M40, M5 and M6.\n\nThe estate is well managed, with recent upgrades including full redecoration of the external cladding, improvements to the estate lighting, and completion of road maintenance works.",
     "features": [
-      "Unit 6 – 14,423 sq ft (1,340 sq m)",
+      "Unit 6 ��� 14,423 sq ft (1,340 sq m)",
       "Can be let in conjunction with Unit 5 at 11,343 sq ft (1,054 sq m)",
       "Two storey offices",
       "8m eaves height",
@@ -3223,75 +3223,6 @@
       }
     ],
     "last_updated": "2026-10-05 15:56:40"
-  },
-  {
-    "id": 352936,
-    "status": "Under Offer",
-    "address": "Bank House",
-    "town": "Worcester",
-    "postcode": "WR1 3QQ",
-    "lat": 52.194309,
-    "lon": -2.22232,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 1596,
-    "size_to_sqft": 1596,
-    "summary": "City Centre Office Building - Suitable for Development (STP)",
-    "description": "Bank House, 7 Shaw Street comprises an end terrace building arranged over the basement, ground, first and second floors.  Being end terrace and on the junction of Shaw Street and Farrier Street, the building is highly prominent and offers good exposure to a busy area of the city. The property is a Grade II listed building – register number 1390154.\n\nThroughout the building there is a mix of small to medium sized offices, along with WC and kitchen facilities.  The basement space is currently used for storage and is best suited to that use.  We are aware that a scheme has been drawn up to convert the property to three self-contained one-bedroom flats, arranged as one per floor.  \n\nGround Floor\t532 ft2\t49.47 m2\nFirst Floor\t532 ft2\t49.47 m2\nSecond Floor\t532 sq ft\t49.47 m2\nTotal\t1,596 sq ft \t148.40 m2",
-    "location": "Bank House is situated within Worcester, in the West Midlands.  Worcester lies 31 miles south west of Birmingham, 101 miles north west of London, 27 miles north of Gloucester and 23 miles north east of Hereford.  At the 2011 census, the population of the city was approximately 100,000.  The city has excellent transport links with a direct mainline to both Birmingham and London, via Worcester Foregate Street, Worcester Shrub Hill and the new Worcester Parkway station.  Worcester also lies to the west of Junctions 6 & 7 of the M5 motorway, providing access north to Birmingham, the M42, the M6 and the wider national motorway network.",
-    "features": [
-      "1,596 sq ft over 3 floors",
-      "City centre location",
-      "Suitable for conversion to 3 x 1 bedroom flats (subject to planning)",
-      "Grade II listed Building - register number 1390154",
-      "Close to Foregate Street Station"
-    ],
-    "price": "Offers from £225,000",
-    "price_value": 225000,
-    "business_rates_psf": 0,
-    "rateable_value": 19250,
-    "epc_rating": "D (100)",
-    "images": [
-      "https://as-images.imgix.net/15935c8d24fecedd1266c65a1be7f8c8-20251210-134709.jpg",
-      "https://as-images.imgix.net/f6c9b6b7499df835789cfe0bacaa6889-20251210-134643.jpg",
-      "https://as-images.imgix.net/a39e280a528b58ab42d9c10cffb38ebe-20251210-135340.jpg",
-      "https://as-images.imgix.net/978b9eb6dc01753d7e5624fafa8d2ade-20251210-140611.jpg",
-      "https://as-images.imgix.net/41aa503527c0de8b4dd4bfd8da48a89b-20251210-140802.jpg",
-      "https://as-images.imgix.net/138df28dfc92b846b6a423f67a64ee3e-20251210-140516.jpg",
-      "https://as-images.imgix.net/11406223b23bcd6c7895657bd8810a40-20251210-140507.jpg",
-      "https://as-images.imgix.net/25014b57c30d5714b72a2ad26481e4a0-20251210-140807.jpg",
-      "https://as-images.imgix.net/f841786a3c2a008900108763641d7ec4-20251210-135934.jpg",
-      "https://as-images.imgix.net/e1b1fe0b90ce7410a3b023f203145de5-20251210-140559.jpg",
-      "https://as-images.imgix.net/2fe32b4c18f5c8f4878bc3661e8f1c21-20251210-135140.jpg",
-      "https://as-images.imgix.net/98bb0fcb967705ef136217f0fe1e8fef-20251210-135835.jpg",
-      "https://as-images.imgix.net/9fafd3c056fb9731b8cb122037faa826-20251210-135916.jpg",
-      "https://as-images.imgix.net/a7f4b2c4007157abfb9357cb543975aa-20251210-135051.jpg",
-      "https://as-images.imgix.net/564ab87dbe0d1521848b8e419bb88573-20251210-135153.jpg",
-      "https://as-images.imgix.net/176e13e9c8ca6c599c27b279b1ef8528-20251210-140841.jpg",
-      "https://as-images.imgix.net/a08d2ac56cdcfd9bb5da3bb6ee3f6f76-20251210-135214.jpg",
-      "https://as-images.imgix.net/d4894c2e302027629486ac32a564dd10-20251210-140031.jpg",
-      "https://as-images.imgix.net/5383583249f26e1b2e4824e2cf98bb73-20251210-140649.jpg",
-      "https://as-images.imgix.net/88025787d464d989fa0a409a19754d9a-20251210-140706.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c78aeac653f3142bc7790411822747f0-gjs-dillon-particulars-7-shaw-street-worcester-wr1.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-05 15:56:30"
   },
   {
     "id": 352941,
