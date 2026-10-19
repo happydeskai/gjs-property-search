@@ -47,6 +47,7 @@
       "https://as-images.imgix.net/4fde46d4d00778c22396f3682c4cc3a1-20260204-143627231-ios.jpg",
       "https://as-images.imgix.net/767a32b21d89ab010fda4b32768c1d4d-20260204-143651776-ios.jpg"
     ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/0d2cf7d5c9e9ca521017a8e4621e6852-gjs-dillon-particulars-worcester-road-kidderminster.pdf",
     "floor_plan_urls": [],
     "contacts": [
       {
@@ -66,7 +67,7 @@
         "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-10-15 12:50:41"
+    "last_updated": "2026-10-19 11:43:06"
   },
   {
     "id": 427141,
@@ -102,12 +103,12 @@
     "rateable_value": 20750,
     "epc_rating": "B (36)",
     "images": [
-      "https://as-images.imgix.net/0a54adef796ed35e567f543a9bd7bb2a-20261012-160459.jpg",
+      "https://as-images.imgix.net/d7e6960a6ceb2104eb6613808e4fe461-20261012-160509.jpg",
       "https://as-images.imgix.net/a0aa15fb69ae6eb598bb6bfe32b8fb51-img-5905.jpeg",
       "https://as-images.imgix.net/8414d1da4bd0ed5ba195ab54824f3be8-img-5906.jpeg",
       "https://as-images.imgix.net/e7abc06688e5fcd8139f7814e16ee979-img-5903.jpeg",
       "https://as-images.imgix.net/e14c1650cde4e234c2933c82de07afe2-img-5904.jpeg",
-      "https://as-images.imgix.net/d7e6960a6ceb2104eb6613808e4fe461-20261012-160509.jpg"
+      "https://as-images.imgix.net/0a54adef796ed35e567f543a9bd7bb2a-20261012-160459.jpg"
     ],
     "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/d9380255af503af6bb4e037d0ac9ca61-gjs-dillon-particulars-unit-9-aston-fields-ie-bromsgrove.pdf",
     "floor_plan_urls": [],
@@ -129,7 +130,7 @@
         "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-10-15 12:24:11"
+    "last_updated": "2026-10-19 10:36:54"
   },
   {
     "id": 405132,
@@ -2739,80 +2740,6 @@
     "last_updated": "2026-10-05 15:58:07"
   },
   {
-    "id": 353374,
-    "status": "Under Offer",
-    "address": "169-171 Newtown Road",
-    "town": "Malvern",
-    "postcode": "WR14 1PJ",
-    "lat": 52.126083,
-    "lon": -2.331358,
-    "types": [
-      "Industrial",
-      "Development/Investment"
-    ],
-    "raw_types": [
-      "Automotive",
-      "Development Site"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 9124,
-    "size_to_sqft": 9124,
-    "summary": "Freehold Car Sales Premises, Suitable for Development (STP)",
-    "description": "The current building offers a detached showroom and workshop sitting central within a regular plot.  The building is accessed via a showroom to the front and two roller shutter doors to the rear.\n\nThe existing building offers the following:\n\nCar Showroom\t2,572 ft2\t\t(239 m2)\nWorkshop\t6,552 ft2\t\t(609 m2)\nTotal \t9,124 ft2\t\t(848 m2)\n\nExternally there is a forecourt to the front which offers parking for 20-25 vehicles along with a further parking area to the rear for 35-40 vehicles.  The main frontage is onto Newtown Road, however, there is a rear access off Nursery Road.\n\nThe site has a total area of 0.64, as shown by the site plan.\n\nRe-Development\nThe sites extends to 0.64 acres and is situated within a residential area of Malvern, it is therefore well suited for re-development, subject to gaining the necessary planning consents.",
-    "location": "Malvern is a spa town in Worcestershire with a population of 30,462 as at the 2021 Census.  Within Malvern, the property fronts the B4503 Newtown Road, in close proximity to its junction with the A449 Worcester Road and circa 1 ½ miles west of Great Malvern town centre.\n\nThe immediate surrounding area is predominantly residential, with some local retail occupiers being located on Newtown Road.  Hills Ford are vacating due to expansion to a larger site in Worcester.",
-    "features": [
-      "Currently operating as Hills Ford motor dealership, who are relocating due to expansion into Worcester",
-      "Existing facility extends to 9,124 sq ft (848 sq m)",
-      "Regular shaped site extending to 0.64 acres",
-      "Situated in a predominantly residential area and therefore suitable for re-development, subject to planning",
-      "Has dual access off Newtown Road and Nursery Road."
-    ],
-    "price": "£750,000",
-    "price_value": 750000,
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/92579b6aeac8e7bc496aea13709404ea-23.jpeg",
-      "https://as-images.imgix.net/95e0e4c9661ae3a79a57e2825f4d9c32-19.jpeg",
-      "https://as-images.imgix.net/1e98ffd0f9565d6d6d707edbc2f0facb-14.jpeg",
-      "https://as-images.imgix.net/4fed5437cbf8c65c6a12b6c552b881b0-13.jpeg",
-      "https://as-images.imgix.net/387a6b9083ea90ea3f0f06207e444b9e-1.jpeg",
-      "https://as-images.imgix.net/c59c64bd6c0adf14878c2f4526f89b65-18.jpeg",
-      "https://as-images.imgix.net/87733d5af2b11902232201ca410d01bf-15.jpeg",
-      "https://as-images.imgix.net/2c37bb1557745091d573c84ca541d2d9-16.jpeg",
-      "https://as-images.imgix.net/0974715b61b0523d37a9953f987321e5-12.jpeg",
-      "https://as-images.imgix.net/c576f7b509f7e0c267f03854ee53d717-11.jpeg",
-      "https://as-images.imgix.net/e00dea741f5b38364ad49ced736844cb-3.jpeg",
-      "https://as-images.imgix.net/34a0e0dd68e4d5f614a04d8c3322ef8a-5.jpeg",
-      "https://as-images.imgix.net/3a8f6350a25ffe8cfd407f75849fb755-8.jpeg",
-      "https://as-images.imgix.net/364afad2ae848acee0dffb6ed5427834-7.jpeg",
-      "https://as-images.imgix.net/2a60c1537b6aad5a0562a386337681c9-10.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/1681895d6b6e7e5285a1ffc97b912db6-gjs-dillon-particulars-169-newtown-road-malvern.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-05 15:58:01"
-  },
-  {
     "id": 363136,
     "status": "Available",
     "address": "Unit 5, The IO Centre",
@@ -2914,7 +2841,7 @@
     "description": "Unit 6, The IO Centre is lcoated on an established estate within Redditch.  Unit 6 can be let on its own or as a multiple unit, alongside Unit 5 (11,343 sq ft  - 1,054 sq m) Both units are to be refurbished once the current tenant has vacated. \n\nThe property is available on sublease of an existing tenancy, which expires in June 2032. A new lease may be available subject to the Landlord’s approval.",
     "location": "Location\nThe IO Centre is a premier industrial estate located on Nash Road. The property benefits from excellent road communications with Junction 3 of the M42 approximately seven miles to the north, which gives access to the M40, M5 and M6.\n\nThe estate is well managed, with recent upgrades including full redecoration of the external cladding, improvements to the estate lighting, and completion of road maintenance works.",
     "features": [
-      "Unit 6 ��� 14,423 sq ft (1,340 sq m)",
+      "Unit 6 – 14,423 sq ft (1,340 sq m)",
       "Can be let in conjunction with Unit 5 at 11,343 sq ft (1,054 sq m)",
       "Two storey offices",
       "8m eaves height",
