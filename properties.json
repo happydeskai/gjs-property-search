@@ -1,5 +1,147 @@
 [
   {
+    "id": 426352,
+    "status": "Available",
+    "address": "Malvern Hills Science Park",
+    "town": "Malvern",
+    "postcode": "WR14 3SZ",
+    "lat": 52.104819,
+    "lon": -2.311898,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 420,
+    "size_to_sqft": 2648,
+    "summary": "Flexible Offices and Laboratories To Let",
+    "description": "Malvern Hills Science Park offers high-quality office and laboratory accommodation within a thriving business community at the foot of the Malvern Hills.  Home to around 400 people working across science, engineering and technology businesses, the park provides a professional environment designed to help companies of all sizes grow.  From start-ups to established international organisations, occupiers benefit from modern accommodation, flexible lease terms and an extensive range of on-site facilities.",
+    "location": "Malvern Hills Science Park occupies a strategic position on Geraldine Road, at the foot of the Malvern Hills in an Area of Outstanding Natural Beauty. Located in the heart of the UK's Cyber Valley, adjacent to QinteiQ and close to GCHQ, the park has become one of the country's leading locations for science, technology, engineering and cyber businesses.  Excellent road and rail connections provide easy access to Worcester, Birmingham, London and the wider Midlands.",
+    "features": [
+      "Short and long term lease options",
+      "Modern meeting and conference facilities",
+      "High-speed business broadband",
+      "24/7 secure electronic access",
+      "EV charging points",
+      "Ample on-site parking",
+      "On-site Beacon Cafe",
+      "Manned reception",
+      "Beautiful landscaped surroundings"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/57c21b64fb06b90004518502f1393f31-reception.jpg",
+      "https://as-images.imgix.net/cc51fff4193d29617226e66f413ebf26-phase-photos-phase-1-and-phase-5.jpg",
+      "https://as-images.imgix.net/a4d761249e02c146234e2e9e88975bf0-mhsp-phase-1-2-5-hill-view.jpg",
+      "https://as-images.imgix.net/bb0c8cc588f3142a1f30733abd4318fc-cafe-august-26.jpg",
+      "https://as-images.imgix.net/123e719889150f8ce1479b44406f2fa6-cafe-hill-view-aug-26.jpg",
+      "https://as-images.imgix.net/9cca9c4a7db68396ac85293a97304c9b-split-office-ground-floor.jpg",
+      "https://as-images.imgix.net/9a13a839bce3c3d1c69791870c232111-split-office-1st-floor-2.jpg",
+      "https://as-images.imgix.net/c95d1bff88f9ad3df686e6dc2cfc3a47-office-1.jpg",
+      "https://as-images.imgix.net/9dbe81e890bd11aac70ce038dcfe599c-office-7.jpg",
+      "https://as-images.imgix.net/8024c7e03cda0b0266b56b374f714a2b-office-8.jpg",
+      "https://as-images.imgix.net/01c9d53ae72632c639e6ef0eda2dd392-office-9.jpg",
+      "https://as-images.imgix.net/74df3d333661ab2e7a19ed95acf4d935-flexible-meeting-room-ph3-boardtable-view.jpg",
+      "https://as-images.imgix.net/faae6ea58bd10241f05214d55795d6f5-flexible-meeting-room-innovations-july-26.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/7065971a5bb932626f306386752c82cd-malvern-hills-science-park-particulars.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-21 15:00:32"
+  },
+  {
+    "id": 406541,
+    "status": "Available",
+    "address": "Unit 16, North Bank",
+    "town": "Droitwich",
+    "postcode": "WR9 9AU",
+    "lat": 52.283486937564,
+    "lon": -2.1589894034271,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Light Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3968,
+    "size_to_sqft": 3968,
+    "summary": "Industrial/Garage space on the popular Berry Hill Industrial Estate",
+    "description": "Unit 16 North Bank comprises a detached industrial unit of steel portal frame with part brick elevations and part steel profile sheet, under a pitched, steel profile sheet roof with intermittent roof lights.  \n\nThe accommodation includes workshop with a height to eaves of 5.9m and two roller shutter doors. the workshop incorporates two storey offices with ground floor comprising office, reception and w.c. facilities, and a further two offices to the first floor.",
+    "location": "The property is situated in Droitwich, to the north of the town centre on Berry Hill Industrial Estate. The M5 motorway is in close proximity to property with Junction 5 being approximately two miles by road to the north. From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales. \n\nDroitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester.",
+    "features": [],
+    "rent_psf": 8.57,
+    "rent_pa": 34000,
+    "rent": "£34,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 32000,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/1f5b5d25548cfbb993e106755a858521-img-1588.JPEG",
+      "https://as-images.imgix.net/cc75fc84663d1cce3e07f0319559dc45-20261006-120401.jpg",
+      "https://as-images.imgix.net/c29cd864fee1e275897cfbe501fc117b-dji-0134.JPG",
+      "https://as-images.imgix.net/c773bc52e381690969705a86da5aa7ca-20261006-120533.jpg",
+      "https://as-images.imgix.net/825f4958f0bfedb1089f4fb83e03ff4f-dji-0137.JPG",
+      "https://as-images.imgix.net/b9b640f8a24a047471fd1c1472cd82bb-img-5860-1.jpeg",
+      "https://as-images.imgix.net/21495800867eb187549ee457fa94986e-img-5862-1.jpeg",
+      "https://as-images.imgix.net/2edc661c5ad8792f0b9149270d1fc821-img-5871.jpeg",
+      "https://as-images.imgix.net/712ad3ae785c5ecc3fa25ba75859f77e-img-5870.jpeg",
+      "https://as-images.imgix.net/71248884fd0e5803571378b5c2d5665f-dji-0142.JPG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/ebd0773b2c749c8d6c313ed377c58bb8-gjs-dillon-particulars-unit-16-north-bank-berrry-hill-ie-2.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/b17c79cfa854ccf9bbc75de0ebbcd489-cam04581g0-pr0077-build01-floor01.jpg",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/544b59405fbd3cd39023f555fce5cecf-cam04581g0-pr0077-build01.jpg",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/dcb9e6d09fd8f0fa48b8c9ec0a45ab44-cam04581g0-pr0077-build01-floor00.jpg"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/unit16northbank"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-21 14:21:28"
+  },
+  {
     "id": 405132,
     "status": "Available",
     "address": "Unit 7 Aston Fields Industrial Estate",
@@ -409,75 +551,6 @@
       }
     ],
     "last_updated": "2026-10-15 11:52:45"
-  },
-  {
-    "id": 406541,
-    "status": "Available",
-    "address": "Unit 16, North Bank",
-    "town": "Droitwich",
-    "postcode": "WR9 9AU",
-    "lat": 52.283486937564,
-    "lon": -2.1589894034271,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Light Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3968,
-    "size_to_sqft": 3968,
-    "summary": "Industrial/Garage space on the popular Berry Hill Industrial Estate",
-    "description": "Unit 16 North Bank comprises a detached industrial unit of steel portal frame with part brick elevations and part steel profile sheet, under a pitched, steel profile sheet roof with intermittent roof lights.  \n\nThe accommodation includes workshop with a height to eaves of 5.9m and two roller shutter doors. the workshop incorporates two storey offices with ground floor comprising office, reception and w.c. facilities, and a further two offices to the first floor.",
-    "location": "The property is situated in Droitwich, to the north of the town centre on Berry Hill Industrial Estate. The M5 motorway is in close proximity to property with Junction 5 being approximately two miles by road to the north. From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales. \n\nDroitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester.",
-    "features": [],
-    "rent_psf": 8.57,
-    "rent_pa": 34000,
-    "rent": "£34,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 32000,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/1f5b5d25548cfbb993e106755a858521-img-1588.JPEG",
-      "https://as-images.imgix.net/cc75fc84663d1cce3e07f0319559dc45-20261006-120401.jpg",
-      "https://as-images.imgix.net/c29cd864fee1e275897cfbe501fc117b-dji-0134.JPG",
-      "https://as-images.imgix.net/c773bc52e381690969705a86da5aa7ca-20261006-120533.jpg",
-      "https://as-images.imgix.net/825f4958f0bfedb1089f4fb83e03ff4f-dji-0137.JPG",
-      "https://as-images.imgix.net/b9b640f8a24a047471fd1c1472cd82bb-img-5860-1.jpeg",
-      "https://as-images.imgix.net/21495800867eb187549ee457fa94986e-img-5862-1.jpeg",
-      "https://as-images.imgix.net/2edc661c5ad8792f0b9149270d1fc821-img-5871.jpeg",
-      "https://as-images.imgix.net/712ad3ae785c5ecc3fa25ba75859f77e-img-5870.jpeg",
-      "https://as-images.imgix.net/71248884fd0e5803571378b5c2d5665f-dji-0142.JPG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/ebd0773b2c749c8d6c313ed377c58bb8-gjs-dillon-particulars-unit-16-north-bank-berrry-hill-ie-2.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/b17c79cfa854ccf9bbc75de0ebbcd489-cam04581g0-pr0077-build01-floor01.jpg",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/544b59405fbd3cd39023f555fce5cecf-cam04581g0-pr0077-build01.jpg",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/dcb9e6d09fd8f0fa48b8c9ec0a45ab44-cam04581g0-pr0077-build01-floor00.jpg"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/unit16northbank"
-    ],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-14 17:11:46"
   },
   {
     "id": 426082,
@@ -1089,79 +1162,6 @@
       }
     ],
     "last_updated": "2026-10-09 15:42:34"
-  },
-  {
-    "id": 426352,
-    "status": "Available",
-    "address": "Malvern Hills Science Park",
-    "town": "Malvern",
-    "postcode": "WR14 3SZ",
-    "lat": 52.104819,
-    "lon": -2.311898,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 420,
-    "size_to_sqft": 2648,
-    "summary": "Flexible Offices and Laboratories To Let",
-    "description": "Malvern Hills Science Park offers high-quality office and laboratory accommodation within a thriving business community at the foot of the Malvern Hills.  Home to around 400 people working across science, engineering and technology businesses, the park provides a professional environment designed to help companies of all sizes grow.  From start-ups to established international organisations, occupiers benefit from modern accommodation, flexible lease terms and an extensive range of on-site facilities.",
-    "location": "Malvern Hills Science Park occupies a strategic position on Geraldine Road, at the foot of the Malvern Hills in an Area of Outstanding Natural Beauty. Located in the heart of the UK's Cyber Valley, adjacent to QinteiQ and close to GCHQ, the park has become one of the country's leading locations for science, technology, engineering and cyber businesses.  Excellent road and rail connections provide easy access to Worcester, Birmingham, London and the wider Midlands.",
-    "features": [
-      "Short and long term lease options",
-      "Modern meeting and conference facilities",
-      "High-speed business broadband",
-      "24/7 secure electronic access",
-      "EV charging points",
-      "Ample on-site parking",
-      "On-site Beacon Cafe",
-      "Manned reception",
-      "Beautiful landscaped surroundings"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/57c21b64fb06b90004518502f1393f31-reception.jpg",
-      "https://as-images.imgix.net/cc51fff4193d29617226e66f413ebf26-phase-photos-phase-1-and-phase-5.jpg",
-      "https://as-images.imgix.net/a4d761249e02c146234e2e9e88975bf0-mhsp-phase-1-2-5-hill-view.jpg",
-      "https://as-images.imgix.net/bb0c8cc588f3142a1f30733abd4318fc-cafe-august-26.jpg",
-      "https://as-images.imgix.net/123e719889150f8ce1479b44406f2fa6-cafe-hill-view-aug-26.jpg",
-      "https://as-images.imgix.net/9cca9c4a7db68396ac85293a97304c9b-split-office-ground-floor.jpg",
-      "https://as-images.imgix.net/9a13a839bce3c3d1c69791870c232111-split-office-1st-floor-2.jpg",
-      "https://as-images.imgix.net/c95d1bff88f9ad3df686e6dc2cfc3a47-office-1.jpg",
-      "https://as-images.imgix.net/9dbe81e890bd11aac70ce038dcfe599c-office-7.jpg",
-      "https://as-images.imgix.net/8024c7e03cda0b0266b56b374f714a2b-office-8.jpg",
-      "https://as-images.imgix.net/01c9d53ae72632c639e6ef0eda2dd392-office-9.jpg",
-      "https://as-images.imgix.net/74df3d333661ab2e7a19ed95acf4d935-flexible-meeting-room-ph3-boardtable-view.jpg",
-      "https://as-images.imgix.net/faae6ea58bd10241f05214d55795d6f5-flexible-meeting-room-innovations-july-26.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/c2232ae46700c634e32fa9c9d30b4644-malvern-hills-science-park-particulars.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-09 14:57:37"
   },
   {
     "id": 389516,
