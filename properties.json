@@ -1,5 +1,75 @@
 [
   {
+    "id": 375617,
+    "status": "Available",
+    "address": "Worcester Road",
+    "town": "Kidderminster",
+    "postcode": "DY10 1HY",
+    "lat": 52.37726591564,
+    "lon": -2.2509700712334,
+    "types": [
+      "Industrial",
+      "Office"
+    ],
+    "raw_types": [
+      "Automotive",
+      "Office",
+      "Trade Counter / Showroom"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 324,
+    "size_to_sqft": 324,
+    "summary": "Prominent Roadside Commercial Unit with Extensive Parking",
+    "description": "The property comprises a compact self-contained commercial unit extending to approximately 324 sq ft (30.1 sq m).\n\nInternally, the accommodation provides an open plan reception/office area to the front together with a further private office/store to the front. The unit also benefits from ancillary kitchenette and WC facilities.\n\nExternally, the property benefits from excellent frontage onto Worcester Road together with approximately 10 on-site parking spaces.\n\nThe premises were previously occupied by Enterprise Rent-A-Car and are considered suitable for a variety of roadside, automotive, office, trade counter or service-based uses, subject to the necessary planning consent.",
+    "location": "The property occupies a prominent and highly visible roadside position fronting Worcester Road (A442), Kidderminster, DY10 1HY, adjoining the Halfords trade and retail premises. Worcester Road forms one of Kidderminster’s principal arterial routes and provides direct access to Kidderminster town centre approximately 1 mile to the north-west together with convenient access to the wider motorway network via the A442, A449 and M5 motorway at Junctions 4 and 5. \n\nThe surrounding area is an established commercial and trade location comprising a mix of automotive, trade counter, roadside retail and industrial occupiers including Halfords and other established local and national businesses. Kidderminster Railway Station is situated approximately 1.5 miles away and provides regular services to Birmingham, Worcester and the wider national rail network.",
+    "features": [
+      "Prominent roadside frontage onto Worcester Road (A442)",
+      "Approximately 10 on-site parking spaces",
+      "Suitable for automotive, trade counter or office use",
+      "Self-contained accommodation with kitchenette and WC"
+    ],
+    "rent_psf": 46.3,
+    "rent_pa": 15000,
+    "rent": "£15,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "C (70)",
+    "images": [
+      "https://as-images.imgix.net/f535086172bddd9ce29304a70a6a7a25-20261005-133055750-ios.jpg",
+      "https://as-images.imgix.net/5fc0da1273859657700d4aad004c51d8-20260204-143944083-ios.jpg",
+      "https://as-images.imgix.net/77f14f7d975b2de27336d079e243f3d2-20260204-144148591-ios.jpg",
+      "https://as-images.imgix.net/1fcf7e99b66004daa96dcd219cb8f5af-20260204-144044630-ios.jpg",
+      "https://as-images.imgix.net/f8a1f64ae2b8c9424a732c1022083f73-20260204-144013333-ios.jpg",
+      "https://as-images.imgix.net/a49294419571233c862d90000475a025-20260204-144229706-ios.jpg",
+      "https://as-images.imgix.net/9ee0a1570d7d008bd019bdad5c33c991-20260204-144220135-ios.jpg",
+      "https://as-images.imgix.net/1d709baad0d1c51829ae49ed72662f09-20260204-145501148-ios.jpg",
+      "https://as-images.imgix.net/4fde46d4d00778c22396f3682c4cc3a1-20260204-143627231-ios.jpg",
+      "https://as-images.imgix.net/767a32b21d89ab010fda4b32768c1d4d-20260204-143651776-ios.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/0d2cf7d5c9e9ca521017a8e4621e6852-gjs-dillon-particulars-worcester-road-kidderminster.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-22 10:41:35"
+  },
+  {
     "id": 346648,
     "status": "Available",
     "address": "The Old Mill",
@@ -347,76 +417,6 @@
       }
     ],
     "last_updated": "2026-10-20 11:27:11"
-  },
-  {
-    "id": 375617,
-    "status": "Available",
-    "address": "Worcester Road",
-    "town": "Kidderminster",
-    "postcode": "DY10 1HY",
-    "lat": 52.37726591564,
-    "lon": -2.2509700712334,
-    "types": [
-      "Industrial",
-      "Office"
-    ],
-    "raw_types": [
-      "Automotive",
-      "Office",
-      "Trade Counter / Showroom"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 324,
-    "size_to_sqft": 324,
-    "summary": "Prominent Roadside Commercial Unit with Extensive Parking",
-    "description": "The property comprises a compact self-contained commercial unit extending to approximately 324 sq ft (30.1 sq m).\n\nInternally, the accommodation provides an open plan reception/office area to the front together with a further private office/store to the front. The unit also benefits from ancillary kitchenette and WC facilities.\n\nExternally, the property benefits from excellent frontage onto Worcester Road together with approximately 10 on-site parking spaces.\n\nThe premises were previously occupied by Enterprise Rent-A-Car and are considered suitable for a variety of roadside, automotive, office, trade counter or service-based uses, subject to the necessary planning consent.",
-    "location": "The property occupies a prominent and highly visible roadside position fronting Worcester Road (A442), Kidderminster, DY10 1HY, adjoining the Halfords trade and retail premises. Worcester Road forms one of Kidderminster’s principal arterial routes and provides direct access to Kidderminster town centre approximately 1 mile to the north-west together with convenient access to the wider motorway network via the A442, A449 and M5 motorway at Junctions 4 and 5. \n\nThe surrounding area is an established commercial and trade location comprising a mix of automotive, trade counter, roadside retail and industrial occupiers including Halfords and other established local and national businesses. Kidderminster Railway Station is situated approximately 1.5 miles away and provides regular services to Birmingham, Worcester and the wider national rail network.",
-    "features": [
-      "Prominent roadside frontage onto Worcester Road (A442)",
-      "Approximately 10 on-site parking spaces",
-      "Suitable for automotive, trade counter or office use",
-      "Self-contained accommodation with kitchenette and WC"
-    ],
-    "rent_psf": 46.3,
-    "rent_pa": 15000,
-    "rent": "£15,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/f535086172bddd9ce29304a70a6a7a25-20261005-133055750-ios.jpg",
-      "https://as-images.imgix.net/5fc0da1273859657700d4aad004c51d8-20260204-143944083-ios.jpg",
-      "https://as-images.imgix.net/77f14f7d975b2de27336d079e243f3d2-20260204-144148591-ios.jpg",
-      "https://as-images.imgix.net/1fcf7e99b66004daa96dcd219cb8f5af-20260204-144044630-ios.jpg",
-      "https://as-images.imgix.net/f8a1f64ae2b8c9424a732c1022083f73-20260204-144013333-ios.jpg",
-      "https://as-images.imgix.net/a49294419571233c862d90000475a025-20260204-144229706-ios.jpg",
-      "https://as-images.imgix.net/9ee0a1570d7d008bd019bdad5c33c991-20260204-144220135-ios.jpg",
-      "https://as-images.imgix.net/1d709baad0d1c51829ae49ed72662f09-20260204-145501148-ios.jpg",
-      "https://as-images.imgix.net/4fde46d4d00778c22396f3682c4cc3a1-20260204-143627231-ios.jpg",
-      "https://as-images.imgix.net/767a32b21d89ab010fda4b32768c1d4d-20260204-143651776-ios.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/0d2cf7d5c9e9ca521017a8e4621e6852-gjs-dillon-particulars-worcester-road-kidderminster.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-19 11:43:06"
   },
   {
     "id": 376681,
