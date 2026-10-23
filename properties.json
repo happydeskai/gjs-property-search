@@ -1,5 +1,182 @@
 [
   {
+    "id": 346648,
+    "status": "Available",
+    "address": "The Old Mill",
+    "town": "Pershore",
+    "postcode": "WR10 1BY",
+    "lat": 52.11138916,
+    "lon": -2.082348108,
+    "types": [
+      "Retail",
+      "Office",
+      "Industrial"
+    ],
+    "raw_types": [
+      "Retail",
+      "Office",
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": true,
+    "size_from_sqft": 5757,
+    "size_to_sqft": 5757,
+    "summary": "Retail / Office / Industrial To Let, Pershore",
+    "description": "The Old Mill comprises a large, detached commercial premises of traditional brick construction. The building has an open-plan retail sales area, which benefits from suspended LED lighting. Ancillary accommodation is provided at ground and first floor levels, including staff and storage areas, along with a mezzanine floor. There are approximately 20 car parking spaces. Ground Floor Sales3,400 sq ft315.87 sq m Ground Floor Ancillary 520 sq ft 48.31 sq m Mezzanine Area1,349 sq ft125.33 sq m First Floor Ancillary 306 sq ft 28.43 sq m Total5,575 sq ft 517.93 sq m",
+    "location": "Location The property is prominently located on New Road in Pershore, a well-connected Worcestershire market town approximately 10 miles from Worcester and 7 miles from Evesham. The Old Mill is positioned close to the River Avon and within easy walking distance of Pershore town centre. The location benefits from good transport links, including nearby access to the A44 and Pershore railway station with services to Worcester, Oxford and London.",
+    "features": [
+      "Suitable for a variety of uses",
+      "Ground and first floor space",
+      "On site car parking",
+      "Good access to the A44, leading to the M5 motorway"
+    ],
+    "rent_psf": 6.08,
+    "rent_pa": 35000,
+    "rent": "£35,000 per annum",
+    "price": "£400,000",
+    "price_value": 400000,
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/23387c8a7ce3b5b7fe2a131ab060c4f7-letting346648.jpeg",
+      "https://as-images.imgix.net/3e32dbaedb4939efef5d6832670c92cc-letting346648.jpeg",
+      "https://as-images.imgix.net/209a69c9adf175d282719bed4e21ecef-letting346648.jpeg",
+      "https://as-images.imgix.net/a70f037aa6b30150aff0c933cbe197ef-letting346648.jpeg",
+      "https://as-images.imgix.net/fae4d88addd61870797e6b9a1473a0f7-letting346648.jpeg",
+      "https://as-images.imgix.net/434f2a7a885c6a94b66e25a64e2d0fcf-letting346648.jpeg",
+      "https://as-images.imgix.net/90e27364575128aa53e3d53c3c11b5cc-letting346648.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6cb8d4def4f847137bb9f4bdcc0d98fc-gjs-dillon-particulars-the-old-mill-pershore.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-23 12:40:33"
+  },
+  {
+    "id": 426611,
+    "status": "Available",
+    "address": "31 Pump Street",
+    "town": "Worcester",
+    "postcode": "WR1 2QX",
+    "lat": 52.19092789301,
+    "lon": -2.2188203200989,
+    "types": [
+      "Retail"
+    ],
+    "raw_types": [
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 583,
+    "size_to_sqft": 583,
+    "summary": "Retail premises in central location",
+    "description": "31 Pump Street is an end-terrace ground floor retail unit situated within the heart of Worcester city centre. The unit features an open-plan retail area with suspended ceiling, air conditioning, and two single-glazed shop frontages facing out onto both Pump Street and New Street. Towards the rear of the unit are ancillary areas suitable for limited storage, in addition to a WC. The unit may suit a variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.",
+    "location": "The property is prominently located on the corner Pump Street and New Street. Both streets are located just off Worcester High Street, in a highly visible and well-trafficked position. The area is also home to a mix of national and independent occupiers. \n\nWorcester's main shopping destinations - Crowngate Shopping Centre and Cathedral Square - are both within a short walking distance. Worcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
+    "features": [
+      "Prominent city centre position",
+      "Vacant possession",
+      "583 sq ft (54.17 sq m) NIA",
+      "Guide Rental of £15,000 per annum (£1,250 per calendar month)"
+    ],
+    "rent_psf": 25.73,
+    "rent_pa": 15000,
+    "rent": "£15,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 11000,
+    "epc_rating": "D (78)",
+    "images": [
+      "https://as-images.imgix.net/312e3b15dc2e8e7ac7b5b728ef233944-20261008-161548.jpg",
+      "https://as-images.imgix.net/e61cc6ebde7245f0e60f8f12cc564c8c-20261008-161538.jpg",
+      "https://as-images.imgix.net/759a9d3c6f330a1635c406681b44d434-20261008-160952.jpg",
+      "https://as-images.imgix.net/0b5e5ff89cd58dda28ba011369351606-20261008-161505.jpg",
+      "https://as-images.imgix.net/7d601d6ed5b3e278843f943ac468ff28-20261008-161140.jpg",
+      "https://as-images.imgix.net/8824eceafc2ed56214f92e06c3216fa4-20261008-162148.jpg",
+      "https://as-images.imgix.net/4e5a8383f771da74fcfa83407b771c65-20261008-160957.jpg",
+      "https://as-images.imgix.net/e5c0669d9232f9661fce7ee568c2c44f-20261008-161034.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/5acf6a34475c6d809f79c1fcd412a3b9-gjs-dillon-particulars-31-pump-street-worcester.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-23 10:30:05"
+  },
+  {
+    "id": 427698,
+    "status": "Available",
+    "address": "7-9 Lowesmoor",
+    "town": "Worcester",
+    "postcode": "WR1 2RS",
+    "lat": 52.1943047,
+    "lon": -2.2189308,
+    "types": [
+      "Retail"
+    ],
+    "raw_types": [
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 295,
+    "size_to_sqft": 590,
+    "summary": "Retail premises in central location",
+    "description": "7 - 9 Lowesmoor features two end-terrace ground floor retail units. The two retail units are both self-contained and are accessed directly off Lowesmoor comprising retail area with fully glazed shop front, kitchenette and WC to rear. The units may suit a wide variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.\n\nAvailable to let individually or as a double unit. \n\nSingle Unit - £9,000 per annum\nDouble Unit - £18,000 per annum",
+    "location": "The property occupies a prominent position fronting Lowesmoor close to the junction with Sansome Street and City Walls Road and is within walking distance of the main shopping area in Worcester city centre and St Martins Quarter which includes occupiers such as Costa Coffee, Sports Direct and Asda.\n\nThe immediate surrounding area is characterised with similar sized style and aged properties comprising mostly retail premises with independent retailers at ground floor level with either office or residential uses on the upper floors\n\nWorcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
+    "features": [
+      "City centre location",
+      "Vacant possession",
+      "295 - 590 sq ft (27.40 - 54.81 sq m)",
+      "Guide Rental for single unit of £9,000 per annum",
+      "Guide Rental for both units of £18,000 per annum"
+    ],
+    "rent_psf": 9000,
+    "rent_pa": 2655000,
+    "rent": "£9,000 - £18,000 per sq ft",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/3f23ff575dd80ad137546e29e30d3634-20260106-095644989-ios.jpg",
+      "https://as-images.imgix.net/18d6dcf49db647ba2d7ecc056c7f2fb5-img-5936.jpeg",
+      "https://as-images.imgix.net/a020a06c5bde5dcb5b78b9c411e8424f-img-5937-1.jpeg",
+      "https://as-images.imgix.net/0a3755d21bc59e29dd0d63279eb255f0-img-5930.jpeg",
+      "https://as-images.imgix.net/e24ec1158cfc046de5f411136da8c3dc-img-5948.jpeg",
+      "https://as-images.imgix.net/503f0fa1fc9f4c651a15c7b147193771-img-5946.jpeg",
+      "https://as-images.imgix.net/c09b9cdcb1ec51e95a3f0ba8a0c85862-img-5947.jpeg",
+      "https://as-images.imgix.net/81271221df85edd5a43bfac41b1b9998-img-5942.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/60c1a5d1803b3c2179c14e8ce6354f19-gjs-dillon-particulars-7-9-lowesmoor-worcester.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-23 09:47:43"
+  },
+  {
     "id": 356104,
     "status": "Available",
     "address": "Unit 3 Forest Industrial Park",
@@ -134,68 +311,6 @@
       }
     ],
     "last_updated": "2026-10-22 10:41:35"
-  },
-  {
-    "id": 346648,
-    "status": "Available",
-    "address": "The Old Mill",
-    "town": "Pershore",
-    "postcode": "WR10 1BY",
-    "lat": 52.11138916,
-    "lon": -2.082348108,
-    "types": [
-      "Retail",
-      "Office",
-      "Industrial"
-    ],
-    "raw_types": [
-      "Retail",
-      "Office",
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": true,
-    "size_from_sqft": 5757,
-    "size_to_sqft": 5757,
-    "summary": "Retail / Office / Industrial To Let, Pershore",
-    "description": "The Old Mill comprises a large, detached commercial premises of traditional brick construction. The building has an open-plan retail sales area, which benefits from suspended LED lighting. Ancillary accommodation is provided at ground and first floor levels, including staff and storage areas, along with a mezzanine floor. There are approximately 20 car parking spaces. Ground Floor Sales3,400 sq ft315.87 sq m Ground Floor Ancillary 520 sq ft 48.31 sq m Mezzanine Area1,349 sq ft125.33 sq m First Floor Ancillary 306 sq ft 28.43 sq m Total5,575 sq ft 517.93 sq m",
-    "location": "Location The property is prominently located on New Road in Pershore, a well-connected Worcestershire market town approximately 10 miles from Worcester and 7 miles from Evesham. The Old Mill is positioned close to the River Avon and within easy walking distance of Pershore town centre. The location benefits from good transport links, including nearby access to the A44 and Pershore railway station with services to Worcester, Oxford and London.",
-    "features": [
-      "Suitable for a variety of uses",
-      "Ground and first floor space",
-      "On site car parking",
-      "Good access to the A44, leading to the M5 motorway"
-    ],
-    "rent_psf": 6.08,
-    "rent_pa": 35000,
-    "rent": "£35,000 per annum",
-    "price": "£400,000",
-    "price_value": 400000,
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/23387c8a7ce3b5b7fe2a131ab060c4f7-letting346648.jpeg",
-      "https://as-images.imgix.net/3e32dbaedb4939efef5d6832670c92cc-letting346648.jpeg",
-      "https://as-images.imgix.net/209a69c9adf175d282719bed4e21ecef-letting346648.jpeg",
-      "https://as-images.imgix.net/a70f037aa6b30150aff0c933cbe197ef-letting346648.jpeg",
-      "https://as-images.imgix.net/fae4d88addd61870797e6b9a1473a0f7-letting346648.jpeg",
-      "https://as-images.imgix.net/434f2a7a885c6a94b66e25a64e2d0fcf-letting346648.jpeg",
-      "https://as-images.imgix.net/90e27364575128aa53e3d53c3c11b5cc-letting346648.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6cb8d4def4f847137bb9f4bdcc0d98fc-gjs-dillon-particulars-the-old-mill-pershore.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-21 16:24:44"
   },
   {
     "id": 426352,
@@ -742,63 +857,6 @@
       }
     ],
     "last_updated": "2026-10-14 16:43:38"
-  },
-  {
-    "id": 426611,
-    "status": "Available",
-    "address": "31 Pump Street",
-    "town": "Worcester",
-    "postcode": "WR1 2QX",
-    "lat": 52.19092789301,
-    "lon": -2.2188203200989,
-    "types": [
-      "Retail"
-    ],
-    "raw_types": [
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 583,
-    "size_to_sqft": 583,
-    "summary": "Retail premises in central location",
-    "description": "31 Pump Street is an end-terrace ground floor retail unit situated within the heart of Worcester city centre. The unit features an open-plan retail area with suspended ceiling, air conditioning, and two single-glazed shop frontages facing out onto both Pump Street and New Street. Towards the rear of the unit are ancillary areas suitable for limited storage, in addition to a WC. The unit may suit a variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.",
-    "location": "The property is prominently located on the corner Pump Street and New Street. Both streets are located just off Worcester High Street, in a highly visible and well-trafficked position. The area is also home to a mix of national and independent occupiers. \n\nWorcester's main shopping destinations - Crowngate Shopping Centre and Cathedral Square - are both within a short walking distance. Worcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
-    "features": [
-      "Prominent city centre position",
-      "Vacant possession",
-      "583 sq ft (54.17 sq m) NIA",
-      "Guide Rental of £15,000 per annum (£1,250 per calendar month)"
-    ],
-    "rent_psf": 25.73,
-    "rent_pa": 15000,
-    "rent": "£15,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 11000,
-    "epc_rating": "D (78)",
-    "images": [
-      "https://as-images.imgix.net/312e3b15dc2e8e7ac7b5b728ef233944-20261008-161548.jpg",
-      "https://as-images.imgix.net/e61cc6ebde7245f0e60f8f12cc564c8c-20261008-161538.jpg",
-      "https://as-images.imgix.net/759a9d3c6f330a1635c406681b44d434-20261008-160952.jpg",
-      "https://as-images.imgix.net/0b5e5ff89cd58dda28ba011369351606-20261008-161505.jpg",
-      "https://as-images.imgix.net/7d601d6ed5b3e278843f943ac468ff28-20261008-161140.jpg",
-      "https://as-images.imgix.net/8824eceafc2ed56214f92e06c3216fa4-20261008-162148.jpg",
-      "https://as-images.imgix.net/4e5a8383f771da74fcfa83407b771c65-20261008-160957.jpg",
-      "https://as-images.imgix.net/e5c0669d9232f9661fce7ee568c2c44f-20261008-161034.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/5acf6a34475c6d809f79c1fcd412a3b9-gjs-dillon-particulars-31-pump-street-worcester.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-14 11:54:34"
   },
   {
     "id": 346689,
