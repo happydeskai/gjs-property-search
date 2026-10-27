@@ -1,5 +1,206 @@
 [
   {
+    "id": 426352,
+    "status": "Available",
+    "address": "Malvern Hills Science Park",
+    "town": "Malvern",
+    "postcode": "WR14 3SZ",
+    "lat": 52.104819,
+    "lon": -2.311898,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 420,
+    "size_to_sqft": 2648,
+    "summary": "Flexible Offices and Laboratories To Let",
+    "description": "Malvern Hills Science Park offers high-quality office and laboratory accommodation within a thriving business community at the foot of the Malvern Hills.  Home to around 400 people working across science, engineering and technology businesses, the park provides a professional environment designed to help companies of all sizes grow.  From start-ups to established international organisations, occupiers benefit from modern accommodation, flexible lease terms and an extensive range of on-site facilities.",
+    "location": "Malvern Hills Science Park occupies a strategic position on Geraldine Road, at the foot of the Malvern Hills in an Area of Outstanding Natural Beauty. Located in the heart of the UK's Cyber Valley, adjacent to QinteiQ and close to GCHQ, the park has become one of the country's leading locations for science, technology, engineering and cyber businesses.  Excellent road and rail connections provide easy access to Worcester, Birmingham, London and the wider Midlands.",
+    "features": [
+      "Short and long term lease options",
+      "Modern meeting and conference facilities",
+      "High-speed business broadband",
+      "24/7 secure electronic access",
+      "EV charging points",
+      "Ample on-site parking",
+      "On-site Beacon Cafe",
+      "Manned reception",
+      "Beautiful landscaped surroundings"
+    ],
+    "rent": "On Application",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/57c21b64fb06b90004518502f1393f31-reception.jpg",
+      "https://as-images.imgix.net/cc51fff4193d29617226e66f413ebf26-phase-photos-phase-1-and-phase-5.jpg",
+      "https://as-images.imgix.net/a4d761249e02c146234e2e9e88975bf0-mhsp-phase-1-2-5-hill-view.jpg",
+      "https://as-images.imgix.net/bb0c8cc588f3142a1f30733abd4318fc-cafe-august-26.jpg",
+      "https://as-images.imgix.net/123e719889150f8ce1479b44406f2fa6-cafe-hill-view-aug-26.jpg",
+      "https://as-images.imgix.net/9cca9c4a7db68396ac85293a97304c9b-split-office-ground-floor.jpg",
+      "https://as-images.imgix.net/9a13a839bce3c3d1c69791870c232111-split-office-1st-floor-2.jpg",
+      "https://as-images.imgix.net/c95d1bff88f9ad3df686e6dc2cfc3a47-office-1.jpg",
+      "https://as-images.imgix.net/9dbe81e890bd11aac70ce038dcfe599c-office-7.jpg",
+      "https://as-images.imgix.net/8024c7e03cda0b0266b56b374f714a2b-office-8.jpg",
+      "https://as-images.imgix.net/01c9d53ae72632c639e6ef0eda2dd392-office-9.jpg",
+      "https://as-images.imgix.net/74df3d333661ab2e7a19ed95acf4d935-flexible-meeting-room-ph3-boardtable-view.jpg",
+      "https://as-images.imgix.net/faae6ea58bd10241f05214d55795d6f5-flexible-meeting-room-innovations-july-26.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/8d3f95c7c2ebf862705f3cf71e35ab8a-gjs-dillon-particulars-malvern-hills-science-park.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-27 16:38:18"
+  },
+  {
+    "id": 346648,
+    "status": "Available",
+    "address": "The Old Mill",
+    "town": "Pershore",
+    "postcode": "WR10 1BY",
+    "lat": 52.11138916,
+    "lon": -2.082348108,
+    "types": [
+      "Retail",
+      "Office",
+      "Industrial"
+    ],
+    "raw_types": [
+      "Retail",
+      "Office",
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": true,
+    "size_from_sqft": 5757,
+    "size_to_sqft": 5757,
+    "summary": "Retail / Office / Industrial To Let, Pershore",
+    "description": "The Old Mill comprises a large, detached commercial premises of traditional brick construction. The building has an open-plan retail sales area, which benefits from suspended LED lighting. Ancillary accommodation is provided at ground and first floor levels, including staff and storage areas, along with a mezzanine floor. There are approximately 20 car parking spaces. Ground Floor Sales3,400 sq ft315.87 sq m Ground Floor Ancillary 520 sq ft 48.31 sq m Mezzanine Area1,349 sq ft125.33 sq m First Floor Ancillary 306 sq ft 28.43 sq m Total5,575 sq ft 517.93 sq m",
+    "location": "Location The property is prominently located on New Road in Pershore, a well-connected Worcestershire market town approximately 10 miles from Worcester and 7 miles from Evesham. The Old Mill is positioned close to the River Avon and within easy walking distance of Pershore town centre. The location benefits from good transport links, including nearby access to the A44 and Pershore railway station with services to Worcester, Oxford and London.",
+    "features": [
+      "Suitable for a variety of uses",
+      "Ground and first floor space",
+      "On site car parking",
+      "Good access to the A44, leading to the M5 motorway"
+    ],
+    "rent_psf": 6.08,
+    "rent_pa": 35000,
+    "rent": "£35,000 per annum",
+    "price": "£400,000",
+    "price_value": 400000,
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/23387c8a7ce3b5b7fe2a131ab060c4f7-letting346648.jpeg",
+      "https://as-images.imgix.net/190636d7f492d606728a54c162a45601-img-9644.jpg",
+      "https://as-images.imgix.net/563fe19cdded0ce35e21bf2b9790fd2a-img-2529.jpg",
+      "https://as-images.imgix.net/44c270d88ff96e2afc438b6eec5bfa54-20261012-141609820-ios.jpg",
+      "https://as-images.imgix.net/29923bf0d1eb71e2c2f08fab07abf4e6-img-2708.jpg",
+      "https://as-images.imgix.net/1b72aba4c4772e0e22434398e5070eae-img-2545.jpg",
+      "https://as-images.imgix.net/ff3e2ddae13ce2311664fbf913e4c70b-20261012-141949638-ios.jpg",
+      "https://as-images.imgix.net/209a69c9adf175d282719bed4e21ecef-letting346648.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9de678a71d0303ae8ad1b85693e888d7-gjs-dillon-particulars-the-old-mill-pershore.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-27 16:36:36"
+  },
+  {
+    "id": 426611,
+    "status": "Available",
+    "address": "31 Pump Street",
+    "town": "Worcester",
+    "postcode": "WR1 2QX",
+    "lat": 52.19092789301,
+    "lon": -2.2188203200989,
+    "types": [
+      "Retail"
+    ],
+    "raw_types": [
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 583,
+    "size_to_sqft": 583,
+    "summary": "Retail premises in central location",
+    "description": "31 Pump Street is an end-terrace ground floor retail unit situated within the heart of Worcester city centre. The unit features an open-plan retail area with suspended ceiling, air conditioning, and two single-glazed shop frontages facing out onto both Pump Street and New Street. Towards the rear of the unit are ancillary areas suitable for limited storage, in addition to a WC. The unit may suit a variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.",
+    "location": "The property is prominently located on the corner Pump Street and New Street. Both streets are located just off Worcester High Street, in a highly visible and well-trafficked position. The area is also home to a mix of national and independent occupiers. \n\nWorcester's main shopping destinations - Crowngate Shopping Centre and Cathedral Square - are both within a short walking distance. Worcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
+    "features": [
+      "Prominent city centre position",
+      "Vacant possession",
+      "583 sq ft (54.17 sq m) NIA",
+      "Guide Rental of £15,000 per annum (£1,250 per calendar month)"
+    ],
+    "rent_psf": 25.73,
+    "rent_pa": 15000,
+    "rent": "£15,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 11000,
+    "epc_rating": "D (78)",
+    "images": [
+      "https://as-images.imgix.net/312e3b15dc2e8e7ac7b5b728ef233944-20261008-161548.jpg",
+      "https://as-images.imgix.net/e61cc6ebde7245f0e60f8f12cc564c8c-20261008-161538.jpg",
+      "https://as-images.imgix.net/759a9d3c6f330a1635c406681b44d434-20261008-160952.jpg",
+      "https://as-images.imgix.net/0b5e5ff89cd58dda28ba011369351606-20261008-161505.jpg",
+      "https://as-images.imgix.net/7d601d6ed5b3e278843f943ac468ff28-20261008-161140.jpg",
+      "https://as-images.imgix.net/8824eceafc2ed56214f92e06c3216fa4-20261008-162148.jpg",
+      "https://as-images.imgix.net/4e5a8383f771da74fcfa83407b771c65-20261008-160957.jpg",
+      "https://as-images.imgix.net/e5c0669d9232f9661fce7ee568c2c44f-20261008-161034.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/5acf6a34475c6d809f79c1fcd412a3b9-gjs-dillon-particulars-31-pump-street-worcester.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-27 14:46:53"
+  },
+  {
     "id": 427698,
     "status": "Available",
     "address": "7-9 Lowesmoor",
@@ -55,7 +256,7 @@
         "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-10-27 10:46:07"
+    "last_updated": "2026-10-27 14:18:15"
   },
   {
     "id": 389993,
@@ -129,136 +330,6 @@
       }
     ],
     "last_updated": "2026-10-27 10:24:55"
-  },
-  {
-    "id": 426611,
-    "status": "Available",
-    "address": "31 Pump Street",
-    "town": "Worcester",
-    "postcode": "WR1 2QX",
-    "lat": 52.19092789301,
-    "lon": -2.2188203200989,
-    "types": [
-      "Retail"
-    ],
-    "raw_types": [
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 583,
-    "size_to_sqft": 583,
-    "summary": "Retail premises in central location",
-    "description": "31 Pump Street is an end-terrace ground floor retail unit situated within the heart of Worcester city centre. The unit features an open-plan retail area with suspended ceiling, air conditioning, and two single-glazed shop frontages facing out onto both Pump Street and New Street. Towards the rear of the unit are ancillary areas suitable for limited storage, in addition to a WC. The unit may suit a variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.",
-    "location": "The property is prominently located on the corner Pump Street and New Street. Both streets are located just off Worcester High Street, in a highly visible and well-trafficked position. The area is also home to a mix of national and independent occupiers. \n\nWorcester's main shopping destinations - Crowngate Shopping Centre and Cathedral Square - are both within a short walking distance. Worcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
-    "features": [
-      "Prominent city centre position",
-      "Vacant possession",
-      "583 sq ft (54.17 sq m) NIA",
-      "Guide Rental of £15,000 per annum (£1,250 per calendar month)"
-    ],
-    "rent_psf": 25.73,
-    "rent_pa": 15000,
-    "rent": "£15,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 11000,
-    "epc_rating": "D (78)",
-    "images": [
-      "https://as-images.imgix.net/312e3b15dc2e8e7ac7b5b728ef233944-20261008-161548.jpg",
-      "https://as-images.imgix.net/e61cc6ebde7245f0e60f8f12cc564c8c-20261008-161538.jpg",
-      "https://as-images.imgix.net/759a9d3c6f330a1635c406681b44d434-20261008-160952.jpg",
-      "https://as-images.imgix.net/0b5e5ff89cd58dda28ba011369351606-20261008-161505.jpg",
-      "https://as-images.imgix.net/7d601d6ed5b3e278843f943ac468ff28-20261008-161140.jpg",
-      "https://as-images.imgix.net/8824eceafc2ed56214f92e06c3216fa4-20261008-162148.jpg",
-      "https://as-images.imgix.net/4e5a8383f771da74fcfa83407b771c65-20261008-160957.jpg",
-      "https://as-images.imgix.net/e5c0669d9232f9661fce7ee568c2c44f-20261008-161034.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/5acf6a34475c6d809f79c1fcd412a3b9-gjs-dillon-particulars-31-pump-street-worcester.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-27 09:33:08"
-  },
-  {
-    "id": 426352,
-    "status": "Available",
-    "address": "Malvern Hills Science Park",
-    "town": "Malvern",
-    "postcode": "WR14 3SZ",
-    "lat": 52.104819,
-    "lon": -2.311898,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 420,
-    "size_to_sqft": 2648,
-    "summary": "Flexible Offices and Laboratories To Let",
-    "description": "Malvern Hills Science Park offers high-quality office and laboratory accommodation within a thriving business community at the foot of the Malvern Hills.  Home to around 400 people working across science, engineering and technology businesses, the park provides a professional environment designed to help companies of all sizes grow.  From start-ups to established international organisations, occupiers benefit from modern accommodation, flexible lease terms and an extensive range of on-site facilities.",
-    "location": "Malvern Hills Science Park occupies a strategic position on Geraldine Road, at the foot of the Malvern Hills in an Area of Outstanding Natural Beauty. Located in the heart of the UK's Cyber Valley, adjacent to QinteiQ and close to GCHQ, the park has become one of the country's leading locations for science, technology, engineering and cyber businesses.  Excellent road and rail connections provide easy access to Worcester, Birmingham, London and the wider Midlands.",
-    "features": [
-      "Short and long term lease options",
-      "Modern meeting and conference facilities",
-      "High-speed business broadband",
-      "24/7 secure electronic access",
-      "EV charging points",
-      "Ample on-site parking",
-      "On-site Beacon Cafe",
-      "Manned reception",
-      "Beautiful landscaped surroundings"
-    ],
-    "rent": "On Application",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/57c21b64fb06b90004518502f1393f31-reception.jpg",
-      "https://as-images.imgix.net/cc51fff4193d29617226e66f413ebf26-phase-photos-phase-1-and-phase-5.jpg",
-      "https://as-images.imgix.net/a4d761249e02c146234e2e9e88975bf0-mhsp-phase-1-2-5-hill-view.jpg",
-      "https://as-images.imgix.net/bb0c8cc588f3142a1f30733abd4318fc-cafe-august-26.jpg",
-      "https://as-images.imgix.net/123e719889150f8ce1479b44406f2fa6-cafe-hill-view-aug-26.jpg",
-      "https://as-images.imgix.net/9cca9c4a7db68396ac85293a97304c9b-split-office-ground-floor.jpg",
-      "https://as-images.imgix.net/9a13a839bce3c3d1c69791870c232111-split-office-1st-floor-2.jpg",
-      "https://as-images.imgix.net/c95d1bff88f9ad3df686e6dc2cfc3a47-office-1.jpg",
-      "https://as-images.imgix.net/9dbe81e890bd11aac70ce038dcfe599c-office-7.jpg",
-      "https://as-images.imgix.net/8024c7e03cda0b0266b56b374f714a2b-office-8.jpg",
-      "https://as-images.imgix.net/01c9d53ae72632c639e6ef0eda2dd392-office-9.jpg",
-      "https://as-images.imgix.net/74df3d333661ab2e7a19ed95acf4d935-flexible-meeting-room-ph3-boardtable-view.jpg",
-      "https://as-images.imgix.net/faae6ea58bd10241f05214d55795d6f5-flexible-meeting-room-innovations-july-26.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/7065971a5bb932626f306386752c82cd-malvern-hills-science-park-particulars.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-26 15:38:50"
   },
   {
     "id": 379671,
@@ -676,77 +747,6 @@
       }
     ],
     "last_updated": "2026-10-26 14:30:04"
-  },
-  {
-    "id": 346648,
-    "status": "Available",
-    "address": "The Old Mill",
-    "town": "Pershore",
-    "postcode": "WR10 1BY",
-    "lat": 52.11138916,
-    "lon": -2.082348108,
-    "types": [
-      "Retail",
-      "Office",
-      "Industrial"
-    ],
-    "raw_types": [
-      "Retail",
-      "Office",
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": true,
-    "size_from_sqft": 5757,
-    "size_to_sqft": 5757,
-    "summary": "Retail / Office / Industrial To Let, Pershore",
-    "description": "The Old Mill comprises a large, detached commercial premises of traditional brick construction. The building has an open-plan retail sales area, which benefits from suspended LED lighting. Ancillary accommodation is provided at ground and first floor levels, including staff and storage areas, along with a mezzanine floor. There are approximately 20 car parking spaces. Ground Floor Sales3,400 sq ft315.87 sq m Ground Floor Ancillary 520 sq ft 48.31 sq m Mezzanine Area1,349 sq ft125.33 sq m First Floor Ancillary 306 sq ft 28.43 sq m Total5,575 sq ft 517.93 sq m",
-    "location": "Location The property is prominently located on New Road in Pershore, a well-connected Worcestershire market town approximately 10 miles from Worcester and 7 miles from Evesham. The Old Mill is positioned close to the River Avon and within easy walking distance of Pershore town centre. The location benefits from good transport links, including nearby access to the A44 and Pershore railway station with services to Worcester, Oxford and London.",
-    "features": [
-      "Suitable for a variety of uses",
-      "Ground and first floor space",
-      "On site car parking",
-      "Good access to the A44, leading to the M5 motorway"
-    ],
-    "rent_psf": 6.08,
-    "rent_pa": 35000,
-    "rent": "£35,000 per annum",
-    "price": "£400,000",
-    "price_value": 400000,
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/23387c8a7ce3b5b7fe2a131ab060c4f7-letting346648.jpeg",
-      "https://as-images.imgix.net/190636d7f492d606728a54c162a45601-img-9644.jpg",
-      "https://as-images.imgix.net/563fe19cdded0ce35e21bf2b9790fd2a-img-2529.jpg",
-      "https://as-images.imgix.net/44c270d88ff96e2afc438b6eec5bfa54-20261012-141609820-ios.jpg",
-      "https://as-images.imgix.net/29923bf0d1eb71e2c2f08fab07abf4e6-img-2708.jpg",
-      "https://as-images.imgix.net/1b72aba4c4772e0e22434398e5070eae-img-2545.jpg",
-      "https://as-images.imgix.net/ff3e2ddae13ce2311664fbf913e4c70b-20261012-141949638-ios.jpg",
-      "https://as-images.imgix.net/209a69c9adf175d282719bed4e21ecef-letting346648.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6cb8d4def4f847137bb9f4bdcc0d98fc-gjs-dillon-particulars-the-old-mill-pershore.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-26 14:29:40"
   },
   {
     "id": 426082,
