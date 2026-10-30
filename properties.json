@@ -1,5 +1,200 @@
 [
   {
+    "id": 346648,
+    "status": "Available",
+    "address": "The Old Mill",
+    "town": "Pershore",
+    "postcode": "WR10 1BY",
+    "lat": 52.11138916,
+    "lon": -2.082348108,
+    "types": [
+      "Retail",
+      "Office",
+      "Industrial"
+    ],
+    "raw_types": [
+      "Retail",
+      "Office",
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": true,
+    "size_from_sqft": 5757,
+    "size_to_sqft": 5757,
+    "summary": "Retail / Office / Industrial To Let, Pershore",
+    "description": "The Old Mill comprises a large, detached commercial premises of traditional brick construction. The building has an open-plan retail sales area, which benefits from suspended LED lighting. Ancillary accommodation is provided at ground and first floor levels, including staff and storage areas, along with a mezzanine floor. There are approximately 20 car parking spaces. Ground Floor Sales3,400 sq ft315.87 sq m Ground Floor Ancillary 520 sq ft 48.31 sq m Mezzanine Area1,349 sq ft125.33 sq m First Floor Ancillary 306 sq ft 28.43 sq m Total5,575 sq ft 517.93 sq m",
+    "location": "Location The property is prominently located on New Road in Pershore, a well-connected Worcestershire market town approximately 10 miles from Worcester and 7 miles from Evesham. The Old Mill is positioned close to the River Avon and within easy walking distance of Pershore town centre. The location benefits from good transport links, including nearby access to the A44 and Pershore railway station with services to Worcester, Oxford and London.",
+    "features": [
+      "For Sale / May Let",
+      "Suitable for a variety of uses",
+      "Ground and first floor space",
+      "On site car parking",
+      "Good access to the A44, leading to the M5 motorway"
+    ],
+    "rent_psf": 6.08,
+    "rent_pa": 35000,
+    "rent": "£35,000 per annum",
+    "price": "£400,000",
+    "price_value": 400000,
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/23387c8a7ce3b5b7fe2a131ab060c4f7-letting346648.jpeg",
+      "https://as-images.imgix.net/190636d7f492d606728a54c162a45601-img-9644.jpg",
+      "https://as-images.imgix.net/563fe19cdded0ce35e21bf2b9790fd2a-img-2529.jpg",
+      "https://as-images.imgix.net/44c270d88ff96e2afc438b6eec5bfa54-20261012-141609820-ios.jpg",
+      "https://as-images.imgix.net/29923bf0d1eb71e2c2f08fab07abf4e6-img-2708.jpg",
+      "https://as-images.imgix.net/1b72aba4c4772e0e22434398e5070eae-img-2545.jpg",
+      "https://as-images.imgix.net/ff3e2ddae13ce2311664fbf913e4c70b-20261012-141949638-ios.jpg",
+      "https://as-images.imgix.net/209a69c9adf175d282719bed4e21ecef-letting346648.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9de678a71d0303ae8ad1b85693e888d7-gjs-dillon-particulars-the-old-mill-pershore.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-30 15:32:41"
+  },
+  {
+    "id": 346750,
+    "status": "Under Offer",
+    "address": "2C Derwent Close",
+    "town": "Worcester",
+    "postcode": "WR4 9TY",
+    "lat": 52.206310272,
+    "lon": -2.194024085,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2150,
+    "size_to_sqft": 2150,
+    "summary": "Industrial To Let, Worcester",
+    "description": "The property comprises an end terrace industrial / warehouse building being part of a block of three Units. Unit C is part warehouse and part offices with mezzanine storage/office accommodation above with ground floor kitchen and WC facilities and a roller shutter door to the front elevation. Outside the property to the front there is a hardstanding loading and unloading area shared with Units A and B and being bounded by a secure palisade fence. Accommodation Ground Floor 1,874 sq ft 174.10 sq m First Floor 276 sq ft 25.66 sq m Total 2,150 sq ft 199.76 sq m Additional mezzanine storage area not included in the above measurements.",
+    "location": "2C Derwent Close is situated within Worcester, in the West Midlands. Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London. Worcester has excellent access to the M5 motorway, with Junction 6 being approximately one and a half miles to the northeast. The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network. Worcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
+    "features": [
+      "2,150 sq ft (199.76 sq m) GIA",
+      "Secured shared yard",
+      "Additional mezzanine storage area not included in the above"
+    ],
+    "rent_psf": 7.81,
+    "rent_pa": 16800,
+    "rent": "£16,800 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/61eef815f5c56ca3fff59bf1bffa0a4d-letting346750.jpeg",
+      "https://as-images.imgix.net/b5bef492a59cc4683d24e7cba82fb6e9-letting346750.jpeg",
+      "https://as-images.imgix.net/e15607aaef9b11d3e7f0b0f0f67863e3-letting346750.jpeg",
+      "https://as-images.imgix.net/9fd221d8ffcc2b7c1eca51b5fa394cca-letting346750.jpeg",
+      "https://as-images.imgix.net/fad50957c6cf6a2df2813503febbf00e-letting346750.jpeg",
+      "https://as-images.imgix.net/1441ae60add6469bdf29817d356f82a6-letting346750.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/71694072ada872f7261874a356bdc8d8-gjs-dillon-particulars-2c-derwent-close-worcester.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-30 14:36:35"
+  },
+  {
+    "id": 346777,
+    "status": "Available",
+    "address": "The Radius, De Salis Court",
+    "town": "Droitwich",
+    "postcode": "WR9 0QE",
+    "lat": 52.283466339,
+    "lon": -2.168041944,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 2142,
+    "size_to_sqft": 2142,
+    "summary": "Office For Sale, Droitwich",
+    "description": "The property comprises a two-storey detached office building of brick cavity construction with pitched concrete tiled roof. The property benefits from timber framed double-glazed windows throughout and has been fitted with a gas-fired central system via traditional wall-mounted radiators as well as wall-mounted split-system air conditioning units. The property benefits from having approximately 12no tarmacadam surfaced car parking spaces, all located to the front of the building and the property is surrounded by well-maintained grounds. \nGround Floor 990 sq ft 92 sq m\nFirst Floor 1,152 sq ft 107 sq m \nTotal 2,142 sq ft 199 sq m",
+    "location": "The property is located within the popular Hampton Lovett Industrial Estate, approximately one mile north of Droitwich Town Centre. The Hampton Lovett Industrial Estate is accessed directly off the A442 which provides access to Droitwich to the south and Hartlebury and Kidderminster to the north. The location is particularly convenient for occupiers as it provides easy access to the M5 Motorway with Junction 5 situated approximately 3.25km (two miles) to the east. Birmingham city centre is situated approximately 22 miles to the north east, Bromsgrove is situated approximately 7 miles to the north east, Worcester city centre is situated approximately 8 miles to the south west, Kidderminster is situated approximately 9 miles to the north and Redditch is situated approximately 17 miles to the north east. Droitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester",
+    "features": [
+      "2,142 sq ft (199 sq m) NIA",
+      "Two storey detatched office space",
+      "Conservatory and garden",
+      "Located on the popular Hampton Lovett Industrial Estate",
+      "12 car parking spaces",
+      "Air conditioning",
+      "New key point..."
+    ],
+    "price": "£325,000 Long Leasehold",
+    "price_value": 325000,
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "C (58)",
+    "images": [
+      "https://as-images.imgix.net/54e6919c93602cb600116e3e30da2150-letting346777.jpeg",
+      "https://as-images.imgix.net/132dd9a9b0067f49aeaf4fdb8fb643af-letting346777.jpeg",
+      "https://as-images.imgix.net/4dabd90f6344e064f6f8b8f71a077dd7-letting346777.jpeg",
+      "https://as-images.imgix.net/2fdf877b09b0a44b116e1bfbfd014472-letting346777.jpeg",
+      "https://as-images.imgix.net/bb599455f9d3cd0420d64ce4ba8d4aff-letting346777.jpeg",
+      "https://as-images.imgix.net/241bbc37a9ee037427db208cc62d52e2-letting346777.jpeg",
+      "https://as-images.imgix.net/b09b0d83597654649863d849ee1f0e7f-letting346777.jpeg",
+      "https://as-images.imgix.net/2f482190c01fa145d8e32e2da6969530-letting346777.jpeg",
+      "https://as-images.imgix.net/529ea4330607dbb015cb6ab600f82be8-letting346777.jpeg",
+      "https://as-images.imgix.net/857192b4888eab6f2bd8e9e6c1a0faa6-letting346777.jpeg",
+      "https://as-images.imgix.net/784fbfb95138f1b0b9e6ee683adbe279-letting346777.jpeg",
+      "https://as-images.imgix.net/af7a7a4095486e62029d0e7a523166ee-letting346777.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6f3adf2f3f27b9f0b2182d1a0ef15d9f-gjs-dillon-particulars-the-radius-de-salis-court-droitwich-wr9.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/0922922d0d59c316b7c45d2cab21bef2-cam04581g0-pr0026-build01-floor00-1.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/c95cba8c66c0d68c68478321d9a8572b-cam04581g0-pr0026-build01-floor01-1.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/theradiusdroitwich"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-10-30 12:31:50"
+  },
+  {
     "id": 427275,
     "status": "Available",
     "address": "Lower Ground Floor, Redditch Town Hall",
@@ -203,60 +398,6 @@
       }
     ],
     "last_updated": "2026-10-28 11:02:03"
-  },
-  {
-    "id": 346750,
-    "status": "Available",
-    "address": "2C Derwent Close",
-    "town": "Worcester",
-    "postcode": "WR4 9TY",
-    "lat": 52.206310272,
-    "lon": -2.194024085,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2150,
-    "size_to_sqft": 2150,
-    "summary": "Industrial To Let, Worcester",
-    "description": "The property comprises an end terrace industrial / warehouse building being part of a block of three Units. Unit C is part warehouse and part offices with mezzanine storage/office accommodation above with ground floor kitchen and WC facilities and a roller shutter door to the front elevation. Outside the property to the front there is a hardstanding loading and unloading area shared with Units A and B and being bounded by a secure palisade fence. Accommodation Ground Floor 1,874 sq ft 174.10 sq m First Floor 276 sq ft 25.66 sq m Total 2,150 sq ft 199.76 sq m Additional mezzanine storage area not included in the above measurements.",
-    "location": "2C Derwent Close is situated within Worcester, in the West Midlands. Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London. Worcester has excellent access to the M5 motorway, with Junction 6 being approximately one and a half miles to the northeast. The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network. Worcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
-    "features": [
-      "2,150 sq ft (199.76 sq m) GIA",
-      "Secured shared yard",
-      "Additional mezzanine storage area not included in the above"
-    ],
-    "rent_psf": 7.81,
-    "rent_pa": 16800,
-    "rent": "£16,800 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/61eef815f5c56ca3fff59bf1bffa0a4d-letting346750.jpeg",
-      "https://as-images.imgix.net/b5bef492a59cc4683d24e7cba82fb6e9-letting346750.jpeg",
-      "https://as-images.imgix.net/e15607aaef9b11d3e7f0b0f0f67863e3-letting346750.jpeg",
-      "https://as-images.imgix.net/9fd221d8ffcc2b7c1eca51b5fa394cca-letting346750.jpeg",
-      "https://as-images.imgix.net/fad50957c6cf6a2df2813503febbf00e-letting346750.jpeg",
-      "https://as-images.imgix.net/1441ae60add6469bdf29817d356f82a6-letting346750.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/71694072ada872f7261874a356bdc8d8-gjs-dillon-particulars-2c-derwent-close-worcester.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-28 10:58:43"
   },
   {
     "id": 380642,
@@ -1011,77 +1152,6 @@
     "last_updated": "2026-10-28 10:33:12"
   },
   {
-    "id": 346648,
-    "status": "Available",
-    "address": "The Old Mill",
-    "town": "Pershore",
-    "postcode": "WR10 1BY",
-    "lat": 52.11138916,
-    "lon": -2.082348108,
-    "types": [
-      "Retail",
-      "Office",
-      "Industrial"
-    ],
-    "raw_types": [
-      "Retail",
-      "Office",
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": true,
-    "size_from_sqft": 5757,
-    "size_to_sqft": 5757,
-    "summary": "Retail / Office / Industrial To Let, Pershore",
-    "description": "The Old Mill comprises a large, detached commercial premises of traditional brick construction. The building has an open-plan retail sales area, which benefits from suspended LED lighting. Ancillary accommodation is provided at ground and first floor levels, including staff and storage areas, along with a mezzanine floor. There are approximately 20 car parking spaces. Ground Floor Sales3,400 sq ft315.87 sq m Ground Floor Ancillary 520 sq ft 48.31 sq m Mezzanine Area1,349 sq ft125.33 sq m First Floor Ancillary 306 sq ft 28.43 sq m Total5,575 sq ft 517.93 sq m",
-    "location": "Location The property is prominently located on New Road in Pershore, a well-connected Worcestershire market town approximately 10 miles from Worcester and 7 miles from Evesham. The Old Mill is positioned close to the River Avon and within easy walking distance of Pershore town centre. The location benefits from good transport links, including nearby access to the A44 and Pershore railway station with services to Worcester, Oxford and London.",
-    "features": [
-      "Suitable for a variety of uses",
-      "Ground and first floor space",
-      "On site car parking",
-      "Good access to the A44, leading to the M5 motorway"
-    ],
-    "rent_psf": 6.08,
-    "rent_pa": 35000,
-    "rent": "£35,000 per annum",
-    "price": "£400,000",
-    "price_value": 400000,
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/23387c8a7ce3b5b7fe2a131ab060c4f7-letting346648.jpeg",
-      "https://as-images.imgix.net/190636d7f492d606728a54c162a45601-img-9644.jpg",
-      "https://as-images.imgix.net/563fe19cdded0ce35e21bf2b9790fd2a-img-2529.jpg",
-      "https://as-images.imgix.net/44c270d88ff96e2afc438b6eec5bfa54-20261012-141609820-ios.jpg",
-      "https://as-images.imgix.net/29923bf0d1eb71e2c2f08fab07abf4e6-img-2708.jpg",
-      "https://as-images.imgix.net/1b72aba4c4772e0e22434398e5070eae-img-2545.jpg",
-      "https://as-images.imgix.net/ff3e2ddae13ce2311664fbf913e4c70b-20261012-141949638-ios.jpg",
-      "https://as-images.imgix.net/209a69c9adf175d282719bed4e21ecef-letting346648.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9de678a71d0303ae8ad1b85693e888d7-gjs-dillon-particulars-the-old-mill-pershore.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-27 16:36:36"
-  },
-  {
     "id": 426611,
     "status": "Available",
     "address": "31 Pump Street",
@@ -1627,75 +1697,6 @@
       }
     ],
     "last_updated": "2026-10-26 14:30:04"
-  },
-  {
-    "id": 346777,
-    "status": "Available",
-    "address": "The Radius, De Salis Court",
-    "town": "Droitwich",
-    "postcode": "WR9 0QE",
-    "lat": 52.283466339,
-    "lon": -2.168041944,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 2142,
-    "size_to_sqft": 2142,
-    "summary": "Office For Sale, Droitwich",
-    "description": "The property comprises a two-storey detached office building of brick cavity construction with pitched concrete tiled roof. The property benefits from timber framed double-glazed windows throughout and has been fitted with a gas-fired central system via traditional wall-mounted radiators as well as wall-mounted split-system air conditioning units. The property benefits from having approximately 12no tarmacadam surfaced car parking spaces, all located to the front of the building and the property is surrounded by well-maintained grounds. \nGround Floor 990 sq ft 92 sq m\nFirst Floor 1,152 sq ft 107 sq m \nTotal 2,142 sq ft 199 sq m",
-    "location": "The property is located within the popular Hampton Lovett Industrial Estate, approximately one mile north of Droitwich Town Centre. The Hampton Lovett Industrial Estate is accessed directly off the A442 which provides access to Droitwich to the south and Hartlebury and Kidderminster to the north. The location is particularly convenient for occupiers as it provides easy access to the M5 Motorway with Junction 5 situated approximately 3.25km (two miles) to the east. Birmingham city centre is situated approximately 22 miles to the north east, Bromsgrove is situated approximately 7 miles to the north east, Worcester city centre is situated approximately 8 miles to the south west, Kidderminster is situated approximately 9 miles to the north and Redditch is situated approximately 17 miles to the north east. Droitwich town centre has a main line railway station with regular trains to Birmingham to the north and Worcester to the south, and a travel time of approximately 2 hrs 35 mins to London Paddington via Worcester",
-    "features": [
-      "2,142 sq ft (199 sq m) NIA",
-      "Two storey detatched office space",
-      "Conservatory and garden",
-      "Located on the popular Hampton Lovett Industrial Estate",
-      "12 car parking spaces",
-      "Air conditioning",
-      "New key point..."
-    ],
-    "price": "£325,000",
-    "price_value": 325000,
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/54e6919c93602cb600116e3e30da2150-letting346777.jpeg",
-      "https://as-images.imgix.net/132dd9a9b0067f49aeaf4fdb8fb643af-letting346777.jpeg",
-      "https://as-images.imgix.net/4dabd90f6344e064f6f8b8f71a077dd7-letting346777.jpeg",
-      "https://as-images.imgix.net/2fdf877b09b0a44b116e1bfbfd014472-letting346777.jpeg",
-      "https://as-images.imgix.net/bb599455f9d3cd0420d64ce4ba8d4aff-letting346777.jpeg",
-      "https://as-images.imgix.net/241bbc37a9ee037427db208cc62d52e2-letting346777.jpeg",
-      "https://as-images.imgix.net/b09b0d83597654649863d849ee1f0e7f-letting346777.jpeg",
-      "https://as-images.imgix.net/2f482190c01fa145d8e32e2da6969530-letting346777.jpeg",
-      "https://as-images.imgix.net/529ea4330607dbb015cb6ab600f82be8-letting346777.jpeg",
-      "https://as-images.imgix.net/857192b4888eab6f2bd8e9e6c1a0faa6-letting346777.jpeg",
-      "https://as-images.imgix.net/784fbfb95138f1b0b9e6ee683adbe279-letting346777.jpeg",
-      "https://as-images.imgix.net/af7a7a4095486e62029d0e7a523166ee-letting346777.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6f3adf2f3f27b9f0b2182d1a0ef15d9f-gjs-dillon-particulars-the-radius-de-salis-court-droitwich-wr9.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/0922922d0d59c316b7c45d2cab21bef2-cam04581g0-pr0026-build01-floor00-1.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/c95cba8c66c0d68c68478321d9a8572b-cam04581g0-pr0026-build01-floor01-1.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/theradiusdroitwich"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-26 09:52:38"
   },
   {
     "id": 356104,
@@ -2493,67 +2494,6 @@
       }
     ],
     "last_updated": "2026-10-05 16:12:55"
-  },
-  {
-    "id": 346855,
-    "status": "Under Offer",
-    "address": "F2, Sapphire Court",
-    "town": "Bromsgrove",
-    "postcode": "B60 3FP",
-    "lat": 52.317447662,
-    "lon": -2.05710411,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2451,
-    "size_to_sqft": 2451,
-    "summary": "Industrial To Let, Bromsgrove",
-    "description": "High Quality Industrial/Warehouse Building A high quality, state of the art, traditional steel portal framed industrial/warehouse unit with part brick and part block elevations, part insulated steel profile panel walls surmounted by an insulated steel profile panel pitched roof. The building benefits from; Electrically operated roller shutter door Separate pedestrian entrance 6 metre eaves height (capable of accommodating a mezzanine floor) Designated car parking spaces Floor loading 40 kN per sq m Power from 15 kVA (22 amps) to 40 kVA (58 amps) Fire alarm as standard Intruder alarm as standard The site will be fully managed to include landscaping and CCTV WC and Kitchenette facilities.",
-    "location": "Sapphire Court is located on Bromsgrove Enterprise Park to the south of Bromsgrove town centre and accessed via Aston Road (close to the junction with Morrisons Supermarket) which links to the A38 Bromsgrove Eastern Bypass. Junctions 4 and 5 of the M5 motorway and junction 1 of the M42 motorway are within 3 miles of the property giving access to the Midlands motorway network. Birmingham city centre is situated approximately 13 miles to the north and Worcester city centre is situated approximately 12 miles to the south.",
-    "features": [
-      "2,451 sq ft (227.70 sq m) GIA",
-      "6 meters to eaves",
-      "Electrically operated roller shutter door",
-      "Secure gated access and CCTV",
-      "Popular business park location",
-      "Excellent links to the M5 and M42 motorways"
-    ],
-    "rent_psf": 11.06,
-    "rent_pa": 27100,
-    "rent": "£27,100 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/f3078fe7066e44becdf4fece8cebe06e-letting346855.jpeg",
-      "https://as-images.imgix.net/301dc3926cd8a0af63c822e7a64e42b0-letting346855.jpeg",
-      "https://as-images.imgix.net/5f11f9f3962d488b07839b6d64c4c743-letting346855.jpeg",
-      "https://as-images.imgix.net/8327bdcbedebda8867e300ca8576c21e-letting346855.jpeg",
-      "https://as-images.imgix.net/eb93725195d48806f1fca6d4c0ee166f-letting346855.jpeg",
-      "https://as-images.imgix.net/6e18f718a7810d16f148da7b2a0737d4-letting346855.jpeg",
-      "https://as-images.imgix.net/9c05473a374a1b4627fe3236930f1be7-letting346855.jpeg",
-      "https://as-images.imgix.net/c147994b7edd7f84ceae6cfc95fb0178-letting346855.jpeg",
-      "https://as-images.imgix.net/f20fce90157346e92fb0e02e53a3138a-letting346855.jpeg",
-      "https://as-images.imgix.net/96c4ef40794930217761f5c99f3e51dd-letting346855.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/0aefd715135e8367eeea8cc2656c3d2e-gjs-dillon-f2-sapphire-court-particulars.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-05 16:11:56"
   },
   {
     "id": 346712,
@@ -3578,72 +3518,6 @@
       }
     ],
     "last_updated": "2026-10-05 15:57:55"
-  },
-  {
-    "id": 371486,
-    "status": "Under Offer",
-    "address": "Unit D21, Kempsey Eco Business Park",
-    "town": "Worcester",
-    "postcode": "WR5 3NY",
-    "lat": 52.1284093,
-    "lon": -2.216683,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1061,
-    "size_to_sqft": 1061,
-    "summary": "High Quality Industrial / Warehouse Unit",
-    "description": "Kempsey Eco Business Park is a forward-thinking commercial destination designed to support businesses with sustainability at its core. Strategically located just off the A38, south of Worcester, this eco-friendly development offers high-quality, energy-efficient business units tailored for modern enterprises.\n\nWith a strong emphasis on sustainability, Kempsey Eco Business Park incorporates renewable energy solutions, energy-efficient buildings, and green infrastructure to create an environmentally responsible workspace. The park is ideal for businesses seeking a future-proof location that aligns with corporate social responsibility goals while offering excellent accessibility and modern facilities.\n\nJoin a growing community of forward-thinking businesses at Kempsey Eco Business Park, where sustainability meets commercial success.",
-    "location": "Kempsey is a delightful village situated 3 miles to the south of Worcester on the banks of the River Severn that can date its origins back to 1500BC when the Celts made a settlement here. It continued to be inhabited through Roman and Saxon times and played an important part in the Battle of Worcester in 1651. Kempsey currently has population of c.4500 and is home to many locally owned businesses.\nKempsey Eco Business Park can be found at the South end of the village bounded by the River Severn and the A38 Tewkesbury Road. It has excellent transport links including the M5 motorway (4 miles) and Worcester Parkway railway station (6 miles), as well as easy access by foot, bike and bus.",
-    "features": [
-      "1,061sq ft (99m2)",
-      "Electric car charging points",
-      "Renewable clean biomass energy",
-      "On site car parking",
-      "Bike lock station",
-      "Photovoltaics panels to generate electricity"
-    ],
-    "rent_psf": 11.99,
-    "rent_pa": 12726.07,
-    "rent": "£12,726.07 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "estate_charge": "1468.41",
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/daf20715a6db167023b2ce18bdde9dde-img-0780.JPEG",
-      "https://as-images.imgix.net/c5afdd399a15a2a27ce4e43d12d0637e-img-0777.JPEG",
-      "https://as-images.imgix.net/327647f6aef7e6c235baa513cf7a6314-img-0782.JPEG",
-      "https://as-images.imgix.net/50e9d4a01e8dba3db2fd0ff1f00f4fc1-img-0773.JPEG",
-      "https://as-images.imgix.net/e6b45c1ce53ab8234782d99d3dd82319-img-0776.JPEG",
-      "https://as-images.imgix.net/615c91cdd767ec925af70a10cabc4b8d-img-0774.JPEG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/02df33dd2a68ba455f3e30a81a99f009-d21-kempsey-eco-park-brochure1.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-05 15:57:11"
   },
   {
     "id": 350393,
