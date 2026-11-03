@@ -1,5 +1,298 @@
 [
   {
+    "id": 379671,
+    "status": "Available",
+    "address": "13 The Foregate",
+    "town": "Worcester",
+    "postcode": "WR1 3QD",
+    "lat": 52.193969,
+    "lon": -2.221177,
+    "types": [
+      "Retail",
+      "Office"
+    ],
+    "raw_types": [
+      "Class E Retail / Leisure",
+      "Office",
+      "Retail",
+      "High Street Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2668,
+    "size_to_sqft": 2668,
+    "summary": "Extensive retail premises with unique features throughout",
+    "description": "13 The Foregate is a retail property that forms part of the wider Hopmarket development.  It is arranged over the basement, ground and first floor levels.\n\nThe ground floor is immediately accessed off The Foregate, which comprises the northern end of Worcester’s main retail area.  There is an entrance foyer which leads to a large (887 sq ft) trading area.  Off the main sales area there are further rooms, a kitchen and two rear staff / storage areas.  There are a further two rooms and a WC on the first floor, which is accessed via an internal staircase to the rear of the property.  Th basement area offers further accommodation, including a room that forms part of the former banking vault.\n\nThe property benefits from gas central heating throughout.\n\nBasement\t70.59 sq m\t760 sq ft\nGround Floor\t152.20 sq m\t1,638 sq ft\nFirst Floor\t25.12 sq m\t270 sq ft\nTotal\t247.91 sq m\t2,668 sq ft",
+    "location": "Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London.  Worcester has excellent access to the M5 motorway, which lies adjacent to the subject property with Junction 7 being approximately one and a half miles drive south.  The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network.\n\nWorcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
+    "features": [
+      "Total net area of 2,668 sq ft (247.91 sq m)",
+      "Extensive space arranged over the basement, ground and first floor",
+      "Large ground floor trading area accessed directly off The Foregate",
+      "Unique features throughout owing to the former banking use",
+      "Fitted out to a good standard, ready for immediate occupation"
+    ],
+    "rent_psf": 7.87,
+    "rent_pa": 21000,
+    "rent": "£21,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 16500,
+    "service_charge": "7100",
+    "epc_rating": "C (66)",
+    "images": [
+      "https://as-images.imgix.net/194034cda35ecfa9ca4cf0480e50b995-img-1016.JPEG",
+      "https://as-images.imgix.net/82abf5bb4839b7d94e1ef3548e1961f3-img-1022.JPEG",
+      "https://as-images.imgix.net/2d9caf76b8790f39065e991b69f8b46d-img-1021.JPEG",
+      "https://as-images.imgix.net/849810e8778d6c4b59d3d2e26f4c5e92-img-1018.JPEG",
+      "https://as-images.imgix.net/8af52036a509dcf4d47d66af6a0e015f-img-1023.JPEG",
+      "https://as-images.imgix.net/f8b7da6f4e6762fc2bad47115388441b-img-1025.JPEG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/aeaa97eae7be415fc52298e89f35d939-gjs-dillon-particulars-13-the-foregate-worcester.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/7221c1652bb6383375fcacb477a5f083-cam04581g0-pr0078-build01-floor-neg01.jpg",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/3f2c030fd5a9c44fbfce4939d6fa79fb-cam04581g0-pr0078-build01.jpg",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/eda29e32ee852b57867a47ff0549bc27-cam04581g0-pr0078-build01-floor01.jpg",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/83ee625fc8e0456501bb636e695554dd-cam04581g0-pr0078-build01-floor00.jpg"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/13theforegate"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-03 16:11:26"
+  },
+  {
+    "id": 346672,
+    "status": "Available",
+    "address": "20 The Shambles",
+    "town": "Worcester",
+    "postcode": "WR1 2RA",
+    "lat": 52.191112518,
+    "lon": -2.219422101,
+    "types": [
+      "Retail"
+    ],
+    "raw_types": [
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": true,
+    "size_from_sqft": 2513,
+    "size_to_sqft": 2513,
+    "summary": "Refurbished retail premises in central location",
+    "description": "20 The Shambles comprises a mid-terraced retail unit arranged over basement, ground, first and second floors, situated within a traditional parade in the heart of Worcester city centre. The ground floor features an open-plan retail area with a suspended ceiling, LED lighting, air conditioning and a timber-framed single-glazed shopfront. A floor hatch in the main retail area provides ladder access to a small basement area, suitable for limited storage. To the rear of the ground floor are ancillary areas, with a kitchen and WC located on the first floor. The upper parts are accessed via an internal staircase and include restricted ancillary space. The unit may suit a variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.\n\nProperty Restrictions\nThere is a Covenant on the property register stating no pubs, bars / alcohol to be sold on the premises. \nThere was an ‘alterations notice’ issued by Hereford and Worcester Fire and Rescue Service on 30/10/2020. This means that only part of the first floor can be used with restrictions and the remainder of the first floor and the whole of the second floor.",
+    "location": "The property is prominently located on The Shambles, a pedestrianised shopping street just off Worcester High Street, in a highly visible and well-trafficked position. The area is home to a mix of national and independent occupiers, with nearby retailers including Greggs, The Works, Waterstones and Marks & Spencer. Worcester's main shopping destinations-Crowngate Shopping Centre and Cathedral Square-are both within a short walking distance. Worcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
+    "features": [
+      "Prominent city centre location",
+      "Vacant possesion",
+      "Property arranged over basement, ground, first and second floor  (restrictions apply)",
+      "Virtual tour available"
+    ],
+    "rent": "On Application",
+    "price": "£250,000",
+    "price_value": 250000,
+    "business_rates_psf": 3.28,
+    "rateable_value": 16500,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/23f1863acd60f1af23359babb585307c-20260812-111711-1.jpg",
+      "https://as-images.imgix.net/0cba58bc1accd86c095e58415c7ae322-20260812-112709.jpg",
+      "https://as-images.imgix.net/fe8842083ff1fab276c9b5d8578a85de-20260812-112655.jpg",
+      "https://as-images.imgix.net/13a90d525c02f4949180bb5d9c7e9366-20260812-112831.jpg",
+      "https://as-images.imgix.net/c43a4de2e4f188f1c3817a797e2db1fc-20260812-112724.jpg",
+      "https://as-images.imgix.net/ff3287e349ffb0761748dd4731a1d682-20260812-113209.jpg",
+      "https://as-images.imgix.net/58331fc8f692f9017ea7dcad82f34739-20260812-112904.jpg",
+      "https://as-images.imgix.net/246e2a5256782e50fdc51b5b9d3affbe-20260812-113714.jpg",
+      "https://as-images.imgix.net/fa7aa285385934527b8c969752180195-letting346672.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/a8f82aab9e950f66e07959fa94339ba6-gjs-dillon-particulars-20-the-shambles-worcester-4.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/aa4c1c29defe5a3e0ee800aacf351cca-cam04581g0-pr0074-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/93dc2e0712bdffc3a1a1f20035b3f383-cam04581g0-pr0074-build01-floor01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/b8ee60f675de63a74658120e86b1ac61-cam04581g0-pr0074-build01-floor02.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/713b114b590855a6eb01e272c00602a2-cam04581g0-pr0074-build01.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/20theshamblesworcester"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-03 15:29:47"
+  },
+  {
+    "id": 346648,
+    "status": "Available",
+    "address": "The Old Mill",
+    "town": "Pershore",
+    "postcode": "WR10 1BY",
+    "lat": 52.11138916,
+    "lon": -2.082348108,
+    "types": [
+      "Retail",
+      "Office",
+      "Industrial"
+    ],
+    "raw_types": [
+      "Retail",
+      "Office",
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": true,
+    "size_from_sqft": 5757,
+    "size_to_sqft": 5757,
+    "summary": "Retail / Office / Industrial To Let, Pershore",
+    "description": "The Old Mill comprises a large, detached commercial premises of traditional brick construction. The building has an open-plan retail sales area, which benefits from suspended LED lighting. Ancillary accommodation is provided at ground and first floor levels, including staff and storage areas, along with a mezzanine floor. There are approximately 20 car parking spaces. Ground Floor Sales3,400 sq ft315.87 sq m Ground Floor Ancillary 520 sq ft 48.31 sq m Mezzanine Area1,349 sq ft125.33 sq m First Floor Ancillary 306 sq ft 28.43 sq m Total5,575 sq ft 517.93 sq m",
+    "location": "Location The property is prominently located on New Road in Pershore, a well-connected Worcestershire market town approximately 10 miles from Worcester and 7 miles from Evesham. The Old Mill is positioned close to the River Avon and within easy walking distance of Pershore town centre. The location benefits from good transport links, including nearby access to the A44 and Pershore railway station with services to Worcester, Oxford and London.",
+    "features": [
+      "For Sale / May Let",
+      "Suitable for a variety of uses",
+      "Ground and first floor space",
+      "On site car parking",
+      "Good access to the A44, leading to the M5 motorway"
+    ],
+    "rent_psf": 6.08,
+    "rent_pa": 35000,
+    "rent": "£35,000 per annum",
+    "price": "£400,000",
+    "price_value": 400000,
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/23387c8a7ce3b5b7fe2a131ab060c4f7-letting346648.jpeg",
+      "https://as-images.imgix.net/190636d7f492d606728a54c162a45601-img-9644.jpg",
+      "https://as-images.imgix.net/563fe19cdded0ce35e21bf2b9790fd2a-img-2529.jpg",
+      "https://as-images.imgix.net/44c270d88ff96e2afc438b6eec5bfa54-20261012-141609820-ios.jpg",
+      "https://as-images.imgix.net/29923bf0d1eb71e2c2f08fab07abf4e6-img-2708.jpg",
+      "https://as-images.imgix.net/1b72aba4c4772e0e22434398e5070eae-img-2545.jpg",
+      "https://as-images.imgix.net/ff3e2ddae13ce2311664fbf913e4c70b-20261012-141949638-ios.jpg",
+      "https://as-images.imgix.net/209a69c9adf175d282719bed4e21ecef-letting346648.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9de678a71d0303ae8ad1b85693e888d7-gjs-dillon-particulars-the-old-mill-pershore.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-03 12:15:15"
+  },
+  {
+    "id": 375617,
+    "status": "Available",
+    "address": "Worcester Road",
+    "town": "Kidderminster",
+    "postcode": "DY10 1HY",
+    "lat": 52.37726591564,
+    "lon": -2.2509700712334,
+    "types": [
+      "Industrial",
+      "Office"
+    ],
+    "raw_types": [
+      "Automotive",
+      "Office",
+      "Trade Counter / Showroom"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 324,
+    "size_to_sqft": 324,
+    "summary": "Prominent Roadside Commercial Unit with Extensive Parking",
+    "description": "The property comprises a compact self-contained commercial unit extending to approximately 324 sq ft (30.1 sq m).\n\nInternally, the accommodation provides an open plan reception/office area to the front together with a further private office/store to the front. The unit also benefits from ancillary kitchenette and WC facilities.\n\nExternally, the property benefits from excellent frontage onto Worcester Road together with approximately 10 on-site parking spaces.\n\nThe premises were previously occupied by Enterprise Rent-A-Car and are considered suitable for a variety of roadside, automotive, office, trade counter or service-based uses, subject to the necessary planning consent.",
+    "location": "The property occupies a prominent and highly visible roadside position fronting Worcester Road (A442), Kidderminster, DY10 1HY, adjoining the Halfords trade and retail premises. Worcester Road forms one of Kidderminster’s principal arterial routes and provides direct access to Kidderminster town centre approximately 1 mile to the north-west together with convenient access to the wider motorway network via the A442, A449 and M5 motorway at Junctions 4 and 5. \n\nThe surrounding area is an established commercial and trade location comprising a mix of automotive, trade counter, roadside retail and industrial occupiers including Halfords and other established local and national businesses. Kidderminster Railway Station is situated approximately 1.5 miles away and provides regular services to Birmingham, Worcester and the wider national rail network.",
+    "features": [
+      "Prominent roadside frontage onto Worcester Road (A442)",
+      "Approximately 10 on-site parking spaces",
+      "Suitable for automotive, trade counter or office use",
+      "Self-contained accommodation with kitchenette and WC"
+    ],
+    "rent_psf": 46.3,
+    "rent_pa": 15000,
+    "rent": "£15,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "C (70)",
+    "images": [
+      "https://as-images.imgix.net/f535086172bddd9ce29304a70a6a7a25-20261005-133055750-ios.jpg",
+      "https://as-images.imgix.net/5fc0da1273859657700d4aad004c51d8-20260204-143944083-ios.jpg",
+      "https://as-images.imgix.net/77f14f7d975b2de27336d079e243f3d2-20260204-144148591-ios.jpg",
+      "https://as-images.imgix.net/1fcf7e99b66004daa96dcd219cb8f5af-20260204-144044630-ios.jpg",
+      "https://as-images.imgix.net/f8a1f64ae2b8c9424a732c1022083f73-20260204-144013333-ios.jpg",
+      "https://as-images.imgix.net/a49294419571233c862d90000475a025-20260204-144229706-ios.jpg",
+      "https://as-images.imgix.net/9ee0a1570d7d008bd019bdad5c33c991-20260204-144220135-ios.jpg",
+      "https://as-images.imgix.net/1d709baad0d1c51829ae49ed72662f09-20260204-145501148-ios.jpg",
+      "https://as-images.imgix.net/4fde46d4d00778c22396f3682c4cc3a1-20260204-143627231-ios.jpg",
+      "https://as-images.imgix.net/767a32b21d89ab010fda4b32768c1d4d-20260204-143651776-ios.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/0d2cf7d5c9e9ca521017a8e4621e6852-gjs-dillon-particulars-worcester-road-kidderminster.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-03 10:28:20"
+  },
+  {
     "id": 426352,
     "status": "Available",
     "address": "Malvern Hills Science Park",
@@ -973,78 +1266,6 @@
     "last_updated": "2026-11-02 13:35:48"
   },
   {
-    "id": 346648,
-    "status": "Available",
-    "address": "The Old Mill",
-    "town": "Pershore",
-    "postcode": "WR10 1BY",
-    "lat": 52.11138916,
-    "lon": -2.082348108,
-    "types": [
-      "Retail",
-      "Office",
-      "Industrial"
-    ],
-    "raw_types": [
-      "Retail",
-      "Office",
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": true,
-    "size_from_sqft": 5757,
-    "size_to_sqft": 5757,
-    "summary": "Retail / Office / Industrial To Let, Pershore",
-    "description": "The Old Mill comprises a large, detached commercial premises of traditional brick construction. The building has an open-plan retail sales area, which benefits from suspended LED lighting. Ancillary accommodation is provided at ground and first floor levels, including staff and storage areas, along with a mezzanine floor. There are approximately 20 car parking spaces. Ground Floor Sales3,400 sq ft315.87 sq m Ground Floor Ancillary 520 sq ft 48.31 sq m Mezzanine Area1,349 sq ft125.33 sq m First Floor Ancillary 306 sq ft 28.43 sq m Total5,575 sq ft 517.93 sq m",
-    "location": "Location The property is prominently located on New Road in Pershore, a well-connected Worcestershire market town approximately 10 miles from Worcester and 7 miles from Evesham. The Old Mill is positioned close to the River Avon and within easy walking distance of Pershore town centre. The location benefits from good transport links, including nearby access to the A44 and Pershore railway station with services to Worcester, Oxford and London.",
-    "features": [
-      "For Sale / May Let",
-      "Suitable for a variety of uses",
-      "Ground and first floor space",
-      "On site car parking",
-      "Good access to the A44, leading to the M5 motorway"
-    ],
-    "rent_psf": 6.08,
-    "rent_pa": 35000,
-    "rent": "£35,000 per annum",
-    "price": "£400,000",
-    "price_value": 400000,
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/23387c8a7ce3b5b7fe2a131ab060c4f7-letting346648.jpeg",
-      "https://as-images.imgix.net/190636d7f492d606728a54c162a45601-img-9644.jpg",
-      "https://as-images.imgix.net/563fe19cdded0ce35e21bf2b9790fd2a-img-2529.jpg",
-      "https://as-images.imgix.net/44c270d88ff96e2afc438b6eec5bfa54-20261012-141609820-ios.jpg",
-      "https://as-images.imgix.net/29923bf0d1eb71e2c2f08fab07abf4e6-img-2708.jpg",
-      "https://as-images.imgix.net/1b72aba4c4772e0e22434398e5070eae-img-2545.jpg",
-      "https://as-images.imgix.net/ff3e2ddae13ce2311664fbf913e4c70b-20261012-141949638-ios.jpg",
-      "https://as-images.imgix.net/209a69c9adf175d282719bed4e21ecef-letting346648.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9de678a71d0303ae8ad1b85693e888d7-gjs-dillon-particulars-the-old-mill-pershore.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-30 15:32:41"
-  },
-  {
     "id": 346750,
     "status": "Under Offer",
     "address": "2C Derwent Close",
@@ -1452,80 +1673,6 @@
       }
     ],
     "last_updated": "2026-10-28 10:56:32"
-  },
-  {
-    "id": 346672,
-    "status": "Available",
-    "address": "20 The Shambles",
-    "town": "Worcester",
-    "postcode": "WR1 2RA",
-    "lat": 52.191112518,
-    "lon": -2.219422101,
-    "types": [
-      "Retail"
-    ],
-    "raw_types": [
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": true,
-    "size_from_sqft": 2513,
-    "size_to_sqft": 2513,
-    "summary": "Refurbished retail premises in central location",
-    "description": "20 The Shambles comprises a mid-terraced retail unit arranged over basement, ground, first and second floors, situated within a traditional parade in the heart of Worcester city centre. The ground floor features an open-plan retail area with a suspended ceiling, LED lighting, air conditioning and a timber-framed single-glazed shopfront. A floor hatch in the main retail area provides ladder access to a small basement area, suitable for limited storage. To the rear of the ground floor are ancillary areas, with a kitchen and WC located on the first floor. The upper parts are accessed via an internal staircase and include restricted ancillary space. The unit may suit a variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.\n\nProperty Restrictions\nThere is a Covenant on the property register stating no pubs, bars / alcohol to be sold on the premises. \nThere was an ‘alterations notice’ issued by Hereford and Worcester Fire and Rescue Service on 30/10/2020. This means that only part of the first floor can be used with restrictions and the remainder of the first floor and the whole of the second floor.",
-    "location": "The property is prominently located on The Shambles, a pedestrianised shopping street just off Worcester High Street, in a highly visible and well-trafficked position. The area is home to a mix of national and independent occupiers, with nearby retailers including Greggs, The Works, Waterstones and Marks & Spencer. Worcester's main shopping destinations-Crowngate Shopping Centre and Cathedral Square-are both within a short walking distance. Worcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
-    "features": [
-      "Prominent city centre location",
-      "Vacant possesion",
-      "Property arranged over basement, ground, first and second floor  (restrictions apply)",
-      "Virtual tour available"
-    ],
-    "rent": "On Application",
-    "price": "£250,000",
-    "price_value": 250000,
-    "business_rates_psf": 3.28,
-    "rateable_value": 16500,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/23f1863acd60f1af23359babb585307c-20260812-111711-1.jpg",
-      "https://as-images.imgix.net/0cba58bc1accd86c095e58415c7ae322-20260812-112709.jpg",
-      "https://as-images.imgix.net/fe8842083ff1fab276c9b5d8578a85de-20260812-112655.jpg",
-      "https://as-images.imgix.net/13a90d525c02f4949180bb5d9c7e9366-20260812-112831.jpg",
-      "https://as-images.imgix.net/c43a4de2e4f188f1c3817a797e2db1fc-20260812-112724.jpg",
-      "https://as-images.imgix.net/ff3287e349ffb0761748dd4731a1d682-20260812-113209.jpg",
-      "https://as-images.imgix.net/58331fc8f692f9017ea7dcad82f34739-20260812-112904.jpg",
-      "https://as-images.imgix.net/246e2a5256782e50fdc51b5b9d3affbe-20260812-113714.jpg",
-      "https://as-images.imgix.net/fa7aa285385934527b8c969752180195-letting346672.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/a8f82aab9e950f66e07959fa94339ba6-gjs-dillon-particulars-20-the-shambles-worcester-4.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/aa4c1c29defe5a3e0ee800aacf351cca-cam04581g0-pr0074-build01-floor00.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/93dc2e0712bdffc3a1a1f20035b3f383-cam04581g0-pr0074-build01-floor01.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/b8ee60f675de63a74658120e86b1ac61-cam04581g0-pr0074-build01-floor02.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/713b114b590855a6eb01e272c00602a2-cam04581g0-pr0074-build01.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/20theshamblesworcester"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-28 10:55:43"
   },
   {
     "id": 383292,
@@ -2010,83 +2157,6 @@
     "last_updated": "2026-10-27 10:24:55"
   },
   {
-    "id": 379671,
-    "status": "Available",
-    "address": "13 The Foregate",
-    "town": "Worcester",
-    "postcode": "WR1 3QD",
-    "lat": 52.193969,
-    "lon": -2.221177,
-    "types": [
-      "Retail",
-      "Office"
-    ],
-    "raw_types": [
-      "Class E Retail / Leisure",
-      "Office",
-      "Retail",
-      "High Street Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2668,
-    "size_to_sqft": 2668,
-    "summary": "Extensive retail premises with unique features throughout",
-    "description": "13 The Foregate is a retail property that forms part of the wider Hopmarket development.  It is arranged over the basement, ground and first floor levels.\n\nThe ground floor is immediately accessed off The Foregate, which comprises the northern end of Worcester’s main retail area.  There is an entrance foyer which leads to a large (887 sq ft) trading area.  Off the main sales area there are further rooms, a kitchen and two rear staff / storage areas.  There are a further two rooms and a WC on the first floor, which is accessed via an internal staircase to the rear of the property.  Th basement area offers further accommodation, including a room that forms part of the former banking vault.\n\nThe property benefits from gas central heating throughout.\n\nBasement\t70.59 sq m\t760 sq ft\nGround Floor\t152.20 sq m\t1,638 sq ft\nFirst Floor\t25.12 sq m\t270 sq ft\nTotal\t247.91 sq m\t2,668 sq ft",
-    "location": "Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London.  Worcester has excellent access to the M5 motorway, which lies adjacent to the subject property with Junction 7 being approximately one and a half miles drive south.  The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network.\n\nWorcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
-    "features": [
-      "Total net area of 2,668 sq ft (247.91 sq m)",
-      "Extensive space arranged over the basement, ground and first floor",
-      "Large ground floor trading area accessed directly off The Foregate",
-      "Unique features throughout owing to the former banking use",
-      "Fitted out to a good standard, ready for immediate occupation"
-    ],
-    "rent_psf": 7.87,
-    "rent_pa": 21000,
-    "rent": "£21,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 16500,
-    "service_charge": "7100",
-    "epc_rating": "C (66)",
-    "images": [
-      "https://as-images.imgix.net/194034cda35ecfa9ca4cf0480e50b995-img-1016.JPEG",
-      "https://as-images.imgix.net/82abf5bb4839b7d94e1ef3548e1961f3-img-1022.JPEG",
-      "https://as-images.imgix.net/2d9caf76b8790f39065e991b69f8b46d-img-1021.JPEG",
-      "https://as-images.imgix.net/849810e8778d6c4b59d3d2e26f4c5e92-img-1018.JPEG",
-      "https://as-images.imgix.net/8af52036a509dcf4d47d66af6a0e015f-img-1023.JPEG",
-      "https://as-images.imgix.net/f8b7da6f4e6762fc2bad47115388441b-img-1025.JPEG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/aeaa97eae7be415fc52298e89f35d939-gjs-dillon-particulars-13-the-foregate-worcester.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/7221c1652bb6383375fcacb477a5f083-cam04581g0-pr0078-build01-floor-neg01.jpg",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/3f2c030fd5a9c44fbfce4939d6fa79fb-cam04581g0-pr0078-build01.jpg",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/eda29e32ee852b57867a47ff0549bc27-cam04581g0-pr0078-build01-floor01.jpg",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/83ee625fc8e0456501bb636e695554dd-cam04581g0-pr0078-build01-floor00.jpg"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/13theforegate"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-26 14:39:12"
-  },
-  {
     "id": 350416,
     "status": "Available",
     "address": "Unit 4, Droitwich Enterprise Hub",
@@ -2491,76 +2561,6 @@
       }
     ],
     "last_updated": "2026-10-22 14:52:17"
-  },
-  {
-    "id": 375617,
-    "status": "Available",
-    "address": "Worcester Road",
-    "town": "Kidderminster",
-    "postcode": "DY10 1HY",
-    "lat": 52.37726591564,
-    "lon": -2.2509700712334,
-    "types": [
-      "Industrial",
-      "Office"
-    ],
-    "raw_types": [
-      "Automotive",
-      "Office",
-      "Trade Counter / Showroom"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 324,
-    "size_to_sqft": 324,
-    "summary": "Prominent Roadside Commercial Unit with Extensive Parking",
-    "description": "The property comprises a compact self-contained commercial unit extending to approximately 324 sq ft (30.1 sq m).\n\nInternally, the accommodation provides an open plan reception/office area to the front together with a further private office/store to the front. The unit also benefits from ancillary kitchenette and WC facilities.\n\nExternally, the property benefits from excellent frontage onto Worcester Road together with approximately 10 on-site parking spaces.\n\nThe premises were previously occupied by Enterprise Rent-A-Car and are considered suitable for a variety of roadside, automotive, office, trade counter or service-based uses, subject to the necessary planning consent.",
-    "location": "The property occupies a prominent and highly visible roadside position fronting Worcester Road (A442), Kidderminster, DY10 1HY, adjoining the Halfords trade and retail premises. Worcester Road forms one of Kidderminster’s principal arterial routes and provides direct access to Kidderminster town centre approximately 1 mile to the north-west together with convenient access to the wider motorway network via the A442, A449 and M5 motorway at Junctions 4 and 5. \n\nThe surrounding area is an established commercial and trade location comprising a mix of automotive, trade counter, roadside retail and industrial occupiers including Halfords and other established local and national businesses. Kidderminster Railway Station is situated approximately 1.5 miles away and provides regular services to Birmingham, Worcester and the wider national rail network.",
-    "features": [
-      "Prominent roadside frontage onto Worcester Road (A442)",
-      "Approximately 10 on-site parking spaces",
-      "Suitable for automotive, trade counter or office use",
-      "Self-contained accommodation with kitchenette and WC"
-    ],
-    "rent_psf": 46.3,
-    "rent_pa": 15000,
-    "rent": "£15,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "C (70)",
-    "images": [
-      "https://as-images.imgix.net/f535086172bddd9ce29304a70a6a7a25-20261005-133055750-ios.jpg",
-      "https://as-images.imgix.net/5fc0da1273859657700d4aad004c51d8-20260204-143944083-ios.jpg",
-      "https://as-images.imgix.net/77f14f7d975b2de27336d079e243f3d2-20260204-144148591-ios.jpg",
-      "https://as-images.imgix.net/1fcf7e99b66004daa96dcd219cb8f5af-20260204-144044630-ios.jpg",
-      "https://as-images.imgix.net/f8a1f64ae2b8c9424a732c1022083f73-20260204-144013333-ios.jpg",
-      "https://as-images.imgix.net/a49294419571233c862d90000475a025-20260204-144229706-ios.jpg",
-      "https://as-images.imgix.net/9ee0a1570d7d008bd019bdad5c33c991-20260204-144220135-ios.jpg",
-      "https://as-images.imgix.net/1d709baad0d1c51829ae49ed72662f09-20260204-145501148-ios.jpg",
-      "https://as-images.imgix.net/4fde46d4d00778c22396f3682c4cc3a1-20260204-143627231-ios.jpg",
-      "https://as-images.imgix.net/767a32b21d89ab010fda4b32768c1d4d-20260204-143651776-ios.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/0d2cf7d5c9e9ca521017a8e4621e6852-gjs-dillon-particulars-worcester-road-kidderminster.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-22 10:41:35"
   },
   {
     "id": 405132,
@@ -3710,76 +3710,6 @@
       }
     ],
     "last_updated": "2026-10-05 16:07:31"
-  },
-  {
-    "id": 350576,
-    "status": "Under Offer",
-    "address": "The Joseph Wood Building",
-    "town": "Worcester",
-    "postcode": "WR1 3PA",
-    "lat": 52.1937382,
-    "lon": -2.2253299,
-    "types": [
-      "Office",
-      "Retail"
-    ],
-    "raw_types": [
-      "Office",
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 911,
-    "size_to_sqft": 911,
-    "summary": "City Centre Commercial Building, Suitable for a Variety of Uses",
-    "description": "The Old Joseph Wood Building has a direct frontage to The Butts, a one way road connecting the main ring road that circles Worcester city centre.  Worcester Foregate Street Station is circa 320m east of the property.  The building is arranged over the ground and first floors and is of traditional brick construction.\n\nThe ground floor is currently arranged as an open plan office, with the first floor comprising a large open plan room which doubles up as a kitchen, break out area and meeting space. There is also a WC at first floor level.\n\nGround Floor\t493 sq ft \t45.80 sq m \nFirst Floor\t418 sq ft \t38.80 sq m \nTotal\t911 sq ft \t84.60 sq m",
-    "location": "The Old Joseph Wood Building is situated within Worcester, \nin the West Midlands.  Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London.  Worcester has excellent access to the M5 motorway, which lies adjacent to the subject property with Junction 7 being approximately one and a half miles drive south.  The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network.\n\nWorcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
-    "features": [
-      "911 sq ft (84.6 sq m)",
-      "Ground and first floor building",
-      "Within walking distance of Worcester City Centre",
-      "Excellent links to public transport",
-      "Public car parks close by",
-      "Flexible lease terms avaiable"
-    ],
-    "rent_psf": 13.17,
-    "rent_pa": 12000,
-    "rent": "£12,000 per annum Per annum exclusive",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "E (119)",
-    "images": [
-      "https://as-images.imgix.net/b258fb726e20203f5d7035b56ac76cba-20250930-094330.jpg",
-      "https://as-images.imgix.net/41b8dd67ed564fc7cb50c029f2f1bde7-20250930-092331.jpg",
-      "https://as-images.imgix.net/e96de198b03e345dae0d2f6f570f4133-20250930-091604.jpg",
-      "https://as-images.imgix.net/816f861aaa1aa85a1c218b73d3dfdeb7-20250930-091532.jpg",
-      "https://as-images.imgix.net/0e642a1266326f120025485824b643db-20250930-091423.jpg",
-      "https://as-images.imgix.net/20c2aa6de6b1b23928106b905cdef094-20250930-091650.jpg",
-      "https://as-images.imgix.net/afc456a14c7170c4f3a0f41d1360539a-20250930-091411.jpg",
-      "https://as-images.imgix.net/cc06cba4c67c19ba8872259866c55ff4-20250930-091513.jpg",
-      "https://as-images.imgix.net/fba7a823a01a3784fceb977e6c602b82-20250930-091358.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/7015bdde0f6b4ca3fc42173454657fc1-gjs-dillon-particulars-the-old-joseph-wood-building-26-the-butts-wocester-wr1-3pa-3.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-05 16:07:25"
   },
   {
     "id": 388662,
