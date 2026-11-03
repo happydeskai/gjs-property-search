@@ -1,5 +1,68 @@
 [
   {
+    "id": 426082,
+    "status": "Available",
+    "address": "44 Friar Street",
+    "town": "Droitwich",
+    "postcode": "WR9 8EQ",
+    "lat": 52.2690456,
+    "lon": -2.1509374,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 960,
+    "size_to_sqft": 960,
+    "summary": "Town centre office accommodation with parking",
+    "description": "44 Friar Street is a semi-detached office building arranged over the ground, first and second floors offer flexible office accommodation. The building is of period construction and has been converted to provide office accommodation throughout.\n\nOn the ground floor the property offers two offices, a reception area, two WC’s and a kitchenette, a further \nthree offices on the first floor and two on the second floor. On-site parking is available and access is via a main entrance off Friar Street. \n\nGround Floor 287 sq ft 26.68 sq \nFirst Floor 391 sq ft 36.32 sq m\nSecond Floor 282 sq ft 26.21 sq m\nTotal 960 sq ft 89.19 sq m",
+    "location": "The property is situated in a prominent position fronting Friar Street, adjacent to the Norbury Theatre and just a short distance from the High Street in the middle of the town centre. \n\nDroitwich is one of three towns in the district of Wychavon. It has a thriving and vibrant business community with a resident population of circa 23,000. Junction 5 of the M5 Motorway is situated within two miles of the Town Centre, giving access to the M5, M42 and national motorway network.",
+    "features": [
+      "960 sq ft (89.19 sq m) NIA",
+      "Guide Rental of £11,400 per annum (£950 per calendar month)",
+      "Flexible office accommodation set over three floors",
+      "On-site allocated parking",
+      "Located in a prominent position within Droitwich town centre",
+      "Excellent access to Junction 5 of the M5 motorway"
+    ],
+    "rent_psf": 11.88,
+    "rent_pa": 11400,
+    "rent": "£11,400 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "D (78)",
+    "images": [
+      "https://as-images.imgix.net/4cccddef815bbcbb638f8c7cfd2becf2-img-5916.jpeg",
+      "https://as-images.imgix.net/a293a8f4a67c8ab765db365d2f4af24c-img-5913.jpeg",
+      "https://as-images.imgix.net/d772913f27fbdc2fb76502e17345bb97-20261007-155809.jpg",
+      "https://as-images.imgix.net/90e8c1ba6a32db1438f7b8259e7ba9ed-20261007-155843.jpg",
+      "https://as-images.imgix.net/00322ab672be8293316e0c438eb9e95f-20261007-160036.jpg",
+      "https://as-images.imgix.net/94ae96d900cebe5df0ca3cc1c86d9acd-20261007-160144.jpg",
+      "https://as-images.imgix.net/ab92522cf6ae06b0373485216f07856b-20261007-160105.jpg",
+      "https://as-images.imgix.net/ca4604e9e30df07274f70b331209a7ad-20261007-160131.jpg",
+      "https://as-images.imgix.net/1219c009f5d536787e680d71e0275e0f-20261007-160247.jpg",
+      "https://as-images.imgix.net/410fa9e44d9bddeee3801fe75a7d43d3-20261007-160549.jpg",
+      "https://as-images.imgix.net/f4207ffbfdeaea91a26fdce108398275-20261007-160555.jpg",
+      "https://as-images.imgix.net/ac7ad4db04740192fb5aebafd07445f6-img-5918.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/d874364aca4490a2e0574e454afe2872-gjs-dillon-particulars-44-friar-street-droitwich.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-03 16:21:26"
+  },
+  {
     "id": 379671,
     "status": "Available",
     "address": "13 The Foregate",
@@ -1962,69 +2025,6 @@
       }
     ],
     "last_updated": "2026-10-28 10:34:35"
-  },
-  {
-    "id": 426082,
-    "status": "Available",
-    "address": "44 Friar Street",
-    "town": "Droitwich",
-    "postcode": "WR9 8EQ",
-    "lat": 52.2690456,
-    "lon": -2.1509374,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 960,
-    "size_to_sqft": 960,
-    "summary": "Town centre office accommodation with parking",
-    "description": "44 Friar Street is a semi-detached office building arranged over the ground, first and second floors offer flexible office accommodation. The building is of period construction and has been converted to provide office accommodation throughout.\n\nOn the ground floor the property offers two offices, a reception area, two WC’s and a kitchenette, a further \nthree offices on the first floor and two on the second floor. On-site parking is available and access is via a main entrance off Friar Street. \n\nGround Floor 287 sq ft 26.68 sq \nFirst Floor 391 sq ft 36.32 sq m\nSecond Floor 282 sq ft 26.21 sq m\nTotal 960 sq ft 89.19 sq m",
-    "location": "The property is situated in a prominent position fronting Friar Street, adjacent to the Norbury Theatre and just a short distance from the High Street in the middle of the town centre. \n\nDroitwich is one of three towns in the district of Wychavon. It has a thriving and vibrant business community with a resident population of circa 23,000. Junction 5 of the M5 Motorway is situated within two miles of the Town Centre, giving access to the M5, M42 and national motorway network.",
-    "features": [
-      "960 sq ft (89.19 sq m) NIA",
-      "Guide Rental of £11,400 per annum (£950 per calendar month)",
-      "Flexible office accommodation set over three floors",
-      "On-site allocated parking",
-      "Located in a prominent position within Droitwich town centre",
-      "Excellent access to Junction 5 of the M5 motorway"
-    ],
-    "rent_psf": 11.88,
-    "rent_pa": 11400,
-    "rent": "£11,400 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "D (78)",
-    "images": [
-      "https://as-images.imgix.net/4cccddef815bbcbb638f8c7cfd2becf2-img-5916.jpeg",
-      "https://as-images.imgix.net/a293a8f4a67c8ab765db365d2f4af24c-img-5913.jpeg",
-      "https://as-images.imgix.net/d772913f27fbdc2fb76502e17345bb97-20261007-155809.jpg",
-      "https://as-images.imgix.net/90e8c1ba6a32db1438f7b8259e7ba9ed-20261007-155843.jpg",
-      "https://as-images.imgix.net/00322ab672be8293316e0c438eb9e95f-20261007-160036.jpg",
-      "https://as-images.imgix.net/94ae96d900cebe5df0ca3cc1c86d9acd-20261007-160144.jpg",
-      "https://as-images.imgix.net/ab92522cf6ae06b0373485216f07856b-20261007-160105.jpg",
-      "https://as-images.imgix.net/ca4604e9e30df07274f70b331209a7ad-20261007-160131.jpg",
-      "https://as-images.imgix.net/1219c009f5d536787e680d71e0275e0f-20261007-160247.jpg",
-      "https://as-images.imgix.net/410fa9e44d9bddeee3801fe75a7d43d3-20261007-160549.jpg",
-      "https://as-images.imgix.net/f4207ffbfdeaea91a26fdce108398275-20261007-160555.jpg",
-      "https://as-images.imgix.net/ac7ad4db04740192fb5aebafd07445f6-img-5918.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/d874364aca4490a2e0574e454afe2872-gjs-dillon-particulars-44-friar-street-droitwich.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-28 10:33:12"
   },
   {
     "id": 426611,
