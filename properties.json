@@ -1,5 +1,125 @@
 [
   {
+    "id": 426082,
+    "status": "Available",
+    "address": "44 Friar Street",
+    "town": "Droitwich",
+    "postcode": "WR9 8EQ",
+    "lat": 52.2690456,
+    "lon": -2.1509374,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 960,
+    "size_to_sqft": 960,
+    "summary": "Town centre office accommodation with parking",
+    "description": "44 Friar Street is a semi-detached office building arranged over the ground, first and second floors offer flexible office accommodation. The building is of period construction and has been converted to provide office accommodation throughout.\n\nOn the ground floor the property offers two offices, a reception area, two WC’s and a kitchenette, a further \nthree offices on the first floor and two on the second floor. On-site parking is available and access is via a main entrance off Friar Street. \n\nGround Floor 287 sq ft 26.68 sq \nFirst Floor 391 sq ft 36.32 sq m\nSecond Floor 282 sq ft 26.21 sq m\nTotal 960 sq ft 89.19 sq m",
+    "location": "The property is situated in a prominent position fronting Friar Street, adjacent to the Norbury Theatre and just a short distance from the High Street in the middle of the town centre. \n\nDroitwich is one of three towns in the district of Wychavon. It has a thriving and vibrant business community with a resident population of circa 23,000. Junction 5 of the M5 Motorway is situated within two miles of the Town Centre, giving access to the M5, M42 and national motorway network.",
+    "features": [
+      "960 sq ft (89.19 sq m) NIA",
+      "Guide Rental of £11,400 per annum (£950 per calendar month)",
+      "Flexible office accommodation set over three floors",
+      "On-site allocated parking",
+      "Located in a prominent position within Droitwich town centre",
+      "Excellent access to Junction 5 of the M5 motorway"
+    ],
+    "rent_psf": 11.88,
+    "rent_pa": 11400,
+    "rent": "£11,400 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "D (78)",
+    "images": [
+      "https://as-images.imgix.net/4cccddef815bbcbb638f8c7cfd2becf2-img-5916.jpeg",
+      "https://as-images.imgix.net/a293a8f4a67c8ab765db365d2f4af24c-img-5913.jpeg",
+      "https://as-images.imgix.net/d772913f27fbdc2fb76502e17345bb97-20261007-155809.jpg",
+      "https://as-images.imgix.net/90e8c1ba6a32db1438f7b8259e7ba9ed-20261007-155843.jpg",
+      "https://as-images.imgix.net/00322ab672be8293316e0c438eb9e95f-20261007-160036.jpg",
+      "https://as-images.imgix.net/94ae96d900cebe5df0ca3cc1c86d9acd-20261007-160144.jpg",
+      "https://as-images.imgix.net/ab92522cf6ae06b0373485216f07856b-20261007-160105.jpg",
+      "https://as-images.imgix.net/ca4604e9e30df07274f70b331209a7ad-20261007-160131.jpg",
+      "https://as-images.imgix.net/1219c009f5d536787e680d71e0275e0f-20261007-160247.jpg",
+      "https://as-images.imgix.net/410fa9e44d9bddeee3801fe75a7d43d3-20261007-160549.jpg",
+      "https://as-images.imgix.net/f4207ffbfdeaea91a26fdce108398275-20261007-160555.jpg",
+      "https://as-images.imgix.net/ac7ad4db04740192fb5aebafd07445f6-img-5918.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/d874364aca4490a2e0574e454afe2872-gjs-dillon-particulars-44-friar-street-droitwich.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-05 16:44:18"
+  },
+  {
+    "id": 426611,
+    "status": "Available",
+    "address": "31 Pump Street",
+    "town": "Worcester",
+    "postcode": "WR1 2QX",
+    "lat": 52.19092789301,
+    "lon": -2.2188203200989,
+    "types": [
+      "Retail"
+    ],
+    "raw_types": [
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 583,
+    "size_to_sqft": 583,
+    "summary": "Retail premises in central location",
+    "description": "31 Pump Street is an end-terrace ground floor retail unit situated within the heart of Worcester city centre. The unit features an open-plan retail area with suspended ceiling, air conditioning, and two single-glazed shop frontages facing out onto both Pump Street and New Street. Towards the rear of the unit are ancillary areas suitable for limited storage, in addition to a WC. The unit may suit a variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.",
+    "location": "The property is prominently located on the corner Pump Street and New Street. Both streets are located just off Worcester High Street, in a highly visible and well-trafficked position. The area is also home to a mix of national and independent occupiers. \n\nWorcester's main shopping destinations - Crowngate Shopping Centre and Cathedral Square - are both within a short walking distance. Worcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
+    "features": [
+      "Prominent city centre position",
+      "Vacant possession",
+      "583 sq ft (54.17 sq m) NIA",
+      "Guide Rental of £15,000 per annum (£1,250 per calendar month)"
+    ],
+    "rent_psf": 25.73,
+    "rent_pa": 15000,
+    "rent": "£15,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 11000,
+    "epc_rating": "D (78)",
+    "images": [
+      "https://as-images.imgix.net/312e3b15dc2e8e7ac7b5b728ef233944-20261008-161548.jpg",
+      "https://as-images.imgix.net/e61cc6ebde7245f0e60f8f12cc564c8c-20261008-161538.jpg",
+      "https://as-images.imgix.net/759a9d3c6f330a1635c406681b44d434-20261008-160952.jpg",
+      "https://as-images.imgix.net/0b5e5ff89cd58dda28ba011369351606-20261008-161505.jpg",
+      "https://as-images.imgix.net/7d601d6ed5b3e278843f943ac468ff28-20261008-161140.jpg",
+      "https://as-images.imgix.net/8824eceafc2ed56214f92e06c3216fa4-20261008-162148.jpg",
+      "https://as-images.imgix.net/4e5a8383f771da74fcfa83407b771c65-20261008-160957.jpg",
+      "https://as-images.imgix.net/e5c0669d9232f9661fce7ee568c2c44f-20261008-161034.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/5acf6a34475c6d809f79c1fcd412a3b9-gjs-dillon-particulars-31-pump-street-worcester.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-05 16:44:18"
+  },
+  {
     "id": 377589,
     "status": "Available",
     "address": "7 Aston Court",
@@ -90,7 +210,76 @@
         "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-11-05 13:07:45"
+    "last_updated": "2026-11-05 16:44:18"
+  },
+  {
+    "id": 396537,
+    "status": "Available",
+    "address": "Three Springs House",
+    "town": "Worcester",
+    "postcode": "WR5 1BW",
+    "lat": 52.191008,
+    "lon": -2.212897,
+    "types": [
+      "Development/Investment"
+    ],
+    "raw_types": [
+      "Development",
+      "Commercial Development",
+      "Development Site",
+      "Investment"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 10782,
+    "size_to_sqft": 10782,
+    "summary": "Freehold Development Opportunity in Central Worcester",
+    "description": "Three Springs House comprises a brick building arranged over the ground and first floors.  The building fronts Vincent Road to the east, with Three Springs Trading Estate being to the rear.  \nThe building was most recently occupied as offices over part of the ground and the whole of the first floor, with there being two commercial units over the ground floor.  There is a main reception area which offers a central core to all four areas of the building.\nIndicative plans are available showing development to 21 flats – arranged as 11 x one bedroom flats over the ground floor and eight x one bedroom plus two x two bedroom flats over the first floor.\n\nGround Floor (Unit 9)\t\t2,174 sq ft\t201.97 sq m\nGround Floor (Units 9A & 10)\t3,255 sq ft\t302.40 sq m\nFirst Floor (Unit 10A)\t\t2,177 sq ft\t202.25 sq m\nFirst Floor (Unit 10B)\t\t3,176 sq ft\t295.06 sq m\n\nTotal\t\t\t\t10,782 sq ft\t1,001.68 sq m\n\nAlternative Uses\nShould an alternative use be sought, the office space is eligible for permitted development with reports & surveys available for a car free scheme.  Applicants should make their own enquiries with Worcester City Council.",
+    "location": "Three Springs House is located on Vincent Road, to the front of Three Springs Trading Estate in Worcester.  The property forms part of an established commercial and residential area, with industrial accommodation to the rear and housing along the remainder of Vincent Road.\nThe property is situated circa 600m east of Worcester city centre.  The city offers a broad range of shops, restaurants, cafes and leisure facilities, centred around the High Street and Cathedral.\nThere is therefore good connectivity, with Worcester Foregate Street and Worcester Shrub Hill being in walking distance, and providing links to Birmingham, London and other regional destinations.  The M5 motorway runs to the east of the city, with Junctions 6 & 7 being easily accessed from the property.",
+    "features": [
+      "Two storey building totalling 10,782 sq ft",
+      "For sale with vacant possession",
+      "Previously occupied as office accommodation with ground floor workshop space",
+      "Situated 600m east of Worcester City Centre",
+      "Plans available showing development to 21 flats – arranged as 11 x   one bedroom flats over the ground floor and eight x one bedroom plus two x two bedroom flats over the first floor"
+    ],
+    "price": "£800,000 Offers Over",
+    "price_value": 800000,
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/4fde780f34f252270252dab414c2d8ee-img-1404.JPEG",
+      "https://as-images.imgix.net/6ae1ea2a705d9d71e42f894a6bb4b64d-img-1397.JPEG",
+      "https://as-images.imgix.net/93433e57ac12184a54ef6cefbec5d6f7-img-1403.JPEG",
+      "https://as-images.imgix.net/7c5ccb1a9b1c358d9b591e39c6f1d244-img-1410.JPEG",
+      "https://as-images.imgix.net/ae6959c702016e54350975636778c784-img-1408.JPEG",
+      "https://as-images.imgix.net/915f0d7ad8bb66479be9cabbd32540fe-img-1411.JPEG",
+      "https://as-images.imgix.net/7688582f97e84fe799d07d2e62431a7a-img-1421.JPEG",
+      "https://as-images.imgix.net/f5350d6831064927bd306574ad8e7b87-img-1418.JPEG",
+      "https://as-images.imgix.net/f3c6370e8ceb39265b1d0c78437af998-img-1412.JPEG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/a33279199ac51a3569051c5aac927e7e-gjs-dillon-particulars-three-springs-house-worcester-2.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-05 15:33:28"
   },
   {
     "id": 346823,
@@ -397,63 +586,6 @@
       }
     ],
     "last_updated": "2026-11-05 12:57:08"
-  },
-  {
-    "id": 426611,
-    "status": "Available",
-    "address": "31 Pump Street",
-    "town": "Worcester",
-    "postcode": "WR1 2QX",
-    "lat": 52.19092789301,
-    "lon": -2.2188203200989,
-    "types": [
-      "Retail"
-    ],
-    "raw_types": [
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 583,
-    "size_to_sqft": 583,
-    "summary": "Retail premises in central location",
-    "description": "31 Pump Street is an end-terrace ground floor retail unit situated within the heart of Worcester city centre. The unit features an open-plan retail area with suspended ceiling, air conditioning, and two single-glazed shop frontages facing out onto both Pump Street and New Street. Towards the rear of the unit are ancillary areas suitable for limited storage, in addition to a WC. The unit may suit a variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.",
-    "location": "The property is prominently located on the corner Pump Street and New Street. Both streets are located just off Worcester High Street, in a highly visible and well-trafficked position. The area is also home to a mix of national and independent occupiers. \n\nWorcester's main shopping destinations - Crowngate Shopping Centre and Cathedral Square - are both within a short walking distance. Worcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
-    "features": [
-      "Prominent city centre position",
-      "Vacant possession",
-      "583 sq ft (54.17 sq m) NIA",
-      "Guide Rental of £15,000 per annum (£1,250 per calendar month)"
-    ],
-    "rent_psf": 25.73,
-    "rent_pa": 15000,
-    "rent": "£15,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 11000,
-    "epc_rating": "D (78)",
-    "images": [
-      "https://as-images.imgix.net/312e3b15dc2e8e7ac7b5b728ef233944-20261008-161548.jpg",
-      "https://as-images.imgix.net/e61cc6ebde7245f0e60f8f12cc564c8c-20261008-161538.jpg",
-      "https://as-images.imgix.net/759a9d3c6f330a1635c406681b44d434-20261008-160952.jpg",
-      "https://as-images.imgix.net/0b5e5ff89cd58dda28ba011369351606-20261008-161505.jpg",
-      "https://as-images.imgix.net/7d601d6ed5b3e278843f943ac468ff28-20261008-161140.jpg",
-      "https://as-images.imgix.net/8824eceafc2ed56214f92e06c3216fa4-20261008-162148.jpg",
-      "https://as-images.imgix.net/4e5a8383f771da74fcfa83407b771c65-20261008-160957.jpg",
-      "https://as-images.imgix.net/e5c0669d9232f9661fce7ee568c2c44f-20261008-161034.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/5acf6a34475c6d809f79c1fcd412a3b9-gjs-dillon-particulars-31-pump-street-worcester.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-11-05 12:50:12"
   },
   {
     "id": 389516,
@@ -1073,69 +1205,6 @@
     "last_updated": "2026-11-05 11:43:10"
   },
   {
-    "id": 426082,
-    "status": "Available",
-    "address": "44 Friar Street",
-    "town": "Droitwich",
-    "postcode": "WR9 8EQ",
-    "lat": 52.2690456,
-    "lon": -2.1509374,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 960,
-    "size_to_sqft": 960,
-    "summary": "Town centre office accommodation with parking",
-    "description": "44 Friar Street is a semi-detached office building arranged over the ground, first and second floors offer flexible office accommodation. The building is of period construction and has been converted to provide office accommodation throughout.\n\nOn the ground floor the property offers two offices, a reception area, two WC’s and a kitchenette, a further \nthree offices on the first floor and two on the second floor. On-site parking is available and access is via a main entrance off Friar Street. \n\nGround Floor 287 sq ft 26.68 sq \nFirst Floor 391 sq ft 36.32 sq m\nSecond Floor 282 sq ft 26.21 sq m\nTotal 960 sq ft 89.19 sq m",
-    "location": "The property is situated in a prominent position fronting Friar Street, adjacent to the Norbury Theatre and just a short distance from the High Street in the middle of the town centre. \n\nDroitwich is one of three towns in the district of Wychavon. It has a thriving and vibrant business community with a resident population of circa 23,000. Junction 5 of the M5 Motorway is situated within two miles of the Town Centre, giving access to the M5, M42 and national motorway network.",
-    "features": [
-      "960 sq ft (89.19 sq m) NIA",
-      "Guide Rental of £11,400 per annum (£950 per calendar month)",
-      "Flexible office accommodation set over three floors",
-      "On-site allocated parking",
-      "Located in a prominent position within Droitwich town centre",
-      "Excellent access to Junction 5 of the M5 motorway"
-    ],
-    "rent_psf": 11.88,
-    "rent_pa": 11400,
-    "rent": "£11,400 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "D (78)",
-    "images": [
-      "https://as-images.imgix.net/4cccddef815bbcbb638f8c7cfd2becf2-img-5916.jpeg",
-      "https://as-images.imgix.net/a293a8f4a67c8ab765db365d2f4af24c-img-5913.jpeg",
-      "https://as-images.imgix.net/d772913f27fbdc2fb76502e17345bb97-20261007-155809.jpg",
-      "https://as-images.imgix.net/90e8c1ba6a32db1438f7b8259e7ba9ed-20261007-155843.jpg",
-      "https://as-images.imgix.net/00322ab672be8293316e0c438eb9e95f-20261007-160036.jpg",
-      "https://as-images.imgix.net/94ae96d900cebe5df0ca3cc1c86d9acd-20261007-160144.jpg",
-      "https://as-images.imgix.net/ab92522cf6ae06b0373485216f07856b-20261007-160105.jpg",
-      "https://as-images.imgix.net/ca4604e9e30df07274f70b331209a7ad-20261007-160131.jpg",
-      "https://as-images.imgix.net/1219c009f5d536787e680d71e0275e0f-20261007-160247.jpg",
-      "https://as-images.imgix.net/410fa9e44d9bddeee3801fe75a7d43d3-20261007-160549.jpg",
-      "https://as-images.imgix.net/f4207ffbfdeaea91a26fdce108398275-20261007-160555.jpg",
-      "https://as-images.imgix.net/ac7ad4db04740192fb5aebafd07445f6-img-5918.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/d874364aca4490a2e0574e454afe2872-gjs-dillon-particulars-44-friar-street-droitwich.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-11-03 16:21:26"
-  },
-  {
     "id": 346672,
     "status": "Available",
     "address": "20 The Shambles",
@@ -1481,75 +1550,6 @@
       }
     ],
     "last_updated": "2026-11-02 16:51:39"
-  },
-  {
-    "id": 396537,
-    "status": "Available",
-    "address": "Three Springs House",
-    "town": "Worcester",
-    "postcode": "WR5 1BW",
-    "lat": 52.191008,
-    "lon": -2.212897,
-    "types": [
-      "Development/Investment"
-    ],
-    "raw_types": [
-      "Development",
-      "Commercial Development",
-      "Development Site",
-      "Investment"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 10782,
-    "size_to_sqft": 10782,
-    "summary": "Freehold Development Opportunity in Central Worcester",
-    "description": "Three Springs House comprises a brick building arranged over the ground and first floors.  The building fronts Vincent Road to the east, with Three Springs Trading Estate being to the rear.  \nThe building was most recently occupied as offices over part of the ground and the whole of the first floor, with there being two commercial units over the ground floor.  There is a main reception area which offers a central core to all four areas of the building.\nIndicative plans are available showing development to 21 flats – arranged as 11 x one bedroom flats over the ground floor and eight x one bedroom plus two x two bedroom flats over the first floor.\n\nGround Floor (Unit 9)\t\t2,174 sq ft\t201.97 sq m\nGround Floor (Units 9A & 10)\t3,255 sq ft\t302.40 sq m\nFirst Floor (Unit 10A)\t\t2,177 sq ft\t202.25 sq m\nFirst Floor (Unit 10B)\t\t3,176 sq ft\t295.06 sq m\n\nTotal\t\t\t\t10,782 sq ft\t1,001.68 sq m\n\nAlternative Uses\nShould an alternative use be sought, the office space is eligible for permitted development with reports & surveys available for a car free scheme.  Applicants should make their own enquiries with Worcester City Council.",
-    "location": "Three Springs House is located on Vincent Road, to the front of Three Springs Trading Estate in Worcester.  The property forms part of an established commercial and residential area, with industrial accommodation to the rear and housing along the remainder of Vincent Road.\nThe property is situated circa 600m east of Worcester city centre.  The city offers a broad range of shops, restaurants, cafes and leisure facilities, centred around the High Street and Cathedral.\nThere is therefore good connectivity, with Worcester Foregate Street and Worcester Shrub Hill being in walking distance, and providing links to Birmingham, London and other regional destinations.  The M5 motorway runs to the east of the city, with Junctions 6 & 7 being easily accessed from the property.",
-    "features": [
-      "Two storey building totalling 10,782 sq ft",
-      "For sale with vacant possession",
-      "Previously occupied as office accommodation with ground floor workshop space",
-      "Situated 600m east of Worcester City Centre",
-      "Plans available showing development to 21 flats – arranged as 11 x   one bedroom flats over the ground floor and eight x one bedroom plus two x two bedroom flats over the first floor"
-    ],
-    "price": "£800,000 Offers Over",
-    "price_value": 800000,
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/4fde780f34f252270252dab414c2d8ee-img-1404.JPEG",
-      "https://as-images.imgix.net/6ae1ea2a705d9d71e42f894a6bb4b64d-img-1397.JPEG",
-      "https://as-images.imgix.net/93433e57ac12184a54ef6cefbec5d6f7-img-1403.JPEG",
-      "https://as-images.imgix.net/7c5ccb1a9b1c358d9b591e39c6f1d244-img-1410.JPEG",
-      "https://as-images.imgix.net/ae6959c702016e54350975636778c784-img-1408.JPEG",
-      "https://as-images.imgix.net/915f0d7ad8bb66479be9cabbd32540fe-img-1411.JPEG",
-      "https://as-images.imgix.net/7688582f97e84fe799d07d2e62431a7a-img-1421.JPEG",
-      "https://as-images.imgix.net/f5350d6831064927bd306574ad8e7b87-img-1418.JPEG",
-      "https://as-images.imgix.net/f3c6370e8ceb39265b1d0c78437af998-img-1412.JPEG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/a33279199ac51a3569051c5aac927e7e-gjs-dillon-particulars-three-springs-house-worcester-2.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-11-02 16:51:25"
   },
   {
     "id": 363173,
