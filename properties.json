@@ -1,5 +1,257 @@
 [
   {
+    "id": 429284,
+    "status": "Available",
+    "address": "79 High Street",
+    "town": "Pershore",
+    "postcode": "WR10 1EY",
+    "lat": 52.112851645343,
+    "lon": -2.0766500529175,
+    "types": [
+      "Industrial",
+      "Motortrade"
+    ],
+    "raw_types": [
+      "Industrial",
+      "Motortrade"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1301,
+    "size_to_sqft": 1301,
+    "summary": "Prominent Roadside Commercial Unit",
+    "description": "The property comprises a vehicle showroom with forecourt only. The showroom, which has been modernised and refurbished has a glazed elevation and the forecourt has a frontage of 26 metres (85 feet) to the High Street. The showroom provides generally open plan accommodation with a kitchen, WC and storage room. \n\nThe unit is approximately 1,301 sq ft (120.83 sq m) GIA.",
+    "location": "The property is situated in a highly prominent position on the High Street in Pershore, approximately 10 miles south-east of Worcester and seven miles west of Evesham respectively. Pershore Train Station is located circa two miles north, providing a regular service into Worcester City Centre within 15 minutes. The National Motorway network is accessed via Junction 7 of the M5, approximately six miles north-west.",
+    "features": [
+      "Prominent position fronting Pershore High Street",
+      "Guide Rent of £18,000 per annum (£1,500 per calendar month)",
+      "1,301 sqft (120.83 sq m) GIA",
+      "Suitable for motortrade use",
+      "Self-contained accomodation with office space, kitchen, WC, and storage."
+    ],
+    "rent_psf": 13.84,
+    "rent_pa": 18000,
+    "rent": "£18,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "C (59)",
+    "images": [
+      "https://as-images.imgix.net/231c7fdb9c47de3ab11a87ca8654b539-img-5993.jpeg",
+      "https://as-images.imgix.net/15d06626460e7a6b3e289cd4e10cf16b-img-5998.jpeg",
+      "https://as-images.imgix.net/66163bb0592b5fe1b27e45a73b9f97f7-img-6139.jpeg",
+      "https://as-images.imgix.net/e6a76f867cc03638ba007e1d517ca138-img-6106.jpeg",
+      "https://as-images.imgix.net/867363703f77871a7f3fb83d1a47d051-img-6115.jpeg",
+      "https://as-images.imgix.net/99bcbe4b1bd6c0f2592af8278174c9c0-img-6119.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/95dc41a7c3b9ad1c72dbbc941d452311-gjs-dillon-particulars-79-high-street-pershore.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-09 16:42:34"
+  },
+  {
+    "id": 429850,
+    "status": "Available",
+    "address": "11c Oakmoore Court",
+    "town": "Droitwich",
+    "postcode": "WR9 0QH",
+    "lat": 52.285205902086,
+    "lon": -2.1731898183746,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 4888,
+    "size_to_sqft": 4888,
+    "summary": "Office building on the popular Hampton Lovett Industrial Estate",
+    "description": "The property comprises a modern detached two-storey office building with brick elevations under a pitched tiled roof with double-glazed windows throughout. \n\nThe ground floor comprises reception, meeting rooms and offices mainly of a cellular layout together with kitchen, WC facilities and storerooms. The first floor is mainly open plan office including kitchen and WC facilities. \n\nThe property benefits from suspended ceilings with inset LED lights and air conditioning / comfort cooling.\n\nExternally the property has circa 20 car parking spaces, with the exact determination being unclear owing to the spaces being shared with the next door premises. This includes two EV charging spaces.\n\nGround Floor: 2,629 sq ft\nFirst Floor: 2,259 sq ft",
+    "location": "The property is located within the popular Hampton Lovett Industrial Estate, approximately one mile north of Droitwich Town Centre. The Hampton Lovett Industrial Estate is accessed directly off the A442 which provides access to Droitwich to the south and Hartlebury and Kidderminster to the north. The location is particularly convenient for occupiers as it provides easy access to the M5 Motorway with Junction 5 situated approximately 3.25km (two miles) to the east.",
+    "features": [
+      "Situated on the popular Hampton Lovett Industrial Estate",
+      "Guide Price of £725,000",
+      "4,888 sq ft (454.08 sq m) NIA",
+      "Open plan first floor office"
+    ],
+    "price": "£725,000",
+    "price_value": 725000,
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "D (79)",
+    "images": [
+      "https://as-images.imgix.net/ca8056318c66acebbbf9572a24ac97c6-img-1592.JPEG",
+      "https://as-images.imgix.net/9a82c23f70fcf19a7a33d35bdf725c44-img-20261109-wa0006.jpg",
+      "https://as-images.imgix.net/c457b0db48a8e5e64a7a1957a5b522e9-img-20261109-wa0002.jpg",
+      "https://as-images.imgix.net/7ee08dac6622c5f5d5575a47e6bc207b-img-20261109-wa0021.jpg",
+      "https://as-images.imgix.net/067257231cad81e169bdcfe5e14ce307-img-20261109-wa0014.jpg",
+      "https://as-images.imgix.net/310301dbfee625c77d3960c16c455cfe-img-20261109-wa0029.jpg",
+      "https://as-images.imgix.net/e1c100299f91f4b912dd94066bbae0ff-img-20261109-wa0025.jpg",
+      "https://as-images.imgix.net/e3638606b6467892f960c9b7581e357e-img-20261109-wa0026.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/0c56d88ff44633901b731fd0591cf926-gjs-dillon-particulars-oakmoore-court-hampton-lovett-droitwich.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-09 15:04:00"
+  },
+  {
+    "id": 427698,
+    "status": "Available",
+    "address": "7-9 Lowesmoor",
+    "town": "Worcester",
+    "postcode": "WR1 2RS",
+    "lat": 52.1943047,
+    "lon": -2.2189308,
+    "types": [
+      "Retail"
+    ],
+    "raw_types": [
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 295,
+    "size_to_sqft": 590,
+    "summary": "Retail premises in central location",
+    "description": "7 - 9 Lowesmoor features two end-terrace ground floor retail units. The two retail units are both self-contained and are accessed directly off Lowesmoor comprising retail area with fully glazed shop front, kitchenette and WC to rear. The units may suit a wide variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.\n\nAvailable to let individually or as a double unit. \n\nSingle Unit - £9,000 per annum\nDouble Unit - £18,000 per annum",
+    "location": "The property occupies a prominent position fronting Lowesmoor close to the junction with Sansome Street and City Walls Road and is within walking distance of the main shopping area in Worcester city centre and St Martins Quarter which includes occupiers such as Costa Coffee, Sports Direct and Asda.\n\nThe immediate surrounding area is characterised with similar sized style and aged properties comprising mostly retail premises with independent retailers at ground floor level with either office or residential uses on the upper floors\n\nWorcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
+    "features": [
+      "City centre location",
+      "Vacant possession",
+      "295 - 590 sq ft (27.40 - 54.81 sq m)",
+      "Guide Rental for single unit of £9,000 per annum",
+      "Guide Rental for both units of £18,000 per annum"
+    ],
+    "rent_psf": 30.51,
+    "rent_pa": 9000,
+    "rent": "£9,000 - £18,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/ba2b9aaac481f36cdadf9cc69dddb886-img-6074.jpeg",
+      "https://as-images.imgix.net/3f23ff575dd80ad137546e29e30d3634-20260106-095644989-ios.jpg",
+      "https://as-images.imgix.net/18d6dcf49db647ba2d7ecc056c7f2fb5-img-5936.jpeg",
+      "https://as-images.imgix.net/a020a06c5bde5dcb5b78b9c411e8424f-img-5937-1.jpeg",
+      "https://as-images.imgix.net/0a3755d21bc59e29dd0d63279eb255f0-img-5930.jpeg",
+      "https://as-images.imgix.net/e24ec1158cfc046de5f411136da8c3dc-img-5948.jpeg",
+      "https://as-images.imgix.net/503f0fa1fc9f4c651a15c7b147193771-img-5946.jpeg",
+      "https://as-images.imgix.net/c09b9cdcb1ec51e95a3f0ba8a0c85862-img-5947.jpeg",
+      "https://as-images.imgix.net/81271221df85edd5a43bfac41b1b9998-img-5942.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/b94e2582a8287dceea1e541c3026628b-gjs-dillon-particulars-7-9-lowesmoor-worcester.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-09 14:06:20"
+  },
+  {
+    "id": 346648,
+    "status": "Available",
+    "address": "The Old Mill",
+    "town": "Pershore",
+    "postcode": "WR10 1BY",
+    "lat": 52.11138916,
+    "lon": -2.082348108,
+    "types": [
+      "Retail",
+      "Office",
+      "Industrial"
+    ],
+    "raw_types": [
+      "Retail",
+      "Office",
+      "Industrial"
+    ],
+    "to_let": true,
+    "for_sale": true,
+    "size_from_sqft": 5757,
+    "size_to_sqft": 5757,
+    "summary": "Retail / Office / Industrial To Let, Pershore",
+    "description": "The Old Mill comprises a large, detached commercial premises of traditional brick construction. The building has an open-plan retail sales area, which benefits from suspended LED lighting. Ancillary accommodation is provided at ground and first floor levels, including staff and storage areas, along with a mezzanine floor. There are approximately 20 car parking spaces. Ground Floor Sales3,400 sq ft315.87 sq m Ground Floor Ancillary 520 sq ft 48.31 sq m Mezzanine Area1,349 sq ft125.33 sq m First Floor Ancillary 306 sq ft 28.43 sq m Total5,575 sq ft 517.93 sq m",
+    "location": "Location The property is prominently located on New Road in Pershore, a well-connected Worcestershire market town approximately 10 miles from Worcester and 7 miles from Evesham. The Old Mill is positioned close to the River Avon and within easy walking distance of Pershore town centre. The location benefits from good transport links, including nearby access to the A44 and Pershore railway station with services to Worcester, Oxford and London.",
+    "features": [
+      "For Sale / May Let",
+      "Suitable for a variety of uses",
+      "Ground and first floor space",
+      "On site car parking",
+      "Good access to the A44, leading to the M5 motorway"
+    ],
+    "rent_psf": 6.08,
+    "rent_pa": 35000,
+    "rent": "£35,000 per annum",
+    "price": "£400,000",
+    "price_value": 400000,
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/23387c8a7ce3b5b7fe2a131ab060c4f7-letting346648.jpeg",
+      "https://as-images.imgix.net/190636d7f492d606728a54c162a45601-img-9644.jpg",
+      "https://as-images.imgix.net/563fe19cdded0ce35e21bf2b9790fd2a-img-2529.jpg",
+      "https://as-images.imgix.net/44c270d88ff96e2afc438b6eec5bfa54-20261012-141609820-ios.jpg",
+      "https://as-images.imgix.net/29923bf0d1eb71e2c2f08fab07abf4e6-img-2708.jpg",
+      "https://as-images.imgix.net/1b72aba4c4772e0e22434398e5070eae-img-2545.jpg",
+      "https://as-images.imgix.net/ff3e2ddae13ce2311664fbf913e4c70b-20261012-141949638-ios.jpg",
+      "https://as-images.imgix.net/209a69c9adf175d282719bed4e21ecef-letting346648.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9de678a71d0303ae8ad1b85693e888d7-gjs-dillon-particulars-the-old-mill-pershore.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/e8b1e8e28c8c3901789cdd8217021178-cam04581g0-pr0081-build01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/78a1da9d2c4bd9bc4cdc79825b31ba72-cam04581g0-pr0081-build01-floor01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/7b106d3fdf1edadca31b6229f83a91b7-cam04581g0-pr0081-build01-floor00.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/theoldmillpershore"
+    ],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-09 11:27:59"
+  },
+  {
     "id": 389415,
     "status": "Available",
     "address": "17 Victoria Square",
@@ -813,65 +1065,6 @@
     "last_updated": "2026-11-05 12:37:44"
   },
   {
-    "id": 427698,
-    "status": "Available",
-    "address": "7-9 Lowesmoor",
-    "town": "Worcester",
-    "postcode": "WR1 2RS",
-    "lat": 52.1943047,
-    "lon": -2.2189308,
-    "types": [
-      "Retail"
-    ],
-    "raw_types": [
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 295,
-    "size_to_sqft": 590,
-    "summary": "Retail premises in central location",
-    "description": "7 - 9 Lowesmoor features two end-terrace ground floor retail units. The two retail units are both self-contained and are accessed directly off Lowesmoor comprising retail area with fully glazed shop front, kitchenette and WC to rear. The units may suit a wide variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.\n\nAvailable to let individually or as a double unit. \n\nSingle Unit - £9,000 per annum\nDouble Unit - £18,000 per annum",
-    "location": "The property occupies a prominent position fronting Lowesmoor close to the junction with Sansome Street and City Walls Road and is within walking distance of the main shopping area in Worcester city centre and St Martins Quarter which includes occupiers such as Costa Coffee, Sports Direct and Asda.\n\nThe immediate surrounding area is characterised with similar sized style and aged properties comprising mostly retail premises with independent retailers at ground floor level with either office or residential uses on the upper floors\n\nWorcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
-    "features": [
-      "City centre location",
-      "Vacant possession",
-      "295 - 590 sq ft (27.40 - 54.81 sq m)",
-      "Guide Rental for single unit of £9,000 per annum",
-      "Guide Rental for both units of £18,000 per annum"
-    ],
-    "rent_psf": 30.51,
-    "rent_pa": 9000,
-    "rent": "£9,000 - £18,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/ba2b9aaac481f36cdadf9cc69dddb886-img-6074.jpeg",
-      "https://as-images.imgix.net/3f23ff575dd80ad137546e29e30d3634-20260106-095644989-ios.jpg",
-      "https://as-images.imgix.net/18d6dcf49db647ba2d7ecc056c7f2fb5-img-5936.jpeg",
-      "https://as-images.imgix.net/a020a06c5bde5dcb5b78b9c411e8424f-img-5937-1.jpeg",
-      "https://as-images.imgix.net/0a3755d21bc59e29dd0d63279eb255f0-img-5930.jpeg",
-      "https://as-images.imgix.net/e24ec1158cfc046de5f411136da8c3dc-img-5948.jpeg",
-      "https://as-images.imgix.net/503f0fa1fc9f4c651a15c7b147193771-img-5946.jpeg",
-      "https://as-images.imgix.net/c09b9cdcb1ec51e95a3f0ba8a0c85862-img-5947.jpeg",
-      "https://as-images.imgix.net/81271221df85edd5a43bfac41b1b9998-img-5942.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/b94e2582a8287dceea1e541c3026628b-gjs-dillon-particulars-7-9-lowesmoor-worcester.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-11-05 12:35:21"
-  },
-  {
     "id": 346649,
     "status": "Available",
     "address": "Unit 9, Centech Park",
@@ -1020,136 +1213,6 @@
       }
     ],
     "last_updated": "2026-11-05 11:53:46"
-  },
-  {
-    "id": 346648,
-    "status": "Available",
-    "address": "The Old Mill",
-    "town": "Pershore",
-    "postcode": "WR10 1BY",
-    "lat": 52.11138916,
-    "lon": -2.082348108,
-    "types": [
-      "Retail",
-      "Office",
-      "Industrial"
-    ],
-    "raw_types": [
-      "Retail",
-      "Office",
-      "Industrial"
-    ],
-    "to_let": true,
-    "for_sale": true,
-    "size_from_sqft": 5757,
-    "size_to_sqft": 5757,
-    "summary": "Retail / Office / Industrial To Let, Pershore",
-    "description": "The Old Mill comprises a large, detached commercial premises of traditional brick construction. The building has an open-plan retail sales area, which benefits from suspended LED lighting. Ancillary accommodation is provided at ground and first floor levels, including staff and storage areas, along with a mezzanine floor. There are approximately 20 car parking spaces. Ground Floor Sales3,400 sq ft315.87 sq m Ground Floor Ancillary 520 sq ft 48.31 sq m Mezzanine Area1,349 sq ft125.33 sq m First Floor Ancillary 306 sq ft 28.43 sq m Total5,575 sq ft 517.93 sq m",
-    "location": "Location The property is prominently located on New Road in Pershore, a well-connected Worcestershire market town approximately 10 miles from Worcester and 7 miles from Evesham. The Old Mill is positioned close to the River Avon and within easy walking distance of Pershore town centre. The location benefits from good transport links, including nearby access to the A44 and Pershore railway station with services to Worcester, Oxford and London.",
-    "features": [
-      "For Sale / May Let",
-      "Suitable for a variety of uses",
-      "Ground and first floor space",
-      "On site car parking",
-      "Good access to the A44, leading to the M5 motorway"
-    ],
-    "rent_psf": 6.08,
-    "rent_pa": 35000,
-    "rent": "£35,000 per annum",
-    "price": "£400,000",
-    "price_value": 400000,
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/23387c8a7ce3b5b7fe2a131ab060c4f7-letting346648.jpeg",
-      "https://as-images.imgix.net/190636d7f492d606728a54c162a45601-img-9644.jpg",
-      "https://as-images.imgix.net/563fe19cdded0ce35e21bf2b9790fd2a-img-2529.jpg",
-      "https://as-images.imgix.net/44c270d88ff96e2afc438b6eec5bfa54-20261012-141609820-ios.jpg",
-      "https://as-images.imgix.net/29923bf0d1eb71e2c2f08fab07abf4e6-img-2708.jpg",
-      "https://as-images.imgix.net/1b72aba4c4772e0e22434398e5070eae-img-2545.jpg",
-      "https://as-images.imgix.net/ff3e2ddae13ce2311664fbf913e4c70b-20261012-141949638-ios.jpg",
-      "https://as-images.imgix.net/209a69c9adf175d282719bed4e21ecef-letting346648.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9de678a71d0303ae8ad1b85693e888d7-gjs-dillon-particulars-the-old-mill-pershore.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-11-05 11:50:32"
-  },
-  {
-    "id": 429284,
-    "status": "Available",
-    "address": "79 High Street",
-    "town": "Pershore",
-    "postcode": "WR10 1EX",
-    "lat": 52.112851645343,
-    "lon": -2.0766500529175,
-    "types": [
-      "Industrial",
-      "Motortrade"
-    ],
-    "raw_types": [
-      "Industrial",
-      "Motortrade"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1301,
-    "size_to_sqft": 1301,
-    "summary": "Prominent Roadside Commercial Unit",
-    "description": "The property comprises a vehicle showroom with forecourt only. The showroom, which has been modernised and refurbished has a glazed elevation and the forecourt has a frontage of 26 metres (85 feet) to the High Street. The showroom provides generally open plan accommodation with a kitchen, WC and storage room. \n\nThe unit is approximately 1,301 sq ft (120.83 sq m) GIA.",
-    "location": "The property is situated in a highly prominent position on the High Street in Pershore, approximately 10 miles south-east of Worcester and seven miles west of Evesham respectively. Pershore Train Station is located circa two miles north, providing a regular service into Worcester City Centre within 15 minutes. The National Motorway network is accessed via Junction 7 of the M5, approximately six miles north-west.",
-    "features": [
-      "Prominent position fronting Pershore High Street",
-      "Guide Rent of £18,000 per annum (£1,500 per calendar month)",
-      "1,301 sqft (120.83 sq m) GIA",
-      "Suitable for motortrade use",
-      "Self-contained accomodation with office space, kitchen, WC, and storage."
-    ],
-    "rent_psf": 13.84,
-    "rent_pa": 18000,
-    "rent": "£18,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "C (59)",
-    "images": [
-      "https://as-images.imgix.net/231c7fdb9c47de3ab11a87ca8654b539-img-5993.jpeg",
-      "https://as-images.imgix.net/15d06626460e7a6b3e289cd4e10cf16b-img-5998.jpeg",
-      "https://as-images.imgix.net/66163bb0592b5fe1b27e45a73b9f97f7-img-6139.jpeg",
-      "https://as-images.imgix.net/e6a76f867cc03638ba007e1d517ca138-img-6106.jpeg",
-      "https://as-images.imgix.net/867363703f77871a7f3fb83d1a47d051-img-6115.jpeg",
-      "https://as-images.imgix.net/99bcbe4b1bd6c0f2592af8278174c9c0-img-6119.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/9532a3cd1861a6469e1af34cd12afa04-high-street-pershore.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-11-05 11:48:21"
   },
   {
     "id": 405989,
