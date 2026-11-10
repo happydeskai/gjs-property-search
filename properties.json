@@ -1,5 +1,64 @@
 [
   {
+    "id": 427698,
+    "status": "Available",
+    "address": "7-9 Lowesmoor",
+    "town": "Worcester",
+    "postcode": "WR1 2RS",
+    "lat": 52.1943047,
+    "lon": -2.2189308,
+    "types": [
+      "Retail"
+    ],
+    "raw_types": [
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 295,
+    "size_to_sqft": 590,
+    "summary": "Retail premises in central location",
+    "description": "7 - 9 Lowesmoor features two end-terrace ground floor retail units. The two retail units are both self-contained and are accessed directly off Lowesmoor comprising retail area with fully glazed shop front, kitchenette and WC to rear. The units may suit a wide variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.\n\nAvailable to let individually or as a double unit. \n\nSingle Unit - £9,000 per annum\nDouble Unit - £18,000 per annum",
+    "location": "The property occupies a prominent position fronting Lowesmoor close to the junction with Sansome Street and City Walls Road and is within walking distance of the main shopping area in Worcester city centre and St Martins Quarter which includes occupiers such as Costa Coffee, Sports Direct and Asda.\n\nThe immediate surrounding area is characterised with similar sized style and aged properties comprising mostly retail premises with independent retailers at ground floor level with either office or residential uses on the upper floors\n\nWorcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
+    "features": [
+      "City centre location",
+      "Vacant possession",
+      "295 - 590 sq ft (27.40 - 54.81 sq m)",
+      "Guide Rental for single unit of £9,000 per annum",
+      "Guide Rental for both units of £18,000 per annum"
+    ],
+    "rent_psf": 30.51,
+    "rent_pa": 9000,
+    "rent": "£9,000 - £18,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/ba2b9aaac481f36cdadf9cc69dddb886-img-6074.jpeg",
+      "https://as-images.imgix.net/3f23ff575dd80ad137546e29e30d3634-20260106-095644989-ios.jpg",
+      "https://as-images.imgix.net/18d6dcf49db647ba2d7ecc056c7f2fb5-img-5936.jpeg",
+      "https://as-images.imgix.net/a020a06c5bde5dcb5b78b9c411e8424f-img-5937-1.jpeg",
+      "https://as-images.imgix.net/0a3755d21bc59e29dd0d63279eb255f0-img-5930.jpeg",
+      "https://as-images.imgix.net/e24ec1158cfc046de5f411136da8c3dc-img-5948.jpeg",
+      "https://as-images.imgix.net/503f0fa1fc9f4c651a15c7b147193771-img-5946.jpeg",
+      "https://as-images.imgix.net/c09b9cdcb1ec51e95a3f0ba8a0c85862-img-5947.jpeg",
+      "https://as-images.imgix.net/81271221df85edd5a43bfac41b1b9998-img-5942.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/b94e2582a8287dceea1e541c3026628b-gjs-dillon-particulars-7-9-lowesmoor-worcester.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-10 09:35:22"
+  },
+  {
     "id": 429284,
     "status": "Available",
     "address": "79 High Street",
@@ -112,65 +171,6 @@
       }
     ],
     "last_updated": "2026-11-09 15:04:00"
-  },
-  {
-    "id": 427698,
-    "status": "Available",
-    "address": "7-9 Lowesmoor",
-    "town": "Worcester",
-    "postcode": "WR1 2RS",
-    "lat": 52.1943047,
-    "lon": -2.2189308,
-    "types": [
-      "Retail"
-    ],
-    "raw_types": [
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 295,
-    "size_to_sqft": 590,
-    "summary": "Retail premises in central location",
-    "description": "7 - 9 Lowesmoor features two end-terrace ground floor retail units. The two retail units are both self-contained and are accessed directly off Lowesmoor comprising retail area with fully glazed shop front, kitchenette and WC to rear. The units may suit a wide variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.\n\nAvailable to let individually or as a double unit. \n\nSingle Unit - £9,000 per annum\nDouble Unit - £18,000 per annum",
-    "location": "The property occupies a prominent position fronting Lowesmoor close to the junction with Sansome Street and City Walls Road and is within walking distance of the main shopping area in Worcester city centre and St Martins Quarter which includes occupiers such as Costa Coffee, Sports Direct and Asda.\n\nThe immediate surrounding area is characterised with similar sized style and aged properties comprising mostly retail premises with independent retailers at ground floor level with either office or residential uses on the upper floors\n\nWorcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
-    "features": [
-      "City centre location",
-      "Vacant possession",
-      "295 - 590 sq ft (27.40 - 54.81 sq m)",
-      "Guide Rental for single unit of £9,000 per annum",
-      "Guide Rental for both units of £18,000 per annum"
-    ],
-    "rent_psf": 30.51,
-    "rent_pa": 9000,
-    "rent": "£9,000 - £18,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/ba2b9aaac481f36cdadf9cc69dddb886-img-6074.jpeg",
-      "https://as-images.imgix.net/3f23ff575dd80ad137546e29e30d3634-20260106-095644989-ios.jpg",
-      "https://as-images.imgix.net/18d6dcf49db647ba2d7ecc056c7f2fb5-img-5936.jpeg",
-      "https://as-images.imgix.net/a020a06c5bde5dcb5b78b9c411e8424f-img-5937-1.jpeg",
-      "https://as-images.imgix.net/0a3755d21bc59e29dd0d63279eb255f0-img-5930.jpeg",
-      "https://as-images.imgix.net/e24ec1158cfc046de5f411136da8c3dc-img-5948.jpeg",
-      "https://as-images.imgix.net/503f0fa1fc9f4c651a15c7b147193771-img-5946.jpeg",
-      "https://as-images.imgix.net/c09b9cdcb1ec51e95a3f0ba8a0c85862-img-5947.jpeg",
-      "https://as-images.imgix.net/81271221df85edd5a43bfac41b1b9998-img-5942.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/b94e2582a8287dceea1e541c3026628b-gjs-dillon-particulars-7-9-lowesmoor-worcester.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-11-09 14:06:20"
   },
   {
     "id": 346648,
