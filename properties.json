@@ -1,5 +1,63 @@
 [
   {
+    "id": 429284,
+    "status": "Available",
+    "address": "79 High Street",
+    "town": "Pershore",
+    "postcode": "WR10 1EY",
+    "lat": 52.112851645343,
+    "lon": -2.0766500529175,
+    "types": [
+      "Industrial",
+      "Motortrade"
+    ],
+    "raw_types": [
+      "Industrial",
+      "Motortrade"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1301,
+    "size_to_sqft": 1301,
+    "summary": "Prominent Roadside Commercial Unit",
+    "description": "The property comprises a vehicle showroom with forecourt only. The showroom, which has been modernised and refurbished has a glazed elevation and the forecourt has a frontage of 26 metres (85 feet) to the High Street. The showroom provides generally open plan accommodation with a kitchen, WC and storage room. \n\nThe unit is approximately 1,301 sq ft (120.83 sq m) GIA.",
+    "location": "The property is situated in a highly prominent position on the High Street in Pershore, approximately 10 miles south-east of Worcester and seven miles west of Evesham respectively. Pershore Train Station is located circa two miles north, providing a regular service into Worcester City Centre within 15 minutes. The National Motorway network is accessed via Junction 7 of the M5, approximately six miles north-west.",
+    "features": [
+      "Prominent position fronting Pershore High Street",
+      "Guide Rent of £18,000 per annum (£1,500 per calendar month)",
+      "1,301 sqft (120.83 sq m) GIA",
+      "Suitable for motortrade use",
+      "Self-contained accomodation with office space, kitchen, WC, and storage."
+    ],
+    "rent_psf": 13.84,
+    "rent_pa": 18000,
+    "rent": "£18,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "C (59)",
+    "images": [
+      "https://as-images.imgix.net/231c7fdb9c47de3ab11a87ca8654b539-img-5993.jpeg",
+      "https://as-images.imgix.net/15d06626460e7a6b3e289cd4e10cf16b-img-5998.jpeg",
+      "https://as-images.imgix.net/66163bb0592b5fe1b27e45a73b9f97f7-img-6139.jpeg",
+      "https://as-images.imgix.net/e6a76f867cc03638ba007e1d517ca138-img-6106.jpeg",
+      "https://as-images.imgix.net/867363703f77871a7f3fb83d1a47d051-img-6115.jpeg",
+      "https://as-images.imgix.net/99bcbe4b1bd6c0f2592af8278174c9c0-img-6119.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/95dc41a7c3b9ad1c72dbbc941d452311-gjs-dillon-particulars-79-high-street-pershore.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-11 16:52:37"
+  },
+  {
     "id": 427698,
     "status": "Available",
     "address": "7-9 Lowesmoor",
@@ -57,64 +115,6 @@
       }
     ],
     "last_updated": "2026-11-10 09:35:22"
-  },
-  {
-    "id": 429284,
-    "status": "Available",
-    "address": "79 High Street",
-    "town": "Pershore",
-    "postcode": "WR10 1EY",
-    "lat": 52.112851645343,
-    "lon": -2.0766500529175,
-    "types": [
-      "Industrial",
-      "Motortrade"
-    ],
-    "raw_types": [
-      "Industrial",
-      "Motortrade"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1301,
-    "size_to_sqft": 1301,
-    "summary": "Prominent Roadside Commercial Unit",
-    "description": "The property comprises a vehicle showroom with forecourt only. The showroom, which has been modernised and refurbished has a glazed elevation and the forecourt has a frontage of 26 metres (85 feet) to the High Street. The showroom provides generally open plan accommodation with a kitchen, WC and storage room. \n\nThe unit is approximately 1,301 sq ft (120.83 sq m) GIA.",
-    "location": "The property is situated in a highly prominent position on the High Street in Pershore, approximately 10 miles south-east of Worcester and seven miles west of Evesham respectively. Pershore Train Station is located circa two miles north, providing a regular service into Worcester City Centre within 15 minutes. The National Motorway network is accessed via Junction 7 of the M5, approximately six miles north-west.",
-    "features": [
-      "Prominent position fronting Pershore High Street",
-      "Guide Rent of £18,000 per annum (£1,500 per calendar month)",
-      "1,301 sqft (120.83 sq m) GIA",
-      "Suitable for motortrade use",
-      "Self-contained accomodation with office space, kitchen, WC, and storage."
-    ],
-    "rent_psf": 13.84,
-    "rent_pa": 18000,
-    "rent": "£18,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "C (59)",
-    "images": [
-      "https://as-images.imgix.net/231c7fdb9c47de3ab11a87ca8654b539-img-5993.jpeg",
-      "https://as-images.imgix.net/15d06626460e7a6b3e289cd4e10cf16b-img-5998.jpeg",
-      "https://as-images.imgix.net/66163bb0592b5fe1b27e45a73b9f97f7-img-6139.jpeg",
-      "https://as-images.imgix.net/e6a76f867cc03638ba007e1d517ca138-img-6106.jpeg",
-      "https://as-images.imgix.net/867363703f77871a7f3fb83d1a47d051-img-6115.jpeg",
-      "https://as-images.imgix.net/99bcbe4b1bd6c0f2592af8278174c9c0-img-6119.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/95dc41a7c3b9ad1c72dbbc941d452311-gjs-dillon-particulars-79-high-street-pershore.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-11-09 16:42:34"
   },
   {
     "id": 429850,
