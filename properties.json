@@ -1,5 +1,326 @@
 [
   {
+    "id": 346672,
+    "status": "Available",
+    "address": "20 The Shambles",
+    "town": "Worcester",
+    "postcode": "WR1 2RA",
+    "lat": 52.191112518,
+    "lon": -2.219422101,
+    "types": [
+      "Retail"
+    ],
+    "raw_types": [
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": true,
+    "size_from_sqft": 2513,
+    "size_to_sqft": 2513,
+    "summary": "Refurbished retail premises in central location",
+    "description": "20 The Shambles comprises a mid-terraced retail unit arranged over basement, ground, first and second floors, situated within a traditional parade in the heart of Worcester city centre. The ground floor features an open-plan retail area with a suspended ceiling, LED lighting, air conditioning and a timber-framed single-glazed shopfront. A floor hatch in the main retail area provides ladder access to a small basement area, suitable for limited storage. To the rear of the ground floor are ancillary areas, with a kitchen and WC located on the first floor. The upper parts are accessed via an internal staircase and include restricted ancillary space. The unit may suit a variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.\n\nProperty Restrictions\nThere is a Covenant on the property register stating no pubs, bars / alcohol to be sold on the premises. \nThere was an ‘alterations notice’ issued by Hereford and Worcester Fire and Rescue Service on 30/10/2020. This means that only part of the first floor can be used with restrictions and the remainder of the first floor and the whole of the second floor.",
+    "location": "The property is prominently located on The Shambles, a pedestrianised shopping street just off Worcester High Street, in a highly visible and well-trafficked position. The area is home to a mix of national and independent occupiers, with nearby retailers including Greggs, The Works, Waterstones and Marks & Spencer. Worcester's main shopping destinations-Crowngate Shopping Centre and Cathedral Square-are both within a short walking distance. Worcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
+    "features": [
+      "Prominent city centre location",
+      "Vacant possesion",
+      "Property arranged over basement, ground, first and second floor  (restrictions apply)",
+      "Virtual tour available"
+    ],
+    "rent": "On Application",
+    "price": "£250,000",
+    "price_value": 250000,
+    "business_rates_psf": 3.28,
+    "rateable_value": 16500,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/23f1863acd60f1af23359babb585307c-20260812-111711-1.jpg",
+      "https://as-images.imgix.net/0cba58bc1accd86c095e58415c7ae322-20260812-112709.jpg",
+      "https://as-images.imgix.net/fe8842083ff1fab276c9b5d8578a85de-20260812-112655.jpg",
+      "https://as-images.imgix.net/13a90d525c02f4949180bb5d9c7e9366-20260812-112831.jpg",
+      "https://as-images.imgix.net/c43a4de2e4f188f1c3817a797e2db1fc-20260812-112724.jpg",
+      "https://as-images.imgix.net/ff3287e349ffb0761748dd4731a1d682-20260812-113209.jpg",
+      "https://as-images.imgix.net/58331fc8f692f9017ea7dcad82f34739-20260812-112904.jpg",
+      "https://as-images.imgix.net/246e2a5256782e50fdc51b5b9d3affbe-20260812-113714.jpg",
+      "https://as-images.imgix.net/fa7aa285385934527b8c969752180195-letting346672.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/a8f82aab9e950f66e07959fa94339ba6-gjs-dillon-particulars-20-the-shambles-worcester-4.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/aa4c1c29defe5a3e0ee800aacf351cca-cam04581g0-pr0074-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/93dc2e0712bdffc3a1a1f20035b3f383-cam04581g0-pr0074-build01-floor01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/b8ee60f675de63a74658120e86b1ac61-cam04581g0-pr0074-build01-floor02.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/713b114b590855a6eb01e272c00602a2-cam04581g0-pr0074-build01.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/20theshamblesworcester"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-12 12:48:43"
+  },
+  {
+    "id": 377589,
+    "status": "Available",
+    "address": "7 Aston Court",
+    "town": "Bromsgrove",
+    "postcode": "B60 3AL",
+    "lat": 52.318276,
+    "lon": -2.056079,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 2278,
+    "size_to_sqft": 2278,
+    "summary": "Modern self contained offices with onsite car parking",
+    "description": "7 Aston Court is a modern end terrace purpose built office building of brick main wall construction surmounted by a pitched tiled roof.  The building is arranged over the ground and first floors, with the ground floor offering open plan office space, a modern kitchen and WC facilities.  The first floor offers partitioned office with a mixture of glazed and solid demountable walls, with there being a further WC on this floor.  The building offers modern suspended ceilings throughout, along with LG3 lighting, comfort cooling and raised accessed floors.\n\nThe property has the benefit of 10 car parking spaces, although we note that four are leased to the occupier of 5 Aston Court (IRS) until September 2026.",
+    "location": "Aston Court is within the Bromsgrove Enterprise Park which is located approximately one and a half miles to the south of Bromsgrove town centre.  The Bromsgrove Enterprise Park offers a range of accommodation from serviced offices in Basepoint, good quality warehousing at Sapphire Court and a modern courtyard development of Aston Court.\n\nJunction 4 of the M5 motorway and Junction 1 of the M42 motorway lie approximately three miles distant providing access to the M5 and M42 motorway as well as the national motorway network.  Birmingham City Centre is situated approximately 15 miles to the north and Worcester City Centre is situated approximately 10 miles to the south.\nBromsgrove has a mainline railway station, which is situated close to Aston Court. There are frequent trains to Birmingham New Street, Worcester Foregate Street and Hereford. There is also a bus station adjacent to the high street.  Buses operate to a wide area of Worcestershire and the West Midlands.",
+    "features": [
+      "2,278 sq ft (211.63 sq m)",
+      "Modern open plan office accommodation over two floors",
+      "A mix of open plan and partitioned offices",
+      "Comfort cooling",
+      "10 allocated car parking spaces"
+    ],
+    "price": "£375,000",
+    "price_value": 375000,
+    "business_rates_psf": 0,
+    "rateable_value": 27500,
+    "estate_charge": "3400",
+    "epc_rating": "B (33)",
+    "images": [
+      "https://as-images.imgix.net/b748d44a15864ea894b6c895a38baa43-20260716-124510-1.jpg",
+      "https://as-images.imgix.net/e8d47bbe5ec3cbcb317d2b9a7ed577c3-20260716-124535-1.jpg",
+      "https://as-images.imgix.net/9e60e19f445dbe8869b172ccce995a42-20260716-125138.jpg",
+      "https://as-images.imgix.net/491f442c09cdd0482f41467644339a70-20260716-125128.jpg",
+      "https://as-images.imgix.net/3c542af87f3ea9c7a3823311065a3f4b-20260716-125118.jpg",
+      "https://as-images.imgix.net/6c90abb472b2f449702d2736f3006791-20260716-125009.jpg",
+      "https://as-images.imgix.net/57d9c578c5a5ed343b0776b343faf419-20260716-125752.jpg",
+      "https://as-images.imgix.net/e7de289e71ea8d71d07996133b623fd1-20260716-125213.jpg",
+      "https://as-images.imgix.net/34ff6d2e1494af8abc25ebe374114188-20260716-125203.jpg",
+      "https://as-images.imgix.net/c24536efd9fbf49e9d53dc4e0b58a4a4-20260716-125725.jpg",
+      "https://as-images.imgix.net/80f7c396f726ae1913d28c0d05d01a20-20260716-125101.jpg",
+      "https://as-images.imgix.net/da8ccc7208168518f13054cb3a3fb55a-20260716-125223.jpg",
+      "https://as-images.imgix.net/2fd534281dfd297f7aed2dbefb4553fa-20260716-125921.jpg",
+      "https://as-images.imgix.net/f58d8cfb0bc862265047f308e3277bdb-20260716-125852.jpg",
+      "https://as-images.imgix.net/5dcc1b0d2e21b7a977ad47ab7c150ba3-20260716-125654.jpg",
+      "https://as-images.imgix.net/33ec94456f1000a5c2115b403b00775f-20260716-125713.jpg",
+      "https://as-images.imgix.net/1f9ecaf4d97134756a658bc0956aa529-20260716-125844.jpg",
+      "https://as-images.imgix.net/4e99cc596c18eaafe06715c5256124d7-20260716-125859.jpg",
+      "https://as-images.imgix.net/fee5a17dea416b195302aeb2e27c7e8a-20260716-125051.jpg",
+      "https://as-images.imgix.net/99b41b78f8934dec264bc57d86c6beb0-20260716-125703.jpg",
+      "https://as-images.imgix.net/658b1e5a862a6e403b5fe8e250a34903-20260716-125807.jpg",
+      "https://as-images.imgix.net/b2dc68e513c132134b70166483f092c9-20260716-125642.jpg",
+      "https://as-images.imgix.net/ead44e16f5468aaf8af8a3ce8ff1fc86-20260716-125912.jpg",
+      "https://as-images.imgix.net/887c9979e90da4f963a912d93bc4d75e-20260716-125534.jpg",
+      "https://as-images.imgix.net/2a029a99e7fbca6963b38cce08c98b50-20260716-125824.jpg",
+      "https://as-images.imgix.net/2f9dd652f5dac35566e8dd63cedcbd8b-20260716-125758.jpg",
+      "https://as-images.imgix.net/1b37c56d3e0f30161cc60acf6b5c7801-20260716-125559.jpg",
+      "https://as-images.imgix.net/2f810f7ccefc4953a1e732d21ec6754f-20260716-125647.jpg",
+      "https://as-images.imgix.net/b46b8344a63b958bf7fdfe73351637f5-20260716-124520-1.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/cd5f057edfdf6e96ade79dbd50277833-gjs-dillon-particulars-7-aston-court-bromsgrove-b60.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/f858d330e16a662fdf9d980f91771064-cam04581g0-pr0069-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/bc91c96db1a66fd1a42a493e5bd482da-cam04581g0-pr0069-build01-floor01.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/7astoncourtbromsgrove"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-12 12:15:44"
+  },
+  {
+    "id": 372990,
+    "status": "Available",
+    "address": "Unit 10A and 11, Arden Business Centre",
+    "town": "Alcester",
+    "postcode": "B49 6HW",
+    "lat": 52.225734,
+    "lon": -1.86936,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 3759,
+    "size_to_sqft": 3759,
+    "summary": "For Sale - Trade Counter in Established Business Centre",
+    "description": "10A and 11 Arden Business Centre comprises a modern mid terrace commercial unit.  The property was built as two separate units however has been converted to provide on large unit that is currently used as a trade counter.  The units are of a steel portal frame construction with part brick & block and part steel clad elevations.  Internally, each unit benefits from a mezzanine floor over the majority of the floor area.  Within Unit 11 there are kitchen and WC facilities.\n\n10a Arden Business Centre\t\t\nGround Floor 962 sq ft (89.37 sq m)\nMezzanine Floor 849 sq ft (78.90 sq m)\nTotal 1,811 sq ft (168.27 sq m)\n\n11 Arden Business Centre\t\t\nGround Floor 962 sq ft (89.37 sq m)\nMezzanine Floor 986 sq ft (91.56 sq m)\nTotal 1,948 sq ft (180.93 sq m)\n\t\t\nWhole Unit 3,759 sq ft (349.2 sq m)\n\nCurrent Tenancy\nThe property is let to Arden Carpets and Floor on a 10 year lease expiring in 2029, at a passing rent of £20,750 per annum.  The occupier has expressed a desire to extend this lease.  Further lease details are available on request.",
+    "location": "The property is located on Arden Business Centre, Arden Road, Alcester and is approximately one mile north of Alcester town centre.  Arden Business Centre has a range of small, medium and large commercial units which are occupied by local and national commercial occupiers.  The area is popular with trade counter occupiers such as the existing Tenant and nearby Screwfix.\n\nAlcester is situated in an accessible location being adjacent to the A46, A435 and A422.  The A46 leads eastwards to Stratford-upon-Avon, Warwick and Junction 15 of the M40 motorway and south to Evesham and Junction 9 of the M5 motorway.  The A435 leads north to Redditch and Junction 3 of the M42 motorway, with the A422 leading west to Worcester.",
+    "features": [
+      "Total area 3,759 sq ft (349.20 sq m) GIA",
+      "Currently let on a lease expiring 2029 at a rent of £20,750 per annum",
+      "Effective freehold via a 999 year lease from 1990",
+      "Popular trade counter premises on an established estate",
+      "Ground floor showroom with mezzanine area",
+      "Excellent access to the M40 and M24 motorways"
+    ],
+    "price": "£375,000",
+    "price_value": 375000,
+    "business_rates_psf": 0,
+    "rateable_value": 26500,
+    "epc_rating": "C (58)",
+    "images": [
+      "https://as-images.imgix.net/0b1659403f31fa3950fc6c9acd0b27dd-20260505-101631.jpg",
+      "https://as-images.imgix.net/4f496fa3796366d35630136dc7515c65-20260505-105236.jpg",
+      "https://as-images.imgix.net/cb544788e399b5f68d9a9049329e9a07-20260505-101741.jpg",
+      "https://as-images.imgix.net/50149f2fe49ae52b8ff9fa7d68732420-20260505-101823.jpg",
+      "https://as-images.imgix.net/bcba3438defa48a3ee5a4256676da377-20260505-101800.jpg",
+      "https://as-images.imgix.net/b7f5eafe69d9915be373fa59e632d240-20260505-104032.jpg",
+      "https://as-images.imgix.net/3d21a28d87cf4dd194849769a329a4e5-20260505-102916.jpg",
+      "https://as-images.imgix.net/bee6399b0f5fb5eef983f6917bccf44a-20260505-102736.jpg",
+      "https://as-images.imgix.net/649ab7521a000f5a3ef307e93e6649e7-20260505-101832.jpg",
+      "https://as-images.imgix.net/c2b971a3991044ed8525ab4b325a3bc8-20260505-101727.jpg",
+      "https://as-images.imgix.net/092c0ad32f4218be5ab394a8c7de005c-20260505-102856.jpg",
+      "https://as-images.imgix.net/0bef02cf3db1d5f7b300a62b968a17a0-20260505-103941.jpg",
+      "https://as-images.imgix.net/c86a760ba12bb0ae3d3a531bc66598c3-20260505-104200.jpg",
+      "https://as-images.imgix.net/6b4a06dad7d055e42b05598bddf12cdf-20260505-104148.jpg",
+      "https://as-images.imgix.net/a2b944af13ddcd1728ae796640d5c20f-20260505-101548.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/5067c2d36f008effa16c0a4fb65333e4-gjs-dillon-particulars-10a-and-11-arden-business-centre-alcester-b49-2.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-12 11:55:12"
+  },
+  {
+    "id": 380213,
+    "status": "Under Offer",
+    "address": "Alpha House",
+    "town": "Droitwich",
+    "postcode": "WR9 0NX",
+    "lat": 52.28469,
+    "lon": -2.168149,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 3979,
+    "size_to_sqft": 3979,
+    "summary": "Modern Headquarters Office close to the M5",
+    "description": "Alpha House comprises a detached, modern office premises arranged over the ground and first floors.  The main entrance comprises a reception area with WC facilities.  This is replicated over the first floor with further WC facilities.  Each floor offers open plan office accommodation which benefits from an abundance of natural light, having four glazed elevations.  There are currently glazed meeting rooms on the ground floor.\n\nExternally there is a secure car park with the benefit of 17 car parking spaces, including the provision of EV chargers.\n\nGround\t185.91 sq m 2,001 sq ft\nFirst\t183.76 sq m 1,978 sq ft\nTotal       369.67 sq m 3,979 sq ft\n(NIA)",
+    "location": "Hampton Lovett Business Park lies to the north of Droitwich town centre, approximately three miles from Junction 5 of the M5 motorway.  From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales.\n\nThe estate is home to a number of local, national and multi-national occupiers who all take advantage of the great road connections.",
+    "features": [
+      "Total net internal area of 3,979 sq ft (369.67 sq m), arranged over the ground and first floor",
+      "Full open plan workspace over the first floor",
+      "Secure car park for 17 cars",
+      "Situated a three mile drive from Junction 5 of the M5 motorway",
+      "Detached office premises with an abundance of glazing to all four elevations"
+    ],
+    "rent_psf": 16.34,
+    "rent_pa": 65000,
+    "rent": "£65,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/cdfeedbaf431b3fbb0a8310a453fd4a4-dji-0035.JPG",
+      "https://as-images.imgix.net/d46cd836b698df5e7cfbe7e1b70f0c7b-dji-0036.JPG",
+      "https://as-images.imgix.net/3c0cf3c2403033b94ef23ffd6f184284-dji-0024.JPG",
+      "https://as-images.imgix.net/f57dc576bebb70590fc5cb0aaad4460f-dji-0026.JPG",
+      "https://as-images.imgix.net/9f7ea7212a0230221441a08851edf7a3-dji-0025.JPG",
+      "https://as-images.imgix.net/230775ae3ecfed3b3e4f709c7e2d00d0-img-1126.JPEG",
+      "https://as-images.imgix.net/ffda75abe09c2ae27246776a54b16bf5-img-1131.JPEG",
+      "https://as-images.imgix.net/a00f4c088d0266e6cad5fdc8ae6d85e9-img-1123.JPEG",
+      "https://as-images.imgix.net/b2f9c78b0d3b33d1b17dfeb8f2712a87-img-1129.JPEG",
+      "https://as-images.imgix.net/66783acce81c48e28bcdd442e82061cc-img-1120.JPEG",
+      "https://as-images.imgix.net/6b59b07b8dadaaf74a6750cc19f305d0-img-1136.JPEG",
+      "https://as-images.imgix.net/ce8083b28c3fb6327a3bb97e6fa35358-img-1146.JPEG",
+      "https://as-images.imgix.net/b7465aad014993fabb43d973a5199eb9-img-1143.JPEG",
+      "https://as-images.imgix.net/c81bd84aecb0d88270825a549a8c4d24-img-1141.JPEG",
+      "https://as-images.imgix.net/767a3cf449361c249cace5837d52e33b-img-1140.JPEG",
+      "https://as-images.imgix.net/6f56c2f56fe76721bd0d4df42c7da41f-img-1154.JPEG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f4e8ce13e4f6379470227be140963164-gjs-dillon-particulars-alpha-house-hampton-lovett-droitwich.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/dfe42f7681ba157ba467982a6a9cabc6-cam04581g0-pr0067-build01.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/d5df69244b6a9caa1c7d8396a9e4c60b-cam04581g0-pr0067-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/0c1f88fde3825bc3e5c851efffd917cf-cam04581g0-pr0067-build01-floor01.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/alphahousedroitwich"
+    ],
+    "contacts": [
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Andrew Lewis",
+        "email": "andrewlewis@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 127",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-12 11:40:19"
+  },
+  {
     "id": 429284,
     "status": "Available",
     "address": "79 High Street",
@@ -436,99 +757,6 @@
         "email": "fergusedwards@gjsdillon.co.uk",
         "phone": "01905 676 169",
         "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-11-05 16:44:18"
-  },
-  {
-    "id": 377589,
-    "status": "Available",
-    "address": "7 Aston Court",
-    "town": "Bromsgrove",
-    "postcode": "B60 3AL",
-    "lat": 52.318276,
-    "lon": -2.056079,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 2278,
-    "size_to_sqft": 2278,
-    "summary": "Modern self contained offices with onsite car parking",
-    "description": "7 Aston Court is a modern end terrace purpose built office building of brick main wall construction surmounted by a pitched tiled roof.  The building is arranged over the ground and first floors, with the ground floor offering open plan office space, a modern kitchen and WC facilities.  The first floor offers partitioned office with a mixture of glazed and solid demountable walls, with there being a further WC on this floor.  The building offers modern suspended ceilings throughout, along with LG3 lighting, comfort cooling and raised accessed floors.\n\nThe property has the benefit of 10 car parking spaces, although we note that four are leased to the occupier of 5 Aston Court (IRS) until September 2026.",
-    "location": "Aston Court is within the Bromsgrove Enterprise Park which is located approximately one and a half miles to the south of Bromsgrove town centre.  The Bromsgrove Enterprise Park offers a range of accommodation from serviced offices in Basepoint, good quality warehousing at Sapphire Court and a modern courtyard development of Aston Court.\n\nJunction 4 of the M5 motorway and Junction 1 of the M42 motorway lie approximately three miles distant providing access to the M5 and M42 motorway as well as the national motorway network.  Birmingham City Centre is situated approximately 15 miles to the north and Worcester City Centre is situated approximately 10 miles to the south.\nBromsgrove has a mainline railway station, which is situated close to Aston Court. There are frequent trains to Birmingham New Street, Worcester Foregate Street and Hereford. There is also a bus station adjacent to the high street.  Buses operate to a wide area of Worcestershire and the West Midlands.",
-    "features": [
-      "2,278 sq ft (211.63 sq m)",
-      "Modern open plan office accommodation over two floors",
-      "A mix of open plan and partitioned offices",
-      "Comfort cooling",
-      "10 allocated car parking spaces"
-    ],
-    "price": "£375,000",
-    "price_value": 375000,
-    "business_rates_psf": 0,
-    "rateable_value": 27500,
-    "estate_charge": "3400",
-    "epc_rating": "B (33)",
-    "images": [
-      "https://as-images.imgix.net/b748d44a15864ea894b6c895a38baa43-20260716-124510-1.jpg",
-      "https://as-images.imgix.net/e8d47bbe5ec3cbcb317d2b9a7ed577c3-20260716-124535-1.jpg",
-      "https://as-images.imgix.net/9e60e19f445dbe8869b172ccce995a42-20260716-125138.jpg",
-      "https://as-images.imgix.net/491f442c09cdd0482f41467644339a70-20260716-125128.jpg",
-      "https://as-images.imgix.net/3c542af87f3ea9c7a3823311065a3f4b-20260716-125118.jpg",
-      "https://as-images.imgix.net/6c90abb472b2f449702d2736f3006791-20260716-125009.jpg",
-      "https://as-images.imgix.net/57d9c578c5a5ed343b0776b343faf419-20260716-125752.jpg",
-      "https://as-images.imgix.net/e7de289e71ea8d71d07996133b623fd1-20260716-125213.jpg",
-      "https://as-images.imgix.net/34ff6d2e1494af8abc25ebe374114188-20260716-125203.jpg",
-      "https://as-images.imgix.net/c24536efd9fbf49e9d53dc4e0b58a4a4-20260716-125725.jpg",
-      "https://as-images.imgix.net/80f7c396f726ae1913d28c0d05d01a20-20260716-125101.jpg",
-      "https://as-images.imgix.net/da8ccc7208168518f13054cb3a3fb55a-20260716-125223.jpg",
-      "https://as-images.imgix.net/2fd534281dfd297f7aed2dbefb4553fa-20260716-125921.jpg",
-      "https://as-images.imgix.net/f58d8cfb0bc862265047f308e3277bdb-20260716-125852.jpg",
-      "https://as-images.imgix.net/5dcc1b0d2e21b7a977ad47ab7c150ba3-20260716-125654.jpg",
-      "https://as-images.imgix.net/33ec94456f1000a5c2115b403b00775f-20260716-125713.jpg",
-      "https://as-images.imgix.net/1f9ecaf4d97134756a658bc0956aa529-20260716-125844.jpg",
-      "https://as-images.imgix.net/4e99cc596c18eaafe06715c5256124d7-20260716-125859.jpg",
-      "https://as-images.imgix.net/fee5a17dea416b195302aeb2e27c7e8a-20260716-125051.jpg",
-      "https://as-images.imgix.net/99b41b78f8934dec264bc57d86c6beb0-20260716-125703.jpg",
-      "https://as-images.imgix.net/658b1e5a862a6e403b5fe8e250a34903-20260716-125807.jpg",
-      "https://as-images.imgix.net/b2dc68e513c132134b70166483f092c9-20260716-125642.jpg",
-      "https://as-images.imgix.net/ead44e16f5468aaf8af8a3ce8ff1fc86-20260716-125912.jpg",
-      "https://as-images.imgix.net/887c9979e90da4f963a912d93bc4d75e-20260716-125534.jpg",
-      "https://as-images.imgix.net/2a029a99e7fbca6963b38cce08c98b50-20260716-125824.jpg",
-      "https://as-images.imgix.net/2f9dd652f5dac35566e8dd63cedcbd8b-20260716-125758.jpg",
-      "https://as-images.imgix.net/1b37c56d3e0f30161cc60acf6b5c7801-20260716-125559.jpg",
-      "https://as-images.imgix.net/2f810f7ccefc4953a1e732d21ec6754f-20260716-125647.jpg",
-      "https://as-images.imgix.net/b46b8344a63b958bf7fdfe73351637f5-20260716-124520-1.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/cd5f057edfdf6e96ade79dbd50277833-gjs-dillon-particulars-7-aston-court-bromsgrove-b60.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/f858d330e16a662fdf9d980f91771064-cam04581g0-pr0069-build01-floor00.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/bc91c96db1a66fd1a42a493e5bd482da-cam04581g0-pr0069-build01-floor01.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/7astoncourtbromsgrove"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
         "company": "GJS Dillon Limited",
         "branch": "Droitwich"
       }
@@ -1268,80 +1496,6 @@
     "last_updated": "2026-11-05 11:43:10"
   },
   {
-    "id": 346672,
-    "status": "Available",
-    "address": "20 The Shambles",
-    "town": "Worcester",
-    "postcode": "WR1 2RA",
-    "lat": 52.191112518,
-    "lon": -2.219422101,
-    "types": [
-      "Retail"
-    ],
-    "raw_types": [
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": true,
-    "size_from_sqft": 2513,
-    "size_to_sqft": 2513,
-    "summary": "Refurbished retail premises in central location",
-    "description": "20 The Shambles comprises a mid-terraced retail unit arranged over basement, ground, first and second floors, situated within a traditional parade in the heart of Worcester city centre. The ground floor features an open-plan retail area with a suspended ceiling, LED lighting, air conditioning and a timber-framed single-glazed shopfront. A floor hatch in the main retail area provides ladder access to a small basement area, suitable for limited storage. To the rear of the ground floor are ancillary areas, with a kitchen and WC located on the first floor. The upper parts are accessed via an internal staircase and include restricted ancillary space. The unit may suit a variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.\n\nProperty Restrictions\nThere is a Covenant on the property register stating no pubs, bars / alcohol to be sold on the premises. \nThere was an ‘alterations notice’ issued by Hereford and Worcester Fire and Rescue Service on 30/10/2020. This means that only part of the first floor can be used with restrictions and the remainder of the first floor and the whole of the second floor.",
-    "location": "The property is prominently located on The Shambles, a pedestrianised shopping street just off Worcester High Street, in a highly visible and well-trafficked position. The area is home to a mix of national and independent occupiers, with nearby retailers including Greggs, The Works, Waterstones and Marks & Spencer. Worcester's main shopping destinations-Crowngate Shopping Centre and Cathedral Square-are both within a short walking distance. Worcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
-    "features": [
-      "Prominent city centre location",
-      "Vacant possesion",
-      "Property arranged over basement, ground, first and second floor  (restrictions apply)",
-      "Virtual tour available"
-    ],
-    "rent": "On Application",
-    "price": "£250,000",
-    "price_value": 250000,
-    "business_rates_psf": 3.28,
-    "rateable_value": 16500,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/23f1863acd60f1af23359babb585307c-20260812-111711-1.jpg",
-      "https://as-images.imgix.net/0cba58bc1accd86c095e58415c7ae322-20260812-112709.jpg",
-      "https://as-images.imgix.net/fe8842083ff1fab276c9b5d8578a85de-20260812-112655.jpg",
-      "https://as-images.imgix.net/13a90d525c02f4949180bb5d9c7e9366-20260812-112831.jpg",
-      "https://as-images.imgix.net/c43a4de2e4f188f1c3817a797e2db1fc-20260812-112724.jpg",
-      "https://as-images.imgix.net/ff3287e349ffb0761748dd4731a1d682-20260812-113209.jpg",
-      "https://as-images.imgix.net/58331fc8f692f9017ea7dcad82f34739-20260812-112904.jpg",
-      "https://as-images.imgix.net/246e2a5256782e50fdc51b5b9d3affbe-20260812-113714.jpg",
-      "https://as-images.imgix.net/fa7aa285385934527b8c969752180195-letting346672.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/a8f82aab9e950f66e07959fa94339ba6-gjs-dillon-particulars-20-the-shambles-worcester-4.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/aa4c1c29defe5a3e0ee800aacf351cca-cam04581g0-pr0074-build01-floor00.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/93dc2e0712bdffc3a1a1f20035b3f383-cam04581g0-pr0074-build01-floor01.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/b8ee60f675de63a74658120e86b1ac61-cam04581g0-pr0074-build01-floor02.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/713b114b590855a6eb01e272c00602a2-cam04581g0-pr0074-build01.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/20theshamblesworcester"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-11-03 15:29:47"
-  },
-  {
     "id": 375617,
     "status": "Available",
     "address": "Worcester Road",
@@ -1911,87 +2065,6 @@
       }
     ],
     "last_updated": "2026-11-02 16:27:06"
-  },
-  {
-    "id": 380213,
-    "status": "Under Offer",
-    "address": "Alpha House",
-    "town": "Droitwich",
-    "postcode": "WR9 0NX",
-    "lat": 52.28469,
-    "lon": -2.168149,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 3979,
-    "size_to_sqft": 3979,
-    "summary": "Modern Headquarters Office close to the M5",
-    "description": "Alpha House comprises a detached, modern office premises arranged over the ground and first floors.  The main entrance comprises a reception area with WC facilities.  This is replicated over the first floor with further WC facilities.  Each floor offers open plan office accommodation which benefits from an abundance of natural light, having four glazed elevations.  There are currently glazed meeting rooms on the ground floor.\n\nExternally there is a secure car park with the benefit of 17 car parking spaces, including the provision of EV chargers.\n\nGround\t185.91 sq m 2,001 sq ft\nFirst\t183.76 sq m 1,978 sq ft\nTotal       369.67 sq m 3,979 sq ft\n(NIA)",
-    "location": "Hampton Lovett Business Park lies to the north of Droitwich town centre, approximately three miles from Junction 5 of the M5 motorway.  From Junction 5, the M5 leads north to Birmingham, the M42, M40, M6 and Birmingham International Airport and southwards to the southwest, M50 and Wales.\n\nThe estate is home to a number of local, national and multi-national occupiers who all take advantage of the great road connections.",
-    "features": [
-      "Total net internal area of 3,979 sq ft (369.67 sq m), arranged over the ground and first floor",
-      "Full open plan workspace over the first floor",
-      "Secure car park for 17 cars",
-      "Situated a three mile drive from Junction 5 of the M5 motorway",
-      "Detached office premises with an abundance of glazing to all four elevations"
-    ],
-    "rent_psf": 16.34,
-    "rent_pa": 65000,
-    "rent": "£65,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/cdfeedbaf431b3fbb0a8310a453fd4a4-dji-0035.JPG",
-      "https://as-images.imgix.net/d46cd836b698df5e7cfbe7e1b70f0c7b-dji-0036.JPG",
-      "https://as-images.imgix.net/3c0cf3c2403033b94ef23ffd6f184284-dji-0024.JPG",
-      "https://as-images.imgix.net/f57dc576bebb70590fc5cb0aaad4460f-dji-0026.JPG",
-      "https://as-images.imgix.net/9f7ea7212a0230221441a08851edf7a3-dji-0025.JPG",
-      "https://as-images.imgix.net/230775ae3ecfed3b3e4f709c7e2d00d0-img-1126.JPEG",
-      "https://as-images.imgix.net/ffda75abe09c2ae27246776a54b16bf5-img-1131.JPEG",
-      "https://as-images.imgix.net/a00f4c088d0266e6cad5fdc8ae6d85e9-img-1123.JPEG",
-      "https://as-images.imgix.net/b2f9c78b0d3b33d1b17dfeb8f2712a87-img-1129.JPEG",
-      "https://as-images.imgix.net/66783acce81c48e28bcdd442e82061cc-img-1120.JPEG",
-      "https://as-images.imgix.net/6b59b07b8dadaaf74a6750cc19f305d0-img-1136.JPEG",
-      "https://as-images.imgix.net/ce8083b28c3fb6327a3bb97e6fa35358-img-1146.JPEG",
-      "https://as-images.imgix.net/b7465aad014993fabb43d973a5199eb9-img-1143.JPEG",
-      "https://as-images.imgix.net/c81bd84aecb0d88270825a549a8c4d24-img-1141.JPEG",
-      "https://as-images.imgix.net/767a3cf449361c249cace5837d52e33b-img-1140.JPEG",
-      "https://as-images.imgix.net/6f56c2f56fe76721bd0d4df42c7da41f-img-1154.JPEG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f4e8ce13e4f6379470227be140963164-gjs-dillon-particulars-alpha-house-hampton-lovett-droitwich.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/dfe42f7681ba157ba467982a6a9cabc6-cam04581g0-pr0067-build01.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/d5df69244b6a9caa1c7d8396a9e4c60b-cam04581g0-pr0067-build01-floor00.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/0c1f88fde3825bc3e5c851efffd917cf-cam04581g0-pr0067-build01-floor01.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/alphahousedroitwich"
-    ],
-    "contacts": [
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Andrew Lewis",
-        "email": "andrewlewis@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 127",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-11-02 16:26:53"
   },
   {
     "id": 346706,
@@ -4369,79 +4442,6 @@
       }
     ],
     "last_updated": "2026-10-05 15:56:22"
-  },
-  {
-    "id": 372990,
-    "status": "Available",
-    "address": "Unit 10A and 11, Arden Business Centre",
-    "town": "Alcester",
-    "postcode": "B49 6HW",
-    "lat": 52.225734,
-    "lon": -1.86936,
-    "types": [
-      "Industrial"
-    ],
-    "raw_types": [
-      "Industrial"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 3759,
-    "size_to_sqft": 3759,
-    "summary": "For Sale - Trade Counter in Established Business Centre",
-    "description": "10A and 11 Arden Business Centre comprises a modern mid terrace commercial unit.  The property was built as two separate units however has been converted to provide on large unit that is currently used as a trade counter.  The units are of a steel portal frame construction with part brick & block and part steel clad elevations.  Internally, each unit benefits from a mezzanine floor over the majority of the floor area.  Within Unit 11 there are kitchen and WC facilities.\n\n10a Arden Business Centre\t\t\nGround Floor 962 sq ft (89.37 sq m)\nMezzanine Floor 849 sq ft (78.90 sq m)\nTotal 1,811 sq ft (168.27 sq m)\n\n11 Arden Business Centre\t\t\nGround Floor 962 sq ft (89.37 sq m)\nMezzanine Floor 986 sq ft (91.56 sq m)\nTotal 1,948 sq ft (180.93 sq m)\n\t\t\nWhole Unit 3,759 sq ft (349.2 sq m)\n\nCurrent Tenancy\nThe property is let to Arden Carpets and Floor on a 10 year lease expiring in 2029, at a passing rent of £20,750 per annum.  The occupier has expressed a desire to extend this lease.  Further lease details are available on request.",
-    "location": "The property is located on Arden Business Centre, Arden Road, Alcester and is approximately one mile north of Alcester town centre.  Arden Business Centre has a range of small, medium and large commercial units which are occupied by local and national commercial occupiers.  The area is popular with trade counter occupiers such as the existing Tenant and nearby Screwfix.\n\nAlcester is situated in an accessible location being adjacent to the A46, A435 and A422.  The A46 leads eastwards to Stratford-upon-Avon, Warwick and Junction 15 of the M40 motorway and south to Evesham and Junction 9 of the M5 motorway.  The A435 leads north to Redditch and Junction 3 of the M42 motorway, with the A422 leading west to Worcester.",
-    "features": [
-      "Total area 3,759 sq ft (349.20 sq m) GIA",
-      "Currently let on a lease expiring 2029 at a rent of £20,750 per annum",
-      "Effective freehold via a 999 year lease from 1990",
-      "Popular trade counter premises on an established estate",
-      "Ground floor showroom with mezzanine area",
-      "Excellent access to the M40 and M24 motorways"
-    ],
-    "price": "£375,000",
-    "price_value": 375000,
-    "business_rates_psf": 0,
-    "rateable_value": 26500,
-    "epc_rating": "C (58)",
-    "images": [
-      "https://as-images.imgix.net/0b1659403f31fa3950fc6c9acd0b27dd-20260505-101631.jpg",
-      "https://as-images.imgix.net/4f496fa3796366d35630136dc7515c65-20260505-105236.jpg",
-      "https://as-images.imgix.net/cb544788e399b5f68d9a9049329e9a07-20260505-101741.jpg",
-      "https://as-images.imgix.net/50149f2fe49ae52b8ff9fa7d68732420-20260505-101823.jpg",
-      "https://as-images.imgix.net/bcba3438defa48a3ee5a4256676da377-20260505-101800.jpg",
-      "https://as-images.imgix.net/b7f5eafe69d9915be373fa59e632d240-20260505-104032.jpg",
-      "https://as-images.imgix.net/3d21a28d87cf4dd194849769a329a4e5-20260505-102916.jpg",
-      "https://as-images.imgix.net/bee6399b0f5fb5eef983f6917bccf44a-20260505-102736.jpg",
-      "https://as-images.imgix.net/649ab7521a000f5a3ef307e93e6649e7-20260505-101832.jpg",
-      "https://as-images.imgix.net/c2b971a3991044ed8525ab4b325a3bc8-20260505-101727.jpg",
-      "https://as-images.imgix.net/092c0ad32f4218be5ab394a8c7de005c-20260505-102856.jpg",
-      "https://as-images.imgix.net/0bef02cf3db1d5f7b300a62b968a17a0-20260505-103941.jpg",
-      "https://as-images.imgix.net/c86a760ba12bb0ae3d3a531bc66598c3-20260505-104200.jpg",
-      "https://as-images.imgix.net/6b4a06dad7d055e42b05598bddf12cdf-20260505-104148.jpg",
-      "https://as-images.imgix.net/a2b944af13ddcd1728ae796640d5c20f-20260505-101548.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/5067c2d36f008effa16c0a4fb65333e4-gjs-dillon-particulars-10a-and-11-arden-business-centre-alcester-b49-2.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-05 15:56:09"
   },
   {
     "id": 354040,
