@@ -1,5 +1,147 @@
 [
   {
+    "id": 379671,
+    "status": "Under Offer",
+    "address": "13 The Foregate",
+    "town": "Worcester",
+    "postcode": "WR1 3QD",
+    "lat": 52.193969,
+    "lon": -2.221177,
+    "types": [
+      "Retail",
+      "Office"
+    ],
+    "raw_types": [
+      "Class E Retail / Leisure",
+      "Office",
+      "Retail",
+      "High Street Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2668,
+    "size_to_sqft": 2668,
+    "summary": "Extensive retail premises with unique features throughout",
+    "description": "13 The Foregate is a retail property that forms part of the wider Hopmarket development.  It is arranged over the basement, ground and first floor levels.\n\nThe ground floor is immediately accessed off The Foregate, which comprises the northern end of Worcester’s main retail area.  There is an entrance foyer which leads to a large (887 sq ft) trading area.  Off the main sales area there are further rooms, a kitchen and two rear staff / storage areas.  There are a further two rooms and a WC on the first floor, which is accessed via an internal staircase to the rear of the property.  Th basement area offers further accommodation, including a room that forms part of the former banking vault.\n\nThe property benefits from gas central heating throughout.\n\nBasement\t70.59 sq m\t760 sq ft\nGround Floor\t152.20 sq m\t1,638 sq ft\nFirst Floor\t25.12 sq m\t270 sq ft\nTotal\t247.91 sq m\t2,668 sq ft",
+    "location": "Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London.  Worcester has excellent access to the M5 motorway, which lies adjacent to the subject property with Junction 7 being approximately one and a half miles drive south.  The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network.\n\nWorcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
+    "features": [
+      "Total net area of 2,668 sq ft (247.91 sq m)",
+      "Extensive space arranged over the basement, ground and first floor",
+      "Large ground floor trading area accessed directly off The Foregate",
+      "Unique features throughout owing to the former banking use",
+      "Fitted out to a good standard, ready for immediate occupation"
+    ],
+    "rent_psf": 7.87,
+    "rent_pa": 21000,
+    "rent": "£21,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 16500,
+    "service_charge": "7100",
+    "epc_rating": "C (66)",
+    "images": [
+      "https://as-images.imgix.net/194034cda35ecfa9ca4cf0480e50b995-img-1016.JPEG",
+      "https://as-images.imgix.net/82abf5bb4839b7d94e1ef3548e1961f3-img-1022.JPEG",
+      "https://as-images.imgix.net/2d9caf76b8790f39065e991b69f8b46d-img-1021.JPEG",
+      "https://as-images.imgix.net/849810e8778d6c4b59d3d2e26f4c5e92-img-1018.JPEG",
+      "https://as-images.imgix.net/8af52036a509dcf4d47d66af6a0e015f-img-1023.JPEG",
+      "https://as-images.imgix.net/f8b7da6f4e6762fc2bad47115388441b-img-1025.JPEG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/aeaa97eae7be415fc52298e89f35d939-gjs-dillon-particulars-13-the-foregate-worcester.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/7221c1652bb6383375fcacb477a5f083-cam04581g0-pr0078-build01-floor-neg01.jpg",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/3f2c030fd5a9c44fbfce4939d6fa79fb-cam04581g0-pr0078-build01.jpg",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/eda29e32ee852b57867a47ff0549bc27-cam04581g0-pr0078-build01-floor01.jpg",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/83ee625fc8e0456501bb636e695554dd-cam04581g0-pr0078-build01-floor00.jpg"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/13theforegate"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-12 17:09:43"
+  },
+  {
+    "id": 358186,
+    "status": "Available",
+    "address": "44 High Street",
+    "town": "Bromsgrove",
+    "postcode": "B61 8HQ",
+    "lat": 52.333969,
+    "lon": -2.061572,
+    "types": [
+      "Office",
+      "Retail"
+    ],
+    "raw_types": [
+      "Office",
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1686,
+    "size_to_sqft": 1686,
+    "summary": "Bromsgrove Town Centre Retail / Office Space",
+    "description": "44 High Street offers a mid-terrace unit that forms part of a larger retail parade.  The building is arranged over the ground, first and second floors.  The property offers a retail/ office area over the ground floor, which provides a prominent frontage to the High Street.  Over the first and second floors there is ancillary office accommodation.  There are WC and kitchen facilities within the premises. \n\t\t\t\t\nGround Floor 618 sq ft / 57.4 sq m \nFirst Floor 580 sq ft / 53.9 sq m\nSecond Floor 487 sq ft / 45.2 sq m \nTotal\t1,686 sq ft\t156.5 sq m",
+    "location": "The property is situated in Bromsgrove Town Centre, to the southern end of the High Street.  Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the town centre, giving access to the Midlands motorway network.\n\nBirmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south.",
+    "features": [
+      "1,685 sq ft (156.5 sq m) NIA",
+      "Well proportioned accommodation over three floors",
+      "Benefitting from a prominent frontage",
+      "Town centre location"
+    ],
+    "rent_psf": 10.38,
+    "rent_pa": 17500,
+    "rent": "£17,500 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 10500,
+    "epc_rating": "D (97)",
+    "images": [
+      "https://as-images.imgix.net/e486536b77405b5142e3be0eecd16a17-20261112-112408.jpg",
+      "https://as-images.imgix.net/6456b358013228bb21876f45fd51e9b6-20261112-112108.jpg",
+      "https://as-images.imgix.net/a56d09ee6ee8f3c207da00e4c3facfbe-20261112-112053.jpg",
+      "https://as-images.imgix.net/57e2bf4a17ad4795b0d80f5c11a28b93-20261112-112120.jpg",
+      "https://as-images.imgix.net/06649671650a0c693139ce27922ae798-20261112-112201.jpg",
+      "https://as-images.imgix.net/565e474d2e2ebeee3bf93eab2efa0568-20261112-111917.jpg",
+      "https://as-images.imgix.net/5cb5a705f73d1b206ca04a8d2f7f1d5e-20261112-111820.jpg",
+      "https://as-images.imgix.net/ab138b8462e9b0587653769ac4f30607-20261112-111811.jpg",
+      "https://as-images.imgix.net/d7ff14c7b2dbc2bf6f7077360c774658-20261112-111646.jpg",
+      "https://as-images.imgix.net/b2650cb93dd3a4a5e8cbb0f156e268fd-20261112-111627.jpg",
+      "https://as-images.imgix.net/f4faac5cb0ddecc2e8c47386d9943d0b-20261112-111549.jpg",
+      "https://as-images.imgix.net/6295bd3ec2232ed33481e6c40890a9ef-20261112-111535.jpg",
+      "https://as-images.imgix.net/1485adc6ee12d696c28063496e0204e6-20261112-111455.jpg",
+      "https://as-images.imgix.net/14cd4bc02f9085dd2e1e6e7667639e0d-20261112-111439.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/b12e35e57584c027c1e21860bdc59d79-gjs-dillon-particulars-44-high-street-bromsgrove-b61-8hq-1.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-12 15:57:29"
+  },
+  {
     "id": 346672,
     "status": "Available",
     "address": "20 The Shambles",
@@ -71,7 +213,7 @@
         "branch": "Droitwich"
       }
     ],
-    "last_updated": "2026-11-12 12:48:43"
+    "last_updated": "2026-11-12 13:33:06"
   },
   {
     "id": 377589,
@@ -1366,83 +1508,6 @@
     "last_updated": "2026-11-05 11:58:25"
   },
   {
-    "id": 379671,
-    "status": "Available",
-    "address": "13 The Foregate",
-    "town": "Worcester",
-    "postcode": "WR1 3QD",
-    "lat": 52.193969,
-    "lon": -2.221177,
-    "types": [
-      "Retail",
-      "Office"
-    ],
-    "raw_types": [
-      "Class E Retail / Leisure",
-      "Office",
-      "Retail",
-      "High Street Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2668,
-    "size_to_sqft": 2668,
-    "summary": "Extensive retail premises with unique features throughout",
-    "description": "13 The Foregate is a retail property that forms part of the wider Hopmarket development.  It is arranged over the basement, ground and first floor levels.\n\nThe ground floor is immediately accessed off The Foregate, which comprises the northern end of Worcester’s main retail area.  There is an entrance foyer which leads to a large (887 sq ft) trading area.  Off the main sales area there are further rooms, a kitchen and two rear staff / storage areas.  There are a further two rooms and a WC on the first floor, which is accessed via an internal staircase to the rear of the property.  Th basement area offers further accommodation, including a room that forms part of the former banking vault.\n\nThe property benefits from gas central heating throughout.\n\nBasement\t70.59 sq m\t760 sq ft\nGround Floor\t152.20 sq m\t1,638 sq ft\nFirst Floor\t25.12 sq m\t270 sq ft\nTotal\t247.91 sq m\t2,668 sq ft",
-    "location": "Worcester is situated 29 miles south of Birmingham, 25 miles north of Cheltenham and 132 miles north west of Central London.  Worcester has excellent access to the M5 motorway, which lies adjacent to the subject property with Junction 7 being approximately one and a half miles drive south.  The M5 provides access to the south west of England and north to Birmingham, Birmingham International Airport and the wider national motorway network.\n\nWorcester benefits from three mainline railway stations providing direct links into Birmingham New Street, Cheltenham, Oxford, Bristol, Cardiff and London Paddington, with London Paddington being reached in approximately two hours.",
-    "features": [
-      "Total net area of 2,668 sq ft (247.91 sq m)",
-      "Extensive space arranged over the basement, ground and first floor",
-      "Large ground floor trading area accessed directly off The Foregate",
-      "Unique features throughout owing to the former banking use",
-      "Fitted out to a good standard, ready for immediate occupation"
-    ],
-    "rent_psf": 7.87,
-    "rent_pa": 21000,
-    "rent": "£21,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 16500,
-    "service_charge": "7100",
-    "epc_rating": "C (66)",
-    "images": [
-      "https://as-images.imgix.net/194034cda35ecfa9ca4cf0480e50b995-img-1016.JPEG",
-      "https://as-images.imgix.net/82abf5bb4839b7d94e1ef3548e1961f3-img-1022.JPEG",
-      "https://as-images.imgix.net/2d9caf76b8790f39065e991b69f8b46d-img-1021.JPEG",
-      "https://as-images.imgix.net/849810e8778d6c4b59d3d2e26f4c5e92-img-1018.JPEG",
-      "https://as-images.imgix.net/8af52036a509dcf4d47d66af6a0e015f-img-1023.JPEG",
-      "https://as-images.imgix.net/f8b7da6f4e6762fc2bad47115388441b-img-1025.JPEG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/aeaa97eae7be415fc52298e89f35d939-gjs-dillon-particulars-13-the-foregate-worcester.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/7221c1652bb6383375fcacb477a5f083-cam04581g0-pr0078-build01-floor-neg01.jpg",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/3f2c030fd5a9c44fbfce4939d6fa79fb-cam04581g0-pr0078-build01.jpg",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/eda29e32ee852b57867a47ff0549bc27-cam04581g0-pr0078-build01-floor01.jpg",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/83ee625fc8e0456501bb636e695554dd-cam04581g0-pr0078-build01-floor00.jpg"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/13theforegate"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-11-05 11:53:46"
-  },
-  {
     "id": 405989,
     "status": "Available",
     "address": "Offices at Abbey Works",
@@ -1637,65 +1702,6 @@
       }
     ],
     "last_updated": "2026-11-02 17:24:16"
-  },
-  {
-    "id": 358186,
-    "status": "Available",
-    "address": "44 High Street",
-    "town": "Bromsgrove",
-    "postcode": "B61 8HQ",
-    "lat": 52.333969,
-    "lon": -2.061572,
-    "types": [
-      "Office",
-      "Retail"
-    ],
-    "raw_types": [
-      "Office",
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1686,
-    "size_to_sqft": 1686,
-    "summary": "Bromsgrove Town Centre Retail / Office Space",
-    "description": "44 High Street offers a mid-terrace unit that forms part of a larger retail parade.  The building is arranged over the ground, first and second floors.  The property offers a retail/ office area over the ground floor, which provides a prominent frontage to the High Street.  Over the first and second floors there is ancillary office accommodation.  There are WC and kitchen facilities within the premises. \n\t\t\t\t\nGround Floor 618 sq ft / 57.4 sq m \nFirst Floor 580 sq ft / 53.9 sq m\nSecond Floor 487 sq ft / 45.2 sq m \nTotal\t1,686 sq ft\t156.5 sq m",
-    "location": "The property is situated in Bromsgrove Town Centre, to the southern end of the High Street.  Bromsgrove is a busy Worcestershire market town with easy access to the motorway network with Junctions 4 and 5 of the M5 motorway and Junction 1 of the M42 motorway being within three miles of the town centre, giving access to the Midlands motorway network.\n\nBirmingham City Centre is situated approximately 13 miles to the north and Worcester City Centre is situated approximately 12 miles to the south.",
-    "features": [
-      "1,685 sq ft (156.5 sq m) NIA",
-      "Well proportioned accommodation over three floors",
-      "Benefitting from a prominent frontage",
-      "Town centre location"
-    ],
-    "rent_psf": 10.38,
-    "rent_pa": 17500,
-    "rent": "£17,500 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 10500,
-    "epc_rating": "D (97)",
-    "images": [
-      "https://as-images.imgix.net/6aee8a8e8f2294bf3cbd950496c082e9-20260323-152314355-ios.jpg",
-      "https://as-images.imgix.net/d2575591e5a3311a6e58d9d57708e829-20260323-152638652-ios.jpg",
-      "https://as-images.imgix.net/1b7a309635ce87dcac8bf28ab93edb76-20260323-152552413-ios.jpg",
-      "https://as-images.imgix.net/c75c4812fa280db7f063b37175a63e6e-20260323-152822882-ios.jpg",
-      "https://as-images.imgix.net/e67a8a8891751f093d35c7bd3297e223-20260323-153008924-ios.jpg",
-      "https://as-images.imgix.net/ad77a61d943fe287eee1e8be16afbbab-20260323-152909173-ios.jpg",
-      "https://as-images.imgix.net/0c7d321e2c4626f5856ef03a24c762eb-20260323-153116431-ios.jpg",
-      "https://as-images.imgix.net/8fc56c260b41152c74b79d6b53ca96c7-20260323-152718114-ios.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/4de98ad7a141fb2df886c9e0b7f13223-gjs-dillon-particulars-44-high-street-bromsgrove-b61-8hq.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-11-02 17:23:45"
   },
   {
     "id": 350693,
