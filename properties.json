@@ -1,5 +1,70 @@
 [
   {
+    "id": 436580,
+    "status": "Available",
+    "address": "3 Three Cocks Lane",
+    "town": "Evesham",
+    "postcode": "WR11 8RY",
+    "lat": 52.11416,
+    "lon": -1.917802,
+    "types": [
+      "Industrial"
+    ],
+    "raw_types": [
+      "Industrial"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 4779,
+    "size_to_sqft": 4779,
+    "summary": "Secure Industrial/Warehouse Unit For Sale",
+    "description": "The unit is detached and situated within a secure compound that extends to approximately half an acre. The building is situated to the rear of the site and offers a combination of workshop, office and storage space. The workshop is access via a full heigh sliding door, with there being pedestrian access for other parts of the building and the office space. Internally, the workshop benefits from good height having a maximum eaves height of 5.44m.\n\nGround Floor: 4,266 sq ft\nMezzanine Floor: 513 sq ft\nTotal Floor Area: 4,779 sq ft",
+    "location": "The property is situated on Three Cocks Lane in Offenham, to the south east of Worcestershire. Offenham is situated approximately two miles to the north east of Evesham. Evesham is a market town within Wychavon which benefits from a population of approximately 25,000, according to the 2011 census. It is located approximately 14 miles south east of Worcester, 14 miles north east of Cheltenham, 27 miles south of Birmingham and 90 miles north west of London.\n\nEvesham benefits from good road communications being on the A44; which provides access to Worcester, Oxford and Junction 6 of the M5 motorway (in approximately 25 minutes), and on the A46; which provides access to Redditch, Tewkesbury and Junction 9 of the M5 motorway (in approximately 20 minutes). Evesham also has a mainline station, which is adjacent to the subject property, which provides a direct access to the Worcester stations, Oxford and London Paddington.",
+    "features": [
+      "Guide Price of £550,000",
+      "Secure yard",
+      "Eave height of 5.44m"
+    ],
+    "price": "£550,000",
+    "price_value": 550000,
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/7a498f1ae6ee46f083c3d92832373bff-img-20261103-wa0001-1.jpg",
+      "https://as-images.imgix.net/ee2a8b0d210be08194fdec2ff2e212d0-img-20261103-wa0005.jpg",
+      "https://as-images.imgix.net/d493e61c790f7fa3c472cd37fc1de31e-img-20261103-wa0008.jpg",
+      "https://as-images.imgix.net/0dc9b5300ab7235ff3272f0419a2d36e-img-20261103-wa0021.jpg",
+      "https://as-images.imgix.net/c0146f8927fc27c62f95756d79648cb2-img-20261103-wa0034.jpg",
+      "https://as-images.imgix.net/afa3bac345d435cb037629ee696b7951-img-20261103-wa0009.jpg",
+      "https://as-images.imgix.net/abea478b5c6febbe8b7b348ea8d16890-img-20261103-wa0038.jpg",
+      "https://as-images.imgix.net/dad63520a0f094fc3cab04ab21b3f464-img-20261103-wa0046.jpg",
+      "https://as-images.imgix.net/dbcf155ed1c142812b96ed5bc35e79fe-img-20261103-wa0013.jpg",
+      "https://as-images.imgix.net/d2ae90f4508644b7b24012221a1a248f-img-20261103-wa0040.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/a0cb3a8afe5e3aab7775a191bb74a33c-gjs-dillon-particulars-3-three-cocks-lane-evesham.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-13 15:34:48"
+  },
+  {
     "id": 379671,
     "status": "Under Offer",
     "address": "13 The Foregate",
