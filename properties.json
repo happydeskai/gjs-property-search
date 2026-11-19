@@ -1,5 +1,70 @@
 [
   {
+    "id": 428775,
+    "status": "Available",
+    "address": "41 St. John's",
+    "town": "Worcester",
+    "postcode": "WR2 5AG",
+    "lat": 52.18775510799,
+    "lon": -2.2349915595245,
+    "types": [
+      "Retail"
+    ],
+    "raw_types": [
+      "Retail"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 3633,
+    "size_to_sqft": 3633,
+    "summary": "Mixed-use retail & residential premises in central location",
+    "description": "41 St John's is a mid-terrace retail premises comprised of a front and rear sales area, with a link sales area joining the two units together in middle. The front ground floor retail area fronts St John's with further 2 storey accommodation situated directly above it. The rear of the property features a ground floor retail unit fronting Swanpool Walk in addition to a 1 bedroom flat above. \n\nFloor Areas: \nSt John's Ground Floor: 1,603 sq ft\nFirst Floor: 403 sq ft\nSecond Floor: 330 sq ft\n\nSwanpool Walk Ground Floor: 833 sq ft\nFirst Floor: 463 sq ft",
+    "location": "The property is located on St John's on the edge of Worcester city centre and is a key route into the city centre for traffic coming to and from the South. The property also fronts Swanpool Walk which provides access to the Sainsbury's located behind the premises. \n\nThe immediate surrounding area is characterised with similar sized style and aged properties comprising mostly retail premises with independent retailers at ground floor level with either office or residential uses on the upper floors\n\nWorcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both a short drive away. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
+    "features": [
+      "Central location",
+      "Guide Price of £425,000",
+      "3,633 sq ft (337.51 sq m) NIA",
+      "Ground floor retail with residential and/or office space above",
+      "Suitable for a variety of uses"
+    ],
+    "price": "£425,000",
+    "price_value": 425000,
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "B (45)",
+    "images": [
+      "https://as-images.imgix.net/d40285d9067a414af12d90748b53e0ca-img-6143.jpeg",
+      "https://as-images.imgix.net/00e6e282dd577c51444f9817f6e04e23-img-6063.jpeg",
+      "https://as-images.imgix.net/4862727d3770a237b805af8c3979a6a0-img-6006.jpeg",
+      "https://as-images.imgix.net/a44aaec906e35647bdf1906a05efea6f-img-6043.jpeg",
+      "https://as-images.imgix.net/01e01c09f1d3b53cd5cf810c5cc60452-img-6037.jpeg",
+      "https://as-images.imgix.net/0f7c300aad22155153fd3e756ddbb98f-img-6033.jpeg",
+      "https://as-images.imgix.net/9dc3d5e671f3bb5d02e796cba1e8d0cc-20261022-122608.jpg",
+      "https://as-images.imgix.net/104cc5d0640885ca08be6d7479305366-img-6048.jpeg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/b9cee6bebd416ae870421e3a3881a3b5-gjs-dillon-particulars-41-st-johns.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-19 10:34:13"
+  },
+  {
     "id": 429284,
     "status": "Available",
     "address": "79 High Street",
@@ -2061,63 +2126,6 @@
       }
     ],
     "last_updated": "2026-11-02 16:50:57"
-  },
-  {
-    "id": 428775,
-    "status": "Available",
-    "address": "41 St. John's",
-    "town": "Worcester",
-    "postcode": "WR2 5AG",
-    "lat": 52.18775510799,
-    "lon": -2.2349915595245,
-    "types": [
-      "Retail"
-    ],
-    "raw_types": [
-      "Retail"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 3633,
-    "size_to_sqft": 3633,
-    "summary": "Mixed-use retail & residential premises in central location",
-    "description": "41 St John's is a mid-terrace retail premises comprised of a front and rear sales area, with a link sales area joining the two units together in middle. The front ground floor retail area fronts St John's with further 2 storey accommodation situated directly above it. The rear of the property features a ground floor retail unit fronting Swanpool Walk in addition to a 1 bedroom flat above. \n\nFloor Areas: \nSt John's Ground Floor: 1,603 sq ft\nFirst Floor: 403 sq ft\nSecond Floor: 330 sq ft\n\nSwanpool Walk Ground Floor: 833 sq ft\nFirst Floor: 463 sq ft",
-    "location": "The property is located on St John's on the edge of Worcester city centre and is a key route into the city centre for traffic coming to and from the South. The property also fronts Swanpool Walk which provides access to the Sainsbury's located behind the premises. \n\nThe immediate surrounding area is characterised with similar sized style and aged properties comprising mostly retail premises with independent retailers at ground floor level with either office or residential uses on the upper floors\n\nWorcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both a short drive away. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
-    "features": [
-      "Central location",
-      "Guide Price of £425,000",
-      "3,633 sq ft (337.51 sq m) NIA",
-      "Ground floor retail with residential and/or office space above",
-      "Suitable for a variety of uses"
-    ],
-    "price": "£425,000",
-    "price_value": 425000,
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "B (45)",
-    "images": [
-      "https://as-images.imgix.net/d40285d9067a414af12d90748b53e0ca-img-6143.jpeg",
-      "https://as-images.imgix.net/00e6e282dd577c51444f9817f6e04e23-img-6063.jpeg",
-      "https://as-images.imgix.net/4862727d3770a237b805af8c3979a6a0-img-6006.jpeg",
-      "https://as-images.imgix.net/a44aaec906e35647bdf1906a05efea6f-img-6043.jpeg",
-      "https://as-images.imgix.net/01e01c09f1d3b53cd5cf810c5cc60452-img-6037.jpeg",
-      "https://as-images.imgix.net/0f7c300aad22155153fd3e756ddbb98f-img-6033.jpeg",
-      "https://as-images.imgix.net/9dc3d5e671f3bb5d02e796cba1e8d0cc-20261022-122608.jpg",
-      "https://as-images.imgix.net/104cc5d0640885ca08be6d7479305366-img-6048.jpeg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/b9cee6bebd416ae870421e3a3881a3b5-gjs-dillon-particulars-41-st-johns.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-11-02 16:41:15"
   },
   {
     "id": 380642,
