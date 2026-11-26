@@ -1,5 +1,259 @@
 [
   {
+    "id": 426611,
+    "status": "Available",
+    "address": "31 Pump Street",
+    "town": "Worcester",
+    "postcode": "WR1 2QX",
+    "lat": 52.19092789301,
+    "lon": -2.2188203200989,
+    "types": [
+      "Retail"
+    ],
+    "raw_types": [
+      "Retail"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 583,
+    "size_to_sqft": 583,
+    "summary": "Retail premises in central location",
+    "description": "31 Pump Street is an end-terrace ground floor retail unit situated within the heart of Worcester city centre. The unit features an open-plan retail area with suspended ceiling, air conditioning, and two single-glazed shop frontages facing out onto both Pump Street and New Street. Towards the rear of the unit are ancillary areas suitable for limited storage, in addition to a WC. The unit may suit a variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.",
+    "location": "The property is prominently located on the corner Pump Street and New Street. Both streets are located just off Worcester High Street, in a highly visible and well-trafficked position. The area is also home to a mix of national and independent occupiers. \n\nWorcester's main shopping destinations - Crowngate Shopping Centre and Cathedral Square - are both within a short walking distance. Worcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
+    "features": [
+      "Prominent city centre position",
+      "Vacant possession",
+      "583 sq ft (54.17 sq m) NIA",
+      "Guide Rental of £15,000 per annum (£1,250 per calendar month)"
+    ],
+    "rent_psf": 25.73,
+    "rent_pa": 15000,
+    "rent": "£15,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 11000,
+    "epc_rating": "D (78)",
+    "images": [
+      "https://as-images.imgix.net/da2b6e75378f5e10ee8f0a4f149e78eb-img-6328.jpeg",
+      "https://as-images.imgix.net/8bf0dc9a61ac321c18e11da9a674644f-img-6318.jpeg",
+      "https://as-images.imgix.net/d4893eb6cee239315074be3c30f702d8-img-6325.jpeg",
+      "https://as-images.imgix.net/6cb6761fdb57d0bda80d744f662363d4-img-6322.jpeg",
+      "https://as-images.imgix.net/4b085c62ce5c45be55f1b2d34d7157ed-img-6331.jpeg",
+      "https://as-images.imgix.net/f4608fe60c7535a97099322dd8bf74aa-img-20261126-wa0006.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/f52aed5f95f8c1ea1454250ae46b2e2e-gjs-dillon-particulars-31-pump-street-worcester-updated.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-26 16:40:28"
+  },
+  {
+    "id": 389993,
+    "status": "Available",
+    "address": "Nailers Yard",
+    "town": "Bromsgrove",
+    "postcode": "B61 8NR",
+    "lat": 52.333591,
+    "lon": -2.063347,
+    "types": [
+      "Restaurant"
+    ],
+    "raw_types": [
+      "Restaurant"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 1184,
+    "size_to_sqft": 2335,
+    "summary": "Ground and Third Floor Food and Beverage Suites at Nailers Yard, Bromsgrove",
+    "description": "Nailers Yard is an upcoming mixed-use development in the heart of Bromsgrove, set to transform the former Market Hall site into a vibrant commercial, cultural, and community destination. The project is a key part of Bromsgrove District Council’s regeneration strategy.\n\nThe commercial building is a standalone structure offering premium office space, ground-floor restaurant space, and a rooftop food and drink outlet. This addition is expected to enhance Bromsgrove’s night-time economy and attract both new and established businesses.",
+    "location": "Set in the heart of Worcestershire, Bromsgrove is a town blending heritage charm with contemporary growth. Just 30 minutes from Birmingham and with easy access to the M5, M42, and direct rail links, Bromsgrove offers exceptional connectivity for ambitious businesses.\n\nBromsgrove is home to a growing, affluent population and a thriving local economy, making it a compelling location for both office occupiers and hospitality operators. The town’s latest regeneration project, Nailers Yard, is at the centre of this transformation. With bold new spaces designed for work, culture, and cuisine, it offers a fresh canvas for operators seeking high footfall, community engagement, and standout design in a one-of-a-kind setting.",
+    "features": [
+      "A new commercial & cultural hub in Bromsgrove Town Centre",
+      "Ground floor food and beverage suite 1,517 sq ft (141 sq m)",
+      "Third floor food and beverage suite 1,087 sq ft (101 sq m)",
+      "Remote controlled ceiling mounted HVAC",
+      "WC and shower facilities"
+    ],
+    "rent_psf": 21.11,
+    "rent_pa": 25000,
+    "rent": "£25,000 - £60,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "",
+    "images": [
+      "https://as-images.imgix.net/908301b55ac7f82da57b9ebe418c17ba-market-hall-view-05-v026.jpg",
+      "https://as-images.imgix.net/dc2b99740d1beab2f300422a4e58473a-20260608-111831.jpg",
+      "https://as-images.imgix.net/2873e3f7f1726ab9d99d74991d085393-20260608-111607.jpg",
+      "https://as-images.imgix.net/dcfe4c57e0d8a0db7f618b8cfa9ca173-20260608-111625.jpg",
+      "https://as-images.imgix.net/5074bc8731554bd56c6a07347b2eb0a2-20260608-111642.jpg",
+      "https://as-images.imgix.net/be67174694151e8ea68def47d465ba0b-20260608-111720.jpg",
+      "https://as-images.imgix.net/bf1488fbeb44287884dfac3b6086f458-20260608-111736.jpg",
+      "https://as-images.imgix.net/f2bb99b119dac4ddb5cdd9cae22312a5-20260608-111757.jpg",
+      "https://as-images.imgix.net/3bdbe2a6dc86229e2c22e9fb8792317f-20260608-111900.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6dd0b16f1e46ac69d5feb5c70434c4c6-gjs-dillon-particulars-nailers-yard-bromsgrove-food-and-beverage-4.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/1305dad63e08c0fa53f20f10ee772330-cam04581g0-pr0071-build01-floor00.png",
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/fbf5aa401494272925e6f57f80844368-cam04581g0-pr0071-build01-floor02.png"
+    ],
+    "virtual_tour_urls": [
+      "https://tour.giraffe360.com/nailersyardbromsgrove"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-26 16:15:26"
+  },
+  {
+    "id": 429850,
+    "status": "Available",
+    "address": "11c Oakmoore Court",
+    "town": "Droitwich",
+    "postcode": "WR9 0QH",
+    "lat": 52.285205902086,
+    "lon": -2.1731898183746,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": false,
+    "for_sale": true,
+    "size_from_sqft": 4888,
+    "size_to_sqft": 4888,
+    "summary": "Office building on the popular Hampton Lovett Industrial Estate",
+    "description": "The property comprises a modern detached two-storey office building with brick elevations under a pitched tiled roof with double-glazed windows throughout. \n\nThe ground floor comprises reception, meeting rooms and offices mainly of a cellular layout together with kitchen, WC facilities and storerooms. The first floor is mainly open plan office including kitchen and WC facilities. \n\nThe property benefits from suspended ceilings with inset LED lights and air conditioning / comfort cooling.\n\nExternally the property has circa 20 car parking spaces, with the exact determination being unclear owing to the spaces being shared with the next door premises. This includes two EV charging spaces.\n\nGround Floor: 2,629 sq ft\nFirst Floor: 2,259 sq ft",
+    "location": "The property is located within the popular Hampton Lovett Industrial Estate, approximately one mile north of Droitwich Town Centre. The Hampton Lovett Industrial Estate is accessed directly off the A442 which provides access to Droitwich to the south and Hartlebury and Kidderminster to the north. The location is particularly convenient for occupiers as it provides easy access to the M5 Motorway with Junction 5 situated approximately 3.25km (two miles) to the east.",
+    "features": [
+      "Situated on the popular Hampton Lovett Industrial Estate",
+      "Guide Price of £725,000",
+      "4,888 sq ft (454.08 sq m) NIA",
+      "Open plan first floor office"
+    ],
+    "price": "£725,000",
+    "price_value": 725000,
+    "business_rates_psf": 0,
+    "rateable_value": 0,
+    "epc_rating": "D (79)",
+    "images": [
+      "https://as-images.imgix.net/68cd5586789da87bbeee76facde06b1d-designer.jpeg",
+      "https://as-images.imgix.net/24f8bce608affd093526284e2ace3466-designer.png",
+      "https://as-images.imgix.net/c457b0db48a8e5e64a7a1957a5b522e9-img-20261109-wa0002.jpg",
+      "https://as-images.imgix.net/7ee08dac6622c5f5d5575a47e6bc207b-img-20261109-wa0021.jpg",
+      "https://as-images.imgix.net/067257231cad81e169bdcfe5e14ce307-img-20261109-wa0014.jpg",
+      "https://as-images.imgix.net/310301dbfee625c77d3960c16c455cfe-img-20261109-wa0029.jpg",
+      "https://as-images.imgix.net/e1c100299f91f4b912dd94066bbae0ff-img-20261109-wa0025.jpg",
+      "https://as-images.imgix.net/e3638606b6467892f960c9b7581e357e-img-20261109-wa0026.jpg"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/0c56d88ff44633901b731fd0591cf926-gjs-dillon-particulars-oakmoore-court-hampton-lovett-droitwich.pdf",
+    "floor_plan_urls": [],
+    "contacts": [
+      {
+        "name": "Fergus Edwards",
+        "email": "fergusedwards@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 126",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-26 16:09:21"
+  },
+  {
+    "id": 352214,
+    "status": "Available",
+    "address": "Unit 1, Edgar Estate",
+    "town": "Worcester",
+    "postcode": "WR6 6PQ",
+    "lat": 52.230157,
+    "lon": -2.368226,
+    "types": [
+      "Office"
+    ],
+    "raw_types": [
+      "Office"
+    ],
+    "to_let": true,
+    "for_sale": false,
+    "size_from_sqft": 2561,
+    "size_to_sqft": 5225,
+    "summary": "Office Suites with Excellent Car Parking",
+    "description": "Edgar House is a detached, purpose built two storey office building of brick and block main wall construction surmounted by a pitched steel profile clad roof with powder coated aluminium windows and doors with a very distinctive powder coated aluminium single storey reception area at the front. \n\nThe accommodation is available as a whole or split to provide two good sized self-contained office suites providing a mix of both open plan and cellular office accommodation with car parking situated to the front and rear of the property.  The Landlord will consider alternative uses for the property. \n\nGround Floor\t2,561 sq ft\t239.92 sq m\nFirst Floor\t2,664 sq ft\t247.49 sq m\nTotal\t5,225 sq ft\t487.41 sq m",
+    "location": "The property is situated in a prominent position fronting yet set back from the main B4197 close to the centre of Martley, being situated on a large commercial complex made up of office, warehouse and outside storage accommodation. \n\nThe property is situated approximately 6 miles west of Worcester city centre, 9 miles to the south of Stourport on Severn and 9 miles to the east of Bromyard. The nearest motorway access is at junction 6 or 7 of the M5 motorway, both of which are within 10 miles of the property.",
+    "features": [
+      "Two storey office premises, will consider alternative uses",
+      "Available as a whole or floor by floor",
+      "Ground floor 2,561 sq ft (239.92 sq m) NIA",
+      "First floor 2,664 sq ft (247.47 sq m) NIA",
+      "Excellent on site car parking"
+    ],
+    "rent_psf": 8.79,
+    "rent_pa": 22500,
+    "rent": "£22,500 - £45,000 per annum",
+    "business_rates_psf": 0,
+    "rateable_value": 41750,
+    "epc_rating": "D (91)",
+    "images": [
+      "https://as-images.imgix.net/1ba4e7012c5391066164848625146e64-img-0173.JPEG",
+      "https://as-images.imgix.net/297fa4837418d755f43c315aa0e58392-img-0170.JPEG",
+      "https://as-images.imgix.net/e1c41978fdb6426c1472b0ff430d01b5-img-0162.JPEG",
+      "https://as-images.imgix.net/188cc6c222aefb9f5a012bc1904f8422-img-0161.JPEG",
+      "https://as-images.imgix.net/0a17a28b862720c6262d36041f558fd7-img-0154-1.JPEG",
+      "https://as-images.imgix.net/33ed5981d22cca4990a716984937c13d-img-0153.JPEG",
+      "https://as-images.imgix.net/2bc282e7be9326225532444a1882caf8-img-0155.JPEG",
+      "https://as-images.imgix.net/6cc3fea54a5b2639f4aa0d24329a7230-img-0159.JPEG",
+      "https://as-images.imgix.net/aa3c4a8f95aaa63fe832f90f8cb77b1a-img-0164.JPEG",
+      "https://as-images.imgix.net/0171633d22fd61cd51457529287e1583-img-0158.JPEG"
+    ],
+    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6b1e8f59801ddf94946234618ce4b321-gjs-dillon-particulars-edgar-house-martley.pdf",
+    "floor_plan_urls": [
+      "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/da214aea8310290e7939a4c1e72357e4-detailed-floor-plans-edgar-house.pdf"
+    ],
+    "contacts": [
+      {
+        "name": "Roy Wilkes",
+        "email": "roywilkes@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      },
+      {
+        "name": "Jorge Bray",
+        "email": "jorgebray@gjsdillon.co.uk",
+        "phone": "01905 676 169",
+        "mobile": "07394 569 128",
+        "company": "GJS Dillon Limited",
+        "branch": "Droitwich"
+      }
+    ],
+    "last_updated": "2026-11-26 15:48:44"
+  },
+  {
     "id": 346672,
     "status": "Under Offer",
     "address": "20 The Shambles",
@@ -138,62 +392,6 @@
       }
     ],
     "last_updated": "2026-11-24 15:56:48"
-  },
-  {
-    "id": 429850,
-    "status": "Available",
-    "address": "11c Oakmoore Court",
-    "town": "Droitwich",
-    "postcode": "WR9 0QH",
-    "lat": 52.285205902086,
-    "lon": -2.1731898183746,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": false,
-    "for_sale": true,
-    "size_from_sqft": 4888,
-    "size_to_sqft": 4888,
-    "summary": "Office building on the popular Hampton Lovett Industrial Estate",
-    "description": "The property comprises a modern detached two-storey office building with brick elevations under a pitched tiled roof with double-glazed windows throughout. \n\nThe ground floor comprises reception, meeting rooms and offices mainly of a cellular layout together with kitchen, WC facilities and storerooms. The first floor is mainly open plan office including kitchen and WC facilities. \n\nThe property benefits from suspended ceilings with inset LED lights and air conditioning / comfort cooling.\n\nExternally the property has circa 20 car parking spaces, with the exact determination being unclear owing to the spaces being shared with the next door premises. This includes two EV charging spaces.\n\nGround Floor: 2,629 sq ft\nFirst Floor: 2,259 sq ft",
-    "location": "The property is located within the popular Hampton Lovett Industrial Estate, approximately one mile north of Droitwich Town Centre. The Hampton Lovett Industrial Estate is accessed directly off the A442 which provides access to Droitwich to the south and Hartlebury and Kidderminster to the north. The location is particularly convenient for occupiers as it provides easy access to the M5 Motorway with Junction 5 situated approximately 3.25km (two miles) to the east.",
-    "features": [
-      "Situated on the popular Hampton Lovett Industrial Estate",
-      "Guide Price of £725,000",
-      "4,888 sq ft (454.08 sq m) NIA",
-      "Open plan first floor office"
-    ],
-    "price": "£725,000",
-    "price_value": 725000,
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "D (79)",
-    "images": [
-      "https://as-images.imgix.net/ca8056318c66acebbbf9572a24ac97c6-img-1592.JPEG",
-      "https://as-images.imgix.net/9a82c23f70fcf19a7a33d35bdf725c44-img-20261109-wa0006.jpg",
-      "https://as-images.imgix.net/c457b0db48a8e5e64a7a1957a5b522e9-img-20261109-wa0002.jpg",
-      "https://as-images.imgix.net/7ee08dac6622c5f5d5575a47e6bc207b-img-20261109-wa0021.jpg",
-      "https://as-images.imgix.net/067257231cad81e169bdcfe5e14ce307-img-20261109-wa0014.jpg",
-      "https://as-images.imgix.net/310301dbfee625c77d3960c16c455cfe-img-20261109-wa0029.jpg",
-      "https://as-images.imgix.net/e1c100299f91f4b912dd94066bbae0ff-img-20261109-wa0025.jpg",
-      "https://as-images.imgix.net/e3638606b6467892f960c9b7581e357e-img-20261109-wa0026.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/0c56d88ff44633901b731fd0591cf926-gjs-dillon-particulars-oakmoore-court-hampton-lovett-droitwich.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-11-24 15:07:21"
   },
   {
     "id": 396537,
@@ -591,76 +789,6 @@
       }
     ],
     "last_updated": "2026-11-24 12:14:44"
-  },
-  {
-    "id": 352214,
-    "status": "Available",
-    "address": "Unit 1, Edgar Estate",
-    "town": "Worcester",
-    "postcode": "WR6 6PQ",
-    "lat": 52.230157,
-    "lon": -2.368226,
-    "types": [
-      "Office"
-    ],
-    "raw_types": [
-      "Office"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 2561,
-    "size_to_sqft": 5225,
-    "summary": "Office Suites with Excellent Car Parking",
-    "description": "Edgar House is a detached, purpose built two storey office building of brick and block main wall construction surmounted by a pitched steel profile clad roof with powder coated aluminium windows and doors with a very distinctive powder coated aluminium single storey reception area at the front. \n\nThe accommodation is available as a whole or split to provide two good sized self-contained office suites providing a mix of both open plan and cellular office accommodation with car parking situated to the front and rear of the property.\n\nGround Floor\t2,561 sq ft\t239.92 sq m\nFirst Floor\t2,664 sq ft\t247.49 sq m\nTotal\t5,225 sq ft\t487.41 sq m",
-    "location": "The property is situated in a prominent position fronting yet set back from the main B4197 close to the centre of Martley, being situated on a large commercial complex made up of office, warehouse and outside storage accommodation. \n\nThe property is situated approximately 6 miles west of Worcester city centre, 9 miles to the south of Stourport on Severn and 9 miles to the east of Bromyard. The nearest motorway access is at junction 6 or 7 of the M5 motorway, both of which are within 10 miles of the property.",
-    "features": [
-      "Two storey office premises",
-      "Available as a whole or floor by floor",
-      "Ground floor 2,561 sq ft (239.92 sq m) NIA",
-      "First floor 2,664 sq ft (247.47 sq m) NIA",
-      "Excellent on site car parking"
-    ],
-    "rent_psf": 8.79,
-    "rent_pa": 22500,
-    "rent": "£22,500 - £45,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 41750,
-    "epc_rating": "D (91)",
-    "images": [
-      "https://as-images.imgix.net/1ba4e7012c5391066164848625146e64-img-0173.JPEG",
-      "https://as-images.imgix.net/297fa4837418d755f43c315aa0e58392-img-0170.JPEG",
-      "https://as-images.imgix.net/e1c41978fdb6426c1472b0ff430d01b5-img-0162.JPEG",
-      "https://as-images.imgix.net/188cc6c222aefb9f5a012bc1904f8422-img-0161.JPEG",
-      "https://as-images.imgix.net/0a17a28b862720c6262d36041f558fd7-img-0154-1.JPEG",
-      "https://as-images.imgix.net/33ed5981d22cca4990a716984937c13d-img-0153.JPEG",
-      "https://as-images.imgix.net/2bc282e7be9326225532444a1882caf8-img-0155.JPEG",
-      "https://as-images.imgix.net/6cc3fea54a5b2639f4aa0d24329a7230-img-0159.JPEG",
-      "https://as-images.imgix.net/aa3c4a8f95aaa63fe832f90f8cb77b1a-img-0164.JPEG",
-      "https://as-images.imgix.net/0171633d22fd61cd51457529287e1583-img-0158.JPEG"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/12b012511da0040785d8bc42dad01a6a-gjs-dillon-particulars-edgar-house-martley.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/da214aea8310290e7939a4c1e72357e4-detailed-floor-plans-edgar-house.pdf"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-11-24 12:14:36"
   },
   {
     "id": 388662,
@@ -2402,63 +2530,6 @@
     "last_updated": "2026-11-05 16:44:18"
   },
   {
-    "id": 426611,
-    "status": "Available",
-    "address": "31 Pump Street",
-    "town": "Worcester",
-    "postcode": "WR1 2QX",
-    "lat": 52.19092789301,
-    "lon": -2.2188203200989,
-    "types": [
-      "Retail"
-    ],
-    "raw_types": [
-      "Retail"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 583,
-    "size_to_sqft": 583,
-    "summary": "Retail premises in central location",
-    "description": "31 Pump Street is an end-terrace ground floor retail unit situated within the heart of Worcester city centre. The unit features an open-plan retail area with suspended ceiling, air conditioning, and two single-glazed shop frontages facing out onto both Pump Street and New Street. Towards the rear of the unit are ancillary areas suitable for limited storage, in addition to a WC. The unit may suit a variety of occupiers or could offer potential for alternative uses or refurbishment, subject to the necessary consents.",
-    "location": "The property is prominently located on the corner Pump Street and New Street. Both streets are located just off Worcester High Street, in a highly visible and well-trafficked position. The area is also home to a mix of national and independent occupiers. \n\nWorcester's main shopping destinations - Crowngate Shopping Centre and Cathedral Square - are both within a short walking distance. Worcester is a well-connected cathedral city with a strong retail and leisure offering, a growing population, and two mainline railway stations (Worcester Foregate Street and Shrub Hill) both within walking distance. The M5 motorway is easily accessible via Junctions 6 and 7, providing strong connectivity to Birmingham, Cheltenham and the wider Midlands.",
-    "features": [
-      "Prominent city centre position",
-      "Vacant possession",
-      "583 sq ft (54.17 sq m) NIA",
-      "Guide Rental of £15,000 per annum (£1,250 per calendar month)"
-    ],
-    "rent_psf": 25.73,
-    "rent_pa": 15000,
-    "rent": "£15,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 11000,
-    "epc_rating": "D (78)",
-    "images": [
-      "https://as-images.imgix.net/312e3b15dc2e8e7ac7b5b728ef233944-20261008-161548.jpg",
-      "https://as-images.imgix.net/e61cc6ebde7245f0e60f8f12cc564c8c-20261008-161538.jpg",
-      "https://as-images.imgix.net/759a9d3c6f330a1635c406681b44d434-20261008-160952.jpg",
-      "https://as-images.imgix.net/0b5e5ff89cd58dda28ba011369351606-20261008-161505.jpg",
-      "https://as-images.imgix.net/7d601d6ed5b3e278843f943ac468ff28-20261008-161140.jpg",
-      "https://as-images.imgix.net/8824eceafc2ed56214f92e06c3216fa4-20261008-162148.jpg",
-      "https://as-images.imgix.net/4e5a8383f771da74fcfa83407b771c65-20261008-160957.jpg",
-      "https://as-images.imgix.net/e5c0669d9232f9661fce7ee568c2c44f-20261008-161034.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/5acf6a34475c6d809f79c1fcd412a3b9-gjs-dillon-particulars-31-pump-street-worcester.pdf",
-    "floor_plan_urls": [],
-    "contacts": [
-      {
-        "name": "Fergus Edwards",
-        "email": "fergusedwards@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 126",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-11-05 16:44:18"
-  },
-  {
     "id": 346823,
     "status": "Available",
     "address": "Unit 1, Copcut Business Park",
@@ -3898,79 +3969,6 @@
       }
     ],
     "last_updated": "2026-10-28 10:34:35"
-  },
-  {
-    "id": 389993,
-    "status": "Available",
-    "address": "Nailers Yard",
-    "town": "Bromsgrove",
-    "postcode": "B61 8NR",
-    "lat": 52.333591,
-    "lon": -2.063347,
-    "types": [
-      "Restaurant"
-    ],
-    "raw_types": [
-      "Restaurant"
-    ],
-    "to_let": true,
-    "for_sale": false,
-    "size_from_sqft": 1184,
-    "size_to_sqft": 3519,
-    "summary": "Ground and Third Floor Food and Beverage Suites at Nailers Yard, Bromsgrove",
-    "description": "Nailers Yard is an upcoming mixed-use development in the heart of Bromsgrove, set to transform the former Market Hall site into a vibrant commercial, cultural, and community destination. The project is a key part of Bromsgrove District Council’s regeneration strategy.\n\nThe commercial building is a standalone structure offering premium office space, ground-floor restaurant space, and a rooftop food and drink outlet. This addition is expected to enhance Bromsgrove’s night-time economy and attract both new and established businesses.",
-    "location": "Set in the heart of Worcestershire, Bromsgrove is a town blending heritage charm with contemporary growth. Just 30 minutes from Birmingham and with easy access to the M5, M42, and direct rail links, Bromsgrove offers exceptional connectivity for ambitious businesses.\n\nBromsgrove is home to a growing, affluent population and a thriving local economy, making it a compelling location for both office occupiers and hospitality operators. The town’s latest regeneration project, Nailers Yard, is at the centre of this transformation. With bold new spaces designed for work, culture, and cuisine, it offers a fresh canvas for operators seeking high footfall, community engagement, and standout design in a one-of-a-kind setting.",
-    "features": [
-      "A new commercial & cultural hub in Bromsgrove Town Centre",
-      "Ground floor food and beverage suite 1,517 sq ft (141 sq m)",
-      "Third floor food and beverage suite 1,087 sq ft (101 sq m)",
-      "Remote controlled ceiling mounted HVAC",
-      "WC and shower facilities"
-    ],
-    "rent_psf": 21.11,
-    "rent_pa": 25000,
-    "rent": "£25,000 - £60,000 per annum",
-    "business_rates_psf": 0,
-    "rateable_value": 0,
-    "epc_rating": "",
-    "images": [
-      "https://as-images.imgix.net/908301b55ac7f82da57b9ebe418c17ba-market-hall-view-05-v026.jpg",
-      "https://as-images.imgix.net/dc2b99740d1beab2f300422a4e58473a-20260608-111831.jpg",
-      "https://as-images.imgix.net/2873e3f7f1726ab9d99d74991d085393-20260608-111607.jpg",
-      "https://as-images.imgix.net/dcfe4c57e0d8a0db7f618b8cfa9ca173-20260608-111625.jpg",
-      "https://as-images.imgix.net/5074bc8731554bd56c6a07347b2eb0a2-20260608-111642.jpg",
-      "https://as-images.imgix.net/be67174694151e8ea68def47d465ba0b-20260608-111720.jpg",
-      "https://as-images.imgix.net/bf1488fbeb44287884dfac3b6086f458-20260608-111736.jpg",
-      "https://as-images.imgix.net/f2bb99b119dac4ddb5cdd9cae22312a5-20260608-111757.jpg",
-      "https://as-images.imgix.net/3bdbe2a6dc86229e2c22e9fb8792317f-20260608-111900.jpg"
-    ],
-    "brochure_url": "https://s3-eu-west-1.amazonaws.com/agents-society-assets-files/6dd0b16f1e46ac69d5feb5c70434c4c6-gjs-dillon-particulars-nailers-yard-bromsgrove-food-and-beverage-4.pdf",
-    "floor_plan_urls": [
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/1305dad63e08c0fa53f20f10ee772330-cam04581g0-pr0071-build01-floor00.png",
-      "https://s3-eu-west-1.amazonaws.com/agents-society-assets/fbf5aa401494272925e6f57f80844368-cam04581g0-pr0071-build01-floor02.png"
-    ],
-    "virtual_tour_urls": [
-      "https://tour.giraffe360.com/nailersyardbromsgrove"
-    ],
-    "contacts": [
-      {
-        "name": "Roy Wilkes",
-        "email": "roywilkes@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      },
-      {
-        "name": "Jorge Bray",
-        "email": "jorgebray@gjsdillon.co.uk",
-        "phone": "01905 676 169",
-        "mobile": "07394 569 128",
-        "company": "GJS Dillon Limited",
-        "branch": "Droitwich"
-      }
-    ],
-    "last_updated": "2026-10-27 10:24:55"
   },
   {
     "id": 350416,
