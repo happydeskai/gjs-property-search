@@ -1,6 +1,10 @@
 {
   "builds": [
-    { "src": "api/**/*.js", "use": "@vercel/node" },
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node",
+      "config": { "includeFiles": ["properties.json", "property.html", "lib/**"] }
+    },
     { "src": "index.html", "use": "@vercel/static" },
     { "src": "property.html", "use": "@vercel/static" },
     { "src": "properties.json", "use": "@vercel/static" },
@@ -10,9 +14,12 @@
     { "src": "/api/(.*)", "dest": "/api/$1" },
     { "src": "/agents/(.*)", "dest": "/public/agents/$1" },
     { "src": "/hero-bg.jpg", "dest": "/public/hero-bg.jpg" },
-    { "src": "/property.html", "dest": "/property.html" },
     { "src": "/properties.json", "dest": "/properties.json" },
-    { "src": "/property-search/([^/]+)", "dest": "/property.html?id=$1" },
+    { "src": "/sitemap.xml", "dest": "/api/sitemap.js" },
+    { "src": "/robots.txt", "dest": "/api/robots.js" },
+    { "src": "/property/([^/]+)/?", "dest": "/api/listing.js?slug=$1" },
+    { "src": "/property-search/([^/]+)/?", "dest": "/api/listing.js?id=$1&legacy=1" },
+    { "src": "/property.html", "dest": "/api/listing.js?legacy=1" },
     { "src": "^/$", "dest": "/index.html" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
