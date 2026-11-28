@@ -315,10 +315,16 @@ async function run() {
       };
     });
 
-  fs.writeFileSync(
-    path.resolve(process.cwd(), "properties.json"),
-    JSON.stringify(out, null, 2)
-  );
+  // Safety net: a broken or partial feed must not wipe the listings. Each listing now
+  // has its own page in Google, so an empty file would turn them all into 404s.
+  const outPath = path.resolve(process.cwd(), "properties.json");
+  let previousCount = 0;
+  try { previousCount = JSON.parse(fs.readFileSync(outPath, "utf8")).length || 0; } catch (e) {}
+  if (out.length === 0 || (previousCount >= 10 && out.length < previousCount * 0.5)) {
+    throw new Error(`Feed returned ${out.length} listings (previously ${previousCount}); keeping the existing properties.json`);
+  }
+
+  fs.writeFileSync(outPath, JSON.stringify(out, null, 2));
   console.log(`✅ properties.json generated (${out.length} items)`);
 }
 

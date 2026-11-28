@@ -233,6 +233,12 @@
       .form-card{ padding:22px; }
     }
   </style>
+<script>
+// Each property's own address, e.g. /property/426611-31-pump-street-worcester.
+// Same rules as lib/listing-seo.js on the server: keep them in sync.
+function gjsSlugify(s){return String(s||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/&/g,' and ').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,80).replace(/-+$/g,'');}
+function gjsPropertyPath(p){var slug=gjsSlugify([p.address,p.town].filter(Boolean).join(' '));return '/property/'+encodeURIComponent(String(p.id))+(slug?'-'+slug:'');}
+</script>
 </head>
 
 <body>
@@ -243,7 +249,7 @@
 <style>@keyframes spin{to{transform:rotate(360deg)}}</style>
 
   <div class="topbar">
-    <a class="back" href="index.html" id="backLink">Back to results</a>
+    <a class="back" href="/" id="backLink">Back to results</a>
   </div>
 
   <div id="loading" style="max-width:1180px;margin:0 auto;padding:40px 32px;font-family:'Roboto',Arial,sans-serif;color:#6b7280;">Loading&#8230;</div>
@@ -394,7 +400,7 @@ const $ = (s, el=document) => el.querySelector(s);
 const getParam = n => {
   const qs = new URLSearchParams(location.search).get(n);
   if (qs) return qs;
-  if (n==='id'){const m=location.pathname.match(/\/property-search\/([^/]+)/);if(m)return m[1];}
+  if (n==='id'){const m=location.pathname.match(/\/property(?:-search)?\/(\d+)/);if(m)return m[1];}
   return null;
 };
 const isHttpUrl = s => typeof s==='string' && /^https?:\/\//i.test(s);
@@ -777,7 +783,7 @@ function renderNearbyCard(p){
       <span class="pc-badge ${statusCls}">${statusText}</span>
     </div>
     <div class="pc-body">
-      <a class="pc-title" href="property.html?id=${id}">${address}</a>
+      <a class="pc-title" href="${gjsPropertyPath(p)}">${address}</a>
       ${tenureLabel?`<div class="pc-status">${tenureLabel}</div>`:''}
       ${desc?`<p class="pc-desc">${desc}</p>`:''}
       <div class="pc-meta">
@@ -786,7 +792,7 @@ function renderNearbyCard(p){
         ${price?`<div class="pc-meta-row"><span class="pc-icon">${iconPound}</span><span>${price}</span></div>`:''}
       </div>
       <div class="pc-actions">
-        <a class="pc-btn pc-btn--dark" href="property.html?id=${id}">View Property</a>
+        <a class="pc-btn pc-btn--dark" href="${gjsPropertyPath(p)}">View Property</a>
         ${brochureUrl?`<a class="pc-btn pc-btn--dark" href="${brochureUrl}" target="_blank" rel="noopener">View Brochure</a>`:''}
         ${hasTour?`<a class="pc-btn pc-btn--tour" href="${tourUrl}" target="_blank" rel="noopener">360&deg; Tour</a>`:''}
       </div>
@@ -999,7 +1005,7 @@ async function main(){
 
 document.addEventListener('DOMContentLoaded',()=>{
   const bl=document.getElementById('backLink');
-  if(bl){try{const ls=sessionStorage.getItem('gjs:lastSearch');if(ls)bl.href='index.html'+ls;}catch(e){}}
+  if(bl){try{const ls=sessionStorage.getItem('gjs:lastSearch');if(ls)bl.href='/'+ls;}catch(e){}}
   main();
 });
 </script>
