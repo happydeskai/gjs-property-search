@@ -90,7 +90,9 @@ function renderNotFound() {
 <style>body{margin:0;font-family:Roboto,Arial,sans-serif;color:#1C1C1C}.w{max-width:640px;margin:0 auto;padding:80px 24px}h1{font-family:'Century Gothic',sans-serif;font-weight:300}a.b{display:inline-block;background:#F5B400;color:#141414;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:600}</style>
 </head><body><div class="w"><h1>This property is no longer listed</h1>
 <p>It may have been let or sold. Take a look at what is available now.</p>
-<p><a class="b" href="/">See all properties</a></p></div></body></html>`;
+<p><a class="b" href="/">See all properties</a></p></div>
+<script>(function(){try{var h=Math.max(document.body.scrollHeight,400);parent.postMessage({type:'gjs-back-to-search'},'*');parent.postMessage({type:'scroll-top'},'*');parent.postMessage({type:'gjs-height',height:h},'*');addEventListener('message',function(e){if(e.data&&e.data.type==='gjs-request-height')parent.postMessage({type:'gjs-height',height:h},'*');});}catch(e){}})();</script>
+</body></html>`;
 }
 
 module.exports = (req, res) => {
@@ -102,6 +104,10 @@ module.exports = (req, res) => {
   if (!id) return redirect(res, '/');
 
   const p = list.find(x => String(x.id) === id);
+  const legacy = !!q.legacy && !q.slug;
+  // An old link to a listing that has since been let or sold goes back to the search page,
+  // which keeps the Squarespace frame and its address bar in step.
+  if (!p && legacy) return redirect(res, '/');
   if (!p) {
     res.statusCode = 404;
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
@@ -111,7 +117,9 @@ module.exports = (req, res) => {
 
   const wanted = seo.propertyPath(p);
   // Old address styles, or a slug that no longer matches the address: 301 to the one true address.
-  if (q.legacy || decodeURIComponent(String(q.slug || '')) !== wanted.replace('/property/', '')) {
+  let slug = String(q.slug || '');
+  try { slug = decodeURIComponent(slug); } catch (e) { /* malformed escape: treat as a mismatch */ }
+  if (legacy || slug !== wanted.replace('/property/', '')) {
     return redirect(res, wanted);
   }
 

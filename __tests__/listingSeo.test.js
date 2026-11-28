@@ -68,3 +68,26 @@ describe('listing pages', () => {
     for (const p of list) expect(fn(p)).toBe(seo.propertyPath(p));
   });
 });
+
+describe('edge cases from review', () => {
+  it('sends old links to a let or sold listing back to the search page', async () => {
+    const r = await call(listing, { id: '1', legacy: '1' });
+    expect(r.code).toBe(301);
+    expect(r.headers.Location).toBe('/');
+  });
+
+  it('does not loop when legacy=1 is added to a correct address', async () => {
+    const r = await call(listing, { slug: seo.propertyPath(first).replace('/property/', ''), legacy: '1' });
+    expect(r.code).toBe(200);
+  });
+
+  it('handles a malformed address without a server error', async () => {
+    const r = await call(listing, { slug: first.id + '-%E0' });
+    expect(r.code).toBe(301);
+  });
+
+  it('404 page still tells the website frame its height', async () => {
+    const r = await call(listing, { slug: '1-gone' });
+    expect(r.body).toContain('gjs-height');
+  });
+});
